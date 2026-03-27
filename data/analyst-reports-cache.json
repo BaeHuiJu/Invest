@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-27T09:16:52.242Z",
+  "generatedAt": "2026-03-27T10:13:25.423Z",
   "maxDays": 30,
   "reports": [
     {
@@ -210,6 +210,27 @@
         "미래에셋증권가 2026-03-27에 매수 의견과 목표가를 제시했습니다.",
         "현재가 65,800원 대비 목표가는 102,000원입니다.",
         "공시일 종가 65,800원 대비 괴리는 55%입니다."
+      ]
+    },
+    {
+      "date": "2026-03-27",
+      "ticker": "GOOGL",
+      "name": "Alphabet Inc.",
+      "market": "us",
+      "broker": "Needham",
+      "analyst": "Laura Martin",
+      "opinion": "Strong Buy",
+      "targetPrice": 400,
+      "currentPrice": 280.92,
+      "basePrice": 280.92,
+      "basePriceDate": "2026-03-27",
+      "upside": 42.4,
+      "reportTitle": "Strong Buy -> Strong Buy Reiterates",
+      "reasonSummary": "Strong Buy -> Strong Buy Reiterates. Needham가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 42.4%입니다. 공시일 종가 대비 목표가 괴리는 42.4%입니다.",
+      "reasonBullets": [
+        "Needham가 2026-03-27에 Strong Buy 의견과 목표가를 제시했습니다.",
+        "현재가 $280.92 대비 목표가는 $400입니다.",
+        "공시일 종가 $280.92 대비 괴리는 42.4%입니다."
       ]
     },
     {
@@ -1662,27 +1683,6 @@
       ]
     },
     {
-      "date": "2026-03-13",
-      "ticker": "GOOGL",
-      "name": "Alphabet Inc.",
-      "market": "us",
-      "broker": "Needham",
-      "analyst": "Laura Martin",
-      "opinion": "Strong Buy",
-      "targetPrice": 400,
-      "currentPrice": 280.92,
-      "basePrice": 302.28,
-      "basePriceDate": "2026-03-13",
-      "upside": 42.4,
-      "reportTitle": "Strong Buy -> Strong Buy Reiterates",
-      "reasonSummary": "Strong Buy -> Strong Buy Reiterates. Needham가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 42.4%입니다. 공시일 종가 대비 목표가 괴리는 32.3%입니다.",
-      "reasonBullets": [
-        "Needham가 2026-03-13에 Strong Buy 의견과 목표가를 제시했습니다.",
-        "현재가 $280.92 대비 목표가는 $400입니다.",
-        "공시일 종가 $302.28 대비 괴리는 32.3%입니다."
-      ]
-    },
-    {
       "date": "2026-03-12",
       "ticker": "XOM",
       "name": "Exxon Mobil Corporation",
@@ -2268,6 +2268,48 @@
             "한화투자증권가 2026-03-23에 Buy 의견과 목표가를 제시했습니다.",
             "현재가 65,800원 대비 목표가는 110,000원입니다.",
             "공시일 종가 65,800원 대비 괴리는 67.2%입니다."
+          ]
+        }
+      ]
+    },
+    "us:GOOGL": {
+      "ticker": "GOOGL",
+      "name": "Alphabet Inc.",
+      "market": "us",
+      "latestReportDate": "2026-03-27",
+      "latestBroker": "Needham",
+      "latestOpinion": "Strong Buy",
+      "latestTargetPrice": 400,
+      "latestCurrentPrice": 280.92,
+      "latestBasePrice": 280.92,
+      "avgUpside": 42.4,
+      "reportCount": 1,
+      "reasonSummary": "Strong Buy -> Strong Buy Reiterates. Needham가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 42.4%입니다. 공시일 종가 대비 목표가 괴리는 42.4%입니다.",
+      "reasonBullets": [
+        "Needham가 2026-03-27에 Strong Buy 의견과 목표가를 제시했습니다.",
+        "현재가 $280.92 대비 목표가는 $400입니다.",
+        "공시일 종가 $280.92 대비 괴리는 42.4%입니다."
+      ],
+      "relatedReports": [
+        {
+          "date": "2026-03-27",
+          "ticker": "GOOGL",
+          "name": "Alphabet Inc.",
+          "market": "us",
+          "broker": "Needham",
+          "analyst": "Laura Martin",
+          "opinion": "Strong Buy",
+          "targetPrice": 400,
+          "currentPrice": 280.92,
+          "basePrice": 280.92,
+          "basePriceDate": "2026-03-27",
+          "upside": 42.4,
+          "reportTitle": "Strong Buy -> Strong Buy Reiterates",
+          "reasonSummary": "Strong Buy -> Strong Buy Reiterates. Needham가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 42.4%입니다. 공시일 종가 대비 목표가 괴리는 42.4%입니다.",
+          "reasonBullets": [
+            "Needham가 2026-03-27에 Strong Buy 의견과 목표가를 제시했습니다.",
+            "현재가 $280.92 대비 목표가는 $400입니다.",
+            "공시일 종가 $280.92 대비 괴리는 42.4%입니다."
           ]
         }
       ]
@@ -4599,48 +4641,6 @@
             "Citigroup가 2026-03-11에 Strong Buy 의견과 목표가를 제시했습니다.",
             "현재가 $239.24 대비 목표가는 $274입니다.",
             "공시일 종가 $242.99 대비 괴리는 12.8%입니다."
-          ]
-        }
-      ]
-    },
-    "us:GOOGL": {
-      "ticker": "GOOGL",
-      "name": "Alphabet Inc.",
-      "market": "us",
-      "latestReportDate": "2026-03-13",
-      "latestBroker": "Needham",
-      "latestOpinion": "Strong Buy",
-      "latestTargetPrice": 400,
-      "latestCurrentPrice": 280.92,
-      "latestBasePrice": 302.28,
-      "avgUpside": 42.4,
-      "reportCount": 1,
-      "reasonSummary": "Strong Buy -> Strong Buy Reiterates. Needham가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 42.4%입니다. 공시일 종가 대비 목표가 괴리는 32.3%입니다.",
-      "reasonBullets": [
-        "Needham가 2026-03-13에 Strong Buy 의견과 목표가를 제시했습니다.",
-        "현재가 $280.92 대비 목표가는 $400입니다.",
-        "공시일 종가 $302.28 대비 괴리는 32.3%입니다."
-      ],
-      "relatedReports": [
-        {
-          "date": "2026-03-13",
-          "ticker": "GOOGL",
-          "name": "Alphabet Inc.",
-          "market": "us",
-          "broker": "Needham",
-          "analyst": "Laura Martin",
-          "opinion": "Strong Buy",
-          "targetPrice": 400,
-          "currentPrice": 280.92,
-          "basePrice": 302.28,
-          "basePriceDate": "2026-03-13",
-          "upside": 42.4,
-          "reportTitle": "Strong Buy -> Strong Buy Reiterates",
-          "reasonSummary": "Strong Buy -> Strong Buy Reiterates. Needham가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 42.4%입니다. 공시일 종가 대비 목표가 괴리는 32.3%입니다.",
-          "reasonBullets": [
-            "Needham가 2026-03-13에 Strong Buy 의견과 목표가를 제시했습니다.",
-            "현재가 $280.92 대비 목표가는 $400입니다.",
-            "공시일 종가 $302.28 대비 괴리는 32.3%입니다."
           ]
         }
       ]

@@ -4,7 +4,7 @@ import path from 'node:path';
 import type { NextApiRequest, NextApiResponse } from 'next';
 
 import { filterAnalystReports } from '../../lib/analyst-report-source.mjs';
-import type { AnalystReport, AnalystReportCacheFile } from '../../lib/analyst-types';
+import type { AnalystReport, AnalystReportCacheFile, MarketFilter } from '../../lib/analyst-types';
 
 type CacheFileMemoryEntry = {
   data: AnalystReportCacheFile;
@@ -15,7 +15,7 @@ const FILE_CACHE_TTL_MS = 60 * 1000;
 let cacheFileMemory: CacheFileMemoryEntry | null = null;
 let cacheFileInflight: Promise<AnalystReportCacheFile> | null = null;
 
-async function loadCacheFile(): Promise<AnalystReportCacheFile> {
+export async function loadAnalystCacheFile(): Promise<AnalystReportCacheFile> {
   if (cacheFileMemory && Date.now() - cacheFileMemory.loadedAt <= FILE_CACHE_TTL_MS) {
     return cacheFileMemory.data;
   }
@@ -44,10 +44,10 @@ async function loadCacheFile(): Promise<AnalystReportCacheFile> {
 export default async function handler(req: NextApiRequest, res: NextApiResponse<AnalystReport[] | { error: string }>) {
   const { days = '30', market = 'all' } = req.query;
   const daysNum = Number.parseInt(String(days), 10) || 30;
-  const marketFilter = String(market) as 'all' | 'korea' | 'us';
+  const marketFilter = String(market) as MarketFilter;
 
   try {
-    const cacheFile = await loadCacheFile();
+    const cacheFile = await loadAnalystCacheFile();
     const reports = filterAnalystReports(cacheFile.reports, daysNum, marketFilter) as AnalystReport[];
     res.status(200).json(reports);
   } catch (error) {

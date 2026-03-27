@@ -37,6 +37,67 @@ interface AnalystReport {
   upside: number;
 }
 
+type AnalystCacheEntry = {
+  reports: AnalystReport[];
+  fetchedAt: number;
+};
+
+const ANALYST_CACHE_TTL_MS = 5 * 60 * 1000;
+const analystClientCache = new Map<string, AnalystCacheEntry>();
+const analystClientInflight = new Map<string, Promise<AnalystReport[]>>();
+
+function getAnalystCacheKey(days: number, market: 'all' | 'korea' | 'us') {
+  return `${days}:${market}`;
+}
+
+function getCachedAnalystReports(days: number, market: 'all' | 'korea' | 'us') {
+  const key = getAnalystCacheKey(days, market);
+  const cached = analystClientCache.get(key);
+  if (!cached) {
+    return null;
+  }
+
+  if (Date.now() - cached.fetchedAt > ANALYST_CACHE_TTL_MS) {
+    analystClientCache.delete(key);
+    return null;
+  }
+
+  return cached.reports;
+}
+
+async function fetchAnalystReports(days: number, market: 'all' | 'korea' | 'us'): Promise<AnalystReport[]> {
+  const cached = getCachedAnalystReports(days, market);
+  if (cached) {
+    return cached;
+  }
+
+  const key = getAnalystCacheKey(days, market);
+  const inflight = analystClientInflight.get(key);
+  if (inflight) {
+    return inflight;
+  }
+
+  const request = fetch(`/api/analyst-reports?days=${days}&market=${market}`)
+    .then(async (res) => {
+      if (!res.ok) {
+        throw new Error('Failed to fetch');
+      }
+
+      const data = await res.json() as AnalystReport[];
+      analystClientCache.set(key, {
+        reports: data,
+        fetchedAt: Date.now(),
+      });
+      return data;
+    })
+    .finally(() => {
+      analystClientInflight.delete(key);
+    });
+
+  analystClientInflight.set(key, request);
+  return request;
+}
+
 type TabType = 'home' | 'korea-stock' | 'korea-etf' | 'us-stock' | 'us-etf' | 'analyst';
 
 export default function Home() {
@@ -97,6 +158,29 @@ export default function Home() {
     }
 
     fetchData();
+  }, []);
+
+  useEffect(() => {
+    const warmup = () => {
+      void fetchAnalystReports(30, 'all').catch((err) => {
+        console.error('Error prefetching analyst reports:', err);
+      });
+    };
+
+    if (typeof window !== 'undefined') {
+      const idleWindow = window as Window & {
+        requestIdleCallback?: (callback: IdleRequestCallback) => number;
+        cancelIdleCallback?: (handle: number) => void;
+      };
+
+      if (idleWindow.requestIdleCallback && idleWindow.cancelIdleCallback) {
+        const idleId = idleWindow.requestIdleCallback(warmup);
+        return () => idleWindow.cancelIdleCallback?.(idleId);
+      }
+    }
+
+    const timeoutId = setTimeout(warmup, 800);
+    return () => clearTimeout(timeoutId);
   }, []);
 
   return (
@@ -203,17 +287,17 @@ function AnalystTab() {
 
   useEffect(() => {
     async function fetchReports() {
-      setLoading(true);
+      const cached = getCachedAnalystReports(days, market);
+      setLoading(!cached);
       setError(null);
 
       try {
-        const res = await fetch(`/api/analyst-reports?days=${days}&market=${market}`);
-        if (res.ok) {
-          const data = await res.json();
-          setReports(data);
-        } else {
-          throw new Error('Failed to fetch');
+        if (cached) {
+          setReports(cached);
         }
+
+        const data = await fetchAnalystReports(days, market);
+        setReports(data);
       } catch (err) {
         console.error('Error fetching analyst reports:', err);
         setError('애널리스트 데이터를 불러오는 중 오류가 발생했습니다.');

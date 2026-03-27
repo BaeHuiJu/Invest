@@ -14,6 +14,15 @@ interface AnalystReport {
   reportTitle?: string;
 }
 
+type ApiCacheEntry = {
+  reports: AnalystReport[];
+  fetchedAt: number;
+};
+
+const API_CACHE_TTL_MS = 5 * 60 * 1000;
+const analystApiCache = new Map<string, ApiCacheEntry>();
+const analystApiInflight = new Map<string, Promise<AnalystReport[]>>();
+
 // 국내 주요 종목 - 네이버 금융에서 리서치 데이터 수집
 const KOREA_RESEARCH_STOCKS = [
   '005930', '000660', '373220', '005380', '006400',
@@ -316,49 +325,72 @@ async function fetchYahooAnalyst(days: number): Promise<AnalystReport[]> {
   return reports.reduce<AnalystReport[]>((all, current) => all.concat(current), []);
 }
 
+function getApiCacheKey(days: number, market: string) {
+  return `${days}:${market}`;
+}
+
+async function buildAnalystReports(daysNum: number, marketFilter: string): Promise<AnalystReport[]> {
+  let allReports: AnalystReport[] = [];
+
+  if (marketFilter === 'all' || marketFilter === 'korea') {
+    const koreaReports = await fetchNaverResearch(daysNum);
+    allReports.push(...koreaReports);
+  }
+
+  if (marketFilter === 'all' || marketFilter === 'us') {
+    const usReports = await fetchYahooAnalyst(daysNum);
+    allReports.push(...usReports);
+  }
+
+  allReports = allReports.filter(r =>
+    r.opinion.toLowerCase().includes('buy') ||
+    r.opinion.includes('\uB9E4\uC218') ||
+    r.opinion === 'Trading Buy'
+  );
+
+  allReports = allReports.filter(r => r.upside > 0);
+
+  allReports.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+
+  const seen = new Set<string>();
+  return allReports.filter(r => {
+    const key = `${r.ticker}-${r.broker}`;
+    if (seen.has(key)) return false;
+    seen.add(key);
+    return true;
+  });
+}
+
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
   const { days = '30', market = 'all' } = req.query;
   const daysNum = parseInt(days as string) || 30;
   const marketFilter = market as string;
+  const cacheKey = getApiCacheKey(daysNum, marketFilter);
 
   try {
-    let allReports: AnalystReport[] = [];
-
-    // 시장별 데이터 수집
-    if (marketFilter === 'all' || marketFilter === 'korea') {
-      const koreaReports = await fetchNaverResearch(daysNum);
-      allReports.push(...koreaReports);
+    const cached = analystApiCache.get(cacheKey);
+    if (cached && Date.now() - cached.fetchedAt <= API_CACHE_TTL_MS) {
+      res.status(200).json(cached.reports);
+      return;
     }
 
-    if (marketFilter === 'all' || marketFilter === 'us') {
-      const usReports = await fetchYahooAnalyst(daysNum);
-      allReports.push(...usReports);
+    const inflight = analystApiInflight.get(cacheKey);
+    const reportsPromise = inflight || buildAnalystReports(daysNum, marketFilter);
+
+    if (!inflight) {
+      analystApiInflight.set(cacheKey, reportsPromise);
     }
 
-    // 매수 의견만 필터링 (매도/보유 제외)
-    allReports = allReports.filter(r =>
-      r.opinion.toLowerCase().includes('buy') ||
-      r.opinion.includes('매수') ||
-      r.opinion === 'Trading Buy'
-    );
-
-    // 상승여력이 있는 것만 (0% 초과)
-    allReports = allReports.filter(r => r.upside > 0);
-
-    // 날짜순 정렬 (최신순)
-    allReports.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
-
-    // 중복 제거 (같은 종목은 최신 것만)
-    const seen = new Set<string>();
-    allReports = allReports.filter(r => {
-      const key = `${r.ticker}-${r.broker}`;
-      if (seen.has(key)) return false;
-      seen.add(key);
-      return true;
+    const reports = await reportsPromise;
+    analystApiCache.set(cacheKey, {
+      reports,
+      fetchedAt: Date.now(),
     });
+    analystApiInflight.delete(cacheKey);
 
-    res.status(200).json(allReports);
+    res.status(200).json(reports);
   } catch (error) {
+    analystApiInflight.delete(cacheKey);
     console.error('Error fetching analyst reports:', error);
     res.status(500).json({ error: 'Failed to fetch analyst reports' });
   }

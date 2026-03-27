@@ -196,6 +196,8 @@ function AnalystTab() {
   const [days, setDays] = useState<number>(30);
   const [market, setMarket] = useState<'all' | 'korea' | 'us'>('all');
   const [sortBy, setSortBy] = useState<'upside' | 'date'>('upside');
+  const [broker, setBroker] = useState<string>('all');
+  const [opinion, setOpinion] = useState<string>('all');
 
   useEffect(() => {
     async function fetchReports() {
@@ -221,15 +223,36 @@ function AnalystTab() {
     fetchReports();
   }, [days, market]);
 
-  const filteredReports = [...reports].sort((a, b) => {
-    if (sortBy === 'upside') return b.upside - a.upside;
-    return new Date(b.date).getTime() - new Date(a.date).getTime();
-  });
+  // 현재 데이터에서 고유한 증권사/투자의견 추출
+  const brokers = Array.from(new Set(reports.map(r => r.broker))).sort();
+  const opinions = Array.from(new Set(reports.map(r => r.opinion))).sort();
 
-  const koreaCount = reports.filter(r => r.market === 'korea').length;
-  const usCount = reports.filter(r => r.market === 'us').length;
-  const avgUpside = reports.length > 0
-    ? reports.reduce((sum, r) => sum + r.upside, 0) / reports.length
+  useEffect(() => {
+    if (broker !== 'all' && !brokers.includes(broker)) {
+      setBroker('all');
+    }
+  }, [broker, brokers]);
+
+  useEffect(() => {
+    if (opinion !== 'all' && !opinions.includes(opinion)) {
+      setOpinion('all');
+    }
+  }, [opinion, opinions]);
+
+  // 필터링 적용
+  const filteredReports = [...reports]
+    .filter(r => broker === 'all' || r.broker === broker)
+    .filter(r => opinion === 'all' || r.opinion === opinion)
+    .sort((a, b) => {
+      if (sortBy === 'upside') return b.upside - a.upside;
+      return new Date(b.date).getTime() - new Date(a.date).getTime();
+    });
+
+  // 요약 통계 (필터링된 데이터 기준)
+  const koreaCount = filteredReports.filter(r => r.market === 'korea').length;
+  const usCount = filteredReports.filter(r => r.market === 'us').length;
+  const avgUpside = filteredReports.length > 0
+    ? filteredReports.reduce((sum, r) => sum + r.upside, 0) / filteredReports.length
     : 0;
 
   const formatPrice = (price: number, market: string) => {
@@ -285,6 +308,32 @@ function AnalystTab() {
               <option value="date">날짜순</option>
             </select>
           </div>
+          <div>
+            <label className="text-sm text-gray-500 mr-2">증권사:</label>
+            <select
+              value={broker}
+              onChange={(e) => setBroker(e.target.value)}
+              className="border rounded-lg px-3 py-2 text-sm"
+            >
+              <option value="all">전체</option>
+              {brokers.map((b) => (
+                <option key={b} value={b}>{b}</option>
+              ))}
+            </select>
+          </div>
+          <div>
+            <label className="text-sm text-gray-500 mr-2">투자의견:</label>
+            <select
+              value={opinion}
+              onChange={(e) => setOpinion(e.target.value)}
+              className="border rounded-lg px-3 py-2 text-sm"
+            >
+              <option value="all">전체</option>
+              {opinions.map((o) => (
+                <option key={o} value={o}>{o}</option>
+              ))}
+            </select>
+          </div>
         </div>
       </div>
 
@@ -292,7 +341,7 @@ function AnalystTab() {
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
         <div className="bg-white rounded-xl shadow-sm p-4">
           <div className="text-sm text-gray-500">총 추천 수</div>
-          <div className="text-2xl font-bold">{reports.length}</div>
+          <div className="text-2xl font-bold">{filteredReports.length}</div>
         </div>
         <div className="bg-white rounded-xl shadow-sm p-4">
           <div className="text-sm text-gray-500">평균 상승여력</div>
@@ -326,7 +375,7 @@ function AnalystTab() {
               <p className="text-sm text-gray-500">최근 {days}일 이내 매수 추천 리포트</p>
             </div>
             {filteredReports.length === 0 ? (
-              <div className="p-8 text-center text-gray-400">해당 기간에 매수 추천이 없습니다.</div>
+              <div className="p-8 text-center text-gray-400">선택한 조건에 맞는 매수 추천이 없습니다.</div>
             ) : (
               <div className="overflow-x-auto">
                 <table className="w-full">

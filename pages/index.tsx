@@ -24,7 +24,20 @@ interface MarketIndex {
   changePercent: number;
 }
 
-type TabType = 'home' | 'korea-stock' | 'korea-etf' | 'us-stock' | 'us-etf';
+interface AnalystReport {
+  date: string;
+  ticker: string;
+  name: string;
+  market: 'korea' | 'us';
+  broker: string;
+  analyst: string;
+  opinion: string;
+  targetPrice: number;
+  currentPrice: number;
+  upside: number;
+}
+
+type TabType = 'home' | 'korea-stock' | 'korea-etf' | 'us-stock' | 'us-etf' | 'analyst';
 
 export default function Home() {
   const [activeTab, setActiveTab] = useState<TabType>('home');
@@ -113,6 +126,7 @@ export default function Home() {
                 { id: 'korea-etf', label: '국내 ETF', icon: '📊' },
                 { id: 'us-stock', label: '해외 주식', icon: '🇺🇸' },
                 { id: 'us-etf', label: '해외 ETF', icon: '📈' },
+                { id: 'analyst', label: '애널리스트 추천', icon: '💡' },
               ].map((tab) => (
                 <button
                   key={tab.id}
@@ -132,7 +146,9 @@ export default function Home() {
 
         {/* Main Content */}
         <main className="max-w-7xl mx-auto px-4 py-6">
-          {loading ? (
+          {activeTab === 'analyst' ? (
+            <AnalystTab />
+          ) : loading ? (
             <div className="flex items-center justify-center h-64">
               <div className="text-center">
                 <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600 mx-auto"></div>
@@ -169,6 +185,232 @@ export default function Home() {
         </footer>
       </div>
     </>
+  );
+}
+
+// 애널리스트 탭 컴포넌트
+function AnalystTab() {
+  const [reports, setReports] = useState<AnalystReport[]>([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
+  const [days, setDays] = useState<number>(30);
+  const [market, setMarket] = useState<'all' | 'korea' | 'us'>('all');
+  const [sortBy, setSortBy] = useState<'upside' | 'date'>('upside');
+
+  useEffect(() => {
+    async function fetchReports() {
+      setLoading(true);
+      setError(null);
+
+      try {
+        const res = await fetch(`/api/analyst-reports?days=${days}&market=${market}`);
+        if (res.ok) {
+          const data = await res.json();
+          setReports(data);
+        } else {
+          throw new Error('Failed to fetch');
+        }
+      } catch (err) {
+        console.error('Error fetching analyst reports:', err);
+        setError('애널리스트 데이터를 불러오는 중 오류가 발생했습니다.');
+      } finally {
+        setLoading(false);
+      }
+    }
+
+    fetchReports();
+  }, [days, market]);
+
+  const filteredReports = [...reports].sort((a, b) => {
+    if (sortBy === 'upside') return b.upside - a.upside;
+    return new Date(b.date).getTime() - new Date(a.date).getTime();
+  });
+
+  const koreaCount = reports.filter(r => r.market === 'korea').length;
+  const usCount = reports.filter(r => r.market === 'us').length;
+  const avgUpside = reports.length > 0
+    ? reports.reduce((sum, r) => sum + r.upside, 0) / reports.length
+    : 0;
+
+  const formatPrice = (price: number, market: string) => {
+    if (market === 'korea') {
+      return price.toLocaleString() + '원';
+    }
+    return '$' + price.toLocaleString();
+  };
+
+  return (
+    <div className="space-y-6">
+      {/* 필터 */}
+      <div className="bg-white rounded-xl shadow-sm p-4">
+        <div className="flex flex-wrap gap-4 items-center">
+          <div>
+            <label className="text-sm text-gray-500 mr-2">기간:</label>
+            <div className="inline-flex rounded-lg border overflow-hidden">
+              {[3, 7, 15, 30].map((d) => (
+                <button
+                  key={d}
+                  onClick={() => setDays(d)}
+                  className={`px-3 py-2 text-sm ${
+                    days === d
+                      ? 'bg-blue-600 text-white'
+                      : 'bg-white text-gray-600 hover:bg-gray-50'
+                  }`}
+                >
+                  {d}일
+                </button>
+              ))}
+            </div>
+          </div>
+          <div>
+            <label className="text-sm text-gray-500 mr-2">시장:</label>
+            <select
+              value={market}
+              onChange={(e) => setMarket(e.target.value as any)}
+              className="border rounded-lg px-3 py-2 text-sm"
+            >
+              <option value="all">전체</option>
+              <option value="korea">국내</option>
+              <option value="us">해외</option>
+            </select>
+          </div>
+          <div>
+            <label className="text-sm text-gray-500 mr-2">정렬:</label>
+            <select
+              value={sortBy}
+              onChange={(e) => setSortBy(e.target.value as any)}
+              className="border rounded-lg px-3 py-2 text-sm"
+            >
+              <option value="upside">상승여력순</option>
+              <option value="date">날짜순</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      {/* 요약 카드 */}
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div className="bg-white rounded-xl shadow-sm p-4">
+          <div className="text-sm text-gray-500">총 추천 수</div>
+          <div className="text-2xl font-bold">{reports.length}</div>
+        </div>
+        <div className="bg-white rounded-xl shadow-sm p-4">
+          <div className="text-sm text-gray-500">평균 상승여력</div>
+          <div className="text-2xl font-bold text-green-600">+{avgUpside.toFixed(1)}%</div>
+        </div>
+        <div className="bg-white rounded-xl shadow-sm p-4">
+          <div className="text-sm text-gray-500">국내 종목</div>
+          <div className="text-2xl font-bold">{koreaCount}</div>
+        </div>
+        <div className="bg-white rounded-xl shadow-sm p-4">
+          <div className="text-sm text-gray-500">해외 종목</div>
+          <div className="text-2xl font-bold">{usCount}</div>
+        </div>
+      </div>
+
+      {/* 리포트 목록 */}
+      {loading ? (
+        <div className="flex items-center justify-center h-64">
+          <div className="text-center">
+            <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600 mx-auto"></div>
+            <p className="mt-4 text-gray-500">데이터를 불러오는 중...</p>
+          </div>
+        </div>
+      ) : error ? (
+        <div className="bg-red-50 text-red-600 p-4 rounded-lg">{error}</div>
+      ) : (
+        <>
+          <div className="bg-white rounded-xl shadow-sm overflow-hidden">
+            <div className="p-4 border-b">
+              <h2 className="text-lg font-semibold">💡 애널리스트 매수 추천</h2>
+              <p className="text-sm text-gray-500">최근 {days}일 이내 매수 추천 리포트</p>
+            </div>
+            {filteredReports.length === 0 ? (
+              <div className="p-8 text-center text-gray-400">해당 기간에 매수 추천이 없습니다.</div>
+            ) : (
+              <div className="overflow-x-auto">
+                <table className="w-full">
+                  <thead className="bg-gray-50 text-xs text-gray-500 uppercase">
+                    <tr>
+                      <th className="px-4 py-3 text-left">날짜</th>
+                      <th className="px-4 py-3 text-left">종목</th>
+                      <th className="px-4 py-3 text-left">시장</th>
+                      <th className="px-4 py-3 text-left">증권사</th>
+                      <th className="px-4 py-3 text-right">목표가</th>
+                      <th className="px-4 py-3 text-right">현재가</th>
+                      <th className="px-4 py-3 text-right">상승여력</th>
+                      <th className="px-4 py-3 text-left">투자의견</th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y">
+                    {filteredReports.map((report, idx) => (
+                      <tr key={`${report.ticker}-${idx}`} className="hover:bg-gray-50">
+                        <td className="px-4 py-3 text-sm">{report.date}</td>
+                        <td className="px-4 py-3">
+                          <div className="font-medium">{report.name}</div>
+                          <div className="text-xs text-gray-400">{report.ticker}</div>
+                        </td>
+                        <td className="px-4 py-3">
+                          <span
+                            className={`text-xs px-2 py-1 rounded ${
+                              report.market === 'korea'
+                                ? 'bg-blue-100 text-blue-700'
+                                : 'bg-orange-100 text-orange-700'
+                            }`}
+                          >
+                            {report.market === 'korea' ? '국내' : '해외'}
+                          </span>
+                        </td>
+                        <td className="px-4 py-3 text-sm">{report.broker}</td>
+                        <td className="px-4 py-3 text-right font-medium">
+                          {formatPrice(report.targetPrice, report.market)}
+                        </td>
+                        <td className="px-4 py-3 text-right">
+                          {formatPrice(report.currentPrice, report.market)}
+                        </td>
+                        <td className="px-4 py-3 text-right font-medium text-green-600">
+                          +{report.upside.toFixed(1)}%
+                        </td>
+                        <td className="px-4 py-3">
+                          <span className="text-xs px-2 py-1 rounded bg-green-100 text-green-700">
+                            {report.opinion}
+                          </span>
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            )}
+          </div>
+
+          {/* 상승여력 TOP 10 차트 */}
+          {filteredReports.length > 0 && (
+            <div className="bg-white rounded-xl shadow-sm p-6">
+              <h3 className="text-lg font-semibold mb-4">상승여력 TOP 10</h3>
+              <div className="h-80">
+                <ResponsiveContainer width="100%" height="100%">
+                  <BarChart data={filteredReports.slice(0, 10)} layout="vertical">
+                    <XAxis type="number" domain={[0, 'dataMax + 10']} tickFormatter={(v) => `${v}%`} />
+                    <YAxis
+                      type="category"
+                      dataKey="name"
+                      width={100}
+                      tick={{ fontSize: 12 }}
+                    />
+                    <Tooltip
+                      formatter={(value: number) => [`${value.toFixed(1)}%`, '상승여력']}
+                      labelFormatter={(label) => label}
+                    />
+                    <Bar dataKey="upside" fill="#22c55e" radius={[0, 4, 4, 0]} />
+                  </BarChart>
+                </ResponsiveContainer>
+              </div>
+            </div>
+          )}
+        </>
+      )}
+    </div>
   );
 }
 

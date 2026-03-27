@@ -195,7 +195,7 @@ function AnalystTab() {
   const [error, setError] = useState<string | null>(null);
   const [days, setDays] = useState<number>(30);
   const [market, setMarket] = useState<'all' | 'korea' | 'us'>('all');
-  const [sortBy, setSortBy] = useState<'upside' | 'date'>('upside');
+  const [sortBy, setSortBy] = useState<'upside' | 'date'>('date');
   const [broker, setBroker] = useState<string>('all');
   const [opinion, setOpinion] = useState<string>('all');
   const [page, setPage] = useState(1);
@@ -252,6 +252,7 @@ function AnalystTab() {
 
   const totalPages = Math.max(1, Math.ceil(filteredReports.length / pageSize));
   const paginatedReports = filteredReports.slice((page - 1) * pageSize, page * pageSize);
+  const topUpsideReports = [...filteredReports].sort((a, b) => b.upside - a.upside).slice(0, 10);
 
   useEffect(() => {
     setPage(1);
@@ -481,7 +482,7 @@ function AnalystTab() {
               <h3 className="text-lg font-semibold mb-4">상승여력 TOP 10</h3>
               <div className="h-80">
                 <ResponsiveContainer width="100%" height="100%">
-                  <BarChart data={filteredReports.slice(0, 10)} layout="vertical">
+                  <BarChart data={topUpsideReports} layout="vertical">
                     <XAxis type="number" domain={[0, 'dataMax + 10']} tickFormatter={(v) => `${v}%`} />
                     <YAxis
                       type="category"

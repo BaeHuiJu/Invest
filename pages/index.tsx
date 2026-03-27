@@ -198,6 +198,8 @@ function AnalystTab() {
   const [sortBy, setSortBy] = useState<'upside' | 'date'>('upside');
   const [broker, setBroker] = useState<string>('all');
   const [opinion, setOpinion] = useState<string>('all');
+  const [page, setPage] = useState(1);
+  const pageSize = 10;
 
   useEffect(() => {
     async function fetchReports() {
@@ -247,6 +249,19 @@ function AnalystTab() {
       if (sortBy === 'upside') return b.upside - a.upside;
       return new Date(b.date).getTime() - new Date(a.date).getTime();
     });
+
+  const totalPages = Math.max(1, Math.ceil(filteredReports.length / pageSize));
+  const paginatedReports = filteredReports.slice((page - 1) * pageSize, page * pageSize);
+
+  useEffect(() => {
+    setPage(1);
+  }, [days, market, sortBy, broker, opinion]);
+
+  useEffect(() => {
+    if (page > totalPages) {
+      setPage(totalPages);
+    }
+  }, [page, totalPages]);
 
   // 요약 통계 (필터링된 데이터 기준)
   const koreaCount = filteredReports.filter(r => r.market === 'korea').length;
@@ -392,7 +407,7 @@ function AnalystTab() {
                     </tr>
                   </thead>
                   <tbody className="divide-y">
-                    {filteredReports.map((report, idx) => (
+                    {paginatedReports.map((report, idx) => (
                       <tr key={`${report.ticker}-${idx}`} className="hover:bg-gray-50">
                         <td className="px-4 py-3 text-sm">{report.date}</td>
                         <td className="px-4 py-3">
@@ -432,6 +447,33 @@ function AnalystTab() {
               </div>
             )}
           </div>
+
+          {filteredReports.length > 0 && (
+            <div className="flex items-center justify-between px-4 py-3 border-t bg-gray-50">
+              <div className="text-sm text-gray-500">
+                {filteredReports.length}개 중 {(page - 1) * pageSize + 1}-{Math.min(page * pageSize, filteredReports.length)}개 표시
+              </div>
+              <div className="flex items-center gap-2">
+                <button
+                  onClick={() => setPage((prev) => Math.max(1, prev - 1))}
+                  disabled={page === 1}
+                  className="px-3 py-1.5 text-sm border rounded disabled:opacity-50 disabled:cursor-not-allowed bg-white"
+                >
+                  이전
+                </button>
+                <span className="text-sm text-gray-600">
+                  {page} / {totalPages}
+                </span>
+                <button
+                  onClick={() => setPage((prev) => Math.min(totalPages, prev + 1))}
+                  disabled={page === totalPages}
+                  className="px-3 py-1.5 text-sm border rounded disabled:opacity-50 disabled:cursor-not-allowed bg-white"
+                >
+                  다음
+                </button>
+              </div>
+            </div>
+          )}
 
           {/* 상승여력 TOP 10 차트 */}
           {filteredReports.length > 0 && (
@@ -595,8 +637,19 @@ function StockMiniList({ stocks, currency }: { stocks: Stock[]; currency: string
 function StockList({ stocks, title, currency }: { stocks: Stock[]; title: string; currency: string }) {
   const [sortBy, setSortBy] = useState<'changePercent' | 'volume' | 'currentPrice'>('changePercent');
   const [sortOrder, setSortOrder] = useState<'asc' | 'desc'>('desc');
+  const [query, setQuery] = useState('');
 
-  const sortedStocks = [...stocks].sort((a, b) => {
+  const normalizedQuery = query.trim().toLowerCase();
+
+  const filteredStocks = stocks.filter((stock) => {
+    if (!normalizedQuery) return true;
+    return (
+      stock.name.toLowerCase().includes(normalizedQuery) ||
+      stock.ticker.toLowerCase().includes(normalizedQuery)
+    );
+  });
+
+  const sortedStocks = [...filteredStocks].sort((a, b) => {
     const aVal = a[sortBy] || 0;
     const bVal = b[sortBy] || 0;
     return sortOrder === 'desc' ? bVal - aVal : aVal - bVal;
@@ -623,6 +676,15 @@ function StockList({ stocks, title, currency }: { stocks: Stock[]; title: string
     <div className="space-y-6">
       {/* 필터 */}
       <div className="bg-white rounded-xl shadow-sm p-4 flex flex-wrap gap-4 items-center">
+        <div className="min-w-[220px] flex-1">
+          <label className="text-sm text-gray-500 mr-2">검색:</label>
+          <input
+            value={query}
+            onChange={(e) => setQuery(e.target.value)}
+            placeholder="종목명 또는 티커"
+            className="w-full md:w-64 border rounded-lg px-3 py-2 text-sm"
+          />
+        </div>
         <div>
           <label className="text-sm text-gray-500 mr-2">정렬:</label>
           <select
@@ -646,7 +708,7 @@ function StockList({ stocks, title, currency }: { stocks: Stock[]; title: string
             <option value="asc">오름차순</option>
           </select>
         </div>
-        <div className="ml-auto text-sm text-gray-400">총 {stocks.length}개</div>
+        <div className="ml-auto text-sm text-gray-400">총 {filteredStocks.length}개</div>
       </div>
 
       {/* 목록 */}
@@ -656,6 +718,8 @@ function StockList({ stocks, title, currency }: { stocks: Stock[]; title: string
         </div>
         {stocks.length === 0 ? (
           <div className="p-8 text-center text-gray-400">데이터를 불러올 수 없습니다.</div>
+        ) : filteredStocks.length === 0 ? (
+          <div className="p-8 text-center text-gray-400">검색 조건에 맞는 종목이 없습니다.</div>
         ) : (
           <div className="overflow-x-auto">
             <table className="w-full">
@@ -696,7 +760,7 @@ function StockList({ stocks, title, currency }: { stocks: Stock[]; title: string
       </div>
 
       {/* 등락률 차트 */}
-      {stocks.length > 0 && (
+      {filteredStocks.length > 0 && (
         <div className="bg-white rounded-xl shadow-sm p-6">
           <h3 className="text-lg font-semibold mb-4">등락률 차트</h3>
           <div className="h-80">

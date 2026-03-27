@@ -2,7 +2,14 @@
   "permissions": {
     "allow": [
       "Bash(pip install:*)",
-      "Bash(streamlit run:*)"
+      "Bash(streamlit run:*)",
+      "Bash(gh auth status:*)",
+      "Bash(vercel --version:*)",
+      "Bash(gh repo create:*)",
+      "Bash(vercel:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push)"
     ]
   }
 }

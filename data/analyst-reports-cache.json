@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-27T23:55:45.653Z",
+  "generatedAt": "2026-03-28T02:02:13.896Z",
   "maxDays": 30,
   "reports": [
     {
@@ -1869,27 +1869,6 @@
         "JP Morgan가 2026-02-26에 Buy 의견과 목표가를 제시했습니다.",
         "현재가 $167.52 대비 목표가는 $265입니다.",
         "공시일 종가 $184.89 대비 괴리는 43.3%입니다."
-      ]
-    },
-    {
-      "date": "2026-02-25",
-      "ticker": "WMT",
-      "name": "Walmart Inc.",
-      "market": "us",
-      "broker": "Tigress Financial",
-      "analyst": "Ivan Feinseth",
-      "opinion": "Strong Buy",
-      "targetPrice": 150,
-      "currentPrice": 122.89,
-      "basePrice": 125.75,
-      "basePriceDate": "2026-02-25",
-      "upside": 22.1,
-      "reportTitle": "Strong Buy -> Strong Buy Maintains",
-      "reasonSummary": "Strong Buy -> Strong Buy Maintains. Tigress Financial가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 22.1%입니다. 공시일 종가 대비 목표가 괴리는 19.3%입니다.",
-      "reasonBullets": [
-        "Tigress Financial가 2026-02-25에 Strong Buy 의견과 목표가를 제시했습니다.",
-        "현재가 $122.89 대비 목표가는 $150입니다.",
-        "공시일 종가 $125.75 대비 괴리는 19.3%입니다."
       ]
     }
   ],
@@ -4830,48 +4809,6 @@
             "Citigroup가 2026-03-11에 Strong Buy 의견과 목표가를 제시했습니다.",
             "현재가 $240.45 대비 목표가는 $274입니다.",
             "공시일 종가 $242.99 대비 괴리는 12.8%입니다."
-          ]
-        }
-      ]
-    },
-    "us:WMT": {
-      "ticker": "WMT",
-      "name": "Walmart Inc.",
-      "market": "us",
-      "latestReportDate": "2026-02-25",
-      "latestBroker": "Tigress Financial",
-      "latestOpinion": "Strong Buy",
-      "latestTargetPrice": 150,
-      "latestCurrentPrice": 122.89,
-      "latestBasePrice": 125.75,
-      "avgUpside": 22.1,
-      "reportCount": 1,
-      "reasonSummary": "Strong Buy -> Strong Buy Maintains. Tigress Financial가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 22.1%입니다. 공시일 종가 대비 목표가 괴리는 19.3%입니다.",
-      "reasonBullets": [
-        "Tigress Financial가 2026-02-25에 Strong Buy 의견과 목표가를 제시했습니다.",
-        "현재가 $122.89 대비 목표가는 $150입니다.",
-        "공시일 종가 $125.75 대비 괴리는 19.3%입니다."
-      ],
-      "relatedReports": [
-        {
-          "date": "2026-02-25",
-          "ticker": "WMT",
-          "name": "Walmart Inc.",
-          "market": "us",
-          "broker": "Tigress Financial",
-          "analyst": "Ivan Feinseth",
-          "opinion": "Strong Buy",
-          "targetPrice": 150,
-          "currentPrice": 122.89,
-          "basePrice": 125.75,
-          "basePriceDate": "2026-02-25",
-          "upside": 22.1,
-          "reportTitle": "Strong Buy -> Strong Buy Maintains",
-          "reasonSummary": "Strong Buy -> Strong Buy Maintains. Tigress Financial가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 22.1%입니다. 공시일 종가 대비 목표가 괴리는 19.3%입니다.",
-          "reasonBullets": [
-            "Tigress Financial가 2026-02-25에 Strong Buy 의견과 목표가를 제시했습니다.",
-            "현재가 $122.89 대비 목표가는 $150입니다.",
-            "공시일 종가 $125.75 대비 괴리는 19.3%입니다."
           ]
         }
       ]

@@ -1,7 +1,112 @@
 {
-  "generatedAt": "2026-03-29T23:04:11.699Z",
+  "generatedAt": "2026-03-29T23:58:38.096Z",
   "maxDays": 30,
   "reports": [
+    {
+      "date": "2026-03-30",
+      "ticker": "183300",
+      "name": "코미코",
+      "market": "korea",
+      "broker": "SK증권",
+      "analyst": "",
+      "opinion": "매수",
+      "targetPrice": 150000,
+      "currentPrice": 107500,
+      "basePrice": 107500,
+      "basePriceDate": "2026-03-30",
+      "upside": 39.5,
+      "reportTitle": "파운드리 모멘텀",
+      "reasonSummary": "파운드리 모멘텀. SK증권가 매수 의견을 제시했고 현재가 기준 상승여력은 39.5%입니다. 공시일 종가 대비 목표가 괴리는 39.5%입니다.",
+      "reasonBullets": [
+        "SK증권가 2026-03-30에 매수 의견과 목표가를 제시했습니다.",
+        "현재가 107,500원 대비 목표가는 150,000원입니다.",
+        "공시일 종가 107,500원 대비 괴리는 39.5%입니다."
+      ]
+    },
+    {
+      "date": "2026-03-30",
+      "ticker": "075580",
+      "name": "세진중공업",
+      "market": "korea",
+      "broker": "신한투자증권",
+      "analyst": "",
+      "opinion": "매수",
+      "targetPrice": 22000,
+      "currentPrice": 17100,
+      "basePrice": 17100,
+      "basePriceDate": "2026-03-30",
+      "upside": 28.7,
+      "reportTitle": "선박 화물탱크, 편안한 2026년의 선택지",
+      "reasonSummary": "선박 화물탱크, 편안한 2026년의 선택지. 신한투자증권가 매수 의견을 제시했고 현재가 기준 상승여력은 28.7%입니다. 공시일 종가 대비 목표가 괴리는 28.7%입니다.",
+      "reasonBullets": [
+        "신한투자증권가 2026-03-30에 매수 의견과 목표가를 제시했습니다.",
+        "현재가 17,100원 대비 목표가는 22,000원입니다.",
+        "공시일 종가 17,100원 대비 괴리는 28.7%입니다."
+      ]
+    },
+    {
+      "date": "2026-03-30",
+      "ticker": "095340",
+      "name": "ISC",
+      "market": "korea",
+      "broker": "iM증권",
+      "analyst": "",
+      "opinion": "Buy",
+      "targetPrice": 290000,
+      "currentPrice": 250000,
+      "basePrice": 250000,
+      "basePriceDate": "2026-03-30",
+      "upside": 16,
+      "reportTitle": "AI 반도체 수혜 지속과 매출 안정성 강화",
+      "reasonSummary": "AI 반도체 수혜 지속과 매출 안정성 강화. iM증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 16.0%입니다. 공시일 종가 대비 목표가 괴리는 16%입니다.",
+      "reasonBullets": [
+        "iM증권가 2026-03-30에 Buy 의견과 목표가를 제시했습니다.",
+        "현재가 250,000원 대비 목표가는 290,000원입니다.",
+        "공시일 종가 250,000원 대비 괴리는 16%입니다."
+      ]
+    },
+    {
+      "date": "2026-03-30",
+      "ticker": "068270",
+      "name": "셀트리온",
+      "market": "korea",
+      "broker": "IBK투자증권",
+      "analyst": "",
+      "opinion": "매수",
+      "targetPrice": 250000,
+      "currentPrice": 206000,
+      "basePrice": 206000,
+      "basePriceDate": "2026-03-30",
+      "upside": 21.4,
+      "reportTitle": "미국 공장 셧다운 영향은 1분기에 끝",
+      "reasonSummary": "미국 공장 셧다운 영향은 1분기에 끝. IBK투자증권가 매수 의견을 제시했고 현재가 기준 상승여력은 21.4%입니다. 공시일 종가 대비 목표가 괴리는 21.4%입니다.",
+      "reasonBullets": [
+        "IBK투자증권가 2026-03-30에 매수 의견과 목표가를 제시했습니다.",
+        "현재가 206,000원 대비 목표가는 250,000원입니다.",
+        "공시일 종가 206,000원 대비 괴리는 21.4%입니다."
+      ]
+    },
+    {
+      "date": "2026-03-30",
+      "ticker": "005930",
+      "name": "삼성전자",
+      "market": "korea",
+      "broker": "키움증권",
+      "analyst": "",
+      "opinion": "Buy",
+      "targetPrice": 260000,
+      "currentPrice": 179700,
+      "basePrice": 179700,
+      "basePriceDate": "2026-03-30",
+      "upside": 44.7,
+      "reportTitle": "1Q26 영업이익 43조원, 서프라이즈 예상",
+      "reasonSummary": "1Q26 영업이익 43조원, 서프라이즈 예상. 키움증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 44.7%입니다. 공시일 종가 대비 목표가 괴리는 44.7%입니다.",
+      "reasonBullets": [
+        "키움증권가 2026-03-30에 Buy 의견과 목표가를 제시했습니다.",
+        "현재가 179,700원 대비 목표가는 260,000원입니다.",
+        "공시일 종가 179,700원 대비 괴리는 44.7%입니다."
+      ]
+    },
     {
       "date": "2026-03-27",
       "ticker": "009830",
@@ -1264,27 +1369,6 @@
     },
     {
       "date": "2026-03-24",
-      "ticker": "213420",
-      "name": "덕산네오룩스",
-      "market": "korea",
-      "broker": "iM증권",
-      "analyst": "",
-      "opinion": "Buy",
-      "targetPrice": 70000,
-      "currentPrice": 53000,
-      "basePrice": 53000,
-      "basePriceDate": "2026-03-24",
-      "upside": 32.1,
-      "reportTitle": "현대중공업터보기계 기업 가치 재평가 필요",
-      "reasonSummary": "현대중공업터보기계 기업 가치 재평가 필요. iM증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 32.1%입니다. 공시일 종가 대비 목표가 괴리는 32.1%입니다.",
-      "reasonBullets": [
-        "iM증권가 2026-03-24에 Buy 의견과 목표가를 제시했습니다.",
-        "현재가 53,000원 대비 목표가는 70,000원입니다.",
-        "공시일 종가 53,000원 대비 괴리는 32.1%입니다."
-      ]
-    },
-    {
-      "date": "2026-03-24",
       "ticker": "MSFT",
       "name": "Microsoft Corporation",
       "market": "us",
@@ -1323,111 +1407,6 @@
         "UBS가 2026-03-24에 Strong Buy 의견과 목표가를 제시했습니다.",
         "현재가 $43.34 대비 목표가는 $60입니다.",
         "공시일 종가 $42.78 대비 괴리는 40.3%입니다."
-      ]
-    },
-    {
-      "date": "2026-03-23",
-      "ticker": "005930",
-      "name": "삼성전자",
-      "market": "korea",
-      "broker": "미래에셋증권",
-      "analyst": "",
-      "opinion": "매수",
-      "targetPrice": 300000,
-      "currentPrice": 179700,
-      "basePrice": 179700,
-      "basePriceDate": "2026-03-23",
-      "upside": 66.9,
-      "reportTitle": "긍정적 흐름의 연속",
-      "reasonSummary": "긍정적 흐름의 연속. 미래에셋증권가 매수 의견을 제시했고 현재가 기준 상승여력은 66.9%입니다. 공시일 종가 대비 목표가 괴리는 66.9%입니다.",
-      "reasonBullets": [
-        "미래에셋증권가 2026-03-23에 매수 의견과 목표가를 제시했습니다.",
-        "현재가 179,700원 대비 목표가는 300,000원입니다.",
-        "공시일 종가 179,700원 대비 괴리는 66.9%입니다."
-      ]
-    },
-    {
-      "date": "2026-03-23",
-      "ticker": "375500",
-      "name": "DL이앤씨",
-      "market": "korea",
-      "broker": "한화투자증권",
-      "analyst": "",
-      "opinion": "Buy",
-      "targetPrice": 110000,
-      "currentPrice": 65800,
-      "basePrice": 65800,
-      "basePriceDate": "2026-03-23",
-      "upside": 67.2,
-      "reportTitle": "나는 상한가를 처음 보았다",
-      "reasonSummary": "나는 상한가를 처음 보았다. 한화투자증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 67.2%입니다. 공시일 종가 대비 목표가 괴리는 67.2%입니다.",
-      "reasonBullets": [
-        "한화투자증권가 2026-03-23에 Buy 의견과 목표가를 제시했습니다.",
-        "현재가 65,800원 대비 목표가는 110,000원입니다.",
-        "공시일 종가 65,800원 대비 괴리는 67.2%입니다."
-      ]
-    },
-    {
-      "date": "2026-03-23",
-      "ticker": "003230",
-      "name": "삼양식품",
-      "market": "korea",
-      "broker": "한화투자증권",
-      "analyst": "",
-      "opinion": "Buy",
-      "targetPrice": 1900000,
-      "currentPrice": 1183000,
-      "basePrice": 1183000,
-      "basePriceDate": "2026-03-23",
-      "upside": 60.6,
-      "reportTitle": "간담회 후기: 수요보다 공급이 변수, 성장 방..",
-      "reasonSummary": "간담회 후기: 수요보다 공급이 변수, 성장 방... 한화투자증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 60.6%입니다. 공시일 종가 대비 목표가 괴리는 60.6%입니다.",
-      "reasonBullets": [
-        "한화투자증권가 2026-03-23에 Buy 의견과 목표가를 제시했습니다.",
-        "현재가 1,183,000원 대비 목표가는 1,900,000원입니다.",
-        "공시일 종가 1,183,000원 대비 괴리는 60.6%입니다."
-      ]
-    },
-    {
-      "date": "2026-03-23",
-      "ticker": "097950",
-      "name": "CJ제일제당",
-      "market": "korea",
-      "broker": "하나증권",
-      "analyst": "",
-      "opinion": "Buy",
-      "targetPrice": 300000,
-      "currentPrice": 214500,
-      "basePrice": 214500,
-      "basePriceDate": "2026-03-23",
-      "upside": 39.9,
-      "reportTitle": "1Q26 Pre: 바이오 시황 부담",
-      "reasonSummary": "1Q26 Pre: 바이오 시황 부담. 하나증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 39.9%입니다. 공시일 종가 대비 목표가 괴리는 39.9%입니다.",
-      "reasonBullets": [
-        "하나증권가 2026-03-23에 Buy 의견과 목표가를 제시했습니다.",
-        "현재가 214,500원 대비 목표가는 300,000원입니다.",
-        "공시일 종가 214,500원 대비 괴리는 39.9%입니다."
-      ]
-    },
-    {
-      "date": "2026-03-23",
-      "ticker": "443060",
-      "name": "HD현대마린솔루션",
-      "market": "korea",
-      "broker": "유안타증권",
-      "analyst": "",
-      "opinion": "Buy",
-      "targetPrice": 270000,
-      "currentPrice": 183900,
-      "basePrice": 183900,
-      "basePriceDate": "2026-03-23",
-      "upside": 46.8,
-      "reportTitle": "증익 지속, 2분기중 KKR의 그늘이 걷힌다면",
-      "reasonSummary": "증익 지속, 2분기중 KKR의 그늘이 걷힌다면. 유안타증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 46.8%입니다. 공시일 종가 대비 목표가 괴리는 46.8%입니다.",
-      "reasonBullets": [
-        "유안타증권가 2026-03-23에 Buy 의견과 목표가를 제시했습니다.",
-        "현재가 183,900원 대비 목표가는 270,000원입니다.",
-        "공시일 종가 183,900원 대비 괴리는 46.8%입니다."
       ]
     },
     {
@@ -1852,6 +1831,216 @@
     }
   ],
   "stockInsights": {
+    "korea:183300": {
+      "ticker": "183300",
+      "name": "코미코",
+      "market": "korea",
+      "latestReportDate": "2026-03-30",
+      "latestBroker": "SK증권",
+      "latestOpinion": "매수",
+      "latestTargetPrice": 150000,
+      "latestCurrentPrice": 107500,
+      "latestBasePrice": 107500,
+      "avgUpside": 39.5,
+      "reportCount": 1,
+      "reasonSummary": "파운드리 모멘텀. SK증권가 매수 의견을 제시했고 현재가 기준 상승여력은 39.5%입니다. 공시일 종가 대비 목표가 괴리는 39.5%입니다.",
+      "reasonBullets": [
+        "SK증권가 2026-03-30에 매수 의견과 목표가를 제시했습니다.",
+        "현재가 107,500원 대비 목표가는 150,000원입니다.",
+        "공시일 종가 107,500원 대비 괴리는 39.5%입니다."
+      ],
+      "relatedReports": [
+        {
+          "date": "2026-03-30",
+          "ticker": "183300",
+          "name": "코미코",
+          "market": "korea",
+          "broker": "SK증권",
+          "analyst": "",
+          "opinion": "매수",
+          "targetPrice": 150000,
+          "currentPrice": 107500,
+          "basePrice": 107500,
+          "basePriceDate": "2026-03-30",
+          "upside": 39.5,
+          "reportTitle": "파운드리 모멘텀",
+          "reasonSummary": "파운드리 모멘텀. SK증권가 매수 의견을 제시했고 현재가 기준 상승여력은 39.5%입니다. 공시일 종가 대비 목표가 괴리는 39.5%입니다.",
+          "reasonBullets": [
+            "SK증권가 2026-03-30에 매수 의견과 목표가를 제시했습니다.",
+            "현재가 107,500원 대비 목표가는 150,000원입니다.",
+            "공시일 종가 107,500원 대비 괴리는 39.5%입니다."
+          ]
+        }
+      ]
+    },
+    "korea:075580": {
+      "ticker": "075580",
+      "name": "세진중공업",
+      "market": "korea",
+      "latestReportDate": "2026-03-30",
+      "latestBroker": "신한투자증권",
+      "latestOpinion": "매수",
+      "latestTargetPrice": 22000,
+      "latestCurrentPrice": 17100,
+      "latestBasePrice": 17100,
+      "avgUpside": 28.7,
+      "reportCount": 1,
+      "reasonSummary": "선박 화물탱크, 편안한 2026년의 선택지. 신한투자증권가 매수 의견을 제시했고 현재가 기준 상승여력은 28.7%입니다. 공시일 종가 대비 목표가 괴리는 28.7%입니다.",
+      "reasonBullets": [
+        "신한투자증권가 2026-03-30에 매수 의견과 목표가를 제시했습니다.",
+        "현재가 17,100원 대비 목표가는 22,000원입니다.",
+        "공시일 종가 17,100원 대비 괴리는 28.7%입니다."
+      ],
+      "relatedReports": [
+        {
+          "date": "2026-03-30",
+          "ticker": "075580",
+          "name": "세진중공업",
+          "market": "korea",
+          "broker": "신한투자증권",
+          "analyst": "",
+          "opinion": "매수",
+          "targetPrice": 22000,
+          "currentPrice": 17100,
+          "basePrice": 17100,
+          "basePriceDate": "2026-03-30",
+          "upside": 28.7,
+          "reportTitle": "선박 화물탱크, 편안한 2026년의 선택지",
+          "reasonSummary": "선박 화물탱크, 편안한 2026년의 선택지. 신한투자증권가 매수 의견을 제시했고 현재가 기준 상승여력은 28.7%입니다. 공시일 종가 대비 목표가 괴리는 28.7%입니다.",
+          "reasonBullets": [
+            "신한투자증권가 2026-03-30에 매수 의견과 목표가를 제시했습니다.",
+            "현재가 17,100원 대비 목표가는 22,000원입니다.",
+            "공시일 종가 17,100원 대비 괴리는 28.7%입니다."
+          ]
+        }
+      ]
+    },
+    "korea:095340": {
+      "ticker": "095340",
+      "name": "ISC",
+      "market": "korea",
+      "latestReportDate": "2026-03-30",
+      "latestBroker": "iM증권",
+      "latestOpinion": "Buy",
+      "latestTargetPrice": 290000,
+      "latestCurrentPrice": 250000,
+      "latestBasePrice": 250000,
+      "avgUpside": 16,
+      "reportCount": 1,
+      "reasonSummary": "AI 반도체 수혜 지속과 매출 안정성 강화. iM증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 16.0%입니다. 공시일 종가 대비 목표가 괴리는 16%입니다.",
+      "reasonBullets": [
+        "iM증권가 2026-03-30에 Buy 의견과 목표가를 제시했습니다.",
+        "현재가 250,000원 대비 목표가는 290,000원입니다.",
+        "공시일 종가 250,000원 대비 괴리는 16%입니다."
+      ],
+      "relatedReports": [
+        {
+          "date": "2026-03-30",
+          "ticker": "095340",
+          "name": "ISC",
+          "market": "korea",
+          "broker": "iM증권",
+          "analyst": "",
+          "opinion": "Buy",
+          "targetPrice": 290000,
+          "currentPrice": 250000,
+          "basePrice": 250000,
+          "basePriceDate": "2026-03-30",
+          "upside": 16,
+          "reportTitle": "AI 반도체 수혜 지속과 매출 안정성 강화",
+          "reasonSummary": "AI 반도체 수혜 지속과 매출 안정성 강화. iM증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 16.0%입니다. 공시일 종가 대비 목표가 괴리는 16%입니다.",
+          "reasonBullets": [
+            "iM증권가 2026-03-30에 Buy 의견과 목표가를 제시했습니다.",
+            "현재가 250,000원 대비 목표가는 290,000원입니다.",
+            "공시일 종가 250,000원 대비 괴리는 16%입니다."
+          ]
+        }
+      ]
+    },
+    "korea:068270": {
+      "ticker": "068270",
+      "name": "셀트리온",
+      "market": "korea",
+      "latestReportDate": "2026-03-30",
+      "latestBroker": "IBK투자증권",
+      "latestOpinion": "매수",
+      "latestTargetPrice": 250000,
+      "latestCurrentPrice": 206000,
+      "latestBasePrice": 206000,
+      "avgUpside": 21.4,
+      "reportCount": 1,
+      "reasonSummary": "미국 공장 셧다운 영향은 1분기에 끝. IBK투자증권가 매수 의견을 제시했고 현재가 기준 상승여력은 21.4%입니다. 공시일 종가 대비 목표가 괴리는 21.4%입니다.",
+      "reasonBullets": [
+        "IBK투자증권가 2026-03-30에 매수 의견과 목표가를 제시했습니다.",
+        "현재가 206,000원 대비 목표가는 250,000원입니다.",
+        "공시일 종가 206,000원 대비 괴리는 21.4%입니다."
+      ],
+      "relatedReports": [
+        {
+          "date": "2026-03-30",
+          "ticker": "068270",
+          "name": "셀트리온",
+          "market": "korea",
+          "broker": "IBK투자증권",
+          "analyst": "",
+          "opinion": "매수",
+          "targetPrice": 250000,
+          "currentPrice": 206000,
+          "basePrice": 206000,
+          "basePriceDate": "2026-03-30",
+          "upside": 21.4,
+          "reportTitle": "미국 공장 셧다운 영향은 1분기에 끝",
+          "reasonSummary": "미국 공장 셧다운 영향은 1분기에 끝. IBK투자증권가 매수 의견을 제시했고 현재가 기준 상승여력은 21.4%입니다. 공시일 종가 대비 목표가 괴리는 21.4%입니다.",
+          "reasonBullets": [
+            "IBK투자증권가 2026-03-30에 매수 의견과 목표가를 제시했습니다.",
+            "현재가 206,000원 대비 목표가는 250,000원입니다.",
+            "공시일 종가 206,000원 대비 괴리는 21.4%입니다."
+          ]
+        }
+      ]
+    },
+    "korea:005930": {
+      "ticker": "005930",
+      "name": "삼성전자",
+      "market": "korea",
+      "latestReportDate": "2026-03-30",
+      "latestBroker": "키움증권",
+      "latestOpinion": "Buy",
+      "latestTargetPrice": 260000,
+      "latestCurrentPrice": 179700,
+      "latestBasePrice": 179700,
+      "avgUpside": 44.7,
+      "reportCount": 1,
+      "reasonSummary": "1Q26 영업이익 43조원, 서프라이즈 예상. 키움증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 44.7%입니다. 공시일 종가 대비 목표가 괴리는 44.7%입니다.",
+      "reasonBullets": [
+        "키움증권가 2026-03-30에 Buy 의견과 목표가를 제시했습니다.",
+        "현재가 179,700원 대비 목표가는 260,000원입니다.",
+        "공시일 종가 179,700원 대비 괴리는 44.7%입니다."
+      ],
+      "relatedReports": [
+        {
+          "date": "2026-03-30",
+          "ticker": "005930",
+          "name": "삼성전자",
+          "market": "korea",
+          "broker": "키움증권",
+          "analyst": "",
+          "opinion": "Buy",
+          "targetPrice": 260000,
+          "currentPrice": 179700,
+          "basePrice": 179700,
+          "basePriceDate": "2026-03-30",
+          "upside": 44.7,
+          "reportTitle": "1Q26 영업이익 43조원, 서프라이즈 예상",
+          "reasonSummary": "1Q26 영업이익 43조원, 서프라이즈 예상. 키움증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 44.7%입니다. 공시일 종가 대비 목표가 괴리는 44.7%입니다.",
+          "reasonBullets": [
+            "키움증권가 2026-03-30에 Buy 의견과 목표가를 제시했습니다.",
+            "현재가 179,700원 대비 목표가는 260,000원입니다.",
+            "공시일 종가 179,700원 대비 괴리는 44.7%입니다."
+          ]
+        }
+      ]
+    },
     "korea:009830": {
       "ticker": "009830",
       "name": "한화솔루션",
@@ -2240,8 +2429,8 @@
       "latestTargetPrice": 102000,
       "latestCurrentPrice": 65800,
       "latestBasePrice": 65800,
-      "avgUpside": 61.1,
-      "reportCount": 2,
+      "avgUpside": 55,
+      "reportCount": 1,
       "reasonSummary": "원전 밸류체인의 성과와 기대감. 미래에셋증권가 매수 의견을 제시했고 현재가 기준 상승여력은 55.0%입니다. 공시일 종가 대비 목표가 괴리는 55%입니다.",
       "reasonBullets": [
         "미래에셋증권가 2026-03-27에 매수 의견과 목표가를 제시했습니다.",
@@ -2268,27 +2457,6 @@
             "미래에셋증권가 2026-03-27에 매수 의견과 목표가를 제시했습니다.",
             "현재가 65,800원 대비 목표가는 102,000원입니다.",
             "공시일 종가 65,800원 대비 괴리는 55%입니다."
-          ]
-        },
-        {
-          "date": "2026-03-23",
-          "ticker": "375500",
-          "name": "DL이앤씨",
-          "market": "korea",
-          "broker": "한화투자증권",
-          "analyst": "",
-          "opinion": "Buy",
-          "targetPrice": 110000,
-          "currentPrice": 65800,
-          "basePrice": 65800,
-          "basePriceDate": "2026-03-23",
-          "upside": 67.2,
-          "reportTitle": "나는 상한가를 처음 보았다",
-          "reasonSummary": "나는 상한가를 처음 보았다. 한화투자증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 67.2%입니다. 공시일 종가 대비 목표가 괴리는 67.2%입니다.",
-          "reasonBullets": [
-            "한화투자증권가 2026-03-23에 Buy 의견과 목표가를 제시했습니다.",
-            "현재가 65,800원 대비 목표가는 110,000원입니다.",
-            "공시일 종가 65,800원 대비 괴리는 67.2%입니다."
           ]
         }
       ]
@@ -4288,48 +4456,6 @@
         }
       ]
     },
-    "korea:213420": {
-      "ticker": "213420",
-      "name": "덕산네오룩스",
-      "market": "korea",
-      "latestReportDate": "2026-03-24",
-      "latestBroker": "iM증권",
-      "latestOpinion": "Buy",
-      "latestTargetPrice": 70000,
-      "latestCurrentPrice": 53000,
-      "latestBasePrice": 53000,
-      "avgUpside": 32.1,
-      "reportCount": 1,
-      "reasonSummary": "현대중공업터보기계 기업 가치 재평가 필요. iM증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 32.1%입니다. 공시일 종가 대비 목표가 괴리는 32.1%입니다.",
-      "reasonBullets": [
-        "iM증권가 2026-03-24에 Buy 의견과 목표가를 제시했습니다.",
-        "현재가 53,000원 대비 목표가는 70,000원입니다.",
-        "공시일 종가 53,000원 대비 괴리는 32.1%입니다."
-      ],
-      "relatedReports": [
-        {
-          "date": "2026-03-24",
-          "ticker": "213420",
-          "name": "덕산네오룩스",
-          "market": "korea",
-          "broker": "iM증권",
-          "analyst": "",
-          "opinion": "Buy",
-          "targetPrice": 70000,
-          "currentPrice": 53000,
-          "basePrice": 53000,
-          "basePriceDate": "2026-03-24",
-          "upside": 32.1,
-          "reportTitle": "현대중공업터보기계 기업 가치 재평가 필요",
-          "reasonSummary": "현대중공업터보기계 기업 가치 재평가 필요. iM증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 32.1%입니다. 공시일 종가 대비 목표가 괴리는 32.1%입니다.",
-          "reasonBullets": [
-            "iM증권가 2026-03-24에 Buy 의견과 목표가를 제시했습니다.",
-            "현재가 53,000원 대비 목표가는 70,000원입니다.",
-            "공시일 종가 53,000원 대비 괴리는 32.1%입니다."
-          ]
-        }
-      ]
-    },
     "us:FROG": {
       "ticker": "FROG",
       "name": "JFrog Ltd.",
@@ -4389,174 +4515,6 @@
             "Guggenheim가 2026-03-16에 Strong Buy 의견과 목표가를 제시했습니다.",
             "현재가 $43.34 대비 목표가는 $60입니다.",
             "공시일 종가 $43.09 대비 괴리는 39.2%입니다."
-          ]
-        }
-      ]
-    },
-    "korea:005930": {
-      "ticker": "005930",
-      "name": "삼성전자",
-      "market": "korea",
-      "latestReportDate": "2026-03-23",
-      "latestBroker": "미래에셋증권",
-      "latestOpinion": "매수",
-      "latestTargetPrice": 300000,
-      "latestCurrentPrice": 179700,
-      "latestBasePrice": 179700,
-      "avgUpside": 66.9,
-      "reportCount": 1,
-      "reasonSummary": "긍정적 흐름의 연속. 미래에셋증권가 매수 의견을 제시했고 현재가 기준 상승여력은 66.9%입니다. 공시일 종가 대비 목표가 괴리는 66.9%입니다.",
-      "reasonBullets": [
-        "미래에셋증권가 2026-03-23에 매수 의견과 목표가를 제시했습니다.",
-        "현재가 179,700원 대비 목표가는 300,000원입니다.",
-        "공시일 종가 179,700원 대비 괴리는 66.9%입니다."
-      ],
-      "relatedReports": [
-        {
-          "date": "2026-03-23",
-          "ticker": "005930",
-          "name": "삼성전자",
-          "market": "korea",
-          "broker": "미래에셋증권",
-          "analyst": "",
-          "opinion": "매수",
-          "targetPrice": 300000,
-          "currentPrice": 179700,
-          "basePrice": 179700,
-          "basePriceDate": "2026-03-23",
-          "upside": 66.9,
-          "reportTitle": "긍정적 흐름의 연속",
-          "reasonSummary": "긍정적 흐름의 연속. 미래에셋증권가 매수 의견을 제시했고 현재가 기준 상승여력은 66.9%입니다. 공시일 종가 대비 목표가 괴리는 66.9%입니다.",
-          "reasonBullets": [
-            "미래에셋증권가 2026-03-23에 매수 의견과 목표가를 제시했습니다.",
-            "현재가 179,700원 대비 목표가는 300,000원입니다.",
-            "공시일 종가 179,700원 대비 괴리는 66.9%입니다."
-          ]
-        }
-      ]
-    },
-    "korea:003230": {
-      "ticker": "003230",
-      "name": "삼양식품",
-      "market": "korea",
-      "latestReportDate": "2026-03-23",
-      "latestBroker": "한화투자증권",
-      "latestOpinion": "Buy",
-      "latestTargetPrice": 1900000,
-      "latestCurrentPrice": 1183000,
-      "latestBasePrice": 1183000,
-      "avgUpside": 60.6,
-      "reportCount": 1,
-      "reasonSummary": "간담회 후기: 수요보다 공급이 변수, 성장 방... 한화투자증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 60.6%입니다. 공시일 종가 대비 목표가 괴리는 60.6%입니다.",
-      "reasonBullets": [
-        "한화투자증권가 2026-03-23에 Buy 의견과 목표가를 제시했습니다.",
-        "현재가 1,183,000원 대비 목표가는 1,900,000원입니다.",
-        "공시일 종가 1,183,000원 대비 괴리는 60.6%입니다."
-      ],
-      "relatedReports": [
-        {
-          "date": "2026-03-23",
-          "ticker": "003230",
-          "name": "삼양식품",
-          "market": "korea",
-          "broker": "한화투자증권",
-          "analyst": "",
-          "opinion": "Buy",
-          "targetPrice": 1900000,
-          "currentPrice": 1183000,
-          "basePrice": 1183000,
-          "basePriceDate": "2026-03-23",
-          "upside": 60.6,
-          "reportTitle": "간담회 후기: 수요보다 공급이 변수, 성장 방..",
-          "reasonSummary": "간담회 후기: 수요보다 공급이 변수, 성장 방... 한화투자증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 60.6%입니다. 공시일 종가 대비 목표가 괴리는 60.6%입니다.",
-          "reasonBullets": [
-            "한화투자증권가 2026-03-23에 Buy 의견과 목표가를 제시했습니다.",
-            "현재가 1,183,000원 대비 목표가는 1,900,000원입니다.",
-            "공시일 종가 1,183,000원 대비 괴리는 60.6%입니다."
-          ]
-        }
-      ]
-    },
-    "korea:097950": {
-      "ticker": "097950",
-      "name": "CJ제일제당",
-      "market": "korea",
-      "latestReportDate": "2026-03-23",
-      "latestBroker": "하나증권",
-      "latestOpinion": "Buy",
-      "latestTargetPrice": 300000,
-      "latestCurrentPrice": 214500,
-      "latestBasePrice": 214500,
-      "avgUpside": 39.9,
-      "reportCount": 1,
-      "reasonSummary": "1Q26 Pre: 바이오 시황 부담. 하나증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 39.9%입니다. 공시일 종가 대비 목표가 괴리는 39.9%입니다.",
-      "reasonBullets": [
-        "하나증권가 2026-03-23에 Buy 의견과 목표가를 제시했습니다.",
-        "현재가 214,500원 대비 목표가는 300,000원입니다.",
-        "공시일 종가 214,500원 대비 괴리는 39.9%입니다."
-      ],
-      "relatedReports": [
-        {
-          "date": "2026-03-23",
-          "ticker": "097950",
-          "name": "CJ제일제당",
-          "market": "korea",
-          "broker": "하나증권",
-          "analyst": "",
-          "opinion": "Buy",
-          "targetPrice": 300000,
-          "currentPrice": 214500,
-          "basePrice": 214500,
-          "basePriceDate": "2026-03-23",
-          "upside": 39.9,
-          "reportTitle": "1Q26 Pre: 바이오 시황 부담",
-          "reasonSummary": "1Q26 Pre: 바이오 시황 부담. 하나증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 39.9%입니다. 공시일 종가 대비 목표가 괴리는 39.9%입니다.",
-          "reasonBullets": [
-            "하나증권가 2026-03-23에 Buy 의견과 목표가를 제시했습니다.",
-            "현재가 214,500원 대비 목표가는 300,000원입니다.",
-            "공시일 종가 214,500원 대비 괴리는 39.9%입니다."
-          ]
-        }
-      ]
-    },
-    "korea:443060": {
-      "ticker": "443060",
-      "name": "HD현대마린솔루션",
-      "market": "korea",
-      "latestReportDate": "2026-03-23",
-      "latestBroker": "유안타증권",
-      "latestOpinion": "Buy",
-      "latestTargetPrice": 270000,
-      "latestCurrentPrice": 183900,
-      "latestBasePrice": 183900,
-      "avgUpside": 46.8,
-      "reportCount": 1,
-      "reasonSummary": "증익 지속, 2분기중 KKR의 그늘이 걷힌다면. 유안타증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 46.8%입니다. 공시일 종가 대비 목표가 괴리는 46.8%입니다.",
-      "reasonBullets": [
-        "유안타증권가 2026-03-23에 Buy 의견과 목표가를 제시했습니다.",
-        "현재가 183,900원 대비 목표가는 270,000원입니다.",
-        "공시일 종가 183,900원 대비 괴리는 46.8%입니다."
-      ],
-      "relatedReports": [
-        {
-          "date": "2026-03-23",
-          "ticker": "443060",
-          "name": "HD현대마린솔루션",
-          "market": "korea",
-          "broker": "유안타증권",
-          "analyst": "",
-          "opinion": "Buy",
-          "targetPrice": 270000,
-          "currentPrice": 183900,
-          "basePrice": 183900,
-          "basePriceDate": "2026-03-23",
-          "upside": 46.8,
-          "reportTitle": "증익 지속, 2분기중 KKR의 그늘이 걷힌다면",
-          "reasonSummary": "증익 지속, 2분기중 KKR의 그늘이 걷힌다면. 유안타증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 46.8%입니다. 공시일 종가 대비 목표가 괴리는 46.8%입니다.",
-          "reasonBullets": [
-            "유안타증권가 2026-03-23에 Buy 의견과 목표가를 제시했습니다.",
-            "현재가 183,900원 대비 목표가는 270,000원입니다.",
-            "공시일 종가 183,900원 대비 괴리는 46.8%입니다."
           ]
         }
       ]

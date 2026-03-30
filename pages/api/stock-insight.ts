@@ -2,7 +2,7 @@ import type { NextApiRequest, NextApiResponse } from 'next';
 
 import { buildFallbackInsight } from '../../lib/analyst-report-source.mjs';
 import type { MarketType, StockInsightResponse } from '../../lib/analyst-types';
-import { loadAnalystCacheFile } from './analyst-reports';
+import { loadAnalystData } from './analyst-reports';
 
 export default async function handler(
   req: NextApiRequest,
@@ -18,7 +18,7 @@ export default async function handler(
   }
 
   try {
-    const cacheFile = await loadAnalystCacheFile();
+    const cacheFile = await loadAnalystData();
     const insightKey = `${market}:${ticker}`;
     const insight = cacheFile.stockInsights[insightKey];
 

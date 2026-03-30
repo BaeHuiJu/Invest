@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-30T16:07:41.383Z",
+  "generatedAt": "2026-03-30T17:31:35.646Z",
   "maxDays": 30,
   "reports": [
     {
@@ -302,6 +302,29 @@
       ]
     },
     {
+      "date": "2026-03-30",
+      "ticker": "JNJ",
+      "name": "Johnson & Johnson",
+      "market": "us",
+      "broker": "RBC Capital",
+      "analyst": "Shagun Singh",
+      "opinion": "Buy",
+      "targetPrice": 255,
+      "currentPrice": 242.9,
+      "basePrice": 242.8,
+      "basePriceDate": "2026-03-30",
+      "upside": 5,
+      "sourceUrl": "https://stockanalysis.com/stocks/jnj/ratings/",
+      "sourceText": "RBC Capital Buy Reiterates. Price target 255 -> 255.",
+      "reportTitle": "Buy -> Buy Reiterates",
+      "reasonSummary": "Buy -> Buy Reiterates. RBC Capital가 Buy 의견을 제시했고 현재가 기준 상승여력은 5.0%입니다. 공시일 종가 대비 목표가 괴리는 5%입니다.",
+      "reasonBullets": [
+        "RBC Capital가 2026-03-30에 Buy 의견과 목표가를 제시했습니다.",
+        "현재가 $242.9 대비 목표가는 $255입니다.",
+        "공시일 종가 $242.8 대비 괴리는 5%입니다."
+      ]
+    },
+    {
       "date": "2026-03-27",
       "ticker": "009830",
       "name": "한화솔루션",
@@ -540,17 +563,17 @@
       "analyst": "Daniel Ives",
       "opinion": "Buy",
       "targetPrice": 350,
-      "currentPrice": 246.31,
+      "currentPrice": 246.01,
       "basePrice": 248.8,
       "basePriceDate": "2026-03-27",
-      "upside": 42.1,
+      "upside": 42.3,
       "sourceUrl": "https://stockanalysis.com/stocks/aapl/ratings/",
       "sourceText": "Wedbush Buy Reiterates. Price target 350 -> 350.",
       "reportTitle": "Buy -> Buy Reiterates",
-      "reasonSummary": "Buy -> Buy Reiterates. Wedbush가 Buy 의견을 제시했고 현재가 기준 상승여력은 42.1%입니다. 공시일 종가 대비 목표가 괴리는 40.7%입니다.",
+      "reasonSummary": "Buy -> Buy Reiterates. Wedbush가 Buy 의견을 제시했고 현재가 기준 상승여력은 42.3%입니다. 공시일 종가 대비 목표가 괴리는 40.7%입니다.",
       "reasonBullets": [
         "Wedbush가 2026-03-27에 Buy 의견과 목표가를 제시했습니다.",
-        "현재가 $246.31 대비 목표가는 $350입니다.",
+        "현재가 $246.01 대비 목표가는 $350입니다.",
         "공시일 종가 $248.8 대비 괴리는 40.7%입니다."
       ]
     },
@@ -563,17 +586,17 @@
       "analyst": "Ken Gawrelski",
       "opinion": "Buy",
       "targetPrice": 397,
-      "currentPrice": 275.25,
+      "currentPrice": 273.89,
       "basePrice": 274.34,
       "basePriceDate": "2026-03-27",
-      "upside": 44.2,
+      "upside": 44.9,
       "sourceUrl": "https://stockanalysis.com/stocks/googl/ratings/",
       "sourceText": "Wells Fargo Buy Maintains. Price target 387 -> 397.",
       "reportTitle": "Buy -> Buy Maintains",
-      "reasonSummary": "Buy -> Buy Maintains. Wells Fargo가 Buy 의견을 제시했고 현재가 기준 상승여력은 44.2%입니다. 공시일 종가 대비 목표가 괴리는 44.7%입니다.",
+      "reasonSummary": "Buy -> Buy Maintains. Wells Fargo가 Buy 의견을 제시했고 현재가 기준 상승여력은 44.9%입니다. 공시일 종가 대비 목표가 괴리는 44.7%입니다.",
       "reasonBullets": [
         "Wells Fargo가 2026-03-27에 Buy 의견과 목표가를 제시했습니다.",
-        "현재가 $275.25 대비 목표가는 $397입니다.",
+        "현재가 $273.89 대비 목표가는 $397입니다.",
         "공시일 종가 $274.34 대비 괴리는 44.7%입니다."
       ]
     },
@@ -586,17 +609,17 @@
       "analyst": "Laura Martin",
       "opinion": "Strong Buy",
       "targetPrice": 400,
-      "currentPrice": 275.25,
+      "currentPrice": 273.89,
       "basePrice": 274.34,
       "basePriceDate": "2026-03-27",
-      "upside": 45.3,
+      "upside": 46,
       "sourceUrl": "https://stockanalysis.com/stocks/googl/ratings/",
       "sourceText": "Needham Strong Buy Reiterates. Price target 400 -> 400.",
       "reportTitle": "Strong Buy -> Strong Buy Reiterates",
-      "reasonSummary": "Strong Buy -> Strong Buy Reiterates. Needham가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 45.3%입니다. 공시일 종가 대비 목표가 괴리는 45.8%입니다.",
+      "reasonSummary": "Strong Buy -> Strong Buy Reiterates. Needham가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 46.0%입니다. 공시일 종가 대비 목표가 괴리는 45.8%입니다.",
       "reasonBullets": [
         "Needham가 2026-03-27에 Strong Buy 의견과 목표가를 제시했습니다.",
-        "현재가 $275.25 대비 목표가는 $400입니다.",
+        "현재가 $273.89 대비 목표가는 $400입니다.",
         "공시일 종가 $274.34 대비 괴리는 45.8%입니다."
       ]
     },
@@ -609,17 +632,17 @@
       "analyst": "Dan Ives",
       "opinion": "Buy",
       "targetPrice": 600,
-      "currentPrice": 362.96,
+      "currentPrice": 358.09,
       "basePrice": 361.83,
       "basePriceDate": "2026-03-27",
-      "upside": 65.3,
+      "upside": 67.6,
       "sourceUrl": "https://stockanalysis.com/stocks/tsla/ratings/",
       "sourceText": "Wedbush Buy Reiterates. Price target 600 -> 600.",
       "reportTitle": "Buy -> Buy Reiterates",
-      "reasonSummary": "Buy -> Buy Reiterates. Wedbush가 Buy 의견을 제시했고 현재가 기준 상승여력은 65.3%입니다. 공시일 종가 대비 목표가 괴리는 65.8%입니다.",
+      "reasonSummary": "Buy -> Buy Reiterates. Wedbush가 Buy 의견을 제시했고 현재가 기준 상승여력은 67.6%입니다. 공시일 종가 대비 목표가 괴리는 65.8%입니다.",
       "reasonBullets": [
         "Wedbush가 2026-03-27에 Buy 의견과 목표가를 제시했습니다.",
-        "현재가 $362.96 대비 목표가는 $600입니다.",
+        "현재가 $358.09 대비 목표가는 $600입니다.",
         "공시일 종가 $361.83 대비 괴리는 65.8%입니다."
       ]
     },
@@ -1161,17 +1184,17 @@
       "analyst": "Karl Keirstead",
       "opinion": "Strong Buy",
       "targetPrice": 510,
-      "currentPrice": 363.45,
+      "currentPrice": 359.21,
       "basePrice": 371.04,
       "basePriceDate": "2026-03-25",
-      "upside": 40.3,
+      "upside": 42,
       "sourceUrl": "https://stockanalysis.com/stocks/msft/ratings/",
       "sourceText": "UBS Strong Buy Maintains. Price target 600 -> 510.",
       "reportTitle": "Strong Buy -> Strong Buy Maintains",
-      "reasonSummary": "Strong Buy -> Strong Buy Maintains. UBS가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 40.3%입니다. 공시일 종가 대비 목표가 괴리는 37.5%입니다.",
+      "reasonSummary": "Strong Buy -> Strong Buy Maintains. UBS가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 42.0%입니다. 공시일 종가 대비 목표가 괴리는 37.5%입니다.",
       "reasonBullets": [
         "UBS가 2026-03-25에 Strong Buy 의견과 목표가를 제시했습니다.",
-        "현재가 $363.45 대비 목표가는 $510입니다.",
+        "현재가 $359.21 대비 목표가는 $510입니다.",
         "공시일 종가 $371.04 대비 괴리는 37.5%입니다."
       ]
     },
@@ -1184,17 +1207,17 @@
       "analyst": "Ivan Feinseth",
       "opinion": "Strong Buy",
       "targetPrice": 315,
-      "currentPrice": 203.04,
+      "currentPrice": 201.8,
       "basePrice": 211.71,
       "basePriceDate": "2026-03-25",
-      "upside": 55.1,
+      "upside": 56.1,
       "sourceUrl": "https://stockanalysis.com/stocks/amzn/ratings/",
       "sourceText": "Tigress Financial Strong Buy Maintains. Price target 305 -> 315.",
       "reportTitle": "Strong Buy -> Strong Buy Maintains",
-      "reasonSummary": "Strong Buy -> Strong Buy Maintains. Tigress Financial가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 55.1%입니다. 공시일 종가 대비 목표가 괴리는 48.8%입니다.",
+      "reasonSummary": "Strong Buy -> Strong Buy Maintains. Tigress Financial가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 56.1%입니다. 공시일 종가 대비 목표가 괴리는 48.8%입니다.",
       "reasonBullets": [
         "Tigress Financial가 2026-03-25에 Strong Buy 의견과 목표가를 제시했습니다.",
-        "현재가 $203.04 대비 목표가는 $315입니다.",
+        "현재가 $201.8 대비 목표가는 $315입니다.",
         "공시일 종가 $211.71 대비 괴리는 48.8%입니다."
       ]
     },
@@ -1207,17 +1230,17 @@
       "analyst": "Doug Anmuth",
       "opinion": "Buy",
       "targetPrice": 280,
-      "currentPrice": 203.04,
+      "currentPrice": 201.8,
       "basePrice": 211.71,
       "basePriceDate": "2026-03-25",
-      "upside": 37.9,
+      "upside": 38.8,
       "sourceUrl": "https://stockanalysis.com/stocks/amzn/ratings/",
       "sourceText": "JP Morgan Buy Maintains. Price target 265 -> 280.",
       "reportTitle": "Buy -> Buy Maintains",
-      "reasonSummary": "Buy -> Buy Maintains. JP Morgan가 Buy 의견을 제시했고 현재가 기준 상승여력은 37.9%입니다. 공시일 종가 대비 목표가 괴리는 32.3%입니다.",
+      "reasonSummary": "Buy -> Buy Maintains. JP Morgan가 Buy 의견을 제시했고 현재가 기준 상승여력은 38.8%입니다. 공시일 종가 대비 목표가 괴리는 32.3%입니다.",
       "reasonBullets": [
         "JP Morgan가 2026-03-25에 Buy 의견과 목표가를 제시했습니다.",
-        "현재가 $203.04 대비 목표가는 $280입니다.",
+        "현재가 $201.8 대비 목표가는 $280입니다.",
         "공시일 종가 $211.71 대비 괴리는 32.3%입니다."
       ]
     },
@@ -1230,17 +1253,17 @@
       "analyst": "Ronald Josey",
       "opinion": "Strong Buy",
       "targetPrice": 285,
-      "currentPrice": 203.04,
+      "currentPrice": 201.8,
       "basePrice": 211.71,
       "basePriceDate": "2026-03-25",
-      "upside": 40.4,
+      "upside": 41.2,
       "sourceUrl": "https://stockanalysis.com/stocks/amzn/ratings/",
       "sourceText": "Citigroup Strong Buy Maintains. Price target 265 -> 285.",
       "reportTitle": "Strong Buy -> Strong Buy Maintains",
-      "reasonSummary": "Strong Buy -> Strong Buy Maintains. Citigroup가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 40.4%입니다. 공시일 종가 대비 목표가 괴리는 34.6%입니다.",
+      "reasonSummary": "Strong Buy -> Strong Buy Maintains. Citigroup가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 41.2%입니다. 공시일 종가 대비 목표가 괴리는 34.6%입니다.",
       "reasonBullets": [
         "Citigroup가 2026-03-25에 Strong Buy 의견과 목표가를 제시했습니다.",
-        "현재가 $203.04 대비 목표가는 $285입니다.",
+        "현재가 $201.8 대비 목표가는 $285입니다.",
         "공시일 종가 $211.71 대비 괴리는 34.6%입니다."
       ]
     },
@@ -1506,17 +1529,17 @@
       "analyst": "Tal Liani",
       "opinion": "Strong Buy",
       "targetPrice": 500,
-      "currentPrice": 363.45,
+      "currentPrice": 359.21,
       "basePrice": 372.74,
       "basePriceDate": "2026-03-24",
-      "upside": 37.6,
+      "upside": 39.2,
       "sourceUrl": "https://stockanalysis.com/stocks/msft/ratings/",
       "sourceText": "B of A Securities Strong Buy Initiates. Price target N/A -> 500.",
       "reportTitle": "Strong Buy -> Strong Buy Initiates",
-      "reasonSummary": "Strong Buy -> Strong Buy Initiates. B of A Securities가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 37.6%입니다. 공시일 종가 대비 목표가 괴리는 34.1%입니다.",
+      "reasonSummary": "Strong Buy -> Strong Buy Initiates. B of A Securities가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 39.2%입니다. 공시일 종가 대비 목표가 괴리는 34.1%입니다.",
       "reasonBullets": [
         "B of A Securities가 2026-03-24에 Strong Buy 의견과 목표가를 제시했습니다.",
-        "현재가 $363.45 대비 목표가는 $500입니다.",
+        "현재가 $359.21 대비 목표가는 $500입니다.",
         "공시일 종가 $372.74 대비 괴리는 34.1%입니다."
       ]
     },
@@ -1529,17 +1552,17 @@
       "analyst": "Radi Sultan",
       "opinion": "Strong Buy",
       "targetPrice": 60,
-      "currentPrice": 43.96,
+      "currentPrice": 42.76,
       "basePrice": 42.78,
       "basePriceDate": "2026-03-24",
-      "upside": 36.5,
+      "upside": 40.3,
       "sourceUrl": "https://stockanalysis.com/stocks/frog/ratings/",
       "sourceText": "UBS Strong Buy Upgrades. Price target N/A -> 60.",
       "reportTitle": "Hold -> Strong Buy Upgrades",
-      "reasonSummary": "Hold -> Strong Buy Upgrades. UBS가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 36.5%입니다. 공시일 종가 대비 목표가 괴리는 40.3%입니다.",
+      "reasonSummary": "Hold -> Strong Buy Upgrades. UBS가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 40.3%입니다. 공시일 종가 대비 목표가 괴리는 40.3%입니다.",
       "reasonBullets": [
         "UBS가 2026-03-24에 Strong Buy 의견과 목표가를 제시했습니다.",
-        "현재가 $43.96 대비 목표가는 $60입니다.",
+        "현재가 $42.76 대비 목표가는 $60입니다.",
         "공시일 종가 $42.78 대비 괴리는 40.3%입니다."
       ]
     },
@@ -1552,17 +1575,17 @@
       "analyst": "Erik Woodring",
       "opinion": "Buy",
       "targetPrice": 315,
-      "currentPrice": 246.31,
+      "currentPrice": 246.01,
       "basePrice": 251.49,
       "basePriceDate": "2026-03-23",
-      "upside": 27.9,
+      "upside": 28,
       "sourceUrl": "https://stockanalysis.com/stocks/aapl/ratings/",
       "sourceText": "Morgan Stanley Buy Reiterates. Price target 315 -> 315.",
       "reportTitle": "Buy -> Buy Reiterates",
-      "reasonSummary": "Buy -> Buy Reiterates. Morgan Stanley가 Buy 의견을 제시했고 현재가 기준 상승여력은 27.9%입니다. 공시일 종가 대비 목표가 괴리는 25.3%입니다.",
+      "reasonSummary": "Buy -> Buy Reiterates. Morgan Stanley가 Buy 의견을 제시했고 현재가 기준 상승여력은 28.0%입니다. 공시일 종가 대비 목표가 괴리는 25.3%입니다.",
       "reasonBullets": [
         "Morgan Stanley가 2026-03-23에 Buy 의견과 목표가를 제시했습니다.",
-        "현재가 $246.31 대비 목표가는 $315입니다.",
+        "현재가 $246.01 대비 목표가는 $315입니다.",
         "공시일 종가 $251.49 대비 괴리는 25.3%입니다."
       ]
     },
@@ -1575,17 +1598,17 @@
       "analyst": "Wamsi Mohan",
       "opinion": "Strong Buy",
       "targetPrice": 320,
-      "currentPrice": 246.31,
+      "currentPrice": 246.01,
       "basePrice": 251.49,
       "basePriceDate": "2026-03-23",
-      "upside": 29.9,
+      "upside": 30.1,
       "sourceUrl": "https://stockanalysis.com/stocks/aapl/ratings/",
       "sourceText": "B of A Securities Strong Buy Maintains. Price target 325 -> 320.",
       "reportTitle": "Strong Buy -> Strong Buy Maintains",
-      "reasonSummary": "Strong Buy -> Strong Buy Maintains. B of A Securities가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 29.9%입니다. 공시일 종가 대비 목표가 괴리는 27.2%입니다.",
+      "reasonSummary": "Strong Buy -> Strong Buy Maintains. B of A Securities가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 30.1%입니다. 공시일 종가 대비 목표가 괴리는 27.2%입니다.",
       "reasonBullets": [
         "B of A Securities가 2026-03-23에 Strong Buy 의견과 목표가를 제시했습니다.",
-        "현재가 $246.31 대비 목표가는 $320입니다.",
+        "현재가 $246.01 대비 목표가는 $320입니다.",
         "공시일 종가 $251.49 대비 괴리는 27.2%입니다."
       ]
     },
@@ -1598,17 +1621,17 @@
       "analyst": "John Blackledge",
       "opinion": "Strong Buy",
       "targetPrice": 300,
-      "currentPrice": 203.04,
+      "currentPrice": 201.8,
       "basePrice": 210.14,
       "basePriceDate": "2026-03-23",
-      "upside": 47.8,
+      "upside": 48.7,
       "sourceUrl": "https://stockanalysis.com/stocks/amzn/ratings/",
       "sourceText": "TD Cowen Strong Buy Reiterates. Price target 300 -> 300.",
       "reportTitle": "Strong Buy -> Strong Buy Reiterates",
-      "reasonSummary": "Strong Buy -> Strong Buy Reiterates. TD Cowen가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 47.8%입니다. 공시일 종가 대비 목표가 괴리는 42.8%입니다.",
+      "reasonSummary": "Strong Buy -> Strong Buy Reiterates. TD Cowen가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 48.7%입니다. 공시일 종가 대비 목표가 괴리는 42.8%입니다.",
       "reasonBullets": [
         "TD Cowen가 2026-03-23에 Strong Buy 의견과 목표가를 제시했습니다.",
-        "현재가 $203.04 대비 목표가는 $300입니다.",
+        "현재가 $201.8 대비 목표가는 $300입니다.",
         "공시일 종가 $210.14 대비 괴리는 42.8%입니다."
       ]
     },
@@ -1621,17 +1644,17 @@
       "analyst": "Kevin Cassidy",
       "opinion": "Strong Buy",
       "targetPrice": 325,
-      "currentPrice": 167.03,
+      "currentPrice": 165.84,
       "basePrice": 175.64,
       "basePriceDate": "2026-03-23",
-      "upside": 94.6,
+      "upside": 96,
       "sourceUrl": "https://stockanalysis.com/stocks/nvda/ratings/",
       "sourceText": "Rosenblatt Strong Buy Maintains. Price target 325 -> 325.",
       "reportTitle": "Strong Buy -> Strong Buy Maintains",
-      "reasonSummary": "Strong Buy -> Strong Buy Maintains. Rosenblatt가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 94.6%입니다. 공시일 종가 대비 목표가 괴리는 85%입니다.",
+      "reasonSummary": "Strong Buy -> Strong Buy Maintains. Rosenblatt가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 96.0%입니다. 공시일 종가 대비 목표가 괴리는 85%입니다.",
       "reasonBullets": [
         "Rosenblatt가 2026-03-23에 Strong Buy 의견과 목표가를 제시했습니다.",
-        "현재가 $167.03 대비 목표가는 $325입니다.",
+        "현재가 $165.84 대비 목표가는 $325입니다.",
         "공시일 종가 $175.64 대비 괴리는 85%입니다."
       ]
     },
@@ -1644,17 +1667,17 @@
       "analyst": "C.J. Muse",
       "opinion": "Buy",
       "targetPrice": 300,
-      "currentPrice": 167.03,
+      "currentPrice": 165.84,
       "basePrice": 175.64,
       "basePriceDate": "2026-03-23",
-      "upside": 79.6,
+      "upside": 80.9,
       "sourceUrl": "https://stockanalysis.com/stocks/nvda/ratings/",
       "sourceText": "Cantor Fitzgerald Buy Reiterates. Price target 300 -> 300.",
       "reportTitle": "Buy -> Buy Reiterates",
-      "reasonSummary": "Buy -> Buy Reiterates. Cantor Fitzgerald가 Buy 의견을 제시했고 현재가 기준 상승여력은 79.6%입니다. 공시일 종가 대비 목표가 괴리는 70.8%입니다.",
+      "reasonSummary": "Buy -> Buy Reiterates. Cantor Fitzgerald가 Buy 의견을 제시했고 현재가 기준 상승여력은 80.9%입니다. 공시일 종가 대비 목표가 괴리는 70.8%입니다.",
       "reasonBullets": [
         "Cantor Fitzgerald가 2026-03-23에 Buy 의견과 목표가를 제시했습니다.",
-        "현재가 $167.03 대비 목표가는 $300입니다.",
+        "현재가 $165.84 대비 목표가는 $300입니다.",
         "공시일 종가 $175.64 대비 괴리는 70.8%입니다."
       ]
     },
@@ -1667,17 +1690,17 @@
       "analyst": "Srini Pajjuri",
       "opinion": "Strong Buy",
       "targetPrice": 323,
-      "currentPrice": 167.03,
+      "currentPrice": 165.84,
       "basePrice": 178.56,
       "basePriceDate": "2026-03-19",
-      "upside": 93.4,
+      "upside": 94.8,
       "sourceUrl": "https://stockanalysis.com/stocks/nvda/ratings/",
       "sourceText": "Raymond James Strong Buy Maintains. Price target 291 -> 323.",
       "reportTitle": "Strong Buy -> Strong Buy Maintains",
-      "reasonSummary": "Strong Buy -> Strong Buy Maintains. Raymond James가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 93.4%입니다. 공시일 종가 대비 목표가 괴리는 80.9%입니다.",
+      "reasonSummary": "Strong Buy -> Strong Buy Maintains. Raymond James가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 94.8%입니다. 공시일 종가 대비 목표가 괴리는 80.9%입니다.",
       "reasonBullets": [
         "Raymond James가 2026-03-19에 Strong Buy 의견과 목표가를 제시했습니다.",
-        "현재가 $167.03 대비 목표가는 $323입니다.",
+        "현재가 $165.84 대비 목표가는 $323입니다.",
         "공시일 종가 $178.56 대비 괴리는 80.9%입니다."
       ]
     },
@@ -1690,17 +1713,17 @@
       "analyst": "William Stein",
       "opinion": "Strong Buy",
       "targetPrice": 287,
-      "currentPrice": 167.03,
+      "currentPrice": 165.84,
       "basePrice": 180.4,
       "basePriceDate": "2026-03-18",
-      "upside": 71.8,
+      "upside": 73.1,
       "sourceUrl": "https://stockanalysis.com/stocks/nvda/ratings/",
       "sourceText": "Truist Securities Strong Buy Maintains. Price target 283 -> 287.",
       "reportTitle": "Strong Buy -> Strong Buy Maintains",
-      "reasonSummary": "Strong Buy -> Strong Buy Maintains. Truist Securities가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 71.8%입니다. 공시일 종가 대비 목표가 괴리는 59.1%입니다.",
+      "reasonSummary": "Strong Buy -> Strong Buy Maintains. Truist Securities가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 73.1%입니다. 공시일 종가 대비 목표가 괴리는 59.1%입니다.",
       "reasonBullets": [
         "Truist Securities가 2026-03-18에 Strong Buy 의견과 목표가를 제시했습니다.",
-        "현재가 $167.03 대비 목표가는 $287입니다.",
+        "현재가 $165.84 대비 목표가는 $287입니다.",
         "공시일 종가 $180.4 대비 괴리는 59.1%입니다."
       ]
     },
@@ -1713,17 +1736,17 @@
       "analyst": "N. Quinn Bolton",
       "opinion": "Strong Buy",
       "targetPrice": 240,
-      "currentPrice": 167.03,
+      "currentPrice": 165.84,
       "basePrice": 180.4,
       "basePriceDate": "2026-03-18",
-      "upside": 43.7,
+      "upside": 44.7,
       "sourceUrl": "https://stockanalysis.com/stocks/nvda/ratings/",
       "sourceText": "Needham Strong Buy Reiterates. Price target 240 -> 240.",
       "reportTitle": "Strong Buy -> Strong Buy Reiterates",
-      "reasonSummary": "Strong Buy -> Strong Buy Reiterates. Needham가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 43.7%입니다. 공시일 종가 대비 목표가 괴리는 33%입니다.",
+      "reasonSummary": "Strong Buy -> Strong Buy Reiterates. Needham가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 44.7%입니다. 공시일 종가 대비 목표가 괴리는 33%입니다.",
       "reasonBullets": [
         "Needham가 2026-03-18에 Strong Buy 의견과 목표가를 제시했습니다.",
-        "현재가 $167.03 대비 목표가는 $240입니다.",
+        "현재가 $165.84 대비 목표가는 $240입니다.",
         "공시일 종가 $180.4 대비 괴리는 33%입니다."
       ]
     },
@@ -1736,17 +1759,17 @@
       "analyst": "Ivan Feinseth",
       "opinion": "Strong Buy",
       "targetPrice": 945,
-      "currentPrice": 537.06,
+      "currentPrice": 535.56,
       "basePrice": 615.68,
       "basePriceDate": "2026-03-18",
-      "upside": 76,
+      "upside": 76.5,
       "sourceUrl": "https://stockanalysis.com/stocks/meta/ratings/",
       "sourceText": "Tigress Financial Strong Buy Maintains. Price target 935 -> 945.",
       "reportTitle": "Strong Buy -> Strong Buy Maintains",
-      "reasonSummary": "Strong Buy -> Strong Buy Maintains. Tigress Financial가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 76.0%입니다. 공시일 종가 대비 목표가 괴리는 53.5%입니다.",
+      "reasonSummary": "Strong Buy -> Strong Buy Maintains. Tigress Financial가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 76.5%입니다. 공시일 종가 대비 목표가 괴리는 53.5%입니다.",
       "reasonBullets": [
         "Tigress Financial가 2026-03-18에 Strong Buy 의견과 목표가를 제시했습니다.",
-        "현재가 $537.06 대비 목표가는 $945입니다.",
+        "현재가 $535.56 대비 목표가는 $945입니다.",
         "공시일 종가 $615.68 대비 괴리는 53.5%입니다."
       ]
     },
@@ -1759,17 +1782,17 @@
       "analyst": "Laura Martin",
       "opinion": "Strong Buy",
       "targetPrice": 265,
-      "currentPrice": 203.04,
+      "currentPrice": 201.8,
       "basePrice": 215.2,
       "basePriceDate": "2026-03-17",
-      "upside": 30.5,
+      "upside": 31.3,
       "sourceUrl": "https://stockanalysis.com/stocks/amzn/ratings/",
       "sourceText": "Needham Strong Buy Reiterates. Price target 265 -> 265.",
       "reportTitle": "Strong Buy -> Strong Buy Reiterates",
-      "reasonSummary": "Strong Buy -> Strong Buy Reiterates. Needham가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 30.5%입니다. 공시일 종가 대비 목표가 괴리는 23.1%입니다.",
+      "reasonSummary": "Strong Buy -> Strong Buy Reiterates. Needham가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 31.3%입니다. 공시일 종가 대비 목표가 괴리는 23.1%입니다.",
       "reasonBullets": [
         "Needham가 2026-03-17에 Strong Buy 의견과 목표가를 제시했습니다.",
-        "현재가 $203.04 대비 목표가는 $265입니다.",
+        "현재가 $201.8 대비 목표가는 $265입니다.",
         "공시일 종가 $215.2 대비 괴리는 23.1%입니다."
       ]
     },
@@ -1782,17 +1805,17 @@
       "analyst": "Joshua Buchalter",
       "opinion": "Strong Buy",
       "targetPrice": 235,
-      "currentPrice": 167.03,
+      "currentPrice": 165.84,
       "basePrice": 181.93,
       "basePriceDate": "2026-03-17",
-      "upside": 40.7,
+      "upside": 41.7,
       "sourceUrl": "https://stockanalysis.com/stocks/nvda/ratings/",
       "sourceText": "TD Cowen Strong Buy Reiterates. Price target 235 -> 235.",
       "reportTitle": "Strong Buy -> Strong Buy Reiterates",
-      "reasonSummary": "Strong Buy -> Strong Buy Reiterates. TD Cowen가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 40.7%입니다. 공시일 종가 대비 목표가 괴리는 29.2%입니다.",
+      "reasonSummary": "Strong Buy -> Strong Buy Reiterates. TD Cowen가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 41.7%입니다. 공시일 종가 대비 목표가 괴리는 29.2%입니다.",
       "reasonBullets": [
         "TD Cowen가 2026-03-17에 Strong Buy 의견과 목표가를 제시했습니다.",
-        "현재가 $167.03 대비 목표가는 $235입니다.",
+        "현재가 $165.84 대비 목표가는 $235입니다.",
         "공시일 종가 $181.93 대비 괴리는 29.2%입니다."
       ]
     },
@@ -1805,17 +1828,17 @@
       "analyst": "Srini Pajjuri",
       "opinion": "Buy",
       "targetPrice": 250,
-      "currentPrice": 167.03,
+      "currentPrice": 165.84,
       "basePrice": 181.93,
       "basePriceDate": "2026-03-17",
-      "upside": 49.7,
+      "upside": 50.7,
       "sourceUrl": "https://stockanalysis.com/stocks/nvda/ratings/",
       "sourceText": "RBC Capital Buy Reiterates. Price target 250 -> 250.",
       "reportTitle": "Buy -> Buy Reiterates",
-      "reasonSummary": "Buy -> Buy Reiterates. RBC Capital가 Buy 의견을 제시했고 현재가 기준 상승여력은 49.7%입니다. 공시일 종가 대비 목표가 괴리는 37.4%입니다.",
+      "reasonSummary": "Buy -> Buy Reiterates. RBC Capital가 Buy 의견을 제시했고 현재가 기준 상승여력은 50.7%입니다. 공시일 종가 대비 목표가 괴리는 37.4%입니다.",
       "reasonBullets": [
         "RBC Capital가 2026-03-17에 Buy 의견과 목표가를 제시했습니다.",
-        "현재가 $167.03 대비 목표가는 $250입니다.",
+        "현재가 $165.84 대비 목표가는 $250입니다.",
         "공시일 종가 $181.93 대비 괴리는 37.4%입니다."
       ]
     },
@@ -1828,17 +1851,17 @@
       "analyst": "John Vinh",
       "opinion": "Buy",
       "targetPrice": 275,
-      "currentPrice": 167.03,
+      "currentPrice": 165.84,
       "basePrice": 181.93,
       "basePriceDate": "2026-03-17",
-      "upside": 64.6,
+      "upside": 65.8,
       "sourceUrl": "https://stockanalysis.com/stocks/nvda/ratings/",
       "sourceText": "Keybanc Buy Reiterates. Price target 275 -> 275.",
       "reportTitle": "Buy -> Buy Reiterates",
-      "reasonSummary": "Buy -> Buy Reiterates. Keybanc가 Buy 의견을 제시했고 현재가 기준 상승여력은 64.6%입니다. 공시일 종가 대비 목표가 괴리는 51.2%입니다.",
+      "reasonSummary": "Buy -> Buy Reiterates. Keybanc가 Buy 의견을 제시했고 현재가 기준 상승여력은 65.8%입니다. 공시일 종가 대비 목표가 괴리는 51.2%입니다.",
       "reasonBullets": [
         "Keybanc가 2026-03-17에 Buy 의견과 목표가를 제시했습니다.",
-        "현재가 $167.03 대비 목표가는 $275입니다.",
+        "현재가 $165.84 대비 목표가는 $275입니다.",
         "공시일 종가 $181.93 대비 괴리는 51.2%입니다."
       ]
     },
@@ -1851,17 +1874,17 @@
       "analyst": "Cody Acree",
       "opinion": "Strong Buy",
       "targetPrice": 250,
-      "currentPrice": 167.03,
+      "currentPrice": 165.84,
       "basePrice": 181.93,
       "basePriceDate": "2026-03-17",
-      "upside": 49.7,
+      "upside": 50.7,
       "sourceUrl": "https://stockanalysis.com/stocks/nvda/ratings/",
       "sourceText": "Benchmark Strong Buy Reiterates. Price target 250 -> 250.",
       "reportTitle": "Strong Buy -> Strong Buy Reiterates",
-      "reasonSummary": "Strong Buy -> Strong Buy Reiterates. Benchmark가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 49.7%입니다. 공시일 종가 대비 목표가 괴리는 37.4%입니다.",
+      "reasonSummary": "Strong Buy -> Strong Buy Reiterates. Benchmark가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 50.7%입니다. 공시일 종가 대비 목표가 괴리는 37.4%입니다.",
       "reasonBullets": [
         "Benchmark가 2026-03-17에 Strong Buy 의견과 목표가를 제시했습니다.",
-        "현재가 $167.03 대비 목표가는 $250입니다.",
+        "현재가 $165.84 대비 목표가는 $250입니다.",
         "공시일 종가 $181.93 대비 괴리는 37.4%입니다."
       ]
     },
@@ -1874,17 +1897,17 @@
       "analyst": "Morten Herholdt",
       "opinion": "Strong Buy",
       "targetPrice": 280,
-      "currentPrice": 241.94,
+      "currentPrice": 242.9,
       "basePrice": 238.11,
       "basePriceDate": "2026-03-17",
-      "upside": 15.7,
+      "upside": 15.3,
       "sourceUrl": "https://stockanalysis.com/stocks/jnj/ratings/",
       "sourceText": "HSBC Strong Buy Maintains. Price target 265 -> 280.",
       "reportTitle": "Strong Buy -> Strong Buy Maintains",
-      "reasonSummary": "Strong Buy -> Strong Buy Maintains. HSBC가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 15.7%입니다. 공시일 종가 대비 목표가 괴리는 17.6%입니다.",
+      "reasonSummary": "Strong Buy -> Strong Buy Maintains. HSBC가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 15.3%입니다. 공시일 종가 대비 목표가 괴리는 17.6%입니다.",
       "reasonBullets": [
         "HSBC가 2026-03-17에 Strong Buy 의견과 목표가를 제시했습니다.",
-        "현재가 $241.94 대비 목표가는 $280입니다.",
+        "현재가 $242.9 대비 목표가는 $280입니다.",
         "공시일 종가 $238.11 대비 괴리는 17.6%입니다."
       ]
     },
@@ -1897,17 +1920,17 @@
       "analyst": "Howard Ma",
       "opinion": "Strong Buy",
       "targetPrice": 60,
-      "currentPrice": 43.96,
+      "currentPrice": 42.76,
       "basePrice": 43.09,
       "basePriceDate": "2026-03-16",
-      "upside": 36.5,
+      "upside": 40.3,
       "sourceUrl": "https://stockanalysis.com/stocks/frog/ratings/",
       "sourceText": "Guggenheim Strong Buy Initiates. Price target N/A -> 60.",
       "reportTitle": "Strong Buy Initiates",
-      "reasonSummary": "Strong Buy Initiates. Guggenheim가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 36.5%입니다. 공시일 종가 대비 목표가 괴리는 39.2%입니다.",
+      "reasonSummary": "Strong Buy Initiates. Guggenheim가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 40.3%입니다. 공시일 종가 대비 목표가 괴리는 39.2%입니다.",
       "reasonBullets": [
         "Guggenheim가 2026-03-16에 Strong Buy 의견과 목표가를 제시했습니다.",
-        "현재가 $43.96 대비 목표가는 $60입니다.",
+        "현재가 $42.76 대비 목표가는 $60입니다.",
         "공시일 종가 $43.09 대비 괴리는 39.2%입니다."
       ]
     },
@@ -1920,17 +1943,17 @@
       "analyst": "Ryan Todd",
       "opinion": "Buy",
       "targetPrice": 186,
-      "currentPrice": 174.1,
+      "currentPrice": 172.81,
       "basePrice": 153.53,
       "basePriceDate": "2026-03-12",
-      "upside": 6.8,
+      "upside": 7.6,
       "sourceUrl": "https://stockanalysis.com/stocks/xom/ratings/",
       "sourceText": "Piper Sandler Buy Maintains. Price target 145 -> 186.",
       "reportTitle": "Buy -> Buy Maintains",
-      "reasonSummary": "Buy -> Buy Maintains. Piper Sandler가 Buy 의견을 제시했고 현재가 기준 상승여력은 6.8%입니다. 공시일 종가 대비 목표가 괴리는 21.1%입니다.",
+      "reasonSummary": "Buy -> Buy Maintains. Piper Sandler가 Buy 의견을 제시했고 현재가 기준 상승여력은 7.6%입니다. 공시일 종가 대비 목표가 괴리는 21.1%입니다.",
       "reasonBullets": [
         "Piper Sandler가 2026-03-12에 Buy 의견과 목표가를 제시했습니다.",
-        "현재가 $174.1 대비 목표가는 $186입니다.",
+        "현재가 $172.81 대비 목표가는 $186입니다.",
         "공시일 종가 $153.53 대비 괴리는 21.1%입니다."
       ]
     },
@@ -1943,17 +1966,17 @@
       "analyst": "Joanne Wuensch",
       "opinion": "Strong Buy",
       "targetPrice": 274,
-      "currentPrice": 241.94,
+      "currentPrice": 242.9,
       "basePrice": 242.99,
       "basePriceDate": "2026-03-11",
-      "upside": 13.3,
+      "upside": 12.8,
       "sourceUrl": "https://stockanalysis.com/stocks/jnj/ratings/",
       "sourceText": "Citigroup Strong Buy Maintains. Price target 250 -> 274.",
       "reportTitle": "Strong Buy -> Strong Buy Maintains",
-      "reasonSummary": "Strong Buy -> Strong Buy Maintains. Citigroup가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 13.3%입니다. 공시일 종가 대비 목표가 괴리는 12.8%입니다.",
+      "reasonSummary": "Strong Buy -> Strong Buy Maintains. Citigroup가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 12.8%입니다. 공시일 종가 대비 목표가 괴리는 12.8%입니다.",
       "reasonBullets": [
         "Citigroup가 2026-03-11에 Strong Buy 의견과 목표가를 제시했습니다.",
-        "현재가 $241.94 대비 목표가는 $274입니다.",
+        "현재가 $242.9 대비 목표가는 $274입니다.",
         "공시일 종가 $242.99 대비 괴리는 12.8%입니다."
       ]
     },
@@ -1966,17 +1989,17 @@
       "analyst": "Ivan Feinseth",
       "opinion": "Strong Buy",
       "targetPrice": 360,
-      "currentPrice": 167.03,
+      "currentPrice": 165.84,
       "basePrice": 183.34,
       "basePriceDate": "2026-03-05",
-      "upside": 115.5,
+      "upside": 117.1,
       "sourceUrl": "https://stockanalysis.com/stocks/nvda/ratings/",
       "sourceText": "Tigress Financial Strong Buy Maintains. Price target 350 -> 360.",
       "reportTitle": "Strong Buy -> Strong Buy Maintains",
-      "reasonSummary": "Strong Buy -> Strong Buy Maintains. Tigress Financial가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 115.5%입니다. 공시일 종가 대비 목표가 괴리는 96.4%입니다.",
+      "reasonSummary": "Strong Buy -> Strong Buy Maintains. Tigress Financial가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 117.1%입니다. 공시일 종가 대비 목표가 괴리는 96.4%입니다.",
       "reasonBullets": [
         "Tigress Financial가 2026-03-05에 Strong Buy 의견과 목표가를 제시했습니다.",
-        "현재가 $167.03 대비 목표가는 $360입니다.",
+        "현재가 $165.84 대비 목표가는 $360입니다.",
         "공시일 종가 $183.34 대비 괴리는 96.4%입니다."
       ]
     },
@@ -1989,17 +2012,17 @@
       "analyst": "Matt Bryson",
       "opinion": "Buy",
       "targetPrice": 300,
-      "currentPrice": 167.03,
+      "currentPrice": 165.84,
       "basePrice": 180.05,
       "basePriceDate": "2026-03-03",
-      "upside": 79.6,
+      "upside": 80.9,
       "sourceUrl": "https://stockanalysis.com/stocks/nvda/ratings/",
       "sourceText": "Wedbush Buy Maintains. Price target 230 -> 300.",
       "reportTitle": "Buy -> Buy Maintains",
-      "reasonSummary": "Buy -> Buy Maintains. Wedbush가 Buy 의견을 제시했고 현재가 기준 상승여력은 79.6%입니다. 공시일 종가 대비 목표가 괴리는 66.6%입니다.",
+      "reasonSummary": "Buy -> Buy Maintains. Wedbush가 Buy 의견을 제시했고 현재가 기준 상승여력은 80.9%입니다. 공시일 종가 대비 목표가 괴리는 66.6%입니다.",
       "reasonBullets": [
         "Wedbush가 2026-03-03에 Buy 의견과 목표가를 제시했습니다.",
-        "현재가 $167.03 대비 목표가는 $300입니다.",
+        "현재가 $165.84 대비 목표가는 $300입니다.",
         "공시일 종가 $180.05 대비 괴리는 66.6%입니다."
       ]
     }
@@ -2997,6 +3020,129 @@
         }
       ]
     },
+    "us:JNJ": {
+      "ticker": "JNJ",
+      "name": "Johnson & Johnson",
+      "market": "us",
+      "latestReportDate": "2026-03-30",
+      "latestBroker": "RBC Capital",
+      "latestOpinion": "Buy",
+      "latestTargetPrice": 255,
+      "latestCurrentPrice": 242.9,
+      "latestBasePrice": 242.8,
+      "avgUpside": 11,
+      "reportCount": 3,
+      "reasonSummary": "Buy -> Buy Reiterates. RBC Capital가 Buy 의견을 제시했고 현재가 기준 상승여력은 5.0%입니다. 공시일 종가 대비 목표가 괴리는 5%입니다.",
+      "reasonBullets": [
+        "RBC Capital가 2026-03-30에 Buy 의견과 목표가를 제시했습니다.",
+        "현재가 $242.9 대비 목표가는 $255입니다.",
+        "공시일 종가 $242.8 대비 괴리는 5%입니다."
+      ],
+      "investmentLogic": {
+        "summary": "Buy -> Buy Reiterates",
+        "bullets": [
+          "Buy -> Buy Reiterates",
+          "Buy -> Buy Reiterates RBC Capital Buy Reiterates.",
+          "Price target 255 -> 255."
+        ]
+      },
+      "estimateRevision": {
+        "summary": "유지 신호입니다. 리포트 원문에서 추정치 관련 표현을 기준으로 판단했습니다.",
+        "bullets": [
+          "Buy -> Buy Reiterates RBC Capital Buy Reiterates.",
+          "Price target 255 -> 255.",
+          "Buy -> Buy Reiterates."
+        ],
+        "signal": "flat"
+      },
+      "valuation": {
+        "summary": "현재가 $242.9 대비 목표가 $255가 제시돼 밸류에이션 여력을 확인할 수 있습니다.",
+        "bullets": [
+          "Buy -> Buy Reiterates RBC Capital Buy Reiterates.",
+          "Price target 255 -> 255.",
+          "Buy -> Buy Reiterates."
+        ]
+      },
+      "sectorCycle": {
+        "summary": "Buy -> Buy Reiterates RBC Capital Buy Reiterates.",
+        "bullets": [
+          "Buy -> Buy Reiterates RBC Capital Buy Reiterates.",
+          "Price target 255 -> 255.",
+          "Buy -> Buy Reiterates."
+        ]
+      },
+      "relatedReports": [
+        {
+          "date": "2026-03-30",
+          "ticker": "JNJ",
+          "name": "Johnson & Johnson",
+          "market": "us",
+          "broker": "RBC Capital",
+          "analyst": "Shagun Singh",
+          "opinion": "Buy",
+          "targetPrice": 255,
+          "currentPrice": 242.9,
+          "basePrice": 242.8,
+          "basePriceDate": "2026-03-30",
+          "upside": 5,
+          "sourceUrl": "https://stockanalysis.com/stocks/jnj/ratings/",
+          "sourceText": "RBC Capital Buy Reiterates. Price target 255 -> 255.",
+          "reportTitle": "Buy -> Buy Reiterates",
+          "reasonSummary": "Buy -> Buy Reiterates. RBC Capital가 Buy 의견을 제시했고 현재가 기준 상승여력은 5.0%입니다. 공시일 종가 대비 목표가 괴리는 5%입니다.",
+          "reasonBullets": [
+            "RBC Capital가 2026-03-30에 Buy 의견과 목표가를 제시했습니다.",
+            "현재가 $242.9 대비 목표가는 $255입니다.",
+            "공시일 종가 $242.8 대비 괴리는 5%입니다."
+          ]
+        },
+        {
+          "date": "2026-03-17",
+          "ticker": "JNJ",
+          "name": "Johnson & Johnson",
+          "market": "us",
+          "broker": "HSBC",
+          "analyst": "Morten Herholdt",
+          "opinion": "Strong Buy",
+          "targetPrice": 280,
+          "currentPrice": 242.9,
+          "basePrice": 238.11,
+          "basePriceDate": "2026-03-17",
+          "upside": 15.3,
+          "sourceUrl": "https://stockanalysis.com/stocks/jnj/ratings/",
+          "sourceText": "HSBC Strong Buy Maintains. Price target 265 -> 280.",
+          "reportTitle": "Strong Buy -> Strong Buy Maintains",
+          "reasonSummary": "Strong Buy -> Strong Buy Maintains. HSBC가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 15.3%입니다. 공시일 종가 대비 목표가 괴리는 17.6%입니다.",
+          "reasonBullets": [
+            "HSBC가 2026-03-17에 Strong Buy 의견과 목표가를 제시했습니다.",
+            "현재가 $242.9 대비 목표가는 $280입니다.",
+            "공시일 종가 $238.11 대비 괴리는 17.6%입니다."
+          ]
+        },
+        {
+          "date": "2026-03-11",
+          "ticker": "JNJ",
+          "name": "Johnson & Johnson",
+          "market": "us",
+          "broker": "Citigroup",
+          "analyst": "Joanne Wuensch",
+          "opinion": "Strong Buy",
+          "targetPrice": 274,
+          "currentPrice": 242.9,
+          "basePrice": 242.99,
+          "basePriceDate": "2026-03-11",
+          "upside": 12.8,
+          "sourceUrl": "https://stockanalysis.com/stocks/jnj/ratings/",
+          "sourceText": "Citigroup Strong Buy Maintains. Price target 250 -> 274.",
+          "reportTitle": "Strong Buy -> Strong Buy Maintains",
+          "reasonSummary": "Strong Buy -> Strong Buy Maintains. Citigroup가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 12.8%입니다. 공시일 종가 대비 목표가 괴리는 12.8%입니다.",
+          "reasonBullets": [
+            "Citigroup가 2026-03-11에 Strong Buy 의견과 목표가를 제시했습니다.",
+            "현재가 $242.9 대비 목표가는 $274입니다.",
+            "공시일 종가 $242.99 대비 괴리는 12.8%입니다."
+          ]
+        }
+      ]
+    },
     "korea:009830": {
       "ticker": "009830",
       "name": "한화솔루션",
@@ -3733,14 +3879,14 @@
       "latestBroker": "Wedbush",
       "latestOpinion": "Buy",
       "latestTargetPrice": 350,
-      "latestCurrentPrice": 246.31,
+      "latestCurrentPrice": 246.01,
       "latestBasePrice": 248.8,
-      "avgUpside": 33.3,
+      "avgUpside": 33.5,
       "reportCount": 3,
-      "reasonSummary": "Buy -> Buy Reiterates. Wedbush가 Buy 의견을 제시했고 현재가 기준 상승여력은 42.1%입니다. 공시일 종가 대비 목표가 괴리는 40.7%입니다.",
+      "reasonSummary": "Buy -> Buy Reiterates. Wedbush가 Buy 의견을 제시했고 현재가 기준 상승여력은 42.3%입니다. 공시일 종가 대비 목표가 괴리는 40.7%입니다.",
       "reasonBullets": [
         "Wedbush가 2026-03-27에 Buy 의견과 목표가를 제시했습니다.",
-        "현재가 $246.31 대비 목표가는 $350입니다.",
+        "현재가 $246.01 대비 목표가는 $350입니다.",
         "공시일 종가 $248.8 대비 괴리는 40.7%입니다."
       ],
       "investmentLogic": {
@@ -3761,7 +3907,7 @@
         "signal": "flat"
       },
       "valuation": {
-        "summary": "현재가 $246.31 대비 목표가 $350가 제시돼 밸류에이션 여력을 확인할 수 있습니다.",
+        "summary": "현재가 $246.01 대비 목표가 $350가 제시돼 밸류에이션 여력을 확인할 수 있습니다.",
         "bullets": [
           "Buy -> Buy Reiterates Wedbush Buy Reiterates.",
           "Price target 350 -> 350.",
@@ -3786,17 +3932,17 @@
           "analyst": "Daniel Ives",
           "opinion": "Buy",
           "targetPrice": 350,
-          "currentPrice": 246.31,
+          "currentPrice": 246.01,
           "basePrice": 248.8,
           "basePriceDate": "2026-03-27",
-          "upside": 42.1,
+          "upside": 42.3,
           "sourceUrl": "https://stockanalysis.com/stocks/aapl/ratings/",
           "sourceText": "Wedbush Buy Reiterates. Price target 350 -> 350.",
           "reportTitle": "Buy -> Buy Reiterates",
-          "reasonSummary": "Buy -> Buy Reiterates. Wedbush가 Buy 의견을 제시했고 현재가 기준 상승여력은 42.1%입니다. 공시일 종가 대비 목표가 괴리는 40.7%입니다.",
+          "reasonSummary": "Buy -> Buy Reiterates. Wedbush가 Buy 의견을 제시했고 현재가 기준 상승여력은 42.3%입니다. 공시일 종가 대비 목표가 괴리는 40.7%입니다.",
           "reasonBullets": [
             "Wedbush가 2026-03-27에 Buy 의견과 목표가를 제시했습니다.",
-            "현재가 $246.31 대비 목표가는 $350입니다.",
+            "현재가 $246.01 대비 목표가는 $350입니다.",
             "공시일 종가 $248.8 대비 괴리는 40.7%입니다."
           ]
         },
@@ -3809,17 +3955,17 @@
           "analyst": "Erik Woodring",
           "opinion": "Buy",
           "targetPrice": 315,
-          "currentPrice": 246.31,
+          "currentPrice": 246.01,
           "basePrice": 251.49,
           "basePriceDate": "2026-03-23",
-          "upside": 27.9,
+          "upside": 28,
           "sourceUrl": "https://stockanalysis.com/stocks/aapl/ratings/",
           "sourceText": "Morgan Stanley Buy Reiterates. Price target 315 -> 315.",
           "reportTitle": "Buy -> Buy Reiterates",
-          "reasonSummary": "Buy -> Buy Reiterates. Morgan Stanley가 Buy 의견을 제시했고 현재가 기준 상승여력은 27.9%입니다. 공시일 종가 대비 목표가 괴리는 25.3%입니다.",
+          "reasonSummary": "Buy -> Buy Reiterates. Morgan Stanley가 Buy 의견을 제시했고 현재가 기준 상승여력은 28.0%입니다. 공시일 종가 대비 목표가 괴리는 25.3%입니다.",
           "reasonBullets": [
             "Morgan Stanley가 2026-03-23에 Buy 의견과 목표가를 제시했습니다.",
-            "현재가 $246.31 대비 목표가는 $315입니다.",
+            "현재가 $246.01 대비 목표가는 $315입니다.",
             "공시일 종가 $251.49 대비 괴리는 25.3%입니다."
           ]
         },
@@ -3832,17 +3978,17 @@
           "analyst": "Wamsi Mohan",
           "opinion": "Strong Buy",
           "targetPrice": 320,
-          "currentPrice": 246.31,
+          "currentPrice": 246.01,
           "basePrice": 251.49,
           "basePriceDate": "2026-03-23",
-          "upside": 29.9,
+          "upside": 30.1,
           "sourceUrl": "https://stockanalysis.com/stocks/aapl/ratings/",
           "sourceText": "B of A Securities Strong Buy Maintains. Price target 325 -> 320.",
           "reportTitle": "Strong Buy -> Strong Buy Maintains",
-          "reasonSummary": "Strong Buy -> Strong Buy Maintains. B of A Securities가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 29.9%입니다. 공시일 종가 대비 목표가 괴리는 27.2%입니다.",
+          "reasonSummary": "Strong Buy -> Strong Buy Maintains. B of A Securities가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 30.1%입니다. 공시일 종가 대비 목표가 괴리는 27.2%입니다.",
           "reasonBullets": [
             "B of A Securities가 2026-03-23에 Strong Buy 의견과 목표가를 제시했습니다.",
-            "현재가 $246.31 대비 목표가는 $320입니다.",
+            "현재가 $246.01 대비 목표가는 $320입니다.",
             "공시일 종가 $251.49 대비 괴리는 27.2%입니다."
           ]
         }
@@ -3856,14 +4002,14 @@
       "latestBroker": "Wells Fargo",
       "latestOpinion": "Buy",
       "latestTargetPrice": 397,
-      "latestCurrentPrice": 275.25,
+      "latestCurrentPrice": 273.89,
       "latestBasePrice": 274.34,
-      "avgUpside": 44.8,
+      "avgUpside": 45.5,
       "reportCount": 2,
-      "reasonSummary": "Buy -> Buy Maintains. Wells Fargo가 Buy 의견을 제시했고 현재가 기준 상승여력은 44.2%입니다. 공시일 종가 대비 목표가 괴리는 44.7%입니다.",
+      "reasonSummary": "Buy -> Buy Maintains. Wells Fargo가 Buy 의견을 제시했고 현재가 기준 상승여력은 44.9%입니다. 공시일 종가 대비 목표가 괴리는 44.7%입니다.",
       "reasonBullets": [
         "Wells Fargo가 2026-03-27에 Buy 의견과 목표가를 제시했습니다.",
-        "현재가 $275.25 대비 목표가는 $397입니다.",
+        "현재가 $273.89 대비 목표가는 $397입니다.",
         "공시일 종가 $274.34 대비 괴리는 44.7%입니다."
       ],
       "investmentLogic": {
@@ -3884,7 +4030,7 @@
         "signal": "flat"
       },
       "valuation": {
-        "summary": "현재가 $275.25 대비 목표가 $397가 제시돼 밸류에이션 여력을 확인할 수 있습니다.",
+        "summary": "현재가 $273.89 대비 목표가 $397가 제시돼 밸류에이션 여력을 확인할 수 있습니다.",
         "bullets": [
           "Buy -> Buy Maintains Wells Fargo Buy Maintains.",
           "Price target 387 -> 397.",
@@ -3909,17 +4055,17 @@
           "analyst": "Ken Gawrelski",
           "opinion": "Buy",
           "targetPrice": 397,
-          "currentPrice": 275.25,
+          "currentPrice": 273.89,
           "basePrice": 274.34,
           "basePriceDate": "2026-03-27",
-          "upside": 44.2,
+          "upside": 44.9,
           "sourceUrl": "https://stockanalysis.com/stocks/googl/ratings/",
           "sourceText": "Wells Fargo Buy Maintains. Price target 387 -> 397.",
           "reportTitle": "Buy -> Buy Maintains",
-          "reasonSummary": "Buy -> Buy Maintains. Wells Fargo가 Buy 의견을 제시했고 현재가 기준 상승여력은 44.2%입니다. 공시일 종가 대비 목표가 괴리는 44.7%입니다.",
+          "reasonSummary": "Buy -> Buy Maintains. Wells Fargo가 Buy 의견을 제시했고 현재가 기준 상승여력은 44.9%입니다. 공시일 종가 대비 목표가 괴리는 44.7%입니다.",
           "reasonBullets": [
             "Wells Fargo가 2026-03-27에 Buy 의견과 목표가를 제시했습니다.",
-            "현재가 $275.25 대비 목표가는 $397입니다.",
+            "현재가 $273.89 대비 목표가는 $397입니다.",
             "공시일 종가 $274.34 대비 괴리는 44.7%입니다."
           ]
         },
@@ -3932,17 +4078,17 @@
           "analyst": "Laura Martin",
           "opinion": "Strong Buy",
           "targetPrice": 400,
-          "currentPrice": 275.25,
+          "currentPrice": 273.89,
           "basePrice": 274.34,
           "basePriceDate": "2026-03-27",
-          "upside": 45.3,
+          "upside": 46,
           "sourceUrl": "https://stockanalysis.com/stocks/googl/ratings/",
           "sourceText": "Needham Strong Buy Reiterates. Price target 400 -> 400.",
           "reportTitle": "Strong Buy -> Strong Buy Reiterates",
-          "reasonSummary": "Strong Buy -> Strong Buy Reiterates. Needham가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 45.3%입니다. 공시일 종가 대비 목표가 괴리는 45.8%입니다.",
+          "reasonSummary": "Strong Buy -> Strong Buy Reiterates. Needham가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 46.0%입니다. 공시일 종가 대비 목표가 괴리는 45.8%입니다.",
           "reasonBullets": [
             "Needham가 2026-03-27에 Strong Buy 의견과 목표가를 제시했습니다.",
-            "현재가 $275.25 대비 목표가는 $400입니다.",
+            "현재가 $273.89 대비 목표가는 $400입니다.",
             "공시일 종가 $274.34 대비 괴리는 45.8%입니다."
           ]
         }
@@ -3956,14 +4102,14 @@
       "latestBroker": "Wedbush",
       "latestOpinion": "Buy",
       "latestTargetPrice": 600,
-      "latestCurrentPrice": 362.96,
+      "latestCurrentPrice": 358.09,
       "latestBasePrice": 361.83,
-      "avgUpside": 65.3,
+      "avgUpside": 67.6,
       "reportCount": 1,
-      "reasonSummary": "Buy -> Buy Reiterates. Wedbush가 Buy 의견을 제시했고 현재가 기준 상승여력은 65.3%입니다. 공시일 종가 대비 목표가 괴리는 65.8%입니다.",
+      "reasonSummary": "Buy -> Buy Reiterates. Wedbush가 Buy 의견을 제시했고 현재가 기준 상승여력은 67.6%입니다. 공시일 종가 대비 목표가 괴리는 65.8%입니다.",
       "reasonBullets": [
         "Wedbush가 2026-03-27에 Buy 의견과 목표가를 제시했습니다.",
-        "현재가 $362.96 대비 목표가는 $600입니다.",
+        "현재가 $358.09 대비 목표가는 $600입니다.",
         "공시일 종가 $361.83 대비 괴리는 65.8%입니다."
       ],
       "investmentLogic": {
@@ -3984,7 +4130,7 @@
         "signal": "unknown"
       },
       "valuation": {
-        "summary": "현재가 $362.96 대비 목표가 $600가 제시돼 밸류에이션 여력을 확인할 수 있습니다.",
+        "summary": "현재가 $358.09 대비 목표가 $600가 제시돼 밸류에이션 여력을 확인할 수 있습니다.",
         "bullets": [
           "Buy -> Buy Reiterates Wedbush Buy Reiterates.",
           "Price target 600 -> 600.",
@@ -4009,17 +4155,17 @@
           "analyst": "Dan Ives",
           "opinion": "Buy",
           "targetPrice": 600,
-          "currentPrice": 362.96,
+          "currentPrice": 358.09,
           "basePrice": 361.83,
           "basePriceDate": "2026-03-27",
-          "upside": 65.3,
+          "upside": 67.6,
           "sourceUrl": "https://stockanalysis.com/stocks/tsla/ratings/",
           "sourceText": "Wedbush Buy Reiterates. Price target 600 -> 600.",
           "reportTitle": "Buy -> Buy Reiterates",
-          "reasonSummary": "Buy -> Buy Reiterates. Wedbush가 Buy 의견을 제시했고 현재가 기준 상승여력은 65.3%입니다. 공시일 종가 대비 목표가 괴리는 65.8%입니다.",
+          "reasonSummary": "Buy -> Buy Reiterates. Wedbush가 Buy 의견을 제시했고 현재가 기준 상승여력은 67.6%입니다. 공시일 종가 대비 목표가 괴리는 65.8%입니다.",
           "reasonBullets": [
             "Wedbush가 2026-03-27에 Buy 의견과 목표가를 제시했습니다.",
-            "현재가 $362.96 대비 목표가는 $600입니다.",
+            "현재가 $358.09 대비 목표가는 $600입니다.",
             "공시일 종가 $361.83 대비 괴리는 65.8%입니다."
           ]
         }
@@ -5622,14 +5768,14 @@
       "latestBroker": "UBS",
       "latestOpinion": "Strong Buy",
       "latestTargetPrice": 510,
-      "latestCurrentPrice": 363.45,
+      "latestCurrentPrice": 359.21,
       "latestBasePrice": 371.04,
-      "avgUpside": 39,
+      "avgUpside": 40.6,
       "reportCount": 2,
-      "reasonSummary": "Strong Buy -> Strong Buy Maintains. UBS가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 40.3%입니다. 공시일 종가 대비 목표가 괴리는 37.5%입니다.",
+      "reasonSummary": "Strong Buy -> Strong Buy Maintains. UBS가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 42.0%입니다. 공시일 종가 대비 목표가 괴리는 37.5%입니다.",
       "reasonBullets": [
         "UBS가 2026-03-25에 Strong Buy 의견과 목표가를 제시했습니다.",
-        "현재가 $363.45 대비 목표가는 $510입니다.",
+        "현재가 $359.21 대비 목표가는 $510입니다.",
         "공시일 종가 $371.04 대비 괴리는 37.5%입니다."
       ],
       "investmentLogic": {
@@ -5650,7 +5796,7 @@
         "signal": "flat"
       },
       "valuation": {
-        "summary": "현재가 $363.45 대비 목표가 $510가 제시돼 밸류에이션 여력을 확인할 수 있습니다.",
+        "summary": "현재가 $359.21 대비 목표가 $510가 제시돼 밸류에이션 여력을 확인할 수 있습니다.",
         "bullets": [
           "Strong Buy -> Strong Buy Maintains UBS Strong Buy Maintains.",
           "Price target 600 -> 510.",
@@ -5675,17 +5821,17 @@
           "analyst": "Karl Keirstead",
           "opinion": "Strong Buy",
           "targetPrice": 510,
-          "currentPrice": 363.45,
+          "currentPrice": 359.21,
           "basePrice": 371.04,
           "basePriceDate": "2026-03-25",
-          "upside": 40.3,
+          "upside": 42,
           "sourceUrl": "https://stockanalysis.com/stocks/msft/ratings/",
           "sourceText": "UBS Strong Buy Maintains. Price target 600 -> 510.",
           "reportTitle": "Strong Buy -> Strong Buy Maintains",
-          "reasonSummary": "Strong Buy -> Strong Buy Maintains. UBS가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 40.3%입니다. 공시일 종가 대비 목표가 괴리는 37.5%입니다.",
+          "reasonSummary": "Strong Buy -> Strong Buy Maintains. UBS가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 42.0%입니다. 공시일 종가 대비 목표가 괴리는 37.5%입니다.",
           "reasonBullets": [
             "UBS가 2026-03-25에 Strong Buy 의견과 목표가를 제시했습니다.",
-            "현재가 $363.45 대비 목표가는 $510입니다.",
+            "현재가 $359.21 대비 목표가는 $510입니다.",
             "공시일 종가 $371.04 대비 괴리는 37.5%입니다."
           ]
         },
@@ -5698,17 +5844,17 @@
           "analyst": "Tal Liani",
           "opinion": "Strong Buy",
           "targetPrice": 500,
-          "currentPrice": 363.45,
+          "currentPrice": 359.21,
           "basePrice": 372.74,
           "basePriceDate": "2026-03-24",
-          "upside": 37.6,
+          "upside": 39.2,
           "sourceUrl": "https://stockanalysis.com/stocks/msft/ratings/",
           "sourceText": "B of A Securities Strong Buy Initiates. Price target N/A -> 500.",
           "reportTitle": "Strong Buy -> Strong Buy Initiates",
-          "reasonSummary": "Strong Buy -> Strong Buy Initiates. B of A Securities가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 37.6%입니다. 공시일 종가 대비 목표가 괴리는 34.1%입니다.",
+          "reasonSummary": "Strong Buy -> Strong Buy Initiates. B of A Securities가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 39.2%입니다. 공시일 종가 대비 목표가 괴리는 34.1%입니다.",
           "reasonBullets": [
             "B of A Securities가 2026-03-24에 Strong Buy 의견과 목표가를 제시했습니다.",
-            "현재가 $363.45 대비 목표가는 $500입니다.",
+            "현재가 $359.21 대비 목표가는 $500입니다.",
             "공시일 종가 $372.74 대비 괴리는 34.1%입니다."
           ]
         }
@@ -5722,14 +5868,14 @@
       "latestBroker": "Tigress Financial",
       "latestOpinion": "Strong Buy",
       "latestTargetPrice": 315,
-      "latestCurrentPrice": 203.04,
+      "latestCurrentPrice": 201.8,
       "latestBasePrice": 211.71,
-      "avgUpside": 42.3,
+      "avgUpside": 43.2,
       "reportCount": 5,
-      "reasonSummary": "Strong Buy -> Strong Buy Maintains. Tigress Financial가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 55.1%입니다. 공시일 종가 대비 목표가 괴리는 48.8%입니다.",
+      "reasonSummary": "Strong Buy -> Strong Buy Maintains. Tigress Financial가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 56.1%입니다. 공시일 종가 대비 목표가 괴리는 48.8%입니다.",
       "reasonBullets": [
         "Tigress Financial가 2026-03-25에 Strong Buy 의견과 목표가를 제시했습니다.",
-        "현재가 $203.04 대비 목표가는 $315입니다.",
+        "현재가 $201.8 대비 목표가는 $315입니다.",
         "공시일 종가 $211.71 대비 괴리는 48.8%입니다."
       ],
       "investmentLogic": {
@@ -5750,7 +5896,7 @@
         "signal": "flat"
       },
       "valuation": {
-        "summary": "현재가 $203.04 대비 목표가 $315가 제시돼 밸류에이션 여력을 확인할 수 있습니다.",
+        "summary": "현재가 $201.8 대비 목표가 $315가 제시돼 밸류에이션 여력을 확인할 수 있습니다.",
         "bullets": [
           "Strong Buy -> Strong Buy Maintains Tigress Financial Strong Buy Maintains.",
           "Price target 305 -> 315.",
@@ -5775,17 +5921,17 @@
           "analyst": "Ivan Feinseth",
           "opinion": "Strong Buy",
           "targetPrice": 315,
-          "currentPrice": 203.04,
+          "currentPrice": 201.8,
           "basePrice": 211.71,
           "basePriceDate": "2026-03-25",
-          "upside": 55.1,
+          "upside": 56.1,
           "sourceUrl": "https://stockanalysis.com/stocks/amzn/ratings/",
           "sourceText": "Tigress Financial Strong Buy Maintains. Price target 305 -> 315.",
           "reportTitle": "Strong Buy -> Strong Buy Maintains",
-          "reasonSummary": "Strong Buy -> Strong Buy Maintains. Tigress Financial가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 55.1%입니다. 공시일 종가 대비 목표가 괴리는 48.8%입니다.",
+          "reasonSummary": "Strong Buy -> Strong Buy Maintains. Tigress Financial가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 56.1%입니다. 공시일 종가 대비 목표가 괴리는 48.8%입니다.",
           "reasonBullets": [
             "Tigress Financial가 2026-03-25에 Strong Buy 의견과 목표가를 제시했습니다.",
-            "현재가 $203.04 대비 목표가는 $315입니다.",
+            "현재가 $201.8 대비 목표가는 $315입니다.",
             "공시일 종가 $211.71 대비 괴리는 48.8%입니다."
           ]
         },
@@ -5798,17 +5944,17 @@
           "analyst": "Doug Anmuth",
           "opinion": "Buy",
           "targetPrice": 280,
-          "currentPrice": 203.04,
+          "currentPrice": 201.8,
           "basePrice": 211.71,
           "basePriceDate": "2026-03-25",
-          "upside": 37.9,
+          "upside": 38.8,
           "sourceUrl": "https://stockanalysis.com/stocks/amzn/ratings/",
           "sourceText": "JP Morgan Buy Maintains. Price target 265 -> 280.",
           "reportTitle": "Buy -> Buy Maintains",
-          "reasonSummary": "Buy -> Buy Maintains. JP Morgan가 Buy 의견을 제시했고 현재가 기준 상승여력은 37.9%입니다. 공시일 종가 대비 목표가 괴리는 32.3%입니다.",
+          "reasonSummary": "Buy -> Buy Maintains. JP Morgan가 Buy 의견을 제시했고 현재가 기준 상승여력은 38.8%입니다. 공시일 종가 대비 목표가 괴리는 32.3%입니다.",
           "reasonBullets": [
             "JP Morgan가 2026-03-25에 Buy 의견과 목표가를 제시했습니다.",
-            "현재가 $203.04 대비 목표가는 $280입니다.",
+            "현재가 $201.8 대비 목표가는 $280입니다.",
             "공시일 종가 $211.71 대비 괴리는 32.3%입니다."
           ]
         },
@@ -5821,17 +5967,17 @@
           "analyst": "Ronald Josey",
           "opinion": "Strong Buy",
           "targetPrice": 285,
-          "currentPrice": 203.04,
+          "currentPrice": 201.8,
           "basePrice": 211.71,
           "basePriceDate": "2026-03-25",
-          "upside": 40.4,
+          "upside": 41.2,
           "sourceUrl": "https://stockanalysis.com/stocks/amzn/ratings/",
           "sourceText": "Citigroup Strong Buy Maintains. Price target 265 -> 285.",
           "reportTitle": "Strong Buy -> Strong Buy Maintains",
-          "reasonSummary": "Strong Buy -> Strong Buy Maintains. Citigroup가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 40.4%입니다. 공시일 종가 대비 목표가 괴리는 34.6%입니다.",
+          "reasonSummary": "Strong Buy -> Strong Buy Maintains. Citigroup가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 41.2%입니다. 공시일 종가 대비 목표가 괴리는 34.6%입니다.",
           "reasonBullets": [
             "Citigroup가 2026-03-25에 Strong Buy 의견과 목표가를 제시했습니다.",
-            "현재가 $203.04 대비 목표가는 $285입니다.",
+            "현재가 $201.8 대비 목표가는 $285입니다.",
             "공시일 종가 $211.71 대비 괴리는 34.6%입니다."
           ]
         },
@@ -5844,17 +5990,17 @@
           "analyst": "John Blackledge",
           "opinion": "Strong Buy",
           "targetPrice": 300,
-          "currentPrice": 203.04,
+          "currentPrice": 201.8,
           "basePrice": 210.14,
           "basePriceDate": "2026-03-23",
-          "upside": 47.8,
+          "upside": 48.7,
           "sourceUrl": "https://stockanalysis.com/stocks/amzn/ratings/",
           "sourceText": "TD Cowen Strong Buy Reiterates. Price target 300 -> 300.",
           "reportTitle": "Strong Buy -> Strong Buy Reiterates",
-          "reasonSummary": "Strong Buy -> Strong Buy Reiterates. TD Cowen가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 47.8%입니다. 공시일 종가 대비 목표가 괴리는 42.8%입니다.",
+          "reasonSummary": "Strong Buy -> Strong Buy Reiterates. TD Cowen가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 48.7%입니다. 공시일 종가 대비 목표가 괴리는 42.8%입니다.",
           "reasonBullets": [
             "TD Cowen가 2026-03-23에 Strong Buy 의견과 목표가를 제시했습니다.",
-            "현재가 $203.04 대비 목표가는 $300입니다.",
+            "현재가 $201.8 대비 목표가는 $300입니다.",
             "공시일 종가 $210.14 대비 괴리는 42.8%입니다."
           ]
         },
@@ -5867,17 +6013,17 @@
           "analyst": "Laura Martin",
           "opinion": "Strong Buy",
           "targetPrice": 265,
-          "currentPrice": 203.04,
+          "currentPrice": 201.8,
           "basePrice": 215.2,
           "basePriceDate": "2026-03-17",
-          "upside": 30.5,
+          "upside": 31.3,
           "sourceUrl": "https://stockanalysis.com/stocks/amzn/ratings/",
           "sourceText": "Needham Strong Buy Reiterates. Price target 265 -> 265.",
           "reportTitle": "Strong Buy -> Strong Buy Reiterates",
-          "reasonSummary": "Strong Buy -> Strong Buy Reiterates. Needham가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 30.5%입니다. 공시일 종가 대비 목표가 괴리는 23.1%입니다.",
+          "reasonSummary": "Strong Buy -> Strong Buy Reiterates. Needham가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 31.3%입니다. 공시일 종가 대비 목표가 괴리는 23.1%입니다.",
           "reasonBullets": [
             "Needham가 2026-03-17에 Strong Buy 의견과 목표가를 제시했습니다.",
-            "현재가 $203.04 대비 목표가는 $265입니다.",
+            "현재가 $201.8 대비 목표가는 $265입니다.",
             "공시일 종가 $215.2 대비 괴리는 23.1%입니다."
           ]
         }
@@ -6656,14 +6802,14 @@
       "latestBroker": "UBS",
       "latestOpinion": "Strong Buy",
       "latestTargetPrice": 60,
-      "latestCurrentPrice": 43.96,
+      "latestCurrentPrice": 42.76,
       "latestBasePrice": 42.78,
-      "avgUpside": 36.5,
+      "avgUpside": 40.3,
       "reportCount": 2,
-      "reasonSummary": "Hold -> Strong Buy Upgrades. UBS가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 36.5%입니다. 공시일 종가 대비 목표가 괴리는 40.3%입니다.",
+      "reasonSummary": "Hold -> Strong Buy Upgrades. UBS가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 40.3%입니다. 공시일 종가 대비 목표가 괴리는 40.3%입니다.",
       "reasonBullets": [
         "UBS가 2026-03-24에 Strong Buy 의견과 목표가를 제시했습니다.",
-        "현재가 $43.96 대비 목표가는 $60입니다.",
+        "현재가 $42.76 대비 목표가는 $60입니다.",
         "공시일 종가 $42.78 대비 괴리는 40.3%입니다."
       ],
       "investmentLogic": {
@@ -6684,7 +6830,7 @@
         "signal": "unknown"
       },
       "valuation": {
-        "summary": "현재가 $43.96 대비 목표가 $60가 제시돼 밸류에이션 여력을 확인할 수 있습니다.",
+        "summary": "현재가 $42.76 대비 목표가 $60가 제시돼 밸류에이션 여력을 확인할 수 있습니다.",
         "bullets": [
           "Hold -> Strong Buy Upgrades UBS Strong Buy Upgrades.",
           "Price target N/A -> 60.",
@@ -6709,17 +6855,17 @@
           "analyst": "Radi Sultan",
           "opinion": "Strong Buy",
           "targetPrice": 60,
-          "currentPrice": 43.96,
+          "currentPrice": 42.76,
           "basePrice": 42.78,
           "basePriceDate": "2026-03-24",
-          "upside": 36.5,
+          "upside": 40.3,
           "sourceUrl": "https://stockanalysis.com/stocks/frog/ratings/",
           "sourceText": "UBS Strong Buy Upgrades. Price target N/A -> 60.",
           "reportTitle": "Hold -> Strong Buy Upgrades",
-          "reasonSummary": "Hold -> Strong Buy Upgrades. UBS가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 36.5%입니다. 공시일 종가 대비 목표가 괴리는 40.3%입니다.",
+          "reasonSummary": "Hold -> Strong Buy Upgrades. UBS가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 40.3%입니다. 공시일 종가 대비 목표가 괴리는 40.3%입니다.",
           "reasonBullets": [
             "UBS가 2026-03-24에 Strong Buy 의견과 목표가를 제시했습니다.",
-            "현재가 $43.96 대비 목표가는 $60입니다.",
+            "현재가 $42.76 대비 목표가는 $60입니다.",
             "공시일 종가 $42.78 대비 괴리는 40.3%입니다."
           ]
         },
@@ -6732,17 +6878,17 @@
           "analyst": "Howard Ma",
           "opinion": "Strong Buy",
           "targetPrice": 60,
-          "currentPrice": 43.96,
+          "currentPrice": 42.76,
           "basePrice": 43.09,
           "basePriceDate": "2026-03-16",
-          "upside": 36.5,
+          "upside": 40.3,
           "sourceUrl": "https://stockanalysis.com/stocks/frog/ratings/",
           "sourceText": "Guggenheim Strong Buy Initiates. Price target N/A -> 60.",
           "reportTitle": "Strong Buy Initiates",
-          "reasonSummary": "Strong Buy Initiates. Guggenheim가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 36.5%입니다. 공시일 종가 대비 목표가 괴리는 39.2%입니다.",
+          "reasonSummary": "Strong Buy Initiates. Guggenheim가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 40.3%입니다. 공시일 종가 대비 목표가 괴리는 39.2%입니다.",
           "reasonBullets": [
             "Guggenheim가 2026-03-16에 Strong Buy 의견과 목표가를 제시했습니다.",
-            "현재가 $43.96 대비 목표가는 $60입니다.",
+            "현재가 $42.76 대비 목표가는 $60입니다.",
             "공시일 종가 $43.09 대비 괴리는 39.2%입니다."
           ]
         }
@@ -6756,14 +6902,14 @@
       "latestBroker": "Rosenblatt",
       "latestOpinion": "Strong Buy",
       "latestTargetPrice": 325,
-      "latestCurrentPrice": 167.03,
+      "latestCurrentPrice": 165.84,
       "latestBasePrice": 175.64,
-      "avgUpside": 71.2,
+      "avgUpside": 72.4,
       "reportCount": 11,
-      "reasonSummary": "Strong Buy -> Strong Buy Maintains. Rosenblatt가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 94.6%입니다. 공시일 종가 대비 목표가 괴리는 85%입니다.",
+      "reasonSummary": "Strong Buy -> Strong Buy Maintains. Rosenblatt가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 96.0%입니다. 공시일 종가 대비 목표가 괴리는 85%입니다.",
       "reasonBullets": [
         "Rosenblatt가 2026-03-23에 Strong Buy 의견과 목표가를 제시했습니다.",
-        "현재가 $167.03 대비 목표가는 $325입니다.",
+        "현재가 $165.84 대비 목표가는 $325입니다.",
         "공시일 종가 $175.64 대비 괴리는 85%입니다."
       ],
       "investmentLogic": {
@@ -6784,7 +6930,7 @@
         "signal": "flat"
       },
       "valuation": {
-        "summary": "현재가 $167.03 대비 목표가 $325가 제시돼 밸류에이션 여력을 확인할 수 있습니다.",
+        "summary": "현재가 $165.84 대비 목표가 $325가 제시돼 밸류에이션 여력을 확인할 수 있습니다.",
         "bullets": [
           "Strong Buy -> Strong Buy Maintains Rosenblatt Strong Buy Maintains.",
           "Price target 325 -> 325.",
@@ -6809,17 +6955,17 @@
           "analyst": "Kevin Cassidy",
           "opinion": "Strong Buy",
           "targetPrice": 325,
-          "currentPrice": 167.03,
+          "currentPrice": 165.84,
           "basePrice": 175.64,
           "basePriceDate": "2026-03-23",
-          "upside": 94.6,
+          "upside": 96,
           "sourceUrl": "https://stockanalysis.com/stocks/nvda/ratings/",
           "sourceText": "Rosenblatt Strong Buy Maintains. Price target 325 -> 325.",
           "reportTitle": "Strong Buy -> Strong Buy Maintains",
-          "reasonSummary": "Strong Buy -> Strong Buy Maintains. Rosenblatt가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 94.6%입니다. 공시일 종가 대비 목표가 괴리는 85%입니다.",
+          "reasonSummary": "Strong Buy -> Strong Buy Maintains. Rosenblatt가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 96.0%입니다. 공시일 종가 대비 목표가 괴리는 85%입니다.",
           "reasonBullets": [
             "Rosenblatt가 2026-03-23에 Strong Buy 의견과 목표가를 제시했습니다.",
-            "현재가 $167.03 대비 목표가는 $325입니다.",
+            "현재가 $165.84 대비 목표가는 $325입니다.",
             "공시일 종가 $175.64 대비 괴리는 85%입니다."
           ]
         },
@@ -6832,17 +6978,17 @@
           "analyst": "C.J. Muse",
           "opinion": "Buy",
           "targetPrice": 300,
-          "currentPrice": 167.03,
+          "currentPrice": 165.84,
           "basePrice": 175.64,
           "basePriceDate": "2026-03-23",
-          "upside": 79.6,
+          "upside": 80.9,
           "sourceUrl": "https://stockanalysis.com/stocks/nvda/ratings/",
           "sourceText": "Cantor Fitzgerald Buy Reiterates. Price target 300 -> 300.",
           "reportTitle": "Buy -> Buy Reiterates",
-          "reasonSummary": "Buy -> Buy Reiterates. Cantor Fitzgerald가 Buy 의견을 제시했고 현재가 기준 상승여력은 79.6%입니다. 공시일 종가 대비 목표가 괴리는 70.8%입니다.",
+          "reasonSummary": "Buy -> Buy Reiterates. Cantor Fitzgerald가 Buy 의견을 제시했고 현재가 기준 상승여력은 80.9%입니다. 공시일 종가 대비 목표가 괴리는 70.8%입니다.",
           "reasonBullets": [
             "Cantor Fitzgerald가 2026-03-23에 Buy 의견과 목표가를 제시했습니다.",
-            "현재가 $167.03 대비 목표가는 $300입니다.",
+            "현재가 $165.84 대비 목표가는 $300입니다.",
             "공시일 종가 $175.64 대비 괴리는 70.8%입니다."
           ]
         },
@@ -6855,17 +7001,17 @@
           "analyst": "Srini Pajjuri",
           "opinion": "Strong Buy",
           "targetPrice": 323,
-          "currentPrice": 167.03,
+          "currentPrice": 165.84,
           "basePrice": 178.56,
           "basePriceDate": "2026-03-19",
-          "upside": 93.4,
+          "upside": 94.8,
           "sourceUrl": "https://stockanalysis.com/stocks/nvda/ratings/",
           "sourceText": "Raymond James Strong Buy Maintains. Price target 291 -> 323.",
           "reportTitle": "Strong Buy -> Strong Buy Maintains",
-          "reasonSummary": "Strong Buy -> Strong Buy Maintains. Raymond James가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 93.4%입니다. 공시일 종가 대비 목표가 괴리는 80.9%입니다.",
+          "reasonSummary": "Strong Buy -> Strong Buy Maintains. Raymond James가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 94.8%입니다. 공시일 종가 대비 목표가 괴리는 80.9%입니다.",
           "reasonBullets": [
             "Raymond James가 2026-03-19에 Strong Buy 의견과 목표가를 제시했습니다.",
-            "현재가 $167.03 대비 목표가는 $323입니다.",
+            "현재가 $165.84 대비 목표가는 $323입니다.",
             "공시일 종가 $178.56 대비 괴리는 80.9%입니다."
           ]
         },
@@ -6878,17 +7024,17 @@
           "analyst": "William Stein",
           "opinion": "Strong Buy",
           "targetPrice": 287,
-          "currentPrice": 167.03,
+          "currentPrice": 165.84,
           "basePrice": 180.4,
           "basePriceDate": "2026-03-18",
-          "upside": 71.8,
+          "upside": 73.1,
           "sourceUrl": "https://stockanalysis.com/stocks/nvda/ratings/",
           "sourceText": "Truist Securities Strong Buy Maintains. Price target 283 -> 287.",
           "reportTitle": "Strong Buy -> Strong Buy Maintains",
-          "reasonSummary": "Strong Buy -> Strong Buy Maintains. Truist Securities가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 71.8%입니다. 공시일 종가 대비 목표가 괴리는 59.1%입니다.",
+          "reasonSummary": "Strong Buy -> Strong Buy Maintains. Truist Securities가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 73.1%입니다. 공시일 종가 대비 목표가 괴리는 59.1%입니다.",
           "reasonBullets": [
             "Truist Securities가 2026-03-18에 Strong Buy 의견과 목표가를 제시했습니다.",
-            "현재가 $167.03 대비 목표가는 $287입니다.",
+            "현재가 $165.84 대비 목표가는 $287입니다.",
             "공시일 종가 $180.4 대비 괴리는 59.1%입니다."
           ]
         },
@@ -6901,17 +7047,17 @@
           "analyst": "N. Quinn Bolton",
           "opinion": "Strong Buy",
           "targetPrice": 240,
-          "currentPrice": 167.03,
+          "currentPrice": 165.84,
           "basePrice": 180.4,
           "basePriceDate": "2026-03-18",
-          "upside": 43.7,
+          "upside": 44.7,
           "sourceUrl": "https://stockanalysis.com/stocks/nvda/ratings/",
           "sourceText": "Needham Strong Buy Reiterates. Price target 240 -> 240.",
           "reportTitle": "Strong Buy -> Strong Buy Reiterates",
-          "reasonSummary": "Strong Buy -> Strong Buy Reiterates. Needham가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 43.7%입니다. 공시일 종가 대비 목표가 괴리는 33%입니다.",
+          "reasonSummary": "Strong Buy -> Strong Buy Reiterates. Needham가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 44.7%입니다. 공시일 종가 대비 목표가 괴리는 33%입니다.",
           "reasonBullets": [
             "Needham가 2026-03-18에 Strong Buy 의견과 목표가를 제시했습니다.",
-            "현재가 $167.03 대비 목표가는 $240입니다.",
+            "현재가 $165.84 대비 목표가는 $240입니다.",
             "공시일 종가 $180.4 대비 괴리는 33%입니다."
           ]
         }
@@ -6925,14 +7071,14 @@
       "latestBroker": "Tigress Financial",
       "latestOpinion": "Strong Buy",
       "latestTargetPrice": 945,
-      "latestCurrentPrice": 537.06,
+      "latestCurrentPrice": 535.56,
       "latestBasePrice": 615.68,
-      "avgUpside": 76,
+      "avgUpside": 76.5,
       "reportCount": 1,
-      "reasonSummary": "Strong Buy -> Strong Buy Maintains. Tigress Financial가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 76.0%입니다. 공시일 종가 대비 목표가 괴리는 53.5%입니다.",
+      "reasonSummary": "Strong Buy -> Strong Buy Maintains. Tigress Financial가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 76.5%입니다. 공시일 종가 대비 목표가 괴리는 53.5%입니다.",
       "reasonBullets": [
         "Tigress Financial가 2026-03-18에 Strong Buy 의견과 목표가를 제시했습니다.",
-        "현재가 $537.06 대비 목표가는 $945입니다.",
+        "현재가 $535.56 대비 목표가는 $945입니다.",
         "공시일 종가 $615.68 대비 괴리는 53.5%입니다."
       ],
       "investmentLogic": {
@@ -6953,7 +7099,7 @@
         "signal": "flat"
       },
       "valuation": {
-        "summary": "현재가 $537.06 대비 목표가 $945가 제시돼 밸류에이션 여력을 확인할 수 있습니다.",
+        "summary": "현재가 $535.56 대비 목표가 $945가 제시돼 밸류에이션 여력을 확인할 수 있습니다.",
         "bullets": [
           "Strong Buy -> Strong Buy Maintains Tigress Financial Strong Buy Maintains.",
           "Price target 935 -> 945.",
@@ -6978,118 +7124,18 @@
           "analyst": "Ivan Feinseth",
           "opinion": "Strong Buy",
           "targetPrice": 945,
-          "currentPrice": 537.06,
+          "currentPrice": 535.56,
           "basePrice": 615.68,
           "basePriceDate": "2026-03-18",
-          "upside": 76,
+          "upside": 76.5,
           "sourceUrl": "https://stockanalysis.com/stocks/meta/ratings/",
           "sourceText": "Tigress Financial Strong Buy Maintains. Price target 935 -> 945.",
           "reportTitle": "Strong Buy -> Strong Buy Maintains",
-          "reasonSummary": "Strong Buy -> Strong Buy Maintains. Tigress Financial가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 76.0%입니다. 공시일 종가 대비 목표가 괴리는 53.5%입니다.",
+          "reasonSummary": "Strong Buy -> Strong Buy Maintains. Tigress Financial가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 76.5%입니다. 공시일 종가 대비 목표가 괴리는 53.5%입니다.",
           "reasonBullets": [
             "Tigress Financial가 2026-03-18에 Strong Buy 의견과 목표가를 제시했습니다.",
-            "현재가 $537.06 대비 목표가는 $945입니다.",
+            "현재가 $535.56 대비 목표가는 $945입니다.",
             "공시일 종가 $615.68 대비 괴리는 53.5%입니다."
-          ]
-        }
-      ]
-    },
-    "us:JNJ": {
-      "ticker": "JNJ",
-      "name": "Johnson & Johnson",
-      "market": "us",
-      "latestReportDate": "2026-03-17",
-      "latestBroker": "HSBC",
-      "latestOpinion": "Strong Buy",
-      "latestTargetPrice": 280,
-      "latestCurrentPrice": 241.94,
-      "latestBasePrice": 238.11,
-      "avgUpside": 14.5,
-      "reportCount": 2,
-      "reasonSummary": "Strong Buy -> Strong Buy Maintains. HSBC가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 15.7%입니다. 공시일 종가 대비 목표가 괴리는 17.6%입니다.",
-      "reasonBullets": [
-        "HSBC가 2026-03-17에 Strong Buy 의견과 목표가를 제시했습니다.",
-        "현재가 $241.94 대비 목표가는 $280입니다.",
-        "공시일 종가 $238.11 대비 괴리는 17.6%입니다."
-      ],
-      "investmentLogic": {
-        "summary": "Strong Buy -> Strong Buy Maintains",
-        "bullets": [
-          "Strong Buy -> Strong Buy Maintains",
-          "Strong Buy -> Strong Buy Maintains HSBC Strong Buy Maintains.",
-          "Price target 265 -> 280."
-        ]
-      },
-      "estimateRevision": {
-        "summary": "유지 신호입니다. 리포트 원문에서 추정치 관련 표현을 기준으로 판단했습니다.",
-        "bullets": [
-          "Strong Buy -> Strong Buy Maintains HSBC Strong Buy Maintains.",
-          "Price target 265 -> 280.",
-          "Strong Buy -> Strong Buy Maintains."
-        ],
-        "signal": "flat"
-      },
-      "valuation": {
-        "summary": "현재가 $241.94 대비 목표가 $280가 제시돼 밸류에이션 여력을 확인할 수 있습니다.",
-        "bullets": [
-          "Strong Buy -> Strong Buy Maintains HSBC Strong Buy Maintains.",
-          "Price target 265 -> 280.",
-          "Strong Buy -> Strong Buy Maintains."
-        ]
-      },
-      "sectorCycle": {
-        "summary": "Strong Buy -> Strong Buy Maintains HSBC Strong Buy Maintains.",
-        "bullets": [
-          "Strong Buy -> Strong Buy Maintains HSBC Strong Buy Maintains.",
-          "Price target 265 -> 280.",
-          "Strong Buy -> Strong Buy Maintains."
-        ]
-      },
-      "relatedReports": [
-        {
-          "date": "2026-03-17",
-          "ticker": "JNJ",
-          "name": "Johnson & Johnson",
-          "market": "us",
-          "broker": "HSBC",
-          "analyst": "Morten Herholdt",
-          "opinion": "Strong Buy",
-          "targetPrice": 280,
-          "currentPrice": 241.94,
-          "basePrice": 238.11,
-          "basePriceDate": "2026-03-17",
-          "upside": 15.7,
-          "sourceUrl": "https://stockanalysis.com/stocks/jnj/ratings/",
-          "sourceText": "HSBC Strong Buy Maintains. Price target 265 -> 280.",
-          "reportTitle": "Strong Buy -> Strong Buy Maintains",
-          "reasonSummary": "Strong Buy -> Strong Buy Maintains. HSBC가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 15.7%입니다. 공시일 종가 대비 목표가 괴리는 17.6%입니다.",
-          "reasonBullets": [
-            "HSBC가 2026-03-17에 Strong Buy 의견과 목표가를 제시했습니다.",
-            "현재가 $241.94 대비 목표가는 $280입니다.",
-            "공시일 종가 $238.11 대비 괴리는 17.6%입니다."
-          ]
-        },
-        {
-          "date": "2026-03-11",
-          "ticker": "JNJ",
-          "name": "Johnson & Johnson",
-          "market": "us",
-          "broker": "Citigroup",
-          "analyst": "Joanne Wuensch",
-          "opinion": "Strong Buy",
-          "targetPrice": 274,
-          "currentPrice": 241.94,
-          "basePrice": 242.99,
-          "basePriceDate": "2026-03-11",
-          "upside": 13.3,
-          "sourceUrl": "https://stockanalysis.com/stocks/jnj/ratings/",
-          "sourceText": "Citigroup Strong Buy Maintains. Price target 250 -> 274.",
-          "reportTitle": "Strong Buy -> Strong Buy Maintains",
-          "reasonSummary": "Strong Buy -> Strong Buy Maintains. Citigroup가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 13.3%입니다. 공시일 종가 대비 목표가 괴리는 12.8%입니다.",
-          "reasonBullets": [
-            "Citigroup가 2026-03-11에 Strong Buy 의견과 목표가를 제시했습니다.",
-            "현재가 $241.94 대비 목표가는 $274입니다.",
-            "공시일 종가 $242.99 대비 괴리는 12.8%입니다."
           ]
         }
       ]
@@ -7102,14 +7148,14 @@
       "latestBroker": "Piper Sandler",
       "latestOpinion": "Buy",
       "latestTargetPrice": 186,
-      "latestCurrentPrice": 174.1,
+      "latestCurrentPrice": 172.81,
       "latestBasePrice": 153.53,
-      "avgUpside": 6.8,
+      "avgUpside": 7.6,
       "reportCount": 1,
-      "reasonSummary": "Buy -> Buy Maintains. Piper Sandler가 Buy 의견을 제시했고 현재가 기준 상승여력은 6.8%입니다. 공시일 종가 대비 목표가 괴리는 21.1%입니다.",
+      "reasonSummary": "Buy -> Buy Maintains. Piper Sandler가 Buy 의견을 제시했고 현재가 기준 상승여력은 7.6%입니다. 공시일 종가 대비 목표가 괴리는 21.1%입니다.",
       "reasonBullets": [
         "Piper Sandler가 2026-03-12에 Buy 의견과 목표가를 제시했습니다.",
-        "현재가 $174.1 대비 목표가는 $186입니다.",
+        "현재가 $172.81 대비 목표가는 $186입니다.",
         "공시일 종가 $153.53 대비 괴리는 21.1%입니다."
       ],
       "investmentLogic": {
@@ -7130,11 +7176,11 @@
         "signal": "flat"
       },
       "valuation": {
-        "summary": "현재가 $174.1 대비 목표가 $186가 제시돼 밸류에이션 여력을 확인할 수 있습니다.",
+        "summary": "현재가 $172.81 대비 목표가 $186가 제시돼 밸류에이션 여력을 확인할 수 있습니다.",
         "bullets": [
           "Buy -> Buy Maintains Piper Sandler Buy Maintains.",
-          "Piper Sandler가 Buy 의견을 제시했고 현재가 기준 상승여력은 6.8%입니다.",
-          "현재가 대비 목표가 상승여력은 6.8%입니다."
+          "Piper Sandler가 Buy 의견을 제시했고 현재가 기준 상승여력은 7.6%입니다.",
+          "현재가 대비 목표가 상승여력은 7.6%입니다."
         ]
       },
       "sectorCycle": {
@@ -7155,17 +7201,17 @@
           "analyst": "Ryan Todd",
           "opinion": "Buy",
           "targetPrice": 186,
-          "currentPrice": 174.1,
+          "currentPrice": 172.81,
           "basePrice": 153.53,
           "basePriceDate": "2026-03-12",
-          "upside": 6.8,
+          "upside": 7.6,
           "sourceUrl": "https://stockanalysis.com/stocks/xom/ratings/",
           "sourceText": "Piper Sandler Buy Maintains. Price target 145 -> 186.",
           "reportTitle": "Buy -> Buy Maintains",
-          "reasonSummary": "Buy -> Buy Maintains. Piper Sandler가 Buy 의견을 제시했고 현재가 기준 상승여력은 6.8%입니다. 공시일 종가 대비 목표가 괴리는 21.1%입니다.",
+          "reasonSummary": "Buy -> Buy Maintains. Piper Sandler가 Buy 의견을 제시했고 현재가 기준 상승여력은 7.6%입니다. 공시일 종가 대비 목표가 괴리는 21.1%입니다.",
           "reasonBullets": [
             "Piper Sandler가 2026-03-12에 Buy 의견과 목표가를 제시했습니다.",
-            "현재가 $174.1 대비 목표가는 $186입니다.",
+            "현재가 $172.81 대비 목표가는 $186입니다.",
             "공시일 종가 $153.53 대비 괴리는 21.1%입니다."
           ]
         }

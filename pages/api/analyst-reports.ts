@@ -13,10 +13,13 @@ type CacheFileMemoryEntry = {
 
 const FILE_CACHE_TTL_MS = 60 * 1000;
 const DEV_REFRESH_INTERVAL_MS = 5 * 60 * 1000;
+const LIVE_PRICE_TTL_MS = 2 * 60 * 1000;
 let cacheFileMemory: CacheFileMemoryEntry | null = null;
 let cacheFileInflight: Promise<AnalystReportCacheFile> | null = null;
 let liveRefreshInflight: Promise<void> | null = null;
 let lastLiveRefreshAt = 0;
+const livePriceCache = new Map<string, { price: number; fetchedAt: number }>();
+const livePriceInflight = new Map<string, Promise<number>>();
 
 export async function loadAnalystCacheFile(): Promise<AnalystReportCacheFile> {
   if (cacheFileMemory && Date.now() - cacheFileMemory.loadedAt <= FILE_CACHE_TTL_MS) {
@@ -120,6 +123,102 @@ export async function loadAnalystData(): Promise<AnalystReportCacheFile> {
   return cacheFile;
 }
 
+function roundOne(value: number) {
+  return Math.round(value * 10) / 10;
+}
+
+async function fetchKoreaLivePrice(ticker: string): Promise<number> {
+  try {
+    const response = await fetch(`https://m.stock.naver.com/api/stock/${ticker}/basic`, {
+      headers: {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
+      },
+    });
+
+    if (!response.ok) {
+      return 0;
+    }
+
+    const data = await response.json();
+    return Number.parseInt(String(data.closePrice || '0').replace(/,/g, ''), 10) || 0;
+  } catch {
+    return 0;
+  }
+}
+
+async function fetchUsLivePrice(ticker: string): Promise<number> {
+  try {
+    const response = await fetch(
+      `https://query1.finance.yahoo.com/v8/finance/chart/${ticker}?interval=1d&range=1d`,
+      {
+        headers: {
+          'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
+        },
+      }
+    );
+
+    if (!response.ok) {
+      return 0;
+    }
+
+    const data = await response.json();
+    const meta = data.chart?.result?.[0]?.meta;
+    const price = meta?.regularMarketPrice || 0;
+    return Math.round(price * 100) / 100;
+  } catch {
+    return 0;
+  }
+}
+
+export async function fetchLiveCurrentPrice(ticker: string, market: AnalystReport['market']): Promise<number> {
+  const key = `${market}:${ticker}`;
+  const cached = livePriceCache.get(key);
+  if (cached && Date.now() - cached.fetchedAt <= LIVE_PRICE_TTL_MS) {
+    return cached.price;
+  }
+
+  const inflight = livePriceInflight.get(key);
+  if (inflight) {
+    return inflight;
+  }
+
+  const request = (market === 'korea' ? fetchKoreaLivePrice(ticker) : fetchUsLivePrice(ticker))
+    .then((price) => {
+      livePriceCache.set(key, { price, fetchedAt: Date.now() });
+      return price;
+    })
+    .finally(() => {
+      livePriceInflight.delete(key);
+    });
+
+  livePriceInflight.set(key, request);
+  return request;
+}
+
+export async function enrichReportsWithLivePrices(reports: AnalystReport[]): Promise<AnalystReport[]> {
+  const uniqueKeys = Array.from(new Set(reports.map((report) => `${report.market}:${report.ticker}`)));
+  const livePrices = new Map<string, number>();
+
+  await Promise.all(uniqueKeys.map(async (key) => {
+    const [market, ticker] = key.split(':');
+    const price = await fetchLiveCurrentPrice(ticker, market as AnalystReport['market']);
+    livePrices.set(key, price);
+  }));
+
+  return reports.map((report) => {
+    const livePrice = livePrices.get(`${report.market}:${report.ticker}`) || 0;
+    if (livePrice <= 0) {
+      return report;
+    }
+
+    return {
+      ...report,
+      currentPrice: livePrice,
+      upside: report.targetPrice > 0 ? roundOne(((report.targetPrice - livePrice) / livePrice) * 100) : 0,
+    };
+  });
+}
+
 export default async function handler(req: NextApiRequest, res: NextApiResponse<AnalystReport[] | { error: string }>) {
   const { days = '30', market = 'all' } = req.query;
   const daysNum = Number.parseInt(String(days), 10) || 30;
@@ -127,7 +226,8 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse<
 
   try {
     const cacheFile = await loadAnalystData();
-    const reports = filterAnalystReports(cacheFile.reports, daysNum, marketFilter) as AnalystReport[];
+    const cachedReports = filterAnalystReports(cacheFile.reports, daysNum, marketFilter) as AnalystReport[];
+    const reports = await enrichReportsWithLivePrices(cachedReports);
     res.status(200).json(reports);
   } catch (error) {
     console.error('Error reading analyst cache file:', error);

@@ -15,8 +15,16 @@ export interface AnalystReport {
   basePriceDate: string;
   upside: number;
   reportTitle?: string;
+  sourceUrl?: string;
+  sourceText?: string;
   reasonSummary?: string;
   reasonBullets?: string[];
+}
+
+export interface InsightSection {
+  summary: string;
+  bullets: string[];
+  signal?: 'up' | 'down' | 'flat' | 'mixed' | 'unknown';
 }
 
 export interface StockInsight {
@@ -33,6 +41,25 @@ export interface StockInsight {
   reportCount: number;
   reasonSummary: string;
   reasonBullets: string[];
+  investmentLogic: InsightSection;
+  estimateRevision: InsightSection;
+  valuation: InsightSection;
+  sectorCycle: InsightSection;
+  relatedReports: AnalystReport[];
+}
+
+export interface AnalystConsensusItem {
+  ticker: string;
+  name: string;
+  market: MarketType;
+  brokerCount: number;
+  brokers: string[];
+  latestReportDate: string;
+  avgUpside: number;
+  currentPrice: number;
+  basePrice: number;
+  basePriceDate: string;
+  reportCount: number;
   relatedReports: AnalystReport[];
 }
 

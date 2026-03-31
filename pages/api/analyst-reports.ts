@@ -3,6 +3,7 @@ import path from 'node:path';
 
 import type { NextApiRequest, NextApiResponse } from 'next';
 
+import bundledAnalystCacheFile from '../../data/analyst-reports-cache.json';
 import { buildAnalystCacheFile, enrichReportsWithPerformance, filterAnalystReports } from '../../lib/analyst-report-source.mjs';
 import type { AnalystReport, AnalystReportCacheFile, MarketFilter } from '../../lib/analyst-types';
 
@@ -22,6 +23,23 @@ let lastLiveRefreshAt = 0;
 const livePriceCache = new Map<string, { price: number; fetchedAt: number }>();
 const livePriceInflight = new Map<string, Promise<number>>();
 
+function getBundledAnalystCache(): AnalystReportCacheFile {
+  return bundledAnalystCacheFile as AnalystReportCacheFile;
+}
+
+async function readAnalystCacheFile(): Promise<AnalystReportCacheFile> {
+  if (process.env.NODE_ENV !== 'development') {
+    return getBundledAnalystCache();
+  }
+
+  try {
+    const raw = await readFile(getAnalystCachePath(), 'utf8');
+    return JSON.parse(raw) as AnalystReportCacheFile;
+  } catch {
+    return getBundledAnalystCache();
+  }
+}
+
 export async function loadAnalystCacheFile(): Promise<AnalystReportCacheFile> {
   if (cacheFileMemory && Date.now() - cacheFileMemory.loadedAt <= FILE_CACHE_TTL_MS) {
     return cacheFileMemory.data;
@@ -31,8 +49,7 @@ export async function loadAnalystCacheFile(): Promise<AnalystReportCacheFile> {
     return cacheFileInflight;
   }
 
-  const request = readFile(getAnalystCachePath(), 'utf8')
-    .then((raw) => JSON.parse(raw) as AnalystReportCacheFile)
+  const request = readAnalystCacheFile()
     .then((data) => {
       cacheFileMemory = {
         data,
@@ -53,6 +70,10 @@ function getAnalystCachePath() {
 }
 
 async function persistAnalystCacheFile(data: AnalystReportCacheFile) {
+  if (process.env.NODE_ENV !== 'development') {
+    return;
+  }
+
   await writeFile(getAnalystCachePath(), `${JSON.stringify(data, null, 2)}\n`, 'utf8');
 }
 

@@ -5,6 +5,9 @@ node_modules/
 .next/
 .next-dev/
 out/
+*.tsbuildinfo
+.next-dev-*.log
+.next-dev-*.err.log
 
 # Vercel
 .vercel

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-31T22:13:59.057Z",
+  "generatedAt": "2026-03-31T23:12:35.579Z",
   "maxDays": 365,
   "reports": [
     {
@@ -41722,55 +41722,6 @@
         "DS투자증권가 2026-02-05에 매수 의견과 목표가를 제시했습니다.",
         "현재가 114,000원 대비 목표가는 160,000원입니다.",
         "공시일 종가 114,000원 대비 괴리는 40.4%입니다."
-      ],
-      "performance": {
-        "week1": {
-          "asOfDate": "2026-02-12",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "unavailable"
-        },
-        "month1": {
-          "asOfDate": "2026-03-07",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "unavailable"
-        },
-        "month3": {
-          "asOfDate": "2026-05-06",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "pending"
-        }
-      }
-    },
-    {
-      "date": "2026-02-05",
-      "ticker": "018880",
-      "name": "한온시스템",
-      "market": "korea",
-      "broker": "DS투자증권",
-      "analyst": "",
-      "opinion": "매수",
-      "targetPrice": 4300,
-      "currentPrice": 3740,
-      "basePrice": 3740,
-      "basePriceDate": "2026-02-05",
-      "upside": 15,
-      "sourceUrl": "https://finance.naver.com/research/company_read.naver?nid=89941&page=1",
-      "reportTitle": "OPM 가이던스 상향",
-      "sourceText": "4Q25P Re: R&D 자산화 축소에도 견조한 수익성 방어 4Q25P 잠정 매출액은 2.7조원(+6.6% YoY), 영업이익은 912억원(흑전 YoY)으로 컨센서스 영업이익 794억원을 상회했다. 매출은 우호적인 환율, 고객사 판가조정 및 관세 리커버리 반영으로 성장했다. 지역별/고객사별로는 미국, 유럽이 현대차그룹과 폭스바겐을 중심으로 성장했다. 이익도 리커버리 효과와 재료비/물류비 절감 노력 등이 R&D 자산화 비율 축소(작년 49%→31%)에 따른 판관비 부담을 상쇄했다. 영업외단에서는 북미 고객사 전동화 계획 후퇴에 따라 관련 개발비 손상차손을 선제적으로 인식했다.",
-      "reasonSummary": "OPM 가이던스 상향. DS투자증권가 매수 의견을 제시했고 현재가 기준 상승여력은 15.0%입니다. 공시일 종가 대비 목표가 괴리는 15%입니다.",
-      "reasonBullets": [
-        "DS투자증권가 2026-02-05에 매수 의견과 목표가를 제시했습니다.",
-        "현재가 3,740원 대비 목표가는 4,300원입니다.",
-        "공시일 종가 3,740원 대비 괴리는 15%입니다."
       ],
       "performance": {
         "week1": {
@@ -99651,108 +99602,6 @@
             "DS투자증권가 2026-02-05에 매수 의견과 목표가를 제시했습니다.",
             "현재가 114,000원 대비 목표가는 160,000원입니다.",
             "공시일 종가 114,000원 대비 괴리는 40.4%입니다."
-          ],
-          "performance": {
-            "week1": {
-              "asOfDate": "2026-02-12",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "unavailable"
-            },
-            "month1": {
-              "asOfDate": "2026-03-07",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "unavailable"
-            },
-            "month3": {
-              "asOfDate": "2026-05-06",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            }
-          }
-        }
-      ]
-    },
-    "korea:018880": {
-      "ticker": "018880",
-      "name": "한온시스템",
-      "market": "korea",
-      "latestReportDate": "2026-02-05",
-      "latestBroker": "DS투자증권",
-      "latestOpinion": "매수",
-      "latestTargetPrice": 4300,
-      "latestCurrentPrice": 3740,
-      "latestBasePrice": 3740,
-      "avgUpside": 15,
-      "reportCount": 1,
-      "reasonSummary": "OPM 가이던스 상향. DS투자증권가 매수 의견을 제시했고 현재가 기준 상승여력은 15.0%입니다. 공시일 종가 대비 목표가 괴리는 15%입니다.",
-      "reasonBullets": [
-        "DS투자증권가 2026-02-05에 매수 의견과 목표가를 제시했습니다.",
-        "현재가 3,740원 대비 목표가는 4,300원입니다.",
-        "공시일 종가 3,740원 대비 괴리는 15%입니다."
-      ],
-      "investmentLogic": {
-        "summary": "OPM 가이던스 상향",
-        "bullets": [
-          "OPM 가이던스 상향",
-          "매출은 우호적인 환율, 고객사 판가조정 및 관세 리커버리 반영으로 성장했다.",
-          "지역별/고객사별로는 미국, 유럽이 현대차그룹과 폭스바겐을 중심으로 성장했다."
-        ]
-      },
-      "estimateRevision": {
-        "summary": "상향 신호입니다. 리포트 원문에서 추정치 관련 표현을 기준으로 판단했습니다.",
-        "bullets": [
-          "OPM 가이던스 상향 4Q25P Re: R&D 자산화 축소에도 견조한 수익성 방어 4Q25P 잠정 매출액은 2.7조원(+6.6% YoY), 영업이익은 912억원(흑전 YoY)으로 컨센서스 영업이익 794억원을 상회했다.",
-          "매출은 우호적인 환율, 고객사 판가조정 및 관세 리커버리 반영으로 성장했다."
-        ],
-        "signal": "up"
-      },
-      "valuation": {
-        "summary": "현재가 3,740원 대비 목표가 4,300원가 제시돼 밸류에이션 여력을 확인할 수 있습니다.",
-        "bullets": [
-          "OPM 가이던스 상향 4Q25P Re: R&D 자산화 축소에도 견조한 수익성 방어 4Q25P 잠정 매출액은 2.7조원(+6.6% YoY), 영업이익은 912억원(흑전 YoY)으로 컨센서스 영업이익 794억원을 상회했다.",
-          "매출은 우호적인 환율, 고객사 판가조정 및 관세 리커버리 반영으로 성장했다.",
-          "지역별/고객사별로는 미국, 유럽이 현대차그룹과 폭스바겐을 중심으로 성장했다."
-        ]
-      },
-      "sectorCycle": {
-        "summary": "OPM 가이던스 상향 4Q25P Re: R&D 자산화 축소에도 견조한 수익성 방어 4Q25P 잠정 매출액은 2.7조원(+6.6% YoY), 영업이익은 912억원(흑전 YoY)으로 컨센서스 영업이익 794억원을 상회했다.",
-        "bullets": [
-          "OPM 가이던스 상향 4Q25P Re: R&D 자산화 축소에도 견조한 수익성 방어 4Q25P 잠정 매출액은 2.7조원(+6.6% YoY), 영업이익은 912억원(흑전 YoY)으로 컨센서스 영업이익 794억원을 상회했다.",
-          "매출은 우호적인 환율, 고객사 판가조정 및 관세 리커버리 반영으로 성장했다.",
-          "지역별/고객사별로는 미국, 유럽이 현대차그룹과 폭스바겐을 중심으로 성장했다."
-        ]
-      },
-      "relatedReports": [
-        {
-          "date": "2026-02-05",
-          "ticker": "018880",
-          "name": "한온시스템",
-          "market": "korea",
-          "broker": "DS투자증권",
-          "analyst": "",
-          "opinion": "매수",
-          "targetPrice": 4300,
-          "currentPrice": 3740,
-          "basePrice": 3740,
-          "basePriceDate": "2026-02-05",
-          "upside": 15,
-          "sourceUrl": "https://finance.naver.com/research/company_read.naver?nid=89941&page=1",
-          "reportTitle": "OPM 가이던스 상향",
-          "sourceText": "4Q25P Re: R&D 자산화 축소에도 견조한 수익성 방어 4Q25P 잠정 매출액은 2.7조원(+6.6% YoY), 영업이익은 912억원(흑전 YoY)으로 컨센서스 영업이익 794억원을 상회했다. 매출은 우호적인 환율, 고객사 판가조정 및 관세 리커버리 반영으로 성장했다. 지역별/고객사별로는 미국, 유럽이 현대차그룹과 폭스바겐을 중심으로 성장했다. 이익도 리커버리 효과와 재료비/물류비 절감 노력 등이 R&D 자산화 비율 축소(작년 49%→31%)에 따른 판관비 부담을 상쇄했다. 영업외단에서는 북미 고객사 전동화 계획 후퇴에 따라 관련 개발비 손상차손을 선제적으로 인식했다.",
-          "reasonSummary": "OPM 가이던스 상향. DS투자증권가 매수 의견을 제시했고 현재가 기준 상승여력은 15.0%입니다. 공시일 종가 대비 목표가 괴리는 15%입니다.",
-          "reasonBullets": [
-            "DS투자증권가 2026-02-05에 매수 의견과 목표가를 제시했습니다.",
-            "현재가 3,740원 대비 목표가는 4,300원입니다.",
-            "공시일 종가 3,740원 대비 괴리는 15%입니다."
           ],
           "performance": {
             "week1": {

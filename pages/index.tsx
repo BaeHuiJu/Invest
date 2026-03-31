@@ -4,28 +4,38 @@ import { Bar, BarChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recha
 
 type MarketType = 'korea' | 'us';
 type MarketFilter = 'all' | MarketType;
-type TabType = 'home' | 'watchlist' | 'korea-stock' | 'korea-etf' | 'us-stock' | 'us-etf' | 'analyst' | 'consensus';
+type TabType = 'home' | 'watchlist' | 'korea-stock' | 'korea-etf' | 'us-stock' | 'us-etf' | 'analyst' | 'consensus' | 'scorecard';
 type WatchlistCategory = 'stock' | 'etf' | 'analyst';
+type PerformanceStatus = 'complete' | 'pending' | 'unavailable';
 
 type Stock = { ticker: string; name: string; currentPrice: number; change: number; changePercent: number; volume?: number; marketCap?: string; high52w?: number; low52w?: number };
 type MarketIndex = { ticker: string; name: string; market: MarketType; value: number; change: number; changePercent: number };
-type AnalystReport = { date: string; ticker: string; name: string; market: MarketType; broker: string; analyst: string; opinion: string; targetPrice: number; currentPrice: number; basePrice: number; basePriceDate: string; upside: number; reportTitle?: string; sourceUrl?: string; reasonSummary?: string; reasonBullets?: string[] };
+type PerformancePoint = { asOfDate: string; closePrice: number; returnPct: number; targetProgressPct: number; success: boolean; status: PerformanceStatus };
+type AnalystReportPerformance = { week1: PerformancePoint; month1: PerformancePoint; month3: PerformancePoint };
+type AnalystReport = { date: string; ticker: string; name: string; market: MarketType; broker: string; analyst: string; opinion: string; targetPrice: number; currentPrice: number; basePrice: number; basePriceDate: string; upside: number; reportTitle?: string; sourceUrl?: string; reasonSummary?: string; reasonBullets?: string[]; sector?: string; performance?: AnalystReportPerformance };
 type AnalystConsensusItem = { ticker: string; name: string; market: MarketType; brokerCount: number; brokers: string[]; latestReportDate: string; avgUpside: number; currentPrice: number; basePrice: number; basePriceDate: string; reportCount: number; relatedReports: AnalystReport[] };
 type InsightSection = { summary: string; bullets: string[]; signal?: 'up' | 'down' | 'flat' | 'mixed' | 'unknown' };
 type StockInsight = { ticker: string; name: string; market: MarketType; latestReportDate?: string; latestBroker?: string; latestOpinion?: string; latestTargetPrice?: number; latestCurrentPrice?: number; latestBasePrice?: number; avgUpside?: number; reportCount: number; reasonSummary: string; reasonBullets: string[]; investmentLogic: InsightSection; estimateRevision: InsightSection; valuation: InsightSection; sectorCycle: InsightSection; relatedReports: AnalystReport[] };
 type StockInsightResponse = { found: boolean; insight: StockInsight };
+type ScorecardPeriodSummary = { eligibleCount: number; successCount: number; declineCount: number; pendingCount: number; unavailableCount: number; successRate: number; declineRate: number; avgReturnPct: number; avgTargetProgressPct: number };
+type ScorecardGroup = { key: string; label: string; reportCount: number; week1: ScorecardPeriodSummary; month1: ScorecardPeriodSummary; month3: ScorecardPeriodSummary };
+type AnalystScorecardResponse = { summary: { overall: ScorecardGroup; byBroker: ScorecardGroup[]; byMarket: ScorecardGroup[]; bySector: ScorecardGroup[] }; reports: AnalystReport[] };
 type InsightRequest = { ticker: string; name: string; market: MarketType; category: WatchlistCategory; currentPrice?: number; changePercent?: number; high52w?: number; low52w?: number };
 type WatchlistItem = { ticker: string; name: string; market: MarketType; category: WatchlistCategory; savedAt: string; currentPrice?: number; changePercent?: number; high52w?: number; low52w?: number };
 type ResolvedWatchlistItem = WatchlistItem & { currentPrice?: number; change?: number; changePercent?: number; volume?: number; high52w?: number; low52w?: number };
 
 const ANALYST_CACHE_TTL_MS = process.env.NODE_ENV === 'development' ? 0 : 5 * 60 * 1000;
 const CONSENSUS_CACHE_TTL_MS = process.env.NODE_ENV === 'development' ? 0 : 5 * 60 * 1000;
+const SCORECARD_CACHE_TTL_MS = process.env.NODE_ENV === 'development' ? 0 : 5 * 60 * 1000;
 const INSIGHT_CACHE_TTL_MS = process.env.NODE_ENV === 'development' ? 0 : 5 * 60 * 1000;
 const WATCHLIST_STORAGE_KEY = 'globalpick.watchlist';
+const PAGE_SIZE_OPTIONS = [5, 10, 20, 30, 40, 50];
 const analystClientCache = new Map<string, { reports: AnalystReport[]; fetchedAt: number }>();
 const analystClientInflight = new Map<string, Promise<AnalystReport[]>>();
 const consensusClientCache = new Map<string, { items: AnalystConsensusItem[]; fetchedAt: number }>();
 const consensusClientInflight = new Map<string, Promise<AnalystConsensusItem[]>>();
+const scorecardClientCache = new Map<string, { data: AnalystScorecardResponse; fetchedAt: number }>();
+const scorecardClientInflight = new Map<string, Promise<AnalystScorecardResponse>>();
 const insightClientCache = new Map<string, { insight: StockInsight; fetchedAt: number }>();
 const insightClientInflight = new Map<string, Promise<StockInsight>>();
 
@@ -35,6 +45,7 @@ const formatPrice = (price: number, market: MarketType) => market === 'korea'
 const formatPct = (value: number) => `${value >= 0 ? '+' : ''}${value.toFixed(1)}%`;
 const analystKey = (days: number, market: MarketFilter) => `${days}:${market}`;
 const consensusKey = (days: number, market: MarketFilter) => `${days}:${market}`;
+const scorecardKey = (days: number, market: MarketFilter) => `${days}:${market}`;
 const insightKey = (req: InsightRequest) => `${req.market}:${req.ticker}`;
 const watchlistKey = (item: Pick<WatchlistItem, 'market' | 'ticker'>) => `${item.market}:${item.ticker}`;
 
@@ -116,6 +127,32 @@ async function fetchAnalystConsensus(days: number, market: MarketFilter) {
     return data;
   }).finally(() => consensusClientInflight.delete(key));
   consensusClientInflight.set(key, request);
+  return request;
+}
+
+function getCachedScorecard(days: number, market: MarketFilter) {
+  const cached = scorecardClientCache.get(scorecardKey(days, market));
+  if (!cached) return null;
+  if (Date.now() - cached.fetchedAt > SCORECARD_CACHE_TTL_MS) {
+    scorecardClientCache.delete(scorecardKey(days, market));
+    return null;
+  }
+  return cached.data;
+}
+
+async function fetchAnalystScorecard(days: number, market: MarketFilter) {
+  const cached = getCachedScorecard(days, market);
+  if (cached) return cached;
+  const key = scorecardKey(days, market);
+  const inflight = scorecardClientInflight.get(key);
+  if (inflight) return inflight;
+  const request = fetch(`/api/analyst-scorecard?days=${days}&market=${market}`).then(async (res) => {
+    if (!res.ok) throw new Error('Failed to fetch analyst scorecard');
+    const data = await res.json() as AnalystScorecardResponse;
+    scorecardClientCache.set(key, { data, fetchedAt: Date.now() });
+    return data;
+  }).finally(() => scorecardClientInflight.delete(key));
+  scorecardClientInflight.set(key, request);
   return request;
 }
 
@@ -252,12 +289,15 @@ export default function Home() {
               ['analyst', '애널리스트 추천'],
             ].map(([id, label]) => <button key={id} onClick={() => setActiveTab(id as TabType)} className={`whitespace-nowrap px-4 py-3 text-sm font-medium ${activeTab === id ? 'border-b-2 border-blue-600 text-blue-600' : 'text-gray-600 hover:text-gray-900'}`}>{label}</button>)}
             <button onClick={() => setActiveTab('consensus')} className={`whitespace-nowrap px-4 py-3 text-sm font-medium ${activeTab === 'consensus' ? 'border-b-2 border-blue-600 text-blue-600' : 'text-gray-600 hover:text-gray-900'}`}>공통 추천</button>
+            <button onClick={() => setActiveTab('scorecard')} className={`whitespace-nowrap px-4 py-3 text-sm font-medium ${activeTab === 'scorecard' ? 'border-b-2 border-blue-600 text-blue-600' : 'text-gray-600 hover:text-gray-900'}`}>{'\uCD94\uCC9C \uD6C4 \uC131\uC801\uD45C'}</button>
           </div>
         </div>
       </nav>
       <main className="mx-auto max-w-7xl px-4 py-6">
         {activeTab === 'analyst'
           ? <AnalystTab onOpenInsight={setInsightTarget} isSaved={isSaved} onToggleWatchlist={toggleWatchlist} />
+          : activeTab === 'scorecard'
+            ? <ScorecardTab onOpenInsight={setInsightTarget} isSaved={isSaved} onToggleWatchlist={toggleWatchlist} />
           : activeTab === 'consensus'
             ? <ConsensusTab onOpenInsight={setInsightTarget} isSaved={isSaved} onToggleWatchlist={toggleWatchlist} />
           : loading
@@ -313,13 +353,42 @@ function QuickList({ title, stocks, market }: { title: string; stocks: Stock[]; 
   return <section className="rounded-xl bg-white p-6 shadow-sm"><h2 className="mb-4 text-lg font-semibold">{title}</h2><div className="space-y-3">{stocks.map((stock) => <div key={stock.ticker} className="flex items-center justify-between rounded-lg bg-gray-50 p-3"><div><div className="text-sm font-medium">{stock.name}</div><div className="text-xs text-gray-400">{stock.ticker}</div></div><div className="text-right"><div className="text-sm font-medium">{formatPrice(stock.currentPrice, market)}</div><div className={`text-xs ${stock.changePercent >= 0 ? 'text-green-600' : 'text-red-600'}`}>{stock.changePercent >= 0 ? '+' : ''}{stock.changePercent.toFixed(2)}%</div></div></div>)}</div></section>;
 }
 
+function PaginationControls({ totalCount, page, pageSize, totalPages, onPageChange }: { totalCount: number; page: number; pageSize: number; totalPages: number; onPageChange: (page: number) => void }) {
+  if (totalCount === 0) return null;
+  const start = (page - 1) * pageSize + 1;
+  const end = Math.min(page * pageSize, totalCount);
+  return <div className="flex flex-col gap-3 rounded-xl border bg-gray-50 px-4 py-3 sm:flex-row sm:items-center sm:justify-between">
+    <div className="text-sm text-gray-500">{'\uCD1D'} {totalCount}{'\uAC74 \uC911'} {start}-{end}{'\uAC74'}</div>
+    <div className="flex flex-wrap items-center gap-2 sm:justify-end">
+      <button onClick={() => onPageChange(Math.max(1, page - 1))} disabled={page === 1} className="rounded border bg-white px-3 py-1.5 text-sm disabled:opacity-50">{'\uC774\uC804'}</button>
+      <span className="text-sm text-gray-600">{page} / {totalPages}</span>
+      <button onClick={() => onPageChange(Math.min(totalPages, page + 1))} disabled={page === totalPages} className="rounded border bg-white px-3 py-1.5 text-sm disabled:opacity-50">{'\uB2E4\uC74C'}</button>
+    </div>
+  </div>;
+}
+
 function WatchlistTab({ items, onOpenInsight, onRemove }: { items: ResolvedWatchlistItem[]; onOpenInsight: (request: InsightRequest) => void; onRemove: (ticker: string, market: MarketType) => void }) {
+  const [page, setPage] = useState(1);
+  const [pageSize, setPageSize] = useState(10);
+  const totalPages = Math.max(1, Math.ceil(items.length / pageSize));
+  const paginated = items.slice((page - 1) * pageSize, page * pageSize);
+
+  useEffect(() => {
+    setPage(1);
+  }, [items.length, pageSize]);
+
   return <div className="space-y-6">
     <div className="rounded-xl bg-white p-6 shadow-sm">
-      <h2 className="text-lg font-semibold">관심 종목</h2>
-      <p className="mt-1 text-sm text-gray-500">저장한 종목을 한 곳에서 보고, 필요 없는 종목은 바로 삭제할 수 있습니다.</p>
+      <h2 className="text-lg font-semibold">{'\uAD00\uC2EC \uC885\uBAA9 \uBAA9\uB85D'}</h2>
+      <p className="mt-1 text-sm text-gray-500">{'\uC800\uC7A5\uD55C \uC885\uBAA9\uC744 \uD55C\uACF3\uC5D0\uC11C \uBAA8\uC544 \uBCF4\uACE0, \uC885\uBAA9 \uD074\uB9AD \uD6C4 \uC758\uACAC \uD31D\uC5C5\uC73C\uB85C \uBC14\uB85C \uD655\uC778\uD560 \uC218 \uC788\uC2B5\uB2C8\uB2E4.'}</p>
     </div>
-    {items.length === 0 ? <div className="rounded-xl bg-white p-8 text-center text-gray-400 shadow-sm">저장된 관심 종목이 없습니다.</div> : <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">{items.map((item) => <article key={`${item.market}-${item.ticker}`} className="rounded-xl bg-white p-5 shadow-sm"><div className="flex items-start justify-between gap-3"><button type="button" onClick={() => onOpenInsight({ ticker: item.ticker, name: item.name, market: item.market, category: item.category, currentPrice: item.currentPrice, changePercent: item.changePercent, high52w: item.high52w, low52w: item.low52w })} className="min-w-0 text-left"><div className="truncate font-semibold text-blue-700 hover:underline">{item.name}</div><div className="text-xs text-gray-400">{item.ticker} · {item.market === 'korea' ? '국내' : '해외'}</div></button><button type="button" onClick={() => onRemove(item.ticker, item.market)} className="shrink-0 rounded-lg border px-2.5 py-1.5 text-xs text-gray-500 hover:bg-gray-50">삭제</button></div><div className="mt-4 grid grid-cols-2 gap-3 text-sm"><div className="rounded-lg bg-gray-50 p-3"><div className="text-xs text-gray-500">현재가</div><div className="mt-1 font-medium text-gray-900">{formatPrice(item.currentPrice || 0, item.market)}</div></div><div className="rounded-lg bg-gray-50 p-3"><div className="text-xs text-gray-500">등락률</div><div className={`mt-1 font-medium ${item.changePercent !== undefined && item.changePercent >= 0 ? 'text-green-600' : 'text-red-600'}`}>{item.changePercent !== undefined ? formatPct(item.changePercent) : '-'}</div></div></div><div className="mt-4 text-xs text-gray-400">저장일 {item.savedAt.slice(0, 10)}</div></article>)}</div>}
+    {items.length === 0 ? <div className="rounded-xl bg-white p-8 text-center text-gray-400 shadow-sm">{'\uC800\uC7A5\uB41C \uAD00\uC2EC \uC885\uBAA9\uC774 \uC544\uC9C1 \uC5C6\uC2B5\uB2C8\uB2E4.'}</div> : <>
+      <div className="flex justify-end">
+        <SimpleSelect label={'\uD398\uC774\uC9C0 \uD06C\uAE30'} value={String(pageSize)} onChange={(value) => setPageSize(Number(value))} options={PAGE_SIZE_OPTIONS.map((option) => [String(option), String(option)] as [string, string])} />
+      </div>
+      <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">{paginated.map((item) => <article key={`${item.market}-${item.ticker}`} className="rounded-xl bg-white p-5 shadow-sm"><div className="flex items-start justify-between gap-3"><button type="button" onClick={() => onOpenInsight({ ticker: item.ticker, name: item.name, market: item.market, category: item.category, currentPrice: item.currentPrice, changePercent: item.changePercent, high52w: item.high52w, low52w: item.low52w })} className="min-w-0 text-left"><div className="truncate font-semibold text-blue-700 hover:underline">{item.name}</div><div className="text-xs text-gray-400">{item.ticker} {'\u00B7'} {item.market === 'korea' ? '\uAD6D\uB0B4' : '\uD574\uC678'}</div></button><button type="button" onClick={() => onRemove(item.ticker, item.market)} className="shrink-0 rounded-lg border px-2.5 py-1.5 text-xs text-gray-500 hover:bg-gray-50">{'\uC0AD\uC81C'}</button></div><div className="mt-4 grid grid-cols-2 gap-3 text-sm"><div className="rounded-lg bg-gray-50 p-3"><div className="text-xs text-gray-500">{'\uD604\uC7AC\uAC00'}</div><div className="mt-1 font-medium text-gray-900">{formatPrice(item.currentPrice || 0, item.market)}</div></div><div className="rounded-lg bg-gray-50 p-3"><div className="text-xs text-gray-500">{'\uB4F1\uB77D\uB960'}</div><div className={`mt-1 font-medium ${item.changePercent !== undefined && item.changePercent >= 0 ? 'text-green-600' : 'text-red-600'}`}>{item.changePercent !== undefined ? formatPct(item.changePercent) : '-'}</div></div></div><div className="mt-4 text-xs text-gray-400">{'\uC800\uC7A5\uC77C'} {item.savedAt.slice(0, 10)}</div></article>)}</div>
+      <PaginationControls totalCount={items.length} page={page} pageSize={pageSize} totalPages={totalPages} onPageChange={setPage} />
+    </>}
   </div>;
 }
 
@@ -333,7 +402,7 @@ function AnalystTab({ onOpenInsight, isSaved, onToggleWatchlist }: { onOpenInsig
   const [broker, setBroker] = useState('all');
   const [opinion, setOpinion] = useState('all');
   const [page, setPage] = useState(1);
-  const pageSize = 10;
+  const [pageSize, setPageSize] = useState(10);
 
   useEffect(() => { void (async () => {
     const cached = getCachedAnalystReports(days, market);
@@ -344,12 +413,12 @@ function AnalystTab({ onOpenInsight, isSaved, onToggleWatchlist }: { onOpenInsig
       setReports(await fetchAnalystReports(days, market));
     } catch (fetchError) {
       console.error(fetchError);
-      setError('애널리스트 데이터를 불러오지 못했습니다.');
+      setError('\uC560\uB110\uB9AC\uC2A4\uD2B8 \uB370\uC774\uD130\uB97C \uBD88\uB7EC\uC624\uC9C0 \uBABB\uD588\uC2B5\uB2C8\uB2E4.');
     } finally {
       setLoading(false);
     }
   })(); }, [days, market]);
-  useEffect(() => setPage(1), [days, market, sortBy, broker, opinion]);
+  useEffect(() => setPage(1), [days, market, sortBy, broker, opinion, pageSize]);
 
   const brokers = Array.from(new Set(reports.map((r) => r.broker))).sort();
   const opinions = Array.from(new Set(reports.map((r) => r.opinion))).sort();
@@ -364,29 +433,33 @@ function AnalystTab({ onOpenInsight, isSaved, onToggleWatchlist }: { onOpenInsig
 
   return <div className="space-y-6">
     <div className="rounded-xl bg-white p-4 shadow-sm">
-      <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-[minmax(0,1.4fr)_repeat(4,minmax(0,1fr))]">
+      <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-[minmax(0,1.4fr)_repeat(5,minmax(0,1fr))]">
         <div className="w-full">
-          <label className="mb-1 block text-sm text-gray-500">기간</label>
+          <label className="mb-1 block text-sm text-gray-500">{'\uAE30\uAC04'}</label>
           <div className="flex flex-wrap overflow-hidden rounded-lg border">
-            {[3, 7, 15, 30].map((value) => <button key={value} onClick={() => setDays(value)} className={`flex-1 px-3 py-2 text-sm ${days === value ? 'bg-blue-600 text-white' : 'bg-white text-gray-600 hover:bg-gray-50'}`}>{value}일</button>)}
+            {[3, 7, 15, 30].map((value) => <button key={value} onClick={() => setDays(value)} className={`flex-1 px-3 py-2 text-sm ${days === value ? 'bg-blue-600 text-white' : 'bg-white text-gray-600 hover:bg-gray-50'}`}>{value}{'\uC77C'}</button>)}
           </div>
         </div>
-        <SimpleSelect label="시장" value={market} onChange={(value) => setMarket(value as MarketFilter)} options={[['all', '전체'], ['korea', '국내'], ['us', '해외']]} />
-        <SimpleSelect label="정렬" value={sortBy} onChange={(value) => setSortBy(value as 'upside' | 'date')} options={[['date', '최신순'], ['upside', '상승여력순']]} />
-        <SimpleSelect label="증권사" value={broker} onChange={setBroker} options={[['all', '전체'], ...brokers.map((value) => [value, value] as [string, string])]} />
-        <SimpleSelect label="의견" value={opinion} onChange={setOpinion} options={[['all', '전체'], ...opinions.map((value) => [value, value] as [string, string])]} />
+        <SimpleSelect label={'\uC2DC\uC7A5'} value={market} onChange={(value) => setMarket(value as MarketFilter)} options={[['all', '\uC804\uCCB4'], ['korea', '\uAD6D\uB0B4'], ['us', '\uD574\uC678']]} />
+        <SimpleSelect label={'\uC815\uB82C'} value={sortBy} onChange={(value) => setSortBy(value as 'upside' | 'date')} options={[['date', '\uCD5C\uC2E0\uC21C'], ['upside', '\uC0C1\uC2B9\uC5EC\uB825\uC21C']]} />
+        <SimpleSelect label={'\uC99D\uAD8C\uC0AC'} value={broker} onChange={setBroker} options={[['all', '\uC804\uCCB4'], ...brokers.map((value) => [value, value] as [string, string])]} />
+        <SimpleSelect label={'\uC758\uACAC'} value={opinion} onChange={setOpinion} options={[['all', '\uC804\uCCB4'], ...opinions.map((value) => [value, value] as [string, string])]} />
+        <SimpleSelect label={'\uD398\uC774\uC9C0 \uD06C\uAE30'} value={String(pageSize)} onChange={(value) => setPageSize(Number(value))} options={PAGE_SIZE_OPTIONS.map((option) => [String(option), String(option)] as [string, string])} />
       </div>
     </div>
     <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
-      <StatCard label="추천 리포트 수" value={String(filtered.length)} />
-      <StatCard label="평균 상승여력" value={formatPct(avgUpside)} accent="text-green-600" />
-      <StatCard label="국내 리포트" value={String(filtered.filter((r) => r.market === 'korea').length)} />
-      <StatCard label="해외 리포트" value={String(filtered.filter((r) => r.market === 'us').length)} />
+      <StatCard label={'\uCD94\uCC9C \uB9AC\uD3EC\uD2B8 \uC218'} value={String(filtered.length)} />
+      <StatCard label={'\uD3C9\uADE0 \uC0C1\uC2B9\uC5EC\uB825'} value={formatPct(avgUpside)} accent="text-green-600" />
+      <StatCard label={'\uAD6D\uB0B4 \uB9AC\uD3EC\uD2B8'} value={String(filtered.filter((r) => r.market === 'korea').length)} />
+      <StatCard label={'\uD574\uC678 \uB9AC\uD3EC\uD2B8'} value={String(filtered.filter((r) => r.market === 'us').length)} />
     </div>
     {loading ? <LoadingState /> : error ? <div className="rounded-lg bg-red-50 p-4 text-red-600">{error}</div> : <>
       <div className="overflow-hidden rounded-xl bg-white shadow-sm">
-        <div className="border-b p-4"><h2 className="text-lg font-semibold">애널리스트 추천 종목</h2><p className="text-sm text-gray-500">종목명을 누르면 기준가격과 간단한 매수 의견을 확인할 수 있습니다.</p></div>
-        {filtered.length === 0 ? <div className="p-8 text-center text-gray-400">조건에 맞는 추천 리포트가 없습니다.</div> : <>
+        <div className="border-b p-4">
+          <h2 className="text-lg font-semibold">{'\uC560\uB110\uB9AC\uC2A4\uD2B8 \uCD94\uCC9C \uC885\uBAA9'}</h2>
+          <p className="text-sm text-gray-500">{'\uC885\uBAA9\uBA85\uC744 \uB204\uB974\uBA74 \uAE30\uC900\uAC00\uACA9\uACFC \uAC04\uB2E8\uD55C \uB9E4\uC218 \uC758\uACAC\uC744 \uD655\uC778\uD560 \uC218 \uC788\uC2B5\uB2C8\uB2E4.'}</p>
+        </div>
+        {filtered.length === 0 ? <div className="p-8 text-center text-gray-400">{'\uC870\uAC74\uC5D0 \uB9DE\uB294 \uCD94\uCC9C \uB9AC\uD3EC\uD2B8\uAC00 \uC5C6\uC2B5\uB2C8\uB2E4.'}</div> : <>
           <div className="space-y-2.5 p-3 md:hidden">
             {paginated.map((report, index) => <article key={`${report.market}-${report.ticker}-${index}`} className="rounded-lg border border-gray-100 bg-gray-50 p-3">
               <div className="flex items-start justify-between gap-2.5">
@@ -396,7 +469,7 @@ function AnalystTab({ onOpenInsight, isSaved, onToggleWatchlist }: { onOpenInsig
                 </button>
                 <div className="flex shrink-0 items-center gap-1.5">
                   <FavoriteButton active={isSaved(report.ticker, report.market)} onClick={() => onToggleWatchlist({ ticker: report.ticker, name: report.name, market: report.market, category: 'analyst', currentPrice: report.currentPrice })} className="h-6 w-6 text-sm" />
-                  <span className={`rounded px-1.5 py-0.5 text-[11px] ${report.market === 'korea' ? 'bg-blue-100 text-blue-700' : 'bg-orange-100 text-orange-700'}`}>{report.market === 'korea' ? '국내' : '해외'}</span>
+                  <span className={`rounded px-1.5 py-0.5 text-[11px] ${report.market === 'korea' ? 'bg-blue-100 text-blue-700' : 'bg-orange-100 text-orange-700'}`}>{report.market === 'korea' ? '\uAD6D\uB0B4' : '\uD574\uC678'}</span>
                 </div>
               </div>
               <div className="mt-2 flex items-center justify-between gap-2 text-[11px] text-gray-500">
@@ -404,15 +477,15 @@ function AnalystTab({ onOpenInsight, isSaved, onToggleWatchlist }: { onOpenInsig
                 <span className="rounded bg-green-100 px-1.5 py-0.5 text-[11px] text-green-700">{report.opinion}</span>
               </div>
               <div className="mt-3 grid grid-cols-2 gap-2 text-xs">
-                <div className="rounded-md bg-white p-2.5"><div className="text-[11px] text-gray-500">증권사</div><div className="mt-1 text-[12px] font-medium text-gray-900">{report.broker}</div></div>
-                <div className="rounded-md bg-white p-2.5"><div className="text-[11px] text-gray-500">상승여력</div><div className="mt-1 text-[12px] font-semibold text-green-600">{formatPct(report.upside)}</div></div>
-                <div className="rounded-md bg-white p-2.5"><div className="text-[11px] text-gray-500">목표가</div><div className="mt-1 text-[12px] font-medium text-gray-900">{formatPrice(report.targetPrice, report.market)}</div></div>
-                <div className="rounded-md bg-white p-2.5"><div className="text-[11px] text-gray-500">현재가</div><div className="mt-1 text-[12px] font-medium text-gray-900">{formatPrice(report.currentPrice, report.market)}</div></div>
+                <div className="rounded-md bg-white p-2.5"><div className="text-[11px] text-gray-500">{'\uC99D\uAD8C\uC0AC'}</div><div className="mt-1 text-[12px] font-medium text-gray-900">{report.broker}</div></div>
+                <div className="rounded-md bg-white p-2.5"><div className="text-[11px] text-gray-500">{'\uC0C1\uC2B9\uC5EC\uB825'}</div><div className="mt-1 text-[12px] font-semibold text-green-600">{formatPct(report.upside)}</div></div>
+                <div className="rounded-md bg-white p-2.5"><div className="text-[11px] text-gray-500">{'\uBAA9\uD45C\uAC00'}</div><div className="mt-1 text-[12px] font-medium text-gray-900">{formatPrice(report.targetPrice, report.market)}</div></div>
+                <div className="rounded-md bg-white p-2.5"><div className="text-[11px] text-gray-500">{'\uD604\uC7AC\uAC00'}</div><div className="mt-1 text-[12px] font-medium text-gray-900">{formatPrice(report.currentPrice, report.market)}</div></div>
               </div>
               <div className="mt-2.5 rounded-md bg-white p-2.5 text-xs">
-                <div className="text-[11px] text-gray-500">기준가격</div>
+                <div className="text-[11px] text-gray-500">{'\uAE30\uC900\uAC00\uACA9'}</div>
                 <div className="mt-1 text-[12px] font-medium text-gray-900">{formatPrice(report.basePrice, report.market)}</div>
-                <div className="mt-1 text-[11px] text-gray-400">{report.basePriceDate} 종가</div>
+                <div className="mt-1 text-[11px] text-gray-400">{report.basePriceDate} {'\uC885\uAC00'}</div>
               </div>
             </article>)}
           </div>
@@ -420,25 +493,33 @@ function AnalystTab({ onOpenInsight, isSaved, onToggleWatchlist }: { onOpenInsig
             <table className="w-full">
               <thead className="bg-gray-50 text-left text-xs uppercase text-gray-500">
                 <tr>
-                  <th className="px-4 py-3">날짜</th>
-                  <th className="px-4 py-3">종목</th>
-                  <th className="px-4 py-3">시장</th>
-                  <th className="px-4 py-3">증권사</th>
-                  <th className="px-4 py-3 text-right">목표가</th>
-                  <th className="px-4 py-3 text-right">기준가격</th>
-                  <th className="px-4 py-3 text-right">현재가</th>
-                  <th className="px-4 py-3 text-right">상승여력</th>
-                  <th className="px-4 py-3">의견</th>
+                  <th className="px-4 py-3">{'\uB0A0\uC9DC'}</th>
+                  <th className="px-4 py-3">{'\uC885\uBAA9'}</th>
+                  <th className="px-4 py-3">{'\uC2DC\uC7A5'}</th>
+                  <th className="px-4 py-3">{'\uC99D\uAD8C\uC0AC'}</th>
+                  <th className="px-4 py-3 text-right">{'\uBAA9\uD45C\uAC00'}</th>
+                  <th className="px-4 py-3 text-right">{'\uAE30\uC900\uAC00\uACA9'}</th>
+                  <th className="px-4 py-3 text-right">{'\uD604\uC7AC\uAC00'}</th>
+                  <th className="px-4 py-3 text-right">{'\uC0C1\uC2B9\uC5EC\uB825'}</th>
+                  <th className="px-4 py-3">{'\uC758\uACAC'}</th>
                 </tr>
               </thead>
               <tbody className="divide-y">
                 {paginated.map((report, index) => <tr key={`${report.market}-${report.ticker}-${index}`} className="hover:bg-gray-50">
                   <td className="px-4 py-3 text-sm">{report.date}</td>
-                  <td className="px-4 py-3"><div className="flex items-start justify-between gap-3"><button type="button" onClick={() => onOpenInsight({ ticker: report.ticker, name: report.name, market: report.market, category: 'analyst', currentPrice: report.currentPrice })} className="text-left"><div className="font-medium text-blue-700 hover:underline">{report.name}</div><div className="text-xs text-gray-400">{report.ticker}</div></button><FavoriteButton active={isSaved(report.ticker, report.market)} onClick={() => onToggleWatchlist({ ticker: report.ticker, name: report.name, market: report.market, category: 'analyst', currentPrice: report.currentPrice })} /></div></td>
-                  <td className="px-4 py-3"><span className={`rounded px-2 py-1 text-xs ${report.market === 'korea' ? 'bg-blue-100 text-blue-700' : 'bg-orange-100 text-orange-700'}`}>{report.market === 'korea' ? '국내' : '해외'}</span></td>
+                  <td className="px-4 py-3">
+                    <div className="flex items-start justify-between gap-3">
+                      <button type="button" onClick={() => onOpenInsight({ ticker: report.ticker, name: report.name, market: report.market, category: 'analyst', currentPrice: report.currentPrice })} className="text-left">
+                        <div className="font-medium text-blue-700 hover:underline">{report.name}</div>
+                        <div className="text-xs text-gray-400">{report.ticker}</div>
+                      </button>
+                      <FavoriteButton active={isSaved(report.ticker, report.market)} onClick={() => onToggleWatchlist({ ticker: report.ticker, name: report.name, market: report.market, category: 'analyst', currentPrice: report.currentPrice })} />
+                    </div>
+                  </td>
+                  <td className="px-4 py-3"><span className={`rounded px-2 py-1 text-xs ${report.market === 'korea' ? 'bg-blue-100 text-blue-700' : 'bg-orange-100 text-orange-700'}`}>{report.market === 'korea' ? '\uAD6D\uB0B4' : '\uD574\uC678'}</span></td>
                   <td className="px-4 py-3 text-sm">{report.broker}</td>
                   <td className="px-4 py-3 text-right font-medium">{formatPrice(report.targetPrice, report.market)}</td>
-                  <td className="px-4 py-3 text-right"><div className="font-medium">{formatPrice(report.basePrice, report.market)}</div><div className="text-xs text-gray-400">{report.basePriceDate} 종가</div></td>
+                  <td className="px-4 py-3 text-right"><div className="font-medium">{formatPrice(report.basePrice, report.market)}</div><div className="text-xs text-gray-400">{report.basePriceDate} {'\uC885\uAC00'}</div></td>
                   <td className="px-4 py-3 text-right">{formatPrice(report.currentPrice, report.market)}</td>
                   <td className="px-4 py-3 text-right font-medium text-green-600">{formatPct(report.upside)}</td>
                   <td className="px-4 py-3"><span className="rounded bg-green-100 px-2 py-1 text-xs text-green-700">{report.opinion}</span></td>
@@ -448,17 +529,268 @@ function AnalystTab({ onOpenInsight, isSaved, onToggleWatchlist }: { onOpenInsig
           </div>
         </>}
       </div>
-      <div className="flex flex-col gap-3 rounded-xl border bg-gray-50 px-4 py-3 sm:flex-row sm:items-center sm:justify-between">
-        <div className="text-sm text-gray-500">총 {filtered.length}건 중 {(page - 1) * pageSize + 1}-{Math.min(page * pageSize, filtered.length)}건</div>
-        <div className="flex items-center justify-between gap-2 sm:justify-end">
-          <button onClick={() => setPage((value) => Math.max(1, value - 1))} disabled={page === 1} className="rounded border bg-white px-3 py-1.5 text-sm disabled:opacity-50">이전</button>
-          <span className="text-sm text-gray-600">{page} / {totalPages}</span>
-          <button onClick={() => setPage((value) => Math.min(totalPages, value + 1))} disabled={page === totalPages} className="rounded border bg-white px-3 py-1.5 text-sm disabled:opacity-50">다음</button>
-        </div>
-      </div>
-      <div className="rounded-xl bg-white p-4 shadow-sm sm:p-6"><h3 className="mb-4 text-lg font-semibold">상승여력 TOP 10</h3><div className="h-72 sm:h-80"><ResponsiveContainer width="100%" height="100%"><BarChart data={topUpside} layout="vertical"><XAxis type="number" domain={[0, 'dataMax + 10']} tickFormatter={(value) => `${value}%`} /><YAxis type="category" dataKey="name" width={120} tick={{ fontSize: 12 }} /><Tooltip formatter={(value: number) => [`${value.toFixed(1)}%`, '상승여력']} /><Bar dataKey="upside" fill="#22c55e" radius={[0, 4, 4, 0]} /></BarChart></ResponsiveContainer></div></div>
+      <PaginationControls totalCount={filtered.length} page={page} pageSize={pageSize} totalPages={totalPages} onPageChange={setPage} />
+      <div className="rounded-xl bg-white p-4 shadow-sm sm:p-6"><h3 className="mb-4 text-lg font-semibold">{'\uC0C1\uC2B9\uC5EC\uB825 TOP 10'}</h3><div className="h-72 sm:h-80"><ResponsiveContainer width="100%" height="100%"><BarChart data={topUpside} layout="vertical"><XAxis type="number" domain={[0, 'dataMax + 10']} tickFormatter={(value) => `${value}%`} /><YAxis type="category" dataKey="name" width={120} tick={{ fontSize: 12 }} /><Tooltip formatter={(value: number) => [`${value.toFixed(1)}%`, '\uC0C1\uC2B9\uC5EC\uB825']} /><Bar dataKey="upside" fill="#22c55e" radius={[0, 4, 4, 0]} /></BarChart></ResponsiveContainer></div></div>
     </>}
   </div>;
+}
+
+function getPerformanceLabel(point?: PerformancePoint) {
+  if (!point) return '-';
+  if (point.status === 'pending') return '\uB300\uAE30';
+  if (point.status === 'unavailable') return '\uC81C\uC678';
+  return `${point.targetProgressPct.toFixed(1)}% / ${formatPct(point.returnPct)}`;
+}
+
+function getPerformanceTone(point?: PerformancePoint) {
+  if (!point || point.status !== 'complete') return 'text-gray-400';
+  return point.success ? 'text-green-600' : 'text-red-600';
+}
+
+function getReturnMetric(point?: PerformancePoint) {
+  if (!point) return '-';
+  if (point.status === 'pending') return '\uB300\uAE30';
+  if (point.status === 'unavailable') return '\uC81C\uC678';
+  return `${point.returnPct >= 0 ? '\uC0C1\uC2B9\uB960' : '\uD558\uB77D\uB960'} ${formatPct(point.returnPct)}`;
+}
+
+function getProgressMetric(point?: PerformancePoint) {
+  if (!point) return '-';
+  if (point.status === 'pending') return '\uB300\uAE30';
+  if (point.status === 'unavailable') return '\uC81C\uC678';
+  return `\uBAA9\uD45C\uAC00 \uC811\uADFC\uB960 ${point.targetProgressPct.toFixed(1)}%`;
+}
+
+function getStatusBadge(point?: PerformancePoint) {
+  if (!point) return { label: '-', className: 'bg-gray-100 text-gray-500' };
+  if (point.status === 'pending') return { label: '\uB300\uAE30', className: 'bg-amber-100 text-amber-700' };
+  if (point.status === 'unavailable') return { label: '\uC81C\uC678', className: 'bg-gray-100 text-gray-500' };
+  return point.success
+    ? { label: '\uC131\uACF5', className: 'bg-green-100 text-green-700' }
+    : { label: '\uBBF8\uB2EC', className: 'bg-red-100 text-red-700' };
+}
+
+function ScorecardTab({ onOpenInsight, isSaved, onToggleWatchlist }: { onOpenInsight: (request: InsightRequest) => void; isSaved: (ticker: string, market: MarketType) => boolean; onToggleWatchlist: (item: Omit<WatchlistItem, 'savedAt'>) => void }) {
+  const [data, setData] = useState<AnalystScorecardResponse | null>(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
+  const [days, setDays] = useState(90);
+  const [market, setMarket] = useState<MarketFilter>('all');
+  const [page, setPage] = useState(1);
+  const [pageSize, setPageSize] = useState(10);
+
+  useEffect(() => { void (async () => {
+    const cached = getCachedScorecard(days, market);
+    setLoading(!cached);
+    setError(null);
+    try {
+      if (cached) setData(cached);
+      setData(await fetchAnalystScorecard(days, market));
+    } catch (fetchError) {
+      console.error(fetchError);
+      setError('\uCD94\uCC9C \uD6C4 \uC131\uC801\uD45C \uB370\uC774\uD130\uB97C \uBD88\uB7EC\uC624\uC9C0 \uBABB\uD588\uC2B5\uB2C8\uB2E4.');
+    } finally {
+      setLoading(false);
+    }
+  })(); }, [days, market]);
+
+  useEffect(() => {
+    setPage(1);
+  }, [days, market, pageSize]);
+
+  const overall = data?.summary.overall;
+  const reports = data?.reports || [];
+  const totalPages = Math.max(1, Math.ceil(reports.length / pageSize));
+  const paginated = reports.slice((page - 1) * pageSize, page * pageSize);
+  const brokerChartData = (data?.summary.byBroker || []).slice(0, 8).map((item) => ({
+    name: item.label,
+    successRate: item.month1.successRate,
+  }));
+  const periodChartData = overall ? [
+    { name: '1W', avgReturnPct: overall.week1.avgReturnPct },
+    { name: '1M', avgReturnPct: overall.month1.avgReturnPct },
+    { name: '3M', avgReturnPct: overall.month3.avgReturnPct },
+  ] : [];
+
+  return <div className="space-y-6">
+    <div className="rounded-xl bg-white p-4 shadow-sm">
+      <div className="grid gap-4 md:grid-cols-[minmax(0,1.3fr)_minmax(0,1fr)_auto] md:items-end">
+        <div className="w-full">
+          <label className="mb-1 block text-sm text-gray-500">{'\uAE30\uAC04'}</label>
+          <div className="flex flex-wrap overflow-hidden rounded-lg border">
+            {[7, 30, 90].map((value) => <button key={value} onClick={() => setDays(value)} className={`flex-1 px-3 py-2 text-sm ${days === value ? 'bg-blue-600 text-white' : 'bg-white text-gray-600 hover:bg-gray-50'}`}>{value}{'\uC77C'}</button>)}
+          </div>
+        </div>
+        <SimpleSelect label={'\uC2DC\uC7A5'} value={market} onChange={(value) => setMarket(value as MarketFilter)} options={[['all', '\uC804\uCCB4'], ['korea', '\uAD6D\uB0B4'], ['us', '\uD574\uC678']]} />
+        <div className="text-sm text-gray-400 md:pb-2">{'\uBAA9\uD45C\uAC00 \uB3C4\uB2EC \uAC70\uB9AC \uAE30\uC900 70% \uC811\uADFC \uC2DC \uC131\uACF5'}</div>
+      </div>
+    </div>
+    {loading ? <LoadingState /> : error ? <div className="rounded-lg bg-red-50 p-4 text-red-600">{error}</div> : data && overall ? <>
+      <div className="rounded-xl bg-white p-6 shadow-sm">
+        <h2 className="text-lg font-semibold">{'\uCD94\uCC9C \uD6C4 \uC131\uC801\uD45C'}</h2>
+        <p className="mt-1 text-sm text-gray-500">{'\uCD94\uCC9C\uC77C \uAE30\uC900\uAC00\uACA9\uC5D0\uC11C \uBAA9\uD45C\uAC00\uAE4C\uC9C0 \uAC70\uB9AC\uB97C \uC5BC\uB9C8\uB098 \uC904\uC600\uB294\uC9C0 \uAE30\uC900\uC73C\uB85C 1\uC8FC, 1\uAC1C\uC6D4, 3\uAC1C\uC6D4 \uC131\uACFC\uB97C \uC9D1\uACC4\uD569\uB2C8\uB2E4.'}</p>
+      </div>
+      <div className="grid grid-cols-2 gap-4 md:grid-cols-3 xl:grid-cols-6">
+        <StatCard label={'1\uC8FC \uC131\uACF5\uB960'} value={`${overall.week1.successRate.toFixed(1)}%`} accent="text-green-600" />
+        <StatCard label={'1\uC8FC \uD558\uB77D\uB960'} value={`${overall.week1.declineRate.toFixed(1)}%`} accent="text-red-600" />
+        <StatCard label={'1\uAC1C\uC6D4 \uC131\uACF5\uB960'} value={`${overall.month1.successRate.toFixed(1)}%`} accent="text-green-600" />
+        <StatCard label={'1\uAC1C\uC6D4 \uD558\uB77D\uB960'} value={`${overall.month1.declineRate.toFixed(1)}%`} accent="text-red-600" />
+        <StatCard label={'3\uAC1C\uC6D4 \uC131\uACF5\uB960'} value={`${overall.month3.successRate.toFixed(1)}%`} accent="text-green-600" />
+        <StatCard label={'3\uAC1C\uC6D4 \uD558\uB77D\uB960'} value={`${overall.month3.declineRate.toFixed(1)}%`} accent="text-red-600" />
+      </div>
+      <div className="grid gap-6 xl:grid-cols-2">
+        <div className="rounded-xl bg-white p-4 shadow-sm sm:p-6">
+          <h3 className="mb-4 text-lg font-semibold">{'\uC99D\uAD8C\uC0AC\uBCC4 1\uAC1C\uC6D4 \uC131\uACF5\uB960 TOP 8'}</h3>
+          <div className="h-72">
+            <ResponsiveContainer width="100%" height="100%">
+              <BarChart data={brokerChartData}>
+                <XAxis dataKey="name" tick={{ fontSize: 12 }} interval={0} angle={-20} textAnchor="end" height={70} />
+                <YAxis tickFormatter={(value) => `${value}%`} />
+                <Tooltip formatter={(value: number) => [`${value.toFixed(1)}%`, '\uC131\uACF5\uB960']} />
+                <Bar dataKey="successRate" fill="#2563eb" radius={[4, 4, 0, 0]} />
+              </BarChart>
+            </ResponsiveContainer>
+          </div>
+        </div>
+        <div className="rounded-xl bg-white p-4 shadow-sm sm:p-6">
+          <h3 className="mb-4 text-lg font-semibold">{'\uAE30\uAC04\uBCC4 \uD3C9\uADE0 \uC218\uC775\uB960'}</h3>
+          <div className="h-72">
+            <ResponsiveContainer width="100%" height="100%">
+              <BarChart data={periodChartData}>
+                <XAxis dataKey="name" />
+                <YAxis tickFormatter={(value) => `${value}%`} />
+                <Tooltip formatter={(value: number) => [`${value.toFixed(1)}%`, '\uD3C9\uADE0 \uC218\uC775\uB960']} />
+                <Bar dataKey="avgReturnPct" fill="#16a34a" radius={[4, 4, 0, 0]} />
+              </BarChart>
+            </ResponsiveContainer>
+          </div>
+        </div>
+      </div>
+      <div className="grid gap-6 lg:grid-cols-3">
+        <ScorecardGroupCard title={'\uC99D\uAD8C\uC0AC\uBCC4 \uC131\uC801'} items={data.summary.byBroker.slice(0, 6)} />
+        <ScorecardGroupCard title={'\uC5C5\uC885\uBCC4 \uC131\uC801'} items={data.summary.bySector.slice(0, 6)} />
+        <ScorecardGroupCard title={'\uC2DC\uC7A5\uBCC4 \uBE44\uAD50'} items={data.summary.byMarket.slice(0, 6)} />
+      </div>
+      <div className="overflow-hidden rounded-xl bg-white shadow-sm">
+        <div className="border-b p-4">
+          <div className="flex items-center justify-between gap-4">
+            <div>
+              <h3 className="text-lg font-semibold">{'\uAC1C\uBCC4 \uCD94\uCC9C \uC774\uB825'}</h3>
+              <p className="text-sm text-gray-500">{'\uD589\uC744 \uB204\uB974\uBA74 \uC885\uBAA9 \uC778\uC0AC\uC774\uD2B8 \uD31D\uC5C5\uC744 \uC5F4 \uC218 \uC788\uC2B5\uB2C8\uB2E4.'}</p>
+            </div>
+            <SimpleSelect label={'\uD398\uC774\uC9C0 \uD06C\uAE30'} value={String(pageSize)} onChange={(value) => setPageSize(Number(value))} options={PAGE_SIZE_OPTIONS.map((option) => [String(option), String(option)] as [string, string])} />
+          </div>
+        </div>
+        {reports.length === 0 ? <div className="p-8 text-center text-gray-400">{'\uC9D1\uACC4\uD560 \uCD94\uCC9C \uB9AC\uD3EC\uD2B8\uAC00 \uC5C6\uC2B5\uB2C8\uB2E4.'}</div> : <>
+          <div className="space-y-3 p-4 md:hidden">
+            {paginated.map((report, index) => {
+              const week1 = report.performance?.week1;
+              const month1 = report.performance?.month1;
+              const month3 = report.performance?.month3;
+              return <article key={`${report.market}-${report.ticker}-${report.broker}-${index}`} className="rounded-xl border border-gray-100 bg-gray-50 p-4">
+                <div className="flex items-start justify-between gap-3">
+                  <button type="button" onClick={() => onOpenInsight({ ticker: report.ticker, name: report.name, market: report.market, category: 'analyst', currentPrice: report.currentPrice })} className="min-w-0 text-left">
+                    <div className="truncate font-semibold text-blue-700">{report.name}</div>
+                    <div className="text-xs text-gray-400">{report.ticker} {'\u00B7'} {report.broker}</div>
+                  </button>
+                  <FavoriteButton active={isSaved(report.ticker, report.market)} onClick={() => onToggleWatchlist({ ticker: report.ticker, name: report.name, market: report.market, category: 'analyst', currentPrice: report.currentPrice })} className="h-7 w-7 text-base" />
+                </div>
+                <div className="mt-3 grid grid-cols-2 gap-3 text-sm">
+                  <div className="rounded-lg bg-white p-3"><div className="text-xs text-gray-500">{'\uAE30\uC900\uAC00\uACA9'}</div><div className="mt-1 font-medium text-gray-900">{formatPrice(report.basePrice, report.market)}</div></div>
+                  <div className="rounded-lg bg-white p-3"><div className="text-xs text-gray-500">{'\uBAA9\uD45C\uAC00'}</div><div className="mt-1 font-medium text-gray-900">{formatPrice(report.targetPrice, report.market)}</div></div>
+                </div>
+                <div className="mt-3 space-y-2">
+                  {[{ label: '1\uC8FC', point: week1 }, { label: '1\uAC1C\uC6D4', point: month1 }, { label: '3\uAC1C\uC6D4', point: month3 }].map(({ label, point }) => {
+                    const badge = getStatusBadge(point);
+                    return <div key={`${report.ticker}-${label}`} className="rounded-lg bg-white p-3">
+                      <div className="flex items-center justify-between gap-3">
+                        <div className="text-sm font-medium text-gray-700">{label}</div>
+                        <span className={`rounded px-2 py-1 text-xs ${badge.className}`}>{badge.label}</span>
+                      </div>
+                      <div className={`mt-2 text-sm font-medium ${getPerformanceTone(point)}`}>{getReturnMetric(point)}</div>
+                      <div className="mt-1 text-xs text-gray-500">{getProgressMetric(point)}</div>
+                    </div>;
+                  })}
+                </div>
+              </article>;
+            })}
+          </div>
+          <div className="hidden overflow-x-auto md:block">
+            <table className="w-full">
+              <thead className="bg-gray-50 text-xs uppercase text-gray-500">
+                <tr>
+                  <th className="px-4 py-3 text-left">{'\uC885\uBAA9'}</th>
+                  <th className="px-4 py-3 text-left">{'\uC99D\uAD8C\uC0AC'}</th>
+                  <th className="px-4 py-3 text-left">{'\uCD94\uCC9C\uC77C'}</th>
+                  <th className="px-4 py-3 text-right">{'\uAE30\uC900\uAC00\uACA9'}</th>
+                  <th className="px-4 py-3 text-right">{'\uBAA9\uD45C\uAC00'}</th>
+                  <th className="px-4 py-3 text-left">{'1W'}</th>
+                  <th className="px-4 py-3 text-left">{'1M'}</th>
+                  <th className="px-4 py-3 text-left">{'3M'}</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y">
+                {paginated.map((report, index) => <tr key={`${report.market}-${report.ticker}-${report.broker}-${index}`} className="hover:bg-gray-50">
+                  <td className="px-4 py-3">
+                    <div className="flex items-start justify-between gap-3">
+                      <button type="button" onClick={() => onOpenInsight({ ticker: report.ticker, name: report.name, market: report.market, category: 'analyst', currentPrice: report.currentPrice })} className="text-left">
+                        <div className="font-medium text-blue-700 hover:underline">{report.name}</div>
+                        <div className="text-xs text-gray-400">{report.ticker}</div>
+                      </button>
+                      <FavoriteButton active={isSaved(report.ticker, report.market)} onClick={() => onToggleWatchlist({ ticker: report.ticker, name: report.name, market: report.market, category: 'analyst', currentPrice: report.currentPrice })} />
+                    </div>
+                  </td>
+                  <td className="px-4 py-3 text-sm">{report.broker}</td>
+                  <td className="px-4 py-3 text-sm">{report.date}</td>
+                  <td className="px-4 py-3 text-right">{formatPrice(report.basePrice, report.market)}</td>
+                  <td className="px-4 py-3 text-right font-medium">{formatPrice(report.targetPrice, report.market)}</td>
+                  {(['week1', 'month1', 'month3'] as const).map((key) => {
+                    const point = report.performance?.[key];
+                    const badge = getStatusBadge(point);
+                    return <td key={`${report.ticker}-${key}`} className="px-4 py-3">
+                      <div className="flex flex-col gap-1">
+                        <span className={`inline-flex w-fit rounded px-2 py-1 text-xs ${badge.className}`}>{badge.label}</span>
+                        <span className={`text-sm font-medium ${getPerformanceTone(point)}`}>{getReturnMetric(point)}</span>
+                        <span className="text-xs text-gray-500">{getProgressMetric(point)}</span>
+                      </div>
+                    </td>;
+                  })}
+                </tr>)}
+              </tbody>
+            </table>
+          </div>
+          <div className="p-4 pt-0">
+            <PaginationControls totalCount={reports.length} page={page} pageSize={pageSize} totalPages={totalPages} onPageChange={setPage} />
+          </div>
+        </>}
+      </div>
+    </> : null}
+  </div>;
+}
+
+function ScorecardGroupCard({ title, items }: { title: string; items: ScorecardGroup[] }) {
+  return <section className="rounded-xl bg-white p-4 shadow-sm">
+    <h3 className="mb-4 text-lg font-semibold">{title}</h3>
+    <div className="space-y-3">
+      {items.length === 0 ? <div className="rounded-lg bg-gray-50 p-4 text-sm text-gray-400">{'\uB370\uC774\uD130\uAC00 \uC5C6\uC2B5\uB2C8\uB2E4.'}</div> : items.map((item) => <div key={`${title}-${item.key}`} className="rounded-lg bg-gray-50 p-4">
+        <div className="flex items-start justify-between gap-3">
+          <div>
+            <div className="font-medium text-gray-900">{item.label}</div>
+            <div className="text-xs text-gray-400">{'\uB9AC\uD3EC\uD2B8'} {item.reportCount}{'\uAC74'}</div>
+          </div>
+          <div className="text-right">
+            <div className="text-sm font-semibold text-green-600">{item.month1.successRate.toFixed(1)}%</div>
+            <div className="text-xs text-gray-400">{'1M \uC131\uACF5\uB960'}</div>
+          </div>
+        </div>
+        <div className="mt-3 grid grid-cols-3 gap-2 text-xs">
+          <div className="rounded bg-white p-2"><div className="text-gray-500">{'1W'}</div><div className="mt-1 font-medium text-gray-900">{item.week1.successRate.toFixed(1)}%</div><div className="mt-1 text-red-500">{'\uD558\uB77D'} {item.week1.declineRate.toFixed(1)}%</div></div>
+          <div className="rounded bg-white p-2"><div className="text-gray-500">{'1M'}</div><div className="mt-1 font-medium text-gray-900">{item.month1.successRate.toFixed(1)}%</div><div className="mt-1 text-red-500">{'\uD558\uB77D'} {item.month1.declineRate.toFixed(1)}%</div></div>
+          <div className="rounded bg-white p-2"><div className="text-gray-500">{'3M'}</div><div className="mt-1 font-medium text-gray-900">{item.month3.successRate.toFixed(1)}%</div><div className="mt-1 text-red-500">{'\uD558\uB77D'} {item.month3.declineRate.toFixed(1)}%</div></div>
+        </div>
+      </div>)}
+    </div>
+  </section>;
 }
 
 function SimpleSelect({ label, value, onChange, options }: { label: string; value: string; onChange: (value: string) => void; options: [string, string][] }) {
@@ -471,6 +803,8 @@ function ConsensusTab({ onOpenInsight, isSaved, onToggleWatchlist }: { onOpenIns
   const [error, setError] = useState<string | null>(null);
   const [days, setDays] = useState(30);
   const [market, setMarket] = useState<MarketFilter>('all');
+  const [page, setPage] = useState(1);
+  const [pageSize, setPageSize] = useState(10);
 
   useEffect(() => { void (async () => {
     const cached = getCachedConsensus(days, market);
@@ -481,38 +815,44 @@ function ConsensusTab({ onOpenInsight, isSaved, onToggleWatchlist }: { onOpenIns
       setItems(await fetchAnalystConsensus(days, market));
     } catch (fetchError) {
       console.error(fetchError);
-      setError('공통 추천 데이터를 불러오지 못했습니다.');
+      setError('\uACF5\uD1B5 \uCD94\uCC9C \uB370\uC774\uD130\uB97C \uBD88\uB7EC\uC624\uC9C0 \uBABB\uD588\uC2B5\uB2C8\uB2E4.');
     } finally {
       setLoading(false);
     }
   })(); }, [days, market]);
+  useEffect(() => setPage(1), [days, market, pageSize]);
 
   const avgUpside = items.length ? items.reduce((sum, item) => sum + item.avgUpside, 0) / items.length : 0;
+  const totalPages = Math.max(1, Math.ceil(items.length / pageSize));
+  const paginated = items.slice((page - 1) * pageSize, page * pageSize);
 
   return <div className="space-y-6">
     <div className="rounded-xl bg-white p-4 shadow-sm">
-      <div className="grid gap-4 md:grid-cols-[minmax(0,1.3fr)_minmax(0,1fr)_auto] md:items-end">
+      <div className="grid gap-4 md:grid-cols-[minmax(0,1.3fr)_minmax(0,1fr)_minmax(0,1fr)_auto] md:items-end">
         <div className="w-full">
-          <label className="mb-1 block text-sm text-gray-500">기간</label>
+          <label className="mb-1 block text-sm text-gray-500">{'\uAE30\uAC04'}</label>
           <div className="flex flex-wrap overflow-hidden rounded-lg border">
-            {[3, 7, 15, 30].map((value) => <button key={value} onClick={() => setDays(value)} className={`flex-1 px-3 py-2 text-sm ${days === value ? 'bg-blue-600 text-white' : 'bg-white text-gray-600 hover:bg-gray-50'}`}>{value}일</button>)}
+            {[3, 7, 15, 30].map((value) => <button key={value} onClick={() => setDays(value)} className={`flex-1 px-3 py-2 text-sm ${days === value ? 'bg-blue-600 text-white' : 'bg-white text-gray-600 hover:bg-gray-50'}`}>{value}{'\uC77C'}</button>)}
           </div>
         </div>
-        <SimpleSelect label="시장" value={market} onChange={(value) => setMarket(value as MarketFilter)} options={[['all', '전체'], ['korea', '국내'], ['us', '해외']]} />
-        <div className="text-sm text-gray-400 md:pb-2">서로 다른 증권사 2곳 이상 추천 종목만 표시</div>
+        <div className="min-w-[220px]">
+          <SimpleSelect label={'\uC2DC\uC7A5'} value={market} onChange={(value) => setMarket(value as MarketFilter)} options={[['all', '\uC804\uCCB4'], ['korea', '\uAD6D\uB0B4'], ['us', '\uD574\uC678']]} />
+        </div>
+        <div className="text-sm text-gray-400 md:pb-2">{'\uC11C\uB85C \uB2E4\uB978 \uC99D\uAD8C\uC0AC 2\uACF3 \uC774\uC0C1 \uCD94\uCC9C \uC885\uBAA9\uB9CC \uD45C\uC2DC'}</div>
       </div>
     </div>
     <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
-      <StatCard label="공통 추천 종목" value={String(items.length)} />
-      <StatCard label="평균 상승여력" value={formatPct(avgUpside)} accent="text-green-600" />
-      <StatCard label="국내 종목" value={String(items.filter((item) => item.market === 'korea').length)} />
-      <StatCard label="해외 종목" value={String(items.filter((item) => item.market === 'us').length)} />
+      <StatCard label={'\uACF5\uD1B5 \uCD94\uCC9C \uC885\uBAA9'} value={String(items.length)} />
+      <StatCard label={'\uD3C9\uADE0 \uC0C1\uC2B9\uC5EC\uB825'} value={formatPct(avgUpside)} accent="text-green-600" />
+      <StatCard label={'\uAD6D\uB0B4 \uC885\uBAA9'} value={String(items.filter((item) => item.market === 'korea').length)} />
+      <StatCard label={'\uD574\uC678 \uC885\uBAA9'} value={String(items.filter((item) => item.market === 'us').length)} />
     </div>
     {loading ? <LoadingState /> : error ? <div className="rounded-lg bg-red-50 p-4 text-red-600">{error}</div> : <div className="overflow-hidden rounded-xl bg-white shadow-sm">
-      <div className="border-b p-4"><h2 className="text-lg font-semibold">애널리스트 공통 추천 종목</h2><p className="text-sm text-gray-500">선택한 기간 내 여러 증권사가 함께 추천한 종목만 따로 모아서 보여줍니다.</p></div>
-      {items.length === 0 ? <div className="p-8 text-center text-gray-400">조건에 맞는 공통 추천 종목이 없습니다.</div> : <>
+      <div className="border-b p-4"><h2 className="text-lg font-semibold">{'\uC560\uB110\uB9AC\uC2A4\uD2B8 \uACF5\uD1B5 \uCD94\uCC9C \uC885\uBAA9'}</h2><p className="text-sm text-gray-500">{'\uC120\uD0DD\uD55C \uAE30\uAC04 \uB0B4 \uC5EC\uB7EC \uC99D\uAD8C\uC0AC\uAC00 \uD568\uAED8 \uCD94\uCC9C\uD55C \uC885\uBAA9\uB9CC \uB530\uB85C \uBAA8\uC544\uC11C \uBCF4\uC5EC\uC90D\uB2C8\uB2E4.'}</p></div>
+      {items.length > 0 && <div className="flex justify-end px-4 pt-4"><SimpleSelect label={'\uD398\uC774\uC9C0 \uD06C\uAE30'} value={String(pageSize)} onChange={(value) => setPageSize(Number(value))} options={PAGE_SIZE_OPTIONS.map((option) => [String(option), String(option)] as [string, string])} /></div>}
+      {items.length === 0 ? <div className="p-8 text-center text-gray-400">{'\uC870\uAC74\uC5D0 \uB9DE\uB294 \uACF5\uD1B5 \uCD94\uCC9C \uC885\uBAA9\uC774 \uC5C6\uC2B5\uB2C8\uB2E4.'}</div> : <>
         <div className="space-y-3 p-4 md:hidden">
-          {items.map((item) => <article key={`${item.market}-${item.ticker}`} className="rounded-xl border border-gray-100 bg-gray-50 p-4">
+          {paginated.map((item) => <article key={`${item.market}-${item.ticker}`} className="rounded-xl border border-gray-100 bg-gray-50 p-4">
             <div className="flex items-start justify-between gap-3">
               <button type="button" onClick={() => onOpenInsight({ ticker: item.ticker, name: item.name, market: item.market, category: 'analyst', currentPrice: item.currentPrice })} className="min-w-0 text-left">
                 <div className="truncate font-semibold text-blue-700">{item.name}</div>
@@ -520,14 +860,14 @@ function ConsensusTab({ onOpenInsight, isSaved, onToggleWatchlist }: { onOpenIns
               </button>
               <div className="flex shrink-0 items-center gap-2">
                 <FavoriteButton active={isSaved(item.ticker, item.market)} onClick={() => onToggleWatchlist({ ticker: item.ticker, name: item.name, market: item.market, category: 'analyst', currentPrice: item.currentPrice })} className="h-7 w-7 text-base" />
-                <span className="rounded bg-blue-100 px-2 py-1 text-xs text-blue-700">{item.brokerCount}곳</span>
+                <span className="rounded bg-blue-100 px-2 py-1 text-xs text-blue-700">{item.brokerCount}{'\uACF3'}</span>
               </div>
             </div>
             <div className="mt-3 grid grid-cols-2 gap-2 text-xs">
-              <div className="rounded-lg bg-white p-3"><div className="text-[11px] text-gray-500">현재가</div><div className="mt-1 font-medium text-gray-900">{formatPrice(item.currentPrice, item.market)}</div></div>
-              <div className="rounded-lg bg-white p-3"><div className="text-[11px] text-gray-500">평균 상승여력</div><div className="mt-1 font-semibold text-green-600">{formatPct(item.avgUpside)}</div></div>
-              <div className="rounded-lg bg-white p-3"><div className="text-[11px] text-gray-500">기준가격</div><div className="mt-1 font-medium text-gray-900">{formatPrice(item.basePrice, item.market)}</div><div className="mt-1 text-[11px] text-gray-400">{item.basePriceDate} 종가</div></div>
-              <div className="rounded-lg bg-white p-3"><div className="text-[11px] text-gray-500">최근 추천일</div><div className="mt-1 font-medium text-gray-900">{item.latestReportDate}</div><div className="mt-1 text-[11px] text-gray-400">리포트 {item.reportCount}건</div></div>
+              <div className="rounded-lg bg-white p-3"><div className="text-[11px] text-gray-500">{'\uD604\uC7AC\uAC00'}</div><div className="mt-1 font-medium text-gray-900">{formatPrice(item.currentPrice, item.market)}</div></div>
+              <div className="rounded-lg bg-white p-3"><div className="text-[11px] text-gray-500">{'\uD3C9\uADE0 \uC0C1\uC2B9\uC5EC\uB825'}</div><div className="mt-1 font-semibold text-green-600">{formatPct(item.avgUpside)}</div></div>
+              <div className="rounded-lg bg-white p-3"><div className="text-[11px] text-gray-500">{'\uAE30\uC900\uAC00\uACA9'}</div><div className="mt-1 font-medium text-gray-900">{formatPrice(item.basePrice, item.market)}</div><div className="mt-1 text-[11px] text-gray-400">{item.basePriceDate} {'\uC885\uAC00'}</div></div>
+              <div className="rounded-lg bg-white p-3"><div className="text-[11px] text-gray-500">{'\uCD5C\uADFC \uCD94\uCC9C\uC77C'}</div><div className="mt-1 font-medium text-gray-900">{item.latestReportDate}</div><div className="mt-1 text-[11px] text-gray-400">{'\uB9AC\uD3EC\uD2B8'} {item.reportCount}{'\uAC74'}</div></div>
             </div>
             <div className="mt-3 text-xs text-gray-500">{item.brokers.join(', ')}</div>
           </article>)}
@@ -536,23 +876,23 @@ function ConsensusTab({ onOpenInsight, isSaved, onToggleWatchlist }: { onOpenIns
           <table className="w-full">
             <thead className="bg-gray-50 text-left text-xs uppercase text-gray-500">
               <tr>
-                <th className="px-4 py-3">종목</th>
-                <th className="px-4 py-3">시장</th>
-                <th className="px-4 py-3 text-right">증권사 수</th>
-                <th className="px-4 py-3 text-right">현재가</th>
-                <th className="px-4 py-3 text-right">기준가격</th>
-                <th className="px-4 py-3 text-right">평균 상승여력</th>
-                <th className="px-4 py-3">최근 추천일</th>
-                <th className="px-4 py-3">증권사</th>
+                <th className="px-4 py-3">{'\uC885\uBAA9'}</th>
+                <th className="px-4 py-3">{'\uC2DC\uC7A5'}</th>
+                <th className="px-4 py-3 text-right">{'\uC99D\uAD8C\uC0AC \uC218'}</th>
+                <th className="px-4 py-3 text-right">{'\uD604\uC7AC\uAC00'}</th>
+                <th className="px-4 py-3 text-right">{'\uAE30\uC900\uAC00\uACA9'}</th>
+                <th className="px-4 py-3 text-right">{'\uD3C9\uADE0 \uC0C1\uC2B9\uC5EC\uB825'}</th>
+                <th className="px-4 py-3">{'\uCD5C\uADFC \uCD94\uCC9C\uC77C'}</th>
+                <th className="px-4 py-3">{'\uC99D\uAD8C\uC0AC'}</th>
               </tr>
             </thead>
             <tbody className="divide-y">
-              {items.map((item) => <tr key={`${item.market}-${item.ticker}`} className="hover:bg-gray-50">
+              {paginated.map((item) => <tr key={`${item.market}-${item.ticker}`} className="hover:bg-gray-50">
                 <td className="px-4 py-3"><div className="flex items-start justify-between gap-3"><button type="button" onClick={() => onOpenInsight({ ticker: item.ticker, name: item.name, market: item.market, category: 'analyst', currentPrice: item.currentPrice })} className="text-left"><div className="font-medium text-blue-700 hover:underline">{item.name}</div><div className="text-xs text-gray-400">{item.ticker}</div></button><FavoriteButton active={isSaved(item.ticker, item.market)} onClick={() => onToggleWatchlist({ ticker: item.ticker, name: item.name, market: item.market, category: 'analyst', currentPrice: item.currentPrice })} /></div></td>
-                <td className="px-4 py-3"><span className={`rounded px-2 py-1 text-xs ${item.market === 'korea' ? 'bg-blue-100 text-blue-700' : 'bg-orange-100 text-orange-700'}`}>{item.market === 'korea' ? '국내' : '해외'}</span></td>
+                <td className="px-4 py-3"><span className={`rounded px-2 py-1 text-xs ${item.market === 'korea' ? 'bg-blue-100 text-blue-700' : 'bg-orange-100 text-orange-700'}`}>{item.market === 'korea' ? '\uAD6D\uB0B4' : '\uD574\uC678'}</span></td>
                 <td className="px-4 py-3 text-right font-medium">{item.brokerCount}</td>
                 <td className="px-4 py-3 text-right">{formatPrice(item.currentPrice, item.market)}</td>
-                <td className="px-4 py-3 text-right"><div className="font-medium">{formatPrice(item.basePrice, item.market)}</div><div className="text-xs text-gray-400">{item.basePriceDate} 종가</div></td>
+                <td className="px-4 py-3 text-right"><div className="font-medium">{formatPrice(item.basePrice, item.market)}</div><div className="text-xs text-gray-400">{item.basePriceDate} {'\uC885\uAC00'}</div></td>
                 <td className="px-4 py-3 text-right font-medium text-green-600">{formatPct(item.avgUpside)}</td>
                 <td className="px-4 py-3 text-sm">{item.latestReportDate}</td>
                 <td className="px-4 py-3 text-sm text-gray-500">{item.brokers.join(', ')}</td>
@@ -560,6 +900,7 @@ function ConsensusTab({ onOpenInsight, isSaved, onToggleWatchlist }: { onOpenIns
             </tbody>
           </table>
         </div>
+        <div className="p-4 pt-0"><PaginationControls totalCount={items.length} page={page} pageSize={pageSize} totalPages={totalPages} onPageChange={setPage} /></div>
       </>}
     </div>}
   </div>;
@@ -569,23 +910,31 @@ function StockList({ stocks, title, market, category, onOpenInsight, isSaved, on
   const [sortBy, setSortBy] = useState<'changePercent' | 'volume' | 'currentPrice'>('changePercent');
   const [sortOrder, setSortOrder] = useState<'asc' | 'desc'>('desc');
   const [query, setQuery] = useState('');
+  const [page, setPage] = useState(1);
+  const [pageSize, setPageSize] = useState(10);
   const q = query.trim().toLowerCase();
   const filtered = stocks.filter((stock) => !q || stock.name.toLowerCase().includes(q) || stock.ticker.toLowerCase().includes(q));
   const sorted = [...filtered].sort((a, b) => { const av = a[sortBy] || 0; const bv = b[sortBy] || 0; return sortOrder === 'desc' ? bv - av : av - bv; });
+  const totalPages = Math.max(1, Math.ceil(sorted.length / pageSize));
+  const paginated = sorted.slice((page - 1) * pageSize, page * pageSize);
   const formatVolume = (volume: number) => volume >= 1000000 ? `${(volume / 1000000).toFixed(1)}M` : volume >= 1000 ? `${(volume / 1000).toFixed(1)}K` : volume.toString();
+
+  useEffect(() => {
+    setPage(1);
+  }, [query, sortBy, sortOrder, pageSize, stocks.length]);
 
   return <div className="space-y-6">
     <div className="grid gap-4 rounded-xl bg-white p-4 shadow-sm md:grid-cols-[minmax(0,1.6fr)_repeat(2,minmax(0,0.8fr))_auto] md:items-end">
-      <div className="w-full"><label className="mb-1 block text-sm text-gray-500">검색</label><input value={query} onChange={(event) => setQuery(event.target.value)} placeholder="종목명 또는 티커" className="w-full rounded-lg border px-3 py-2 text-sm" /></div>
-      <SimpleSelect label="정렬" value={sortBy} onChange={(value) => setSortBy(value as 'changePercent' | 'volume' | 'currentPrice')} options={[['changePercent', '등락률'], ['volume', '거래량'], ['currentPrice', '현재가']]} />
-      <SimpleSelect label="순서" value={sortOrder} onChange={(value) => setSortOrder(value as 'asc' | 'desc')} options={[['desc', '내림차순'], ['asc', '오름차순']]} />
-      <div className="text-sm text-gray-400 md:justify-self-end">총 {filtered.length}건</div>
+      <div className="w-full"><label className="mb-1 block text-sm text-gray-500">{'\uAC80\uC0C9\uC5B4'}</label><input value={query} onChange={(event) => setQuery(event.target.value)} placeholder={'\uC885\uBAA9\uBA85 \uB610\uB294 \uD2F0\uCEE4'} className="w-full rounded-lg border px-3 py-2 text-sm" /></div>
+      <SimpleSelect label={'\uC815\uB82C \uAE30\uC900'} value={sortBy} onChange={(value) => setSortBy(value as 'changePercent' | 'volume' | 'currentPrice')} options={[['changePercent', '\uB4F1\uB77D\uB960'], ['volume', '\uAC70\uB798\uB7C9'], ['currentPrice', '\uD604\uC7AC\uAC00']]} />
+      <SimpleSelect label={'\uC815\uB82C \uC21C\uC11C'} value={sortOrder} onChange={(value) => setSortOrder(value as 'asc' | 'desc')} options={[['desc', '\uB192\uC740 \uC21C'], ['asc', '\uB0AE\uC740 \uC21C']]} />
+      <div className="flex items-end gap-3 md:justify-self-end"><div className="text-sm text-gray-400">{'\uCD1D'} {filtered.length}{'\uAC74'}</div><SimpleSelect label={'\uD398\uC774\uC9C0 \uD06C\uAE30'} value={String(pageSize)} onChange={(value) => setPageSize(Number(value))} options={PAGE_SIZE_OPTIONS.map((option) => [String(option), String(option)] as [string, string])} /></div>
     </div>
     <div className="overflow-hidden rounded-xl bg-white shadow-sm">
-      <div className="border-b p-4"><h2 className="text-lg font-semibold">{title}</h2><p className="text-sm text-gray-500">종목명을 누르면 간단한 매수 의견 팝업이 열립니다.</p></div>
-      {stocks.length === 0 ? <div className="p-8 text-center text-gray-400">데이터가 없습니다.</div> : filtered.length === 0 ? <div className="p-8 text-center text-gray-400">검색 결과가 없습니다.</div> : <>
+      <div className="border-b p-4"><h2 className="text-lg font-semibold">{title}</h2><p className="text-sm text-gray-500">{'\uC885\uBAA9\uC744 \uB204\uB974\uBA74 \uAE30\uBCF8 \uC758\uACAC\uACFC \uD575\uC2EC \uC9C0\uD45C\uB97C \uD31D\uC5C5\uC73C\uB85C \uD655\uC778\uD560 \uC218 \uC788\uC2B5\uB2C8\uB2E4.'}</p></div>
+      {stocks.length === 0 ? <div className="p-8 text-center text-gray-400">{'\uB370\uC774\uD130\uAC00 \uC544\uC9C1 \uC5C6\uC2B5\uB2C8\uB2E4.'}</div> : filtered.length === 0 ? <div className="p-8 text-center text-gray-400">{'\uAC80\uC0C9 \uACB0\uACFC\uAC00 \uC5C6\uC2B5\uB2C8\uB2E4.'}</div> : <>
         <div className="space-y-3 p-4 md:hidden">
-          {sorted.map((stock) => <article key={stock.ticker} className="rounded-xl border border-gray-100 bg-gray-50 p-4">
+          {paginated.map((stock) => <article key={stock.ticker} className="rounded-xl border border-gray-100 bg-gray-50 p-4">
             <div className="flex items-start justify-between gap-3">
               <button type="button" onClick={() => onOpenInsight({ ticker: stock.ticker, name: stock.name, market, category, currentPrice: stock.currentPrice, changePercent: stock.changePercent, high52w: stock.high52w, low52w: stock.low52w })} className="min-w-0 text-left">
                 <div className="truncate font-semibold text-blue-700">{stock.name}</div>
@@ -598,17 +947,18 @@ function StockList({ stocks, title, market, category, onOpenInsight, isSaved, on
             </div>
             <button type="button" onClick={() => onOpenInsight({ ticker: stock.ticker, name: stock.name, market, category, currentPrice: stock.currentPrice, changePercent: stock.changePercent, high52w: stock.high52w, low52w: stock.low52w })} className="mt-4 block w-full text-left">
               <div className="grid grid-cols-2 gap-3 text-sm">
-                <div className="rounded-lg bg-white p-3"><div className="text-xs text-gray-500">현재가</div><div className="mt-1 font-medium text-gray-900">{formatPrice(stock.currentPrice, market)}</div></div>
-                <div className="rounded-lg bg-white p-3"><div className="text-xs text-gray-500">변동금액</div><div className={`mt-1 font-medium ${stock.change >= 0 ? 'text-green-600' : 'text-red-600'}`}>{stock.change >= 0 ? '+' : ''}{market === 'korea' ? Math.round(stock.change).toLocaleString() : stock.change.toFixed(2)}</div></div>
-                <div className="rounded-lg bg-white p-3"><div className="text-xs text-gray-500">거래량</div><div className="mt-1 font-medium text-gray-900">{stock.volume ? formatVolume(stock.volume) : '-'}</div></div>
-                <div className="rounded-lg bg-white p-3"><div className="text-xs text-gray-500">52주 범위</div><div className="mt-1 font-medium text-gray-900">{stock.low52w || stock.high52w ? `${formatPrice(stock.low52w || 0, market)} - ${formatPrice(stock.high52w || 0, market)}` : '-'}</div></div>
+                <div className="rounded-lg bg-white p-3"><div className="text-xs text-gray-500">{'\uD604\uC7AC\uAC00'}</div><div className="mt-1 font-medium text-gray-900">{formatPrice(stock.currentPrice, market)}</div></div>
+                <div className="rounded-lg bg-white p-3"><div className="text-xs text-gray-500">{'\uC804\uC77C \uB300\uBE44'}</div><div className={`mt-1 font-medium ${stock.change >= 0 ? 'text-green-600' : 'text-red-600'}`}>{stock.change >= 0 ? '+' : ''}{market === 'korea' ? Math.round(stock.change).toLocaleString() : stock.change.toFixed(2)}</div></div>
+                <div className="rounded-lg bg-white p-3"><div className="text-xs text-gray-500">{'\uAC70\uB798\uB7C9'}</div><div className="mt-1 font-medium text-gray-900">{stock.volume ? formatVolume(stock.volume) : '-'}</div></div>
+                <div className="rounded-lg bg-white p-3"><div className="text-xs text-gray-500">{'52\uC8FC \uBC94\uC704'}</div><div className="mt-1 font-medium text-gray-900">{stock.low52w || stock.high52w ? `${formatPrice(stock.low52w || 0, market)} - ${formatPrice(stock.high52w || 0, market)}` : '-'}</div></div>
               </div>
             </button>
           </article>)}
         </div>
-        <div className="hidden overflow-x-auto md:block"><table className="w-full"><thead className="bg-gray-50 text-xs uppercase text-gray-500"><tr><th className="px-4 py-3 text-left">종목</th><th className="px-4 py-3 text-right">현재가</th><th className="px-4 py-3 text-right">변동금액</th><th className="px-4 py-3 text-right">등락률</th><th className="px-4 py-3 text-right">거래량</th></tr></thead><tbody className="divide-y">{sorted.map((stock) => <tr key={stock.ticker} className="hover:bg-gray-50"><td className="px-4 py-3"><div className="flex items-start justify-between gap-3"><button type="button" onClick={() => onOpenInsight({ ticker: stock.ticker, name: stock.name, market, category, currentPrice: stock.currentPrice, changePercent: stock.changePercent, high52w: stock.high52w, low52w: stock.low52w })} className="text-left"><div className="font-medium text-blue-700 hover:underline">{stock.name}</div><div className="text-xs text-gray-400">{stock.ticker}</div></button><FavoriteButton active={isSaved(stock.ticker, market)} onClick={() => onToggleWatchlist({ ticker: stock.ticker, name: stock.name, market, category, currentPrice: stock.currentPrice, changePercent: stock.changePercent, high52w: stock.high52w, low52w: stock.low52w })} /></div></td><td className="px-4 py-3 text-right font-medium">{formatPrice(stock.currentPrice, market)}</td><td className={`px-4 py-3 text-right ${stock.change >= 0 ? 'text-green-600' : 'text-red-600'}`}>{stock.change >= 0 ? '+' : ''}{market === 'korea' ? Math.round(stock.change).toLocaleString() : stock.change.toFixed(2)}</td><td className={`px-4 py-3 text-right font-medium ${stock.changePercent >= 0 ? 'text-green-600' : 'text-red-600'}`}>{stock.changePercent >= 0 ? '+' : ''}{stock.changePercent.toFixed(2)}%</td><td className="px-4 py-3 text-right text-gray-500">{stock.volume ? formatVolume(stock.volume) : '-'}</td></tr>)}</tbody></table></div>
+        <div className="hidden overflow-x-auto md:block"><table className="w-full"><thead className="bg-gray-50 text-xs uppercase text-gray-500"><tr><th className="px-4 py-3 text-left">{'\uC885\uBAA9'}</th><th className="px-4 py-3 text-right">{'\uD604\uC7AC\uAC00'}</th><th className="px-4 py-3 text-right">{'\uC804\uC77C \uB300\uBE44'}</th><th className="px-4 py-3 text-right">{'\uB4F1\uB77D\uB960'}</th><th className="px-4 py-3 text-right">{'\uAC70\uB798\uB7C9'}</th></tr></thead><tbody className="divide-y">{paginated.map((stock) => <tr key={stock.ticker} className="hover:bg-gray-50"><td className="px-4 py-3"><div className="flex items-start justify-between gap-3"><button type="button" onClick={() => onOpenInsight({ ticker: stock.ticker, name: stock.name, market, category, currentPrice: stock.currentPrice, changePercent: stock.changePercent, high52w: stock.high52w, low52w: stock.low52w })} className="text-left"><div className="font-medium text-blue-700 hover:underline">{stock.name}</div><div className="text-xs text-gray-400">{stock.ticker}</div></button><FavoriteButton active={isSaved(stock.ticker, market)} onClick={() => onToggleWatchlist({ ticker: stock.ticker, name: stock.name, market, category, currentPrice: stock.currentPrice, changePercent: stock.changePercent, high52w: stock.high52w, low52w: stock.low52w })} /></div></td><td className="px-4 py-3 text-right font-medium">{formatPrice(stock.currentPrice, market)}</td><td className={`px-4 py-3 text-right ${stock.change >= 0 ? 'text-green-600' : 'text-red-600'}`}>{stock.change >= 0 ? '+' : ''}{market === 'korea' ? Math.round(stock.change).toLocaleString() : stock.change.toFixed(2)}</td><td className={`px-4 py-3 text-right font-medium ${stock.changePercent >= 0 ? 'text-green-600' : 'text-red-600'}`}>{stock.changePercent >= 0 ? '+' : ''}{stock.changePercent.toFixed(2)}%</td><td className="px-4 py-3 text-right text-gray-500">{stock.volume ? formatVolume(stock.volume) : '-'}</td></tr>)}</tbody></table></div>
       </>}
     </div>
+    {filtered.length > 0 && <PaginationControls totalCount={sorted.length} page={page} pageSize={pageSize} totalPages={totalPages} onPageChange={setPage} />}
   </div>;
 }
 
@@ -632,44 +982,172 @@ function StockInsightModal({ request, onClose, isSaved, onToggleWatchlist }: { r
         if (!cancelled) setInsight(data);
       } catch (fetchError) {
         console.error(fetchError);
-        if (!cancelled) setError('종목 의견을 불러오지 못했습니다.');
+        if (!cancelled) setError('\uC885\uBAA9 \uC758\uACAC\uC744 \uBD88\uB7EC\uC624\uC9C0 \uBABB\uD588\uC2B5\uB2C8\uB2E4.');
       } finally {
         if (!cancelled) setLoading(false);
       }
     })();
-    return () => { cancelled = true; };
+    return () => {
+      cancelled = true;
+    };
   }, [request]);
 
   useEffect(() => {
     if (!request) return;
-    const onKeyDown = (event: KeyboardEvent) => { if (event.key === 'Escape') onClose(); };
+    const onKeyDown = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') onClose();
+    };
     window.addEventListener('keydown', onKeyDown);
     return () => window.removeEventListener('keydown', onKeyDown);
   }, [request, onClose]);
 
   if (!request) return null;
-  return <div className="fixed inset-0 z-50 flex items-end justify-center bg-black/40 px-3 py-3 sm:items-center sm:px-4 sm:py-6" onClick={onClose}>
-    <div className="max-h-[92vh] w-full max-w-2xl overflow-y-auto rounded-t-3xl bg-white shadow-xl sm:max-h-[90vh] sm:rounded-2xl" onClick={(event) => event.stopPropagation()}>
-      <div className="flex items-start justify-between gap-4 border-b p-4 sm:p-5"><div className="min-w-0"><h2 className="truncate text-lg font-semibold text-gray-900 sm:text-xl">{request.name}</h2><p className="text-sm text-gray-500">{request.ticker} · {request.market === 'korea' ? '국내' : '해외'}</p></div><div className="flex items-center gap-2"><FavoriteButton active={isSaved(request.ticker, request.market)} onClick={() => onToggleWatchlist({ ticker: request.ticker, name: request.name, market: request.market, category: request.category, currentPrice: request.currentPrice, changePercent: request.changePercent, high52w: request.high52w, low52w: request.low52w })} className="h-9 w-9 text-xl" /><button type="button" onClick={onClose} className="shrink-0 rounded-lg px-3 py-1 text-sm text-gray-500 hover:bg-gray-100">닫기</button></div></div>
-      {loading ? <div className="p-6 sm:p-8"><LoadingState /></div> : error ? <div className="p-4 text-red-600 sm:p-6">{error}</div> : insight ? <div className="space-y-4 p-4 sm:space-y-6 sm:p-6">
-        <section className="space-y-3"><div className="rounded-xl bg-blue-50 p-4"><div className="text-sm text-blue-700">요약 의견</div><p className="mt-1 text-sm text-gray-800">{insight.reasonSummary}</p></div><div className="rounded-xl bg-gray-50 p-4"><div className="mb-2 text-sm font-medium text-gray-700">핵심 근거</div><ul className="space-y-2 text-sm text-gray-700">{insight.reasonBullets.map((bullet) => <li key={bullet} className="flex gap-2"><span className="mt-1 h-1.5 w-1.5 rounded-full bg-blue-500" /><span>{bullet}</span></li>)}</ul></div></section>
-        <section className="grid grid-cols-2 gap-3 sm:gap-4 lg:grid-cols-4">
-          <MetricCard label="현재가" value={formatPrice(insight.latestCurrentPrice || request.currentPrice || 0, request.market)} />
-          <MetricCard label="기준가격" value={formatPrice(insight.latestBasePrice || 0, request.market)} subLabel={insight.latestReportDate ? `${insight.latestReportDate} 종가` : undefined} />
-          <MetricCard label="목표가" value={formatPrice(insight.latestTargetPrice || 0, request.market)} />
-          <MetricCard label="평균 상승여력" value={insight.avgUpside !== undefined ? formatPct(insight.avgUpside) : '-'} accent="text-green-600" />
-        </section>
-        <section className="rounded-xl border p-4"><div className="mb-3 text-sm font-medium text-gray-700">최신 리포트 정보</div><div className="grid gap-3 text-sm text-gray-700 sm:grid-cols-2"><div>증권사: <span className="font-medium">{insight.latestBroker || '없음'}</span></div><div>의견: <span className="font-medium">{insight.latestOpinion || '없음'}</span></div><div>리포트 일자: <span className="font-medium">{insight.latestReportDate || '-'}</span></div><div>누적 리포트 수: <span className="font-medium">{insight.reportCount}</span></div></div></section>
-        {insight.relatedReports.length > 0 && <section className="rounded-xl border p-4"><div className="mb-3 text-sm font-medium text-gray-700">ê´€ë ¨ ë¦¬í¬íŠ¸</div><div className="space-y-3">{insight.relatedReports.map((report) => <div key={`${report.market}-${report.ticker}-${report.broker}-${report.date}`} className="rounded-lg bg-gray-50 p-3">{report.sourceUrl ? <a href={report.sourceUrl} target="_blank" rel="noreferrer" className="block"><div className="text-sm font-medium text-blue-700">{report.reportTitle || `${report.broker} ë¦¬í¬íŠ¸`}</div><div className="mt-1 text-xs text-gray-500">{report.date} Â· {report.broker} Â· {report.opinion}</div><div className="mt-2 text-xs text-gray-400">ë¦¬í¬íŠ¸ ë³´ëŸ¬ê°€ê¸°</div></a> : <><div className="text-sm font-medium text-gray-900">{report.reportTitle || `${report.broker} ë¦¬í¬íŠ¸`}</div><div className="mt-1 text-xs text-gray-500">{report.date} Â· {report.broker} Â· {report.opinion}</div></>}</div>)}</div></section>}
-        {insight && <section className="grid gap-4 lg:grid-cols-2">
-          <InsightSectionCard title="1. 왜 추천하는지 논리" section={insight.investmentLogic} />
-          <InsightSectionCard title="2. 실적 추정치 변화" section={insight.estimateRevision} />
-          <InsightSectionCard title="3. 밸류에이션" section={insight.valuation} />
-          <InsightSectionCard title="4. 업종 사이클" section={insight.sectorCycle} />
-        </section>}
-      </div> : null}
+  return (
+    <div
+      className="fixed inset-0 z-50 flex items-end justify-center bg-black/40 px-3 py-3 sm:items-center sm:px-4 sm:py-6"
+      onClick={onClose}
+    >
+      <div
+        className="max-h-[92vh] w-full max-w-2xl overflow-y-auto rounded-t-3xl bg-white shadow-xl sm:max-h-[90vh] sm:rounded-2xl"
+        onClick={(event) => event.stopPropagation()}
+      >
+        <div className="flex items-start justify-between gap-4 border-b p-4 sm:p-5">
+          <div className="min-w-0">
+            <h2 className="truncate text-lg font-semibold text-gray-900 sm:text-xl">{request.name}</h2>
+            <p className="text-sm text-gray-500">
+              {request.ticker} {'\u00B7'} {request.market === 'korea' ? '\uAD6D\uB0B4' : '\uD574\uC678'}
+            </p>
+          </div>
+          <div className="flex items-center gap-2">
+            <FavoriteButton
+              active={isSaved(request.ticker, request.market)}
+              onClick={() =>
+                onToggleWatchlist({
+                  ticker: request.ticker,
+                  name: request.name,
+                  market: request.market,
+                  category: request.category,
+                  currentPrice: request.currentPrice,
+                  changePercent: request.changePercent,
+                  high52w: request.high52w,
+                  low52w: request.low52w,
+                })
+              }
+              className="h-9 w-9 text-xl"
+            />
+            <button
+              type="button"
+              onClick={onClose}
+              className="shrink-0 rounded-lg px-3 py-1 text-sm text-gray-500 hover:bg-gray-100"
+            >
+              {'\uB2EB\uAE30'}
+            </button>
+          </div>
+        </div>
+        {loading ? (
+          <div className="p-6 sm:p-8">
+            <LoadingState />
+          </div>
+        ) : error ? (
+          <div className="p-4 text-red-600 sm:p-6">{error}</div>
+        ) : insight ? (
+          <div className="space-y-4 p-4 sm:space-y-6 sm:p-6">
+            <section className="space-y-3">
+              <div className="rounded-xl bg-blue-50 p-4">
+                <div className="text-sm text-blue-700">{'\uC694\uC57D \uC758\uACAC'}</div>
+                <p className="mt-1 text-sm text-gray-800">{insight.reasonSummary}</p>
+              </div>
+              <div className="rounded-xl bg-gray-50 p-4">
+                <div className="mb-2 text-sm font-medium text-gray-700">{'\uD575\uC2EC \uADFC\uAC70'}</div>
+                <ul className="space-y-2 text-sm text-gray-700">
+                  {insight.reasonBullets.map((bullet) => (
+                    <li key={bullet} className="flex gap-2">
+                      <span className="mt-1 h-1.5 w-1.5 rounded-full bg-blue-500" />
+                      <span>{bullet}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </section>
+            <section className="grid grid-cols-2 gap-3 sm:gap-4 lg:grid-cols-4">
+              <MetricCard
+                label={'\uD604\uC7AC\uAC00'}
+                value={formatPrice(insight.latestCurrentPrice || request.currentPrice || 0, request.market)}
+              />
+              <MetricCard
+                label={'\uAE30\uC900\uAC00\uACA9'}
+                value={formatPrice(insight.latestBasePrice || 0, request.market)}
+                subLabel={insight.latestReportDate ? `${insight.latestReportDate} \uC885\uAC00` : undefined}
+              />
+              <MetricCard label={'\uBAA9\uD45C\uAC00'} value={formatPrice(insight.latestTargetPrice || 0, request.market)} />
+              <MetricCard
+                label={'\uD3C9\uADE0 \uC0C1\uC2B9\uC5EC\uB825'}
+                value={insight.avgUpside !== undefined ? formatPct(insight.avgUpside) : '-'}
+                accent="text-green-600"
+              />
+            </section>
+            <section className="rounded-xl border p-4">
+              <div className="mb-3 text-sm font-medium text-gray-700">{'\uCD5C\uC2E0 \uB9AC\uD3EC\uD2B8 \uC815\uBCF4'}</div>
+              <div className="grid gap-3 text-sm text-gray-700 sm:grid-cols-2">
+                <div>
+                  {'\uC99D\uAD8C\uC0AC'}: <span className="font-medium">{insight.latestBroker || '\uC5C6\uC74C'}</span>
+                </div>
+                <div>
+                  {'\uC758\uACAC'}: <span className="font-medium">{insight.latestOpinion || '\uC5C6\uC74C'}</span>
+                </div>
+                <div>
+                  {'\uB9AC\uD3EC\uD2B8 \uC77C\uC790'}: <span className="font-medium">{insight.latestReportDate || '-'}</span>
+                </div>
+                <div>
+                  {'\uB204\uC801 \uB9AC\uD3EC\uD2B8 \uC218'}: <span className="font-medium">{insight.reportCount}</span>
+                </div>
+              </div>
+            </section>
+            {insight.relatedReports.length > 0 && (
+              <section className="rounded-xl border p-4">
+                <div className="mb-3 text-sm font-medium text-gray-700">{'\uAD00\uB828 \uB9AC\uD3EC\uD2B8'}</div>
+                <div className="space-y-3">
+                  {insight.relatedReports.map((report) => (
+                    <div
+                      key={`${report.market}-${report.ticker}-${report.broker}-${report.date}`}
+                      className="rounded-lg bg-gray-50 p-3"
+                    >
+                      {report.sourceUrl ? (
+                        <a href={report.sourceUrl} target="_blank" rel="noreferrer" className="block">
+                          <div className="text-sm font-medium text-blue-700">
+                            {report.reportTitle || `${report.broker} \uB9AC\uD3EC\uD2B8`}
+                          </div>
+                          <div className="mt-1 text-xs text-gray-500">
+                            {report.date} {'\u00B7'} {report.broker} {'\u00B7'} {report.opinion}
+                          </div>
+                          <div className="mt-2 text-xs text-gray-400">{'\uB9AC\uD3EC\uD2B8 \uBCF4\uB7EC\uAC00\uAE30'}</div>
+                        </a>
+                      ) : (
+                        <>
+                          <div className="text-sm font-medium text-gray-900">
+                            {report.reportTitle || `${report.broker} \uB9AC\uD3EC\uD2B8`}
+                          </div>
+                          <div className="mt-1 text-xs text-gray-500">
+                            {report.date} {'\u00B7'} {report.broker} {'\u00B7'} {report.opinion}
+                          </div>
+                        </>
+                      )}
+                    </div>
+                  ))}
+                </div>
+              </section>
+            )}
+            <section className="grid gap-4 lg:grid-cols-2">
+              <InsightSectionCard title={'1. \uC65C \uCD94\uCC9C\uD558\uB294\uC9C0 \uB17C\uB9AC'} section={insight.investmentLogic} />
+              <InsightSectionCard title={'2. \uC2E4\uC801 \uCD94\uC815\uCE58 \uBCC0\uD654'} section={insight.estimateRevision} />
+              <InsightSectionCard title={'3. \uBC38\uB958\uC5D0\uC774\uC158'} section={insight.valuation} />
+              <InsightSectionCard title={'4. \uC5C5\uC885 \uC0AC\uC774\uD074'} section={insight.sectorCycle} />
+            </section>
+          </div>
+        ) : null}
+      </div>
     </div>
-  </div>;
+  );
 }
 
 function MetricCard({ label, value, subLabel, accent }: { label: string; value: string; subLabel?: string; accent?: string }) {
@@ -691,3 +1169,6 @@ function StatCard({ label, value, accent }: { label: string; value: string; acce
 function FavoriteButton({ active, onClick, className = '' }: { active: boolean; onClick: () => void; className?: string }) {
   return <button type="button" onClick={onClick} aria-pressed={active} aria-label={active ? '관심 종목 해제' : '관심 종목 저장'} className={`inline-flex h-8 w-8 items-center justify-center text-xl leading-none transition ${active ? 'text-amber-500' : 'text-gray-300 hover:text-amber-400'} ${className}`}>{active ? '★' : '☆'}</button>;
 }
+
+
+

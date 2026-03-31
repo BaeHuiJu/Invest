@@ -1,5 +1,21 @@
 export type MarketType = 'korea' | 'us';
 export type MarketFilter = 'all' | MarketType;
+export type PerformanceStatus = 'complete' | 'pending' | 'unavailable';
+
+export interface PerformancePoint {
+  asOfDate: string;
+  closePrice: number;
+  returnPct: number;
+  targetProgressPct: number;
+  success: boolean;
+  status: PerformanceStatus;
+}
+
+export interface AnalystReportPerformance {
+  week1: PerformancePoint;
+  month1: PerformancePoint;
+  month3: PerformancePoint;
+}
 
 export interface AnalystReport {
   date: string;
@@ -19,6 +35,8 @@ export interface AnalystReport {
   sourceText?: string;
   reasonSummary?: string;
   reasonBullets?: string[];
+  sector?: string;
+  performance?: AnalystReportPerformance;
 }
 
 export interface InsightSection {
@@ -73,4 +91,35 @@ export interface AnalystReportCacheFile {
 export interface StockInsightResponse {
   found: boolean;
   insight: StockInsight;
+}
+
+export interface AnalystScorecardPeriodSummary {
+  eligibleCount: number;
+  successCount: number;
+  declineCount: number;
+  pendingCount: number;
+  unavailableCount: number;
+  successRate: number;
+  declineRate: number;
+  avgReturnPct: number;
+  avgTargetProgressPct: number;
+}
+
+export interface AnalystScorecardGroup {
+  key: string;
+  label: string;
+  reportCount: number;
+  week1: AnalystScorecardPeriodSummary;
+  month1: AnalystScorecardPeriodSummary;
+  month3: AnalystScorecardPeriodSummary;
+}
+
+export interface AnalystScorecardResponse {
+  summary: {
+    overall: AnalystScorecardGroup;
+    byBroker: AnalystScorecardGroup[];
+    byMarket: AnalystScorecardGroup[];
+    bySector: AnalystScorecardGroup[];
+  };
+  reports: AnalystReport[];
 }

@@ -1,9 +1,9 @@
-import { readFile, writeFile } from 'node:fs/promises';
+﻿import { readFile, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 
 import type { NextApiRequest, NextApiResponse } from 'next';
 
-import { buildAnalystCacheFile, filterAnalystReports } from '../../lib/analyst-report-source.mjs';
+import { buildAnalystCacheFile, enrichReportsWithPerformance, filterAnalystReports } from '../../lib/analyst-report-source.mjs';
 import type { AnalystReport, AnalystReportCacheFile, MarketFilter } from '../../lib/analyst-types';
 
 type CacheFileMemoryEntry = {
@@ -17,6 +17,7 @@ const LIVE_PRICE_TTL_MS = 2 * 60 * 1000;
 let cacheFileMemory: CacheFileMemoryEntry | null = null;
 let cacheFileInflight: Promise<AnalystReportCacheFile> | null = null;
 let liveRefreshInflight: Promise<void> | null = null;
+let performanceEnrichmentInflight: Promise<AnalystReportCacheFile> | null = null;
 let lastLiveRefreshAt = 0;
 const livePriceCache = new Map<string, { price: number; fetchedAt: number }>();
 const livePriceInflight = new Map<string, Promise<number>>();
@@ -69,7 +70,7 @@ function scheduleLiveRefresh(currentData: AnalystReportCacheFile) {
   }
 
   lastLiveRefreshAt = Date.now();
-  liveRefreshInflight = buildAnalystCacheFile(30)
+  liveRefreshInflight = buildAnalystCacheFile(365)
     .then((nextData) => nextData as AnalystReportCacheFile)
     .then(async (nextData) => {
       const previous = JSON.stringify(currentData.reports);
@@ -110,13 +111,38 @@ export async function loadAnalystData(): Promise<AnalystReportCacheFile> {
       throw error;
     }
 
-    const liveData = await buildAnalystCacheFile(30) as AnalystReportCacheFile;
+    const liveData = await buildAnalystCacheFile(365) as AnalystReportCacheFile;
     cacheFileMemory = {
       data: liveData,
       loadedAt: Date.now(),
     };
     await persistAnalystCacheFile(liveData);
     return liveData;
+  }
+
+  const missingPerformance = cacheFile.reports.some((report) => !report.performance);
+  if (missingPerformance) {
+    if (!performanceEnrichmentInflight) {
+      performanceEnrichmentInflight = enrichReportsWithPerformance(cacheFile.reports)
+        .then(async (enrichedReports) => {
+          const enrichedCacheFile = {
+            ...cacheFile,
+            reports: enrichedReports,
+          };
+
+          cacheFileMemory = {
+            data: enrichedCacheFile,
+            loadedAt: Date.now(),
+          };
+          await persistAnalystCacheFile(enrichedCacheFile);
+          return enrichedCacheFile;
+        })
+        .finally(() => {
+          performanceEnrichmentInflight = null;
+        });
+    }
+
+    cacheFile = await performanceEnrichmentInflight;
   }
 
   scheduleLiveRefresh(cacheFile);
@@ -234,3 +260,4 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse<
     res.status(500).json({ error: 'Failed to read analyst reports cache' });
   }
 }
+

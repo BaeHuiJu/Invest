@@ -20,6 +20,7 @@ type StockInsightResponse = { found: boolean; insight: StockInsight };
 type ScorecardPeriodSummary = { eligibleCount: number; successCount: number; declineCount: number; pendingCount: number; unavailableCount: number; successRate: number; declineRate: number; avgReturnPct: number; avgTargetProgressPct: number };
 type ScorecardGroup = { key: string; label: string; reportCount: number; week1: ScorecardPeriodSummary; month1: ScorecardPeriodSummary; month3: ScorecardPeriodSummary };
 type AnalystScorecardResponse = { summary: { overall: ScorecardGroup; byBroker: ScorecardGroup[]; byMarket: ScorecardGroup[]; bySector: ScorecardGroup[] }; reports: AnalystReport[] };
+type ScorecardPeriodKey = 'week1' | 'month1' | 'month3';
 type InsightRequest = { ticker: string; name: string; market: MarketType; category: WatchlistCategory; currentPrice?: number; changePercent?: number; high52w?: number; low52w?: number };
 type WatchlistItem = { ticker: string; name: string; market: MarketType; category: WatchlistCategory; savedAt: string; currentPrice?: number; changePercent?: number; high52w?: number; low52w?: number };
 type ResolvedWatchlistItem = WatchlistItem & { currentPrice?: number; change?: number; changePercent?: number; volume?: number; high52w?: number; low52w?: number };
@@ -570,6 +571,31 @@ function getStatusBadge(point?: PerformancePoint) {
     : { label: '\uBBF8\uB2EC', className: 'bg-red-100 text-red-700' };
 }
 
+function getScorecardPeriodLabel(period: ScorecardPeriodKey) {
+  if (period === 'week1') return '1\uC8FC';
+  if (period === 'month1') return '1\uAC1C\uC6D4';
+  return '3\uAC1C\uC6D4';
+}
+
+function getScorecardDetailReports(reports: AnalystReport[], broker: string, period: ScorecardPeriodKey) {
+  const scoped = reports
+    .filter((report) => report.broker === broker)
+    .map((report) => ({
+      report,
+      point: report.performance?.[period],
+    }));
+
+  const rising = scoped
+    .filter(({ point }) => point?.status === 'complete' && (point.returnPct ?? 0) >= 0)
+    .sort((a, b) => (b.point?.returnPct ?? 0) - (a.point?.returnPct ?? 0));
+  const falling = scoped
+    .filter(({ point }) => point?.status === 'complete' && (point.returnPct ?? 0) < 0)
+    .sort((a, b) => (a.point?.returnPct ?? 0) - (b.point?.returnPct ?? 0));
+  const pending = scoped.filter(({ point }) => point?.status === 'pending');
+
+  return { rising, falling, pending };
+}
+
 function ScorecardTab({ onOpenInsight, isSaved, onToggleWatchlist }: { onOpenInsight: (request: InsightRequest) => void; isSaved: (ticker: string, market: MarketType) => boolean; onToggleWatchlist: (item: Omit<WatchlistItem, 'savedAt'>) => void }) {
   const [data, setData] = useState<AnalystScorecardResponse | null>(null);
   const [loading, setLoading] = useState(true);
@@ -578,6 +604,8 @@ function ScorecardTab({ onOpenInsight, isSaved, onToggleWatchlist }: { onOpenIns
   const [market, setMarket] = useState<MarketFilter>('all');
   const [page, setPage] = useState(1);
   const [pageSize, setPageSize] = useState(10);
+  const [selectedBroker, setSelectedBroker] = useState<string | null>(null);
+  const [selectedBrokerPeriod, setSelectedBrokerPeriod] = useState<ScorecardPeriodKey>('month1');
 
   useEffect(() => { void (async () => {
     const cached = getCachedScorecard(days, market);
@@ -598,8 +626,16 @@ function ScorecardTab({ onOpenInsight, isSaved, onToggleWatchlist }: { onOpenIns
     setPage(1);
   }, [days, market, pageSize]);
 
+  useEffect(() => {
+    const nextBroker = data?.summary.byBroker?.[0]?.key || null;
+    setSelectedBroker(nextBroker);
+    setSelectedBrokerPeriod('month1');
+  }, [data, days, market]);
+
   const overall = data?.summary.overall;
   const reports = data?.reports || [];
+  const selectedBrokerGroup = data?.summary.byBroker.find((item) => item.key === selectedBroker) || null;
+  const selectedBrokerDetails = selectedBroker ? getScorecardDetailReports(reports, selectedBroker, selectedBrokerPeriod) : null;
   const totalPages = Math.max(1, Math.ceil(reports.length / pageSize));
   const paginated = reports.slice((page - 1) * pageSize, page * pageSize);
   const brokerChartData = (data?.summary.byBroker || []).slice(0, 8).map((item) => ({
@@ -667,10 +703,28 @@ function ScorecardTab({ onOpenInsight, isSaved, onToggleWatchlist }: { onOpenIns
         </div>
       </div>
       <div className="grid gap-6 lg:grid-cols-3">
-        <ScorecardGroupCard title={'\uC99D\uAD8C\uC0AC\uBCC4 \uC131\uC801'} items={data.summary.byBroker.slice(0, 6)} />
+        <ScorecardGroupCard title={'\uC99D\uAD8C\uC0AC\uBCC4 \uC131\uC801'} items={data.summary.byBroker.slice(0, 6)} activeKey={selectedBroker} onSelect={setSelectedBroker} selectable />
         <ScorecardGroupCard title={'\uC5C5\uC885\uBCC4 \uC131\uC801'} items={data.summary.bySector.slice(0, 6)} />
         <ScorecardGroupCard title={'\uC2DC\uC7A5\uBCC4 \uBE44\uAD50'} items={data.summary.byMarket.slice(0, 6)} />
       </div>
+      {selectedBrokerGroup && selectedBrokerDetails ? <section className="rounded-xl bg-white p-4 shadow-sm sm:p-6">
+        <div className="flex flex-col gap-3 border-b pb-4 sm:flex-row sm:items-end sm:justify-between">
+          <div>
+            <h3 className="text-lg font-semibold">{selectedBrokerGroup.label} {'\uC0C1\uC138 \uC131\uC801'}</h3>
+            <p className="text-sm text-gray-500">{getScorecardPeriodLabel(selectedBrokerPeriod)} {'\uAE30\uC900 \uC0C1\uC2B9/\uD558\uB77D \uC885\uBAA9 \uBAA9\uB85D\uC785\uB2C8\uB2E4. \uC885\uBAA9\uBA85\uC744 \uB204\uB974\uBA74 \uC778\uC0AC\uC774\uD2B8 \uD31D\uC5C5\uC744 \uC5FD\uB2C8\uB2E4.'}</p>
+          </div>
+          <div className="flex flex-wrap overflow-hidden rounded-lg border">
+            {(['week1', 'month1', 'month3'] as const).map((period) => <button key={period} type="button" onClick={() => setSelectedBrokerPeriod(period)} className={`px-4 py-2 text-sm ${selectedBrokerPeriod === period ? 'bg-blue-600 text-white' : 'bg-white text-gray-600 hover:bg-gray-50'}`}>{getScorecardPeriodLabel(period)}</button>)}
+          </div>
+        </div>
+        <div className="mt-4 grid gap-4 lg:grid-cols-2">
+          <ScorecardReportList title={'\uC0C1\uC2B9 \uC885\uBAA9'} tone="up" items={selectedBrokerDetails.rising} onOpenInsight={onOpenInsight} isSaved={isSaved} onToggleWatchlist={onToggleWatchlist} emptyText={'\uC774 \uAE30\uAC04\uC5D0 \uC0C1\uC2B9 \uC885\uBAA9\uC774 \uC5C6\uC2B5\uB2C8\uB2E4.'} />
+          <ScorecardReportList title={'\uD558\uB77D \uC885\uBAA9'} tone="down" items={selectedBrokerDetails.falling} onOpenInsight={onOpenInsight} isSaved={isSaved} onToggleWatchlist={onToggleWatchlist} emptyText={'\uC774 \uAE30\uAC04\uC5D0 \uD558\uB77D \uC885\uBAA9\uC774 \uC5C6\uC2B5\uB2C8\uB2E4.'} />
+        </div>
+        {selectedBrokerDetails.pending.length > 0 ? <div className="mt-4 rounded-xl bg-amber-50 p-4 text-sm text-amber-800">
+          {'\uB300\uAE30 \uC911'} {selectedBrokerDetails.pending.length}{'\uAC74'}: {selectedBrokerDetails.pending.slice(0, 8).map(({ report }) => report.name).join(', ')}
+        </div> : null}
+      </section> : null}
       <div className="overflow-hidden rounded-xl bg-white shadow-sm">
         <div className="border-b p-4">
           <div className="flex items-center justify-between gap-4">
@@ -768,28 +822,63 @@ function ScorecardTab({ onOpenInsight, isSaved, onToggleWatchlist }: { onOpenIns
   </div>;
 }
 
-function ScorecardGroupCard({ title, items }: { title: string; items: ScorecardGroup[] }) {
+function ScorecardGroupCard({ title, items, activeKey, onSelect, selectable = false }: { title: string; items: ScorecardGroup[]; activeKey?: string | null; onSelect?: (key: string) => void; selectable?: boolean }) {
   return <section className="rounded-xl bg-white p-4 shadow-sm">
     <h3 className="mb-4 text-lg font-semibold">{title}</h3>
     <div className="space-y-3">
-      {items.length === 0 ? <div className="rounded-lg bg-gray-50 p-4 text-sm text-gray-400">{'\uB370\uC774\uD130\uAC00 \uC5C6\uC2B5\uB2C8\uB2E4.'}</div> : items.map((item) => <div key={`${title}-${item.key}`} className="rounded-lg bg-gray-50 p-4">
-        <div className="flex items-start justify-between gap-3">
-          <div>
-            <div className="font-medium text-gray-900">{item.label}</div>
-            <div className="text-xs text-gray-400">{'\uB9AC\uD3EC\uD2B8'} {item.reportCount}{'\uAC74'}</div>
+      {items.length === 0 ? <div className="rounded-lg bg-gray-50 p-4 text-sm text-gray-400">{'\uB370\uC774\uD130\uAC00 \uC5C6\uC2B5\uB2C8\uB2E4.'}</div> : items.map((item) => {
+        const active = selectable && activeKey === item.key;
+        const body = <>
+          <div className="flex items-start justify-between gap-3">
+            <div>
+              <div className="font-medium text-gray-900">{item.label}</div>
+              <div className="text-xs text-gray-400">{'\uB9AC\uD3EC\uD2B8'} {item.reportCount}{'\uAC74'}</div>
+            </div>
+            <div className="text-right">
+              <div className="text-sm font-semibold text-green-600">{item.month1.successRate.toFixed(1)}%</div>
+              <div className="text-xs text-gray-400">{'1M \uC131\uACF5\uB960'}</div>
+            </div>
           </div>
-          <div className="text-right">
-            <div className="text-sm font-semibold text-green-600">{item.month1.successRate.toFixed(1)}%</div>
-            <div className="text-xs text-gray-400">{'1M \uC131\uACF5\uB960'}</div>
+          <div className="mt-3 grid grid-cols-3 gap-2 text-xs">
+            <div className="rounded bg-white p-2"><div className="text-gray-500">{'1W'}</div><div className="mt-1 font-medium text-gray-900">{item.week1.successRate.toFixed(1)}%</div><div className="mt-1 text-red-500">{'\uD558\uB77D'} {item.week1.declineRate.toFixed(1)}%</div></div>
+            <div className="rounded bg-white p-2"><div className="text-gray-500">{'1M'}</div><div className="mt-1 font-medium text-gray-900">{item.month1.successRate.toFixed(1)}%</div><div className="mt-1 text-red-500">{'\uD558\uB77D'} {item.month1.declineRate.toFixed(1)}%</div></div>
+            <div className="rounded bg-white p-2"><div className="text-gray-500">{'3M'}</div><div className="mt-1 font-medium text-gray-900">{item.month3.successRate.toFixed(1)}%</div><div className="mt-1 text-red-500">{'\uD558\uB77D'} {item.month3.declineRate.toFixed(1)}%</div></div>
+          </div>
+        </>;
+
+        return selectable ? <button key={`${title}-${item.key}`} type="button" onClick={() => onSelect?.(item.key)} className={`w-full rounded-lg p-4 text-left transition ${active ? 'bg-blue-50 ring-2 ring-blue-500' : 'bg-gray-50 hover:bg-gray-100'}`}>
+          {body}
+        </button> : <div key={`${title}-${item.key}`} className="rounded-lg bg-gray-50 p-4">{body}</div>;
+      })}
+    </div>
+  </section>;
+}
+
+function ScorecardReportList({ title, tone, items, onOpenInsight, isSaved, onToggleWatchlist, emptyText }: { title: string; tone: 'up' | 'down'; items: { report: AnalystReport; point?: PerformancePoint }[]; onOpenInsight: (request: InsightRequest) => void; isSaved: (ticker: string, market: MarketType) => boolean; onToggleWatchlist: (item: Omit<WatchlistItem, 'savedAt'>) => void; emptyText: string }) {
+  return <section className="rounded-xl border p-4">
+    <div className="mb-3 flex items-center justify-between gap-3">
+      <h4 className={`text-base font-semibold ${tone === 'up' ? 'text-green-700' : 'text-red-700'}`}>{title}</h4>
+      <span className="text-sm text-gray-400">{items.length}{'\uAC74'}</span>
+    </div>
+    {items.length === 0 ? <div className="rounded-lg bg-gray-50 p-4 text-sm text-gray-400">{emptyText}</div> : <div className="space-y-3">
+      {items.map(({ report, point }) => <div key={`${title}-${report.market}-${report.ticker}-${report.date}`} className="rounded-lg bg-gray-50 p-3">
+        <div className="flex items-start justify-between gap-3">
+          <button type="button" onClick={() => onOpenInsight({ ticker: report.ticker, name: report.name, market: report.market, category: 'analyst', currentPrice: report.currentPrice })} className="min-w-0 text-left">
+            <div className="truncate font-medium text-blue-700 hover:underline">{report.name}</div>
+            <div className="text-xs text-gray-400">{report.ticker} {'\u00B7'} {report.date}</div>
+          </button>
+          <div className="flex items-center gap-2">
+            <FavoriteButton active={isSaved(report.ticker, report.market)} onClick={() => onToggleWatchlist({ ticker: report.ticker, name: report.name, market: report.market, category: 'analyst', currentPrice: report.currentPrice })} />
+            <span className={`text-sm font-semibold ${tone === 'up' ? 'text-green-600' : 'text-red-600'}`}>{point ? formatPct(point.returnPct) : '-'}</span>
           </div>
         </div>
-        <div className="mt-3 grid grid-cols-3 gap-2 text-xs">
-          <div className="rounded bg-white p-2"><div className="text-gray-500">{'1W'}</div><div className="mt-1 font-medium text-gray-900">{item.week1.successRate.toFixed(1)}%</div><div className="mt-1 text-red-500">{'\uD558\uB77D'} {item.week1.declineRate.toFixed(1)}%</div></div>
-          <div className="rounded bg-white p-2"><div className="text-gray-500">{'1M'}</div><div className="mt-1 font-medium text-gray-900">{item.month1.successRate.toFixed(1)}%</div><div className="mt-1 text-red-500">{'\uD558\uB77D'} {item.month1.declineRate.toFixed(1)}%</div></div>
-          <div className="rounded bg-white p-2"><div className="text-gray-500">{'3M'}</div><div className="mt-1 font-medium text-gray-900">{item.month3.successRate.toFixed(1)}%</div><div className="mt-1 text-red-500">{'\uD558\uB77D'} {item.month3.declineRate.toFixed(1)}%</div></div>
+        <div className="mt-2 flex flex-wrap gap-2 text-xs text-gray-500">
+          <span className="rounded bg-white px-2 py-1">{report.market === 'korea' ? '\uAD6D\uB0B4' : '\uD574\uC678'}</span>
+          <span className="rounded bg-white px-2 py-1">{report.broker}</span>
+          <span className="rounded bg-white px-2 py-1">{point ? getProgressMetric(point) : '-'}</span>
         </div>
       </div>)}
-    </div>
+    </div>}
   </section>;
 }
 

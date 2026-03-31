@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-31T21:19:05.102Z",
+  "generatedAt": "2026-03-31T22:13:59.057Z",
   "maxDays": 365,
   "reports": [
     {
@@ -905,6 +905,55 @@
         "Canaccord Genuity가 2026-03-31에 Strong Buy 의견과 목표가를 제시했습니다.",
         "현재가 $371.75 대비 목표가는 $420입니다.",
         "공시일 종가 $371.75 대비 괴리는 13%입니다."
+      ],
+      "performance": {
+        "week1": {
+          "asOfDate": "2026-04-07",
+          "closePrice": 0,
+          "returnPct": 0,
+          "targetProgressPct": 0,
+          "success": false,
+          "status": "pending"
+        },
+        "month1": {
+          "asOfDate": "2026-04-30",
+          "closePrice": 0,
+          "returnPct": 0,
+          "targetProgressPct": 0,
+          "success": false,
+          "status": "pending"
+        },
+        "month3": {
+          "asOfDate": "2026-06-29",
+          "closePrice": 0,
+          "returnPct": 0,
+          "targetProgressPct": 0,
+          "success": false,
+          "status": "pending"
+        }
+      }
+    },
+    {
+      "date": "2026-03-31",
+      "ticker": "V",
+      "name": "Visa Inc.",
+      "market": "us",
+      "broker": "Loop Capital",
+      "analyst": "Dominick Gabriele",
+      "opinion": "Strong Buy",
+      "targetPrice": 387,
+      "currentPrice": 302.24,
+      "basePrice": 302.24,
+      "basePriceDate": "2026-03-31",
+      "upside": 28,
+      "sourceUrl": "https://stockanalysis.com/stocks/v/ratings/",
+      "sourceText": "Loop Capital Strong Buy Initiates. Price target N/A -> 387.",
+      "reportTitle": "Strong Buy Initiates",
+      "reasonSummary": "Strong Buy Initiates. Loop Capital가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 28.0%입니다. 공시일 종가 대비 목표가 괴리는 28%입니다.",
+      "reasonBullets": [
+        "Loop Capital가 2026-03-31에 Strong Buy 의견과 목표가를 제시했습니다.",
+        "현재가 $302.24 대비 목표가는 $387입니다.",
+        "공시일 종가 $302.24 대비 괴리는 28%입니다."
       ],
       "performance": {
         "week1": {
@@ -45083,55 +45132,6 @@
       }
     },
     {
-      "date": "2025-10-22",
-      "ticker": "V",
-      "name": "Visa Inc.",
-      "market": "us",
-      "broker": "Keybanc",
-      "analyst": "Andrew Schmidt",
-      "opinion": "Buy",
-      "targetPrice": 405,
-      "currentPrice": 302.24,
-      "basePrice": 345.36,
-      "basePriceDate": "2025-10-22",
-      "upside": 34,
-      "sourceUrl": "https://stockanalysis.com/stocks/v/ratings/",
-      "sourceText": "Keybanc Buy Initiates. Price target N/A -> 405.",
-      "reportTitle": "Buy Initiates",
-      "reasonSummary": "Buy Initiates. Keybanc가 Buy 의견을 제시했고 현재가 기준 상승여력은 34.0%입니다. 공시일 종가 대비 목표가 괴리는 17.3%입니다.",
-      "reasonBullets": [
-        "Keybanc가 2025-10-22에 Buy 의견과 목표가를 제시했습니다.",
-        "현재가 $302.24 대비 목표가는 $405입니다.",
-        "공시일 종가 $345.36 대비 괴리는 17.3%입니다."
-      ],
-      "performance": {
-        "week1": {
-          "asOfDate": "2025-10-29",
-          "closePrice": 341.28,
-          "returnPct": -1.2,
-          "targetProgressPct": -6.8,
-          "success": false,
-          "status": "complete"
-        },
-        "month1": {
-          "asOfDate": "2025-11-21",
-          "closePrice": 327.98,
-          "returnPct": -5,
-          "targetProgressPct": -29.1,
-          "success": false,
-          "status": "complete"
-        },
-        "month3": {
-          "asOfDate": "2026-01-20",
-          "closePrice": 325.82,
-          "returnPct": -5.7,
-          "targetProgressPct": -32.8,
-          "success": false,
-          "status": "complete"
-        }
-      }
-    },
-    {
       "date": "2025-10-20",
       "ticker": "PG",
       "name": "The Procter & Gamble Company",
@@ -49045,53 +49045,102 @@
       "name": "Visa Inc.",
       "market": "us",
       "latestReportDate": "2026-03-31",
-      "latestBroker": "UBS",
+      "latestBroker": "Loop Capital",
       "latestOpinion": "Strong Buy",
-      "latestTargetPrice": 390,
+      "latestTargetPrice": 387,
       "latestCurrentPrice": 302.24,
       "latestBasePrice": 302.24,
-      "avgUpside": 33.1,
+      "avgUpside": 32.6,
       "reportCount": 12,
-      "reasonSummary": "Strong Buy -> Strong Buy Maintains. UBS가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 29.0%입니다. 공시일 종가 대비 목표가 괴리는 29%입니다.",
+      "reasonSummary": "Strong Buy Initiates. Loop Capital가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 28.0%입니다. 공시일 종가 대비 목표가 괴리는 28%입니다.",
       "reasonBullets": [
-        "UBS가 2026-03-31에 Strong Buy 의견과 목표가를 제시했습니다.",
-        "현재가 $302.24 대비 목표가는 $390입니다.",
-        "공시일 종가 $302.24 대비 괴리는 29%입니다."
+        "Loop Capital가 2026-03-31에 Strong Buy 의견과 목표가를 제시했습니다.",
+        "현재가 $302.24 대비 목표가는 $387입니다.",
+        "공시일 종가 $302.24 대비 괴리는 28%입니다."
       ],
       "investmentLogic": {
-        "summary": "Strong Buy -> Strong Buy Maintains",
+        "summary": "Strong Buy Initiates",
         "bullets": [
-          "Strong Buy -> Strong Buy Maintains",
-          "Strong Buy -> Strong Buy Maintains UBS Strong Buy Maintains.",
-          "Price target 425 -> 390."
+          "Strong Buy Initiates",
+          "Strong Buy Initiates Loop Capital Strong Buy Initiates.",
+          "Price target N/A -> 387."
         ]
       },
       "estimateRevision": {
         "summary": "유지 신호입니다. 리포트 원문에서 추정치 관련 표현을 기준으로 판단했습니다.",
         "bullets": [
-          "Strong Buy -> Strong Buy Maintains UBS Strong Buy Maintains.",
-          "Price target 425 -> 390.",
-          "Strong Buy -> Strong Buy Maintains."
+          "Strong Buy Initiates Loop Capital Strong Buy Initiates.",
+          "Price target N/A -> 387.",
+          "Strong Buy Initiates."
         ],
         "signal": "flat"
       },
       "valuation": {
-        "summary": "현재가 $302.24 대비 목표가 $390가 제시돼 밸류에이션 여력을 확인할 수 있습니다.",
+        "summary": "현재가 $302.24 대비 목표가 $387가 제시돼 밸류에이션 여력을 확인할 수 있습니다.",
         "bullets": [
-          "Strong Buy -> Strong Buy Maintains UBS Strong Buy Maintains.",
-          "Price target 425 -> 390.",
-          "Strong Buy -> Strong Buy Maintains."
+          "Strong Buy Initiates Loop Capital Strong Buy Initiates.",
+          "Price target N/A -> 387.",
+          "Strong Buy Initiates."
         ]
       },
       "sectorCycle": {
-        "summary": "Strong Buy -> Strong Buy Maintains UBS Strong Buy Maintains.",
+        "summary": "Strong Buy Initiates Loop Capital Strong Buy Initiates.",
         "bullets": [
-          "Strong Buy -> Strong Buy Maintains UBS Strong Buy Maintains.",
-          "Price target 425 -> 390.",
-          "Strong Buy -> Strong Buy Maintains."
+          "Strong Buy Initiates Loop Capital Strong Buy Initiates.",
+          "Price target N/A -> 387.",
+          "Strong Buy Initiates."
         ]
       },
       "relatedReports": [
+        {
+          "date": "2026-03-31",
+          "ticker": "V",
+          "name": "Visa Inc.",
+          "market": "us",
+          "broker": "Loop Capital",
+          "analyst": "Dominick Gabriele",
+          "opinion": "Strong Buy",
+          "targetPrice": 387,
+          "currentPrice": 302.24,
+          "basePrice": 302.24,
+          "basePriceDate": "2026-03-31",
+          "upside": 28,
+          "sourceUrl": "https://stockanalysis.com/stocks/v/ratings/",
+          "sourceText": "Loop Capital Strong Buy Initiates. Price target N/A -> 387.",
+          "reportTitle": "Strong Buy Initiates",
+          "reasonSummary": "Strong Buy Initiates. Loop Capital가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 28.0%입니다. 공시일 종가 대비 목표가 괴리는 28%입니다.",
+          "reasonBullets": [
+            "Loop Capital가 2026-03-31에 Strong Buy 의견과 목표가를 제시했습니다.",
+            "현재가 $302.24 대비 목표가는 $387입니다.",
+            "공시일 종가 $302.24 대비 괴리는 28%입니다."
+          ],
+          "performance": {
+            "week1": {
+              "asOfDate": "2026-04-07",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            },
+            "month1": {
+              "asOfDate": "2026-04-30",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            },
+            "month3": {
+              "asOfDate": "2026-06-29",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            }
+          }
+        },
         {
           "date": "2026-03-31",
           "ticker": "V",
@@ -49267,55 +49316,6 @@
               "closePrice": 331.58,
               "returnPct": 3,
               "targetProgressPct": 11.1,
-              "success": false,
-              "status": "complete"
-            },
-            "month1": {
-              "asOfDate": "2026-02-27",
-              "closePrice": 320.14,
-              "returnPct": -0.5,
-              "targetProgressPct": -1.9,
-              "success": false,
-              "status": "complete"
-            },
-            "month3": {
-              "asOfDate": "2026-04-30",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            }
-          }
-        },
-        {
-          "date": "2026-01-30",
-          "ticker": "V",
-          "name": "Visa Inc.",
-          "market": "us",
-          "broker": "Morgan Stanley",
-          "analyst": "James Faucette",
-          "opinion": "Buy",
-          "targetPrice": 411,
-          "currentPrice": 302.24,
-          "basePrice": 321.83,
-          "basePriceDate": "2026-01-30",
-          "upside": 36,
-          "sourceUrl": "https://stockanalysis.com/stocks/v/ratings/",
-          "sourceText": "Morgan Stanley Buy Maintains. Price target 398 -> 411.",
-          "reportTitle": "Buy -> Buy Maintains",
-          "reasonSummary": "Buy -> Buy Maintains. Morgan Stanley가 Buy 의견을 제시했고 현재가 기준 상승여력은 36.0%입니다. 공시일 종가 대비 목표가 괴리는 27.7%입니다.",
-          "reasonBullets": [
-            "Morgan Stanley가 2026-01-30에 Buy 의견과 목표가를 제시했습니다.",
-            "현재가 $302.24 대비 목표가는 $411입니다.",
-            "공시일 종가 $321.83 대비 괴리는 27.7%입니다."
-          ],
-          "performance": {
-            "week1": {
-              "asOfDate": "2026-02-06",
-              "closePrice": 331.58,
-              "returnPct": 3,
-              "targetProgressPct": 10.9,
               "success": false,
               "status": "complete"
             },

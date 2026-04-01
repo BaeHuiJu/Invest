@@ -888,11 +888,14 @@ function SimpleSelect({ label, value, onChange, options }: { label: string; valu
 }
 
 function ConsensusTab({ onOpenInsight, isSaved, onToggleWatchlist }: { onOpenInsight: (request: InsightRequest) => void; isSaved: (ticker: string, market: MarketType) => boolean; onToggleWatchlist: (item: Omit<WatchlistItem, 'savedAt'>) => void }) {
+  type ConsensusSortKey = 'name' | 'market' | 'entryScore' | 'brokerCount' | 'priceVsBase' | 'currentPrice' | 'basePrice' | 'avgUpside' | 'reportCount' | 'latestReportDate' | 'brokers';
   const [items, setItems] = useState<AnalystConsensusItem[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [days, setDays] = useState(30);
   const [market, setMarket] = useState<MarketFilter>('all');
+  const [sortBy, setSortBy] = useState<ConsensusSortKey>('latestReportDate');
+  const [sortOrder, setSortOrder] = useState<'asc' | 'desc'>('desc');
   const [page, setPage] = useState(1);
   const [pageSize, setPageSize] = useState(10);
 
@@ -910,13 +913,68 @@ function ConsensusTab({ onOpenInsight, isSaved, onToggleWatchlist }: { onOpenIns
       setLoading(false);
     }
   })(); }, [days, market]);
-  useEffect(() => setPage(1), [days, market, pageSize]);
+  useEffect(() => setPage(1), [days, market, sortBy, sortOrder, pageSize]);
 
   const avgUpside = items.length ? items.reduce((sum, item) => sum + item.avgUpside, 0) / items.length : 0;
   const avgEntryScore = items.length ? items.reduce((sum, item) => sum + item.entryScore, 0) / items.length : 0;
   const topEntryScore = items.reduce((max, item) => Math.max(max, item.entryScore), 0);
-  const totalPages = Math.max(1, Math.ceil(items.length / pageSize));
-  const paginated = items.slice((page - 1) * pageSize, page * pageSize);
+  const sortedItems = [...items].sort((a, b) => {
+    const priceVsBaseA = a.basePrice > 0 ? ((a.currentPrice - a.basePrice) / a.basePrice) * 100 : 0;
+    const priceVsBaseB = b.basePrice > 0 ? ((b.currentPrice - b.basePrice) / b.basePrice) * 100 : 0;
+    const getValue = (item: AnalystConsensusItem) => {
+      switch (sortBy) {
+        case 'name': return item.name.toLowerCase();
+        case 'market': return item.market;
+        case 'entryScore': return item.entryScore;
+        case 'brokerCount': return item.brokerCount;
+        case 'priceVsBase': return item.basePrice > 0 ? ((item.currentPrice - item.basePrice) / item.basePrice) * 100 : 0;
+        case 'currentPrice': return item.currentPrice;
+        case 'basePrice': return item.basePrice;
+        case 'avgUpside': return item.avgUpside;
+        case 'reportCount': return item.reportCount;
+        case 'latestReportDate': return new Date(item.latestReportDate).getTime();
+        case 'brokers': return item.brokers.join(', ').toLowerCase();
+      }
+    };
+
+    const av = getValue(a);
+    const bv = getValue(b);
+
+    if (typeof av === 'string' && typeof bv === 'string') {
+      const compared = av.localeCompare(bv, 'ko');
+      if (compared !== 0) return sortOrder === 'desc' ? -compared : compared;
+    } else if (av !== bv) {
+      return sortOrder === 'desc' ? Number(bv) - Number(av) : Number(av) - Number(bv);
+    }
+
+    const fallbackDate = new Date(b.latestReportDate).getTime() - new Date(a.latestReportDate).getTime();
+    if (fallbackDate !== 0) return fallbackDate;
+    if (b.entryScore !== a.entryScore) return b.entryScore - a.entryScore;
+    if (b.brokerCount !== a.brokerCount) return b.brokerCount - a.brokerCount;
+    const fallbackPriceVsBase = priceVsBaseB - priceVsBaseA;
+    if (fallbackPriceVsBase !== 0) return fallbackPriceVsBase;
+    return b.avgUpside - a.avgUpside;
+  });
+  const totalPages = Math.max(1, Math.ceil(sortedItems.length / pageSize));
+  const paginated = sortedItems.slice((page - 1) * pageSize, page * pageSize);
+  const toggleSort = (key: ConsensusSortKey) => {
+    if (sortBy === key) {
+      setSortOrder((current) => current === 'desc' ? 'asc' : 'desc');
+      return;
+    }
+
+    setSortBy(key);
+    setSortOrder(key === 'name' || key === 'market' || key === 'brokers' ? 'asc' : 'desc');
+  };
+  const sortIndicator = (key: ConsensusSortKey) => sortBy === key ? (sortOrder === 'desc' ? '▼' : '▲') : '';
+  const renderSortableHeader = (label: string, key: ConsensusSortKey, className: string) => (
+    <th className={className}>
+      <button type="button" onClick={() => toggleSort(key)} className="inline-flex items-center gap-1 font-medium text-gray-500 hover:text-gray-700">
+        <span>{label}</span>
+        <span className={`text-[10px] ${sortBy === key ? 'text-gray-700' : 'text-gray-300'}`}>{sortIndicator(key) || '↕'}</span>
+      </button>
+    </th>
+  );
 
   return <div className="space-y-6">
     <div className="rounded-xl bg-white p-4 shadow-sm">
@@ -941,7 +999,7 @@ function ConsensusTab({ onOpenInsight, isSaved, onToggleWatchlist }: { onOpenIns
       <StatCard label={'\uD574\uC678 \uC885\uBAA9'} value={String(items.filter((item) => item.market === 'us').length)} />
     </div>
     {loading ? <LoadingState /> : error ? <div className="rounded-lg bg-red-50 p-4 text-red-600">{error}</div> : <div className="overflow-hidden rounded-xl bg-white shadow-sm">
-      <div className="border-b p-4"><h2 className="text-lg font-semibold">{'\uC560\uB110\uB9AC\uC2A4\uD2B8 \uACF5\uD1B5 \uCD94\uCC9C \uC885\uBAA9'}</h2><p className="text-sm text-gray-500">{'\uC120\uD0DD\uD55C \uAE30\uAC04 \uB0B4 \uC5EC\uB7EC \uC99D\uAD8C\uC0AC\uAC00 \uD568\uAED8 \uCD94\uCC9C\uD55C \uC885\uBAA9\uC744 \uC9C4\uC785 \uC810\uC218 \uC21C\uC73C\uB85C \uBE44\uAD50\uD569\uB2C8\uB2E4.'}</p></div>
+      <div className="border-b p-4"><h2 className="text-lg font-semibold">{'\uC560\uB110\uB9AC\uC2A4\uD2B8 \uACF5\uD1B5 \uCD94\uCC9C \uC885\uBAA9'}</h2><p className="text-sm text-gray-500">{'\uC120\uD0DD\uD55C \uAE30\uAC04 \uB0B4 \uC5EC\uB7EC \uC99D\uAD8C\uC0AC\uAC00 \uD568\uAED8 \uCD94\uCC9C\uD55C \uC885\uBAA9\uC744 \uCD5C\uC2E0 \uB9AC\uD3EC\uD2B8 \uC77C\uC790 \uC21C\uC73C\uB85C \uBE44\uAD50\uD569\uB2C8\uB2E4.'}</p></div>
       {items.length > 0 && <div className="flex justify-end px-4 pt-4"><SimpleSelect label={'\uD398\uC774\uC9C0 \uD06C\uAE30'} value={String(pageSize)} onChange={(value) => setPageSize(Number(value))} options={PAGE_SIZE_OPTIONS.map((option) => [String(option), String(option)] as [string, string])} /></div>}
       {items.length === 0 ? <div className="p-8 text-center text-gray-400">{'\uC870\uAC74\uC5D0 \uB9DE\uB294 \uACF5\uD1B5 \uCD94\uCC9C \uC885\uBAA9\uC774 \uC5C6\uC2B5\uB2C8\uB2E4.'}</div> : <>
         <div className="space-y-3 p-4 md:hidden">
@@ -979,24 +1037,24 @@ function ConsensusTab({ onOpenInsight, isSaved, onToggleWatchlist }: { onOpenIns
           <table className="w-full">
             <thead className="bg-gray-50 text-left text-xs uppercase text-gray-500">
               <tr>
-                <th className="px-4 py-3">{'\uC885\uBAA9'}</th>
-                <th className="px-4 py-3">{'\uC2DC\uC7A5'}</th>
-                <th className="px-4 py-3 text-right">{'\uC9C4\uC785 \uC810\uC218'}</th>
-                <th className="px-4 py-3 text-right">{'\uC99D\uAD8C\uC0AC \uC218'}</th>
-                <th className="px-4 py-3 text-right">{'\uAE30\uC900\uAC00 \uB300\uBE44 \uD604\uC7AC\uAC00'}</th>
-                <th className="px-4 py-3 text-right">{'\uD604\uC7AC\uAC00'}</th>
-                <th className="px-4 py-3 text-right">{'\uAE30\uC900\uAC00\uACA9'}</th>
-                <th className="px-4 py-3 text-right">{'\uD3C9\uADE0 \uBAA9\uD45C\uAC00 \uAD34\uB9AC\uC728'}</th>
-                <th className="px-4 py-3 text-right">{'\uB9AC\uD3EC\uD2B8 \uC218'}</th>
-                <th className="px-4 py-3">{'\uCD5C\uADFC \uCD94\uCC9C\uC77C'}</th>
-                <th className="px-4 py-3">{'\uC99D\uAD8C\uC0AC'}</th>
+                {renderSortableHeader('\uC885\uBAA9', 'name', 'px-4 py-3')}
+                {renderSortableHeader('\uC2DC\uC7A5', 'market', 'min-w-[84px] px-4 py-3')}
+                {renderSortableHeader('\uC9C4\uC785 \uC810\uC218', 'entryScore', 'min-w-[100px] px-4 py-3 text-right')}
+                {renderSortableHeader('\uC99D\uAD8C\uC0AC \uC218', 'brokerCount', 'px-4 py-3 text-right')}
+                {renderSortableHeader('\uAE30\uC900\uAC00 \uB300\uBE44 \uD604\uC7AC\uAC00', 'priceVsBase', 'px-4 py-3 text-right')}
+                {renderSortableHeader('\uD604\uC7AC\uAC00', 'currentPrice', 'px-4 py-3 text-right')}
+                {renderSortableHeader('\uAE30\uC900\uAC00\uACA9', 'basePrice', 'px-4 py-3 text-right')}
+                {renderSortableHeader('\uD3C9\uADE0 \uBAA9\uD45C\uAC00 \uAD34\uB9AC\uC728', 'avgUpside', 'px-4 py-3 text-right')}
+                {renderSortableHeader('\uB9AC\uD3EC\uD2B8 \uC218', 'reportCount', 'px-4 py-3 text-right')}
+                {renderSortableHeader('\uCD5C\uADFC \uCD94\uCC9C\uC77C', 'latestReportDate', 'px-4 py-3')}
+                {renderSortableHeader('\uC99D\uAD8C\uC0AC', 'brokers', 'px-4 py-3')}
               </tr>
             </thead>
             <tbody className="divide-y">
               {paginated.map((item) => <tr key={`${item.market}-${item.ticker}`} className="hover:bg-gray-50">
                 <td className="px-4 py-3"><div className="flex items-start justify-between gap-3"><button type="button" onClick={() => onOpenInsight({ ticker: item.ticker, name: item.name, market: item.market, category: 'analyst', currentPrice: item.currentPrice })} className="text-left"><div className="font-medium text-blue-700 hover:underline">{item.name}</div><div className="text-xs text-gray-400">{item.ticker}</div></button><FavoriteButton active={isSaved(item.ticker, item.market)} onClick={() => onToggleWatchlist({ ticker: item.ticker, name: item.name, market: item.market, category: 'analyst', currentPrice: item.currentPrice })} /></div></td>
-                <td className="px-4 py-3"><span className={`rounded px-2 py-1 text-xs ${item.market === 'korea' ? 'bg-blue-100 text-blue-700' : 'bg-orange-100 text-orange-700'}`}>{item.market === 'korea' ? '\uAD6D\uB0B4' : '\uD574\uC678'}</span></td>
-                <td className="px-4 py-3 text-right"><span className="rounded bg-sky-100 px-2 py-1 text-sm font-semibold text-sky-700">{formatScore(item.entryScore)}</span></td>
+                <td className="min-w-[84px] px-4 py-3"><span className={`inline-flex min-w-[44px] justify-center rounded px-2 py-1 text-xs ${item.market === 'korea' ? 'bg-blue-100 text-blue-700' : 'bg-orange-100 text-orange-700'}`}>{item.market === 'korea' ? '\uAD6D\uB0B4' : '\uD574\uC678'}</span></td>
+                <td className="min-w-[100px] px-4 py-3 text-right"><span className="inline-flex min-w-[56px] justify-center rounded bg-sky-100 px-2 py-1 text-sm font-semibold text-sky-700">{formatScore(item.entryScore)}</span></td>
                 <td className="px-4 py-3 text-right font-medium">{item.brokerCount}</td>
                 <td className={`px-4 py-3 text-right font-medium ${item.currentPrice <= item.basePrice ? 'text-green-600' : 'text-red-600'}`}>{formatPct(((item.currentPrice - item.basePrice) / item.basePrice) * 100)}</td>
                 <td className="px-4 py-3 text-right">{formatPrice(item.currentPrice, item.market)}</td>

@@ -150,15 +150,15 @@ export default async function handler(
     const consensusItems = items
       .filter((item): item is AnalystConsensusItem => item !== null)
       .sort((a, b) => {
+        const dateDiff = new Date(b.latestReportDate).getTime() - new Date(a.latestReportDate).getTime();
+        if (dateDiff !== 0) {
+          return dateDiff;
+        }
         if (b.entryScore !== a.entryScore) {
           return b.entryScore - a.entryScore;
         }
         if (b.brokerCount !== a.brokerCount) {
           return b.brokerCount - a.brokerCount;
-        }
-        const dateDiff = new Date(b.latestReportDate).getTime() - new Date(a.latestReportDate).getTime();
-        if (dateDiff !== 0) {
-          return dateDiff;
         }
         return b.avgUpside - a.avgUpside;
       });

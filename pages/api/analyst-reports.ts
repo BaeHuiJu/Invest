@@ -4,7 +4,7 @@ import path from 'node:path';
 import type { NextApiRequest, NextApiResponse } from 'next';
 
 import bundledAnalystCacheFile from '../../data/analyst-reports-cache.json';
-import { buildAnalystCacheFile, enrichReportsWithPerformance, filterAnalystReports } from '../../lib/analyst-report-source.mjs';
+import { buildAnalystCacheFile, buildReasonBullets, buildReasonSummary, enrichReportsWithPerformance, filterAnalystReports } from '../../lib/analyst-report-source.mjs';
 import type { AnalystReport, AnalystReportCacheFile, MarketFilter } from '../../lib/analyst-types';
 
 type CacheFileMemoryEntry = {
@@ -254,14 +254,16 @@ export async function enrichReportsWithLivePrices(reports: AnalystReport[]): Pro
 
   return reports.map((report) => {
     const livePrice = livePrices.get(`${report.market}:${report.ticker}`) || 0;
-    if (livePrice <= 0) {
-      return report;
-    }
-
-    return {
+    const nextReport = livePrice > 0 ? {
       ...report,
       currentPrice: livePrice,
       upside: report.targetPrice > 0 ? roundOne(((report.targetPrice - livePrice) / livePrice) * 100) : 0,
+    } : report;
+
+    return {
+      ...nextReport,
+      reasonSummary: buildReasonSummary(nextReport),
+      reasonBullets: buildReasonBullets(nextReport),
     };
   });
 }

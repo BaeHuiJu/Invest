@@ -1,6 +1,6 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
 
-import { buildFallbackInsight } from '../../lib/analyst-report-source.mjs';
+import { buildFallbackInsight, buildStockInsight } from '../../lib/analyst-report-source.mjs';
 import type { MarketType, StockInsight, StockInsightResponse } from '../../lib/analyst-types';
 import { fetchLiveCurrentPrice, loadAnalystData } from './analyst-reports';
 
@@ -11,7 +11,7 @@ function roundOne(value: number) {
 async function enrichInsightWithLivePrice(insight: StockInsight): Promise<StockInsight> {
   const livePrice = await fetchLiveCurrentPrice(insight.ticker, insight.market);
   if (livePrice <= 0) {
-    return insight;
+    return insight.relatedReports.length > 0 ? buildStockInsight(insight.relatedReports) as StockInsight : insight;
   }
 
   const relatedReports = insight.relatedReports.map((report) => ({
@@ -19,17 +19,7 @@ async function enrichInsightWithLivePrice(insight: StockInsight): Promise<StockI
     currentPrice: livePrice,
     upside: report.targetPrice > 0 ? roundOne(((report.targetPrice - livePrice) / livePrice) * 100) : 0,
   }));
-
-  const avgUpside = relatedReports.length > 0
-    ? roundOne(relatedReports.reduce((sum, report) => sum + report.upside, 0) / relatedReports.length)
-    : insight.avgUpside;
-
-  return {
-    ...insight,
-    latestCurrentPrice: livePrice,
-    avgUpside,
-    relatedReports,
-  };
+  return buildStockInsight(relatedReports) as StockInsight;
 }
 
 export default async function handler(

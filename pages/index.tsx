@@ -13,7 +13,7 @@ type MarketIndex = { ticker: string; name: string; market: MarketType; value: nu
 type PerformancePoint = { asOfDate: string; closePrice: number; returnPct: number; targetProgressPct: number; success: boolean; status: PerformanceStatus };
 type AnalystReportPerformance = { week1: PerformancePoint; month1: PerformancePoint; month3: PerformancePoint };
 type AnalystReport = { date: string; ticker: string; name: string; market: MarketType; broker: string; analyst: string; opinion: string; targetPrice: number; currentPrice: number; basePrice: number; basePriceDate: string; upside: number; reportTitle?: string; sourceUrl?: string; reasonSummary?: string; reasonBullets?: string[]; sector?: string; performance?: AnalystReportPerformance };
-type AnalystConsensusItem = { ticker: string; name: string; market: MarketType; brokerCount: number; brokers: string[]; latestReportDate: string; avgUpside: number; currentPrice: number; basePrice: number; basePriceDate: string; reportCount: number; relatedReports: AnalystReport[] };
+type AnalystConsensusItem = { ticker: string; name: string; market: MarketType; brokerCount: number; brokers: string[]; latestReportDate: string; avgUpside: number; currentPrice: number; basePrice: number; basePriceDate: string; avgTargetPrice: number; entryScore: number; entryScoreBreakdown: { priceVsBase: number; targetGap: number; reportCount: number; consensusStrength: number }; reportCount: number; relatedReports: AnalystReport[] };
 type InsightSection = { summary: string; bullets: string[]; signal?: 'up' | 'down' | 'flat' | 'mixed' | 'unknown' };
 type StockInsight = { ticker: string; name: string; market: MarketType; latestReportDate?: string; latestBroker?: string; latestOpinion?: string; latestTargetPrice?: number; latestCurrentPrice?: number; latestBasePrice?: number; avgUpside?: number; reportCount: number; reasonSummary: string; reasonBullets: string[]; investmentLogic: InsightSection; estimateRevision: InsightSection; valuation: InsightSection; sectorCycle: InsightSection; relatedReports: AnalystReport[] };
 type StockInsightResponse = { found: boolean; insight: StockInsight };
@@ -44,6 +44,7 @@ const formatPrice = (price: number, market: MarketType) => market === 'korea'
   ? `${Math.round(price || 0).toLocaleString()} KRW`
   : `$${(price || 0).toLocaleString(undefined, { maximumFractionDigits: 2 })}`;
 const formatPct = (value: number) => `${value >= 0 ? '+' : ''}${value.toFixed(1)}%`;
+const formatScore = (value: number) => `${Math.round(value)}점`;
 const analystKey = (days: number, market: MarketFilter) => `${days}:${market}`;
 const consensusKey = (days: number, market: MarketFilter) => `${days}:${market}`;
 const scorecardKey = (days: number, market: MarketFilter) => `${days}:${market}`;
@@ -912,6 +913,8 @@ function ConsensusTab({ onOpenInsight, isSaved, onToggleWatchlist }: { onOpenIns
   useEffect(() => setPage(1), [days, market, pageSize]);
 
   const avgUpside = items.length ? items.reduce((sum, item) => sum + item.avgUpside, 0) / items.length : 0;
+  const avgEntryScore = items.length ? items.reduce((sum, item) => sum + item.entryScore, 0) / items.length : 0;
+  const topEntryScore = items.reduce((max, item) => Math.max(max, item.entryScore), 0);
   const totalPages = Math.max(1, Math.ceil(items.length / pageSize));
   const paginated = items.slice((page - 1) * pageSize, page * pageSize);
 
@@ -932,12 +935,13 @@ function ConsensusTab({ onOpenInsight, isSaved, onToggleWatchlist }: { onOpenIns
     </div>
     <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
       <StatCard label={'\uACF5\uD1B5 \uCD94\uCC9C \uC885\uBAA9'} value={String(items.length)} />
-      <StatCard label={'\uD3C9\uADE0 \uC0C1\uC2B9\uC5EC\uB825'} value={formatPct(avgUpside)} accent="text-green-600" />
+      <StatCard label={'\uD3C9\uADE0 \uC9C4\uC785 \uC810\uC218'} value={formatScore(avgEntryScore)} accent="text-blue-600" />
+      <StatCard label={'\uCD5C\uACE0 \uC9C4\uC785 \uC810\uC218'} value={formatScore(topEntryScore)} accent="text-blue-700" />
       <StatCard label={'\uAD6D\uB0B4 \uC885\uBAA9'} value={String(items.filter((item) => item.market === 'korea').length)} />
       <StatCard label={'\uD574\uC678 \uC885\uBAA9'} value={String(items.filter((item) => item.market === 'us').length)} />
     </div>
     {loading ? <LoadingState /> : error ? <div className="rounded-lg bg-red-50 p-4 text-red-600">{error}</div> : <div className="overflow-hidden rounded-xl bg-white shadow-sm">
-      <div className="border-b p-4"><h2 className="text-lg font-semibold">{'\uC560\uB110\uB9AC\uC2A4\uD2B8 \uACF5\uD1B5 \uCD94\uCC9C \uC885\uBAA9'}</h2><p className="text-sm text-gray-500">{'\uC120\uD0DD\uD55C \uAE30\uAC04 \uB0B4 \uC5EC\uB7EC \uC99D\uAD8C\uC0AC\uAC00 \uD568\uAED8 \uCD94\uCC9C\uD55C \uC885\uBAA9\uB9CC \uB530\uB85C \uBAA8\uC544\uC11C \uBCF4\uC5EC\uC90D\uB2C8\uB2E4.'}</p></div>
+      <div className="border-b p-4"><h2 className="text-lg font-semibold">{'\uC560\uB110\uB9AC\uC2A4\uD2B8 \uACF5\uD1B5 \uCD94\uCC9C \uC885\uBAA9'}</h2><p className="text-sm text-gray-500">{'\uC120\uD0DD\uD55C \uAE30\uAC04 \uB0B4 \uC5EC\uB7EC \uC99D\uAD8C\uC0AC\uAC00 \uD568\uAED8 \uCD94\uCC9C\uD55C \uC885\uBAA9\uC744 \uC9C4\uC785 \uC810\uC218 \uC21C\uC73C\uB85C \uBE44\uAD50\uD569\uB2C8\uB2E4.'}</p></div>
       {items.length > 0 && <div className="flex justify-end px-4 pt-4"><SimpleSelect label={'\uD398\uC774\uC9C0 \uD06C\uAE30'} value={String(pageSize)} onChange={(value) => setPageSize(Number(value))} options={PAGE_SIZE_OPTIONS.map((option) => [String(option), String(option)] as [string, string])} /></div>}
       {items.length === 0 ? <div className="p-8 text-center text-gray-400">{'\uC870\uAC74\uC5D0 \uB9DE\uB294 \uACF5\uD1B5 \uCD94\uCC9C \uC885\uBAA9\uC774 \uC5C6\uC2B5\uB2C8\uB2E4.'}</div> : <>
         <div className="space-y-3 p-4 md:hidden">
@@ -949,14 +953,24 @@ function ConsensusTab({ onOpenInsight, isSaved, onToggleWatchlist }: { onOpenIns
               </button>
               <div className="flex shrink-0 items-center gap-2">
                 <FavoriteButton active={isSaved(item.ticker, item.market)} onClick={() => onToggleWatchlist({ ticker: item.ticker, name: item.name, market: item.market, category: 'analyst', currentPrice: item.currentPrice })} className="h-7 w-7 text-base" />
-                <span className="rounded bg-blue-100 px-2 py-1 text-xs text-blue-700">{item.brokerCount}{'\uACF3'}</span>
+                <span className="rounded bg-sky-100 px-2 py-1 text-xs font-semibold text-sky-700">{formatScore(item.entryScore)}</span>
               </div>
             </div>
             <div className="mt-3 grid grid-cols-2 gap-2 text-xs">
+              <div className="rounded-lg bg-white p-3"><div className="text-[11px] text-gray-500">{'\uAE30\uC900\uAC00 \uB300\uBE44 \uD604\uC7AC\uAC00'}</div><div className={`mt-1 font-semibold ${item.currentPrice <= item.basePrice ? 'text-green-600' : 'text-red-600'}`}>{formatPct(((item.currentPrice - item.basePrice) / item.basePrice) * 100)}</div></div>
+              <div className="rounded-lg bg-white p-3"><div className="text-[11px] text-gray-500">{'\uD3C9\uADE0 \uBAA9\uD45C\uAC00 \uAD34\uB9AC\uC728'}</div><div className="mt-1 font-semibold text-green-600">{formatPct(item.avgUpside)}</div></div>
               <div className="rounded-lg bg-white p-3"><div className="text-[11px] text-gray-500">{'\uD604\uC7AC\uAC00'}</div><div className="mt-1 font-medium text-gray-900">{formatPrice(item.currentPrice, item.market)}</div></div>
-              <div className="rounded-lg bg-white p-3"><div className="text-[11px] text-gray-500">{'\uD3C9\uADE0 \uC0C1\uC2B9\uC5EC\uB825'}</div><div className="mt-1 font-semibold text-green-600">{formatPct(item.avgUpside)}</div></div>
               <div className="rounded-lg bg-white p-3"><div className="text-[11px] text-gray-500">{'\uAE30\uC900\uAC00\uACA9'}</div><div className="mt-1 font-medium text-gray-900">{formatPrice(item.basePrice, item.market)}</div><div className="mt-1 text-[11px] text-gray-400">{item.basePriceDate} {'\uC885\uAC00'}</div></div>
-              <div className="rounded-lg bg-white p-3"><div className="text-[11px] text-gray-500">{'\uCD5C\uADFC \uCD94\uCC9C\uC77C'}</div><div className="mt-1 font-medium text-gray-900">{item.latestReportDate}</div><div className="mt-1 text-[11px] text-gray-400">{'\uB9AC\uD3EC\uD2B8'} {item.reportCount}{'\uAC74'}</div></div>
+              <div className="rounded-lg bg-white p-3"><div className="text-[11px] text-gray-500">{'\uCD5C\uADFC \uCD94\uCC9C\uC77C'}</div><div className="mt-1 font-medium text-gray-900">{item.latestReportDate}</div><div className="mt-1 text-[11px] text-gray-400">{'\uB9AC\uD3EC\uD2B8'} {item.reportCount}{'\uAC74'} {'\u00B7'} {item.brokerCount}{'\uACF3'}</div></div>
+            </div>
+            <div className="mt-3 rounded-lg bg-white p-3 text-xs text-gray-600">
+              <div className="font-medium text-gray-700">{'\uC810\uC218 \uAD6C\uC131'}</div>
+              <div className="mt-2 grid grid-cols-2 gap-2">
+                <div>{'\uAE30\uC900\uAC00 \uB9E4\uB825'} {item.entryScoreBreakdown.priceVsBase}{'\uC810'}</div>
+                <div>{'\uBAA9\uD45C\uAC00 \uC5EC\uB825'} {item.entryScoreBreakdown.targetGap}{'\uC810'}</div>
+                <div>{'\uB9AC\uD3EC\uD2B8 \uC218'} {item.entryScoreBreakdown.reportCount}{'\uC810'}</div>
+                <div>{'\uACF5\uD1B5\uCD94\uCC9C \uAC15\uB3C4'} {item.entryScoreBreakdown.consensusStrength}{'\uC810'}</div>
+              </div>
             </div>
             <div className="mt-3 text-xs text-gray-500">{item.brokers.join(', ')}</div>
           </article>)}
@@ -967,10 +981,13 @@ function ConsensusTab({ onOpenInsight, isSaved, onToggleWatchlist }: { onOpenIns
               <tr>
                 <th className="px-4 py-3">{'\uC885\uBAA9'}</th>
                 <th className="px-4 py-3">{'\uC2DC\uC7A5'}</th>
+                <th className="px-4 py-3 text-right">{'\uC9C4\uC785 \uC810\uC218'}</th>
                 <th className="px-4 py-3 text-right">{'\uC99D\uAD8C\uC0AC \uC218'}</th>
+                <th className="px-4 py-3 text-right">{'\uAE30\uC900\uAC00 \uB300\uBE44 \uD604\uC7AC\uAC00'}</th>
                 <th className="px-4 py-3 text-right">{'\uD604\uC7AC\uAC00'}</th>
                 <th className="px-4 py-3 text-right">{'\uAE30\uC900\uAC00\uACA9'}</th>
-                <th className="px-4 py-3 text-right">{'\uD3C9\uADE0 \uC0C1\uC2B9\uC5EC\uB825'}</th>
+                <th className="px-4 py-3 text-right">{'\uD3C9\uADE0 \uBAA9\uD45C\uAC00 \uAD34\uB9AC\uC728'}</th>
+                <th className="px-4 py-3 text-right">{'\uB9AC\uD3EC\uD2B8 \uC218'}</th>
                 <th className="px-4 py-3">{'\uCD5C\uADFC \uCD94\uCC9C\uC77C'}</th>
                 <th className="px-4 py-3">{'\uC99D\uAD8C\uC0AC'}</th>
               </tr>
@@ -979,10 +996,13 @@ function ConsensusTab({ onOpenInsight, isSaved, onToggleWatchlist }: { onOpenIns
               {paginated.map((item) => <tr key={`${item.market}-${item.ticker}`} className="hover:bg-gray-50">
                 <td className="px-4 py-3"><div className="flex items-start justify-between gap-3"><button type="button" onClick={() => onOpenInsight({ ticker: item.ticker, name: item.name, market: item.market, category: 'analyst', currentPrice: item.currentPrice })} className="text-left"><div className="font-medium text-blue-700 hover:underline">{item.name}</div><div className="text-xs text-gray-400">{item.ticker}</div></button><FavoriteButton active={isSaved(item.ticker, item.market)} onClick={() => onToggleWatchlist({ ticker: item.ticker, name: item.name, market: item.market, category: 'analyst', currentPrice: item.currentPrice })} /></div></td>
                 <td className="px-4 py-3"><span className={`rounded px-2 py-1 text-xs ${item.market === 'korea' ? 'bg-blue-100 text-blue-700' : 'bg-orange-100 text-orange-700'}`}>{item.market === 'korea' ? '\uAD6D\uB0B4' : '\uD574\uC678'}</span></td>
+                <td className="px-4 py-3 text-right"><span className="rounded bg-sky-100 px-2 py-1 text-sm font-semibold text-sky-700">{formatScore(item.entryScore)}</span></td>
                 <td className="px-4 py-3 text-right font-medium">{item.brokerCount}</td>
+                <td className={`px-4 py-3 text-right font-medium ${item.currentPrice <= item.basePrice ? 'text-green-600' : 'text-red-600'}`}>{formatPct(((item.currentPrice - item.basePrice) / item.basePrice) * 100)}</td>
                 <td className="px-4 py-3 text-right">{formatPrice(item.currentPrice, item.market)}</td>
                 <td className="px-4 py-3 text-right"><div className="font-medium">{formatPrice(item.basePrice, item.market)}</div><div className="text-xs text-gray-400">{item.basePriceDate} {'\uC885\uAC00'}</div></td>
                 <td className="px-4 py-3 text-right font-medium text-green-600">{formatPct(item.avgUpside)}</td>
+                <td className="px-4 py-3 text-right font-medium">{item.reportCount}</td>
                 <td className="px-4 py-3 text-sm">{item.latestReportDate}</td>
                 <td className="px-4 py-3 text-sm text-gray-500">{item.brokers.join(', ')}</td>
               </tr>)}

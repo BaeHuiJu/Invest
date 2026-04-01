@@ -7,6 +7,60 @@ function roundOne(value: number) {
   return Math.round(value * 10) / 10;
 }
 
+function roundWhole(value: number) {
+  return Math.round(value);
+}
+
+function clamp(value: number, min: number, max: number) {
+  return Math.min(Math.max(value, min), max);
+}
+
+function scaleScore(value: number, maxValue: number, maxScore: number) {
+  if (value <= 0 || maxValue <= 0 || maxScore <= 0) {
+    return 0;
+  }
+
+  return (clamp(value, 0, maxValue) / maxValue) * maxScore;
+}
+
+function scoreReportCount(reportCount: number) {
+  if (reportCount <= 1) {
+    return 0;
+  }
+
+  return scaleScore(reportCount - 1, 4, 15);
+}
+
+function scoreConsensusStrength(brokerCount: number) {
+  if (brokerCount <= 2) {
+    return 10;
+  }
+
+  return 10 + scaleScore(brokerCount - 2, 3, 10);
+}
+
+function buildEntryScore(args: { currentPrice: number; basePrice: number; avgTargetPrice: number; reportCount: number; brokerCount: number }) {
+  const { currentPrice, basePrice, avgTargetPrice, reportCount, brokerCount } = args;
+  const priceVsBaseRatio = basePrice > 0 ? (basePrice - currentPrice) / basePrice : 0;
+  const targetGapRatio = currentPrice > 0 ? (avgTargetPrice - currentPrice) / currentPrice : 0;
+
+  const breakdown = {
+    priceVsBase: roundWhole(scaleScore(priceVsBaseRatio, 0.15, 30)),
+    targetGap: roundWhole(scaleScore(targetGapRatio, 0.4, 35)),
+    reportCount: roundWhole(scoreReportCount(reportCount)),
+    consensusStrength: roundWhole(scoreConsensusStrength(brokerCount)),
+  };
+
+  return {
+    entryScore: clamp(
+      breakdown.priceVsBase + breakdown.targetGap + breakdown.reportCount + breakdown.consensusStrength,
+      0,
+      100
+    ),
+    entryScoreBreakdown: breakdown,
+  };
+}
+
 function sortByLatestDateDesc(a: AnalystReport, b: AnalystReport) {
   return new Date(b.date).getTime() - new Date(a.date).getTime();
 }
@@ -59,9 +113,19 @@ export default async function handler(
             ? roundOne(((report.targetPrice - currentPrice) / currentPrice) * 100)
             : 0,
         }));
+        const avgTargetPrice = relatedReports.length > 0
+          ? roundOne(relatedReports.reduce((sum, report) => sum + report.targetPrice, 0) / relatedReports.length)
+          : 0;
         const avgUpside = relatedReports.length > 0
           ? roundOne(relatedReports.reduce((sum, report) => sum + report.upside, 0) / relatedReports.length)
           : 0;
+        const { entryScore, entryScoreBreakdown } = buildEntryScore({
+          currentPrice,
+          basePrice: latest.basePrice,
+          avgTargetPrice,
+          reportCount: relatedReports.length,
+          brokerCount: brokers.length,
+        });
 
         return {
           ticker: latest.ticker,
@@ -74,6 +138,9 @@ export default async function handler(
           currentPrice,
           basePrice: latest.basePrice,
           basePriceDate: latest.basePriceDate,
+          avgTargetPrice,
+          entryScore,
+          entryScoreBreakdown,
           reportCount: relatedReports.length,
           relatedReports,
         } satisfies AnalystConsensusItem;
@@ -83,6 +150,9 @@ export default async function handler(
     const consensusItems = items
       .filter((item): item is AnalystConsensusItem => item !== null)
       .sort((a, b) => {
+        if (b.entryScore !== a.entryScore) {
+          return b.entryScore - a.entryScore;
+        }
         if (b.brokerCount !== a.brokerCount) {
           return b.brokerCount - a.brokerCount;
         }

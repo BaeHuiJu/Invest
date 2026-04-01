@@ -77,6 +77,14 @@ export interface AnalystConsensusItem {
   currentPrice: number;
   basePrice: number;
   basePriceDate: string;
+  avgTargetPrice: number;
+  entryScore: number;
+  entryScoreBreakdown: {
+    priceVsBase: number;
+    targetGap: number;
+    reportCount: number;
+    consensusStrength: number;
+  };
   reportCount: number;
   relatedReports: AnalystReport[];
 }

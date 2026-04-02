@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-02T22:06:27.231Z",
+  "generatedAt": "2026-04-02T23:11:13.477Z",
   "maxDays": 365,
   "reports": [
     {
@@ -40380,153 +40380,6 @@
     },
     {
       "date": "2026-02-06",
-      "ticker": "047810",
-      "name": "한국항공우주",
-      "market": "korea",
-      "broker": "유진투자증권",
-      "analyst": "",
-      "opinion": "Buy",
-      "targetPrice": 187000,
-      "currentPrice": 184200,
-      "basePrice": 184200,
-      "basePriceDate": "2026-02-06",
-      "upside": 1.5,
-      "sourceUrl": "https://finance.naver.com/research/company_read.naver?nid=90007&page=1",
-      "reportTitle": "모든 것이 궤도에 올라올 한 해",
-      "sourceText": "- 4분기 매출액 1조 4,667억원(+34%yoy), 영업이익 770억원(+83%yoy, OPM 5.2%) 기록. 영업이익 기준, 컨센서스 1,114억원 대비 [하회], 당사 추정치 920억원을 [하회]하는 실적. 다만, 수선비 관련 일회성 비용 245억원을 제외하면, 영업이익은 1,015억원으로 견조한 실적이었음. - 2025년에는 국내 물량의 인도 지연, 해외 수출 사업 진행률 인식 부진으로 연간 매출액은 2% 성장에 그쳤으나, 2026년에는 전년 이연된 매출 인식과 KF-21 국내 양산 인식 본격화, 해외 진행률 인식 증가로 성장 궤도에 복귀할 전망. 동사는 2026년 매출액 가이던스 5.7조원을 제시(당사 추정치 5.8조원, 컨센서스 5.4조원). 당사는 동사의 2026년 영업이익으로 5,460억원(+103%yoy, OPM 9.4%) 전망. 개발비 증가 등 비용 부담 존재하나, 국내 사업 내 양산 비중 확대 및 해외 매출 증가로 수익성 개선 기대. - 수주 모멘텀도 부각될 것. 2025년 신규 수주는 6.2조원이었으나, 2026년에는 10.4조원을 가이던스로 제시. 이 중 완제기가 무려 6.5조원으로 2025년 1.2조(필리핀 FA-50 등)을 크게 상회할 전망. 드디어 KF-21 수출이 파이프라인에 포함됨. 사측은 인니 KF-21을 염두하고 있으나, 사우디/UAE/필리핀 등 추가 수출 기대감도 유효하다는 판단. - 단기 운전 자본 압박에 대한 우려 있었으나, 2월 5일 전환사채 5,000억원을 발행하여 우려 해소(표면이자율 0%, 만기이자율 0%로 실질 이자 비용 없음). 2026년은 실적과 수주 모두 한단계 도약하는 한 해가 될 것. 동사에 대한 투자의견 BUY와 목표주가 187,000원 유지.",
-      "reasonSummary": "모든 것이 궤도에 올라올 한 해. 유진투자증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 1.5%입니다. 2026-02-06 종가 대비 목표가 괴리는 1.5%입니다.",
-      "reasonBullets": [
-        "유진투자증권가 2026-02-06에 Buy 의견과 목표가를 제시했습니다.",
-        "현재가 184,200원 대비 목표가는 187,000원입니다.",
-        "2026-02-06 종가 184,200원 대비 괴리는 1.5%입니다."
-      ],
-      "performance": {
-        "week1": {
-          "asOfDate": "2026-02-13",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "unavailable"
-        },
-        "month1": {
-          "asOfDate": "2026-03-08",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "unavailable"
-        },
-        "month3": {
-          "asOfDate": "2026-05-07",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "pending"
-        }
-      }
-    },
-    {
-      "date": "2026-02-06",
-      "ticker": "017670",
-      "name": "SK텔레콤",
-      "market": "korea",
-      "broker": "IBK투자증권",
-      "analyst": "",
-      "opinion": "매수",
-      "targetPrice": 90000,
-      "currentPrice": 77800,
-      "basePrice": 77800,
-      "basePriceDate": "2026-02-06",
-      "upside": 15.7,
-      "sourceUrl": "https://finance.naver.com/research/company_read.naver?nid=90006&page=1",
-      "reportTitle": "악재 반영 마무리, 실적 회복 가시화",
-      "sourceText": "희망퇴직 비용 반영으로 실적 부진, 다만 우려 대비는 양호 2025년 4분기 연결 매출과 영업이익은 각각 4조 3,287억원(-4.1% yoy), 1,191억원(-53.1% yoy)을 기록, 영업이익이 컨센서스(4조 3,962억원/1,098억원)와 당사 추정치(4조 4,016억원/1,022억원)를 상회했다. 희망퇴직 관련 일회성 비용 반영과 가입자 감소 영향으로 영업이익이 큰 폭으로 감소했지만, 지급수수료 및 판매수수료 등 비용 효율화로 시장 우려 대비 양호한 실적을 시현했다. 또한 예상대로 3분기에 이어 기말 배당 역시 시행하지 않기로 결정됐다.",
-      "reasonSummary": "악재 반영 마무리, 실적 회복 가시화. IBK투자증권가 매수 의견을 제시했고 현재가 기준 상승여력은 15.7%입니다. 2026-02-06 종가 대비 목표가 괴리는 15.7%입니다.",
-      "reasonBullets": [
-        "IBK투자증권가 2026-02-06에 매수 의견과 목표가를 제시했습니다.",
-        "현재가 77,800원 대비 목표가는 90,000원입니다.",
-        "2026-02-06 종가 77,800원 대비 괴리는 15.7%입니다."
-      ],
-      "performance": {
-        "week1": {
-          "asOfDate": "2026-02-13",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "unavailable"
-        },
-        "month1": {
-          "asOfDate": "2026-03-08",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "unavailable"
-        },
-        "month3": {
-          "asOfDate": "2026-05-07",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "pending"
-        }
-      }
-    },
-    {
-      "date": "2026-02-06",
-      "ticker": "105560",
-      "name": "KB금융",
-      "market": "korea",
-      "broker": "미래에셋증권",
-      "analyst": "",
-      "opinion": "매수",
-      "targetPrice": 216000,
-      "currentPrice": 146500,
-      "basePrice": 146500,
-      "basePriceDate": "2026-02-06",
-      "upside": 47.4,
-      "sourceUrl": "https://finance.naver.com/research/company_read.naver?nid=90005&page=1",
-      "reportTitle": "이제 P/B 1배 뚫습니다",
-      "sourceText": "투자의견 매수 유지, 목표주가 216,000원으로 상향 KB금융에 대한 투자의견 매수를 유지하며, 목표주가는 기존 184,000원에서 216,000원으로 상향한다. 목표주가는 2026년 예상 BPS에 목표 P/B 1.2배를 적용했다. 목표 P/B를 기존 1.0배에서 1.2배로 상향한 이유는 우량한 실적을 바탕으로 기대 이상의 주주환원율을 기록했고, 앞으로도 상단 없는 주주환원 확대를 기대할 수 있기 때문이다. 상승여력은 54.8%이며, 금융업종 최선호주 의견을 유지한다.",
-      "reasonSummary": "이제 P/B 1배 뚫습니다. 미래에셋증권가 매수 의견을 제시했고 현재가 기준 상승여력은 47.4%입니다. 2026-02-06 종가 대비 목표가 괴리는 47.4%입니다.",
-      "reasonBullets": [
-        "미래에셋증권가 2026-02-06에 매수 의견과 목표가를 제시했습니다.",
-        "현재가 146,500원 대비 목표가는 216,000원입니다.",
-        "2026-02-06 종가 146,500원 대비 괴리는 47.4%입니다."
-      ],
-      "performance": {
-        "week1": {
-          "asOfDate": "2026-02-13",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "unavailable"
-        },
-        "month1": {
-          "asOfDate": "2026-03-08",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "unavailable"
-        },
-        "month3": {
-          "asOfDate": "2026-05-07",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "pending"
-        }
-      }
-    },
-    {
-      "date": "2026-02-06",
       "ticker": "GOOGL",
       "name": "Alphabet Inc.",
       "market": "us",
@@ -43882,11 +43735,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2025-11-14",
-          "closePrice": 0,
-          "returnPct": 0,
+          "closePrice": 59.09,
+          "returnPct": -1.5,
           "targetProgressPct": 0,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2025-12-05",
@@ -43931,11 +43784,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2025-11-06",
-          "closePrice": 0,
-          "returnPct": 0,
+          "closePrice": 321.56,
+          "returnPct": -6.7,
           "targetProgressPct": 0,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2025-11-28",
@@ -43980,11 +43833,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2025-11-05",
-          "closePrice": 0,
-          "returnPct": 0,
+          "closePrice": 340.04,
+          "returnPct": -0.4,
           "targetProgressPct": 0,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2025-11-28",
@@ -44029,11 +43882,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2025-10-29",
-          "closePrice": 0,
-          "returnPct": 0,
+          "closePrice": 341.28,
+          "returnPct": -1.2,
           "targetProgressPct": 0,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2025-11-21",
@@ -44078,11 +43931,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2025-10-27",
-          "closePrice": 0,
-          "returnPct": 0,
+          "closePrice": 151.74,
+          "returnPct": -0.1,
           "targetProgressPct": 0,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2025-11-19",
@@ -44127,11 +43980,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2025-10-15",
-          "closePrice": 0,
-          "returnPct": 0,
+          "closePrice": 147.42,
+          "returnPct": -2.2,
           "targetProgressPct": 0,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2025-11-07",
@@ -44176,11 +44029,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2025-10-14",
-          "closePrice": 0,
-          "returnPct": 0,
+          "closePrice": 302.08,
+          "returnPct": -1.8,
           "targetProgressPct": 0,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2025-11-06",
@@ -44225,11 +44078,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2025-10-07",
-          "closePrice": 0,
-          "returnPct": 0,
+          "closePrice": 307.69,
+          "returnPct": -2.5,
           "targetProgressPct": 0,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2025-10-30",
@@ -54464,8 +54317,8 @@
       "latestTargetPrice": 100000,
       "latestCurrentPrice": 77800,
       "latestBasePrice": 77800,
-      "avgUpside": 24.4,
-      "reportCount": 4,
+      "avgUpside": 27.2,
+      "reportCount": 3,
       "reasonSummary": "4월 전략 - DPS 정상화 기대감으로 탄력적 반... 하나증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 28.5%입니다. 2026-03-31 종가 대비 목표가 괴리는 28.5%입니다.",
       "reasonBullets": [
         "하나증권가 2026-03-31에 Buy 의견과 목표가를 제시했습니다.",
@@ -54476,8 +54329,7 @@
         "summary": "4월 전략 - DPS 정상화 기대감으로 탄력적 반..",
         "bullets": [
           "4월 전략 - DPS 정상화 기대감으로 탄력적 반..",
-          "다만 1월 경쟁사의 위약금 면제로 25년 이탈 가입자의 재유입이 있었던 것으로 파악돼 올해 일부 회복이 가능할 전망이다.",
-          "악재 반영 마무리, 실적 회복 가시화 희망퇴직 비용 반영으로 실적 부진, 다만 우려 대비는 양호 2025년 4분기 연결 매출과 영업이익은 각각 4조 3,287억원(-4.1% yoy), 1,191억원(-53.1% yoy)을 기록, 영업이익이 컨센서스(4조 3,962억원/1,098억원)와 당사 추정치(4조 4,016억원/1,022억원)를 상회했다."
+          "다만 1월 경쟁사의 위약금 면제로 25년 이탈 가입자의 재유입이 있었던 것으로 파악돼 올해 일부 회복이 가능할 전망이다."
         ]
       },
       "estimateRevision": {
@@ -54501,8 +54353,7 @@
         "summary": "다만 1월 경쟁사의 위약금 면제로 25년 이탈 가입자의 재유입이 있었던 것으로 파악돼 올해 일부 회복이 가능할 전망이다.",
         "bullets": [
           "다만 1월 경쟁사의 위약금 면제로 25년 이탈 가입자의 재유입이 있었던 것으로 파악돼 올해 일부 회복이 가능할 전망이다.",
-          "악재 반영 마무리, 실적 회복 가시화 희망퇴직 비용 반영으로 실적 부진, 다만 우려 대비는 양호 2025년 4분기 연결 매출과 영업이익은 각각 4조 3,287억원(-4.1% yoy), 1,191억원(-53.1% yoy)을 기록, 영업이익이 컨센서스(4조 3,962억원/1,098억원)와 당사 추정치(4조 4,016억원/1,022억원)를 상회했다.",
-          "악재 반영 마무리, 실적 회복 가시화."
+          "국내 시장 기준 최근 3건 리포트의 업황 표현을 정리했습니다."
         ]
       },
       "relatedReports": [
@@ -54625,55 +54476,6 @@
             "유안타증권가 2026-02-06에 Buy 의견과 목표가를 제시했습니다.",
             "현재가 77,800원 대비 목표가는 100,000원입니다.",
             "2026-02-06 종가 77,800원 대비 괴리는 28.5%입니다."
-          ],
-          "performance": {
-            "week1": {
-              "asOfDate": "2026-02-13",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "unavailable"
-            },
-            "month1": {
-              "asOfDate": "2026-03-08",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "unavailable"
-            },
-            "month3": {
-              "asOfDate": "2026-05-07",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            }
-          }
-        },
-        {
-          "date": "2026-02-06",
-          "ticker": "017670",
-          "name": "SK텔레콤",
-          "market": "korea",
-          "broker": "IBK투자증권",
-          "analyst": "",
-          "opinion": "매수",
-          "targetPrice": 90000,
-          "currentPrice": 77800,
-          "basePrice": 77800,
-          "basePriceDate": "2026-02-06",
-          "upside": 15.7,
-          "sourceUrl": "https://finance.naver.com/research/company_read.naver?nid=90006&page=1",
-          "reportTitle": "악재 반영 마무리, 실적 회복 가시화",
-          "sourceText": "희망퇴직 비용 반영으로 실적 부진, 다만 우려 대비는 양호 2025년 4분기 연결 매출과 영업이익은 각각 4조 3,287억원(-4.1% yoy), 1,191억원(-53.1% yoy)을 기록, 영업이익이 컨센서스(4조 3,962억원/1,098억원)와 당사 추정치(4조 4,016억원/1,022억원)를 상회했다. 희망퇴직 관련 일회성 비용 반영과 가입자 감소 영향으로 영업이익이 큰 폭으로 감소했지만, 지급수수료 및 판매수수료 등 비용 효율화로 시장 우려 대비 양호한 실적을 시현했다. 또한 예상대로 3분기에 이어 기말 배당 역시 시행하지 않기로 결정됐다.",
-          "reasonSummary": "악재 반영 마무리, 실적 회복 가시화. IBK투자증권가 매수 의견을 제시했고 현재가 기준 상승여력은 15.7%입니다. 2026-02-06 종가 대비 목표가 괴리는 15.7%입니다.",
-          "reasonBullets": [
-            "IBK투자증권가 2026-02-06에 매수 의견과 목표가를 제시했습니다.",
-            "현재가 77,800원 대비 목표가는 90,000원입니다.",
-            "2026-02-06 종가 77,800원 대비 괴리는 15.7%입니다."
           ],
           "performance": {
             "week1": {
@@ -58799,11 +58601,11 @@
           "performance": {
             "week1": {
               "asOfDate": "2025-10-14",
-              "closePrice": 0,
-              "returnPct": 0,
+              "closePrice": 302.08,
+              "returnPct": -1.8,
               "targetProgressPct": 0,
               "success": false,
-              "status": "unavailable"
+              "status": "complete"
             },
             "month1": {
               "asOfDate": "2025-11-06",
@@ -82633,8 +82435,8 @@
       "latestTargetPrice": 175000,
       "latestCurrentPrice": 146500,
       "latestBasePrice": 146500,
-      "avgUpside": 27.4,
-      "reportCount": 6,
+      "avgUpside": 23.4,
+      "reportCount": 5,
       "reasonSummary": "풍성하다. 메리츠증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 19.5%입니다. 2026-02-23 종가 대비 목표가 괴리는 19.5%입니다.",
       "reasonBullets": [
         "메리츠증권가 2026-02-23에 Buy 의견과 목표가를 제시했습니다.",
@@ -97650,8 +97452,8 @@
       "latestTargetPrice": 201000,
       "latestCurrentPrice": 184200,
       "latestBasePrice": 184200,
-      "avgUpside": 7.4,
-      "reportCount": 4,
+      "avgUpside": 9.3,
+      "reportCount": 3,
       "reasonSummary": "[4Q25 Review] 예상을 뛰어넘는 가이던스. 한화투자증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 9.1%입니다. 2026-02-06 종가 대비 목표가 괴리는 9.1%입니다.",
       "reasonBullets": [
         "한화투자증권가 2026-02-06에 Buy 의견과 목표가를 제시했습니다.",
@@ -97811,55 +97613,6 @@
             "유안타증권가 2026-02-06에 Buy 의견과 목표가를 제시했습니다.",
             "현재가 184,200원 대비 목표가는 193,000원입니다.",
             "2026-02-06 종가 184,200원 대비 괴리는 4.8%입니다."
-          ],
-          "performance": {
-            "week1": {
-              "asOfDate": "2026-02-13",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "unavailable"
-            },
-            "month1": {
-              "asOfDate": "2026-03-08",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "unavailable"
-            },
-            "month3": {
-              "asOfDate": "2026-05-07",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            }
-          }
-        },
-        {
-          "date": "2026-02-06",
-          "ticker": "047810",
-          "name": "한국항공우주",
-          "market": "korea",
-          "broker": "유진투자증권",
-          "analyst": "",
-          "opinion": "Buy",
-          "targetPrice": 187000,
-          "currentPrice": 184200,
-          "basePrice": 184200,
-          "basePriceDate": "2026-02-06",
-          "upside": 1.5,
-          "sourceUrl": "https://finance.naver.com/research/company_read.naver?nid=90007&page=1",
-          "reportTitle": "모든 것이 궤도에 올라올 한 해",
-          "sourceText": "- 4분기 매출액 1조 4,667억원(+34%yoy), 영업이익 770억원(+83%yoy, OPM 5.2%) 기록. 영업이익 기준, 컨센서스 1,114억원 대비 [하회], 당사 추정치 920억원을 [하회]하는 실적. 다만, 수선비 관련 일회성 비용 245억원을 제외하면, 영업이익은 1,015억원으로 견조한 실적이었음. - 2025년에는 국내 물량의 인도 지연, 해외 수출 사업 진행률 인식 부진으로 연간 매출액은 2% 성장에 그쳤으나, 2026년에는 전년 이연된 매출 인식과 KF-21 국내 양산 인식 본격화, 해외 진행률 인식 증가로 성장 궤도에 복귀할 전망. 동사는 2026년 매출액 가이던스 5.7조원을 제시(당사 추정치 5.8조원, 컨센서스 5.4조원). 당사는 동사의 2026년 영업이익으로 5,460억원(+103%yoy, OPM 9.4%) 전망. 개발비 증가 등 비용 부담 존재하나, 국내 사업 내 양산 비중 확대 및 해외 매출 증가로 수익성 개선 기대. - 수주 모멘텀도 부각될 것. 2025년 신규 수주는 6.2조원이었으나, 2026년에는 10.4조원을 가이던스로 제시. 이 중 완제기가 무려 6.5조원으로 2025년 1.2조(필리핀 FA-50 등)을 크게 상회할 전망. 드디어 KF-21 수출이 파이프라인에 포함됨. 사측은 인니 KF-21을 염두하고 있으나, 사우디/UAE/필리핀 등 추가 수출 기대감도 유효하다는 판단. - 단기 운전 자본 압박에 대한 우려 있었으나, 2월 5일 전환사채 5,000억원을 발행하여 우려 해소(표면이자율 0%, 만기이자율 0%로 실질 이자 비용 없음). 2026년은 실적과 수주 모두 한단계 도약하는 한 해가 될 것. 동사에 대한 투자의견 BUY와 목표주가 187,000원 유지.",
-          "reasonSummary": "모든 것이 궤도에 올라올 한 해. 유진투자증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 1.5%입니다. 2026-02-06 종가 대비 목표가 괴리는 1.5%입니다.",
-          "reasonBullets": [
-            "유진투자증권가 2026-02-06에 Buy 의견과 목표가를 제시했습니다.",
-            "현재가 184,200원 대비 목표가는 187,000원입니다.",
-            "2026-02-06 종가 184,200원 대비 괴리는 1.5%입니다."
           ],
           "performance": {
             "week1": {

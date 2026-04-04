@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-04T06:21:15.412Z",
+  "generatedAt": "2026-04-04T07:40:00.096Z",
   "maxDays": 365,
   "reports": [
     {
@@ -15273,12 +15273,12 @@
           "status": "complete"
         },
         "month1": {
-          "asOfDate": "2026-04-02",
-          "closePrice": 177.39,
-          "returnPct": -3.2,
+          "asOfDate": "2026-04-04",
+          "closePrice": 0,
+          "returnPct": 0,
           "targetProgressPct": 0,
           "success": false,
-          "status": "complete"
+          "status": "unavailable"
         },
         "month3": {
           "asOfDate": "2026-06-03",
@@ -16940,11 +16940,11 @@
         },
         "month1": {
           "asOfDate": "2026-04-02",
-          "closePrice": 177.39,
-          "returnPct": -1.5,
+          "closePrice": 0,
+          "returnPct": 0,
           "targetProgressPct": 0,
           "success": false,
-          "status": "complete"
+          "status": "unavailable"
         },
         "month3": {
           "asOfDate": "2026-06-01",
@@ -18948,12 +18948,12 @@
           "status": "complete"
         },
         "month1": {
-          "asOfDate": "2026-03-27",
-          "closePrice": 167.52,
-          "returnPct": -9.4,
+          "asOfDate": "2026-03-28",
+          "closePrice": 0,
+          "returnPct": 0,
           "targetProgressPct": 0,
           "success": false,
-          "status": "complete"
+          "status": "unavailable"
         },
         "month3": {
           "asOfDate": "2026-05-27",
@@ -40452,11 +40452,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-13",
-          "closePrice": 198.79,
-          "returnPct": -5.5,
+          "closePrice": 0,
+          "returnPct": 0,
           "targetProgressPct": 0,
           "success": false,
-          "status": "complete"
+          "status": "unavailable"
         },
         "month1": {
           "asOfDate": "2026-03-06",
@@ -40501,11 +40501,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-13",
-          "closePrice": 198.79,
-          "returnPct": -5.5,
+          "closePrice": 0,
+          "returnPct": 0,
           "targetProgressPct": 0,
           "success": false,
-          "status": "complete"
+          "status": "unavailable"
         },
         "month1": {
           "asOfDate": "2026-03-06",
@@ -40550,11 +40550,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-12",
-          "closePrice": 309,
-          "returnPct": -6.7,
+          "closePrice": 0,
+          "returnPct": 0,
           "targetProgressPct": 0,
           "success": false,
-          "status": "complete"
+          "status": "unavailable"
         },
         "month1": {
           "asOfDate": "2026-03-06",
@@ -40599,11 +40599,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-12",
-          "closePrice": 309,
-          "returnPct": -6.7,
+          "closePrice": 0,
+          "returnPct": 0,
           "targetProgressPct": 0,
           "success": false,
-          "status": "complete"
+          "status": "unavailable"
         },
         "month1": {
           "asOfDate": "2026-03-06",
@@ -40648,11 +40648,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-12",
-          "closePrice": 309,
-          "returnPct": -6.7,
+          "closePrice": 0,
+          "returnPct": 0,
           "targetProgressPct": 0,
           "success": false,
-          "status": "complete"
+          "status": "unavailable"
         },
         "month1": {
           "asOfDate": "2026-03-06",
@@ -40697,11 +40697,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-12",
-          "closePrice": 309,
-          "returnPct": -6.7,
+          "closePrice": 0,
+          "returnPct": 0,
           "targetProgressPct": 0,
           "success": false,
-          "status": "complete"
+          "status": "unavailable"
         },
         "month1": {
           "asOfDate": "2026-03-06",
@@ -40746,11 +40746,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-12",
-          "closePrice": 284.37,
-          "returnPct": 5.9,
-          "targetProgressPct": 19.4,
+          "closePrice": 0,
+          "returnPct": 0,
+          "targetProgressPct": 0,
           "success": false,
-          "status": "complete"
+          "status": "unavailable"
         },
         "month1": {
           "asOfDate": "2026-03-06",
@@ -56390,11 +56390,11 @@
           "performance": {
             "week1": {
               "asOfDate": "2026-02-12",
-              "closePrice": 284.37,
-              "returnPct": 5.9,
-              "targetProgressPct": 19.4,
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
               "success": false,
-              "status": "complete"
+              "status": "unavailable"
             },
             "month1": {
               "asOfDate": "2026-03-06",

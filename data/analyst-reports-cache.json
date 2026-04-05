@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-05T11:11:00.560Z",
+  "generatedAt": "2026-04-05T12:09:57.562Z",
   "maxDays": 365,
   "reports": [
     {
@@ -16940,11 +16940,11 @@
         },
         "month1": {
           "asOfDate": "2026-04-02",
-          "closePrice": 177.39,
-          "returnPct": -1.5,
+          "closePrice": 0,
+          "returnPct": 0,
           "targetProgressPct": 0,
           "success": false,
-          "status": "complete"
+          "status": "unavailable"
         },
         "month3": {
           "asOfDate": "2026-06-01",
@@ -18948,12 +18948,12 @@
           "status": "complete"
         },
         "month1": {
-          "asOfDate": "2026-03-27",
-          "closePrice": 167.52,
-          "returnPct": -9.4,
+          "asOfDate": "2026-03-28",
+          "closePrice": 0,
+          "returnPct": 0,
           "targetProgressPct": 0,
           "success": false,
-          "status": "complete"
+          "status": "unavailable"
         },
         "month3": {
           "asOfDate": "2026-05-27",

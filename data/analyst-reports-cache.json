@@ -1,7 +1,56 @@
 {
-  "generatedAt": "2026-04-07T22:34:50.222Z",
+  "generatedAt": "2026-04-07T23:45:14.322Z",
   "maxDays": 365,
   "reports": [
+    {
+      "date": "2026-04-08",
+      "ticker": "005930",
+      "name": "삼성전자",
+      "market": "korea",
+      "broker": "IBK투자증권",
+      "analyst": "",
+      "opinion": "매수",
+      "targetPrice": 350000,
+      "currentPrice": 196500,
+      "basePrice": 196500,
+      "basePriceDate": "2026-04-08",
+      "upside": 78.1,
+      "sourceUrl": "https://finance.naver.com/research/company_read.naver?nid=91308&page=1",
+      "reportTitle": "판도가 바뀌었다!",
+      "sourceText": "2026년 1분기. DS, MX 기대 이상 삼성전자의 2026년 1분기 잠정 매출액은 2025년 4분기 대비 41.7% 증가한 133조원이다. 이전 전망 대비 증가한 규모이다. DS, MX, 디스플레이 사업부를 상향 조정했다. DS 조정폭이 가장 크다. 2026년 1분기 영업이익은 25년 4분기 대비 2.8배 증가한 57조원으로 이전 전망치 대비 크게 증가한 규모이다. DS가 가장 큰 폭의 성장을 보인 것으로 추정한다. DRAM, NAND ASP가 이전 전망 대비 크게 상승했고, 이로 인해 영업이익도 이전 전망치를 큰 폭으로 상회했다. MX 사업부 영업이익도 예상보다 높은 수준이었는데 아직 메모리 가격 상승분이 반영되지 않은 시점이었던 것으로 분석된다.",
+      "reasonSummary": "판도가 바뀌었다!. IBK투자증권가 매수 의견을 제시했고 현재가 기준 상승여력은 78.1%입니다. 2026-04-08 종가 대비 목표가 괴리는 78.1%입니다.",
+      "reasonBullets": [
+        "IBK투자증권가 2026-04-08에 매수 의견과 목표가를 제시했습니다.",
+        "현재가 196,500원 대비 목표가는 350,000원입니다.",
+        "2026-04-08 종가 196,500원 대비 괴리는 78.1%입니다."
+      ],
+      "performance": {
+        "week1": {
+          "asOfDate": "2026-04-15",
+          "closePrice": 0,
+          "returnPct": 0,
+          "targetProgressPct": 0,
+          "success": false,
+          "status": "pending"
+        },
+        "month1": {
+          "asOfDate": "2026-05-08",
+          "closePrice": 0,
+          "returnPct": 0,
+          "targetProgressPct": 0,
+          "success": false,
+          "status": "pending"
+        },
+        "month3": {
+          "asOfDate": "2026-07-07",
+          "closePrice": 0,
+          "returnPct": 0,
+          "targetProgressPct": 0,
+          "success": false,
+          "status": "pending"
+        }
+      }
+    },
     {
       "date": "2026-04-07",
       "ticker": "000270",
@@ -27957,11 +28006,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-20",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
+          "closePrice": 314.98,
+          "returnPct": 3,
+          "targetProgressPct": 15.6,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-03-13",
@@ -28006,11 +28055,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-20",
-          "closePrice": 0,
-          "returnPct": 0,
+          "closePrice": 122.99,
+          "returnPct": -8.1,
           "targetProgressPct": 0,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-03-13",
@@ -28055,11 +28104,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-20",
-          "closePrice": 0,
-          "returnPct": 0,
+          "closePrice": 37.75,
+          "returnPct": -27,
           "targetProgressPct": 0,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-03-13",
@@ -28104,11 +28153,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-20",
-          "closePrice": 0,
-          "returnPct": 0,
+          "closePrice": 37.75,
+          "returnPct": -27,
           "targetProgressPct": 0,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-03-13",
@@ -28153,11 +28202,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-20",
-          "closePrice": 0,
-          "returnPct": 0,
+          "closePrice": 37.75,
+          "returnPct": -27,
           "targetProgressPct": 0,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-03-13",
@@ -28202,11 +28251,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-20",
-          "closePrice": 0,
-          "returnPct": 0,
+          "closePrice": 37.75,
+          "returnPct": -27,
           "targetProgressPct": 0,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-03-13",
@@ -31044,11 +31093,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-19",
-          "closePrice": 411.71,
-          "returnPct": -1.3,
+          "closePrice": 0,
+          "returnPct": 0,
           "targetProgressPct": 0,
           "success": false,
-          "status": "complete"
+          "status": "unavailable"
         },
         "month1": {
           "asOfDate": "2026-03-13",
@@ -39497,300 +39546,6 @@
       }
     },
     {
-      "date": "2026-02-09",
-      "ticker": "001740",
-      "name": "SK네트웍스",
-      "market": "korea",
-      "broker": "iM증권",
-      "analyst": "",
-      "opinion": "Buy",
-      "targetPrice": 6500,
-      "currentPrice": 5070,
-      "basePrice": 5070,
-      "basePriceDate": "2026-02-09",
-      "upside": 28.2,
-      "sourceUrl": "https://finance.naver.com/research/company_read.naver?nid=90112&page=1",
-      "reportTitle": "배당소득 분리과세 및 자사주 소각 기대됨",
-      "sourceText": "지난해 4분기 영업이익 컨센서스를 대폭 하회할 듯 ⇒ 올해 웰니스 로봇 매출 상승 속도에 따라서 수익성 개선 여부가 결정될 것으로 판단됨 지난해 4분기 실적의 경우 K-IFRS 연결기준 매출액 17,055억원(-7.8% YoY, -13.5% QoQ), 영업이익 65억원(-82.3% YoY, -71.0% QoQ)으로 예상되면서 켄센서스를 대폭 하회할 것으로 전망된다. 먼저 매출액의 경우 지난해 내내 글로와이드에서는 범용 화학 품목 매출 등을 감소시키는 대신에 수익성 위주 폼목 매출 등을 기반으로 안정적인 수익 창출 등을 도모하고 있기 때문에 전년대비 매출 하락이 불가피 할 것으로 예상된다. 무엇보다 영업이익의 경우 SK인텔릭스에서 웰니스 로보틱스 브랜드 ‘나무엑스’를 출범하면서 지난해 10월 말 웰니스 로봇 A1 등을 출시함에 따라 개발비 뿐만 아니라 마케팅 비용 등이 대폭적으로 증가되면서 부진할 것으로 예상된다. 이러한 웰니스 로봇 A1은 현재 공기청정 기능과 생체 정보 측정이 가능한데, 향후에는 씨큐리티, 뷰티, 명상, 펫케어, 슬립케어 등으로 서비스를 확장해 통합형 웰니스 플랫폼으로 발전시킨다는 계획이기 때문에 개발비용 증가가 당분간 지속될 것으로 예상된다. 이에 따라 향후 관련 매출 상승 속도에 따라서 올해 수익성 개선 여부가 결정될 것으로 판단된다.",
-      "reasonSummary": "배당소득 분리과세 및 자사주 소각 기대됨. iM증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 28.2%입니다. 2026-02-09 종가 대비 목표가 괴리는 28.2%입니다.",
-      "reasonBullets": [
-        "iM증권가 2026-02-09에 Buy 의견과 목표가를 제시했습니다.",
-        "현재가 5,070원 대비 목표가는 6,500원입니다.",
-        "2026-02-09 종가 5,070원 대비 괴리는 28.2%입니다."
-      ],
-      "performance": {
-        "week1": {
-          "asOfDate": "2026-02-16",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "unavailable"
-        },
-        "month1": {
-          "asOfDate": "2026-03-11",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "unavailable"
-        },
-        "month3": {
-          "asOfDate": "2026-05-10",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "pending"
-        }
-      }
-    },
-    {
-      "date": "2026-02-09",
-      "ticker": "267260",
-      "name": "HD현대일렉트릭",
-      "market": "korea",
-      "broker": "키움증권",
-      "analyst": "",
-      "opinion": "Buy",
-      "targetPrice": 1100000,
-      "currentPrice": 891000,
-      "basePrice": 891000,
-      "basePriceDate": "2026-02-09",
-      "upside": 23.5,
-      "sourceUrl": "https://finance.naver.com/research/company_read.naver?nid=90111&page=1",
-      "reportTitle": "의심할 여지가 없는 성장성",
-      "sourceText": "4분기 영업이익 3,209억원, 컨센서스 상회 4분기 매출액 1조 1,632억원(yoy +42.6%), 영업이익 3,209억원(yoy +93.0%, OPM 27.6%)를 달성하며 시장 기대치(2,789억원)와 당사 추정치(2,848억원)을 상회하는 호실적을 시현하였다. 이번 분기 북미 법인의 재고가 상당 부분 고객사로 인도되며 수익성이 좋은 북미 지역의 매출이 큰 폭으로 확대된 영향으로 판단한다. 4Q25 북미 매출액은 5,545억원(yoy +205%, qoq +57%)를 달성하였으며 매출 비중은 47.7%로 25년 연간 평균 39.6%를 큰 폭으로 상회하였다. 북미 관세 비용은 약 30억원이 반영된 것으로 추정하며 북미 매출 확대에도 불구하고 고객사와의 협의에 따라 관세 비용 부담은 축소된 것으로 판단한다.",
-      "reasonSummary": "의심할 여지가 없는 성장성. 키움증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 23.5%입니다. 2026-02-09 종가 대비 목표가 괴리는 23.5%입니다.",
-      "reasonBullets": [
-        "키움증권가 2026-02-09에 Buy 의견과 목표가를 제시했습니다.",
-        "현재가 891,000원 대비 목표가는 1,100,000원입니다.",
-        "2026-02-09 종가 891,000원 대비 괴리는 23.5%입니다."
-      ],
-      "performance": {
-        "week1": {
-          "asOfDate": "2026-02-16",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "unavailable"
-        },
-        "month1": {
-          "asOfDate": "2026-03-11",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "unavailable"
-        },
-        "month3": {
-          "asOfDate": "2026-05-10",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "pending"
-        }
-      }
-    },
-    {
-      "date": "2026-02-09",
-      "ticker": "294870",
-      "name": "HDC현대산업개발",
-      "market": "korea",
-      "broker": "유진투자증권",
-      "analyst": "",
-      "opinion": "Buy",
-      "targetPrice": 30000,
-      "currentPrice": 20450,
-      "basePrice": 20450,
-      "basePriceDate": "2026-02-09",
-      "upside": 46.7,
-      "sourceUrl": "https://finance.naver.com/research/company_read.naver?nid=90109&page=1",
-      "reportTitle": "외형보다 내실, 질적 성장의 원년",
-      "sourceText": "- HDC현대산업개발의 4Q25 실적은 매출액 1조 250억원(-8.9%yoy), 영업이익 413억원(-1.1%yoy, OPM 4.0%)으로 매출액은 당사 추정치에 부합, 영업이익은 하회. 자체주택(GPM 40.4%)과 외주주택(GPM 15.7%) 모두 뚜렷한 이익 개선세를 기록하며 펀더멘털 강화 확인. 다만 평택 고덕 현장 대손충당금으로 판관비 증가하며 OPM 하락 - ‘26년 가이던스로 수주 6.5조원, 매출 4.2조원 제시. 잠실 진주, 광명 센트럴 등 대형 외주 현장 준공에 따른 매출 공백과 복정역세권 등 대형 일반건축 현장 착공 지연은 다소 아쉬운 대목. 다만 서울원 아이파크 등 자체사업 매출 비중 확대와 파주 운정 등 우량 사업장의 이익 기여가 본격화될 예정. ‘26년은 외형 성장보다는 수익성 개선이 전사 이익 성장을 견인하는 질적 성장의 원년이 될 것으로 판단 - 서울원 아이파크를 필두로 한 자체 사업의 본격적인 매출화로 타 건설사 대비 차별화된 이익 체력을 입증할 전망. 최근 도시정비 수주 시장에서의 괄목할만한 성과 또한 향후 안정적인 먹거리 확보로 이어질 것으로 예상. 적극적인 주주환원 정책 지속과 ‘26년 두 자릿수 영업이익률 달성 기대. 투자의견 BUY로 하향, 목표주가 30,000원 유지",
-      "reasonSummary": "외형보다 내실, 질적 성장의 원년. 유진투자증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 46.7%입니다. 2026-02-09 종가 대비 목표가 괴리는 46.7%입니다.",
-      "reasonBullets": [
-        "유진투자증권가 2026-02-09에 Buy 의견과 목표가를 제시했습니다.",
-        "현재가 20,450원 대비 목표가는 30,000원입니다.",
-        "2026-02-09 종가 20,450원 대비 괴리는 46.7%입니다."
-      ],
-      "performance": {
-        "week1": {
-          "asOfDate": "2026-02-16",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "unavailable"
-        },
-        "month1": {
-          "asOfDate": "2026-03-11",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "unavailable"
-        },
-        "month3": {
-          "asOfDate": "2026-05-10",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "pending"
-        }
-      }
-    },
-    {
-      "date": "2026-02-09",
-      "ticker": "267270",
-      "name": "HD건설기계",
-      "market": "korea",
-      "broker": "키움증권",
-      "analyst": "",
-      "opinion": "Buy",
-      "targetPrice": 161000,
-      "currentPrice": 147800,
-      "basePrice": 147800,
-      "basePriceDate": "2026-02-09",
-      "upside": 8.9,
-      "sourceUrl": "https://finance.naver.com/research/company_read.naver?nid=90108&page=1",
-      "reportTitle": "지난 부진보다 앞으로 좋아질 것에 주목",
-      "sourceText": "4분기 매출은 견조하였으나, 이익은 다소 부진 4분기 실적은 각각 HCE 매출 9,473억원(yoy +20%), 영업이익 334억원(yoy -5.2%, OPM 3.5%), HDI 매출 1조 2,146억원(yoy +29.4%), 영업이익 318억원(흑자전환, OPM 2.6%)를 달성하였다. 건설기계 사업 부문은 신흥 시장에서 금광 개발 수요 확대에 힘입어 큰 폭의 수요 성장 흐름이 이어졌고, 선진 시장의 회복세도 긍정적으로 작용하며 매출 성장세가 지속되고 있다. 엔진 사업 부문 역시 발전용 엔진 수출 및 방산용 엔진의 수요 증가의 영향으로 견조한 매출 성장세가 나타났다. 다만, 수익성 측면에서 HCE와 HDI에서 각각 219억원, 280억원의 일회성 비용이 반영되며 이익 개선폭은 제한적이었다. 일회성 비용은 합병에 따른 중국 사업의 구조조정과 충당금 설정 기준의 변경이 주요 요인으로 파악된다.",
-      "reasonSummary": "지난 부진보다 앞으로 좋아질 것에 주목. 키움증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 8.9%입니다. 2026-02-09 종가 대비 목표가 괴리는 8.9%입니다.",
-      "reasonBullets": [
-        "키움증권가 2026-02-09에 Buy 의견과 목표가를 제시했습니다.",
-        "현재가 147,800원 대비 목표가는 161,000원입니다.",
-        "2026-02-09 종가 147,800원 대비 괴리는 8.9%입니다."
-      ],
-      "performance": {
-        "week1": {
-          "asOfDate": "2026-02-16",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "unavailable"
-        },
-        "month1": {
-          "asOfDate": "2026-03-11",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "unavailable"
-        },
-        "month3": {
-          "asOfDate": "2026-05-10",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "pending"
-        }
-      }
-    },
-    {
-      "date": "2026-02-09",
-      "ticker": "280360",
-      "name": "롯데웰푸드",
-      "market": "korea",
-      "broker": "키움증권",
-      "analyst": "",
-      "opinion": "Buy",
-      "targetPrice": 153000,
-      "currentPrice": 109600,
-      "basePrice": 109600,
-      "basePriceDate": "2026-02-09",
-      "upside": 39.6,
-      "sourceUrl": "https://finance.naver.com/research/company_read.naver?nid=90107&page=1",
-      "reportTitle": "원가 개선 속도는 아쉬우나 방향성은 분명",
-      "sourceText": "4분기 영업이익 -105억원으로 시장 컨센서스 하회 롯데웰푸드의 4Q25 연결기준 영업이익은 -105억원으로 시장 기대치를 하회하였다. 주력 제품 판가 인상과 국내 건과 매출 증가에도 불구하고, 코코아/유제품 등 원재료 투입단가 상승 부담과 달러 강세에 따른 부정적 영향 등으로 인해, 시장 기대치를 하회한 것으로 추산된다(원재료비 +383억원 YoY). 국내는 매출이 YoY +1% 증가하였고, 영업이익은 YoY +98억원 증가하였다. 4Q24에 통상임금 관련 일회성 비용이 반영된 영향에 따른 기저효과로 실적이 개선되었다. 해외는 매출이 YoY +18% 증가하였으나, 영업이익률이 YoY -1.4%p 하락하였다. 주요 국가의 가격 인상 불구, 코코아/유제품 등 원재료 투입단가 상승 부담이 컸고, 인도 푸네공장 증설에 따른 고정비 부담이 작용했기 때문이다.",
-      "reasonSummary": "원가 개선 속도는 아쉬우나 방향성은 분명. 키움증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 39.6%입니다. 2026-02-09 종가 대비 목표가 괴리는 39.6%입니다.",
-      "reasonBullets": [
-        "키움증권가 2026-02-09에 Buy 의견과 목표가를 제시했습니다.",
-        "현재가 109,600원 대비 목표가는 153,000원입니다.",
-        "2026-02-09 종가 109,600원 대비 괴리는 39.6%입니다."
-      ],
-      "performance": {
-        "week1": {
-          "asOfDate": "2026-02-16",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "unavailable"
-        },
-        "month1": {
-          "asOfDate": "2026-03-11",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "unavailable"
-        },
-        "month3": {
-          "asOfDate": "2026-05-10",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "pending"
-        }
-      }
-    },
-    {
-      "date": "2026-02-09",
-      "ticker": "294870",
-      "name": "HDC현대산업개발",
-      "market": "korea",
-      "broker": "키움증권",
-      "analyst": "",
-      "opinion": "Buy",
-      "targetPrice": 34000,
-      "currentPrice": 20450,
-      "basePrice": 20450,
-      "basePriceDate": "2026-02-09",
-      "upside": 66.3,
-      "sourceUrl": "https://finance.naver.com/research/company_read.naver?nid=90106&page=1",
-      "reportTitle": "탑라인 성장은 아쉬우나 확실한 마진 개선세",
-      "sourceText": "4분기 영업이익 시장 컨센서스 하회 HDC현대산업개발의 4분기 연결 영업이익은 413억원(YoY-1%)으로 시장 컨센서스(811억원)와 당사 추정치(633억원)를 하회했다. 토목/SOC 부문의 적자가 지속되는 가운데, 판관비 단에서 평택고덕 사업지에서 잔금 납입이되지 않은 일부 물건에 대해 충당금을 반영시켰기 때문이다. 다만, 최근 삼성전자의 P4, P5 공장 건설이 재개됨에 따라 향후 임대를 통해 해당 문제를 해결할 것으로 전망된다. 자체 주택 부문은 수원IPC 인도 매출이 감소함에 따라 서울원 아이파크 매출비중 상승으로 GPM 40.4%를 기록했다. 일반건축 부문은 매출 규모가 축소된 가운데, 일부 환입이 발생하면서 GPM 103.4%를 기록했고, 이를 제외 시 3분기와 비슷한 수준의 GPM으로 추정된다.",
-      "reasonSummary": "탑라인 성장은 아쉬우나 확실한 마진 개선세. 키움증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 66.3%입니다. 2026-02-09 종가 대비 목표가 괴리는 66.3%입니다.",
-      "reasonBullets": [
-        "키움증권가 2026-02-09에 Buy 의견과 목표가를 제시했습니다.",
-        "현재가 20,450원 대비 목표가는 34,000원입니다.",
-        "2026-02-09 종가 20,450원 대비 괴리는 66.3%입니다."
-      ],
-      "performance": {
-        "week1": {
-          "asOfDate": "2026-02-16",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "unavailable"
-        },
-        "month1": {
-          "asOfDate": "2026-03-11",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "unavailable"
-        },
-        "month3": {
-          "asOfDate": "2026-05-10",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "pending"
-        }
-      }
-    },
-    {
       "date": "2026-02-06",
       "ticker": "GOOGL",
       "name": "Alphabet Inc.",
@@ -43467,6 +43222,305 @@
     }
   ],
   "stockInsights": {
+    "korea:005930": {
+      "ticker": "005930",
+      "name": "삼성전자",
+      "market": "korea",
+      "latestReportDate": "2026-04-08",
+      "latestBroker": "IBK투자증권",
+      "latestOpinion": "매수",
+      "latestTargetPrice": 350000,
+      "latestCurrentPrice": 196500,
+      "latestBasePrice": 196500,
+      "avgUpside": 48.2,
+      "reportCount": 8,
+      "reasonSummary": "판도가 바뀌었다!. IBK투자증권가 매수 의견을 제시했고 현재가 기준 상승여력은 78.1%입니다. 2026-04-08 종가 대비 목표가 괴리는 78.1%입니다.",
+      "reasonBullets": [
+        "IBK투자증권가 2026-04-08에 매수 의견과 목표가를 제시했습니다.",
+        "현재가 196,500원 대비 목표가는 350,000원입니다.",
+        "2026-04-08 종가 196,500원 대비 괴리는 78.1%입니다."
+      ],
+      "investmentLogic": {
+        "summary": "판도가 바뀌었다!",
+        "bullets": [
+          "판도가 바뀌었다!",
+          "DS가 가장 큰 폭의 성장을 보인 것으로 추정한다.",
+          "메모리 실적 위주로 성장을 주도한 것으로 판단하며, DRAM B/G +2%, ASP +90%를 기록해 영업이익 42.5조원(OPM 78.1%), NAND B/G +9%, ASP +81%로 영업이익 11.6조원(OPM 63.5%)로 추정된다."
+        ]
+      },
+      "estimateRevision": {
+        "summary": "혼재 신호입니다. 리포트 원문에서 추정치 관련 표현을 기준으로 판단했습니다.",
+        "bullets": [
+          "DS, MX 기대 이상 삼성전자의 2026년 1분기 잠정 매출액은 2025년 4분기 대비 41.7% 증가한 133조원이다.",
+          "DS, MX, 디스플레이 사업부를 상향 조정했다.",
+          "2026년 1분기 영업이익은 25년 4분기 대비 2.8배 증가한 57조원으로 이전 전망치 대비 크게 증가한 규모이다."
+        ],
+        "signal": "mixed"
+      },
+      "valuation": {
+        "summary": "현재가 196,500원 대비 목표가 350,000원가 제시돼 밸류에이션 여력을 확인할 수 있습니다.",
+        "bullets": [
+          "실적 상향과 밸류업 기대감 1Q26 Preview: 영업이익 재차 상향 삼성전자의 26년 1분기 매출액을 122조원, 영업이익을 38조원으로 상향한다.",
+          "실적 상향과 밸류업 기대감.",
+          "현재가 대비 목표가 상승여력은 78.1%입니다."
+        ]
+      },
+      "sectorCycle": {
+        "summary": "스태그플레이션 우려 Vs 살아있는 업황 [투자포인트] - 현주가는 FY26 BPS 대비 2배 (과거 고점 배수) 이하에서 거래 중이며, Val.",
+        "bullets": [
+          "스태그플레이션 우려 Vs 살아있는 업황 [투자포인트] - 현주가는 FY26 BPS 대비 2배 (과거 고점 배수) 이하에서 거래 중이며, Val.",
+          "전쟁 장기화 시, AI 투자 및 Memory 업황도 둔화될 것이므로 Val.",
+          "가격 부담에도 불구하고 업황은 여전히 살아있는 상황임."
+        ]
+      },
+      "relatedReports": [
+        {
+          "date": "2026-04-08",
+          "ticker": "005930",
+          "name": "삼성전자",
+          "market": "korea",
+          "broker": "IBK투자증권",
+          "analyst": "",
+          "opinion": "매수",
+          "targetPrice": 350000,
+          "currentPrice": 196500,
+          "basePrice": 196500,
+          "basePriceDate": "2026-04-08",
+          "upside": 78.1,
+          "sourceUrl": "https://finance.naver.com/research/company_read.naver?nid=91308&page=1",
+          "reportTitle": "판도가 바뀌었다!",
+          "sourceText": "2026년 1분기. DS, MX 기대 이상 삼성전자의 2026년 1분기 잠정 매출액은 2025년 4분기 대비 41.7% 증가한 133조원이다. 이전 전망 대비 증가한 규모이다. DS, MX, 디스플레이 사업부를 상향 조정했다. DS 조정폭이 가장 크다. 2026년 1분기 영업이익은 25년 4분기 대비 2.8배 증가한 57조원으로 이전 전망치 대비 크게 증가한 규모이다. DS가 가장 큰 폭의 성장을 보인 것으로 추정한다. DRAM, NAND ASP가 이전 전망 대비 크게 상승했고, 이로 인해 영업이익도 이전 전망치를 큰 폭으로 상회했다. MX 사업부 영업이익도 예상보다 높은 수준이었는데 아직 메모리 가격 상승분이 반영되지 않은 시점이었던 것으로 분석된다.",
+          "reasonSummary": "판도가 바뀌었다!. IBK투자증권가 매수 의견을 제시했고 현재가 기준 상승여력은 78.1%입니다. 2026-04-08 종가 대비 목표가 괴리는 78.1%입니다.",
+          "reasonBullets": [
+            "IBK투자증권가 2026-04-08에 매수 의견과 목표가를 제시했습니다.",
+            "현재가 196,500원 대비 목표가는 350,000원입니다.",
+            "2026-04-08 종가 196,500원 대비 괴리는 78.1%입니다."
+          ],
+          "performance": {
+            "week1": {
+              "asOfDate": "2026-04-15",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            },
+            "month1": {
+              "asOfDate": "2026-05-08",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            },
+            "month3": {
+              "asOfDate": "2026-07-07",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            }
+          }
+        },
+        {
+          "date": "2026-04-07",
+          "ticker": "005930",
+          "name": "삼성전자",
+          "market": "korea",
+          "broker": "미래에셋증권",
+          "analyst": "",
+          "opinion": "매수",
+          "targetPrice": 300000,
+          "currentPrice": 196500,
+          "basePrice": 196500,
+          "basePriceDate": "2026-04-07",
+          "upside": 52.7,
+          "sourceUrl": "https://finance.naver.com/research/company_read.naver?nid=91293&page=1",
+          "reportTitle": "놀라운 실적의 시작",
+          "sourceText": "1Q26 잠정실적 Quick review 삼성전자의 1Q26 잠정 실적은 매출액 133.1조원(QoQ +41.8%), 영업이익 57.2조원(QoQ +185.2%)를 기록해 시장 및 당사 추정치를 크게 상회했다. 부문별 영업이익은 DS 53조원(메모리 54조원, 파운드리 -1조원), DX 3.4조원, SDC 0.5조원, HM 0.3조원으로 추정한다. 일부 성과 보상 목적의 충당금도 반영된 것으로 보인다. 메모리 실적 위주로 성장을 주도한 것으로 판단하며, DRAM B/G +2%, ASP +90%를 기록해 영업이익 42.5조원(OPM 78.1%), NAND B/G +9%, ASP +81%로 영업이익 11.6조원(OPM 63.5%)로 추정된다. 당사의 기존 추정(DRAM +64%, NAND +53%)에 비해 ASP 상승이 더욱 가팔랐던 것으로 보인다. 2분기에도 가격 상승세는 지속될 전망이다. DRAM, NAND 공히 QoQ +20% 수준의 가격 인상이 이뤄질 것으로 추정되며, 각 +7% 수준의 B/G가 출하되며 2Q26 전사 실적은 매출액 151.7조원(QoQ +14.0%), 영업이익 76.8조원(QoQ +34.2%) 으로 추정된다. 구체적인 추정치 변경은 실적 컨퍼런스콜 이후에 반영할 예정이다.",
+          "reasonSummary": "놀라운 실적의 시작. 미래에셋증권가 매수 의견을 제시했고 현재가 기준 상승여력은 52.7%입니다. 2026-04-07 종가 대비 목표가 괴리는 52.7%입니다.",
+          "reasonBullets": [
+            "미래에셋증권가 2026-04-07에 매수 의견과 목표가를 제시했습니다.",
+            "현재가 196,500원 대비 목표가는 300,000원입니다.",
+            "2026-04-07 종가 196,500원 대비 괴리는 52.7%입니다."
+          ],
+          "performance": {
+            "week1": {
+              "asOfDate": "2026-04-14",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            },
+            "month1": {
+              "asOfDate": "2026-05-07",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            },
+            "month3": {
+              "asOfDate": "2026-07-06",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            }
+          }
+        },
+        {
+          "date": "2026-04-06",
+          "ticker": "005930",
+          "name": "삼성전자",
+          "market": "korea",
+          "broker": "신한투자증권",
+          "analyst": "",
+          "opinion": "매수",
+          "targetPrice": 270000,
+          "currentPrice": 196500,
+          "basePrice": 196500,
+          "basePriceDate": "2026-04-06",
+          "upside": 37.4,
+          "sourceUrl": "https://finance.naver.com/research/company_read.naver?nid=91239&page=1",
+          "reportTitle": "현 시점은 Peak 구간의 초입",
+          "sourceText": "메모리 가격 탄력성 확대 → 레버리지 효과 극대화 공급 제약 심화되는 가운데 DRAM, NAND 모두 가장 많은 Capa 보유. 경쟁사 상회하는 레버리지 효과 기대. Peer 그룹 내 1c DRAM 신규 증설 타임라인도 가장 빠른 것으로 추정. 기대 이상의 가격 상승세가 메모리 외 사업부에 갖는 수익성 약화 우려 상쇄. 이익 추정치 및 목표주가 상향",
+          "reasonSummary": "현 시점은 Peak 구간의 초입. 신한투자증권가 매수 의견을 제시했고 현재가 기준 상승여력은 37.4%입니다. 2026-04-06 종가 대비 목표가 괴리는 37.4%입니다.",
+          "reasonBullets": [
+            "신한투자증권가 2026-04-06에 매수 의견과 목표가를 제시했습니다.",
+            "현재가 196,500원 대비 목표가는 270,000원입니다.",
+            "2026-04-06 종가 196,500원 대비 괴리는 37.4%입니다."
+          ],
+          "performance": {
+            "week1": {
+              "asOfDate": "2026-04-13",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            },
+            "month1": {
+              "asOfDate": "2026-05-06",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            },
+            "month3": {
+              "asOfDate": "2026-07-05",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            }
+          }
+        },
+        {
+          "date": "2026-04-01",
+          "ticker": "005930",
+          "name": "삼성전자",
+          "market": "korea",
+          "broker": "iM증권",
+          "analyst": "",
+          "opinion": "Buy",
+          "targetPrice": 280000,
+          "currentPrice": 196500,
+          "basePrice": 196500,
+          "basePriceDate": "2026-04-01",
+          "upside": 42.5,
+          "sourceUrl": "https://finance.naver.com/research/company_read.naver?nid=91153&page=1",
+          "reportTitle": "스태그플레이션 우려 Vs 살아있는 업황",
+          "sourceText": "[투자포인트] - 현주가는 FY26 BPS 대비 2배 (과거 고점 배수) 이하에서 거래 중이며, Val. 배수 상향 조정이 이란 전쟁 발발에 따라 멈춘 상황임. FY26 예상 ROE가 39%로 지난 30년간 최고점이었던 FY04의 34%를 상회하므로, 목표주가 산정을 위해 적어도 당시 고점 P/B 배수 3.0배를 적용할 필요가 있음. 이를 FY26 예상 BPS 9만원에 적용해 28만원의 목표주가 도출 - 단 P/B 3.0배의 적용과 28만원의 목표주가는 이란 전쟁이 단기 종료될 경우에 한함. 전쟁 장기화 시, AI 투자 및 Memory 업황도 둔화될 것이므로 Val. 배수 및 목표 주가의 하향 조정이 불가피함 - 2Q26 DRAM, NAND ASP 상승률 전망치를 각각 33%, 37%로 상향 조정하며, 이에 따라 2Q26 및 FY26 영업이익 전망치 역시 70.0조원과 272.4조원으로 상향함. 가격 부담에도 불구하고 업황은 여전히 살아있는 상황임. 단 5월 파업을 전후해 직원들에 대한 신규 보상 체계가 결정되면, 동사 향후 실적 및 BPS, ROE가 소폭 하향 조정될 수 있음 - 1Q26 매출 및 영업이익을 QoQ 33%, 126% 증가하는 125.2조원과 45.3조원으로 추정함. Memory 가격 급등과 원-달러 환율의 상승에 따른 결과임. Memory 부문에서만 44.7조원의 영업이익이 발생할 것으로 예상됨. 단 Sys-LSI에서는 전분기 수준의 적자가 발생했을 것으로 보이고, SDC와 MX/네트워크, CE 부문 (하만 포함)의 영업이익은 Memory 가격 부담에 따라 0.4조원, 1.4조원, 820억원에 그칠 것으로 판단됨",
+          "reasonSummary": "스태그플레이션 우려 Vs 살아있는 업황. iM증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 42.5%입니다. 2026-04-01 종가 대비 목표가 괴리는 42.5%입니다.",
+          "reasonBullets": [
+            "iM증권가 2026-04-01에 Buy 의견과 목표가를 제시했습니다.",
+            "현재가 196,500원 대비 목표가는 280,000원입니다.",
+            "2026-04-01 종가 196,500원 대비 괴리는 42.5%입니다."
+          ],
+          "performance": {
+            "week1": {
+              "asOfDate": "2026-04-08",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            },
+            "month1": {
+              "asOfDate": "2026-05-01",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            },
+            "month3": {
+              "asOfDate": "2026-06-30",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            }
+          }
+        },
+        {
+          "date": "2026-03-30",
+          "ticker": "005930",
+          "name": "삼성전자",
+          "market": "korea",
+          "broker": "키움증권",
+          "analyst": "",
+          "opinion": "Buy",
+          "targetPrice": 260000,
+          "currentPrice": 196500,
+          "basePrice": 196500,
+          "basePriceDate": "2026-03-30",
+          "upside": 32.3,
+          "sourceUrl": "https://finance.naver.com/research/company_read.naver?nid=91107&page=1",
+          "reportTitle": "1Q26 영업이익 43조원, 서프라이즈 예상",
+          "sourceText": "1Q26 영업이익 43조원으로, 서프라이즈 예상 삼성전자의 1Q26 실적이 매출액 125조원(+34%QoQ)과 영업이익 43조원(+115%QoQ)을 기록하며, 당사의 기존 전망치 및 시장 컨센서스(FnGuide: 매출액 121조원, 영업이익 39.6조원)를 크게 상회할 것으로 예상된다. 분기중에 발생된 모바일 메모리 제품의 긴급 주문(rush order) 영향으로, 모바일 DRAM과 NAND(UFS, eMMC)의 가격 상승률이 예상치를 넘어설 것으로 판단하기 때문이다. 파운드리의 경우 영업적자가 이어지겠지만, 4nm 및 2nm 신규 고객과 신규 제품의 수주가 늘고 있어, 하반기 영업흑자 전환 가시성이 높아지고 있다. DX(스마트폰, TV, 가전 등) 부문의 영업이익은 메모리 가격 급등에 따른 원가 부담 영향으로 인해, 전년 대비 -56% 감소할 전망이며, SDC의 영업이익도 전년 대비 -49% 감소할 전망이다.",
+          "reasonSummary": "1Q26 영업이익 43조원, 서프라이즈 예상. 키움증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 32.3%입니다. 2026-03-30 종가 대비 목표가 괴리는 32.3%입니다.",
+          "reasonBullets": [
+            "키움증권가 2026-03-30에 Buy 의견과 목표가를 제시했습니다.",
+            "현재가 196,500원 대비 목표가는 260,000원입니다.",
+            "2026-03-30 종가 196,500원 대비 괴리는 32.3%입니다."
+          ],
+          "performance": {
+            "week1": {
+              "asOfDate": "2026-04-06",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "unavailable"
+            },
+            "month1": {
+              "asOfDate": "2026-04-29",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            },
+            "month3": {
+              "asOfDate": "2026-06-28",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            }
+          }
+        }
+      ]
+    },
     "korea:000270": {
       "ticker": "000270",
       "name": "기아",
@@ -44328,8 +44382,8 @@
       "latestTargetPrice": 175000,
       "latestCurrentPrice": 109600,
       "latestBasePrice": 109600,
-      "avgUpside": 52.9,
-      "reportCount": 5,
+      "avgUpside": 56.2,
+      "reportCount": 4,
       "reasonSummary": "1Q26 Preview: 나아갈 길만 남았다. 교보증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 59.7%입니다. 2026-04-07 종가 대비 목표가 괴리는 59.7%입니다.",
       "reasonBullets": [
         "교보증권가 2026-04-07에 Buy 의견과 목표가를 제시했습니다.",
@@ -44538,55 +44592,6 @@
             "DS투자증권가 2026-02-09에 매수 의견과 목표가를 제시했습니다.",
             "현재가 109,600원 대비 목표가는 170,000원입니다.",
             "2026-02-09 종가 109,600원 대비 괴리는 55.1%입니다."
-          ],
-          "performance": {
-            "week1": {
-              "asOfDate": "2026-02-16",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "unavailable"
-            },
-            "month1": {
-              "asOfDate": "2026-03-11",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "unavailable"
-            },
-            "month3": {
-              "asOfDate": "2026-05-10",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            }
-          }
-        },
-        {
-          "date": "2026-02-09",
-          "ticker": "280360",
-          "name": "롯데웰푸드",
-          "market": "korea",
-          "broker": "키움증권",
-          "analyst": "",
-          "opinion": "Buy",
-          "targetPrice": 153000,
-          "currentPrice": 109600,
-          "basePrice": 109600,
-          "basePriceDate": "2026-02-09",
-          "upside": 39.6,
-          "sourceUrl": "https://finance.naver.com/research/company_read.naver?nid=90107&page=1",
-          "reportTitle": "원가 개선 속도는 아쉬우나 방향성은 분명",
-          "sourceText": "4분기 영업이익 -105억원으로 시장 컨센서스 하회 롯데웰푸드의 4Q25 연결기준 영업이익은 -105억원으로 시장 기대치를 하회하였다. 주력 제품 판가 인상과 국내 건과 매출 증가에도 불구하고, 코코아/유제품 등 원재료 투입단가 상승 부담과 달러 강세에 따른 부정적 영향 등으로 인해, 시장 기대치를 하회한 것으로 추산된다(원재료비 +383억원 YoY). 국내는 매출이 YoY +1% 증가하였고, 영업이익은 YoY +98억원 증가하였다. 4Q24에 통상임금 관련 일회성 비용이 반영된 영향에 따른 기저효과로 실적이 개선되었다. 해외는 매출이 YoY +18% 증가하였으나, 영업이익률이 YoY -1.4%p 하락하였다. 주요 국가의 가격 인상 불구, 코코아/유제품 등 원재료 투입단가 상승 부담이 컸고, 인도 푸네공장 증설에 따른 고정비 부담이 작용했기 때문이다.",
-          "reasonSummary": "원가 개선 속도는 아쉬우나 방향성은 분명. 키움증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 39.6%입니다. 2026-02-09 종가 대비 목표가 괴리는 39.6%입니다.",
-          "reasonBullets": [
-            "키움증권가 2026-02-09에 Buy 의견과 목표가를 제시했습니다.",
-            "현재가 109,600원 대비 목표가는 153,000원입니다.",
-            "2026-02-09 종가 109,600원 대비 괴리는 39.6%입니다."
           ],
           "performance": {
             "week1": {
@@ -45759,305 +45764,6 @@
             },
             "month3": {
               "asOfDate": "2026-05-12",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            }
-          }
-        }
-      ]
-    },
-    "korea:005930": {
-      "ticker": "005930",
-      "name": "삼성전자",
-      "market": "korea",
-      "latestReportDate": "2026-04-07",
-      "latestBroker": "미래에셋증권",
-      "latestOpinion": "매수",
-      "latestTargetPrice": 300000,
-      "latestCurrentPrice": 196500,
-      "latestBasePrice": 196500,
-      "avgUpside": 44,
-      "reportCount": 7,
-      "reasonSummary": "놀라운 실적의 시작. 미래에셋증권가 매수 의견을 제시했고 현재가 기준 상승여력은 52.7%입니다. 2026-04-07 종가 대비 목표가 괴리는 52.7%입니다.",
-      "reasonBullets": [
-        "미래에셋증권가 2026-04-07에 매수 의견과 목표가를 제시했습니다.",
-        "현재가 196,500원 대비 목표가는 300,000원입니다.",
-        "2026-04-07 종가 196,500원 대비 괴리는 52.7%입니다."
-      ],
-      "investmentLogic": {
-        "summary": "놀라운 실적의 시작",
-        "bullets": [
-          "놀라운 실적의 시작",
-          "메모리 실적 위주로 성장을 주도한 것으로 판단하며, DRAM B/G +2%, ASP +90%를 기록해 영업이익 42.5조원(OPM 78.1%), NAND B/G +9%, ASP +81%로 영업이익 11.6조원(OPM 63.5%)로 추정된다.",
-          "현 시점은 Peak 구간의 초입 메모리 가격 탄력성 확대 → 레버리지 효과 극대화 공급 제약 심화되는 가운데 DRAM, NAND 모두 가장 많은 Capa 보유."
-        ]
-      },
-      "estimateRevision": {
-        "summary": "혼재 신호입니다. 리포트 원문에서 추정치 관련 표현을 기준으로 판단했습니다.",
-        "bullets": [
-          "놀라운 실적의 시작 1Q26 잠정실적 Quick review 삼성전자의 1Q26 잠정 실적은 매출액 133.1조원(QoQ +41.8%), 영업이익 57.2조원(QoQ +185.2%)를 기록해 시장 및 당사 추정치를 크게 상회했다.",
-          "부문별 영업이익은 DS 53조원(메모리 54조원, 파운드리 -1조원), DX 3.4조원, SDC 0.5조원, HM 0.3조원으로 추정한다.",
-          "메모리 실적 위주로 성장을 주도한 것으로 판단하며, DRAM B/G +2%, ASP +90%를 기록해 영업이익 42.5조원(OPM 78.1%), NAND B/G +9%, ASP +81%로 영업이익 11.6조원(OPM 63.5%)로 추정된다."
-        ],
-        "signal": "mixed"
-      },
-      "valuation": {
-        "summary": "현재가 196,500원 대비 목표가 300,000원가 제시돼 밸류에이션 여력을 확인할 수 있습니다.",
-        "bullets": [
-          "실적 상향과 밸류업 기대감 1Q26 Preview: 영업이익 재차 상향 삼성전자의 26년 1분기 매출액을 122조원, 영업이익을 38조원으로 상향한다.",
-          "실적 상향과 밸류업 기대감.",
-          "현재가 대비 목표가 상승여력은 52.7%입니다."
-        ]
-      },
-      "sectorCycle": {
-        "summary": "스태그플레이션 우려 Vs 살아있는 업황 [투자포인트] - 현주가는 FY26 BPS 대비 2배 (과거 고점 배수) 이하에서 거래 중이며, Val.",
-        "bullets": [
-          "스태그플레이션 우려 Vs 살아있는 업황 [투자포인트] - 현주가는 FY26 BPS 대비 2배 (과거 고점 배수) 이하에서 거래 중이며, Val.",
-          "전쟁 장기화 시, AI 투자 및 Memory 업황도 둔화될 것이므로 Val.",
-          "가격 부담에도 불구하고 업황은 여전히 살아있는 상황임."
-        ]
-      },
-      "relatedReports": [
-        {
-          "date": "2026-04-07",
-          "ticker": "005930",
-          "name": "삼성전자",
-          "market": "korea",
-          "broker": "미래에셋증권",
-          "analyst": "",
-          "opinion": "매수",
-          "targetPrice": 300000,
-          "currentPrice": 196500,
-          "basePrice": 196500,
-          "basePriceDate": "2026-04-07",
-          "upside": 52.7,
-          "sourceUrl": "https://finance.naver.com/research/company_read.naver?nid=91293&page=1",
-          "reportTitle": "놀라운 실적의 시작",
-          "sourceText": "1Q26 잠정실적 Quick review 삼성전자의 1Q26 잠정 실적은 매출액 133.1조원(QoQ +41.8%), 영업이익 57.2조원(QoQ +185.2%)를 기록해 시장 및 당사 추정치를 크게 상회했다. 부문별 영업이익은 DS 53조원(메모리 54조원, 파운드리 -1조원), DX 3.4조원, SDC 0.5조원, HM 0.3조원으로 추정한다. 일부 성과 보상 목적의 충당금도 반영된 것으로 보인다. 메모리 실적 위주로 성장을 주도한 것으로 판단하며, DRAM B/G +2%, ASP +90%를 기록해 영업이익 42.5조원(OPM 78.1%), NAND B/G +9%, ASP +81%로 영업이익 11.6조원(OPM 63.5%)로 추정된다. 당사의 기존 추정(DRAM +64%, NAND +53%)에 비해 ASP 상승이 더욱 가팔랐던 것으로 보인다. 2분기에도 가격 상승세는 지속될 전망이다. DRAM, NAND 공히 QoQ +20% 수준의 가격 인상이 이뤄질 것으로 추정되며, 각 +7% 수준의 B/G가 출하되며 2Q26 전사 실적은 매출액 151.7조원(QoQ +14.0%), 영업이익 76.8조원(QoQ +34.2%) 으로 추정된다. 구체적인 추정치 변경은 실적 컨퍼런스콜 이후에 반영할 예정이다.",
-          "reasonSummary": "놀라운 실적의 시작. 미래에셋증권가 매수 의견을 제시했고 현재가 기준 상승여력은 52.7%입니다. 2026-04-07 종가 대비 목표가 괴리는 52.7%입니다.",
-          "reasonBullets": [
-            "미래에셋증권가 2026-04-07에 매수 의견과 목표가를 제시했습니다.",
-            "현재가 196,500원 대비 목표가는 300,000원입니다.",
-            "2026-04-07 종가 196,500원 대비 괴리는 52.7%입니다."
-          ],
-          "performance": {
-            "week1": {
-              "asOfDate": "2026-04-14",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            },
-            "month1": {
-              "asOfDate": "2026-05-07",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            },
-            "month3": {
-              "asOfDate": "2026-07-06",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            }
-          }
-        },
-        {
-          "date": "2026-04-06",
-          "ticker": "005930",
-          "name": "삼성전자",
-          "market": "korea",
-          "broker": "신한투자증권",
-          "analyst": "",
-          "opinion": "매수",
-          "targetPrice": 270000,
-          "currentPrice": 196500,
-          "basePrice": 196500,
-          "basePriceDate": "2026-04-06",
-          "upside": 37.4,
-          "sourceUrl": "https://finance.naver.com/research/company_read.naver?nid=91239&page=1",
-          "reportTitle": "현 시점은 Peak 구간의 초입",
-          "sourceText": "메모리 가격 탄력성 확대 → 레버리지 효과 극대화 공급 제약 심화되는 가운데 DRAM, NAND 모두 가장 많은 Capa 보유. 경쟁사 상회하는 레버리지 효과 기대. Peer 그룹 내 1c DRAM 신규 증설 타임라인도 가장 빠른 것으로 추정. 기대 이상의 가격 상승세가 메모리 외 사업부에 갖는 수익성 약화 우려 상쇄. 이익 추정치 및 목표주가 상향",
-          "reasonSummary": "현 시점은 Peak 구간의 초입. 신한투자증권가 매수 의견을 제시했고 현재가 기준 상승여력은 37.4%입니다. 2026-04-06 종가 대비 목표가 괴리는 37.4%입니다.",
-          "reasonBullets": [
-            "신한투자증권가 2026-04-06에 매수 의견과 목표가를 제시했습니다.",
-            "현재가 196,500원 대비 목표가는 270,000원입니다.",
-            "2026-04-06 종가 196,500원 대비 괴리는 37.4%입니다."
-          ],
-          "performance": {
-            "week1": {
-              "asOfDate": "2026-04-13",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            },
-            "month1": {
-              "asOfDate": "2026-05-06",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            },
-            "month3": {
-              "asOfDate": "2026-07-05",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            }
-          }
-        },
-        {
-          "date": "2026-04-01",
-          "ticker": "005930",
-          "name": "삼성전자",
-          "market": "korea",
-          "broker": "iM증권",
-          "analyst": "",
-          "opinion": "Buy",
-          "targetPrice": 280000,
-          "currentPrice": 196500,
-          "basePrice": 196500,
-          "basePriceDate": "2026-04-01",
-          "upside": 42.5,
-          "sourceUrl": "https://finance.naver.com/research/company_read.naver?nid=91153&page=1",
-          "reportTitle": "스태그플레이션 우려 Vs 살아있는 업황",
-          "sourceText": "[투자포인트] - 현주가는 FY26 BPS 대비 2배 (과거 고점 배수) 이하에서 거래 중이며, Val. 배수 상향 조정이 이란 전쟁 발발에 따라 멈춘 상황임. FY26 예상 ROE가 39%로 지난 30년간 최고점이었던 FY04의 34%를 상회하므로, 목표주가 산정을 위해 적어도 당시 고점 P/B 배수 3.0배를 적용할 필요가 있음. 이를 FY26 예상 BPS 9만원에 적용해 28만원의 목표주가 도출 - 단 P/B 3.0배의 적용과 28만원의 목표주가는 이란 전쟁이 단기 종료될 경우에 한함. 전쟁 장기화 시, AI 투자 및 Memory 업황도 둔화될 것이므로 Val. 배수 및 목표 주가의 하향 조정이 불가피함 - 2Q26 DRAM, NAND ASP 상승률 전망치를 각각 33%, 37%로 상향 조정하며, 이에 따라 2Q26 및 FY26 영업이익 전망치 역시 70.0조원과 272.4조원으로 상향함. 가격 부담에도 불구하고 업황은 여전히 살아있는 상황임. 단 5월 파업을 전후해 직원들에 대한 신규 보상 체계가 결정되면, 동사 향후 실적 및 BPS, ROE가 소폭 하향 조정될 수 있음 - 1Q26 매출 및 영업이익을 QoQ 33%, 126% 증가하는 125.2조원과 45.3조원으로 추정함. Memory 가격 급등과 원-달러 환율의 상승에 따른 결과임. Memory 부문에서만 44.7조원의 영업이익이 발생할 것으로 예상됨. 단 Sys-LSI에서는 전분기 수준의 적자가 발생했을 것으로 보이고, SDC와 MX/네트워크, CE 부문 (하만 포함)의 영업이익은 Memory 가격 부담에 따라 0.4조원, 1.4조원, 820억원에 그칠 것으로 판단됨",
-          "reasonSummary": "스태그플레이션 우려 Vs 살아있는 업황. iM증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 42.5%입니다. 2026-04-01 종가 대비 목표가 괴리는 42.5%입니다.",
-          "reasonBullets": [
-            "iM증권가 2026-04-01에 Buy 의견과 목표가를 제시했습니다.",
-            "현재가 196,500원 대비 목표가는 280,000원입니다.",
-            "2026-04-01 종가 196,500원 대비 괴리는 42.5%입니다."
-          ],
-          "performance": {
-            "week1": {
-              "asOfDate": "2026-04-08",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            },
-            "month1": {
-              "asOfDate": "2026-05-01",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            },
-            "month3": {
-              "asOfDate": "2026-06-30",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            }
-          }
-        },
-        {
-          "date": "2026-03-30",
-          "ticker": "005930",
-          "name": "삼성전자",
-          "market": "korea",
-          "broker": "키움증권",
-          "analyst": "",
-          "opinion": "Buy",
-          "targetPrice": 260000,
-          "currentPrice": 196500,
-          "basePrice": 196500,
-          "basePriceDate": "2026-03-30",
-          "upside": 32.3,
-          "sourceUrl": "https://finance.naver.com/research/company_read.naver?nid=91107&page=1",
-          "reportTitle": "1Q26 영업이익 43조원, 서프라이즈 예상",
-          "sourceText": "1Q26 영업이익 43조원으로, 서프라이즈 예상 삼성전자의 1Q26 실적이 매출액 125조원(+34%QoQ)과 영업이익 43조원(+115%QoQ)을 기록하며, 당사의 기존 전망치 및 시장 컨센서스(FnGuide: 매출액 121조원, 영업이익 39.6조원)를 크게 상회할 것으로 예상된다. 분기중에 발생된 모바일 메모리 제품의 긴급 주문(rush order) 영향으로, 모바일 DRAM과 NAND(UFS, eMMC)의 가격 상승률이 예상치를 넘어설 것으로 판단하기 때문이다. 파운드리의 경우 영업적자가 이어지겠지만, 4nm 및 2nm 신규 고객과 신규 제품의 수주가 늘고 있어, 하반기 영업흑자 전환 가시성이 높아지고 있다. DX(스마트폰, TV, 가전 등) 부문의 영업이익은 메모리 가격 급등에 따른 원가 부담 영향으로 인해, 전년 대비 -56% 감소할 전망이며, SDC의 영업이익도 전년 대비 -49% 감소할 전망이다.",
-          "reasonSummary": "1Q26 영업이익 43조원, 서프라이즈 예상. 키움증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 32.3%입니다. 2026-03-30 종가 대비 목표가 괴리는 32.3%입니다.",
-          "reasonBullets": [
-            "키움증권가 2026-03-30에 Buy 의견과 목표가를 제시했습니다.",
-            "현재가 196,500원 대비 목표가는 260,000원입니다.",
-            "2026-03-30 종가 196,500원 대비 괴리는 32.3%입니다."
-          ],
-          "performance": {
-            "week1": {
-              "asOfDate": "2026-04-06",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "unavailable"
-            },
-            "month1": {
-              "asOfDate": "2026-04-29",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            },
-            "month3": {
-              "asOfDate": "2026-06-28",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            }
-          }
-        },
-        {
-          "date": "2026-03-16",
-          "ticker": "005930",
-          "name": "삼성전자",
-          "market": "korea",
-          "broker": "대신증권",
-          "analyst": "",
-          "opinion": "Buy",
-          "targetPrice": 270000,
-          "currentPrice": 196500,
-          "basePrice": 196500,
-          "basePriceDate": "2026-03-16",
-          "upside": 37.4,
-          "sourceUrl": "https://finance.naver.com/research/company_read.naver?nid=90933&page=1",
-          "reportTitle": "지금이라도 사야 하는 이유",
-          "sourceText": "1Q26 Preview: 무섭게 올라갑니다 1Q26 매출액과 영업이익은 131조원 (q-q +39%, y-y +65%), 45조원 (OPM +35%)으로 컨센서스 (최근 1개월: 매출액 118조원, 영업이익 38조원)를 상회할 것. 1개 분기만에 2025년 연간 영업이익 (43.6조원)을 돌파하는 것.",
-          "reasonSummary": "지금이라도 사야 하는 이유. 대신증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 37.4%입니다. 2026-03-16 종가 대비 목표가 괴리는 37.4%입니다.",
-          "reasonBullets": [
-            "대신증권가 2026-03-16에 Buy 의견과 목표가를 제시했습니다.",
-            "현재가 196,500원 대비 목표가는 270,000원입니다.",
-            "2026-03-16 종가 196,500원 대비 괴리는 37.4%입니다."
-          ],
-          "performance": {
-            "week1": {
-              "asOfDate": "2026-03-23",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "unavailable"
-            },
-            "month1": {
-              "asOfDate": "2026-04-15",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            },
-            "month3": {
-              "asOfDate": "2026-06-14",
               "closePrice": 0,
               "returnPct": 0,
               "targetProgressPct": 0,
@@ -55205,11 +54911,11 @@
           "performance": {
             "week1": {
               "asOfDate": "2026-02-19",
-              "closePrice": 411.71,
-              "returnPct": -1.3,
+              "closePrice": 0,
+              "returnPct": 0,
               "targetProgressPct": 0,
               "success": false,
-              "status": "complete"
+              "status": "unavailable"
             },
             "month1": {
               "asOfDate": "2026-03-13",
@@ -61417,11 +61123,11 @@
           "performance": {
             "week1": {
               "asOfDate": "2026-02-20",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
+              "closePrice": 314.98,
+              "returnPct": 3,
+              "targetProgressPct": 15.6,
               "success": false,
-              "status": "unavailable"
+              "status": "complete"
             },
             "month1": {
               "asOfDate": "2026-03-13",
@@ -72077,11 +71783,11 @@
           "performance": {
             "week1": {
               "asOfDate": "2026-02-20",
-              "closePrice": 0,
-              "returnPct": 0,
+              "closePrice": 37.75,
+              "returnPct": -27,
               "targetProgressPct": 0,
               "success": false,
-              "status": "unavailable"
+              "status": "complete"
             },
             "month1": {
               "asOfDate": "2026-03-13",
@@ -72126,11 +71832,11 @@
           "performance": {
             "week1": {
               "asOfDate": "2026-02-20",
-              "closePrice": 0,
-              "returnPct": 0,
+              "closePrice": 37.75,
+              "returnPct": -27,
               "targetProgressPct": 0,
               "success": false,
-              "status": "unavailable"
+              "status": "complete"
             },
             "month1": {
               "asOfDate": "2026-03-13",
@@ -81624,8 +81330,8 @@
       "latestTargetPrice": 1160000,
       "latestCurrentPrice": 891000,
       "latestBasePrice": 891000,
-      "avgUpside": 22.3,
-      "reportCount": 9,
+      "avgUpside": 22.2,
+      "reportCount": 8,
       "reasonSummary": "고마진이 정당화하는 멀티플. 유안타증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 30.2%입니다. 2026-03-04 종가 대비 목표가 괴리는 30.2%입니다.",
       "reasonBullets": [
         "유안타증권가 2026-03-04에 Buy 의견과 목표가를 제시했습니다.",
@@ -88617,8 +88323,8 @@
       "latestTargetPrice": 192000,
       "latestCurrentPrice": 147800,
       "latestBasePrice": 147800,
-      "avgUpside": 19.4,
-      "reportCount": 2,
+      "avgUpside": 29.9,
+      "reportCount": 1,
       "reasonSummary": "[NDR 후기] 통합 법인 출범, 구조적 성장 본... 한화투자증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 29.9%입니다. 2026-02-19 종가 대비 목표가 괴리는 29.9%입니다.",
       "reasonBullets": [
         "한화투자증권가 2026-02-19에 Buy 의견과 목표가를 제시했습니다.",
@@ -88629,18 +88335,17 @@
         "summary": "[NDR 후기] 통합 법인 출범, 구조적 성장 본..",
         "bullets": [
           "[NDR 후기] 통합 법인 출범, 구조적 성장 본..",
-          "[NDR 후기] 통합 법인 출범, 구조적 성장 본...",
-          "건설기계 사업 부문은 신흥 시장에서 금광 개발 수요 확대에 힘입어 큰 폭의 수요 성장 흐름이 이어졌고, 선진 시장의 회복세도 긍정적으로 작용하며 매출 성장세가 지속되고 있다."
+          "[NDR 후기] 통합 법인 출범, 구조적 성장 본..."
         ]
       },
       "estimateRevision": {
-        "summary": "상향 신호입니다. 리포트 원문에서 추정치 관련 표현을 기준으로 판단했습니다.",
+        "summary": "확인 어려움 신호입니다. 리포트 원문에서 추정치 관련 표현을 기준으로 판단했습니다.",
         "bullets": [
           "4Q25 Review: 일회성 비용 다수 반영 HD현대건설기계(HCE)는 4분기 매출액 9,473억원(YoY +20.0%, 이하 YoY), 영업이익 334억원(-5.3%, OPM 3.5%)을 시현했다.",
           "HD현대인프라코어(HDI)는 4분기 매출액 1조 2,146억원(+29.4%), 영업이익 319억원(흑자전환, OPM 2.6%)을 기록했다.",
           "두 업체 모두 일회성 비용이 다수 반영된 영향으로 영업이익 기준 시장 기대치를 하회했다."
         ],
-        "signal": "up"
+        "signal": "unknown"
       },
       "valuation": {
         "summary": "현재가 147,800원 대비 목표가 192,000원가 제시돼 밸류에이션 여력을 확인할 수 있습니다.",
@@ -88651,10 +88356,11 @@
         ]
       },
       "sectorCycle": {
-        "summary": "건설기계 사업 부문은 신흥 시장에서 금광 개발 수요 확대에 힘입어 큰 폭의 수요 성장 흐름이 이어졌고, 선진 시장의 회복세도 긍정적으로 작용하며 매출 성장세가 지속되고 있다.",
+        "summary": "[NDR 후기] 통합 법인 출범, 구조적 성장 본..",
         "bullets": [
-          "건설기계 사업 부문은 신흥 시장에서 금광 개발 수요 확대에 힘입어 큰 폭의 수요 성장 흐름이 이어졌고, 선진 시장의 회복세도 긍정적으로 작용하며 매출 성장세가 지속되고 있다.",
-          "국내 시장 기준 최근 2건 리포트의 업황 표현을 정리했습니다."
+          "[NDR 후기] 통합 법인 출범, 구조적 성장 본..",
+          "4Q25 Review: 일회성 비용 다수 반영 HD현대건설기계(HCE)는 4분기 매출액 9,473억원(YoY +20.0%, 이하 YoY), 영업이익 334억원(-5.3%, OPM 3.5%)을 시현했다.",
+          "HD현대인프라코어(HDI)는 4분기 매출액 1조 2,146억원(+29.4%), 영업이익 319억원(흑자전환, OPM 2.6%)을 기록했다."
         ]
       },
       "relatedReports": [
@@ -88699,55 +88405,6 @@
             },
             "month3": {
               "asOfDate": "2026-05-20",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            }
-          }
-        },
-        {
-          "date": "2026-02-09",
-          "ticker": "267270",
-          "name": "HD건설기계",
-          "market": "korea",
-          "broker": "키움증권",
-          "analyst": "",
-          "opinion": "Buy",
-          "targetPrice": 161000,
-          "currentPrice": 147800,
-          "basePrice": 147800,
-          "basePriceDate": "2026-02-09",
-          "upside": 8.9,
-          "sourceUrl": "https://finance.naver.com/research/company_read.naver?nid=90108&page=1",
-          "reportTitle": "지난 부진보다 앞으로 좋아질 것에 주목",
-          "sourceText": "4분기 매출은 견조하였으나, 이익은 다소 부진 4분기 실적은 각각 HCE 매출 9,473억원(yoy +20%), 영업이익 334억원(yoy -5.2%, OPM 3.5%), HDI 매출 1조 2,146억원(yoy +29.4%), 영업이익 318억원(흑자전환, OPM 2.6%)를 달성하였다. 건설기계 사업 부문은 신흥 시장에서 금광 개발 수요 확대에 힘입어 큰 폭의 수요 성장 흐름이 이어졌고, 선진 시장의 회복세도 긍정적으로 작용하며 매출 성장세가 지속되고 있다. 엔진 사업 부문 역시 발전용 엔진 수출 및 방산용 엔진의 수요 증가의 영향으로 견조한 매출 성장세가 나타났다. 다만, 수익성 측면에서 HCE와 HDI에서 각각 219억원, 280억원의 일회성 비용이 반영되며 이익 개선폭은 제한적이었다. 일회성 비용은 합병에 따른 중국 사업의 구조조정과 충당금 설정 기준의 변경이 주요 요인으로 파악된다.",
-          "reasonSummary": "지난 부진보다 앞으로 좋아질 것에 주목. 키움증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 8.9%입니다. 2026-02-09 종가 대비 목표가 괴리는 8.9%입니다.",
-          "reasonBullets": [
-            "키움증권가 2026-02-09에 Buy 의견과 목표가를 제시했습니다.",
-            "현재가 147,800원 대비 목표가는 161,000원입니다.",
-            "2026-02-09 종가 147,800원 대비 괴리는 8.9%입니다."
-          ],
-          "performance": {
-            "week1": {
-              "asOfDate": "2026-02-16",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "unavailable"
-            },
-            "month1": {
-              "asOfDate": "2026-03-11",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "unavailable"
-            },
-            "month3": {
-              "asOfDate": "2026-05-10",
               "closePrice": 0,
               "returnPct": 0,
               "targetProgressPct": 0,
@@ -95326,8 +94983,8 @@
       "latestTargetPrice": 7000,
       "latestCurrentPrice": 5070,
       "latestBasePrice": 5070,
-      "avgUpside": 33.2,
-      "reportCount": 2,
+      "avgUpside": 38.1,
+      "reportCount": 1,
       "reasonSummary": "신제품 출시 비용에 의한 실적 둔화. 하나증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 38.1%입니다. 2026-02-10 종가 대비 목표가 괴리는 38.1%입니다.",
       "reasonBullets": [
         "하나증권가 2026-02-10에 Buy 의견과 목표가를 제시했습니다.",
@@ -95346,8 +95003,7 @@
         "summary": "혼재 신호입니다. 리포트 원문에서 추정치 관련 표현을 기준으로 판단했습니다.",
         "bullets": [
           "신제품 출시 비용에 의한 실적 둔화 목표주가 7,000원, 투자의견 매수 유지 SK네트웍스 목표주가 7,000원, 투자의견 매수를 유지한다.",
-          "4분기 실적은 시장 컨센서스를 하회했다.",
-          "배당소득 분리과세 및 자사주 소각 기대됨 지난해 4분기 영업이익 컨센서스를 대폭 하회할 듯 ⇒ 올해 웰니스 로봇 매출 상승 속도에 따라서 수익성 개선 여부가 결정될 것으로 판단됨 지난해 4분기 실적의 경우 K-IFRS 연결기준 매출액 17,055억원(-7.8% YoY, -13.5% QoQ), 영업이익 65억원(-82.3% YoY, -71.0% QoQ)으로 예상되면서 켄센서스를 대폭 하회할 것으로 전망된다."
+          "4분기 실적은 시장 컨센서스를 하회했다."
         ],
         "signal": "mixed"
       },
@@ -95364,7 +95020,7 @@
         "bullets": [
           "신제품 출시 비용에 의한 실적 둔화 목표주가 7,000원, 투자의견 매수 유지 SK네트웍스 목표주가 7,000원, 투자의견 매수를 유지한다.",
           "신제품 출시 비용에 의한 실적 둔화.",
-          "국내 시장 기준 최근 2건 리포트의 업황 표현을 정리했습니다."
+          "국내 시장 기준 최근 1건 리포트의 업황 표현을 정리했습니다."
         ]
       },
       "relatedReports": [
@@ -95409,55 +95065,6 @@
             },
             "month3": {
               "asOfDate": "2026-05-11",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            }
-          }
-        },
-        {
-          "date": "2026-02-09",
-          "ticker": "001740",
-          "name": "SK네트웍스",
-          "market": "korea",
-          "broker": "iM증권",
-          "analyst": "",
-          "opinion": "Buy",
-          "targetPrice": 6500,
-          "currentPrice": 5070,
-          "basePrice": 5070,
-          "basePriceDate": "2026-02-09",
-          "upside": 28.2,
-          "sourceUrl": "https://finance.naver.com/research/company_read.naver?nid=90112&page=1",
-          "reportTitle": "배당소득 분리과세 및 자사주 소각 기대됨",
-          "sourceText": "지난해 4분기 영업이익 컨센서스를 대폭 하회할 듯 ⇒ 올해 웰니스 로봇 매출 상승 속도에 따라서 수익성 개선 여부가 결정될 것으로 판단됨 지난해 4분기 실적의 경우 K-IFRS 연결기준 매출액 17,055억원(-7.8% YoY, -13.5% QoQ), 영업이익 65억원(-82.3% YoY, -71.0% QoQ)으로 예상되면서 켄센서스를 대폭 하회할 것으로 전망된다. 먼저 매출액의 경우 지난해 내내 글로와이드에서는 범용 화학 품목 매출 등을 감소시키는 대신에 수익성 위주 폼목 매출 등을 기반으로 안정적인 수익 창출 등을 도모하고 있기 때문에 전년대비 매출 하락이 불가피 할 것으로 예상된다. 무엇보다 영업이익의 경우 SK인텔릭스에서 웰니스 로보틱스 브랜드 ‘나무엑스’를 출범하면서 지난해 10월 말 웰니스 로봇 A1 등을 출시함에 따라 개발비 뿐만 아니라 마케팅 비용 등이 대폭적으로 증가되면서 부진할 것으로 예상된다. 이러한 웰니스 로봇 A1은 현재 공기청정 기능과 생체 정보 측정이 가능한데, 향후에는 씨큐리티, 뷰티, 명상, 펫케어, 슬립케어 등으로 서비스를 확장해 통합형 웰니스 플랫폼으로 발전시킨다는 계획이기 때문에 개발비용 증가가 당분간 지속될 것으로 예상된다. 이에 따라 향후 관련 매출 상승 속도에 따라서 올해 수익성 개선 여부가 결정될 것으로 판단된다.",
-          "reasonSummary": "배당소득 분리과세 및 자사주 소각 기대됨. iM증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 28.2%입니다. 2026-02-09 종가 대비 목표가 괴리는 28.2%입니다.",
-          "reasonBullets": [
-            "iM증권가 2026-02-09에 Buy 의견과 목표가를 제시했습니다.",
-            "현재가 5,070원 대비 목표가는 6,500원입니다.",
-            "2026-02-09 종가 5,070원 대비 괴리는 28.2%입니다."
-          ],
-          "performance": {
-            "week1": {
-              "asOfDate": "2026-02-16",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "unavailable"
-            },
-            "month1": {
-              "asOfDate": "2026-03-11",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "unavailable"
-            },
-            "month3": {
-              "asOfDate": "2026-05-10",
               "closePrice": 0,
               "returnPct": 0,
               "targetProgressPct": 0,
@@ -96192,8 +95799,8 @@
       "latestTargetPrice": 32000,
       "latestCurrentPrice": 20450,
       "latestBasePrice": 20450,
-      "avgUpside": 49.1,
-      "reportCount": 8,
+      "avgUpside": 46.7,
+      "reportCount": 6,
       "reasonSummary": "한 번은 서프가 나와야. 한화투자증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 56.5%입니다. 2026-02-09 종가 대비 목표가 괴리는 56.5%입니다.",
       "reasonBullets": [
         "한화투자증권가 2026-02-09에 Buy 의견과 목표가를 제시했습니다.",
@@ -96229,7 +95836,7 @@
         "summary": "또한, 동사는 분양과 입주 시즌에 맞물려 미수금 회수 사이클이 재개될 가능성을 감안하면, 차입금 부담 완화와 이에 따른 EPS 상향 여지도 존재한다고 판단한다.",
         "bullets": [
           "또한, 동사는 분양과 입주 시즌에 맞물려 미수금 회수 사이클이 재개될 가능성을 감안하면, 차입금 부담 완화와 이에 따른 EPS 상향 여지도 존재한다고 판단한다.",
-          "국내 시장 기준 최근 8건 리포트의 업황 표현을 정리했습니다."
+          "국내 시장 기준 최근 6건 리포트의 업황 표현을 정리했습니다."
         ]
       },
       "relatedReports": [

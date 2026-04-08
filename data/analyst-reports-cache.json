@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-08T10:38:14.001Z",
+  "generatedAt": "2026-04-08T12:13:05.158Z",
   "maxDays": 365,
   "reports": [
     {
@@ -1787,6 +1787,55 @@
         "IBK투자증권가 2026-04-08에 매수 의견과 목표가를 제시했습니다.",
         "현재가 210,500원 대비 목표가는 350,000원입니다.",
         "2026-04-08 종가 210,500원 대비 괴리는 66.3%입니다."
+      ],
+      "performance": {
+        "week1": {
+          "asOfDate": "2026-04-15",
+          "closePrice": 0,
+          "returnPct": 0,
+          "targetProgressPct": 0,
+          "success": false,
+          "status": "pending"
+        },
+        "month1": {
+          "asOfDate": "2026-05-08",
+          "closePrice": 0,
+          "returnPct": 0,
+          "targetProgressPct": 0,
+          "success": false,
+          "status": "pending"
+        },
+        "month3": {
+          "asOfDate": "2026-07-07",
+          "closePrice": 0,
+          "returnPct": 0,
+          "targetProgressPct": 0,
+          "success": false,
+          "status": "pending"
+        }
+      }
+    },
+    {
+      "date": "2026-04-08",
+      "ticker": "GOOGL",
+      "name": "Alphabet Inc.",
+      "market": "us",
+      "broker": "Needham",
+      "analyst": "Laura Martin",
+      "opinion": "Strong Buy",
+      "targetPrice": 400,
+      "currentPrice": 305.46,
+      "basePrice": 305.46,
+      "basePriceDate": "2026-04-07",
+      "upside": 31,
+      "sourceUrl": "https://stockanalysis.com/stocks/googl/ratings/",
+      "sourceText": "Needham Strong Buy Reiterates. Price target 400 -> 400.",
+      "reportTitle": "Strong Buy -> Strong Buy Reiterates",
+      "reasonSummary": "Strong Buy -> Strong Buy Reiterates. Needham가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 31.0%입니다. 2026-04-07 종가 대비 목표가 괴리는 31%입니다.",
+      "reasonBullets": [
+        "Needham가 2026-04-08에 Strong Buy 의견과 목표가를 제시했습니다.",
+        "현재가 $305.46 대비 목표가는 $400입니다.",
+        "2026-04-07 종가 $305.46 대비 괴리는 31%입니다."
       ],
       "performance": {
         "week1": {
@@ -10665,55 +10714,6 @@
           "targetProgressPct": 0,
           "success": false,
           "status": "unavailable"
-        },
-        "month1": {
-          "asOfDate": "2026-04-26",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "pending"
-        },
-        "month3": {
-          "asOfDate": "2026-06-25",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "pending"
-        }
-      }
-    },
-    {
-      "date": "2026-03-27",
-      "ticker": "GOOGL",
-      "name": "Alphabet Inc.",
-      "market": "us",
-      "broker": "Needham",
-      "analyst": "Laura Martin",
-      "opinion": "Strong Buy",
-      "targetPrice": 400,
-      "currentPrice": 305.46,
-      "basePrice": 274.34,
-      "basePriceDate": "2026-03-27",
-      "upside": 31,
-      "sourceUrl": "https://stockanalysis.com/stocks/googl/ratings/",
-      "sourceText": "Needham Strong Buy Reiterates. Price target 400 -> 400.",
-      "reportTitle": "Strong Buy -> Strong Buy Reiterates",
-      "reasonSummary": "Strong Buy -> Strong Buy Reiterates. Needham가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 31.0%입니다. 2026-03-27 종가 대비 목표가 괴리는 45.8%입니다.",
-      "reasonBullets": [
-        "Needham가 2026-03-27에 Strong Buy 의견과 목표가를 제시했습니다.",
-        "현재가 $305.46 대비 목표가는 $400입니다.",
-        "2026-03-27 종가 $274.34 대비 괴리는 45.8%입니다."
-      ],
-      "performance": {
-        "week1": {
-          "asOfDate": "2026-04-02",
-          "closePrice": 295.77,
-          "returnPct": 7.8,
-          "targetProgressPct": 17.1,
-          "success": false,
-          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-04-26",
@@ -28790,11 +28790,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-20",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
+          "closePrice": 314.98,
+          "returnPct": 3,
+          "targetProgressPct": 15.6,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-03-13",
@@ -28839,11 +28839,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-20",
-          "closePrice": 0,
-          "returnPct": 0,
+          "closePrice": 122.99,
+          "returnPct": -8.1,
           "targetProgressPct": 0,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-03-13",
@@ -28888,11 +28888,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-20",
-          "closePrice": 0,
-          "returnPct": 0,
+          "closePrice": 37.75,
+          "returnPct": -27,
           "targetProgressPct": 0,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-03-13",
@@ -28937,11 +28937,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-20",
-          "closePrice": 0,
-          "returnPct": 0,
+          "closePrice": 37.75,
+          "returnPct": -27,
           "targetProgressPct": 0,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-03-13",
@@ -28986,11 +28986,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-20",
-          "closePrice": 0,
-          "returnPct": 0,
+          "closePrice": 37.75,
+          "returnPct": -27,
           "targetProgressPct": 0,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-03-13",
@@ -29035,11 +29035,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-20",
-          "closePrice": 0,
-          "returnPct": 0,
+          "closePrice": 37.75,
+          "returnPct": -27,
           "targetProgressPct": 0,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-03-13",
@@ -39351,55 +39351,6 @@
     },
     {
       "date": "2026-02-05",
-      "ticker": "GOOGL",
-      "name": "Alphabet Inc.",
-      "market": "us",
-      "broker": "TD Cowen",
-      "analyst": "John Blackledge",
-      "opinion": "Strong Buy",
-      "targetPrice": 365,
-      "currentPrice": 305.46,
-      "basePrice": 331.25,
-      "basePriceDate": "2026-02-05",
-      "upside": 19.5,
-      "sourceUrl": "https://stockanalysis.com/stocks/googl/ratings/",
-      "sourceText": "TD Cowen Strong Buy Maintains. Price target 355 -> 365.",
-      "reportTitle": "Strong Buy -> Strong Buy Maintains",
-      "reasonSummary": "Strong Buy -> Strong Buy Maintains. TD Cowen가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 19.5%입니다. 2026-02-05 종가 대비 목표가 괴리는 10.2%입니다.",
-      "reasonBullets": [
-        "TD Cowen가 2026-02-05에 Strong Buy 의견과 목표가를 제시했습니다.",
-        "현재가 $305.46 대비 목표가는 $365입니다.",
-        "2026-02-05 종가 $331.25 대비 괴리는 10.2%입니다."
-      ],
-      "performance": {
-        "week1": {
-          "asOfDate": "2026-02-12",
-          "closePrice": 309,
-          "returnPct": -6.7,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "complete"
-        },
-        "month1": {
-          "asOfDate": "2026-03-06",
-          "closePrice": 298.52,
-          "returnPct": -9.9,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "complete"
-        },
-        "month3": {
-          "asOfDate": "2026-05-06",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "pending"
-        }
-      }
-    },
-    {
-      "date": "2026-02-05",
       "ticker": "UNH",
       "name": "UnitedHealth Group Incorporated",
       "market": "us",
@@ -48027,6 +47978,305 @@
             },
             "month3": {
               "asOfDate": "2026-05-11",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            }
+          }
+        }
+      ]
+    },
+    "us:GOOGL": {
+      "ticker": "GOOGL",
+      "name": "Alphabet Inc.",
+      "market": "us",
+      "latestReportDate": "2026-04-08",
+      "latestBroker": "Needham",
+      "latestOpinion": "Strong Buy",
+      "latestTargetPrice": 400,
+      "latestCurrentPrice": 305.46,
+      "latestBasePrice": 305.46,
+      "avgUpside": 27.5,
+      "reportCount": 9,
+      "reasonSummary": "Strong Buy -> Strong Buy Reiterates. Needham가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 31.0%입니다. 2026-04-07 종가 대비 목표가 괴리는 31%입니다.",
+      "reasonBullets": [
+        "Needham가 2026-04-08에 Strong Buy 의견과 목표가를 제시했습니다.",
+        "현재가 $305.46 대비 목표가는 $400입니다.",
+        "2026-04-07 종가 $305.46 대비 괴리는 31%입니다."
+      ],
+      "investmentLogic": {
+        "summary": "Strong Buy -> Strong Buy Reiterates",
+        "bullets": [
+          "Strong Buy -> Strong Buy Reiterates",
+          "Strong Buy -> Strong Buy Reiterates Needham Strong Buy Reiterates.",
+          "Price target 400 -> 400."
+        ]
+      },
+      "estimateRevision": {
+        "summary": "유지 신호입니다. 리포트 원문에서 추정치 관련 표현을 기준으로 판단했습니다.",
+        "bullets": [
+          "Strong Buy -> Strong Buy Reiterates Needham Strong Buy Reiterates.",
+          "Price target 400 -> 400.",
+          "Strong Buy -> Strong Buy Reiterates."
+        ],
+        "signal": "flat"
+      },
+      "valuation": {
+        "summary": "현재가 $305.46 대비 목표가 $400가 제시돼 밸류에이션 여력을 확인할 수 있습니다.",
+        "bullets": [
+          "Strong Buy -> Strong Buy Reiterates Needham Strong Buy Reiterates.",
+          "Price target 400 -> 400.",
+          "Strong Buy -> Strong Buy Reiterates."
+        ]
+      },
+      "sectorCycle": {
+        "summary": "Strong Buy -> Strong Buy Reiterates Needham Strong Buy Reiterates.",
+        "bullets": [
+          "Strong Buy -> Strong Buy Reiterates Needham Strong Buy Reiterates.",
+          "Price target 400 -> 400.",
+          "Strong Buy -> Strong Buy Reiterates."
+        ]
+      },
+      "relatedReports": [
+        {
+          "date": "2026-04-08",
+          "ticker": "GOOGL",
+          "name": "Alphabet Inc.",
+          "market": "us",
+          "broker": "Needham",
+          "analyst": "Laura Martin",
+          "opinion": "Strong Buy",
+          "targetPrice": 400,
+          "currentPrice": 305.46,
+          "basePrice": 305.46,
+          "basePriceDate": "2026-04-07",
+          "upside": 31,
+          "sourceUrl": "https://stockanalysis.com/stocks/googl/ratings/",
+          "sourceText": "Needham Strong Buy Reiterates. Price target 400 -> 400.",
+          "reportTitle": "Strong Buy -> Strong Buy Reiterates",
+          "reasonSummary": "Strong Buy -> Strong Buy Reiterates. Needham가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 31.0%입니다. 2026-04-07 종가 대비 목표가 괴리는 31%입니다.",
+          "reasonBullets": [
+            "Needham가 2026-04-08에 Strong Buy 의견과 목표가를 제시했습니다.",
+            "현재가 $305.46 대비 목표가는 $400입니다.",
+            "2026-04-07 종가 $305.46 대비 괴리는 31%입니다."
+          ],
+          "performance": {
+            "week1": {
+              "asOfDate": "2026-04-15",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            },
+            "month1": {
+              "asOfDate": "2026-05-08",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            },
+            "month3": {
+              "asOfDate": "2026-07-07",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            }
+          }
+        },
+        {
+          "date": "2026-04-02",
+          "ticker": "GOOGL",
+          "name": "Alphabet Inc.",
+          "market": "us",
+          "broker": "Wells Fargo",
+          "analyst": "Ken Gawrelski",
+          "opinion": "Buy",
+          "targetPrice": 361,
+          "currentPrice": 305.46,
+          "basePrice": 295.77,
+          "basePriceDate": "2026-04-02",
+          "upside": 18.2,
+          "sourceUrl": "https://stockanalysis.com/stocks/googl/ratings/",
+          "sourceText": "Wells Fargo Buy Maintains. Price target 397 -> 361.",
+          "reportTitle": "Buy -> Buy Maintains",
+          "reasonSummary": "Buy -> Buy Maintains. Wells Fargo가 Buy 의견을 제시했고 현재가 기준 상승여력은 18.2%입니다. 2026-04-02 종가 대비 목표가 괴리는 22.1%입니다.",
+          "reasonBullets": [
+            "Wells Fargo가 2026-04-02에 Buy 의견과 목표가를 제시했습니다.",
+            "현재가 $305.46 대비 목표가는 $361입니다.",
+            "2026-04-02 종가 $295.77 대비 괴리는 22.1%입니다."
+          ],
+          "performance": {
+            "week1": {
+              "asOfDate": "2026-04-09",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            },
+            "month1": {
+              "asOfDate": "2026-05-02",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            },
+            "month3": {
+              "asOfDate": "2026-07-01",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            }
+          }
+        },
+        {
+          "date": "2026-02-19",
+          "ticker": "GOOGL",
+          "name": "Alphabet Inc.",
+          "market": "us",
+          "broker": "Tigress Financial",
+          "analyst": "Ivan Feinseth",
+          "opinion": "Strong Buy",
+          "targetPrice": 415,
+          "currentPrice": 305.46,
+          "basePrice": 302.85,
+          "basePriceDate": "2026-02-19",
+          "upside": 35.9,
+          "sourceUrl": "https://stockanalysis.com/stocks/googl/ratings/",
+          "sourceText": "Tigress Financial Strong Buy Maintains. Price target 280 -> 415.",
+          "reportTitle": "Strong Buy -> Strong Buy Maintains",
+          "reasonSummary": "Strong Buy -> Strong Buy Maintains. Tigress Financial가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 35.9%입니다. 2026-02-19 종가 대비 목표가 괴리는 37%입니다.",
+          "reasonBullets": [
+            "Tigress Financial가 2026-02-19에 Strong Buy 의견과 목표가를 제시했습니다.",
+            "현재가 $305.46 대비 목표가는 $415입니다.",
+            "2026-02-19 종가 $302.85 대비 괴리는 37%입니다."
+          ],
+          "performance": {
+            "week1": {
+              "asOfDate": "2026-02-26",
+              "closePrice": 307.38,
+              "returnPct": 1.5,
+              "targetProgressPct": 4,
+              "success": false,
+              "status": "complete"
+            },
+            "month1": {
+              "asOfDate": "2026-03-20",
+              "closePrice": 301,
+              "returnPct": -0.6,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "complete"
+            },
+            "month3": {
+              "asOfDate": "2026-05-20",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            }
+          }
+        },
+        {
+          "date": "2026-02-13",
+          "ticker": "GOOGL",
+          "name": "Alphabet Inc.",
+          "market": "us",
+          "broker": "Freedom Broker",
+          "analyst": "Saken Ismailov",
+          "opinion": "Strong Buy",
+          "targetPrice": 365,
+          "currentPrice": 305.46,
+          "basePrice": 305.72,
+          "basePriceDate": "2026-02-13",
+          "upside": 19.5,
+          "sourceUrl": "https://stockanalysis.com/stocks/googl/ratings/",
+          "sourceText": "Freedom Broker Strong Buy Maintains. Price target 325 -> 365.",
+          "reportTitle": "Strong Buy -> Strong Buy Maintains",
+          "reasonSummary": "Strong Buy -> Strong Buy Maintains. Freedom Broker가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 19.5%입니다. 2026-02-13 종가 대비 목표가 괴리는 19.4%입니다.",
+          "reasonBullets": [
+            "Freedom Broker가 2026-02-13에 Strong Buy 의견과 목표가를 제시했습니다.",
+            "현재가 $305.46 대비 목표가는 $365입니다.",
+            "2026-02-13 종가 $305.72 대비 괴리는 19.4%입니다."
+          ],
+          "performance": {
+            "week1": {
+              "asOfDate": "2026-02-20",
+              "closePrice": 314.98,
+              "returnPct": 3,
+              "targetProgressPct": 15.6,
+              "success": false,
+              "status": "complete"
+            },
+            "month1": {
+              "asOfDate": "2026-03-13",
+              "closePrice": 302.28,
+              "returnPct": -1.1,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "complete"
+            },
+            "month3": {
+              "asOfDate": "2026-05-14",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            }
+          }
+        },
+        {
+          "date": "2026-02-06",
+          "ticker": "GOOGL",
+          "name": "Alphabet Inc.",
+          "market": "us",
+          "broker": "Citigroup",
+          "analyst": "Ronald Josey",
+          "opinion": "Strong Buy",
+          "targetPrice": 390,
+          "currentPrice": 305.46,
+          "basePrice": 322.86,
+          "basePriceDate": "2026-02-06",
+          "upside": 27.7,
+          "sourceUrl": "https://stockanalysis.com/stocks/googl/ratings/",
+          "sourceText": "Citigroup Strong Buy Maintains. Price target 350 -> 390.",
+          "reportTitle": "Strong Buy -> Strong Buy Maintains",
+          "reasonSummary": "Strong Buy -> Strong Buy Maintains. Citigroup가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 27.7%입니다. 2026-02-06 종가 대비 목표가 괴리는 20.8%입니다.",
+          "reasonBullets": [
+            "Citigroup가 2026-02-06에 Strong Buy 의견과 목표가를 제시했습니다.",
+            "현재가 $305.46 대비 목표가는 $390입니다.",
+            "2026-02-06 종가 $322.86 대비 괴리는 20.8%입니다."
+          ],
+          "performance": {
+            "week1": {
+              "asOfDate": "2026-02-13",
+              "closePrice": 305.72,
+              "returnPct": -5.3,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "complete"
+            },
+            "month1": {
+              "asOfDate": "2026-03-06",
+              "closePrice": 298.52,
+              "returnPct": -7.5,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "complete"
+            },
+            "month3": {
+              "asOfDate": "2026-05-07",
               "closePrice": 0,
               "returnPct": 0,
               "targetProgressPct": 0,
@@ -62474,305 +62724,6 @@
         }
       ]
     },
-    "us:GOOGL": {
-      "ticker": "GOOGL",
-      "name": "Alphabet Inc.",
-      "market": "us",
-      "latestReportDate": "2026-04-02",
-      "latestBroker": "Wells Fargo",
-      "latestOpinion": "Buy",
-      "latestTargetPrice": 361,
-      "latestCurrentPrice": 305.46,
-      "latestBasePrice": 295.77,
-      "avgUpside": 26.7,
-      "reportCount": 10,
-      "reasonSummary": "Buy -> Buy Maintains. Wells Fargo가 Buy 의견을 제시했고 현재가 기준 상승여력은 18.2%입니다. 2026-04-02 종가 대비 목표가 괴리는 22.1%입니다.",
-      "reasonBullets": [
-        "Wells Fargo가 2026-04-02에 Buy 의견과 목표가를 제시했습니다.",
-        "현재가 $305.46 대비 목표가는 $361입니다.",
-        "2026-04-02 종가 $295.77 대비 괴리는 22.1%입니다."
-      ],
-      "investmentLogic": {
-        "summary": "Buy -> Buy Maintains",
-        "bullets": [
-          "Buy -> Buy Maintains",
-          "Buy -> Buy Maintains Wells Fargo Buy Maintains.",
-          "Price target 397 -> 361."
-        ]
-      },
-      "estimateRevision": {
-        "summary": "유지 신호입니다. 리포트 원문에서 추정치 관련 표현을 기준으로 판단했습니다.",
-        "bullets": [
-          "Buy -> Buy Maintains Wells Fargo Buy Maintains.",
-          "Price target 397 -> 361.",
-          "Buy -> Buy Maintains."
-        ],
-        "signal": "flat"
-      },
-      "valuation": {
-        "summary": "현재가 $305.46 대비 목표가 $361가 제시돼 밸류에이션 여력을 확인할 수 있습니다.",
-        "bullets": [
-          "Buy -> Buy Maintains Wells Fargo Buy Maintains.",
-          "Price target 397 -> 361.",
-          "Buy -> Buy Maintains."
-        ]
-      },
-      "sectorCycle": {
-        "summary": "Buy -> Buy Maintains Wells Fargo Buy Maintains.",
-        "bullets": [
-          "Buy -> Buy Maintains Wells Fargo Buy Maintains.",
-          "Price target 397 -> 361.",
-          "Buy -> Buy Maintains."
-        ]
-      },
-      "relatedReports": [
-        {
-          "date": "2026-04-02",
-          "ticker": "GOOGL",
-          "name": "Alphabet Inc.",
-          "market": "us",
-          "broker": "Wells Fargo",
-          "analyst": "Ken Gawrelski",
-          "opinion": "Buy",
-          "targetPrice": 361,
-          "currentPrice": 305.46,
-          "basePrice": 295.77,
-          "basePriceDate": "2026-04-02",
-          "upside": 18.2,
-          "sourceUrl": "https://stockanalysis.com/stocks/googl/ratings/",
-          "sourceText": "Wells Fargo Buy Maintains. Price target 397 -> 361.",
-          "reportTitle": "Buy -> Buy Maintains",
-          "reasonSummary": "Buy -> Buy Maintains. Wells Fargo가 Buy 의견을 제시했고 현재가 기준 상승여력은 18.2%입니다. 2026-04-02 종가 대비 목표가 괴리는 22.1%입니다.",
-          "reasonBullets": [
-            "Wells Fargo가 2026-04-02에 Buy 의견과 목표가를 제시했습니다.",
-            "현재가 $305.46 대비 목표가는 $361입니다.",
-            "2026-04-02 종가 $295.77 대비 괴리는 22.1%입니다."
-          ],
-          "performance": {
-            "week1": {
-              "asOfDate": "2026-04-09",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            },
-            "month1": {
-              "asOfDate": "2026-05-02",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            },
-            "month3": {
-              "asOfDate": "2026-07-01",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            }
-          }
-        },
-        {
-          "date": "2026-03-27",
-          "ticker": "GOOGL",
-          "name": "Alphabet Inc.",
-          "market": "us",
-          "broker": "Needham",
-          "analyst": "Laura Martin",
-          "opinion": "Strong Buy",
-          "targetPrice": 400,
-          "currentPrice": 305.46,
-          "basePrice": 274.34,
-          "basePriceDate": "2026-03-27",
-          "upside": 31,
-          "sourceUrl": "https://stockanalysis.com/stocks/googl/ratings/",
-          "sourceText": "Needham Strong Buy Reiterates. Price target 400 -> 400.",
-          "reportTitle": "Strong Buy -> Strong Buy Reiterates",
-          "reasonSummary": "Strong Buy -> Strong Buy Reiterates. Needham가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 31.0%입니다. 2026-03-27 종가 대비 목표가 괴리는 45.8%입니다.",
-          "reasonBullets": [
-            "Needham가 2026-03-27에 Strong Buy 의견과 목표가를 제시했습니다.",
-            "현재가 $305.46 대비 목표가는 $400입니다.",
-            "2026-03-27 종가 $274.34 대비 괴리는 45.8%입니다."
-          ],
-          "performance": {
-            "week1": {
-              "asOfDate": "2026-04-02",
-              "closePrice": 295.77,
-              "returnPct": 7.8,
-              "targetProgressPct": 17.1,
-              "success": false,
-              "status": "complete"
-            },
-            "month1": {
-              "asOfDate": "2026-04-26",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            },
-            "month3": {
-              "asOfDate": "2026-06-25",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            }
-          }
-        },
-        {
-          "date": "2026-02-19",
-          "ticker": "GOOGL",
-          "name": "Alphabet Inc.",
-          "market": "us",
-          "broker": "Tigress Financial",
-          "analyst": "Ivan Feinseth",
-          "opinion": "Strong Buy",
-          "targetPrice": 415,
-          "currentPrice": 305.46,
-          "basePrice": 302.85,
-          "basePriceDate": "2026-02-19",
-          "upside": 35.9,
-          "sourceUrl": "https://stockanalysis.com/stocks/googl/ratings/",
-          "sourceText": "Tigress Financial Strong Buy Maintains. Price target 280 -> 415.",
-          "reportTitle": "Strong Buy -> Strong Buy Maintains",
-          "reasonSummary": "Strong Buy -> Strong Buy Maintains. Tigress Financial가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 35.9%입니다. 2026-02-19 종가 대비 목표가 괴리는 37%입니다.",
-          "reasonBullets": [
-            "Tigress Financial가 2026-02-19에 Strong Buy 의견과 목표가를 제시했습니다.",
-            "현재가 $305.46 대비 목표가는 $415입니다.",
-            "2026-02-19 종가 $302.85 대비 괴리는 37%입니다."
-          ],
-          "performance": {
-            "week1": {
-              "asOfDate": "2026-02-26",
-              "closePrice": 307.38,
-              "returnPct": 1.5,
-              "targetProgressPct": 4,
-              "success": false,
-              "status": "complete"
-            },
-            "month1": {
-              "asOfDate": "2026-03-20",
-              "closePrice": 301,
-              "returnPct": -0.6,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "complete"
-            },
-            "month3": {
-              "asOfDate": "2026-05-20",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            }
-          }
-        },
-        {
-          "date": "2026-02-13",
-          "ticker": "GOOGL",
-          "name": "Alphabet Inc.",
-          "market": "us",
-          "broker": "Freedom Broker",
-          "analyst": "Saken Ismailov",
-          "opinion": "Strong Buy",
-          "targetPrice": 365,
-          "currentPrice": 305.46,
-          "basePrice": 305.72,
-          "basePriceDate": "2026-02-13",
-          "upside": 19.5,
-          "sourceUrl": "https://stockanalysis.com/stocks/googl/ratings/",
-          "sourceText": "Freedom Broker Strong Buy Maintains. Price target 325 -> 365.",
-          "reportTitle": "Strong Buy -> Strong Buy Maintains",
-          "reasonSummary": "Strong Buy -> Strong Buy Maintains. Freedom Broker가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 19.5%입니다. 2026-02-13 종가 대비 목표가 괴리는 19.4%입니다.",
-          "reasonBullets": [
-            "Freedom Broker가 2026-02-13에 Strong Buy 의견과 목표가를 제시했습니다.",
-            "현재가 $305.46 대비 목표가는 $365입니다.",
-            "2026-02-13 종가 $305.72 대비 괴리는 19.4%입니다."
-          ],
-          "performance": {
-            "week1": {
-              "asOfDate": "2026-02-20",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "unavailable"
-            },
-            "month1": {
-              "asOfDate": "2026-03-13",
-              "closePrice": 302.28,
-              "returnPct": -1.1,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "complete"
-            },
-            "month3": {
-              "asOfDate": "2026-05-14",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            }
-          }
-        },
-        {
-          "date": "2026-02-06",
-          "ticker": "GOOGL",
-          "name": "Alphabet Inc.",
-          "market": "us",
-          "broker": "Citigroup",
-          "analyst": "Ronald Josey",
-          "opinion": "Strong Buy",
-          "targetPrice": 390,
-          "currentPrice": 305.46,
-          "basePrice": 322.86,
-          "basePriceDate": "2026-02-06",
-          "upside": 27.7,
-          "sourceUrl": "https://stockanalysis.com/stocks/googl/ratings/",
-          "sourceText": "Citigroup Strong Buy Maintains. Price target 350 -> 390.",
-          "reportTitle": "Strong Buy -> Strong Buy Maintains",
-          "reasonSummary": "Strong Buy -> Strong Buy Maintains. Citigroup가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 27.7%입니다. 2026-02-06 종가 대비 목표가 괴리는 20.8%입니다.",
-          "reasonBullets": [
-            "Citigroup가 2026-02-06에 Strong Buy 의견과 목표가를 제시했습니다.",
-            "현재가 $305.46 대비 목표가는 $390입니다.",
-            "2026-02-06 종가 $322.86 대비 괴리는 20.8%입니다."
-          ],
-          "performance": {
-            "week1": {
-              "asOfDate": "2026-02-13",
-              "closePrice": 305.72,
-              "returnPct": -5.3,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "complete"
-            },
-            "month1": {
-              "asOfDate": "2026-03-06",
-              "closePrice": 298.52,
-              "returnPct": -7.5,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "complete"
-            },
-            "month3": {
-              "asOfDate": "2026-05-07",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            }
-          }
-        }
-      ]
-    },
     "us:AMZN": {
       "ticker": "AMZN",
       "name": "Amazon.com, Inc.",
@@ -72301,11 +72252,11 @@
           "performance": {
             "week1": {
               "asOfDate": "2026-02-20",
-              "closePrice": 0,
-              "returnPct": 0,
+              "closePrice": 37.75,
+              "returnPct": -27,
               "targetProgressPct": 0,
               "success": false,
-              "status": "unavailable"
+              "status": "complete"
             },
             "month1": {
               "asOfDate": "2026-03-13",
@@ -72350,11 +72301,11 @@
           "performance": {
             "week1": {
               "asOfDate": "2026-02-20",
-              "closePrice": 0,
-              "returnPct": 0,
+              "closePrice": 37.75,
+              "returnPct": -27,
               "targetProgressPct": 0,
               "success": false,
-              "status": "unavailable"
+              "status": "complete"
             },
             "month1": {
               "asOfDate": "2026-03-13",

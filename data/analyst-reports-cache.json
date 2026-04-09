@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-09T12:37:23.050Z",
+  "generatedAt": "2026-04-09T14:01:36.262Z",
   "maxDays": 365,
   "reports": [
     {
@@ -1444,6 +1444,153 @@
         "미래에셋증권가 2026-04-09에 매수 의견과 목표가를 제시했습니다.",
         "현재가 365,500원 대비 목표가는 480,000원입니다.",
         "2026-04-09 종가 365,500원 대비 괴리는 31.3%입니다."
+      ],
+      "performance": {
+        "week1": {
+          "asOfDate": "2026-04-16",
+          "closePrice": 0,
+          "returnPct": 0,
+          "targetProgressPct": 0,
+          "success": false,
+          "status": "pending"
+        },
+        "month1": {
+          "asOfDate": "2026-05-09",
+          "closePrice": 0,
+          "returnPct": 0,
+          "targetProgressPct": 0,
+          "success": false,
+          "status": "pending"
+        },
+        "month3": {
+          "asOfDate": "2026-07-08",
+          "closePrice": 0,
+          "returnPct": 0,
+          "targetProgressPct": 0,
+          "success": false,
+          "status": "pending"
+        }
+      }
+    },
+    {
+      "date": "2026-04-09",
+      "ticker": "META",
+      "name": "Meta Platforms, Inc.",
+      "market": "us",
+      "broker": "Keybanc",
+      "analyst": "Justin Patterson",
+      "opinion": "Buy",
+      "targetPrice": 760,
+      "currentPrice": 612.42,
+      "basePrice": 612.42,
+      "basePriceDate": "2026-04-08",
+      "upside": 24.1,
+      "sourceUrl": "https://stockanalysis.com/stocks/meta/ratings/",
+      "sourceText": "Keybanc Buy Maintains. Price target 855 -> 760.",
+      "reportTitle": "Buy -> Buy Maintains",
+      "reasonSummary": "Buy -> Buy Maintains. Keybanc가 Buy 의견을 제시했고 현재가 기준 상승여력은 24.1%입니다. 2026-04-08 종가 대비 목표가 괴리는 24.1%입니다.",
+      "reasonBullets": [
+        "Keybanc가 2026-04-09에 Buy 의견과 목표가를 제시했습니다.",
+        "현재가 $612.42 대비 목표가는 $760입니다.",
+        "2026-04-08 종가 $612.42 대비 괴리는 24.1%입니다."
+      ],
+      "performance": {
+        "week1": {
+          "asOfDate": "2026-04-16",
+          "closePrice": 0,
+          "returnPct": 0,
+          "targetProgressPct": 0,
+          "success": false,
+          "status": "pending"
+        },
+        "month1": {
+          "asOfDate": "2026-05-09",
+          "closePrice": 0,
+          "returnPct": 0,
+          "targetProgressPct": 0,
+          "success": false,
+          "status": "pending"
+        },
+        "month3": {
+          "asOfDate": "2026-07-08",
+          "closePrice": 0,
+          "returnPct": 0,
+          "targetProgressPct": 0,
+          "success": false,
+          "status": "pending"
+        }
+      }
+    },
+    {
+      "date": "2026-04-09",
+      "ticker": "META",
+      "name": "Meta Platforms, Inc.",
+      "market": "us",
+      "broker": "Rosenblatt",
+      "analyst": "Barton Crockett",
+      "opinion": "Strong Buy",
+      "targetPrice": 1015,
+      "currentPrice": 612.42,
+      "basePrice": 612.42,
+      "basePriceDate": "2026-04-08",
+      "upside": 65.7,
+      "sourceUrl": "https://stockanalysis.com/stocks/meta/ratings/",
+      "sourceText": "Rosenblatt Strong Buy Maintains. Price target 1144 -> 1015.",
+      "reportTitle": "Strong Buy -> Strong Buy Maintains",
+      "reasonSummary": "Strong Buy -> Strong Buy Maintains. Rosenblatt가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 65.7%입니다. 2026-04-08 종가 대비 목표가 괴리는 65.7%입니다.",
+      "reasonBullets": [
+        "Rosenblatt가 2026-04-09에 Strong Buy 의견과 목표가를 제시했습니다.",
+        "현재가 $612.42 대비 목표가는 $1,015입니다.",
+        "2026-04-08 종가 $612.42 대비 괴리는 65.7%입니다."
+      ],
+      "performance": {
+        "week1": {
+          "asOfDate": "2026-04-16",
+          "closePrice": 0,
+          "returnPct": 0,
+          "targetProgressPct": 0,
+          "success": false,
+          "status": "pending"
+        },
+        "month1": {
+          "asOfDate": "2026-05-09",
+          "closePrice": 0,
+          "returnPct": 0,
+          "targetProgressPct": 0,
+          "success": false,
+          "status": "pending"
+        },
+        "month3": {
+          "asOfDate": "2026-07-08",
+          "closePrice": 0,
+          "returnPct": 0,
+          "targetProgressPct": 0,
+          "success": false,
+          "status": "pending"
+        }
+      }
+    },
+    {
+      "date": "2026-04-09",
+      "ticker": "XOM",
+      "name": "Exxon Mobil Corporation",
+      "market": "us",
+      "broker": "Wells Fargo",
+      "analyst": "Sam Margolin",
+      "opinion": "Buy",
+      "targetPrice": 185,
+      "currentPrice": 156.22,
+      "basePrice": 156.22,
+      "basePriceDate": "2026-04-08",
+      "upside": 18.4,
+      "sourceUrl": "https://stockanalysis.com/stocks/xom/ratings/",
+      "sourceText": "Wells Fargo Buy Maintains. Price target 183 -> 185.",
+      "reportTitle": "Buy -> Buy Maintains",
+      "reasonSummary": "Buy -> Buy Maintains. Wells Fargo가 Buy 의견을 제시했고 현재가 기준 상승여력은 18.4%입니다. 2026-04-08 종가 대비 목표가 괴리는 18.4%입니다.",
+      "reasonBullets": [
+        "Wells Fargo가 2026-04-09에 Buy 의견과 목표가를 제시했습니다.",
+        "현재가 $156.22 대비 목표가는 $185입니다.",
+        "2026-04-08 종가 $156.22 대비 괴리는 18.4%입니다."
       ],
       "performance": {
         "week1": {
@@ -9140,10 +9287,10 @@
       ],
       "performance": {
         "week1": {
-          "asOfDate": "2026-04-08",
-          "closePrice": 317.32,
-          "returnPct": 7.3,
-          "targetProgressPct": 33,
+          "asOfDate": "2026-04-09",
+          "closePrice": 312.89,
+          "returnPct": 5.8,
+          "targetProgressPct": 26.2,
           "success": false,
           "status": "complete"
         },
@@ -9189,10 +9336,10 @@
       ],
       "performance": {
         "week1": {
-          "asOfDate": "2026-04-08",
-          "closePrice": 221.25,
-          "returnPct": 5.5,
-          "targetProgressPct": 12.1,
+          "asOfDate": "2026-04-09",
+          "closePrice": 225.25,
+          "returnPct": 7.4,
+          "targetProgressPct": 16.3,
           "success": false,
           "status": "complete"
         },
@@ -9238,10 +9385,10 @@
       ],
       "performance": {
         "week1": {
-          "asOfDate": "2026-04-08",
-          "closePrice": 612.42,
-          "returnPct": 6.6,
-          "targetProgressPct": 19.9,
+          "asOfDate": "2026-04-09",
+          "closePrice": 625.94,
+          "returnPct": 9,
+          "targetProgressPct": 27,
           "success": false,
           "status": "complete"
         },
@@ -25140,55 +25287,6 @@
       }
     },
     {
-      "date": "2026-02-24",
-      "ticker": "XOM",
-      "name": "Exxon Mobil Corporation",
-      "market": "us",
-      "broker": "Wells Fargo",
-      "analyst": "Sam Margolin",
-      "opinion": "Buy",
-      "targetPrice": 183,
-      "currentPrice": 156.22,
-      "basePrice": 149.26,
-      "basePriceDate": "2026-02-24",
-      "upside": 17.1,
-      "sourceUrl": "https://stockanalysis.com/stocks/xom/ratings/",
-      "sourceText": "Wells Fargo Buy Maintains. Price target 156 -> 183.",
-      "reportTitle": "Buy -> Buy Maintains",
-      "reasonSummary": "Buy -> Buy Maintains. Wells Fargo가 Buy 의견을 제시했고 현재가 기준 상승여력은 17.1%입니다. 2026-02-24 종가 대비 목표가 괴리는 22.6%입니다.",
-      "reasonBullets": [
-        "Wells Fargo가 2026-02-24에 Buy 의견과 목표가를 제시했습니다.",
-        "현재가 $156.22 대비 목표가는 $183입니다.",
-        "2026-02-24 종가 $149.26 대비 괴리는 22.6%입니다."
-      ],
-      "performance": {
-        "week1": {
-          "asOfDate": "2026-03-03",
-          "closePrice": 151.83,
-          "returnPct": 1.7,
-          "targetProgressPct": 7.6,
-          "success": false,
-          "status": "complete"
-        },
-        "month1": {
-          "asOfDate": "2026-03-26",
-          "closePrice": 165.43,
-          "returnPct": 10.8,
-          "targetProgressPct": 47.9,
-          "success": false,
-          "status": "complete"
-        },
-        "month3": {
-          "asOfDate": "2026-05-25",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "pending"
-        }
-      }
-    },
-    {
       "date": "2026-02-23",
       "ticker": "105560",
       "name": "KB금융",
@@ -30015,11 +30113,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-20",
-          "closePrice": 314.98,
-          "returnPct": 3,
-          "targetProgressPct": 15.6,
+          "closePrice": 0,
+          "returnPct": 0,
+          "targetProgressPct": 0,
           "success": false,
-          "status": "complete"
+          "status": "unavailable"
         },
         "month1": {
           "asOfDate": "2026-03-13",
@@ -30064,11 +30162,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-20",
-          "closePrice": 122.99,
-          "returnPct": -8.1,
+          "closePrice": 0,
+          "returnPct": 0,
           "targetProgressPct": 0,
           "success": false,
-          "status": "complete"
+          "status": "unavailable"
         },
         "month1": {
           "asOfDate": "2026-03-13",
@@ -30113,11 +30211,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-20",
-          "closePrice": 37.75,
-          "returnPct": -27,
+          "closePrice": 0,
+          "returnPct": 0,
           "targetProgressPct": 0,
           "success": false,
-          "status": "complete"
+          "status": "unavailable"
         },
         "month1": {
           "asOfDate": "2026-03-13",
@@ -30162,11 +30260,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-20",
-          "closePrice": 37.75,
-          "returnPct": -27,
+          "closePrice": 0,
+          "returnPct": 0,
           "targetProgressPct": 0,
           "success": false,
-          "status": "complete"
+          "status": "unavailable"
         },
         "month1": {
           "asOfDate": "2026-03-13",
@@ -30211,11 +30309,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-20",
-          "closePrice": 37.75,
-          "returnPct": -27,
+          "closePrice": 0,
+          "returnPct": 0,
           "targetProgressPct": 0,
           "success": false,
-          "status": "complete"
+          "status": "unavailable"
         },
         "month1": {
           "asOfDate": "2026-03-13",
@@ -30260,11 +30358,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-20",
-          "closePrice": 37.75,
-          "returnPct": -27,
+          "closePrice": 0,
+          "returnPct": 0,
           "targetProgressPct": 0,
           "success": false,
-          "status": "complete"
+          "status": "unavailable"
         },
         "month1": {
           "asOfDate": "2026-03-13",
@@ -32808,11 +32906,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-19",
-          "closePrice": 411.71,
-          "returnPct": -1.3,
+          "closePrice": 0,
+          "returnPct": 0,
           "targetProgressPct": 0,
           "success": false,
-          "status": "complete"
+          "status": "unavailable"
         },
         "month1": {
           "asOfDate": "2026-03-13",
@@ -40968,55 +41066,6 @@
     },
     {
       "date": "2026-01-29",
-      "ticker": "META",
-      "name": "Meta Platforms, Inc.",
-      "market": "us",
-      "broker": "Guggenheim",
-      "analyst": "Michael Morris",
-      "opinion": "Strong Buy",
-      "targetPrice": 850,
-      "currentPrice": 612.42,
-      "basePrice": 738.31,
-      "basePriceDate": "2026-01-29",
-      "upside": 38.8,
-      "sourceUrl": "https://stockanalysis.com/stocks/meta/ratings/",
-      "sourceText": "Guggenheim Strong Buy Maintains. Price target 800 -> 850.",
-      "reportTitle": "Strong Buy -> Strong Buy Maintains",
-      "reasonSummary": "Strong Buy -> Strong Buy Maintains. Guggenheim가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 38.8%입니다. 2026-01-29 종가 대비 목표가 괴리는 15.1%입니다.",
-      "reasonBullets": [
-        "Guggenheim가 2026-01-29에 Strong Buy 의견과 목표가를 제시했습니다.",
-        "현재가 $612.42 대비 목표가는 $850입니다.",
-        "2026-01-29 종가 $738.31 대비 괴리는 15.1%입니다."
-      ],
-      "performance": {
-        "week1": {
-          "asOfDate": "2026-02-05",
-          "closePrice": 670.21,
-          "returnPct": -9.2,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "complete"
-        },
-        "month1": {
-          "asOfDate": "2026-02-27",
-          "closePrice": 648.18,
-          "returnPct": -12.2,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "complete"
-        },
-        "month3": {
-          "asOfDate": "2026-04-29",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "pending"
-        }
-      }
-    },
-    {
-      "date": "2026-01-29",
       "ticker": "TSLA",
       "name": "Tesla, Inc.",
       "market": "us",
@@ -41726,11 +41775,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2025-12-24",
-          "closePrice": 0,
-          "returnPct": 0,
+          "closePrice": 144.49,
+          "returnPct": -2.2,
           "targetProgressPct": 0,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-01-16",
@@ -41873,11 +41922,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2025-12-15",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
+          "closePrice": 346.89,
+          "returnPct": 6.1,
+          "targetProgressPct": 32.3,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-01-07",
@@ -41922,11 +41971,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2025-11-14",
-          "closePrice": 0,
-          "returnPct": 0,
+          "closePrice": 59.09,
+          "returnPct": -1.5,
           "targetProgressPct": 0,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2025-12-05",
@@ -41971,11 +42020,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2025-11-05",
-          "closePrice": 0,
-          "returnPct": 0,
+          "closePrice": 340.04,
+          "returnPct": -0.4,
           "targetProgressPct": 0,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2025-11-28",
@@ -42020,11 +42069,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2025-10-29",
-          "closePrice": 0,
-          "returnPct": 0,
+          "closePrice": 341.28,
+          "returnPct": -1.2,
           "targetProgressPct": 0,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2025-11-21",
@@ -42069,11 +42118,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2025-10-27",
-          "closePrice": 0,
-          "returnPct": 0,
+          "closePrice": 151.74,
+          "returnPct": -0.1,
           "targetProgressPct": 0,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2025-11-19",
@@ -42118,11 +42167,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2025-10-14",
-          "closePrice": 0,
-          "returnPct": 0,
+          "closePrice": 302.08,
+          "returnPct": -1.8,
           "targetProgressPct": 0,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2025-11-06",
@@ -47211,6 +47260,555 @@
         }
       ]
     },
+    "us:META": {
+      "ticker": "META",
+      "name": "Meta Platforms, Inc.",
+      "market": "us",
+      "latestReportDate": "2026-04-09",
+      "latestBroker": "Keybanc",
+      "latestOpinion": "Buy",
+      "latestTargetPrice": 760,
+      "latestCurrentPrice": 612.42,
+      "latestBasePrice": 612.42,
+      "avgUpside": 38.7,
+      "reportCount": 13,
+      "reasonSummary": "Buy -> Buy Maintains. Keybanc가 Buy 의견을 제시했고 현재가 기준 상승여력은 24.1%입니다. 2026-04-08 종가 대비 목표가 괴리는 24.1%입니다.",
+      "reasonBullets": [
+        "Keybanc가 2026-04-09에 Buy 의견과 목표가를 제시했습니다.",
+        "현재가 $612.42 대비 목표가는 $760입니다.",
+        "2026-04-08 종가 $612.42 대비 괴리는 24.1%입니다."
+      ],
+      "investmentLogic": {
+        "summary": "Buy -> Buy Maintains",
+        "bullets": [
+          "Buy -> Buy Maintains",
+          "Buy -> Buy Maintains Keybanc Buy Maintains.",
+          "Price target 855 -> 760."
+        ]
+      },
+      "estimateRevision": {
+        "summary": "유지 신호입니다. 리포트 원문에서 추정치 관련 표현을 기준으로 판단했습니다.",
+        "bullets": [
+          "Buy -> Buy Maintains Keybanc Buy Maintains.",
+          "Price target 855 -> 760.",
+          "Buy -> Buy Maintains."
+        ],
+        "signal": "flat"
+      },
+      "valuation": {
+        "summary": "현재가 $612.42 대비 목표가 $760가 제시돼 밸류에이션 여력을 확인할 수 있습니다.",
+        "bullets": [
+          "Buy -> Buy Maintains Piper Sandler Buy Maintains.",
+          "Piper Sandler가 Buy 의견을 제시했고 현재가 기준 상승여력은 43.7%입니다.",
+          "현재가 대비 목표가 상승여력은 24.1%입니다."
+        ]
+      },
+      "sectorCycle": {
+        "summary": "Buy -> Buy Maintains Keybanc Buy Maintains.",
+        "bullets": [
+          "Buy -> Buy Maintains Keybanc Buy Maintains.",
+          "Price target 855 -> 760.",
+          "Buy -> Buy Maintains."
+        ]
+      },
+      "relatedReports": [
+        {
+          "date": "2026-04-09",
+          "ticker": "META",
+          "name": "Meta Platforms, Inc.",
+          "market": "us",
+          "broker": "Keybanc",
+          "analyst": "Justin Patterson",
+          "opinion": "Buy",
+          "targetPrice": 760,
+          "currentPrice": 612.42,
+          "basePrice": 612.42,
+          "basePriceDate": "2026-04-08",
+          "upside": 24.1,
+          "sourceUrl": "https://stockanalysis.com/stocks/meta/ratings/",
+          "sourceText": "Keybanc Buy Maintains. Price target 855 -> 760.",
+          "reportTitle": "Buy -> Buy Maintains",
+          "reasonSummary": "Buy -> Buy Maintains. Keybanc가 Buy 의견을 제시했고 현재가 기준 상승여력은 24.1%입니다. 2026-04-08 종가 대비 목표가 괴리는 24.1%입니다.",
+          "reasonBullets": [
+            "Keybanc가 2026-04-09에 Buy 의견과 목표가를 제시했습니다.",
+            "현재가 $612.42 대비 목표가는 $760입니다.",
+            "2026-04-08 종가 $612.42 대비 괴리는 24.1%입니다."
+          ],
+          "performance": {
+            "week1": {
+              "asOfDate": "2026-04-16",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            },
+            "month1": {
+              "asOfDate": "2026-05-09",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            },
+            "month3": {
+              "asOfDate": "2026-07-08",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            }
+          }
+        },
+        {
+          "date": "2026-04-09",
+          "ticker": "META",
+          "name": "Meta Platforms, Inc.",
+          "market": "us",
+          "broker": "Rosenblatt",
+          "analyst": "Barton Crockett",
+          "opinion": "Strong Buy",
+          "targetPrice": 1015,
+          "currentPrice": 612.42,
+          "basePrice": 612.42,
+          "basePriceDate": "2026-04-08",
+          "upside": 65.7,
+          "sourceUrl": "https://stockanalysis.com/stocks/meta/ratings/",
+          "sourceText": "Rosenblatt Strong Buy Maintains. Price target 1144 -> 1015.",
+          "reportTitle": "Strong Buy -> Strong Buy Maintains",
+          "reasonSummary": "Strong Buy -> Strong Buy Maintains. Rosenblatt가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 65.7%입니다. 2026-04-08 종가 대비 목표가 괴리는 65.7%입니다.",
+          "reasonBullets": [
+            "Rosenblatt가 2026-04-09에 Strong Buy 의견과 목표가를 제시했습니다.",
+            "현재가 $612.42 대비 목표가는 $1,015입니다.",
+            "2026-04-08 종가 $612.42 대비 괴리는 65.7%입니다."
+          ],
+          "performance": {
+            "week1": {
+              "asOfDate": "2026-04-16",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            },
+            "month1": {
+              "asOfDate": "2026-05-09",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            },
+            "month3": {
+              "asOfDate": "2026-07-08",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            }
+          }
+        },
+        {
+          "date": "2026-04-02",
+          "ticker": "META",
+          "name": "Meta Platforms, Inc.",
+          "market": "us",
+          "broker": "Wells Fargo",
+          "analyst": "Ken Gawrelski",
+          "opinion": "Buy",
+          "targetPrice": 765,
+          "currentPrice": 612.42,
+          "basePrice": 574.46,
+          "basePriceDate": "2026-04-02",
+          "upside": 24.9,
+          "sourceUrl": "https://stockanalysis.com/stocks/meta/ratings/",
+          "sourceText": "Wells Fargo Buy Maintains. Price target 856 -> 765.",
+          "reportTitle": "Buy -> Buy Maintains",
+          "reasonSummary": "Buy -> Buy Maintains. Wells Fargo가 Buy 의견을 제시했고 현재가 기준 상승여력은 24.9%입니다. 2026-04-02 종가 대비 목표가 괴리는 33.2%입니다.",
+          "reasonBullets": [
+            "Wells Fargo가 2026-04-02에 Buy 의견과 목표가를 제시했습니다.",
+            "현재가 $612.42 대비 목표가는 $765입니다.",
+            "2026-04-02 종가 $574.46 대비 괴리는 33.2%입니다."
+          ],
+          "performance": {
+            "week1": {
+              "asOfDate": "2026-04-09",
+              "closePrice": 625.94,
+              "returnPct": 9,
+              "targetProgressPct": 27,
+              "success": false,
+              "status": "complete"
+            },
+            "month1": {
+              "asOfDate": "2026-05-02",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            },
+            "month3": {
+              "asOfDate": "2026-07-01",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            }
+          }
+        },
+        {
+          "date": "2026-03-30",
+          "ticker": "META",
+          "name": "Meta Platforms, Inc.",
+          "market": "us",
+          "broker": "Morgan Stanley",
+          "analyst": "Brian Nowak",
+          "opinion": "Buy",
+          "targetPrice": 775,
+          "currentPrice": 612.42,
+          "basePrice": 536.38,
+          "basePriceDate": "2026-03-30",
+          "upside": 26.5,
+          "sourceUrl": "https://stockanalysis.com/stocks/meta/ratings/",
+          "sourceText": "Morgan Stanley Buy Maintains. Price target 825 -> 775.",
+          "reportTitle": "Buy -> Buy Maintains",
+          "reasonSummary": "Buy -> Buy Maintains. Morgan Stanley가 Buy 의견을 제시했고 현재가 기준 상승여력은 26.5%입니다. 2026-03-30 종가 대비 목표가 괴리는 44.5%입니다.",
+          "reasonBullets": [
+            "Morgan Stanley가 2026-03-30에 Buy 의견과 목표가를 제시했습니다.",
+            "현재가 $612.42 대비 목표가는 $775입니다.",
+            "2026-03-30 종가 $536.38 대비 괴리는 44.5%입니다."
+          ],
+          "performance": {
+            "week1": {
+              "asOfDate": "2026-04-06",
+              "closePrice": 573.02,
+              "returnPct": 6.8,
+              "targetProgressPct": 15.4,
+              "success": false,
+              "status": "complete"
+            },
+            "month1": {
+              "asOfDate": "2026-04-29",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            },
+            "month3": {
+              "asOfDate": "2026-06-28",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            }
+          }
+        },
+        {
+          "date": "2026-03-18",
+          "ticker": "META",
+          "name": "Meta Platforms, Inc.",
+          "market": "us",
+          "broker": "Tigress Financial",
+          "analyst": "Ivan Feinseth",
+          "opinion": "Strong Buy",
+          "targetPrice": 945,
+          "currentPrice": 612.42,
+          "basePrice": 615.68,
+          "basePriceDate": "2026-03-18",
+          "upside": 54.3,
+          "sourceUrl": "https://stockanalysis.com/stocks/meta/ratings/",
+          "sourceText": "Tigress Financial Strong Buy Maintains. Price target 935 -> 945.",
+          "reportTitle": "Strong Buy -> Strong Buy Maintains",
+          "reasonSummary": "Strong Buy -> Strong Buy Maintains. Tigress Financial가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 54.3%입니다. 2026-03-18 종가 대비 목표가 괴리는 53.5%입니다.",
+          "reasonBullets": [
+            "Tigress Financial가 2026-03-18에 Strong Buy 의견과 목표가를 제시했습니다.",
+            "현재가 $612.42 대비 목표가는 $945입니다.",
+            "2026-03-18 종가 $615.68 대비 괴리는 53.5%입니다."
+          ],
+          "performance": {
+            "week1": {
+              "asOfDate": "2026-03-25",
+              "closePrice": 594.89,
+              "returnPct": -3.4,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "complete"
+            },
+            "month1": {
+              "asOfDate": "2026-04-17",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            },
+            "month3": {
+              "asOfDate": "2026-06-16",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            }
+          }
+        }
+      ]
+    },
+    "us:XOM": {
+      "ticker": "XOM",
+      "name": "Exxon Mobil Corporation",
+      "market": "us",
+      "latestReportDate": "2026-04-09",
+      "latestBroker": "Wells Fargo",
+      "latestOpinion": "Buy",
+      "latestTargetPrice": 185,
+      "latestCurrentPrice": 156.22,
+      "latestBasePrice": 156.22,
+      "avgUpside": 13,
+      "reportCount": 4,
+      "reasonSummary": "Buy -> Buy Maintains. Wells Fargo가 Buy 의견을 제시했고 현재가 기준 상승여력은 18.4%입니다. 2026-04-08 종가 대비 목표가 괴리는 18.4%입니다.",
+      "reasonBullets": [
+        "Wells Fargo가 2026-04-09에 Buy 의견과 목표가를 제시했습니다.",
+        "현재가 $156.22 대비 목표가는 $185입니다.",
+        "2026-04-08 종가 $156.22 대비 괴리는 18.4%입니다."
+      ],
+      "investmentLogic": {
+        "summary": "Buy -> Buy Maintains",
+        "bullets": [
+          "Buy -> Buy Maintains",
+          "Buy -> Buy Maintains Wells Fargo Buy Maintains.",
+          "Price target 183 -> 185."
+        ]
+      },
+      "estimateRevision": {
+        "summary": "유지 신호입니다. 리포트 원문에서 추정치 관련 표현을 기준으로 판단했습니다.",
+        "bullets": [
+          "Buy -> Buy Maintains Wells Fargo Buy Maintains.",
+          "Price target 183 -> 185.",
+          "Buy -> Buy Maintains."
+        ],
+        "signal": "flat"
+      },
+      "valuation": {
+        "summary": "현재가 $156.22 대비 목표가 $185가 제시돼 밸류에이션 여력을 확인할 수 있습니다.",
+        "bullets": [
+          "Buy -> Buy Maintains Piper Sandler Buy Maintains.",
+          "Piper Sandler가 Buy 의견을 제시했고 현재가 기준 상승여력은 19.1%입니다.",
+          "현재가 대비 목표가 상승여력은 18.4%입니다."
+        ]
+      },
+      "sectorCycle": {
+        "summary": "Buy -> Buy Maintains Wells Fargo Buy Maintains.",
+        "bullets": [
+          "Buy -> Buy Maintains Wells Fargo Buy Maintains.",
+          "Price target 183 -> 185.",
+          "Buy -> Buy Maintains."
+        ]
+      },
+      "relatedReports": [
+        {
+          "date": "2026-04-09",
+          "ticker": "XOM",
+          "name": "Exxon Mobil Corporation",
+          "market": "us",
+          "broker": "Wells Fargo",
+          "analyst": "Sam Margolin",
+          "opinion": "Buy",
+          "targetPrice": 185,
+          "currentPrice": 156.22,
+          "basePrice": 156.22,
+          "basePriceDate": "2026-04-08",
+          "upside": 18.4,
+          "sourceUrl": "https://stockanalysis.com/stocks/xom/ratings/",
+          "sourceText": "Wells Fargo Buy Maintains. Price target 183 -> 185.",
+          "reportTitle": "Buy -> Buy Maintains",
+          "reasonSummary": "Buy -> Buy Maintains. Wells Fargo가 Buy 의견을 제시했고 현재가 기준 상승여력은 18.4%입니다. 2026-04-08 종가 대비 목표가 괴리는 18.4%입니다.",
+          "reasonBullets": [
+            "Wells Fargo가 2026-04-09에 Buy 의견과 목표가를 제시했습니다.",
+            "현재가 $156.22 대비 목표가는 $185입니다.",
+            "2026-04-08 종가 $156.22 대비 괴리는 18.4%입니다."
+          ],
+          "performance": {
+            "week1": {
+              "asOfDate": "2026-04-16",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            },
+            "month1": {
+              "asOfDate": "2026-05-09",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            },
+            "month3": {
+              "asOfDate": "2026-07-08",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            }
+          }
+        },
+        {
+          "date": "2026-03-27",
+          "ticker": "XOM",
+          "name": "Exxon Mobil Corporation",
+          "market": "us",
+          "broker": "Morgan Stanley",
+          "analyst": "Devin McDermott",
+          "opinion": "Buy",
+          "targetPrice": 172,
+          "currentPrice": 156.22,
+          "basePrice": 170.99,
+          "basePriceDate": "2026-03-27",
+          "upside": 10.1,
+          "sourceUrl": "https://stockanalysis.com/stocks/xom/ratings/",
+          "sourceText": "Morgan Stanley Buy Maintains. Price target 134 -> 172.",
+          "reportTitle": "Buy -> Buy Maintains",
+          "reasonSummary": "Buy -> Buy Maintains. Morgan Stanley가 Buy 의견을 제시했고 현재가 기준 상승여력은 10.1%입니다. 2026-03-27 종가 대비 목표가 괴리는 0.6%입니다.",
+          "reasonBullets": [
+            "Morgan Stanley가 2026-03-27에 Buy 의견과 목표가를 제시했습니다.",
+            "현재가 $156.22 대비 목표가는 $172입니다.",
+            "2026-03-27 종가 $170.99 대비 괴리는 0.6%입니다."
+          ],
+          "performance": {
+            "week1": {
+              "asOfDate": "2026-04-02",
+              "closePrice": 160.69,
+              "returnPct": -6,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "complete"
+            },
+            "month1": {
+              "asOfDate": "2026-04-26",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            },
+            "month3": {
+              "asOfDate": "2026-06-25",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            }
+          }
+        },
+        {
+          "date": "2026-03-16",
+          "ticker": "XOM",
+          "name": "Exxon Mobil Corporation",
+          "market": "us",
+          "broker": "Barclays",
+          "analyst": "Betty Jiang",
+          "opinion": "Buy",
+          "targetPrice": 163,
+          "currentPrice": 156.22,
+          "basePrice": 157.23,
+          "basePriceDate": "2026-03-16",
+          "upside": 4.3,
+          "sourceUrl": "https://stockanalysis.com/stocks/xom/ratings/",
+          "sourceText": "Barclays Buy Maintains. Price target 145 -> 163.",
+          "reportTitle": "Buy -> Buy Maintains",
+          "reasonSummary": "Buy -> Buy Maintains. Barclays가 Buy 의견을 제시했고 현재가 기준 상승여력은 4.3%입니다. 2026-03-16 종가 대비 목표가 괴리는 3.7%입니다.",
+          "reasonBullets": [
+            "Barclays가 2026-03-16에 Buy 의견과 목표가를 제시했습니다.",
+            "현재가 $156.22 대비 목표가는 $163입니다.",
+            "2026-03-16 종가 $157.23 대비 괴리는 3.7%입니다."
+          ],
+          "performance": {
+            "week1": {
+              "asOfDate": "2026-03-23",
+              "closePrice": 161.13,
+              "returnPct": 2.5,
+              "targetProgressPct": 67.6,
+              "success": false,
+              "status": "complete"
+            },
+            "month1": {
+              "asOfDate": "2026-04-15",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            },
+            "month3": {
+              "asOfDate": "2026-06-14",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            }
+          }
+        },
+        {
+          "date": "2026-03-12",
+          "ticker": "XOM",
+          "name": "Exxon Mobil Corporation",
+          "market": "us",
+          "broker": "Piper Sandler",
+          "analyst": "Ryan Todd",
+          "opinion": "Buy",
+          "targetPrice": 186,
+          "currentPrice": 156.22,
+          "basePrice": 153.53,
+          "basePriceDate": "2026-03-12",
+          "upside": 19.1,
+          "sourceUrl": "https://stockanalysis.com/stocks/xom/ratings/",
+          "sourceText": "Piper Sandler Buy Maintains. Price target 145 -> 186.",
+          "reportTitle": "Buy -> Buy Maintains",
+          "reasonSummary": "Buy -> Buy Maintains. Piper Sandler가 Buy 의견을 제시했고 현재가 기준 상승여력은 19.1%입니다. 2026-03-12 종가 대비 목표가 괴리는 21.1%입니다.",
+          "reasonBullets": [
+            "Piper Sandler가 2026-03-12에 Buy 의견과 목표가를 제시했습니다.",
+            "현재가 $156.22 대비 목표가는 $186입니다.",
+            "2026-03-12 종가 $153.53 대비 괴리는 21.1%입니다."
+          ],
+          "performance": {
+            "week1": {
+              "asOfDate": "2026-03-19",
+              "closePrice": 158.16,
+              "returnPct": 3,
+              "targetProgressPct": 14.3,
+              "success": false,
+              "status": "complete"
+            },
+            "month1": {
+              "asOfDate": "2026-04-11",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            },
+            "month3": {
+              "asOfDate": "2026-06-10",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            }
+          }
+        }
+      ]
+    },
     "korea:373220": {
       "ticker": "373220",
       "name": "LG에너지솔루션",
@@ -51582,10 +52180,10 @@
           ],
           "performance": {
             "week1": {
-              "asOfDate": "2026-04-08",
-              "closePrice": 317.32,
-              "returnPct": 7.3,
-              "targetProgressPct": 33,
+              "asOfDate": "2026-04-09",
+              "closePrice": 312.89,
+              "returnPct": 5.8,
+              "targetProgressPct": 26.2,
               "success": false,
               "status": "complete"
             },
@@ -51681,11 +52279,11 @@
           "performance": {
             "week1": {
               "asOfDate": "2026-02-20",
-              "closePrice": 314.98,
-              "returnPct": 3,
-              "targetProgressPct": 15.6,
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
               "success": false,
-              "status": "complete"
+              "status": "unavailable"
             },
             "month1": {
               "asOfDate": "2026-03-13",
@@ -51832,10 +52430,10 @@
           ],
           "performance": {
             "week1": {
-              "asOfDate": "2026-04-08",
-              "closePrice": 221.25,
-              "returnPct": 5.5,
-              "targetProgressPct": 12.1,
+              "asOfDate": "2026-04-09",
+              "closePrice": 225.25,
+              "returnPct": 7.4,
+              "targetProgressPct": 16.3,
               "success": false,
               "status": "complete"
             },
@@ -52578,11 +53176,11 @@
           "performance": {
             "week1": {
               "asOfDate": "2025-12-24",
-              "closePrice": 0,
-              "returnPct": 0,
+              "closePrice": 144.49,
+              "returnPct": -2.2,
               "targetProgressPct": 0,
               "success": false,
-              "status": "unavailable"
+              "status": "complete"
             },
             "month1": {
               "asOfDate": "2026-01-16",
@@ -61153,11 +61751,11 @@
           "performance": {
             "week1": {
               "asOfDate": "2026-02-19",
-              "closePrice": 411.71,
-              "returnPct": -1.3,
+              "closePrice": 0,
+              "returnPct": 0,
               "targetProgressPct": 0,
               "success": false,
-              "status": "complete"
+              "status": "unavailable"
             },
             "month1": {
               "asOfDate": "2026-03-13",
@@ -65434,305 +66032,6 @@
             },
             "month3": {
               "asOfDate": "2026-06-17",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            }
-          }
-        }
-      ]
-    },
-    "us:META": {
-      "ticker": "META",
-      "name": "Meta Platforms, Inc.",
-      "market": "us",
-      "latestReportDate": "2026-04-02",
-      "latestBroker": "Wells Fargo",
-      "latestOpinion": "Buy",
-      "latestTargetPrice": 765,
-      "latestCurrentPrice": 612.42,
-      "latestBasePrice": 574.46,
-      "avgUpside": 37.7,
-      "reportCount": 12,
-      "reasonSummary": "Buy -> Buy Maintains. Wells Fargo가 Buy 의견을 제시했고 현재가 기준 상승여력은 24.9%입니다. 2026-04-02 종가 대비 목표가 괴리는 33.2%입니다.",
-      "reasonBullets": [
-        "Wells Fargo가 2026-04-02에 Buy 의견과 목표가를 제시했습니다.",
-        "현재가 $612.42 대비 목표가는 $765입니다.",
-        "2026-04-02 종가 $574.46 대비 괴리는 33.2%입니다."
-      ],
-      "investmentLogic": {
-        "summary": "Buy -> Buy Maintains",
-        "bullets": [
-          "Buy -> Buy Maintains",
-          "Buy -> Buy Maintains Wells Fargo Buy Maintains.",
-          "Price target 856 -> 765."
-        ]
-      },
-      "estimateRevision": {
-        "summary": "유지 신호입니다. 리포트 원문에서 추정치 관련 표현을 기준으로 판단했습니다.",
-        "bullets": [
-          "Buy -> Buy Maintains Wells Fargo Buy Maintains.",
-          "Price target 856 -> 765.",
-          "Buy -> Buy Maintains."
-        ],
-        "signal": "flat"
-      },
-      "valuation": {
-        "summary": "현재가 $612.42 대비 목표가 $765가 제시돼 밸류에이션 여력을 확인할 수 있습니다.",
-        "bullets": [
-          "Buy -> Buy Maintains Piper Sandler Buy Maintains.",
-          "Piper Sandler가 Buy 의견을 제시했고 현재가 기준 상승여력은 43.7%입니다.",
-          "현재가 대비 목표가 상승여력은 24.9%입니다."
-        ]
-      },
-      "sectorCycle": {
-        "summary": "Buy -> Buy Maintains Wells Fargo Buy Maintains.",
-        "bullets": [
-          "Buy -> Buy Maintains Wells Fargo Buy Maintains.",
-          "Price target 856 -> 765.",
-          "Buy -> Buy Maintains."
-        ]
-      },
-      "relatedReports": [
-        {
-          "date": "2026-04-02",
-          "ticker": "META",
-          "name": "Meta Platforms, Inc.",
-          "market": "us",
-          "broker": "Wells Fargo",
-          "analyst": "Ken Gawrelski",
-          "opinion": "Buy",
-          "targetPrice": 765,
-          "currentPrice": 612.42,
-          "basePrice": 574.46,
-          "basePriceDate": "2026-04-02",
-          "upside": 24.9,
-          "sourceUrl": "https://stockanalysis.com/stocks/meta/ratings/",
-          "sourceText": "Wells Fargo Buy Maintains. Price target 856 -> 765.",
-          "reportTitle": "Buy -> Buy Maintains",
-          "reasonSummary": "Buy -> Buy Maintains. Wells Fargo가 Buy 의견을 제시했고 현재가 기준 상승여력은 24.9%입니다. 2026-04-02 종가 대비 목표가 괴리는 33.2%입니다.",
-          "reasonBullets": [
-            "Wells Fargo가 2026-04-02에 Buy 의견과 목표가를 제시했습니다.",
-            "현재가 $612.42 대비 목표가는 $765입니다.",
-            "2026-04-02 종가 $574.46 대비 괴리는 33.2%입니다."
-          ],
-          "performance": {
-            "week1": {
-              "asOfDate": "2026-04-08",
-              "closePrice": 612.42,
-              "returnPct": 6.6,
-              "targetProgressPct": 19.9,
-              "success": false,
-              "status": "complete"
-            },
-            "month1": {
-              "asOfDate": "2026-05-02",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            },
-            "month3": {
-              "asOfDate": "2026-07-01",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            }
-          }
-        },
-        {
-          "date": "2026-03-30",
-          "ticker": "META",
-          "name": "Meta Platforms, Inc.",
-          "market": "us",
-          "broker": "Morgan Stanley",
-          "analyst": "Brian Nowak",
-          "opinion": "Buy",
-          "targetPrice": 775,
-          "currentPrice": 612.42,
-          "basePrice": 536.38,
-          "basePriceDate": "2026-03-30",
-          "upside": 26.5,
-          "sourceUrl": "https://stockanalysis.com/stocks/meta/ratings/",
-          "sourceText": "Morgan Stanley Buy Maintains. Price target 825 -> 775.",
-          "reportTitle": "Buy -> Buy Maintains",
-          "reasonSummary": "Buy -> Buy Maintains. Morgan Stanley가 Buy 의견을 제시했고 현재가 기준 상승여력은 26.5%입니다. 2026-03-30 종가 대비 목표가 괴리는 44.5%입니다.",
-          "reasonBullets": [
-            "Morgan Stanley가 2026-03-30에 Buy 의견과 목표가를 제시했습니다.",
-            "현재가 $612.42 대비 목표가는 $775입니다.",
-            "2026-03-30 종가 $536.38 대비 괴리는 44.5%입니다."
-          ],
-          "performance": {
-            "week1": {
-              "asOfDate": "2026-04-06",
-              "closePrice": 573.02,
-              "returnPct": 6.8,
-              "targetProgressPct": 15.4,
-              "success": false,
-              "status": "complete"
-            },
-            "month1": {
-              "asOfDate": "2026-04-29",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            },
-            "month3": {
-              "asOfDate": "2026-06-28",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            }
-          }
-        },
-        {
-          "date": "2026-03-18",
-          "ticker": "META",
-          "name": "Meta Platforms, Inc.",
-          "market": "us",
-          "broker": "Tigress Financial",
-          "analyst": "Ivan Feinseth",
-          "opinion": "Strong Buy",
-          "targetPrice": 945,
-          "currentPrice": 612.42,
-          "basePrice": 615.68,
-          "basePriceDate": "2026-03-18",
-          "upside": 54.3,
-          "sourceUrl": "https://stockanalysis.com/stocks/meta/ratings/",
-          "sourceText": "Tigress Financial Strong Buy Maintains. Price target 935 -> 945.",
-          "reportTitle": "Strong Buy -> Strong Buy Maintains",
-          "reasonSummary": "Strong Buy -> Strong Buy Maintains. Tigress Financial가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 54.3%입니다. 2026-03-18 종가 대비 목표가 괴리는 53.5%입니다.",
-          "reasonBullets": [
-            "Tigress Financial가 2026-03-18에 Strong Buy 의견과 목표가를 제시했습니다.",
-            "현재가 $612.42 대비 목표가는 $945입니다.",
-            "2026-03-18 종가 $615.68 대비 괴리는 53.5%입니다."
-          ],
-          "performance": {
-            "week1": {
-              "asOfDate": "2026-03-25",
-              "closePrice": 594.89,
-              "returnPct": -3.4,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "complete"
-            },
-            "month1": {
-              "asOfDate": "2026-04-17",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            },
-            "month3": {
-              "asOfDate": "2026-06-16",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            }
-          }
-        },
-        {
-          "date": "2026-02-03",
-          "ticker": "META",
-          "name": "Meta Platforms, Inc.",
-          "market": "us",
-          "broker": "Freedom Broker",
-          "analyst": "Saken Ismailov",
-          "opinion": "Strong Buy",
-          "targetPrice": 825,
-          "currentPrice": 612.42,
-          "basePrice": 691.7,
-          "basePriceDate": "2026-02-03",
-          "upside": 34.7,
-          "sourceUrl": "https://stockanalysis.com/stocks/meta/ratings/",
-          "sourceText": "Freedom Broker Strong Buy Maintains. Price target 800 -> 825.",
-          "reportTitle": "Strong Buy -> Strong Buy Maintains",
-          "reasonSummary": "Strong Buy -> Strong Buy Maintains. Freedom Broker가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 34.7%입니다. 2026-02-03 종가 대비 목표가 괴리는 19.3%입니다.",
-          "reasonBullets": [
-            "Freedom Broker가 2026-02-03에 Strong Buy 의견과 목표가를 제시했습니다.",
-            "현재가 $612.42 대비 목표가는 $825입니다.",
-            "2026-02-03 종가 $691.7 대비 괴리는 19.3%입니다."
-          ],
-          "performance": {
-            "week1": {
-              "asOfDate": "2026-02-10",
-              "closePrice": 670.72,
-              "returnPct": -3,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "complete"
-            },
-            "month1": {
-              "asOfDate": "2026-03-05",
-              "closePrice": 660.57,
-              "returnPct": -4.5,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "complete"
-            },
-            "month3": {
-              "asOfDate": "2026-05-04",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            }
-          }
-        },
-        {
-          "date": "2026-02-02",
-          "ticker": "META",
-          "name": "Meta Platforms, Inc.",
-          "market": "us",
-          "broker": "Argus Research",
-          "analyst": "Joseph Bonner",
-          "opinion": "Strong Buy",
-          "targetPrice": 800,
-          "currentPrice": 612.42,
-          "basePrice": 706.41,
-          "basePriceDate": "2026-02-02",
-          "upside": 30.6,
-          "sourceUrl": "https://stockanalysis.com/stocks/meta/ratings/",
-          "sourceText": "Argus Research Strong Buy Reiterates. Price target 800 -> 800.",
-          "reportTitle": "Strong Buy -> Strong Buy Reiterates",
-          "reasonSummary": "Strong Buy -> Strong Buy Reiterates. Argus Research가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 30.6%입니다. 2026-02-02 종가 대비 목표가 괴리는 13.2%입니다.",
-          "reasonBullets": [
-            "Argus Research가 2026-02-02에 Strong Buy 의견과 목표가를 제시했습니다.",
-            "현재가 $612.42 대비 목표가는 $800입니다.",
-            "2026-02-02 종가 $706.41 대비 괴리는 13.2%입니다."
-          ],
-          "performance": {
-            "week1": {
-              "asOfDate": "2026-02-09",
-              "closePrice": 677.22,
-              "returnPct": -4.1,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "complete"
-            },
-            "month1": {
-              "asOfDate": "2026-03-04",
-              "closePrice": 667.73,
-              "returnPct": -5.5,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "complete"
-            },
-            "month3": {
-              "asOfDate": "2026-05-03",
               "closePrice": 0,
               "returnPct": 0,
               "targetProgressPct": 0,
@@ -70874,256 +71173,6 @@
         }
       ]
     },
-    "us:XOM": {
-      "ticker": "XOM",
-      "name": "Exxon Mobil Corporation",
-      "market": "us",
-      "latestReportDate": "2026-03-27",
-      "latestBroker": "Morgan Stanley",
-      "latestOpinion": "Buy",
-      "latestTargetPrice": 172,
-      "latestCurrentPrice": 156.22,
-      "latestBasePrice": 170.99,
-      "avgUpside": 12.7,
-      "reportCount": 4,
-      "reasonSummary": "Buy -> Buy Maintains. Morgan Stanley가 Buy 의견을 제시했고 현재가 기준 상승여력은 10.1%입니다. 2026-03-27 종가 대비 목표가 괴리는 0.6%입니다.",
-      "reasonBullets": [
-        "Morgan Stanley가 2026-03-27에 Buy 의견과 목표가를 제시했습니다.",
-        "현재가 $156.22 대비 목표가는 $172입니다.",
-        "2026-03-27 종가 $170.99 대비 괴리는 0.6%입니다."
-      ],
-      "investmentLogic": {
-        "summary": "Buy -> Buy Maintains",
-        "bullets": [
-          "Buy -> Buy Maintains",
-          "Buy -> Buy Maintains Morgan Stanley Buy Maintains.",
-          "Price target 134 -> 172."
-        ]
-      },
-      "estimateRevision": {
-        "summary": "유지 신호입니다. 리포트 원문에서 추정치 관련 표현을 기준으로 판단했습니다.",
-        "bullets": [
-          "Buy -> Buy Maintains Morgan Stanley Buy Maintains.",
-          "Price target 134 -> 172.",
-          "Buy -> Buy Maintains."
-        ],
-        "signal": "flat"
-      },
-      "valuation": {
-        "summary": "현재가 $156.22 대비 목표가 $172가 제시돼 밸류에이션 여력을 확인할 수 있습니다.",
-        "bullets": [
-          "Buy -> Buy Maintains Piper Sandler Buy Maintains.",
-          "Piper Sandler가 Buy 의견을 제시했고 현재가 기준 상승여력은 19.1%입니다.",
-          "현재가 대비 목표가 상승여력은 10.1%입니다."
-        ]
-      },
-      "sectorCycle": {
-        "summary": "Buy -> Buy Maintains Morgan Stanley Buy Maintains.",
-        "bullets": [
-          "Buy -> Buy Maintains Morgan Stanley Buy Maintains.",
-          "Price target 134 -> 172.",
-          "Buy -> Buy Maintains."
-        ]
-      },
-      "relatedReports": [
-        {
-          "date": "2026-03-27",
-          "ticker": "XOM",
-          "name": "Exxon Mobil Corporation",
-          "market": "us",
-          "broker": "Morgan Stanley",
-          "analyst": "Devin McDermott",
-          "opinion": "Buy",
-          "targetPrice": 172,
-          "currentPrice": 156.22,
-          "basePrice": 170.99,
-          "basePriceDate": "2026-03-27",
-          "upside": 10.1,
-          "sourceUrl": "https://stockanalysis.com/stocks/xom/ratings/",
-          "sourceText": "Morgan Stanley Buy Maintains. Price target 134 -> 172.",
-          "reportTitle": "Buy -> Buy Maintains",
-          "reasonSummary": "Buy -> Buy Maintains. Morgan Stanley가 Buy 의견을 제시했고 현재가 기준 상승여력은 10.1%입니다. 2026-03-27 종가 대비 목표가 괴리는 0.6%입니다.",
-          "reasonBullets": [
-            "Morgan Stanley가 2026-03-27에 Buy 의견과 목표가를 제시했습니다.",
-            "현재가 $156.22 대비 목표가는 $172입니다.",
-            "2026-03-27 종가 $170.99 대비 괴리는 0.6%입니다."
-          ],
-          "performance": {
-            "week1": {
-              "asOfDate": "2026-04-02",
-              "closePrice": 160.69,
-              "returnPct": -6,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "complete"
-            },
-            "month1": {
-              "asOfDate": "2026-04-26",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            },
-            "month3": {
-              "asOfDate": "2026-06-25",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            }
-          }
-        },
-        {
-          "date": "2026-03-16",
-          "ticker": "XOM",
-          "name": "Exxon Mobil Corporation",
-          "market": "us",
-          "broker": "Barclays",
-          "analyst": "Betty Jiang",
-          "opinion": "Buy",
-          "targetPrice": 163,
-          "currentPrice": 156.22,
-          "basePrice": 157.23,
-          "basePriceDate": "2026-03-16",
-          "upside": 4.3,
-          "sourceUrl": "https://stockanalysis.com/stocks/xom/ratings/",
-          "sourceText": "Barclays Buy Maintains. Price target 145 -> 163.",
-          "reportTitle": "Buy -> Buy Maintains",
-          "reasonSummary": "Buy -> Buy Maintains. Barclays가 Buy 의견을 제시했고 현재가 기준 상승여력은 4.3%입니다. 2026-03-16 종가 대비 목표가 괴리는 3.7%입니다.",
-          "reasonBullets": [
-            "Barclays가 2026-03-16에 Buy 의견과 목표가를 제시했습니다.",
-            "현재가 $156.22 대비 목표가는 $163입니다.",
-            "2026-03-16 종가 $157.23 대비 괴리는 3.7%입니다."
-          ],
-          "performance": {
-            "week1": {
-              "asOfDate": "2026-03-23",
-              "closePrice": 161.13,
-              "returnPct": 2.5,
-              "targetProgressPct": 67.6,
-              "success": false,
-              "status": "complete"
-            },
-            "month1": {
-              "asOfDate": "2026-04-15",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            },
-            "month3": {
-              "asOfDate": "2026-06-14",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            }
-          }
-        },
-        {
-          "date": "2026-03-12",
-          "ticker": "XOM",
-          "name": "Exxon Mobil Corporation",
-          "market": "us",
-          "broker": "Piper Sandler",
-          "analyst": "Ryan Todd",
-          "opinion": "Buy",
-          "targetPrice": 186,
-          "currentPrice": 156.22,
-          "basePrice": 153.53,
-          "basePriceDate": "2026-03-12",
-          "upside": 19.1,
-          "sourceUrl": "https://stockanalysis.com/stocks/xom/ratings/",
-          "sourceText": "Piper Sandler Buy Maintains. Price target 145 -> 186.",
-          "reportTitle": "Buy -> Buy Maintains",
-          "reasonSummary": "Buy -> Buy Maintains. Piper Sandler가 Buy 의견을 제시했고 현재가 기준 상승여력은 19.1%입니다. 2026-03-12 종가 대비 목표가 괴리는 21.1%입니다.",
-          "reasonBullets": [
-            "Piper Sandler가 2026-03-12에 Buy 의견과 목표가를 제시했습니다.",
-            "현재가 $156.22 대비 목표가는 $186입니다.",
-            "2026-03-12 종가 $153.53 대비 괴리는 21.1%입니다."
-          ],
-          "performance": {
-            "week1": {
-              "asOfDate": "2026-03-19",
-              "closePrice": 158.16,
-              "returnPct": 3,
-              "targetProgressPct": 14.3,
-              "success": false,
-              "status": "complete"
-            },
-            "month1": {
-              "asOfDate": "2026-04-11",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            },
-            "month3": {
-              "asOfDate": "2026-06-10",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            }
-          }
-        },
-        {
-          "date": "2026-02-24",
-          "ticker": "XOM",
-          "name": "Exxon Mobil Corporation",
-          "market": "us",
-          "broker": "Wells Fargo",
-          "analyst": "Sam Margolin",
-          "opinion": "Buy",
-          "targetPrice": 183,
-          "currentPrice": 156.22,
-          "basePrice": 149.26,
-          "basePriceDate": "2026-02-24",
-          "upside": 17.1,
-          "sourceUrl": "https://stockanalysis.com/stocks/xom/ratings/",
-          "sourceText": "Wells Fargo Buy Maintains. Price target 156 -> 183.",
-          "reportTitle": "Buy -> Buy Maintains",
-          "reasonSummary": "Buy -> Buy Maintains. Wells Fargo가 Buy 의견을 제시했고 현재가 기준 상승여력은 17.1%입니다. 2026-02-24 종가 대비 목표가 괴리는 22.6%입니다.",
-          "reasonBullets": [
-            "Wells Fargo가 2026-02-24에 Buy 의견과 목표가를 제시했습니다.",
-            "현재가 $156.22 대비 목표가는 $183입니다.",
-            "2026-02-24 종가 $149.26 대비 괴리는 22.6%입니다."
-          ],
-          "performance": {
-            "week1": {
-              "asOfDate": "2026-03-03",
-              "closePrice": 151.83,
-              "returnPct": 1.7,
-              "targetProgressPct": 7.6,
-              "success": false,
-              "status": "complete"
-            },
-            "month1": {
-              "asOfDate": "2026-03-26",
-              "closePrice": 165.43,
-              "returnPct": 10.8,
-              "targetProgressPct": 47.9,
-              "success": false,
-              "status": "complete"
-            },
-            "month3": {
-              "asOfDate": "2026-05-25",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            }
-          }
-        }
-      ]
-    },
     "korea:138080": {
       "ticker": "138080",
       "name": "오이솔루션",
@@ -74571,11 +74620,11 @@
           "performance": {
             "week1": {
               "asOfDate": "2026-02-20",
-              "closePrice": 37.75,
-              "returnPct": -27,
+              "closePrice": 0,
+              "returnPct": 0,
               "targetProgressPct": 0,
               "success": false,
-              "status": "complete"
+              "status": "unavailable"
             },
             "month1": {
               "asOfDate": "2026-03-13",
@@ -74620,11 +74669,11 @@
           "performance": {
             "week1": {
               "asOfDate": "2026-02-20",
-              "closePrice": 37.75,
-              "returnPct": -27,
+              "closePrice": 0,
+              "returnPct": 0,
               "targetProgressPct": 0,
               "success": false,
-              "status": "complete"
+              "status": "unavailable"
             },
             "month1": {
               "asOfDate": "2026-03-13",

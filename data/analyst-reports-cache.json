@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-10T11:13:18.397Z",
+  "generatedAt": "2026-04-10T12:31:23.840Z",
   "maxDays": 365,
   "reports": [
     {
@@ -1248,6 +1248,55 @@
         "SK증권가 2026-04-10에 매수 의견과 목표가를 제시했습니다.",
         "현재가 93,000원 대비 목표가는 110,000원입니다.",
         "2026-04-10 종가 93,000원 대비 괴리는 18.3%입니다."
+      ],
+      "performance": {
+        "week1": {
+          "asOfDate": "2026-04-17",
+          "closePrice": 0,
+          "returnPct": 0,
+          "targetProgressPct": 0,
+          "success": false,
+          "status": "pending"
+        },
+        "month1": {
+          "asOfDate": "2026-05-10",
+          "closePrice": 0,
+          "returnPct": 0,
+          "targetProgressPct": 0,
+          "success": false,
+          "status": "pending"
+        },
+        "month3": {
+          "asOfDate": "2026-07-09",
+          "closePrice": 0,
+          "returnPct": 0,
+          "targetProgressPct": 0,
+          "success": false,
+          "status": "pending"
+        }
+      }
+    },
+    {
+      "date": "2026-04-10",
+      "ticker": "PG",
+      "name": "The Procter & Gamble Company",
+      "market": "us",
+      "broker": "B of A Securities",
+      "analyst": "Peter Galbo",
+      "opinion": "Strong Buy",
+      "targetPrice": 167,
+      "currentPrice": 146.66,
+      "basePrice": 146.66,
+      "basePriceDate": "2026-04-09",
+      "upside": 13.9,
+      "sourceUrl": "https://stockanalysis.com/stocks/pg/ratings/",
+      "sourceText": "B of A Securities Strong Buy Maintains. Price target 171 -> 167.",
+      "reportTitle": "Strong Buy -> Strong Buy Maintains",
+      "reasonSummary": "Strong Buy -> Strong Buy Maintains. B of A Securities가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 13.9%입니다. 2026-04-09 종가 대비 목표가 괴리는 13.9%입니다.",
+      "reasonBullets": [
+        "B of A Securities가 2026-04-10에 Strong Buy 의견과 목표가를 제시했습니다.",
+        "현재가 $146.66 대비 목표가는 $167입니다.",
+        "2026-04-09 종가 $146.66 대비 괴리는 13.9%입니다."
       ],
       "performance": {
         "week1": {
@@ -38590,11 +38639,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-17",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
+          "closePrice": 128.85,
+          "returnPct": 1.7,
+          "targetProgressPct": 16.2,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-03-12",
@@ -38639,11 +38688,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-13",
-          "closePrice": 0,
-          "returnPct": 0,
+          "closePrice": 305.72,
+          "returnPct": -5.3,
           "targetProgressPct": 0,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-03-06",
@@ -38688,11 +38737,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-13",
-          "closePrice": 0,
-          "returnPct": 0,
+          "closePrice": 305.72,
+          "returnPct": -5.3,
           "targetProgressPct": 0,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-03-06",
@@ -38737,11 +38786,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-13",
-          "closePrice": 0,
-          "returnPct": 0,
+          "closePrice": 198.79,
+          "returnPct": -5.5,
           "targetProgressPct": 0,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-03-06",
@@ -38786,11 +38835,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-13",
-          "closePrice": 0,
-          "returnPct": 0,
+          "closePrice": 198.79,
+          "returnPct": -5.5,
           "targetProgressPct": 0,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-03-06",
@@ -38835,11 +38884,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-13",
-          "closePrice": 0,
-          "returnPct": 0,
+          "closePrice": 198.79,
+          "returnPct": -5.5,
           "targetProgressPct": 0,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-03-06",
@@ -38884,11 +38933,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-13",
-          "closePrice": 0,
-          "returnPct": 0,
+          "closePrice": 198.79,
+          "returnPct": -5.5,
           "targetProgressPct": 0,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-03-06",
@@ -38933,11 +38982,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-13",
-          "closePrice": 0,
-          "returnPct": 0,
+          "closePrice": 198.79,
+          "returnPct": -5.5,
           "targetProgressPct": 0,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-03-06",
@@ -38982,11 +39031,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-12",
-          "closePrice": 0,
-          "returnPct": 0,
+          "closePrice": 309,
+          "returnPct": -6.7,
           "targetProgressPct": 0,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-03-06",
@@ -39031,11 +39080,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-12",
-          "closePrice": 0,
-          "returnPct": 0,
+          "closePrice": 309,
+          "returnPct": -6.7,
           "targetProgressPct": 0,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-03-06",
@@ -39080,11 +39129,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-12",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
+          "closePrice": 284.37,
+          "returnPct": 5.9,
+          "targetProgressPct": 19.4,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-03-06",
@@ -39129,11 +39178,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-11",
-          "closePrice": 0,
+          "closePrice": 51.99,
           "returnPct": 0,
           "targetProgressPct": 0,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-03-06",
@@ -39178,11 +39227,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-10",
-          "closePrice": 0,
-          "returnPct": 0,
+          "closePrice": 670.72,
+          "returnPct": -3,
           "targetProgressPct": 0,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-03-05",
@@ -39227,11 +39276,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-09",
-          "closePrice": 0,
-          "returnPct": 0,
+          "closePrice": 677.22,
+          "returnPct": -4.1,
           "targetProgressPct": 0,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-03-04",
@@ -39276,11 +39325,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-09",
-          "closePrice": 0,
-          "returnPct": 0,
+          "closePrice": 275.7,
+          "returnPct": -3.5,
           "targetProgressPct": 0,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-03-04",
@@ -39325,11 +39374,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-09",
-          "closePrice": 0,
-          "returnPct": 0,
+          "closePrice": 275.7,
+          "returnPct": -3.5,
           "targetProgressPct": 0,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-03-04",
@@ -39374,11 +39423,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-06",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
+          "closePrice": 278.12,
+          "returnPct": 7.2,
+          "targetProgressPct": 46,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-02-27",
@@ -39423,11 +39472,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-06",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
+          "closePrice": 278.12,
+          "returnPct": 7.2,
+          "targetProgressPct": 28.4,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-02-27",
@@ -39472,11 +39521,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-06",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
+          "closePrice": 278.12,
+          "returnPct": 7.2,
+          "targetProgressPct": 28.4,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-02-27",
@@ -39521,11 +39570,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-06",
-          "closePrice": 0,
-          "returnPct": 0,
+          "closePrice": 401.14,
+          "returnPct": -6.8,
           "targetProgressPct": 0,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-02-27",
@@ -39570,11 +39619,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-06",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
+          "closePrice": 331.58,
+          "returnPct": 3,
+          "targetProgressPct": 13.3,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-02-27",
@@ -39619,11 +39668,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-06",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
+          "closePrice": 331.58,
+          "returnPct": 3,
+          "targetProgressPct": 11.1,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-02-27",
@@ -39668,11 +39717,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-06",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
+          "closePrice": 331.58,
+          "returnPct": 3,
+          "targetProgressPct": 10.9,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-02-27",
@@ -39717,11 +39766,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-06",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
+          "closePrice": 331.58,
+          "returnPct": 3,
+          "targetProgressPct": 12.5,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-02-27",
@@ -39766,11 +39815,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-06",
-          "closePrice": 0,
-          "returnPct": 0,
+          "closePrice": 276.65,
+          "returnPct": -3.6,
           "targetProgressPct": 0,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-02-27",
@@ -39815,11 +39864,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-06",
-          "closePrice": 0,
-          "returnPct": 0,
+          "closePrice": 276.65,
+          "returnPct": -3.6,
           "targetProgressPct": 0,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-02-27",
@@ -39864,11 +39913,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-05",
-          "closePrice": 0,
-          "returnPct": 0,
+          "closePrice": 393.67,
+          "returnPct": -9.2,
           "targetProgressPct": 0,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-02-27",
@@ -39913,11 +39962,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-05",
-          "closePrice": 0,
-          "returnPct": 0,
+          "closePrice": 393.67,
+          "returnPct": -9.2,
           "targetProgressPct": 0,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-02-27",
@@ -39962,11 +40011,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-05",
-          "closePrice": 0,
-          "returnPct": 0,
+          "closePrice": 393.67,
+          "returnPct": -9.2,
           "targetProgressPct": 0,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-02-27",
@@ -40011,11 +40060,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-05",
-          "closePrice": 0,
-          "returnPct": 0,
+          "closePrice": 393.67,
+          "returnPct": -9.2,
           "targetProgressPct": 0,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-02-27",
@@ -40060,11 +40109,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-05",
-          "closePrice": 0,
-          "returnPct": 0,
+          "closePrice": 393.67,
+          "returnPct": -9.2,
           "targetProgressPct": 0,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-02-27",
@@ -40109,11 +40158,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-05",
-          "closePrice": 0,
-          "returnPct": 0,
+          "closePrice": 393.67,
+          "returnPct": -9.2,
           "targetProgressPct": 0,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-02-27",
@@ -40158,11 +40207,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-05",
-          "closePrice": 0,
-          "returnPct": 0,
+          "closePrice": 393.67,
+          "returnPct": -9.2,
           "targetProgressPct": 0,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-02-27",
@@ -40207,11 +40256,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-05",
-          "closePrice": 0,
-          "returnPct": 0,
+          "closePrice": 393.67,
+          "returnPct": -9.2,
           "targetProgressPct": 0,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-02-27",
@@ -40256,11 +40305,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-05",
-          "closePrice": 0,
-          "returnPct": 0,
+          "closePrice": 393.67,
+          "returnPct": -9.2,
           "targetProgressPct": 0,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-02-27",
@@ -40305,11 +40354,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-05",
-          "closePrice": 0,
-          "returnPct": 0,
+          "closePrice": 393.67,
+          "returnPct": -9.2,
           "targetProgressPct": 0,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-02-27",
@@ -40354,11 +40403,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-05",
-          "closePrice": 0,
-          "returnPct": 0,
+          "closePrice": 670.21,
+          "returnPct": -9.2,
           "targetProgressPct": 0,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-02-27",
@@ -40403,11 +40452,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-05",
-          "closePrice": 0,
-          "returnPct": 0,
+          "closePrice": 670.21,
+          "returnPct": -9.2,
           "targetProgressPct": 0,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-02-27",
@@ -40452,11 +40501,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-05",
-          "closePrice": 0,
-          "returnPct": 0,
+          "closePrice": 670.21,
+          "returnPct": -9.2,
           "targetProgressPct": 0,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-02-27",
@@ -40501,11 +40550,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-05",
-          "closePrice": 0,
-          "returnPct": 0,
+          "closePrice": 670.21,
+          "returnPct": -9.2,
           "targetProgressPct": 0,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-02-27",
@@ -40550,11 +40599,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-05",
-          "closePrice": 0,
-          "returnPct": 0,
+          "closePrice": 670.21,
+          "returnPct": -9.2,
           "targetProgressPct": 0,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-02-27",
@@ -40599,11 +40648,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-05",
-          "closePrice": 0,
-          "returnPct": 0,
+          "closePrice": 670.21,
+          "returnPct": -9.2,
           "targetProgressPct": 0,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-02-27",
@@ -40648,11 +40697,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-05",
-          "closePrice": 0,
-          "returnPct": 0,
+          "closePrice": 397.21,
+          "returnPct": -4.6,
           "targetProgressPct": 0,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-02-27",
@@ -40697,11 +40746,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-05",
-          "closePrice": 0,
-          "returnPct": 0,
+          "closePrice": 397.21,
+          "returnPct": -4.6,
           "targetProgressPct": 0,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-02-27",
@@ -40746,11 +40795,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-05",
-          "closePrice": 0,
-          "returnPct": 0,
+          "closePrice": 397.21,
+          "returnPct": -4.6,
           "targetProgressPct": 0,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-02-27",
@@ -40795,11 +40844,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-04",
-          "closePrice": 0,
-          "returnPct": 0,
+          "closePrice": 275.92,
+          "returnPct": -6.2,
           "targetProgressPct": 0,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-02-27",
@@ -40844,11 +40893,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-04",
-          "closePrice": 0,
-          "returnPct": 0,
+          "closePrice": 275.92,
+          "returnPct": -6.2,
           "targetProgressPct": 0,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-02-27",
@@ -40893,11 +40942,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-04",
-          "closePrice": 0,
-          "returnPct": 0,
+          "closePrice": 275.92,
+          "returnPct": -6.2,
           "targetProgressPct": 0,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-02-27",
@@ -40942,11 +40991,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-04",
-          "closePrice": 0,
-          "returnPct": 0,
+          "closePrice": 275.92,
+          "returnPct": -6.2,
           "targetProgressPct": 0,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-02-27",
@@ -40991,11 +41040,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-04",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
+          "closePrice": 234.47,
+          "returnPct": 3,
+          "targetProgressPct": 19.7,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-02-27",
@@ -41040,11 +41089,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-01-30",
-          "closePrice": 0,
-          "returnPct": 0,
+          "closePrice": 286.93,
+          "returnPct": -19.5,
           "targetProgressPct": 0,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-02-20",
@@ -41089,11 +41138,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-01-30",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
+          "closePrice": 151.77,
+          "returnPct": 1.1,
+          "targetProgressPct": 10.9,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-02-20",
@@ -41137,20 +41186,20 @@
       ],
       "performance": {
         "week1": {
-          "asOfDate": "2026-01-19",
-          "closePrice": 0,
-          "returnPct": 0,
+          "asOfDate": "2026-01-16",
+          "closePrice": 56.89,
+          "returnPct": -1.6,
           "targetProgressPct": 0,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-02-11",
-          "closePrice": 0,
-          "returnPct": 0,
+          "closePrice": 51.99,
+          "returnPct": -10,
           "targetProgressPct": 0,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month3": {
           "asOfDate": "2026-04-12",
@@ -41187,11 +41236,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-01-15",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
+          "closePrice": 144.63,
+          "returnPct": 2.2,
+          "targetProgressPct": 36.6,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-02-06",
@@ -41236,11 +41285,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-01-12",
-          "closePrice": 0,
-          "returnPct": 0,
+          "closePrice": 324.49,
+          "returnPct": -2.9,
           "targetProgressPct": 0,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-02-04",
@@ -41285,11 +41334,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2025-12-24",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
+          "closePrice": 329.17,
+          "returnPct": 4.5,
+          "targetProgressPct": 29.6,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-01-16",
@@ -41334,11 +41383,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2025-12-24",
-          "closePrice": 0,
-          "returnPct": 0,
+          "closePrice": 144.49,
+          "returnPct": -2.2,
           "targetProgressPct": 0,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-01-16",
@@ -41383,11 +41432,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2025-12-23",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
+          "closePrice": 66.66,
+          "returnPct": 2.1,
+          "targetProgressPct": 9.9,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-01-15",
@@ -41432,11 +41481,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2025-12-18",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
+          "closePrice": 346.01,
+          "returnPct": 0.1,
+          "targetProgressPct": 1,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-01-09",
@@ -41481,11 +41530,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2025-12-15",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
+          "closePrice": 346.89,
+          "returnPct": 6.1,
+          "targetProgressPct": 32.3,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-01-07",
@@ -41530,11 +41579,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2025-11-14",
-          "closePrice": 0,
-          "returnPct": 0,
+          "closePrice": 59.09,
+          "returnPct": -1.5,
           "targetProgressPct": 0,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2025-12-05",
@@ -41579,11 +41628,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2025-11-05",
-          "closePrice": 0,
-          "returnPct": 0,
+          "closePrice": 340.04,
+          "returnPct": -0.4,
           "targetProgressPct": 0,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2025-11-28",
@@ -41628,11 +41677,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2025-10-29",
-          "closePrice": 0,
-          "returnPct": 0,
+          "closePrice": 341.28,
+          "returnPct": -1.2,
           "targetProgressPct": 0,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2025-11-21",
@@ -41646,55 +41695,6 @@
           "asOfDate": "2026-01-20",
           "closePrice": 325.82,
           "returnPct": -5.7,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "complete"
-        }
-      }
-    },
-    {
-      "date": "2025-10-20",
-      "ticker": "PG",
-      "name": "The Procter & Gamble Company",
-      "market": "us",
-      "broker": "Raymond James",
-      "analyst": "Olivia Tong",
-      "opinion": "Buy",
-      "targetPrice": 175,
-      "currentPrice": 146.66,
-      "basePrice": 151.96,
-      "basePriceDate": "2025-10-20",
-      "upside": 19.3,
-      "sourceUrl": "https://stockanalysis.com/stocks/pg/ratings/",
-      "sourceText": "Raymond James Buy Maintains. Price target 185 -> 175.",
-      "reportTitle": "Buy -> Buy Maintains",
-      "reasonSummary": "Buy -> Buy Maintains. Raymond James가 Buy 의견을 제시했고 현재가 기준 상승여력은 19.3%입니다. 2025-10-20 종가 대비 목표가 괴리는 15.2%입니다.",
-      "reasonBullets": [
-        "Raymond James가 2025-10-20에 Buy 의견과 목표가를 제시했습니다.",
-        "현재가 $146.66 대비 목표가는 $175입니다.",
-        "2025-10-20 종가 $151.96 대비 괴리는 15.2%입니다."
-      ],
-      "performance": {
-        "week1": {
-          "asOfDate": "2025-10-27",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "unavailable"
-        },
-        "month1": {
-          "asOfDate": "2025-11-19",
-          "closePrice": 146.99,
-          "returnPct": -3.3,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "complete"
-        },
-        "month3": {
-          "asOfDate": "2026-01-16",
-          "closePrice": 144.53,
-          "returnPct": -4.9,
           "targetProgressPct": 0,
           "success": false,
           "status": "complete"
@@ -41726,11 +41726,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2025-10-14",
-          "closePrice": 0,
-          "returnPct": 0,
+          "closePrice": 302.08,
+          "returnPct": -1.8,
           "targetProgressPct": 0,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2025-11-06",
@@ -45949,6 +45949,305 @@
               "targetProgressPct": 0,
               "success": false,
               "status": "pending"
+            }
+          }
+        }
+      ]
+    },
+    "us:PG": {
+      "ticker": "PG",
+      "name": "The Procter & Gamble Company",
+      "market": "us",
+      "latestReportDate": "2026-04-10",
+      "latestBroker": "B of A Securities",
+      "latestOpinion": "Strong Buy",
+      "latestTargetPrice": 167,
+      "latestCurrentPrice": 146.66,
+      "latestBasePrice": 146.66,
+      "avgUpside": 11.9,
+      "reportCount": 6,
+      "reasonSummary": "Strong Buy -> Strong Buy Maintains. B of A Securities가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 13.9%입니다. 2026-04-09 종가 대비 목표가 괴리는 13.9%입니다.",
+      "reasonBullets": [
+        "B of A Securities가 2026-04-10에 Strong Buy 의견과 목표가를 제시했습니다.",
+        "현재가 $146.66 대비 목표가는 $167입니다.",
+        "2026-04-09 종가 $146.66 대비 괴리는 13.9%입니다."
+      ],
+      "investmentLogic": {
+        "summary": "Strong Buy -> Strong Buy Maintains",
+        "bullets": [
+          "Strong Buy -> Strong Buy Maintains",
+          "Strong Buy -> Strong Buy Maintains B of A Securities Strong Buy Maintains.",
+          "Price target 171 -> 167."
+        ]
+      },
+      "estimateRevision": {
+        "summary": "유지 신호입니다. 리포트 원문에서 추정치 관련 표현을 기준으로 판단했습니다.",
+        "bullets": [
+          "Strong Buy -> Strong Buy Maintains B of A Securities Strong Buy Maintains.",
+          "Price target 171 -> 167.",
+          "Strong Buy -> Strong Buy Maintains."
+        ],
+        "signal": "flat"
+      },
+      "valuation": {
+        "summary": "현재가 $146.66 대비 목표가 $167가 제시돼 밸류에이션 여력을 확인할 수 있습니다.",
+        "bullets": [
+          "Strong Buy -> Strong Buy Maintains B of A Securities Strong Buy Maintains.",
+          "Price target 171 -> 167.",
+          "Strong Buy -> Strong Buy Maintains."
+        ]
+      },
+      "sectorCycle": {
+        "summary": "Strong Buy -> Strong Buy Maintains B of A Securities Strong Buy Maintains.",
+        "bullets": [
+          "Strong Buy -> Strong Buy Maintains B of A Securities Strong Buy Maintains.",
+          "Price target 171 -> 167.",
+          "Strong Buy -> Strong Buy Maintains."
+        ]
+      },
+      "relatedReports": [
+        {
+          "date": "2026-04-10",
+          "ticker": "PG",
+          "name": "The Procter & Gamble Company",
+          "market": "us",
+          "broker": "B of A Securities",
+          "analyst": "Peter Galbo",
+          "opinion": "Strong Buy",
+          "targetPrice": 167,
+          "currentPrice": 146.66,
+          "basePrice": 146.66,
+          "basePriceDate": "2026-04-09",
+          "upside": 13.9,
+          "sourceUrl": "https://stockanalysis.com/stocks/pg/ratings/",
+          "sourceText": "B of A Securities Strong Buy Maintains. Price target 171 -> 167.",
+          "reportTitle": "Strong Buy -> Strong Buy Maintains",
+          "reasonSummary": "Strong Buy -> Strong Buy Maintains. B of A Securities가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 13.9%입니다. 2026-04-09 종가 대비 목표가 괴리는 13.9%입니다.",
+          "reasonBullets": [
+            "B of A Securities가 2026-04-10에 Strong Buy 의견과 목표가를 제시했습니다.",
+            "현재가 $146.66 대비 목표가는 $167입니다.",
+            "2026-04-09 종가 $146.66 대비 괴리는 13.9%입니다."
+          ],
+          "performance": {
+            "week1": {
+              "asOfDate": "2026-04-17",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            },
+            "month1": {
+              "asOfDate": "2026-05-10",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            },
+            "month3": {
+              "asOfDate": "2026-07-09",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            }
+          }
+        },
+        {
+          "date": "2026-04-08",
+          "ticker": "PG",
+          "name": "The Procter & Gamble Company",
+          "market": "us",
+          "broker": "Wells Fargo",
+          "analyst": "Chris Carey",
+          "opinion": "Buy",
+          "targetPrice": 158,
+          "currentPrice": 146.66,
+          "basePrice": 144.9,
+          "basePriceDate": "2026-04-08",
+          "upside": 7.7,
+          "sourceUrl": "https://stockanalysis.com/stocks/pg/ratings/",
+          "sourceText": "Wells Fargo Buy Maintains. Price target 177 -> 158.",
+          "reportTitle": "Buy -> Buy Maintains",
+          "reasonSummary": "Buy -> Buy Maintains. Wells Fargo가 Buy 의견을 제시했고 현재가 기준 상승여력은 7.7%입니다. 2026-04-08 종가 대비 목표가 괴리는 9%입니다.",
+          "reasonBullets": [
+            "Wells Fargo가 2026-04-08에 Buy 의견과 목표가를 제시했습니다.",
+            "현재가 $146.66 대비 목표가는 $158입니다.",
+            "2026-04-08 종가 $144.9 대비 괴리는 9%입니다."
+          ],
+          "performance": {
+            "week1": {
+              "asOfDate": "2026-04-15",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            },
+            "month1": {
+              "asOfDate": "2026-05-08",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            },
+            "month3": {
+              "asOfDate": "2026-07-07",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            }
+          }
+        },
+        {
+          "date": "2026-04-07",
+          "ticker": "PG",
+          "name": "The Procter & Gamble Company",
+          "market": "us",
+          "broker": "UBS",
+          "analyst": "Peter Grom",
+          "opinion": "Strong Buy",
+          "targetPrice": 166,
+          "currentPrice": 146.66,
+          "basePrice": 141.3,
+          "basePriceDate": "2026-04-07",
+          "upside": 13.2,
+          "sourceUrl": "https://stockanalysis.com/stocks/pg/ratings/",
+          "sourceText": "UBS Strong Buy Maintains. Price target 170 -> 166.",
+          "reportTitle": "Strong Buy -> Strong Buy Maintains",
+          "reasonSummary": "Strong Buy -> Strong Buy Maintains. UBS가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 13.2%입니다. 2026-04-07 종가 대비 목표가 괴리는 17.5%입니다.",
+          "reasonBullets": [
+            "UBS가 2026-04-07에 Strong Buy 의견과 목표가를 제시했습니다.",
+            "현재가 $146.66 대비 목표가는 $166입니다.",
+            "2026-04-07 종가 $141.3 대비 괴리는 17.5%입니다."
+          ],
+          "performance": {
+            "week1": {
+              "asOfDate": "2026-04-14",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            },
+            "month1": {
+              "asOfDate": "2026-05-07",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            },
+            "month3": {
+              "asOfDate": "2026-07-06",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            }
+          }
+        },
+        {
+          "date": "2026-01-23",
+          "ticker": "PG",
+          "name": "The Procter & Gamble Company",
+          "market": "us",
+          "broker": "JP Morgan",
+          "analyst": "Andrea Teixeira",
+          "opinion": "Buy",
+          "targetPrice": 165,
+          "currentPrice": 146.66,
+          "basePrice": 150.15,
+          "basePriceDate": "2026-01-23",
+          "upside": 12.5,
+          "sourceUrl": "https://stockanalysis.com/stocks/pg/ratings/",
+          "sourceText": "JP Morgan Buy Upgrades. Price target 157 -> 165.",
+          "reportTitle": "Hold -> Buy Upgrades",
+          "reasonSummary": "Hold -> Buy Upgrades. JP Morgan가 Buy 의견을 제시했고 현재가 기준 상승여력은 12.5%입니다. 2026-01-23 종가 대비 목표가 괴리는 9.9%입니다.",
+          "reasonBullets": [
+            "JP Morgan가 2026-01-23에 Buy 의견과 목표가를 제시했습니다.",
+            "현재가 $146.66 대비 목표가는 $165입니다.",
+            "2026-01-23 종가 $150.15 대비 괴리는 9.9%입니다."
+          ],
+          "performance": {
+            "week1": {
+              "asOfDate": "2026-01-30",
+              "closePrice": 151.77,
+              "returnPct": 1.1,
+              "targetProgressPct": 10.9,
+              "success": false,
+              "status": "complete"
+            },
+            "month1": {
+              "asOfDate": "2026-02-20",
+              "closePrice": 160.78,
+              "returnPct": 7.1,
+              "targetProgressPct": 71.6,
+              "success": true,
+              "status": "complete"
+            },
+            "month3": {
+              "asOfDate": "2026-04-23",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            }
+          }
+        },
+        {
+          "date": "2026-01-08",
+          "ticker": "PG",
+          "name": "The Procter & Gamble Company",
+          "market": "us",
+          "broker": "TD Cowen",
+          "analyst": "Robert Moskow",
+          "opinion": "Strong Buy",
+          "targetPrice": 150,
+          "currentPrice": 146.66,
+          "basePrice": 141.53,
+          "basePriceDate": "2026-01-08",
+          "upside": 2.3,
+          "sourceUrl": "https://stockanalysis.com/stocks/pg/ratings/",
+          "sourceText": "TD Cowen Strong Buy Maintains. Price target 168 -> 150.",
+          "reportTitle": "Strong Buy -> Strong Buy Maintains",
+          "reasonSummary": "Strong Buy -> Strong Buy Maintains. TD Cowen가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 2.3%입니다. 2026-01-08 종가 대비 목표가 괴리는 6%입니다.",
+          "reasonBullets": [
+            "TD Cowen가 2026-01-08에 Strong Buy 의견과 목표가를 제시했습니다.",
+            "현재가 $146.66 대비 목표가는 $150입니다.",
+            "2026-01-08 종가 $141.53 대비 괴리는 6%입니다."
+          ],
+          "performance": {
+            "week1": {
+              "asOfDate": "2026-01-15",
+              "closePrice": 144.63,
+              "returnPct": 2.2,
+              "targetProgressPct": 36.6,
+              "success": false,
+              "status": "complete"
+            },
+            "month1": {
+              "asOfDate": "2026-02-06",
+              "closePrice": 159.17,
+              "returnPct": 12.5,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "complete"
+            },
+            "month3": {
+              "asOfDate": "2026-04-08",
+              "closePrice": 144.9,
+              "returnPct": 2.4,
+              "targetProgressPct": 39.8,
+              "success": false,
+              "status": "complete"
             }
           }
         }
@@ -54336,11 +54635,11 @@
           "performance": {
             "week1": {
               "asOfDate": "2026-02-04",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
+              "closePrice": 234.47,
+              "returnPct": 3,
+              "targetProgressPct": 19.7,
               "success": false,
-              "status": "unavailable"
+              "status": "complete"
             },
             "month1": {
               "asOfDate": "2026-02-27",
@@ -54357,305 +54656,6 @@
               "targetProgressPct": 0,
               "success": false,
               "status": "pending"
-            }
-          }
-        }
-      ]
-    },
-    "us:PG": {
-      "ticker": "PG",
-      "name": "The Procter & Gamble Company",
-      "market": "us",
-      "latestReportDate": "2026-04-08",
-      "latestBroker": "Wells Fargo",
-      "latestOpinion": "Buy",
-      "latestTargetPrice": 158,
-      "latestCurrentPrice": 146.66,
-      "latestBasePrice": 144.9,
-      "avgUpside": 12.9,
-      "reportCount": 6,
-      "reasonSummary": "Buy -> Buy Maintains. Wells Fargo가 Buy 의견을 제시했고 현재가 기준 상승여력은 7.7%입니다. 2026-04-08 종가 대비 목표가 괴리는 9%입니다.",
-      "reasonBullets": [
-        "Wells Fargo가 2026-04-08에 Buy 의견과 목표가를 제시했습니다.",
-        "현재가 $146.66 대비 목표가는 $158입니다.",
-        "2026-04-08 종가 $144.9 대비 괴리는 9%입니다."
-      ],
-      "investmentLogic": {
-        "summary": "Buy -> Buy Maintains",
-        "bullets": [
-          "Buy -> Buy Maintains",
-          "Buy -> Buy Maintains Wells Fargo Buy Maintains.",
-          "Price target 177 -> 158."
-        ]
-      },
-      "estimateRevision": {
-        "summary": "유지 신호입니다. 리포트 원문에서 추정치 관련 표현을 기준으로 판단했습니다.",
-        "bullets": [
-          "Buy -> Buy Maintains Wells Fargo Buy Maintains.",
-          "Price target 177 -> 158.",
-          "Buy -> Buy Maintains."
-        ],
-        "signal": "flat"
-      },
-      "valuation": {
-        "summary": "현재가 $146.66 대비 목표가 $158가 제시돼 밸류에이션 여력을 확인할 수 있습니다.",
-        "bullets": [
-          "Buy -> Buy Maintains Wells Fargo Buy Maintains.",
-          "Price target 177 -> 158.",
-          "Buy -> Buy Maintains."
-        ]
-      },
-      "sectorCycle": {
-        "summary": "Buy -> Buy Maintains Wells Fargo Buy Maintains.",
-        "bullets": [
-          "Buy -> Buy Maintains Wells Fargo Buy Maintains.",
-          "Price target 177 -> 158.",
-          "Buy -> Buy Maintains."
-        ]
-      },
-      "relatedReports": [
-        {
-          "date": "2026-04-08",
-          "ticker": "PG",
-          "name": "The Procter & Gamble Company",
-          "market": "us",
-          "broker": "Wells Fargo",
-          "analyst": "Chris Carey",
-          "opinion": "Buy",
-          "targetPrice": 158,
-          "currentPrice": 146.66,
-          "basePrice": 144.9,
-          "basePriceDate": "2026-04-08",
-          "upside": 7.7,
-          "sourceUrl": "https://stockanalysis.com/stocks/pg/ratings/",
-          "sourceText": "Wells Fargo Buy Maintains. Price target 177 -> 158.",
-          "reportTitle": "Buy -> Buy Maintains",
-          "reasonSummary": "Buy -> Buy Maintains. Wells Fargo가 Buy 의견을 제시했고 현재가 기준 상승여력은 7.7%입니다. 2026-04-08 종가 대비 목표가 괴리는 9%입니다.",
-          "reasonBullets": [
-            "Wells Fargo가 2026-04-08에 Buy 의견과 목표가를 제시했습니다.",
-            "현재가 $146.66 대비 목표가는 $158입니다.",
-            "2026-04-08 종가 $144.9 대비 괴리는 9%입니다."
-          ],
-          "performance": {
-            "week1": {
-              "asOfDate": "2026-04-15",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            },
-            "month1": {
-              "asOfDate": "2026-05-08",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            },
-            "month3": {
-              "asOfDate": "2026-07-07",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            }
-          }
-        },
-        {
-          "date": "2026-04-07",
-          "ticker": "PG",
-          "name": "The Procter & Gamble Company",
-          "market": "us",
-          "broker": "UBS",
-          "analyst": "Peter Grom",
-          "opinion": "Strong Buy",
-          "targetPrice": 166,
-          "currentPrice": 146.66,
-          "basePrice": 141.3,
-          "basePriceDate": "2026-04-07",
-          "upside": 13.2,
-          "sourceUrl": "https://stockanalysis.com/stocks/pg/ratings/",
-          "sourceText": "UBS Strong Buy Maintains. Price target 170 -> 166.",
-          "reportTitle": "Strong Buy -> Strong Buy Maintains",
-          "reasonSummary": "Strong Buy -> Strong Buy Maintains. UBS가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 13.2%입니다. 2026-04-07 종가 대비 목표가 괴리는 17.5%입니다.",
-          "reasonBullets": [
-            "UBS가 2026-04-07에 Strong Buy 의견과 목표가를 제시했습니다.",
-            "현재가 $146.66 대비 목표가는 $166입니다.",
-            "2026-04-07 종가 $141.3 대비 괴리는 17.5%입니다."
-          ],
-          "performance": {
-            "week1": {
-              "asOfDate": "2026-04-14",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            },
-            "month1": {
-              "asOfDate": "2026-05-07",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            },
-            "month3": {
-              "asOfDate": "2026-07-06",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            }
-          }
-        },
-        {
-          "date": "2026-01-23",
-          "ticker": "PG",
-          "name": "The Procter & Gamble Company",
-          "market": "us",
-          "broker": "JP Morgan",
-          "analyst": "Andrea Teixeira",
-          "opinion": "Buy",
-          "targetPrice": 165,
-          "currentPrice": 146.66,
-          "basePrice": 150.15,
-          "basePriceDate": "2026-01-23",
-          "upside": 12.5,
-          "sourceUrl": "https://stockanalysis.com/stocks/pg/ratings/",
-          "sourceText": "JP Morgan Buy Upgrades. Price target 157 -> 165.",
-          "reportTitle": "Hold -> Buy Upgrades",
-          "reasonSummary": "Hold -> Buy Upgrades. JP Morgan가 Buy 의견을 제시했고 현재가 기준 상승여력은 12.5%입니다. 2026-01-23 종가 대비 목표가 괴리는 9.9%입니다.",
-          "reasonBullets": [
-            "JP Morgan가 2026-01-23에 Buy 의견과 목표가를 제시했습니다.",
-            "현재가 $146.66 대비 목표가는 $165입니다.",
-            "2026-01-23 종가 $150.15 대비 괴리는 9.9%입니다."
-          ],
-          "performance": {
-            "week1": {
-              "asOfDate": "2026-01-30",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "unavailable"
-            },
-            "month1": {
-              "asOfDate": "2026-02-20",
-              "closePrice": 160.78,
-              "returnPct": 7.1,
-              "targetProgressPct": 71.6,
-              "success": true,
-              "status": "complete"
-            },
-            "month3": {
-              "asOfDate": "2026-04-23",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            }
-          }
-        },
-        {
-          "date": "2026-01-08",
-          "ticker": "PG",
-          "name": "The Procter & Gamble Company",
-          "market": "us",
-          "broker": "TD Cowen",
-          "analyst": "Robert Moskow",
-          "opinion": "Strong Buy",
-          "targetPrice": 150,
-          "currentPrice": 146.66,
-          "basePrice": 141.53,
-          "basePriceDate": "2026-01-08",
-          "upside": 2.3,
-          "sourceUrl": "https://stockanalysis.com/stocks/pg/ratings/",
-          "sourceText": "TD Cowen Strong Buy Maintains. Price target 168 -> 150.",
-          "reportTitle": "Strong Buy -> Strong Buy Maintains",
-          "reasonSummary": "Strong Buy -> Strong Buy Maintains. TD Cowen가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 2.3%입니다. 2026-01-08 종가 대비 목표가 괴리는 6%입니다.",
-          "reasonBullets": [
-            "TD Cowen가 2026-01-08에 Strong Buy 의견과 목표가를 제시했습니다.",
-            "현재가 $146.66 대비 목표가는 $150입니다.",
-            "2026-01-08 종가 $141.53 대비 괴리는 6%입니다."
-          ],
-          "performance": {
-            "week1": {
-              "asOfDate": "2026-01-15",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "unavailable"
-            },
-            "month1": {
-              "asOfDate": "2026-02-06",
-              "closePrice": 159.17,
-              "returnPct": 12.5,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "complete"
-            },
-            "month3": {
-              "asOfDate": "2026-04-08",
-              "closePrice": 144.9,
-              "returnPct": 2.4,
-              "targetProgressPct": 39.8,
-              "success": false,
-              "status": "complete"
-            }
-          }
-        },
-        {
-          "date": "2025-12-17",
-          "ticker": "PG",
-          "name": "The Procter & Gamble Company",
-          "market": "us",
-          "broker": "Jefferies",
-          "analyst": "Kaumil Gajrawala",
-          "opinion": "Strong Buy",
-          "targetPrice": 179,
-          "currentPrice": 146.66,
-          "basePrice": 147.81,
-          "basePriceDate": "2025-12-17",
-          "upside": 22.1,
-          "sourceUrl": "https://stockanalysis.com/stocks/pg/ratings/",
-          "sourceText": "Jefferies Strong Buy Upgrades. Price target 156 -> 179.",
-          "reportTitle": "Hold -> Strong Buy Upgrades",
-          "reasonSummary": "Hold -> Strong Buy Upgrades. Jefferies가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 22.1%입니다. 2025-12-17 종가 대비 목표가 괴리는 21.1%입니다.",
-          "reasonBullets": [
-            "Jefferies가 2025-12-17에 Strong Buy 의견과 목표가를 제시했습니다.",
-            "현재가 $146.66 대비 목표가는 $179입니다.",
-            "2025-12-17 종가 $147.81 대비 괴리는 21.1%입니다."
-          ],
-          "performance": {
-            "week1": {
-              "asOfDate": "2025-12-24",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "unavailable"
-            },
-            "month1": {
-              "asOfDate": "2026-01-16",
-              "closePrice": 144.53,
-              "returnPct": -2.2,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "complete"
-            },
-            "month3": {
-              "asOfDate": "2026-03-17",
-              "closePrice": 151.48,
-              "returnPct": 2.5,
-              "targetProgressPct": 11.8,
-              "success": false,
-              "status": "complete"
             }
           }
         }
@@ -58199,11 +58199,11 @@
           "performance": {
             "week1": {
               "asOfDate": "2026-02-12",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
+              "closePrice": 284.37,
+              "returnPct": 5.9,
+              "targetProgressPct": 19.4,
               "success": false,
-              "status": "unavailable"
+              "status": "complete"
             },
             "month1": {
               "asOfDate": "2026-03-06",
@@ -58248,11 +58248,11 @@
           "performance": {
             "week1": {
               "asOfDate": "2026-02-09",
-              "closePrice": 0,
-              "returnPct": 0,
+              "closePrice": 275.7,
+              "returnPct": -3.5,
               "targetProgressPct": 0,
               "success": false,
-              "status": "unavailable"
+              "status": "complete"
             },
             "month1": {
               "asOfDate": "2026-03-04",
@@ -58297,11 +58297,11 @@
           "performance": {
             "week1": {
               "asOfDate": "2026-02-09",
-              "closePrice": 0,
-              "returnPct": 0,
+              "closePrice": 275.7,
+              "returnPct": -3.5,
               "targetProgressPct": 0,
               "success": false,
-              "status": "unavailable"
+              "status": "complete"
             },
             "month1": {
               "asOfDate": "2026-03-04",
@@ -62161,11 +62161,11 @@
           "performance": {
             "week1": {
               "asOfDate": "2026-02-05",
-              "closePrice": 0,
-              "returnPct": 0,
+              "closePrice": 397.21,
+              "returnPct": -4.6,
               "targetProgressPct": 0,
               "success": false,
-              "status": "unavailable"
+              "status": "complete"
             },
             "month1": {
               "asOfDate": "2026-02-27",
@@ -62411,11 +62411,11 @@
           "performance": {
             "week1": {
               "asOfDate": "2026-01-12",
-              "closePrice": 0,
-              "returnPct": 0,
+              "closePrice": 324.49,
+              "returnPct": -2.9,
               "targetProgressPct": 0,
               "success": false,
-              "status": "unavailable"
+              "status": "complete"
             },
             "month1": {
               "asOfDate": "2026-02-04",
@@ -62460,11 +62460,11 @@
           "performance": {
             "week1": {
               "asOfDate": "2025-12-24",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
+              "closePrice": 329.17,
+              "returnPct": 4.5,
+              "targetProgressPct": 29.6,
               "success": false,
-              "status": "unavailable"
+              "status": "complete"
             },
             "month1": {
               "asOfDate": "2026-01-16",
@@ -69043,11 +69043,11 @@
           "performance": {
             "week1": {
               "asOfDate": "2026-02-06",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
+              "closePrice": 278.12,
+              "returnPct": 7.2,
+              "targetProgressPct": 46,
               "success": false,
-              "status": "unavailable"
+              "status": "complete"
             },
             "month1": {
               "asOfDate": "2026-02-27",
@@ -69092,11 +69092,11 @@
           "performance": {
             "week1": {
               "asOfDate": "2026-02-06",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
+              "closePrice": 278.12,
+              "returnPct": 7.2,
+              "targetProgressPct": 28.4,
               "success": false,
-              "status": "unavailable"
+              "status": "complete"
             },
             "month1": {
               "asOfDate": "2026-02-27",
@@ -69641,11 +69641,11 @@
           "performance": {
             "week1": {
               "asOfDate": "2026-02-06",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
+              "closePrice": 331.58,
+              "returnPct": 3,
+              "targetProgressPct": 13.3,
               "success": false,
-              "status": "unavailable"
+              "status": "complete"
             },
             "month1": {
               "asOfDate": "2026-02-27",
@@ -69690,11 +69690,11 @@
           "performance": {
             "week1": {
               "asOfDate": "2026-02-06",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
+              "closePrice": 331.58,
+              "returnPct": 3,
+              "targetProgressPct": 11.1,
               "success": false,
-              "status": "unavailable"
+              "status": "complete"
             },
             "month1": {
               "asOfDate": "2026-02-27",
@@ -72728,11 +72728,11 @@
           "performance": {
             "week1": {
               "asOfDate": "2026-02-06",
-              "closePrice": 0,
-              "returnPct": 0,
+              "closePrice": 401.14,
+              "returnPct": -6.8,
               "targetProgressPct": 0,
               "success": false,
-              "status": "unavailable"
+              "status": "complete"
             },
             "month1": {
               "asOfDate": "2026-02-27",
@@ -72777,11 +72777,11 @@
           "performance": {
             "week1": {
               "asOfDate": "2026-02-05",
-              "closePrice": 0,
-              "returnPct": 0,
+              "closePrice": 393.67,
+              "returnPct": -9.2,
               "targetProgressPct": 0,
               "success": false,
-              "status": "unavailable"
+              "status": "complete"
             },
             "month1": {
               "asOfDate": "2026-02-27",
@@ -72826,11 +72826,11 @@
           "performance": {
             "week1": {
               "asOfDate": "2026-02-05",
-              "closePrice": 0,
-              "returnPct": 0,
+              "closePrice": 393.67,
+              "returnPct": -9.2,
               "targetProgressPct": 0,
               "success": false,
-              "status": "unavailable"
+              "status": "complete"
             },
             "month1": {
               "asOfDate": "2026-02-27",

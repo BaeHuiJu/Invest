@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-14T09:46:45.892Z",
+  "generatedAt": "2026-04-14T11:21:47.231Z",
   "maxDays": 365,
   "reports": [
     {
@@ -1983,6 +1983,104 @@
         "미래에셋증권가 2026-04-14에 매수 의견과 목표가를 제시했습니다.",
         "현재가 99,700원 대비 목표가는 120,000원입니다.",
         "2026-04-14 종가 99,700원 대비 괴리는 20.4%입니다."
+      ],
+      "performance": {
+        "week1": {
+          "asOfDate": "2026-04-21",
+          "closePrice": 0,
+          "returnPct": 0,
+          "targetProgressPct": 0,
+          "success": false,
+          "status": "pending"
+        },
+        "month1": {
+          "asOfDate": "2026-05-14",
+          "closePrice": 0,
+          "returnPct": 0,
+          "targetProgressPct": 0,
+          "success": false,
+          "status": "pending"
+        },
+        "month3": {
+          "asOfDate": "2026-07-13",
+          "closePrice": 0,
+          "returnPct": 0,
+          "targetProgressPct": 0,
+          "success": false,
+          "status": "pending"
+        }
+      }
+    },
+    {
+      "date": "2026-04-14",
+      "ticker": "AAPL",
+      "name": "Apple Inc.",
+      "market": "us",
+      "broker": "B of A Securities",
+      "analyst": "Wamsi Mohan",
+      "opinion": "Strong Buy",
+      "targetPrice": 325,
+      "currentPrice": 259.2,
+      "basePrice": 259.2,
+      "basePriceDate": "2026-04-13",
+      "upside": 25.4,
+      "sourceUrl": "https://stockanalysis.com/stocks/aapl/ratings/",
+      "sourceText": "B of A Securities Strong Buy Maintains. Price target 320 -> 325.",
+      "reportTitle": "Strong Buy -> Strong Buy Maintains",
+      "reasonSummary": "Strong Buy -> Strong Buy Maintains. B of A Securities가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 25.4%입니다. 2026-04-13 종가 대비 목표가 괴리는 25.4%입니다.",
+      "reasonBullets": [
+        "B of A Securities가 2026-04-14에 Strong Buy 의견과 목표가를 제시했습니다.",
+        "현재가 $259.2 대비 목표가는 $325입니다.",
+        "2026-04-13 종가 $259.2 대비 괴리는 25.4%입니다."
+      ],
+      "performance": {
+        "week1": {
+          "asOfDate": "2026-04-21",
+          "closePrice": 0,
+          "returnPct": 0,
+          "targetProgressPct": 0,
+          "success": false,
+          "status": "pending"
+        },
+        "month1": {
+          "asOfDate": "2026-05-14",
+          "closePrice": 0,
+          "returnPct": 0,
+          "targetProgressPct": 0,
+          "success": false,
+          "status": "pending"
+        },
+        "month3": {
+          "asOfDate": "2026-07-13",
+          "closePrice": 0,
+          "returnPct": 0,
+          "targetProgressPct": 0,
+          "success": false,
+          "status": "pending"
+        }
+      }
+    },
+    {
+      "date": "2026-04-14",
+      "ticker": "MSFT",
+      "name": "Microsoft Corporation",
+      "market": "us",
+      "broker": "Piper Sandler",
+      "analyst": "Billy Fitzsimmons",
+      "opinion": "Buy",
+      "targetPrice": 500,
+      "currentPrice": 384.37,
+      "basePrice": 384.37,
+      "basePriceDate": "2026-04-13",
+      "upside": 30.1,
+      "sourceUrl": "https://stockanalysis.com/stocks/msft/ratings/",
+      "sourceText": "Piper Sandler Buy Maintains. Price target 600 -> 500.",
+      "reportTitle": "Buy -> Buy Maintains",
+      "reasonSummary": "Buy -> Buy Maintains. Piper Sandler가 Buy 의견을 제시했고 현재가 기준 상승여력은 30.1%입니다. 2026-04-13 종가 대비 목표가 괴리는 30.1%입니다.",
+      "reasonBullets": [
+        "Piper Sandler가 2026-04-14에 Buy 의견과 목표가를 제시했습니다.",
+        "현재가 $384.37 대비 목표가는 $500입니다.",
+        "2026-04-13 종가 $384.37 대비 괴리는 30.1%입니다."
       ],
       "performance": {
         "week1": {
@@ -20633,55 +20731,6 @@
     },
     {
       "date": "2026-03-23",
-      "ticker": "AAPL",
-      "name": "Apple Inc.",
-      "market": "us",
-      "broker": "B of A Securities",
-      "analyst": "Wamsi Mohan",
-      "opinion": "Strong Buy",
-      "targetPrice": 320,
-      "currentPrice": 259.2,
-      "basePrice": 251.49,
-      "basePriceDate": "2026-03-23",
-      "upside": 23.5,
-      "sourceUrl": "https://stockanalysis.com/stocks/aapl/ratings/",
-      "sourceText": "B of A Securities Strong Buy Maintains. Price target 325 -> 320.",
-      "reportTitle": "Strong Buy -> Strong Buy Maintains",
-      "reasonSummary": "Strong Buy -> Strong Buy Maintains. B of A Securities가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 23.5%입니다. 2026-03-23 종가 대비 목표가 괴리는 27.2%입니다.",
-      "reasonBullets": [
-        "B of A Securities가 2026-03-23에 Strong Buy 의견과 목표가를 제시했습니다.",
-        "현재가 $259.2 대비 목표가는 $320입니다.",
-        "2026-03-23 종가 $251.49 대비 괴리는 27.2%입니다."
-      ],
-      "performance": {
-        "week1": {
-          "asOfDate": "2026-03-30",
-          "closePrice": 246.63,
-          "returnPct": -1.9,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "complete"
-        },
-        "month1": {
-          "asOfDate": "2026-04-22",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "pending"
-        },
-        "month3": {
-          "asOfDate": "2026-06-21",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "pending"
-        }
-      }
-    },
-    {
-      "date": "2026-03-23",
       "ticker": "AMZN",
       "name": "Amazon.com, Inc.",
       "market": "us",
@@ -28945,11 +28994,11 @@
         },
         "month1": {
           "asOfDate": "2026-03-27",
-          "closePrice": 122.89,
-          "returnPct": -2.3,
+          "closePrice": 0,
+          "returnPct": 0,
           "targetProgressPct": 0,
           "success": false,
-          "status": "complete"
+          "status": "unavailable"
         },
         "month3": {
           "asOfDate": "2026-05-26",
@@ -30562,11 +30611,11 @@
         },
         "month1": {
           "asOfDate": "2026-03-25",
-          "closePrice": 123.06,
-          "returnPct": -2.2,
+          "closePrice": 0,
+          "returnPct": 0,
           "targetProgressPct": 0,
           "success": false,
-          "status": "complete"
+          "status": "unavailable"
         },
         "month3": {
           "asOfDate": "2026-05-24",
@@ -30611,11 +30660,11 @@
         },
         "month1": {
           "asOfDate": "2026-03-25",
-          "closePrice": 47.13,
-          "returnPct": 35.6,
-          "targetProgressPct": 71.8,
-          "success": true,
-          "status": "complete"
+          "closePrice": 0,
+          "returnPct": 0,
+          "targetProgressPct": 0,
+          "success": false,
+          "status": "unavailable"
         },
         "month3": {
           "asOfDate": "2026-05-24",
@@ -31198,12 +31247,12 @@
           "status": "complete"
         },
         "month1": {
-          "asOfDate": "2026-03-20",
-          "closePrice": 119.02,
-          "returnPct": -3.2,
+          "asOfDate": "2026-03-22",
+          "closePrice": 0,
+          "returnPct": 0,
           "targetProgressPct": 0,
           "success": false,
-          "status": "complete"
+          "status": "unavailable"
         },
         "month3": {
           "asOfDate": "2026-05-21",
@@ -31247,12 +31296,12 @@
           "status": "complete"
         },
         "month1": {
-          "asOfDate": "2026-03-20",
-          "closePrice": 119.02,
-          "returnPct": -3.2,
+          "asOfDate": "2026-03-22",
+          "closePrice": 0,
+          "returnPct": 0,
           "targetProgressPct": 0,
           "success": false,
-          "status": "complete"
+          "status": "unavailable"
         },
         "month3": {
           "asOfDate": "2026-05-21",
@@ -31296,12 +31345,12 @@
           "status": "complete"
         },
         "month1": {
-          "asOfDate": "2026-03-20",
-          "closePrice": 119.02,
-          "returnPct": -3.2,
+          "asOfDate": "2026-03-22",
+          "closePrice": 0,
+          "returnPct": 0,
           "targetProgressPct": 0,
           "success": false,
-          "status": "complete"
+          "status": "unavailable"
         },
         "month3": {
           "asOfDate": "2026-05-21",
@@ -31345,12 +31394,12 @@
           "status": "complete"
         },
         "month1": {
-          "asOfDate": "2026-03-20",
-          "closePrice": 119.02,
-          "returnPct": -3.2,
+          "asOfDate": "2026-03-22",
+          "closePrice": 0,
+          "returnPct": 0,
           "targetProgressPct": 0,
           "success": false,
-          "status": "complete"
+          "status": "unavailable"
         },
         "month3": {
           "asOfDate": "2026-05-21",
@@ -31394,12 +31443,12 @@
           "status": "complete"
         },
         "month1": {
-          "asOfDate": "2026-03-20",
-          "closePrice": 119.02,
-          "returnPct": -3.2,
+          "asOfDate": "2026-03-22",
+          "closePrice": 0,
+          "returnPct": 0,
           "targetProgressPct": 0,
           "success": false,
-          "status": "complete"
+          "status": "unavailable"
         },
         "month3": {
           "asOfDate": "2026-05-21",
@@ -31443,12 +31492,12 @@
           "status": "complete"
         },
         "month1": {
-          "asOfDate": "2026-03-20",
-          "closePrice": 119.02,
-          "returnPct": -3.2,
+          "asOfDate": "2026-03-22",
+          "closePrice": 0,
+          "returnPct": 0,
           "targetProgressPct": 0,
           "success": false,
-          "status": "complete"
+          "status": "unavailable"
         },
         "month3": {
           "asOfDate": "2026-05-21",
@@ -31492,12 +31541,12 @@
           "status": "complete"
         },
         "month1": {
-          "asOfDate": "2026-03-20",
-          "closePrice": 119.02,
-          "returnPct": -3.2,
+          "asOfDate": "2026-03-22",
+          "closePrice": 0,
+          "returnPct": 0,
           "targetProgressPct": 0,
           "success": false,
-          "status": "complete"
+          "status": "unavailable"
         },
         "month3": {
           "asOfDate": "2026-05-21",
@@ -32276,12 +32325,12 @@
           "status": "complete"
         },
         "month1": {
-          "asOfDate": "2026-03-20",
-          "closePrice": 301,
-          "returnPct": -0.6,
+          "asOfDate": "2026-03-21",
+          "closePrice": 0,
+          "returnPct": 0,
           "targetProgressPct": 0,
           "success": false,
-          "status": "complete"
+          "status": "unavailable"
         },
         "month3": {
           "asOfDate": "2026-05-20",
@@ -32326,11 +32375,11 @@
         },
         "month1": {
           "asOfDate": "2026-03-19",
-          "closePrice": 287.97,
-          "returnPct": -6.2,
+          "closePrice": 0,
+          "returnPct": 0,
           "targetProgressPct": 0,
           "success": false,
-          "status": "complete"
+          "status": "unavailable"
         },
         "month3": {
           "asOfDate": "2026-05-18",
@@ -32375,11 +32424,11 @@
         },
         "month1": {
           "asOfDate": "2026-03-19",
-          "closePrice": 299.71,
-          "returnPct": -6.2,
+          "closePrice": 0,
+          "returnPct": 0,
           "targetProgressPct": 0,
           "success": false,
-          "status": "complete"
+          "status": "unavailable"
         },
         "month3": {
           "asOfDate": "2026-05-18",
@@ -33935,11 +33984,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-20",
-          "closePrice": 37.75,
-          "returnPct": -27,
+          "closePrice": 0,
+          "returnPct": 0,
           "targetProgressPct": 0,
           "success": false,
-          "status": "complete"
+          "status": "unavailable"
         },
         "month1": {
           "asOfDate": "2026-03-13",
@@ -33984,11 +34033,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-20",
-          "closePrice": 37.75,
-          "returnPct": -27,
+          "closePrice": 0,
+          "returnPct": 0,
           "targetProgressPct": 0,
           "success": false,
-          "status": "complete"
+          "status": "unavailable"
         },
         "month1": {
           "asOfDate": "2026-03-13",
@@ -36385,11 +36434,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-19",
-          "closePrice": 411.71,
-          "returnPct": -1.3,
+          "closePrice": 0,
+          "returnPct": 0,
           "targetProgressPct": 0,
           "success": false,
-          "status": "complete"
+          "status": "unavailable"
         },
         "month1": {
           "asOfDate": "2026-03-13",
@@ -37610,11 +37659,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-18",
-          "closePrice": 126.62,
-          "returnPct": -1.7,
+          "closePrice": 0,
+          "returnPct": 0,
           "targetProgressPct": 0,
           "success": false,
-          "status": "complete"
+          "status": "unavailable"
         },
         "month1": {
           "asOfDate": "2026-03-13",
@@ -37659,11 +37708,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-13",
-          "closePrice": 305.72,
-          "returnPct": -5.3,
+          "closePrice": 0,
+          "returnPct": 0,
           "targetProgressPct": 0,
           "success": false,
-          "status": "complete"
+          "status": "unavailable"
         },
         "month1": {
           "asOfDate": "2026-03-06",
@@ -37708,11 +37757,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-13",
-          "closePrice": 305.72,
-          "returnPct": -5.3,
+          "closePrice": 0,
+          "returnPct": 0,
           "targetProgressPct": 0,
           "success": false,
-          "status": "complete"
+          "status": "unavailable"
         },
         "month1": {
           "asOfDate": "2026-03-06",
@@ -37757,11 +37806,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-13",
-          "closePrice": 198.79,
-          "returnPct": -5.5,
+          "closePrice": 0,
+          "returnPct": 0,
           "targetProgressPct": 0,
           "success": false,
-          "status": "complete"
+          "status": "unavailable"
         },
         "month1": {
           "asOfDate": "2026-03-06",
@@ -37806,11 +37855,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-13",
-          "closePrice": 198.79,
-          "returnPct": -5.5,
+          "closePrice": 0,
+          "returnPct": 0,
           "targetProgressPct": 0,
           "success": false,
-          "status": "complete"
+          "status": "unavailable"
         },
         "month1": {
           "asOfDate": "2026-03-06",
@@ -37855,11 +37904,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-13",
-          "closePrice": 198.79,
-          "returnPct": -5.5,
+          "closePrice": 0,
+          "returnPct": 0,
           "targetProgressPct": 0,
           "success": false,
-          "status": "complete"
+          "status": "unavailable"
         },
         "month1": {
           "asOfDate": "2026-03-06",
@@ -37904,11 +37953,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-12",
-          "closePrice": 309,
-          "returnPct": -6.7,
+          "closePrice": 0,
+          "returnPct": 0,
           "targetProgressPct": 0,
           "success": false,
-          "status": "complete"
+          "status": "unavailable"
         },
         "month1": {
           "asOfDate": "2026-03-06",
@@ -37953,11 +38002,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-12",
-          "closePrice": 284.37,
-          "returnPct": 5.9,
-          "targetProgressPct": 19.4,
+          "closePrice": 0,
+          "returnPct": 0,
+          "targetProgressPct": 0,
           "success": false,
-          "status": "complete"
+          "status": "unavailable"
         },
         "month1": {
           "asOfDate": "2026-03-06",
@@ -38002,11 +38051,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-11",
-          "closePrice": 51.99,
+          "closePrice": 0,
           "returnPct": 0,
           "targetProgressPct": 0,
           "success": false,
-          "status": "complete"
+          "status": "unavailable"
         },
         "month1": {
           "asOfDate": "2026-03-06",
@@ -38051,11 +38100,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-10",
-          "closePrice": 670.72,
-          "returnPct": -3,
+          "closePrice": 0,
+          "returnPct": 0,
           "targetProgressPct": 0,
           "success": false,
-          "status": "complete"
+          "status": "unavailable"
         },
         "month1": {
           "asOfDate": "2026-03-05",
@@ -38100,11 +38149,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-09",
-          "closePrice": 677.22,
-          "returnPct": -4.1,
+          "closePrice": 0,
+          "returnPct": 0,
           "targetProgressPct": 0,
           "success": false,
-          "status": "complete"
+          "status": "unavailable"
         },
         "month1": {
           "asOfDate": "2026-03-04",
@@ -38149,11 +38198,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-09",
-          "closePrice": 275.7,
-          "returnPct": -3.5,
+          "closePrice": 0,
+          "returnPct": 0,
           "targetProgressPct": 0,
           "success": false,
-          "status": "complete"
+          "status": "unavailable"
         },
         "month1": {
           "asOfDate": "2026-03-04",
@@ -38198,11 +38247,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-09",
-          "closePrice": 275.7,
-          "returnPct": -3.5,
+          "closePrice": 0,
+          "returnPct": 0,
           "targetProgressPct": 0,
           "success": false,
-          "status": "complete"
+          "status": "unavailable"
         },
         "month1": {
           "asOfDate": "2026-03-04",
@@ -38247,11 +38296,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-06",
-          "closePrice": 278.12,
-          "returnPct": 7.2,
-          "targetProgressPct": 46,
+          "closePrice": 0,
+          "returnPct": 0,
+          "targetProgressPct": 0,
           "success": false,
-          "status": "complete"
+          "status": "unavailable"
         },
         "month1": {
           "asOfDate": "2026-02-27",
@@ -38296,11 +38345,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-06",
-          "closePrice": 278.12,
-          "returnPct": 7.2,
-          "targetProgressPct": 28.4,
+          "closePrice": 0,
+          "returnPct": 0,
+          "targetProgressPct": 0,
           "success": false,
-          "status": "complete"
+          "status": "unavailable"
         },
         "month1": {
           "asOfDate": "2026-02-27",
@@ -38345,11 +38394,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-06",
-          "closePrice": 278.12,
-          "returnPct": 7.2,
-          "targetProgressPct": 28.4,
+          "closePrice": 0,
+          "returnPct": 0,
+          "targetProgressPct": 0,
           "success": false,
-          "status": "complete"
+          "status": "unavailable"
         },
         "month1": {
           "asOfDate": "2026-02-27",
@@ -38394,11 +38443,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-06",
-          "closePrice": 401.14,
-          "returnPct": -6.8,
+          "closePrice": 0,
+          "returnPct": 0,
           "targetProgressPct": 0,
           "success": false,
-          "status": "complete"
+          "status": "unavailable"
         },
         "month1": {
           "asOfDate": "2026-02-27",
@@ -38443,11 +38492,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-06",
-          "closePrice": 331.58,
-          "returnPct": 3,
-          "targetProgressPct": 13.3,
+          "closePrice": 0,
+          "returnPct": 0,
+          "targetProgressPct": 0,
           "success": false,
-          "status": "complete"
+          "status": "unavailable"
         },
         "month1": {
           "asOfDate": "2026-02-27",
@@ -38492,11 +38541,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-06",
-          "closePrice": 331.58,
-          "returnPct": 3,
-          "targetProgressPct": 11.1,
+          "closePrice": 0,
+          "returnPct": 0,
+          "targetProgressPct": 0,
           "success": false,
-          "status": "complete"
+          "status": "unavailable"
         },
         "month1": {
           "asOfDate": "2026-02-27",
@@ -38541,11 +38590,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-06",
-          "closePrice": 331.58,
-          "returnPct": 3,
-          "targetProgressPct": 10.9,
+          "closePrice": 0,
+          "returnPct": 0,
+          "targetProgressPct": 0,
           "success": false,
-          "status": "complete"
+          "status": "unavailable"
         },
         "month1": {
           "asOfDate": "2026-02-27",
@@ -38590,11 +38639,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-06",
-          "closePrice": 331.58,
-          "returnPct": 3,
-          "targetProgressPct": 12.5,
+          "closePrice": 0,
+          "returnPct": 0,
+          "targetProgressPct": 0,
           "success": false,
-          "status": "complete"
+          "status": "unavailable"
         },
         "month1": {
           "asOfDate": "2026-02-27",
@@ -38639,11 +38688,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-06",
-          "closePrice": 276.65,
-          "returnPct": -3.6,
+          "closePrice": 0,
+          "returnPct": 0,
           "targetProgressPct": 0,
           "success": false,
-          "status": "complete"
+          "status": "unavailable"
         },
         "month1": {
           "asOfDate": "2026-02-27",
@@ -38688,11 +38737,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-06",
-          "closePrice": 276.65,
-          "returnPct": -3.6,
+          "closePrice": 0,
+          "returnPct": 0,
           "targetProgressPct": 0,
           "success": false,
-          "status": "complete"
+          "status": "unavailable"
         },
         "month1": {
           "asOfDate": "2026-02-27",
@@ -38737,11 +38786,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-05",
-          "closePrice": 393.67,
-          "returnPct": -9.2,
+          "closePrice": 0,
+          "returnPct": 0,
           "targetProgressPct": 0,
           "success": false,
-          "status": "complete"
+          "status": "unavailable"
         },
         "month1": {
           "asOfDate": "2026-02-27",
@@ -38786,11 +38835,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-05",
-          "closePrice": 393.67,
-          "returnPct": -9.2,
+          "closePrice": 0,
+          "returnPct": 0,
           "targetProgressPct": 0,
           "success": false,
-          "status": "complete"
+          "status": "unavailable"
         },
         "month1": {
           "asOfDate": "2026-02-27",
@@ -38835,11 +38884,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-05",
-          "closePrice": 393.67,
-          "returnPct": -9.2,
+          "closePrice": 0,
+          "returnPct": 0,
           "targetProgressPct": 0,
           "success": false,
-          "status": "complete"
+          "status": "unavailable"
         },
         "month1": {
           "asOfDate": "2026-02-27",
@@ -38884,11 +38933,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-05",
-          "closePrice": 393.67,
-          "returnPct": -9.2,
+          "closePrice": 0,
+          "returnPct": 0,
           "targetProgressPct": 0,
           "success": false,
-          "status": "complete"
+          "status": "unavailable"
         },
         "month1": {
           "asOfDate": "2026-02-27",
@@ -38933,11 +38982,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-05",
-          "closePrice": 393.67,
-          "returnPct": -9.2,
+          "closePrice": 0,
+          "returnPct": 0,
           "targetProgressPct": 0,
           "success": false,
-          "status": "complete"
+          "status": "unavailable"
         },
         "month1": {
           "asOfDate": "2026-02-27",
@@ -38982,11 +39031,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-05",
-          "closePrice": 393.67,
-          "returnPct": -9.2,
+          "closePrice": 0,
+          "returnPct": 0,
           "targetProgressPct": 0,
           "success": false,
-          "status": "complete"
+          "status": "unavailable"
         },
         "month1": {
           "asOfDate": "2026-02-27",
@@ -39031,11 +39080,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-05",
-          "closePrice": 393.67,
-          "returnPct": -9.2,
+          "closePrice": 0,
+          "returnPct": 0,
           "targetProgressPct": 0,
           "success": false,
-          "status": "complete"
+          "status": "unavailable"
         },
         "month1": {
           "asOfDate": "2026-02-27",
@@ -39080,11 +39129,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-05",
-          "closePrice": 393.67,
-          "returnPct": -9.2,
+          "closePrice": 0,
+          "returnPct": 0,
           "targetProgressPct": 0,
           "success": false,
-          "status": "complete"
+          "status": "unavailable"
         },
         "month1": {
           "asOfDate": "2026-02-27",
@@ -39129,60 +39178,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-05",
-          "closePrice": 393.67,
-          "returnPct": -9.2,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "complete"
-        },
-        "month1": {
-          "asOfDate": "2026-02-27",
-          "closePrice": 392.74,
-          "returnPct": -9.4,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "complete"
-        },
-        "month3": {
-          "asOfDate": "2026-04-29",
           "closePrice": 0,
           "returnPct": 0,
           "targetProgressPct": 0,
           "success": false,
-          "status": "pending"
-        }
-      }
-    },
-    {
-      "date": "2026-01-29",
-      "ticker": "MSFT",
-      "name": "Microsoft Corporation",
-      "market": "us",
-      "broker": "Piper Sandler",
-      "analyst": "Hannah Rudoff",
-      "opinion": "Buy",
-      "targetPrice": 600,
-      "currentPrice": 384.37,
-      "basePrice": 433.5,
-      "basePriceDate": "2026-01-29",
-      "upside": 56.1,
-      "sourceUrl": "https://stockanalysis.com/stocks/msft/ratings/",
-      "sourceText": "Piper Sandler Buy Reiterates. Price target 650 -> 600.",
-      "reportTitle": "Buy -> Buy Reiterates",
-      "reasonSummary": "Buy -> Buy Reiterates. Piper Sandler가 Buy 의견을 제시했고 현재가 기준 상승여력은 56.1%입니다. 2026-01-29 종가 대비 목표가 괴리는 38.4%입니다.",
-      "reasonBullets": [
-        "Piper Sandler가 2026-01-29에 Buy 의견과 목표가를 제시했습니다.",
-        "현재가 $384.37 대비 목표가는 $600입니다.",
-        "2026-01-29 종가 $433.5 대비 괴리는 38.4%입니다."
-      ],
-      "performance": {
-        "week1": {
-          "asOfDate": "2026-02-05",
-          "closePrice": 393.67,
-          "returnPct": -9.2,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "complete"
+          "status": "unavailable"
         },
         "month1": {
           "asOfDate": "2026-02-27",
@@ -39227,11 +39227,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-05",
-          "closePrice": 670.21,
-          "returnPct": -9.2,
+          "closePrice": 0,
+          "returnPct": 0,
           "targetProgressPct": 0,
           "success": false,
-          "status": "complete"
+          "status": "unavailable"
         },
         "month1": {
           "asOfDate": "2026-02-27",
@@ -39276,11 +39276,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-05",
-          "closePrice": 670.21,
-          "returnPct": -9.2,
+          "closePrice": 0,
+          "returnPct": 0,
           "targetProgressPct": 0,
           "success": false,
-          "status": "complete"
+          "status": "unavailable"
         },
         "month1": {
           "asOfDate": "2026-02-27",
@@ -39325,11 +39325,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-05",
-          "closePrice": 670.21,
-          "returnPct": -9.2,
+          "closePrice": 0,
+          "returnPct": 0,
           "targetProgressPct": 0,
           "success": false,
-          "status": "complete"
+          "status": "unavailable"
         },
         "month1": {
           "asOfDate": "2026-02-27",
@@ -39374,11 +39374,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-05",
-          "closePrice": 670.21,
-          "returnPct": -9.2,
+          "closePrice": 0,
+          "returnPct": 0,
           "targetProgressPct": 0,
           "success": false,
-          "status": "complete"
+          "status": "unavailable"
         },
         "month1": {
           "asOfDate": "2026-02-27",
@@ -39423,11 +39423,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-05",
-          "closePrice": 397.21,
-          "returnPct": -4.6,
+          "closePrice": 0,
+          "returnPct": 0,
           "targetProgressPct": 0,
           "success": false,
-          "status": "complete"
+          "status": "unavailable"
         },
         "month1": {
           "asOfDate": "2026-02-27",
@@ -39472,11 +39472,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-05",
-          "closePrice": 397.21,
-          "returnPct": -4.6,
+          "closePrice": 0,
+          "returnPct": 0,
           "targetProgressPct": 0,
           "success": false,
-          "status": "complete"
+          "status": "unavailable"
         },
         "month1": {
           "asOfDate": "2026-02-27",
@@ -39521,11 +39521,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-05",
-          "closePrice": 397.21,
-          "returnPct": -4.6,
+          "closePrice": 0,
+          "returnPct": 0,
           "targetProgressPct": 0,
           "success": false,
-          "status": "complete"
+          "status": "unavailable"
         },
         "month1": {
           "asOfDate": "2026-02-27",
@@ -39570,11 +39570,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-04",
-          "closePrice": 275.92,
-          "returnPct": -6.2,
+          "closePrice": 0,
+          "returnPct": 0,
           "targetProgressPct": 0,
           "success": false,
-          "status": "complete"
+          "status": "unavailable"
         },
         "month1": {
           "asOfDate": "2026-02-27",
@@ -39619,11 +39619,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-04",
-          "closePrice": 275.92,
-          "returnPct": -6.2,
+          "closePrice": 0,
+          "returnPct": 0,
           "targetProgressPct": 0,
           "success": false,
-          "status": "complete"
+          "status": "unavailable"
         },
         "month1": {
           "asOfDate": "2026-02-27",
@@ -39668,11 +39668,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-04",
-          "closePrice": 275.92,
-          "returnPct": -6.2,
+          "closePrice": 0,
+          "returnPct": 0,
           "targetProgressPct": 0,
           "success": false,
-          "status": "complete"
+          "status": "unavailable"
         },
         "month1": {
           "asOfDate": "2026-02-27",
@@ -39717,11 +39717,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-04",
-          "closePrice": 275.92,
-          "returnPct": -6.2,
+          "closePrice": 0,
+          "returnPct": 0,
           "targetProgressPct": 0,
           "success": false,
-          "status": "complete"
+          "status": "unavailable"
         },
         "month1": {
           "asOfDate": "2026-02-27",
@@ -39766,11 +39766,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-01-30",
-          "closePrice": 286.93,
-          "returnPct": -19.5,
+          "closePrice": 0,
+          "returnPct": 0,
           "targetProgressPct": 0,
           "success": false,
-          "status": "complete"
+          "status": "unavailable"
         },
         "month1": {
           "asOfDate": "2026-02-20",
@@ -39815,11 +39815,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-01-30",
-          "closePrice": 227.25,
-          "returnPct": 3.2,
-          "targetProgressPct": 35.8,
+          "closePrice": 0,
+          "returnPct": 0,
+          "targetProgressPct": 0,
           "success": false,
-          "status": "complete"
+          "status": "unavailable"
         },
         "month1": {
           "asOfDate": "2026-02-20",
@@ -39864,11 +39864,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-01-30",
-          "closePrice": 151.77,
-          "returnPct": 1.1,
-          "targetProgressPct": 10.9,
+          "closePrice": 0,
+          "returnPct": 0,
+          "targetProgressPct": 0,
           "success": false,
-          "status": "complete"
+          "status": "unavailable"
         },
         "month1": {
           "asOfDate": "2026-02-20",
@@ -39912,20 +39912,20 @@
       ],
       "performance": {
         "week1": {
-          "asOfDate": "2026-01-16",
-          "closePrice": 56.89,
-          "returnPct": -1.6,
+          "asOfDate": "2026-01-19",
+          "closePrice": 0,
+          "returnPct": 0,
           "targetProgressPct": 0,
           "success": false,
-          "status": "complete"
+          "status": "unavailable"
         },
         "month1": {
           "asOfDate": "2026-02-11",
-          "closePrice": 51.99,
-          "returnPct": -10,
+          "closePrice": 0,
+          "returnPct": 0,
           "targetProgressPct": 0,
           "success": false,
-          "status": "complete"
+          "status": "unavailable"
         },
         "month3": {
           "asOfDate": "2026-04-10",
@@ -39962,11 +39962,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-01-15",
-          "closePrice": 144.63,
-          "returnPct": 2.2,
-          "targetProgressPct": 36.6,
+          "closePrice": 0,
+          "returnPct": 0,
+          "targetProgressPct": 0,
           "success": false,
-          "status": "complete"
+          "status": "unavailable"
         },
         "month1": {
           "asOfDate": "2026-02-06",
@@ -40011,11 +40011,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-01-12",
-          "closePrice": 324.49,
-          "returnPct": -2.9,
+          "closePrice": 0,
+          "returnPct": 0,
           "targetProgressPct": 0,
           "success": false,
-          "status": "complete"
+          "status": "unavailable"
         },
         "month1": {
           "asOfDate": "2026-02-04",
@@ -40060,11 +40060,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2025-12-24",
-          "closePrice": 329.17,
-          "returnPct": 4.5,
-          "targetProgressPct": 29.6,
+          "closePrice": 0,
+          "returnPct": 0,
+          "targetProgressPct": 0,
           "success": false,
-          "status": "complete"
+          "status": "unavailable"
         },
         "month1": {
           "asOfDate": "2026-01-16",
@@ -40109,11 +40109,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2025-12-24",
-          "closePrice": 144.49,
-          "returnPct": -2.2,
+          "closePrice": 0,
+          "returnPct": 0,
           "targetProgressPct": 0,
           "success": false,
-          "status": "complete"
+          "status": "unavailable"
         },
         "month1": {
           "asOfDate": "2026-01-16",
@@ -40158,11 +40158,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2025-12-23",
-          "closePrice": 66.66,
-          "returnPct": 2.1,
-          "targetProgressPct": 9.9,
+          "closePrice": 0,
+          "returnPct": 0,
+          "targetProgressPct": 0,
           "success": false,
-          "status": "complete"
+          "status": "unavailable"
         },
         "month1": {
           "asOfDate": "2026-01-15",
@@ -40207,11 +40207,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2025-12-18",
-          "closePrice": 346.01,
-          "returnPct": 0.1,
-          "targetProgressPct": 1,
+          "closePrice": 0,
+          "returnPct": 0,
+          "targetProgressPct": 0,
           "success": false,
-          "status": "complete"
+          "status": "unavailable"
         },
         "month1": {
           "asOfDate": "2026-01-09",
@@ -40256,11 +40256,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2025-12-15",
-          "closePrice": 346.89,
-          "returnPct": 6.1,
-          "targetProgressPct": 32.3,
+          "closePrice": 0,
+          "returnPct": 0,
+          "targetProgressPct": 0,
           "success": false,
-          "status": "complete"
+          "status": "unavailable"
         },
         "month1": {
           "asOfDate": "2026-01-07",
@@ -40305,11 +40305,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2025-11-14",
-          "closePrice": 59.09,
-          "returnPct": -1.5,
+          "closePrice": 0,
+          "returnPct": 0,
           "targetProgressPct": 0,
           "success": false,
-          "status": "complete"
+          "status": "unavailable"
         },
         "month1": {
           "asOfDate": "2025-12-05",
@@ -40354,11 +40354,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2025-11-05",
-          "closePrice": 340.04,
-          "returnPct": -0.4,
+          "closePrice": 0,
+          "returnPct": 0,
           "targetProgressPct": 0,
           "success": false,
-          "status": "complete"
+          "status": "unavailable"
         },
         "month1": {
           "asOfDate": "2025-11-28",
@@ -40403,11 +40403,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2025-10-29",
-          "closePrice": 341.28,
-          "returnPct": -1.2,
+          "closePrice": 0,
+          "returnPct": 0,
           "targetProgressPct": 0,
           "success": false,
-          "status": "complete"
+          "status": "unavailable"
         },
         "month1": {
           "asOfDate": "2025-11-21",
@@ -40452,19 +40452,19 @@
       "performance": {
         "week1": {
           "asOfDate": "2025-10-14",
-          "closePrice": 302.08,
-          "returnPct": -1.8,
+          "closePrice": 0,
+          "returnPct": 0,
           "targetProgressPct": 0,
           "success": false,
-          "status": "complete"
+          "status": "unavailable"
         },
         "month1": {
           "asOfDate": "2025-11-06",
-          "closePrice": 313.42,
-          "returnPct": 1.9,
-          "targetProgressPct": 13.5,
+          "closePrice": 0,
+          "returnPct": 0,
+          "targetProgressPct": 0,
           "success": false,
-          "status": "complete"
+          "status": "unavailable"
         },
         "month3": {
           "asOfDate": "2026-01-05",
@@ -47387,6 +47387,604 @@
             },
             "month3": {
               "asOfDate": "2026-05-14",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            }
+          }
+        }
+      ]
+    },
+    "us:AAPL": {
+      "ticker": "AAPL",
+      "name": "Apple Inc.",
+      "market": "us",
+      "latestReportDate": "2026-04-14",
+      "latestBroker": "B of A Securities",
+      "latestOpinion": "Strong Buy",
+      "latestTargetPrice": 325,
+      "latestCurrentPrice": 259.2,
+      "latestBasePrice": 259.2,
+      "avgUpside": 24.7,
+      "reportCount": 6,
+      "reasonSummary": "Strong Buy -> Strong Buy Maintains. B of A Securities가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 25.4%입니다. 2026-04-13 종가 대비 목표가 괴리는 25.4%입니다.",
+      "reasonBullets": [
+        "B of A Securities가 2026-04-14에 Strong Buy 의견과 목표가를 제시했습니다.",
+        "현재가 $259.2 대비 목표가는 $325입니다.",
+        "2026-04-13 종가 $259.2 대비 괴리는 25.4%입니다."
+      ],
+      "investmentLogic": {
+        "summary": "Strong Buy -> Strong Buy Maintains",
+        "bullets": [
+          "Strong Buy -> Strong Buy Maintains",
+          "Strong Buy -> Strong Buy Maintains B of A Securities Strong Buy Maintains.",
+          "Price target 320 -> 325."
+        ]
+      },
+      "estimateRevision": {
+        "summary": "유지 신호입니다. 리포트 원문에서 추정치 관련 표현을 기준으로 판단했습니다.",
+        "bullets": [
+          "Strong Buy -> Strong Buy Maintains B of A Securities Strong Buy Maintains.",
+          "Price target 320 -> 325.",
+          "Strong Buy -> Strong Buy Maintains."
+        ],
+        "signal": "flat"
+      },
+      "valuation": {
+        "summary": "현재가 $259.2 대비 목표가 $325가 제시돼 밸류에이션 여력을 확인할 수 있습니다.",
+        "bullets": [
+          "Strong Buy -> Strong Buy Maintains B of A Securities Strong Buy Maintains.",
+          "Price target 320 -> 325.",
+          "Strong Buy -> Strong Buy Maintains."
+        ]
+      },
+      "sectorCycle": {
+        "summary": "Strong Buy -> Strong Buy Maintains B of A Securities Strong Buy Maintains.",
+        "bullets": [
+          "Strong Buy -> Strong Buy Maintains B of A Securities Strong Buy Maintains.",
+          "Price target 320 -> 325.",
+          "Strong Buy -> Strong Buy Maintains."
+        ]
+      },
+      "relatedReports": [
+        {
+          "date": "2026-04-14",
+          "ticker": "AAPL",
+          "name": "Apple Inc.",
+          "market": "us",
+          "broker": "B of A Securities",
+          "analyst": "Wamsi Mohan",
+          "opinion": "Strong Buy",
+          "targetPrice": 325,
+          "currentPrice": 259.2,
+          "basePrice": 259.2,
+          "basePriceDate": "2026-04-13",
+          "upside": 25.4,
+          "sourceUrl": "https://stockanalysis.com/stocks/aapl/ratings/",
+          "sourceText": "B of A Securities Strong Buy Maintains. Price target 320 -> 325.",
+          "reportTitle": "Strong Buy -> Strong Buy Maintains",
+          "reasonSummary": "Strong Buy -> Strong Buy Maintains. B of A Securities가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 25.4%입니다. 2026-04-13 종가 대비 목표가 괴리는 25.4%입니다.",
+          "reasonBullets": [
+            "B of A Securities가 2026-04-14에 Strong Buy 의견과 목표가를 제시했습니다.",
+            "현재가 $259.2 대비 목표가는 $325입니다.",
+            "2026-04-13 종가 $259.2 대비 괴리는 25.4%입니다."
+          ],
+          "performance": {
+            "week1": {
+              "asOfDate": "2026-04-21",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            },
+            "month1": {
+              "asOfDate": "2026-05-14",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            },
+            "month3": {
+              "asOfDate": "2026-07-13",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            }
+          }
+        },
+        {
+          "date": "2026-03-31",
+          "ticker": "AAPL",
+          "name": "Apple Inc.",
+          "market": "us",
+          "broker": "Wedbush",
+          "analyst": "Dan Ives",
+          "opinion": "Buy",
+          "targetPrice": 350,
+          "currentPrice": 259.2,
+          "basePrice": 253.79,
+          "basePriceDate": "2026-03-31",
+          "upside": 35,
+          "sourceUrl": "https://stockanalysis.com/stocks/aapl/ratings/",
+          "sourceText": "Wedbush Buy Reiterates. Price target 350 -> 350.",
+          "reportTitle": "Buy -> Buy Reiterates",
+          "reasonSummary": "Buy -> Buy Reiterates. Wedbush가 Buy 의견을 제시했고 현재가 기준 상승여력은 35.0%입니다. 2026-03-31 종가 대비 목표가 괴리는 37.9%입니다.",
+          "reasonBullets": [
+            "Wedbush가 2026-03-31에 Buy 의견과 목표가를 제시했습니다.",
+            "현재가 $259.2 대비 목표가는 $350입니다.",
+            "2026-03-31 종가 $253.79 대비 괴리는 37.9%입니다."
+          ],
+          "performance": {
+            "week1": {
+              "asOfDate": "2026-04-07",
+              "closePrice": 253.5,
+              "returnPct": -0.1,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "complete"
+            },
+            "month1": {
+              "asOfDate": "2026-04-30",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            },
+            "month3": {
+              "asOfDate": "2026-06-29",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            }
+          }
+        },
+        {
+          "date": "2026-03-23",
+          "ticker": "AAPL",
+          "name": "Apple Inc.",
+          "market": "us",
+          "broker": "Morgan Stanley",
+          "analyst": "Erik Woodring",
+          "opinion": "Buy",
+          "targetPrice": 315,
+          "currentPrice": 259.2,
+          "basePrice": 251.49,
+          "basePriceDate": "2026-03-23",
+          "upside": 21.5,
+          "sourceUrl": "https://stockanalysis.com/stocks/aapl/ratings/",
+          "sourceText": "Morgan Stanley Buy Reiterates. Price target 315 -> 315.",
+          "reportTitle": "Buy -> Buy Reiterates",
+          "reasonSummary": "Buy -> Buy Reiterates. Morgan Stanley가 Buy 의견을 제시했고 현재가 기준 상승여력은 21.5%입니다. 2026-03-23 종가 대비 목표가 괴리는 25.3%입니다.",
+          "reasonBullets": [
+            "Morgan Stanley가 2026-03-23에 Buy 의견과 목표가를 제시했습니다.",
+            "현재가 $259.2 대비 목표가는 $315입니다.",
+            "2026-03-23 종가 $251.49 대비 괴리는 25.3%입니다."
+          ],
+          "performance": {
+            "week1": {
+              "asOfDate": "2026-03-30",
+              "closePrice": 246.63,
+              "returnPct": -1.9,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "complete"
+            },
+            "month1": {
+              "asOfDate": "2026-04-22",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            },
+            "month3": {
+              "asOfDate": "2026-06-21",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            }
+          }
+        },
+        {
+          "date": "2026-01-30",
+          "ticker": "AAPL",
+          "name": "Apple Inc.",
+          "market": "us",
+          "broker": "Maxim Group",
+          "analyst": "Tom Forte",
+          "opinion": "Strong Buy",
+          "targetPrice": 300,
+          "currentPrice": 259.2,
+          "basePrice": 259.48,
+          "basePriceDate": "2026-01-30",
+          "upside": 15.7,
+          "sourceUrl": "https://stockanalysis.com/stocks/aapl/ratings/",
+          "sourceText": "Maxim Group Strong Buy Upgrades. Price target N/A -> 300.",
+          "reportTitle": "Hold -> Strong Buy Upgrades",
+          "reasonSummary": "Hold -> Strong Buy Upgrades. Maxim Group가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 15.7%입니다. 2026-01-30 종가 대비 목표가 괴리는 15.6%입니다.",
+          "reasonBullets": [
+            "Maxim Group가 2026-01-30에 Strong Buy 의견과 목표가를 제시했습니다.",
+            "현재가 $259.2 대비 목표가는 $300입니다.",
+            "2026-01-30 종가 $259.48 대비 괴리는 15.6%입니다."
+          ],
+          "performance": {
+            "week1": {
+              "asOfDate": "2026-02-06",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "unavailable"
+            },
+            "month1": {
+              "asOfDate": "2026-02-27",
+              "closePrice": 264.18,
+              "returnPct": 1.8,
+              "targetProgressPct": 11.6,
+              "success": false,
+              "status": "complete"
+            },
+            "month3": {
+              "asOfDate": "2026-04-30",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            }
+          }
+        },
+        {
+          "date": "2026-01-30",
+          "ticker": "AAPL",
+          "name": "Apple Inc.",
+          "market": "us",
+          "broker": "JP Morgan",
+          "analyst": "Samik Chatterjee",
+          "opinion": "Buy",
+          "targetPrice": 325,
+          "currentPrice": 259.2,
+          "basePrice": 259.48,
+          "basePriceDate": "2026-01-30",
+          "upside": 25.4,
+          "sourceUrl": "https://stockanalysis.com/stocks/aapl/ratings/",
+          "sourceText": "JP Morgan Buy Maintains. Price target 315 -> 325.",
+          "reportTitle": "Buy -> Buy Maintains",
+          "reasonSummary": "Buy -> Buy Maintains. JP Morgan가 Buy 의견을 제시했고 현재가 기준 상승여력은 25.4%입니다. 2026-01-30 종가 대비 목표가 괴리는 25.3%입니다.",
+          "reasonBullets": [
+            "JP Morgan가 2026-01-30에 Buy 의견과 목표가를 제시했습니다.",
+            "현재가 $259.2 대비 목표가는 $325입니다.",
+            "2026-01-30 종가 $259.48 대비 괴리는 25.3%입니다."
+          ],
+          "performance": {
+            "week1": {
+              "asOfDate": "2026-02-06",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "unavailable"
+            },
+            "month1": {
+              "asOfDate": "2026-02-27",
+              "closePrice": 264.18,
+              "returnPct": 1.8,
+              "targetProgressPct": 7.2,
+              "success": false,
+              "status": "complete"
+            },
+            "month3": {
+              "asOfDate": "2026-04-30",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            }
+          }
+        }
+      ]
+    },
+    "us:MSFT": {
+      "ticker": "MSFT",
+      "name": "Microsoft Corporation",
+      "market": "us",
+      "latestReportDate": "2026-04-14",
+      "latestBroker": "Piper Sandler",
+      "latestOpinion": "Buy",
+      "latestTargetPrice": 500,
+      "latestCurrentPrice": 384.37,
+      "latestBasePrice": 384.37,
+      "avgUpside": 50.4,
+      "reportCount": 14,
+      "reasonSummary": "Buy -> Buy Maintains. Piper Sandler가 Buy 의견을 제시했고 현재가 기준 상승여력은 30.1%입니다. 2026-04-13 종가 대비 목표가 괴리는 30.1%입니다.",
+      "reasonBullets": [
+        "Piper Sandler가 2026-04-14에 Buy 의견과 목표가를 제시했습니다.",
+        "현재가 $384.37 대비 목표가는 $500입니다.",
+        "2026-04-13 종가 $384.37 대비 괴리는 30.1%입니다."
+      ],
+      "investmentLogic": {
+        "summary": "Buy -> Buy Maintains",
+        "bullets": [
+          "Buy -> Buy Maintains",
+          "Buy -> Buy Maintains Piper Sandler Buy Maintains.",
+          "Price target 600 -> 500."
+        ]
+      },
+      "estimateRevision": {
+        "summary": "유지 신호입니다. 리포트 원문에서 추정치 관련 표현을 기준으로 판단했습니다.",
+        "bullets": [
+          "Buy -> Buy Maintains Piper Sandler Buy Maintains.",
+          "Price target 600 -> 500.",
+          "Buy -> Buy Maintains."
+        ],
+        "signal": "flat"
+      },
+      "valuation": {
+        "summary": "현재가 $384.37 대비 목표가 $500가 제시돼 밸류에이션 여력을 확인할 수 있습니다.",
+        "bullets": [
+          "Buy -> Buy Maintains Piper Sandler Buy Maintains.",
+          "Piper Sandler가 Buy 의견을 제시했고 현재가 기준 상승여력은 30.1%입니다.",
+          "현재가 대비 목표가 상승여력은 30.1%입니다."
+        ]
+      },
+      "sectorCycle": {
+        "summary": "Buy -> Buy Maintains Piper Sandler Buy Maintains.",
+        "bullets": [
+          "Buy -> Buy Maintains Piper Sandler Buy Maintains.",
+          "Price target 600 -> 500.",
+          "Buy -> Buy Maintains."
+        ]
+      },
+      "relatedReports": [
+        {
+          "date": "2026-04-14",
+          "ticker": "MSFT",
+          "name": "Microsoft Corporation",
+          "market": "us",
+          "broker": "Piper Sandler",
+          "analyst": "Billy Fitzsimmons",
+          "opinion": "Buy",
+          "targetPrice": 500,
+          "currentPrice": 384.37,
+          "basePrice": 384.37,
+          "basePriceDate": "2026-04-13",
+          "upside": 30.1,
+          "sourceUrl": "https://stockanalysis.com/stocks/msft/ratings/",
+          "sourceText": "Piper Sandler Buy Maintains. Price target 600 -> 500.",
+          "reportTitle": "Buy -> Buy Maintains",
+          "reasonSummary": "Buy -> Buy Maintains. Piper Sandler가 Buy 의견을 제시했고 현재가 기준 상승여력은 30.1%입니다. 2026-04-13 종가 대비 목표가 괴리는 30.1%입니다.",
+          "reasonBullets": [
+            "Piper Sandler가 2026-04-14에 Buy 의견과 목표가를 제시했습니다.",
+            "현재가 $384.37 대비 목표가는 $500입니다.",
+            "2026-04-13 종가 $384.37 대비 괴리는 30.1%입니다."
+          ],
+          "performance": {
+            "week1": {
+              "asOfDate": "2026-04-21",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            },
+            "month1": {
+              "asOfDate": "2026-05-14",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            },
+            "month3": {
+              "asOfDate": "2026-07-13",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            }
+          }
+        },
+        {
+          "date": "2026-04-10",
+          "ticker": "MSFT",
+          "name": "Microsoft Corporation",
+          "market": "us",
+          "broker": "BNP Paribas",
+          "analyst": "Stefan Slowinski",
+          "opinion": "Buy",
+          "targetPrice": 556,
+          "currentPrice": 384.37,
+          "basePrice": 370.87,
+          "basePriceDate": "2026-04-10",
+          "upside": 44.7,
+          "sourceUrl": "https://stockanalysis.com/stocks/msft/ratings/",
+          "sourceText": "BNP Paribas Buy Maintains. Price target 659 -> 556.",
+          "reportTitle": "Buy -> Buy Maintains",
+          "reasonSummary": "Buy -> Buy Maintains. BNP Paribas가 Buy 의견을 제시했고 현재가 기준 상승여력은 44.7%입니다. 2026-04-10 종가 대비 목표가 괴리는 49.9%입니다.",
+          "reasonBullets": [
+            "BNP Paribas가 2026-04-10에 Buy 의견과 목표가를 제시했습니다.",
+            "현재가 $384.37 대비 목표가는 $556입니다.",
+            "2026-04-10 종가 $370.87 대비 괴리는 49.9%입니다."
+          ],
+          "performance": {
+            "week1": {
+              "asOfDate": "2026-04-17",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            },
+            "month1": {
+              "asOfDate": "2026-05-10",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            },
+            "month3": {
+              "asOfDate": "2026-07-09",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            }
+          }
+        },
+        {
+          "date": "2026-03-25",
+          "ticker": "MSFT",
+          "name": "Microsoft Corporation",
+          "market": "us",
+          "broker": "UBS",
+          "analyst": "Karl Keirstead",
+          "opinion": "Strong Buy",
+          "targetPrice": 510,
+          "currentPrice": 384.37,
+          "basePrice": 371.04,
+          "basePriceDate": "2026-03-25",
+          "upside": 32.7,
+          "sourceUrl": "https://stockanalysis.com/stocks/msft/ratings/",
+          "sourceText": "UBS Strong Buy Maintains. Price target 600 -> 510.",
+          "reportTitle": "Strong Buy -> Strong Buy Maintains",
+          "reasonSummary": "Strong Buy -> Strong Buy Maintains. UBS가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 32.7%입니다. 2026-03-25 종가 대비 목표가 괴리는 37.5%입니다.",
+          "reasonBullets": [
+            "UBS가 2026-03-25에 Strong Buy 의견과 목표가를 제시했습니다.",
+            "현재가 $384.37 대비 목표가는 $510입니다.",
+            "2026-03-25 종가 $371.04 대비 괴리는 37.5%입니다."
+          ],
+          "performance": {
+            "week1": {
+              "asOfDate": "2026-04-01",
+              "closePrice": 369.37,
+              "returnPct": -0.5,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "complete"
+            },
+            "month1": {
+              "asOfDate": "2026-04-24",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            },
+            "month3": {
+              "asOfDate": "2026-06-23",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            }
+          }
+        },
+        {
+          "date": "2026-03-24",
+          "ticker": "MSFT",
+          "name": "Microsoft Corporation",
+          "market": "us",
+          "broker": "B of A Securities",
+          "analyst": "Tal Liani",
+          "opinion": "Strong Buy",
+          "targetPrice": 500,
+          "currentPrice": 384.37,
+          "basePrice": 372.74,
+          "basePriceDate": "2026-03-24",
+          "upside": 30.1,
+          "sourceUrl": "https://stockanalysis.com/stocks/msft/ratings/",
+          "sourceText": "B of A Securities Strong Buy Initiates. Price target N/A -> 500.",
+          "reportTitle": "Strong Buy -> Strong Buy Initiates",
+          "reasonSummary": "Strong Buy -> Strong Buy Initiates. B of A Securities가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 30.1%입니다. 2026-03-24 종가 대비 목표가 괴리는 34.1%입니다.",
+          "reasonBullets": [
+            "B of A Securities가 2026-03-24에 Strong Buy 의견과 목표가를 제시했습니다.",
+            "현재가 $384.37 대비 목표가는 $500입니다.",
+            "2026-03-24 종가 $372.74 대비 괴리는 34.1%입니다."
+          ],
+          "performance": {
+            "week1": {
+              "asOfDate": "2026-03-31",
+              "closePrice": 370.17,
+              "returnPct": -0.7,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "complete"
+            },
+            "month1": {
+              "asOfDate": "2026-04-23",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            },
+            "month3": {
+              "asOfDate": "2026-06-22",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            }
+          }
+        },
+        {
+          "date": "2026-01-30",
+          "ticker": "MSFT",
+          "name": "Microsoft Corporation",
+          "market": "us",
+          "broker": "Citigroup",
+          "analyst": "Tyler Radke",
+          "opinion": "Strong Buy",
+          "targetPrice": 635,
+          "currentPrice": 384.37,
+          "basePrice": 430.29,
+          "basePriceDate": "2026-01-30",
+          "upside": 65.2,
+          "sourceUrl": "https://stockanalysis.com/stocks/msft/ratings/",
+          "sourceText": "Citigroup Strong Buy Maintains. Price target 660 -> 635.",
+          "reportTitle": "Strong Buy -> Strong Buy Maintains",
+          "reasonSummary": "Strong Buy -> Strong Buy Maintains. Citigroup가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 65.2%입니다. 2026-01-30 종가 대비 목표가 괴리는 47.6%입니다.",
+          "reasonBullets": [
+            "Citigroup가 2026-01-30에 Strong Buy 의견과 목표가를 제시했습니다.",
+            "현재가 $384.37 대비 목표가는 $635입니다.",
+            "2026-01-30 종가 $430.29 대비 괴리는 47.6%입니다."
+          ],
+          "performance": {
+            "week1": {
+              "asOfDate": "2026-02-06",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "unavailable"
+            },
+            "month1": {
+              "asOfDate": "2026-02-27",
+              "closePrice": 392.74,
+              "returnPct": -8.7,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "complete"
+            },
+            "month3": {
+              "asOfDate": "2026-04-30",
               "closePrice": 0,
               "returnPct": 0,
               "targetProgressPct": 0,
@@ -54598,11 +55196,11 @@
             },
             "month1": {
               "asOfDate": "2026-03-27",
-              "closePrice": 122.89,
-              "returnPct": -2.3,
+              "closePrice": 0,
+              "returnPct": 0,
               "targetProgressPct": 0,
               "success": false,
-              "status": "complete"
+              "status": "unavailable"
             },
             "month3": {
               "asOfDate": "2026-05-26",
@@ -54647,11 +55245,11 @@
             },
             "month1": {
               "asOfDate": "2026-03-25",
-              "closePrice": 123.06,
-              "returnPct": -2.2,
+              "closePrice": 0,
+              "returnPct": 0,
               "targetProgressPct": 0,
               "success": false,
-              "status": "complete"
+              "status": "unavailable"
             },
             "month3": {
               "asOfDate": "2026-05-24",
@@ -54695,12 +55293,12 @@
               "status": "complete"
             },
             "month1": {
-              "asOfDate": "2026-03-20",
-              "closePrice": 119.02,
-              "returnPct": -3.2,
+              "asOfDate": "2026-03-22",
+              "closePrice": 0,
+              "returnPct": 0,
               "targetProgressPct": 0,
               "success": false,
-              "status": "complete"
+              "status": "unavailable"
             },
             "month3": {
               "asOfDate": "2026-05-21",
@@ -54744,12 +55342,12 @@
               "status": "complete"
             },
             "month1": {
-              "asOfDate": "2026-03-20",
-              "closePrice": 119.02,
-              "returnPct": -3.2,
+              "asOfDate": "2026-03-22",
+              "closePrice": 0,
+              "returnPct": 0,
               "targetProgressPct": 0,
               "success": false,
-              "status": "complete"
+              "status": "unavailable"
             },
             "month3": {
               "asOfDate": "2026-05-21",
@@ -56765,305 +57363,6 @@
         }
       ]
     },
-    "us:MSFT": {
-      "ticker": "MSFT",
-      "name": "Microsoft Corporation",
-      "market": "us",
-      "latestReportDate": "2026-04-10",
-      "latestBroker": "BNP Paribas",
-      "latestOpinion": "Buy",
-      "latestTargetPrice": 556,
-      "latestCurrentPrice": 384.37,
-      "latestBasePrice": 370.87,
-      "avgUpside": 52.2,
-      "reportCount": 14,
-      "reasonSummary": "Buy -> Buy Maintains. BNP Paribas가 Buy 의견을 제시했고 현재가 기준 상승여력은 44.7%입니다. 2026-04-10 종가 대비 목표가 괴리는 49.9%입니다.",
-      "reasonBullets": [
-        "BNP Paribas가 2026-04-10에 Buy 의견과 목표가를 제시했습니다.",
-        "현재가 $384.37 대비 목표가는 $556입니다.",
-        "2026-04-10 종가 $370.87 대비 괴리는 49.9%입니다."
-      ],
-      "investmentLogic": {
-        "summary": "Buy -> Buy Maintains",
-        "bullets": [
-          "Buy -> Buy Maintains",
-          "Buy -> Buy Maintains BNP Paribas Buy Maintains.",
-          "Price target 659 -> 556."
-        ]
-      },
-      "estimateRevision": {
-        "summary": "유지 신호입니다. 리포트 원문에서 추정치 관련 표현을 기준으로 판단했습니다.",
-        "bullets": [
-          "Buy -> Buy Maintains BNP Paribas Buy Maintains.",
-          "Price target 659 -> 556.",
-          "Buy -> Buy Maintains."
-        ],
-        "signal": "flat"
-      },
-      "valuation": {
-        "summary": "현재가 $384.37 대비 목표가 $556가 제시돼 밸류에이션 여력을 확인할 수 있습니다.",
-        "bullets": [
-          "Buy -> Buy Reiterates Piper Sandler Buy Reiterates.",
-          "Piper Sandler가 Buy 의견을 제시했고 현재가 기준 상승여력은 56.1%입니다.",
-          "현재가 대비 목표가 상승여력은 44.7%입니다."
-        ]
-      },
-      "sectorCycle": {
-        "summary": "Buy -> Buy Maintains BNP Paribas Buy Maintains.",
-        "bullets": [
-          "Buy -> Buy Maintains BNP Paribas Buy Maintains.",
-          "Price target 659 -> 556.",
-          "Buy -> Buy Maintains."
-        ]
-      },
-      "relatedReports": [
-        {
-          "date": "2026-04-10",
-          "ticker": "MSFT",
-          "name": "Microsoft Corporation",
-          "market": "us",
-          "broker": "BNP Paribas",
-          "analyst": "Stefan Slowinski",
-          "opinion": "Buy",
-          "targetPrice": 556,
-          "currentPrice": 384.37,
-          "basePrice": 370.87,
-          "basePriceDate": "2026-04-10",
-          "upside": 44.7,
-          "sourceUrl": "https://stockanalysis.com/stocks/msft/ratings/",
-          "sourceText": "BNP Paribas Buy Maintains. Price target 659 -> 556.",
-          "reportTitle": "Buy -> Buy Maintains",
-          "reasonSummary": "Buy -> Buy Maintains. BNP Paribas가 Buy 의견을 제시했고 현재가 기준 상승여력은 44.7%입니다. 2026-04-10 종가 대비 목표가 괴리는 49.9%입니다.",
-          "reasonBullets": [
-            "BNP Paribas가 2026-04-10에 Buy 의견과 목표가를 제시했습니다.",
-            "현재가 $384.37 대비 목표가는 $556입니다.",
-            "2026-04-10 종가 $370.87 대비 괴리는 49.9%입니다."
-          ],
-          "performance": {
-            "week1": {
-              "asOfDate": "2026-04-17",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            },
-            "month1": {
-              "asOfDate": "2026-05-10",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            },
-            "month3": {
-              "asOfDate": "2026-07-09",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            }
-          }
-        },
-        {
-          "date": "2026-03-25",
-          "ticker": "MSFT",
-          "name": "Microsoft Corporation",
-          "market": "us",
-          "broker": "UBS",
-          "analyst": "Karl Keirstead",
-          "opinion": "Strong Buy",
-          "targetPrice": 510,
-          "currentPrice": 384.37,
-          "basePrice": 371.04,
-          "basePriceDate": "2026-03-25",
-          "upside": 32.7,
-          "sourceUrl": "https://stockanalysis.com/stocks/msft/ratings/",
-          "sourceText": "UBS Strong Buy Maintains. Price target 600 -> 510.",
-          "reportTitle": "Strong Buy -> Strong Buy Maintains",
-          "reasonSummary": "Strong Buy -> Strong Buy Maintains. UBS가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 32.7%입니다. 2026-03-25 종가 대비 목표가 괴리는 37.5%입니다.",
-          "reasonBullets": [
-            "UBS가 2026-03-25에 Strong Buy 의견과 목표가를 제시했습니다.",
-            "현재가 $384.37 대비 목표가는 $510입니다.",
-            "2026-03-25 종가 $371.04 대비 괴리는 37.5%입니다."
-          ],
-          "performance": {
-            "week1": {
-              "asOfDate": "2026-04-01",
-              "closePrice": 369.37,
-              "returnPct": -0.5,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "complete"
-            },
-            "month1": {
-              "asOfDate": "2026-04-24",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            },
-            "month3": {
-              "asOfDate": "2026-06-23",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            }
-          }
-        },
-        {
-          "date": "2026-03-24",
-          "ticker": "MSFT",
-          "name": "Microsoft Corporation",
-          "market": "us",
-          "broker": "B of A Securities",
-          "analyst": "Tal Liani",
-          "opinion": "Strong Buy",
-          "targetPrice": 500,
-          "currentPrice": 384.37,
-          "basePrice": 372.74,
-          "basePriceDate": "2026-03-24",
-          "upside": 30.1,
-          "sourceUrl": "https://stockanalysis.com/stocks/msft/ratings/",
-          "sourceText": "B of A Securities Strong Buy Initiates. Price target N/A -> 500.",
-          "reportTitle": "Strong Buy -> Strong Buy Initiates",
-          "reasonSummary": "Strong Buy -> Strong Buy Initiates. B of A Securities가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 30.1%입니다. 2026-03-24 종가 대비 목표가 괴리는 34.1%입니다.",
-          "reasonBullets": [
-            "B of A Securities가 2026-03-24에 Strong Buy 의견과 목표가를 제시했습니다.",
-            "현재가 $384.37 대비 목표가는 $500입니다.",
-            "2026-03-24 종가 $372.74 대비 괴리는 34.1%입니다."
-          ],
-          "performance": {
-            "week1": {
-              "asOfDate": "2026-03-31",
-              "closePrice": 370.17,
-              "returnPct": -0.7,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "complete"
-            },
-            "month1": {
-              "asOfDate": "2026-04-23",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            },
-            "month3": {
-              "asOfDate": "2026-06-22",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            }
-          }
-        },
-        {
-          "date": "2026-01-30",
-          "ticker": "MSFT",
-          "name": "Microsoft Corporation",
-          "market": "us",
-          "broker": "Citigroup",
-          "analyst": "Tyler Radke",
-          "opinion": "Strong Buy",
-          "targetPrice": 635,
-          "currentPrice": 384.37,
-          "basePrice": 430.29,
-          "basePriceDate": "2026-01-30",
-          "upside": 65.2,
-          "sourceUrl": "https://stockanalysis.com/stocks/msft/ratings/",
-          "sourceText": "Citigroup Strong Buy Maintains. Price target 660 -> 635.",
-          "reportTitle": "Strong Buy -> Strong Buy Maintains",
-          "reasonSummary": "Strong Buy -> Strong Buy Maintains. Citigroup가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 65.2%입니다. 2026-01-30 종가 대비 목표가 괴리는 47.6%입니다.",
-          "reasonBullets": [
-            "Citigroup가 2026-01-30에 Strong Buy 의견과 목표가를 제시했습니다.",
-            "현재가 $384.37 대비 목표가는 $635입니다.",
-            "2026-01-30 종가 $430.29 대비 괴리는 47.6%입니다."
-          ],
-          "performance": {
-            "week1": {
-              "asOfDate": "2026-02-06",
-              "closePrice": 401.14,
-              "returnPct": -6.8,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "complete"
-            },
-            "month1": {
-              "asOfDate": "2026-02-27",
-              "closePrice": 392.74,
-              "returnPct": -8.7,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "complete"
-            },
-            "month3": {
-              "asOfDate": "2026-04-30",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            }
-          }
-        },
-        {
-          "date": "2026-01-29",
-          "ticker": "MSFT",
-          "name": "Microsoft Corporation",
-          "market": "us",
-          "broker": "Wedbush",
-          "analyst": "Daniel Ives",
-          "opinion": "Buy",
-          "targetPrice": 575,
-          "currentPrice": 384.37,
-          "basePrice": 433.5,
-          "basePriceDate": "2026-01-29",
-          "upside": 49.6,
-          "sourceUrl": "https://stockanalysis.com/stocks/msft/ratings/",
-          "sourceText": "Wedbush Buy Maintains. Price target 625 -> 575.",
-          "reportTitle": "Buy -> Buy Maintains",
-          "reasonSummary": "Buy -> Buy Maintains. Wedbush가 Buy 의견을 제시했고 현재가 기준 상승여력은 49.6%입니다. 2026-01-29 종가 대비 목표가 괴리는 32.6%입니다.",
-          "reasonBullets": [
-            "Wedbush가 2026-01-29에 Buy 의견과 목표가를 제시했습니다.",
-            "현재가 $384.37 대비 목표가는 $575입니다.",
-            "2026-01-29 종가 $433.5 대비 괴리는 32.6%입니다."
-          ],
-          "performance": {
-            "week1": {
-              "asOfDate": "2026-02-05",
-              "closePrice": 393.67,
-              "returnPct": -9.2,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "complete"
-            },
-            "month1": {
-              "asOfDate": "2026-02-27",
-              "closePrice": 392.74,
-              "returnPct": -9.4,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "complete"
-            },
-            "month3": {
-              "asOfDate": "2026-04-29",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            }
-          }
-        }
-      ]
-    },
     "us:XOM": {
       "ticker": "XOM",
       "name": "Exxon Mobil Corporation",
@@ -57886,11 +58185,11 @@
           "performance": {
             "week1": {
               "asOfDate": "2026-01-30",
-              "closePrice": 151.77,
-              "returnPct": 1.1,
-              "targetProgressPct": 10.9,
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
               "success": false,
-              "status": "complete"
+              "status": "unavailable"
             },
             "month1": {
               "asOfDate": "2026-02-20",
@@ -57935,11 +58234,11 @@
           "performance": {
             "week1": {
               "asOfDate": "2026-01-15",
-              "closePrice": 144.63,
-              "returnPct": 2.2,
-              "targetProgressPct": 36.6,
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
               "success": false,
-              "status": "complete"
+              "status": "unavailable"
             },
             "month1": {
               "asOfDate": "2026-02-06",
@@ -65517,11 +65816,11 @@
           "performance": {
             "week1": {
               "asOfDate": "2026-02-12",
-              "closePrice": 284.37,
-              "returnPct": 5.9,
-              "targetProgressPct": 19.4,
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
               "success": false,
-              "status": "complete"
+              "status": "unavailable"
             },
             "month1": {
               "asOfDate": "2026-03-06",
@@ -65566,11 +65865,11 @@
           "performance": {
             "week1": {
               "asOfDate": "2026-02-09",
-              "closePrice": 275.7,
-              "returnPct": -3.5,
+              "closePrice": 0,
+              "returnPct": 0,
               "targetProgressPct": 0,
               "success": false,
-              "status": "complete"
+              "status": "unavailable"
             },
             "month1": {
               "asOfDate": "2026-03-04",
@@ -65615,11 +65914,11 @@
           "performance": {
             "week1": {
               "asOfDate": "2026-02-09",
-              "closePrice": 275.7,
-              "returnPct": -3.5,
+              "closePrice": 0,
+              "returnPct": 0,
               "targetProgressPct": 0,
               "success": false,
-              "status": "complete"
+              "status": "unavailable"
             },
             "month1": {
               "asOfDate": "2026-03-04",
@@ -67888,11 +68187,11 @@
           "performance": {
             "week1": {
               "asOfDate": "2026-02-19",
-              "closePrice": 411.71,
-              "returnPct": -1.3,
+              "closePrice": 0,
+              "returnPct": 0,
               "targetProgressPct": 0,
               "success": false,
-              "status": "complete"
+              "status": "unavailable"
             },
             "month1": {
               "asOfDate": "2026-03-13",
@@ -67937,11 +68236,11 @@
           "performance": {
             "week1": {
               "asOfDate": "2026-02-05",
-              "closePrice": 397.21,
-              "returnPct": -4.6,
+              "closePrice": 0,
+              "returnPct": 0,
               "targetProgressPct": 0,
               "success": false,
-              "status": "complete"
+              "status": "unavailable"
             },
             "month1": {
               "asOfDate": "2026-02-27",
@@ -68146,11 +68445,11 @@
             },
             "month1": {
               "asOfDate": "2026-03-19",
-              "closePrice": 287.97,
-              "returnPct": -6.2,
+              "closePrice": 0,
+              "returnPct": 0,
               "targetProgressPct": 0,
               "success": false,
-              "status": "complete"
+              "status": "unavailable"
             },
             "month3": {
               "asOfDate": "2026-05-18",
@@ -68187,11 +68486,11 @@
           "performance": {
             "week1": {
               "asOfDate": "2026-01-12",
-              "closePrice": 324.49,
-              "returnPct": -2.9,
+              "closePrice": 0,
+              "returnPct": 0,
               "targetProgressPct": 0,
               "success": false,
-              "status": "complete"
+              "status": "unavailable"
             },
             "month1": {
               "asOfDate": "2026-02-04",
@@ -68236,11 +68535,11 @@
           "performance": {
             "week1": {
               "asOfDate": "2025-12-24",
-              "closePrice": 329.17,
-              "returnPct": 4.5,
-              "targetProgressPct": 29.6,
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
               "success": false,
-              "status": "complete"
+              "status": "unavailable"
             },
             "month1": {
               "asOfDate": "2026-01-16",
@@ -73353,305 +73652,6 @@
         }
       ]
     },
-    "us:AAPL": {
-      "ticker": "AAPL",
-      "name": "Apple Inc.",
-      "market": "us",
-      "latestReportDate": "2026-03-31",
-      "latestBroker": "Wedbush",
-      "latestOpinion": "Buy",
-      "latestTargetPrice": 350,
-      "latestCurrentPrice": 259.2,
-      "latestBasePrice": 253.79,
-      "avgUpside": 24.4,
-      "reportCount": 6,
-      "reasonSummary": "Buy -> Buy Reiterates. Wedbush가 Buy 의견을 제시했고 현재가 기준 상승여력은 35.0%입니다. 2026-03-31 종가 대비 목표가 괴리는 37.9%입니다.",
-      "reasonBullets": [
-        "Wedbush가 2026-03-31에 Buy 의견과 목표가를 제시했습니다.",
-        "현재가 $259.2 대비 목표가는 $350입니다.",
-        "2026-03-31 종가 $253.79 대비 괴리는 37.9%입니다."
-      ],
-      "investmentLogic": {
-        "summary": "Buy -> Buy Reiterates",
-        "bullets": [
-          "Buy -> Buy Reiterates",
-          "Buy -> Buy Reiterates Wedbush Buy Reiterates.",
-          "Price target 350 -> 350."
-        ]
-      },
-      "estimateRevision": {
-        "summary": "유지 신호입니다. 리포트 원문에서 추정치 관련 표현을 기준으로 판단했습니다.",
-        "bullets": [
-          "Buy -> Buy Reiterates Wedbush Buy Reiterates.",
-          "Price target 350 -> 350.",
-          "Buy -> Buy Reiterates."
-        ],
-        "signal": "flat"
-      },
-      "valuation": {
-        "summary": "현재가 $259.2 대비 목표가 $350가 제시돼 밸류에이션 여력을 확인할 수 있습니다.",
-        "bullets": [
-          "Buy -> Buy Reiterates Wedbush Buy Reiterates.",
-          "Price target 350 -> 350.",
-          "Buy -> Buy Reiterates."
-        ]
-      },
-      "sectorCycle": {
-        "summary": "Buy -> Buy Reiterates Wedbush Buy Reiterates.",
-        "bullets": [
-          "Buy -> Buy Reiterates Wedbush Buy Reiterates.",
-          "Price target 350 -> 350.",
-          "Buy -> Buy Reiterates."
-        ]
-      },
-      "relatedReports": [
-        {
-          "date": "2026-03-31",
-          "ticker": "AAPL",
-          "name": "Apple Inc.",
-          "market": "us",
-          "broker": "Wedbush",
-          "analyst": "Dan Ives",
-          "opinion": "Buy",
-          "targetPrice": 350,
-          "currentPrice": 259.2,
-          "basePrice": 253.79,
-          "basePriceDate": "2026-03-31",
-          "upside": 35,
-          "sourceUrl": "https://stockanalysis.com/stocks/aapl/ratings/",
-          "sourceText": "Wedbush Buy Reiterates. Price target 350 -> 350.",
-          "reportTitle": "Buy -> Buy Reiterates",
-          "reasonSummary": "Buy -> Buy Reiterates. Wedbush가 Buy 의견을 제시했고 현재가 기준 상승여력은 35.0%입니다. 2026-03-31 종가 대비 목표가 괴리는 37.9%입니다.",
-          "reasonBullets": [
-            "Wedbush가 2026-03-31에 Buy 의견과 목표가를 제시했습니다.",
-            "현재가 $259.2 대비 목표가는 $350입니다.",
-            "2026-03-31 종가 $253.79 대비 괴리는 37.9%입니다."
-          ],
-          "performance": {
-            "week1": {
-              "asOfDate": "2026-04-07",
-              "closePrice": 253.5,
-              "returnPct": -0.1,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "complete"
-            },
-            "month1": {
-              "asOfDate": "2026-04-30",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            },
-            "month3": {
-              "asOfDate": "2026-06-29",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            }
-          }
-        },
-        {
-          "date": "2026-03-23",
-          "ticker": "AAPL",
-          "name": "Apple Inc.",
-          "market": "us",
-          "broker": "Morgan Stanley",
-          "analyst": "Erik Woodring",
-          "opinion": "Buy",
-          "targetPrice": 315,
-          "currentPrice": 259.2,
-          "basePrice": 251.49,
-          "basePriceDate": "2026-03-23",
-          "upside": 21.5,
-          "sourceUrl": "https://stockanalysis.com/stocks/aapl/ratings/",
-          "sourceText": "Morgan Stanley Buy Reiterates. Price target 315 -> 315.",
-          "reportTitle": "Buy -> Buy Reiterates",
-          "reasonSummary": "Buy -> Buy Reiterates. Morgan Stanley가 Buy 의견을 제시했고 현재가 기준 상승여력은 21.5%입니다. 2026-03-23 종가 대비 목표가 괴리는 25.3%입니다.",
-          "reasonBullets": [
-            "Morgan Stanley가 2026-03-23에 Buy 의견과 목표가를 제시했습니다.",
-            "현재가 $259.2 대비 목표가는 $315입니다.",
-            "2026-03-23 종가 $251.49 대비 괴리는 25.3%입니다."
-          ],
-          "performance": {
-            "week1": {
-              "asOfDate": "2026-03-30",
-              "closePrice": 246.63,
-              "returnPct": -1.9,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "complete"
-            },
-            "month1": {
-              "asOfDate": "2026-04-22",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            },
-            "month3": {
-              "asOfDate": "2026-06-21",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            }
-          }
-        },
-        {
-          "date": "2026-03-23",
-          "ticker": "AAPL",
-          "name": "Apple Inc.",
-          "market": "us",
-          "broker": "B of A Securities",
-          "analyst": "Wamsi Mohan",
-          "opinion": "Strong Buy",
-          "targetPrice": 320,
-          "currentPrice": 259.2,
-          "basePrice": 251.49,
-          "basePriceDate": "2026-03-23",
-          "upside": 23.5,
-          "sourceUrl": "https://stockanalysis.com/stocks/aapl/ratings/",
-          "sourceText": "B of A Securities Strong Buy Maintains. Price target 325 -> 320.",
-          "reportTitle": "Strong Buy -> Strong Buy Maintains",
-          "reasonSummary": "Strong Buy -> Strong Buy Maintains. B of A Securities가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 23.5%입니다. 2026-03-23 종가 대비 목표가 괴리는 27.2%입니다.",
-          "reasonBullets": [
-            "B of A Securities가 2026-03-23에 Strong Buy 의견과 목표가를 제시했습니다.",
-            "현재가 $259.2 대비 목표가는 $320입니다.",
-            "2026-03-23 종가 $251.49 대비 괴리는 27.2%입니다."
-          ],
-          "performance": {
-            "week1": {
-              "asOfDate": "2026-03-30",
-              "closePrice": 246.63,
-              "returnPct": -1.9,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "complete"
-            },
-            "month1": {
-              "asOfDate": "2026-04-22",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            },
-            "month3": {
-              "asOfDate": "2026-06-21",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            }
-          }
-        },
-        {
-          "date": "2026-01-30",
-          "ticker": "AAPL",
-          "name": "Apple Inc.",
-          "market": "us",
-          "broker": "Maxim Group",
-          "analyst": "Tom Forte",
-          "opinion": "Strong Buy",
-          "targetPrice": 300,
-          "currentPrice": 259.2,
-          "basePrice": 259.48,
-          "basePriceDate": "2026-01-30",
-          "upside": 15.7,
-          "sourceUrl": "https://stockanalysis.com/stocks/aapl/ratings/",
-          "sourceText": "Maxim Group Strong Buy Upgrades. Price target N/A -> 300.",
-          "reportTitle": "Hold -> Strong Buy Upgrades",
-          "reasonSummary": "Hold -> Strong Buy Upgrades. Maxim Group가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 15.7%입니다. 2026-01-30 종가 대비 목표가 괴리는 15.6%입니다.",
-          "reasonBullets": [
-            "Maxim Group가 2026-01-30에 Strong Buy 의견과 목표가를 제시했습니다.",
-            "현재가 $259.2 대비 목표가는 $300입니다.",
-            "2026-01-30 종가 $259.48 대비 괴리는 15.6%입니다."
-          ],
-          "performance": {
-            "week1": {
-              "asOfDate": "2026-02-06",
-              "closePrice": 278.12,
-              "returnPct": 7.2,
-              "targetProgressPct": 46,
-              "success": false,
-              "status": "complete"
-            },
-            "month1": {
-              "asOfDate": "2026-02-27",
-              "closePrice": 264.18,
-              "returnPct": 1.8,
-              "targetProgressPct": 11.6,
-              "success": false,
-              "status": "complete"
-            },
-            "month3": {
-              "asOfDate": "2026-04-30",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            }
-          }
-        },
-        {
-          "date": "2026-01-30",
-          "ticker": "AAPL",
-          "name": "Apple Inc.",
-          "market": "us",
-          "broker": "JP Morgan",
-          "analyst": "Samik Chatterjee",
-          "opinion": "Buy",
-          "targetPrice": 325,
-          "currentPrice": 259.2,
-          "basePrice": 259.48,
-          "basePriceDate": "2026-01-30",
-          "upside": 25.4,
-          "sourceUrl": "https://stockanalysis.com/stocks/aapl/ratings/",
-          "sourceText": "JP Morgan Buy Maintains. Price target 315 -> 325.",
-          "reportTitle": "Buy -> Buy Maintains",
-          "reasonSummary": "Buy -> Buy Maintains. JP Morgan가 Buy 의견을 제시했고 현재가 기준 상승여력은 25.4%입니다. 2026-01-30 종가 대비 목표가 괴리는 25.3%입니다.",
-          "reasonBullets": [
-            "JP Morgan가 2026-01-30에 Buy 의견과 목표가를 제시했습니다.",
-            "현재가 $259.2 대비 목표가는 $325입니다.",
-            "2026-01-30 종가 $259.48 대비 괴리는 25.3%입니다."
-          ],
-          "performance": {
-            "week1": {
-              "asOfDate": "2026-02-06",
-              "closePrice": 278.12,
-              "returnPct": 7.2,
-              "targetProgressPct": 28.4,
-              "success": false,
-              "status": "complete"
-            },
-            "month1": {
-              "asOfDate": "2026-02-27",
-              "closePrice": 264.18,
-              "returnPct": 1.8,
-              "targetProgressPct": 7.2,
-              "success": false,
-              "status": "complete"
-            },
-            "month3": {
-              "asOfDate": "2026-04-30",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            }
-          }
-        }
-      ]
-    },
     "us:NVDA": {
       "ticker": "NVDA",
       "name": "NVIDIA Corporation",
@@ -74134,11 +74134,11 @@
             },
             "month1": {
               "asOfDate": "2026-03-19",
-              "closePrice": 299.71,
-              "returnPct": -6.2,
+              "closePrice": 0,
+              "returnPct": 0,
               "targetProgressPct": 0,
               "success": false,
-              "status": "complete"
+              "status": "unavailable"
             },
             "month3": {
               "asOfDate": "2026-05-18",
@@ -74175,11 +74175,11 @@
           "performance": {
             "week1": {
               "asOfDate": "2026-02-06",
-              "closePrice": 331.58,
-              "returnPct": 3,
-              "targetProgressPct": 13.3,
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
               "success": false,
-              "status": "complete"
+              "status": "unavailable"
             },
             "month1": {
               "asOfDate": "2026-02-27",
@@ -74224,11 +74224,11 @@
           "performance": {
             "week1": {
               "asOfDate": "2026-02-06",
-              "closePrice": 331.58,
-              "returnPct": 3,
-              "targetProgressPct": 11.1,
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
               "success": false,
-              "status": "complete"
+              "status": "unavailable"
             },
             "month1": {
               "asOfDate": "2026-02-27",
@@ -77969,11 +77969,11 @@
             },
             "month1": {
               "asOfDate": "2026-03-25",
-              "closePrice": 47.13,
-              "returnPct": 35.6,
-              "targetProgressPct": 71.8,
-              "success": true,
-              "status": "complete"
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "unavailable"
             },
             "month3": {
               "asOfDate": "2026-05-24",
@@ -78010,11 +78010,11 @@
           "performance": {
             "week1": {
               "asOfDate": "2026-02-20",
-              "closePrice": 37.75,
-              "returnPct": -27,
+              "closePrice": 0,
+              "returnPct": 0,
               "targetProgressPct": 0,
               "success": false,
-              "status": "complete"
+              "status": "unavailable"
             },
             "month1": {
               "asOfDate": "2026-03-13",
@@ -78059,11 +78059,11 @@
           "performance": {
             "week1": {
               "asOfDate": "2026-02-20",
-              "closePrice": 37.75,
-              "returnPct": -27,
+              "closePrice": 0,
+              "returnPct": 0,
               "targetProgressPct": 0,
               "success": false,
-              "status": "complete"
+              "status": "unavailable"
             },
             "month1": {
               "asOfDate": "2026-03-13",

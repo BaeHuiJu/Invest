@@ -1,12 +1,17 @@
 ﻿import { useEffect, useState } from 'react';
 import Head from 'next/head';
+import Link from 'next/link';
 import { Bar, BarChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
+import { useToast } from '@/components/Toast';
+import { NotificationSettings } from '@/components/NotificationSettings';
 
 type MarketType = 'korea' | 'us';
 type MarketFilter = 'all' | MarketType;
-type TabType = 'home' | 'watchlist' | 'korea-stock' | 'korea-etf' | 'us-stock' | 'us-etf' | 'analyst' | 'consensus' | 'scorecard';
+type TabType = 'home' | 'watchlist' | 'korea-stock' | 'korea-etf' | 'us-stock' | 'us-etf' | 'analyst' | 'consensus' | 'scorecard' | 'sector-cycle';
 type WatchlistCategory = 'stock' | 'etf' | 'analyst';
 type PerformanceStatus = 'complete' | 'pending' | 'unavailable';
+type SectorCyclePhase = 'recovery' | 'expansion' | 'slowdown' | 'contraction';
+type SectorCycleConfidence = 'low' | 'medium' | 'high';
 
 type Stock = { ticker: string; name: string; currentPrice: number; change: number; changePercent: number; volume?: number; marketCap?: string; high52w?: number; low52w?: number };
 type MarketIndex = { ticker: string; name: string; market: MarketType; value: number; change: number; changePercent: number };
@@ -20,6 +25,9 @@ type StockInsightResponse = { found: boolean; insight: StockInsight };
 type ScorecardPeriodSummary = { eligibleCount: number; successCount: number; declineCount: number; pendingCount: number; unavailableCount: number; successRate: number; declineRate: number; avgReturnPct: number; avgTargetProgressPct: number };
 type ScorecardGroup = { key: string; label: string; reportCount: number; week1: ScorecardPeriodSummary; month1: ScorecardPeriodSummary; month3: ScorecardPeriodSummary };
 type AnalystScorecardResponse = { summary: { overall: ScorecardGroup; byBroker: ScorecardGroup[]; byMarket: ScorecardGroup[]; bySector: ScorecardGroup[] }; reports: AnalystReport[] };
+type SectorCycleRecentReport = { date: string; ticker: string; name: string; market: MarketType; broker: string; reasonSummary: string; currentPrice: number };
+type SectorCycleItem = { sector: string; phase: SectorCyclePhase; phaseScore: number; confidence: SectorCycleConfidence; reportCount: number; latestReportDate: string; keywords: string[]; recentReports: SectorCycleRecentReport[] };
+type SectorCycleResponse = { generatedAt: string; days: number; market: MarketFilter; items: SectorCycleItem[] };
 type ScorecardPeriodKey = 'week1' | 'month1' | 'month3';
 type InsightRequest = { ticker: string; name: string; market: MarketType; category: WatchlistCategory; currentPrice?: number; changePercent?: number; high52w?: number; low52w?: number };
 type WatchlistItem = { ticker: string; name: string; market: MarketType; category: WatchlistCategory; savedAt: string; currentPrice?: number; changePercent?: number; high52w?: number; low52w?: number };
@@ -28,6 +36,7 @@ type ResolvedWatchlistItem = WatchlistItem & { currentPrice?: number; change?: n
 const ANALYST_CACHE_TTL_MS = process.env.NODE_ENV === 'development' ? 0 : 5 * 60 * 1000;
 const CONSENSUS_CACHE_TTL_MS = process.env.NODE_ENV === 'development' ? 0 : 5 * 60 * 1000;
 const SCORECARD_CACHE_TTL_MS = process.env.NODE_ENV === 'development' ? 0 : 5 * 60 * 1000;
+const SECTOR_CYCLE_CACHE_TTL_MS = process.env.NODE_ENV === 'development' ? 0 : 5 * 60 * 1000;
 const INSIGHT_CACHE_TTL_MS = process.env.NODE_ENV === 'development' ? 0 : 5 * 60 * 1000;
 const WATCHLIST_STORAGE_KEY = 'globalpick.watchlist';
 const PAGE_SIZE_OPTIONS = [5, 10, 20, 30, 40, 50];
@@ -37,6 +46,8 @@ const consensusClientCache = new Map<string, { items: AnalystConsensusItem[]; fe
 const consensusClientInflight = new Map<string, Promise<AnalystConsensusItem[]>>();
 const scorecardClientCache = new Map<string, { data: AnalystScorecardResponse; fetchedAt: number }>();
 const scorecardClientInflight = new Map<string, Promise<AnalystScorecardResponse>>();
+const sectorCycleClientCache = new Map<string, { data: SectorCycleResponse; fetchedAt: number }>();
+const sectorCycleClientInflight = new Map<string, Promise<SectorCycleResponse>>();
 const insightClientCache = new Map<string, { insight: StockInsight; fetchedAt: number }>();
 const insightClientInflight = new Map<string, Promise<StockInsight>>();
 
@@ -48,6 +59,7 @@ const formatScore = (value: number) => `${Math.round(value)}점`;
 const analystKey = (days: number, market: MarketFilter) => `${days}:${market}`;
 const consensusKey = (days: number, market: MarketFilter) => `${days}:${market}`;
 const scorecardKey = (days: number, market: MarketFilter) => `${days}:${market}`;
+const sectorCycleKey = (days: number, market: MarketFilter) => `${days}:${market}`;
 const insightKey = (req: InsightRequest) => `${req.market}:${req.ticker}`;
 const watchlistKey = (item: Pick<WatchlistItem, 'market' | 'ticker'>) => `${item.market}:${item.ticker}`;
 
@@ -158,6 +170,32 @@ async function fetchAnalystScorecard(days: number, market: MarketFilter) {
   return request;
 }
 
+function getCachedSectorCycle(days: number, market: MarketFilter) {
+  const cached = sectorCycleClientCache.get(sectorCycleKey(days, market));
+  if (!cached) return null;
+  if (Date.now() - cached.fetchedAt > SECTOR_CYCLE_CACHE_TTL_MS) {
+    sectorCycleClientCache.delete(sectorCycleKey(days, market));
+    return null;
+  }
+  return cached.data;
+}
+
+async function fetchSectorCycle(days: number, market: MarketFilter) {
+  const cached = getCachedSectorCycle(days, market);
+  if (cached) return cached;
+  const key = sectorCycleKey(days, market);
+  const inflight = sectorCycleClientInflight.get(key);
+  if (inflight) return inflight;
+  const request = fetch(`/api/sector-cycle?days=${days}&market=${market}`).then(async (res) => {
+    if (!res.ok) throw new Error('Failed to fetch sector cycle');
+    const data = await res.json() as SectorCycleResponse;
+    sectorCycleClientCache.set(key, { data, fetchedAt: Date.now() });
+    return data;
+  }).finally(() => sectorCycleClientInflight.delete(key));
+  sectorCycleClientInflight.set(key, request);
+  return request;
+}
+
 async function fetchStockInsight(request: InsightRequest) {
   const key = insightKey(request);
   const cached = insightClientCache.get(key);
@@ -194,6 +232,8 @@ export default function Home() {
   const [error, setError] = useState<string | null>(null);
   const [insightTarget, setInsightTarget] = useState<InsightRequest | null>(null);
   const [watchlist, setWatchlist] = useState<WatchlistItem[]>([]);
+  const [notificationSettingsOpen, setNotificationSettingsOpen] = useState(false);
+  const { addToast } = useToast();
 
   useEffect(() => {
     async function load() {
@@ -253,16 +293,25 @@ export default function Home() {
   const watchlistPreview = resolvedWatchlist.slice(0, 5);
   const isSaved = (ticker: string, market: MarketType) => watchlist.some((item) => item.ticker === ticker && item.market === market);
   const toggleWatchlist = (item: Omit<WatchlistItem, 'savedAt'>) => {
+    const existing = watchlist.find((entry) => entry.ticker === item.ticker && entry.market === item.market);
     setWatchlist((current) => {
-      const existing = current.find((entry) => entry.ticker === item.ticker && entry.market === item.market);
       if (existing) {
         return current.filter((entry) => !(entry.ticker === item.ticker && entry.market === item.market));
       }
       return [{ ...item, savedAt: new Date().toISOString() }, ...current];
     });
+    if (existing) {
+      addToast('info', `${item.name} 관심 종목에서 제거됨`);
+    } else {
+      addToast('success', `${item.name} 관심 종목에 추가됨`);
+    }
   };
   const removeWatchlist = (ticker: string, market: MarketType) => {
-    setWatchlist((current) => current.filter((item) => !(item.ticker === ticker && item.market === market)));
+    const item = watchlist.find((entry) => entry.ticker === ticker && entry.market === market);
+    setWatchlist((current) => current.filter((entry) => !(entry.ticker === ticker && entry.market === market)));
+    if (item) {
+      addToast('info', `${item.name} 관심 종목에서 삭제됨`);
+    }
   };
 
   return <>
@@ -274,8 +323,21 @@ export default function Home() {
     <div className="min-h-screen bg-gray-50">
       <header className="border-b bg-white shadow-sm">
         <div className="mx-auto max-w-7xl px-4 py-4">
-          <h1 className="text-2xl font-bold text-gray-900">글로벌픽</h1>
-          <p className="mt-1 text-sm text-gray-500">종목을 누르면 기준가격과 간단한 매수 의견을 확인할 수 있습니다.</p>
+          <div className="flex items-start justify-between gap-4">
+            <div>
+              <h1 className="text-2xl font-bold text-gray-900">글로벌픽</h1>
+              <p className="mt-1 text-sm text-gray-500">종목을 누르면 기준가격과 간단한 매수 의견을 확인할 수 있습니다.</p>
+            </div>
+            <button
+              type="button"
+              onClick={() => setNotificationSettingsOpen(true)}
+              className="flex items-center gap-2 rounded-lg border bg-white px-3 py-2 text-sm text-gray-600 hover:bg-gray-50"
+              aria-label="알림 설정"
+            >
+              <span className="text-lg">🔔</span>
+              <span className="hidden sm:inline">알림</span>
+            </button>
+          </div>
         </div>
       </header>
       <nav className="border-b bg-white">
@@ -292,12 +354,15 @@ export default function Home() {
             ].map(([id, label]) => <button key={id} onClick={() => setActiveTab(id as TabType)} className={`whitespace-nowrap px-4 py-3 text-sm font-medium ${activeTab === id ? 'border-b-2 border-blue-600 text-blue-600' : 'text-gray-600 hover:text-gray-900'}`}>{label}</button>)}
             <button onClick={() => setActiveTab('consensus')} className={`whitespace-nowrap px-4 py-3 text-sm font-medium ${activeTab === 'consensus' ? 'border-b-2 border-blue-600 text-blue-600' : 'text-gray-600 hover:text-gray-900'}`}>공통 추천</button>
             <button onClick={() => setActiveTab('scorecard')} className={`whitespace-nowrap px-4 py-3 text-sm font-medium ${activeTab === 'scorecard' ? 'border-b-2 border-blue-600 text-blue-600' : 'text-gray-600 hover:text-gray-900'}`}>{'\uCD94\uCC9C \uD6C4 \uC131\uC801\uD45C'}</button>
+            <button onClick={() => setActiveTab('sector-cycle')} className={`whitespace-nowrap px-4 py-3 text-sm font-medium ${activeTab === 'sector-cycle' ? 'border-b-2 border-blue-600 text-blue-600' : 'text-gray-600 hover:text-gray-900'}`}>{'\uC5C5\uC885 \uC0AC\uC774\uD074'}</button>
           </div>
         </div>
       </nav>
       <main className="mx-auto max-w-7xl px-4 py-6">
         {activeTab === 'analyst'
           ? <AnalystTab onOpenInsight={setInsightTarget} isSaved={isSaved} onToggleWatchlist={toggleWatchlist} />
+          : activeTab === 'sector-cycle'
+            ? <SectorCycleTab onOpenInsight={setInsightTarget} />
           : activeTab === 'scorecard'
             ? <ScorecardTab onOpenInsight={setInsightTarget} isSaved={isSaved} onToggleWatchlist={toggleWatchlist} />
           : activeTab === 'consensus'
@@ -322,6 +387,7 @@ export default function Home() {
       </footer>
     </div>
     <StockInsightModal request={insightTarget} onClose={() => setInsightTarget(null)} isSaved={isSaved} onToggleWatchlist={toggleWatchlist} />
+    <NotificationSettings isOpen={notificationSettingsOpen} onClose={() => setNotificationSettingsOpen(false)} />
   </>;
 }
 
@@ -607,6 +673,7 @@ function ScorecardTab({ onOpenInsight, isSaved, onToggleWatchlist }: { onOpenIns
   const [pageSize, setPageSize] = useState(10);
   const [selectedBroker, setSelectedBroker] = useState<string | null>(null);
   const [selectedBrokerPeriod, setSelectedBrokerPeriod] = useState<ScorecardPeriodKey>('month1');
+  const [chartPeriod, setChartPeriod] = useState<ScorecardPeriodKey>('month1');
 
   useEffect(() => { void (async () => {
     const cached = getCachedScorecard(days, market);
@@ -641,7 +708,7 @@ function ScorecardTab({ onOpenInsight, isSaved, onToggleWatchlist }: { onOpenIns
   const paginated = reports.slice((page - 1) * pageSize, page * pageSize);
   const brokerChartData = (data?.summary.byBroker || []).slice(0, 8).map((item) => ({
     name: item.label,
-    successRate: item.month1.successRate,
+    successRate: item[chartPeriod].successRate,
   }));
   const periodChartData = overall ? [
     { name: '1W', avgReturnPct: overall.week1.avgReturnPct },
@@ -677,7 +744,21 @@ function ScorecardTab({ onOpenInsight, isSaved, onToggleWatchlist }: { onOpenIns
       </div>
       <div className="grid gap-6 xl:grid-cols-2">
         <div className="rounded-xl bg-white p-4 shadow-sm sm:p-6">
-          <h3 className="mb-4 text-lg font-semibold">{'\uC99D\uAD8C\uC0AC\uBCC4 1\uAC1C\uC6D4 \uC131\uACF5\uB960 TOP 8'}</h3>
+          <div className="mb-4 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+            <h3 className="text-lg font-semibold">증권사별 {getScorecardPeriodLabel(chartPeriod)} 성공률 TOP 8</h3>
+            <div className="flex flex-wrap overflow-hidden rounded-lg border">
+              {(['week1', 'month1', 'month3'] as const).map((period) => (
+                <button
+                  key={period}
+                  type="button"
+                  onClick={() => setChartPeriod(period)}
+                  className={`px-3 py-1.5 text-sm ${chartPeriod === period ? 'bg-blue-600 text-white' : 'bg-white text-gray-600 hover:bg-gray-50'}`}
+                >
+                  {getScorecardPeriodLabel(period)}
+                </button>
+              ))}
+            </div>
+          </div>
           <div className="h-72">
             <ResponsiveContainer width="100%" height="100%">
               <BarChart data={brokerChartData}>
@@ -1073,6 +1154,191 @@ function ConsensusTab({ onOpenInsight, isSaved, onToggleWatchlist }: { onOpenIns
   </div>;
 }
 
+function getSectorPhaseLabel(phase: SectorCyclePhase) {
+  if (phase === 'recovery') return '회복';
+  if (phase === 'expansion') return '확장';
+  if (phase === 'slowdown') return '둔화';
+  return '침체';
+}
+
+function getSectorPhaseBadgeClass(phase: SectorCyclePhase) {
+  if (phase === 'recovery') return 'bg-blue-100 text-blue-700';
+  if (phase === 'expansion') return 'bg-green-100 text-green-700';
+  if (phase === 'slowdown') return 'bg-amber-100 text-amber-700';
+  return 'bg-red-100 text-red-700';
+}
+
+function getSectorConfidenceLabel(confidence: SectorCycleConfidence) {
+  if (confidence === 'high') return '고신뢰';
+  if (confidence === 'medium') return '보통';
+  return '저신뢰';
+}
+
+function getSectorConfidenceClass(confidence: SectorCycleConfidence) {
+  if (confidence === 'high') return 'bg-emerald-50 text-emerald-700';
+  if (confidence === 'medium') return 'bg-gray-100 text-gray-600';
+  return 'bg-gray-100 text-gray-400';
+}
+
+function getSectorCardStyle(item: SectorCycleItem) {
+  const color = item.phase === 'recovery'
+    ? '59, 130, 246'
+    : item.phase === 'expansion'
+      ? '34, 197, 94'
+      : item.phase === 'slowdown'
+        ? '245, 158, 11'
+        : '239, 68, 68';
+  const intensity = Math.min(0.46, 0.12 + item.phaseScore / 220);
+  const opacity = item.confidence === 'low' ? Math.max(0.08, intensity - 0.08) : intensity;
+
+  return {
+    backgroundColor: `rgba(${color}, ${opacity.toFixed(2)})`,
+    borderColor: `rgba(${color}, ${Math.min(0.65, opacity + 0.18).toFixed(2)})`,
+  };
+}
+
+function SectorCycleTab({ onOpenInsight }: { onOpenInsight: (request: InsightRequest) => void }) {
+  const [data, setData] = useState<SectorCycleResponse | null>(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
+  const [days, setDays] = useState(30);
+  const [market, setMarket] = useState<MarketFilter>('all');
+  const [selectedSector, setSelectedSector] = useState<string | null>(null);
+
+  useEffect(() => { void (async () => {
+    const cached = getCachedSectorCycle(days, market);
+    setLoading(!cached);
+    setError(null);
+    try {
+      if (cached) setData(cached);
+      setData(await fetchSectorCycle(days, market));
+    } catch (fetchError) {
+      console.error(fetchError);
+      setError('업종 사이클 데이터를 불러오지 못했습니다.');
+    } finally {
+      setLoading(false);
+    }
+  })(); }, [days, market]);
+
+  useEffect(() => {
+    const firstSector = data?.items[0]?.sector || null;
+    if (!selectedSector || !data?.items.some((item) => item.sector === selectedSector)) {
+      setSelectedSector(firstSector);
+    }
+  }, [data, selectedSector]);
+
+  const items = data?.items || [];
+  const selectedItem = items.find((item) => item.sector === selectedSector) || items[0] || null;
+  const recoveryCount = items.filter((item) => item.phase === 'recovery').length;
+  const expansionCount = items.filter((item) => item.phase === 'expansion').length;
+  const slowdownCount = items.filter((item) => item.phase === 'slowdown').length;
+  const contractionCount = items.filter((item) => item.phase === 'contraction').length;
+
+  return <div className="space-y-6">
+    <div className="rounded-xl bg-white p-4 shadow-sm">
+      <div className="grid gap-4 md:grid-cols-[minmax(0,1.3fr)_minmax(0,1fr)_auto] md:items-end">
+        <div className="w-full">
+          <label className="mb-1 block text-sm text-gray-500">{'기간'}</label>
+          <div className="flex flex-wrap overflow-hidden rounded-lg border">
+            {[7, 30, 90].map((value) => <button key={value} onClick={() => setDays(value)} className={`flex-1 px-3 py-2 text-sm ${days === value ? 'bg-blue-600 text-white' : 'bg-white text-gray-600 hover:bg-gray-50'}`}>{value}{'일'}</button>)}
+          </div>
+        </div>
+        <SimpleSelect label={'시장'} value={market} onChange={(value) => setMarket(value as MarketFilter)} options={[['all', '전체'], ['korea', '국내'], ['us', '해외']]} />
+        <div className="text-sm text-gray-400 md:pb-2">{'최근 리포트 키워드 기준 업종 국면을 색상으로 정리합니다.'}</div>
+      </div>
+    </div>
+    {loading ? <LoadingState /> : error ? <div className="rounded-lg bg-red-50 p-4 text-red-600">{error}</div> : <>
+      <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
+        <StatCard label={'회복 업종'} value={String(recoveryCount)} accent="text-blue-600" />
+        <StatCard label={'확장 업종'} value={String(expansionCount)} accent="text-green-600" />
+        <StatCard label={'둔화 업종'} value={String(slowdownCount)} accent="text-amber-600" />
+        <StatCard label={'침체 업종'} value={String(contractionCount)} accent="text-red-600" />
+      </div>
+      <div className="grid gap-6 xl:grid-cols-[minmax(0,1.3fr)_minmax(320px,0.9fr)]">
+        <section className="rounded-xl bg-white p-4 shadow-sm sm:p-6">
+          <div className="mb-4 flex items-start justify-between gap-4">
+            <div>
+              <h2 className="text-lg font-semibold">{'업종 사이클 히트맵'}</h2>
+              <p className="mt-1 text-sm text-gray-500">{'업종 카드를 누르면 최근 리포트 근거와 대표 키워드를 확인할 수 있습니다.'}</p>
+            </div>
+            <div className="text-right text-xs text-gray-400">
+              <div>{'업종'} {items.length}{'개'}</div>
+              <div>{'기준일'} {data?.generatedAt ? data.generatedAt.slice(0, 10) : '-'}</div>
+            </div>
+          </div>
+          {items.length === 0 ? <div className="rounded-xl bg-gray-50 p-8 text-center text-gray-400">{'조건에 맞는 업종 사이클 데이터가 없습니다.'}</div> : <div className="grid gap-3 sm:grid-cols-2 xl:grid-cols-3">
+            {items.map((item) => {
+              const isActive = item.sector === selectedItem?.sector;
+              return <button
+                key={item.sector}
+                type="button"
+                onClick={() => setSelectedSector(item.sector)}
+                className={`rounded-xl border p-4 text-left transition hover:-translate-y-0.5 ${isActive ? 'ring-2 ring-blue-500 ring-offset-2' : 'hover:shadow-sm'} ${item.confidence === 'low' ? 'opacity-80' : ''}`}
+                style={getSectorCardStyle(item)}
+              >
+                <div className="flex items-start justify-between gap-3">
+                  <div className="min-w-0">
+                    <div className="truncate text-sm font-semibold text-gray-900">{item.sector}</div>
+                    <div className="mt-1 text-xs text-gray-600">{item.latestReportDate}</div>
+                  </div>
+                  <span className={`shrink-0 rounded px-2 py-1 text-[11px] font-medium ${getSectorPhaseBadgeClass(item.phase)}`}>{getSectorPhaseLabel(item.phase)}</span>
+                </div>
+                <div className="mt-4 flex items-end justify-between gap-3">
+                  <div>
+                    <div className="text-[11px] text-gray-600">{'강도 점수'}</div>
+                    <div className="text-2xl font-bold text-gray-900">{item.phaseScore}</div>
+                  </div>
+                  <div className="text-right text-xs text-gray-600">
+                    <div>{'리포트'} {item.reportCount}{'건'}</div>
+                    <div>{getSectorConfidenceLabel(item.confidence)}</div>
+                  </div>
+                </div>
+              </button>;
+            })}
+          </div>}
+        </section>
+        <aside className="rounded-xl bg-white p-4 shadow-sm sm:p-6">
+          {!selectedItem ? <div className="rounded-xl bg-gray-50 p-8 text-center text-gray-400">{'선택된 업종이 없습니다.'}</div> : <>
+            <div className="border-b pb-4">
+              <div className="flex flex-wrap items-center gap-2">
+                <h2 className="text-lg font-semibold text-gray-900">{selectedItem.sector}</h2>
+                <span className={`rounded px-2 py-1 text-xs font-medium ${getSectorPhaseBadgeClass(selectedItem.phase)}`}>{getSectorPhaseLabel(selectedItem.phase)}</span>
+                <span className={`rounded px-2 py-1 text-xs ${getSectorConfidenceClass(selectedItem.confidence)}`}>{getSectorConfidenceLabel(selectedItem.confidence)}</span>
+              </div>
+              <p className="mt-2 text-sm text-gray-500">{'최근 리포트 키워드를 기준으로 업종 국면을 분류했습니다. 저신뢰 업종은 표본 수가 적거나 키워드 일치도가 낮습니다.'}</p>
+              <div className="mt-3 grid grid-cols-2 gap-3 text-sm">
+                <div className="rounded-lg bg-gray-50 p-3"><div className="text-xs text-gray-500">{'최근 추천일'}</div><div className="mt-1 font-medium text-gray-900">{selectedItem.latestReportDate}</div></div>
+                <div className="rounded-lg bg-gray-50 p-3"><div className="text-xs text-gray-500">{'리포트 수'}</div><div className="mt-1 font-medium text-gray-900">{selectedItem.reportCount}{'건'}</div></div>
+              </div>
+            </div>
+            <div className="mt-4">
+              <div className="text-sm font-medium text-gray-700">{'대표 키워드'}</div>
+              <div className="mt-3 flex flex-wrap gap-2">
+                {selectedItem.keywords.length > 0 ? selectedItem.keywords.map((keyword) => <span key={`${selectedItem.sector}-${keyword}`} className="rounded-full bg-blue-50 px-3 py-1 text-xs font-medium text-blue-700">{keyword}</span>) : <span className="text-sm text-gray-400">{'대표 키워드를 추출하지 못했습니다.'}</span>}
+              </div>
+            </div>
+            <div className="mt-6">
+              <div className="mb-3 text-sm font-medium text-gray-700">{'최근 리포트 3건'}</div>
+              <div className="space-y-3">
+                {selectedItem.recentReports.map((report) => <article key={`${selectedItem.sector}-${report.market}-${report.ticker}-${report.date}-${report.broker}`} className="rounded-xl border border-gray-100 bg-gray-50 p-4">
+                  <div className="flex items-start justify-between gap-3">
+                    <button type="button" onClick={() => onOpenInsight({ ticker: report.ticker, name: report.name, market: report.market, category: 'analyst', currentPrice: report.currentPrice })} className="min-w-0 text-left">
+                      <div className="truncate font-medium text-blue-700 hover:underline">{report.name}</div>
+                      <div className="mt-1 text-xs text-gray-400">{report.ticker} {'·'} {report.broker} {'·'} {report.date}</div>
+                    </button>
+                    <span className={`shrink-0 rounded px-2 py-1 text-[11px] ${report.market === 'korea' ? 'bg-blue-100 text-blue-700' : 'bg-orange-100 text-orange-700'}`}>{report.market === 'korea' ? '국내' : '해외'}</span>
+                  </div>
+                  <p className="mt-3 text-sm leading-6 text-gray-700">{report.reasonSummary}</p>
+                </article>)}
+              </div>
+            </div>
+          </>}
+        </aside>
+      </div>
+    </>}
+  </div>;
+}
+
 function StockList({ stocks, title, market, category, onOpenInsight, isSaved, onToggleWatchlist }: { stocks: Stock[]; title: string; market: MarketType; category: WatchlistCategory; onOpenInsight: (request: InsightRequest) => void; isSaved: (ticker: string, market: MarketType) => boolean; onToggleWatchlist: (item: Omit<WatchlistItem, 'savedAt'>) => void }) {
   const [sortBy, setSortBy] = useState<'changePercent' | 'volume' | 'currentPrice'>('changePercent');
   const [sortOrder, setSortOrder] = useState<'asc' | 'desc'>('desc');
@@ -1211,6 +1477,14 @@ function StockInsightModal({ request, onClose, isSaved, onToggleWatchlist }: { r
             </button>
           </div>
         </div>
+        <div className="border-b px-4 py-2 sm:px-5">
+          <Link
+            href={`/stocks/${request.market}/${request.ticker}`}
+            className="inline-flex items-center gap-1 text-sm text-blue-600 hover:underline"
+          >
+            상세 페이지 열기 →
+          </Link>
+        </div>
         {loading ? (
           <div className="p-6 sm:p-8">
             <LoadingState />
@@ -1336,6 +1610,3 @@ function StatCard({ label, value, accent }: { label: string; value: string; acce
 function FavoriteButton({ active, onClick, className = '' }: { active: boolean; onClick: () => void; className?: string }) {
   return <button type="button" onClick={onClick} aria-pressed={active} aria-label={active ? '관심 종목 해제' : '관심 종목 저장'} className={`inline-flex h-8 w-8 items-center justify-center text-xl leading-none transition ${active ? 'text-amber-500' : 'text-gray-300 hover:text-amber-400'} ${className}`}>{active ? '★' : '☆'}</button>;
 }
-
-
-

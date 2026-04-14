@@ -4,10 +4,13 @@ import Link from 'next/link';
 import { Bar, BarChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
 import { useToast } from '@/components/Toast';
 import { NotificationSettings } from '@/components/NotificationSettings';
+import { BacktestTab } from '@/components/BacktestTab';
+import { PortfolioTab } from '@/components/PortfolioTab';
+import { EarningsCalendarTab } from '@/components/EarningsCalendarTab';
 
 type MarketType = 'korea' | 'us';
 type MarketFilter = 'all' | MarketType;
-type TabType = 'home' | 'watchlist' | 'korea-stock' | 'korea-etf' | 'us-stock' | 'us-etf' | 'analyst' | 'consensus' | 'scorecard' | 'sector-cycle';
+type TabType = 'home' | 'watchlist' | 'korea-stock' | 'korea-etf' | 'us-stock' | 'us-etf' | 'analyst' | 'consensus' | 'scorecard' | 'sector-cycle' | 'backtest' | 'portfolio' | 'earnings';
 type WatchlistCategory = 'stock' | 'etf' | 'analyst';
 type PerformanceStatus = 'complete' | 'pending' | 'unavailable';
 type SectorCyclePhase = 'recovery' | 'expansion' | 'slowdown' | 'contraction';
@@ -355,6 +358,9 @@ export default function Home() {
             <button onClick={() => setActiveTab('consensus')} className={`whitespace-nowrap px-4 py-3 text-sm font-medium ${activeTab === 'consensus' ? 'border-b-2 border-blue-600 text-blue-600' : 'text-gray-600 hover:text-gray-900'}`}>공통 추천</button>
             <button onClick={() => setActiveTab('scorecard')} className={`whitespace-nowrap px-4 py-3 text-sm font-medium ${activeTab === 'scorecard' ? 'border-b-2 border-blue-600 text-blue-600' : 'text-gray-600 hover:text-gray-900'}`}>{'\uCD94\uCC9C \uD6C4 \uC131\uC801\uD45C'}</button>
             <button onClick={() => setActiveTab('sector-cycle')} className={`whitespace-nowrap px-4 py-3 text-sm font-medium ${activeTab === 'sector-cycle' ? 'border-b-2 border-blue-600 text-blue-600' : 'text-gray-600 hover:text-gray-900'}`}>{'\uC5C5\uC885 \uC0AC\uC774\uD074'}</button>
+            <button onClick={() => setActiveTab('backtest')} className={`whitespace-nowrap px-4 py-3 text-sm font-medium ${activeTab === 'backtest' ? 'border-b-2 border-blue-600 text-blue-600' : 'text-gray-600 hover:text-gray-900'}`}>백테스팅</button>
+            <button onClick={() => setActiveTab('portfolio')} className={`whitespace-nowrap px-4 py-3 text-sm font-medium ${activeTab === 'portfolio' ? 'border-b-2 border-blue-600 text-blue-600' : 'text-gray-600 hover:text-gray-900'}`}>포트폴리오</button>
+            <button onClick={() => setActiveTab('earnings')} className={`whitespace-nowrap px-4 py-3 text-sm font-medium ${activeTab === 'earnings' ? 'border-b-2 border-blue-600 text-blue-600' : 'text-gray-600 hover:text-gray-900'}`}>실적 캘린더</button>
           </div>
         </div>
       </nav>
@@ -367,6 +373,12 @@ export default function Home() {
             ? <ScorecardTab onOpenInsight={setInsightTarget} isSaved={isSaved} onToggleWatchlist={toggleWatchlist} />
           : activeTab === 'consensus'
             ? <ConsensusTab onOpenInsight={setInsightTarget} isSaved={isSaved} onToggleWatchlist={toggleWatchlist} />
+          : activeTab === 'backtest'
+            ? <BacktestTab />
+          : activeTab === 'portfolio'
+            ? <PortfolioTab />
+          : activeTab === 'earnings'
+            ? <EarningsCalendarTab />
           : loading
             ? <LoadingState />
             : error

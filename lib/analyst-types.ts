@@ -131,3 +131,34 @@ export interface AnalystScorecardResponse {
   };
   reports: AnalystReport[];
 }
+
+export type SectorCyclePhase = 'recovery' | 'expansion' | 'slowdown' | 'contraction';
+export type SectorCycleConfidence = 'low' | 'medium' | 'high';
+
+export interface SectorCycleRecentReport {
+  date: string;
+  ticker: string;
+  name: string;
+  market: MarketType;
+  broker: string;
+  reasonSummary: string;
+  currentPrice: number;
+}
+
+export interface SectorCycleItem {
+  sector: string;
+  phase: SectorCyclePhase;
+  phaseScore: number;
+  confidence: SectorCycleConfidence;
+  reportCount: number;
+  latestReportDate: string;
+  keywords: string[];
+  recentReports: SectorCycleRecentReport[];
+}
+
+export interface SectorCycleResponse {
+  generatedAt: string;
+  days: number;
+  market: MarketFilter;
+  items: SectorCycleItem[];
+}

@@ -2,10 +2,11 @@ import { useEffect, useState } from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import { Bar, BarChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
+import { Area, AreaChart, Bar, BarChart, ComposedChart, Line, ResponsiveContainer, Tooltip, XAxis, YAxis, ReferenceLine } from 'recharts';
 import { LoadingState } from '@/components/LoadingState';
 import { StatCard } from '@/components/StatCard';
 import { useToast } from '@/components/Toast';
+import { calculateAllIndicators, type TechnicalAnalysis } from '@/lib/technical-indicators';
 
 type MarketType = 'korea' | 'us';
 type PerformanceStatus = 'complete' | 'pending' | 'unavailable';
@@ -137,6 +138,11 @@ export default function StockDetailPage() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [watchlist, setWatchlist] = useState<WatchlistItem[]>([]);
+  const [technicalData, setTechnicalData] = useState<{
+    analysis: TechnicalAnalysis;
+    priceHistory: { date: string; close: number; ma5: number; ma20: number }[];
+  } | null>(null);
+  const [technicalLoading, setTechnicalLoading] = useState(false);
   const { addToast } = useToast();
 
   const marketType = market as MarketType;
@@ -168,6 +174,42 @@ export default function StockDetailPage() {
     }
 
     void load();
+  }, [marketType, tickerStr]);
+
+  // Fetch technical analysis data
+  useEffect(() => {
+    if (!marketType || !tickerStr) return;
+
+    async function loadTechnicalData() {
+      setTechnicalLoading(true);
+      try {
+        const res = await fetch(
+          `/api/stock-history?ticker=${encodeURIComponent(tickerStr)}&market=${marketType}&range=3mo&interval=1d`
+        );
+        if (!res.ok) throw new Error('Failed to fetch price history');
+        const data = await res.json();
+
+        if (data.data && data.data.length > 0) {
+          const prices = data.data.map((d: { close: number }) => d.close);
+          const analysis = calculateAllIndicators(prices);
+
+          const priceHistory = data.data.map((d: { date: string; close: number }, i: number) => ({
+            date: d.date,
+            close: d.close,
+            ma5: analysis.ma.ma5[i] || null,
+            ma20: analysis.ma.ma20[i] || null,
+          }));
+
+          setTechnicalData({ analysis, priceHistory });
+        }
+      } catch (err) {
+        console.error('Technical analysis error:', err);
+      } finally {
+        setTechnicalLoading(false);
+      }
+    }
+
+    void loadTechnicalData();
   }, [marketType, tickerStr]);
 
   const isSaved =
@@ -334,6 +376,158 @@ export default function StockDetailPage() {
                     </ResponsiveContainer>
                   </div>
                 </section>
+              )}
+
+              {/* Technical Analysis Section */}
+              {technicalData && (
+                <section className="rounded-xl bg-white p-4 shadow-sm sm:p-6">
+                  <h2 className="mb-4 text-lg font-semibold">기술적 분석</h2>
+
+                  {/* Indicator Summary */}
+                  <div className="mb-6 grid grid-cols-3 gap-4">
+                    <div className="rounded-lg bg-gray-50 p-3">
+                      <div className="text-xs text-gray-500">RSI (14)</div>
+                      <div className={`mt-1 text-lg font-semibold ${technicalData.analysis.rsi.signal.color}`}>
+                        {isNaN(technicalData.analysis.rsi.current)
+                          ? '-'
+                          : technicalData.analysis.rsi.current.toFixed(1)}
+                      </div>
+                      <div className={`text-xs ${technicalData.analysis.rsi.signal.color}`}>
+                        {technicalData.analysis.rsi.signal.label}
+                      </div>
+                    </div>
+                    <div className="rounded-lg bg-gray-50 p-3">
+                      <div className="text-xs text-gray-500">MACD</div>
+                      <div className={`mt-1 text-lg font-semibold ${technicalData.analysis.macd.signal.color}`}>
+                        {isNaN(technicalData.analysis.macd.current.histogram)
+                          ? '-'
+                          : technicalData.analysis.macd.current.histogram.toFixed(2)}
+                      </div>
+                      <div className={`text-xs ${technicalData.analysis.macd.signal.color}`}>
+                        {technicalData.analysis.macd.signal.label}
+                      </div>
+                    </div>
+                    <div className="rounded-lg bg-gray-50 p-3">
+                      <div className="text-xs text-gray-500">이동평균</div>
+                      <div className={`mt-1 text-lg font-semibold ${technicalData.analysis.ma.arrangement.color}`}>
+                        {technicalData.analysis.ma.arrangement.label}
+                      </div>
+                      <div className={`text-xs ${technicalData.analysis.ma.arrangement.color}`}>
+                        {technicalData.analysis.ma.arrangement.description}
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Price + MA Chart */}
+                  <div className="mb-4">
+                    <h3 className="mb-2 text-sm font-medium text-gray-700">가격 및 이동평균선 (3개월)</h3>
+                    <div className="h-64">
+                      <ResponsiveContainer width="100%" height="100%">
+                        <ComposedChart data={technicalData.priceHistory}>
+                          <XAxis
+                            dataKey="date"
+                            tick={{ fontSize: 10 }}
+                            tickFormatter={(v) => v.slice(5)}
+                          />
+                          <YAxis
+                            domain={['auto', 'auto']}
+                            tick={{ fontSize: 10 }}
+                            tickFormatter={(v) =>
+                              insight.market === 'korea'
+                                ? `${(v / 1000).toFixed(0)}k`
+                                : `$${v.toFixed(0)}`
+                            }
+                          />
+                          <Tooltip
+                            formatter={(value: number, name: string) => [
+                              formatPrice(value, insight.market),
+                              name === 'close' ? '종가' : name,
+                            ]}
+                            labelFormatter={(label) => `날짜: ${label}`}
+                          />
+                          <Area
+                            type="monotone"
+                            dataKey="close"
+                            fill="#E0E7FF"
+                            stroke="#3B82F6"
+                            strokeWidth={2}
+                          />
+                          <Line
+                            type="monotone"
+                            dataKey="ma5"
+                            stroke="#F59E0B"
+                            strokeWidth={1}
+                            dot={false}
+                            name="MA5"
+                          />
+                          <Line
+                            type="monotone"
+                            dataKey="ma20"
+                            stroke="#EF4444"
+                            strokeWidth={1}
+                            dot={false}
+                            name="MA20"
+                          />
+                        </ComposedChart>
+                      </ResponsiveContainer>
+                    </div>
+                    <div className="mt-2 flex justify-center gap-4 text-xs">
+                      <span className="flex items-center gap-1">
+                        <span className="h-2 w-4 rounded bg-blue-500" />
+                        종가
+                      </span>
+                      <span className="flex items-center gap-1">
+                        <span className="h-0.5 w-4 bg-amber-500" />
+                        MA5
+                      </span>
+                      <span className="flex items-center gap-1">
+                        <span className="h-0.5 w-4 bg-red-500" />
+                        MA20
+                      </span>
+                    </div>
+                  </div>
+
+                  {/* RSI Chart */}
+                  <div className="mb-4">
+                    <h3 className="mb-2 text-sm font-medium text-gray-700">RSI (14)</h3>
+                    <div className="h-32">
+                      <ResponsiveContainer width="100%" height="100%">
+                        <AreaChart
+                          data={technicalData.priceHistory.map((d, i) => ({
+                            date: d.date,
+                            rsi: technicalData.analysis.rsi.series[i],
+                          }))}
+                        >
+                          <XAxis dataKey="date" tick={{ fontSize: 10 }} tickFormatter={(v) => v.slice(5)} />
+                          <YAxis domain={[0, 100]} tick={{ fontSize: 10 }} />
+                          <ReferenceLine y={70} stroke="#EF4444" strokeDasharray="3 3" />
+                          <ReferenceLine y={30} stroke="#22C55E" strokeDasharray="3 3" />
+                          <Tooltip formatter={(value: number) => [value?.toFixed(1) || '-', 'RSI']} />
+                          <Area
+                            type="monotone"
+                            dataKey="rsi"
+                            stroke="#8B5CF6"
+                            fill="#EDE9FE"
+                            strokeWidth={2}
+                          />
+                        </AreaChart>
+                      </ResponsiveContainer>
+                    </div>
+                    <div className="mt-1 flex justify-center gap-4 text-xs text-gray-500">
+                      <span>과매수: 70 이상</span>
+                      <span>과매도: 30 이하</span>
+                    </div>
+                  </div>
+                </section>
+              )}
+
+              {technicalLoading && (
+                <div className="rounded-xl bg-white p-6 shadow-sm">
+                  <div className="flex items-center justify-center py-8">
+                    <div className="h-8 w-8 animate-spin rounded-full border-2 border-gray-300 border-t-blue-600" />
+                    <span className="ml-3 text-gray-500">기술적 분석 로딩 중...</span>
+                  </div>
+                </div>
               )}
 
               {/* Investment Insight Sections */}

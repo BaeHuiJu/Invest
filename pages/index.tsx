@@ -7,6 +7,7 @@ import { NotificationSettings } from '@/components/NotificationSettings';
 import { BacktestTab } from '@/components/BacktestTab';
 import { PortfolioTab } from '@/components/PortfolioTab';
 import { EarningsCalendarTab } from '@/components/EarningsCalendarTab';
+import { GlobalSearch } from '@/components/GlobalSearch';
 
 type MarketType = 'korea' | 'us';
 type MarketFilter = 'all' | MarketType;
@@ -236,6 +237,7 @@ export default function Home() {
   const [insightTarget, setInsightTarget] = useState<InsightRequest | null>(null);
   const [watchlist, setWatchlist] = useState<WatchlistItem[]>([]);
   const [notificationSettingsOpen, setNotificationSettingsOpen] = useState(false);
+  const [searchOpen, setSearchOpen] = useState(false);
   const { addToast } = useToast();
 
   useEffect(() => {
@@ -286,6 +288,17 @@ export default function Home() {
     window.localStorage.setItem(WATCHLIST_STORAGE_KEY, JSON.stringify(watchlist));
   }, [watchlist]);
 
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
+        e.preventDefault();
+        setSearchOpen(true);
+      }
+    };
+    document.addEventListener('keydown', handleKeyDown);
+    return () => document.removeEventListener('keydown', handleKeyDown);
+  }, []);
+
   const stockLookup = new Map<string, Stock>();
   koreaStocks.forEach((stock) => stockLookup.set(`korea:${stock.ticker}`, stock));
   koreaETFs.forEach((stock) => stockLookup.set(`korea:${stock.ticker}`, stock));
@@ -331,15 +344,28 @@ export default function Home() {
               <h1 className="text-2xl font-bold text-gray-900">글로벌픽</h1>
               <p className="mt-1 text-sm text-gray-500">종목을 누르면 기준가격과 간단한 매수 의견을 확인할 수 있습니다.</p>
             </div>
-            <button
-              type="button"
-              onClick={() => setNotificationSettingsOpen(true)}
-              className="flex items-center gap-2 rounded-lg border bg-white px-3 py-2 text-sm text-gray-600 hover:bg-gray-50"
-              aria-label="알림 설정"
-            >
-              <span className="text-lg">🔔</span>
-              <span className="hidden sm:inline">알림</span>
-            </button>
+            <div className="flex items-center gap-2">
+              <button
+                type="button"
+                onClick={() => setSearchOpen(true)}
+                className="flex items-center gap-2 rounded-lg border bg-white px-3 py-2 text-sm text-gray-600 hover:bg-gray-50"
+                aria-label="검색"
+              >
+                <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                </svg>
+                <span className="hidden sm:inline">검색</span>
+              </button>
+              <button
+                type="button"
+                onClick={() => setNotificationSettingsOpen(true)}
+                className="flex items-center gap-2 rounded-lg border bg-white px-3 py-2 text-sm text-gray-600 hover:bg-gray-50"
+                aria-label="알림 설정"
+              >
+                <span className="text-lg">🔔</span>
+                <span className="hidden sm:inline">알림</span>
+              </button>
+            </div>
           </div>
         </div>
       </header>
@@ -400,6 +426,7 @@ export default function Home() {
     </div>
     <StockInsightModal request={insightTarget} onClose={() => setInsightTarget(null)} isSaved={isSaved} onToggleWatchlist={toggleWatchlist} />
     <NotificationSettings isOpen={notificationSettingsOpen} onClose={() => setNotificationSettingsOpen(false)} />
+    <GlobalSearch isOpen={searchOpen} onClose={() => setSearchOpen(false)} />
   </>;
 }
 
@@ -483,6 +510,7 @@ function AnalystTab({ onOpenInsight, isSaved, onToggleWatchlist }: { onOpenInsig
   const [opinion, setOpinion] = useState('all');
   const [page, setPage] = useState(1);
   const [pageSize, setPageSize] = useState(10);
+  const [searchQuery, setSearchQuery] = useState('');
 
   useEffect(() => { void (async () => {
     const cached = getCachedAnalystReports(days, market);
@@ -498,11 +526,20 @@ function AnalystTab({ onOpenInsight, isSaved, onToggleWatchlist }: { onOpenInsig
       setLoading(false);
     }
   })(); }, [days, market]);
-  useEffect(() => setPage(1), [days, market, sortBy, broker, opinion, pageSize]);
+  useEffect(() => setPage(1), [days, market, sortBy, broker, opinion, pageSize, searchQuery]);
 
   const brokers = Array.from(new Set(reports.map((r) => r.broker))).sort();
   const opinions = Array.from(new Set(reports.map((r) => r.opinion))).sort();
   const filtered = [...reports]
+    .filter((r) => {
+      if (!searchQuery) return true;
+      const q = searchQuery.toLowerCase();
+      return r.name.toLowerCase().includes(q) ||
+        r.ticker.toLowerCase().includes(q) ||
+        r.broker.toLowerCase().includes(q) ||
+        r.analyst.toLowerCase().includes(q) ||
+        (r.reportTitle?.toLowerCase().includes(q) ?? false);
+    })
     .filter((r) => broker === 'all' || r.broker === broker)
     .filter((r) => opinion === 'all' || r.opinion === opinion)
     .sort((a, b) => sortBy === 'upside' ? b.upside - a.upside : new Date(b.date).getTime() - new Date(a.date).getTime());
@@ -513,6 +550,32 @@ function AnalystTab({ onOpenInsight, isSaved, onToggleWatchlist }: { onOpenInsig
 
   return <div className="space-y-6">
     <div className="rounded-xl bg-white p-4 shadow-sm">
+      <div className="mb-4">
+        <div className="relative">
+          <input
+            type="text"
+            value={searchQuery}
+            onChange={(e) => setSearchQuery(e.target.value)}
+            placeholder="종목명, 티커, 증권사, 애널리스트 검색..."
+            className="w-full rounded-lg border border-gray-300 py-2.5 pl-10 pr-4 text-sm focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500"
+          />
+          <svg className="absolute left-3 top-1/2 h-5 w-5 -translate-y-1/2 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+          </svg>
+          {searchQuery && (
+            <button
+              type="button"
+              onClick={() => setSearchQuery('')}
+              className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 hover:text-gray-600"
+            >
+              <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+          )}
+        </div>
+        {searchQuery && <div className="mt-2 text-sm text-gray-500">검색 결과: {filtered.length}건</div>}
+      </div>
       <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-[minmax(0,1.4fr)_repeat(5,minmax(0,1fr))]">
         <div className="w-full">
           <label className="mb-1 block text-sm text-gray-500">{'\uAE30\uAC04'}</label>
@@ -991,6 +1054,7 @@ function ConsensusTab({ onOpenInsight, isSaved, onToggleWatchlist }: { onOpenIns
   const [sortOrder, setSortOrder] = useState<'asc' | 'desc'>('desc');
   const [page, setPage] = useState(1);
   const [pageSize, setPageSize] = useState(10);
+  const [searchQuery, setSearchQuery] = useState('');
 
   useEffect(() => { void (async () => {
     const cached = getCachedConsensus(days, market);
@@ -1006,12 +1070,19 @@ function ConsensusTab({ onOpenInsight, isSaved, onToggleWatchlist }: { onOpenIns
       setLoading(false);
     }
   })(); }, [days, market]);
-  useEffect(() => setPage(1), [days, market, sortBy, sortOrder, pageSize]);
+  useEffect(() => setPage(1), [days, market, sortBy, sortOrder, pageSize, searchQuery]);
 
-  const avgUpside = items.length ? items.reduce((sum, item) => sum + item.avgUpside, 0) / items.length : 0;
-  const avgEntryScore = items.length ? items.reduce((sum, item) => sum + item.entryScore, 0) / items.length : 0;
-  const topEntryScore = items.reduce((max, item) => Math.max(max, item.entryScore), 0);
-  const sortedItems = [...items].sort((a, b) => {
+  const filteredItems = items.filter((item) => {
+    if (!searchQuery) return true;
+    const q = searchQuery.toLowerCase();
+    return item.name.toLowerCase().includes(q) ||
+      item.ticker.toLowerCase().includes(q) ||
+      item.brokers.join(' ').toLowerCase().includes(q);
+  });
+  const avgUpside = filteredItems.length ? filteredItems.reduce((sum, item) => sum + item.avgUpside, 0) / filteredItems.length : 0;
+  const avgEntryScore = filteredItems.length ? filteredItems.reduce((sum, item) => sum + item.entryScore, 0) / filteredItems.length : 0;
+  const topEntryScore = filteredItems.reduce((max, item) => Math.max(max, item.entryScore), 0);
+  const sortedItems = [...filteredItems].sort((a, b) => {
     const priceVsBaseA = a.basePrice > 0 ? ((a.currentPrice - a.basePrice) / a.basePrice) * 100 : 0;
     const priceVsBaseB = b.basePrice > 0 ? ((b.currentPrice - b.basePrice) / b.basePrice) * 100 : 0;
     const getValue = (item: AnalystConsensusItem) => {
@@ -1071,6 +1142,32 @@ function ConsensusTab({ onOpenInsight, isSaved, onToggleWatchlist }: { onOpenIns
 
   return <div className="space-y-6">
     <div className="rounded-xl bg-white p-4 shadow-sm">
+      <div className="mb-4">
+        <div className="relative">
+          <input
+            type="text"
+            value={searchQuery}
+            onChange={(e) => setSearchQuery(e.target.value)}
+            placeholder="종목명, 티커, 증권사 검색..."
+            className="w-full rounded-lg border border-gray-300 py-2.5 pl-10 pr-4 text-sm focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500"
+          />
+          <svg className="absolute left-3 top-1/2 h-5 w-5 -translate-y-1/2 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+          </svg>
+          {searchQuery && (
+            <button
+              type="button"
+              onClick={() => setSearchQuery('')}
+              className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 hover:text-gray-600"
+            >
+              <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+          )}
+        </div>
+        {searchQuery && <div className="mt-2 text-sm text-gray-500">검색 결과: {filteredItems.length}건</div>}
+      </div>
       <div className="grid gap-4 md:grid-cols-[minmax(0,1.3fr)_minmax(0,1fr)_minmax(0,1fr)_auto] md:items-end">
         <div className="w-full">
           <label className="mb-1 block text-sm text-gray-500">{'\uAE30\uAC04'}</label>
@@ -1085,16 +1182,16 @@ function ConsensusTab({ onOpenInsight, isSaved, onToggleWatchlist }: { onOpenIns
       </div>
     </div>
     <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
-      <StatCard label={'\uACF5\uD1B5 \uCD94\uCC9C \uC885\uBAA9'} value={String(items.length)} />
+      <StatCard label={'\uACF5\uD1B5 \uCD94\uCC9C \uC885\uBAA9'} value={String(filteredItems.length)} />
       <StatCard label={'\uD3C9\uADE0 \uC9C4\uC785 \uC810\uC218'} value={formatScore(avgEntryScore)} accent="text-blue-600" />
       <StatCard label={'\uCD5C\uACE0 \uC9C4\uC785 \uC810\uC218'} value={formatScore(topEntryScore)} accent="text-blue-700" />
-      <StatCard label={'\uAD6D\uB0B4 \uC885\uBAA9'} value={String(items.filter((item) => item.market === 'korea').length)} />
-      <StatCard label={'\uD574\uC678 \uC885\uBAA9'} value={String(items.filter((item) => item.market === 'us').length)} />
+      <StatCard label={'\uAD6D\uB0B4 \uC885\uBAA9'} value={String(filteredItems.filter((item) => item.market === 'korea').length)} />
+      <StatCard label={'\uD574\uC678 \uC885\uBAA9'} value={String(filteredItems.filter((item) => item.market === 'us').length)} />
     </div>
     {loading ? <LoadingState /> : error ? <div className="rounded-lg bg-red-50 p-4 text-red-600">{error}</div> : <div className="overflow-hidden rounded-xl bg-white shadow-sm">
       <div className="border-b p-4"><h2 className="text-lg font-semibold">{'\uC560\uB110\uB9AC\uC2A4\uD2B8 \uACF5\uD1B5 \uCD94\uCC9C \uC885\uBAA9'}</h2><p className="text-sm text-gray-500">{'\uC120\uD0DD\uD55C \uAE30\uAC04 \uB0B4 \uC5EC\uB7EC \uC99D\uAD8C\uC0AC\uAC00 \uD568\uAED8 \uCD94\uCC9C\uD55C \uC885\uBAA9\uC744 \uCD5C\uC2E0 \uB9AC\uD3EC\uD2B8 \uC77C\uC790 \uC21C\uC73C\uB85C \uBE44\uAD50\uD569\uB2C8\uB2E4.'}</p></div>
-      {items.length > 0 && <div className="flex justify-end px-4 pt-4"><SimpleSelect label={'\uD398\uC774\uC9C0 \uD06C\uAE30'} value={String(pageSize)} onChange={(value) => setPageSize(Number(value))} options={PAGE_SIZE_OPTIONS.map((option) => [String(option), String(option)] as [string, string])} /></div>}
-      {items.length === 0 ? <div className="p-8 text-center text-gray-400">{'\uC870\uAC74\uC5D0 \uB9DE\uB294 \uACF5\uD1B5 \uCD94\uCC9C \uC885\uBAA9\uC774 \uC5C6\uC2B5\uB2C8\uB2E4.'}</div> : <>
+      {filteredItems.length > 0 && <div className="flex justify-end px-4 pt-4"><SimpleSelect label={'\uD398\uC774\uC9C0 \uD06C\uAE30'} value={String(pageSize)} onChange={(value) => setPageSize(Number(value))} options={PAGE_SIZE_OPTIONS.map((option) => [String(option), String(option)] as [string, string])} /></div>}
+      {filteredItems.length === 0 ? <div className="p-8 text-center text-gray-400">{searchQuery ? '검색 결과가 없습니다.' : '\uC870\uAC74\uC5D0 \uB9DE\uB294 \uACF5\uD1B5 \uCD94\uCC9C \uC885\uBAA9\uC774 \uC5C6\uC2B5\uB2C8\uB2E4.'}</div> : <>
         <div className="space-y-3 p-4 md:hidden">
           {paginated.map((item) => <article key={`${item.market}-${item.ticker}`} className="rounded-xl border border-gray-100 bg-gray-50 p-4">
             <div className="flex items-start justify-between gap-3">
@@ -1160,7 +1257,7 @@ function ConsensusTab({ onOpenInsight, isSaved, onToggleWatchlist }: { onOpenIns
             </tbody>
           </table>
         </div>
-        <div className="p-4 pt-0"><PaginationControls totalCount={items.length} page={page} pageSize={pageSize} totalPages={totalPages} onPageChange={setPage} /></div>
+        <div className="p-4 pt-0"><PaginationControls totalCount={filteredItems.length} page={page} pageSize={pageSize} totalPages={totalPages} onPageChange={setPage} /></div>
       </>}
     </div>}
   </div>;

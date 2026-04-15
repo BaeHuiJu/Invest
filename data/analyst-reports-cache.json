@@ -1,7 +1,56 @@
 {
-  "generatedAt": "2026-04-15T22:43:40.264Z",
+  "generatedAt": "2026-04-15T23:49:59.587Z",
   "maxDays": 365,
   "reports": [
+    {
+      "date": "2026-04-16",
+      "ticker": "004170",
+      "name": "신세계",
+      "market": "korea",
+      "broker": "미래에셋증권",
+      "analyst": "",
+      "opinion": "매수",
+      "targetPrice": 450000,
+      "currentPrice": 345500,
+      "basePrice": 345500,
+      "basePriceDate": "2026-04-16",
+      "upside": 30.2,
+      "sourceUrl": "https://finance.naver.com/research/company_read.naver?nid=91600&page=1",
+      "reportTitle": "백화점은 압도적, 면세점까지 좋아진다",
+      "sourceText": "백화점 장사가 너무 잘된다 백화점의 구조적 호황이 지속되면서 백화점 실적이 계속해서 예상을 뛰어넘고 있다. 1분기 동사의 백화점 순매출은 YoY +8%, 외국인 매출은 YoY +80% 성장이 기대된다. 외국인 주력 점포인 본점의 외국인 매출 비중은 27%에 달할 것으로 예상되며, 강남점과 센텀점도 각각 7%, 5%로 비중을 늘려갈 전망이다. 본점과 센텀점은 입지적 장점이 부각되고 있으며, 강남점은 외국인 주력 상권은 아니었지만 스위트파크, 델리(국내 최대 규모)등 리뉴얼 효과로 관광 수요가 본격적으로 유입되는 흐름이다. 명품 구색이 강한 대형 점포들 중심으로 성장이 나타나면서 강한 탑라인 성장이 지속될 것으로 기대한다.",
+      "reasonSummary": "백화점은 압도적, 면세점까지 좋아진다. 미래에셋증권가 매수 의견을 제시했고 현재가 기준 상승여력은 30.2%입니다. 2026-04-16 종가 대비 목표가 괴리는 30.2%입니다.",
+      "reasonBullets": [
+        "미래에셋증권가 2026-04-16에 매수 의견과 목표가를 제시했습니다.",
+        "현재가 345,500원 대비 목표가는 450,000원입니다.",
+        "2026-04-16 종가 345,500원 대비 괴리는 30.2%입니다."
+      ],
+      "performance": {
+        "week1": {
+          "asOfDate": "2026-04-23",
+          "closePrice": 0,
+          "returnPct": 0,
+          "targetProgressPct": 0,
+          "success": false,
+          "status": "pending"
+        },
+        "month1": {
+          "asOfDate": "2026-05-16",
+          "closePrice": 0,
+          "returnPct": 0,
+          "targetProgressPct": 0,
+          "success": false,
+          "status": "pending"
+        },
+        "month3": {
+          "asOfDate": "2026-07-15",
+          "closePrice": 0,
+          "returnPct": 0,
+          "targetProgressPct": 0,
+          "success": false,
+          "status": "pending"
+        }
+      }
+    },
     {
       "date": "2026-04-15",
       "ticker": "018260",
@@ -15801,55 +15850,6 @@
         "대신증권가 2026-04-02에 Buy 의견과 목표가를 제시했습니다.",
         "현재가 35,450원 대비 목표가는 64,000원입니다.",
         "2026-04-02 종가 35,450원 대비 괴리는 80.5%입니다."
-      ],
-      "performance": {
-        "week1": {
-          "asOfDate": "2026-04-09",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "unavailable"
-        },
-        "month1": {
-          "asOfDate": "2026-05-02",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "pending"
-        },
-        "month3": {
-          "asOfDate": "2026-07-01",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "pending"
-        }
-      }
-    },
-    {
-      "date": "2026-04-02",
-      "ticker": "004170",
-      "name": "신세계",
-      "market": "korea",
-      "broker": "미래에셋증권",
-      "analyst": "",
-      "opinion": "매수",
-      "targetPrice": 450000,
-      "currentPrice": 345500,
-      "basePrice": 345500,
-      "basePriceDate": "2026-04-02",
-      "upside": 30.2,
-      "sourceUrl": "https://finance.naver.com/research/company_read.naver?nid=91190&page=1",
-      "reportTitle": "신세계 사기 딱 좋은 시점",
-      "sourceText": "1Q26 Preview: 시장 기대치 상회 전망 신세계의 1Q26 실적은 순매출 17,979억원(YoY +8%), 영업이익 1,673억원(YoY +26%)으로 시장 기대치를 뛰어넘을 전망이다. 백화점 호실적이 주효하며, 면세점, SI 등 그간 부진했던 사업부문까지 큰 폭의 개선이 확인된다. 백화점 실적은 총매출 19,928억원(YoY +11%), 영업이익 1,315억원(YoY +22%, OPM 6.6%)으로 예상한다. 매월 관리기준 두자릿수 성장했으며, 카테고리별로도 전 품목 두자릿수 성장한 것으로 파악된다. 명품이 30% 수준으로 특히 고성장했으며, 패션도 10% 이상 성장해 탑라인과 마진을 모두 잡은 실적이 예상된다. 백화점의 외국인 매출은 80% 수준 성장해 비중 6% 이상까지 확대되겠다. 면세점은 T2 임차료 감면 혜택이 종료되면서 당초 적자가 크게 확대될 것으로 예상했으나, 40억 수준의 소폭 적자에 그칠 것으로 기대된다. 임차료 증가 영향을 제외하면 약 100억원 가량 이익인 셈이며, 4월 DF2 철수 이후로 공항점 적자는 거의 사라지게 된다. 적자 방어한 이유는 중국인 소비 개선에 따른 영업상황 개선이다. 중국인 인바운드가 강세인 가운데(YTD+31%), 달러위안 환율이 완화되면서 구매력이 강화된 것으로 판단한다. 시내점 마진이 HSD%까지 개선될 것으로 예상한다. 그 외 자회사는 SI가 해외패션, 수입 화장품 호조 효과로 200% 가까이 증익 기대되며, 까사미아도 SI로부터 자주 사업양도 효과로 흑자로 예상된다.",
-      "reasonSummary": "신세계 사기 딱 좋은 시점. 미래에셋증권가 매수 의견을 제시했고 현재가 기준 상승여력은 30.2%입니다. 2026-04-02 종가 대비 목표가 괴리는 30.2%입니다.",
-      "reasonBullets": [
-        "미래에셋증권가 2026-04-02에 매수 의견과 목표가를 제시했습니다.",
-        "현재가 345,500원 대비 목표가는 450,000원입니다.",
-        "2026-04-02 종가 345,500원 대비 괴리는 30.2%입니다."
       ],
       "performance": {
         "week1": {
@@ -36411,300 +36411,6 @@
     },
     {
       "date": "2026-02-12",
-      "ticker": "041510",
-      "name": "에스엠",
-      "market": "korea",
-      "broker": "키움증권",
-      "analyst": "",
-      "opinion": "Buy",
-      "targetPrice": 180000,
-      "currentPrice": 90900,
-      "basePrice": 90900,
-      "basePriceDate": "2026-02-12",
-      "upside": 98,
-      "sourceUrl": "https://finance.naver.com/research/company_read.naver?nid=90412&page=1",
-      "reportTitle": "질적 성장이 증명한 어닝 서프라이즈",
-      "sourceText": "고마진 MD/라이선싱 성장이 견인한 어닝 서프라이즈 4분기 연결 기준 매출액은 3,190억원(YoY +16.6%, QoQ -0.8%), 영업이익은 546억원(YoY +62.2%, QoQ +13.3%)을 기록하며 컨센서스를 상회했다. 역대 최대 분기 영업이익 달성은 고마진 매출원인 MD 및 라이선싱 부문의 구조적 성장에 기인한다. MD/라이선싱 매출액은 781억원(YoY +52.4%, QoQ +55.2%)으로 급증했는데, 이는 에스파와 배틀그라운드(PUBG) 협업 관련 라이선싱 매출(약 150억원 추정) 반영과 응원봉 및 투어 MD 판매 호조 영향이다. 반면 음반 매출은 648억원(YoY -24.6%, QoQ -33.0%)으로 감소했다. NCT 드림(102만장), 라이즈(71만장) 등 신보 판매량은 견조했으나, 전반적인 발매 횟수 감소 추세가 반영되었다. 공연 매출은 345억원(YoY +53.6%, QoQ -34.3%)을 기록했다. 슈퍼주니어, 에스파, NCT 위시 등 주요 아티스트의 공연 규모 확대가 외형 성장을 견인했다. 자회사 매출액은 1,691억원(YoY +23.8%, QoQ +15.2%), 영업이익 129억원(YoY 흑자전환, QoQ -4.8%)을 기록했다. 디어유의 실적 호조와 일본 공연 확대에 따른 SM재팬의 실적 개선이 연결 이익 기여도를 높인 것으로 분석된다.",
-      "reasonSummary": "질적 성장이 증명한 어닝 서프라이즈. 키움증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 98.0%입니다. 2026-02-12 종가 대비 목표가 괴리는 98%입니다.",
-      "reasonBullets": [
-        "키움증권가 2026-02-12에 Buy 의견과 목표가를 제시했습니다.",
-        "현재가 90,900원 대비 목표가는 180,000원입니다.",
-        "2026-02-12 종가 90,900원 대비 괴리는 98%입니다."
-      ],
-      "performance": {
-        "week1": {
-          "asOfDate": "2026-02-19",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "unavailable"
-        },
-        "month1": {
-          "asOfDate": "2026-03-14",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "unavailable"
-        },
-        "month3": {
-          "asOfDate": "2026-05-13",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "pending"
-        }
-      }
-    },
-    {
-      "date": "2026-02-12",
-      "ticker": "213420",
-      "name": "덕산네오룩스",
-      "market": "korea",
-      "broker": "SK증권",
-      "analyst": "",
-      "opinion": "매수",
-      "targetPrice": 55000,
-      "currentPrice": 50800,
-      "basePrice": 50800,
-      "basePriceDate": "2026-02-12",
-      "upside": 8.3,
-      "sourceUrl": "https://finance.naver.com/research/company_read.naver?nid=90411&page=1",
-      "reportTitle": "신규 아이템으로 무장! 다시 성장궤도 돌입",
-      "sourceText": "4Q25 Review: 역대 최대 실적, 일회성 비용 4Q25 매출액 1,272억원(YoY +144%, 이하), OP 230 억원(+17%, OPM 18%)기록, 컨센서스 매출액(1,176 억원)은 상회했으나 OP(303 억원)은 하회했다. 역대 최대 실적이나, 일회성 비용이 반영되었다. 총 일회성 비용은 약 76 억원으로 추정되며, 일회성 비용 제외시 컨센서스에 부합하는 실적이다. ① 북미 스마트폰 신모델 판매 호조 및 3Q25 이연 물량 추가로 M14소재 공급 증가(그린 프라임 효과로 P, Q상승), ② 국내 고객사향 플래그십 제품 양산 돌입(M14), ③ BPDL 탑재량 증가(국내 고객사향 플래그십 탑재), ④고환율 효과, ⑤ 자회사 터보기계의 3Q25 이연 물량 매출 인식 효과",
-      "reasonSummary": "신규 아이템으로 무장! 다시 성장궤도 돌입. SK증권가 매수 의견을 제시했고 현재가 기준 상승여력은 8.3%입니다. 2026-02-12 종가 대비 목표가 괴리는 8.3%입니다.",
-      "reasonBullets": [
-        "SK증권가 2026-02-12에 매수 의견과 목표가를 제시했습니다.",
-        "현재가 50,800원 대비 목표가는 55,000원입니다.",
-        "2026-02-12 종가 50,800원 대비 괴리는 8.3%입니다."
-      ],
-      "performance": {
-        "week1": {
-          "asOfDate": "2026-02-19",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "unavailable"
-        },
-        "month1": {
-          "asOfDate": "2026-03-14",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "unavailable"
-        },
-        "month3": {
-          "asOfDate": "2026-05-13",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "pending"
-        }
-      }
-    },
-    {
-      "date": "2026-02-12",
-      "ticker": "213420",
-      "name": "덕산네오룩스",
-      "market": "korea",
-      "broker": "키움증권",
-      "analyst": "",
-      "opinion": "Buy",
-      "targetPrice": 63000,
-      "currentPrice": 50800,
-      "basePrice": 50800,
-      "basePriceDate": "2026-02-12",
-      "upside": 24,
-      "sourceUrl": "https://finance.naver.com/research/company_read.naver?nid=90410&page=1",
-      "reportTitle": "5년 만의 OLED 사이클과 자회사 가치 주목",
-      "sourceText": "4Q25 영업이익 231억원, 일회성 비용 반영으로 기대치 하회 4Q25 매출액 1,271억원(+29% QoQ, +144% YoY), 영업이익 231억원(+32% QoQ, +18% YoY), opm 18.2%로, 매출액은 예상치를 상회했으나 영업이익은 당사 예상치(305억원) 및 시장 기대치(303억원)를 하회했다. 이는 연말 성과급과 현대중공업터보기계 인수에 따른 무형자산 상각비가 일괄 반영된 영향으로, 이를 제외 시 시장 기대치를 소폭 상회했을 것으로 추정된다. 덕산네오룩스 별도 매출액 651억원(+26% QoQ, +25% YoY), 영업이익 194억원(+76% QoQ, -1% YoY), opm 29.8%로, 견조한 아이폰 수요가 지속된 가운데, 갤럭시S26 시리즈용 소재 공급이 본격화됐다. 특히 갤럭시S26 울트라 모델은 Black PDL이 신규 채택될 것으로 예상되며, 향후 폴더블 뿐 아니라 일반 바(bar) 타입 스마트폰으로의 적용 확대도 가속화될 전망이다.",
-      "reasonSummary": "5년 만의 OLED 사이클과 자회사 가치 주목. 키움증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 24.0%입니다. 2026-02-12 종가 대비 목표가 괴리는 24%입니다.",
-      "reasonBullets": [
-        "키움증권가 2026-02-12에 Buy 의견과 목표가를 제시했습니다.",
-        "현재가 50,800원 대비 목표가는 63,000원입니다.",
-        "2026-02-12 종가 50,800원 대비 괴리는 24%입니다."
-      ],
-      "performance": {
-        "week1": {
-          "asOfDate": "2026-02-19",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "unavailable"
-        },
-        "month1": {
-          "asOfDate": "2026-03-14",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "unavailable"
-        },
-        "month3": {
-          "asOfDate": "2026-05-13",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "pending"
-        }
-      }
-    },
-    {
-      "date": "2026-02-12",
-      "ticker": "005440",
-      "name": "현대지에프홀딩스",
-      "market": "korea",
-      "broker": "SK증권",
-      "analyst": "",
-      "opinion": "매수",
-      "targetPrice": 14500,
-      "currentPrice": 13520,
-      "basePrice": 13520,
-      "basePriceDate": "2026-02-12",
-      "upside": 7.2,
-      "sourceUrl": "https://finance.naver.com/research/company_read.naver?nid=90409&page=1",
-      "reportTitle": "지배구조 개편의 묘수",
-      "sourceText": "포괄적 주식교환으로 현대홈쇼핑 완전자회사 편입 추진 전일 현대지에프홀딩스는 현대홈쇼핑와 포괄적 주식교환을 공시하였다. 포괄적 주식교환을 통해 현대홈쇼핑은 현대지에프홀딩스의 완전자회사로 편입되며 주식교환비율은 현대지에프홀딩스 : 현대홈쇼핑 = 1: 6.3571040 이다. 주식교환 이후에는 현대홈쇼핑의 인적분할을 통해 현대퓨처넷, 한섬 등의 지분을 보유한 투자부문과 홈쇼핑 사업부문으로 인적분할 하고 현대지에프홀딩스와 투자부문의 합병도 추진할 예정이다. 합병 이후 현대퓨처넷과 한섬은 손자회사에서 자회사로 지위가 바뀌게 되고 현대퓨처넷의 자회사인 현대바이오랜드는 증손회사에서 손자회사가 된다.",
-      "reasonSummary": "지배구조 개편의 묘수. SK증권가 매수 의견을 제시했고 현재가 기준 상승여력은 7.2%입니다. 2026-02-12 종가 대비 목표가 괴리는 7.2%입니다.",
-      "reasonBullets": [
-        "SK증권가 2026-02-12에 매수 의견과 목표가를 제시했습니다.",
-        "현재가 13,520원 대비 목표가는 14,500원입니다.",
-        "2026-02-12 종가 13,520원 대비 괴리는 7.2%입니다."
-      ],
-      "performance": {
-        "week1": {
-          "asOfDate": "2026-02-19",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "unavailable"
-        },
-        "month1": {
-          "asOfDate": "2026-03-14",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "unavailable"
-        },
-        "month3": {
-          "asOfDate": "2026-05-13",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "pending"
-        }
-      }
-    },
-    {
-      "date": "2026-02-12",
-      "ticker": "069960",
-      "name": "현대백화점",
-      "market": "korea",
-      "broker": "키움증권",
-      "analyst": "",
-      "opinion": "Buy",
-      "targetPrice": 147000,
-      "currentPrice": 85800,
-      "basePrice": 85800,
-      "basePriceDate": "2026-02-12",
-      "upside": 71.3,
-      "sourceUrl": "https://finance.naver.com/research/company_read.naver?nid=90404&page=1",
-      "reportTitle": "백화점 실적 개선과 주주환원정책 강화 긍정..",
-      "sourceText": "4분기 영업이익 1,062억원으로 시장 기대치 하회 현대백화점의 4Q25 연결기준 영업이익은 1,062억원(-1% YoY)으로 시장 기대치를 하회하였다. 백화점 기존점 매출 호조(+8%)와 면세점 흑자전환에도 불구하고, 지누스(지분율 38%)의 실적이 예상보다 크게 부진했기 때문이다. 지누스는 미국 주요 채널 내 재고조정 영향으로 전반적인 매출 흐름이 부진하였으며, 회사는 올해 1분기말에 매출 회복을 기대하고 있는 상황이다. 백화점 부문의 영업이익은 YoY +239억원 증가하였으나, 감가상각비 감소 영향을 제외한다면, 기존점 매출 성장에 따른 영업이익 증가효과는 199억원 수준(+17% YoY)으로 추산된다. 전반적인 매출 고성장과 고마진 패션 상품군 성장세에 힘입어, 매출 증가에 따른 영업레버리지 효과가 확대되고 있는 것으로 판단된다.",
-      "reasonSummary": "백화점 실적 개선과 주주환원정책 강화 긍정... 키움증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 71.3%입니다. 2026-02-12 종가 대비 목표가 괴리는 71.3%입니다.",
-      "reasonBullets": [
-        "키움증권가 2026-02-12에 Buy 의견과 목표가를 제시했습니다.",
-        "현재가 85,800원 대비 목표가는 147,000원입니다.",
-        "2026-02-12 종가 85,800원 대비 괴리는 71.3%입니다."
-      ],
-      "performance": {
-        "week1": {
-          "asOfDate": "2026-02-19",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "unavailable"
-        },
-        "month1": {
-          "asOfDate": "2026-03-14",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "unavailable"
-        },
-        "month3": {
-          "asOfDate": "2026-05-13",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "pending"
-        }
-      }
-    },
-    {
-      "date": "2026-02-12",
-      "ticker": "138040",
-      "name": "메리츠금융지주",
-      "market": "korea",
-      "broker": "키움증권",
-      "analyst": "",
-      "opinion": "Buy",
-      "targetPrice": 170000,
-      "currentPrice": 117300,
-      "basePrice": 117300,
-      "basePriceDate": "2026-02-12",
-      "upside": 44.9,
-      "sourceUrl": "https://finance.naver.com/research/company_read.naver?nid=90400&page=1",
-      "reportTitle": "6%대 주주환원수익률 부각, 더 올라도 이상할..",
-      "sourceText": "4Q25 지배순이익 9% (YoY) 감소한 3,107 억원 2025 년 4 분기 지배주주순이익은 9% (YoY) 감소한 3,107 억원으로 시장 기대치에 부합했다. 메리츠화재/메리츠증권의 순이익은 각각 +6%/-19%(YoY) 변동했는데, 평가손실 등의 영향으로 증권은 전년동기대비 감소했으나, 이를 제외하면 전반적으로 업황 우려 대비 양호한 실적을 기록한 것으로 판단한다.",
-      "reasonSummary": "6%대 주주환원수익률 부각, 더 올라도 이상할... 키움증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 44.9%입니다. 2026-02-12 종가 대비 목표가 괴리는 44.9%입니다.",
-      "reasonBullets": [
-        "키움증권가 2026-02-12에 Buy 의견과 목표가를 제시했습니다.",
-        "현재가 117,300원 대비 목표가는 170,000원입니다.",
-        "2026-02-12 종가 117,300원 대비 괴리는 44.9%입니다."
-      ],
-      "performance": {
-        "week1": {
-          "asOfDate": "2026-02-19",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "unavailable"
-        },
-        "month1": {
-          "asOfDate": "2026-03-14",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "unavailable"
-        },
-        "month3": {
-          "asOfDate": "2026-05-13",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "pending"
-        }
-      }
-    },
-    {
-      "date": "2026-02-12",
       "ticker": "TSLA",
       "name": "Tesla, Inc.",
       "market": "us",
@@ -39253,6 +38959,305 @@
     }
   ],
   "stockInsights": {
+    "korea:004170": {
+      "ticker": "004170",
+      "name": "신세계",
+      "market": "korea",
+      "latestReportDate": "2026-04-16",
+      "latestBroker": "미래에셋증권",
+      "latestOpinion": "매수",
+      "latestTargetPrice": 450000,
+      "latestCurrentPrice": 345500,
+      "latestBasePrice": 345500,
+      "avgUpside": 27.3,
+      "reportCount": 5,
+      "reasonSummary": "백화점은 압도적, 면세점까지 좋아진다. 미래에셋증권가 매수 의견을 제시했고 현재가 기준 상승여력은 30.2%입니다. 2026-04-16 종가 대비 목표가 괴리는 30.2%입니다.",
+      "reasonBullets": [
+        "미래에셋증권가 2026-04-16에 매수 의견과 목표가를 제시했습니다.",
+        "현재가 345,500원 대비 목표가는 450,000원입니다.",
+        "2026-04-16 종가 345,500원 대비 괴리는 30.2%입니다."
+      ],
+      "investmentLogic": {
+        "summary": "백화점은 압도적, 면세점까지 좋아진다",
+        "bullets": [
+          "백화점은 압도적, 면세점까지 좋아진다",
+          "1분기 동사의 백화점 순매출은 YoY +8%, 외국인 매출은 YoY +80% 성장이 기대된다.",
+          "본점과 센텀점은 입지적 장점이 부각되고 있으며, 강남점은 외국인 주력 상권은 아니었지만 스위트파크, 델리(국내 최대 규모)등 리뉴얼 효과로 관광 수요가 본격적으로 유입되는 흐름이다."
+        ]
+      },
+      "estimateRevision": {
+        "summary": "혼재 신호입니다. 리포트 원문에서 추정치 관련 표현을 기준으로 판단했습니다.",
+        "bullets": [
+          "1분기 동사의 백화점 순매출은 YoY +8%, 외국인 매출은 YoY +80% 성장이 기대된다.",
+          "외국인 주력 점포인 본점의 외국인 매출 비중은 27%에 달할 것으로 예상되며, 강남점과 센텀점도 각각 7%, 5%로 비중을 늘려갈 전망이다.",
+          "연결 기준 매출액은 1조 8,591억 원(YoY +11.6%), 영업이익 1,794억 원(YoY +35.6%)으로 시장 기대치 및 당사의 추정치를 약 13.6% 상회할 전망이다."
+        ],
+        "signal": "mixed"
+      },
+      "valuation": {
+        "summary": "현재가 345,500원 대비 목표가 450,000원가 제시돼 밸류에이션 여력을 확인할 수 있습니다.",
+        "bullets": [
+          "백화점은 압도적, 면세점까지 좋아진다 백화점 장사가 너무 잘된다 백화점의 구조적 호황이 지속되면서 백화점 실적이 계속해서 예상을 뛰어넘고 있다.",
+          "1분기 동사의 백화점 순매출은 YoY +8%, 외국인 매출은 YoY +80% 성장이 기대된다.",
+          "외국인 주력 점포인 본점의 외국인 매출 비중은 27%에 달할 것으로 예상되며, 강남점과 센텀점도 각각 7%, 5%로 비중을 늘려갈 전망이다."
+        ]
+      },
+      "sectorCycle": {
+        "summary": "큰 폭의 실적 성장을 전망하는 근거는 1) 자산가치 상승 및 본점 리뉴얼 확장에 따른 효과로 명품 성장률이 20%를 상회할 것으로 보이고, 2) 의류 성장률 회복에 따른 성장이 지난 4분기부터 이어져오고 있으며, 3) 주요 종속회사 실적 회복(신세계인터내셔날) 및 실적 성장(신세계센트럴), 4) 면세점 수익성 전략에 따라 추정치를 상회하는 실적을 기대하기 때문이다.",
+        "bullets": [
+          "큰 폭의 실적 성장을 전망하는 근거는 1) 자산가치 상승 및 본점 리뉴얼 확장에 따른 효과로 명품 성장률이 20%를 상회할 것으로 보이고, 2) 의류 성장률 회복에 따른 성장이 지난 4분기부터 이어져오고 있으며, 3) 주요 종속회사 실적 회복(신세계인터내셔날) 및 실적 성장(신세계센트럴), 4) 면세점 수익성 전략에 따라 추정치를 상회하는 실적을 기대하기 때문이다.",
+          "중동지역 전쟁이 길어지면서 소비 둔화 우려가 부각되고 있음에도 불구하고 올해 백화점 산업은 양호한 성장을 기록할 전망.",
+          "국내 시장 기준 최근 5건 리포트의 업황 표현을 정리했습니다."
+        ]
+      },
+      "relatedReports": [
+        {
+          "date": "2026-04-16",
+          "ticker": "004170",
+          "name": "신세계",
+          "market": "korea",
+          "broker": "미래에셋증권",
+          "analyst": "",
+          "opinion": "매수",
+          "targetPrice": 450000,
+          "currentPrice": 345500,
+          "basePrice": 345500,
+          "basePriceDate": "2026-04-16",
+          "upside": 30.2,
+          "sourceUrl": "https://finance.naver.com/research/company_read.naver?nid=91600&page=1",
+          "reportTitle": "백화점은 압도적, 면세점까지 좋아진다",
+          "sourceText": "백화점 장사가 너무 잘된다 백화점의 구조적 호황이 지속되면서 백화점 실적이 계속해서 예상을 뛰어넘고 있다. 1분기 동사의 백화점 순매출은 YoY +8%, 외국인 매출은 YoY +80% 성장이 기대된다. 외국인 주력 점포인 본점의 외국인 매출 비중은 27%에 달할 것으로 예상되며, 강남점과 센텀점도 각각 7%, 5%로 비중을 늘려갈 전망이다. 본점과 센텀점은 입지적 장점이 부각되고 있으며, 강남점은 외국인 주력 상권은 아니었지만 스위트파크, 델리(국내 최대 규모)등 리뉴얼 효과로 관광 수요가 본격적으로 유입되는 흐름이다. 명품 구색이 강한 대형 점포들 중심으로 성장이 나타나면서 강한 탑라인 성장이 지속될 것으로 기대한다.",
+          "reasonSummary": "백화점은 압도적, 면세점까지 좋아진다. 미래에셋증권가 매수 의견을 제시했고 현재가 기준 상승여력은 30.2%입니다. 2026-04-16 종가 대비 목표가 괴리는 30.2%입니다.",
+          "reasonBullets": [
+            "미래에셋증권가 2026-04-16에 매수 의견과 목표가를 제시했습니다.",
+            "현재가 345,500원 대비 목표가는 450,000원입니다.",
+            "2026-04-16 종가 345,500원 대비 괴리는 30.2%입니다."
+          ],
+          "performance": {
+            "week1": {
+              "asOfDate": "2026-04-23",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            },
+            "month1": {
+              "asOfDate": "2026-05-16",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            },
+            "month3": {
+              "asOfDate": "2026-07-15",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            }
+          }
+        },
+        {
+          "date": "2026-04-15",
+          "ticker": "004170",
+          "name": "신세계",
+          "market": "korea",
+          "broker": "IBK투자증권",
+          "analyst": "",
+          "opinion": "매수",
+          "targetPrice": 410000,
+          "currentPrice": 345500,
+          "basePrice": 345500,
+          "basePriceDate": "2026-04-15",
+          "upside": 18.7,
+          "sourceUrl": "https://finance.naver.com/research/company_read.naver?nid=91563&page=1",
+          "reportTitle": "강력한 실적 모멘텀!",
+          "sourceText": "1분기 실적 Preview: 성수기 만큼 강력한 실적 기대 동사의 2026년 1분기 실적은 시장 기대치를 큰 폭으로 상회할 것으로 예상한다. 연결 기준 매출액은 1조 8,591억 원(YoY +11.6%), 영업이익 1,794억 원(YoY +35.6%)으로 시장 기대치 및 당사의 추정치를 약 13.6% 상회할 전망이다. 큰 폭의 실적 성장을 전망하는 근거는 1) 자산가치 상승 및 본점 리뉴얼 확장에 따른 효과로 명품 성장률이 20%를 상회할 것으로 보이고, 2) 의류 성장률 회복에 따른 성장이 지난 4분기부터 이어져오고 있으며, 3) 주요 종속회사 실적 회복(신세계인터내셔날) 및 실적 성장(신세계센트럴), 4) 면세점 수익성 전략에 따라 추정치를 상회하는 실적을 기대하기 때문이다. 1분기 실적 추정치를 올린 가장 큰 이유는 예상치를 상회하는 명품 성장이다. 특히, 본점 리뉴얼 오픈에 따른 효과가 기대치를 상회하고 있다. 또한, 당초 신세계DF의 경우에도 임대료 증가에 따른 부담을 예상했지만, 수익성 개선 효과로 적자폭 확대는 예상보다 크지 않을 것으로 전망한다.",
+          "reasonSummary": "강력한 실적 모멘텀!. IBK투자증권가 매수 의견을 제시했고 현재가 기준 상승여력은 18.7%입니다. 2026-04-15 종가 대비 목표가 괴리는 18.7%입니다.",
+          "reasonBullets": [
+            "IBK투자증권가 2026-04-15에 매수 의견과 목표가를 제시했습니다.",
+            "현재가 345,500원 대비 목표가는 410,000원입니다.",
+            "2026-04-15 종가 345,500원 대비 괴리는 18.7%입니다."
+          ],
+          "performance": {
+            "week1": {
+              "asOfDate": "2026-04-22",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            },
+            "month1": {
+              "asOfDate": "2026-05-15",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            },
+            "month3": {
+              "asOfDate": "2026-07-14",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            }
+          }
+        },
+        {
+          "date": "2026-04-08",
+          "ticker": "004170",
+          "name": "신세계",
+          "market": "korea",
+          "broker": "교보증권",
+          "analyst": "",
+          "opinion": "Buy",
+          "targetPrice": 430000,
+          "currentPrice": 345500,
+          "basePrice": 345500,
+          "basePriceDate": "2026-04-08",
+          "upside": 24.5,
+          "sourceUrl": "https://finance.naver.com/research/company_read.naver?nid=91345&page=1",
+          "reportTitle": "1Q26 Preview: 백화점 너 정말 실적의 **핵심..",
+          "sourceText": "명품 + 외국인 매출액 성장세 확대 = 백화점 업종 내 최고 성장률 신세계 1Q26 연결 실적은 매출액 1조 8,188억원(YoY +9.2%), 영업이익 1,704억원(YoY +28.8%, OPM 9.4%)으로 영업이익 기준 시장 기대치(Fnguide 기준 1,532억원) 대비 상회 전망 ① 백화점: 총매출액 2조 221억원 (YoY +12.8%), 영업이익 1,319억원 (YoY +22.2%, OPM 6.5%) 전망. 관리 매출액 기준 성장률은 약 20%로, 백화점 업종 내 가장 높은 성장률 기록 예상. 명품 카테고리가 전체 성장률을 견인하는 가운데, 패션 카테고리 또한 높은 성장률을 보인 것으로 추정. 외국인 매출 성장률은 4Q25 YoY +70% 기록한 데 이어 1Q26 +89% 수준을 보이며 성장세 확대된 것으로 파악. 본점 리뉴얼에 따른 감가상각비 증가가 예상되나, 높은 매출 성장률에 기반하여 수익성은 개선 추이를 보일 것으로 판단 ② 면세점: 매출액 5,839억원(YoY +3.9%), 영업적자 8억원(YoY 적자축소) 전망. 시내 면세점은 할인율 완화에 따라 전분기 대비 마진 개선 추정(MSD% → HSD%). 이에 따라 인천 공항 임차료 감면 종료에도 적자 폭은 당초 예상 대비 축소될 전망 ③ 기타 자회사: 인터내셔날은 해외 패션 사업부 성장에 따른 실적 개선으로 영업이익 114억원 전망. 까사는 자주 사업부 양수로 BEP 수준 이상 기록 전망",
+          "reasonSummary": "1Q26 Preview: 백화점 너 정말 실적의 **핵심... 교보증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 24.5%입니다. 2026-04-08 종가 대비 목표가 괴리는 24.5%입니다.",
+          "reasonBullets": [
+            "교보증권가 2026-04-08에 Buy 의견과 목표가를 제시했습니다.",
+            "현재가 345,500원 대비 목표가는 430,000원입니다.",
+            "2026-04-08 종가 345,500원 대비 괴리는 24.5%입니다."
+          ],
+          "performance": {
+            "week1": {
+              "asOfDate": "2026-04-15",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "unavailable"
+            },
+            "month1": {
+              "asOfDate": "2026-05-08",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            },
+            "month3": {
+              "asOfDate": "2026-07-07",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            }
+          }
+        },
+        {
+          "date": "2026-04-06",
+          "ticker": "004170",
+          "name": "신세계",
+          "market": "korea",
+          "broker": "대신증권",
+          "analyst": "",
+          "opinion": "Buy",
+          "targetPrice": 460000,
+          "currentPrice": 345500,
+          "basePrice": 345500,
+          "basePriceDate": "2026-04-06",
+          "upside": 33.1,
+          "sourceUrl": "https://finance.naver.com/research/company_read.naver?nid=91259&page=1",
+          "reportTitle": "자산 효과와 인바운드 소비가 성장의 축",
+          "sourceText": "투자의견 BUY와 목표주가 460,000원으로 상향(+12%) 투자의견 BUY를 유지하며 목표주가를 460,000원(12개월 FWD 예상 P/E 15배)으로 상향. 목표주가 상향은 26-27년 실적을 상향 조정에 따름 국내 백화점 업계는 국내 주요 기업들의 실적 호조에 따른 상여금 증가에 따른 소비 여력 증대와 인바운드 관광객 매출 급증으로 새로운 성장 국면을 맞이함. 중동지역 전쟁이 길어지면서 소비 둔화 우려가 부각되고 있음에도 불구하고 올해 백화점 산업은 양호한 성장을 기록할 전망. 이는 전쟁이 소득 중상위 계층의 자산 증가에 미치는 영향이 일부에 그칠 것으로 보이고 고환율로 인해 해외 소비가 크게 늘지 못하는 반면 인바운드 관광 수요는 꾸준히 유지될 가능성이 높다고 판단되기 때문. 최근 주가 조정으로 동사에 대해 투자 매력도 증가. 매수하기에 좋은 시기",
+          "reasonSummary": "자산 효과와 인바운드 소비가 성장의 축. 대신증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 33.1%입니다. 2026-04-06 종가 대비 목표가 괴리는 33.1%입니다.",
+          "reasonBullets": [
+            "대신증권가 2026-04-06에 Buy 의견과 목표가를 제시했습니다.",
+            "현재가 345,500원 대비 목표가는 460,000원입니다.",
+            "2026-04-06 종가 345,500원 대비 괴리는 33.1%입니다."
+          ],
+          "performance": {
+            "week1": {
+              "asOfDate": "2026-04-13",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "unavailable"
+            },
+            "month1": {
+              "asOfDate": "2026-05-06",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            },
+            "month3": {
+              "asOfDate": "2026-07-05",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            }
+          }
+        },
+        {
+          "date": "2026-03-16",
+          "ticker": "004170",
+          "name": "신세계",
+          "market": "korea",
+          "broker": "키움증권",
+          "analyst": "",
+          "opinion": "Buy",
+          "targetPrice": 450000,
+          "currentPrice": 345500,
+          "basePrice": 345500,
+          "basePriceDate": "2026-03-16",
+          "upside": 30.2,
+          "sourceUrl": "https://finance.naver.com/research/company_read.naver?nid=90923&page=1",
+          "reportTitle": "인바운드 증가 모멘텀은 2Q에 더 강화될 전망",
+          "sourceText": "1분기 영업이익 시장 기대치 상회 전망 신세계의 1분기 연결기준 영업이익 전망치를 1,556억원(+18%)으로 상향 조정한다. 1분기 백화점 기존점 매출은 관리기준 +18~19%, 회계기준 +11%로 당사 기대치를 상회할 것으로 전망되고, 면세점은 시내점 할인율 개선으로 수익성이 예상 보다 양호할 것으로 전망된다. 특히, 백화점은 중산층 소비가 반등하는 모습을 보이며, 기존 명품 외에도 패션 장르의 매출 성장세가 강화되면서, 영업레버리지 효과가 커지고 있다. 게다가 ‘한일령’ 반사수혜가 본격화되면서, 외국인 매출 성장률이 +80~90% 수준으로 확대되고 있는 점이 긍정적이다.",
+          "reasonSummary": "인바운드 증가 모멘텀은 2Q에 더 강화될 전망. 키움증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 30.2%입니다. 2026-03-16 종가 대비 목표가 괴리는 30.2%입니다.",
+          "reasonBullets": [
+            "키움증권가 2026-03-16에 Buy 의견과 목표가를 제시했습니다.",
+            "현재가 345,500원 대비 목표가는 450,000원입니다.",
+            "2026-03-16 종가 345,500원 대비 괴리는 30.2%입니다."
+          ],
+          "performance": {
+            "week1": {
+              "asOfDate": "2026-03-23",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "unavailable"
+            },
+            "month1": {
+              "asOfDate": "2026-04-15",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "unavailable"
+            },
+            "month3": {
+              "asOfDate": "2026-06-14",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            }
+          }
+        }
+      ]
+    },
     "korea:018260": {
       "ticker": "018260",
       "name": "삼성에스디에스",
@@ -42474,8 +42479,8 @@
       "latestTargetPrice": 140000,
       "latestCurrentPrice": 90900,
       "latestBasePrice": 90900,
-      "avgUpside": 60.6,
-      "reportCount": 9,
+      "avgUpside": 55.9,
+      "reportCount": 8,
       "reasonSummary": "외형 성장보단 수익성에 집중. iM증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 54.0%입니다. 2026-04-15 종가 대비 목표가 괴리는 54%입니다.",
       "reasonBullets": [
         "iM증권가 2026-04-15에 Buy 의견과 목표가를 제시했습니다.",
@@ -42511,7 +42516,7 @@
         "summary": "외형 성장보단 수익성에 집중 목표주가 하향 작년 MD/라이선싱 매출 서프라이즈 및 디어유 연결 편입 효과로 기저가 높은 가운데, 올해 예상 영업이익은 2,050억원(+12% YoY)으로 전년 대비 성장률은 다소 둔화될 것이다.",
         "bullets": [
           "외형 성장보단 수익성에 집중 목표주가 하향 작년 MD/라이선싱 매출 서프라이즈 및 디어유 연결 편입 효과로 기저가 높은 가운데, 올해 예상 영업이익은 2,050억원(+12% YoY)으로 전년 대비 성장률은 다소 둔화될 것이다.",
-          "국내 시장 기준 최근 9건 리포트의 업황 표현을 정리했습니다."
+          "국내 시장 기준 최근 8건 리포트의 업황 표현을 정리했습니다."
         ]
       },
       "relatedReports": [
@@ -44105,305 +44110,6 @@
             },
             "month3": {
               "asOfDate": "2026-07-14",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            }
-          }
-        }
-      ]
-    },
-    "korea:004170": {
-      "ticker": "004170",
-      "name": "신세계",
-      "market": "korea",
-      "latestReportDate": "2026-04-15",
-      "latestBroker": "IBK투자증권",
-      "latestOpinion": "매수",
-      "latestTargetPrice": 410000,
-      "latestCurrentPrice": 345500,
-      "latestBasePrice": 345500,
-      "avgUpside": 27.3,
-      "reportCount": 5,
-      "reasonSummary": "강력한 실적 모멘텀!. IBK투자증권가 매수 의견을 제시했고 현재가 기준 상승여력은 18.7%입니다. 2026-04-15 종가 대비 목표가 괴리는 18.7%입니다.",
-      "reasonBullets": [
-        "IBK투자증권가 2026-04-15에 매수 의견과 목표가를 제시했습니다.",
-        "현재가 345,500원 대비 목표가는 410,000원입니다.",
-        "2026-04-15 종가 345,500원 대비 괴리는 18.7%입니다."
-      ],
-      "investmentLogic": {
-        "summary": "강력한 실적 모멘텀!",
-        "bullets": [
-          "강력한 실적 모멘텀!",
-          "큰 폭의 실적 성장을 전망하는 근거는 1) 자산가치 상승 및 본점 리뉴얼 확장에 따른 효과로 명품 성장률이 20%를 상회할 것으로 보이고, 2) 의류 성장률 회복에 따른 성장이 지난 4분기부터 이어져오고 있으며, 3) 주요 종속회사 실적 회복(신세계인터내셔날) 및 실적 성장(신세계센트럴), 4) 면세점 수익성 전략에 따라 추정치를 상회하는 실적을 기대하기 때문이다.",
-          "1분기 실적 추정치를 올린 가장 큰 이유는 예상치를 상회하는 명품 성장이다."
-        ]
-      },
-      "estimateRevision": {
-        "summary": "혼재 신호입니다. 리포트 원문에서 추정치 관련 표현을 기준으로 판단했습니다.",
-        "bullets": [
-          "연결 기준 매출액은 1조 8,591억 원(YoY +11.6%), 영업이익 1,794억 원(YoY +35.6%)으로 시장 기대치 및 당사의 추정치를 약 13.6% 상회할 전망이다.",
-          "큰 폭의 실적 성장을 전망하는 근거는 1) 자산가치 상승 및 본점 리뉴얼 확장에 따른 효과로 명품 성장률이 20%를 상회할 것으로 보이고, 2) 의류 성장률 회복에 따른 성장이 지난 4분기부터 이어져오고 있으며, 3) 주요 종속회사 실적 회복(신세계인터내셔날) 및 실적 성장(신세계센트럴), 4) 면세점 수익성 전략에 따라 추정치를 상회하는 실적을 기대하기 때문이다.",
-          "1분기 실적 추정치를 올린 가장 큰 이유는 예상치를 상회하는 명품 성장이다."
-        ],
-        "signal": "mixed"
-      },
-      "valuation": {
-        "summary": "현재가 345,500원 대비 목표가 410,000원가 제시돼 밸류에이션 여력을 확인할 수 있습니다.",
-        "bullets": [
-          "1분기 실적 Preview: 성수기 만큼 강력한 실적 기대 동사의 2026년 1분기 실적은 시장 기대치를 큰 폭으로 상회할 것으로 예상한다.",
-          "연결 기준 매출액은 1조 8,591억 원(YoY +11.6%), 영업이익 1,794억 원(YoY +35.6%)으로 시장 기대치 및 당사의 추정치를 약 13.6% 상회할 전망이다.",
-          "큰 폭의 실적 성장을 전망하는 근거는 1) 자산가치 상승 및 본점 리뉴얼 확장에 따른 효과로 명품 성장률이 20%를 상회할 것으로 보이고, 2) 의류 성장률 회복에 따른 성장이 지난 4분기부터 이어져오고 있으며, 3) 주요 종속회사 실적 회복(신세계인터내셔날) 및 실적 성장(신세계센트럴), 4) 면세점 수익성 전략에 따라 추정치를 상회하는 실적을 기대하기 때문이다."
-        ]
-      },
-      "sectorCycle": {
-        "summary": "큰 폭의 실적 성장을 전망하는 근거는 1) 자산가치 상승 및 본점 리뉴얼 확장에 따른 효과로 명품 성장률이 20%를 상회할 것으로 보이고, 2) 의류 성장률 회복에 따른 성장이 지난 4분기부터 이어져오고 있으며, 3) 주요 종속회사 실적 회복(신세계인터내셔날) 및 실적 성장(신세계센트럴), 4) 면세점 수익성 전략에 따라 추정치를 상회하는 실적을 기대하기 때문이다.",
-        "bullets": [
-          "큰 폭의 실적 성장을 전망하는 근거는 1) 자산가치 상승 및 본점 리뉴얼 확장에 따른 효과로 명품 성장률이 20%를 상회할 것으로 보이고, 2) 의류 성장률 회복에 따른 성장이 지난 4분기부터 이어져오고 있으며, 3) 주요 종속회사 실적 회복(신세계인터내셔날) 및 실적 성장(신세계센트럴), 4) 면세점 수익성 전략에 따라 추정치를 상회하는 실적을 기대하기 때문이다.",
-          "중동지역 전쟁이 길어지면서 소비 둔화 우려가 부각되고 있음에도 불구하고 올해 백화점 산업은 양호한 성장을 기록할 전망.",
-          "국내 시장 기준 최근 5건 리포트의 업황 표현을 정리했습니다."
-        ]
-      },
-      "relatedReports": [
-        {
-          "date": "2026-04-15",
-          "ticker": "004170",
-          "name": "신세계",
-          "market": "korea",
-          "broker": "IBK투자증권",
-          "analyst": "",
-          "opinion": "매수",
-          "targetPrice": 410000,
-          "currentPrice": 345500,
-          "basePrice": 345500,
-          "basePriceDate": "2026-04-15",
-          "upside": 18.7,
-          "sourceUrl": "https://finance.naver.com/research/company_read.naver?nid=91563&page=1",
-          "reportTitle": "강력한 실적 모멘텀!",
-          "sourceText": "1분기 실적 Preview: 성수기 만큼 강력한 실적 기대 동사의 2026년 1분기 실적은 시장 기대치를 큰 폭으로 상회할 것으로 예상한다. 연결 기준 매출액은 1조 8,591억 원(YoY +11.6%), 영업이익 1,794억 원(YoY +35.6%)으로 시장 기대치 및 당사의 추정치를 약 13.6% 상회할 전망이다. 큰 폭의 실적 성장을 전망하는 근거는 1) 자산가치 상승 및 본점 리뉴얼 확장에 따른 효과로 명품 성장률이 20%를 상회할 것으로 보이고, 2) 의류 성장률 회복에 따른 성장이 지난 4분기부터 이어져오고 있으며, 3) 주요 종속회사 실적 회복(신세계인터내셔날) 및 실적 성장(신세계센트럴), 4) 면세점 수익성 전략에 따라 추정치를 상회하는 실적을 기대하기 때문이다. 1분기 실적 추정치를 올린 가장 큰 이유는 예상치를 상회하는 명품 성장이다. 특히, 본점 리뉴얼 오픈에 따른 효과가 기대치를 상회하고 있다. 또한, 당초 신세계DF의 경우에도 임대료 증가에 따른 부담을 예상했지만, 수익성 개선 효과로 적자폭 확대는 예상보다 크지 않을 것으로 전망한다.",
-          "reasonSummary": "강력한 실적 모멘텀!. IBK투자증권가 매수 의견을 제시했고 현재가 기준 상승여력은 18.7%입니다. 2026-04-15 종가 대비 목표가 괴리는 18.7%입니다.",
-          "reasonBullets": [
-            "IBK투자증권가 2026-04-15에 매수 의견과 목표가를 제시했습니다.",
-            "현재가 345,500원 대비 목표가는 410,000원입니다.",
-            "2026-04-15 종가 345,500원 대비 괴리는 18.7%입니다."
-          ],
-          "performance": {
-            "week1": {
-              "asOfDate": "2026-04-22",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            },
-            "month1": {
-              "asOfDate": "2026-05-15",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            },
-            "month3": {
-              "asOfDate": "2026-07-14",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            }
-          }
-        },
-        {
-          "date": "2026-04-08",
-          "ticker": "004170",
-          "name": "신세계",
-          "market": "korea",
-          "broker": "교보증권",
-          "analyst": "",
-          "opinion": "Buy",
-          "targetPrice": 430000,
-          "currentPrice": 345500,
-          "basePrice": 345500,
-          "basePriceDate": "2026-04-08",
-          "upside": 24.5,
-          "sourceUrl": "https://finance.naver.com/research/company_read.naver?nid=91345&page=1",
-          "reportTitle": "1Q26 Preview: 백화점 너 정말 실적의 **핵심..",
-          "sourceText": "명품 + 외국인 매출액 성장세 확대 = 백화점 업종 내 최고 성장률 신세계 1Q26 연결 실적은 매출액 1조 8,188억원(YoY +9.2%), 영업이익 1,704억원(YoY +28.8%, OPM 9.4%)으로 영업이익 기준 시장 기대치(Fnguide 기준 1,532억원) 대비 상회 전망 ① 백화점: 총매출액 2조 221억원 (YoY +12.8%), 영업이익 1,319억원 (YoY +22.2%, OPM 6.5%) 전망. 관리 매출액 기준 성장률은 약 20%로, 백화점 업종 내 가장 높은 성장률 기록 예상. 명품 카테고리가 전체 성장률을 견인하는 가운데, 패션 카테고리 또한 높은 성장률을 보인 것으로 추정. 외국인 매출 성장률은 4Q25 YoY +70% 기록한 데 이어 1Q26 +89% 수준을 보이며 성장세 확대된 것으로 파악. 본점 리뉴얼에 따른 감가상각비 증가가 예상되나, 높은 매출 성장률에 기반하여 수익성은 개선 추이를 보일 것으로 판단 ② 면세점: 매출액 5,839억원(YoY +3.9%), 영업적자 8억원(YoY 적자축소) 전망. 시내 면세점은 할인율 완화에 따라 전분기 대비 마진 개선 추정(MSD% → HSD%). 이에 따라 인천 공항 임차료 감면 종료에도 적자 폭은 당초 예상 대비 축소될 전망 ③ 기타 자회사: 인터내셔날은 해외 패션 사업부 성장에 따른 실적 개선으로 영업이익 114억원 전망. 까사는 자주 사업부 양수로 BEP 수준 이상 기록 전망",
-          "reasonSummary": "1Q26 Preview: 백화점 너 정말 실적의 **핵심... 교보증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 24.5%입니다. 2026-04-08 종가 대비 목표가 괴리는 24.5%입니다.",
-          "reasonBullets": [
-            "교보증권가 2026-04-08에 Buy 의견과 목표가를 제시했습니다.",
-            "현재가 345,500원 대비 목표가는 430,000원입니다.",
-            "2026-04-08 종가 345,500원 대비 괴리는 24.5%입니다."
-          ],
-          "performance": {
-            "week1": {
-              "asOfDate": "2026-04-15",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "unavailable"
-            },
-            "month1": {
-              "asOfDate": "2026-05-08",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            },
-            "month3": {
-              "asOfDate": "2026-07-07",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            }
-          }
-        },
-        {
-          "date": "2026-04-06",
-          "ticker": "004170",
-          "name": "신세계",
-          "market": "korea",
-          "broker": "대신증권",
-          "analyst": "",
-          "opinion": "Buy",
-          "targetPrice": 460000,
-          "currentPrice": 345500,
-          "basePrice": 345500,
-          "basePriceDate": "2026-04-06",
-          "upside": 33.1,
-          "sourceUrl": "https://finance.naver.com/research/company_read.naver?nid=91259&page=1",
-          "reportTitle": "자산 효과와 인바운드 소비가 성장의 축",
-          "sourceText": "투자의견 BUY와 목표주가 460,000원으로 상향(+12%) 투자의견 BUY를 유지하며 목표주가를 460,000원(12개월 FWD 예상 P/E 15배)으로 상향. 목표주가 상향은 26-27년 실적을 상향 조정에 따름 국내 백화점 업계는 국내 주요 기업들의 실적 호조에 따른 상여금 증가에 따른 소비 여력 증대와 인바운드 관광객 매출 급증으로 새로운 성장 국면을 맞이함. 중동지역 전쟁이 길어지면서 소비 둔화 우려가 부각되고 있음에도 불구하고 올해 백화점 산업은 양호한 성장을 기록할 전망. 이는 전쟁이 소득 중상위 계층의 자산 증가에 미치는 영향이 일부에 그칠 것으로 보이고 고환율로 인해 해외 소비가 크게 늘지 못하는 반면 인바운드 관광 수요는 꾸준히 유지될 가능성이 높다고 판단되기 때문. 최근 주가 조정으로 동사에 대해 투자 매력도 증가. 매수하기에 좋은 시기",
-          "reasonSummary": "자산 효과와 인바운드 소비가 성장의 축. 대신증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 33.1%입니다. 2026-04-06 종가 대비 목표가 괴리는 33.1%입니다.",
-          "reasonBullets": [
-            "대신증권가 2026-04-06에 Buy 의견과 목표가를 제시했습니다.",
-            "현재가 345,500원 대비 목표가는 460,000원입니다.",
-            "2026-04-06 종가 345,500원 대비 괴리는 33.1%입니다."
-          ],
-          "performance": {
-            "week1": {
-              "asOfDate": "2026-04-13",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "unavailable"
-            },
-            "month1": {
-              "asOfDate": "2026-05-06",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            },
-            "month3": {
-              "asOfDate": "2026-07-05",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            }
-          }
-        },
-        {
-          "date": "2026-04-02",
-          "ticker": "004170",
-          "name": "신세계",
-          "market": "korea",
-          "broker": "미래에셋증권",
-          "analyst": "",
-          "opinion": "매수",
-          "targetPrice": 450000,
-          "currentPrice": 345500,
-          "basePrice": 345500,
-          "basePriceDate": "2026-04-02",
-          "upside": 30.2,
-          "sourceUrl": "https://finance.naver.com/research/company_read.naver?nid=91190&page=1",
-          "reportTitle": "신세계 사기 딱 좋은 시점",
-          "sourceText": "1Q26 Preview: 시장 기대치 상회 전망 신세계의 1Q26 실적은 순매출 17,979억원(YoY +8%), 영업이익 1,673억원(YoY +26%)으로 시장 기대치를 뛰어넘을 전망이다. 백화점 호실적이 주효하며, 면세점, SI 등 그간 부진했던 사업부문까지 큰 폭의 개선이 확인된다. 백화점 실적은 총매출 19,928억원(YoY +11%), 영업이익 1,315억원(YoY +22%, OPM 6.6%)으로 예상한다. 매월 관리기준 두자릿수 성장했으며, 카테고리별로도 전 품목 두자릿수 성장한 것으로 파악된다. 명품이 30% 수준으로 특히 고성장했으며, 패션도 10% 이상 성장해 탑라인과 마진을 모두 잡은 실적이 예상된다. 백화점의 외국인 매출은 80% 수준 성장해 비중 6% 이상까지 확대되겠다. 면세점은 T2 임차료 감면 혜택이 종료되면서 당초 적자가 크게 확대될 것으로 예상했으나, 40억 수준의 소폭 적자에 그칠 것으로 기대된다. 임차료 증가 영향을 제외하면 약 100억원 가량 이익인 셈이며, 4월 DF2 철수 이후로 공항점 적자는 거의 사라지게 된다. 적자 방어한 이유는 중국인 소비 개선에 따른 영업상황 개선이다. 중국인 인바운드가 강세인 가운데(YTD+31%), 달러위안 환율이 완화되면서 구매력이 강화된 것으로 판단한다. 시내점 마진이 HSD%까지 개선될 것으로 예상한다. 그 외 자회사는 SI가 해외패션, 수입 화장품 호조 효과로 200% 가까이 증익 기대되며, 까사미아도 SI로부터 자주 사업양도 효과로 흑자로 예상된다.",
-          "reasonSummary": "신세계 사기 딱 좋은 시점. 미래에셋증권가 매수 의견을 제시했고 현재가 기준 상승여력은 30.2%입니다. 2026-04-02 종가 대비 목표가 괴리는 30.2%입니다.",
-          "reasonBullets": [
-            "미래에셋증권가 2026-04-02에 매수 의견과 목표가를 제시했습니다.",
-            "현재가 345,500원 대비 목표가는 450,000원입니다.",
-            "2026-04-02 종가 345,500원 대비 괴리는 30.2%입니다."
-          ],
-          "performance": {
-            "week1": {
-              "asOfDate": "2026-04-09",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "unavailable"
-            },
-            "month1": {
-              "asOfDate": "2026-05-02",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            },
-            "month3": {
-              "asOfDate": "2026-07-01",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            }
-          }
-        },
-        {
-          "date": "2026-03-16",
-          "ticker": "004170",
-          "name": "신세계",
-          "market": "korea",
-          "broker": "키움증권",
-          "analyst": "",
-          "opinion": "Buy",
-          "targetPrice": 450000,
-          "currentPrice": 345500,
-          "basePrice": 345500,
-          "basePriceDate": "2026-03-16",
-          "upside": 30.2,
-          "sourceUrl": "https://finance.naver.com/research/company_read.naver?nid=90923&page=1",
-          "reportTitle": "인바운드 증가 모멘텀은 2Q에 더 강화될 전망",
-          "sourceText": "1분기 영업이익 시장 기대치 상회 전망 신세계의 1분기 연결기준 영업이익 전망치를 1,556억원(+18%)으로 상향 조정한다. 1분기 백화점 기존점 매출은 관리기준 +18~19%, 회계기준 +11%로 당사 기대치를 상회할 것으로 전망되고, 면세점은 시내점 할인율 개선으로 수익성이 예상 보다 양호할 것으로 전망된다. 특히, 백화점은 중산층 소비가 반등하는 모습을 보이며, 기존 명품 외에도 패션 장르의 매출 성장세가 강화되면서, 영업레버리지 효과가 커지고 있다. 게다가 ‘한일령’ 반사수혜가 본격화되면서, 외국인 매출 성장률이 +80~90% 수준으로 확대되고 있는 점이 긍정적이다.",
-          "reasonSummary": "인바운드 증가 모멘텀은 2Q에 더 강화될 전망. 키움증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 30.2%입니다. 2026-03-16 종가 대비 목표가 괴리는 30.2%입니다.",
-          "reasonBullets": [
-            "키움증권가 2026-03-16에 Buy 의견과 목표가를 제시했습니다.",
-            "현재가 345,500원 대비 목표가는 450,000원입니다.",
-            "2026-03-16 종가 345,500원 대비 괴리는 30.2%입니다."
-          ],
-          "performance": {
-            "week1": {
-              "asOfDate": "2026-03-23",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "unavailable"
-            },
-            "month1": {
-              "asOfDate": "2026-04-15",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "unavailable"
-            },
-            "month3": {
-              "asOfDate": "2026-06-14",
               "closePrice": 0,
               "returnPct": 0,
               "targetProgressPct": 0,
@@ -63224,8 +62930,8 @@
       "latestTargetPrice": 130000,
       "latestCurrentPrice": 85800,
       "latestBasePrice": 85800,
-      "avgUpside": 59,
-      "reportCount": 5,
+      "avgUpside": 55.9,
+      "reportCount": 4,
       "reasonSummary": "1Q26 Preview: 백화점 수익성 개선 많이 될거... 교보증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 51.5%입니다. 2026-04-08 종가 대비 목표가 괴리는 51.5%입니다.",
       "reasonBullets": [
         "교보증권가 2026-04-08에 Buy 의견과 목표가를 제시했습니다.",
@@ -63434,55 +63140,6 @@
             "신한투자증권가 2026-02-12에 매수 의견과 목표가를 제시했습니다.",
             "현재가 85,800원 대비 목표가는 130,000원입니다.",
             "2026-02-12 종가 85,800원 대비 괴리는 51.5%입니다."
-          ],
-          "performance": {
-            "week1": {
-              "asOfDate": "2026-02-19",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "unavailable"
-            },
-            "month1": {
-              "asOfDate": "2026-03-14",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "unavailable"
-            },
-            "month3": {
-              "asOfDate": "2026-05-13",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            }
-          }
-        },
-        {
-          "date": "2026-02-12",
-          "ticker": "069960",
-          "name": "현대백화점",
-          "market": "korea",
-          "broker": "키움증권",
-          "analyst": "",
-          "opinion": "Buy",
-          "targetPrice": 147000,
-          "currentPrice": 85800,
-          "basePrice": 85800,
-          "basePriceDate": "2026-02-12",
-          "upside": 71.3,
-          "sourceUrl": "https://finance.naver.com/research/company_read.naver?nid=90404&page=1",
-          "reportTitle": "백화점 실적 개선과 주주환원정책 강화 긍정..",
-          "sourceText": "4분기 영업이익 1,062억원으로 시장 기대치 하회 현대백화점의 4Q25 연결기준 영업이익은 1,062억원(-1% YoY)으로 시장 기대치를 하회하였다. 백화점 기존점 매출 호조(+8%)와 면세점 흑자전환에도 불구하고, 지누스(지분율 38%)의 실적이 예상보다 크게 부진했기 때문이다. 지누스는 미국 주요 채널 내 재고조정 영향으로 전반적인 매출 흐름이 부진하였으며, 회사는 올해 1분기말에 매출 회복을 기대하고 있는 상황이다. 백화점 부문의 영업이익은 YoY +239억원 증가하였으나, 감가상각비 감소 영향을 제외한다면, 기존점 매출 성장에 따른 영업이익 증가효과는 199억원 수준(+17% YoY)으로 추산된다. 전반적인 매출 고성장과 고마진 패션 상품군 성장세에 힘입어, 매출 증가에 따른 영업레버리지 효과가 확대되고 있는 것으로 판단된다.",
-          "reasonSummary": "백화점 실적 개선과 주주환원정책 강화 긍정... 키움증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 71.3%입니다. 2026-02-12 종가 대비 목표가 괴리는 71.3%입니다.",
-          "reasonBullets": [
-            "키움증권가 2026-02-12에 Buy 의견과 목표가를 제시했습니다.",
-            "현재가 85,800원 대비 목표가는 147,000원입니다.",
-            "2026-02-12 종가 85,800원 대비 괴리는 71.3%입니다."
           ],
           "performance": {
             "week1": {
@@ -77082,8 +76739,8 @@
       "latestTargetPrice": 70000,
       "latestCurrentPrice": 50800,
       "latestBasePrice": 50800,
-      "avgUpside": 22.1,
-      "reportCount": 4,
+      "avgUpside": 28,
+      "reportCount": 2,
       "reasonSummary": "현대중공업터보기계 기업 가치 재평가 필요. iM증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 37.8%입니다. 2026-03-24 종가 대비 목표가 괴리는 37.8%입니다.",
       "reasonBullets": [
         "iM증권가 2026-03-24에 Buy 의견과 목표가를 제시했습니다.",
@@ -77116,11 +76773,11 @@
         ]
       },
       "sectorCycle": {
-        "summary": "5년 만의 OLED 사이클과 자회사 가치 주목 4Q25 영업이익 231억원, 일회성 비용 반영으로 기대치 하회 4Q25 매출액 1,271억원(+29% QoQ, +144% YoY), 영업이익 231억원(+32% QoQ, +18% YoY), opm 18.2%로, 매출액은 예상치를 상회했으나 영업이익은 당사 예상치(305억원) 및 시장 기대치(303억원)를 하회했다.",
+        "summary": "현대중공업터보기계 기업 가치 재평가 필요 AIDC향 가스터빈용 압축기 공급사인 현대중공업터보기계 가치 주목 AI의 급속한 발전은 북미 전력 환경을 재편하고 있으며, 이미 과부하 우려가 제기되고 있는 전력망에 더욱 큰 부담을 주고 있다.",
         "bullets": [
-          "5년 만의 OLED 사이클과 자회사 가치 주목 4Q25 영업이익 231억원, 일회성 비용 반영으로 기대치 하회 4Q25 매출액 1,271억원(+29% QoQ, +144% YoY), 영업이익 231억원(+32% QoQ, +18% YoY), opm 18.2%로, 매출액은 예상치를 상회했으나 영업이익은 당사 예상치(305억원) 및 시장 기대치(303억원)를 하회했다.",
-          "5년 만의 OLED 사이클과 자회사 가치 주목.",
-          "국내 시장 기준 최근 4건 리포트의 업황 표현을 정리했습니다."
+          "현대중공업터보기계 기업 가치 재평가 필요 AIDC향 가스터빈용 압축기 공급사인 현대중공업터보기계 가치 주목 AI의 급속한 발전은 북미 전력 환경을 재편하고 있으며, 이미 과부하 우려가 제기되고 있는 전력망에 더욱 큰 부담을 주고 있다.",
+          "미국 내 데이터센터의 전력 수요는 2028년까지 연간 최대 580TWh 수준으로 확대되며, 전체 전력 수요에서 차지하는 비중도 2023년 약 4.4%에서 2028년 최대 12%까지 상승할 것으로 전망된다.",
+          "이는 단순한 수요 증가를 넘어 안정적이고 즉각적인 전력 공급이 가능한 신규 발전원 확보의 필요성을 더욱 부각시키고 있다."
         ]
       },
       "relatedReports": [
@@ -77214,104 +76871,6 @@
             },
             "month3": {
               "asOfDate": "2026-05-14",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            }
-          }
-        },
-        {
-          "date": "2026-02-12",
-          "ticker": "213420",
-          "name": "덕산네오룩스",
-          "market": "korea",
-          "broker": "SK증권",
-          "analyst": "",
-          "opinion": "매수",
-          "targetPrice": 55000,
-          "currentPrice": 50800,
-          "basePrice": 50800,
-          "basePriceDate": "2026-02-12",
-          "upside": 8.3,
-          "sourceUrl": "https://finance.naver.com/research/company_read.naver?nid=90411&page=1",
-          "reportTitle": "신규 아이템으로 무장! 다시 성장궤도 돌입",
-          "sourceText": "4Q25 Review: 역대 최대 실적, 일회성 비용 4Q25 매출액 1,272억원(YoY +144%, 이하), OP 230 억원(+17%, OPM 18%)기록, 컨센서스 매출액(1,176 억원)은 상회했으나 OP(303 억원)은 하회했다. 역대 최대 실적이나, 일회성 비용이 반영되었다. 총 일회성 비용은 약 76 억원으로 추정되며, 일회성 비용 제외시 컨센서스에 부합하는 실적이다. ① 북미 스마트폰 신모델 판매 호조 및 3Q25 이연 물량 추가로 M14소재 공급 증가(그린 프라임 효과로 P, Q상승), ② 국내 고객사향 플래그십 제품 양산 돌입(M14), ③ BPDL 탑재량 증가(국내 고객사향 플래그십 탑재), ④고환율 효과, ⑤ 자회사 터보기계의 3Q25 이연 물량 매출 인식 효과",
-          "reasonSummary": "신규 아이템으로 무장! 다시 성장궤도 돌입. SK증권가 매수 의견을 제시했고 현재가 기준 상승여력은 8.3%입니다. 2026-02-12 종가 대비 목표가 괴리는 8.3%입니다.",
-          "reasonBullets": [
-            "SK증권가 2026-02-12에 매수 의견과 목표가를 제시했습니다.",
-            "현재가 50,800원 대비 목표가는 55,000원입니다.",
-            "2026-02-12 종가 50,800원 대비 괴리는 8.3%입니다."
-          ],
-          "performance": {
-            "week1": {
-              "asOfDate": "2026-02-19",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "unavailable"
-            },
-            "month1": {
-              "asOfDate": "2026-03-14",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "unavailable"
-            },
-            "month3": {
-              "asOfDate": "2026-05-13",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            }
-          }
-        },
-        {
-          "date": "2026-02-12",
-          "ticker": "213420",
-          "name": "덕산네오룩스",
-          "market": "korea",
-          "broker": "키움증권",
-          "analyst": "",
-          "opinion": "Buy",
-          "targetPrice": 63000,
-          "currentPrice": 50800,
-          "basePrice": 50800,
-          "basePriceDate": "2026-02-12",
-          "upside": 24,
-          "sourceUrl": "https://finance.naver.com/research/company_read.naver?nid=90410&page=1",
-          "reportTitle": "5년 만의 OLED 사이클과 자회사 가치 주목",
-          "sourceText": "4Q25 영업이익 231억원, 일회성 비용 반영으로 기대치 하회 4Q25 매출액 1,271억원(+29% QoQ, +144% YoY), 영업이익 231억원(+32% QoQ, +18% YoY), opm 18.2%로, 매출액은 예상치를 상회했으나 영업이익은 당사 예상치(305억원) 및 시장 기대치(303억원)를 하회했다. 이는 연말 성과급과 현대중공업터보기계 인수에 따른 무형자산 상각비가 일괄 반영된 영향으로, 이를 제외 시 시장 기대치를 소폭 상회했을 것으로 추정된다. 덕산네오룩스 별도 매출액 651억원(+26% QoQ, +25% YoY), 영업이익 194억원(+76% QoQ, -1% YoY), opm 29.8%로, 견조한 아이폰 수요가 지속된 가운데, 갤럭시S26 시리즈용 소재 공급이 본격화됐다. 특히 갤럭시S26 울트라 모델은 Black PDL이 신규 채택될 것으로 예상되며, 향후 폴더블 뿐 아니라 일반 바(bar) 타입 스마트폰으로의 적용 확대도 가속화될 전망이다.",
-          "reasonSummary": "5년 만의 OLED 사이클과 자회사 가치 주목. 키움증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 24.0%입니다. 2026-02-12 종가 대비 목표가 괴리는 24%입니다.",
-          "reasonBullets": [
-            "키움증권가 2026-02-12에 Buy 의견과 목표가를 제시했습니다.",
-            "현재가 50,800원 대비 목표가는 63,000원입니다.",
-            "2026-02-12 종가 50,800원 대비 괴리는 24%입니다."
-          ],
-          "performance": {
-            "week1": {
-              "asOfDate": "2026-02-19",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "unavailable"
-            },
-            "month1": {
-              "asOfDate": "2026-03-14",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "unavailable"
-            },
-            "month3": {
-              "asOfDate": "2026-05-13",
               "closePrice": 0,
               "returnPct": 0,
               "targetProgressPct": 0,
@@ -78760,8 +78319,8 @@
       "latestTargetPrice": 19000,
       "latestCurrentPrice": 13520,
       "latestBasePrice": 13520,
-      "avgUpside": 23.9,
-      "reportCount": 2,
+      "avgUpside": 40.5,
+      "reportCount": 1,
       "reasonSummary": "조정이 주는 멋진 기회!. IBK투자증권가 매수 의견을 제시했고 현재가 기준 상승여력은 40.5%입니다. 2026-03-17 종가 대비 목표가 괴리는 40.5%입니다.",
       "reasonBullets": [
         "IBK투자증권가 2026-03-17에 매수 의견과 목표가를 제시했습니다.",
@@ -78840,55 +78399,6 @@
             },
             "month3": {
               "asOfDate": "2026-06-15",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            }
-          }
-        },
-        {
-          "date": "2026-02-12",
-          "ticker": "005440",
-          "name": "현대지에프홀딩스",
-          "market": "korea",
-          "broker": "SK증권",
-          "analyst": "",
-          "opinion": "매수",
-          "targetPrice": 14500,
-          "currentPrice": 13520,
-          "basePrice": 13520,
-          "basePriceDate": "2026-02-12",
-          "upside": 7.2,
-          "sourceUrl": "https://finance.naver.com/research/company_read.naver?nid=90409&page=1",
-          "reportTitle": "지배구조 개편의 묘수",
-          "sourceText": "포괄적 주식교환으로 현대홈쇼핑 완전자회사 편입 추진 전일 현대지에프홀딩스는 현대홈쇼핑와 포괄적 주식교환을 공시하였다. 포괄적 주식교환을 통해 현대홈쇼핑은 현대지에프홀딩스의 완전자회사로 편입되며 주식교환비율은 현대지에프홀딩스 : 현대홈쇼핑 = 1: 6.3571040 이다. 주식교환 이후에는 현대홈쇼핑의 인적분할을 통해 현대퓨처넷, 한섬 등의 지분을 보유한 투자부문과 홈쇼핑 사업부문으로 인적분할 하고 현대지에프홀딩스와 투자부문의 합병도 추진할 예정이다. 합병 이후 현대퓨처넷과 한섬은 손자회사에서 자회사로 지위가 바뀌게 되고 현대퓨처넷의 자회사인 현대바이오랜드는 증손회사에서 손자회사가 된다.",
-          "reasonSummary": "지배구조 개편의 묘수. SK증권가 매수 의견을 제시했고 현재가 기준 상승여력은 7.2%입니다. 2026-02-12 종가 대비 목표가 괴리는 7.2%입니다.",
-          "reasonBullets": [
-            "SK증권가 2026-02-12에 매수 의견과 목표가를 제시했습니다.",
-            "현재가 13,520원 대비 목표가는 14,500원입니다.",
-            "2026-02-12 종가 13,520원 대비 괴리는 7.2%입니다."
-          ],
-          "performance": {
-            "week1": {
-              "asOfDate": "2026-02-19",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "unavailable"
-            },
-            "month1": {
-              "asOfDate": "2026-03-14",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "unavailable"
-            },
-            "month3": {
-              "asOfDate": "2026-05-13",
               "closePrice": 0,
               "returnPct": 0,
               "targetProgressPct": 0,
@@ -87986,8 +87496,8 @@
       "latestTargetPrice": 161000,
       "latestCurrentPrice": 117300,
       "latestBasePrice": 117300,
-      "avgUpside": 35.6,
-      "reportCount": 3,
+      "avgUpside": 30.9,
+      "reportCount": 2,
       "reasonSummary": "P/E 10배를 향해 순항. 미래에셋증권가 매수 의견을 제시했고 현재가 기준 상승여력은 37.3%입니다. 2026-02-12 종가 대비 목표가 괴리는 37.3%입니다.",
       "reasonBullets": [
         "미래에셋증권가 2026-02-12에 매수 의견과 목표가를 제시했습니다.",
@@ -88019,10 +87529,11 @@
         ]
       },
       "sectorCycle": {
-        "summary": "메리츠화재/메리츠증권의 순이익은 각각 +6%/-19%(YoY) 변동했는데, 평가손실 등의 영향으로 증권은 전년동기대비 감소했으나, 이를 제외하면 전반적으로 업황 우려 대비 양호한 실적을 기록한 것으로 판단한다.",
+        "summary": "P/E 10배를 향해 순항 투자의견 매수 유지, 목표주가 161,000원으로 상향 메리츠금융지주에 대한 투자의견 매수를 유지, 목표주가는 기존 157,000원에서 161,000원으로 상향한다.",
         "bullets": [
-          "메리츠화재/메리츠증권의 순이익은 각각 +6%/-19%(YoY) 변동했는데, 평가손실 등의 영향으로 증권은 전년동기대비 감소했으나, 이를 제외하면 전반적으로 업황 우려 대비 양호한 실적을 기록한 것으로 판단한다.",
-          "국내 시장 기준 최근 3건 리포트의 업황 표현을 정리했습니다."
+          "P/E 10배를 향해 순항 투자의견 매수 유지, 목표주가 161,000원으로 상향 메리츠금융지주에 대한 투자의견 매수를 유지, 목표주가는 기존 157,000원에서 161,000원으로 상향한다.",
+          "목표주가는 2026F EPS에 목표 P/E 10배를 적용해서 산출했으며, 이는 2026F P/B 2.29배에 해당한다.",
+          "동사는 기존에 밝힌 기업가치제고 계획에 따라 충실하게 자사주 매입/소각 중심의 주주환원 정책을 유지하고 있으며, 이에 따라 2025년 주주환원율은 60%를 상회하는 수준에 이르렀다."
         ]
       },
       "relatedReports": [
@@ -88096,55 +87607,6 @@
             "신한투자증권가 2026-02-12에 매수 의견과 목표가를 제시했습니다.",
             "현재가 117,300원 대비 목표가는 146,000원입니다.",
             "2026-02-12 종가 117,300원 대비 괴리는 24.5%입니다."
-          ],
-          "performance": {
-            "week1": {
-              "asOfDate": "2026-02-19",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "unavailable"
-            },
-            "month1": {
-              "asOfDate": "2026-03-14",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "unavailable"
-            },
-            "month3": {
-              "asOfDate": "2026-05-13",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            }
-          }
-        },
-        {
-          "date": "2026-02-12",
-          "ticker": "138040",
-          "name": "메리츠금융지주",
-          "market": "korea",
-          "broker": "키움증권",
-          "analyst": "",
-          "opinion": "Buy",
-          "targetPrice": 170000,
-          "currentPrice": 117300,
-          "basePrice": 117300,
-          "basePriceDate": "2026-02-12",
-          "upside": 44.9,
-          "sourceUrl": "https://finance.naver.com/research/company_read.naver?nid=90400&page=1",
-          "reportTitle": "6%대 주주환원수익률 부각, 더 올라도 이상할..",
-          "sourceText": "4Q25 지배순이익 9% (YoY) 감소한 3,107 억원 2025 년 4 분기 지배주주순이익은 9% (YoY) 감소한 3,107 억원으로 시장 기대치에 부합했다. 메리츠화재/메리츠증권의 순이익은 각각 +6%/-19%(YoY) 변동했는데, 평가손실 등의 영향으로 증권은 전년동기대비 감소했으나, 이를 제외하면 전반적으로 업황 우려 대비 양호한 실적을 기록한 것으로 판단한다.",
-          "reasonSummary": "6%대 주주환원수익률 부각, 더 올라도 이상할... 키움증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 44.9%입니다. 2026-02-12 종가 대비 목표가 괴리는 44.9%입니다.",
-          "reasonBullets": [
-            "키움증권가 2026-02-12에 Buy 의견과 목표가를 제시했습니다.",
-            "현재가 117,300원 대비 목표가는 170,000원입니다.",
-            "2026-02-12 종가 117,300원 대비 괴리는 44.9%입니다."
           ],
           "performance": {
             "week1": {

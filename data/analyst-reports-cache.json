@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-15T11:30:40.966Z",
+  "generatedAt": "2026-04-15T12:41:32.561Z",
   "maxDays": 365,
   "reports": [
     {
@@ -1346,6 +1346,55 @@
         "IBK투자증권가 2026-04-15에 매수 의견과 목표가를 제시했습니다.",
         "현재가 345,500원 대비 목표가는 410,000원입니다.",
         "2026-04-15 종가 345,500원 대비 괴리는 18.7%입니다."
+      ],
+      "performance": {
+        "week1": {
+          "asOfDate": "2026-04-22",
+          "closePrice": 0,
+          "returnPct": 0,
+          "targetProgressPct": 0,
+          "success": false,
+          "status": "pending"
+        },
+        "month1": {
+          "asOfDate": "2026-05-15",
+          "closePrice": 0,
+          "returnPct": 0,
+          "targetProgressPct": 0,
+          "success": false,
+          "status": "pending"
+        },
+        "month3": {
+          "asOfDate": "2026-07-14",
+          "closePrice": 0,
+          "returnPct": 0,
+          "targetProgressPct": 0,
+          "success": false,
+          "status": "pending"
+        }
+      }
+    },
+    {
+      "date": "2026-04-15",
+      "ticker": "MSFT",
+      "name": "Microsoft Corporation",
+      "market": "us",
+      "broker": "Baird",
+      "analyst": "William Power",
+      "opinion": "Buy",
+      "targetPrice": 500,
+      "currentPrice": 393.11,
+      "basePrice": 393.11,
+      "basePriceDate": "2026-04-14",
+      "upside": 27.2,
+      "sourceUrl": "https://stockanalysis.com/stocks/msft/ratings/",
+      "sourceText": "Baird Buy Maintains. Price target 600 -> 500.",
+      "reportTitle": "Buy -> Buy Maintains",
+      "reasonSummary": "Buy -> Buy Maintains. Baird가 Buy 의견을 제시했고 현재가 기준 상승여력은 27.2%입니다. 2026-04-14 종가 대비 목표가 괴리는 27.2%입니다.",
+      "reasonBullets": [
+        "Baird가 2026-04-15에 Buy 의견과 목표가를 제시했습니다.",
+        "현재가 $393.11 대비 목표가는 $500입니다.",
+        "2026-04-14 종가 $393.11 대비 괴리는 27.2%입니다."
       ],
       "performance": {
         "week1": {
@@ -37979,55 +38028,6 @@
     },
     {
       "date": "2026-01-29",
-      "ticker": "MSFT",
-      "name": "Microsoft Corporation",
-      "market": "us",
-      "broker": "Keybanc",
-      "analyst": "Jackson Ader",
-      "opinion": "Buy",
-      "targetPrice": 600,
-      "currentPrice": 393.11,
-      "basePrice": 433.5,
-      "basePriceDate": "2026-01-29",
-      "upside": 52.6,
-      "sourceUrl": "https://stockanalysis.com/stocks/msft/ratings/",
-      "sourceText": "Keybanc Buy Maintains. Price target 630 -> 600.",
-      "reportTitle": "Buy -> Buy Maintains",
-      "reasonSummary": "Buy -> Buy Maintains. Keybanc가 Buy 의견을 제시했고 현재가 기준 상승여력은 52.6%입니다. 2026-01-29 종가 대비 목표가 괴리는 38.4%입니다.",
-      "reasonBullets": [
-        "Keybanc가 2026-01-29에 Buy 의견과 목표가를 제시했습니다.",
-        "현재가 $393.11 대비 목표가는 $600입니다.",
-        "2026-01-29 종가 $433.5 대비 괴리는 38.4%입니다."
-      ],
-      "performance": {
-        "week1": {
-          "asOfDate": "2026-02-05",
-          "closePrice": 393.67,
-          "returnPct": -9.2,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "complete"
-        },
-        "month1": {
-          "asOfDate": "2026-02-27",
-          "closePrice": 392.74,
-          "returnPct": -9.4,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "complete"
-        },
-        "month3": {
-          "asOfDate": "2026-04-29",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "pending"
-        }
-      }
-    },
-    {
-      "date": "2026-01-29",
       "ticker": "META",
       "name": "Meta Platforms, Inc.",
       "market": "us",
@@ -44316,6 +44316,305 @@
         }
       ]
     },
+    "us:MSFT": {
+      "ticker": "MSFT",
+      "name": "Microsoft Corporation",
+      "market": "us",
+      "latestReportDate": "2026-04-15",
+      "latestBroker": "Baird",
+      "latestOpinion": "Buy",
+      "latestTargetPrice": 500,
+      "latestCurrentPrice": 393.11,
+      "latestBasePrice": 393.11,
+      "avgUpside": 44.2,
+      "reportCount": 15,
+      "reasonSummary": "Buy -> Buy Maintains. Baird가 Buy 의견을 제시했고 현재가 기준 상승여력은 27.2%입니다. 2026-04-14 종가 대비 목표가 괴리는 27.2%입니다.",
+      "reasonBullets": [
+        "Baird가 2026-04-15에 Buy 의견과 목표가를 제시했습니다.",
+        "현재가 $393.11 대비 목표가는 $500입니다.",
+        "2026-04-14 종가 $393.11 대비 괴리는 27.2%입니다."
+      ],
+      "investmentLogic": {
+        "summary": "Buy -> Buy Maintains",
+        "bullets": [
+          "Buy -> Buy Maintains",
+          "Buy -> Buy Maintains Baird Buy Maintains.",
+          "Price target 600 -> 500."
+        ]
+      },
+      "estimateRevision": {
+        "summary": "유지 신호입니다. 리포트 원문에서 추정치 관련 표현을 기준으로 판단했습니다.",
+        "bullets": [
+          "Buy -> Buy Maintains Baird Buy Maintains.",
+          "Price target 600 -> 500.",
+          "Buy -> Buy Maintains."
+        ],
+        "signal": "flat"
+      },
+      "valuation": {
+        "summary": "현재가 $393.11 대비 목표가 $500가 제시돼 밸류에이션 여력을 확인할 수 있습니다.",
+        "bullets": [
+          "Buy -> Buy Maintains Piper Sandler Buy Maintains.",
+          "Piper Sandler가 Buy 의견을 제시했고 현재가 기준 상승여력은 27.2%입니다.",
+          "현재가 대비 목표가 상승여력은 27.2%입니다."
+        ]
+      },
+      "sectorCycle": {
+        "summary": "Buy -> Buy Maintains Baird Buy Maintains.",
+        "bullets": [
+          "Buy -> Buy Maintains Baird Buy Maintains.",
+          "Price target 600 -> 500.",
+          "Buy -> Buy Maintains."
+        ]
+      },
+      "relatedReports": [
+        {
+          "date": "2026-04-15",
+          "ticker": "MSFT",
+          "name": "Microsoft Corporation",
+          "market": "us",
+          "broker": "Baird",
+          "analyst": "William Power",
+          "opinion": "Buy",
+          "targetPrice": 500,
+          "currentPrice": 393.11,
+          "basePrice": 393.11,
+          "basePriceDate": "2026-04-14",
+          "upside": 27.2,
+          "sourceUrl": "https://stockanalysis.com/stocks/msft/ratings/",
+          "sourceText": "Baird Buy Maintains. Price target 600 -> 500.",
+          "reportTitle": "Buy -> Buy Maintains",
+          "reasonSummary": "Buy -> Buy Maintains. Baird가 Buy 의견을 제시했고 현재가 기준 상승여력은 27.2%입니다. 2026-04-14 종가 대비 목표가 괴리는 27.2%입니다.",
+          "reasonBullets": [
+            "Baird가 2026-04-15에 Buy 의견과 목표가를 제시했습니다.",
+            "현재가 $393.11 대비 목표가는 $500입니다.",
+            "2026-04-14 종가 $393.11 대비 괴리는 27.2%입니다."
+          ],
+          "performance": {
+            "week1": {
+              "asOfDate": "2026-04-22",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            },
+            "month1": {
+              "asOfDate": "2026-05-15",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            },
+            "month3": {
+              "asOfDate": "2026-07-14",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            }
+          }
+        },
+        {
+          "date": "2026-04-14",
+          "ticker": "MSFT",
+          "name": "Microsoft Corporation",
+          "market": "us",
+          "broker": "Mizuho",
+          "analyst": "Gregg Moskowitz",
+          "opinion": "Buy",
+          "targetPrice": 515,
+          "currentPrice": 393.11,
+          "basePrice": 393.11,
+          "basePriceDate": "2026-04-14",
+          "upside": 31,
+          "sourceUrl": "https://stockanalysis.com/stocks/msft/ratings/",
+          "sourceText": "Mizuho Buy Maintains. Price target 620 -> 515.",
+          "reportTitle": "Buy -> Buy Maintains",
+          "reasonSummary": "Buy -> Buy Maintains. Mizuho가 Buy 의견을 제시했고 현재가 기준 상승여력은 31.0%입니다. 2026-04-14 종가 대비 목표가 괴리는 31%입니다.",
+          "reasonBullets": [
+            "Mizuho가 2026-04-14에 Buy 의견과 목표가를 제시했습니다.",
+            "현재가 $393.11 대비 목표가는 $515입니다.",
+            "2026-04-14 종가 $393.11 대비 괴리는 31%입니다."
+          ],
+          "performance": {
+            "week1": {
+              "asOfDate": "2026-04-21",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            },
+            "month1": {
+              "asOfDate": "2026-05-14",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            },
+            "month3": {
+              "asOfDate": "2026-07-13",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            }
+          }
+        },
+        {
+          "date": "2026-04-14",
+          "ticker": "MSFT",
+          "name": "Microsoft Corporation",
+          "market": "us",
+          "broker": "Piper Sandler",
+          "analyst": "Billy Fitzsimmons",
+          "opinion": "Buy",
+          "targetPrice": 500,
+          "currentPrice": 393.11,
+          "basePrice": 393.11,
+          "basePriceDate": "2026-04-14",
+          "upside": 27.2,
+          "sourceUrl": "https://stockanalysis.com/stocks/msft/ratings/",
+          "sourceText": "Piper Sandler Buy Maintains. Price target 600 -> 500.",
+          "reportTitle": "Buy -> Buy Maintains",
+          "reasonSummary": "Buy -> Buy Maintains. Piper Sandler가 Buy 의견을 제시했고 현재가 기준 상승여력은 27.2%입니다. 2026-04-14 종가 대비 목표가 괴리는 27.2%입니다.",
+          "reasonBullets": [
+            "Piper Sandler가 2026-04-14에 Buy 의견과 목표가를 제시했습니다.",
+            "현재가 $393.11 대비 목표가는 $500입니다.",
+            "2026-04-14 종가 $393.11 대비 괴리는 27.2%입니다."
+          ],
+          "performance": {
+            "week1": {
+              "asOfDate": "2026-04-21",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            },
+            "month1": {
+              "asOfDate": "2026-05-14",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            },
+            "month3": {
+              "asOfDate": "2026-07-13",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            }
+          }
+        },
+        {
+          "date": "2026-04-10",
+          "ticker": "MSFT",
+          "name": "Microsoft Corporation",
+          "market": "us",
+          "broker": "BNP Paribas",
+          "analyst": "Stefan Slowinski",
+          "opinion": "Buy",
+          "targetPrice": 556,
+          "currentPrice": 393.11,
+          "basePrice": 370.87,
+          "basePriceDate": "2026-04-10",
+          "upside": 41.4,
+          "sourceUrl": "https://stockanalysis.com/stocks/msft/ratings/",
+          "sourceText": "BNP Paribas Buy Maintains. Price target 659 -> 556.",
+          "reportTitle": "Buy -> Buy Maintains",
+          "reasonSummary": "Buy -> Buy Maintains. BNP Paribas가 Buy 의견을 제시했고 현재가 기준 상승여력은 41.4%입니다. 2026-04-10 종가 대비 목표가 괴리는 49.9%입니다.",
+          "reasonBullets": [
+            "BNP Paribas가 2026-04-10에 Buy 의견과 목표가를 제시했습니다.",
+            "현재가 $393.11 대비 목표가는 $556입니다.",
+            "2026-04-10 종가 $370.87 대비 괴리는 49.9%입니다."
+          ],
+          "performance": {
+            "week1": {
+              "asOfDate": "2026-04-17",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            },
+            "month1": {
+              "asOfDate": "2026-05-10",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            },
+            "month3": {
+              "asOfDate": "2026-07-09",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            }
+          }
+        },
+        {
+          "date": "2026-03-25",
+          "ticker": "MSFT",
+          "name": "Microsoft Corporation",
+          "market": "us",
+          "broker": "UBS",
+          "analyst": "Karl Keirstead",
+          "opinion": "Strong Buy",
+          "targetPrice": 510,
+          "currentPrice": 393.11,
+          "basePrice": 371.04,
+          "basePriceDate": "2026-03-25",
+          "upside": 29.7,
+          "sourceUrl": "https://stockanalysis.com/stocks/msft/ratings/",
+          "sourceText": "UBS Strong Buy Maintains. Price target 600 -> 510.",
+          "reportTitle": "Strong Buy -> Strong Buy Maintains",
+          "reasonSummary": "Strong Buy -> Strong Buy Maintains. UBS가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 29.7%입니다. 2026-03-25 종가 대비 목표가 괴리는 37.5%입니다.",
+          "reasonBullets": [
+            "UBS가 2026-03-25에 Strong Buy 의견과 목표가를 제시했습니다.",
+            "현재가 $393.11 대비 목표가는 $510입니다.",
+            "2026-03-25 종가 $371.04 대비 괴리는 37.5%입니다."
+          ],
+          "performance": {
+            "week1": {
+              "asOfDate": "2026-04-01",
+              "closePrice": 369.37,
+              "returnPct": -0.5,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "complete"
+            },
+            "month1": {
+              "asOfDate": "2026-04-24",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            },
+            "month3": {
+              "asOfDate": "2026-06-23",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            }
+          }
+        }
+      ]
+    },
     "korea:003490": {
       "ticker": "003490",
       "name": "대한항공",
@@ -50427,305 +50726,6 @@
             },
             "month3": {
               "asOfDate": "2026-04-30",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            }
-          }
-        }
-      ]
-    },
-    "us:MSFT": {
-      "ticker": "MSFT",
-      "name": "Microsoft Corporation",
-      "market": "us",
-      "latestReportDate": "2026-04-14",
-      "latestBroker": "Mizuho",
-      "latestOpinion": "Buy",
-      "latestTargetPrice": 515,
-      "latestCurrentPrice": 393.11,
-      "latestBasePrice": 393.11,
-      "avgUpside": 45.9,
-      "reportCount": 15,
-      "reasonSummary": "Buy -> Buy Maintains. Mizuho가 Buy 의견을 제시했고 현재가 기준 상승여력은 31.0%입니다. 2026-04-14 종가 대비 목표가 괴리는 31%입니다.",
-      "reasonBullets": [
-        "Mizuho가 2026-04-14에 Buy 의견과 목표가를 제시했습니다.",
-        "현재가 $393.11 대비 목표가는 $515입니다.",
-        "2026-04-14 종가 $393.11 대비 괴리는 31%입니다."
-      ],
-      "investmentLogic": {
-        "summary": "Buy -> Buy Maintains",
-        "bullets": [
-          "Buy -> Buy Maintains",
-          "Buy -> Buy Maintains Mizuho Buy Maintains.",
-          "Price target 620 -> 515."
-        ]
-      },
-      "estimateRevision": {
-        "summary": "유지 신호입니다. 리포트 원문에서 추정치 관련 표현을 기준으로 판단했습니다.",
-        "bullets": [
-          "Buy -> Buy Maintains Mizuho Buy Maintains.",
-          "Price target 620 -> 515.",
-          "Buy -> Buy Maintains."
-        ],
-        "signal": "flat"
-      },
-      "valuation": {
-        "summary": "현재가 $393.11 대비 목표가 $515가 제시돼 밸류에이션 여력을 확인할 수 있습니다.",
-        "bullets": [
-          "Buy -> Buy Maintains Piper Sandler Buy Maintains.",
-          "Piper Sandler가 Buy 의견을 제시했고 현재가 기준 상승여력은 27.2%입니다.",
-          "현재가 대비 목표가 상승여력은 31%입니다."
-        ]
-      },
-      "sectorCycle": {
-        "summary": "Buy -> Buy Maintains Mizuho Buy Maintains.",
-        "bullets": [
-          "Buy -> Buy Maintains Mizuho Buy Maintains.",
-          "Price target 620 -> 515.",
-          "Buy -> Buy Maintains."
-        ]
-      },
-      "relatedReports": [
-        {
-          "date": "2026-04-14",
-          "ticker": "MSFT",
-          "name": "Microsoft Corporation",
-          "market": "us",
-          "broker": "Mizuho",
-          "analyst": "Gregg Moskowitz",
-          "opinion": "Buy",
-          "targetPrice": 515,
-          "currentPrice": 393.11,
-          "basePrice": 393.11,
-          "basePriceDate": "2026-04-14",
-          "upside": 31,
-          "sourceUrl": "https://stockanalysis.com/stocks/msft/ratings/",
-          "sourceText": "Mizuho Buy Maintains. Price target 620 -> 515.",
-          "reportTitle": "Buy -> Buy Maintains",
-          "reasonSummary": "Buy -> Buy Maintains. Mizuho가 Buy 의견을 제시했고 현재가 기준 상승여력은 31.0%입니다. 2026-04-14 종가 대비 목표가 괴리는 31%입니다.",
-          "reasonBullets": [
-            "Mizuho가 2026-04-14에 Buy 의견과 목표가를 제시했습니다.",
-            "현재가 $393.11 대비 목표가는 $515입니다.",
-            "2026-04-14 종가 $393.11 대비 괴리는 31%입니다."
-          ],
-          "performance": {
-            "week1": {
-              "asOfDate": "2026-04-21",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            },
-            "month1": {
-              "asOfDate": "2026-05-14",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            },
-            "month3": {
-              "asOfDate": "2026-07-13",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            }
-          }
-        },
-        {
-          "date": "2026-04-14",
-          "ticker": "MSFT",
-          "name": "Microsoft Corporation",
-          "market": "us",
-          "broker": "Piper Sandler",
-          "analyst": "Billy Fitzsimmons",
-          "opinion": "Buy",
-          "targetPrice": 500,
-          "currentPrice": 393.11,
-          "basePrice": 393.11,
-          "basePriceDate": "2026-04-14",
-          "upside": 27.2,
-          "sourceUrl": "https://stockanalysis.com/stocks/msft/ratings/",
-          "sourceText": "Piper Sandler Buy Maintains. Price target 600 -> 500.",
-          "reportTitle": "Buy -> Buy Maintains",
-          "reasonSummary": "Buy -> Buy Maintains. Piper Sandler가 Buy 의견을 제시했고 현재가 기준 상승여력은 27.2%입니다. 2026-04-14 종가 대비 목표가 괴리는 27.2%입니다.",
-          "reasonBullets": [
-            "Piper Sandler가 2026-04-14에 Buy 의견과 목표가를 제시했습니다.",
-            "현재가 $393.11 대비 목표가는 $500입니다.",
-            "2026-04-14 종가 $393.11 대비 괴리는 27.2%입니다."
-          ],
-          "performance": {
-            "week1": {
-              "asOfDate": "2026-04-21",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            },
-            "month1": {
-              "asOfDate": "2026-05-14",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            },
-            "month3": {
-              "asOfDate": "2026-07-13",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            }
-          }
-        },
-        {
-          "date": "2026-04-10",
-          "ticker": "MSFT",
-          "name": "Microsoft Corporation",
-          "market": "us",
-          "broker": "BNP Paribas",
-          "analyst": "Stefan Slowinski",
-          "opinion": "Buy",
-          "targetPrice": 556,
-          "currentPrice": 393.11,
-          "basePrice": 370.87,
-          "basePriceDate": "2026-04-10",
-          "upside": 41.4,
-          "sourceUrl": "https://stockanalysis.com/stocks/msft/ratings/",
-          "sourceText": "BNP Paribas Buy Maintains. Price target 659 -> 556.",
-          "reportTitle": "Buy -> Buy Maintains",
-          "reasonSummary": "Buy -> Buy Maintains. BNP Paribas가 Buy 의견을 제시했고 현재가 기준 상승여력은 41.4%입니다. 2026-04-10 종가 대비 목표가 괴리는 49.9%입니다.",
-          "reasonBullets": [
-            "BNP Paribas가 2026-04-10에 Buy 의견과 목표가를 제시했습니다.",
-            "현재가 $393.11 대비 목표가는 $556입니다.",
-            "2026-04-10 종가 $370.87 대비 괴리는 49.9%입니다."
-          ],
-          "performance": {
-            "week1": {
-              "asOfDate": "2026-04-17",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            },
-            "month1": {
-              "asOfDate": "2026-05-10",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            },
-            "month3": {
-              "asOfDate": "2026-07-09",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            }
-          }
-        },
-        {
-          "date": "2026-03-25",
-          "ticker": "MSFT",
-          "name": "Microsoft Corporation",
-          "market": "us",
-          "broker": "UBS",
-          "analyst": "Karl Keirstead",
-          "opinion": "Strong Buy",
-          "targetPrice": 510,
-          "currentPrice": 393.11,
-          "basePrice": 371.04,
-          "basePriceDate": "2026-03-25",
-          "upside": 29.7,
-          "sourceUrl": "https://stockanalysis.com/stocks/msft/ratings/",
-          "sourceText": "UBS Strong Buy Maintains. Price target 600 -> 510.",
-          "reportTitle": "Strong Buy -> Strong Buy Maintains",
-          "reasonSummary": "Strong Buy -> Strong Buy Maintains. UBS가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 29.7%입니다. 2026-03-25 종가 대비 목표가 괴리는 37.5%입니다.",
-          "reasonBullets": [
-            "UBS가 2026-03-25에 Strong Buy 의견과 목표가를 제시했습니다.",
-            "현재가 $393.11 대비 목표가는 $510입니다.",
-            "2026-03-25 종가 $371.04 대비 괴리는 37.5%입니다."
-          ],
-          "performance": {
-            "week1": {
-              "asOfDate": "2026-04-01",
-              "closePrice": 369.37,
-              "returnPct": -0.5,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "complete"
-            },
-            "month1": {
-              "asOfDate": "2026-04-24",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            },
-            "month3": {
-              "asOfDate": "2026-06-23",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            }
-          }
-        },
-        {
-          "date": "2026-03-24",
-          "ticker": "MSFT",
-          "name": "Microsoft Corporation",
-          "market": "us",
-          "broker": "B of A Securities",
-          "analyst": "Tal Liani",
-          "opinion": "Strong Buy",
-          "targetPrice": 500,
-          "currentPrice": 393.11,
-          "basePrice": 372.74,
-          "basePriceDate": "2026-03-24",
-          "upside": 27.2,
-          "sourceUrl": "https://stockanalysis.com/stocks/msft/ratings/",
-          "sourceText": "B of A Securities Strong Buy Initiates. Price target N/A -> 500.",
-          "reportTitle": "Strong Buy -> Strong Buy Initiates",
-          "reasonSummary": "Strong Buy -> Strong Buy Initiates. B of A Securities가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 27.2%입니다. 2026-03-24 종가 대비 목표가 괴리는 34.1%입니다.",
-          "reasonBullets": [
-            "B of A Securities가 2026-03-24에 Strong Buy 의견과 목표가를 제시했습니다.",
-            "현재가 $393.11 대비 목표가는 $500입니다.",
-            "2026-03-24 종가 $372.74 대비 괴리는 34.1%입니다."
-          ],
-          "performance": {
-            "week1": {
-              "asOfDate": "2026-03-31",
-              "closePrice": 370.17,
-              "returnPct": -0.7,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "complete"
-            },
-            "month1": {
-              "asOfDate": "2026-04-23",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            },
-            "month3": {
-              "asOfDate": "2026-06-22",
               "closePrice": 0,
               "returnPct": 0,
               "targetProgressPct": 0,

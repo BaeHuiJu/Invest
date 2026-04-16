@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-16T22:43:10.461Z",
+  "generatedAt": "2026-04-16T23:51:04.002Z",
   "maxDays": 365,
   "reports": [
     {
@@ -27761,11 +27761,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-03-12",
-          "closePrice": 0,
-          "returnPct": 0,
+          "closePrice": 183.14,
+          "returnPct": -0.1,
           "targetProgressPct": 0,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-04-02",
@@ -28692,11 +28692,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-03-10",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
+          "closePrice": 184.77,
+          "returnPct": 2.6,
+          "targetProgressPct": 3.9,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-04-02",
@@ -30652,11 +30652,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-03-04",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
+          "closePrice": 127.81,
+          "returnPct": 1.6,
+          "targetProgressPct": 8.5,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-03-27",
@@ -35940,496 +35940,6 @@
         "DS투자증권가 2026-02-12에 매수 의견과 목표가를 제시했습니다.",
         "현재가 137,700원 대비 목표가는 180,000원입니다.",
         "2026-02-12 종가 137,700원 대비 괴리는 30.7%입니다."
-      ],
-      "performance": {
-        "week1": {
-          "asOfDate": "2026-02-19",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "unavailable"
-        },
-        "month1": {
-          "asOfDate": "2026-03-14",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "unavailable"
-        },
-        "month3": {
-          "asOfDate": "2026-05-13",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "pending"
-        }
-      }
-    },
-    {
-      "date": "2026-02-12",
-      "ticker": "397030",
-      "name": "에이프릴바이오",
-      "market": "korea",
-      "broker": "교보증권",
-      "analyst": "",
-      "opinion": "Buy",
-      "targetPrice": 100000,
-      "currentPrice": 60700,
-      "basePrice": 60700,
-      "basePriceDate": "2026-02-12",
-      "upside": 64.7,
-      "sourceUrl": "https://finance.naver.com/research/company_read.naver?nid=90469&page=1",
-      "reportTitle": "큰 시장, 좋은 데이터, 후기 임상 진입의 삼..",
-      "sourceText": "아토피피부염 치료제 APB-R3, 성공적 2a상 탑라인 발표 10일 밤 APB-R3 파트너사 Evommune은 성공적인 2a상 탑라인 발표. 투약 후 12주차 기준 EASI 감소율은 위약 보정 기준 -33% 기록. 아토피피부염 표준 치료제인 듀피젠트의 경우 최적용량 및 16주차 기준 EASI 감소율 35~36% 수준. 듀피젠트 후속 치료제로 유망한 Sanofi의 Amlitelimab 또한 2b상 기준 16주차 데이터 32.1% 기록. 안정성 측면에서 우수한 데이터 기록함에 따라 향후 임상에서 용량 및 투여 횟수 증가 가능. 이미 우수한 2a상 데이터 발표했음에도 향후 후기 임상 진행되며 투약 기간, 용량, 횟수 증가 가능함에 따라 추가 유효성 증대 가능성 또한 매우 높다고 판단 APB-R3의 기전은 현재 표준치료제인 Th2 염증을 억제하는 것과 다르게 IL-18 신호를 억제. 결막염 발생률 0건 기록함에 따라 기존 주요 기전 외 신규 타깃으로서의 경쟁력 제시했다고 판단. 듀피젠트의 경우 Real World 데이터 확인 시 결막염 발생 비율 17~20% 수준. 또한 IL-18 타깃은 장 상피세포 내 분비해 크론병 및 IBD 환자 장 조직 내에서 자주 발생. 혈중 IL-18 수치는 질병 활성도와 유관해 염증 유지에 기여하는 병리 축으로 작용. 에보뮨은 2026년 연내 중등도 및 중증 IBD 대상 임상 2상 연내 개시 예정으로 적응증 확장에 대한 기회 여전히 확인 2b상은 16주 디자인으로 경쟁 약물들과의 직접 비교 가능하다고 판단. 투여 횟수 증가 예정임에 따라 안정성 데이터 확인이 중요할 것으로 판단. 또한 2a상 내 부재했던 생물학적 제제 투여 경험 존재한 환자군 포함되어 듀피젠트 불응 시장 내 경쟁력 파악 가능 추정. 향후 SC 제형 추가 개발 예정임에 따라 투약 편의성 개선도 기대",
-      "reasonSummary": "큰 시장, 좋은 데이터, 후기 임상 진입의 삼... 교보증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 64.7%입니다. 2026-02-12 종가 대비 목표가 괴리는 64.7%입니다.",
-      "reasonBullets": [
-        "교보증권가 2026-02-12에 Buy 의견과 목표가를 제시했습니다.",
-        "현재가 60,700원 대비 목표가는 100,000원입니다.",
-        "2026-02-12 종가 60,700원 대비 괴리는 64.7%입니다."
-      ],
-      "performance": {
-        "week1": {
-          "asOfDate": "2026-02-19",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "unavailable"
-        },
-        "month1": {
-          "asOfDate": "2026-03-14",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "unavailable"
-        },
-        "month3": {
-          "asOfDate": "2026-05-13",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "pending"
-        }
-      }
-    },
-    {
-      "date": "2026-02-12",
-      "ticker": "139480",
-      "name": "이마트",
-      "market": "korea",
-      "broker": "교보증권",
-      "analyst": "",
-      "opinion": "Buy",
-      "targetPrice": 150000,
-      "currentPrice": 103500,
-      "basePrice": 103500,
-      "basePriceDate": "2026-02-12",
-      "upside": 44.9,
-      "sourceUrl": "https://finance.naver.com/research/company_read.naver?nid=90468&page=1",
-      "reportTitle": "4Q25 Review: 긍정적인 대외 변수",
-      "sourceText": "실적 부담 완화 국면, 외부 변수도 우호적 이마트 4Q25 연결 기준 매출액 7조 3,117억원(YoY +0.9%), 영업적자 99억원(YoY 적지)으로 영업이익 기준 시장 기대치(FnGuide 기준 1,162억원) 하회 ① 이마트(별도): 별도 기준 총매출액 4조 4,558억원(YoY +4.8%), 영업이익 147억원 기록(YoY 흑전). 추석 매출 이연 효과로 할인점 기존점 성장률은 +2.0%를 기록. 다만 온라인 공급 상품 확대, 장기근속 종업원 급여 재측정에 따른 일회성 비용(250억원), 11~12월 부진했던 기존점 성장률에 따른 판관비 부담 증가에 따라 할인점 적자 기록 ② 자회사: [스타벅스] 매출액 8,700억원(YoY +6.3%), 영업이익 377억원(YoY -22.4%, OPM 4.3%) 기록. 환율 및 원두가격 상승에 따라 수익성은 부진한 모습. [SSG.com] 매출 역성장 기조 완화 및 전분기 대비 영업 적자 축소. 배송 안정성 개선, 쿠팡 개인정보 유출 사태에 따른 반사 수혜 등 요인이 작용한 것으로 판단. [신세계 프라퍼티] 금융자산 공정가치 재평가 관련 이익 700억원 수준이 기여하며 영업이익 930억원(YoY +55.5%) 기록. [조선호텔&리조트] OCC 및 ADR 개선에 따라 매출액 3,632억원(YoY +13.6%) 영업이익 221억원(YoY +125.5%) 기록. [신세계 건설] 채권 회수 가능성을 보수적으로 반영함에 따라 영업적자 1,167억원(YoY -1,010억원) 기록",
-      "reasonSummary": "4Q25 Review: 긍정적인 대외 변수. 교보증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 44.9%입니다. 2026-02-12 종가 대비 목표가 괴리는 44.9%입니다.",
-      "reasonBullets": [
-        "교보증권가 2026-02-12에 Buy 의견과 목표가를 제시했습니다.",
-        "현재가 103,500원 대비 목표가는 150,000원입니다.",
-        "2026-02-12 종가 103,500원 대비 괴리는 44.9%입니다."
-      ],
-      "performance": {
-        "week1": {
-          "asOfDate": "2026-02-19",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "unavailable"
-        },
-        "month1": {
-          "asOfDate": "2026-03-14",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "unavailable"
-        },
-        "month3": {
-          "asOfDate": "2026-05-13",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "pending"
-        }
-      }
-    },
-    {
-      "date": "2026-02-12",
-      "ticker": "462870",
-      "name": "시프트업",
-      "market": "korea",
-      "broker": "교보증권",
-      "analyst": "",
-      "opinion": "Buy",
-      "targetPrice": 48000,
-      "currentPrice": 33700,
-      "basePrice": 33700,
-      "basePriceDate": "2026-02-12",
-      "upside": 42.4,
-      "sourceUrl": "https://finance.naver.com/research/company_read.naver?nid=90467&page=1",
-      "reportTitle": "기다림의 시간",
-      "sourceText": "4Q25 Review: 영업이익 컨센서스 하회 4Q25 매출은 641억원(YoY +1.0%, QoQ -15.1%), 영업이익은 371억원(YoY -19.6%, QoQ -25.1%)으로 영익 기준 시장 예상치(매출 655억원, 영익 422억원) 하회. 449억원(YoY +6.1%)을 기록한 ‘니케’ 매출 중 글로벌(중국 외) 매출은 3주년 업데이트 통해 안정적인 MAU 유지하는 가운데 한국 및 일본 iOS 매출 2위, 미국 19위 기록하며 YoY -13.5%, QoQ +3.0%, 중국 출시된 ‘승리의 여신: 새로운 희망’(니케) 매출은 글로벌 니케의 미래시 영향으로 QoQ -10.0% 감소 추산. ‘스텔라 블레이드’는 PlayStation 블랙 프라이데이, 스팀 윈터세일 등 프로모션을 통해 안정적인 판매세를 유지하였으나 할인가 적용으로 154억원(YoY -21.4%, QoQ -44.4%) 기록. 영업비용(270억원) 중 인건비는 특이사항 없이 전분기와 유사한 136억원(YoY +38.8%, QoQ -2.8%), 변동비는 전분기비 스텔라 블레이드 관련 지급수수료 감소로 57억원(YoY +14.8%, QoQ -40.5%) 기록. 고정비는 라이브서비스 고도화 관련 외주비 인식으로 77억원(YoY +201.4%, QoQ +228.6%) 기록. 영업외 단에서는 자금운용 목적 취득한 펀드 관련 지분법이익 148억원 반영.",
-      "reasonSummary": "기다림의 시간. 교보증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 42.4%입니다. 2026-02-12 종가 대비 목표가 괴리는 42.4%입니다.",
-      "reasonBullets": [
-        "교보증권가 2026-02-12에 Buy 의견과 목표가를 제시했습니다.",
-        "현재가 33,700원 대비 목표가는 48,000원입니다.",
-        "2026-02-12 종가 33,700원 대비 괴리는 42.4%입니다."
-      ],
-      "performance": {
-        "week1": {
-          "asOfDate": "2026-02-19",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "unavailable"
-        },
-        "month1": {
-          "asOfDate": "2026-03-14",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "unavailable"
-        },
-        "month3": {
-          "asOfDate": "2026-05-13",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "pending"
-        }
-      }
-    },
-    {
-      "date": "2026-02-12",
-      "ticker": "145020",
-      "name": "휴젤",
-      "market": "korea",
-      "broker": "하나증권",
-      "analyst": "",
-      "opinion": "Buy",
-      "targetPrice": 410000,
-      "currentPrice": 262000,
-      "basePrice": 262000,
-      "basePriceDate": "2026-02-12",
-      "upside": 56.5,
-      "sourceUrl": "https://finance.naver.com/research/company_read.naver?nid=90463&page=1",
-      "reportTitle": "4Q25 Review: 한 박자 쉬고 다시 분기 최대 ..",
-      "sourceText": "4Q25 Review: 한 박자 쉬고 다시 분기 최대 실적 휴젤의 4Q25 실적은 매출 1,191억원(YoY+21%), 영업이익 586억원(YoY+26%, 영업이익률 49%)로 2Q25에 이어 또다시 분기 매출과 영업이익 모두 역사상 최고치를 경신, 컨센서스 각각 5%, 13% 상회했다. 사업부별 매출은 톡신 716억원(YoY+35%)으로 역대 최대치 기록, 톡신 국내 195억원(YoY-11%), 톡신 수출 521억원(YoY+66%)으로 수출이 2Q25에 이어서 역사상 최고치 달성하며 크게 성장했다. 필러 & 스킨부스터는 309억원(YoY-3%)으로 필러 국내 55억원(YoY-17%), 필러 수출 254억원(YoY+1%) 기록했다. 화장품 & 기타는 166억원(YoY+41%) 시현했다. 영업이익은 지역 믹스 개선 효과와 기존에 4Q25에 예정되어 있던 3공장 허가를 위한 비상업용 배치 생산이 1Q26으로 지연되며 높은 수익성을 달성했다.",
-      "reasonSummary": "4Q25 Review: 한 박자 쉬고 다시 분기 최대 ... 하나증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 56.5%입니다. 2026-02-12 종가 대비 목표가 괴리는 56.5%입니다.",
-      "reasonBullets": [
-        "하나증권가 2026-02-12에 Buy 의견과 목표가를 제시했습니다.",
-        "현재가 262,000원 대비 목표가는 410,000원입니다.",
-        "2026-02-12 종가 262,000원 대비 괴리는 56.5%입니다."
-      ],
-      "performance": {
-        "week1": {
-          "asOfDate": "2026-02-19",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "unavailable"
-        },
-        "month1": {
-          "asOfDate": "2026-03-14",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "unavailable"
-        },
-        "month3": {
-          "asOfDate": "2026-05-13",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "pending"
-        }
-      }
-    },
-    {
-      "date": "2026-02-12",
-      "ticker": "336260",
-      "name": "두산퓨얼셀",
-      "market": "korea",
-      "broker": "하나증권",
-      "analyst": "",
-      "opinion": "Buy",
-      "targetPrice": 48000,
-      "currentPrice": 46000,
-      "basePrice": 46000,
-      "basePriceDate": "2026-02-12",
-      "upside": 4.3,
-      "sourceUrl": "https://finance.naver.com/research/company_read.naver?nid=90462&page=1",
-      "reportTitle": "잠재 수요는 견조한 상황",
-      "sourceText": "목표주가 48,000원, 투자의견 매수 유지 두산퓨얼셀 목표주가 48,000원, 투자의견 매수를 유지한다. 4분기 실적은 시장 컨센서스를 하회했다. 주기기 매출이 회복되었지만 비용 부담이 증가하면서 실적이 부진했다. 단기적인 실적 방향성 전환은 쉽지 않은 상황으로 해석된다. 4분기 누적 신규 수주 규모는 72MW로 전년대비 소폭 감소했다. 2024년 CHPS 낙찰물량 중 68MW의 수주가 2026년으로 이월된 영향이다. 2026년에는 해당 68MW에 2025년 낙찰물량, 해외수주까지 감안하면 양호한 수주 흐름이 기대된다. 2026년 기준 PBR 8.0배, PSR 5.2배이다.",
-      "reasonSummary": "잠재 수요는 견조한 상황. 하나증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 4.3%입니다. 2026-02-12 종가 대비 목표가 괴리는 4.3%입니다.",
-      "reasonBullets": [
-        "하나증권가 2026-02-12에 Buy 의견과 목표가를 제시했습니다.",
-        "현재가 46,000원 대비 목표가는 48,000원입니다.",
-        "2026-02-12 종가 46,000원 대비 괴리는 4.3%입니다."
-      ],
-      "performance": {
-        "week1": {
-          "asOfDate": "2026-02-19",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "unavailable"
-        },
-        "month1": {
-          "asOfDate": "2026-03-14",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "unavailable"
-        },
-        "month3": {
-          "asOfDate": "2026-05-13",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "pending"
-        }
-      }
-    },
-    {
-      "date": "2026-02-12",
-      "ticker": "028670",
-      "name": "팬오션",
-      "market": "korea",
-      "broker": "하나증권",
-      "analyst": "",
-      "opinion": "Buy",
-      "targetPrice": 6400,
-      "currentPrice": 5650,
-      "basePrice": 5650,
-      "basePriceDate": "2026-02-12",
-      "upside": 13.3,
-      "sourceUrl": "https://finance.naver.com/research/company_read.naver?nid=90461&page=1",
-      "reportTitle": "벌크선에 VLCC까지 요새 핫한거 다 있다",
-      "sourceText": "4분기 영업이익 1,304억원 팬오션 4분기 매출액은 12% (YoY) 감소한 1조 4,763억원, 영업이익은 19% 증가한 1,304억원으로 컨센서스에 부합했다. 벌크선 매출액은 선대감소로 매출액이 9% (YoY) 감소했으나, 운임 강세로 영업이익은 610억원을 유지했고, 컨테이너선 영업이익도 95억원으로 전분기 대비 증가했다. 탱커선 영업이익은 선대 감소에도 불구하고 운임이 상승하며 8%(YoY) 증익한 211억원을 기록했다. LNG선은 선대 인도가 마무리되며 영업이익이 160%(YoY)/6%(QoQ) 증가한 396억원을 기록했다. 영업외로는 유형자산 손상차손이 발생하며 당기순이익은 487억원이었다. 2025년 결산배당은 주당 150원으로, 전년 대비 25% 증액한 것이며 배당성향도 26% 이기 때문에 분리과세 대상이다.",
-      "reasonSummary": "벌크선에 VLCC까지 요새 핫한거 다 있다. 하나증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 13.3%입니다. 2026-02-12 종가 대비 목표가 괴리는 13.3%입니다.",
-      "reasonBullets": [
-        "하나증권가 2026-02-12에 Buy 의견과 목표가를 제시했습니다.",
-        "현재가 5,650원 대비 목표가는 6,400원입니다.",
-        "2026-02-12 종가 5,650원 대비 괴리는 13.3%입니다."
-      ],
-      "performance": {
-        "week1": {
-          "asOfDate": "2026-02-19",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "unavailable"
-        },
-        "month1": {
-          "asOfDate": "2026-03-14",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "unavailable"
-        },
-        "month3": {
-          "asOfDate": "2026-05-13",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "pending"
-        }
-      }
-    },
-    {
-      "date": "2026-02-12",
-      "ticker": "041510",
-      "name": "에스엠",
-      "market": "korea",
-      "broker": "하나증권",
-      "analyst": "",
-      "opinion": "Buy",
-      "targetPrice": 160000,
-      "currentPrice": 97000,
-      "basePrice": 97000,
-      "basePriceDate": "2026-02-12",
-      "upside": 64.9,
-      "sourceUrl": "https://finance.naver.com/research/company_read.naver?nid=90460&page=1",
-      "reportTitle": "본업과 자회사 모두 상당히 좋았다",
-      "sourceText": "중장기 성장 방향성은 상당히 명확 2026년에는 드디어 영업이익 2,000억원 레벨에 안착할 것이며, 본업과 자회사 모두 긍정적이고 우상향 흐름으로 성장하고 있다. SM NEXT 3.0 전략을 통해 올해 SMTR25 데뷔뿐만 아니라 일본/태국/중국에서 보이그룹 데뷔를 계획하고 있으며, 계획대로 진행된다면 매년 1팀 이상이 데뷔할 것이다. 여기에 AI 기술을 적극 활용해 크리에이티브와 비용 효율화를 동시에 달성하고자 한다. 타 사 대비 아티스트들의 미국향 모멘텀이 부재하지만, 안정적인 성장을 도모하겠다는 전략 방향성은 상당히 명확하다. 이 외 참고사항은 주당 배당금 1,620원을 결정하면서 자사주 소각까지 감안하면 약 800억원(현재 시가총액 기준 약 2.8%)에 가까운 주주 환원이 이뤄졌다. 올해는 주주 환원 확대보다는 M&A 등 좋은 투자 기회가 확인되면 이에 우선적으로 자금을 집행하고자 계획하고 있다. 2026년 예상 P/E 19배로 단기 주가 상승에도 여전히 저평가 구간이다.",
-      "reasonSummary": "본업과 자회사 모두 상당히 좋았다. 하나증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 64.9%입니다. 2026-02-12 종가 대비 목표가 괴리는 64.9%입니다.",
-      "reasonBullets": [
-        "하나증권가 2026-02-12에 Buy 의견과 목표가를 제시했습니다.",
-        "현재가 97,000원 대비 목표가는 160,000원입니다.",
-        "2026-02-12 종가 97,000원 대비 괴리는 64.9%입니다."
-      ],
-      "performance": {
-        "week1": {
-          "asOfDate": "2026-02-19",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "unavailable"
-        },
-        "month1": {
-          "asOfDate": "2026-03-14",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "unavailable"
-        },
-        "month3": {
-          "asOfDate": "2026-05-13",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "pending"
-        }
-      }
-    },
-    {
-      "date": "2026-02-12",
-      "ticker": "069960",
-      "name": "현대백화점",
-      "market": "korea",
-      "broker": "한화투자증권",
-      "analyst": "",
-      "opinion": "Buy",
-      "targetPrice": 130000,
-      "currentPrice": 91200,
-      "basePrice": 91200,
-      "basePriceDate": "2026-02-12",
-      "upside": 42.5,
-      "sourceUrl": "https://finance.naver.com/research/company_read.naver?nid=90456&page=1",
-      "reportTitle": "4Q25 Review : 백화점 모멘텀 강화 전망",
-      "sourceText": "4Q25 Review 현대백화점은 4Q25 연결총매출액 2.52조원(-7.3% YoY), 영업이익 1,062억원(-1.4% YoY)을 기록해 영업이익 기준 시장 기대치(1,293억원)를 하회했다. 백화점의 영업이익 증가가 기대에 미치지 못했고, 지누스의 부진한 실적 영향이었다. 백화점은 영업이익 1,377억원(+21% YoY)을 기록해 당사 전망치(1,592억원)를 하회했다. 이는 VIP 관련 충당금과 성과급 등 비용이 120억원 추가 반영된 것에 따른다. 4Q25 백화점의 기존점성장률은 +8% YoY를 기록했다. 면세점은 비용 효율화 등으로 영업이익 21억원(+138억원 YoY)으로 흑자전환에 성공했다. 지누스는 영업적자 -232억원(적전 YoY)을 기록해 부진했는 데, 관세의 영향으로 현지 오더가 위축된 영향으로 파악된다.",
-      "reasonSummary": "4Q25 Review : 백화점 모멘텀 강화 전망. 한화투자증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 42.5%입니다. 2026-02-12 종가 대비 목표가 괴리는 42.5%입니다.",
-      "reasonBullets": [
-        "한화투자증권가 2026-02-12에 Buy 의견과 목표가를 제시했습니다.",
-        "현재가 91,200원 대비 목표가는 130,000원입니다.",
-        "2026-02-12 종가 91,200원 대비 괴리는 42.5%입니다."
-      ],
-      "performance": {
-        "week1": {
-          "asOfDate": "2026-02-19",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "unavailable"
-        },
-        "month1": {
-          "asOfDate": "2026-03-14",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "unavailable"
-        },
-        "month3": {
-          "asOfDate": "2026-05-13",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "pending"
-        }
-      }
-    },
-    {
-      "date": "2026-02-12",
-      "ticker": "271560",
-      "name": "오리온",
-      "market": "korea",
-      "broker": "유안타증권",
-      "analyst": "",
-      "opinion": "Buy",
-      "targetPrice": 155000,
-      "currentPrice": 137700,
-      "basePrice": 137700,
-      "basePriceDate": "2026-02-12",
-      "upside": 12.6,
-      "sourceUrl": "https://finance.naver.com/research/company_read.naver?nid=90449&page=1",
-      "reportTitle": "원가 부담에도 체력 확인 + 배당 서프라이즈",
-      "sourceText": "4Q25 Review 오리온의 4Q25 연결 매출액은 9,246억원(YoY +7.3%), 영업이익은 1,676억원(YoY +4.9%), OPM은 18.1%를 기록하며 컨센서스에 부합했다. 다만 연간 기준으로는 원가 상승과 판촉비 확대 영향이 누적되며 영업이익 증가율은 +2.7%에 그쳤고, OPM은 16.8%로 전년 대비 0.8%p 하락했다. 지배주주순이익 감소는 2024년 리가켐바이오 인수 관련 일회성 요인의 역기저 효과가 발생했다. 이번 실적에서 가장 의미 있는 변화는 배당 정책의 강화다. 2025년 DPS는 3,500원으로 전년 대비 40% 증가했고, 배당성향은 36%까지 상승했다. 순현금 1조 3천억원, 무차입 재무 구조를 감안하면 배당 확대 여력은 충분하다. 동사는 2028년까지 고배당 기업 요건을 고려할 것으로 전망되며, 이는 단기 이벤트가 아니라 주주환원 정책의 체질적 변화로 해석된다. 현금 창출력과 재무구조를 감안할 때 중장기적으로 배당성향 추가 상향 가능성은 열려 있다. 사업 측면에서는 수요 둔화 신호가 제한적이었다. 중국은 현지 통화 기준 출고량이 전년 수준을 유지했고, 러시아는 현지 통화 기준 20% 이상 성장세를 이어갔다. 베트남 역시 4분기 후반 출고가 두 자릿수 반등세를 보였다. 러시아는 연간 매출 3,394억원(YoY +47%)을 기록했고 가동률은 120%를 초과했다. 2027년 신공장 완공 시 생산능력은 연 7,500억원 수준으로 확대될 예정이다. 이는 중장기 외형 레벨업의 기반이다. 2026년 연결 매출액은 3조 6,078억원(YoY +8.3%), 영업이익은 6,294억원(YoY +12.7%), OPM은 17.4%로 전망한다. 코코아 단가 하락 효과가 1분기 말부터 반영되며 연간 제조 원가율은 일부 개선될 것으로 예상된다. 2025년이 비용 집행과 증설 준비 구간이었다면, 2026년은 원가 안정화와 물량 성장에 따른 이익 레버리지 구간으로 진입하는 해다. 여기에 강화된 주주환원 정책이 더해지면서, 실적과 배당의 동시 개선 구조가 형성되고 있다. 투자의견 BUY를 유지하며 목표주가를 155,000원으로 상향한다. 목표주가는 26F EPS에 Target PER 13배를 적용했다.",
-      "reasonSummary": "원가 부담에도 체력 확인 + 배당 서프라이즈. 유안타증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 12.6%입니다. 2026-02-12 종가 대비 목표가 괴리는 12.6%입니다.",
-      "reasonBullets": [
-        "유안타증권가 2026-02-12에 Buy 의견과 목표가를 제시했습니다.",
-        "현재가 137,700원 대비 목표가는 155,000원입니다.",
-        "2026-02-12 종가 137,700원 대비 괴리는 12.6%입니다."
-      ],
-      "performance": {
-        "week1": {
-          "asOfDate": "2026-02-19",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "unavailable"
-        },
-        "month1": {
-          "asOfDate": "2026-03-14",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "unavailable"
-        },
-        "month3": {
-          "asOfDate": "2026-05-13",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "pending"
-        }
-      }
-    },
-    {
-      "date": "2026-02-12",
-      "ticker": "103140",
-      "name": "풍산",
-      "market": "korea",
-      "broker": "신한투자증권",
-      "analyst": "",
-      "opinion": "매수",
-      "targetPrice": 160000,
-      "currentPrice": 102100,
-      "basePrice": 102100,
-      "basePriceDate": "2026-02-12",
-      "upside": 56.7,
-      "sourceUrl": "https://finance.naver.com/research/company_read.naver?nid=90446&page=1",
-      "reportTitle": "수익성에 대한 눈높이를 낮춰도 높은 투자 매..",
-      "sourceText": "중장기 성장성 여전히 유효. 변동성 확대 시 비중 확대 추천 2025년 순이익 감소의 영향으로 주당배당금도 1,700원(-34.6% YoY). 회계적 착시와 일회성 비용으로 부진했던 4분기를 뒤로 하고 2028년 이후 본격화될 대구경 탄약 수출 증가 가능성에 대한 기대감을 가져야할 때",
-      "reasonSummary": "수익성에 대한 눈높이를 낮춰도 높은 투자 매... 신한투자증권가 매수 의견을 제시했고 현재가 기준 상승여력은 56.7%입니다. 2026-02-12 종가 대비 목표가 괴리는 56.7%입니다.",
-      "reasonBullets": [
-        "신한투자증권가 2026-02-12에 매수 의견과 목표가를 제시했습니다.",
-        "현재가 102,100원 대비 목표가는 160,000원입니다.",
-        "2026-02-12 종가 102,100원 대비 괴리는 56.7%입니다."
       ],
       "performance": {
         "week1": {
@@ -46150,8 +45660,8 @@
       "latestTargetPrice": 147000,
       "latestCurrentPrice": 102100,
       "latestBasePrice": 102100,
-      "avgUpside": 52.5,
-      "reportCount": 3,
+      "avgUpside": 50.4,
+      "reportCount": 2,
       "reasonSummary": "1Q26 Preview: 메탈 효과가 이끈 신동, 방산... 한화투자증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 44.0%입니다. 2026-04-15 종가 대비 목표가 괴리는 44%입니다.",
       "reasonBullets": [
         "한화투자증권가 2026-04-15에 Buy 의견과 목표가를 제시했습니다.",
@@ -46162,8 +45672,8 @@
         "summary": "1Q26 Preview: 메탈 효과가 이끈 신동, 방산..",
         "bullets": [
           "1Q26 Preview: 메탈 효과가 이끈 신동, 방산..",
-          "중장기 성장성 여전히 유효.",
-          "변동성 확대 시 비중 확대 추천 2025년 순이익 감소의 영향으로 주당배당금도 1,700원(-34.6% YoY)."
+          "1Q26 Preview: 컨센서스 소폭 하회, 중기 방향성은 유지 1Q26 연결 매출액은 1조 3,450억 원(YoY +16.3%, QoQ -5.6%), 영업이익은 884억 원(YoY +26.8%, QoQ -3.4%)으로 컨센서스를 소폭 하회할 전망이다.",
+          "구리 가격 상승에 따른 신동 부문 메탈게인 효과가 시장 기대를 상회하는 수준으로 반영되는 반면, 방산 부문은 수출 물량이 하반기에 집중되는 특성상 1분기 매출·이익 기여가 연중 가장 적은 구간으로, 신동의 메탈게인 효과를 일부 희석시키는 요인으로 작용한다."
         ]
       },
       "estimateRevision": {
@@ -46282,55 +45792,6 @@
             },
             "month3": {
               "asOfDate": "2026-07-14",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            }
-          }
-        },
-        {
-          "date": "2026-02-12",
-          "ticker": "103140",
-          "name": "풍산",
-          "market": "korea",
-          "broker": "신한투자증권",
-          "analyst": "",
-          "opinion": "매수",
-          "targetPrice": 160000,
-          "currentPrice": 102100,
-          "basePrice": 102100,
-          "basePriceDate": "2026-02-12",
-          "upside": 56.7,
-          "sourceUrl": "https://finance.naver.com/research/company_read.naver?nid=90446&page=1",
-          "reportTitle": "수익성에 대한 눈높이를 낮춰도 높은 투자 매..",
-          "sourceText": "중장기 성장성 여전히 유효. 변동성 확대 시 비중 확대 추천 2025년 순이익 감소의 영향으로 주당배당금도 1,700원(-34.6% YoY). 회계적 착시와 일회성 비용으로 부진했던 4분기를 뒤로 하고 2028년 이후 본격화될 대구경 탄약 수출 증가 가능성에 대한 기대감을 가져야할 때",
-          "reasonSummary": "수익성에 대한 눈높이를 낮춰도 높은 투자 매... 신한투자증권가 매수 의견을 제시했고 현재가 기준 상승여력은 56.7%입니다. 2026-02-12 종가 대비 목표가 괴리는 56.7%입니다.",
-          "reasonBullets": [
-            "신한투자증권가 2026-02-12에 매수 의견과 목표가를 제시했습니다.",
-            "현재가 102,100원 대비 목표가는 160,000원입니다.",
-            "2026-02-12 종가 102,100원 대비 괴리는 56.7%입니다."
-          ],
-          "performance": {
-            "week1": {
-              "asOfDate": "2026-02-19",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "unavailable"
-            },
-            "month1": {
-              "asOfDate": "2026-03-14",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "unavailable"
-            },
-            "month3": {
-              "asOfDate": "2026-05-13",
               "closePrice": 0,
               "returnPct": 0,
               "targetProgressPct": 0,
@@ -46503,8 +45964,8 @@
       "latestTargetPrice": 180000,
       "latestCurrentPrice": 137700,
       "latestBasePrice": 137700,
-      "avgUpside": 25.3,
-      "reportCount": 8,
+      "avgUpside": 27.1,
+      "reportCount": 7,
       "reasonSummary": "최고경영자 주관 간담회 후기: 바쁘다, 바빠. 한화투자증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 30.7%입니다. 2026-04-15 종가 대비 목표가 괴리는 30.7%입니다.",
       "reasonBullets": [
         "한화투자증권가 2026-04-15에 Buy 의견과 목표가를 제시했습니다.",
@@ -46531,9 +45992,9 @@
       "valuation": {
         "summary": "현재가 137,700원 대비 목표가 180,000원가 제시돼 밸류에이션 여력을 확인할 수 있습니다.",
         "bullets": [
-          "목표주가는 26F EPS에 Target PER 13배를 적용했다.",
-          "현재가 대비 목표가 상승여력은 30.7%입니다.",
-          "2026-04-15 종가 대비 목표가 괴리는 30.7%입니다."
+          "최고경영자 주관 간담회 후기: 바쁘다, 바빠 부족한 공급, 그래서 기대되는 증설 이후 국가별로 보면 [중국]은 현지 체감 경기가 여전히 부진한 가운데서도 간식점 채널의 급성장과 이커머스의 안정적 성장에 힘입어 구조적인 채널 전환이 이어지고 있다.",
+          "특히 간식점은 중국에서 중간 유통 수수료를 줄인 신흥 채널로 빠르게 확산되고 있으며, 오리온은 벌크형 과자·젤리, 전용 파이 제품 등 채널 맞춤형 SKU를 적극 확대하고 있다.",
+          "채널 변화에 맞춘 제품 전략이 단순한 유통 대응을 넘어 수익성 개선으로도 연결되고 있다는 점은 긍정적이다."
         ]
       },
       "sectorCycle": {
@@ -49106,8 +48567,8 @@
       "latestTargetPrice": 140000,
       "latestCurrentPrice": 97000,
       "latestBasePrice": 97000,
-      "avgUpside": 41.6,
-      "reportCount": 6,
+      "avgUpside": 36.9,
+      "reportCount": 5,
       "reasonSummary": "외형 성장보단 수익성에 집중. iM증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 44.3%입니다. 2026-04-15 종가 대비 목표가 괴리는 44.3%입니다.",
       "reasonBullets": [
         "iM증권가 2026-04-15에 Buy 의견과 목표가를 제시했습니다.",
@@ -49143,7 +48604,7 @@
         "summary": "외형 성장보단 수익성에 집중 목표주가 하향 작년 MD/라이선싱 매출 서프라이즈 및 디어유 연결 편입 효과로 기저가 높은 가운데, 올해 예상 영업이익은 2,050억원(+12% YoY)으로 전년 대비 성장률은 다소 둔화될 것이다.",
         "bullets": [
           "외형 성장보단 수익성에 집중 목표주가 하향 작년 MD/라이선싱 매출 서프라이즈 및 디어유 연결 편입 효과로 기저가 높은 가운데, 올해 예상 영업이익은 2,050억원(+12% YoY)으로 전년 대비 성장률은 다소 둔화될 것이다.",
-          "국내 시장 기준 최근 6건 리포트의 업황 표현을 정리했습니다."
+          "국내 시장 기준 최근 5건 리포트의 업황 표현을 정리했습니다."
         ]
       },
       "relatedReports": [
@@ -54266,8 +53727,8 @@
       "latestTargetPrice": 400000,
       "latestCurrentPrice": 262000,
       "latestBasePrice": 262000,
-      "avgUpside": 45.1,
-      "reportCount": 4,
+      "avgUpside": 41.2,
+      "reportCount": 3,
       "reasonSummary": "비용의 시간은 짧고, 수확의 시간은 길다. 대신증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 52.7%입니다. 2026-04-14 종가 대비 목표가 괴리는 52.7%입니다.",
       "reasonBullets": [
         "대신증권가 2026-04-14에 Buy 의견과 목표가를 제시했습니다.",
@@ -54303,7 +53764,7 @@
         "summary": "이에 더해 미국 직판에 따른 보험비 등 부대 비용이 발생하고, 실제 판매가 진행되는 하반기에 회복되는 상저하고 추이를 보일 것으로 판단한다.",
         "bullets": [
           "이에 더해 미국 직판에 따른 보험비 등 부대 비용이 발생하고, 실제 판매가 진행되는 하반기에 회복되는 상저하고 추이를 보일 것으로 판단한다.",
-          "국내 시장 기준 최근 4건 리포트의 업황 표현을 정리했습니다."
+          "국내 시장 기준 최근 3건 리포트의 업황 표현을 정리했습니다."
         ]
       },
       "relatedReports": [
@@ -54446,55 +53907,6 @@
             },
             "month3": {
               "asOfDate": "2026-07-02",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            }
-          }
-        },
-        {
-          "date": "2026-02-12",
-          "ticker": "145020",
-          "name": "휴젤",
-          "market": "korea",
-          "broker": "하나증권",
-          "analyst": "",
-          "opinion": "Buy",
-          "targetPrice": 410000,
-          "currentPrice": 262000,
-          "basePrice": 262000,
-          "basePriceDate": "2026-02-12",
-          "upside": 56.5,
-          "sourceUrl": "https://finance.naver.com/research/company_read.naver?nid=90463&page=1",
-          "reportTitle": "4Q25 Review: 한 박자 쉬고 다시 분기 최대 ..",
-          "sourceText": "4Q25 Review: 한 박자 쉬고 다시 분기 최대 실적 휴젤의 4Q25 실적은 매출 1,191억원(YoY+21%), 영업이익 586억원(YoY+26%, 영업이익률 49%)로 2Q25에 이어 또다시 분기 매출과 영업이익 모두 역사상 최고치를 경신, 컨센서스 각각 5%, 13% 상회했다. 사업부별 매출은 톡신 716억원(YoY+35%)으로 역대 최대치 기록, 톡신 국내 195억원(YoY-11%), 톡신 수출 521억원(YoY+66%)으로 수출이 2Q25에 이어서 역사상 최고치 달성하며 크게 성장했다. 필러 & 스킨부스터는 309억원(YoY-3%)으로 필러 국내 55억원(YoY-17%), 필러 수출 254억원(YoY+1%) 기록했다. 화장품 & 기타는 166억원(YoY+41%) 시현했다. 영업이익은 지역 믹스 개선 효과와 기존에 4Q25에 예정되어 있던 3공장 허가를 위한 비상업용 배치 생산이 1Q26으로 지연되며 높은 수익성을 달성했다.",
-          "reasonSummary": "4Q25 Review: 한 박자 쉬고 다시 분기 최대 ... 하나증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 56.5%입니다. 2026-02-12 종가 대비 목표가 괴리는 56.5%입니다.",
-          "reasonBullets": [
-            "하나증권가 2026-02-12에 Buy 의견과 목표가를 제시했습니다.",
-            "현재가 262,000원 대비 목표가는 410,000원입니다.",
-            "2026-02-12 종가 262,000원 대비 괴리는 56.5%입니다."
-          ],
-          "performance": {
-            "week1": {
-              "asOfDate": "2026-02-19",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "unavailable"
-            },
-            "month1": {
-              "asOfDate": "2026-03-14",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "unavailable"
-            },
-            "month3": {
-              "asOfDate": "2026-05-13",
               "closePrice": 0,
               "returnPct": 0,
               "targetProgressPct": 0,
@@ -61497,8 +60909,8 @@
       "latestTargetPrice": 7400,
       "latestCurrentPrice": 5650,
       "latestBasePrice": 5650,
-      "avgUpside": 19.5,
-      "reportCount": 4,
+      "avgUpside": 21.5,
+      "reportCount": 3,
       "reasonSummary": "그럼에도 강해지는 이익 체력. 미래에셋증권가 매수 의견을 제시했고 현재가 기준 상승여력은 31.0%입니다. 2026-04-13 종가 대비 목표가 괴리는 31%입니다.",
       "reasonBullets": [
         "미래에셋증권가 2026-04-13에 매수 의견과 목표가를 제시했습니다.",
@@ -61685,55 +61097,6 @@
               "status": "pending"
             }
           }
-        },
-        {
-          "date": "2026-02-12",
-          "ticker": "028670",
-          "name": "팬오션",
-          "market": "korea",
-          "broker": "하나증권",
-          "analyst": "",
-          "opinion": "Buy",
-          "targetPrice": 6400,
-          "currentPrice": 5650,
-          "basePrice": 5650,
-          "basePriceDate": "2026-02-12",
-          "upside": 13.3,
-          "sourceUrl": "https://finance.naver.com/research/company_read.naver?nid=90461&page=1",
-          "reportTitle": "벌크선에 VLCC까지 요새 핫한거 다 있다",
-          "sourceText": "4분기 영업이익 1,304억원 팬오션 4분기 매출액은 12% (YoY) 감소한 1조 4,763억원, 영업이익은 19% 증가한 1,304억원으로 컨센서스에 부합했다. 벌크선 매출액은 선대감소로 매출액이 9% (YoY) 감소했으나, 운임 강세로 영업이익은 610억원을 유지했고, 컨테이너선 영업이익도 95억원으로 전분기 대비 증가했다. 탱커선 영업이익은 선대 감소에도 불구하고 운임이 상승하며 8%(YoY) 증익한 211억원을 기록했다. LNG선은 선대 인도가 마무리되며 영업이익이 160%(YoY)/6%(QoQ) 증가한 396억원을 기록했다. 영업외로는 유형자산 손상차손이 발생하며 당기순이익은 487억원이었다. 2025년 결산배당은 주당 150원으로, 전년 대비 25% 증액한 것이며 배당성향도 26% 이기 때문에 분리과세 대상이다.",
-          "reasonSummary": "벌크선에 VLCC까지 요새 핫한거 다 있다. 하나증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 13.3%입니다. 2026-02-12 종가 대비 목표가 괴리는 13.3%입니다.",
-          "reasonBullets": [
-            "하나증권가 2026-02-12에 Buy 의견과 목표가를 제시했습니다.",
-            "현재가 5,650원 대비 목표가는 6,400원입니다.",
-            "2026-02-12 종가 5,650원 대비 괴리는 13.3%입니다."
-          ],
-          "performance": {
-            "week1": {
-              "asOfDate": "2026-02-19",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "unavailable"
-            },
-            "month1": {
-              "asOfDate": "2026-03-14",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "unavailable"
-            },
-            "month3": {
-              "asOfDate": "2026-05-13",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            }
-          }
         }
       ]
     },
@@ -61863,11 +61226,11 @@
           "performance": {
             "week1": {
               "asOfDate": "2026-03-04",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
+              "closePrice": 127.81,
+              "returnPct": 1.6,
+              "targetProgressPct": 8.5,
               "success": false,
-              "status": "unavailable"
+              "status": "complete"
             },
             "month1": {
               "asOfDate": "2026-03-27",
@@ -65559,8 +64922,8 @@
       "latestTargetPrice": 130000,
       "latestCurrentPrice": 91200,
       "latestBasePrice": 91200,
-      "avgUpside": 48,
-      "reportCount": 3,
+      "avgUpside": 50.8,
+      "reportCount": 2,
       "reasonSummary": "1Q26 Preview: 백화점 수익성 개선 많이 될거... 교보증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 42.5%입니다. 2026-04-08 종가 대비 목표가 괴리는 42.5%입니다.",
       "reasonBullets": [
         "교보증권가 2026-04-08에 Buy 의견과 목표가를 제시했습니다.",
@@ -65691,55 +65054,6 @@
             },
             "month3": {
               "asOfDate": "2026-07-05",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            }
-          }
-        },
-        {
-          "date": "2026-02-12",
-          "ticker": "069960",
-          "name": "현대백화점",
-          "market": "korea",
-          "broker": "한화투자증권",
-          "analyst": "",
-          "opinion": "Buy",
-          "targetPrice": 130000,
-          "currentPrice": 91200,
-          "basePrice": 91200,
-          "basePriceDate": "2026-02-12",
-          "upside": 42.5,
-          "sourceUrl": "https://finance.naver.com/research/company_read.naver?nid=90456&page=1",
-          "reportTitle": "4Q25 Review : 백화점 모멘텀 강화 전망",
-          "sourceText": "4Q25 Review 현대백화점은 4Q25 연결총매출액 2.52조원(-7.3% YoY), 영업이익 1,062억원(-1.4% YoY)을 기록해 영업이익 기준 시장 기대치(1,293억원)를 하회했다. 백화점의 영업이익 증가가 기대에 미치지 못했고, 지누스의 부진한 실적 영향이었다. 백화점은 영업이익 1,377억원(+21% YoY)을 기록해 당사 전망치(1,592억원)를 하회했다. 이는 VIP 관련 충당금과 성과급 등 비용이 120억원 추가 반영된 것에 따른다. 4Q25 백화점의 기존점성장률은 +8% YoY를 기록했다. 면세점은 비용 효율화 등으로 영업이익 21억원(+138억원 YoY)으로 흑자전환에 성공했다. 지누스는 영업적자 -232억원(적전 YoY)을 기록해 부진했는 데, 관세의 영향으로 현지 오더가 위축된 영향으로 파악된다.",
-          "reasonSummary": "4Q25 Review : 백화점 모멘텀 강화 전망. 한화투자증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 42.5%입니다. 2026-02-12 종가 대비 목표가 괴리는 42.5%입니다.",
-          "reasonBullets": [
-            "한화투자증권가 2026-02-12에 Buy 의견과 목표가를 제시했습니다.",
-            "현재가 91,200원 대비 목표가는 130,000원입니다.",
-            "2026-02-12 종가 91,200원 대비 괴리는 42.5%입니다."
-          ],
-          "performance": {
-            "week1": {
-              "asOfDate": "2026-02-19",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "unavailable"
-            },
-            "month1": {
-              "asOfDate": "2026-03-14",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "unavailable"
-            },
-            "month3": {
-              "asOfDate": "2026-05-13",
               "closePrice": 0,
               "returnPct": 0,
               "targetProgressPct": 0,
@@ -66465,8 +65779,8 @@
       "latestTargetPrice": 45000,
       "latestCurrentPrice": 33700,
       "latestBasePrice": 33700,
-      "avgUpside": 38,
-      "reportCount": 2,
+      "avgUpside": 33.5,
+      "reportCount": 1,
       "reasonSummary": "신작 공개까지 대기. 하나증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 33.5%입니다. 2026-04-08 종가 대비 목표가 괴리는 33.5%입니다.",
       "reasonBullets": [
         "하나증권가 2026-04-08에 Buy 의견과 목표가를 제시했습니다.",
@@ -66548,55 +65862,6 @@
             },
             "month3": {
               "asOfDate": "2026-07-07",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            }
-          }
-        },
-        {
-          "date": "2026-02-12",
-          "ticker": "462870",
-          "name": "시프트업",
-          "market": "korea",
-          "broker": "교보증권",
-          "analyst": "",
-          "opinion": "Buy",
-          "targetPrice": 48000,
-          "currentPrice": 33700,
-          "basePrice": 33700,
-          "basePriceDate": "2026-02-12",
-          "upside": 42.4,
-          "sourceUrl": "https://finance.naver.com/research/company_read.naver?nid=90467&page=1",
-          "reportTitle": "기다림의 시간",
-          "sourceText": "4Q25 Review: 영업이익 컨센서스 하회 4Q25 매출은 641억원(YoY +1.0%, QoQ -15.1%), 영업이익은 371억원(YoY -19.6%, QoQ -25.1%)으로 영익 기준 시장 예상치(매출 655억원, 영익 422억원) 하회. 449억원(YoY +6.1%)을 기록한 ‘니케’ 매출 중 글로벌(중국 외) 매출은 3주년 업데이트 통해 안정적인 MAU 유지하는 가운데 한국 및 일본 iOS 매출 2위, 미국 19위 기록하며 YoY -13.5%, QoQ +3.0%, 중국 출시된 ‘승리의 여신: 새로운 희망’(니케) 매출은 글로벌 니케의 미래시 영향으로 QoQ -10.0% 감소 추산. ‘스텔라 블레이드’는 PlayStation 블랙 프라이데이, 스팀 윈터세일 등 프로모션을 통해 안정적인 판매세를 유지하였으나 할인가 적용으로 154억원(YoY -21.4%, QoQ -44.4%) 기록. 영업비용(270억원) 중 인건비는 특이사항 없이 전분기와 유사한 136억원(YoY +38.8%, QoQ -2.8%), 변동비는 전분기비 스텔라 블레이드 관련 지급수수료 감소로 57억원(YoY +14.8%, QoQ -40.5%) 기록. 고정비는 라이브서비스 고도화 관련 외주비 인식으로 77억원(YoY +201.4%, QoQ +228.6%) 기록. 영업외 단에서는 자금운용 목적 취득한 펀드 관련 지분법이익 148억원 반영.",
-          "reasonSummary": "기다림의 시간. 교보증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 42.4%입니다. 2026-02-12 종가 대비 목표가 괴리는 42.4%입니다.",
-          "reasonBullets": [
-            "교보증권가 2026-02-12에 Buy 의견과 목표가를 제시했습니다.",
-            "현재가 33,700원 대비 목표가는 48,000원입니다.",
-            "2026-02-12 종가 33,700원 대비 괴리는 42.4%입니다."
-          ],
-          "performance": {
-            "week1": {
-              "asOfDate": "2026-02-19",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "unavailable"
-            },
-            "month1": {
-              "asOfDate": "2026-03-14",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "unavailable"
-            },
-            "month3": {
-              "asOfDate": "2026-05-13",
               "closePrice": 0,
               "returnPct": 0,
               "targetProgressPct": 0,
@@ -69079,7 +68344,7 @@
       "latestCurrentPrice": 103500,
       "latestBasePrice": 103500,
       "avgUpside": 44.9,
-      "reportCount": 2,
+      "reportCount": 1,
       "reasonSummary": "1Q26 Preview : 홈플러스 구조조정 &gt; 전쟁 추... 한화투자증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 44.9%입니다. 2026-04-06 종가 대비 목표가 괴리는 44.9%입니다.",
       "reasonBullets": [
         "한화투자증권가 2026-04-06에 Buy 의견과 목표가를 제시했습니다.",
@@ -69115,7 +68380,7 @@
         "summary": "1Q26 기존점성장률이 +2% YoY를 기록하며 턴어라운드하는 모습을 보였으나, 환율 상승에 따른 원가율 부담이 지속되는 상황에서 가습기 자발적 리콜 관련 일회성 비용이 반영될 것으로 예상되기 때문이다.",
         "bullets": [
           "1Q26 기존점성장률이 +2% YoY를 기록하며 턴어라운드하는 모습을 보였으나, 환율 상승에 따른 원가율 부담이 지속되는 상황에서 가습기 자발적 리콜 관련 일회성 비용이 반영될 것으로 예상되기 때문이다.",
-          "국내 시장 기준 최근 2건 리포트의 업황 표현을 정리했습니다."
+          "국내 시장 기준 최근 1건 리포트의 업황 표현을 정리했습니다."
         ]
       },
       "relatedReports": [
@@ -69160,55 +68425,6 @@
             },
             "month3": {
               "asOfDate": "2026-07-05",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            }
-          }
-        },
-        {
-          "date": "2026-02-12",
-          "ticker": "139480",
-          "name": "이마트",
-          "market": "korea",
-          "broker": "교보증권",
-          "analyst": "",
-          "opinion": "Buy",
-          "targetPrice": 150000,
-          "currentPrice": 103500,
-          "basePrice": 103500,
-          "basePriceDate": "2026-02-12",
-          "upside": 44.9,
-          "sourceUrl": "https://finance.naver.com/research/company_read.naver?nid=90468&page=1",
-          "reportTitle": "4Q25 Review: 긍정적인 대외 변수",
-          "sourceText": "실적 부담 완화 국면, 외부 변수도 우호적 이마트 4Q25 연결 기준 매출액 7조 3,117억원(YoY +0.9%), 영업적자 99억원(YoY 적지)으로 영업이익 기준 시장 기대치(FnGuide 기준 1,162억원) 하회 ① 이마트(별도): 별도 기준 총매출액 4조 4,558억원(YoY +4.8%), 영업이익 147억원 기록(YoY 흑전). 추석 매출 이연 효과로 할인점 기존점 성장률은 +2.0%를 기록. 다만 온라인 공급 상품 확대, 장기근속 종업원 급여 재측정에 따른 일회성 비용(250억원), 11~12월 부진했던 기존점 성장률에 따른 판관비 부담 증가에 따라 할인점 적자 기록 ② 자회사: [스타벅스] 매출액 8,700억원(YoY +6.3%), 영업이익 377억원(YoY -22.4%, OPM 4.3%) 기록. 환율 및 원두가격 상승에 따라 수익성은 부진한 모습. [SSG.com] 매출 역성장 기조 완화 및 전분기 대비 영업 적자 축소. 배송 안정성 개선, 쿠팡 개인정보 유출 사태에 따른 반사 수혜 등 요인이 작용한 것으로 판단. [신세계 프라퍼티] 금융자산 공정가치 재평가 관련 이익 700억원 수준이 기여하며 영업이익 930억원(YoY +55.5%) 기록. [조선호텔&리조트] OCC 및 ADR 개선에 따라 매출액 3,632억원(YoY +13.6%) 영업이익 221억원(YoY +125.5%) 기록. [신세계 건설] 채권 회수 가능성을 보수적으로 반영함에 따라 영업적자 1,167억원(YoY -1,010억원) 기록",
-          "reasonSummary": "4Q25 Review: 긍정적인 대외 변수. 교보증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 44.9%입니다. 2026-02-12 종가 대비 목표가 괴리는 44.9%입니다.",
-          "reasonBullets": [
-            "교보증권가 2026-02-12에 Buy 의견과 목표가를 제시했습니다.",
-            "현재가 103,500원 대비 목표가는 150,000원입니다.",
-            "2026-02-12 종가 103,500원 대비 괴리는 44.9%입니다."
-          ],
-          "performance": {
-            "week1": {
-              "asOfDate": "2026-02-19",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "unavailable"
-            },
-            "month1": {
-              "asOfDate": "2026-03-14",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "unavailable"
-            },
-            "month3": {
-              "asOfDate": "2026-05-13",
               "closePrice": 0,
               "returnPct": 0,
               "targetProgressPct": 0,
@@ -87822,210 +87038,6 @@
             "DS투자증권가 2026-02-12에 매수 의견과 목표가를 제시했습니다.",
             "현재가 12,730원 대비 목표가는 22,000원입니다.",
             "2026-02-12 종가 12,730원 대비 괴리는 72.8%입니다."
-          ],
-          "performance": {
-            "week1": {
-              "asOfDate": "2026-02-19",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "unavailable"
-            },
-            "month1": {
-              "asOfDate": "2026-03-14",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "unavailable"
-            },
-            "month3": {
-              "asOfDate": "2026-05-13",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            }
-          }
-        }
-      ]
-    },
-    "korea:397030": {
-      "ticker": "397030",
-      "name": "에이프릴바이오",
-      "market": "korea",
-      "latestReportDate": "2026-02-12",
-      "latestBroker": "교보증권",
-      "latestOpinion": "Buy",
-      "latestTargetPrice": 100000,
-      "latestCurrentPrice": 60700,
-      "latestBasePrice": 60700,
-      "avgUpside": 64.7,
-      "reportCount": 1,
-      "reasonSummary": "큰 시장, 좋은 데이터, 후기 임상 진입의 삼... 교보증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 64.7%입니다. 2026-02-12 종가 대비 목표가 괴리는 64.7%입니다.",
-      "reasonBullets": [
-        "교보증권가 2026-02-12에 Buy 의견과 목표가를 제시했습니다.",
-        "현재가 60,700원 대비 목표가는 100,000원입니다.",
-        "2026-02-12 종가 60,700원 대비 괴리는 64.7%입니다."
-      ],
-      "investmentLogic": {
-        "summary": "큰 시장, 좋은 데이터, 후기 임상 진입의 삼..",
-        "bullets": [
-          "큰 시장, 좋은 데이터, 후기 임상 진입의 삼..",
-          "아토피피부염 치료제 APB-R3, 성공적 2a상 탑라인 발표 10일 밤 APB-R3 파트너사 Evommune은 성공적인 2a상 탑라인 발표.",
-          "투약 후 12주차 기준 EASI 감소율은 위약 보정 기준 -33% 기록."
-        ]
-      },
-      "estimateRevision": {
-        "summary": "혼재 신호입니다. 리포트 원문에서 추정치 관련 표현을 기준으로 판단했습니다.",
-        "bullets": [
-          "혈중 IL-18 수치는 질병 활성도와 유관해 염증 유지에 기여하는 병리 축으로 작용.",
-          "또한 2a상 내 부재했던 생물학적 제제 투여 경험 존재한 환자군 포함되어 듀피젠트 불응 시장 내 경쟁력 파악 가능 추정."
-        ],
-        "signal": "mixed"
-      },
-      "valuation": {
-        "summary": "현재가 60,700원 대비 목표가 100,000원가 제시돼 밸류에이션 여력을 확인할 수 있습니다.",
-        "bullets": [
-          "큰 시장, 좋은 데이터, 후기 임상 진입의 삼..",
-          "아토피피부염 치료제 APB-R3, 성공적 2a상 탑라인 발표 10일 밤 APB-R3 파트너사 Evommune은 성공적인 2a상 탑라인 발표.",
-          "투약 후 12주차 기준 EASI 감소율은 위약 보정 기준 -33% 기록."
-        ]
-      },
-      "sectorCycle": {
-        "summary": "큰 시장, 좋은 데이터, 후기 임상 진입의 삼..",
-        "bullets": [
-          "큰 시장, 좋은 데이터, 후기 임상 진입의 삼..",
-          "아토피피부염 치료제 APB-R3, 성공적 2a상 탑라인 발표 10일 밤 APB-R3 파트너사 Evommune은 성공적인 2a상 탑라인 발표.",
-          "투약 후 12주차 기준 EASI 감소율은 위약 보정 기준 -33% 기록."
-        ]
-      },
-      "relatedReports": [
-        {
-          "date": "2026-02-12",
-          "ticker": "397030",
-          "name": "에이프릴바이오",
-          "market": "korea",
-          "broker": "교보증권",
-          "analyst": "",
-          "opinion": "Buy",
-          "targetPrice": 100000,
-          "currentPrice": 60700,
-          "basePrice": 60700,
-          "basePriceDate": "2026-02-12",
-          "upside": 64.7,
-          "sourceUrl": "https://finance.naver.com/research/company_read.naver?nid=90469&page=1",
-          "reportTitle": "큰 시장, 좋은 데이터, 후기 임상 진입의 삼..",
-          "sourceText": "아토피피부염 치료제 APB-R3, 성공적 2a상 탑라인 발표 10일 밤 APB-R3 파트너사 Evommune은 성공적인 2a상 탑라인 발표. 투약 후 12주차 기준 EASI 감소율은 위약 보정 기준 -33% 기록. 아토피피부염 표준 치료제인 듀피젠트의 경우 최적용량 및 16주차 기준 EASI 감소율 35~36% 수준. 듀피젠트 후속 치료제로 유망한 Sanofi의 Amlitelimab 또한 2b상 기준 16주차 데이터 32.1% 기록. 안정성 측면에서 우수한 데이터 기록함에 따라 향후 임상에서 용량 및 투여 횟수 증가 가능. 이미 우수한 2a상 데이터 발표했음에도 향후 후기 임상 진행되며 투약 기간, 용량, 횟수 증가 가능함에 따라 추가 유효성 증대 가능성 또한 매우 높다고 판단 APB-R3의 기전은 현재 표준치료제인 Th2 염증을 억제하는 것과 다르게 IL-18 신호를 억제. 결막염 발생률 0건 기록함에 따라 기존 주요 기전 외 신규 타깃으로서의 경쟁력 제시했다고 판단. 듀피젠트의 경우 Real World 데이터 확인 시 결막염 발생 비율 17~20% 수준. 또한 IL-18 타깃은 장 상피세포 내 분비해 크론병 및 IBD 환자 장 조직 내에서 자주 발생. 혈중 IL-18 수치는 질병 활성도와 유관해 염증 유지에 기여하는 병리 축으로 작용. 에보뮨은 2026년 연내 중등도 및 중증 IBD 대상 임상 2상 연내 개시 예정으로 적응증 확장에 대한 기회 여전히 확인 2b상은 16주 디자인으로 경쟁 약물들과의 직접 비교 가능하다고 판단. 투여 횟수 증가 예정임에 따라 안정성 데이터 확인이 중요할 것으로 판단. 또한 2a상 내 부재했던 생물학적 제제 투여 경험 존재한 환자군 포함되어 듀피젠트 불응 시장 내 경쟁력 파악 가능 추정. 향후 SC 제형 추가 개발 예정임에 따라 투약 편의성 개선도 기대",
-          "reasonSummary": "큰 시장, 좋은 데이터, 후기 임상 진입의 삼... 교보증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 64.7%입니다. 2026-02-12 종가 대비 목표가 괴리는 64.7%입니다.",
-          "reasonBullets": [
-            "교보증권가 2026-02-12에 Buy 의견과 목표가를 제시했습니다.",
-            "현재가 60,700원 대비 목표가는 100,000원입니다.",
-            "2026-02-12 종가 60,700원 대비 괴리는 64.7%입니다."
-          ],
-          "performance": {
-            "week1": {
-              "asOfDate": "2026-02-19",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "unavailable"
-            },
-            "month1": {
-              "asOfDate": "2026-03-14",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "unavailable"
-            },
-            "month3": {
-              "asOfDate": "2026-05-13",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            }
-          }
-        }
-      ]
-    },
-    "korea:336260": {
-      "ticker": "336260",
-      "name": "두산퓨얼셀",
-      "market": "korea",
-      "latestReportDate": "2026-02-12",
-      "latestBroker": "하나증권",
-      "latestOpinion": "Buy",
-      "latestTargetPrice": 48000,
-      "latestCurrentPrice": 46000,
-      "latestBasePrice": 46000,
-      "avgUpside": 4.3,
-      "reportCount": 1,
-      "reasonSummary": "잠재 수요는 견조한 상황. 하나증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 4.3%입니다. 2026-02-12 종가 대비 목표가 괴리는 4.3%입니다.",
-      "reasonBullets": [
-        "하나증권가 2026-02-12에 Buy 의견과 목표가를 제시했습니다.",
-        "현재가 46,000원 대비 목표가는 48,000원입니다.",
-        "2026-02-12 종가 46,000원 대비 괴리는 4.3%입니다."
-      ],
-      "investmentLogic": {
-        "summary": "잠재 수요는 견조한 상황",
-        "bullets": [
-          "잠재 수요는 견조한 상황",
-          "잠재 수요는 견조한 상황 목표주가 48,000원, 투자의견 매수 유지 두산퓨얼셀 목표주가 48,000원, 투자의견 매수를 유지한다.",
-          "주기기 매출이 회복되었지만 비용 부담이 증가하면서 실적이 부진했다."
-        ]
-      },
-      "estimateRevision": {
-        "summary": "혼재 신호입니다. 리포트 원문에서 추정치 관련 표현을 기준으로 판단했습니다.",
-        "bullets": [
-          "잠재 수요는 견조한 상황 목표주가 48,000원, 투자의견 매수 유지 두산퓨얼셀 목표주가 48,000원, 투자의견 매수를 유지한다.",
-          "4분기 실적은 시장 컨센서스를 하회했다.",
-          "주기기 매출이 회복되었지만 비용 부담이 증가하면서 실적이 부진했다."
-        ],
-        "signal": "mixed"
-      },
-      "valuation": {
-        "summary": "현재가 46,000원 대비 목표가 48,000원가 제시돼 밸류에이션 여력을 확인할 수 있습니다.",
-        "bullets": [
-          "2026년 기준 PBR 8.0배, PSR 5.2배이다.",
-          "현재가 대비 목표가 상승여력은 4.3%입니다.",
-          "2026-02-12 종가 대비 목표가 괴리는 4.3%입니다."
-        ]
-      },
-      "sectorCycle": {
-        "summary": "주기기 매출이 회복되었지만 비용 부담이 증가하면서 실적이 부진했다.",
-        "bullets": [
-          "주기기 매출이 회복되었지만 비용 부담이 증가하면서 실적이 부진했다.",
-          "국내 시장 기준 최근 1건 리포트의 업황 표현을 정리했습니다."
-        ]
-      },
-      "relatedReports": [
-        {
-          "date": "2026-02-12",
-          "ticker": "336260",
-          "name": "두산퓨얼셀",
-          "market": "korea",
-          "broker": "하나증권",
-          "analyst": "",
-          "opinion": "Buy",
-          "targetPrice": 48000,
-          "currentPrice": 46000,
-          "basePrice": 46000,
-          "basePriceDate": "2026-02-12",
-          "upside": 4.3,
-          "sourceUrl": "https://finance.naver.com/research/company_read.naver?nid=90462&page=1",
-          "reportTitle": "잠재 수요는 견조한 상황",
-          "sourceText": "목표주가 48,000원, 투자의견 매수 유지 두산퓨얼셀 목표주가 48,000원, 투자의견 매수를 유지한다. 4분기 실적은 시장 컨센서스를 하회했다. 주기기 매출이 회복되었지만 비용 부담이 증가하면서 실적이 부진했다. 단기적인 실적 방향성 전환은 쉽지 않은 상황으로 해석된다. 4분기 누적 신규 수주 규모는 72MW로 전년대비 소폭 감소했다. 2024년 CHPS 낙찰물량 중 68MW의 수주가 2026년으로 이월된 영향이다. 2026년에는 해당 68MW에 2025년 낙찰물량, 해외수주까지 감안하면 양호한 수주 흐름이 기대된다. 2026년 기준 PBR 8.0배, PSR 5.2배이다.",
-          "reasonSummary": "잠재 수요는 견조한 상황. 하나증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 4.3%입니다. 2026-02-12 종가 대비 목표가 괴리는 4.3%입니다.",
-          "reasonBullets": [
-            "하나증권가 2026-02-12에 Buy 의견과 목표가를 제시했습니다.",
-            "현재가 46,000원 대비 목표가는 48,000원입니다.",
-            "2026-02-12 종가 46,000원 대비 괴리는 4.3%입니다."
           ],
           "performance": {
             "week1": {

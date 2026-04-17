@@ -162,3 +162,45 @@ export interface SectorCycleResponse {
   market: MarketFilter;
   items: SectorCycleItem[];
 }
+
+export type RiskLevel = 'low' | 'medium' | 'high';
+export type TimeHorizon = '1-3mo' | '3-12mo';
+
+export interface AIPick {
+  ticker: string;
+  name: string;
+  market: MarketType;
+  entryScore: number;
+  entryScoreBreakdown: {
+    priceVsBase: number;
+    targetGap: number;
+    reportCount: number;
+    consensusStrength: number;
+  };
+  brokerCount: number;
+  brokers: string[];
+  avgUpside: number;
+  avgTargetPrice: number;
+  currentPrice: number;
+  recommendedPositionSize: number;
+  riskLevel: RiskLevel;
+  timeHorizon: TimeHorizon;
+  thesis: string;
+  brokerSuccessRate: number;
+}
+
+export interface AIPicksResponse {
+  picks: AIPick[];
+  criteria: {
+    minEntryScore: number;
+    minBrokerCount: number;
+    maxDays: number;
+  };
+  generatedAt: string;
+  summary: {
+    totalCandidates: number;
+    selectedCount: number;
+    avgEntryScore: number;
+    avgBrokerCount: number;
+  };
+}

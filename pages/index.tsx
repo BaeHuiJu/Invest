@@ -7,11 +7,13 @@ import { NotificationSettings } from '@/components/NotificationSettings';
 import { BacktestTab } from '@/components/BacktestTab';
 import { PortfolioTab } from '@/components/PortfolioTab';
 import { EarningsCalendarTab } from '@/components/EarningsCalendarTab';
+import { AIPicksTab } from '@/components/AIPicksTab';
+import { EntryScoreTooltip } from '@/components/EntryScoreTooltip';
 import { GlobalSearch } from '@/components/GlobalSearch';
 
 type MarketType = 'korea' | 'us';
 type MarketFilter = 'all' | MarketType;
-type TabType = 'home' | 'watchlist' | 'korea-stock' | 'korea-etf' | 'us-stock' | 'us-etf' | 'analyst' | 'consensus' | 'scorecard' | 'sector-cycle' | 'backtest' | 'portfolio' | 'earnings';
+type TabType = 'home' | 'watchlist' | 'ai-picks' | 'korea-stock' | 'korea-etf' | 'us-stock' | 'us-etf' | 'analyst' | 'consensus' | 'scorecard' | 'sector-cycle' | 'backtest' | 'portfolio' | 'earnings';
 type WatchlistCategory = 'stock' | 'etf' | 'analyst';
 type PerformanceStatus = 'complete' | 'pending' | 'unavailable';
 type SectorCyclePhase = 'recovery' | 'expansion' | 'slowdown' | 'contraction';
@@ -375,6 +377,7 @@ export default function Home() {
             {[
               ['home', '홈'],
               ['watchlist', '관심 종목'],
+              ['ai-picks', 'AI 추천'],
               ['korea-stock', '국내 주식'],
               ['korea-etf', '국내 ETF'],
               ['us-stock', '해외 주식'],
@@ -391,7 +394,9 @@ export default function Home() {
         </div>
       </nav>
       <main className="mx-auto max-w-7xl px-4 py-6">
-        {activeTab === 'analyst'
+        {activeTab === 'ai-picks'
+          ? <AIPicksTab onOpenInsight={setInsightTarget} isSaved={isSaved} onToggleWatchlist={toggleWatchlist} />
+          : activeTab === 'analyst'
           ? <AnalystTab onOpenInsight={setInsightTarget} isSaved={isSaved} onToggleWatchlist={toggleWatchlist} />
           : activeTab === 'sector-cycle'
             ? <SectorCycleTab onOpenInsight={setInsightTarget} />
@@ -1201,7 +1206,10 @@ function ConsensusTab({ onOpenInsight, isSaved, onToggleWatchlist }: { onOpenIns
               </button>
               <div className="flex shrink-0 items-center gap-2">
                 <FavoriteButton active={isSaved(item.ticker, item.market)} onClick={() => onToggleWatchlist({ ticker: item.ticker, name: item.name, market: item.market, category: 'analyst', currentPrice: item.currentPrice })} className="h-7 w-7 text-base" />
-                <span className="rounded bg-sky-100 px-2 py-1 text-xs font-semibold text-sky-700">{formatScore(item.entryScore)}</span>
+                <div className="flex items-center gap-1">
+                  <span className="rounded bg-sky-100 px-2 py-1 text-xs font-semibold text-sky-700">{formatScore(item.entryScore)}</span>
+                  <EntryScoreTooltip score={item.entryScore} breakdown={item.entryScoreBreakdown} size="sm" />
+                </div>
               </div>
             </div>
             <div className="mt-3 grid grid-cols-2 gap-2 text-xs">
@@ -1244,7 +1252,12 @@ function ConsensusTab({ onOpenInsight, isSaved, onToggleWatchlist }: { onOpenIns
               {paginated.map((item) => <tr key={`${item.market}-${item.ticker}`} className="hover:bg-gray-50">
                 <td className="px-4 py-3"><div className="flex items-start justify-between gap-3"><button type="button" onClick={() => onOpenInsight({ ticker: item.ticker, name: item.name, market: item.market, category: 'analyst', currentPrice: item.currentPrice })} className="text-left"><div className="font-medium text-blue-700 hover:underline">{item.name}</div><div className="text-xs text-gray-400">{item.ticker}</div></button><FavoriteButton active={isSaved(item.ticker, item.market)} onClick={() => onToggleWatchlist({ ticker: item.ticker, name: item.name, market: item.market, category: 'analyst', currentPrice: item.currentPrice })} /></div></td>
                 <td className="min-w-[84px] px-4 py-3"><span className={`inline-flex min-w-[44px] justify-center rounded px-2 py-1 text-xs ${item.market === 'korea' ? 'bg-blue-100 text-blue-700' : 'bg-orange-100 text-orange-700'}`}>{item.market === 'korea' ? '\uAD6D\uB0B4' : '\uD574\uC678'}</span></td>
-                <td className="min-w-[100px] px-4 py-3 text-right"><span className="inline-flex min-w-[56px] justify-center rounded bg-sky-100 px-2 py-1 text-sm font-semibold text-sky-700">{formatScore(item.entryScore)}</span></td>
+                <td className="min-w-[100px] px-4 py-3 text-right">
+                  <div className="inline-flex items-center gap-1">
+                    <span className="inline-flex min-w-[56px] justify-center rounded bg-sky-100 px-2 py-1 text-sm font-semibold text-sky-700">{formatScore(item.entryScore)}</span>
+                    <EntryScoreTooltip score={item.entryScore} breakdown={item.entryScoreBreakdown} size="sm" />
+                  </div>
+                </td>
                 <td className="px-4 py-3 text-right font-medium">{item.brokerCount}</td>
                 <td className={`px-4 py-3 text-right font-medium ${item.currentPrice <= item.basePrice ? 'text-green-600' : 'text-red-600'}`}>{formatPct(((item.currentPrice - item.basePrice) / item.basePrice) * 100)}</td>
                 <td className="px-4 py-3 text-right">{formatPrice(item.currentPrice, item.market)}</td>

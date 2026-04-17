@@ -31,7 +31,11 @@ function readWatchlist(): WatchlistItem[] {
   }
 }
 
-export function PortfolioTab() {
+interface PortfolioTabProps {
+  onNavigateToAIPicks?: () => void;
+}
+
+export function PortfolioTab({ onNavigateToAIPicks }: PortfolioTabProps = {}) {
   const [watchlist, setWatchlist] = useState<WatchlistItem[]>([]);
   const [analysis, setAnalysis] = useState<PortfolioAnalysis | null>(null);
 
@@ -240,6 +244,90 @@ export function PortfolioTab() {
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+      )}
+
+      {/* Action Guide */}
+      {(analysis.diversificationScore < 60 || analysis.topHoldings.some(h => h.weight > 15)) && (
+        <div className="rounded-xl border-2 border-blue-200 bg-gradient-to-br from-blue-50 to-white p-6 shadow-sm">
+          <div className="flex items-start gap-4">
+            <div className="flex-shrink-0 rounded-full bg-blue-100 p-3">
+              <svg className="h-6 w-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+              </svg>
+            </div>
+            <div className="flex-1">
+              <h3 className="text-lg font-bold text-blue-900">포트폴리오 개선 가이드</h3>
+              <p className="mt-2 text-sm text-blue-700">
+                {analysis.diversificationScore < 60 && analysis.topHoldings.some(h => h.weight > 15)
+                  ? '분산도가 낮고 일부 종목에 집중되어 있습니다. 리스크를 낮추기 위해 추가 종목 투자를 권장합니다.'
+                  : analysis.diversificationScore < 60
+                  ? '분산도가 낮습니다. 다양한 섹터의 종목을 추가하여 리스크를 분산시키세요.'
+                  : '일부 종목 비중이 높습니다. 15% 이하로 조정하는 것을 권장합니다.'}
+              </p>
+
+              {analysis.topHoldings.some(h => h.weight > 15) && (
+                <div className="mt-4 rounded-lg border border-orange-200 bg-orange-50 p-3">
+                  <div className="flex items-center gap-2 text-sm font-semibold text-orange-900">
+                    <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                    </svg>
+                    집중도 경고
+                  </div>
+                  <div className="mt-2 text-sm text-orange-700">
+                    다음 종목의 비중이 15%를 초과합니다:
+                  </div>
+                  <div className="mt-2 flex flex-wrap gap-2">
+                    {analysis.topHoldings
+                      .filter(h => h.weight > 15)
+                      .map(h => (
+                        <span key={h.ticker} className="rounded-full bg-white px-3 py-1 text-sm font-medium text-orange-800">
+                          {h.name} ({h.weight.toFixed(1)}%)
+                        </span>
+                      ))}
+                  </div>
+                </div>
+              )}
+
+              {analysis.diversificationScore < 60 && (
+                <div className="mt-4 rounded-lg border border-blue-200 bg-white p-3">
+                  <div className="flex items-center gap-2 text-sm font-semibold text-blue-900">
+                    <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    분산투자 제안
+                  </div>
+                  <div className="mt-2 text-sm text-blue-700">
+                    다양한 섹터와 시장의 종목을 추가하면 리스크를 줄이고 안정성을 높일 수 있습니다.
+                    {analysis.sectorAllocation.length < 3 && ' 현재 ' + analysis.sectorAllocation.length + '개 섹터에만 투자 중입니다.'}
+                  </div>
+                </div>
+              )}
+
+              <div className="mt-6 flex flex-wrap gap-3">
+                {onNavigateToAIPicks && (
+                  <button
+                    onClick={onNavigateToAIPicks}
+                    className="flex items-center gap-2 rounded-lg bg-blue-600 px-4 py-2.5 text-sm font-medium text-white transition hover:bg-blue-700"
+                  >
+                    <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                    </svg>
+                    AI 추천으로 보완하기
+                  </button>
+                )}
+                <button
+                  onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+                  className="flex items-center gap-2 rounded-lg border border-gray-300 bg-white px-4 py-2.5 text-sm font-medium text-gray-700 transition hover:bg-gray-50"
+                >
+                  <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                  </svg>
+                  리밸런싱 가이드 보기
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       )}

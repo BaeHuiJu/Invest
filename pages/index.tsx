@@ -9,6 +9,7 @@ import { PortfolioTab } from '@/components/PortfolioTab';
 import { EarningsCalendarTab } from '@/components/EarningsCalendarTab';
 import { AIPicksTab } from '@/components/AIPicksTab';
 import { EntryScoreTooltip } from '@/components/EntryScoreTooltip';
+import { GlossaryModal } from '@/components/GlossaryModal';
 import { GlobalSearch } from '@/components/GlobalSearch';
 
 type MarketType = 'korea' | 'us';
@@ -240,6 +241,7 @@ export default function Home() {
   const [watchlist, setWatchlist] = useState<WatchlistItem[]>([]);
   const [notificationSettingsOpen, setNotificationSettingsOpen] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
+  const [glossaryOpen, setGlossaryOpen] = useState(false);
   const { addToast } = useToast();
 
   useEffect(() => {
@@ -367,6 +369,17 @@ export default function Home() {
                 <span className="text-lg">🔔</span>
                 <span className="hidden sm:inline">알림</span>
               </button>
+              <button
+                type="button"
+                onClick={() => setGlossaryOpen(true)}
+                className="flex items-center gap-2 rounded-lg border bg-white px-3 py-2 text-sm text-gray-600 hover:bg-gray-50"
+                aria-label="용어 사전"
+              >
+                <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                <span className="hidden sm:inline">용어</span>
+              </button>
             </div>
           </div>
         </div>
@@ -407,7 +420,7 @@ export default function Home() {
           : activeTab === 'backtest'
             ? <BacktestTab />
           : activeTab === 'portfolio'
-            ? <PortfolioTab />
+            ? <PortfolioTab onNavigateToAIPicks={() => setActiveTab('ai-picks')} />
           : activeTab === 'earnings'
             ? <EarningsCalendarTab />
           : loading
@@ -431,6 +444,7 @@ export default function Home() {
     </div>
     <StockInsightModal request={insightTarget} onClose={() => setInsightTarget(null)} isSaved={isSaved} onToggleWatchlist={toggleWatchlist} />
     <NotificationSettings isOpen={notificationSettingsOpen} onClose={() => setNotificationSettingsOpen(false)} />
+    <GlossaryModal isOpen={glossaryOpen} onClose={() => setGlossaryOpen(false)} />
     <GlobalSearch isOpen={searchOpen} onClose={() => setSearchOpen(false)} />
   </>;
 }

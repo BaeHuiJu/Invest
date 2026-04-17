@@ -131,18 +131,57 @@ export function BacktestTab() {
             <label className="mb-1 block text-sm text-gray-500">전략</label>
             <div className="flex flex-wrap gap-2">
               {(Object.keys(STRATEGY_LABELS) as BacktestStrategy[]).map((s) => (
-                <button
-                  key={s}
-                  onClick={() => setStrategy(s)}
-                  className={`rounded-lg px-3 py-2 text-sm ${
-                    strategy === s
-                      ? 'bg-blue-600 text-white'
-                      : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
-                  }`}
-                >
-                  {STRATEGY_LABELS[s]}
-                </button>
+                <div key={s} className="relative">
+                  {s === 'consensus_only' && (
+                    <span className="absolute -top-2 -right-2 z-10 rounded-full bg-green-500 px-2 py-0.5 text-xs font-medium text-white shadow-sm">
+                      ✓ 초보자 추천
+                    </span>
+                  )}
+                  <button
+                    onClick={() => setStrategy(s)}
+                    className={`rounded-lg px-3 py-2 text-sm ${
+                      strategy === s
+                        ? 'bg-blue-600 text-white'
+                        : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
+                    }`}
+                  >
+                    {STRATEGY_LABELS[s]}
+                  </button>
+                </div>
               ))}
+            </div>
+
+            {/* Strategy Description */}
+            <div className="mt-3 rounded-lg border border-blue-100 bg-blue-50 p-3">
+              <div className="flex items-start gap-2">
+                <svg className="mt-0.5 h-5 w-5 flex-shrink-0 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                <div className="text-sm">
+                  <div className="font-semibold text-blue-900">
+                    {strategy === 'follow_all' && '모든 추천 따라하기'}
+                    {strategy === 'top_broker' && '실적 우수 증권사'}
+                    {strategy === 'high_entry_score' && '높은 Entry Score'}
+                    {strategy === 'consensus_only' && '컨센서스 종목 (초보자 추천)'}
+                  </div>
+                  <div className="mt-1 text-blue-700">
+                    {strategy === 'follow_all' && '모든 애널리스트 추천을 따라 매수합니다. 가장 많은 종목에 투자하지만, 분산투자 효과가 있습니다.'}
+                    {strategy === 'top_broker' && '과거 성과가 우수한 증권사의 추천만 따릅니다. 신뢰도 높은 애널리스트를 선별하여 투자합니다.'}
+                    {strategy === 'high_entry_score' && 'Entry Score 80점 이상인 종목만 선택합니다. 매수 타이밍이 좋은 종목에 집중 투자합니다.'}
+                    {strategy === 'consensus_only' && '2개 이상 증권사가 동시에 추천하는 종목만 매수합니다. 여러 전문가의 의견이 일치하여 리스크가 낮습니다.'}
+                  </div>
+                  <div className="mt-2 flex items-center gap-1 text-xs">
+                    <span className="font-medium text-blue-800">리스크:</span>
+                    <span className={`rounded-full px-2 py-0.5 ${
+                      strategy === 'consensus_only' ? 'bg-green-100 text-green-700' :
+                      strategy === 'top_broker' ? 'bg-yellow-100 text-yellow-700' :
+                      'bg-orange-100 text-orange-700'
+                    }`}>
+                      {strategy === 'consensus_only' ? '낮음' : strategy === 'top_broker' ? '보통' : '높음'}
+                    </span>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 

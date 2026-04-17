@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-17T12:29:43.727Z",
+  "generatedAt": "2026-04-17T13:49:04.642Z",
   "maxDays": 365,
   "reports": [
     {
@@ -905,6 +905,104 @@
         "키움증권가 2026-04-17에 Buy 의견과 목표가를 제시했습니다.",
         "현재가 23,400원 대비 목표가는 34,000원입니다.",
         "2026-04-17 종가 23,400원 대비 괴리는 45.3%입니다."
+      ],
+      "performance": {
+        "week1": {
+          "asOfDate": "2026-04-24",
+          "closePrice": 0,
+          "returnPct": 0,
+          "targetProgressPct": 0,
+          "success": false,
+          "status": "pending"
+        },
+        "month1": {
+          "asOfDate": "2026-05-17",
+          "closePrice": 0,
+          "returnPct": 0,
+          "targetProgressPct": 0,
+          "success": false,
+          "status": "pending"
+        },
+        "month3": {
+          "asOfDate": "2026-07-16",
+          "closePrice": 0,
+          "returnPct": 0,
+          "targetProgressPct": 0,
+          "success": false,
+          "status": "pending"
+        }
+      }
+    },
+    {
+      "date": "2026-04-17",
+      "ticker": "AMZN",
+      "name": "Amazon.com, Inc.",
+      "market": "us",
+      "broker": "Truist Securities",
+      "analyst": "Youssef Squali",
+      "opinion": "Strong Buy",
+      "targetPrice": 285,
+      "currentPrice": 249.7,
+      "basePrice": 249.7,
+      "basePriceDate": "2026-04-16",
+      "upside": 14.1,
+      "sourceUrl": "https://stockanalysis.com/stocks/amzn/ratings/",
+      "sourceText": "Truist Securities Strong Buy Maintains. Price target 280 -> 285.",
+      "reportTitle": "Strong Buy -> Strong Buy Maintains",
+      "reasonSummary": "Strong Buy -> Strong Buy Maintains. Truist Securities가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 14.1%입니다. 2026-04-16 종가 대비 목표가 괴리는 14.1%입니다.",
+      "reasonBullets": [
+        "Truist Securities가 2026-04-17에 Strong Buy 의견과 목표가를 제시했습니다.",
+        "현재가 $249.7 대비 목표가는 $285입니다.",
+        "2026-04-16 종가 $249.7 대비 괴리는 14.1%입니다."
+      ],
+      "performance": {
+        "week1": {
+          "asOfDate": "2026-04-24",
+          "closePrice": 0,
+          "returnPct": 0,
+          "targetProgressPct": 0,
+          "success": false,
+          "status": "pending"
+        },
+        "month1": {
+          "asOfDate": "2026-05-17",
+          "closePrice": 0,
+          "returnPct": 0,
+          "targetProgressPct": 0,
+          "success": false,
+          "status": "pending"
+        },
+        "month3": {
+          "asOfDate": "2026-07-16",
+          "closePrice": 0,
+          "returnPct": 0,
+          "targetProgressPct": 0,
+          "success": false,
+          "status": "pending"
+        }
+      }
+    },
+    {
+      "date": "2026-04-17",
+      "ticker": "JPM",
+      "name": "JPMorgan Chase & Co.",
+      "market": "us",
+      "broker": "Evercore ISI Group",
+      "analyst": "Glenn Schorr",
+      "opinion": "Buy",
+      "targetPrice": 340,
+      "currentPrice": 309.95,
+      "basePrice": 309.95,
+      "basePriceDate": "2026-04-16",
+      "upside": 9.7,
+      "sourceUrl": "https://stockanalysis.com/stocks/jpm/ratings/",
+      "sourceText": "Evercore ISI Group Buy Maintains. Price target 320 -> 340.",
+      "reportTitle": "Buy -> Buy Maintains",
+      "reasonSummary": "Buy -> Buy Maintains. Evercore ISI Group가 Buy 의견을 제시했고 현재가 기준 상승여력은 9.7%입니다. 2026-04-16 종가 대비 목표가 괴리는 9.7%입니다.",
+      "reasonBullets": [
+        "Evercore ISI Group가 2026-04-17에 Buy 의견과 목표가를 제시했습니다.",
+        "현재가 $309.95 대비 목표가는 $340입니다.",
+        "2026-04-16 종가 $309.95 대비 괴리는 9.7%입니다."
       ],
       "performance": {
         "week1": {
@@ -9973,10 +10071,10 @@
       ],
       "performance": {
         "week1": {
-          "asOfDate": "2026-04-16",
-          "closePrice": 420.26,
-          "returnPct": 13.3,
-          "targetProgressPct": 26.7,
+          "asOfDate": "2026-04-17",
+          "closePrice": 424.51,
+          "returnPct": 14.5,
+          "targetProgressPct": 29,
           "success": false,
           "status": "complete"
         },
@@ -10022,9 +10120,9 @@
       ],
       "performance": {
         "week1": {
-          "asOfDate": "2026-04-16",
-          "closePrice": 151.98,
-          "returnPct": -0.3,
+          "asOfDate": "2026-04-17",
+          "closePrice": 144.6,
+          "returnPct": -5.2,
           "targetProgressPct": 0,
           "success": false,
           "status": "complete"
@@ -10071,9 +10169,9 @@
       ],
       "performance": {
         "week1": {
-          "asOfDate": "2026-04-16",
-          "closePrice": 234.54,
-          "returnPct": -1.6,
+          "asOfDate": "2026-04-17",
+          "closePrice": 233.12,
+          "returnPct": -2.2,
           "targetProgressPct": 0,
           "success": false,
           "status": "complete"
@@ -10120,9 +10218,9 @@
       ],
       "performance": {
         "week1": {
-          "asOfDate": "2026-04-16",
-          "closePrice": 143.11,
-          "returnPct": -1.4,
+          "asOfDate": "2026-04-17",
+          "closePrice": 144.96,
+          "returnPct": -0.1,
           "targetProgressPct": 0,
           "success": false,
           "status": "complete"
@@ -16544,55 +16642,6 @@
           "returnPct": -0.1,
           "targetProgressPct": 0,
           "success": false,
-          "status": "complete"
-        },
-        "month1": {
-          "asOfDate": "2026-05-06",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "pending"
-        },
-        "month3": {
-          "asOfDate": "2026-07-05",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "pending"
-        }
-      }
-    },
-    {
-      "date": "2026-04-06",
-      "ticker": "JPM",
-      "name": "JPMorgan Chase & Co.",
-      "market": "us",
-      "broker": "Evercore ISI Group",
-      "analyst": "Glenn Schorr",
-      "opinion": "Buy",
-      "targetPrice": 320,
-      "currentPrice": 309.95,
-      "basePrice": 295.45,
-      "basePriceDate": "2026-04-06",
-      "upside": 3.2,
-      "sourceUrl": "https://stockanalysis.com/stocks/jpm/ratings/",
-      "sourceText": "Evercore ISI Group Buy Maintains. Price target 350 -> 320.",
-      "reportTitle": "Buy -> Buy Maintains",
-      "reasonSummary": "Buy -> Buy Maintains. Evercore ISI Group가 Buy 의견을 제시했고 현재가 기준 상승여력은 3.2%입니다. 2026-04-06 종가 대비 목표가 괴리는 8.3%입니다.",
-      "reasonBullets": [
-        "Evercore ISI Group가 2026-04-06에 Buy 의견과 목표가를 제시했습니다.",
-        "현재가 $309.95 대비 목표가는 $320입니다.",
-        "2026-04-06 종가 $295.45 대비 괴리는 8.3%입니다."
-      ],
-      "performance": {
-        "week1": {
-          "asOfDate": "2026-04-13",
-          "closePrice": 313.68,
-          "returnPct": 6.2,
-          "targetProgressPct": 74.3,
-          "success": true,
           "status": "complete"
         },
         "month1": {
@@ -25024,10 +25073,10 @@
           "status": "complete"
         },
         "month1": {
-          "asOfDate": "2026-04-16",
-          "closePrice": 198.35,
-          "returnPct": 10,
-          "targetProgressPct": 16.8,
+          "asOfDate": "2026-04-17",
+          "closePrice": 200.51,
+          "returnPct": 11.1,
+          "targetProgressPct": 18.9,
           "success": false,
           "status": "complete"
         },
@@ -25073,10 +25122,10 @@
           "status": "complete"
         },
         "month1": {
-          "asOfDate": "2026-04-16",
-          "closePrice": 198.35,
-          "returnPct": 10,
-          "targetProgressPct": 30.1,
+          "asOfDate": "2026-04-17",
+          "closePrice": 200.51,
+          "returnPct": 11.1,
+          "targetProgressPct": 33.7,
           "success": false,
           "status": "complete"
         },
@@ -25122,10 +25171,10 @@
           "status": "complete"
         },
         "month1": {
-          "asOfDate": "2026-04-16",
-          "closePrice": 676.87,
-          "returnPct": 9.9,
-          "targetProgressPct": 18.6,
+          "asOfDate": "2026-04-17",
+          "closePrice": 685,
+          "returnPct": 11.3,
+          "targetProgressPct": 21,
           "success": false,
           "status": "complete"
         },
@@ -28160,12 +28209,12 @@
           "status": "complete"
         },
         "month1": {
-          "asOfDate": "2026-04-04",
-          "closePrice": 0,
-          "returnPct": 0,
+          "asOfDate": "2026-04-02",
+          "closePrice": 177.39,
+          "returnPct": -3.2,
           "targetProgressPct": 0,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month3": {
           "asOfDate": "2026-06-03",
@@ -29092,11 +29141,11 @@
         },
         "month1": {
           "asOfDate": "2026-04-02",
-          "closePrice": 0,
-          "returnPct": 0,
+          "closePrice": 177.39,
+          "returnPct": -1.5,
           "targetProgressPct": 0,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month3": {
           "asOfDate": "2026-06-01",
@@ -30995,11 +31044,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-03-04",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
+          "closePrice": 127.81,
+          "returnPct": 1.6,
+          "targetProgressPct": 8.5,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-03-27",
@@ -32563,11 +32612,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-03-02",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
+          "closePrice": 127.1,
+          "returnPct": 1,
+          "targetProgressPct": 14,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-03-25",
@@ -32612,11 +32661,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-03-02",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
+          "closePrice": 41.58,
+          "returnPct": 19.7,
+          "targetProgressPct": 39.6,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-03-25",
@@ -33151,11 +33200,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-27",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
+          "closePrice": 127.95,
+          "returnPct": 4,
+          "targetProgressPct": 22.5,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-03-20",
@@ -33200,11 +33249,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-27",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
+          "closePrice": 127.95,
+          "returnPct": 4,
+          "targetProgressPct": 45,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-03-20",
@@ -33249,11 +33298,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-27",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
+          "closePrice": 127.95,
+          "returnPct": 4,
+          "targetProgressPct": 20.7,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-03-20",
@@ -33298,11 +33347,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-27",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
+          "closePrice": 127.95,
+          "returnPct": 4,
+          "targetProgressPct": 31,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-03-20",
@@ -33347,11 +33396,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-27",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
+          "closePrice": 127.95,
+          "returnPct": 4,
+          "targetProgressPct": 18.4,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-03-20",
@@ -33396,11 +33445,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-27",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
+          "closePrice": 127.95,
+          "returnPct": 4,
+          "targetProgressPct": 29.2,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-03-20",
@@ -33445,11 +33494,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-27",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
+          "closePrice": 127.95,
+          "returnPct": 4,
+          "targetProgressPct": 29.2,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-03-20",
@@ -34180,11 +34229,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-26",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
+          "closePrice": 307.38,
+          "returnPct": 1.5,
+          "targetProgressPct": 4,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-03-20",
@@ -34229,11 +34278,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-24",
-          "closePrice": 0,
-          "returnPct": 0,
+          "closePrice": 297.3,
+          "returnPct": -3.2,
           "targetProgressPct": 0,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-03-19",
@@ -35748,11 +35797,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-20",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
+          "closePrice": 314.98,
+          "returnPct": 3,
+          "targetProgressPct": 15.6,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-03-13",
@@ -35797,11 +35846,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-20",
-          "closePrice": 0,
-          "returnPct": 0,
+          "closePrice": 122.99,
+          "returnPct": -8.1,
           "targetProgressPct": 0,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-03-13",
@@ -35846,11 +35895,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-20",
-          "closePrice": 0,
-          "returnPct": 0,
+          "closePrice": 37.75,
+          "returnPct": -27,
           "targetProgressPct": 0,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-03-13",
@@ -35895,11 +35944,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-20",
-          "closePrice": 0,
-          "returnPct": 0,
+          "closePrice": 37.75,
+          "returnPct": -27,
           "targetProgressPct": 0,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-03-13",
@@ -35944,11 +35993,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-20",
-          "closePrice": 0,
-          "returnPct": 0,
+          "closePrice": 37.75,
+          "returnPct": -27,
           "targetProgressPct": 0,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-03-13",
@@ -35993,11 +36042,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-19",
-          "closePrice": 0,
-          "returnPct": 0,
+          "closePrice": 411.71,
+          "returnPct": -1.3,
           "targetProgressPct": 0,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-03-13",
@@ -36042,11 +36091,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-18",
-          "closePrice": 0,
-          "returnPct": 0,
+          "closePrice": 126.62,
+          "returnPct": -1.7,
           "targetProgressPct": 0,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-03-13",
@@ -36091,66 +36140,17 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-13",
-          "closePrice": 0,
-          "returnPct": 0,
+          "closePrice": 305.72,
+          "returnPct": -5.3,
           "targetProgressPct": 0,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-03-06",
           "closePrice": 298.52,
           "returnPct": -7.5,
           "targetProgressPct": 0,
-          "success": false,
-          "status": "complete"
-        },
-        "month3": {
-          "asOfDate": "2026-05-07",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "pending"
-        }
-      }
-    },
-    {
-      "date": "2026-02-06",
-      "ticker": "AMZN",
-      "name": "Amazon.com, Inc.",
-      "market": "us",
-      "broker": "RBC Capital",
-      "analyst": "Brad Erickson",
-      "opinion": "Buy",
-      "targetPrice": 300,
-      "currentPrice": 249.7,
-      "basePrice": 210.32,
-      "basePriceDate": "2026-02-06",
-      "upside": 20.1,
-      "sourceUrl": "https://stockanalysis.com/stocks/amzn/ratings/",
-      "sourceText": "RBC Capital Buy Reiterates. Price target 300 -> 300.",
-      "reportTitle": "Buy -> Buy Reiterates",
-      "reasonSummary": "Buy -> Buy Reiterates. RBC Capital가 Buy 의견을 제시했고 현재가 기준 상승여력은 20.1%입니다. 2026-02-06 종가 대비 목표가 괴리는 42.6%입니다.",
-      "reasonBullets": [
-        "RBC Capital가 2026-02-06에 Buy 의견과 목표가를 제시했습니다.",
-        "현재가 $249.7 대비 목표가는 $300입니다.",
-        "2026-02-06 종가 $210.32 대비 괴리는 42.6%입니다."
-      ],
-      "performance": {
-        "week1": {
-          "asOfDate": "2026-02-13",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "unavailable"
-        },
-        "month1": {
-          "asOfDate": "2026-03-06",
-          "closePrice": 213.21,
-          "returnPct": 1.4,
-          "targetProgressPct": 3.2,
           "success": false,
           "status": "complete"
         },
@@ -36189,11 +36189,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-12",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
+          "closePrice": 284.37,
+          "returnPct": 5.9,
+          "targetProgressPct": 19.4,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-03-06",
@@ -36238,11 +36238,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-11",
-          "closePrice": 0,
+          "closePrice": 51.99,
           "returnPct": 0,
           "targetProgressPct": 0,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-03-06",
@@ -36287,11 +36287,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-10",
-          "closePrice": 0,
-          "returnPct": 0,
+          "closePrice": 670.72,
+          "returnPct": -3,
           "targetProgressPct": 0,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-03-05",
@@ -36336,11 +36336,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-09",
-          "closePrice": 0,
-          "returnPct": 0,
+          "closePrice": 677.22,
+          "returnPct": -4.1,
           "targetProgressPct": 0,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-03-04",
@@ -36385,11 +36385,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-09",
-          "closePrice": 0,
-          "returnPct": 0,
+          "closePrice": 275.7,
+          "returnPct": -3.5,
           "targetProgressPct": 0,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-03-04",
@@ -36434,11 +36434,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-09",
-          "closePrice": 0,
-          "returnPct": 0,
+          "closePrice": 275.7,
+          "returnPct": -3.5,
           "targetProgressPct": 0,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-03-04",
@@ -36483,11 +36483,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-06",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
+          "closePrice": 278.12,
+          "returnPct": 7.2,
+          "targetProgressPct": 46,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-02-27",
@@ -36532,11 +36532,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-06",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
+          "closePrice": 278.12,
+          "returnPct": 7.2,
+          "targetProgressPct": 28.4,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-02-27",
@@ -36581,11 +36581,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-06",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
+          "closePrice": 278.12,
+          "returnPct": 7.2,
+          "targetProgressPct": 28.4,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-02-27",
@@ -36630,11 +36630,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-06",
-          "closePrice": 0,
-          "returnPct": 0,
+          "closePrice": 401.14,
+          "returnPct": -6.8,
           "targetProgressPct": 0,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-02-27",
@@ -36679,11 +36679,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-06",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
+          "closePrice": 331.58,
+          "returnPct": 3,
+          "targetProgressPct": 13.3,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-02-27",
@@ -36728,11 +36728,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-06",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
+          "closePrice": 331.58,
+          "returnPct": 3,
+          "targetProgressPct": 11.1,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-02-27",
@@ -36777,11 +36777,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-06",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
+          "closePrice": 331.58,
+          "returnPct": 3,
+          "targetProgressPct": 10.9,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-02-27",
@@ -36826,11 +36826,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-06",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
+          "closePrice": 331.58,
+          "returnPct": 3,
+          "targetProgressPct": 12.5,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-02-27",
@@ -36875,11 +36875,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-06",
-          "closePrice": 0,
-          "returnPct": 0,
+          "closePrice": 276.65,
+          "returnPct": -3.6,
           "targetProgressPct": 0,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-02-27",
@@ -36924,11 +36924,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-06",
-          "closePrice": 0,
-          "returnPct": 0,
+          "closePrice": 276.65,
+          "returnPct": -3.6,
           "targetProgressPct": 0,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-02-27",
@@ -36973,11 +36973,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-05",
-          "closePrice": 0,
-          "returnPct": 0,
+          "closePrice": 393.67,
+          "returnPct": -9.2,
           "targetProgressPct": 0,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-02-27",
@@ -37022,11 +37022,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-05",
-          "closePrice": 0,
-          "returnPct": 0,
+          "closePrice": 393.67,
+          "returnPct": -9.2,
           "targetProgressPct": 0,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-02-27",
@@ -37071,11 +37071,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-05",
-          "closePrice": 0,
-          "returnPct": 0,
+          "closePrice": 393.67,
+          "returnPct": -9.2,
           "targetProgressPct": 0,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-02-27",
@@ -37120,11 +37120,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-05",
-          "closePrice": 0,
-          "returnPct": 0,
+          "closePrice": 393.67,
+          "returnPct": -9.2,
           "targetProgressPct": 0,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-02-27",
@@ -37169,11 +37169,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-05",
-          "closePrice": 0,
-          "returnPct": 0,
+          "closePrice": 393.67,
+          "returnPct": -9.2,
           "targetProgressPct": 0,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-02-27",
@@ -37218,11 +37218,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-05",
-          "closePrice": 0,
-          "returnPct": 0,
+          "closePrice": 393.67,
+          "returnPct": -9.2,
           "targetProgressPct": 0,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-02-27",
@@ -37267,11 +37267,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-05",
-          "closePrice": 0,
-          "returnPct": 0,
+          "closePrice": 393.67,
+          "returnPct": -9.2,
           "targetProgressPct": 0,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-02-27",
@@ -37316,11 +37316,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-05",
-          "closePrice": 0,
-          "returnPct": 0,
+          "closePrice": 670.21,
+          "returnPct": -9.2,
           "targetProgressPct": 0,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-02-27",
@@ -37365,11 +37365,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-05",
-          "closePrice": 0,
-          "returnPct": 0,
+          "closePrice": 670.21,
+          "returnPct": -9.2,
           "targetProgressPct": 0,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-02-27",
@@ -37414,11 +37414,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-05",
-          "closePrice": 0,
-          "returnPct": 0,
+          "closePrice": 670.21,
+          "returnPct": -9.2,
           "targetProgressPct": 0,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-02-27",
@@ -37463,11 +37463,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-05",
-          "closePrice": 0,
-          "returnPct": 0,
+          "closePrice": 397.21,
+          "returnPct": -4.6,
           "targetProgressPct": 0,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-02-27",
@@ -37512,11 +37512,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-05",
-          "closePrice": 0,
-          "returnPct": 0,
+          "closePrice": 397.21,
+          "returnPct": -4.6,
           "targetProgressPct": 0,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-02-27",
@@ -37561,11 +37561,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-04",
-          "closePrice": 0,
-          "returnPct": 0,
+          "closePrice": 275.92,
+          "returnPct": -6.2,
           "targetProgressPct": 0,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-02-27",
@@ -37610,11 +37610,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-04",
-          "closePrice": 0,
-          "returnPct": 0,
+          "closePrice": 275.92,
+          "returnPct": -6.2,
           "targetProgressPct": 0,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-02-27",
@@ -37912,11 +37912,11 @@
         },
         "month1": {
           "asOfDate": "2026-02-11",
-          "closePrice": 0,
-          "returnPct": 0,
+          "closePrice": 51.99,
+          "returnPct": -10,
           "targetProgressPct": 0,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month3": {
           "asOfDate": "2026-04-10",
@@ -41490,6 +41490,604 @@
               "targetProgressPct": 0,
               "success": false,
               "status": "pending"
+            }
+          }
+        }
+      ]
+    },
+    "us:AMZN": {
+      "ticker": "AMZN",
+      "name": "Amazon.com, Inc.",
+      "market": "us",
+      "latestReportDate": "2026-04-17",
+      "latestBroker": "Truist Securities",
+      "latestOpinion": "Strong Buy",
+      "latestTargetPrice": 285,
+      "latestCurrentPrice": 249.7,
+      "latestBasePrice": 249.7,
+      "avgUpside": 16.5,
+      "reportCount": 11,
+      "reasonSummary": "Strong Buy -> Strong Buy Maintains. Truist Securities가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 14.1%입니다. 2026-04-16 종가 대비 목표가 괴리는 14.1%입니다.",
+      "reasonBullets": [
+        "Truist Securities가 2026-04-17에 Strong Buy 의견과 목표가를 제시했습니다.",
+        "현재가 $249.7 대비 목표가는 $285입니다.",
+        "2026-04-16 종가 $249.7 대비 괴리는 14.1%입니다."
+      ],
+      "investmentLogic": {
+        "summary": "Strong Buy -> Strong Buy Maintains",
+        "bullets": [
+          "Strong Buy -> Strong Buy Maintains",
+          "Strong Buy -> Strong Buy Maintains Truist Securities Strong Buy Maintains.",
+          "Price target 280 -> 285."
+        ]
+      },
+      "estimateRevision": {
+        "summary": "유지 신호입니다. 리포트 원문에서 추정치 관련 표현을 기준으로 판단했습니다.",
+        "bullets": [
+          "Strong Buy -> Strong Buy Maintains Truist Securities Strong Buy Maintains.",
+          "Price target 280 -> 285.",
+          "Strong Buy -> Strong Buy Maintains."
+        ],
+        "signal": "flat"
+      },
+      "valuation": {
+        "summary": "현재가 $249.7 대비 목표가 $285가 제시돼 밸류에이션 여력을 확인할 수 있습니다.",
+        "bullets": [
+          "Strong Buy -> Strong Buy Maintains Truist Securities Strong Buy Maintains.",
+          "Price target 280 -> 285.",
+          "Strong Buy -> Strong Buy Maintains."
+        ]
+      },
+      "sectorCycle": {
+        "summary": "Strong Buy -> Strong Buy Maintains Truist Securities Strong Buy Maintains.",
+        "bullets": [
+          "Strong Buy -> Strong Buy Maintains Truist Securities Strong Buy Maintains.",
+          "Price target 280 -> 285.",
+          "Strong Buy -> Strong Buy Maintains."
+        ]
+      },
+      "relatedReports": [
+        {
+          "date": "2026-04-17",
+          "ticker": "AMZN",
+          "name": "Amazon.com, Inc.",
+          "market": "us",
+          "broker": "Truist Securities",
+          "analyst": "Youssef Squali",
+          "opinion": "Strong Buy",
+          "targetPrice": 285,
+          "currentPrice": 249.7,
+          "basePrice": 249.7,
+          "basePriceDate": "2026-04-16",
+          "upside": 14.1,
+          "sourceUrl": "https://stockanalysis.com/stocks/amzn/ratings/",
+          "sourceText": "Truist Securities Strong Buy Maintains. Price target 280 -> 285.",
+          "reportTitle": "Strong Buy -> Strong Buy Maintains",
+          "reasonSummary": "Strong Buy -> Strong Buy Maintains. Truist Securities가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 14.1%입니다. 2026-04-16 종가 대비 목표가 괴리는 14.1%입니다.",
+          "reasonBullets": [
+            "Truist Securities가 2026-04-17에 Strong Buy 의견과 목표가를 제시했습니다.",
+            "현재가 $249.7 대비 목표가는 $285입니다.",
+            "2026-04-16 종가 $249.7 대비 괴리는 14.1%입니다."
+          ],
+          "performance": {
+            "week1": {
+              "asOfDate": "2026-04-24",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            },
+            "month1": {
+              "asOfDate": "2026-05-17",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            },
+            "month3": {
+              "asOfDate": "2026-07-16",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            }
+          }
+        },
+        {
+          "date": "2026-04-16",
+          "ticker": "AMZN",
+          "name": "Amazon.com, Inc.",
+          "market": "us",
+          "broker": "TD Cowen",
+          "analyst": "John Blackledge",
+          "opinion": "Strong Buy",
+          "targetPrice": 300,
+          "currentPrice": 249.7,
+          "basePrice": 249.7,
+          "basePriceDate": "2026-04-16",
+          "upside": 20.1,
+          "sourceUrl": "https://stockanalysis.com/stocks/amzn/ratings/",
+          "sourceText": "TD Cowen Strong Buy Reiterates. Price target 300 -> 300.",
+          "reportTitle": "Strong Buy -> Strong Buy Reiterates",
+          "reasonSummary": "Strong Buy -> Strong Buy Reiterates. TD Cowen가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 20.1%입니다. 2026-04-16 종가 대비 목표가 괴리는 20.1%입니다.",
+          "reasonBullets": [
+            "TD Cowen가 2026-04-16에 Strong Buy 의견과 목표가를 제시했습니다.",
+            "현재가 $249.7 대비 목표가는 $300입니다.",
+            "2026-04-16 종가 $249.7 대비 괴리는 20.1%입니다."
+          ],
+          "performance": {
+            "week1": {
+              "asOfDate": "2026-04-23",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            },
+            "month1": {
+              "asOfDate": "2026-05-16",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            },
+            "month3": {
+              "asOfDate": "2026-07-15",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            }
+          }
+        },
+        {
+          "date": "2026-04-15",
+          "ticker": "AMZN",
+          "name": "Amazon.com, Inc.",
+          "market": "us",
+          "broker": "Citizens",
+          "analyst": "Andrew Boone",
+          "opinion": "Buy",
+          "targetPrice": 315,
+          "currentPrice": 249.7,
+          "basePrice": 248.5,
+          "basePriceDate": "2026-04-15",
+          "upside": 26.2,
+          "sourceUrl": "https://stockanalysis.com/stocks/amzn/ratings/",
+          "sourceText": "Citizens Buy Reiterates. Price target 315 -> 315.",
+          "reportTitle": "Buy -> Buy Reiterates",
+          "reasonSummary": "Buy -> Buy Reiterates. Citizens가 Buy 의견을 제시했고 현재가 기준 상승여력은 26.2%입니다. 2026-04-15 종가 대비 목표가 괴리는 26.8%입니다.",
+          "reasonBullets": [
+            "Citizens가 2026-04-15에 Buy 의견과 목표가를 제시했습니다.",
+            "현재가 $249.7 대비 목표가는 $315입니다.",
+            "2026-04-15 종가 $248.5 대비 괴리는 26.8%입니다."
+          ],
+          "performance": {
+            "week1": {
+              "asOfDate": "2026-04-22",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            },
+            "month1": {
+              "asOfDate": "2026-05-15",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            },
+            "month3": {
+              "asOfDate": "2026-07-14",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            }
+          }
+        },
+        {
+          "date": "2026-04-15",
+          "ticker": "AMZN",
+          "name": "Amazon.com, Inc.",
+          "market": "us",
+          "broker": "Rosenblatt",
+          "analyst": "Barton Crockett",
+          "opinion": "Strong Buy",
+          "targetPrice": 296,
+          "currentPrice": 249.7,
+          "basePrice": 248.5,
+          "basePriceDate": "2026-04-15",
+          "upside": 18.5,
+          "sourceUrl": "https://stockanalysis.com/stocks/amzn/ratings/",
+          "sourceText": "Rosenblatt Strong Buy Maintains. Price target 296 -> 296.",
+          "reportTitle": "Strong Buy -> Strong Buy Maintains",
+          "reasonSummary": "Strong Buy -> Strong Buy Maintains. Rosenblatt가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 18.5%입니다. 2026-04-15 종가 대비 목표가 괴리는 19.1%입니다.",
+          "reasonBullets": [
+            "Rosenblatt가 2026-04-15에 Strong Buy 의견과 목표가를 제시했습니다.",
+            "현재가 $249.7 대비 목표가는 $296입니다.",
+            "2026-04-15 종가 $248.5 대비 괴리는 19.1%입니다."
+          ],
+          "performance": {
+            "week1": {
+              "asOfDate": "2026-04-22",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            },
+            "month1": {
+              "asOfDate": "2026-05-15",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            },
+            "month3": {
+              "asOfDate": "2026-07-14",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            }
+          }
+        },
+        {
+          "date": "2026-04-13",
+          "ticker": "AMZN",
+          "name": "Amazon.com, Inc.",
+          "market": "us",
+          "broker": "Stifel",
+          "analyst": "Mark Kelley",
+          "opinion": "Strong Buy",
+          "targetPrice": 294,
+          "currentPrice": 249.7,
+          "basePrice": 239.89,
+          "basePriceDate": "2026-04-13",
+          "upside": 17.7,
+          "sourceUrl": "https://stockanalysis.com/stocks/amzn/ratings/",
+          "sourceText": "Stifel Strong Buy Maintains. Price target 300 -> 294.",
+          "reportTitle": "Strong Buy -> Strong Buy Maintains",
+          "reasonSummary": "Strong Buy -> Strong Buy Maintains. Stifel가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 17.7%입니다. 2026-04-13 종가 대비 목표가 괴리는 22.6%입니다.",
+          "reasonBullets": [
+            "Stifel가 2026-04-13에 Strong Buy 의견과 목표가를 제시했습니다.",
+            "현재가 $249.7 대비 목표가는 $294입니다.",
+            "2026-04-13 종가 $239.89 대비 괴리는 22.6%입니다."
+          ],
+          "performance": {
+            "week1": {
+              "asOfDate": "2026-04-20",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            },
+            "month1": {
+              "asOfDate": "2026-05-13",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            },
+            "month3": {
+              "asOfDate": "2026-07-12",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            }
+          }
+        }
+      ]
+    },
+    "us:JPM": {
+      "ticker": "JPM",
+      "name": "JPMorgan Chase & Co.",
+      "market": "us",
+      "latestReportDate": "2026-04-17",
+      "latestBroker": "Evercore ISI Group",
+      "latestOpinion": "Buy",
+      "latestTargetPrice": 340,
+      "latestCurrentPrice": 309.95,
+      "latestBasePrice": 309.95,
+      "avgUpside": 13.9,
+      "reportCount": 6,
+      "reasonSummary": "Buy -> Buy Maintains. Evercore ISI Group가 Buy 의견을 제시했고 현재가 기준 상승여력은 9.7%입니다. 2026-04-16 종가 대비 목표가 괴리는 9.7%입니다.",
+      "reasonBullets": [
+        "Evercore ISI Group가 2026-04-17에 Buy 의견과 목표가를 제시했습니다.",
+        "현재가 $309.95 대비 목표가는 $340입니다.",
+        "2026-04-16 종가 $309.95 대비 괴리는 9.7%입니다."
+      ],
+      "investmentLogic": {
+        "summary": "Buy -> Buy Maintains",
+        "bullets": [
+          "Buy -> Buy Maintains",
+          "Buy -> Buy Maintains Evercore ISI Group Buy Maintains.",
+          "Price target 320 -> 340."
+        ]
+      },
+      "estimateRevision": {
+        "summary": "유지 신호입니다. 리포트 원문에서 추정치 관련 표현을 기준으로 판단했습니다.",
+        "bullets": [
+          "Buy -> Buy Maintains Evercore ISI Group Buy Maintains.",
+          "Price target 320 -> 340.",
+          "Buy -> Buy Maintains."
+        ],
+        "signal": "flat"
+      },
+      "valuation": {
+        "summary": "현재가 $309.95 대비 목표가 $340가 제시돼 밸류에이션 여력을 확인할 수 있습니다.",
+        "bullets": [
+          "Buy -> Buy Reiterates Piper Sandler Buy Reiterates.",
+          "Piper Sandler가 Buy 의견을 제시했고 현재가 기준 상승여력은 4.9%입니다.",
+          "현재가 대비 목표가 상승여력은 9.7%입니다."
+        ]
+      },
+      "sectorCycle": {
+        "summary": "Buy -> Buy Maintains Evercore ISI Group Buy Maintains.",
+        "bullets": [
+          "Buy -> Buy Maintains Evercore ISI Group Buy Maintains.",
+          "Price target 320 -> 340.",
+          "Buy -> Buy Maintains."
+        ]
+      },
+      "relatedReports": [
+        {
+          "date": "2026-04-17",
+          "ticker": "JPM",
+          "name": "JPMorgan Chase & Co.",
+          "market": "us",
+          "broker": "Evercore ISI Group",
+          "analyst": "Glenn Schorr",
+          "opinion": "Buy",
+          "targetPrice": 340,
+          "currentPrice": 309.95,
+          "basePrice": 309.95,
+          "basePriceDate": "2026-04-16",
+          "upside": 9.7,
+          "sourceUrl": "https://stockanalysis.com/stocks/jpm/ratings/",
+          "sourceText": "Evercore ISI Group Buy Maintains. Price target 320 -> 340.",
+          "reportTitle": "Buy -> Buy Maintains",
+          "reasonSummary": "Buy -> Buy Maintains. Evercore ISI Group가 Buy 의견을 제시했고 현재가 기준 상승여력은 9.7%입니다. 2026-04-16 종가 대비 목표가 괴리는 9.7%입니다.",
+          "reasonBullets": [
+            "Evercore ISI Group가 2026-04-17에 Buy 의견과 목표가를 제시했습니다.",
+            "현재가 $309.95 대비 목표가는 $340입니다.",
+            "2026-04-16 종가 $309.95 대비 괴리는 9.7%입니다."
+          ],
+          "performance": {
+            "week1": {
+              "asOfDate": "2026-04-24",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            },
+            "month1": {
+              "asOfDate": "2026-05-17",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            },
+            "month3": {
+              "asOfDate": "2026-07-16",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            }
+          }
+        },
+        {
+          "date": "2026-03-30",
+          "ticker": "JPM",
+          "name": "JPMorgan Chase & Co.",
+          "market": "us",
+          "broker": "Piper Sandler",
+          "analyst": "Scott Schrier",
+          "opinion": "Buy",
+          "targetPrice": 325,
+          "currentPrice": 309.95,
+          "basePrice": 283.77,
+          "basePriceDate": "2026-03-30",
+          "upside": 4.9,
+          "sourceUrl": "https://stockanalysis.com/stocks/jpm/ratings/",
+          "sourceText": "Piper Sandler Buy Reiterates. Price target 345 -> 325.",
+          "reportTitle": "Buy -> Buy Reiterates",
+          "reasonSummary": "Buy -> Buy Reiterates. Piper Sandler가 Buy 의견을 제시했고 현재가 기준 상승여력은 4.9%입니다. 2026-03-30 종가 대비 목표가 괴리는 14.5%입니다.",
+          "reasonBullets": [
+            "Piper Sandler가 2026-03-30에 Buy 의견과 목표가를 제시했습니다.",
+            "현재가 $309.95 대비 목표가는 $325입니다.",
+            "2026-03-30 종가 $283.77 대비 괴리는 14.5%입니다."
+          ],
+          "performance": {
+            "week1": {
+              "asOfDate": "2026-04-06",
+              "closePrice": 295.45,
+              "returnPct": 4.1,
+              "targetProgressPct": 28.3,
+              "success": false,
+              "status": "complete"
+            },
+            "month1": {
+              "asOfDate": "2026-04-29",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            },
+            "month3": {
+              "asOfDate": "2026-06-28",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            }
+          }
+        },
+        {
+          "date": "2026-02-17",
+          "ticker": "JPM",
+          "name": "JPMorgan Chase & Co.",
+          "market": "us",
+          "broker": "Wells Fargo",
+          "analyst": "Mike Mayo",
+          "opinion": "Buy",
+          "targetPrice": 350,
+          "currentPrice": 309.95,
+          "basePrice": 307.13,
+          "basePriceDate": "2026-02-17",
+          "upside": 12.9,
+          "sourceUrl": "https://stockanalysis.com/stocks/jpm/ratings/",
+          "sourceText": "Wells Fargo Buy Maintains. Price target 360 -> 350.",
+          "reportTitle": "Buy -> Buy Maintains",
+          "reasonSummary": "Buy -> Buy Maintains. Wells Fargo가 Buy 의견을 제시했고 현재가 기준 상승여력은 12.9%입니다. 2026-02-17 종가 대비 목표가 괴리는 14%입니다.",
+          "reasonBullets": [
+            "Wells Fargo가 2026-02-17에 Buy 의견과 목표가를 제시했습니다.",
+            "현재가 $309.95 대비 목표가는 $350입니다.",
+            "2026-02-17 종가 $307.13 대비 괴리는 14%입니다."
+          ],
+          "performance": {
+            "week1": {
+              "asOfDate": "2026-02-24",
+              "closePrice": 297.3,
+              "returnPct": -3.2,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "complete"
+            },
+            "month1": {
+              "asOfDate": "2026-03-19",
+              "closePrice": 287.97,
+              "returnPct": -6.2,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "complete"
+            },
+            "month3": {
+              "asOfDate": "2026-05-18",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            }
+          }
+        },
+        {
+          "date": "2026-01-05",
+          "ticker": "JPM",
+          "name": "JPMorgan Chase & Co.",
+          "market": "us",
+          "broker": "Barclays",
+          "analyst": "Jason Goldberg",
+          "opinion": "Buy",
+          "targetPrice": 391,
+          "currentPrice": 309.95,
+          "basePrice": 334.04,
+          "basePriceDate": "2026-01-05",
+          "upside": 26.1,
+          "sourceUrl": "https://stockanalysis.com/stocks/jpm/ratings/",
+          "sourceText": "Barclays Buy Maintains. Price target 342 -> 391.",
+          "reportTitle": "Buy -> Buy Maintains",
+          "reasonSummary": "Buy -> Buy Maintains. Barclays가 Buy 의견을 제시했고 현재가 기준 상승여력은 26.1%입니다. 2026-01-05 종가 대비 목표가 괴리는 17.1%입니다.",
+          "reasonBullets": [
+            "Barclays가 2026-01-05에 Buy 의견과 목표가를 제시했습니다.",
+            "현재가 $309.95 대비 목표가는 $391입니다.",
+            "2026-01-05 종가 $334.04 대비 괴리는 17.1%입니다."
+          ],
+          "performance": {
+            "week1": {
+              "asOfDate": "2026-01-12",
+              "closePrice": 324.49,
+              "returnPct": -2.9,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "complete"
+            },
+            "month1": {
+              "asOfDate": "2026-02-04",
+              "closePrice": 317.27,
+              "returnPct": -5,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "complete"
+            },
+            "month3": {
+              "asOfDate": "2026-04-02",
+              "closePrice": 294.6,
+              "returnPct": -11.8,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "complete"
+            }
+          }
+        },
+        {
+          "date": "2025-12-17",
+          "ticker": "JPM",
+          "name": "JPMorgan Chase & Co.",
+          "market": "us",
+          "broker": "Keefe, Bruyette & Woods",
+          "analyst": "David Konrad",
+          "opinion": "Buy",
+          "targetPrice": 363,
+          "currentPrice": 309.95,
+          "basePrice": 314.98,
+          "basePriceDate": "2025-12-17",
+          "upside": 17.1,
+          "sourceUrl": "https://stockanalysis.com/stocks/jpm/ratings/",
+          "sourceText": "Keefe, Bruyette & Woods Buy Maintains. Price target 354 -> 363.",
+          "reportTitle": "Buy -> Buy Maintains",
+          "reasonSummary": "Buy -> Buy Maintains. Keefe, Bruyette & Woods가 Buy 의견을 제시했고 현재가 기준 상승여력은 17.1%입니다. 2025-12-17 종가 대비 목표가 괴리는 15.2%입니다.",
+          "reasonBullets": [
+            "Keefe, Bruyette & Woods가 2025-12-17에 Buy 의견과 목표가를 제시했습니다.",
+            "현재가 $309.95 대비 목표가는 $363입니다.",
+            "2025-12-17 종가 $314.98 대비 괴리는 15.2%입니다."
+          ],
+          "performance": {
+            "week1": {
+              "asOfDate": "2025-12-24",
+              "closePrice": 329.17,
+              "returnPct": 4.5,
+              "targetProgressPct": 29.6,
+              "success": false,
+              "status": "complete"
+            },
+            "month1": {
+              "asOfDate": "2026-01-16",
+              "closePrice": 312.47,
+              "returnPct": -0.8,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "complete"
+            },
+            "month3": {
+              "asOfDate": "2026-03-17",
+              "closePrice": 286.89,
+              "returnPct": -8.9,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "complete"
             }
           }
         }
@@ -47493,10 +48091,10 @@
           ],
           "performance": {
             "week1": {
-              "asOfDate": "2026-04-16",
-              "closePrice": 420.26,
-              "returnPct": 13.3,
-              "targetProgressPct": 26.7,
+              "asOfDate": "2026-04-17",
+              "closePrice": 424.51,
+              "returnPct": 14.5,
+              "targetProgressPct": 29,
               "success": false,
               "status": "complete"
             },
@@ -47797,305 +48395,6 @@
               "returnPct": 6.2,
               "targetProgressPct": 37.6,
               "success": false,
-              "status": "complete"
-            },
-            "month1": {
-              "asOfDate": "2026-05-08",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            },
-            "month3": {
-              "asOfDate": "2026-07-07",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            }
-          }
-        }
-      ]
-    },
-    "us:AMZN": {
-      "ticker": "AMZN",
-      "name": "Amazon.com, Inc.",
-      "market": "us",
-      "latestReportDate": "2026-04-16",
-      "latestBroker": "TD Cowen",
-      "latestOpinion": "Strong Buy",
-      "latestTargetPrice": 300,
-      "latestCurrentPrice": 249.7,
-      "latestBasePrice": 249.7,
-      "avgUpside": 17,
-      "reportCount": 11,
-      "reasonSummary": "Strong Buy -> Strong Buy Reiterates. TD Cowen가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 20.1%입니다. 2026-04-16 종가 대비 목표가 괴리는 20.1%입니다.",
-      "reasonBullets": [
-        "TD Cowen가 2026-04-16에 Strong Buy 의견과 목표가를 제시했습니다.",
-        "현재가 $249.7 대비 목표가는 $300입니다.",
-        "2026-04-16 종가 $249.7 대비 괴리는 20.1%입니다."
-      ],
-      "investmentLogic": {
-        "summary": "Strong Buy -> Strong Buy Reiterates",
-        "bullets": [
-          "Strong Buy -> Strong Buy Reiterates",
-          "Strong Buy -> Strong Buy Reiterates TD Cowen Strong Buy Reiterates.",
-          "Price target 300 -> 300."
-        ]
-      },
-      "estimateRevision": {
-        "summary": "유지 신호입니다. 리포트 원문에서 추정치 관련 표현을 기준으로 판단했습니다.",
-        "bullets": [
-          "Strong Buy -> Strong Buy Reiterates TD Cowen Strong Buy Reiterates.",
-          "Price target 300 -> 300.",
-          "Strong Buy -> Strong Buy Reiterates."
-        ],
-        "signal": "flat"
-      },
-      "valuation": {
-        "summary": "현재가 $249.7 대비 목표가 $300가 제시돼 밸류에이션 여력을 확인할 수 있습니다.",
-        "bullets": [
-          "Strong Buy -> Strong Buy Reiterates TD Cowen Strong Buy Reiterates.",
-          "Price target 300 -> 300.",
-          "Strong Buy -> Strong Buy Reiterates."
-        ]
-      },
-      "sectorCycle": {
-        "summary": "Strong Buy -> Strong Buy Reiterates TD Cowen Strong Buy Reiterates.",
-        "bullets": [
-          "Strong Buy -> Strong Buy Reiterates TD Cowen Strong Buy Reiterates.",
-          "Price target 300 -> 300.",
-          "Strong Buy -> Strong Buy Reiterates."
-        ]
-      },
-      "relatedReports": [
-        {
-          "date": "2026-04-16",
-          "ticker": "AMZN",
-          "name": "Amazon.com, Inc.",
-          "market": "us",
-          "broker": "TD Cowen",
-          "analyst": "John Blackledge",
-          "opinion": "Strong Buy",
-          "targetPrice": 300,
-          "currentPrice": 249.7,
-          "basePrice": 249.7,
-          "basePriceDate": "2026-04-16",
-          "upside": 20.1,
-          "sourceUrl": "https://stockanalysis.com/stocks/amzn/ratings/",
-          "sourceText": "TD Cowen Strong Buy Reiterates. Price target 300 -> 300.",
-          "reportTitle": "Strong Buy -> Strong Buy Reiterates",
-          "reasonSummary": "Strong Buy -> Strong Buy Reiterates. TD Cowen가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 20.1%입니다. 2026-04-16 종가 대비 목표가 괴리는 20.1%입니다.",
-          "reasonBullets": [
-            "TD Cowen가 2026-04-16에 Strong Buy 의견과 목표가를 제시했습니다.",
-            "현재가 $249.7 대비 목표가는 $300입니다.",
-            "2026-04-16 종가 $249.7 대비 괴리는 20.1%입니다."
-          ],
-          "performance": {
-            "week1": {
-              "asOfDate": "2026-04-23",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            },
-            "month1": {
-              "asOfDate": "2026-05-16",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            },
-            "month3": {
-              "asOfDate": "2026-07-15",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            }
-          }
-        },
-        {
-          "date": "2026-04-15",
-          "ticker": "AMZN",
-          "name": "Amazon.com, Inc.",
-          "market": "us",
-          "broker": "Citizens",
-          "analyst": "Andrew Boone",
-          "opinion": "Buy",
-          "targetPrice": 315,
-          "currentPrice": 249.7,
-          "basePrice": 248.5,
-          "basePriceDate": "2026-04-15",
-          "upside": 26.2,
-          "sourceUrl": "https://stockanalysis.com/stocks/amzn/ratings/",
-          "sourceText": "Citizens Buy Reiterates. Price target 315 -> 315.",
-          "reportTitle": "Buy -> Buy Reiterates",
-          "reasonSummary": "Buy -> Buy Reiterates. Citizens가 Buy 의견을 제시했고 현재가 기준 상승여력은 26.2%입니다. 2026-04-15 종가 대비 목표가 괴리는 26.8%입니다.",
-          "reasonBullets": [
-            "Citizens가 2026-04-15에 Buy 의견과 목표가를 제시했습니다.",
-            "현재가 $249.7 대비 목표가는 $315입니다.",
-            "2026-04-15 종가 $248.5 대비 괴리는 26.8%입니다."
-          ],
-          "performance": {
-            "week1": {
-              "asOfDate": "2026-04-22",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            },
-            "month1": {
-              "asOfDate": "2026-05-15",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            },
-            "month3": {
-              "asOfDate": "2026-07-14",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            }
-          }
-        },
-        {
-          "date": "2026-04-15",
-          "ticker": "AMZN",
-          "name": "Amazon.com, Inc.",
-          "market": "us",
-          "broker": "Rosenblatt",
-          "analyst": "Barton Crockett",
-          "opinion": "Strong Buy",
-          "targetPrice": 296,
-          "currentPrice": 249.7,
-          "basePrice": 248.5,
-          "basePriceDate": "2026-04-15",
-          "upside": 18.5,
-          "sourceUrl": "https://stockanalysis.com/stocks/amzn/ratings/",
-          "sourceText": "Rosenblatt Strong Buy Maintains. Price target 296 -> 296.",
-          "reportTitle": "Strong Buy -> Strong Buy Maintains",
-          "reasonSummary": "Strong Buy -> Strong Buy Maintains. Rosenblatt가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 18.5%입니다. 2026-04-15 종가 대비 목표가 괴리는 19.1%입니다.",
-          "reasonBullets": [
-            "Rosenblatt가 2026-04-15에 Strong Buy 의견과 목표가를 제시했습니다.",
-            "현재가 $249.7 대비 목표가는 $296입니다.",
-            "2026-04-15 종가 $248.5 대비 괴리는 19.1%입니다."
-          ],
-          "performance": {
-            "week1": {
-              "asOfDate": "2026-04-22",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            },
-            "month1": {
-              "asOfDate": "2026-05-15",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            },
-            "month3": {
-              "asOfDate": "2026-07-14",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            }
-          }
-        },
-        {
-          "date": "2026-04-13",
-          "ticker": "AMZN",
-          "name": "Amazon.com, Inc.",
-          "market": "us",
-          "broker": "Stifel",
-          "analyst": "Mark Kelley",
-          "opinion": "Strong Buy",
-          "targetPrice": 294,
-          "currentPrice": 249.7,
-          "basePrice": 239.89,
-          "basePriceDate": "2026-04-13",
-          "upside": 17.7,
-          "sourceUrl": "https://stockanalysis.com/stocks/amzn/ratings/",
-          "sourceText": "Stifel Strong Buy Maintains. Price target 300 -> 294.",
-          "reportTitle": "Strong Buy -> Strong Buy Maintains",
-          "reasonSummary": "Strong Buy -> Strong Buy Maintains. Stifel가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 17.7%입니다. 2026-04-13 종가 대비 목표가 괴리는 22.6%입니다.",
-          "reasonBullets": [
-            "Stifel가 2026-04-13에 Strong Buy 의견과 목표가를 제시했습니다.",
-            "현재가 $249.7 대비 목표가는 $294입니다.",
-            "2026-04-13 종가 $239.89 대비 괴리는 22.6%입니다."
-          ],
-          "performance": {
-            "week1": {
-              "asOfDate": "2026-04-20",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            },
-            "month1": {
-              "asOfDate": "2026-05-13",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            },
-            "month3": {
-              "asOfDate": "2026-07-12",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            }
-          }
-        },
-        {
-          "date": "2026-04-08",
-          "ticker": "AMZN",
-          "name": "Amazon.com, Inc.",
-          "market": "us",
-          "broker": "Cantor Fitzgerald",
-          "analyst": "Deepak Mathivanan",
-          "opinion": "Buy",
-          "targetPrice": 260,
-          "currentPrice": 249.7,
-          "basePrice": 221.25,
-          "basePriceDate": "2026-04-08",
-          "upside": 4.1,
-          "sourceUrl": "https://stockanalysis.com/stocks/amzn/ratings/",
-          "sourceText": "Cantor Fitzgerald Buy Maintains. Price target 250 -> 260.",
-          "reportTitle": "Buy -> Buy Maintains",
-          "reasonSummary": "Buy -> Buy Maintains. Cantor Fitzgerald가 Buy 의견을 제시했고 현재가 기준 상승여력은 4.1%입니다. 2026-04-08 종가 대비 목표가 괴리는 17.5%입니다.",
-          "reasonBullets": [
-            "Cantor Fitzgerald가 2026-04-08에 Buy 의견과 목표가를 제시했습니다.",
-            "현재가 $249.7 대비 목표가는 $260입니다.",
-            "2026-04-08 종가 $221.25 대비 괴리는 17.5%입니다."
-          ],
-          "performance": {
-            "week1": {
-              "asOfDate": "2026-04-15",
-              "closePrice": 248.5,
-              "returnPct": 12.3,
-              "targetProgressPct": 70.3,
-              "success": true,
               "status": "complete"
             },
             "month1": {
@@ -53304,11 +53603,11 @@
           "performance": {
             "week1": {
               "asOfDate": "2026-02-19",
-              "closePrice": 0,
-              "returnPct": 0,
+              "closePrice": 411.71,
+              "returnPct": -1.3,
               "targetProgressPct": 0,
               "success": false,
-              "status": "unavailable"
+              "status": "complete"
             },
             "month1": {
               "asOfDate": "2026-03-13",
@@ -53455,9 +53754,9 @@
           ],
           "performance": {
             "week1": {
-              "asOfDate": "2026-04-16",
-              "closePrice": 234.54,
-              "returnPct": -1.6,
+              "asOfDate": "2026-04-17",
+              "closePrice": 233.12,
+              "returnPct": -2.2,
               "targetProgressPct": 0,
               "success": false,
               "status": "complete"
@@ -53853,11 +54152,11 @@
           "performance": {
             "week1": {
               "asOfDate": "2026-03-02",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
+              "closePrice": 41.58,
+              "returnPct": 19.7,
+              "targetProgressPct": 39.6,
               "success": false,
-              "status": "unavailable"
+              "status": "complete"
             },
             "month1": {
               "asOfDate": "2026-03-25",
@@ -53902,11 +54201,11 @@
           "performance": {
             "week1": {
               "asOfDate": "2026-02-20",
-              "closePrice": 0,
-              "returnPct": 0,
+              "closePrice": 37.75,
+              "returnPct": -27,
               "targetProgressPct": 0,
               "success": false,
-              "status": "unavailable"
+              "status": "complete"
             },
             "month1": {
               "asOfDate": "2026-03-13",
@@ -58562,11 +58861,11 @@
           "performance": {
             "week1": {
               "asOfDate": "2026-02-06",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
+              "closePrice": 278.12,
+              "returnPct": 7.2,
+              "targetProgressPct": 46,
               "success": false,
-              "status": "unavailable"
+              "status": "complete"
             },
             "month1": {
               "asOfDate": "2026-02-27",
@@ -58611,11 +58910,11 @@
           "performance": {
             "week1": {
               "asOfDate": "2026-02-06",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
+              "closePrice": 278.12,
+              "returnPct": 7.2,
+              "targetProgressPct": 28.4,
               "success": false,
-              "status": "unavailable"
+              "status": "complete"
             },
             "month1": {
               "asOfDate": "2026-02-27",
@@ -58910,11 +59209,11 @@
           "performance": {
             "week1": {
               "asOfDate": "2026-02-06",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
+              "closePrice": 331.58,
+              "returnPct": 3,
+              "targetProgressPct": 13.3,
               "success": false,
-              "status": "unavailable"
+              "status": "complete"
             },
             "month1": {
               "asOfDate": "2026-02-27",
@@ -62740,11 +63039,11 @@
           "performance": {
             "week1": {
               "asOfDate": "2026-03-04",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
+              "closePrice": 127.81,
+              "returnPct": 1.6,
+              "targetProgressPct": 8.5,
               "success": false,
-              "status": "unavailable"
+              "status": "complete"
             },
             "month1": {
               "asOfDate": "2026-03-27",
@@ -62789,11 +63088,11 @@
           "performance": {
             "week1": {
               "asOfDate": "2026-03-02",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
+              "closePrice": 127.1,
+              "returnPct": 1,
+              "targetProgressPct": 14,
               "success": false,
-              "status": "unavailable"
+              "status": "complete"
             },
             "month1": {
               "asOfDate": "2026-03-25",
@@ -62838,11 +63137,11 @@
           "performance": {
             "week1": {
               "asOfDate": "2026-02-27",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
+              "closePrice": 127.95,
+              "returnPct": 4,
+              "targetProgressPct": 22.5,
               "success": false,
-              "status": "unavailable"
+              "status": "complete"
             },
             "month1": {
               "asOfDate": "2026-03-20",
@@ -62887,11 +63186,11 @@
           "performance": {
             "week1": {
               "asOfDate": "2026-02-27",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
+              "closePrice": 127.95,
+              "returnPct": 4,
+              "targetProgressPct": 45,
               "success": false,
-              "status": "unavailable"
+              "status": "complete"
             },
             "month1": {
               "asOfDate": "2026-03-20",
@@ -63991,9 +64290,9 @@
           ],
           "performance": {
             "week1": {
-              "asOfDate": "2026-04-16",
-              "closePrice": 151.98,
-              "returnPct": -0.3,
+              "asOfDate": "2026-04-17",
+              "closePrice": 144.6,
+              "returnPct": -5.2,
               "targetProgressPct": 0,
               "success": false,
               "status": "complete"
@@ -64290,9 +64589,9 @@
           ],
           "performance": {
             "week1": {
-              "asOfDate": "2026-04-16",
-              "closePrice": 143.11,
-              "returnPct": -1.4,
+              "asOfDate": "2026-04-17",
+              "closePrice": 144.96,
+              "returnPct": -0.1,
               "targetProgressPct": 0,
               "success": false,
               "status": "complete"
@@ -69524,11 +69823,11 @@
           "performance": {
             "week1": {
               "asOfDate": "2026-02-12",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
+              "closePrice": 284.37,
+              "returnPct": 5.9,
+              "targetProgressPct": 19.4,
               "success": false,
-              "status": "unavailable"
+              "status": "complete"
             },
             "month1": {
               "asOfDate": "2026-03-06",
@@ -69573,11 +69872,11 @@
           "performance": {
             "week1": {
               "asOfDate": "2026-02-09",
-              "closePrice": 0,
-              "returnPct": 0,
+              "closePrice": 275.7,
+              "returnPct": -3.5,
               "targetProgressPct": 0,
               "success": false,
-              "status": "unavailable"
+              "status": "complete"
             },
             "month1": {
               "asOfDate": "2026-03-04",
@@ -69622,11 +69921,11 @@
           "performance": {
             "week1": {
               "asOfDate": "2026-02-09",
-              "closePrice": 0,
-              "returnPct": 0,
+              "closePrice": 275.7,
+              "returnPct": -3.5,
               "targetProgressPct": 0,
               "success": false,
-              "status": "unavailable"
+              "status": "complete"
             },
             "month1": {
               "asOfDate": "2026-03-04",
@@ -70814,305 +71113,6 @@
               "targetProgressPct": 0,
               "success": false,
               "status": "pending"
-            }
-          }
-        }
-      ]
-    },
-    "us:JPM": {
-      "ticker": "JPM",
-      "name": "JPMorgan Chase & Co.",
-      "market": "us",
-      "latestReportDate": "2026-04-06",
-      "latestBroker": "Evercore ISI Group",
-      "latestOpinion": "Buy",
-      "latestTargetPrice": 320,
-      "latestCurrentPrice": 309.95,
-      "latestBasePrice": 295.45,
-      "avgUpside": 12.9,
-      "reportCount": 6,
-      "reasonSummary": "Buy -> Buy Maintains. Evercore ISI Group가 Buy 의견을 제시했고 현재가 기준 상승여력은 3.2%입니다. 2026-04-06 종가 대비 목표가 괴리는 8.3%입니다.",
-      "reasonBullets": [
-        "Evercore ISI Group가 2026-04-06에 Buy 의견과 목표가를 제시했습니다.",
-        "현재가 $309.95 대비 목표가는 $320입니다.",
-        "2026-04-06 종가 $295.45 대비 괴리는 8.3%입니다."
-      ],
-      "investmentLogic": {
-        "summary": "Buy -> Buy Maintains",
-        "bullets": [
-          "Buy -> Buy Maintains",
-          "Buy -> Buy Maintains Evercore ISI Group Buy Maintains.",
-          "Price target 350 -> 320."
-        ]
-      },
-      "estimateRevision": {
-        "summary": "유지 신호입니다. 리포트 원문에서 추정치 관련 표현을 기준으로 판단했습니다.",
-        "bullets": [
-          "Buy -> Buy Maintains Evercore ISI Group Buy Maintains.",
-          "Price target 350 -> 320.",
-          "Buy -> Buy Maintains."
-        ],
-        "signal": "flat"
-      },
-      "valuation": {
-        "summary": "현재가 $309.95 대비 목표가 $320가 제시돼 밸류에이션 여력을 확인할 수 있습니다.",
-        "bullets": [
-          "Buy -> Buy Reiterates Piper Sandler Buy Reiterates.",
-          "Piper Sandler가 Buy 의견을 제시했고 현재가 기준 상승여력은 4.9%입니다.",
-          "현재가 대비 목표가 상승여력은 3.2%입니다."
-        ]
-      },
-      "sectorCycle": {
-        "summary": "Buy -> Buy Maintains Evercore ISI Group Buy Maintains.",
-        "bullets": [
-          "Buy -> Buy Maintains Evercore ISI Group Buy Maintains.",
-          "Price target 350 -> 320.",
-          "Buy -> Buy Maintains."
-        ]
-      },
-      "relatedReports": [
-        {
-          "date": "2026-04-06",
-          "ticker": "JPM",
-          "name": "JPMorgan Chase & Co.",
-          "market": "us",
-          "broker": "Evercore ISI Group",
-          "analyst": "Glenn Schorr",
-          "opinion": "Buy",
-          "targetPrice": 320,
-          "currentPrice": 309.95,
-          "basePrice": 295.45,
-          "basePriceDate": "2026-04-06",
-          "upside": 3.2,
-          "sourceUrl": "https://stockanalysis.com/stocks/jpm/ratings/",
-          "sourceText": "Evercore ISI Group Buy Maintains. Price target 350 -> 320.",
-          "reportTitle": "Buy -> Buy Maintains",
-          "reasonSummary": "Buy -> Buy Maintains. Evercore ISI Group가 Buy 의견을 제시했고 현재가 기준 상승여력은 3.2%입니다. 2026-04-06 종가 대비 목표가 괴리는 8.3%입니다.",
-          "reasonBullets": [
-            "Evercore ISI Group가 2026-04-06에 Buy 의견과 목표가를 제시했습니다.",
-            "현재가 $309.95 대비 목표가는 $320입니다.",
-            "2026-04-06 종가 $295.45 대비 괴리는 8.3%입니다."
-          ],
-          "performance": {
-            "week1": {
-              "asOfDate": "2026-04-13",
-              "closePrice": 313.68,
-              "returnPct": 6.2,
-              "targetProgressPct": 74.3,
-              "success": true,
-              "status": "complete"
-            },
-            "month1": {
-              "asOfDate": "2026-05-06",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            },
-            "month3": {
-              "asOfDate": "2026-07-05",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            }
-          }
-        },
-        {
-          "date": "2026-03-30",
-          "ticker": "JPM",
-          "name": "JPMorgan Chase & Co.",
-          "market": "us",
-          "broker": "Piper Sandler",
-          "analyst": "Scott Schrier",
-          "opinion": "Buy",
-          "targetPrice": 325,
-          "currentPrice": 309.95,
-          "basePrice": 283.77,
-          "basePriceDate": "2026-03-30",
-          "upside": 4.9,
-          "sourceUrl": "https://stockanalysis.com/stocks/jpm/ratings/",
-          "sourceText": "Piper Sandler Buy Reiterates. Price target 345 -> 325.",
-          "reportTitle": "Buy -> Buy Reiterates",
-          "reasonSummary": "Buy -> Buy Reiterates. Piper Sandler가 Buy 의견을 제시했고 현재가 기준 상승여력은 4.9%입니다. 2026-03-30 종가 대비 목표가 괴리는 14.5%입니다.",
-          "reasonBullets": [
-            "Piper Sandler가 2026-03-30에 Buy 의견과 목표가를 제시했습니다.",
-            "현재가 $309.95 대비 목표가는 $325입니다.",
-            "2026-03-30 종가 $283.77 대비 괴리는 14.5%입니다."
-          ],
-          "performance": {
-            "week1": {
-              "asOfDate": "2026-04-06",
-              "closePrice": 295.45,
-              "returnPct": 4.1,
-              "targetProgressPct": 28.3,
-              "success": false,
-              "status": "complete"
-            },
-            "month1": {
-              "asOfDate": "2026-04-29",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            },
-            "month3": {
-              "asOfDate": "2026-06-28",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            }
-          }
-        },
-        {
-          "date": "2026-02-17",
-          "ticker": "JPM",
-          "name": "JPMorgan Chase & Co.",
-          "market": "us",
-          "broker": "Wells Fargo",
-          "analyst": "Mike Mayo",
-          "opinion": "Buy",
-          "targetPrice": 350,
-          "currentPrice": 309.95,
-          "basePrice": 307.13,
-          "basePriceDate": "2026-02-17",
-          "upside": 12.9,
-          "sourceUrl": "https://stockanalysis.com/stocks/jpm/ratings/",
-          "sourceText": "Wells Fargo Buy Maintains. Price target 360 -> 350.",
-          "reportTitle": "Buy -> Buy Maintains",
-          "reasonSummary": "Buy -> Buy Maintains. Wells Fargo가 Buy 의견을 제시했고 현재가 기준 상승여력은 12.9%입니다. 2026-02-17 종가 대비 목표가 괴리는 14%입니다.",
-          "reasonBullets": [
-            "Wells Fargo가 2026-02-17에 Buy 의견과 목표가를 제시했습니다.",
-            "현재가 $309.95 대비 목표가는 $350입니다.",
-            "2026-02-17 종가 $307.13 대비 괴리는 14%입니다."
-          ],
-          "performance": {
-            "week1": {
-              "asOfDate": "2026-02-24",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "unavailable"
-            },
-            "month1": {
-              "asOfDate": "2026-03-19",
-              "closePrice": 287.97,
-              "returnPct": -6.2,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "complete"
-            },
-            "month3": {
-              "asOfDate": "2026-05-18",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            }
-          }
-        },
-        {
-          "date": "2026-01-05",
-          "ticker": "JPM",
-          "name": "JPMorgan Chase & Co.",
-          "market": "us",
-          "broker": "Barclays",
-          "analyst": "Jason Goldberg",
-          "opinion": "Buy",
-          "targetPrice": 391,
-          "currentPrice": 309.95,
-          "basePrice": 334.04,
-          "basePriceDate": "2026-01-05",
-          "upside": 26.1,
-          "sourceUrl": "https://stockanalysis.com/stocks/jpm/ratings/",
-          "sourceText": "Barclays Buy Maintains. Price target 342 -> 391.",
-          "reportTitle": "Buy -> Buy Maintains",
-          "reasonSummary": "Buy -> Buy Maintains. Barclays가 Buy 의견을 제시했고 현재가 기준 상승여력은 26.1%입니다. 2026-01-05 종가 대비 목표가 괴리는 17.1%입니다.",
-          "reasonBullets": [
-            "Barclays가 2026-01-05에 Buy 의견과 목표가를 제시했습니다.",
-            "현재가 $309.95 대비 목표가는 $391입니다.",
-            "2026-01-05 종가 $334.04 대비 괴리는 17.1%입니다."
-          ],
-          "performance": {
-            "week1": {
-              "asOfDate": "2026-01-12",
-              "closePrice": 324.49,
-              "returnPct": -2.9,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "complete"
-            },
-            "month1": {
-              "asOfDate": "2026-02-04",
-              "closePrice": 317.27,
-              "returnPct": -5,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "complete"
-            },
-            "month3": {
-              "asOfDate": "2026-04-02",
-              "closePrice": 294.6,
-              "returnPct": -11.8,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "complete"
-            }
-          }
-        },
-        {
-          "date": "2025-12-17",
-          "ticker": "JPM",
-          "name": "JPMorgan Chase & Co.",
-          "market": "us",
-          "broker": "Keefe, Bruyette & Woods",
-          "analyst": "David Konrad",
-          "opinion": "Buy",
-          "targetPrice": 363,
-          "currentPrice": 309.95,
-          "basePrice": 314.98,
-          "basePriceDate": "2025-12-17",
-          "upside": 17.1,
-          "sourceUrl": "https://stockanalysis.com/stocks/jpm/ratings/",
-          "sourceText": "Keefe, Bruyette & Woods Buy Maintains. Price target 354 -> 363.",
-          "reportTitle": "Buy -> Buy Maintains",
-          "reasonSummary": "Buy -> Buy Maintains. Keefe, Bruyette & Woods가 Buy 의견을 제시했고 현재가 기준 상승여력은 17.1%입니다. 2025-12-17 종가 대비 목표가 괴리는 15.2%입니다.",
-          "reasonBullets": [
-            "Keefe, Bruyette & Woods가 2025-12-17에 Buy 의견과 목표가를 제시했습니다.",
-            "현재가 $309.95 대비 목표가는 $363입니다.",
-            "2025-12-17 종가 $314.98 대비 괴리는 15.2%입니다."
-          ],
-          "performance": {
-            "week1": {
-              "asOfDate": "2025-12-24",
-              "closePrice": 329.17,
-              "returnPct": 4.5,
-              "targetProgressPct": 29.6,
-              "success": false,
-              "status": "complete"
-            },
-            "month1": {
-              "asOfDate": "2026-01-16",
-              "closePrice": 312.47,
-              "returnPct": -0.8,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "complete"
-            },
-            "month3": {
-              "asOfDate": "2026-03-17",
-              "closePrice": 286.89,
-              "returnPct": -8.9,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "complete"
             }
           }
         }
@@ -74825,10 +74825,10 @@
               "status": "complete"
             },
             "month1": {
-              "asOfDate": "2026-04-16",
-              "closePrice": 198.35,
-              "returnPct": 10,
-              "targetProgressPct": 16.8,
+              "asOfDate": "2026-04-17",
+              "closePrice": 200.51,
+              "returnPct": 11.1,
+              "targetProgressPct": 18.9,
               "success": false,
               "status": "complete"
             },

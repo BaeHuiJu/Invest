@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-18T20:46:22.227Z",
+  "generatedAt": "2026-04-18T22:25:51.910Z",
   "maxDays": 365,
   "reports": [
     {
@@ -33592,11 +33592,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-27",
-          "closePrice": 127.95,
-          "returnPct": 4,
-          "targetProgressPct": 29.2,
+          "closePrice": 0,
+          "returnPct": 0,
+          "targetProgressPct": 0,
           "success": false,
-          "status": "complete"
+          "status": "unavailable"
         },
         "month1": {
           "asOfDate": "2026-03-20",

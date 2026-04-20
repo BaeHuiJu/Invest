@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-20T22:56:08.436Z",
+  "generatedAt": "2026-04-20T23:52:29.752Z",
   "maxDays": 365,
   "reports": [
     {
@@ -26004,12 +26004,12 @@
           "status": "complete"
         },
         "month1": {
-          "asOfDate": "2026-04-18",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
+          "asOfDate": "2026-04-17",
+          "closePrice": 201.68,
+          "returnPct": 12.9,
+          "targetProgressPct": 16,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month3": {
           "asOfDate": "2026-06-17",
@@ -26348,11 +26348,11 @@
         },
         "month1": {
           "asOfDate": "2026-04-17",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
+          "closePrice": 201.68,
+          "returnPct": 11.8,
+          "targetProgressPct": 20,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month3": {
           "asOfDate": "2026-06-16",
@@ -34572,11 +34572,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-27",
-          "closePrice": 127.95,
-          "returnPct": 4,
-          "targetProgressPct": 45,
+          "closePrice": 0,
+          "returnPct": 0,
+          "targetProgressPct": 0,
           "success": false,
-          "status": "complete"
+          "status": "unavailable"
         },
         "month1": {
           "asOfDate": "2026-03-20",
@@ -34670,11 +34670,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-27",
-          "closePrice": 127.95,
-          "returnPct": 4,
-          "targetProgressPct": 31,
+          "closePrice": 0,
+          "returnPct": 0,
+          "targetProgressPct": 0,
           "success": false,
-          "status": "complete"
+          "status": "unavailable"
         },
         "month1": {
           "asOfDate": "2026-03-20",
@@ -34719,11 +34719,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-27",
-          "closePrice": 127.95,
-          "returnPct": 4,
-          "targetProgressPct": 18.4,
+          "closePrice": 0,
+          "returnPct": 0,
+          "targetProgressPct": 0,
           "success": false,
-          "status": "complete"
+          "status": "unavailable"
         },
         "month1": {
           "asOfDate": "2026-03-20",
@@ -34768,11 +34768,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-27",
-          "closePrice": 127.95,
-          "returnPct": 4,
-          "targetProgressPct": 29.2,
+          "closePrice": 0,
+          "returnPct": 0,
+          "targetProgressPct": 0,
           "success": false,
-          "status": "complete"
+          "status": "unavailable"
         },
         "month1": {
           "asOfDate": "2026-03-20",
@@ -34817,11 +34817,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-27",
-          "closePrice": 127.95,
-          "returnPct": 4,
-          "targetProgressPct": 29.2,
+          "closePrice": 0,
+          "returnPct": 0,
+          "targetProgressPct": 0,
           "success": false,
-          "status": "complete"
+          "status": "unavailable"
         },
         "month1": {
           "asOfDate": "2026-03-20",
@@ -35891,496 +35891,6 @@
         "하나증권가 2026-02-13에 Buy 의견과 목표가를 제시했습니다.",
         "현재가 111,000원 대비 목표가는 165,000원입니다.",
         "2026-02-13 종가 111,000원 대비 괴리는 48.6%입니다."
-      ],
-      "performance": {
-        "week1": {
-          "asOfDate": "2026-02-20",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "unavailable"
-        },
-        "month1": {
-          "asOfDate": "2026-03-15",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "unavailable"
-        },
-        "month3": {
-          "asOfDate": "2026-05-14",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "pending"
-        }
-      }
-    },
-    {
-      "date": "2026-02-13",
-      "ticker": "035720",
-      "name": "카카오",
-      "market": "korea",
-      "broker": "하나증권",
-      "analyst": "",
-      "opinion": "Buy",
-      "targetPrice": 75000,
-      "currentPrice": 48850,
-      "basePrice": 48850,
-      "basePriceDate": "2026-02-13",
-      "upside": 53.5,
-      "sourceUrl": "https://finance.naver.com/research/company_read.naver?nid=90531&page=1",
-      "reportTitle": "톡 DA 성과 확인. AI 에이전트 외부 확장이 ..",
-      "sourceText": "4Q25 Re: 컨센서스 상회 카카오는 4분기 연결 기준 영업수익 2조 1,332억원(+9.2%YoY, +2.5%QoQ), 영업이익 2,034억원(+136.4%YoY, -6.8%QoQ, OPM 9.5%)으로 컨센서스를 상회했다. 주요 요인은 1) 모빌리티/카카오페이의 고성장과 2) 에스엠의 서프라이즈다. 4분기 플랫폼 부문 매출액은 1조 2,226억원(+17.2%YoY, +15.9%QoQ)이다. 톡비즈 매출액은 6,271억원(+12.6%YoY, +17.3%QoQ)을 기록했다. 톡비즈 광고 매출이 전년 대비 +16% 증가하며 톡 개편 효과를 입증했다. 비즈니스 메시지(+19%YoY)의 고성장, DA(+18%YoY)의 반등에 기인한다. 비즈니스 메시지는 브랜드 메시지 출시로 발송량 증가하고 있으며 DA는 신규지면 확대 효과가 온기 반영되었다. 4분기 플랫폼 기타는 5,239억원(+29.8%YoY, +17.1%QoQ)을 기록했다. 모빌리티가 두 자릿 수 성장, 카카오페이가 +20% 이상 고성장했으며 카카오인베스트먼트가 카카오게임즈로부터 카카오VX를 인수하여 계정 변경된 영향이다.",
-      "reasonSummary": "톡 DA 성과 확인. AI 에이전트 외부 확장이 ... 하나증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 53.5%입니다. 2026-02-13 종가 대비 목표가 괴리는 53.5%입니다.",
-      "reasonBullets": [
-        "하나증권가 2026-02-13에 Buy 의견과 목표가를 제시했습니다.",
-        "현재가 48,850원 대비 목표가는 75,000원입니다.",
-        "2026-02-13 종가 48,850원 대비 괴리는 53.5%입니다."
-      ],
-      "performance": {
-        "week1": {
-          "asOfDate": "2026-02-20",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "unavailable"
-        },
-        "month1": {
-          "asOfDate": "2026-03-15",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "unavailable"
-        },
-        "month3": {
-          "asOfDate": "2026-05-14",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "pending"
-        }
-      }
-    },
-    {
-      "date": "2026-02-13",
-      "ticker": "032350",
-      "name": "롯데관광개발",
-      "market": "korea",
-      "broker": "하나증권",
-      "analyst": "",
-      "opinion": "Buy",
-      "targetPrice": 31000,
-      "currentPrice": 19520,
-      "basePrice": 19520,
-      "basePriceDate": "2026-02-13",
-      "upside": 58.8,
-      "sourceUrl": "https://finance.naver.com/research/company_read.naver?nid=90529&page=1",
-      "reportTitle": "1회성 비용 이슈 제외하면 컨센서스 부합",
-      "sourceText": "중장기 목표 시가총액 3조원까지는 변함 없는 레져 최선호주 2025년 연초 대비 연말까지 방문객 수, 테이블 수, 드랍액 등이 모두 우상향 했던 만큼 온기로 반영될 올해의 실적 역시 지속 상향될 수 있을 것이며, 한일령의 수혜까지 더해질 것이다. 올해 하반기부터는 리파이낸싱 및 차입금 상환을 통해 유의미한 당기순이익 증가도 예상된다. 현 주가는 2027년 예상 P/E 약 16배 수준으로 저평가이나 추가적인 이익 상향 가능성도 매우 높은 만큼 지속해서 레져 업종 내 최선호주로 제시한다.",
-      "reasonSummary": "1회성 비용 이슈 제외하면 컨센서스 부합. 하나증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 58.8%입니다. 2026-02-13 종가 대비 목표가 괴리는 58.8%입니다.",
-      "reasonBullets": [
-        "하나증권가 2026-02-13에 Buy 의견과 목표가를 제시했습니다.",
-        "현재가 19,520원 대비 목표가는 31,000원입니다.",
-        "2026-02-13 종가 19,520원 대비 괴리는 58.8%입니다."
-      ],
-      "performance": {
-        "week1": {
-          "asOfDate": "2026-02-20",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "unavailable"
-        },
-        "month1": {
-          "asOfDate": "2026-03-15",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "unavailable"
-        },
-        "month3": {
-          "asOfDate": "2026-05-14",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "pending"
-        }
-      }
-    },
-    {
-      "date": "2026-02-13",
-      "ticker": "032350",
-      "name": "롯데관광개발",
-      "market": "korea",
-      "broker": "한화투자증권",
-      "analyst": "",
-      "opinion": "Buy",
-      "targetPrice": 32000,
-      "currentPrice": 19520,
-      "basePrice": 19520,
-      "basePriceDate": "2026-02-13",
-      "upside": 63.9,
-      "sourceUrl": "https://finance.naver.com/research/company_read.naver?nid=90528&page=1",
-      "reportTitle": "[4Q25 Review] 순이익 서프라이즈!",
-      "sourceText": "4Q25 Review: 영업이익은 컨센서스 하회했으나 분기 순이익 483억원은 서프라이즈 - 롯데관광개발의 4분기 매출액과 영업이익은 각각 1,871억원, 442억원을 기록. 영업이익 기준 시장 기대치(471억원)와 당사 추정치(499억원)을 모두 하회. 다만 분기 순이익은 483억원이라는 다소 놀라운 숫자를 기록 - 매출액은 예상에서 크게 벗어나지 않은 수준이었으나, 영업이익이 당초 기대치를 하회한 가장 큰 원인은 지급수수료의 추정치와 실제 발생액의 차이에 있음. 호텔 위탁 운영 계약에 따라 매년 4분기 위탁 운영 수수료 추가 납부가 발생. 추가 납부의 기준은 카지노는 제외된 호텔 매출액. 지난해 카지노 실적은 가파르게 성장했으나 호텔 실적은 다소 정체되며 ‘24년에서 크게 줄어들지 않은 수준의 위탁 운영 수수료 추가 납부가 있었던 것으로 추정 - 분기 순이익 483억원은 당사 추정치(81억원) 및 시장 컨센서스(133억원)를 크게 상회. 다만 세전 이익은 약 73억원 수준으로, 이는 당초 당사 추정치(84억원)에서 크게 벗어나지 않는 수준. 지난 분기 순이익 서프라이즈는 ‘25년 연결 납세 적용에 따른 이연법인세 자산 증가에서 기인. 결손금이 다소 쌓여 있는 별도 법인과 카지노(LTE)를 하나의 과세단위로 간주함에 따라 일시적으로 이연법인세 자산 증가. 회계상 약 400억원 환입되는 효과를 가져옴. 회계적 효과이나, 이로써 동사 ‘25년 연간 순이익은 371억원으로 연간 순이익 흑자전환에 성공. 10% 안팎으로 추정되는 차입 금리를 생각보다 이른 시점에 회사에 우호적인 수준으로 낮출 수 있다는 가능성을 크게 열어둔다는 점에서 긍정적으로 평가",
-      "reasonSummary": "[4Q25 Review] 순이익 서프라이즈!. 한화투자증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 63.9%입니다. 2026-02-13 종가 대비 목표가 괴리는 63.9%입니다.",
-      "reasonBullets": [
-        "한화투자증권가 2026-02-13에 Buy 의견과 목표가를 제시했습니다.",
-        "현재가 19,520원 대비 목표가는 32,000원입니다.",
-        "2026-02-13 종가 19,520원 대비 괴리는 63.9%입니다."
-      ],
-      "performance": {
-        "week1": {
-          "asOfDate": "2026-02-20",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "unavailable"
-        },
-        "month1": {
-          "asOfDate": "2026-03-15",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "unavailable"
-        },
-        "month3": {
-          "asOfDate": "2026-05-14",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "pending"
-        }
-      }
-    },
-    {
-      "date": "2026-02-13",
-      "ticker": "035720",
-      "name": "카카오",
-      "market": "korea",
-      "broker": "유안타증권",
-      "analyst": "",
-      "opinion": "Buy",
-      "targetPrice": 80000,
-      "currentPrice": 48850,
-      "basePrice": 48850,
-      "basePriceDate": "2026-02-13",
-      "upside": 63.8,
-      "sourceUrl": "https://finance.naver.com/research/company_read.naver?nid=90524&page=1",
-      "reportTitle": "톡개편에 의한 실적 개선",
-      "sourceText": "4Q25 Review 매출액 2조 1,332억원 YoY+9%, 영업이익 2,034억원 YoY+136%, 지배순이익 428억원 흑자전환. 시장 컨센서스 상회 [플랫폼] [광고] 3,730억원 YoY+16%, QoQ +15%: 비즈니스 메시지 YoY+19%, 톡개편에 따른 신규지면 확대와 체류시간 증가로 톡DA YoY+18% [커머스] 2,530억원 YoY+8% : 추석 및 연말 프로모션 효과, 자기 구매 증가 [플랫폼 기타] 5,239억원 YoY+30%, QoQ +17% : 택시, 주차, 퀵 중심의 ‘모빌리티’ 고성장 지속. 결제, 금융, 플랫폼 고른 성장으로 ‘페이’ 역대 최대 분기 영업이익 실현 [콘텐츠] [게임] 979억원 YoY-40%, [뮤직] 5,251억원 YoY +12% [스토리] 1,918억원 YoY-5%, 피코마 1,120억원 일본 웹툰시장 성장 둔화 등 엔화기준 YoY-6% [미디어] 958억원 YoY+30%",
-      "reasonSummary": "톡개편에 의한 실적 개선. 유안타증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 63.8%입니다. 2026-02-13 종가 대비 목표가 괴리는 63.8%입니다.",
-      "reasonBullets": [
-        "유안타증권가 2026-02-13에 Buy 의견과 목표가를 제시했습니다.",
-        "현재가 48,850원 대비 목표가는 80,000원입니다.",
-        "2026-02-13 종가 48,850원 대비 괴리는 63.8%입니다."
-      ],
-      "performance": {
-        "week1": {
-          "asOfDate": "2026-02-20",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "unavailable"
-        },
-        "month1": {
-          "asOfDate": "2026-03-15",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "unavailable"
-        },
-        "month3": {
-          "asOfDate": "2026-05-14",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "pending"
-        }
-      }
-    },
-    {
-      "date": "2026-02-13",
-      "ticker": "028670",
-      "name": "팬오션",
-      "market": "korea",
-      "broker": "유안타증권",
-      "analyst": "",
-      "opinion": "Buy",
-      "targetPrice": 6200,
-      "currentPrice": 5680,
-      "basePrice": 5680,
-      "basePriceDate": "2026-02-13",
-      "upside": 9.2,
-      "sourceUrl": "https://finance.naver.com/research/company_read.naver?nid=90523&page=1",
-      "reportTitle": "사업 포트폴리오 다각화",
-      "sourceText": "4Q25 매출액 1조 4,763억원, 영업이익 1,304억원 4Q25 매출액과 영업이익은 각각 1조 4,763억원(YoY -11.9%), 1,304억원(YoY +18.8%, OPM 8.8%)으로, 영업이익 기준 컨센서스에 부합. 벌크 부문 영업이익은 610억원(YoY -0.3%, OPM 7.6%). 4분기 평균 BDI 지수는 2,159pt(YoY +47.4%)로 Capesize 중심의 시황 호조를 보였으며, 동사는 보수적인 선대 운영 전략을 유지하며 전년 수준의 이익을 시현. 탱커 부문 영업이익은 211억원(YoY +8.0%, OPM 28.5%). OPEC+ 감산 완화, 지정학적 이슈 등으로 VLCC, MR 운임 모두 강세를 기록하면서 수익성이 개선된 것으로 판단. LNG 부문 영업이익은 396억원(YoY +159.3%, OPM 43.8%). 이번 분기에도 장기계약 기반의 높은 이익 성장률과 수익성을 기록.",
-      "reasonSummary": "사업 포트폴리오 다각화. 유안타증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 9.2%입니다. 2026-02-13 종가 대비 목표가 괴리는 9.2%입니다.",
-      "reasonBullets": [
-        "유안타증권가 2026-02-13에 Buy 의견과 목표가를 제시했습니다.",
-        "현재가 5,680원 대비 목표가는 6,200원입니다.",
-        "2026-02-13 종가 5,680원 대비 괴리는 9.2%입니다."
-      ],
-      "performance": {
-        "week1": {
-          "asOfDate": "2026-02-20",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "unavailable"
-        },
-        "month1": {
-          "asOfDate": "2026-03-15",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "unavailable"
-        },
-        "month3": {
-          "asOfDate": "2026-05-14",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "pending"
-        }
-      }
-    },
-    {
-      "date": "2026-02-13",
-      "ticker": "100120",
-      "name": "뷰웍스",
-      "market": "korea",
-      "broker": "미래에셋증권",
-      "analyst": "",
-      "opinion": "매수",
-      "targetPrice": 35000,
-      "currentPrice": 28400,
-      "basePrice": 28400,
-      "basePriceDate": "2026-02-13",
-      "upside": 23.2,
-      "sourceUrl": "https://finance.naver.com/research/company_read.naver?nid=90518&page=1",
-      "reportTitle": "꾸준한데 싼 의료기기 소부장 기업",
-      "sourceText": "4Q25 Review: 매출 및 영업이익 시장 기대치 부합 매출은 686억원(15% YoY)을 기록하며 시장 기대치에 부합했다. 영업이익도 85억원(OPM 12%, 23% YoY)으로 시장 기대치에 부합했다. 품목별 매출(연결 기준)로는, 의료 디텍터가 307억원(12% YoY), 산업용 카메라는 131억원(28% YoY), 치과 디텍터는 113억원(7% YoY), NDT는 52억원(-15% YoY), 기타 사업은 83억원(56% YoY)을 기록했다. 지역별(별도 기준)로는 미국은 52억원(-5% YoY), 유럽 260억원(26% YoY), 일본 16억원(-26% YoY), 중국 54억원(76% YoY), 국내 134억원(20% YoY), 기타 지역 138억원(6% YoY)를 기록했다.",
-      "reasonSummary": "꾸준한데 싼 의료기기 소부장 기업. 미래에셋증권가 매수 의견을 제시했고 현재가 기준 상승여력은 23.2%입니다. 2026-02-13 종가 대비 목표가 괴리는 23.2%입니다.",
-      "reasonBullets": [
-        "미래에셋증권가 2026-02-13에 매수 의견과 목표가를 제시했습니다.",
-        "현재가 28,400원 대비 목표가는 35,000원입니다.",
-        "2026-02-13 종가 28,400원 대비 괴리는 23.2%입니다."
-      ],
-      "performance": {
-        "week1": {
-          "asOfDate": "2026-02-20",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "unavailable"
-        },
-        "month1": {
-          "asOfDate": "2026-03-15",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "unavailable"
-        },
-        "month3": {
-          "asOfDate": "2026-05-14",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "pending"
-        }
-      }
-    },
-    {
-      "date": "2026-02-13",
-      "ticker": "352820",
-      "name": "하이브",
-      "market": "korea",
-      "broker": "IBK투자증권",
-      "analyst": "",
-      "opinion": "매수",
-      "targetPrice": 480000,
-      "currentPrice": 255000,
-      "basePrice": 255000,
-      "basePriceDate": "2026-02-13",
-      "upside": 88.2,
-      "sourceUrl": "https://finance.naver.com/research/company_read.naver?nid=90516&page=1",
-      "reportTitle": "BTS 월드투어 추정치 상향",
-      "sourceText": "4Q25 Review: 영업이익 46억원(-92.9% YoY) 동사의 2025년 4분기 실적은 매출액 7,164억원(-1.4% YoY, -1.5% QoQ), 영업이익 46억원(-92.9% YoY, 흑전 QoQ, OPM 0.6%)으로 시장기대치(40억원)에 부합했다. 음반원 매출(2,180억원, -13.4% YoY) 및 공연 매출(1,751억원, -7.3% YoY)은 4분기 컴백과 투어활동이 상대적으로 적어 부진했으나, 콘텐츠 매출(1,006억원, +61.0% YoY)이 시즌스그리팅, 지민x정국 디즈니+ 오리지널 출연료, 아키텍트 게임매출 반영으로 큰 폭 개선됐다. 다만, 북미법인 구조개편 잔여비용 외 Santos Bravos 초기 투자비 및 아키텍트 마케팅비가 대규모로 반영된 점이 기대치 하회의 주 요인이다.",
-      "reasonSummary": "BTS 월드투어 추정치 상향. IBK투자증권가 매수 의견을 제시했고 현재가 기준 상승여력은 88.2%입니다. 2026-02-13 종가 대비 목표가 괴리는 88.2%입니다.",
-      "reasonBullets": [
-        "IBK투자증권가 2026-02-13에 매수 의견과 목표가를 제시했습니다.",
-        "현재가 255,000원 대비 목표가는 480,000원입니다.",
-        "2026-02-13 종가 255,000원 대비 괴리는 88.2%입니다."
-      ],
-      "performance": {
-        "week1": {
-          "asOfDate": "2026-02-20",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "unavailable"
-        },
-        "month1": {
-          "asOfDate": "2026-03-15",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "unavailable"
-        },
-        "month3": {
-          "asOfDate": "2026-05-14",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "pending"
-        }
-      }
-    },
-    {
-      "date": "2026-02-13",
-      "ticker": "032350",
-      "name": "롯데관광개발",
-      "market": "korea",
-      "broker": "IBK투자증권",
-      "analyst": "",
-      "opinion": "매수",
-      "targetPrice": 32000,
-      "currentPrice": 19520,
-      "basePrice": 19520,
-      "basePriceDate": "2026-02-13",
-      "upside": 63.9,
-      "sourceUrl": "https://finance.naver.com/research/company_read.naver?nid=90515&page=1",
-      "reportTitle": "춘절부터 더 강해질 모멘텀",
-      "sourceText": "4Q25 Review: 영업이익 442억원(+1,944.3% YoY) 동사의 4분기 실적은 매출액 1,872억원(+70.1% YoY, +0.3% QoQ), 영업이익 442억원(+1,944.3% YoY, -16.5% QoQ, OPM 23.6%)으로 시장기대치(492억원)을 하회했다. 4분기 카지노 매출은 1,427억원(+93.2% YoY)으로 드랍액(7,686억원, +68.6% YoY)과 홀드율(18.6%, +2.4%p YoY)의 뚜렷한 개선이 전체 매출성장을 견인했다. 다만, 하얏트 로열티 비용 약 50억원이 일회성으로 반영된 점이 영업이익이 시장기대치를 하회한 주 요인이다. 순이익은 484억원(흑전 YoY)으로 연결납세로 이연법인세 자산을 인식하며 발생한 법인세이익 약 400억원이 반영되며 큰 폭으로 개선됐다.",
-      "reasonSummary": "춘절부터 더 강해질 모멘텀. IBK투자증권가 매수 의견을 제시했고 현재가 기준 상승여력은 63.9%입니다. 2026-02-13 종가 대비 목표가 괴리는 63.9%입니다.",
-      "reasonBullets": [
-        "IBK투자증권가 2026-02-13에 매수 의견과 목표가를 제시했습니다.",
-        "현재가 19,520원 대비 목표가는 32,000원입니다.",
-        "2026-02-13 종가 19,520원 대비 괴리는 63.9%입니다."
-      ],
-      "performance": {
-        "week1": {
-          "asOfDate": "2026-02-20",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "unavailable"
-        },
-        "month1": {
-          "asOfDate": "2026-03-15",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "unavailable"
-        },
-        "month3": {
-          "asOfDate": "2026-05-14",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "pending"
-        }
-      }
-    },
-    {
-      "date": "2026-02-13",
-      "ticker": "381970",
-      "name": "케이카",
-      "market": "korea",
-      "broker": "유진투자증권",
-      "analyst": "",
-      "opinion": "Buy",
-      "targetPrice": 20500,
-      "currentPrice": 10600,
-      "basePrice": 10600,
-      "basePriceDate": "2026-02-13",
-      "upside": 93.4,
-      "sourceUrl": "https://finance.naver.com/research/company_read.naver?nid=90514&page=1",
-      "reportTitle": "4Q25 Review: 유효시장 점유율 상승 긍정적",
-      "sourceText": "- 4Q25Review: 매출액 5,600억원(+5.9%yoy), 영업이익 124억원(-18.9%yoy), 당기순이익 70억원(-22.2%yoy)를 기록해 컨센서스를 하회하는 부진한 실적을 시현. 영업일수 감소와 계절적 요인으로 인한 업황 둔화가 부진의 원인 - 대당 마진율 상승과 유효 점유율 상승: 4분기 실적은 다소 부진하였으나 25년 연간으로는 전년비 양호한 실적 개선세가 나타났음. 소매 대당 마진율 추이를 살펴보면, 2025년 연간 166만원을 기록해 전년비 6.5% 상승하였으며 유효시장 점유율은 12.7%를 기록해 24년 대비 0.4%p 상승하였음. 다만, 중고차 전체 시장 수요를 살펴보면, 2025년 248.5만대를 기록해 전년비 2.2% 역성장하였으며 2020년 피크 대비로는 21.6만대 감소한 수치임. 내수 부진과 고금리가 원인 - 2026년 신규 사업 확장을 통한 도약을 준비: 동사는 현행 소매/경매 중심에서 벗어나 위탁/중개로 중고차 사업 영역을 확장해 종합 중고차 플래폼으로 도약하고자 함. 국내 중고차 시장의 성장 정체 속에서 신사업의 성공 여부가 동사의 미래 주가의 중요한 변수가 될 것. 정부의 확장 재정정책으로 인한 내수 경기 회복과 기준 금리 인하 등에 힘입어 올해 중고차 시장 업황은 전년비 개선될 것으로 기대됨. 동사에 대한 투자의견 매수와 목표주가 20,500원을 유지함",
-      "reasonSummary": "4Q25 Review: 유효시장 점유율 상승 긍정적. 유진투자증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 93.4%입니다. 2026-02-13 종가 대비 목표가 괴리는 93.4%입니다.",
-      "reasonBullets": [
-        "유진투자증권가 2026-02-13에 Buy 의견과 목표가를 제시했습니다.",
-        "현재가 10,600원 대비 목표가는 20,500원입니다.",
-        "2026-02-13 종가 10,600원 대비 괴리는 93.4%입니다."
-      ],
-      "performance": {
-        "week1": {
-          "asOfDate": "2026-02-20",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "unavailable"
-        },
-        "month1": {
-          "asOfDate": "2026-03-15",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "unavailable"
-        },
-        "month3": {
-          "asOfDate": "2026-05-14",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "pending"
-        }
-      }
-    },
-    {
-      "date": "2026-02-13",
-      "ticker": "192080",
-      "name": "더블유게임즈",
-      "market": "korea",
-      "broker": "유진투자증권",
-      "analyst": "",
-      "opinion": "Buy",
-      "targetPrice": 69000,
-      "currentPrice": 51700,
-      "basePrice": 51700,
-      "basePriceDate": "2026-02-13",
-      "upside": 33.5,
-      "sourceUrl": "https://finance.naver.com/research/company_read.naver?nid=90513&page=1",
-      "reportTitle": "매출 성장도 하고, 이익 성장도 하고",
-      "sourceText": "- 4분기 매출액 1,998억원(+28%yoy), 영업이익 639억원(+6%yoy) 기록. 컨센서스(612억원) 부합 - 기존 소셜카지노 매출은 4분기 성수기 효과로 qoq 소폭 증가했고, 여기에 2분기 편입된 팍시게임즈의 매출 성장과 3분기 편입된 와우게임즈의 매출 온기 반영 효과로 전분기에 이어 역대 최대 매출을 경신함 - 영업비용에서는 DTC 비중이 크게 확대(2Q 12.8%→3Q 17.6%→4Q 26.6%)되며 매출액 대비 플랫폼비용 비중이 4분기 기준 20.5%까지 하락함. 여전히 동사의 DTC 비중은 소셜카지노 경쟁사 대비 낮은 편이며, 모바일-웹 플레이 편의성이 높아 DTC 전환이 유리하기 때문에 올해 매출액 대비 플랫폼비용 비중은 더욱 낮아질 전망(연간 약 19.5% 추정) - 장기보상 관련 평가금액 감소로 인건비가 일시적으로 감소함. 연초 내부 인력 조정 효과로 올해 인건비 상승폭도 제한적임 -지난해 편입된 자회사들의 매출 성장이 가속화되면서 외형 성장이 두드러진 반면, 비용에서는 인건비 통제 기조 및 DTC 비중 증가로 이익률 또한 개선되고 있음. 외형성장과 수익성 개선이 같이 진행되는 와중에 2026년 기준 PER은 6.3배에 그침. 투자의견 BUY를 유지함",
-      "reasonSummary": "매출 성장도 하고, 이익 성장도 하고. 유진투자증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 33.5%입니다. 2026-02-13 종가 대비 목표가 괴리는 33.5%입니다.",
-      "reasonBullets": [
-        "유진투자증권가 2026-02-13에 Buy 의견과 목표가를 제시했습니다.",
-        "현재가 51,700원 대비 목표가는 69,000원입니다.",
-        "2026-02-13 종가 51,700원 대비 괴리는 33.5%입니다."
       ],
       "performance": {
         "week1": {
@@ -39724,8 +39234,8 @@
       "latestTargetPrice": 6400,
       "latestCurrentPrice": 5680,
       "latestBasePrice": 5680,
-      "avgUpside": 18.9,
-      "reportCount": 4,
+      "avgUpside": 22.1,
+      "reportCount": 3,
       "reasonSummary": "1Q26 Pre: 혼란한 해운 시황, 그러나 잘 버텨... 하나증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 12.7%입니다. 2026-04-20 종가 대비 목표가 괴리는 12.7%입니다.",
       "reasonBullets": [
         "하나증권가 2026-04-20에 Buy 의견과 목표가를 제시했습니다.",
@@ -39736,8 +39246,7 @@
         "summary": "1Q26 Pre: 혼란한 해운 시황, 그러나 잘 버텨..",
         "bullets": [
           "1Q26 Pre: 혼란한 해운 시황, 그러나 잘 버텨..",
-          "지정학적 리스크에도 장기계약 기반의 안정적인 영업 실적을 기대할 수 있고 VLCC 자산 확보로 탱커 익스포져를 확대한 점을 긍정적으로 반영하여 Target P/B를 0.59배로 상향했다.",
-          "이번 분기에도 장기계약 기반의 높은 이익 성장률과 수익성을 기록."
+          "지정학적 리스크에도 장기계약 기반의 안정적인 영업 실적을 기대할 수 있고 VLCC 자산 확보로 탱커 익스포져를 확대한 점을 긍정적으로 반영하여 Target P/B를 0.59배로 상향했다."
         ]
       },
       "estimateRevision": {
@@ -39905,55 +39414,6 @@
             },
             "month3": {
               "asOfDate": "2026-07-08",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            }
-          }
-        },
-        {
-          "date": "2026-02-13",
-          "ticker": "028670",
-          "name": "팬오션",
-          "market": "korea",
-          "broker": "유안타증권",
-          "analyst": "",
-          "opinion": "Buy",
-          "targetPrice": 6200,
-          "currentPrice": 5680,
-          "basePrice": 5680,
-          "basePriceDate": "2026-02-13",
-          "upside": 9.2,
-          "sourceUrl": "https://finance.naver.com/research/company_read.naver?nid=90523&page=1",
-          "reportTitle": "사업 포트폴리오 다각화",
-          "sourceText": "4Q25 매출액 1조 4,763억원, 영업이익 1,304억원 4Q25 매출액과 영업이익은 각각 1조 4,763억원(YoY -11.9%), 1,304억원(YoY +18.8%, OPM 8.8%)으로, 영업이익 기준 컨센서스에 부합. 벌크 부문 영업이익은 610억원(YoY -0.3%, OPM 7.6%). 4분기 평균 BDI 지수는 2,159pt(YoY +47.4%)로 Capesize 중심의 시황 호조를 보였으며, 동사는 보수적인 선대 운영 전략을 유지하며 전년 수준의 이익을 시현. 탱커 부문 영업이익은 211억원(YoY +8.0%, OPM 28.5%). OPEC+ 감산 완화, 지정학적 이슈 등으로 VLCC, MR 운임 모두 강세를 기록하면서 수익성이 개선된 것으로 판단. LNG 부문 영업이익은 396억원(YoY +159.3%, OPM 43.8%). 이번 분기에도 장기계약 기반의 높은 이익 성장률과 수익성을 기록.",
-          "reasonSummary": "사업 포트폴리오 다각화. 유안타증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 9.2%입니다. 2026-02-13 종가 대비 목표가 괴리는 9.2%입니다.",
-          "reasonBullets": [
-            "유안타증권가 2026-02-13에 Buy 의견과 목표가를 제시했습니다.",
-            "현재가 5,680원 대비 목표가는 6,200원입니다.",
-            "2026-02-13 종가 5,680원 대비 괴리는 9.2%입니다."
-          ],
-          "performance": {
-            "week1": {
-              "asOfDate": "2026-02-20",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "unavailable"
-            },
-            "month1": {
-              "asOfDate": "2026-03-15",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "unavailable"
-            },
-            "month3": {
-              "asOfDate": "2026-05-14",
               "closePrice": 0,
               "returnPct": 0,
               "targetProgressPct": 0,
@@ -45541,8 +45001,8 @@
       "latestTargetPrice": 62000,
       "latestCurrentPrice": 51700,
       "latestBasePrice": 51700,
-      "avgUpside": 30.9,
-      "reportCount": 3,
+      "avgUpside": 29.6,
+      "reportCount": 2,
       "reasonSummary": "AI와 DTC 전략의 성과, 숫자로 증명한다. SK증권가 매수 의견을 제시했고 현재가 기준 상승여력은 19.9%입니다. 2026-04-17 종가 대비 목표가 괴리는 19.9%입니다.",
       "reasonBullets": [
         "SK증권가 2026-04-17에 매수 의견과 목표가를 제시했습니다.",
@@ -45558,20 +45018,20 @@
         ]
       },
       "estimateRevision": {
-        "summary": "혼재 신호입니다. 리포트 원문에서 추정치 관련 표현을 기준으로 판단했습니다.",
+        "summary": "상향 신호입니다. 리포트 원문에서 추정치 관련 표현을 기준으로 판단했습니다.",
         "bullets": [
           "AI와 DTC 전략의 성과, 숫자로 증명한다 1Q26 Preview 매출액 2,032억원(+25.4% YoY, +1.7% QoQ), 영업이익 667억원(+21.8% YoY, +4.4% QoQ), 지배주주순이익 425 억원(+24.1% YoY, +30.6% QoQ)으로 영업이익은 컨센서스 640 억원을 소폭 상회할 것으로 전망한다.",
           "신규 자회사들의 성과가 관건 인력 감축과 D2C 확대로 수익성 개선 중 동사는 인수한 자회사들의 매출 성장이 가속화되는 동시에, 비용의 통제 및 감축 구간이 겹쳐지면서 이익 성장세가 지속될 것으로 전망된다.",
           "여전히 글로벌 소셜카지노 기업들 대비 낮은 편이며, 모바일-웹 플레이 편의성이 높은 점이 DTC 전환에 유리하기에 매출 대비 플랫폼비 비중은 추가적으로 더욱 낮아질 것으로 예상한다."
         ],
-        "signal": "mixed"
+        "signal": "up"
       },
       "valuation": {
         "summary": "현재가 51,700원 대비 목표가 62,000원가 제시돼 밸류에이션 여력을 확인할 수 있습니다.",
         "bullets": [
-          "외형성장과 수익성 개선이 같이 진행되는 와중에 2026년 기준 PER은 6.3배에 그침.",
-          "현재가 대비 목표가 상승여력은 19.9%입니다.",
-          "2026-04-17 종가 대비 목표가 괴리는 19.9%입니다."
+          "AI와 DTC 전략의 성과, 숫자로 증명한다 1Q26 Preview 매출액 2,032억원(+25.4% YoY, +1.7% QoQ), 영업이익 667억원(+21.8% YoY, +4.4% QoQ), 지배주주순이익 425 억원(+24.1% YoY, +30.6% QoQ)으로 영업이익은 컨센서스 640 억원을 소폭 상회할 것으로 전망한다.",
+          "팍시게임즈의 AI 게임 비중이 4Q25 50% 수준에서 1Q26 추가적으로 상승한 것으로 파악된다.",
+          "실시간 데이터 분석 기반의 유저 프로모션과 최근 인기 하이퍼캐주얼 게임을 벤치마킹하는 전략이 성과를 거두고 있다."
         ]
       },
       "sectorCycle": {
@@ -45673,55 +45133,6 @@
             },
             "month3": {
               "asOfDate": "2026-06-04",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            }
-          }
-        },
-        {
-          "date": "2026-02-13",
-          "ticker": "192080",
-          "name": "더블유게임즈",
-          "market": "korea",
-          "broker": "유진투자증권",
-          "analyst": "",
-          "opinion": "Buy",
-          "targetPrice": 69000,
-          "currentPrice": 51700,
-          "basePrice": 51700,
-          "basePriceDate": "2026-02-13",
-          "upside": 33.5,
-          "sourceUrl": "https://finance.naver.com/research/company_read.naver?nid=90513&page=1",
-          "reportTitle": "매출 성장도 하고, 이익 성장도 하고",
-          "sourceText": "- 4분기 매출액 1,998억원(+28%yoy), 영업이익 639억원(+6%yoy) 기록. 컨센서스(612억원) 부합 - 기존 소셜카지노 매출은 4분기 성수기 효과로 qoq 소폭 증가했고, 여기에 2분기 편입된 팍시게임즈의 매출 성장과 3분기 편입된 와우게임즈의 매출 온기 반영 효과로 전분기에 이어 역대 최대 매출을 경신함 - 영업비용에서는 DTC 비중이 크게 확대(2Q 12.8%→3Q 17.6%→4Q 26.6%)되며 매출액 대비 플랫폼비용 비중이 4분기 기준 20.5%까지 하락함. 여전히 동사의 DTC 비중은 소셜카지노 경쟁사 대비 낮은 편이며, 모바일-웹 플레이 편의성이 높아 DTC 전환이 유리하기 때문에 올해 매출액 대비 플랫폼비용 비중은 더욱 낮아질 전망(연간 약 19.5% 추정) - 장기보상 관련 평가금액 감소로 인건비가 일시적으로 감소함. 연초 내부 인력 조정 효과로 올해 인건비 상승폭도 제한적임 -지난해 편입된 자회사들의 매출 성장이 가속화되면서 외형 성장이 두드러진 반면, 비용에서는 인건비 통제 기조 및 DTC 비중 증가로 이익률 또한 개선되고 있음. 외형성장과 수익성 개선이 같이 진행되는 와중에 2026년 기준 PER은 6.3배에 그침. 투자의견 BUY를 유지함",
-          "reasonSummary": "매출 성장도 하고, 이익 성장도 하고. 유진투자증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 33.5%입니다. 2026-02-13 종가 대비 목표가 괴리는 33.5%입니다.",
-          "reasonBullets": [
-            "유진투자증권가 2026-02-13에 Buy 의견과 목표가를 제시했습니다.",
-            "현재가 51,700원 대비 목표가는 69,000원입니다.",
-            "2026-02-13 종가 51,700원 대비 괴리는 33.5%입니다."
-          ],
-          "performance": {
-            "week1": {
-              "asOfDate": "2026-02-20",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "unavailable"
-            },
-            "month1": {
-              "asOfDate": "2026-03-15",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "unavailable"
-            },
-            "month3": {
-              "asOfDate": "2026-05-14",
               "closePrice": 0,
               "returnPct": 0,
               "targetProgressPct": 0,
@@ -47695,8 +47106,8 @@
       "latestTargetPrice": 380000,
       "latestCurrentPrice": 255000,
       "latestBasePrice": 255000,
-      "avgUpside": 63.3,
-      "reportCount": 10,
+      "avgUpside": 60.6,
+      "reportCount": 9,
       "reasonSummary": "질주 전 고르기, 2분기부터 승부의 시작. 삼성증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 49.0%입니다. 2026-04-16 종가 대비 목표가 괴리는 49%입니다.",
       "reasonBullets": [
         "삼성증권가 2026-04-16에 Buy 의견과 목표가를 제시했습니다.",
@@ -47733,7 +47144,7 @@
         "bullets": [
           "공연/MD: 공연은 전년 동기 대비 다소 둔화될 전망이다.",
           "[MD/콘텐츠] 투어 MD 및 기획 MD 제품 다각화에 따른 실적 개선 예상되며, 달러 강세에 따른 환율 효과가 일부 소비 둔화세를 상쇄할 것이라 예상하며, 글로벌 OTT 향 신규 콘텐츠 수익화 전략이 강화됨에 따라 간접 참여형 매출 비중 확대를 견인할 전망이다.",
-          "국내 시장 기준 최근 10건 리포트의 업황 표현을 정리했습니다."
+          "국내 시장 기준 최근 9건 리포트의 업황 표현을 정리했습니다."
         ]
       },
       "relatedReports": [
@@ -58325,8 +57736,8 @@
       "latestTargetPrice": 65000,
       "latestCurrentPrice": 48850,
       "latestBasePrice": 48850,
-      "avgUpside": 55,
-      "reportCount": 7,
+      "avgUpside": 53.5,
+      "reportCount": 5,
       "reasonSummary": "개선될 실적과 카카오톡에 지워지는 무게. DS투자증권가 매수 의견을 제시했고 현재가 기준 상승여력은 33.1%입니다. 2026-04-14 종가 대비 목표가 괴리는 33.1%입니다.",
       "reasonBullets": [
         "DS투자증권가 2026-04-14에 매수 의견과 목표가를 제시했습니다.",
@@ -58363,7 +57774,7 @@
         "bullets": [
           "거래형 매출(+4.8%)은 자기구매 프로모션 확대로 성장률 둔화, 콘텐츠 부문(-6.6%)도 아직까지 회복세를 보이고 있지 않다.",
           "다만, 여전히 픽코마를 포함한 스토리 사업부는 업황 회복을 기대하긴 어려운 것으로 파악된다.",
-          "결제, 금융, 플랫폼 고른 성장으로 ‘페이’ 역대 최대 분기 영업이익 실현 [콘텐츠] [게임] 979억원 YoY-40%, [뮤직] 5,251억원 YoY +12% [스토리] 1,918억원 YoY-5%, 피코마 1,120억원 일본 웹툰시장 성장 둔화 등 엔화기준 YoY-6% [미디어] 958억원 YoY+30% 톡개편에 의한 실적 개선."
+          "국내 시장 기준 최근 5건 리포트의 업황 표현을 정리했습니다."
         ]
       },
       "relatedReports": [
@@ -66129,11 +65540,11 @@
           "performance": {
             "week1": {
               "asOfDate": "2026-02-27",
-              "closePrice": 127.95,
-              "returnPct": 4,
-              "targetProgressPct": 45,
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
               "success": false,
-              "status": "complete"
+              "status": "unavailable"
             },
             "month1": {
               "asOfDate": "2026-03-20",
@@ -76365,12 +75776,12 @@
               "status": "complete"
             },
             "month1": {
-              "asOfDate": "2026-04-18",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
+              "asOfDate": "2026-04-17",
+              "closePrice": 201.68,
+              "returnPct": 12.9,
+              "targetProgressPct": 16,
               "success": false,
-              "status": "unavailable"
+              "status": "complete"
             },
             "month3": {
               "asOfDate": "2026-06-17",
@@ -76415,11 +75826,11 @@
             },
             "month1": {
               "asOfDate": "2026-04-17",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
+              "closePrice": 201.68,
+              "returnPct": 11.8,
+              "targetProgressPct": 20,
               "success": false,
-              "status": "unavailable"
+              "status": "complete"
             },
             "month3": {
               "asOfDate": "2026-06-16",
@@ -87484,412 +86895,6 @@
             },
             "month3": {
               "asOfDate": "2026-05-20",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            }
-          }
-        }
-      ]
-    },
-    "korea:032350": {
-      "ticker": "032350",
-      "name": "롯데관광개발",
-      "market": "korea",
-      "latestReportDate": "2026-02-13",
-      "latestBroker": "하나증권",
-      "latestOpinion": "Buy",
-      "latestTargetPrice": 31000,
-      "latestCurrentPrice": 19520,
-      "latestBasePrice": 19520,
-      "avgUpside": 62.2,
-      "reportCount": 3,
-      "reasonSummary": "1회성 비용 이슈 제외하면 컨센서스 부합. 하나증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 58.8%입니다. 2026-02-13 종가 대비 목표가 괴리는 58.8%입니다.",
-      "reasonBullets": [
-        "하나증권가 2026-02-13에 Buy 의견과 목표가를 제시했습니다.",
-        "현재가 19,520원 대비 목표가는 31,000원입니다.",
-        "2026-02-13 종가 19,520원 대비 괴리는 58.8%입니다."
-      ],
-      "investmentLogic": {
-        "summary": "1회성 비용 이슈 제외하면 컨센서스 부합",
-        "bullets": [
-          "1회성 비용 이슈 제외하면 컨센서스 부합",
-          "지난해 카지노 실적은 가파르게 성장했으나 호텔 실적은 다소 정체되며 ‘24년에서 크게 줄어들지 않은 수준의 위탁 운영 수수료 추가 납부가 있었던 것으로 추정 - 분기 순이익 483억원은 당사 추정치(81억원) 및 시장 컨센서스(133억원)를 크게 상회.",
-          "4분기 카지노 매출은 1,427억원(+93.2% YoY)으로 드랍액(7,686억원, +68.6% YoY)과 홀드율(18.6%, +2.4%p YoY)의 뚜렷한 개선이 전체 매출성장을 견인했다."
-        ]
-      },
-      "estimateRevision": {
-        "summary": "상향 신호입니다. 리포트 원문에서 추정치 관련 표현을 기준으로 판단했습니다.",
-        "bullets": [
-          "1회성 비용 이슈 제외하면 컨센서스 부합 중장기 목표 시가총액 3조원까지는 변함 없는 레져 최선호주 2025년 연초 대비 연말까지 방문객 수, 테이블 수, 드랍액 등이 모두 우상향 했던 만큼 온기로 반영될 올해의 실적 역시 지속 상향될 수 있을 것이며, 한일령의 수혜까지 더해질 것이다.",
-          "현 주가는 2027년 예상 P/E 약 16배 수준으로 저평가이나 추가적인 이익 상향 가능성도 매우 높은 만큼 지속해서 레져 업종 내 최선호주로 제시한다.",
-          "1회성 비용 이슈 제외하면 컨센서스 부합."
-        ],
-        "signal": "up"
-      },
-      "valuation": {
-        "summary": "현재가 19,520원 대비 목표가 31,000원가 제시돼 밸류에이션 여력을 확인할 수 있습니다.",
-        "bullets": [
-          "1회성 비용 이슈 제외하면 컨센서스 부합 중장기 목표 시가총액 3조원까지는 변함 없는 레져 최선호주 2025년 연초 대비 연말까지 방문객 수, 테이블 수, 드랍액 등이 모두 우상향 했던 만큼 온기로 반영될 올해의 실적 역시 지속 상향될 수 있을 것이며, 한일령의 수혜까지 더해질 것이다.",
-          "올해 하반기부터는 리파이낸싱 및 차입금 상환을 통해 유의미한 당기순이익 증가도 예상된다.",
-          "현 주가는 2027년 예상 P/E 약 16배 수준으로 저평가이나 추가적인 이익 상향 가능성도 매우 높은 만큼 지속해서 레져 업종 내 최선호주로 제시한다."
-        ]
-      },
-      "sectorCycle": {
-        "summary": "1회성 비용 이슈 제외하면 컨센서스 부합 중장기 목표 시가총액 3조원까지는 변함 없는 레져 최선호주 2025년 연초 대비 연말까지 방문객 수, 테이블 수, 드랍액 등이 모두 우상향 했던 만큼 온기로 반영될 올해의 실적 역시 지속 상향될 수 있을 것이며, 한일령의 수혜까지 더해질 것이다.",
-        "bullets": [
-          "1회성 비용 이슈 제외하면 컨센서스 부합 중장기 목표 시가총액 3조원까지는 변함 없는 레져 최선호주 2025년 연초 대비 연말까지 방문객 수, 테이블 수, 드랍액 등이 모두 우상향 했던 만큼 온기로 반영될 올해의 실적 역시 지속 상향될 수 있을 것이며, 한일령의 수혜까지 더해질 것이다.",
-          "올해 하반기부터는 리파이낸싱 및 차입금 상환을 통해 유의미한 당기순이익 증가도 예상된다.",
-          "현 주가는 2027년 예상 P/E 약 16배 수준으로 저평가이나 추가적인 이익 상향 가능성도 매우 높은 만큼 지속해서 레져 업종 내 최선호주로 제시한다."
-        ]
-      },
-      "relatedReports": [
-        {
-          "date": "2026-02-13",
-          "ticker": "032350",
-          "name": "롯데관광개발",
-          "market": "korea",
-          "broker": "하나증권",
-          "analyst": "",
-          "opinion": "Buy",
-          "targetPrice": 31000,
-          "currentPrice": 19520,
-          "basePrice": 19520,
-          "basePriceDate": "2026-02-13",
-          "upside": 58.8,
-          "sourceUrl": "https://finance.naver.com/research/company_read.naver?nid=90529&page=1",
-          "reportTitle": "1회성 비용 이슈 제외하면 컨센서스 부합",
-          "sourceText": "중장기 목표 시가총액 3조원까지는 변함 없는 레져 최선호주 2025년 연초 대비 연말까지 방문객 수, 테이블 수, 드랍액 등이 모두 우상향 했던 만큼 온기로 반영될 올해의 실적 역시 지속 상향될 수 있을 것이며, 한일령의 수혜까지 더해질 것이다. 올해 하반기부터는 리파이낸싱 및 차입금 상환을 통해 유의미한 당기순이익 증가도 예상된다. 현 주가는 2027년 예상 P/E 약 16배 수준으로 저평가이나 추가적인 이익 상향 가능성도 매우 높은 만큼 지속해서 레져 업종 내 최선호주로 제시한다.",
-          "reasonSummary": "1회성 비용 이슈 제외하면 컨센서스 부합. 하나증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 58.8%입니다. 2026-02-13 종가 대비 목표가 괴리는 58.8%입니다.",
-          "reasonBullets": [
-            "하나증권가 2026-02-13에 Buy 의견과 목표가를 제시했습니다.",
-            "현재가 19,520원 대비 목표가는 31,000원입니다.",
-            "2026-02-13 종가 19,520원 대비 괴리는 58.8%입니다."
-          ],
-          "performance": {
-            "week1": {
-              "asOfDate": "2026-02-20",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "unavailable"
-            },
-            "month1": {
-              "asOfDate": "2026-03-15",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "unavailable"
-            },
-            "month3": {
-              "asOfDate": "2026-05-14",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            }
-          }
-        },
-        {
-          "date": "2026-02-13",
-          "ticker": "032350",
-          "name": "롯데관광개발",
-          "market": "korea",
-          "broker": "한화투자증권",
-          "analyst": "",
-          "opinion": "Buy",
-          "targetPrice": 32000,
-          "currentPrice": 19520,
-          "basePrice": 19520,
-          "basePriceDate": "2026-02-13",
-          "upside": 63.9,
-          "sourceUrl": "https://finance.naver.com/research/company_read.naver?nid=90528&page=1",
-          "reportTitle": "[4Q25 Review] 순이익 서프라이즈!",
-          "sourceText": "4Q25 Review: 영업이익은 컨센서스 하회했으나 분기 순이익 483억원은 서프라이즈 - 롯데관광개발의 4분기 매출액과 영업이익은 각각 1,871억원, 442억원을 기록. 영업이익 기준 시장 기대치(471억원)와 당사 추정치(499억원)을 모두 하회. 다만 분기 순이익은 483억원이라는 다소 놀라운 숫자를 기록 - 매출액은 예상에서 크게 벗어나지 않은 수준이었으나, 영업이익이 당초 기대치를 하회한 가장 큰 원인은 지급수수료의 추정치와 실제 발생액의 차이에 있음. 호텔 위탁 운영 계약에 따라 매년 4분기 위탁 운영 수수료 추가 납부가 발생. 추가 납부의 기준은 카지노는 제외된 호텔 매출액. 지난해 카지노 실적은 가파르게 성장했으나 호텔 실적은 다소 정체되며 ‘24년에서 크게 줄어들지 않은 수준의 위탁 운영 수수료 추가 납부가 있었던 것으로 추정 - 분기 순이익 483억원은 당사 추정치(81억원) 및 시장 컨센서스(133억원)를 크게 상회. 다만 세전 이익은 약 73억원 수준으로, 이는 당초 당사 추정치(84억원)에서 크게 벗어나지 않는 수준. 지난 분기 순이익 서프라이즈는 ‘25년 연결 납세 적용에 따른 이연법인세 자산 증가에서 기인. 결손금이 다소 쌓여 있는 별도 법인과 카지노(LTE)를 하나의 과세단위로 간주함에 따라 일시적으로 이연법인세 자산 증가. 회계상 약 400억원 환입되는 효과를 가져옴. 회계적 효과이나, 이로써 동사 ‘25년 연간 순이익은 371억원으로 연간 순이익 흑자전환에 성공. 10% 안팎으로 추정되는 차입 금리를 생각보다 이른 시점에 회사에 우호적인 수준으로 낮출 수 있다는 가능성을 크게 열어둔다는 점에서 긍정적으로 평가",
-          "reasonSummary": "[4Q25 Review] 순이익 서프라이즈!. 한화투자증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 63.9%입니다. 2026-02-13 종가 대비 목표가 괴리는 63.9%입니다.",
-          "reasonBullets": [
-            "한화투자증권가 2026-02-13에 Buy 의견과 목표가를 제시했습니다.",
-            "현재가 19,520원 대비 목표가는 32,000원입니다.",
-            "2026-02-13 종가 19,520원 대비 괴리는 63.9%입니다."
-          ],
-          "performance": {
-            "week1": {
-              "asOfDate": "2026-02-20",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "unavailable"
-            },
-            "month1": {
-              "asOfDate": "2026-03-15",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "unavailable"
-            },
-            "month3": {
-              "asOfDate": "2026-05-14",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            }
-          }
-        },
-        {
-          "date": "2026-02-13",
-          "ticker": "032350",
-          "name": "롯데관광개발",
-          "market": "korea",
-          "broker": "IBK투자증권",
-          "analyst": "",
-          "opinion": "매수",
-          "targetPrice": 32000,
-          "currentPrice": 19520,
-          "basePrice": 19520,
-          "basePriceDate": "2026-02-13",
-          "upside": 63.9,
-          "sourceUrl": "https://finance.naver.com/research/company_read.naver?nid=90515&page=1",
-          "reportTitle": "춘절부터 더 강해질 모멘텀",
-          "sourceText": "4Q25 Review: 영업이익 442억원(+1,944.3% YoY) 동사의 4분기 실적은 매출액 1,872억원(+70.1% YoY, +0.3% QoQ), 영업이익 442억원(+1,944.3% YoY, -16.5% QoQ, OPM 23.6%)으로 시장기대치(492억원)을 하회했다. 4분기 카지노 매출은 1,427억원(+93.2% YoY)으로 드랍액(7,686억원, +68.6% YoY)과 홀드율(18.6%, +2.4%p YoY)의 뚜렷한 개선이 전체 매출성장을 견인했다. 다만, 하얏트 로열티 비용 약 50억원이 일회성으로 반영된 점이 영업이익이 시장기대치를 하회한 주 요인이다. 순이익은 484억원(흑전 YoY)으로 연결납세로 이연법인세 자산을 인식하며 발생한 법인세이익 약 400억원이 반영되며 큰 폭으로 개선됐다.",
-          "reasonSummary": "춘절부터 더 강해질 모멘텀. IBK투자증권가 매수 의견을 제시했고 현재가 기준 상승여력은 63.9%입니다. 2026-02-13 종가 대비 목표가 괴리는 63.9%입니다.",
-          "reasonBullets": [
-            "IBK투자증권가 2026-02-13에 매수 의견과 목표가를 제시했습니다.",
-            "현재가 19,520원 대비 목표가는 32,000원입니다.",
-            "2026-02-13 종가 19,520원 대비 괴리는 63.9%입니다."
-          ],
-          "performance": {
-            "week1": {
-              "asOfDate": "2026-02-20",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "unavailable"
-            },
-            "month1": {
-              "asOfDate": "2026-03-15",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "unavailable"
-            },
-            "month3": {
-              "asOfDate": "2026-05-14",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            }
-          }
-        }
-      ]
-    },
-    "korea:100120": {
-      "ticker": "100120",
-      "name": "뷰웍스",
-      "market": "korea",
-      "latestReportDate": "2026-02-13",
-      "latestBroker": "미래에셋증권",
-      "latestOpinion": "매수",
-      "latestTargetPrice": 35000,
-      "latestCurrentPrice": 28400,
-      "latestBasePrice": 28400,
-      "avgUpside": 23.2,
-      "reportCount": 1,
-      "reasonSummary": "꾸준한데 싼 의료기기 소부장 기업. 미래에셋증권가 매수 의견을 제시했고 현재가 기준 상승여력은 23.2%입니다. 2026-02-13 종가 대비 목표가 괴리는 23.2%입니다.",
-      "reasonBullets": [
-        "미래에셋증권가 2026-02-13에 매수 의견과 목표가를 제시했습니다.",
-        "현재가 28,400원 대비 목표가는 35,000원입니다.",
-        "2026-02-13 종가 28,400원 대비 괴리는 23.2%입니다."
-      ],
-      "investmentLogic": {
-        "summary": "꾸준한데 싼 의료기기 소부장 기업",
-        "bullets": [
-          "꾸준한데 싼 의료기기 소부장 기업",
-          "꾸준한데 싼 의료기기 소부장 기업 4Q25 Review: 매출 및 영업이익 시장 기대치 부합 매출은 686억원(15% YoY)을 기록하며 시장 기대치에 부합했다.",
-          "영업이익도 85억원(OPM 12%, 23% YoY)으로 시장 기대치에 부합했다."
-        ]
-      },
-      "estimateRevision": {
-        "summary": "확인 어려움 신호입니다. 리포트 원문에서 추정치 관련 표현을 기준으로 판단했습니다.",
-        "bullets": [
-          "꾸준한데 싼 의료기기 소부장 기업 4Q25 Review: 매출 및 영업이익 시장 기대치 부합 매출은 686억원(15% YoY)을 기록하며 시장 기대치에 부합했다.",
-          "영업이익도 85억원(OPM 12%, 23% YoY)으로 시장 기대치에 부합했다.",
-          "품목별 매출(연결 기준)로는, 의료 디텍터가 307억원(12% YoY), 산업용 카메라는 131억원(28% YoY), 치과 디텍터는 113억원(7% YoY), NDT는 52억원(-15% YoY), 기타 사업은 83억원(56% YoY)을 기록했다."
-        ],
-        "signal": "unknown"
-      },
-      "valuation": {
-        "summary": "현재가 28,400원 대비 목표가 35,000원가 제시돼 밸류에이션 여력을 확인할 수 있습니다.",
-        "bullets": [
-          "꾸준한데 싼 의료기기 소부장 기업 4Q25 Review: 매출 및 영업이익 시장 기대치 부합 매출은 686억원(15% YoY)을 기록하며 시장 기대치에 부합했다.",
-          "영업이익도 85억원(OPM 12%, 23% YoY)으로 시장 기대치에 부합했다.",
-          "품목별 매출(연결 기준)로는, 의료 디텍터가 307억원(12% YoY), 산업용 카메라는 131억원(28% YoY), 치과 디텍터는 113억원(7% YoY), NDT는 52억원(-15% YoY), 기타 사업은 83억원(56% YoY)을 기록했다."
-        ]
-      },
-      "sectorCycle": {
-        "summary": "꾸준한데 싼 의료기기 소부장 기업 4Q25 Review: 매출 및 영업이익 시장 기대치 부합 매출은 686억원(15% YoY)을 기록하며 시장 기대치에 부합했다.",
-        "bullets": [
-          "꾸준한데 싼 의료기기 소부장 기업 4Q25 Review: 매출 및 영업이익 시장 기대치 부합 매출은 686억원(15% YoY)을 기록하며 시장 기대치에 부합했다.",
-          "영업이익도 85억원(OPM 12%, 23% YoY)으로 시장 기대치에 부합했다.",
-          "품목별 매출(연결 기준)로는, 의료 디텍터가 307억원(12% YoY), 산업용 카메라는 131억원(28% YoY), 치과 디텍터는 113억원(7% YoY), NDT는 52억원(-15% YoY), 기타 사업은 83억원(56% YoY)을 기록했다."
-        ]
-      },
-      "relatedReports": [
-        {
-          "date": "2026-02-13",
-          "ticker": "100120",
-          "name": "뷰웍스",
-          "market": "korea",
-          "broker": "미래에셋증권",
-          "analyst": "",
-          "opinion": "매수",
-          "targetPrice": 35000,
-          "currentPrice": 28400,
-          "basePrice": 28400,
-          "basePriceDate": "2026-02-13",
-          "upside": 23.2,
-          "sourceUrl": "https://finance.naver.com/research/company_read.naver?nid=90518&page=1",
-          "reportTitle": "꾸준한데 싼 의료기기 소부장 기업",
-          "sourceText": "4Q25 Review: 매출 및 영업이익 시장 기대치 부합 매출은 686억원(15% YoY)을 기록하며 시장 기대치에 부합했다. 영업이익도 85억원(OPM 12%, 23% YoY)으로 시장 기대치에 부합했다. 품목별 매출(연결 기준)로는, 의료 디텍터가 307억원(12% YoY), 산업용 카메라는 131억원(28% YoY), 치과 디텍터는 113억원(7% YoY), NDT는 52억원(-15% YoY), 기타 사업은 83억원(56% YoY)을 기록했다. 지역별(별도 기준)로는 미국은 52억원(-5% YoY), 유럽 260억원(26% YoY), 일본 16억원(-26% YoY), 중국 54억원(76% YoY), 국내 134억원(20% YoY), 기타 지역 138억원(6% YoY)를 기록했다.",
-          "reasonSummary": "꾸준한데 싼 의료기기 소부장 기업. 미래에셋증권가 매수 의견을 제시했고 현재가 기준 상승여력은 23.2%입니다. 2026-02-13 종가 대비 목표가 괴리는 23.2%입니다.",
-          "reasonBullets": [
-            "미래에셋증권가 2026-02-13에 매수 의견과 목표가를 제시했습니다.",
-            "현재가 28,400원 대비 목표가는 35,000원입니다.",
-            "2026-02-13 종가 28,400원 대비 괴리는 23.2%입니다."
-          ],
-          "performance": {
-            "week1": {
-              "asOfDate": "2026-02-20",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "unavailable"
-            },
-            "month1": {
-              "asOfDate": "2026-03-15",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "unavailable"
-            },
-            "month3": {
-              "asOfDate": "2026-05-14",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            }
-          }
-        }
-      ]
-    },
-    "korea:381970": {
-      "ticker": "381970",
-      "name": "케이카",
-      "market": "korea",
-      "latestReportDate": "2026-02-13",
-      "latestBroker": "유진투자증권",
-      "latestOpinion": "Buy",
-      "latestTargetPrice": 20500,
-      "latestCurrentPrice": 10600,
-      "latestBasePrice": 10600,
-      "avgUpside": 93.4,
-      "reportCount": 1,
-      "reasonSummary": "4Q25 Review: 유효시장 점유율 상승 긍정적. 유진투자증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 93.4%입니다. 2026-02-13 종가 대비 목표가 괴리는 93.4%입니다.",
-      "reasonBullets": [
-        "유진투자증권가 2026-02-13에 Buy 의견과 목표가를 제시했습니다.",
-        "현재가 10,600원 대비 목표가는 20,500원입니다.",
-        "2026-02-13 종가 10,600원 대비 괴리는 93.4%입니다."
-      ],
-      "investmentLogic": {
-        "summary": "4Q25 Review: 유효시장 점유율 상승 긍정적",
-        "bullets": [
-          "4Q25 Review: 유효시장 점유율 상승 긍정적",
-          "4Q25 Review: 유효시장 점유율 상승 긍정적 - 4Q25Review: 매출액 5,600억원(+5.9%yoy), 영업이익 124억원(-18.9%yoy), 당기순이익 70억원(-22.2%yoy)를 기록해 컨센서스를 하회하는 부진한 실적을 시현.",
-          "영업일수 감소와 계절적 요인으로 인한 업황 둔화가 부진의 원인 - 대당 마진율 상승과 유효 점유율 상승: 4분기 실적은 다소 부진하였으나 25년 연간으로는 전년비 양호한 실적 개선세가 나타났음."
-        ]
-      },
-      "estimateRevision": {
-        "summary": "혼재 신호입니다. 리포트 원문에서 추정치 관련 표현을 기준으로 판단했습니다.",
-        "bullets": [
-          "4Q25 Review: 유효시장 점유율 상승 긍정적 - 4Q25Review: 매출액 5,600억원(+5.9%yoy), 영업이익 124억원(-18.9%yoy), 당기순이익 70억원(-22.2%yoy)를 기록해 컨센서스를 하회하는 부진한 실적을 시현.",
-          "동사에 대한 투자의견 매수와 목표주가 20,500원을 유지함 4Q25 Review: 유효시장 점유율 상승 긍정적."
-        ],
-        "signal": "mixed"
-      },
-      "valuation": {
-        "summary": "현재가 10,600원 대비 목표가 20,500원가 제시돼 밸류에이션 여력을 확인할 수 있습니다.",
-        "bullets": [
-          "4Q25 Review: 유효시장 점유율 상승 긍정적 - 4Q25Review: 매출액 5,600억원(+5.9%yoy), 영업이익 124억원(-18.9%yoy), 당기순이익 70억원(-22.2%yoy)를 기록해 컨센서스를 하회하는 부진한 실적을 시현.",
-          "영업일수 감소와 계절적 요인으로 인한 업황 둔화가 부진의 원인 - 대당 마진율 상승과 유효 점유율 상승: 4분기 실적은 다소 부진하였으나 25년 연간으로는 전년비 양호한 실적 개선세가 나타났음.",
-          "소매 대당 마진율 추이를 살펴보면, 2025년 연간 166만원을 기록해 전년비 6.5% 상승하였으며 유효시장 점유율은 12.7%를 기록해 24년 대비 0.4%p 상승하였음."
-        ]
-      },
-      "sectorCycle": {
-        "summary": "영업일수 감소와 계절적 요인으로 인한 업황 둔화가 부진의 원인 - 대당 마진율 상승과 유효 점유율 상승: 4분기 실적은 다소 부진하였으나 25년 연간으로는 전년비 양호한 실적 개선세가 나타났음.",
-        "bullets": [
-          "영업일수 감소와 계절적 요인으로 인한 업황 둔화가 부진의 원인 - 대당 마진율 상승과 유효 점유율 상승: 4분기 실적은 다소 부진하였으나 25년 연간으로는 전년비 양호한 실적 개선세가 나타났음.",
-          "정부의 확장 재정정책으로 인한 내수 경기 회복과 기준 금리 인하 등에 힘입어 올해 중고차 시장 업황은 전년비 개선될 것으로 기대됨.",
-          "국내 시장 기준 최근 1건 리포트의 업황 표현을 정리했습니다."
-        ]
-      },
-      "relatedReports": [
-        {
-          "date": "2026-02-13",
-          "ticker": "381970",
-          "name": "케이카",
-          "market": "korea",
-          "broker": "유진투자증권",
-          "analyst": "",
-          "opinion": "Buy",
-          "targetPrice": 20500,
-          "currentPrice": 10600,
-          "basePrice": 10600,
-          "basePriceDate": "2026-02-13",
-          "upside": 93.4,
-          "sourceUrl": "https://finance.naver.com/research/company_read.naver?nid=90514&page=1",
-          "reportTitle": "4Q25 Review: 유효시장 점유율 상승 긍정적",
-          "sourceText": "- 4Q25Review: 매출액 5,600억원(+5.9%yoy), 영업이익 124억원(-18.9%yoy), 당기순이익 70억원(-22.2%yoy)를 기록해 컨센서스를 하회하는 부진한 실적을 시현. 영업일수 감소와 계절적 요인으로 인한 업황 둔화가 부진의 원인 - 대당 마진율 상승과 유효 점유율 상승: 4분기 실적은 다소 부진하였으나 25년 연간으로는 전년비 양호한 실적 개선세가 나타났음. 소매 대당 마진율 추이를 살펴보면, 2025년 연간 166만원을 기록해 전년비 6.5% 상승하였으며 유효시장 점유율은 12.7%를 기록해 24년 대비 0.4%p 상승하였음. 다만, 중고차 전체 시장 수요를 살펴보면, 2025년 248.5만대를 기록해 전년비 2.2% 역성장하였으며 2020년 피크 대비로는 21.6만대 감소한 수치임. 내수 부진과 고금리가 원인 - 2026년 신규 사업 확장을 통한 도약을 준비: 동사는 현행 소매/경매 중심에서 벗어나 위탁/중개로 중고차 사업 영역을 확장해 종합 중고차 플래폼으로 도약하고자 함. 국내 중고차 시장의 성장 정체 속에서 신사업의 성공 여부가 동사의 미래 주가의 중요한 변수가 될 것. 정부의 확장 재정정책으로 인한 내수 경기 회복과 기준 금리 인하 등에 힘입어 올해 중고차 시장 업황은 전년비 개선될 것으로 기대됨. 동사에 대한 투자의견 매수와 목표주가 20,500원을 유지함",
-          "reasonSummary": "4Q25 Review: 유효시장 점유율 상승 긍정적. 유진투자증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 93.4%입니다. 2026-02-13 종가 대비 목표가 괴리는 93.4%입니다.",
-          "reasonBullets": [
-            "유진투자증권가 2026-02-13에 Buy 의견과 목표가를 제시했습니다.",
-            "현재가 10,600원 대비 목표가는 20,500원입니다.",
-            "2026-02-13 종가 10,600원 대비 괴리는 93.4%입니다."
-          ],
-          "performance": {
-            "week1": {
-              "asOfDate": "2026-02-20",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "unavailable"
-            },
-            "month1": {
-              "asOfDate": "2026-03-15",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "unavailable"
-            },
-            "month3": {
-              "asOfDate": "2026-05-14",
               "closePrice": 0,
               "returnPct": 0,
               "targetProgressPct": 0,

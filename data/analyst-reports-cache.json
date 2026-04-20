@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-20T12:34:17.158Z",
+  "generatedAt": "2026-04-20T13:59:42.274Z",
   "maxDays": 365,
   "reports": [
     {
@@ -954,6 +954,104 @@
         "IBK투자증권가 2026-04-20에 매수 의견과 목표가를 제시했습니다.",
         "현재가 102,500원 대비 목표가는 120,000원입니다.",
         "2026-04-20 종가 102,500원 대비 괴리는 17.1%입니다."
+      ],
+      "performance": {
+        "week1": {
+          "asOfDate": "2026-04-27",
+          "closePrice": 0,
+          "returnPct": 0,
+          "targetProgressPct": 0,
+          "success": false,
+          "status": "pending"
+        },
+        "month1": {
+          "asOfDate": "2026-05-20",
+          "closePrice": 0,
+          "returnPct": 0,
+          "targetProgressPct": 0,
+          "success": false,
+          "status": "pending"
+        },
+        "month3": {
+          "asOfDate": "2026-07-19",
+          "closePrice": 0,
+          "returnPct": 0,
+          "targetProgressPct": 0,
+          "success": false,
+          "status": "pending"
+        }
+      }
+    },
+    {
+      "date": "2026-04-20",
+      "ticker": "GOOGL",
+      "name": "Alphabet Inc.",
+      "market": "us",
+      "broker": "Keybanc",
+      "analyst": "Justin Patterson",
+      "opinion": "Buy",
+      "targetPrice": 380,
+      "currentPrice": 341.68,
+      "basePrice": 341.68,
+      "basePriceDate": "2026-04-17",
+      "upside": 11.2,
+      "sourceUrl": "https://stockanalysis.com/stocks/googl/ratings/",
+      "sourceText": "Keybanc Buy Maintains. Price target 370 -> 380.",
+      "reportTitle": "Buy -> Buy Maintains",
+      "reasonSummary": "Buy -> Buy Maintains. Keybanc가 Buy 의견을 제시했고 현재가 기준 상승여력은 11.2%입니다. 2026-04-17 종가 대비 목표가 괴리는 11.2%입니다.",
+      "reasonBullets": [
+        "Keybanc가 2026-04-20에 Buy 의견과 목표가를 제시했습니다.",
+        "현재가 $341.68 대비 목표가는 $380입니다.",
+        "2026-04-17 종가 $341.68 대비 괴리는 11.2%입니다."
+      ],
+      "performance": {
+        "week1": {
+          "asOfDate": "2026-04-27",
+          "closePrice": 0,
+          "returnPct": 0,
+          "targetProgressPct": 0,
+          "success": false,
+          "status": "pending"
+        },
+        "month1": {
+          "asOfDate": "2026-05-20",
+          "closePrice": 0,
+          "returnPct": 0,
+          "targetProgressPct": 0,
+          "success": false,
+          "status": "pending"
+        },
+        "month3": {
+          "asOfDate": "2026-07-19",
+          "closePrice": 0,
+          "returnPct": 0,
+          "targetProgressPct": 0,
+          "success": false,
+          "status": "pending"
+        }
+      }
+    },
+    {
+      "date": "2026-04-20",
+      "ticker": "AMZN",
+      "name": "Amazon.com, Inc.",
+      "market": "us",
+      "broker": "Keybanc",
+      "analyst": "Justin Patterson",
+      "opinion": "Buy",
+      "targetPrice": 325,
+      "currentPrice": 250.56,
+      "basePrice": 250.56,
+      "basePriceDate": "2026-04-17",
+      "upside": 29.7,
+      "sourceUrl": "https://stockanalysis.com/stocks/amzn/ratings/",
+      "sourceText": "Keybanc Buy Maintains. Price target 285 -> 325.",
+      "reportTitle": "Buy -> Buy Maintains",
+      "reasonSummary": "Buy -> Buy Maintains. Keybanc가 Buy 의견을 제시했고 현재가 기준 상승여력은 29.7%입니다. 2026-04-17 종가 대비 목표가 괴리는 29.7%입니다.",
+      "reasonBullets": [
+        "Keybanc가 2026-04-20에 Buy 의견과 목표가를 제시했습니다.",
+        "현재가 $250.56 대비 목표가는 $325입니다.",
+        "2026-04-17 종가 $250.56 대비 괴리는 29.7%입니다."
       ],
       "performance": {
         "week1": {
@@ -9777,10 +9875,10 @@
       ],
       "performance": {
         "week1": {
-          "asOfDate": "2026-04-17",
-          "closePrice": 341.68,
-          "returnPct": 6.3,
-          "targetProgressPct": 31,
+          "asOfDate": "2026-04-20",
+          "closePrice": 339.77,
+          "returnPct": 5.7,
+          "targetProgressPct": 28.1,
           "success": false,
           "status": "complete"
         },
@@ -9826,10 +9924,10 @@
       ],
       "performance": {
         "week1": {
-          "asOfDate": "2026-04-17",
-          "closePrice": 341.68,
-          "returnPct": 6.3,
-          "targetProgressPct": 32,
+          "asOfDate": "2026-04-20",
+          "closePrice": 339.77,
+          "returnPct": 5.7,
+          "targetProgressPct": 29,
           "success": false,
           "status": "complete"
         },
@@ -9875,10 +9973,10 @@
       ],
       "performance": {
         "week1": {
-          "asOfDate": "2026-04-17",
-          "closePrice": 250.56,
-          "returnPct": 4.4,
-          "targetProgressPct": 19.7,
+          "asOfDate": "2026-04-20",
+          "closePrice": 247.58,
+          "returnPct": 3.2,
+          "targetProgressPct": 14.2,
           "success": false,
           "status": "complete"
         },
@@ -9924,10 +10022,10 @@
       ],
       "performance": {
         "week1": {
-          "asOfDate": "2026-04-17",
-          "closePrice": 688.55,
-          "returnPct": 8.5,
-          "targetProgressPct": 31.7,
+          "asOfDate": "2026-04-20",
+          "closePrice": 677.94,
+          "returnPct": 6.8,
+          "targetProgressPct": 25.5,
           "success": false,
           "status": "complete"
         },
@@ -9973,10 +10071,10 @@
       ],
       "performance": {
         "week1": {
-          "asOfDate": "2026-04-17",
-          "closePrice": 127.5,
-          "returnPct": 2.4,
-          "targetProgressPct": 23.6,
+          "asOfDate": "2026-04-20",
+          "closePrice": 128.29,
+          "returnPct": 3,
+          "targetProgressPct": 29.9,
           "success": false,
           "status": "complete"
         },
@@ -34523,11 +34621,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-27",
-          "closePrice": 127.95,
-          "returnPct": 4,
-          "targetProgressPct": 31,
+          "closePrice": 0,
+          "returnPct": 0,
+          "targetProgressPct": 0,
           "success": false,
-          "status": "complete"
+          "status": "unavailable"
         },
         "month1": {
           "asOfDate": "2026-03-20",
@@ -34572,11 +34670,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-27",
-          "closePrice": 127.95,
-          "returnPct": 4,
-          "targetProgressPct": 18.4,
+          "closePrice": 0,
+          "returnPct": 0,
+          "targetProgressPct": 0,
           "success": false,
-          "status": "complete"
+          "status": "unavailable"
         },
         "month1": {
           "asOfDate": "2026-03-20",
@@ -34621,11 +34719,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-27",
-          "closePrice": 127.95,
-          "returnPct": 4,
-          "targetProgressPct": 29.2,
+          "closePrice": 0,
+          "returnPct": 0,
+          "targetProgressPct": 0,
           "success": false,
-          "status": "complete"
+          "status": "unavailable"
         },
         "month1": {
           "asOfDate": "2026-03-20",
@@ -34670,11 +34768,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-27",
-          "closePrice": 127.95,
-          "returnPct": 4,
-          "targetProgressPct": 29.2,
+          "closePrice": 0,
+          "returnPct": 0,
+          "targetProgressPct": 0,
           "success": false,
-          "status": "complete"
+          "status": "unavailable"
         },
         "month1": {
           "asOfDate": "2026-03-20",
@@ -36597,55 +36695,6 @@
         },
         "month3": {
           "asOfDate": "2026-05-12",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "pending"
-        }
-      }
-    },
-    {
-      "date": "2026-02-06",
-      "ticker": "GOOGL",
-      "name": "Alphabet Inc.",
-      "market": "us",
-      "broker": "Argus Research",
-      "analyst": "Joseph Bonner",
-      "opinion": "Strong Buy",
-      "targetPrice": 385,
-      "currentPrice": 341.68,
-      "basePrice": 322.86,
-      "basePriceDate": "2026-02-06",
-      "upside": 12.7,
-      "sourceUrl": "https://stockanalysis.com/stocks/googl/ratings/",
-      "sourceText": "Argus Research Strong Buy Maintains. Price target 365 -> 385.",
-      "reportTitle": "Strong Buy -> Strong Buy Maintains",
-      "reasonSummary": "Strong Buy -> Strong Buy Maintains. Argus Research가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 12.7%입니다. 2026-02-06 종가 대비 목표가 괴리는 19.2%입니다.",
-      "reasonBullets": [
-        "Argus Research가 2026-02-06에 Strong Buy 의견과 목표가를 제시했습니다.",
-        "현재가 $341.68 대비 목표가는 $385입니다.",
-        "2026-02-06 종가 $322.86 대비 괴리는 19.2%입니다."
-      ],
-      "performance": {
-        "week1": {
-          "asOfDate": "2026-02-13",
-          "closePrice": 305.72,
-          "returnPct": -5.3,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "complete"
-        },
-        "month1": {
-          "asOfDate": "2026-03-06",
-          "closePrice": 298.52,
-          "returnPct": -7.5,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "complete"
-        },
-        "month3": {
-          "asOfDate": "2026-05-07",
           "closePrice": 0,
           "returnPct": 0,
           "targetProgressPct": 0,
@@ -42577,58 +42626,406 @@
         }
       ]
     },
-    "us:AMZN": {
-      "ticker": "AMZN",
-      "name": "Amazon.com, Inc.",
+    "us:GOOGL": {
+      "ticker": "GOOGL",
+      "name": "Alphabet Inc.",
       "market": "us",
       "latestReportDate": "2026-04-20",
-      "latestBroker": "B of A Securities",
-      "latestOpinion": "Strong Buy",
-      "latestTargetPrice": 298,
-      "latestCurrentPrice": 250.56,
-      "latestBasePrice": 250.56,
-      "avgUpside": 16.3,
-      "reportCount": 12,
-      "reasonSummary": "Strong Buy -> Strong Buy Maintains. B of A Securities가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 18.9%입니다. 2026-04-17 종가 대비 목표가 괴리는 18.9%입니다.",
+      "latestBroker": "Keybanc",
+      "latestOpinion": "Buy",
+      "latestTargetPrice": 380,
+      "latestCurrentPrice": 341.68,
+      "latestBasePrice": 341.68,
+      "avgUpside": 12.5,
+      "reportCount": 10,
+      "reasonSummary": "Buy -> Buy Maintains. Keybanc가 Buy 의견을 제시했고 현재가 기준 상승여력은 11.2%입니다. 2026-04-17 종가 대비 목표가 괴리는 11.2%입니다.",
       "reasonBullets": [
-        "B of A Securities가 2026-04-20에 Strong Buy 의견과 목표가를 제시했습니다.",
-        "현재가 $250.56 대비 목표가는 $298입니다.",
-        "2026-04-17 종가 $250.56 대비 괴리는 18.9%입니다."
+        "Keybanc가 2026-04-20에 Buy 의견과 목표가를 제시했습니다.",
+        "현재가 $341.68 대비 목표가는 $380입니다.",
+        "2026-04-17 종가 $341.68 대비 괴리는 11.2%입니다."
       ],
       "investmentLogic": {
-        "summary": "Strong Buy -> Strong Buy Maintains",
+        "summary": "Buy -> Buy Maintains",
         "bullets": [
-          "Strong Buy -> Strong Buy Maintains",
-          "Strong Buy -> Strong Buy Maintains B of A Securities Strong Buy Maintains.",
-          "Price target 275 -> 298."
+          "Buy -> Buy Maintains",
+          "Buy -> Buy Maintains Keybanc Buy Maintains.",
+          "Price target 370 -> 380."
         ]
       },
       "estimateRevision": {
         "summary": "유지 신호입니다. 리포트 원문에서 추정치 관련 표현을 기준으로 판단했습니다.",
         "bullets": [
-          "Strong Buy -> Strong Buy Maintains B of A Securities Strong Buy Maintains.",
-          "Price target 275 -> 298.",
-          "Strong Buy -> Strong Buy Maintains."
+          "Buy -> Buy Maintains Keybanc Buy Maintains.",
+          "Price target 370 -> 380.",
+          "Buy -> Buy Maintains."
         ],
         "signal": "flat"
       },
       "valuation": {
-        "summary": "현재가 $250.56 대비 목표가 $298가 제시돼 밸류에이션 여력을 확인할 수 있습니다.",
+        "summary": "현재가 $341.68 대비 목표가 $380가 제시돼 밸류에이션 여력을 확인할 수 있습니다.",
         "bullets": [
-          "Strong Buy -> Strong Buy Maintains B of A Securities Strong Buy Maintains.",
-          "Price target 275 -> 298.",
-          "Strong Buy -> Strong Buy Maintains."
+          "Buy -> Buy Maintains Keybanc Buy Maintains.",
+          "Price target 370 -> 380.",
+          "Buy -> Buy Maintains."
         ]
       },
       "sectorCycle": {
-        "summary": "Strong Buy -> Strong Buy Maintains B of A Securities Strong Buy Maintains.",
+        "summary": "Buy -> Buy Maintains Keybanc Buy Maintains.",
         "bullets": [
-          "Strong Buy -> Strong Buy Maintains B of A Securities Strong Buy Maintains.",
-          "Price target 275 -> 298.",
-          "Strong Buy -> Strong Buy Maintains."
+          "Buy -> Buy Maintains Keybanc Buy Maintains.",
+          "Price target 370 -> 380.",
+          "Buy -> Buy Maintains."
         ]
       },
       "relatedReports": [
+        {
+          "date": "2026-04-20",
+          "ticker": "GOOGL",
+          "name": "Alphabet Inc.",
+          "market": "us",
+          "broker": "Keybanc",
+          "analyst": "Justin Patterson",
+          "opinion": "Buy",
+          "targetPrice": 380,
+          "currentPrice": 341.68,
+          "basePrice": 341.68,
+          "basePriceDate": "2026-04-17",
+          "upside": 11.2,
+          "sourceUrl": "https://stockanalysis.com/stocks/googl/ratings/",
+          "sourceText": "Keybanc Buy Maintains. Price target 370 -> 380.",
+          "reportTitle": "Buy -> Buy Maintains",
+          "reasonSummary": "Buy -> Buy Maintains. Keybanc가 Buy 의견을 제시했고 현재가 기준 상승여력은 11.2%입니다. 2026-04-17 종가 대비 목표가 괴리는 11.2%입니다.",
+          "reasonBullets": [
+            "Keybanc가 2026-04-20에 Buy 의견과 목표가를 제시했습니다.",
+            "현재가 $341.68 대비 목표가는 $380입니다.",
+            "2026-04-17 종가 $341.68 대비 괴리는 11.2%입니다."
+          ],
+          "performance": {
+            "week1": {
+              "asOfDate": "2026-04-27",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            },
+            "month1": {
+              "asOfDate": "2026-05-20",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            },
+            "month3": {
+              "asOfDate": "2026-07-19",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            }
+          }
+        },
+        {
+          "date": "2026-04-16",
+          "ticker": "GOOGL",
+          "name": "Alphabet Inc.",
+          "market": "us",
+          "broker": "TD Cowen",
+          "analyst": "John Blackledge",
+          "opinion": "Strong Buy",
+          "targetPrice": 375,
+          "currentPrice": 341.68,
+          "basePrice": 336.02,
+          "basePriceDate": "2026-04-16",
+          "upside": 9.8,
+          "sourceUrl": "https://stockanalysis.com/stocks/googl/ratings/",
+          "sourceText": "TD Cowen Strong Buy Maintains. Price target 365 -> 375.",
+          "reportTitle": "Strong Buy -> Strong Buy Maintains",
+          "reasonSummary": "Strong Buy -> Strong Buy Maintains. TD Cowen가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 9.8%입니다. 2026-04-16 종가 대비 목표가 괴리는 11.6%입니다.",
+          "reasonBullets": [
+            "TD Cowen가 2026-04-16에 Strong Buy 의견과 목표가를 제시했습니다.",
+            "현재가 $341.68 대비 목표가는 $375입니다.",
+            "2026-04-16 종가 $336.02 대비 괴리는 11.6%입니다."
+          ],
+          "performance": {
+            "week1": {
+              "asOfDate": "2026-04-23",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            },
+            "month1": {
+              "asOfDate": "2026-05-16",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            },
+            "month3": {
+              "asOfDate": "2026-07-15",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            }
+          }
+        },
+        {
+          "date": "2026-04-14",
+          "ticker": "GOOGL",
+          "name": "Alphabet Inc.",
+          "market": "us",
+          "broker": "Citigroup",
+          "analyst": "Ronald Josey",
+          "opinion": "Strong Buy",
+          "targetPrice": 405,
+          "currentPrice": 341.68,
+          "basePrice": 332.91,
+          "basePriceDate": "2026-04-14",
+          "upside": 18.5,
+          "sourceUrl": "https://stockanalysis.com/stocks/googl/ratings/",
+          "sourceText": "Citigroup Strong Buy Maintains. Price target 390 -> 405.",
+          "reportTitle": "Strong Buy -> Strong Buy Maintains",
+          "reasonSummary": "Strong Buy -> Strong Buy Maintains. Citigroup가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 18.5%입니다. 2026-04-14 종가 대비 목표가 괴리는 21.7%입니다.",
+          "reasonBullets": [
+            "Citigroup가 2026-04-14에 Strong Buy 의견과 목표가를 제시했습니다.",
+            "현재가 $341.68 대비 목표가는 $405입니다.",
+            "2026-04-14 종가 $332.91 대비 괴리는 21.7%입니다."
+          ],
+          "performance": {
+            "week1": {
+              "asOfDate": "2026-04-21",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            },
+            "month1": {
+              "asOfDate": "2026-05-14",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            },
+            "month3": {
+              "asOfDate": "2026-07-13",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            }
+          }
+        },
+        {
+          "date": "2026-04-13",
+          "ticker": "GOOGL",
+          "name": "Alphabet Inc.",
+          "market": "us",
+          "broker": "Stifel",
+          "analyst": "Mark Kelley",
+          "opinion": "Strong Buy",
+          "targetPrice": 387,
+          "currentPrice": 341.68,
+          "basePrice": 321.31,
+          "basePriceDate": "2026-04-13",
+          "upside": 13.3,
+          "sourceUrl": "https://stockanalysis.com/stocks/googl/ratings/",
+          "sourceText": "Stifel Strong Buy Maintains. Price target 395 -> 387.",
+          "reportTitle": "Strong Buy -> Strong Buy Maintains",
+          "reasonSummary": "Strong Buy -> Strong Buy Maintains. Stifel가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 13.3%입니다. 2026-04-13 종가 대비 목표가 괴리는 20.4%입니다.",
+          "reasonBullets": [
+            "Stifel가 2026-04-13에 Strong Buy 의견과 목표가를 제시했습니다.",
+            "현재가 $341.68 대비 목표가는 $387입니다.",
+            "2026-04-13 종가 $321.31 대비 괴리는 20.4%입니다."
+          ],
+          "performance": {
+            "week1": {
+              "asOfDate": "2026-04-20",
+              "closePrice": 339.77,
+              "returnPct": 5.7,
+              "targetProgressPct": 28.1,
+              "success": false,
+              "status": "complete"
+            },
+            "month1": {
+              "asOfDate": "2026-05-13",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            },
+            "month3": {
+              "asOfDate": "2026-07-12",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            }
+          }
+        },
+        {
+          "date": "2026-04-13",
+          "ticker": "GOOGL",
+          "name": "Alphabet Inc.",
+          "market": "us",
+          "broker": "Citizens",
+          "analyst": "Andrew Boone",
+          "opinion": "Buy",
+          "targetPrice": 385,
+          "currentPrice": 341.68,
+          "basePrice": 321.31,
+          "basePriceDate": "2026-04-13",
+          "upside": 12.7,
+          "sourceUrl": "https://stockanalysis.com/stocks/googl/ratings/",
+          "sourceText": "Citizens Buy Reiterates. Price target 385 -> 385.",
+          "reportTitle": "Buy -> Buy Reiterates",
+          "reasonSummary": "Buy -> Buy Reiterates. Citizens가 Buy 의견을 제시했고 현재가 기준 상승여력은 12.7%입니다. 2026-04-13 종가 대비 목표가 괴리는 19.8%입니다.",
+          "reasonBullets": [
+            "Citizens가 2026-04-13에 Buy 의견과 목표가를 제시했습니다.",
+            "현재가 $341.68 대비 목표가는 $385입니다.",
+            "2026-04-13 종가 $321.31 대비 괴리는 19.8%입니다."
+          ],
+          "performance": {
+            "week1": {
+              "asOfDate": "2026-04-20",
+              "closePrice": 339.77,
+              "returnPct": 5.7,
+              "targetProgressPct": 29,
+              "success": false,
+              "status": "complete"
+            },
+            "month1": {
+              "asOfDate": "2026-05-13",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            },
+            "month3": {
+              "asOfDate": "2026-07-12",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            }
+          }
+        }
+      ]
+    },
+    "us:AMZN": {
+      "ticker": "AMZN",
+      "name": "Amazon.com, Inc.",
+      "market": "us",
+      "latestReportDate": "2026-04-20",
+      "latestBroker": "Keybanc",
+      "latestOpinion": "Buy",
+      "latestTargetPrice": 325,
+      "latestCurrentPrice": 250.56,
+      "latestBasePrice": 250.56,
+      "avgUpside": 17.3,
+      "reportCount": 13,
+      "reasonSummary": "Buy -> Buy Maintains. Keybanc가 Buy 의견을 제시했고 현재가 기준 상승여력은 29.7%입니다. 2026-04-17 종가 대비 목표가 괴리는 29.7%입니다.",
+      "reasonBullets": [
+        "Keybanc가 2026-04-20에 Buy 의견과 목표가를 제시했습니다.",
+        "현재가 $250.56 대비 목표가는 $325입니다.",
+        "2026-04-17 종가 $250.56 대비 괴리는 29.7%입니다."
+      ],
+      "investmentLogic": {
+        "summary": "Buy -> Buy Maintains",
+        "bullets": [
+          "Buy -> Buy Maintains",
+          "Buy -> Buy Maintains Keybanc Buy Maintains.",
+          "Price target 285 -> 325."
+        ]
+      },
+      "estimateRevision": {
+        "summary": "유지 신호입니다. 리포트 원문에서 추정치 관련 표현을 기준으로 판단했습니다.",
+        "bullets": [
+          "Buy -> Buy Maintains Keybanc Buy Maintains.",
+          "Price target 285 -> 325.",
+          "Buy -> Buy Maintains."
+        ],
+        "signal": "flat"
+      },
+      "valuation": {
+        "summary": "현재가 $250.56 대비 목표가 $325가 제시돼 밸류에이션 여력을 확인할 수 있습니다.",
+        "bullets": [
+          "Buy -> Buy Maintains Keybanc Buy Maintains.",
+          "Price target 285 -> 325.",
+          "Buy -> Buy Maintains."
+        ]
+      },
+      "sectorCycle": {
+        "summary": "Buy -> Buy Maintains Keybanc Buy Maintains.",
+        "bullets": [
+          "Buy -> Buy Maintains Keybanc Buy Maintains.",
+          "Price target 285 -> 325.",
+          "Buy -> Buy Maintains."
+        ]
+      },
+      "relatedReports": [
+        {
+          "date": "2026-04-20",
+          "ticker": "AMZN",
+          "name": "Amazon.com, Inc.",
+          "market": "us",
+          "broker": "Keybanc",
+          "analyst": "Justin Patterson",
+          "opinion": "Buy",
+          "targetPrice": 325,
+          "currentPrice": 250.56,
+          "basePrice": 250.56,
+          "basePriceDate": "2026-04-17",
+          "upside": 29.7,
+          "sourceUrl": "https://stockanalysis.com/stocks/amzn/ratings/",
+          "sourceText": "Keybanc Buy Maintains. Price target 285 -> 325.",
+          "reportTitle": "Buy -> Buy Maintains",
+          "reasonSummary": "Buy -> Buy Maintains. Keybanc가 Buy 의견을 제시했고 현재가 기준 상승여력은 29.7%입니다. 2026-04-17 종가 대비 목표가 괴리는 29.7%입니다.",
+          "reasonBullets": [
+            "Keybanc가 2026-04-20에 Buy 의견과 목표가를 제시했습니다.",
+            "현재가 $250.56 대비 목표가는 $325입니다.",
+            "2026-04-17 종가 $250.56 대비 괴리는 29.7%입니다."
+          ],
+          "performance": {
+            "week1": {
+              "asOfDate": "2026-04-27",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            },
+            "month1": {
+              "asOfDate": "2026-05-20",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            },
+            "month3": {
+              "asOfDate": "2026-07-19",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            }
+          }
+        },
         {
           "date": "2026-04-20",
           "ticker": "AMZN",
@@ -42797,55 +43194,6 @@
             "Citizens가 2026-04-15에 Buy 의견과 목표가를 제시했습니다.",
             "현재가 $250.56 대비 목표가는 $315입니다.",
             "2026-04-15 종가 $248.5 대비 괴리는 26.8%입니다."
-          ],
-          "performance": {
-            "week1": {
-              "asOfDate": "2026-04-22",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            },
-            "month1": {
-              "asOfDate": "2026-05-15",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            },
-            "month3": {
-              "asOfDate": "2026-07-14",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            }
-          }
-        },
-        {
-          "date": "2026-04-15",
-          "ticker": "AMZN",
-          "name": "Amazon.com, Inc.",
-          "market": "us",
-          "broker": "Rosenblatt",
-          "analyst": "Barton Crockett",
-          "opinion": "Strong Buy",
-          "targetPrice": 296,
-          "currentPrice": 250.56,
-          "basePrice": 248.5,
-          "basePriceDate": "2026-04-15",
-          "upside": 18.1,
-          "sourceUrl": "https://stockanalysis.com/stocks/amzn/ratings/",
-          "sourceText": "Rosenblatt Strong Buy Maintains. Price target 296 -> 296.",
-          "reportTitle": "Strong Buy -> Strong Buy Maintains",
-          "reasonSummary": "Strong Buy -> Strong Buy Maintains. Rosenblatt가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 18.1%입니다. 2026-04-15 종가 대비 목표가 괴리는 19.1%입니다.",
-          "reasonBullets": [
-            "Rosenblatt가 2026-04-15에 Strong Buy 의견과 목표가를 제시했습니다.",
-            "현재가 $250.56 대비 목표가는 $296입니다.",
-            "2026-04-15 종가 $248.5 대비 괴리는 19.1%입니다."
           ],
           "performance": {
             "week1": {
@@ -43050,10 +43398,10 @@
           ],
           "performance": {
             "week1": {
-              "asOfDate": "2026-04-17",
-              "closePrice": 688.55,
-              "returnPct": 8.5,
-              "targetProgressPct": 31.7,
+              "asOfDate": "2026-04-20",
+              "closePrice": 677.94,
+              "returnPct": 6.8,
+              "targetProgressPct": 25.5,
               "success": false,
               "status": "complete"
             },
@@ -52152,305 +52500,6 @@
             },
             "month3": {
               "asOfDate": "2026-07-09",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            }
-          }
-        }
-      ]
-    },
-    "us:GOOGL": {
-      "ticker": "GOOGL",
-      "name": "Alphabet Inc.",
-      "market": "us",
-      "latestReportDate": "2026-04-16",
-      "latestBroker": "TD Cowen",
-      "latestOpinion": "Strong Buy",
-      "latestTargetPrice": 375,
-      "latestCurrentPrice": 341.68,
-      "latestBasePrice": 336.02,
-      "avgUpside": 12.6,
-      "reportCount": 10,
-      "reasonSummary": "Strong Buy -> Strong Buy Maintains. TD Cowen가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 9.8%입니다. 2026-04-16 종가 대비 목표가 괴리는 11.6%입니다.",
-      "reasonBullets": [
-        "TD Cowen가 2026-04-16에 Strong Buy 의견과 목표가를 제시했습니다.",
-        "현재가 $341.68 대비 목표가는 $375입니다.",
-        "2026-04-16 종가 $336.02 대비 괴리는 11.6%입니다."
-      ],
-      "investmentLogic": {
-        "summary": "Strong Buy -> Strong Buy Maintains",
-        "bullets": [
-          "Strong Buy -> Strong Buy Maintains",
-          "Strong Buy -> Strong Buy Maintains TD Cowen Strong Buy Maintains.",
-          "Price target 365 -> 375."
-        ]
-      },
-      "estimateRevision": {
-        "summary": "유지 신호입니다. 리포트 원문에서 추정치 관련 표현을 기준으로 판단했습니다.",
-        "bullets": [
-          "Strong Buy -> Strong Buy Maintains TD Cowen Strong Buy Maintains.",
-          "Price target 365 -> 375.",
-          "Strong Buy -> Strong Buy Maintains."
-        ],
-        "signal": "flat"
-      },
-      "valuation": {
-        "summary": "현재가 $341.68 대비 목표가 $375가 제시돼 밸류에이션 여력을 확인할 수 있습니다.",
-        "bullets": [
-          "Strong Buy -> Strong Buy Maintains TD Cowen Strong Buy Maintains.",
-          "Price target 365 -> 375.",
-          "Strong Buy -> Strong Buy Maintains."
-        ]
-      },
-      "sectorCycle": {
-        "summary": "Strong Buy -> Strong Buy Maintains TD Cowen Strong Buy Maintains.",
-        "bullets": [
-          "Strong Buy -> Strong Buy Maintains TD Cowen Strong Buy Maintains.",
-          "Price target 365 -> 375.",
-          "Strong Buy -> Strong Buy Maintains."
-        ]
-      },
-      "relatedReports": [
-        {
-          "date": "2026-04-16",
-          "ticker": "GOOGL",
-          "name": "Alphabet Inc.",
-          "market": "us",
-          "broker": "TD Cowen",
-          "analyst": "John Blackledge",
-          "opinion": "Strong Buy",
-          "targetPrice": 375,
-          "currentPrice": 341.68,
-          "basePrice": 336.02,
-          "basePriceDate": "2026-04-16",
-          "upside": 9.8,
-          "sourceUrl": "https://stockanalysis.com/stocks/googl/ratings/",
-          "sourceText": "TD Cowen Strong Buy Maintains. Price target 365 -> 375.",
-          "reportTitle": "Strong Buy -> Strong Buy Maintains",
-          "reasonSummary": "Strong Buy -> Strong Buy Maintains. TD Cowen가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 9.8%입니다. 2026-04-16 종가 대비 목표가 괴리는 11.6%입니다.",
-          "reasonBullets": [
-            "TD Cowen가 2026-04-16에 Strong Buy 의견과 목표가를 제시했습니다.",
-            "현재가 $341.68 대비 목표가는 $375입니다.",
-            "2026-04-16 종가 $336.02 대비 괴리는 11.6%입니다."
-          ],
-          "performance": {
-            "week1": {
-              "asOfDate": "2026-04-23",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            },
-            "month1": {
-              "asOfDate": "2026-05-16",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            },
-            "month3": {
-              "asOfDate": "2026-07-15",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            }
-          }
-        },
-        {
-          "date": "2026-04-14",
-          "ticker": "GOOGL",
-          "name": "Alphabet Inc.",
-          "market": "us",
-          "broker": "Citigroup",
-          "analyst": "Ronald Josey",
-          "opinion": "Strong Buy",
-          "targetPrice": 405,
-          "currentPrice": 341.68,
-          "basePrice": 332.91,
-          "basePriceDate": "2026-04-14",
-          "upside": 18.5,
-          "sourceUrl": "https://stockanalysis.com/stocks/googl/ratings/",
-          "sourceText": "Citigroup Strong Buy Maintains. Price target 390 -> 405.",
-          "reportTitle": "Strong Buy -> Strong Buy Maintains",
-          "reasonSummary": "Strong Buy -> Strong Buy Maintains. Citigroup가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 18.5%입니다. 2026-04-14 종가 대비 목표가 괴리는 21.7%입니다.",
-          "reasonBullets": [
-            "Citigroup가 2026-04-14에 Strong Buy 의견과 목표가를 제시했습니다.",
-            "현재가 $341.68 대비 목표가는 $405입니다.",
-            "2026-04-14 종가 $332.91 대비 괴리는 21.7%입니다."
-          ],
-          "performance": {
-            "week1": {
-              "asOfDate": "2026-04-21",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            },
-            "month1": {
-              "asOfDate": "2026-05-14",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            },
-            "month3": {
-              "asOfDate": "2026-07-13",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            }
-          }
-        },
-        {
-          "date": "2026-04-13",
-          "ticker": "GOOGL",
-          "name": "Alphabet Inc.",
-          "market": "us",
-          "broker": "Stifel",
-          "analyst": "Mark Kelley",
-          "opinion": "Strong Buy",
-          "targetPrice": 387,
-          "currentPrice": 341.68,
-          "basePrice": 321.31,
-          "basePriceDate": "2026-04-13",
-          "upside": 13.3,
-          "sourceUrl": "https://stockanalysis.com/stocks/googl/ratings/",
-          "sourceText": "Stifel Strong Buy Maintains. Price target 395 -> 387.",
-          "reportTitle": "Strong Buy -> Strong Buy Maintains",
-          "reasonSummary": "Strong Buy -> Strong Buy Maintains. Stifel가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 13.3%입니다. 2026-04-13 종가 대비 목표가 괴리는 20.4%입니다.",
-          "reasonBullets": [
-            "Stifel가 2026-04-13에 Strong Buy 의견과 목표가를 제시했습니다.",
-            "현재가 $341.68 대비 목표가는 $387입니다.",
-            "2026-04-13 종가 $321.31 대비 괴리는 20.4%입니다."
-          ],
-          "performance": {
-            "week1": {
-              "asOfDate": "2026-04-17",
-              "closePrice": 341.68,
-              "returnPct": 6.3,
-              "targetProgressPct": 31,
-              "success": false,
-              "status": "complete"
-            },
-            "month1": {
-              "asOfDate": "2026-05-13",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            },
-            "month3": {
-              "asOfDate": "2026-07-12",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            }
-          }
-        },
-        {
-          "date": "2026-04-13",
-          "ticker": "GOOGL",
-          "name": "Alphabet Inc.",
-          "market": "us",
-          "broker": "Citizens",
-          "analyst": "Andrew Boone",
-          "opinion": "Buy",
-          "targetPrice": 385,
-          "currentPrice": 341.68,
-          "basePrice": 321.31,
-          "basePriceDate": "2026-04-13",
-          "upside": 12.7,
-          "sourceUrl": "https://stockanalysis.com/stocks/googl/ratings/",
-          "sourceText": "Citizens Buy Reiterates. Price target 385 -> 385.",
-          "reportTitle": "Buy -> Buy Reiterates",
-          "reasonSummary": "Buy -> Buy Reiterates. Citizens가 Buy 의견을 제시했고 현재가 기준 상승여력은 12.7%입니다. 2026-04-13 종가 대비 목표가 괴리는 19.8%입니다.",
-          "reasonBullets": [
-            "Citizens가 2026-04-13에 Buy 의견과 목표가를 제시했습니다.",
-            "현재가 $341.68 대비 목표가는 $385입니다.",
-            "2026-04-13 종가 $321.31 대비 괴리는 19.8%입니다."
-          ],
-          "performance": {
-            "week1": {
-              "asOfDate": "2026-04-17",
-              "closePrice": 341.68,
-              "returnPct": 6.3,
-              "targetProgressPct": 32,
-              "success": false,
-              "status": "complete"
-            },
-            "month1": {
-              "asOfDate": "2026-05-13",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            },
-            "month3": {
-              "asOfDate": "2026-07-12",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            }
-          }
-        },
-        {
-          "date": "2026-04-08",
-          "ticker": "GOOGL",
-          "name": "Alphabet Inc.",
-          "market": "us",
-          "broker": "Cantor Fitzgerald",
-          "analyst": "Deepak Mathivanan",
-          "opinion": "Buy",
-          "targetPrice": 370,
-          "currentPrice": 341.68,
-          "basePrice": 317.32,
-          "basePriceDate": "2026-04-08",
-          "upside": 8.3,
-          "sourceUrl": "https://stockanalysis.com/stocks/googl/ratings/",
-          "sourceText": "Cantor Fitzgerald Buy Reiterates. Price target 370 -> 370.",
-          "reportTitle": "Buy -> Buy Reiterates",
-          "reasonSummary": "Buy -> Buy Reiterates. Cantor Fitzgerald가 Buy 의견을 제시했고 현재가 기준 상승여력은 8.3%입니다. 2026-04-08 종가 대비 목표가 괴리는 16.6%입니다.",
-          "reasonBullets": [
-            "Cantor Fitzgerald가 2026-04-08에 Buy 의견과 목표가를 제시했습니다.",
-            "현재가 $341.68 대비 목표가는 $370입니다.",
-            "2026-04-08 종가 $317.32 대비 괴리는 16.6%입니다."
-          ],
-          "performance": {
-            "week1": {
-              "asOfDate": "2026-04-15",
-              "closePrice": 337.12,
-              "returnPct": 6.2,
-              "targetProgressPct": 37.6,
-              "success": false,
-              "status": "complete"
-            },
-            "month1": {
-              "asOfDate": "2026-05-08",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            },
-            "month3": {
-              "asOfDate": "2026-07-07",
               "closePrice": 0,
               "returnPct": 0,
               "targetProgressPct": 0,
@@ -65584,10 +65633,10 @@
           ],
           "performance": {
             "week1": {
-              "asOfDate": "2026-04-17",
-              "closePrice": 127.5,
-              "returnPct": 2.4,
-              "targetProgressPct": 23.6,
+              "asOfDate": "2026-04-20",
+              "closePrice": 128.29,
+              "returnPct": 3,
+              "targetProgressPct": 29.9,
               "success": false,
               "status": "complete"
             },

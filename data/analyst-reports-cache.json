@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-20T10:49:53.623Z",
+  "generatedAt": "2026-04-20T12:34:17.158Z",
   "maxDays": 365,
   "reports": [
     {
@@ -954,6 +954,104 @@
         "IBK투자증권가 2026-04-20에 매수 의견과 목표가를 제시했습니다.",
         "현재가 102,500원 대비 목표가는 120,000원입니다.",
         "2026-04-20 종가 102,500원 대비 괴리는 17.1%입니다."
+      ],
+      "performance": {
+        "week1": {
+          "asOfDate": "2026-04-27",
+          "closePrice": 0,
+          "returnPct": 0,
+          "targetProgressPct": 0,
+          "success": false,
+          "status": "pending"
+        },
+        "month1": {
+          "asOfDate": "2026-05-20",
+          "closePrice": 0,
+          "returnPct": 0,
+          "targetProgressPct": 0,
+          "success": false,
+          "status": "pending"
+        },
+        "month3": {
+          "asOfDate": "2026-07-19",
+          "closePrice": 0,
+          "returnPct": 0,
+          "targetProgressPct": 0,
+          "success": false,
+          "status": "pending"
+        }
+      }
+    },
+    {
+      "date": "2026-04-20",
+      "ticker": "AMZN",
+      "name": "Amazon.com, Inc.",
+      "market": "us",
+      "broker": "B of A Securities",
+      "analyst": "Justin Post",
+      "opinion": "Strong Buy",
+      "targetPrice": 298,
+      "currentPrice": 250.56,
+      "basePrice": 250.56,
+      "basePriceDate": "2026-04-17",
+      "upside": 18.9,
+      "sourceUrl": "https://stockanalysis.com/stocks/amzn/ratings/",
+      "sourceText": "B of A Securities Strong Buy Maintains. Price target 275 -> 298.",
+      "reportTitle": "Strong Buy -> Strong Buy Maintains",
+      "reasonSummary": "Strong Buy -> Strong Buy Maintains. B of A Securities가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 18.9%입니다. 2026-04-17 종가 대비 목표가 괴리는 18.9%입니다.",
+      "reasonBullets": [
+        "B of A Securities가 2026-04-20에 Strong Buy 의견과 목표가를 제시했습니다.",
+        "현재가 $250.56 대비 목표가는 $298입니다.",
+        "2026-04-17 종가 $250.56 대비 괴리는 18.9%입니다."
+      ],
+      "performance": {
+        "week1": {
+          "asOfDate": "2026-04-27",
+          "closePrice": 0,
+          "returnPct": 0,
+          "targetProgressPct": 0,
+          "success": false,
+          "status": "pending"
+        },
+        "month1": {
+          "asOfDate": "2026-05-20",
+          "closePrice": 0,
+          "returnPct": 0,
+          "targetProgressPct": 0,
+          "success": false,
+          "status": "pending"
+        },
+        "month3": {
+          "asOfDate": "2026-07-19",
+          "closePrice": 0,
+          "returnPct": 0,
+          "targetProgressPct": 0,
+          "success": false,
+          "status": "pending"
+        }
+      }
+    },
+    {
+      "date": "2026-04-20",
+      "ticker": "META",
+      "name": "Meta Platforms, Inc.",
+      "market": "us",
+      "broker": "B of A Securities",
+      "analyst": "Justin Post",
+      "opinion": "Strong Buy",
+      "targetPrice": 820,
+      "currentPrice": 688.55,
+      "basePrice": 688.55,
+      "basePriceDate": "2026-04-17",
+      "upside": 19.1,
+      "sourceUrl": "https://stockanalysis.com/stocks/meta/ratings/",
+      "sourceText": "B of A Securities Strong Buy Maintains. Price target 885 -> 820.",
+      "reportTitle": "Strong Buy -> Strong Buy Maintains",
+      "reasonSummary": "Strong Buy -> Strong Buy Maintains. B of A Securities가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 19.1%입니다. 2026-04-17 종가 대비 목표가 괴리는 19.1%입니다.",
+      "reasonBullets": [
+        "B of A Securities가 2026-04-20에 Strong Buy 의견과 목표가를 제시했습니다.",
+        "현재가 $688.55 대비 목표가는 $820입니다.",
+        "2026-04-17 종가 $688.55 대비 괴리는 19.1%입니다."
       ],
       "performance": {
         "week1": {
@@ -34278,11 +34376,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-27",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
+          "closePrice": 127.95,
+          "returnPct": 4,
+          "targetProgressPct": 22.5,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-03-20",
@@ -34327,11 +34425,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-27",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
+          "closePrice": 127.95,
+          "returnPct": 4,
+          "targetProgressPct": 45,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-03-20",
@@ -34376,11 +34474,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-27",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
+          "closePrice": 127.95,
+          "returnPct": 4,
+          "targetProgressPct": 20.7,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-03-20",
@@ -34425,11 +34523,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-27",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
+          "closePrice": 127.95,
+          "returnPct": 4,
+          "targetProgressPct": 31,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-03-20",
@@ -34474,11 +34572,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-27",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
+          "closePrice": 127.95,
+          "returnPct": 4,
+          "targetProgressPct": 18.4,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-03-20",
@@ -34523,11 +34621,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-27",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
+          "closePrice": 127.95,
+          "returnPct": 4,
+          "targetProgressPct": 29.2,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-03-20",
@@ -34572,11 +34670,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-02-27",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
+          "closePrice": 127.95,
+          "returnPct": 4,
+          "targetProgressPct": 29.2,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-03-20",
@@ -42479,6 +42577,604 @@
         }
       ]
     },
+    "us:AMZN": {
+      "ticker": "AMZN",
+      "name": "Amazon.com, Inc.",
+      "market": "us",
+      "latestReportDate": "2026-04-20",
+      "latestBroker": "B of A Securities",
+      "latestOpinion": "Strong Buy",
+      "latestTargetPrice": 298,
+      "latestCurrentPrice": 250.56,
+      "latestBasePrice": 250.56,
+      "avgUpside": 16.3,
+      "reportCount": 12,
+      "reasonSummary": "Strong Buy -> Strong Buy Maintains. B of A Securities가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 18.9%입니다. 2026-04-17 종가 대비 목표가 괴리는 18.9%입니다.",
+      "reasonBullets": [
+        "B of A Securities가 2026-04-20에 Strong Buy 의견과 목표가를 제시했습니다.",
+        "현재가 $250.56 대비 목표가는 $298입니다.",
+        "2026-04-17 종가 $250.56 대비 괴리는 18.9%입니다."
+      ],
+      "investmentLogic": {
+        "summary": "Strong Buy -> Strong Buy Maintains",
+        "bullets": [
+          "Strong Buy -> Strong Buy Maintains",
+          "Strong Buy -> Strong Buy Maintains B of A Securities Strong Buy Maintains.",
+          "Price target 275 -> 298."
+        ]
+      },
+      "estimateRevision": {
+        "summary": "유지 신호입니다. 리포트 원문에서 추정치 관련 표현을 기준으로 판단했습니다.",
+        "bullets": [
+          "Strong Buy -> Strong Buy Maintains B of A Securities Strong Buy Maintains.",
+          "Price target 275 -> 298.",
+          "Strong Buy -> Strong Buy Maintains."
+        ],
+        "signal": "flat"
+      },
+      "valuation": {
+        "summary": "현재가 $250.56 대비 목표가 $298가 제시돼 밸류에이션 여력을 확인할 수 있습니다.",
+        "bullets": [
+          "Strong Buy -> Strong Buy Maintains B of A Securities Strong Buy Maintains.",
+          "Price target 275 -> 298.",
+          "Strong Buy -> Strong Buy Maintains."
+        ]
+      },
+      "sectorCycle": {
+        "summary": "Strong Buy -> Strong Buy Maintains B of A Securities Strong Buy Maintains.",
+        "bullets": [
+          "Strong Buy -> Strong Buy Maintains B of A Securities Strong Buy Maintains.",
+          "Price target 275 -> 298.",
+          "Strong Buy -> Strong Buy Maintains."
+        ]
+      },
+      "relatedReports": [
+        {
+          "date": "2026-04-20",
+          "ticker": "AMZN",
+          "name": "Amazon.com, Inc.",
+          "market": "us",
+          "broker": "B of A Securities",
+          "analyst": "Justin Post",
+          "opinion": "Strong Buy",
+          "targetPrice": 298,
+          "currentPrice": 250.56,
+          "basePrice": 250.56,
+          "basePriceDate": "2026-04-17",
+          "upside": 18.9,
+          "sourceUrl": "https://stockanalysis.com/stocks/amzn/ratings/",
+          "sourceText": "B of A Securities Strong Buy Maintains. Price target 275 -> 298.",
+          "reportTitle": "Strong Buy -> Strong Buy Maintains",
+          "reasonSummary": "Strong Buy -> Strong Buy Maintains. B of A Securities가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 18.9%입니다. 2026-04-17 종가 대비 목표가 괴리는 18.9%입니다.",
+          "reasonBullets": [
+            "B of A Securities가 2026-04-20에 Strong Buy 의견과 목표가를 제시했습니다.",
+            "현재가 $250.56 대비 목표가는 $298입니다.",
+            "2026-04-17 종가 $250.56 대비 괴리는 18.9%입니다."
+          ],
+          "performance": {
+            "week1": {
+              "asOfDate": "2026-04-27",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            },
+            "month1": {
+              "asOfDate": "2026-05-20",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            },
+            "month3": {
+              "asOfDate": "2026-07-19",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            }
+          }
+        },
+        {
+          "date": "2026-04-17",
+          "ticker": "AMZN",
+          "name": "Amazon.com, Inc.",
+          "market": "us",
+          "broker": "Truist Securities",
+          "analyst": "Youssef Squali",
+          "opinion": "Strong Buy",
+          "targetPrice": 285,
+          "currentPrice": 250.56,
+          "basePrice": 250.56,
+          "basePriceDate": "2026-04-17",
+          "upside": 13.7,
+          "sourceUrl": "https://stockanalysis.com/stocks/amzn/ratings/",
+          "sourceText": "Truist Securities Strong Buy Maintains. Price target 280 -> 285.",
+          "reportTitle": "Strong Buy -> Strong Buy Maintains",
+          "reasonSummary": "Strong Buy -> Strong Buy Maintains. Truist Securities가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 13.7%입니다. 2026-04-17 종가 대비 목표가 괴리는 13.7%입니다.",
+          "reasonBullets": [
+            "Truist Securities가 2026-04-17에 Strong Buy 의견과 목표가를 제시했습니다.",
+            "현재가 $250.56 대비 목표가는 $285입니다.",
+            "2026-04-17 종가 $250.56 대비 괴리는 13.7%입니다."
+          ],
+          "performance": {
+            "week1": {
+              "asOfDate": "2026-04-24",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            },
+            "month1": {
+              "asOfDate": "2026-05-17",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            },
+            "month3": {
+              "asOfDate": "2026-07-16",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            }
+          }
+        },
+        {
+          "date": "2026-04-16",
+          "ticker": "AMZN",
+          "name": "Amazon.com, Inc.",
+          "market": "us",
+          "broker": "TD Cowen",
+          "analyst": "John Blackledge",
+          "opinion": "Strong Buy",
+          "targetPrice": 300,
+          "currentPrice": 250.56,
+          "basePrice": 249.7,
+          "basePriceDate": "2026-04-16",
+          "upside": 19.7,
+          "sourceUrl": "https://stockanalysis.com/stocks/amzn/ratings/",
+          "sourceText": "TD Cowen Strong Buy Reiterates. Price target 300 -> 300.",
+          "reportTitle": "Strong Buy -> Strong Buy Reiterates",
+          "reasonSummary": "Strong Buy -> Strong Buy Reiterates. TD Cowen가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 19.7%입니다. 2026-04-16 종가 대비 목표가 괴리는 20.1%입니다.",
+          "reasonBullets": [
+            "TD Cowen가 2026-04-16에 Strong Buy 의견과 목표가를 제시했습니다.",
+            "현재가 $250.56 대비 목표가는 $300입니다.",
+            "2026-04-16 종가 $249.7 대비 괴리는 20.1%입니다."
+          ],
+          "performance": {
+            "week1": {
+              "asOfDate": "2026-04-23",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            },
+            "month1": {
+              "asOfDate": "2026-05-16",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            },
+            "month3": {
+              "asOfDate": "2026-07-15",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            }
+          }
+        },
+        {
+          "date": "2026-04-15",
+          "ticker": "AMZN",
+          "name": "Amazon.com, Inc.",
+          "market": "us",
+          "broker": "Citizens",
+          "analyst": "Andrew Boone",
+          "opinion": "Buy",
+          "targetPrice": 315,
+          "currentPrice": 250.56,
+          "basePrice": 248.5,
+          "basePriceDate": "2026-04-15",
+          "upside": 25.7,
+          "sourceUrl": "https://stockanalysis.com/stocks/amzn/ratings/",
+          "sourceText": "Citizens Buy Reiterates. Price target 315 -> 315.",
+          "reportTitle": "Buy -> Buy Reiterates",
+          "reasonSummary": "Buy -> Buy Reiterates. Citizens가 Buy 의견을 제시했고 현재가 기준 상승여력은 25.7%입니다. 2026-04-15 종가 대비 목표가 괴리는 26.8%입니다.",
+          "reasonBullets": [
+            "Citizens가 2026-04-15에 Buy 의견과 목표가를 제시했습니다.",
+            "현재가 $250.56 대비 목표가는 $315입니다.",
+            "2026-04-15 종가 $248.5 대비 괴리는 26.8%입니다."
+          ],
+          "performance": {
+            "week1": {
+              "asOfDate": "2026-04-22",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            },
+            "month1": {
+              "asOfDate": "2026-05-15",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            },
+            "month3": {
+              "asOfDate": "2026-07-14",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            }
+          }
+        },
+        {
+          "date": "2026-04-15",
+          "ticker": "AMZN",
+          "name": "Amazon.com, Inc.",
+          "market": "us",
+          "broker": "Rosenblatt",
+          "analyst": "Barton Crockett",
+          "opinion": "Strong Buy",
+          "targetPrice": 296,
+          "currentPrice": 250.56,
+          "basePrice": 248.5,
+          "basePriceDate": "2026-04-15",
+          "upside": 18.1,
+          "sourceUrl": "https://stockanalysis.com/stocks/amzn/ratings/",
+          "sourceText": "Rosenblatt Strong Buy Maintains. Price target 296 -> 296.",
+          "reportTitle": "Strong Buy -> Strong Buy Maintains",
+          "reasonSummary": "Strong Buy -> Strong Buy Maintains. Rosenblatt가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 18.1%입니다. 2026-04-15 종가 대비 목표가 괴리는 19.1%입니다.",
+          "reasonBullets": [
+            "Rosenblatt가 2026-04-15에 Strong Buy 의견과 목표가를 제시했습니다.",
+            "현재가 $250.56 대비 목표가는 $296입니다.",
+            "2026-04-15 종가 $248.5 대비 괴리는 19.1%입니다."
+          ],
+          "performance": {
+            "week1": {
+              "asOfDate": "2026-04-22",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            },
+            "month1": {
+              "asOfDate": "2026-05-15",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            },
+            "month3": {
+              "asOfDate": "2026-07-14",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            }
+          }
+        }
+      ]
+    },
+    "us:META": {
+      "ticker": "META",
+      "name": "Meta Platforms, Inc.",
+      "market": "us",
+      "latestReportDate": "2026-04-20",
+      "latestBroker": "B of A Securities",
+      "latestOpinion": "Strong Buy",
+      "latestTargetPrice": 820,
+      "latestCurrentPrice": 688.55,
+      "latestBasePrice": 688.55,
+      "avgUpside": 21.4,
+      "reportCount": 13,
+      "reasonSummary": "Strong Buy -> Strong Buy Maintains. B of A Securities가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 19.1%입니다. 2026-04-17 종가 대비 목표가 괴리는 19.1%입니다.",
+      "reasonBullets": [
+        "B of A Securities가 2026-04-20에 Strong Buy 의견과 목표가를 제시했습니다.",
+        "현재가 $688.55 대비 목표가는 $820입니다.",
+        "2026-04-17 종가 $688.55 대비 괴리는 19.1%입니다."
+      ],
+      "investmentLogic": {
+        "summary": "Strong Buy -> Strong Buy Maintains",
+        "bullets": [
+          "Strong Buy -> Strong Buy Maintains",
+          "Strong Buy -> Strong Buy Maintains B of A Securities Strong Buy Maintains.",
+          "Price target 885 -> 820."
+        ]
+      },
+      "estimateRevision": {
+        "summary": "유지 신호입니다. 리포트 원문에서 추정치 관련 표현을 기준으로 판단했습니다.",
+        "bullets": [
+          "Strong Buy -> Strong Buy Maintains B of A Securities Strong Buy Maintains.",
+          "Price target 885 -> 820.",
+          "Strong Buy -> Strong Buy Maintains."
+        ],
+        "signal": "flat"
+      },
+      "valuation": {
+        "summary": "현재가 $688.55 대비 목표가 $820가 제시돼 밸류에이션 여력을 확인할 수 있습니다.",
+        "bullets": [
+          "Buy -> Buy Maintains Piper Sandler Buy Maintains.",
+          "Piper Sandler가 Buy 의견을 제시했고 현재가 기준 상승여력은 27.8%입니다.",
+          "현재가 대비 목표가 상승여력은 19.1%입니다."
+        ]
+      },
+      "sectorCycle": {
+        "summary": "Strong Buy -> Strong Buy Maintains B of A Securities Strong Buy Maintains.",
+        "bullets": [
+          "Strong Buy -> Strong Buy Maintains B of A Securities Strong Buy Maintains.",
+          "Price target 885 -> 820.",
+          "Strong Buy -> Strong Buy Maintains."
+        ]
+      },
+      "relatedReports": [
+        {
+          "date": "2026-04-20",
+          "ticker": "META",
+          "name": "Meta Platforms, Inc.",
+          "market": "us",
+          "broker": "B of A Securities",
+          "analyst": "Justin Post",
+          "opinion": "Strong Buy",
+          "targetPrice": 820,
+          "currentPrice": 688.55,
+          "basePrice": 688.55,
+          "basePriceDate": "2026-04-17",
+          "upside": 19.1,
+          "sourceUrl": "https://stockanalysis.com/stocks/meta/ratings/",
+          "sourceText": "B of A Securities Strong Buy Maintains. Price target 885 -> 820.",
+          "reportTitle": "Strong Buy -> Strong Buy Maintains",
+          "reasonSummary": "Strong Buy -> Strong Buy Maintains. B of A Securities가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 19.1%입니다. 2026-04-17 종가 대비 목표가 괴리는 19.1%입니다.",
+          "reasonBullets": [
+            "B of A Securities가 2026-04-20에 Strong Buy 의견과 목표가를 제시했습니다.",
+            "현재가 $688.55 대비 목표가는 $820입니다.",
+            "2026-04-17 종가 $688.55 대비 괴리는 19.1%입니다."
+          ],
+          "performance": {
+            "week1": {
+              "asOfDate": "2026-04-27",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            },
+            "month1": {
+              "asOfDate": "2026-05-20",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            },
+            "month3": {
+              "asOfDate": "2026-07-19",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            }
+          }
+        },
+        {
+          "date": "2026-04-16",
+          "ticker": "META",
+          "name": "Meta Platforms, Inc.",
+          "market": "us",
+          "broker": "TD Cowen",
+          "analyst": "John Blackledge",
+          "opinion": "Strong Buy",
+          "targetPrice": 820,
+          "currentPrice": 688.55,
+          "basePrice": 676.87,
+          "basePriceDate": "2026-04-16",
+          "upside": 19.1,
+          "sourceUrl": "https://stockanalysis.com/stocks/meta/ratings/",
+          "sourceText": "TD Cowen Strong Buy Reiterates. Price target 820 -> 820.",
+          "reportTitle": "Strong Buy -> Strong Buy Reiterates",
+          "reasonSummary": "Strong Buy -> Strong Buy Reiterates. TD Cowen가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 19.1%입니다. 2026-04-16 종가 대비 목표가 괴리는 21.1%입니다.",
+          "reasonBullets": [
+            "TD Cowen가 2026-04-16에 Strong Buy 의견과 목표가를 제시했습니다.",
+            "현재가 $688.55 대비 목표가는 $820입니다.",
+            "2026-04-16 종가 $676.87 대비 괴리는 21.1%입니다."
+          ],
+          "performance": {
+            "week1": {
+              "asOfDate": "2026-04-23",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            },
+            "month1": {
+              "asOfDate": "2026-05-16",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            },
+            "month3": {
+              "asOfDate": "2026-07-15",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            }
+          }
+        },
+        {
+          "date": "2026-04-13",
+          "ticker": "META",
+          "name": "Meta Platforms, Inc.",
+          "market": "us",
+          "broker": "Stifel",
+          "analyst": "Mark Kelley",
+          "opinion": "Strong Buy",
+          "targetPrice": 805,
+          "currentPrice": 688.55,
+          "basePrice": 634.53,
+          "basePriceDate": "2026-04-13",
+          "upside": 16.9,
+          "sourceUrl": "https://stockanalysis.com/stocks/meta/ratings/",
+          "sourceText": "Stifel Strong Buy Maintains. Price target 820 -> 805.",
+          "reportTitle": "Strong Buy -> Strong Buy Maintains",
+          "reasonSummary": "Strong Buy -> Strong Buy Maintains. Stifel가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 16.9%입니다. 2026-04-13 종가 대비 목표가 괴리는 26.9%입니다.",
+          "reasonBullets": [
+            "Stifel가 2026-04-13에 Strong Buy 의견과 목표가를 제시했습니다.",
+            "현재가 $688.55 대비 목표가는 $805입니다.",
+            "2026-04-13 종가 $634.53 대비 괴리는 26.9%입니다."
+          ],
+          "performance": {
+            "week1": {
+              "asOfDate": "2026-04-17",
+              "closePrice": 688.55,
+              "returnPct": 8.5,
+              "targetProgressPct": 31.7,
+              "success": false,
+              "status": "complete"
+            },
+            "month1": {
+              "asOfDate": "2026-05-13",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            },
+            "month3": {
+              "asOfDate": "2026-07-12",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            }
+          }
+        },
+        {
+          "date": "2026-04-09",
+          "ticker": "META",
+          "name": "Meta Platforms, Inc.",
+          "market": "us",
+          "broker": "Keybanc",
+          "analyst": "Justin Patterson",
+          "opinion": "Buy",
+          "targetPrice": 760,
+          "currentPrice": 688.55,
+          "basePrice": 628.39,
+          "basePriceDate": "2026-04-09",
+          "upside": 10.4,
+          "sourceUrl": "https://stockanalysis.com/stocks/meta/ratings/",
+          "sourceText": "Keybanc Buy Maintains. Price target 855 -> 760.",
+          "reportTitle": "Buy -> Buy Maintains",
+          "reasonSummary": "Buy -> Buy Maintains. Keybanc가 Buy 의견을 제시했고 현재가 기준 상승여력은 10.4%입니다. 2026-04-09 종가 대비 목표가 괴리는 20.9%입니다.",
+          "reasonBullets": [
+            "Keybanc가 2026-04-09에 Buy 의견과 목표가를 제시했습니다.",
+            "현재가 $688.55 대비 목표가는 $760입니다.",
+            "2026-04-09 종가 $628.39 대비 괴리는 20.9%입니다."
+          ],
+          "performance": {
+            "week1": {
+              "asOfDate": "2026-04-16",
+              "closePrice": 676.87,
+              "returnPct": 7.7,
+              "targetProgressPct": 36.8,
+              "success": false,
+              "status": "complete"
+            },
+            "month1": {
+              "asOfDate": "2026-05-09",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            },
+            "month3": {
+              "asOfDate": "2026-07-08",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            }
+          }
+        },
+        {
+          "date": "2026-04-09",
+          "ticker": "META",
+          "name": "Meta Platforms, Inc.",
+          "market": "us",
+          "broker": "Rosenblatt",
+          "analyst": "Barton Crockett",
+          "opinion": "Strong Buy",
+          "targetPrice": 1015,
+          "currentPrice": 688.55,
+          "basePrice": 628.39,
+          "basePriceDate": "2026-04-09",
+          "upside": 47.4,
+          "sourceUrl": "https://stockanalysis.com/stocks/meta/ratings/",
+          "sourceText": "Rosenblatt Strong Buy Maintains. Price target 1144 -> 1015.",
+          "reportTitle": "Strong Buy -> Strong Buy Maintains",
+          "reasonSummary": "Strong Buy -> Strong Buy Maintains. Rosenblatt가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 47.4%입니다. 2026-04-09 종가 대비 목표가 괴리는 61.5%입니다.",
+          "reasonBullets": [
+            "Rosenblatt가 2026-04-09에 Strong Buy 의견과 목표가를 제시했습니다.",
+            "현재가 $688.55 대비 목표가는 $1,015입니다.",
+            "2026-04-09 종가 $628.39 대비 괴리는 61.5%입니다."
+          ],
+          "performance": {
+            "week1": {
+              "asOfDate": "2026-04-16",
+              "closePrice": 676.87,
+              "returnPct": 7.7,
+              "targetProgressPct": 12.5,
+              "success": false,
+              "status": "complete"
+            },
+            "month1": {
+              "asOfDate": "2026-05-09",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            },
+            "month3": {
+              "asOfDate": "2026-07-08",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            }
+          }
+        }
+      ]
+    },
     "korea:010950": {
       "ticker": "010950",
       "name": "S-Oil",
@@ -45186,305 +45882,6 @@
             },
             "month3": {
               "asOfDate": "2026-04-30",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            }
-          }
-        }
-      ]
-    },
-    "us:AMZN": {
-      "ticker": "AMZN",
-      "name": "Amazon.com, Inc.",
-      "market": "us",
-      "latestReportDate": "2026-04-17",
-      "latestBroker": "Truist Securities",
-      "latestOpinion": "Strong Buy",
-      "latestTargetPrice": 285,
-      "latestCurrentPrice": 250.56,
-      "latestBasePrice": 250.56,
-      "avgUpside": 16.1,
-      "reportCount": 11,
-      "reasonSummary": "Strong Buy -> Strong Buy Maintains. Truist Securities가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 13.7%입니다. 2026-04-17 종가 대비 목표가 괴리는 13.7%입니다.",
-      "reasonBullets": [
-        "Truist Securities가 2026-04-17에 Strong Buy 의견과 목표가를 제시했습니다.",
-        "현재가 $250.56 대비 목표가는 $285입니다.",
-        "2026-04-17 종가 $250.56 대비 괴리는 13.7%입니다."
-      ],
-      "investmentLogic": {
-        "summary": "Strong Buy -> Strong Buy Maintains",
-        "bullets": [
-          "Strong Buy -> Strong Buy Maintains",
-          "Strong Buy -> Strong Buy Maintains Truist Securities Strong Buy Maintains.",
-          "Price target 280 -> 285."
-        ]
-      },
-      "estimateRevision": {
-        "summary": "유지 신호입니다. 리포트 원문에서 추정치 관련 표현을 기준으로 판단했습니다.",
-        "bullets": [
-          "Strong Buy -> Strong Buy Maintains Truist Securities Strong Buy Maintains.",
-          "Price target 280 -> 285.",
-          "Strong Buy -> Strong Buy Maintains."
-        ],
-        "signal": "flat"
-      },
-      "valuation": {
-        "summary": "현재가 $250.56 대비 목표가 $285가 제시돼 밸류에이션 여력을 확인할 수 있습니다.",
-        "bullets": [
-          "Strong Buy -> Strong Buy Maintains Truist Securities Strong Buy Maintains.",
-          "Price target 280 -> 285.",
-          "Strong Buy -> Strong Buy Maintains."
-        ]
-      },
-      "sectorCycle": {
-        "summary": "Strong Buy -> Strong Buy Maintains Truist Securities Strong Buy Maintains.",
-        "bullets": [
-          "Strong Buy -> Strong Buy Maintains Truist Securities Strong Buy Maintains.",
-          "Price target 280 -> 285.",
-          "Strong Buy -> Strong Buy Maintains."
-        ]
-      },
-      "relatedReports": [
-        {
-          "date": "2026-04-17",
-          "ticker": "AMZN",
-          "name": "Amazon.com, Inc.",
-          "market": "us",
-          "broker": "Truist Securities",
-          "analyst": "Youssef Squali",
-          "opinion": "Strong Buy",
-          "targetPrice": 285,
-          "currentPrice": 250.56,
-          "basePrice": 250.56,
-          "basePriceDate": "2026-04-17",
-          "upside": 13.7,
-          "sourceUrl": "https://stockanalysis.com/stocks/amzn/ratings/",
-          "sourceText": "Truist Securities Strong Buy Maintains. Price target 280 -> 285.",
-          "reportTitle": "Strong Buy -> Strong Buy Maintains",
-          "reasonSummary": "Strong Buy -> Strong Buy Maintains. Truist Securities가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 13.7%입니다. 2026-04-17 종가 대비 목표가 괴리는 13.7%입니다.",
-          "reasonBullets": [
-            "Truist Securities가 2026-04-17에 Strong Buy 의견과 목표가를 제시했습니다.",
-            "현재가 $250.56 대비 목표가는 $285입니다.",
-            "2026-04-17 종가 $250.56 대비 괴리는 13.7%입니다."
-          ],
-          "performance": {
-            "week1": {
-              "asOfDate": "2026-04-24",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            },
-            "month1": {
-              "asOfDate": "2026-05-17",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            },
-            "month3": {
-              "asOfDate": "2026-07-16",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            }
-          }
-        },
-        {
-          "date": "2026-04-16",
-          "ticker": "AMZN",
-          "name": "Amazon.com, Inc.",
-          "market": "us",
-          "broker": "TD Cowen",
-          "analyst": "John Blackledge",
-          "opinion": "Strong Buy",
-          "targetPrice": 300,
-          "currentPrice": 250.56,
-          "basePrice": 249.7,
-          "basePriceDate": "2026-04-16",
-          "upside": 19.7,
-          "sourceUrl": "https://stockanalysis.com/stocks/amzn/ratings/",
-          "sourceText": "TD Cowen Strong Buy Reiterates. Price target 300 -> 300.",
-          "reportTitle": "Strong Buy -> Strong Buy Reiterates",
-          "reasonSummary": "Strong Buy -> Strong Buy Reiterates. TD Cowen가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 19.7%입니다. 2026-04-16 종가 대비 목표가 괴리는 20.1%입니다.",
-          "reasonBullets": [
-            "TD Cowen가 2026-04-16에 Strong Buy 의견과 목표가를 제시했습니다.",
-            "현재가 $250.56 대비 목표가는 $300입니다.",
-            "2026-04-16 종가 $249.7 대비 괴리는 20.1%입니다."
-          ],
-          "performance": {
-            "week1": {
-              "asOfDate": "2026-04-23",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            },
-            "month1": {
-              "asOfDate": "2026-05-16",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            },
-            "month3": {
-              "asOfDate": "2026-07-15",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            }
-          }
-        },
-        {
-          "date": "2026-04-15",
-          "ticker": "AMZN",
-          "name": "Amazon.com, Inc.",
-          "market": "us",
-          "broker": "Citizens",
-          "analyst": "Andrew Boone",
-          "opinion": "Buy",
-          "targetPrice": 315,
-          "currentPrice": 250.56,
-          "basePrice": 248.5,
-          "basePriceDate": "2026-04-15",
-          "upside": 25.7,
-          "sourceUrl": "https://stockanalysis.com/stocks/amzn/ratings/",
-          "sourceText": "Citizens Buy Reiterates. Price target 315 -> 315.",
-          "reportTitle": "Buy -> Buy Reiterates",
-          "reasonSummary": "Buy -> Buy Reiterates. Citizens가 Buy 의견을 제시했고 현재가 기준 상승여력은 25.7%입니다. 2026-04-15 종가 대비 목표가 괴리는 26.8%입니다.",
-          "reasonBullets": [
-            "Citizens가 2026-04-15에 Buy 의견과 목표가를 제시했습니다.",
-            "현재가 $250.56 대비 목표가는 $315입니다.",
-            "2026-04-15 종가 $248.5 대비 괴리는 26.8%입니다."
-          ],
-          "performance": {
-            "week1": {
-              "asOfDate": "2026-04-22",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            },
-            "month1": {
-              "asOfDate": "2026-05-15",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            },
-            "month3": {
-              "asOfDate": "2026-07-14",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            }
-          }
-        },
-        {
-          "date": "2026-04-15",
-          "ticker": "AMZN",
-          "name": "Amazon.com, Inc.",
-          "market": "us",
-          "broker": "Rosenblatt",
-          "analyst": "Barton Crockett",
-          "opinion": "Strong Buy",
-          "targetPrice": 296,
-          "currentPrice": 250.56,
-          "basePrice": 248.5,
-          "basePriceDate": "2026-04-15",
-          "upside": 18.1,
-          "sourceUrl": "https://stockanalysis.com/stocks/amzn/ratings/",
-          "sourceText": "Rosenblatt Strong Buy Maintains. Price target 296 -> 296.",
-          "reportTitle": "Strong Buy -> Strong Buy Maintains",
-          "reasonSummary": "Strong Buy -> Strong Buy Maintains. Rosenblatt가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 18.1%입니다. 2026-04-15 종가 대비 목표가 괴리는 19.1%입니다.",
-          "reasonBullets": [
-            "Rosenblatt가 2026-04-15에 Strong Buy 의견과 목표가를 제시했습니다.",
-            "현재가 $250.56 대비 목표가는 $296입니다.",
-            "2026-04-15 종가 $248.5 대비 괴리는 19.1%입니다."
-          ],
-          "performance": {
-            "week1": {
-              "asOfDate": "2026-04-22",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            },
-            "month1": {
-              "asOfDate": "2026-05-15",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            },
-            "month3": {
-              "asOfDate": "2026-07-14",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            }
-          }
-        },
-        {
-          "date": "2026-04-13",
-          "ticker": "AMZN",
-          "name": "Amazon.com, Inc.",
-          "market": "us",
-          "broker": "Stifel",
-          "analyst": "Mark Kelley",
-          "opinion": "Strong Buy",
-          "targetPrice": 294,
-          "currentPrice": 250.56,
-          "basePrice": 239.89,
-          "basePriceDate": "2026-04-13",
-          "upside": 17.3,
-          "sourceUrl": "https://stockanalysis.com/stocks/amzn/ratings/",
-          "sourceText": "Stifel Strong Buy Maintains. Price target 300 -> 294.",
-          "reportTitle": "Strong Buy -> Strong Buy Maintains",
-          "reasonSummary": "Strong Buy -> Strong Buy Maintains. Stifel가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 17.3%입니다. 2026-04-13 종가 대비 목표가 괴리는 22.6%입니다.",
-          "reasonBullets": [
-            "Stifel가 2026-04-13에 Strong Buy 의견과 목표가를 제시했습니다.",
-            "현재가 $250.56 대비 목표가는 $294입니다.",
-            "2026-04-13 종가 $239.89 대비 괴리는 22.6%입니다."
-          ],
-          "performance": {
-            "week1": {
-              "asOfDate": "2026-04-17",
-              "closePrice": 250.56,
-              "returnPct": 4.4,
-              "targetProgressPct": 19.7,
-              "success": false,
-              "status": "complete"
-            },
-            "month1": {
-              "asOfDate": "2026-05-13",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            },
-            "month3": {
-              "asOfDate": "2026-07-12",
               "closePrice": 0,
               "returnPct": 0,
               "targetProgressPct": 0,
@@ -52054,305 +52451,6 @@
             },
             "month3": {
               "asOfDate": "2026-07-07",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            }
-          }
-        }
-      ]
-    },
-    "us:META": {
-      "ticker": "META",
-      "name": "Meta Platforms, Inc.",
-      "market": "us",
-      "latestReportDate": "2026-04-16",
-      "latestBroker": "TD Cowen",
-      "latestOpinion": "Strong Buy",
-      "latestTargetPrice": 820,
-      "latestCurrentPrice": 688.55,
-      "latestBasePrice": 676.87,
-      "avgUpside": 21.6,
-      "reportCount": 12,
-      "reasonSummary": "Strong Buy -> Strong Buy Reiterates. TD Cowen가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 19.1%입니다. 2026-04-16 종가 대비 목표가 괴리는 21.1%입니다.",
-      "reasonBullets": [
-        "TD Cowen가 2026-04-16에 Strong Buy 의견과 목표가를 제시했습니다.",
-        "현재가 $688.55 대비 목표가는 $820입니다.",
-        "2026-04-16 종가 $676.87 대비 괴리는 21.1%입니다."
-      ],
-      "investmentLogic": {
-        "summary": "Strong Buy -> Strong Buy Reiterates",
-        "bullets": [
-          "Strong Buy -> Strong Buy Reiterates",
-          "Strong Buy -> Strong Buy Reiterates TD Cowen Strong Buy Reiterates.",
-          "Price target 820 -> 820."
-        ]
-      },
-      "estimateRevision": {
-        "summary": "유지 신호입니다. 리포트 원문에서 추정치 관련 표현을 기준으로 판단했습니다.",
-        "bullets": [
-          "Strong Buy -> Strong Buy Reiterates TD Cowen Strong Buy Reiterates.",
-          "Price target 820 -> 820.",
-          "Strong Buy -> Strong Buy Reiterates."
-        ],
-        "signal": "flat"
-      },
-      "valuation": {
-        "summary": "현재가 $688.55 대비 목표가 $820가 제시돼 밸류에이션 여력을 확인할 수 있습니다.",
-        "bullets": [
-          "Buy -> Buy Maintains Piper Sandler Buy Maintains.",
-          "Piper Sandler가 Buy 의견을 제시했고 현재가 기준 상승여력은 27.8%입니다.",
-          "현재가 대비 목표가 상승여력은 19.1%입니다."
-        ]
-      },
-      "sectorCycle": {
-        "summary": "Strong Buy -> Strong Buy Reiterates TD Cowen Strong Buy Reiterates.",
-        "bullets": [
-          "Strong Buy -> Strong Buy Reiterates TD Cowen Strong Buy Reiterates.",
-          "Price target 820 -> 820.",
-          "Strong Buy -> Strong Buy Reiterates."
-        ]
-      },
-      "relatedReports": [
-        {
-          "date": "2026-04-16",
-          "ticker": "META",
-          "name": "Meta Platforms, Inc.",
-          "market": "us",
-          "broker": "TD Cowen",
-          "analyst": "John Blackledge",
-          "opinion": "Strong Buy",
-          "targetPrice": 820,
-          "currentPrice": 688.55,
-          "basePrice": 676.87,
-          "basePriceDate": "2026-04-16",
-          "upside": 19.1,
-          "sourceUrl": "https://stockanalysis.com/stocks/meta/ratings/",
-          "sourceText": "TD Cowen Strong Buy Reiterates. Price target 820 -> 820.",
-          "reportTitle": "Strong Buy -> Strong Buy Reiterates",
-          "reasonSummary": "Strong Buy -> Strong Buy Reiterates. TD Cowen가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 19.1%입니다. 2026-04-16 종가 대비 목표가 괴리는 21.1%입니다.",
-          "reasonBullets": [
-            "TD Cowen가 2026-04-16에 Strong Buy 의견과 목표가를 제시했습니다.",
-            "현재가 $688.55 대비 목표가는 $820입니다.",
-            "2026-04-16 종가 $676.87 대비 괴리는 21.1%입니다."
-          ],
-          "performance": {
-            "week1": {
-              "asOfDate": "2026-04-23",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            },
-            "month1": {
-              "asOfDate": "2026-05-16",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            },
-            "month3": {
-              "asOfDate": "2026-07-15",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            }
-          }
-        },
-        {
-          "date": "2026-04-13",
-          "ticker": "META",
-          "name": "Meta Platforms, Inc.",
-          "market": "us",
-          "broker": "Stifel",
-          "analyst": "Mark Kelley",
-          "opinion": "Strong Buy",
-          "targetPrice": 805,
-          "currentPrice": 688.55,
-          "basePrice": 634.53,
-          "basePriceDate": "2026-04-13",
-          "upside": 16.9,
-          "sourceUrl": "https://stockanalysis.com/stocks/meta/ratings/",
-          "sourceText": "Stifel Strong Buy Maintains. Price target 820 -> 805.",
-          "reportTitle": "Strong Buy -> Strong Buy Maintains",
-          "reasonSummary": "Strong Buy -> Strong Buy Maintains. Stifel가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 16.9%입니다. 2026-04-13 종가 대비 목표가 괴리는 26.9%입니다.",
-          "reasonBullets": [
-            "Stifel가 2026-04-13에 Strong Buy 의견과 목표가를 제시했습니다.",
-            "현재가 $688.55 대비 목표가는 $805입니다.",
-            "2026-04-13 종가 $634.53 대비 괴리는 26.9%입니다."
-          ],
-          "performance": {
-            "week1": {
-              "asOfDate": "2026-04-17",
-              "closePrice": 688.55,
-              "returnPct": 8.5,
-              "targetProgressPct": 31.7,
-              "success": false,
-              "status": "complete"
-            },
-            "month1": {
-              "asOfDate": "2026-05-13",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            },
-            "month3": {
-              "asOfDate": "2026-07-12",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            }
-          }
-        },
-        {
-          "date": "2026-04-09",
-          "ticker": "META",
-          "name": "Meta Platforms, Inc.",
-          "market": "us",
-          "broker": "Keybanc",
-          "analyst": "Justin Patterson",
-          "opinion": "Buy",
-          "targetPrice": 760,
-          "currentPrice": 688.55,
-          "basePrice": 628.39,
-          "basePriceDate": "2026-04-09",
-          "upside": 10.4,
-          "sourceUrl": "https://stockanalysis.com/stocks/meta/ratings/",
-          "sourceText": "Keybanc Buy Maintains. Price target 855 -> 760.",
-          "reportTitle": "Buy -> Buy Maintains",
-          "reasonSummary": "Buy -> Buy Maintains. Keybanc가 Buy 의견을 제시했고 현재가 기준 상승여력은 10.4%입니다. 2026-04-09 종가 대비 목표가 괴리는 20.9%입니다.",
-          "reasonBullets": [
-            "Keybanc가 2026-04-09에 Buy 의견과 목표가를 제시했습니다.",
-            "현재가 $688.55 대비 목표가는 $760입니다.",
-            "2026-04-09 종가 $628.39 대비 괴리는 20.9%입니다."
-          ],
-          "performance": {
-            "week1": {
-              "asOfDate": "2026-04-16",
-              "closePrice": 676.87,
-              "returnPct": 7.7,
-              "targetProgressPct": 36.8,
-              "success": false,
-              "status": "complete"
-            },
-            "month1": {
-              "asOfDate": "2026-05-09",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            },
-            "month3": {
-              "asOfDate": "2026-07-08",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            }
-          }
-        },
-        {
-          "date": "2026-04-09",
-          "ticker": "META",
-          "name": "Meta Platforms, Inc.",
-          "market": "us",
-          "broker": "Rosenblatt",
-          "analyst": "Barton Crockett",
-          "opinion": "Strong Buy",
-          "targetPrice": 1015,
-          "currentPrice": 688.55,
-          "basePrice": 628.39,
-          "basePriceDate": "2026-04-09",
-          "upside": 47.4,
-          "sourceUrl": "https://stockanalysis.com/stocks/meta/ratings/",
-          "sourceText": "Rosenblatt Strong Buy Maintains. Price target 1144 -> 1015.",
-          "reportTitle": "Strong Buy -> Strong Buy Maintains",
-          "reasonSummary": "Strong Buy -> Strong Buy Maintains. Rosenblatt가 Strong Buy 의견을 제시했고 현재가 기준 상승여력은 47.4%입니다. 2026-04-09 종가 대비 목표가 괴리는 61.5%입니다.",
-          "reasonBullets": [
-            "Rosenblatt가 2026-04-09에 Strong Buy 의견과 목표가를 제시했습니다.",
-            "현재가 $688.55 대비 목표가는 $1,015입니다.",
-            "2026-04-09 종가 $628.39 대비 괴리는 61.5%입니다."
-          ],
-          "performance": {
-            "week1": {
-              "asOfDate": "2026-04-16",
-              "closePrice": 676.87,
-              "returnPct": 7.7,
-              "targetProgressPct": 12.5,
-              "success": false,
-              "status": "complete"
-            },
-            "month1": {
-              "asOfDate": "2026-05-09",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            },
-            "month3": {
-              "asOfDate": "2026-07-08",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            }
-          }
-        },
-        {
-          "date": "2026-04-02",
-          "ticker": "META",
-          "name": "Meta Platforms, Inc.",
-          "market": "us",
-          "broker": "Wells Fargo",
-          "analyst": "Ken Gawrelski",
-          "opinion": "Buy",
-          "targetPrice": 765,
-          "currentPrice": 688.55,
-          "basePrice": 574.46,
-          "basePriceDate": "2026-04-02",
-          "upside": 11.1,
-          "sourceUrl": "https://stockanalysis.com/stocks/meta/ratings/",
-          "sourceText": "Wells Fargo Buy Maintains. Price target 856 -> 765.",
-          "reportTitle": "Buy -> Buy Maintains",
-          "reasonSummary": "Buy -> Buy Maintains. Wells Fargo가 Buy 의견을 제시했고 현재가 기준 상승여력은 11.1%입니다. 2026-04-02 종가 대비 목표가 괴리는 33.2%입니다.",
-          "reasonBullets": [
-            "Wells Fargo가 2026-04-02에 Buy 의견과 목표가를 제시했습니다.",
-            "현재가 $688.55 대비 목표가는 $765입니다.",
-            "2026-04-02 종가 $574.46 대비 괴리는 33.2%입니다."
-          ],
-          "performance": {
-            "week1": {
-              "asOfDate": "2026-04-09",
-              "closePrice": 628.39,
-              "returnPct": 9.4,
-              "targetProgressPct": 28.3,
-              "success": false,
-              "status": "complete"
-            },
-            "month1": {
-              "asOfDate": "2026-05-02",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            },
-            "month3": {
-              "asOfDate": "2026-07-01",
               "closePrice": 0,
               "returnPct": 0,
               "targetProgressPct": 0,
@@ -65634,11 +65732,11 @@
           "performance": {
             "week1": {
               "asOfDate": "2026-02-27",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
+              "closePrice": 127.95,
+              "returnPct": 4,
+              "targetProgressPct": 22.5,
               "success": false,
-              "status": "unavailable"
+              "status": "complete"
             },
             "month1": {
               "asOfDate": "2026-03-20",
@@ -65683,11 +65781,11 @@
           "performance": {
             "week1": {
               "asOfDate": "2026-02-27",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
+              "closePrice": 127.95,
+              "returnPct": 4,
+              "targetProgressPct": 45,
               "success": false,
-              "status": "unavailable"
+              "status": "complete"
             },
             "month1": {
               "asOfDate": "2026-03-20",

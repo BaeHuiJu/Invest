@@ -2,7 +2,7 @@ name: Refresh Analyst Cache
 
 on:
   schedule:
-    - cron: '*/30 * * * *'
+    - cron: '0 0 * * *'  # Daily at midnight UTC
   workflow_dispatch:
 
 permissions:
@@ -29,11 +29,15 @@ jobs:
       - name: Generate cache
         run: node scripts/generate-analyst-cache.mjs
 
+      - name: Generate consensus delta
+        run: node scripts/generate-consensus-delta.mjs
+
       - name: Commit updated cache
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/analyst-reports-cache.json
+          git add data/consensus-deltas.json
           git diff --cached --quiet && exit 0
-          git commit -m "Refresh analyst report cache"
+          git commit -m "Refresh analyst cache and consensus delta"
           git push

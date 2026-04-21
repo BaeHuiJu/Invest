@@ -11,10 +11,11 @@ import { AIPicksTab } from '@/components/AIPicksTab';
 import { EntryScoreTooltip } from '@/components/EntryScoreTooltip';
 import { GlossaryModal } from '@/components/GlossaryModal';
 import { GlobalSearch } from '@/components/GlobalSearch';
+import ConsensusChangesTab from '@/components/ConsensusChangesTab';
 
 type MarketType = 'korea' | 'us';
 type MarketFilter = 'all' | MarketType;
-type TabType = 'home' | 'watchlist' | 'ai-picks' | 'korea-stock' | 'korea-etf' | 'us-stock' | 'us-etf' | 'analyst' | 'consensus' | 'scorecard' | 'sector-cycle' | 'backtest' | 'portfolio' | 'earnings';
+type TabType = 'home' | 'watchlist' | 'ai-picks' | 'korea-stock' | 'korea-etf' | 'us-stock' | 'us-etf' | 'analyst' | 'consensus' | 'consensus-changes' | 'scorecard' | 'sector-cycle' | 'backtest' | 'portfolio' | 'earnings';
 type WatchlistCategory = 'stock' | 'etf' | 'analyst';
 type PerformanceStatus = 'complete' | 'pending' | 'unavailable';
 type SectorCyclePhase = 'recovery' | 'expansion' | 'slowdown' | 'contraction';
@@ -398,6 +399,7 @@ export default function Home() {
               ['analyst', '애널리스트 추천'],
             ].map(([id, label]) => <button key={id} onClick={() => setActiveTab(id as TabType)} className={`whitespace-nowrap px-4 py-3 text-sm font-medium ${activeTab === id ? 'border-b-2 border-blue-600 text-blue-600' : 'text-gray-600 hover:text-gray-900'}`}>{label}</button>)}
             <button onClick={() => setActiveTab('consensus')} className={`whitespace-nowrap px-4 py-3 text-sm font-medium ${activeTab === 'consensus' ? 'border-b-2 border-blue-600 text-blue-600' : 'text-gray-600 hover:text-gray-900'}`}>공통 추천</button>
+            <button onClick={() => setActiveTab('consensus-changes')} className={`whitespace-nowrap px-4 py-3 text-sm font-medium ${activeTab === 'consensus-changes' ? 'border-b-2 border-blue-600 text-blue-600' : 'text-gray-600 hover:text-gray-900'}`}>컨센서스 변화</button>
             <button onClick={() => setActiveTab('scorecard')} className={`whitespace-nowrap px-4 py-3 text-sm font-medium ${activeTab === 'scorecard' ? 'border-b-2 border-blue-600 text-blue-600' : 'text-gray-600 hover:text-gray-900'}`}>{'\uCD94\uCC9C \uD6C4 \uC131\uC801\uD45C'}</button>
             <button onClick={() => setActiveTab('sector-cycle')} className={`whitespace-nowrap px-4 py-3 text-sm font-medium ${activeTab === 'sector-cycle' ? 'border-b-2 border-blue-600 text-blue-600' : 'text-gray-600 hover:text-gray-900'}`}>{'\uC5C5\uC885 \uC0AC\uC774\uD074'}</button>
             <button onClick={() => setActiveTab('backtest')} className={`whitespace-nowrap px-4 py-3 text-sm font-medium ${activeTab === 'backtest' ? 'border-b-2 border-blue-600 text-blue-600' : 'text-gray-600 hover:text-gray-900'}`}>백테스팅</button>
@@ -417,6 +419,8 @@ export default function Home() {
             ? <ScorecardTab onOpenInsight={setInsightTarget} isSaved={isSaved} onToggleWatchlist={toggleWatchlist} />
           : activeTab === 'consensus'
             ? <ConsensusTab onOpenInsight={setInsightTarget} isSaved={isSaved} onToggleWatchlist={toggleWatchlist} />
+          : activeTab === 'consensus-changes'
+            ? <ConsensusChangesTab />
           : activeTab === 'backtest'
             ? <BacktestTab />
           : activeTab === 'portfolio'

@@ -215,15 +215,27 @@
   - [ ] 리셋 기능
   - [ ] 레이아웃 프리셋 제공
 
-### [ ] 다크모드 자동 전환
+### [x] 다크모드 자동 전환
 - **우선순위**: ⭐ (낮음)
 - **복잡도**: 낮음
 - **설명**: 시스템 설정 또는 시간 기반 자동 전환
 - **가치**: 눈의 피로 감소
+- **완료일**: 2026-04-22
 - **구현**:
-  - [ ] `prefers-color-scheme` 감지
-  - [ ] 시간대별 자동 전환 설정
-  - [ ] 설정 UI 추가
+  - [x] `prefers-color-scheme` 감지 (system 모드)
+  - [x] 시간대별 자동 전환 설정 (auto 모드: 22:00~06:00 다크)
+  - [x] 설정 UI 추가 (헤더 토글 버튼, 4단계 순환)
+- **파일**:
+  - `lib/useDarkMode.ts` - 다크모드 훅 (system/light/dark/auto 4모드, localStorage 저장)
+  - `tailwind.config.js` - darkMode: 'class' 활성화
+  - `styles/globals.css` - dark 모드 CSS 변수
+  - `pages/index.tsx` - 헤더 토글 버튼 + 구조 dark: 클래스
+- **특징**:
+  - 4가지 모드: 시스템(💻) → 라이트(☀️) → 다크(🌙) → 자동(🕐) 순환
+  - 시스템: OS `prefers-color-scheme` 자동 감지 + 변경 감지
+  - 자동: 22:00~06:00 다크, 나머지 라이트 (1분 간격 체크)
+  - localStorage 저장으로 새로고침 후에도 유지
+  - 헤더에 토글 버튼 (현재 모드 아이콘 + 이름 표시)
 
 ---
 

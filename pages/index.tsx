@@ -1,4 +1,5 @@
 ﻿import { useEffect, useState } from 'react';
+import { useDarkMode, DARK_MODE_ICONS, DARK_MODE_LABELS } from '@/lib/useDarkMode';
 import Head from 'next/head';
 import Link from 'next/link';
 import { Bar, BarChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
@@ -246,6 +247,7 @@ export default function Home() {
   const [searchOpen, setSearchOpen] = useState(false);
   const [glossaryOpen, setGlossaryOpen] = useState(false);
   const { addToast } = useToast();
+  const { preference: darkPref, cycle: cycleDark } = useDarkMode();
 
   useEffect(() => {
     async function load() {
@@ -354,19 +356,19 @@ export default function Home() {
       <meta name="description" content="국내외 종목과 애널리스트 추천 데이터를 비교합니다." />
       <link rel="icon" href="/favicon.ico" />
     </Head>
-    <div className="min-h-screen bg-gray-50">
-      <header className="border-b bg-white shadow-sm">
+    <div className="min-h-screen bg-gray-50 dark:bg-gray-900 dark:text-gray-100">
+      <header className="border-b bg-white shadow-sm dark:bg-gray-800 dark:border-gray-700">
         <div className="mx-auto max-w-7xl px-4 py-3 sm:py-4">
           <div className="flex items-center justify-between gap-3">
             <div className="min-w-0">
-              <h1 className="text-xl font-bold text-gray-900 sm:text-2xl">글로벌픽</h1>
-              <p className="mt-0.5 hidden text-sm text-gray-500 sm:block">종목을 누르면 기준가격과 간단한 매수 의견을 확인할 수 있습니다.</p>
+              <h1 className="text-xl font-bold text-gray-900 sm:text-2xl dark:text-white">글로벌픽</h1>
+              <p className="mt-0.5 hidden text-sm text-gray-500 sm:block dark:text-gray-400">종목을 누르면 기준가격과 간단한 매수 의견을 확인할 수 있습니다.</p>
             </div>
             <div className="flex flex-shrink-0 items-center gap-1.5 sm:gap-2">
               <button
                 type="button"
                 onClick={() => setSearchOpen(true)}
-                className="flex items-center gap-1.5 rounded-lg border bg-white px-2.5 py-2 text-sm text-gray-600 hover:bg-gray-50 sm:px-3"
+                className="flex items-center gap-1.5 rounded-lg border bg-white px-2.5 py-2 text-sm text-gray-600 hover:bg-gray-50 sm:px-3 dark:bg-gray-700 dark:border-gray-600 dark:text-gray-300 dark:hover:bg-gray-600"
                 aria-label="검색"
               >
                 <svg className="h-4 w-4 sm:h-5 sm:w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -377,7 +379,7 @@ export default function Home() {
               <button
                 type="button"
                 onClick={() => setNotificationSettingsOpen(true)}
-                className="flex items-center gap-1.5 rounded-lg border bg-white px-2.5 py-2 text-sm text-gray-600 hover:bg-gray-50 sm:px-3"
+                className="flex items-center gap-1.5 rounded-lg border bg-white px-2.5 py-2 text-sm text-gray-600 hover:bg-gray-50 sm:px-3 dark:bg-gray-700 dark:border-gray-600 dark:text-gray-300 dark:hover:bg-gray-600"
                 aria-label="알림 설정"
               >
                 <span className="text-base sm:text-lg">🔔</span>
@@ -386,7 +388,7 @@ export default function Home() {
               <button
                 type="button"
                 onClick={() => setGlossaryOpen(true)}
-                className="flex items-center gap-1.5 rounded-lg border bg-white px-2.5 py-2 text-sm text-gray-600 hover:bg-gray-50 sm:px-3"
+                className="flex items-center gap-1.5 rounded-lg border bg-white px-2.5 py-2 text-sm text-gray-600 hover:bg-gray-50 sm:px-3 dark:bg-gray-700 dark:border-gray-600 dark:text-gray-300 dark:hover:bg-gray-600"
                 aria-label="용어 사전"
               >
                 <svg className="h-4 w-4 sm:h-5 sm:w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -394,11 +396,21 @@ export default function Home() {
                 </svg>
                 <span className="hidden sm:inline">용어</span>
               </button>
+              <button
+                type="button"
+                onClick={cycleDark}
+                className="flex items-center gap-1.5 rounded-lg border bg-white px-2.5 py-2 text-sm text-gray-600 hover:bg-gray-50 sm:px-3 dark:bg-gray-700 dark:border-gray-600 dark:text-gray-300 dark:hover:bg-gray-600"
+                title={DARK_MODE_LABELS[darkPref]}
+                aria-label="다크모드 전환"
+              >
+                <span className="text-base">{DARK_MODE_ICONS[darkPref]}</span>
+                <span className="hidden sm:inline">{DARK_MODE_LABELS[darkPref]}</span>
+              </button>
             </div>
           </div>
         </div>
       </header>
-      <nav className="border-b bg-white">
+      <nav className="border-b bg-white dark:bg-gray-800 dark:border-gray-700">
         <div className="mx-auto max-w-7xl">
           <div className="scrollbar-hide flex overflow-x-auto px-2 sm:px-4" style={{ WebkitOverflowScrolling: 'touch' } as React.CSSProperties}>
             {(
@@ -426,8 +438,8 @@ export default function Home() {
                 onClick={() => setActiveTab(id)}
                 className={`flex-shrink-0 whitespace-nowrap px-3 py-3 text-xs font-medium transition-colors sm:px-4 sm:text-sm ${
                   activeTab === id
-                    ? 'border-b-2 border-blue-600 text-blue-600'
-                    : 'text-gray-500 hover:text-gray-900'
+                    ? 'border-b-2 border-blue-600 text-blue-600 dark:border-blue-400 dark:text-blue-400'
+                    : 'text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-100'
                 }`}
               >
                 {label}

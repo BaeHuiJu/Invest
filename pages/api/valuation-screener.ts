@@ -29,8 +29,8 @@ export interface ValuationScreenerResponse {
   totalCount: number;
 }
 
-const CACHE_TTL_MS = 10 * 60 * 1000; // 10 min (fundamental data changes slowly)
-const CONCURRENT_FETCH_LIMIT = 5;
+const CACHE_TTL_MS = 30 * 60 * 1000; // 30 min (fundamental data changes slowly)
+const CONCURRENT_FETCH_LIMIT = 15;
 
 type CacheEntry = { data: ValuationScreenerResponse; fetchedAt: number };
 const responseCache = new Map<string, CacheEntry>();
@@ -144,7 +144,7 @@ async function runWithConcurrencyLimit<T>(
 async function buildScreenerData(): Promise<ValuationScreenerResponse> {
   const cacheFile = await loadAnalystData();
   const cutoff = new Date();
-  cutoff.setDate(cutoff.getDate() - 90);
+  cutoff.setDate(cutoff.getDate() - 30);
 
   // Deduplicate tickers from recent reports
   const tickerMap = new Map<string, { ticker: string; name: string; market: MarketType; brokerCount: number; avgUpside: number; entryScore: number; currentPrice: number; sector: string | null }>();

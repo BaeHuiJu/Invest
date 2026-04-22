@@ -138,9 +138,42 @@ function MetricBadge({ label, value, color }: { label: string; value: string; co
   );
 }
 
+// Module-level cache: survives tab switches within a session
+let _cachedScreenerData: ValuationScreenerResponse | null = null;
+let _cachedAt = 0;
+const CLIENT_CACHE_TTL_MS = 25 * 60 * 1000; // 25 min (slightly under server 30 min TTL)
+
+let _inflight: Promise<ValuationScreenerResponse> | null = null;
+
+function fetchScreenerData(): Promise<ValuationScreenerResponse> {
+  if (_inflight) return _inflight;
+  _inflight = fetch('/api/valuation-screener?market=all')
+    .then((res) => {
+      if (!res.ok) throw new Error('데이터를 불러오지 못했습니다.');
+      return res.json() as Promise<ValuationScreenerResponse>;
+    })
+    .then((d) => {
+      _cachedScreenerData = d;
+      _cachedAt = Date.now();
+      _inflight = null;
+      return d;
+    })
+    .catch((e) => {
+      _inflight = null;
+      throw e;
+    });
+  return _inflight;
+}
+
+export function preWarmScreener(): void {
+  if (_cachedScreenerData && Date.now() - _cachedAt < CLIENT_CACHE_TTL_MS) return;
+  if (_inflight) return;
+  fetchScreenerData().catch(() => {});
+}
+
 export function ValuationScreenerTab({ onOpenInsight }: { onOpenInsight?: (req: InsightRequest) => void }) {
-  const [data, setData] = useState<ValuationScreenerResponse | null>(null);
-  const [loading, setLoading] = useState(true);
+  const [data, setData] = useState<ValuationScreenerResponse | null>(_cachedScreenerData);
+  const [loading, setLoading] = useState(_cachedScreenerData === null);
   const [error, setError] = useState<string | null>(null);
   const [filters, setFilters] = useState<Filters>(DEFAULT_FILTERS);
   const [sortKey, setSortKey] = useState<SortKey>('brokerCount');
@@ -148,13 +181,14 @@ export function ValuationScreenerTab({ onOpenInsight }: { onOpenInsight?: (req: 
   const [showFilters, setShowFilters] = useState(true);
 
   useEffect(() => {
+    if (_cachedScreenerData && Date.now() - _cachedAt < CLIENT_CACHE_TTL_MS) {
+      setData(_cachedScreenerData);
+      setLoading(false);
+      return;
+    }
     setLoading(true);
     setError(null);
-    fetch('/api/valuation-screener?market=all')
-      .then((res) => {
-        if (!res.ok) throw new Error('데이터를 불러오지 못했습니다.');
-        return res.json() as Promise<ValuationScreenerResponse>;
-      })
+    fetchScreenerData()
       .then((d) => { setData(d); setLoading(false); })
       .catch((e: Error) => { setError(e.message); setLoading(false); });
   }, []);

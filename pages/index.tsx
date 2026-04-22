@@ -13,7 +13,7 @@ import { GlossaryModal } from '@/components/GlossaryModal';
 import { GlobalSearch } from '@/components/GlobalSearch';
 import ConsensusChangesTab from '@/components/ConsensusChangesTab';
 import { AnalystLeaderboardTab } from '@/components/AnalystLeaderboardTab';
-import { ValuationScreenerTab } from '@/components/ValuationScreenerTab';
+import { ValuationScreenerTab, preWarmScreener } from '@/components/ValuationScreenerTab';
 
 type MarketType = 'korea' | 'us';
 type MarketFilter = 'all' | MarketType;
@@ -283,6 +283,17 @@ export default function Home() {
       return () => idleWindow.cancelIdleCallback?.(id);
     }
     const id = window.setTimeout(warmup, 800);
+    return () => window.clearTimeout(id);
+  }, []);
+
+  useEffect(() => {
+    const idleWindow = window as Window & { requestIdleCallback?: (callback: IdleRequestCallback) => number; cancelIdleCallback?: (handle: number) => void };
+    const warm = () => preWarmScreener();
+    if (idleWindow.requestIdleCallback) {
+      const id = idleWindow.requestIdleCallback(warm);
+      return () => idleWindow.cancelIdleCallback?.(id);
+    }
+    const id = window.setTimeout(warm, 1500);
     return () => window.clearTimeout(id);
   }, []);
 

@@ -345,20 +345,20 @@ export default function Home() {
     </Head>
     <div className="min-h-screen bg-gray-50">
       <header className="border-b bg-white shadow-sm">
-        <div className="mx-auto max-w-7xl px-4 py-4">
-          <div className="flex items-start justify-between gap-4">
-            <div>
-              <h1 className="text-2xl font-bold text-gray-900">글로벌픽</h1>
-              <p className="mt-1 text-sm text-gray-500">종목을 누르면 기준가격과 간단한 매수 의견을 확인할 수 있습니다.</p>
+        <div className="mx-auto max-w-7xl px-4 py-3 sm:py-4">
+          <div className="flex items-center justify-between gap-3">
+            <div className="min-w-0">
+              <h1 className="text-xl font-bold text-gray-900 sm:text-2xl">글로벌픽</h1>
+              <p className="mt-0.5 hidden text-sm text-gray-500 sm:block">종목을 누르면 기준가격과 간단한 매수 의견을 확인할 수 있습니다.</p>
             </div>
-            <div className="flex items-center gap-2">
+            <div className="flex flex-shrink-0 items-center gap-1.5 sm:gap-2">
               <button
                 type="button"
                 onClick={() => setSearchOpen(true)}
-                className="flex items-center gap-2 rounded-lg border bg-white px-3 py-2 text-sm text-gray-600 hover:bg-gray-50"
+                className="flex items-center gap-1.5 rounded-lg border bg-white px-2.5 py-2 text-sm text-gray-600 hover:bg-gray-50 sm:px-3"
                 aria-label="검색"
               >
-                <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="h-4 w-4 sm:h-5 sm:w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                 </svg>
                 <span className="hidden sm:inline">검색</span>
@@ -366,19 +366,19 @@ export default function Home() {
               <button
                 type="button"
                 onClick={() => setNotificationSettingsOpen(true)}
-                className="flex items-center gap-2 rounded-lg border bg-white px-3 py-2 text-sm text-gray-600 hover:bg-gray-50"
+                className="flex items-center gap-1.5 rounded-lg border bg-white px-2.5 py-2 text-sm text-gray-600 hover:bg-gray-50 sm:px-3"
                 aria-label="알림 설정"
               >
-                <span className="text-lg">🔔</span>
+                <span className="text-base sm:text-lg">🔔</span>
                 <span className="hidden sm:inline">알림</span>
               </button>
               <button
                 type="button"
                 onClick={() => setGlossaryOpen(true)}
-                className="flex items-center gap-2 rounded-lg border bg-white px-3 py-2 text-sm text-gray-600 hover:bg-gray-50"
+                className="flex items-center gap-1.5 rounded-lg border bg-white px-2.5 py-2 text-sm text-gray-600 hover:bg-gray-50 sm:px-3"
                 aria-label="용어 사전"
               >
-                <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="h-4 w-4 sm:h-5 sm:w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
                 <span className="hidden sm:inline">용어</span>
@@ -388,30 +388,44 @@ export default function Home() {
         </div>
       </header>
       <nav className="border-b bg-white">
-        <div className="mx-auto max-w-7xl px-4">
-          <div className="flex space-x-1 overflow-x-auto">
-            {[
-              ['home', '홈'],
-              ['watchlist', '관심 종목'],
-              ['ai-picks', 'AI 추천'],
-              ['korea-stock', '국내 주식'],
-              ['korea-etf', '국내 ETF'],
-              ['us-stock', '해외 주식'],
-              ['us-etf', '해외 ETF'],
-              ['analyst', '애널리스트 추천'],
-            ].map(([id, label]) => <button key={id} onClick={() => setActiveTab(id as TabType)} className={`whitespace-nowrap px-4 py-3 text-sm font-medium ${activeTab === id ? 'border-b-2 border-blue-600 text-blue-600' : 'text-gray-600 hover:text-gray-900'}`}>{label}</button>)}
-            <button onClick={() => setActiveTab('consensus')} className={`whitespace-nowrap px-4 py-3 text-sm font-medium ${activeTab === 'consensus' ? 'border-b-2 border-blue-600 text-blue-600' : 'text-gray-600 hover:text-gray-900'}`}>공통 추천</button>
-            <button onClick={() => setActiveTab('consensus-changes')} className={`whitespace-nowrap px-4 py-3 text-sm font-medium ${activeTab === 'consensus-changes' ? 'border-b-2 border-blue-600 text-blue-600' : 'text-gray-600 hover:text-gray-900'}`}>컨센서스 변화</button>
-            <button onClick={() => setActiveTab('scorecard')} className={`whitespace-nowrap px-4 py-3 text-sm font-medium ${activeTab === 'scorecard' ? 'border-b-2 border-blue-600 text-blue-600' : 'text-gray-600 hover:text-gray-900'}`}>애널리스트 성과</button>
-            <button onClick={() => setActiveTab('sector-cycle')} className={`whitespace-nowrap px-4 py-3 text-sm font-medium ${activeTab === 'sector-cycle' ? 'border-b-2 border-blue-600 text-blue-600' : 'text-gray-600 hover:text-gray-900'}`}>{'\uC5C5\uC885 \uC0AC\uC774\uD074'}</button>
-            <button onClick={() => setActiveTab('backtest')} className={`whitespace-nowrap px-4 py-3 text-sm font-medium ${activeTab === 'backtest' ? 'border-b-2 border-blue-600 text-blue-600' : 'text-gray-600 hover:text-gray-900'}`}>백테스팅</button>
-            <button onClick={() => setActiveTab('portfolio')} className={`whitespace-nowrap px-4 py-3 text-sm font-medium ${activeTab === 'portfolio' ? 'border-b-2 border-blue-600 text-blue-600' : 'text-gray-600 hover:text-gray-900'}`}>포트폴리오</button>
-            <button onClick={() => setActiveTab('earnings')} className={`whitespace-nowrap px-4 py-3 text-sm font-medium ${activeTab === 'earnings' ? 'border-b-2 border-blue-600 text-blue-600' : 'text-gray-600 hover:text-gray-900'}`}>실적 캘린더</button>
-            <button onClick={() => setActiveTab('screener')} className={`whitespace-nowrap px-4 py-3 text-sm font-medium ${activeTab === 'screener' ? 'border-b-2 border-blue-600 text-blue-600' : 'text-gray-600 hover:text-gray-900'}`}>밸류에이션 스크리너</button>
+        <div className="mx-auto max-w-7xl">
+          <div className="scrollbar-hide flex overflow-x-auto px-2 sm:px-4" style={{ WebkitOverflowScrolling: 'touch' } as React.CSSProperties}>
+            {(
+              [
+                ['home', '홈'],
+                ['watchlist', '관심'],
+                ['ai-picks', 'AI추천'],
+                ['analyst', '애널리스트'],
+                ['consensus', '공통추천'],
+                ['consensus-changes', '컨센서스변화'],
+                ['screener', '밸류스크리너'],
+                ['backtest', '백테스팅'],
+                ['portfolio', '포트폴리오'],
+                ['sector-cycle', '업종사이클'],
+                ['scorecard', '성과분석'],
+                ['korea-stock', '국내주식'],
+                ['korea-etf', '국내ETF'],
+                ['us-stock', '해외주식'],
+                ['us-etf', '해외ETF'],
+                ['earnings', '실적캘린더'],
+              ] as [TabType, string][]
+            ).map(([id, label]) => (
+              <button
+                key={id}
+                onClick={() => setActiveTab(id)}
+                className={`flex-shrink-0 whitespace-nowrap px-3 py-3 text-xs font-medium transition-colors sm:px-4 sm:text-sm ${
+                  activeTab === id
+                    ? 'border-b-2 border-blue-600 text-blue-600'
+                    : 'text-gray-500 hover:text-gray-900'
+                }`}
+              >
+                {label}
+              </button>
+            ))}
           </div>
         </div>
       </nav>
-      <main className="mx-auto max-w-7xl px-4 py-6">
+      <main className="mx-auto max-w-7xl px-3 py-4 sm:px-4 sm:py-6">
         {activeTab === 'ai-picks'
           ? <AIPicksTab onOpenInsight={setInsightTarget} isSaved={isSaved} onToggleWatchlist={toggleWatchlist} />
           : activeTab === 'analyst'
@@ -464,7 +478,7 @@ function LoadingState() {
 
 function HomeTab({ marketIndices, koreaStocks, koreaETFs, usStocks, usETFs, watchlistPreview, onOpenInsight, onOpenWatchlist }: { marketIndices: MarketIndex[]; koreaStocks: Stock[]; koreaETFs: Stock[]; usStocks: Stock[]; usETFs: Stock[]; watchlistPreview: ResolvedWatchlistItem[]; onOpenInsight: (request: InsightRequest) => void; onOpenWatchlist: () => void }) {
   return <div className="space-y-6">
-    <section className="rounded-xl bg-white p-6 shadow-sm"><h2 className="mb-4 text-lg font-semibold">주요 시장 지수</h2><div className="grid grid-cols-2 gap-4 md:grid-cols-5">{marketIndices.map((index) => <div key={index.ticker} className="rounded-lg bg-gray-50 p-4"><div className="text-sm text-gray-500">{index.name}</div><div className="text-xl font-bold">{index.value.toLocaleString()}</div><div className={`text-sm ${index.change >= 0 ? 'text-green-600' : 'text-red-600'}`}>{index.change >= 0 ? '+' : ''}{index.change.toFixed(2)} ({index.changePercent >= 0 ? '+' : ''}{index.changePercent.toFixed(2)}%)</div></div>)}</div></section>
+    <section className="rounded-xl bg-white p-6 shadow-sm"><h2 className="mb-4 text-lg font-semibold">주요 시장 지수</h2><div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-5">{marketIndices.map((index) => <div key={index.ticker} className="rounded-lg bg-gray-50 p-4"><div className="text-sm text-gray-500">{index.name}</div><div className="text-xl font-bold">{index.value.toLocaleString()}</div><div className={`text-sm ${index.change >= 0 ? 'text-green-600' : 'text-red-600'}`}>{index.change >= 0 ? '+' : ''}{index.change.toFixed(2)} ({index.changePercent >= 0 ? '+' : ''}{index.changePercent.toFixed(2)}%)</div></div>)}</div></section>
     <section className="rounded-xl bg-white p-6 shadow-sm">
       <div className="mb-4 flex items-center justify-between gap-4">
         <div>
@@ -1209,7 +1223,7 @@ function ConsensusTab({ onOpenInsight, isSaved, onToggleWatchlist }: { onOpenIns
         <div className="text-sm text-gray-400 md:pb-2">{'\uC11C\uB85C \uB2E4\uB978 \uC99D\uAD8C\uC0AC 2\uACF3 \uC774\uC0C1 \uCD94\uCC9C \uC885\uBAA9\uB9CC \uD45C\uC2DC'}</div>
       </div>
     </div>
-    <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
+    <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-5">
       <StatCard label={'\uACF5\uD1B5 \uCD94\uCC9C \uC885\uBAA9'} value={String(filteredItems.length)} />
       <StatCard label={'\uD3C9\uADE0 \uC9C4\uC785 \uC810\uC218'} value={formatScore(avgEntryScore)} accent="text-blue-600" />
       <StatCard label={'\uCD5C\uACE0 \uC9C4\uC785 \uC810\uC218'} value={formatScore(topEntryScore)} accent="text-blue-700" />

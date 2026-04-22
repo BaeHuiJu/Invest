@@ -125,16 +125,16 @@ export function BacktestTab() {
       {/* Filters */}
       <div className="rounded-xl bg-white p-4 shadow-sm">
         <h3 className="mb-4 text-sm font-semibold text-gray-700">시뮬레이션 설정</h3>
-        <div className="grid gap-4 sm:grid-cols-4">
-          {/* Strategy Selection */}
+        <div className="space-y-4">
+          {/* Strategy Selection — full width */}
           <div>
-            <label className="mb-1 block text-sm text-gray-500">전략</label>
+            <label className="mb-2 block text-sm text-gray-500">전략</label>
             <div className="flex flex-wrap gap-2">
               {(Object.keys(STRATEGY_LABELS) as BacktestStrategy[]).map((s) => (
                 <div key={s} className="relative">
                   {s === 'consensus_only' && (
-                    <span className="absolute -top-2 -right-2 z-10 rounded-full bg-green-500 px-2 py-0.5 text-xs font-medium text-white shadow-sm">
-                      ✓ 초보자 추천
+                    <span className="absolute -top-2 -right-2 z-10 rounded-full bg-green-500 px-1.5 py-0.5 text-xs font-medium text-white shadow-sm whitespace-nowrap">
+                      ✓ 추천
                     </span>
                   )}
                   <button
@@ -154,10 +154,10 @@ export function BacktestTab() {
             {/* Strategy Description */}
             <div className="mt-3 rounded-lg border border-blue-100 bg-blue-50 p-3">
               <div className="flex items-start gap-2">
-                <svg className="mt-0.5 h-5 w-5 flex-shrink-0 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="mt-0.5 h-4 w-4 flex-shrink-0 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
-                <div className="text-sm">
+                <div className="min-w-0 text-sm">
                   <div className="font-semibold text-blue-900">
                     {strategy === 'follow_all' && '모든 추천 따라하기'}
                     {strategy === 'top_broker' && '실적 우수 증권사'}
@@ -185,42 +185,42 @@ export function BacktestTab() {
             </div>
           </div>
 
-          {/* Period Selection */}
-          <SimpleSelect
-            label="평가 기간"
-            value={period}
-            onChange={(v) => setPeriod(v as PerformancePeriod)}
-            options={[
-              ['week1', '1주 후'],
-              ['month1', '1개월 후'],
-              ['month3', '3개월 후'],
-            ]}
-          />
-
-          {/* Market Filter */}
-          <SimpleSelect
-            label="시장"
-            value={market}
-            onChange={(v) => setMarket(v as MarketFilter)}
-            options={[
-              ['all', '전체'],
-              ['korea', '한국'],
-              ['us', '미국'],
-            ]}
-          />
-
-          {/* Days Filter */}
-          <SimpleSelect
-            label="데이터 기간"
-            value={String(days)}
-            onChange={(v) => setDays(parseInt(v, 10))}
-            options={[
-              ['30', '최근 30일'],
-              ['60', '최근 60일'],
-              ['90', '최근 90일'],
-              ['180', '최근 180일'],
-            ]}
-          />
+          {/* Period / Market / Days — 3-col grid below strategy */}
+          <div className="grid grid-cols-2 gap-3 sm:grid-cols-3">
+            <SimpleSelect
+              label="평가 기간"
+              value={period}
+              onChange={(v) => setPeriod(v as PerformancePeriod)}
+              options={[
+                ['week1', '1주 후'],
+                ['month1', '1개월 후'],
+                ['month3', '3개월 후'],
+              ]}
+            />
+            <SimpleSelect
+              label="시장"
+              value={market}
+              onChange={(v) => setMarket(v as MarketFilter)}
+              options={[
+                ['all', '전체'],
+                ['korea', '한국'],
+                ['us', '미국'],
+              ]}
+            />
+            <div className="col-span-2 sm:col-span-1">
+              <SimpleSelect
+                label="데이터 기간"
+                value={String(days)}
+                onChange={(v) => setDays(parseInt(v, 10))}
+                options={[
+                  ['30', '최근 30일'],
+                  ['60', '최근 60일'],
+                  ['90', '최근 90일'],
+                  ['180', '최근 180일'],
+                ]}
+              />
+            </div>
+          </div>
         </div>
       </div>
 

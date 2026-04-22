@@ -11,6 +11,23 @@ body {
   color: rgb(var(--foreground-rgb));
   background: rgb(var(--background-rgb));
   overflow-x: hidden;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* Hide scrollbar for horizontal nav on mobile */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Responsive table wrapper */
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 /* Toast animation */

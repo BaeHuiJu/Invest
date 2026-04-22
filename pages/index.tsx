@@ -15,10 +15,11 @@ import { GlobalSearch } from '@/components/GlobalSearch';
 import ConsensusChangesTab from '@/components/ConsensusChangesTab';
 import { AnalystLeaderboardTab } from '@/components/AnalystLeaderboardTab';
 import { ValuationScreenerTab, preWarmScreener } from '@/components/ValuationScreenerTab';
+import { GroqDailyPicksTab } from '@/components/GroqDailyPicksTab';
 
 type MarketType = 'korea' | 'us';
 type MarketFilter = 'all' | MarketType;
-type TabType = 'home' | 'watchlist' | 'ai-picks' | 'korea-stock' | 'korea-etf' | 'us-stock' | 'us-etf' | 'analyst' | 'consensus' | 'consensus-changes' | 'scorecard' | 'sector-cycle' | 'backtest' | 'portfolio' | 'earnings' | 'screener';
+type TabType = 'home' | 'watchlist' | 'ai-picks' | 'korea-stock' | 'korea-etf' | 'us-stock' | 'us-etf' | 'analyst' | 'consensus' | 'consensus-changes' | 'scorecard' | 'sector-cycle' | 'backtest' | 'portfolio' | 'earnings' | 'screener' | 'groq-picks';
 type WatchlistCategory = 'stock' | 'etf' | 'analyst';
 type PerformanceStatus = 'complete' | 'pending' | 'unavailable';
 type SectorCyclePhase = 'recovery' | 'expansion' | 'slowdown' | 'contraction';
@@ -418,6 +419,7 @@ export default function Home() {
                 ['home', '홈'],
                 ['watchlist', '관심'],
                 ['ai-picks', 'AI추천'],
+                ['groq-picks', 'Groq 유망주'],
                 ['analyst', '애널리스트'],
                 ['consensus', '공통추천'],
                 ['consensus-changes', '컨센서스변화'],
@@ -451,6 +453,8 @@ export default function Home() {
       <main className="mx-auto max-w-7xl px-3 py-4 sm:px-4 sm:py-6">
         {activeTab === 'ai-picks'
           ? <AIPicksTab onOpenInsight={setInsightTarget} isSaved={isSaved} onToggleWatchlist={toggleWatchlist} />
+          : activeTab === 'groq-picks'
+          ? <GroqDailyPicksTab onOpenInsight={setInsightTarget} />
           : activeTab === 'analyst'
           ? <AnalystTab onOpenInsight={setInsightTarget} isSaved={isSaved} onToggleWatchlist={toggleWatchlist} />
           : activeTab === 'sector-cycle'

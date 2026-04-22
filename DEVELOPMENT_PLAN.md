@@ -32,6 +32,28 @@
   - 애니메이션: slideInUp, fadeIn 효과
   - 그라데이션 디자인: 1위 금색, 2위 은색, 3위 동색
 
+### [ ] Groq AI 단기 유망주
+- **우선순위**: ⭐⭐⭐⭐ (최우선)
+- **복잡도**: 중간
+- **설명**: Groq llama-3.3이 애널리스트 데이터를 분석해 단기(1주일 내) 3%+ 상승 고확률 종목 자동 선별
+- **가치**: 기존 규칙 기반 AI 추천 + LLM 해석력 결합, 투자 근거 한국어 설명 제공
+- **사전 조건**: GROQ_API_KEY 환경변수 (aistudio.groq.com에서 무료 발급)
+- **구현**:
+  - [ ] `npm install groq-sdk` 패키지 설치
+  - [ ] `pages/api/groq-daily-picks.ts` — 후보 25개 → Groq 분석 → 상위 5개 반환 (30분 캐시)
+  - [ ] `components/GroqDailyPicksTab.tsx` — AIPicksTab 패턴, 신뢰도 점수 + 한국어 근거 + 리스크 표시
+  - [ ] `pages/index.tsx` — "Groq 유망주" 탭 추가
+  - [ ] Vercel 환경변수 GROQ_API_KEY 등록
+- **Groq 프롬프트 핵심 입력**:
+  - entry score, 브로커 수, 상승여력, week1 과거 성공률, 섹터 사이클
+- **응답 구조**:
+  - `confidence` (0-100): 3%+ 달성 신뢰도
+  - `reasoning`: 한국어 투자 근거 2-3문장
+  - `expectedReturn`: "3-6%" 예상 범위
+  - `keyRisk`: 주요 리스크 1문장
+- **중요 고지**: "3% 보장" 불가 — UI에 면책 문구 필수, 투자 참고용
+- **모델**: `llama-3.3-70b-versatile` (Groq 최신, 무료 티어 포함)
+
 ### [ ] 기술적 지표 오버레이
 - **우선순위**: ⭐⭐ (중간)
 - **복잡도**: 중간

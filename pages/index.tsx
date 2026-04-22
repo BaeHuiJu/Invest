@@ -12,10 +12,12 @@ import { EntryScoreTooltip } from '@/components/EntryScoreTooltip';
 import { GlossaryModal } from '@/components/GlossaryModal';
 import { GlobalSearch } from '@/components/GlobalSearch';
 import ConsensusChangesTab from '@/components/ConsensusChangesTab';
+import { AnalystLeaderboardTab } from '@/components/AnalystLeaderboardTab';
+import { ValuationScreenerTab } from '@/components/ValuationScreenerTab';
 
 type MarketType = 'korea' | 'us';
 type MarketFilter = 'all' | MarketType;
-type TabType = 'home' | 'watchlist' | 'ai-picks' | 'korea-stock' | 'korea-etf' | 'us-stock' | 'us-etf' | 'analyst' | 'consensus' | 'consensus-changes' | 'scorecard' | 'sector-cycle' | 'backtest' | 'portfolio' | 'earnings';
+type TabType = 'home' | 'watchlist' | 'ai-picks' | 'korea-stock' | 'korea-etf' | 'us-stock' | 'us-etf' | 'analyst' | 'consensus' | 'consensus-changes' | 'scorecard' | 'sector-cycle' | 'backtest' | 'portfolio' | 'earnings' | 'screener';
 type WatchlistCategory = 'stock' | 'etf' | 'analyst';
 type PerformanceStatus = 'complete' | 'pending' | 'unavailable';
 type SectorCyclePhase = 'recovery' | 'expansion' | 'slowdown' | 'contraction';
@@ -400,11 +402,12 @@ export default function Home() {
             ].map(([id, label]) => <button key={id} onClick={() => setActiveTab(id as TabType)} className={`whitespace-nowrap px-4 py-3 text-sm font-medium ${activeTab === id ? 'border-b-2 border-blue-600 text-blue-600' : 'text-gray-600 hover:text-gray-900'}`}>{label}</button>)}
             <button onClick={() => setActiveTab('consensus')} className={`whitespace-nowrap px-4 py-3 text-sm font-medium ${activeTab === 'consensus' ? 'border-b-2 border-blue-600 text-blue-600' : 'text-gray-600 hover:text-gray-900'}`}>공통 추천</button>
             <button onClick={() => setActiveTab('consensus-changes')} className={`whitespace-nowrap px-4 py-3 text-sm font-medium ${activeTab === 'consensus-changes' ? 'border-b-2 border-blue-600 text-blue-600' : 'text-gray-600 hover:text-gray-900'}`}>컨센서스 변화</button>
-            <button onClick={() => setActiveTab('scorecard')} className={`whitespace-nowrap px-4 py-3 text-sm font-medium ${activeTab === 'scorecard' ? 'border-b-2 border-blue-600 text-blue-600' : 'text-gray-600 hover:text-gray-900'}`}>{'\uCD94\uCC9C \uD6C4 \uC131\uC801\uD45C'}</button>
+            <button onClick={() => setActiveTab('scorecard')} className={`whitespace-nowrap px-4 py-3 text-sm font-medium ${activeTab === 'scorecard' ? 'border-b-2 border-blue-600 text-blue-600' : 'text-gray-600 hover:text-gray-900'}`}>애널리스트 성과</button>
             <button onClick={() => setActiveTab('sector-cycle')} className={`whitespace-nowrap px-4 py-3 text-sm font-medium ${activeTab === 'sector-cycle' ? 'border-b-2 border-blue-600 text-blue-600' : 'text-gray-600 hover:text-gray-900'}`}>{'\uC5C5\uC885 \uC0AC\uC774\uD074'}</button>
             <button onClick={() => setActiveTab('backtest')} className={`whitespace-nowrap px-4 py-3 text-sm font-medium ${activeTab === 'backtest' ? 'border-b-2 border-blue-600 text-blue-600' : 'text-gray-600 hover:text-gray-900'}`}>백테스팅</button>
             <button onClick={() => setActiveTab('portfolio')} className={`whitespace-nowrap px-4 py-3 text-sm font-medium ${activeTab === 'portfolio' ? 'border-b-2 border-blue-600 text-blue-600' : 'text-gray-600 hover:text-gray-900'}`}>포트폴리오</button>
             <button onClick={() => setActiveTab('earnings')} className={`whitespace-nowrap px-4 py-3 text-sm font-medium ${activeTab === 'earnings' ? 'border-b-2 border-blue-600 text-blue-600' : 'text-gray-600 hover:text-gray-900'}`}>실적 캘린더</button>
+            <button onClick={() => setActiveTab('screener')} className={`whitespace-nowrap px-4 py-3 text-sm font-medium ${activeTab === 'screener' ? 'border-b-2 border-blue-600 text-blue-600' : 'text-gray-600 hover:text-gray-900'}`}>밸류에이션 스크리너</button>
           </div>
         </div>
       </nav>
@@ -416,7 +419,7 @@ export default function Home() {
           : activeTab === 'sector-cycle'
             ? <SectorCycleTab onOpenInsight={setInsightTarget} />
           : activeTab === 'scorecard'
-            ? <ScorecardTab onOpenInsight={setInsightTarget} isSaved={isSaved} onToggleWatchlist={toggleWatchlist} />
+            ? <AnalystLeaderboardTab />
           : activeTab === 'consensus'
             ? <ConsensusTab onOpenInsight={setInsightTarget} isSaved={isSaved} onToggleWatchlist={toggleWatchlist} />
           : activeTab === 'consensus-changes'
@@ -427,6 +430,8 @@ export default function Home() {
             ? <PortfolioTab onNavigateToAIPicks={() => setActiveTab('ai-picks')} />
           : activeTab === 'earnings'
             ? <EarningsCalendarTab />
+          : activeTab === 'screener'
+            ? <ValuationScreenerTab onOpenInsight={setInsightTarget} />
           : loading
             ? <LoadingState />
             : error

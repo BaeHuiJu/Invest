@@ -1,5 +1,5 @@
 ﻿import { useEffect, useState } from 'react';
-import { useDarkMode, DARK_MODE_ICONS, DARK_MODE_LABELS } from '@/lib/useDarkMode';
+import { useDarkMode } from '@/lib/useDarkMode';
 import Head from 'next/head';
 import Link from 'next/link';
 import { Bar, BarChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
@@ -16,6 +16,7 @@ import ConsensusChangesTab from '@/components/ConsensusChangesTab';
 import { AnalystLeaderboardTab } from '@/components/AnalystLeaderboardTab';
 import { ValuationScreenerTab, preWarmScreener } from '@/components/ValuationScreenerTab';
 import { GroqDailyPicksTab } from '@/components/GroqDailyPicksTab';
+import { ThemeSelector } from '@/components/ThemeSelector';
 
 type MarketType = 'korea' | 'us';
 type MarketFilter = 'all' | MarketType;
@@ -248,7 +249,7 @@ export default function Home() {
   const [searchOpen, setSearchOpen] = useState(false);
   const [glossaryOpen, setGlossaryOpen] = useState(false);
   const { addToast } = useToast();
-  const { preference: darkPref, cycle: cycleDark } = useDarkMode();
+  useDarkMode(); // applies theme class to document root
 
   useEffect(() => {
     async function load() {
@@ -357,8 +358,8 @@ export default function Home() {
       <meta name="description" content="국내외 종목과 애널리스트 추천 데이터를 비교합니다." />
       <link rel="icon" href="/favicon.ico" />
     </Head>
-    <div className="min-h-screen bg-gray-50 dark:bg-gray-900 dark:text-gray-100">
-      <header className="border-b bg-white shadow-sm dark:bg-gray-800 dark:border-gray-700">
+    <div className="min-h-screen bg-c-bg text-c-text">
+      <header className="border-b border-c-border bg-c-surface shadow-sm">
         <div className="mx-auto max-w-7xl px-4 py-3 sm:py-4">
           <div className="flex items-center justify-between gap-3">
             <div className="min-w-0">
@@ -397,21 +398,12 @@ export default function Home() {
                 </svg>
                 <span className="hidden sm:inline">용어</span>
               </button>
-              <button
-                type="button"
-                onClick={cycleDark}
-                className="flex items-center gap-1.5 rounded-lg border bg-white px-2.5 py-2 text-sm text-gray-600 hover:bg-gray-50 sm:px-3 dark:bg-gray-700 dark:border-gray-600 dark:text-gray-300 dark:hover:bg-gray-600"
-                title={DARK_MODE_LABELS[darkPref]}
-                aria-label="다크모드 전환"
-              >
-                <span className="text-base">{DARK_MODE_ICONS[darkPref]}</span>
-                <span className="hidden sm:inline">{DARK_MODE_LABELS[darkPref]}</span>
-              </button>
+              <ThemeSelector />
             </div>
           </div>
         </div>
       </header>
-      <nav className="border-b bg-white dark:bg-gray-800 dark:border-gray-700">
+      <nav className="border-b border-c-border bg-c-surface">
         <div className="mx-auto max-w-7xl">
           <div className="scrollbar-hide flex overflow-x-auto px-2 sm:px-4" style={{ WebkitOverflowScrolling: 'touch' } as React.CSSProperties}>
             {(
@@ -440,8 +432,8 @@ export default function Home() {
                 onClick={() => setActiveTab(id)}
                 className={`flex-shrink-0 whitespace-nowrap px-3 py-3 text-xs font-medium transition-colors sm:px-4 sm:text-sm ${
                   activeTab === id
-                    ? 'border-b-2 border-blue-600 text-blue-600 dark:border-blue-400 dark:text-blue-400'
-                    : 'text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-100'
+                    ? 'border-b-2 border-c-accent text-c-accent'
+                    : 'text-c-text-2 hover:text-c-text'
                 }`}
               >
                 {label}

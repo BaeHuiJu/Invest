@@ -2,24 +2,96 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ── Semantic Color Tokens ──────────────────────────────────────────── */
 :root {
-  --foreground-rgb: 0, 0, 0;
+  /* Layout */
+  --c-bg:           #f9fafb;
+  --c-surface:      #ffffff;
+  --c-surface-2:    #f3f4f6;
+  --c-border:       #e5e7eb;
+
+  /* Text */
+  --c-text:         #111827;
+  --c-text-2:       #6b7280;
+  --c-text-3:       #9ca3af;
+
+  /* Accent */
+  --c-accent:       #2563eb;
+  --c-accent-bg:    #dbeafe;
+
+  /* Financial: 상승/매수/성공 */
+  --c-positive:     #16a34a;
+  --c-positive-bg:  #dcfce7;
+
+  /* Financial: 하락/매도/손실 */
+  --c-negative:     #dc2626;
+  --c-negative-bg:  #fee2e2;
+
+  /* Financial: 보합/관망 */
+  --c-warning:      #d97706;
+  --c-warning-bg:   #fef3c7;
+
+  /* Financial: 중립 */
+  --c-neutral:      #6b7280;
+  --c-neutral-bg:   #f3f4f6;
+
+  /* Info */
+  --c-info:         #0891b2;
+  --c-info-bg:      #e0f2fe;
+
+  /* Legacy (body fallback) */
+  --foreground-rgb: 17, 24, 39;
   --background-rgb: 249, 250, 251;
 }
 
 .dark {
-  --foreground-rgb: 243, 244, 246;
+  --c-bg:           #111827;
+  --c-surface:      #1f2937;
+  --c-surface-2:    #374151;
+  --c-border:       #374151;
+
+  --c-text:         #f9fafb;
+  --c-text-2:       #d1d5db;
+  --c-text-3:       #6b7280;
+
+  --c-accent:       #60a5fa;
+  --c-accent-bg:    rgba(96, 165, 250, 0.15);
+
+  /* 다크: 어두운 배경에서 선명하게 읽히도록 밝은 색상 */
+  --c-positive:     #4ade80;
+  --c-positive-bg:  rgba(74, 222, 128, 0.12);
+
+  --c-negative:     #f87171;
+  --c-negative-bg:  rgba(248, 113, 113, 0.12);
+
+  --c-warning:      #fbbf24;
+  --c-warning-bg:   rgba(251, 191, 36, 0.12);
+
+  --c-neutral:      #9ca3af;
+  --c-neutral-bg:   rgba(156, 163, 175, 0.12);
+
+  --c-info:         #38bdf8;
+  --c-info-bg:      rgba(56, 189, 248, 0.12);
+
+  --foreground-rgb: 249, 250, 251;
   --background-rgb: 17, 24, 39;
   color-scheme: dark;
 }
 
+/* ── Base ───────────────────────────────────────────────────────────── */
 body {
-  color: rgb(var(--foreground-rgb));
-  background: rgb(var(--background-rgb));
+  color: var(--c-text);
+  background: var(--c-bg);
   overflow-x: hidden;
   -webkit-text-size-adjust: 100%;
 }
 
+/* 테마 전환 시 자연스러운 전환 */
+*, *::before, *::after {
+  transition: background-color 0.15s ease, border-color 0.15s ease;
+}
+
+/* ── Utilities ──────────────────────────────────────────────────────── */
 /* Hide scrollbar for horizontal nav on mobile */
 .scrollbar-hide {
   -ms-overflow-style: none;

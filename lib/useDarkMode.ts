@@ -63,7 +63,7 @@ export function useDarkMode() {
     });
   }, []);
 
-  return { preference, isDark, cycle };
+  return { preference, isDark, cycle, setPreference };
 }
 
 export const DARK_MODE_LABELS: Record<DarkModePreference, string> = {

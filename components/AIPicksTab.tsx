@@ -72,19 +72,19 @@ const formatPct = (value: number) => `${value >= 0 ? '+' : ''}${value.toFixed(1)
 const getRiskLevelBadge = (riskLevel: RiskLevel) => {
   switch (riskLevel) {
     case 'low':
-      return { label: '낮음', className: 'bg-green-100 text-green-700' };
+      return { label: '낮음', className: 'bg-c-positive-bg text-c-positive' };
     case 'medium':
-      return { label: '보통', className: 'bg-yellow-100 text-yellow-700' };
+      return { label: '보통', className: 'bg-c-warning-bg text-c-warning' };
     case 'high':
-      return { label: '높음', className: 'bg-red-100 text-red-700' };
+      return { label: '높음', className: 'bg-c-negative-bg text-c-negative' };
   }
 };
 
 const getEntryScoreBadge = (score: number) => {
   if (score >= 80) {
-    return { className: 'bg-green-100 text-green-700' };
+    return { className: 'bg-c-positive-bg text-c-positive' };
   }
-  return { className: 'bg-yellow-100 text-yellow-700' };
+  return { className: 'bg-c-warning-bg text-c-warning' };
 };
 
 const getTimeHorizonLabel = (horizon: TimeHorizon) => {
@@ -96,7 +96,7 @@ function FavoriteButton({ active, onClick }: { active: boolean; onClick: () => v
     <button
       type="button"
       onClick={onClick}
-      className={`text-lg ${active ? 'text-yellow-500' : 'text-gray-300 hover:text-yellow-400'}`}
+      className={`text-lg ${active ? 'text-yellow-500' : 'text-c-text-3 hover:text-yellow-400'}`}
       aria-label={active ? '관심 종목에서 제거' : '관심 종목에 추가'}
     >
       {active ? '★' : '☆'}
@@ -143,7 +143,7 @@ export function AIPicksTab({
 
   if (error) {
     return (
-      <div className="rounded-lg bg-red-50 p-4 text-red-600">
+      <div className="rounded-lg bg-c-negative-bg p-4 text-c-negative">
         {error}
       </div>
     );
@@ -158,15 +158,15 @@ export function AIPicksTab({
   return (
     <div className="space-y-6">
       {/* Header Section */}
-      <div className="rounded-xl bg-white p-6 shadow-sm">
+      <div className="rounded-xl border border-c-border bg-c-surface p-6 shadow-sm">
         <div className="flex items-start justify-between gap-4">
           <div>
-            <h2 className="text-2xl font-bold text-gray-900">AI가 선정한 오늘의 유망 종목</h2>
-            <p className="mt-2 text-sm text-gray-600">
+            <h2 className="text-2xl font-bold text-c-text">AI가 선정한 오늘의 유망 종목</h2>
+            <p className="mt-2 text-sm text-c-text-2">
               Entry Score {criteria.minEntryScore}점 이상, {criteria.minBrokerCount}개 이상 증권사 추천 종목을 자동 선별했습니다
             </p>
           </div>
-          <div className="text-right text-xs text-gray-400">
+          <div className="text-right text-xs text-c-text-3">
             <div>마지막 업데이트</div>
             <div>{new Date(data.generatedAt).toLocaleString('ko-KR')}</div>
           </div>
@@ -176,17 +176,17 @@ export function AIPicksTab({
       {/* Summary Stats */}
       <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
         <StatCard label="AI 추천 종목" value={String(summary.selectedCount)} />
-        <StatCard label="평균 Entry Score" value={`${summary.avgEntryScore}점`} accent="text-blue-600" />
+        <StatCard label="평균 Entry Score" value={`${summary.avgEntryScore}점`} accent="text-c-accent" />
         <StatCard label="평균 증권사 수" value={`${summary.avgBrokerCount}개`} />
         <StatCard label="전체 후보 종목" value={String(summary.totalCandidates)} />
       </div>
 
       {/* Picks Grid */}
       {picks.length === 0 ? (
-        <div className="rounded-xl border bg-white p-8 text-center">
+        <div className="rounded-xl border border-c-border bg-c-surface p-8 text-center">
           <div className="mb-4 text-4xl">📊</div>
-          <h3 className="mb-2 text-lg font-semibold text-gray-900">오늘은 AI 추천 기준을 충족하는 종목이 없습니다</h3>
-          <p className="text-sm text-gray-500">
+          <h3 className="mb-2 text-lg font-semibold text-c-text">오늘은 AI 추천 기준을 충족하는 종목이 없습니다</h3>
+          <p className="text-sm text-c-text-2">
             Entry Score {criteria.minEntryScore}점 이상, {criteria.minBrokerCount}개 증권사 이상 추천, {criteria.maxDays}일 이내 리포트 조건이 필요합니다.
           </p>
         </div>
@@ -199,7 +199,7 @@ export function AIPicksTab({
             return (
               <article
                 key={`${pick.market}-${pick.ticker}`}
-                className="rounded-xl border bg-white p-5 shadow-sm transition hover:shadow-md"
+                className="rounded-xl border border-c-border bg-c-surface p-5 shadow-sm transition hover:shadow-md"
               >
                 {/* Header: Stock name + Entry Score */}
                 <div className="mb-3 flex items-start justify-between gap-3">
@@ -217,13 +217,13 @@ export function AIPicksTab({
                       }
                       className="text-left"
                     >
-                      <h3 className="truncate text-lg font-bold text-blue-700 hover:underline">
+                      <h3 className="truncate text-lg font-bold text-c-accent hover:underline">
                         {pick.name}
                       </h3>
-                      <div className="mt-1 flex items-center gap-2 text-xs text-gray-500">
+                      <div className="mt-1 flex items-center gap-2 text-xs text-c-text-2">
                         <span>{pick.ticker}</span>
                         <span>·</span>
-                        <span className="rounded bg-gray-100 px-2 py-0.5">
+                        <span className="rounded bg-c-surface-2 px-2 py-0.5">
                           {pick.market === 'korea' ? '국내' : '해외'}
                         </span>
                       </div>
@@ -256,46 +256,46 @@ export function AIPicksTab({
                 </div>
 
                 {/* AI Thesis */}
-                <div className="mb-4 rounded-lg bg-blue-50 p-3">
-                  <div className="mb-1 text-xs font-semibold text-blue-900">AI 추천 이유</div>
-                  <p className="text-sm text-blue-700">{pick.thesis}</p>
+                <div className="mb-4 rounded-lg bg-c-accent-bg p-3">
+                  <div className="mb-1 text-xs font-semibold text-c-text">AI 추천 이유</div>
+                  <p className="text-sm text-c-text-2">{pick.thesis}</p>
                 </div>
 
                 {/* Key Metrics */}
                 <div className="mb-4 grid grid-cols-2 gap-3">
                   <div>
-                    <div className="text-xs text-gray-500">현재가</div>
-                    <div className="mt-1 font-semibold text-gray-900">
+                    <div className="text-xs text-c-text-2">현재가</div>
+                    <div className="mt-1 font-semibold text-c-text">
                       {formatPrice(pick.currentPrice, pick.market)}
                     </div>
                   </div>
                   <div>
-                    <div className="text-xs text-gray-500">목표가 (평균)</div>
-                    <div className="mt-1 font-semibold text-gray-900">
+                    <div className="text-xs text-c-text-2">목표가 (평균)</div>
+                    <div className="mt-1 font-semibold text-c-text">
                       {formatPrice(pick.avgTargetPrice, pick.market)}
                     </div>
                   </div>
                   <div>
-                    <div className="text-xs text-gray-500">상승여력</div>
-                    <div className="mt-1 font-semibold text-green-600">
+                    <div className="text-xs text-c-text-2">상승여력</div>
+                    <div className="mt-1 font-semibold text-c-positive">
                       {formatPct(pick.avgUpside)}
                     </div>
                   </div>
                   <div>
-                    <div className="text-xs text-gray-500">증권사</div>
-                    <div className="mt-1 font-semibold text-gray-900">{pick.brokerCount}개</div>
+                    <div className="text-xs text-c-text-2">증권사</div>
+                    <div className="mt-1 font-semibold text-c-text">{pick.brokerCount}개</div>
                   </div>
                 </div>
 
                 {/* Badges: Risk, Position Size, Time Horizon */}
-                <div className="flex flex-wrap gap-2 border-t pt-3">
+                <div className="flex flex-wrap gap-2 border-t border-c-border pt-3">
                   <span className={`rounded-full px-2.5 py-1 text-xs font-medium ${riskBadge.className}`}>
                     리스크: {riskBadge.label}
                   </span>
-                  <span className="rounded-full bg-purple-100 px-2.5 py-1 text-xs font-medium text-purple-700">
+                  <span className="rounded-full bg-c-info-bg px-2.5 py-1 text-xs font-medium text-c-info">
                     포트폴리오의 {pick.recommendedPositionSize}%
                   </span>
-                  <span className="rounded-full bg-gray-100 px-2.5 py-1 text-xs font-medium text-gray-700">
+                  <span className="rounded-full bg-c-surface-2 px-2.5 py-1 text-xs font-medium text-c-text-2">
                     {getTimeHorizonLabel(pick.timeHorizon)}
                   </span>
                 </div>
@@ -312,7 +312,7 @@ export function AIPicksTab({
                       currentPrice: pick.currentPrice,
                     })
                   }
-                  className="mt-4 w-full rounded-lg bg-blue-600 py-2.5 text-sm font-semibold text-white transition hover:bg-blue-700"
+                  className="mt-4 w-full rounded-lg bg-c-accent py-2.5 text-sm font-semibold text-white transition hover:opacity-90"
                 >
                   상세 정보 보기
                 </button>
@@ -323,8 +323,8 @@ export function AIPicksTab({
       )}
 
       {/* Info Footer */}
-      <div className="rounded-lg border bg-gray-50 p-4 text-sm text-gray-600">
-        <div className="mb-2 font-semibold text-gray-900">💡 AI 추천 기준</div>
+      <div className="rounded-lg border border-c-border bg-c-surface-2 p-4 text-sm text-c-text-2">
+        <div className="mb-2 font-semibold text-c-text">💡 AI 추천 기준</div>
         <ul className="space-y-1">
           <li>• Entry Score {criteria.minEntryScore}점 이상 (강력한 매수 신호)</li>
           <li>• {criteria.minBrokerCount}개 이상 증권사 동시 추천 (컨센서스 강도)</li>

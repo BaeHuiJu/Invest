@@ -47,10 +47,10 @@ export function useToast() {
 }
 
 const TOAST_STYLES: Record<ToastType, string> = {
-  success: 'bg-green-600 text-white',
-  error: 'bg-red-600 text-white',
-  info: 'bg-blue-600 text-white',
-  warning: 'bg-amber-500 text-white',
+  success: 'bg-c-positive text-white',
+  error:   'bg-c-negative text-white',
+  info:    'bg-c-accent text-white',
+  warning: 'bg-c-warning text-white',
 };
 
 const TOAST_ICONS: Record<ToastType, string> = {

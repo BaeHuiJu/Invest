@@ -8,11 +8,11 @@ type SimpleSelectProps = {
 export function SimpleSelect({ label, value, onChange, options }: SimpleSelectProps) {
   return (
     <div className="w-full sm:w-auto">
-      <label className="mb-1 block text-sm text-gray-500">{label}</label>
+      <label className="mb-1 block text-sm text-c-text-2">{label}</label>
       <select
         value={value}
         onChange={(event) => onChange(event.target.value)}
-        className="w-full rounded-lg border px-3 py-2 text-sm sm:min-w-[140px]"
+        className="w-full rounded-lg border border-c-border bg-c-surface px-3 py-2 text-sm text-c-text sm:min-w-[140px]"
       >
         {options.map(([optionValue, optionLabel]) => (
           <option key={optionValue} value={optionValue}>

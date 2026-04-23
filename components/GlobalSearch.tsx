@@ -128,20 +128,20 @@ export function GlobalSearch({ isOpen, onClose, onSelectBroker }: GlobalSearchPr
   return (
     <div className="fixed inset-0 z-50 bg-black/50 backdrop-blur-sm" onClick={onClose}>
       <div
-        className="mx-auto mt-[10vh] max-h-[80vh] w-full max-w-2xl overflow-hidden rounded-xl bg-white shadow-2xl"
+        className="mx-auto mt-[10vh] max-h-[80vh] w-full max-w-2xl overflow-hidden rounded-xl bg-c-surface shadow-2xl"
         onClick={(e) => e.stopPropagation()}
       >
-        <div className="relative border-b p-4">
+        <div className="relative border-b border-c-border p-4">
           <input
             ref={inputRef}
             type="text"
             value={query}
             onChange={(e) => setQuery(e.target.value)}
             placeholder="종목, 애널리스트, 증권사 검색..."
-            className="w-full rounded-lg border-0 bg-gray-100 py-3 pl-12 pr-12 text-base focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full rounded-lg border-0 bg-c-surface-2 py-3 pl-12 pr-12 text-base text-c-text placeholder:text-c-text-3 focus:outline-none focus:ring-2 focus:ring-c-accent"
           />
           <svg
-            className="absolute left-8 top-1/2 h-5 w-5 -translate-y-1/2 text-gray-400"
+            className="absolute left-8 top-1/2 h-5 w-5 -translate-y-1/2 text-c-text-3"
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
@@ -156,7 +156,7 @@ export function GlobalSearch({ isOpen, onClose, onSelectBroker }: GlobalSearchPr
           <button
             type="button"
             onClick={onClose}
-            className="absolute right-8 top-1/2 -translate-y-1/2 rounded p-1 text-gray-400 hover:bg-gray-200 hover:text-gray-600"
+            className="absolute right-8 top-1/2 -translate-y-1/2 rounded p-1 text-c-text-3 hover:bg-c-surface-2 hover:text-c-text-2"
           >
             <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
@@ -167,18 +167,18 @@ export function GlobalSearch({ isOpen, onClose, onSelectBroker }: GlobalSearchPr
         <div className="max-h-[60vh] overflow-y-auto p-4">
           {loading && (
             <div className="flex items-center justify-center py-8">
-              <div className="h-6 w-6 animate-spin rounded-full border-2 border-blue-600 border-t-transparent" />
+              <div className="h-6 w-6 animate-spin rounded-full border-2 border-c-accent border-t-transparent" />
             </div>
           )}
 
           {!loading && query.length >= 2 && !hasResults && (
-            <div className="py-8 text-center text-gray-500">
+            <div className="py-8 text-center text-c-text-2">
               검색 결과가 없습니다.
             </div>
           )}
 
           {!loading && query.length < 2 && (
-            <div className="py-8 text-center text-gray-400">
+            <div className="py-8 text-center text-c-text-3">
               2글자 이상 입력해주세요.
             </div>
           )}
@@ -187,9 +187,9 @@ export function GlobalSearch({ isOpen, onClose, onSelectBroker }: GlobalSearchPr
             <div className="space-y-6">
               {results.stocks.length > 0 && (
                 <div>
-                  <div className="mb-2 flex items-center gap-2 text-sm font-medium text-gray-500">
+                  <div className="mb-2 flex items-center gap-2 text-sm font-medium text-c-text-2">
                     <span>종목</span>
-                    <span className="rounded-full bg-gray-200 px-2 py-0.5 text-xs">{results.stocks.length}</span>
+                    <span className="rounded-full bg-c-surface-2 px-2 py-0.5 text-xs">{results.stocks.length}</span>
                   </div>
                   <div className="space-y-1">
                     {results.stocks.map((stock) => (
@@ -197,12 +197,12 @@ export function GlobalSearch({ isOpen, onClose, onSelectBroker }: GlobalSearchPr
                         key={`${stock.market}-${stock.ticker}`}
                         type="button"
                         onClick={() => handleStockClick(stock)}
-                        className="flex w-full items-center gap-3 rounded-lg p-3 text-left hover:bg-gray-100"
+                        className="flex w-full items-center gap-3 rounded-lg p-3 text-left hover:bg-c-surface-2"
                       >
                         <span className="text-lg">{stock.market === 'korea' ? '🇰🇷' : '🇺🇸'}</span>
                         <div>
-                          <div className="font-medium text-gray-900">{stock.name}</div>
-                          <div className="text-sm text-gray-500">{stock.ticker}</div>
+                          <div className="font-medium text-c-text">{stock.name}</div>
+                          <div className="text-sm text-c-text-2">{stock.ticker}</div>
                         </div>
                       </button>
                     ))}
@@ -212,9 +212,9 @@ export function GlobalSearch({ isOpen, onClose, onSelectBroker }: GlobalSearchPr
 
               {results.analysts.length > 0 && (
                 <div>
-                  <div className="mb-2 flex items-center gap-2 text-sm font-medium text-gray-500">
+                  <div className="mb-2 flex items-center gap-2 text-sm font-medium text-c-text-2">
                     <span>애널리스트</span>
-                    <span className="rounded-full bg-gray-200 px-2 py-0.5 text-xs">{results.analysts.length}</span>
+                    <span className="rounded-full bg-c-surface-2 px-2 py-0.5 text-xs">{results.analysts.length}</span>
                   </div>
                   <div className="space-y-1">
                     {results.analysts.map((analyst) => (
@@ -222,13 +222,13 @@ export function GlobalSearch({ isOpen, onClose, onSelectBroker }: GlobalSearchPr
                         key={`${analyst.broker}-${analyst.analyst}`}
                         type="button"
                         onClick={() => handleAnalystClick(analyst)}
-                        className="flex w-full items-center justify-between rounded-lg p-3 text-left hover:bg-gray-100"
+                        className="flex w-full items-center justify-between rounded-lg p-3 text-left hover:bg-c-surface-2"
                       >
                         <div>
-                          <div className="font-medium text-gray-900">{analyst.analyst}</div>
-                          <div className="text-sm text-gray-500">{analyst.broker}</div>
+                          <div className="font-medium text-c-text">{analyst.analyst}</div>
+                          <div className="text-sm text-c-text-2">{analyst.broker}</div>
                         </div>
-                        <span className="text-sm text-gray-400">{analyst.reportCount}건</span>
+                        <span className="text-sm text-c-text-3">{analyst.reportCount}건</span>
                       </button>
                     ))}
                   </div>
@@ -237,9 +237,9 @@ export function GlobalSearch({ isOpen, onClose, onSelectBroker }: GlobalSearchPr
 
               {results.brokers.length > 0 && (
                 <div>
-                  <div className="mb-2 flex items-center gap-2 text-sm font-medium text-gray-500">
+                  <div className="mb-2 flex items-center gap-2 text-sm font-medium text-c-text-2">
                     <span>증권사</span>
-                    <span className="rounded-full bg-gray-200 px-2 py-0.5 text-xs">{results.brokers.length}</span>
+                    <span className="rounded-full bg-c-surface-2 px-2 py-0.5 text-xs">{results.brokers.length}</span>
                   </div>
                   <div className="space-y-1">
                     {results.brokers.map((broker) => (
@@ -247,10 +247,10 @@ export function GlobalSearch({ isOpen, onClose, onSelectBroker }: GlobalSearchPr
                         key={broker.broker}
                         type="button"
                         onClick={() => handleBrokerClick(broker)}
-                        className="flex w-full items-center justify-between rounded-lg p-3 text-left hover:bg-gray-100"
+                        className="flex w-full items-center justify-between rounded-lg p-3 text-left hover:bg-c-surface-2"
                       >
-                        <div className="font-medium text-gray-900">{broker.broker}</div>
-                        <span className="text-sm text-gray-400">{broker.reportCount}건</span>
+                        <div className="font-medium text-c-text">{broker.broker}</div>
+                        <span className="text-sm text-c-text-3">{broker.reportCount}건</span>
                       </button>
                     ))}
                   </div>
@@ -260,8 +260,8 @@ export function GlobalSearch({ isOpen, onClose, onSelectBroker }: GlobalSearchPr
           )}
         </div>
 
-        <div className="border-t bg-gray-50 px-4 py-3 text-center text-sm text-gray-500">
-          <kbd className="rounded bg-gray-200 px-2 py-0.5 font-mono text-xs">ESC</kbd>
+        <div className="border-t border-c-border bg-c-surface-2 px-4 py-3 text-center text-sm text-c-text-2">
+          <kbd className="rounded bg-c-border px-2 py-0.5 font-mono text-xs">ESC</kbd>
           <span className="ml-2">를 눌러 닫기</span>
         </div>
       </div>

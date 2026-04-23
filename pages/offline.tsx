@@ -24,11 +24,11 @@ export default function Offline() {
             </svg>
           </div>
 
-          <h1 className="text-3xl font-bold text-gray-900 mb-4">
+          <h1 className="text-3xl font-bold text-c-text mb-4">
             인터넷 연결이 필요합니다
           </h1>
 
-          <p className="text-gray-600 mb-8">
+          <p className="text-c-text-2 mb-8">
             현재 오프라인 상태입니다. 글로벌픽의 최신 데이터를 보려면 인터넷에 연결해주세요.
           </p>
 
@@ -40,7 +40,7 @@ export default function Offline() {
               다시 시도
             </button>
 
-            <div className="text-sm text-gray-500">
+            <div className="text-sm text-c-text-2">
               <p>💡 팁: 연결되면 자동으로 업데이트됩니다</p>
             </div>
           </div>

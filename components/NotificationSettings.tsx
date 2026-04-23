@@ -61,12 +61,12 @@ export function NotificationSettings({ isOpen, onClose }: NotificationSettingsPr
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 p-4">
-      <div className="w-full max-w-md rounded-2xl bg-white shadow-xl">
-        <div className="flex items-center justify-between border-b p-4">
-          <h2 className="text-lg font-semibold">알림 설정</h2>
+      <div className="w-full max-w-md rounded-2xl bg-c-surface shadow-xl">
+        <div className="flex items-center justify-between border-b border-c-border p-4">
+          <h2 className="text-lg font-semibold text-c-text">알림 설정</h2>
           <button
             onClick={onClose}
-            className="rounded-lg p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-600"
+            className="rounded-lg p-2 text-c-text-3 hover:bg-c-surface-2 hover:text-c-text-2"
             aria-label="닫기"
           >
             ✕
@@ -75,11 +75,11 @@ export function NotificationSettings({ isOpen, onClose }: NotificationSettingsPr
 
         <div className="space-y-4 p-4">
           {/* Browser Permission Status */}
-          <div className="rounded-lg bg-gray-50 p-4">
+          <div className="rounded-lg bg-c-surface-2 p-4">
             <div className="flex items-center justify-between">
               <div>
-                <div className="font-medium">브라우저 알림 권한</div>
-                <div className="text-sm text-gray-500">
+                <div className="font-medium text-c-text">브라우저 알림 권한</div>
+                <div className="text-sm text-c-text-2">
                   {permission === 'granted'
                     ? '알림이 허용되었습니다'
                     : permission === 'denied'
@@ -90,18 +90,18 @@ export function NotificationSettings({ isOpen, onClose }: NotificationSettingsPr
               {permission === 'default' && (
                 <button
                   onClick={handleRequestPermission}
-                  className="rounded-lg bg-blue-600 px-4 py-2 text-sm font-medium text-white hover:bg-blue-700"
+                  className="rounded-lg bg-c-accent px-4 py-2 text-sm font-medium text-white hover:opacity-90"
                 >
                   허용
                 </button>
               )}
               {permission === 'granted' && (
-                <span className="rounded-full bg-green-100 px-3 py-1 text-sm font-medium text-green-700">
+                <span className="rounded-full bg-c-positive-bg px-3 py-1 text-sm font-medium text-c-positive">
                   허용됨
                 </span>
               )}
               {permission === 'denied' && (
-                <span className="rounded-full bg-red-100 px-3 py-1 text-sm font-medium text-red-700">
+                <span className="rounded-full bg-c-negative-bg px-3 py-1 text-sm font-medium text-c-negative">
                   차단됨
                 </span>
               )}
@@ -141,10 +141,10 @@ export function NotificationSettings({ isOpen, onClose }: NotificationSettingsPr
           </div>
         </div>
 
-        <div className="border-t p-4">
+        <div className="border-t border-c-border p-4">
           <button
             onClick={onClose}
-            className="w-full rounded-lg bg-gray-100 py-2.5 font-medium text-gray-700 hover:bg-gray-200"
+            className="w-full rounded-lg bg-c-surface-2 py-2.5 font-medium text-c-text-2 hover:bg-c-border"
           >
             닫기
           </button>
@@ -169,17 +169,17 @@ function ToggleItem({
 }) {
   return (
     <div
-      className={`flex items-center justify-between rounded-lg border p-4 ${disabled ? 'opacity-50' : ''}`}
+      className={`flex items-center justify-between rounded-lg border border-c-border p-4 ${disabled ? 'opacity-50' : ''}`}
     >
       <div>
-        <div className="font-medium">{label}</div>
-        <div className="text-sm text-gray-500">{description}</div>
+        <div className="font-medium text-c-text">{label}</div>
+        <div className="text-sm text-c-text-2">{description}</div>
       </div>
       <button
         onClick={onChange}
         disabled={disabled}
         className={`relative h-6 w-11 rounded-full transition-colors ${
-          checked ? 'bg-blue-600' : 'bg-gray-300'
+          checked ? 'bg-c-accent' : 'bg-c-border'
         } ${disabled ? 'cursor-not-allowed' : 'cursor-pointer'}`}
         role="switch"
         aria-checked={checked}

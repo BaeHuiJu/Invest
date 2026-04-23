@@ -81,15 +81,13 @@ export function AnalystLeaderboardTab() {
 
   const formatPercent = (value: number) => `${value > 0 ? '+' : ''}${value.toFixed(1)}%`;
 
-  // 토스 스타일 순위 배지
   const getRankBadge = (rank: number) => {
-    if (rank === 1) return { bg: 'bg-blue-600', text: '1위' };
-    if (rank === 2) return { bg: 'bg-gray-600', text: '2위' };
-    if (rank === 3) return { bg: 'bg-gray-500', text: '3위' };
-    return { bg: 'bg-gray-400', text: `${rank}위` };
+    if (rank === 1) return { bg: 'bg-c-accent', text: '1위' };
+    if (rank === 2) return { bg: 'bg-c-neutral', text: '2위' };
+    if (rank === 3) return { bg: 'bg-c-neutral', text: '3위' };
+    return { bg: 'bg-c-neutral-bg text-c-neutral', text: `${rank}위` };
   };
 
-  // Top 3 카드 렌더링 (토스 스타일)
   const renderTopCard = (broker: ScorecardGroup, rank: number) => {
     const period = broker[periodKey];
     const badge = getRankBadge(rank);
@@ -98,59 +96,56 @@ export function AnalystLeaderboardTab() {
     return (
       <div
         key={broker.key}
-        className={`bg-white rounded-2xl border border-gray-200 p-6 ${
+        className={`bg-c-surface rounded-2xl border border-c-border p-6 ${
           isFirst ? 'shadow-lg' : 'shadow-sm'
         } hover:shadow-md transition-shadow`}
       >
-        {/* 순위 배지 */}
         <div className="flex items-center justify-between mb-4">
           <span className={`${badge.bg} text-white text-sm font-bold px-3 py-1 rounded-full`}>
             {badge.text}
           </span>
-          <span className="text-sm text-gray-500">{broker.reportCount}개 리포트</span>
+          <span className="text-sm text-c-text-2">{broker.reportCount}개 리포트</span>
         </div>
 
-        {/* 증권사명 */}
-        <h3 className={`font-bold text-gray-900 mb-6 ${isFirst ? 'text-2xl' : 'text-xl'}`}>
+        <h3 className={`font-bold text-c-text mb-6 ${isFirst ? 'text-2xl' : 'text-xl'}`}>
           {broker.label}
         </h3>
 
-        {/* 핵심 지표 */}
         <div className="space-y-4">
           <div>
-            <div className="text-sm text-gray-600 mb-1">성공률</div>
-            <div className={`font-bold ${isFirst ? 'text-3xl' : 'text-2xl'} text-blue-600`}>
+            <div className="text-sm text-c-text-2 mb-1">성공률</div>
+            <div className={`font-bold ${isFirst ? 'text-3xl' : 'text-2xl'} text-c-accent`}>
               {formatPercent(period.successRate)}
             </div>
           </div>
 
-          <div className="flex items-center justify-between pt-4 border-t border-gray-100">
+          <div className="flex items-center justify-between pt-4 border-t border-c-border">
             <div>
-              <div className="text-sm text-gray-600 mb-1">평균 수익률</div>
+              <div className="text-sm text-c-text-2 mb-1">평균 수익률</div>
               <div className={`font-bold text-lg ${
-                period.avgReturnPct >= 0 ? 'text-green-600' : 'text-red-600'
+                period.avgReturnPct >= 0 ? 'text-c-positive' : 'text-c-negative'
               }`}>
                 {formatPercent(period.avgReturnPct)}
               </div>
             </div>
 
             <div>
-              <div className="text-sm text-gray-600 mb-1">목표가 달성</div>
-              <div className="font-bold text-lg text-gray-900">
+              <div className="text-sm text-c-text-2 mb-1">목표가 달성</div>
+              <div className="font-bold text-lg text-c-text">
                 {formatPercent(period.avgTargetProgressPct)}
               </div>
             </div>
           </div>
 
           {isFirst && (
-            <div className="pt-4 border-t border-gray-100">
+            <div className="pt-4 border-t border-c-border">
               <div className="flex items-center justify-between text-sm">
-                <span className="text-gray-600">성공</span>
-                <span className="font-semibold text-green-600">{period.successCount}건</span>
+                <span className="text-c-text-2">성공</span>
+                <span className="font-semibold text-c-positive">{period.successCount}건</span>
               </div>
               <div className="flex items-center justify-between text-sm mt-2">
-                <span className="text-gray-600">하락</span>
-                <span className="font-semibold text-red-600">{period.declineCount}건</span>
+                <span className="text-c-text-2">하락</span>
+                <span className="font-semibold text-c-negative">{period.declineCount}건</span>
               </div>
             </div>
           )}
@@ -159,7 +154,6 @@ export function AnalystLeaderboardTab() {
     );
   };
 
-  // 나머지 순위 행 렌더링 (토스 스타일)
   const renderRankRow = (broker: ScorecardGroup, rank: number) => {
     const period = broker[periodKey];
     const badge = getRankBadge(rank);
@@ -167,29 +161,27 @@ export function AnalystLeaderboardTab() {
     return (
       <div
         key={broker.key}
-        className="flex items-center justify-between p-4 hover:bg-gray-50 transition-colors border-b border-gray-100 last:border-b-0"
+        className="flex items-center justify-between p-4 hover:bg-c-surface-2 transition-colors border-b border-c-border last:border-b-0"
       >
-        {/* 왼쪽: 순위 + 증권사명 */}
         <div className="flex items-center gap-4">
           <span className={`${badge.bg} text-white text-xs font-bold px-2 py-1 rounded`}>
             {rank}
           </span>
           <div>
-            <div className="font-semibold text-gray-900">{broker.label}</div>
-            <div className="text-sm text-gray-500">{broker.reportCount}개</div>
+            <div className="font-semibold text-c-text">{broker.label}</div>
+            <div className="text-sm text-c-text-2">{broker.reportCount}개</div>
           </div>
         </div>
 
-        {/* 오른쪽: 핵심 지표 */}
         <div className="flex items-center gap-6">
           <div className="text-right">
-            <div className="text-xs text-gray-500 mb-1">성공률</div>
-            <div className="font-bold text-blue-600">{formatPercent(period.successRate)}</div>
+            <div className="text-xs text-c-text-2 mb-1">성공률</div>
+            <div className="font-bold text-c-accent">{formatPercent(period.successRate)}</div>
           </div>
           <div className="text-right">
-            <div className="text-xs text-gray-500 mb-1">수익률</div>
+            <div className="text-xs text-c-text-2 mb-1">수익률</div>
             <div className={`font-bold ${
-              period.avgReturnPct >= 0 ? 'text-green-600' : 'text-red-600'
+              period.avgReturnPct >= 0 ? 'text-c-positive' : 'text-c-negative'
             }`}>
               {formatPercent(period.avgReturnPct)}
             </div>
@@ -203,20 +195,19 @@ export function AnalystLeaderboardTab() {
     <div className="space-y-6">
       {/* 헤더 */}
       <div>
-        <h2 className="text-2xl font-bold text-gray-900 mb-2">애널리스트 성과</h2>
-        <p className="text-gray-600">신뢰할 수 있는 증권사를 확인하세요</p>
+        <h2 className="text-2xl font-bold text-c-text mb-2">애널리스트 성과</h2>
+        <p className="text-c-text-2">신뢰할 수 있는 증권사를 확인하세요</p>
       </div>
 
       {/* 필터 */}
-      <div className="bg-white rounded-2xl border border-gray-200 p-6">
+      <div className="bg-c-surface rounded-2xl border border-c-border p-6">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-          {/* 기간 */}
           <div>
-            <label className="block text-sm font-semibold text-gray-700 mb-2">기간</label>
+            <label className="block text-sm font-semibold text-c-text mb-2">기간</label>
             <select
               value={days}
               onChange={(e) => setDays(Number(e.target.value))}
-              className="w-full px-4 py-2.5 border border-gray-300 rounded-xl font-medium text-gray-900 focus:outline-none focus:border-blue-600 focus:ring-2 focus:ring-blue-100 transition"
+              className="w-full px-4 py-2.5 border border-c-border rounded-xl font-medium text-c-text bg-c-surface focus:outline-none focus:border-c-accent focus:ring-2 focus:ring-c-accent-bg transition"
             >
               <option value={30}>30일</option>
               <option value={90}>90일</option>
@@ -225,13 +216,12 @@ export function AnalystLeaderboardTab() {
             </select>
           </div>
 
-          {/* 시장 */}
           <div>
-            <label className="block text-sm font-semibold text-gray-700 mb-2">시장</label>
+            <label className="block text-sm font-semibold text-c-text mb-2">시장</label>
             <select
               value={market}
               onChange={(e) => setMarket(e.target.value as 'all' | 'korea' | 'us')}
-              className="w-full px-4 py-2.5 border border-gray-300 rounded-xl font-medium text-gray-900 focus:outline-none focus:border-blue-600 focus:ring-2 focus:ring-blue-100 transition"
+              className="w-full px-4 py-2.5 border border-c-border rounded-xl font-medium text-c-text bg-c-surface focus:outline-none focus:border-c-accent focus:ring-2 focus:ring-c-accent-bg transition"
             >
               <option value="all">전체</option>
               <option value="korea">한국</option>
@@ -239,13 +229,12 @@ export function AnalystLeaderboardTab() {
             </select>
           </div>
 
-          {/* 정렬 */}
           <div>
-            <label className="block text-sm font-semibold text-gray-700 mb-2">정렬</label>
+            <label className="block text-sm font-semibold text-c-text mb-2">정렬</label>
             <select
               value={sortKey}
               onChange={(e) => setSortKey(e.target.value as SortKey)}
-              className="w-full px-4 py-2.5 border border-gray-300 rounded-xl font-medium text-gray-900 focus:outline-none focus:border-blue-600 focus:ring-2 focus:ring-blue-100 transition"
+              className="w-full px-4 py-2.5 border border-c-border rounded-xl font-medium text-c-text bg-c-surface focus:outline-none focus:border-c-accent focus:ring-2 focus:ring-c-accent-bg transition"
             >
               <option value="successRate">성공률순</option>
               <option value="avgReturnPct">수익률순</option>
@@ -253,13 +242,12 @@ export function AnalystLeaderboardTab() {
             </select>
           </div>
 
-          {/* 평가 기간 */}
           <div>
-            <label className="block text-sm font-semibold text-gray-700 mb-2">평가 기준</label>
+            <label className="block text-sm font-semibold text-c-text mb-2">평가 기준</label>
             <select
               value={periodKey}
               onChange={(e) => setPeriodKey(e.target.value as PeriodKey)}
-              className="w-full px-4 py-2.5 border border-gray-300 rounded-xl font-medium text-gray-900 focus:outline-none focus:border-blue-600 focus:ring-2 focus:ring-blue-100 transition"
+              className="w-full px-4 py-2.5 border border-c-border rounded-xl font-medium text-c-text bg-c-surface focus:outline-none focus:border-c-accent focus:ring-2 focus:ring-c-accent-bg transition"
             >
               <option value="week1">1주</option>
               <option value="month1">1개월</option>
@@ -271,23 +259,23 @@ export function AnalystLeaderboardTab() {
 
       {/* 에러 */}
       {error && (
-        <div className="bg-red-50 border border-red-200 rounded-2xl p-4">
-          <p className="text-red-700 font-medium">{error}</p>
+        <div className="bg-c-negative-bg border border-c-negative rounded-2xl p-4">
+          <p className="text-c-negative font-medium">{error}</p>
         </div>
       )}
 
       {/* 로딩 */}
       {loading && !data && (
         <div className="text-center py-20">
-          <div className="inline-block animate-spin rounded-full h-10 w-10 border-4 border-blue-600 border-t-transparent"></div>
-          <p className="mt-4 text-gray-600 font-medium">불러오는 중...</p>
+          <div className="inline-block animate-spin rounded-full h-10 w-10 border-4 border-c-accent border-t-transparent"></div>
+          <p className="mt-4 text-c-text-2 font-medium">불러오는 중...</p>
         </div>
       )}
 
       {/* Top 3 */}
       {data && top3.length > 0 && (
         <div>
-          <h3 className="text-lg font-bold text-gray-900 mb-4">상위 3개 증권사</h3>
+          <h3 className="text-lg font-bold text-c-text mb-4">상위 3개 증권사</h3>
           <div className="grid md:grid-cols-3 gap-4">
             {top3.map((broker, idx) => renderTopCard(broker, idx + 1))}
           </div>
@@ -296,9 +284,9 @@ export function AnalystLeaderboardTab() {
 
       {/* 전체 순위 */}
       {data && restBrokers.length > 0 && (
-        <div className="bg-white rounded-2xl border border-gray-200 overflow-hidden">
-          <div className="px-6 py-4 border-b border-gray-200">
-            <h3 className="text-lg font-bold text-gray-900">전체 순위</h3>
+        <div className="bg-c-surface rounded-2xl border border-c-border overflow-hidden">
+          <div className="px-6 py-4 border-b border-c-border">
+            <h3 className="text-lg font-bold text-c-text">전체 순위</h3>
           </div>
           <div>
             {restBrokers.map((broker, idx) => renderRankRow(broker, idx + 4))}
@@ -308,32 +296,32 @@ export function AnalystLeaderboardTab() {
 
       {/* 전체 통계 */}
       {data && (
-        <div className="bg-gray-50 rounded-2xl border border-gray-200 p-6">
-          <h3 className="text-lg font-bold text-gray-900 mb-4">전체 통계</h3>
+        <div className="bg-c-surface-2 rounded-2xl border border-c-border p-6">
+          <h3 className="text-lg font-bold text-c-text mb-4">전체 통계</h3>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            <div className="bg-white rounded-xl p-4 border border-gray-100">
-              <div className="text-sm text-gray-600 mb-1">리포트</div>
-              <div className="text-2xl font-bold text-gray-900">
+            <div className="bg-c-surface rounded-xl p-4 border border-c-border">
+              <div className="text-sm text-c-text-2 mb-1">리포트</div>
+              <div className="text-2xl font-bold text-c-text">
                 {data.summary.overall.reportCount}
               </div>
             </div>
-            <div className="bg-white rounded-xl p-4 border border-gray-100">
-              <div className="text-sm text-gray-600 mb-1">평균 성공률</div>
-              <div className="text-2xl font-bold text-blue-600">
+            <div className="bg-c-surface rounded-xl p-4 border border-c-border">
+              <div className="text-sm text-c-text-2 mb-1">평균 성공률</div>
+              <div className="text-2xl font-bold text-c-accent">
                 {formatPercent(data.summary.overall[periodKey].successRate)}
               </div>
             </div>
-            <div className="bg-white rounded-xl p-4 border border-gray-100">
-              <div className="text-sm text-gray-600 mb-1">평균 수익률</div>
+            <div className="bg-c-surface rounded-xl p-4 border border-c-border">
+              <div className="text-sm text-c-text-2 mb-1">평균 수익률</div>
               <div className={`text-2xl font-bold ${
-                data.summary.overall[periodKey].avgReturnPct >= 0 ? 'text-green-600' : 'text-red-600'
+                data.summary.overall[periodKey].avgReturnPct >= 0 ? 'text-c-positive' : 'text-c-negative'
               }`}>
                 {formatPercent(data.summary.overall[periodKey].avgReturnPct)}
               </div>
             </div>
-            <div className="bg-white rounded-xl p-4 border border-gray-100">
-              <div className="text-sm text-gray-600 mb-1">증권사</div>
-              <div className="text-2xl font-bold text-gray-900">
+            <div className="bg-c-surface rounded-xl p-4 border border-c-border">
+              <div className="text-sm text-c-text-2 mb-1">증권사</div>
+              <div className="text-2xl font-bold text-c-text">
                 {data.summary.byBroker.length}
               </div>
             </div>

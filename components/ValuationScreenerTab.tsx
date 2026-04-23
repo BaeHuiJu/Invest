@@ -107,7 +107,7 @@ function RangeInput({
 }) {
   return (
     <div>
-      <label className="mb-1 block text-xs font-medium text-gray-600">{label}</label>
+      <label className="mb-1 block text-xs font-medium text-c-text-2">{label}</label>
       <div className="flex items-center gap-1">
         <input
           type="number"
@@ -116,7 +116,7 @@ function RangeInput({
           onChange={(e) => onChange({ ...filter, min: e.target.value })}
           className="w-full rounded border px-2 py-1.5 text-sm focus:border-blue-500 focus:outline-none"
         />
-        <span className="text-gray-400">~</span>
+        <span className="text-c-text-3">~</span>
         <input
           type="number"
           placeholder={placeholder?.max ?? '최대'}
@@ -132,7 +132,7 @@ function RangeInput({
 function MetricBadge({ label, value, color }: { label: string; value: string; color: string }) {
   return (
     <div className={`rounded-lg px-3 py-2 text-center ${color}`}>
-      <div className="text-xs text-gray-500">{label}</div>
+      <div className="text-xs text-c-text-2">{label}</div>
       <div className="text-sm font-semibold">{value}</div>
     </div>
   );
@@ -248,11 +248,11 @@ export function ValuationScreenerTab({ onOpenInsight }: { onOpenInsight?: (req: 
   }
 
   function SortIcon({ col }: { col: SortKey }) {
-    if (sortKey !== col) return <span className="ml-1 text-gray-300">↕</span>;
+    if (sortKey !== col) return <span className="ml-1 text-c-text-3">↕</span>;
     return <span className="ml-1 text-blue-600">{sortDir === 'asc' ? '↑' : '↓'}</span>;
   }
 
-  const thClass = 'px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider cursor-pointer hover:text-gray-700 select-none whitespace-nowrap';
+  const thClass = 'px-4 py-3 text-left text-xs font-medium text-c-text-2 uppercase tracking-wider cursor-pointer hover:text-c-text select-none whitespace-nowrap';
   const tdClass = 'px-4 py-3 text-sm';
 
   if (loading) {
@@ -260,8 +260,8 @@ export function ValuationScreenerTab({ onOpenInsight }: { onOpenInsight?: (req: 
       <div className="flex h-64 items-center justify-center">
         <div className="text-center">
           <div className="mx-auto h-12 w-12 animate-spin rounded-full border-b-2 border-blue-600" />
-          <p className="mt-4 text-gray-500">밸류에이션 데이터를 불러오는 중입니다…</p>
-          <p className="mt-1 text-xs text-gray-400">종목별 PER/PBR/배당 데이터를 수집 중입니다. 잠시 기다려주세요.</p>
+          <p className="mt-4 text-c-text-2">밸류에이션 데이터를 불러오는 중입니다…</p>
+          <p className="mt-1 text-xs text-c-text-3">종목별 PER/PBR/배당 데이터를 수집 중입니다. 잠시 기다려주세요.</p>
         </div>
       </div>
     );
@@ -293,8 +293,8 @@ export function ValuationScreenerTab({ onOpenInsight }: { onOpenInsight?: (req: 
       {/* Header */}
       <div className="flex flex-wrap items-start justify-between gap-4">
         <div>
-          <h2 className="text-xl font-bold text-gray-900">배당/밸류에이션 스크리너</h2>
-          <p className="mt-1 text-sm text-gray-500">
+          <h2 className="text-xl font-bold text-c-text">배당/밸류에이션 스크리너</h2>
+          <p className="mt-1 text-sm text-c-text-2">
             애널리스트 추천 종목 중 PER, PBR, 배당수익률, ROE 기준으로 필터링
           </p>
         </div>
@@ -302,14 +302,14 @@ export function ValuationScreenerTab({ onOpenInsight }: { onOpenInsight?: (req: 
           <button
             type="button"
             onClick={() => setShowFilters((v) => !v)}
-            className="rounded-lg border bg-white px-3 py-2 text-sm text-gray-600 hover:bg-gray-50"
+            className="rounded-lg border border-c-border bg-c-surface px-3 py-2 text-sm text-c-text-2 hover:bg-c-surface-2"
           >
             {showFilters ? '필터 숨기기' : '필터 보기'}
           </button>
           <button
             type="button"
             onClick={() => exportCSV(sorted)}
-            className="rounded-lg border bg-white px-3 py-2 text-sm text-gray-600 hover:bg-gray-50"
+            className="rounded-lg border border-c-border bg-c-surface px-3 py-2 text-sm text-c-text-2 hover:bg-c-surface-2"
             disabled={sorted.length === 0}
           >
             CSV 내보내기
@@ -327,9 +327,9 @@ export function ValuationScreenerTab({ onOpenInsight }: { onOpenInsight?: (req: 
 
       {/* Filters */}
       {showFilters && (
-        <div className="rounded-xl border bg-white p-4 shadow-sm">
+        <div className="rounded-xl border border-c-border bg-c-surface p-4 shadow-sm">
           <div className="mb-3 flex items-center justify-between">
-            <h3 className="text-sm font-semibold text-gray-700">필터 조건</h3>
+            <h3 className="text-sm font-semibold text-c-text-2">필터 조건</h3>
             <button
               type="button"
               onClick={() => setFilters(DEFAULT_FILTERS)}
@@ -341,7 +341,7 @@ export function ValuationScreenerTab({ onOpenInsight }: { onOpenInsight?: (req: 
           <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-6">
             {/* Market */}
             <div>
-              <label className="mb-1 block text-xs font-medium text-gray-600">시장</label>
+              <label className="mb-1 block text-xs font-medium text-c-text-2">시장</label>
               <select
                 value={filters.market}
                 onChange={(e) => setFilters((f) => ({ ...f, market: e.target.value as MarketFilter }))}
@@ -379,7 +379,7 @@ export function ValuationScreenerTab({ onOpenInsight }: { onOpenInsight?: (req: 
             />
 
             <div>
-              <label className="mb-1 block text-xs font-medium text-gray-600">최소 추천 증권사</label>
+              <label className="mb-1 block text-xs font-medium text-c-text-2">최소 추천 증권사</label>
               <input
                 type="number"
                 min={1}
@@ -393,7 +393,7 @@ export function ValuationScreenerTab({ onOpenInsight }: { onOpenInsight?: (req: 
 
           {/* Quick presets */}
           <div className="mt-3 flex flex-wrap gap-2">
-            <span className="text-xs text-gray-500 self-center">빠른 설정:</span>
+            <span className="text-xs text-c-text-2 self-center">빠른 설정:</span>
             <button
               type="button"
               onClick={() => setFilters({ ...DEFAULT_FILTERS, per: { min: '', max: '15' }, roe: { min: '10', max: '' } })}
@@ -427,21 +427,21 @@ export function ValuationScreenerTab({ onOpenInsight }: { onOpenInsight?: (req: 
       )}
 
       {/* Result count */}
-      <div className="text-sm text-gray-500">
-        총 {data?.totalCount ?? 0}개 종목 중 <span className="font-semibold text-gray-900">{sorted.length}개</span> 조건 충족
-        {data && <span className="ml-2 text-xs text-gray-400">(기준: {new Date(data.generatedAt).toLocaleTimeString('ko-KR')} 수집)</span>}
+      <div className="text-sm text-c-text-2">
+        총 {data?.totalCount ?? 0}개 종목 중 <span className="font-semibold text-c-text">{sorted.length}개</span> 조건 충족
+        {data && <span className="ml-2 text-xs text-c-text-3">(기준: {new Date(data.generatedAt).toLocaleTimeString('ko-KR')} 수집)</span>}
       </div>
 
       {/* Desktop Table */}
-      <div className="hidden overflow-hidden rounded-xl border bg-white shadow-sm md:block">
+      <div className="hidden overflow-hidden rounded-xl border border-c-border bg-c-surface shadow-sm md:block">
         <div className="overflow-x-auto">
           <table className="w-full">
-            <thead className="border-b bg-gray-50">
+            <thead className="border-b bg-c-surface-2">
               <tr>
                 <th className={thClass} onClick={() => toggleSort('name')}>
                   종목 <SortIcon col="name" />
                 </th>
-                <th className="px-4 py-3 text-left text-xs font-medium uppercase tracking-wider text-gray-500">시장</th>
+                <th className="px-4 py-3 text-left text-xs font-medium uppercase tracking-wider text-c-text-2">시장</th>
                 <th className={thClass} onClick={() => toggleSort('per')}>
                   PER <SortIcon col="per" />
                 </th>
@@ -460,7 +460,7 @@ export function ValuationScreenerTab({ onOpenInsight }: { onOpenInsight?: (req: 
                 <th className={thClass} onClick={() => toggleSort('avgUpside')}>
                   상승여력 <SortIcon col="avgUpside" />
                 </th>
-                <th className="px-4 py-3 text-left text-xs font-medium uppercase tracking-wider text-gray-500">
+                <th className="px-4 py-3 text-left text-xs font-medium uppercase tracking-wider text-c-text-2">
                   섹터
                 </th>
               </tr>
@@ -468,7 +468,7 @@ export function ValuationScreenerTab({ onOpenInsight }: { onOpenInsight?: (req: 
             <tbody className="divide-y divide-gray-100">
               {sorted.length === 0 ? (
                 <tr>
-                  <td colSpan={9} className="px-4 py-8 text-center text-gray-400">
+                  <td colSpan={9} className="px-4 py-8 text-center text-c-text-3">
                     조건에 맞는 종목이 없습니다. 필터를 조정해 보세요.
                   </td>
                 </tr>
@@ -480,10 +480,10 @@ export function ValuationScreenerTab({ onOpenInsight }: { onOpenInsight?: (req: 
                 >
                   <td className={tdClass}>
                     <div className="font-medium text-blue-700 hover:underline">{item.name}</div>
-                    <div className="text-xs text-gray-400">{item.ticker} · {fmtPrice(item.currentPrice, item.market)}</div>
+                    <div className="text-xs text-c-text-3">{item.ticker} · {fmtPrice(item.currentPrice, item.market)}</div>
                   </td>
                   <td className={tdClass}>
-                    <span className="rounded-full bg-gray-100 px-2 py-0.5 text-xs">
+                    <span className="rounded-full bg-c-surface-2 px-2 py-0.5 text-xs">
                       {item.market === 'korea' ? '🇰🇷 국내' : '🇺🇸 해외'}
                     </span>
                   </td>
@@ -492,41 +492,41 @@ export function ValuationScreenerTab({ onOpenInsight }: { onOpenInsight?: (req: 
                       <span className={item.per < 15 ? 'text-green-600 font-medium' : item.per > 30 ? 'text-red-500' : ''}>
                         {item.per.toFixed(1)}x
                       </span>
-                    ) : <span className="text-gray-300">N/A</span>}
+                    ) : <span className="text-c-text-3">N/A</span>}
                   </td>
                   <td className={`${tdClass} font-mono`}>
                     {item.pbr !== null ? (
                       <span className={item.pbr < 1 ? 'text-green-600 font-medium' : ''}>
                         {item.pbr.toFixed(2)}x
                       </span>
-                    ) : <span className="text-gray-300">N/A</span>}
+                    ) : <span className="text-c-text-3">N/A</span>}
                   </td>
                   <td className={`${tdClass} font-mono`}>
                     {item.dividendYield !== null && item.dividendYield > 0 ? (
                       <span className={item.dividendYield >= 3 ? 'text-green-600 font-medium' : ''}>
                         {item.dividendYield.toFixed(2)}%
                       </span>
-                    ) : <span className="text-gray-300">N/A</span>}
+                    ) : <span className="text-c-text-3">N/A</span>}
                   </td>
                   <td className={`${tdClass} font-mono`}>
                     {item.roe !== null ? (
                       <span className={item.roe >= 15 ? 'text-blue-600 font-medium' : item.roe < 0 ? 'text-red-500' : ''}>
                         {item.roe.toFixed(1)}%
                       </span>
-                    ) : <span className="text-gray-300">N/A</span>}
+                    ) : <span className="text-c-text-3">N/A</span>}
                   </td>
                   <td className={tdClass}>
-                    <span className={`inline-flex items-center gap-1 rounded-full px-2 py-0.5 text-xs font-medium ${item.brokerCount >= 5 ? 'bg-green-100 text-green-700' : item.brokerCount >= 3 ? 'bg-blue-100 text-blue-700' : 'bg-gray-100 text-gray-600'}`}>
+                    <span className={`inline-flex items-center gap-1 rounded-full px-2 py-0.5 text-xs font-medium ${item.brokerCount >= 5 ? 'bg-green-100 text-green-700' : item.brokerCount >= 3 ? 'bg-blue-100 text-blue-700' : 'bg-c-surface-2 text-c-text-2'}`}>
                       {item.brokerCount}개
                     </span>
                   </td>
                   <td className={tdClass}>
-                    <span className={`font-medium ${item.avgUpside >= 20 ? 'text-green-600' : item.avgUpside < 0 ? 'text-red-500' : 'text-gray-700'}`}>
+                    <span className={`font-medium ${item.avgUpside >= 20 ? 'text-green-600' : item.avgUpside < 0 ? 'text-red-500' : 'text-c-text-2'}`}>
                       {item.avgUpside >= 0 ? '+' : ''}{item.avgUpside.toFixed(1)}%
                     </span>
                   </td>
                   <td className={tdClass}>
-                    <span className="text-xs text-gray-500 truncate max-w-24 block">{item.sector ?? '-'}</span>
+                    <span className="text-xs text-c-text-2 truncate max-w-24 block">{item.sector ?? '-'}</span>
                   </td>
                 </tr>
               ))}
@@ -538,20 +538,20 @@ export function ValuationScreenerTab({ onOpenInsight }: { onOpenInsight?: (req: 
       {/* Mobile Cards */}
       <div className="space-y-3 md:hidden">
         {sorted.length === 0 ? (
-          <div className="rounded-xl bg-gray-50 p-6 text-center text-sm text-gray-400">
+          <div className="rounded-xl bg-c-surface-2 p-6 text-center text-sm text-c-text-3">
             조건에 맞는 종목이 없습니다.
           </div>
         ) : sorted.map((item) => (
           <button
             key={`${item.market}-${item.ticker}`}
             type="button"
-            className="w-full rounded-xl border bg-white p-4 shadow-sm text-left hover:border-blue-300 hover:shadow-md transition-shadow"
+            className="w-full rounded-xl border border-c-border bg-c-surface p-4 shadow-sm text-left hover:border-c-accent hover:shadow-md transition-shadow"
             onClick={() => onOpenInsight?.({ ticker: item.ticker, name: item.name, market: item.market, category: 'stock', currentPrice: item.currentPrice })}
           >
             <div className="flex items-start justify-between gap-2">
               <div>
                 <div className="font-semibold text-blue-700">{item.name}</div>
-                <div className="text-xs text-gray-400">{item.ticker} · {item.market === 'korea' ? '🇰🇷' : '🇺🇸'}</div>
+                <div className="text-xs text-c-text-3">{item.ticker} · {item.market === 'korea' ? '🇰🇷' : '🇺🇸'}</div>
               </div>
               <div className="text-right">
                 <div className="text-sm font-medium">{fmtPrice(item.currentPrice, item.market)}</div>
@@ -562,36 +562,36 @@ export function ValuationScreenerTab({ onOpenInsight }: { onOpenInsight?: (req: 
             </div>
             <div className="mt-3 grid grid-cols-4 gap-2">
               <div className="text-center">
-                <div className="text-xs text-gray-400">PER</div>
+                <div className="text-xs text-c-text-3">PER</div>
                 <div className={`text-sm font-medium ${item.per !== null && item.per < 15 ? 'text-green-600' : ''}`}>
                   {item.per !== null ? `${item.per.toFixed(1)}x` : 'N/A'}
                 </div>
               </div>
               <div className="text-center">
-                <div className="text-xs text-gray-400">PBR</div>
+                <div className="text-xs text-c-text-3">PBR</div>
                 <div className={`text-sm font-medium ${item.pbr !== null && item.pbr < 1 ? 'text-green-600' : ''}`}>
                   {item.pbr !== null ? `${item.pbr.toFixed(2)}x` : 'N/A'}
                 </div>
               </div>
               <div className="text-center">
-                <div className="text-xs text-gray-400">배당</div>
+                <div className="text-xs text-c-text-3">배당</div>
                 <div className={`text-sm font-medium ${item.dividendYield !== null && item.dividendYield >= 3 ? 'text-green-600' : ''}`}>
                   {item.dividendYield !== null && item.dividendYield > 0 ? `${item.dividendYield.toFixed(1)}%` : 'N/A'}
                 </div>
               </div>
               <div className="text-center">
-                <div className="text-xs text-gray-400">ROE</div>
+                <div className="text-xs text-c-text-3">ROE</div>
                 <div className={`text-sm font-medium ${item.roe !== null && item.roe >= 15 ? 'text-blue-600' : ''}`}>
                   {item.roe !== null ? `${item.roe.toFixed(1)}%` : 'N/A'}
                 </div>
               </div>
             </div>
             <div className="mt-2 flex items-center justify-between">
-              <span className={`rounded-full px-2 py-0.5 text-xs font-medium ${item.brokerCount >= 5 ? 'bg-green-100 text-green-700' : item.brokerCount >= 3 ? 'bg-blue-100 text-blue-700' : 'bg-gray-100 text-gray-600'}`}>
+              <span className={`rounded-full px-2 py-0.5 text-xs font-medium ${item.brokerCount >= 5 ? 'bg-green-100 text-green-700' : item.brokerCount >= 3 ? 'bg-blue-100 text-blue-700' : 'bg-c-surface-2 text-c-text-2'}`}>
                 증권사 {item.brokerCount}개
               </span>
               {item.sector && (
-                <span className="text-xs text-gray-400">{item.sector}</span>
+                <span className="text-xs text-c-text-3">{item.sector}</span>
               )}
             </div>
           </button>
@@ -599,7 +599,7 @@ export function ValuationScreenerTab({ onOpenInsight }: { onOpenInsight?: (req: 
       </div>
 
       {/* Legend */}
-      <div className="rounded-lg bg-gray-50 p-3 text-xs text-gray-500">
+      <div className="rounded-lg bg-c-surface-2 p-3 text-xs text-c-text-2">
         <span className="font-medium">색상 기준:</span>
         {' '}
         <span className="text-green-600">● PER&lt;15배 / PBR&lt;1배 / 배당수익률≥3% / ROE≥15%</span>

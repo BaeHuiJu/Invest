@@ -56,16 +56,16 @@ export function PortfolioTab({ onNavigateToAIPicks }: PortfolioTabProps = {}) {
 
   const diversificationLabel = analysis
     ? getDiversificationLabel(analysis.diversificationScore)
-    : { label: '-', color: 'text-gray-400' };
+    : { label: '-', color: 'text-c-text-3' };
 
   const concentrationLabel = analysis
     ? getConcentrationLabel(analysis.concentrationRisk)
-    : { label: '-', color: 'text-gray-400' };
+    : { label: '-', color: 'text-c-text-3' };
 
   if (!analysis) {
     return (
       <div className="flex h-64 items-center justify-center">
-        <div className="text-center text-gray-500">분석 중...</div>
+        <div className="text-center text-c-text-2">분석 중...</div>
       </div>
     );
   }
@@ -73,15 +73,15 @@ export function PortfolioTab({ onNavigateToAIPicks }: PortfolioTabProps = {}) {
   if (analysis.totalCount === 0) {
     return (
       <div className="space-y-6">
-        <h2 className="text-xl font-bold text-gray-900">포트폴리오 분석</h2>
-        <div className="rounded-xl bg-white p-8 text-center shadow-sm">
-          <div className="mx-auto mb-4 h-16 w-16 rounded-full bg-gray-100 flex items-center justify-center">
-            <svg className="h-8 w-8 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <h2 className="text-xl font-bold text-c-text">포트폴리오 분석</h2>
+        <div className="rounded-xl bg-c-surface p-8 text-center shadow-sm">
+          <div className="mx-auto mb-4 h-16 w-16 rounded-full bg-c-surface-2 flex items-center justify-center">
+            <svg className="h-8 w-8 text-c-text-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
             </svg>
           </div>
-          <h3 className="text-lg font-semibold text-gray-900">관심종목이 없습니다</h3>
-          <p className="mt-2 text-sm text-gray-500">
+          <h3 className="text-lg font-semibold text-c-text">관심종목이 없습니다</h3>
+          <p className="mt-2 text-sm text-c-text-2">
             관심종목을 추가하면 포트폴리오 분석을 시작할 수 있습니다.
           </p>
         </div>
@@ -91,7 +91,7 @@ export function PortfolioTab({ onNavigateToAIPicks }: PortfolioTabProps = {}) {
 
   return (
     <div className="space-y-6">
-      <h2 className="text-xl font-bold text-gray-900">포트폴리오 분석</h2>
+      <h2 className="text-xl font-bold text-c-text">포트폴리오 분석</h2>
 
       {/* Summary Stats */}
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
@@ -101,14 +101,14 @@ export function PortfolioTab({ onNavigateToAIPicks }: PortfolioTabProps = {}) {
           value={`${analysis.diversificationScore}점`}
           accent={diversificationLabel.color}
         />
-        <div className="rounded-xl bg-white p-4 shadow-sm">
-          <div className="text-sm text-gray-500">분산도 평가</div>
+        <div className="rounded-xl bg-c-surface p-4 shadow-sm">
+          <div className="text-sm text-c-text-2">분산도 평가</div>
           <div className={`text-2xl font-bold ${diversificationLabel.color}`}>
             {diversificationLabel.label}
           </div>
         </div>
-        <div className="rounded-xl bg-white p-4 shadow-sm">
-          <div className="text-sm text-gray-500">집중 리스크</div>
+        <div className="rounded-xl bg-c-surface p-4 shadow-sm">
+          <div className="text-sm text-c-text-2">집중 리스크</div>
           <div className={`text-2xl font-bold ${concentrationLabel.color}`}>
             {concentrationLabel.label}
           </div>
@@ -118,8 +118,8 @@ export function PortfolioTab({ onNavigateToAIPicks }: PortfolioTabProps = {}) {
       {/* Charts Row */}
       <div className="grid gap-6 lg:grid-cols-2">
         {/* Sector Pie Chart */}
-        <div className="rounded-xl bg-white p-4 shadow-sm">
-          <h3 className="mb-4 text-sm font-semibold text-gray-700">섹터 배분</h3>
+        <div className="rounded-xl bg-c-surface p-4 shadow-sm">
+          <h3 className="mb-4 text-sm font-semibold text-c-text-2">섹터 배분</h3>
           <div className="h-64">
             <ResponsiveContainer width="100%" height="100%">
               <PieChart>
@@ -150,7 +150,7 @@ export function PortfolioTab({ onNavigateToAIPicks }: PortfolioTabProps = {}) {
                   className="h-3 w-3 rounded-full"
                   style={{ backgroundColor: sector.color }}
                 />
-                <span className="text-gray-600">{sector.label}</span>
+                <span className="text-c-text-2">{sector.label}</span>
                 <span className="font-medium">{sector.weight.toFixed(0)}%</span>
               </div>
             ))}
@@ -158,8 +158,8 @@ export function PortfolioTab({ onNavigateToAIPicks }: PortfolioTabProps = {}) {
         </div>
 
         {/* Market Bar Chart */}
-        <div className="rounded-xl bg-white p-4 shadow-sm">
-          <h3 className="mb-4 text-sm font-semibold text-gray-700">시장 배분</h3>
+        <div className="rounded-xl bg-c-surface p-4 shadow-sm">
+          <h3 className="mb-4 text-sm font-semibold text-c-text-2">시장 배분</h3>
           <div className="h-48">
             <ResponsiveContainer width="100%" height="100%">
               <BarChart
@@ -178,9 +178,9 @@ export function PortfolioTab({ onNavigateToAIPicks }: PortfolioTabProps = {}) {
             {analysis.marketAllocation.map((market) => (
               <div
                 key={market.market}
-                className="flex items-center justify-between rounded-lg bg-gray-50 p-2"
+                className="flex items-center justify-between rounded-lg bg-c-surface-2 p-2"
               >
-                <span className="text-sm text-gray-700">{market.label}</span>
+                <span className="text-sm text-c-text-2">{market.label}</span>
                 <span className="text-sm font-medium">
                   {market.count}종목 ({market.weight.toFixed(1)}%)
                 </span>
@@ -192,8 +192,8 @@ export function PortfolioTab({ onNavigateToAIPicks }: PortfolioTabProps = {}) {
 
       {/* Suggestions */}
       {analysis.suggestions.length > 0 && (
-        <div className="rounded-xl bg-white p-4 shadow-sm">
-          <h3 className="mb-4 text-sm font-semibold text-gray-700">개선 제안</h3>
+        <div className="rounded-xl bg-c-surface p-4 shadow-sm">
+          <h3 className="mb-4 text-sm font-semibold text-c-text-2">개선 제안</h3>
           <div className="space-y-3">
             {analysis.suggestions.map((suggestion, idx) => (
               <div
@@ -233,7 +233,7 @@ export function PortfolioTab({ onNavigateToAIPicks }: PortfolioTabProps = {}) {
                         {suggestion.tickers.map((t) => (
                           <span
                             key={t.ticker}
-                            className="rounded-full bg-white px-2 py-1 text-xs text-gray-600"
+                            className="rounded-full bg-c-surface px-2 py-1 text-xs text-c-text-2"
                           >
                             {t.ticker}
                           </span>
@@ -282,7 +282,7 @@ export function PortfolioTab({ onNavigateToAIPicks }: PortfolioTabProps = {}) {
                     {analysis.topHoldings
                       .filter(h => h.weight > 15)
                       .map(h => (
-                        <span key={h.ticker} className="rounded-full bg-white px-3 py-1 text-sm font-medium text-orange-800">
+                        <span key={h.ticker} className="rounded-full bg-c-surface px-3 py-1 text-sm font-medium text-orange-800">
                           {h.name} ({h.weight.toFixed(1)}%)
                         </span>
                       ))}
@@ -291,7 +291,7 @@ export function PortfolioTab({ onNavigateToAIPicks }: PortfolioTabProps = {}) {
               )}
 
               {analysis.diversificationScore < 60 && (
-                <div className="mt-4 rounded-lg border border-blue-200 bg-white p-3">
+                <div className="mt-4 rounded-lg border border-blue-200 bg-c-surface p-3">
                   <div className="flex items-center gap-2 text-sm font-semibold text-blue-900">
                     <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -319,7 +319,7 @@ export function PortfolioTab({ onNavigateToAIPicks }: PortfolioTabProps = {}) {
                 )}
                 <button
                   onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-                  className="flex items-center gap-2 rounded-lg border border-gray-300 bg-white px-4 py-2.5 text-sm font-medium text-gray-700 transition hover:bg-gray-50"
+                  className="flex items-center gap-2 rounded-lg border border-c-border bg-c-surface px-4 py-2.5 text-sm font-medium text-c-text-2 transition hover:bg-c-surface-2"
                 >
                   <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
@@ -333,27 +333,27 @@ export function PortfolioTab({ onNavigateToAIPicks }: PortfolioTabProps = {}) {
       )}
 
       {/* Top Holdings */}
-      <div className="rounded-xl bg-white p-4 shadow-sm">
-        <h3 className="mb-4 text-sm font-semibold text-gray-700">보유 종목</h3>
+      <div className="rounded-xl bg-c-surface p-4 shadow-sm">
+        <h3 className="mb-4 text-sm font-semibold text-c-text-2">보유 종목</h3>
         <div className="space-y-2">
           {analysis.topHoldings.map((holding, idx) => (
             <div
               key={holding.ticker}
-              className="flex items-center justify-between rounded-lg bg-gray-50 p-3"
+              className="flex items-center justify-between rounded-lg bg-c-surface-2 p-3"
             >
               <div className="flex items-center gap-3">
-                <span className="flex h-8 w-8 items-center justify-center rounded-full bg-gray-200 text-sm font-medium text-gray-600">
+                <span className="flex h-8 w-8 items-center justify-center rounded-full bg-c-border text-sm font-medium text-c-text-2">
                   {idx + 1}
                 </span>
                 <div>
-                  <div className="font-medium text-gray-900">{holding.name}</div>
-                  <div className="text-xs text-gray-500">
+                  <div className="font-medium text-c-text">{holding.name}</div>
+                  <div className="text-xs text-c-text-2">
                     {holding.ticker} | {holding.sector}
                   </div>
                 </div>
               </div>
               <div className="text-right">
-                <div className="font-medium text-gray-900">
+                <div className="font-medium text-c-text">
                   {holding.weight.toFixed(1)}%
                 </div>
               </div>

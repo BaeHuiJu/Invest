@@ -363,14 +363,14 @@ export default function Home() {
         <div className="mx-auto max-w-7xl px-4 py-3 sm:py-4">
           <div className="flex items-center justify-between gap-3">
             <div className="min-w-0">
-              <h1 className="text-xl font-bold text-gray-900 sm:text-2xl dark:text-white">글로벌픽</h1>
-              <p className="mt-0.5 hidden text-sm text-gray-500 sm:block dark:text-gray-400">종목을 누르면 기준가격과 간단한 매수 의견을 확인할 수 있습니다.</p>
+              <h1 className="text-xl font-bold text-c-text sm:text-2xl">글로벌픽</h1>
+              <p className="mt-0.5 hidden text-sm text-c-text-2 sm:block">종목을 누르면 기준가격과 간단한 매수 의견을 확인할 수 있습니다.</p>
             </div>
             <div className="flex flex-shrink-0 items-center gap-1.5 sm:gap-2">
               <button
                 type="button"
                 onClick={() => setSearchOpen(true)}
-                className="flex items-center gap-1.5 rounded-lg border bg-white px-2.5 py-2 text-sm text-gray-600 hover:bg-gray-50 sm:px-3 dark:bg-gray-700 dark:border-gray-600 dark:text-gray-300 dark:hover:bg-gray-600"
+                className="flex items-center gap-1.5 rounded-lg border border-c-border bg-c-surface px-2.5 py-2 text-sm text-c-text-2 hover:bg-c-surface-2 sm:px-3"
                 aria-label="검색"
               >
                 <svg className="h-4 w-4 sm:h-5 sm:w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -381,7 +381,7 @@ export default function Home() {
               <button
                 type="button"
                 onClick={() => setNotificationSettingsOpen(true)}
-                className="flex items-center gap-1.5 rounded-lg border bg-white px-2.5 py-2 text-sm text-gray-600 hover:bg-gray-50 sm:px-3 dark:bg-gray-700 dark:border-gray-600 dark:text-gray-300 dark:hover:bg-gray-600"
+                className="flex items-center gap-1.5 rounded-lg border border-c-border bg-c-surface px-2.5 py-2 text-sm text-c-text-2 hover:bg-c-surface-2 sm:px-3"
                 aria-label="알림 설정"
               >
                 <span className="text-base sm:text-lg">🔔</span>
@@ -390,7 +390,7 @@ export default function Home() {
               <button
                 type="button"
                 onClick={() => setGlossaryOpen(true)}
-                className="flex items-center gap-1.5 rounded-lg border bg-white px-2.5 py-2 text-sm text-gray-600 hover:bg-gray-50 sm:px-3 dark:bg-gray-700 dark:border-gray-600 dark:text-gray-300 dark:hover:bg-gray-600"
+                className="flex items-center gap-1.5 rounded-lg border border-c-border bg-c-surface px-2.5 py-2 text-sm text-c-text-2 hover:bg-c-surface-2 sm:px-3"
                 aria-label="용어 사전"
               >
                 <svg className="h-4 w-4 sm:h-5 sm:w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -478,8 +478,8 @@ export default function Home() {
                 {activeTab === 'us-etf' && <StockList stocks={usETFs} title="해외 ETF" market="us" category="etf" onOpenInsight={setInsightTarget} isSaved={isSaved} onToggleWatchlist={toggleWatchlist} />}
               </>}
       </main>
-      <footer className="mt-8 border-t bg-white">
-        <div className="mx-auto max-w-7xl px-4 py-6 text-center text-sm text-gray-500">
+      <footer className="mt-8 border-t border-c-border bg-c-surface">
+        <div className="mx-auto max-w-7xl px-4 py-6 text-center text-sm text-c-text-2">
           <p>데이터 출처: 네이버 금융, Yahoo Finance, Stock Analysis</p>
         </div>
       </footer>
@@ -492,21 +492,21 @@ export default function Home() {
 }
 
 function LoadingState() {
-  return <div className="flex h-64 items-center justify-center"><div className="text-center"><div className="mx-auto h-12 w-12 animate-spin rounded-full border-b-2 border-blue-600" /><p className="mt-4 text-gray-500">데이터를 불러오는 중입니다.</p></div></div>;
+  return <div className="flex h-64 items-center justify-center"><div className="text-center"><div className="mx-auto h-12 w-12 animate-spin rounded-full border-b-2 border-c-accent" /><p className="mt-4 text-c-text-2">데이터를 불러오는 중입니다.</p></div></div>;
 }
 
 function HomeTab({ marketIndices, koreaStocks, koreaETFs, usStocks, usETFs, watchlistPreview, onOpenInsight, onOpenWatchlist }: { marketIndices: MarketIndex[]; koreaStocks: Stock[]; koreaETFs: Stock[]; usStocks: Stock[]; usETFs: Stock[]; watchlistPreview: ResolvedWatchlistItem[]; onOpenInsight: (request: InsightRequest) => void; onOpenWatchlist: () => void }) {
   return <div className="space-y-6">
-    <section className="rounded-xl bg-white p-6 shadow-sm"><h2 className="mb-4 text-lg font-semibold">주요 시장 지수</h2><div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-5">{marketIndices.map((index) => <div key={index.ticker} className="rounded-lg bg-gray-50 p-4"><div className="text-sm text-gray-500">{index.name}</div><div className="text-xl font-bold">{index.value.toLocaleString()}</div><div className={`text-sm ${index.change >= 0 ? 'text-green-600' : 'text-red-600'}`}>{index.change >= 0 ? '+' : ''}{index.change.toFixed(2)} ({index.changePercent >= 0 ? '+' : ''}{index.changePercent.toFixed(2)}%)</div></div>)}</div></section>
-    <section className="rounded-xl bg-white p-6 shadow-sm">
+    <section className="rounded-xl bg-c-surface p-6 shadow-sm"><h2 className="mb-4 text-lg font-semibold text-c-text">주요 시장 지수</h2><div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-5">{marketIndices.map((index) => <div key={index.ticker} className="rounded-lg bg-c-surface-2 p-4"><div className="text-sm text-c-text-2">{index.name}</div><div className="text-xl font-bold text-c-text">{index.value.toLocaleString()}</div><div className={`text-sm ${index.change >= 0 ? 'text-green-600' : 'text-red-600'}`}>{index.change >= 0 ? '+' : ''}{index.change.toFixed(2)} ({index.changePercent >= 0 ? '+' : ''}{index.changePercent.toFixed(2)}%)</div></div>)}</div></section>
+    <section className="rounded-xl bg-c-surface p-6 shadow-sm">
       <div className="mb-4 flex items-center justify-between gap-4">
         <div>
-          <h2 className="text-lg font-semibold">관심 종목</h2>
-          <p className="text-sm text-gray-500">저장한 종목 5개를 빠르게 확인할 수 있습니다.</p>
+          <h2 className="text-lg font-semibold text-c-text">관심 종목</h2>
+          <p className="text-sm text-c-text-2">저장한 종목 5개를 빠르게 확인할 수 있습니다.</p>
         </div>
-        <button type="button" onClick={onOpenWatchlist} className="rounded-lg border px-3 py-2 text-sm text-gray-600 hover:bg-gray-50">전체 보기</button>
+        <button type="button" onClick={onOpenWatchlist} className="rounded-lg border border-c-border px-3 py-2 text-sm text-c-text-2 hover:bg-c-surface-2">전체 보기</button>
       </div>
-      {watchlistPreview.length === 0 ? <div className="rounded-lg bg-gray-50 p-4 text-sm text-gray-400">아직 저장한 관심 종목이 없습니다.</div> : <div className="grid gap-3 md:grid-cols-2 xl:grid-cols-5">{watchlistPreview.map((item) => <button key={`${item.market}-${item.ticker}`} type="button" onClick={() => onOpenInsight({ ticker: item.ticker, name: item.name, market: item.market, category: item.category, currentPrice: item.currentPrice, changePercent: item.changePercent, high52w: item.high52w, low52w: item.low52w })} className="rounded-lg bg-gray-50 p-4 text-left hover:bg-gray-100"><div className="truncate text-sm font-semibold text-blue-700">{item.name}</div><div className="text-xs text-gray-400">{item.ticker}</div><div className="mt-3 text-sm font-medium text-gray-900">{formatPrice(item.currentPrice || 0, item.market)}</div><div className={`text-xs ${item.changePercent !== undefined && item.changePercent >= 0 ? 'text-green-600' : 'text-red-600'}`}>{item.changePercent !== undefined ? formatPct(item.changePercent) : '-'}</div></button>)}</div>}
+      {watchlistPreview.length === 0 ? <div className="rounded-lg bg-c-surface-2 p-4 text-sm text-c-text-3">아직 저장한 관심 종목이 없습니다.</div> : <div className="grid gap-3 md:grid-cols-2 xl:grid-cols-5">{watchlistPreview.map((item) => <button key={`${item.market}-${item.ticker}`} type="button" onClick={() => onOpenInsight({ ticker: item.ticker, name: item.name, market: item.market, category: item.category, currentPrice: item.currentPrice, changePercent: item.changePercent, high52w: item.high52w, low52w: item.low52w })} className="rounded-lg bg-c-surface-2 p-4 text-left hover:bg-c-surface"><div className="truncate text-sm font-semibold text-blue-600">{item.name}</div><div className="text-xs text-c-text-3">{item.ticker}</div><div className="mt-3 text-sm font-medium text-c-text">{formatPrice(item.currentPrice || 0, item.market)}</div><div className={`text-xs ${item.changePercent !== undefined && item.changePercent >= 0 ? 'text-green-600' : 'text-red-600'}`}>{item.changePercent !== undefined ? formatPct(item.changePercent) : '-'}</div></button>)}</div>}
     </section>
     <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
       <QuickList title="국내 주식 TOP 5" stocks={koreaStocks.slice(0, 5)} market="korea" />
@@ -518,19 +518,19 @@ function HomeTab({ marketIndices, koreaStocks, koreaETFs, usStocks, usETFs, watc
 }
 
 function QuickList({ title, stocks, market }: { title: string; stocks: Stock[]; market: MarketType }) {
-  return <section className="rounded-xl bg-white p-6 shadow-sm"><h2 className="mb-4 text-lg font-semibold">{title}</h2><div className="space-y-3">{stocks.map((stock) => <div key={stock.ticker} className="flex items-center justify-between rounded-lg bg-gray-50 p-3"><div><div className="text-sm font-medium">{stock.name}</div><div className="text-xs text-gray-400">{stock.ticker}</div></div><div className="text-right"><div className="text-sm font-medium">{formatPrice(stock.currentPrice, market)}</div><div className={`text-xs ${stock.changePercent >= 0 ? 'text-green-600' : 'text-red-600'}`}>{stock.changePercent >= 0 ? '+' : ''}{stock.changePercent.toFixed(2)}%</div></div></div>)}</div></section>;
+  return <section className="rounded-xl bg-c-surface p-6 shadow-sm"><h2 className="mb-4 text-lg font-semibold text-c-text">{title}</h2><div className="space-y-3">{stocks.map((stock) => <div key={stock.ticker} className="flex items-center justify-between rounded-lg bg-c-surface-2 p-3"><div><div className="text-sm font-medium text-c-text">{stock.name}</div><div className="text-xs text-c-text-3">{stock.ticker}</div></div><div className="text-right"><div className="text-sm font-medium text-c-text">{formatPrice(stock.currentPrice, market)}</div><div className={`text-xs ${stock.changePercent >= 0 ? 'text-green-600' : 'text-red-600'}`}>{stock.changePercent >= 0 ? '+' : ''}{stock.changePercent.toFixed(2)}%</div></div></div>)}</div></section>;
 }
 
 function PaginationControls({ totalCount, page, pageSize, totalPages, onPageChange }: { totalCount: number; page: number; pageSize: number; totalPages: number; onPageChange: (page: number) => void }) {
   if (totalCount === 0) return null;
   const start = (page - 1) * pageSize + 1;
   const end = Math.min(page * pageSize, totalCount);
-  return <div className="flex flex-col gap-3 rounded-xl border bg-gray-50 px-4 py-3 sm:flex-row sm:items-center sm:justify-between">
-    <div className="text-sm text-gray-500">{'\uCD1D'} {totalCount}{'\uAC74 \uC911'} {start}-{end}{'\uAC74'}</div>
+  return <div className="flex flex-col gap-3 rounded-xl border border-c-border bg-c-surface-2 px-4 py-3 sm:flex-row sm:items-center sm:justify-between">
+    <div className="text-sm text-c-text-2">{'\uCD1D'} {totalCount}{'\uAC74 \uC911'} {start}-{end}{'\uAC74'}</div>
     <div className="flex flex-wrap items-center gap-2 sm:justify-end">
-      <button onClick={() => onPageChange(Math.max(1, page - 1))} disabled={page === 1} className="rounded border bg-white px-3 py-1.5 text-sm disabled:opacity-50">{'\uC774\uC804'}</button>
-      <span className="text-sm text-gray-600">{page} / {totalPages}</span>
-      <button onClick={() => onPageChange(Math.min(totalPages, page + 1))} disabled={page === totalPages} className="rounded border bg-white px-3 py-1.5 text-sm disabled:opacity-50">{'\uB2E4\uC74C'}</button>
+      <button onClick={() => onPageChange(Math.max(1, page - 1))} disabled={page === 1} className="rounded border border-c-border bg-c-surface px-3 py-1.5 text-sm text-c-text disabled:opacity-50 hover:bg-c-surface-2">{'\uC774\uC804'}</button>
+      <span className="text-sm text-c-text-2">{page} / {totalPages}</span>
+      <button onClick={() => onPageChange(Math.min(totalPages, page + 1))} disabled={page === totalPages} className="rounded border border-c-border bg-c-surface px-3 py-1.5 text-sm text-c-text disabled:opacity-50 hover:bg-c-surface-2">{'\uB2E4\uC74C'}</button>
     </div>
   </div>;
 }
@@ -546,15 +546,15 @@ function WatchlistTab({ items, onOpenInsight, onRemove }: { items: ResolvedWatch
   }, [items.length, pageSize]);
 
   return <div className="space-y-6">
-    <div className="rounded-xl bg-white p-6 shadow-sm">
+    <div className=" bg-c-surface  shadow-sm">
       <h2 className="text-lg font-semibold">{'\uAD00\uC2EC \uC885\uBAA9 \uBAA9\uB85D'}</h2>
-      <p className="mt-1 text-sm text-gray-500">{'\uC800\uC7A5\uD55C \uC885\uBAA9\uC744 \uD55C\uACF3\uC5D0\uC11C \uBAA8\uC544 \uBCF4\uACE0, \uC885\uBAA9 \uD074\uB9AD \uD6C4 \uC758\uACAC \uD31D\uC5C5\uC73C\uB85C \uBC14\uB85C \uD655\uC778\uD560 \uC218 \uC788\uC2B5\uB2C8\uB2E4.'}</p>
+      <p className="mt-1 text-sm text-c-text-2">{'\uC800\uC7A5\uD55C \uC885\uBAA9\uC744 \uD55C\uACF3\uC5D0\uC11C \uBAA8\uC544 \uBCF4\uACE0, \uC885\uBAA9 \uD074\uB9AD \uD6C4 \uC758\uACAC \uD31D\uC5C5\uC73C\uB85C \uBC14\uB85C \uD655\uC778\uD560 \uC218 \uC788\uC2B5\uB2C8\uB2E4.'}</p>
     </div>
-    {items.length === 0 ? <div className="rounded-xl bg-white p-8 text-center text-gray-400 shadow-sm">{'\uC800\uC7A5\uB41C \uAD00\uC2EC \uC885\uBAA9\uC774 \uC544\uC9C1 \uC5C6\uC2B5\uB2C8\uB2E4.'}</div> : <>
+    {items.length === 0 ? <div className=" bg-c-surface  text-center text-c-text-3 shadow-sm">{'\uC800\uC7A5\uB41C \uAD00\uC2EC \uC885\uBAA9\uC774 \uC544\uC9C1 \uC5C6\uC2B5\uB2C8\uB2E4.'}</div> : <>
       <div className="flex justify-end">
         <SimpleSelect label={'\uD398\uC774\uC9C0 \uD06C\uAE30'} value={String(pageSize)} onChange={(value) => setPageSize(Number(value))} options={PAGE_SIZE_OPTIONS.map((option) => [String(option), String(option)] as [string, string])} />
       </div>
-      <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">{paginated.map((item) => <article key={`${item.market}-${item.ticker}`} className="rounded-xl bg-white p-5 shadow-sm"><div className="flex items-start justify-between gap-3"><button type="button" onClick={() => onOpenInsight({ ticker: item.ticker, name: item.name, market: item.market, category: item.category, currentPrice: item.currentPrice, changePercent: item.changePercent, high52w: item.high52w, low52w: item.low52w })} className="min-w-0 text-left"><div className="truncate font-semibold text-blue-700 hover:underline">{item.name}</div><div className="text-xs text-gray-400">{item.ticker} {'\u00B7'} {item.market === 'korea' ? '\uAD6D\uB0B4' : '\uD574\uC678'}</div></button><button type="button" onClick={() => onRemove(item.ticker, item.market)} className="shrink-0 rounded-lg border px-2.5 py-1.5 text-xs text-gray-500 hover:bg-gray-50">{'\uC0AD\uC81C'}</button></div><div className="mt-4 grid grid-cols-2 gap-3 text-sm"><div className="rounded-lg bg-gray-50 p-3"><div className="text-xs text-gray-500">{'\uD604\uC7AC\uAC00'}</div><div className="mt-1 font-medium text-gray-900">{formatPrice(item.currentPrice || 0, item.market)}</div></div><div className="rounded-lg bg-gray-50 p-3"><div className="text-xs text-gray-500">{'\uB4F1\uB77D\uB960'}</div><div className={`mt-1 font-medium ${item.changePercent !== undefined && item.changePercent >= 0 ? 'text-green-600' : 'text-red-600'}`}>{item.changePercent !== undefined ? formatPct(item.changePercent) : '-'}</div></div></div><div className="mt-4 text-xs text-gray-400">{'\uC800\uC7A5\uC77C'} {item.savedAt.slice(0, 10)}</div></article>)}</div>
+      <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">{paginated.map((item) => <article key={`${item.market}-${item.ticker}`} className=" bg-c-surface  shadow-sm"><div className="flex items-start justify-between gap-3"><button type="button" onClick={() => onOpenInsight({ ticker: item.ticker, name: item.name, market: item.market, category: item.category, currentPrice: item.currentPrice, changePercent: item.changePercent, high52w: item.high52w, low52w: item.low52w })} className="min-w-0 text-left"><div className="truncate font-semibold text-blue-700 hover:underline">{item.name}</div><div className="text-xs text-c-text-3">{item.ticker} {'\u00B7'} {item.market === 'korea' ? '\uAD6D\uB0B4' : '\uD574\uC678'}</div></button><button type="button" onClick={() => onRemove(item.ticker, item.market)} className="shrink-0 rounded-lg border px-2.5 py-1.5 text-xs text-c-text-2 hover:bg-c-surface-2">{'\uC0AD\uC81C'}</button></div><div className="mt-4 grid grid-cols-2 gap-3 text-sm"><div className="rounded-lg bg-c-surface-2 p-"><div className="text-xs text-c-text-2">{'\uD604\uC7AC\uAC00'}</div><div className="mt-1 font-medium text-c-text">{formatPrice(item.currentPrice || 0, item.market)}</div></div><div className="rounded-lg bg-c-surface-2 p-"><div className="text-xs text-c-text-2">{'\uB4F1\uB77D\uB960'}</div><div className={`mt-1 font-medium ${item.changePercent !== undefined && item.changePercent >= 0 ? 'text-green-600' : 'text-red-600'}`}>{item.changePercent !== undefined ? formatPct(item.changePercent) : '-'}</div></div></div><div className="mt-4 text-xs text-c-text-3">{'\uC800\uC7A5\uC77C'} {item.savedAt.slice(0, 10)}</div></article>)}</div>
       <PaginationControls totalCount={items.length} page={page} pageSize={pageSize} totalPages={totalPages} onPageChange={setPage} />
     </>}
   </div>;
@@ -610,7 +610,7 @@ function AnalystTab({ onOpenInsight, isSaved, onToggleWatchlist }: { onOpenInsig
   const topUpside = [...filtered].sort((a, b) => b.upside - a.upside).slice(0, 10);
 
   return <div className="space-y-6">
-    <div className="rounded-xl bg-white p-4 shadow-sm">
+    <div className=" bg-c-surface  shadow-sm">
       <div className="mb-4">
         <div className="relative">
           <input
@@ -618,16 +618,16 @@ function AnalystTab({ onOpenInsight, isSaved, onToggleWatchlist }: { onOpenInsig
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             placeholder="종목명, 티커, 증권사, 애널리스트 검색..."
-            className="w-full rounded-lg border border-gray-300 py-2.5 pl-10 pr-4 text-sm focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500"
+            className="w-full rounded-lg border border-c-border bg-c-surface py-2.5 pl-10 pr-4 text-sm text-c-text focus:border-c-accent focus:outline-none focus:ring-1 focus:ring-c-accent"
           />
-          <svg className="absolute left-3 top-1/2 h-5 w-5 -translate-y-1/2 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <svg className="absolute left-3 top-1/2 h-5 w-5 -translate-y-1/2 text-c-text-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
           </svg>
           {searchQuery && (
             <button
               type="button"
               onClick={() => setSearchQuery('')}
-              className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 hover:text-gray-600"
+              className="absolute right-3 top-1/2 -translate-y-1/2 text-c-text-3 hover:text-c-text-2"
             >
               <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
@@ -635,13 +635,13 @@ function AnalystTab({ onOpenInsight, isSaved, onToggleWatchlist }: { onOpenInsig
             </button>
           )}
         </div>
-        {searchQuery && <div className="mt-2 text-sm text-gray-500">검색 결과: {filtered.length}건</div>}
+        {searchQuery && <div className="mt-2 text-sm text-c-text-2">검색 결과: {filtered.length}건</div>}
       </div>
       <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-[minmax(0,1.4fr)_repeat(5,minmax(0,1fr))]">
         <div className="w-full">
-          <label className="mb-1 block text-sm text-gray-500">{'\uAE30\uAC04'}</label>
+          <label className="mb-1 block text-sm text-c-text-2">{'\uAE30\uAC04'}</label>
           <div className="flex flex-wrap overflow-hidden rounded-lg border">
-            {[3, 7, 15, 30].map((value) => <button key={value} onClick={() => setDays(value)} className={`flex-1 px-3 py-2 text-sm ${days === value ? 'bg-blue-600 text-white' : 'bg-white text-gray-600 hover:bg-gray-50'}`}>{value}{'\uC77C'}</button>)}
+            {[3, 7, 15, 30].map((value) => <button key={value} onClick={() => setDays(value)} className={`flex-1 px-3 py-2 text-sm ${days === value ? 'bg-blue-600 text-white' : 'bg-c-surface text-c-text-2 hover:bg-c-surface-2'}`}>{value}{'\uC77C'}</button>)}
           </div>
         </div>
         <SimpleSelect label={'\uC2DC\uC7A5'} value={market} onChange={(value) => setMarket(value as MarketFilter)} options={[['all', '\uC804\uCCB4'], ['korea', '\uAD6D\uB0B4'], ['us', '\uD574\uC678']]} />
@@ -658,44 +658,44 @@ function AnalystTab({ onOpenInsight, isSaved, onToggleWatchlist }: { onOpenInsig
       <StatCard label={'\uD574\uC678 \uB9AC\uD3EC\uD2B8'} value={String(filtered.filter((r) => r.market === 'us').length)} />
     </div>
     {loading ? <LoadingState /> : error ? <div className="rounded-lg bg-red-50 p-4 text-red-600">{error}</div> : <>
-      <div className="overflow-hidden rounded-xl bg-white shadow-sm">
+      <div className="bg-c-surface ">
         <div className="border-b p-4">
           <h2 className="text-lg font-semibold">{'\uC560\uB110\uB9AC\uC2A4\uD2B8 \uCD94\uCC9C \uC885\uBAA9'}</h2>
-          <p className="text-sm text-gray-500">{'\uC885\uBAA9\uBA85\uC744 \uB204\uB974\uBA74 \uAE30\uC900\uAC00\uACA9\uACFC \uAC04\uB2E8\uD55C \uB9E4\uC218 \uC758\uACAC\uC744 \uD655\uC778\uD560 \uC218 \uC788\uC2B5\uB2C8\uB2E4.'}</p>
+          <p className="text-sm text-c-text-2">{'\uC885\uBAA9\uBA85\uC744 \uB204\uB974\uBA74 \uAE30\uC900\uAC00\uACA9\uACFC \uAC04\uB2E8\uD55C \uB9E4\uC218 \uC758\uACAC\uC744 \uD655\uC778\uD560 \uC218 \uC788\uC2B5\uB2C8\uB2E4.'}</p>
         </div>
-        {filtered.length === 0 ? <div className="p-8 text-center text-gray-400">{'\uC870\uAC74\uC5D0 \uB9DE\uB294 \uCD94\uCC9C \uB9AC\uD3EC\uD2B8\uAC00 \uC5C6\uC2B5\uB2C8\uB2E4.'}</div> : <>
+        {filtered.length === 0 ? <div className="p-8 text-center text-c-text-3">{'\uC870\uAC74\uC5D0 \uB9DE\uB294 \uCD94\uCC9C \uB9AC\uD3EC\uD2B8\uAC00 \uC5C6\uC2B5\uB2C8\uB2E4.'}</div> : <>
           <div className="space-y-2.5 p-3 md:hidden">
-            {paginated.map((report, index) => <article key={`${report.market}-${report.ticker}-${index}`} className="rounded-lg border border-gray-100 bg-gray-50 p-3">
+            {paginated.map((report, index) => <article key={`${report.market}-${report.ticker}-${index}`} className="rounded-lg border border-c-border bg-c-surface-2 p-3">
               <div className="flex items-start justify-between gap-2.5">
                 <button type="button" onClick={() => onOpenInsight({ ticker: report.ticker, name: report.name, market: report.market, category: 'analyst', currentPrice: report.currentPrice })} className="min-w-0 text-left">
                   <div className="truncate text-sm font-semibold text-blue-700">{report.name}</div>
-                  <div className="text-[11px] text-gray-400">{report.ticker}</div>
+                  <div className="text-[11px] text-c-text-3">{report.ticker}</div>
                 </button>
                 <div className="flex shrink-0 items-center gap-1.5">
                   <FavoriteButton active={isSaved(report.ticker, report.market)} onClick={() => onToggleWatchlist({ ticker: report.ticker, name: report.name, market: report.market, category: 'analyst', currentPrice: report.currentPrice })} className="h-6 w-6 text-sm" />
                   <span className={`rounded px-1.5 py-0.5 text-[11px] ${report.market === 'korea' ? 'bg-blue-100 text-blue-700' : 'bg-orange-100 text-orange-700'}`}>{report.market === 'korea' ? '\uAD6D\uB0B4' : '\uD574\uC678'}</span>
                 </div>
               </div>
-              <div className="mt-2 flex items-center justify-between gap-2 text-[11px] text-gray-500">
+              <div className="mt-2 flex items-center justify-between gap-2 text-[11px] text-c-text-2">
                 <span>{report.date}</span>
                 <span className="rounded bg-green-100 px-1.5 py-0.5 text-[11px] text-green-700">{report.opinion}</span>
               </div>
               <div className="mt-3 grid grid-cols-2 gap-2 text-xs">
-                <div className="rounded-md bg-white p-2.5"><div className="text-[11px] text-gray-500">{'\uC99D\uAD8C\uC0AC'}</div><div className="mt-1 text-[12px] font-medium text-gray-900">{report.broker}</div></div>
-                <div className="rounded-md bg-white p-2.5"><div className="text-[11px] text-gray-500">{'\uC0C1\uC2B9\uC5EC\uB825'}</div><div className="mt-1 text-[12px] font-semibold text-green-600">{formatPct(report.upside)}</div></div>
-                <div className="rounded-md bg-white p-2.5"><div className="text-[11px] text-gray-500">{'\uBAA9\uD45C\uAC00'}</div><div className="mt-1 text-[12px] font-medium text-gray-900">{formatPrice(report.targetPrice, report.market)}</div></div>
-                <div className="rounded-md bg-white p-2.5"><div className="text-[11px] text-gray-500">{'\uD604\uC7AC\uAC00'}</div><div className="mt-1 text-[12px] font-medium text-gray-900">{formatPrice(report.currentPrice, report.market)}</div></div>
+                <div className="rounded-md bg-c-surface p-2.5"><div className="text-[11px] text-c-text-2">{'\uC99D\uAD8C\uC0AC'}</div><div className="mt-1 text-[12px] font-medium text-c-text">{report.broker}</div></div>
+                <div className="rounded-md bg-c-surface p-2.5"><div className="text-[11px] text-c-text-2">{'\uC0C1\uC2B9\uC5EC\uB825'}</div><div className="mt-1 text-[12px] font-semibold text-green-600">{formatPct(report.upside)}</div></div>
+                <div className="rounded-md bg-c-surface p-2.5"><div className="text-[11px] text-c-text-2">{'\uBAA9\uD45C\uAC00'}</div><div className="mt-1 text-[12px] font-medium text-c-text">{formatPrice(report.targetPrice, report.market)}</div></div>
+                <div className="rounded-md bg-c-surface p-2.5"><div className="text-[11px] text-c-text-2">{'\uD604\uC7AC\uAC00'}</div><div className="mt-1 text-[12px] font-medium text-c-text">{formatPrice(report.currentPrice, report.market)}</div></div>
               </div>
-              <div className="mt-2.5 rounded-md bg-white p-2.5 text-xs">
-                <div className="text-[11px] text-gray-500">{'\uAE30\uC900\uAC00\uACA9'}</div>
-                <div className="mt-1 text-[12px] font-medium text-gray-900">{formatPrice(report.basePrice, report.market)}</div>
-                <div className="mt-1 text-[11px] text-gray-400">{report.basePriceDate} {'\uC885\uAC00'}</div>
+              <div className="mt-2.5 rounded-md bg-c-surface-2 p-2.5 text-xs">
+                <div className="text-[11px] text-c-text-2">{'\uAE30\uC900\uAC00\uACA9'}</div>
+                <div className="mt-1 text-[12px] font-medium text-c-text">{formatPrice(report.basePrice, report.market)}</div>
+                <div className="mt-1 text-[11px] text-c-text-3">{report.basePriceDate} {'\uC885\uAC00'}</div>
               </div>
             </article>)}
           </div>
           <div className="hidden overflow-x-auto md:block">
             <table className="w-full">
-              <thead className="bg-gray-50 text-left text-xs uppercase text-gray-500">
+              <thead className="bg-c-surface-2 text-left text-xs uppercase text-c-text-2">
                 <tr>
                   <th className="px-4 py-3">{'\uB0A0\uC9DC'}</th>
                   <th className="px-4 py-3">{'\uC885\uBAA9'}</th>
@@ -709,13 +709,13 @@ function AnalystTab({ onOpenInsight, isSaved, onToggleWatchlist }: { onOpenInsig
                 </tr>
               </thead>
               <tbody className="divide-y">
-                {paginated.map((report, index) => <tr key={`${report.market}-${report.ticker}-${index}`} className="hover:bg-gray-50">
+                {paginated.map((report, index) => <tr key={`${report.market}-${report.ticker}-${index}`} className="hover:bg-c-surface-2">
                   <td className="px-4 py-3 text-sm">{report.date}</td>
                   <td className="px-4 py-3">
                     <div className="flex items-start justify-between gap-3">
                       <button type="button" onClick={() => onOpenInsight({ ticker: report.ticker, name: report.name, market: report.market, category: 'analyst', currentPrice: report.currentPrice })} className="text-left">
                         <div className="font-medium text-blue-700 hover:underline">{report.name}</div>
-                        <div className="text-xs text-gray-400">{report.ticker}</div>
+                        <div className="text-xs text-c-text-3">{report.ticker}</div>
                       </button>
                       <FavoriteButton active={isSaved(report.ticker, report.market)} onClick={() => onToggleWatchlist({ ticker: report.ticker, name: report.name, market: report.market, category: 'analyst', currentPrice: report.currentPrice })} />
                     </div>
@@ -723,7 +723,7 @@ function AnalystTab({ onOpenInsight, isSaved, onToggleWatchlist }: { onOpenInsig
                   <td className="px-4 py-3"><span className={`rounded px-2 py-1 text-xs ${report.market === 'korea' ? 'bg-blue-100 text-blue-700' : 'bg-orange-100 text-orange-700'}`}>{report.market === 'korea' ? '\uAD6D\uB0B4' : '\uD574\uC678'}</span></td>
                   <td className="px-4 py-3 text-sm">{report.broker}</td>
                   <td className="px-4 py-3 text-right font-medium">{formatPrice(report.targetPrice, report.market)}</td>
-                  <td className="px-4 py-3 text-right"><div className="font-medium">{formatPrice(report.basePrice, report.market)}</div><div className="text-xs text-gray-400">{report.basePriceDate} {'\uC885\uAC00'}</div></td>
+                  <td className="px-4 py-3 text-right"><div className="font-medium">{formatPrice(report.basePrice, report.market)}</div><div className="text-xs text-c-text-3">{report.basePriceDate} {'\uC885\uAC00'}</div></td>
                   <td className="px-4 py-3 text-right">{formatPrice(report.currentPrice, report.market)}</td>
                   <td className="px-4 py-3 text-right font-medium text-green-600">{formatPct(report.upside)}</td>
                   <td className="px-4 py-3"><span className="rounded bg-green-100 px-2 py-1 text-xs text-green-700">{report.opinion}</span></td>
@@ -734,7 +734,7 @@ function AnalystTab({ onOpenInsight, isSaved, onToggleWatchlist }: { onOpenInsig
         </>}
       </div>
       <PaginationControls totalCount={filtered.length} page={page} pageSize={pageSize} totalPages={totalPages} onPageChange={setPage} />
-      <div className="rounded-xl bg-white p-4 shadow-sm sm:p-6"><h3 className="mb-4 text-lg font-semibold">{'\uC0C1\uC2B9\uC5EC\uB825 TOP 10'}</h3><div className="h-72 sm:h-80"><ResponsiveContainer width="100%" height="100%"><BarChart data={topUpside} layout="vertical"><XAxis type="number" domain={[0, 'dataMax + 10']} tickFormatter={(value) => `${value}%`} /><YAxis type="category" dataKey="name" width={120} tick={{ fontSize: 12 }} /><Tooltip formatter={(value: number) => [`${value.toFixed(1)}%`, '\uC0C1\uC2B9\uC5EC\uB825']} /><Bar dataKey="upside" fill="#22c55e" radius={[0, 4, 4, 0]} /></BarChart></ResponsiveContainer></div></div>
+      <div className=" bg-c-surface  shadow-sm sm:p-6"><h3 className="mb-4 text-lg font-semibold">{'\uC0C1\uC2B9\uC5EC\uB825 TOP 10'}</h3><div className="h-72 sm:h-80"><ResponsiveContainer width="100%" height="100%"><BarChart data={topUpside} layout="vertical"><XAxis type="number" domain={[0, 'dataMax + 10']} tickFormatter={(value) => `${value}%`} /><YAxis type="category" dataKey="name" width={120} tick={{ fontSize: 12 }} /><Tooltip formatter={(value: number) => [`${value.toFixed(1)}%`, '\uC0C1\uC2B9\uC5EC\uB825']} /><Bar dataKey="upside" fill="#22c55e" radius={[0, 4, 4, 0]} /></BarChart></ResponsiveContainer></div></div>
     </>}
   </div>;
 }
@@ -747,7 +747,7 @@ function getPerformanceLabel(point?: PerformancePoint) {
 }
 
 function getPerformanceTone(point?: PerformancePoint) {
-  if (!point || point.status !== 'complete') return 'text-gray-400';
+  if (!point || point.status !== 'complete') return 'text-c-text-3';
   return point.success ? 'text-green-600' : 'text-red-600';
 }
 
@@ -766,9 +766,9 @@ function getProgressMetric(point?: PerformancePoint) {
 }
 
 function getStatusBadge(point?: PerformancePoint) {
-  if (!point) return { label: '-', className: 'bg-gray-100 text-gray-500' };
+  if (!point) return { label: '-', className: 'bg-c-surface-2 text-c-text-2' };
   if (point.status === 'pending') return { label: '\uB300\uAE30', className: 'bg-amber-100 text-amber-700' };
-  if (point.status === 'unavailable') return { label: '\uC81C\uC678', className: 'bg-gray-100 text-gray-500' };
+  if (point.status === 'unavailable') return { label: '\uC81C\uC678', className: 'bg-c-surface-2 text-c-text-2' };
   return point.success
     ? { label: '\uC131\uACF5', className: 'bg-green-100 text-green-700' }
     : { label: '\uBBF8\uB2EC', className: 'bg-red-100 text-red-700' };
@@ -853,22 +853,22 @@ function ScorecardTab({ onOpenInsight, isSaved, onToggleWatchlist }: { onOpenIns
   ] : [];
 
   return <div className="space-y-6">
-    <div className="rounded-xl bg-white p-4 shadow-sm">
+    <div className=" bg-c-surface  shadow-sm">
       <div className="grid gap-4 md:grid-cols-[minmax(0,1.3fr)_minmax(0,1fr)_auto] md:items-end">
         <div className="w-full">
-          <label className="mb-1 block text-sm text-gray-500">{'\uAE30\uAC04'}</label>
+          <label className="mb-1 block text-sm text-c-text-2">{'\uAE30\uAC04'}</label>
           <div className="flex flex-wrap overflow-hidden rounded-lg border">
-            {[7, 30, 90].map((value) => <button key={value} onClick={() => setDays(value)} className={`flex-1 px-3 py-2 text-sm ${days === value ? 'bg-blue-600 text-white' : 'bg-white text-gray-600 hover:bg-gray-50'}`}>{value}{'\uC77C'}</button>)}
+            {[7, 30, 90].map((value) => <button key={value} onClick={() => setDays(value)} className={`flex-1 px-3 py-2 text-sm ${days === value ? 'bg-blue-600 text-white' : 'bg-c-surface text-c-text-2 hover:bg-c-surface-2'}`}>{value}{'\uC77C'}</button>)}
           </div>
         </div>
         <SimpleSelect label={'\uC2DC\uC7A5'} value={market} onChange={(value) => setMarket(value as MarketFilter)} options={[['all', '\uC804\uCCB4'], ['korea', '\uAD6D\uB0B4'], ['us', '\uD574\uC678']]} />
-        <div className="text-sm text-gray-400 md:pb-2">{'\uBAA9\uD45C\uAC00 \uB3C4\uB2EC \uAC70\uB9AC \uAE30\uC900 70% \uC811\uADFC \uC2DC \uC131\uACF5'}</div>
+        <div className="text-sm text-c-text-3 md:pb-2">{'\uBAA9\uD45C\uAC00 \uB3C4\uB2EC \uAC70\uB9AC \uAE30\uC900 70% \uC811\uADFC \uC2DC \uC131\uACF5'}</div>
       </div>
     </div>
     {loading ? <LoadingState /> : error ? <div className="rounded-lg bg-red-50 p-4 text-red-600">{error}</div> : data && overall ? <>
-      <div className="rounded-xl bg-white p-6 shadow-sm">
+      <div className=" bg-c-surface  shadow-sm">
         <h2 className="text-lg font-semibold">{'\uCD94\uCC9C \uD6C4 \uC131\uC801\uD45C'}</h2>
-        <p className="mt-1 text-sm text-gray-500">{'\uCD94\uCC9C\uC77C \uAE30\uC900\uAC00\uACA9\uC5D0\uC11C \uBAA9\uD45C\uAC00\uAE4C\uC9C0 \uAC70\uB9AC\uB97C \uC5BC\uB9C8\uB098 \uC904\uC600\uB294\uC9C0 \uAE30\uC900\uC73C\uB85C 1\uC8FC, 1\uAC1C\uC6D4, 3\uAC1C\uC6D4 \uC131\uACFC\uB97C \uC9D1\uACC4\uD569\uB2C8\uB2E4.'}</p>
+        <p className="mt-1 text-sm text-c-text-2">{'\uCD94\uCC9C\uC77C \uAE30\uC900\uAC00\uACA9\uC5D0\uC11C \uBAA9\uD45C\uAC00\uAE4C\uC9C0 \uAC70\uB9AC\uB97C \uC5BC\uB9C8\uB098 \uC904\uC600\uB294\uC9C0 \uAE30\uC900\uC73C\uB85C 1\uC8FC, 1\uAC1C\uC6D4, 3\uAC1C\uC6D4 \uC131\uACFC\uB97C \uC9D1\uACC4\uD569\uB2C8\uB2E4.'}</p>
       </div>
       <div className="grid grid-cols-2 gap-4 md:grid-cols-3 xl:grid-cols-6">
         <StatCard label={'1\uC8FC \uC131\uACF5\uB960'} value={`${overall.week1.successRate.toFixed(1)}%`} accent="text-green-600" />
@@ -879,7 +879,7 @@ function ScorecardTab({ onOpenInsight, isSaved, onToggleWatchlist }: { onOpenIns
         <StatCard label={'3\uAC1C\uC6D4 \uD558\uB77D\uB960'} value={`${overall.month3.declineRate.toFixed(1)}%`} accent="text-red-600" />
       </div>
       <div className="grid gap-6 xl:grid-cols-2">
-        <div className="rounded-xl bg-white p-4 shadow-sm sm:p-6">
+        <div className=" bg-c-surface  shadow-sm sm:p-6">
           <div className="mb-4 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
             <h3 className="text-lg font-semibold">증권사별 {getScorecardPeriodLabel(chartPeriod)} 성공률 TOP 8</h3>
             <div className="flex flex-wrap overflow-hidden rounded-lg border">
@@ -888,7 +888,7 @@ function ScorecardTab({ onOpenInsight, isSaved, onToggleWatchlist }: { onOpenIns
                   key={period}
                   type="button"
                   onClick={() => setChartPeriod(period)}
-                  className={`px-3 py-1.5 text-sm ${chartPeriod === period ? 'bg-blue-600 text-white' : 'bg-white text-gray-600 hover:bg-gray-50'}`}
+                  className={`px-3 py-1.5 text-sm ${chartPeriod === period ? 'bg-blue-600 text-white' : 'bg-c-surface text-c-text-2 hover:bg-c-surface-2'}`}
                 >
                   {getScorecardPeriodLabel(period)}
                 </button>
@@ -906,7 +906,7 @@ function ScorecardTab({ onOpenInsight, isSaved, onToggleWatchlist }: { onOpenIns
             </ResponsiveContainer>
           </div>
         </div>
-        <div className="rounded-xl bg-white p-4 shadow-sm sm:p-6">
+        <div className=" bg-c-surface  shadow-sm sm:p-6">
           <h3 className="mb-4 text-lg font-semibold">{'\uAE30\uAC04\uBCC4 \uD3C9\uADE0 \uC218\uC775\uB960'}</h3>
           <div className="h-72">
             <ResponsiveContainer width="100%" height="100%">
@@ -925,14 +925,14 @@ function ScorecardTab({ onOpenInsight, isSaved, onToggleWatchlist }: { onOpenIns
         <ScorecardGroupCard title={'\uC5C5\uC885\uBCC4 \uC131\uC801'} items={data.summary.bySector.slice(0, 6)} />
         <ScorecardGroupCard title={'\uC2DC\uC7A5\uBCC4 \uBE44\uAD50'} items={data.summary.byMarket.slice(0, 6)} />
       </div>
-      {selectedBrokerGroup && selectedBrokerDetails ? <section className="rounded-xl bg-white p-4 shadow-sm sm:p-6">
+      {selectedBrokerGroup && selectedBrokerDetails ? <section className=" bg-c-surface  shadow-sm sm:p-6">
         <div className="flex flex-col gap-3 border-b pb-4 sm:flex-row sm:items-end sm:justify-between">
           <div>
             <h3 className="text-lg font-semibold">{selectedBrokerGroup.label} {'\uC0C1\uC138 \uC131\uC801'}</h3>
-            <p className="text-sm text-gray-500">{getScorecardPeriodLabel(selectedBrokerPeriod)} {'\uAE30\uC900 \uC0C1\uC2B9/\uD558\uB77D \uC885\uBAA9 \uBAA9\uB85D\uC785\uB2C8\uB2E4. \uC885\uBAA9\uBA85\uC744 \uB204\uB974\uBA74 \uC778\uC0AC\uC774\uD2B8 \uD31D\uC5C5\uC744 \uC5FD\uB2C8\uB2E4.'}</p>
+            <p className="text-sm text-c-text-2">{getScorecardPeriodLabel(selectedBrokerPeriod)} {'\uAE30\uC900 \uC0C1\uC2B9/\uD558\uB77D \uC885\uBAA9 \uBAA9\uB85D\uC785\uB2C8\uB2E4. \uC885\uBAA9\uBA85\uC744 \uB204\uB974\uBA74 \uC778\uC0AC\uC774\uD2B8 \uD31D\uC5C5\uC744 \uC5FD\uB2C8\uB2E4.'}</p>
           </div>
           <div className="flex flex-wrap overflow-hidden rounded-lg border">
-            {(['week1', 'month1', 'month3'] as const).map((period) => <button key={period} type="button" onClick={() => setSelectedBrokerPeriod(period)} className={`px-4 py-2 text-sm ${selectedBrokerPeriod === period ? 'bg-blue-600 text-white' : 'bg-white text-gray-600 hover:bg-gray-50'}`}>{getScorecardPeriodLabel(period)}</button>)}
+            {(['week1', 'month1', 'month3'] as const).map((period) => <button key={period} type="button" onClick={() => setSelectedBrokerPeriod(period)} className={`px-4 py-2 text-sm ${selectedBrokerPeriod === period ? 'bg-blue-600 text-white' : 'bg-c-surface text-c-text-2 hover:bg-c-surface-2'}`}>{getScorecardPeriodLabel(period)}</button>)}
           </div>
         </div>
         <div className="mt-4 grid gap-4 lg:grid-cols-2">
@@ -943,44 +943,44 @@ function ScorecardTab({ onOpenInsight, isSaved, onToggleWatchlist }: { onOpenIns
           {'\uB300\uAE30 \uC911'} {selectedBrokerDetails.pending.length}{'\uAC74'}: {selectedBrokerDetails.pending.slice(0, 8).map(({ report }) => report.name).join(', ')}
         </div> : null}
       </section> : null}
-      <div className="overflow-hidden rounded-xl bg-white shadow-sm">
+      <div className="bg-c-surface ">
         <div className="border-b p-4">
           <div className="flex items-center justify-between gap-4">
             <div>
               <h3 className="text-lg font-semibold">{'\uAC1C\uBCC4 \uCD94\uCC9C \uC774\uB825'}</h3>
-              <p className="text-sm text-gray-500">{'\uD589\uC744 \uB204\uB974\uBA74 \uC885\uBAA9 \uC778\uC0AC\uC774\uD2B8 \uD31D\uC5C5\uC744 \uC5F4 \uC218 \uC788\uC2B5\uB2C8\uB2E4.'}</p>
+              <p className="text-sm text-c-text-2">{'\uD589\uC744 \uB204\uB974\uBA74 \uC885\uBAA9 \uC778\uC0AC\uC774\uD2B8 \uD31D\uC5C5\uC744 \uC5F4 \uC218 \uC788\uC2B5\uB2C8\uB2E4.'}</p>
             </div>
             <SimpleSelect label={'\uD398\uC774\uC9C0 \uD06C\uAE30'} value={String(pageSize)} onChange={(value) => setPageSize(Number(value))} options={PAGE_SIZE_OPTIONS.map((option) => [String(option), String(option)] as [string, string])} />
           </div>
         </div>
-        {reports.length === 0 ? <div className="p-8 text-center text-gray-400">{'\uC9D1\uACC4\uD560 \uCD94\uCC9C \uB9AC\uD3EC\uD2B8\uAC00 \uC5C6\uC2B5\uB2C8\uB2E4.'}</div> : <>
+        {reports.length === 0 ? <div className="p-8 text-center text-c-text-3">{'\uC9D1\uACC4\uD560 \uCD94\uCC9C \uB9AC\uD3EC\uD2B8\uAC00 \uC5C6\uC2B5\uB2C8\uB2E4.'}</div> : <>
           <div className="space-y-3 p-4 md:hidden">
             {paginated.map((report, index) => {
               const week1 = report.performance?.week1;
               const month1 = report.performance?.month1;
               const month3 = report.performance?.month3;
-              return <article key={`${report.market}-${report.ticker}-${report.broker}-${index}`} className="rounded-xl border border-gray-100 bg-gray-50 p-4">
+              return <article key={`${report.market}-${report.ticker}-${report.broker}-${index}`} className="rounded-xl border border-c-border bg-c-surface-2 p-4">
                 <div className="flex items-start justify-between gap-3">
                   <button type="button" onClick={() => onOpenInsight({ ticker: report.ticker, name: report.name, market: report.market, category: 'analyst', currentPrice: report.currentPrice })} className="min-w-0 text-left">
                     <div className="truncate font-semibold text-blue-700">{report.name}</div>
-                    <div className="text-xs text-gray-400">{report.ticker} {'\u00B7'} {report.broker}</div>
+                    <div className="text-xs text-c-text-3">{report.ticker} {'\u00B7'} {report.broker}</div>
                   </button>
                   <FavoriteButton active={isSaved(report.ticker, report.market)} onClick={() => onToggleWatchlist({ ticker: report.ticker, name: report.name, market: report.market, category: 'analyst', currentPrice: report.currentPrice })} className="h-7 w-7 text-base" />
                 </div>
                 <div className="mt-3 grid grid-cols-2 gap-3 text-sm">
-                  <div className="rounded-lg bg-white p-3"><div className="text-xs text-gray-500">{'\uAE30\uC900\uAC00\uACA9'}</div><div className="mt-1 font-medium text-gray-900">{formatPrice(report.basePrice, report.market)}</div></div>
-                  <div className="rounded-lg bg-white p-3"><div className="text-xs text-gray-500">{'\uBAA9\uD45C\uAC00'}</div><div className="mt-1 font-medium text-gray-900">{formatPrice(report.targetPrice, report.market)}</div></div>
+                  <div className=" bg-c-surface "><div className="text-xs text-c-text-2">{'\uAE30\uC900\uAC00\uACA9'}</div><div className="mt-1 font-medium text-c-text">{formatPrice(report.basePrice, report.market)}</div></div>
+                  <div className=" bg-c-surface "><div className="text-xs text-c-text-2">{'\uBAA9\uD45C\uAC00'}</div><div className="mt-1 font-medium text-c-text">{formatPrice(report.targetPrice, report.market)}</div></div>
                 </div>
                 <div className="mt-3 space-y-2">
                   {[{ label: '1\uC8FC', point: week1 }, { label: '1\uAC1C\uC6D4', point: month1 }, { label: '3\uAC1C\uC6D4', point: month3 }].map(({ label, point }) => {
                     const badge = getStatusBadge(point);
-                    return <div key={`${report.ticker}-${label}`} className="rounded-lg bg-white p-3">
+                    return <div key={`${report.ticker}-${label}`} className=" bg-c-surface ">
                       <div className="flex items-center justify-between gap-3">
-                        <div className="text-sm font-medium text-gray-700">{label}</div>
+                        <div className="text-sm font-medium text-c-text-2">{label}</div>
                         <span className={`rounded px-2 py-1 text-xs ${badge.className}`}>{badge.label}</span>
                       </div>
                       <div className={`mt-2 text-sm font-medium ${getPerformanceTone(point)}`}>{getReturnMetric(point)}</div>
-                      <div className="mt-1 text-xs text-gray-500">{getProgressMetric(point)}</div>
+                      <div className="mt-1 text-xs text-c-text-2">{getProgressMetric(point)}</div>
                     </div>;
                   })}
                 </div>
@@ -989,7 +989,7 @@ function ScorecardTab({ onOpenInsight, isSaved, onToggleWatchlist }: { onOpenIns
           </div>
           <div className="hidden overflow-x-auto md:block">
             <table className="w-full">
-              <thead className="bg-gray-50 text-xs uppercase text-gray-500">
+              <thead className="bg-c-surface-2 text-xs uppercase text-c-text-2">
                 <tr>
                   <th className="px-4 py-3 text-left">{'\uC885\uBAA9'}</th>
                   <th className="px-4 py-3 text-left">{'\uC99D\uAD8C\uC0AC'}</th>
@@ -1002,12 +1002,12 @@ function ScorecardTab({ onOpenInsight, isSaved, onToggleWatchlist }: { onOpenIns
                 </tr>
               </thead>
               <tbody className="divide-y">
-                {paginated.map((report, index) => <tr key={`${report.market}-${report.ticker}-${report.broker}-${index}`} className="hover:bg-gray-50">
+                {paginated.map((report, index) => <tr key={`${report.market}-${report.ticker}-${report.broker}-${index}`} className="hover:bg-c-surface-2">
                   <td className="px-4 py-3">
                     <div className="flex items-start justify-between gap-3">
                       <button type="button" onClick={() => onOpenInsight({ ticker: report.ticker, name: report.name, market: report.market, category: 'analyst', currentPrice: report.currentPrice })} className="text-left">
                         <div className="font-medium text-blue-700 hover:underline">{report.name}</div>
-                        <div className="text-xs text-gray-400">{report.ticker}</div>
+                        <div className="text-xs text-c-text-3">{report.ticker}</div>
                       </button>
                       <FavoriteButton active={isSaved(report.ticker, report.market)} onClick={() => onToggleWatchlist({ ticker: report.ticker, name: report.name, market: report.market, category: 'analyst', currentPrice: report.currentPrice })} />
                     </div>
@@ -1023,7 +1023,7 @@ function ScorecardTab({ onOpenInsight, isSaved, onToggleWatchlist }: { onOpenIns
                       <div className="flex flex-col gap-1">
                         <span className={`inline-flex w-fit rounded px-2 py-1 text-xs ${badge.className}`}>{badge.label}</span>
                         <span className={`text-sm font-medium ${getPerformanceTone(point)}`}>{getReturnMetric(point)}</span>
-                        <span className="text-xs text-gray-500">{getProgressMetric(point)}</span>
+                        <span className="text-xs text-c-text-2">{getProgressMetric(point)}</span>
                       </div>
                     </td>;
                   })}
@@ -1041,32 +1041,32 @@ function ScorecardTab({ onOpenInsight, isSaved, onToggleWatchlist }: { onOpenIns
 }
 
 function ScorecardGroupCard({ title, items, activeKey, onSelect, selectable = false }: { title: string; items: ScorecardGroup[]; activeKey?: string | null; onSelect?: (key: string) => void; selectable?: boolean }) {
-  return <section className="rounded-xl bg-white p-4 shadow-sm">
+  return <section className=" bg-c-surface  shadow-sm">
     <h3 className="mb-4 text-lg font-semibold">{title}</h3>
     <div className="space-y-3">
-      {items.length === 0 ? <div className="rounded-lg bg-gray-50 p-4 text-sm text-gray-400">{'\uB370\uC774\uD130\uAC00 \uC5C6\uC2B5\uB2C8\uB2E4.'}</div> : items.map((item) => {
+      {items.length === 0 ? <div className="rounded-lg bg-c-surface-2 p- text-sm text-c-text-3">{'\uB370\uC774\uD130\uAC00 \uC5C6\uC2B5\uB2C8\uB2E4.'}</div> : items.map((item) => {
         const active = selectable && activeKey === item.key;
         const body = <>
           <div className="flex items-start justify-between gap-3">
             <div>
-              <div className="font-medium text-gray-900">{item.label}</div>
-              <div className="text-xs text-gray-400">{'\uB9AC\uD3EC\uD2B8'} {item.reportCount}{'\uAC74'}</div>
+              <div className="font-medium text-c-text">{item.label}</div>
+              <div className="text-xs text-c-text-3">{'\uB9AC\uD3EC\uD2B8'} {item.reportCount}{'\uAC74'}</div>
             </div>
             <div className="text-right">
               <div className="text-sm font-semibold text-green-600">{item.month1.successRate.toFixed(1)}%</div>
-              <div className="text-xs text-gray-400">{'1M \uC131\uACF5\uB960'}</div>
+              <div className="text-xs text-c-text-3">{'1M \uC131\uACF5\uB960'}</div>
             </div>
           </div>
           <div className="mt-3 grid grid-cols-3 gap-2 text-xs">
-            <div className="rounded bg-white p-2"><div className="text-gray-500">{'1W'}</div><div className="mt-1 font-medium text-gray-900">{item.week1.successRate.toFixed(1)}%</div><div className="mt-1 text-red-500">{'\uD558\uB77D'} {item.week1.declineRate.toFixed(1)}%</div></div>
-            <div className="rounded bg-white p-2"><div className="text-gray-500">{'1M'}</div><div className="mt-1 font-medium text-gray-900">{item.month1.successRate.toFixed(1)}%</div><div className="mt-1 text-red-500">{'\uD558\uB77D'} {item.month1.declineRate.toFixed(1)}%</div></div>
-            <div className="rounded bg-white p-2"><div className="text-gray-500">{'3M'}</div><div className="mt-1 font-medium text-gray-900">{item.month3.successRate.toFixed(1)}%</div><div className="mt-1 text-red-500">{'\uD558\uB77D'} {item.month3.declineRate.toFixed(1)}%</div></div>
+            <div className="rounded bg-c-surface p-2"><div className="text-c-text-2">{"1W"}</div><div className="mt-1 font-medium text-c-text">{item.week1.successRate.toFixed(1)}%</div><div className="mt-1 text-red-500">{'\uD558\uB77D'} {item.week1.declineRate.toFixed(1)}%</div></div>
+            <div className="rounded bg-c-surface p-2"><div className="text-c-text-2">{'1M'}</div><div className="mt-1 font-medium text-c-text">{item.month1.successRate.toFixed(1)}%</div><div className="mt-1 text-red-500">{'\uD558\uB77D'} {item.month1.declineRate.toFixed(1)}%</div></div>
+            <div className="rounded bg-c-surface p-2"><div className="text-c-text-2">{'3M'}</div><div className="mt-1 font-medium text-c-text">{item.month3.successRate.toFixed(1)}%</div><div className="mt-1 text-red-500">{'\uD558\uB77D'} {item.month3.declineRate.toFixed(1)}%</div></div>
           </div>
         </>;
 
-        return selectable ? <button key={`${title}-${item.key}`} type="button" onClick={() => onSelect?.(item.key)} className={`w-full rounded-lg p-4 text-left transition ${active ? 'bg-blue-50 ring-2 ring-blue-500' : 'bg-gray-50 hover:bg-gray-100'}`}>
+        return selectable ? <button key={`${title}-${item.key}`} type="button" onClick={() => onSelect?.(item.key)} className={`w-full rounded-lg p-4 text-left transition ${active ? 'bg-c-accent-bg ring-2 ring-c-accent' : 'bg-c-surface-2 hover:bg-c-surface'}`}>
           {body}
-        </button> : <div key={`${title}-${item.key}`} className="rounded-lg bg-gray-50 p-4">{body}</div>;
+        </button> : <div key={`${title}-${item.key}`} className="rounded-lg bg-c-surface-2 p-">{body}</div>;
       })}
     </div>
   </section>;
@@ -1076,24 +1076,24 @@ function ScorecardReportList({ title, tone, items, onOpenInsight, isSaved, onTog
   return <section className="rounded-xl border p-4">
     <div className="mb-3 flex items-center justify-between gap-3">
       <h4 className={`text-base font-semibold ${tone === 'up' ? 'text-green-700' : 'text-red-700'}`}>{title}</h4>
-      <span className="text-sm text-gray-400">{items.length}{'\uAC74'}</span>
+      <span className="text-sm text-c-text-3">{items.length}{'\uAC74'}</span>
     </div>
-    {items.length === 0 ? <div className="rounded-lg bg-gray-50 p-4 text-sm text-gray-400">{emptyText}</div> : <div className="space-y-3">
-      {items.map(({ report, point }) => <div key={`${title}-${report.market}-${report.ticker}-${report.date}`} className="rounded-lg bg-gray-50 p-3">
+    {items.length === 0 ? <div className="rounded-lg bg-c-surface-2 p- text-sm text-c-text-3">{emptyText}</div> : <div className="space-y-3">
+      {items.map(({ report, point }) => <div key={`${title}-${report.market}-${report.ticker}-${report.date}`} className="rounded-lg bg-c-surface-2 p-">
         <div className="flex items-start justify-between gap-3">
           <button type="button" onClick={() => onOpenInsight({ ticker: report.ticker, name: report.name, market: report.market, category: 'analyst', currentPrice: report.currentPrice })} className="min-w-0 text-left">
             <div className="truncate font-medium text-blue-700 hover:underline">{report.name}</div>
-            <div className="text-xs text-gray-400">{report.ticker} {'\u00B7'} {report.date}</div>
+            <div className="text-xs text-c-text-3">{report.ticker} {'\u00B7'} {report.date}</div>
           </button>
           <div className="flex items-center gap-2">
             <FavoriteButton active={isSaved(report.ticker, report.market)} onClick={() => onToggleWatchlist({ ticker: report.ticker, name: report.name, market: report.market, category: 'analyst', currentPrice: report.currentPrice })} />
             <span className={`text-sm font-semibold ${tone === 'up' ? 'text-green-600' : 'text-red-600'}`}>{point ? formatPct(point.returnPct) : '-'}</span>
           </div>
         </div>
-        <div className="mt-2 flex flex-wrap gap-2 text-xs text-gray-500">
-          <span className="rounded bg-white px-2 py-1">{report.market === 'korea' ? '\uAD6D\uB0B4' : '\uD574\uC678'}</span>
-          <span className="rounded bg-white px-2 py-1">{report.broker}</span>
-          <span className="rounded bg-white px-2 py-1">{point ? getProgressMetric(point) : '-'}</span>
+        <div className="mt-2 flex flex-wrap gap-2 text-xs text-c-text-2">
+          <span className="rounded bg-c-surface-2 px-2 py-1">{report.market === 'korea' ? '\uAD6D\uB0B4' : '\uD574\uC678'}</span>
+          <span className="rounded bg-c-surface-2 px-2 py-1">{report.broker}</span>
+          <span className="rounded bg-c-surface-2 px-2 py-1">{point ? getProgressMetric(point) : '-'}</span>
         </div>
       </div>)}
     </div>}
@@ -1101,7 +1101,7 @@ function ScorecardReportList({ title, tone, items, onOpenInsight, isSaved, onTog
 }
 
 function SimpleSelect({ label, value, onChange, options }: { label: string; value: string; onChange: (value: string) => void; options: [string, string][] }) {
-  return <div className="w-full sm:w-auto"><label className="mb-1 block text-sm text-gray-500">{label}</label><select value={value} onChange={(event) => onChange(event.target.value)} className="w-full rounded-lg border px-3 py-2 text-sm sm:min-w-[140px]">{options.map(([optionValue, optionLabel]) => <option key={optionValue} value={optionValue}>{optionLabel}</option>)}</select></div>;
+  return <div className="w-full sm:w-auto"><label className="mb-1 block text-sm text-c-text-2">{label}</label><select value={value} onChange={(event) => onChange(event.target.value)} className="w-full rounded-lg border px-3 py-2 text-sm sm:min-w-[140px]">{options.map(([optionValue, optionLabel]) => <option key={optionValue} value={optionValue}>{optionLabel}</option>)}</select></div>;
 }
 
 function ConsensusTab({ onOpenInsight, isSaved, onToggleWatchlist }: { onOpenInsight: (request: InsightRequest) => void; isSaved: (ticker: string, market: MarketType) => boolean; onToggleWatchlist: (item: Omit<WatchlistItem, 'savedAt'>) => void }) {
@@ -1194,15 +1194,15 @@ function ConsensusTab({ onOpenInsight, isSaved, onToggleWatchlist }: { onOpenIns
   const sortIndicator = (key: ConsensusSortKey) => sortBy === key ? (sortOrder === 'desc' ? '▼' : '▲') : '';
   const renderSortableHeader = (label: string, key: ConsensusSortKey, className: string) => (
     <th className={className}>
-      <button type="button" onClick={() => toggleSort(key)} className="inline-flex items-center gap-1 font-medium text-gray-500 hover:text-gray-700">
+      <button type="button" onClick={() => toggleSort(key)} className="inline-flex items-center gap-1 font-medium text-c-text-2 hover:text-c-text-2">
         <span>{label}</span>
-        <span className={`text-[10px] ${sortBy === key ? 'text-gray-700' : 'text-gray-300'}`}>{sortIndicator(key) || '↕'}</span>
+        <span className={`text-[10px] ${sortBy === key ? 'text-c-text' : 'text-c-text-3'}`}>{sortIndicator(key) || '↕'}</span>
       </button>
     </th>
   );
 
   return <div className="space-y-6">
-    <div className="rounded-xl bg-white p-4 shadow-sm">
+    <div className=" bg-c-surface  shadow-sm">
       <div className="mb-4">
         <div className="relative">
           <input
@@ -1210,16 +1210,16 @@ function ConsensusTab({ onOpenInsight, isSaved, onToggleWatchlist }: { onOpenIns
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             placeholder="종목명, 티커, 증권사 검색..."
-            className="w-full rounded-lg border border-gray-300 py-2.5 pl-10 pr-4 text-sm focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500"
+            className="w-full rounded-lg border border-c-border bg-c-surface py-2.5 pl-10 pr-4 text-sm text-c-text focus:border-c-accent focus:outline-none focus:ring-1 focus:ring-c-accent"
           />
-          <svg className="absolute left-3 top-1/2 h-5 w-5 -translate-y-1/2 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <svg className="absolute left-3 top-1/2 h-5 w-5 -translate-y-1/2 text-c-text-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
           </svg>
           {searchQuery && (
             <button
               type="button"
               onClick={() => setSearchQuery('')}
-              className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 hover:text-gray-600"
+              className="absolute right-3 top-1/2 -translate-y-1/2 text-c-text-3 hover:text-c-text-2"
             >
               <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
@@ -1227,19 +1227,19 @@ function ConsensusTab({ onOpenInsight, isSaved, onToggleWatchlist }: { onOpenIns
             </button>
           )}
         </div>
-        {searchQuery && <div className="mt-2 text-sm text-gray-500">검색 결과: {filteredItems.length}건</div>}
+        {searchQuery && <div className="mt-2 text-sm text-c-text-2">검색 결과: {filteredItems.length}건</div>}
       </div>
       <div className="grid gap-4 md:grid-cols-[minmax(0,1.3fr)_minmax(0,1fr)_minmax(0,1fr)_auto] md:items-end">
         <div className="w-full">
-          <label className="mb-1 block text-sm text-gray-500">{'\uAE30\uAC04'}</label>
+          <label className="mb-1 block text-sm text-c-text-2">{'\uAE30\uAC04'}</label>
           <div className="flex flex-wrap overflow-hidden rounded-lg border">
-            {[3, 7, 15, 30].map((value) => <button key={value} onClick={() => setDays(value)} className={`flex-1 px-3 py-2 text-sm ${days === value ? 'bg-blue-600 text-white' : 'bg-white text-gray-600 hover:bg-gray-50'}`}>{value}{'\uC77C'}</button>)}
+            {[3, 7, 15, 30].map((value) => <button key={value} onClick={() => setDays(value)} className={`flex-1 px-3 py-2 text-sm ${days === value ? 'bg-blue-600 text-white' : 'bg-c-surface text-c-text-2 hover:bg-c-surface-2'}`}>{value}{'\uC77C'}</button>)}
           </div>
         </div>
         <div className="min-w-[220px]">
           <SimpleSelect label={'\uC2DC\uC7A5'} value={market} onChange={(value) => setMarket(value as MarketFilter)} options={[['all', '\uC804\uCCB4'], ['korea', '\uAD6D\uB0B4'], ['us', '\uD574\uC678']]} />
         </div>
-        <div className="text-sm text-gray-400 md:pb-2">{'\uC11C\uB85C \uB2E4\uB978 \uC99D\uAD8C\uC0AC 2\uACF3 \uC774\uC0C1 \uCD94\uCC9C \uC885\uBAA9\uB9CC \uD45C\uC2DC'}</div>
+        <div className="text-sm text-c-text-3 md:pb-2">{'\uC11C\uB85C \uB2E4\uB978 \uC99D\uAD8C\uC0AC 2\uACF3 \uC774\uC0C1 \uCD94\uCC9C \uC885\uBAA9\uB9CC \uD45C\uC2DC'}</div>
       </div>
     </div>
     <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-5">
@@ -1249,16 +1249,16 @@ function ConsensusTab({ onOpenInsight, isSaved, onToggleWatchlist }: { onOpenIns
       <StatCard label={'\uAD6D\uB0B4 \uC885\uBAA9'} value={String(filteredItems.filter((item) => item.market === 'korea').length)} />
       <StatCard label={'\uD574\uC678 \uC885\uBAA9'} value={String(filteredItems.filter((item) => item.market === 'us').length)} />
     </div>
-    {loading ? <LoadingState /> : error ? <div className="rounded-lg bg-red-50 p-4 text-red-600">{error}</div> : <div className="overflow-hidden rounded-xl bg-white shadow-sm">
-      <div className="border-b p-4"><h2 className="text-lg font-semibold">{'\uC560\uB110\uB9AC\uC2A4\uD2B8 \uACF5\uD1B5 \uCD94\uCC9C \uC885\uBAA9'}</h2><p className="text-sm text-gray-500">{'\uC120\uD0DD\uD55C \uAE30\uAC04 \uB0B4 \uC5EC\uB7EC \uC99D\uAD8C\uC0AC\uAC00 \uD568\uAED8 \uCD94\uCC9C\uD55C \uC885\uBAA9\uC744 \uCD5C\uC2E0 \uB9AC\uD3EC\uD2B8 \uC77C\uC790 \uC21C\uC73C\uB85C \uBE44\uAD50\uD569\uB2C8\uB2E4.'}</p></div>
+    {loading ? <LoadingState /> : error ? <div className="rounded-lg bg-red-50 p-4 text-red-600">{error}</div> : <div className="bg-c-surface ">
+      <div className="border-b p-4"><h2 className="text-lg font-semibold">{'\uC560\uB110\uB9AC\uC2A4\uD2B8 \uACF5\uD1B5 \uCD94\uCC9C \uC885\uBAA9'}</h2><p className="text-sm text-c-text-2">{'\uC120\uD0DD\uD55C \uAE30\uAC04 \uB0B4 \uC5EC\uB7EC \uC99D\uAD8C\uC0AC\uAC00 \uD568\uAED8 \uCD94\uCC9C\uD55C \uC885\uBAA9\uC744 \uCD5C\uC2E0 \uB9AC\uD3EC\uD2B8 \uC77C\uC790 \uC21C\uC73C\uB85C \uBE44\uAD50\uD569\uB2C8\uB2E4.'}</p></div>
       {filteredItems.length > 0 && <div className="flex justify-end px-4 pt-4"><SimpleSelect label={'\uD398\uC774\uC9C0 \uD06C\uAE30'} value={String(pageSize)} onChange={(value) => setPageSize(Number(value))} options={PAGE_SIZE_OPTIONS.map((option) => [String(option), String(option)] as [string, string])} /></div>}
-      {filteredItems.length === 0 ? <div className="p-8 text-center text-gray-400">{searchQuery ? '검색 결과가 없습니다.' : '\uC870\uAC74\uC5D0 \uB9DE\uB294 \uACF5\uD1B5 \uCD94\uCC9C \uC885\uBAA9\uC774 \uC5C6\uC2B5\uB2C8\uB2E4.'}</div> : <>
+      {filteredItems.length === 0 ? <div className="p-8 text-center text-c-text-3">{searchQuery ? '검색 결과가 없습니다.' : '\uC870\uAC74\uC5D0 \uB9DE\uB294 \uACF5\uD1B5 \uCD94\uCC9C \uC885\uBAA9\uC774 \uC5C6\uC2B5\uB2C8\uB2E4.'}</div> : <>
         <div className="space-y-3 p-4 md:hidden">
-          {paginated.map((item) => <article key={`${item.market}-${item.ticker}`} className="rounded-xl border border-gray-100 bg-gray-50 p-4">
+          {paginated.map((item) => <article key={`${item.market}-${item.ticker}`} className="rounded-xl border border-c-border bg-c-surface-2 p-4">
             <div className="flex items-start justify-between gap-3">
               <button type="button" onClick={() => onOpenInsight({ ticker: item.ticker, name: item.name, market: item.market, category: 'analyst', currentPrice: item.currentPrice })} className="min-w-0 text-left">
                 <div className="truncate font-semibold text-blue-700">{item.name}</div>
-                <div className="text-xs text-gray-400">{item.ticker}</div>
+                <div className="text-xs text-c-text-3">{item.ticker}</div>
               </button>
               <div className="flex shrink-0 items-center gap-2">
                 <FavoriteButton active={isSaved(item.ticker, item.market)} onClick={() => onToggleWatchlist({ ticker: item.ticker, name: item.name, market: item.market, category: 'analyst', currentPrice: item.currentPrice })} className="h-7 w-7 text-base" />
@@ -1269,14 +1269,14 @@ function ConsensusTab({ onOpenInsight, isSaved, onToggleWatchlist }: { onOpenIns
               </div>
             </div>
             <div className="mt-3 grid grid-cols-2 gap-2 text-xs">
-              <div className="rounded-lg bg-white p-3"><div className="text-[11px] text-gray-500">{'\uAE30\uC900\uAC00 \uB300\uBE44 \uD604\uC7AC\uAC00'}</div><div className={`mt-1 font-semibold ${item.currentPrice <= item.basePrice ? 'text-green-600' : 'text-red-600'}`}>{formatPct(((item.currentPrice - item.basePrice) / item.basePrice) * 100)}</div></div>
-              <div className="rounded-lg bg-white p-3"><div className="text-[11px] text-gray-500">{'\uD3C9\uADE0 \uBAA9\uD45C\uAC00 \uAD34\uB9AC\uC728'}</div><div className="mt-1 font-semibold text-green-600">{formatPct(item.avgUpside)}</div></div>
-              <div className="rounded-lg bg-white p-3"><div className="text-[11px] text-gray-500">{'\uD604\uC7AC\uAC00'}</div><div className="mt-1 font-medium text-gray-900">{formatPrice(item.currentPrice, item.market)}</div></div>
-              <div className="rounded-lg bg-white p-3"><div className="text-[11px] text-gray-500">{'\uAE30\uC900\uAC00\uACA9'}</div><div className="mt-1 font-medium text-gray-900">{formatPrice(item.basePrice, item.market)}</div><div className="mt-1 text-[11px] text-gray-400">{item.basePriceDate} {'\uC885\uAC00'}</div></div>
-              <div className="rounded-lg bg-white p-3"><div className="text-[11px] text-gray-500">{'\uCD5C\uADFC \uCD94\uCC9C\uC77C'}</div><div className="mt-1 font-medium text-gray-900">{item.latestReportDate}</div><div className="mt-1 text-[11px] text-gray-400">{'\uB9AC\uD3EC\uD2B8'} {item.reportCount}{'\uAC74'} {'\u00B7'} {item.brokerCount}{'\uACF3'}</div></div>
+              <div className=" bg-c-surface "><div className="text-[11px] text-c-text-2">{'\uAE30\uC900\uAC00 \uB300\uBE44 \uD604\uC7AC\uAC00'}</div><div className={`mt-1 font-semibold ${item.currentPrice <= item.basePrice ? 'text-green-600' : 'text-red-600'}`}>{formatPct(((item.currentPrice - item.basePrice) / item.basePrice) * 100)}</div></div>
+              <div className=" bg-c-surface "><div className="text-[11px] text-c-text-2">{'\uD3C9\uADE0 \uBAA9\uD45C\uAC00 \uAD34\uB9AC\uC728'}</div><div className="mt-1 font-semibold text-green-600">{formatPct(item.avgUpside)}</div></div>
+              <div className=" bg-c-surface "><div className="text-[11px] text-c-text-2">{'\uD604\uC7AC\uAC00'}</div><div className="mt-1 font-medium text-c-text">{formatPrice(item.currentPrice, item.market)}</div></div>
+              <div className=" bg-c-surface "><div className="text-[11px] text-c-text-2">{'\uAE30\uC900\uAC00\uACA9'}</div><div className="mt-1 font-medium text-c-text">{formatPrice(item.basePrice, item.market)}</div><div className="mt-1 text-[11px] text-c-text-3">{item.basePriceDate} {'\uC885\uAC00'}</div></div>
+              <div className=" bg-c-surface "><div className="text-[11px] text-c-text-2">{'\uCD5C\uADFC \uCD94\uCC9C\uC77C'}</div><div className="mt-1 font-medium text-c-text">{item.latestReportDate}</div><div className="mt-1 text-[11px] text-c-text-3">{'\uB9AC\uD3EC\uD2B8'} {item.reportCount}{'\uAC74'} {'\u00B7'} {item.brokerCount}{'\uACF3'}</div></div>
             </div>
-            <div className="mt-3 rounded-lg bg-white p-3 text-xs text-gray-600">
-              <div className="font-medium text-gray-700">{'\uC810\uC218 \uAD6C\uC131'}</div>
+            <div className=" bg-c-surface  text-xs text-c-text-2">
+              <div className="font-medium text-c-text-2">{'\uC810\uC218 \uAD6C\uC131'}</div>
               <div className="mt-2 grid grid-cols-2 gap-2">
                 <div>{'\uAE30\uC900\uAC00 \uB9E4\uB825'} {item.entryScoreBreakdown.priceVsBase}{'\uC810'}</div>
                 <div>{'\uBAA9\uD45C\uAC00 \uC5EC\uB825'} {item.entryScoreBreakdown.targetGap}{'\uC810'}</div>
@@ -1284,12 +1284,12 @@ function ConsensusTab({ onOpenInsight, isSaved, onToggleWatchlist }: { onOpenIns
                 <div>{'\uACF5\uD1B5\uCD94\uCC9C \uAC15\uB3C4'} {item.entryScoreBreakdown.consensusStrength}{'\uC810'}</div>
               </div>
             </div>
-            <div className="mt-3 text-xs text-gray-500">{item.brokers.join(', ')}</div>
+            <div className="mt-3 text-xs text-c-text-2">{item.brokers.join(', ')}</div>
           </article>)}
         </div>
         <div className="hidden overflow-x-auto md:block">
           <table className="w-full">
-            <thead className="bg-gray-50 text-left text-xs uppercase text-gray-500">
+            <thead className="bg-c-surface-2 text-left text-xs uppercase text-c-text-2">
               <tr>
                 {renderSortableHeader('\uC885\uBAA9', 'name', 'px-4 py-3')}
                 {renderSortableHeader('\uC2DC\uC7A5', 'market', 'min-w-[84px] px-4 py-3')}
@@ -1305,8 +1305,8 @@ function ConsensusTab({ onOpenInsight, isSaved, onToggleWatchlist }: { onOpenIns
               </tr>
             </thead>
             <tbody className="divide-y">
-              {paginated.map((item) => <tr key={`${item.market}-${item.ticker}`} className="hover:bg-gray-50">
-                <td className="px-4 py-3"><div className="flex items-start justify-between gap-3"><button type="button" onClick={() => onOpenInsight({ ticker: item.ticker, name: item.name, market: item.market, category: 'analyst', currentPrice: item.currentPrice })} className="text-left"><div className="font-medium text-blue-700 hover:underline">{item.name}</div><div className="text-xs text-gray-400">{item.ticker}</div></button><FavoriteButton active={isSaved(item.ticker, item.market)} onClick={() => onToggleWatchlist({ ticker: item.ticker, name: item.name, market: item.market, category: 'analyst', currentPrice: item.currentPrice })} /></div></td>
+              {paginated.map((item) => <tr key={`${item.market}-${item.ticker}`} className="hover:bg-c-surface-2">
+                <td className="px-4 py-3"><div className="flex items-start justify-between gap-3"><button type="button" onClick={() => onOpenInsight({ ticker: item.ticker, name: item.name, market: item.market, category: 'analyst', currentPrice: item.currentPrice })} className="text-left"><div className="font-medium text-blue-700 hover:underline">{item.name}</div><div className="text-xs text-c-text-3">{item.ticker}</div></button><FavoriteButton active={isSaved(item.ticker, item.market)} onClick={() => onToggleWatchlist({ ticker: item.ticker, name: item.name, market: item.market, category: 'analyst', currentPrice: item.currentPrice })} /></div></td>
                 <td className="min-w-[84px] px-4 py-3"><span className={`inline-flex min-w-[44px] justify-center rounded px-2 py-1 text-xs ${item.market === 'korea' ? 'bg-blue-100 text-blue-700' : 'bg-orange-100 text-orange-700'}`}>{item.market === 'korea' ? '\uAD6D\uB0B4' : '\uD574\uC678'}</span></td>
                 <td className="min-w-[100px] px-4 py-3 text-right">
                   <div className="inline-flex items-center gap-1">
@@ -1317,11 +1317,11 @@ function ConsensusTab({ onOpenInsight, isSaved, onToggleWatchlist }: { onOpenIns
                 <td className="px-4 py-3 text-right font-medium">{item.brokerCount}</td>
                 <td className={`px-4 py-3 text-right font-medium ${item.currentPrice <= item.basePrice ? 'text-green-600' : 'text-red-600'}`}>{formatPct(((item.currentPrice - item.basePrice) / item.basePrice) * 100)}</td>
                 <td className="px-4 py-3 text-right">{formatPrice(item.currentPrice, item.market)}</td>
-                <td className="px-4 py-3 text-right"><div className="font-medium">{formatPrice(item.basePrice, item.market)}</div><div className="text-xs text-gray-400">{item.basePriceDate} {'\uC885\uAC00'}</div></td>
+                <td className="px-4 py-3 text-right"><div className="font-medium">{formatPrice(item.basePrice, item.market)}</div><div className="text-xs text-c-text-3">{item.basePriceDate} {'\uC885\uAC00'}</div></td>
                 <td className="px-4 py-3 text-right font-medium text-green-600">{formatPct(item.avgUpside)}</td>
                 <td className="px-4 py-3 text-right font-medium">{item.reportCount}</td>
                 <td className="px-4 py-3 text-sm">{item.latestReportDate}</td>
-                <td className="px-4 py-3 text-sm text-gray-500">{item.brokers.join(', ')}</td>
+                <td className="px-4 py-3 text-sm text-c-text-2">{item.brokers.join(', ')}</td>
               </tr>)}
             </tbody>
           </table>
@@ -1354,8 +1354,8 @@ function getSectorConfidenceLabel(confidence: SectorCycleConfidence) {
 
 function getSectorConfidenceClass(confidence: SectorCycleConfidence) {
   if (confidence === 'high') return 'bg-emerald-50 text-emerald-700';
-  if (confidence === 'medium') return 'bg-gray-100 text-gray-600';
-  return 'bg-gray-100 text-gray-400';
+  if (confidence === 'medium') return 'bg-c-surface-2 text-c-text-2';
+  return 'bg-c-surface-2 text-c-text-3';
 }
 
 function getSectorCardStyle(item: SectorCycleItem) {
@@ -1413,16 +1413,16 @@ function SectorCycleTab({ onOpenInsight }: { onOpenInsight: (request: InsightReq
   const contractionCount = items.filter((item) => item.phase === 'contraction').length;
 
   return <div className="space-y-6">
-    <div className="rounded-xl bg-white p-4 shadow-sm">
+    <div className=" bg-c-surface  shadow-sm">
       <div className="grid gap-4 md:grid-cols-[minmax(0,1.3fr)_minmax(0,1fr)_auto] md:items-end">
         <div className="w-full">
-          <label className="mb-1 block text-sm text-gray-500">{'기간'}</label>
+          <label className="mb-1 block text-sm text-c-text-2">{'기간'}</label>
           <div className="flex flex-wrap overflow-hidden rounded-lg border">
-            {[7, 30, 90].map((value) => <button key={value} onClick={() => setDays(value)} className={`flex-1 px-3 py-2 text-sm ${days === value ? 'bg-blue-600 text-white' : 'bg-white text-gray-600 hover:bg-gray-50'}`}>{value}{'일'}</button>)}
+            {[7, 30, 90].map((value) => <button key={value} onClick={() => setDays(value)} className={`flex-1 px-3 py-2 text-sm ${days === value ? 'bg-blue-600 text-white' : 'bg-c-surface text-c-text-2 hover:bg-c-surface-2'}`}>{value}{'일'}</button>)}
           </div>
         </div>
         <SimpleSelect label={'시장'} value={market} onChange={(value) => setMarket(value as MarketFilter)} options={[['all', '전체'], ['korea', '국내'], ['us', '해외']]} />
-        <div className="text-sm text-gray-400 md:pb-2">{'최근 리포트 키워드 기준 업종 국면을 색상으로 정리합니다.'}</div>
+        <div className="text-sm text-c-text-3 md:pb-2">{'최근 리포트 키워드 기준 업종 국면을 색상으로 정리합니다.'}</div>
       </div>
     </div>
     {loading ? <LoadingState /> : error ? <div className="rounded-lg bg-red-50 p-4 text-red-600">{error}</div> : <>
@@ -1433,18 +1433,18 @@ function SectorCycleTab({ onOpenInsight }: { onOpenInsight: (request: InsightReq
         <StatCard label={'침체 업종'} value={String(contractionCount)} accent="text-red-600" />
       </div>
       <div className="grid gap-6 xl:grid-cols-[minmax(0,1.3fr)_minmax(320px,0.9fr)]">
-        <section className="rounded-xl bg-white p-4 shadow-sm sm:p-6">
+        <section className=" bg-c-surface  shadow-sm sm:p-6">
           <div className="mb-4 flex items-start justify-between gap-4">
             <div>
               <h2 className="text-lg font-semibold">{'업종 사이클 히트맵'}</h2>
-              <p className="mt-1 text-sm text-gray-500">{'업종 카드를 누르면 최근 리포트 근거와 대표 키워드를 확인할 수 있습니다.'}</p>
+              <p className="mt-1 text-sm text-c-text-2">{'업종 카드를 누르면 최근 리포트 근거와 대표 키워드를 확인할 수 있습니다.'}</p>
             </div>
-            <div className="text-right text-xs text-gray-400">
+            <div className="text-right text-xs text-c-text-3">
               <div>{'업종'} {items.length}{'개'}</div>
               <div>{'기준일'} {data?.generatedAt ? data.generatedAt.slice(0, 10) : '-'}</div>
             </div>
           </div>
-          {items.length === 0 ? <div className="rounded-xl bg-gray-50 p-8 text-center text-gray-400">{'조건에 맞는 업종 사이클 데이터가 없습니다.'}</div> : <div className="grid gap-3 sm:grid-cols-2 xl:grid-cols-3">
+          {items.length === 0 ? <div className="rounded-xl bg-c-surface-2 p- text-center text-c-text-3">{'조건에 맞는 업종 사이클 데이터가 없습니다.'}</div> : <div className="grid gap-3 sm:grid-cols-2 xl:grid-cols-3">
             {items.map((item) => {
               const isActive = item.sector === selectedItem?.sector;
               return <button
@@ -1456,17 +1456,17 @@ function SectorCycleTab({ onOpenInsight }: { onOpenInsight: (request: InsightReq
               >
                 <div className="flex items-start justify-between gap-3">
                   <div className="min-w-0">
-                    <div className="truncate text-sm font-semibold text-gray-900">{item.sector}</div>
-                    <div className="mt-1 text-xs text-gray-600">{item.latestReportDate}</div>
+                    <div className="truncate text-sm font-semibold text-c-text">{item.sector}</div>
+                    <div className="mt-1 text-xs text-c-text-2">{item.latestReportDate}</div>
                   </div>
                   <span className={`shrink-0 rounded px-2 py-1 text-[11px] font-medium ${getSectorPhaseBadgeClass(item.phase)}`}>{getSectorPhaseLabel(item.phase)}</span>
                 </div>
                 <div className="mt-4 flex items-end justify-between gap-3">
                   <div>
-                    <div className="text-[11px] text-gray-600">{'강도 점수'}</div>
-                    <div className="text-2xl font-bold text-gray-900">{item.phaseScore}</div>
+                    <div className="text-[11px] text-c-text-2">{'강도 점수'}</div>
+                    <div className="text-2xl font-bold text-c-text">{item.phaseScore}</div>
                   </div>
-                  <div className="text-right text-xs text-gray-600">
+                  <div className="text-right text-xs text-c-text-2">
                     <div>{'리포트'} {item.reportCount}{'건'}</div>
                     <div>{getSectorConfidenceLabel(item.confidence)}</div>
                   </div>
@@ -1475,38 +1475,38 @@ function SectorCycleTab({ onOpenInsight }: { onOpenInsight: (request: InsightReq
             })}
           </div>}
         </section>
-        <aside className="rounded-xl bg-white p-4 shadow-sm sm:p-6">
-          {!selectedItem ? <div className="rounded-xl bg-gray-50 p-8 text-center text-gray-400">{'선택된 업종이 없습니다.'}</div> : <>
+        <aside className=" bg-c-surface  shadow-sm sm:p-6">
+          {!selectedItem ? <div className="rounded-xl bg-c-surface-2 p- text-center text-c-text-3">{'선택된 업종이 없습니다.'}</div> : <>
             <div className="border-b pb-4">
               <div className="flex flex-wrap items-center gap-2">
-                <h2 className="text-lg font-semibold text-gray-900">{selectedItem.sector}</h2>
+                <h2 className="text-lg font-semibold text-c-text">{selectedItem.sector}</h2>
                 <span className={`rounded px-2 py-1 text-xs font-medium ${getSectorPhaseBadgeClass(selectedItem.phase)}`}>{getSectorPhaseLabel(selectedItem.phase)}</span>
                 <span className={`rounded px-2 py-1 text-xs ${getSectorConfidenceClass(selectedItem.confidence)}`}>{getSectorConfidenceLabel(selectedItem.confidence)}</span>
               </div>
-              <p className="mt-2 text-sm text-gray-500">{'최근 리포트 키워드를 기준으로 업종 국면을 분류했습니다. 저신뢰 업종은 표본 수가 적거나 키워드 일치도가 낮습니다.'}</p>
+              <p className="mt-2 text-sm text-c-text-2">{'최근 리포트 키워드를 기준으로 업종 국면을 분류했습니다. 저신뢰 업종은 표본 수가 적거나 키워드 일치도가 낮습니다.'}</p>
               <div className="mt-3 grid grid-cols-2 gap-3 text-sm">
-                <div className="rounded-lg bg-gray-50 p-3"><div className="text-xs text-gray-500">{'최근 추천일'}</div><div className="mt-1 font-medium text-gray-900">{selectedItem.latestReportDate}</div></div>
-                <div className="rounded-lg bg-gray-50 p-3"><div className="text-xs text-gray-500">{'리포트 수'}</div><div className="mt-1 font-medium text-gray-900">{selectedItem.reportCount}{'건'}</div></div>
+                <div className="rounded-lg bg-c-surface-2 p-"><div className="text-xs text-c-text-2">{'최근 추천일'}</div><div className="mt-1 font-medium text-c-text">{selectedItem.latestReportDate}</div></div>
+                <div className="rounded-lg bg-c-surface-2 p-"><div className="text-xs text-c-text-2">{'리포트 수'}</div><div className="mt-1 font-medium text-c-text">{selectedItem.reportCount}{'건'}</div></div>
               </div>
             </div>
             <div className="mt-4">
-              <div className="text-sm font-medium text-gray-700">{'대표 키워드'}</div>
+              <div className="text-sm font-medium text-c-text-2">{'대표 키워드'}</div>
               <div className="mt-3 flex flex-wrap gap-2">
-                {selectedItem.keywords.length > 0 ? selectedItem.keywords.map((keyword) => <span key={`${selectedItem.sector}-${keyword}`} className="rounded-full bg-blue-50 px-3 py-1 text-xs font-medium text-blue-700">{keyword}</span>) : <span className="text-sm text-gray-400">{'대표 키워드를 추출하지 못했습니다.'}</span>}
+                {selectedItem.keywords.length > 0 ? selectedItem.keywords.map((keyword) => <span key={`${selectedItem.sector}-${keyword}`} className="rounded-full bg-blue-50 px-3 py-1 text-xs font-medium text-blue-700">{keyword}</span>) : <span className="text-sm text-c-text-3">{'대표 키워드를 추출하지 못했습니다.'}</span>}
               </div>
             </div>
             <div className="mt-6">
-              <div className="mb-3 text-sm font-medium text-gray-700">{'최근 리포트 3건'}</div>
+              <div className="mb-3 text-sm font-medium text-c-text-2">{'최근 리포트 3건'}</div>
               <div className="space-y-3">
-                {selectedItem.recentReports.map((report) => <article key={`${selectedItem.sector}-${report.market}-${report.ticker}-${report.date}-${report.broker}`} className="rounded-xl border border-gray-100 bg-gray-50 p-4">
+                {selectedItem.recentReports.map((report) => <article key={`${selectedItem.sector}-${report.market}-${report.ticker}-${report.date}-${report.broker}`} className="rounded-xl border border-c-border bg-c-surface-2 p-4">
                   <div className="flex items-start justify-between gap-3">
                     <button type="button" onClick={() => onOpenInsight({ ticker: report.ticker, name: report.name, market: report.market, category: 'analyst', currentPrice: report.currentPrice })} className="min-w-0 text-left">
                       <div className="truncate font-medium text-blue-700 hover:underline">{report.name}</div>
-                      <div className="mt-1 text-xs text-gray-400">{report.ticker} {'·'} {report.broker} {'·'} {report.date}</div>
+                      <div className="mt-1 text-xs text-c-text-3">{report.ticker} {'·'} {report.broker} {'·'} {report.date}</div>
                     </button>
                     <span className={`shrink-0 rounded px-2 py-1 text-[11px] ${report.market === 'korea' ? 'bg-blue-100 text-blue-700' : 'bg-orange-100 text-orange-700'}`}>{report.market === 'korea' ? '국내' : '해외'}</span>
                   </div>
-                  <p className="mt-3 text-sm leading-6 text-gray-700">{report.reasonSummary}</p>
+                  <p className="mt-3 text-sm leading-6 text-c-text-2">{report.reasonSummary}</p>
                 </article>)}
               </div>
             </div>
@@ -1535,21 +1535,21 @@ function StockList({ stocks, title, market, category, onOpenInsight, isSaved, on
   }, [query, sortBy, sortOrder, pageSize, stocks.length]);
 
   return <div className="space-y-6">
-    <div className="grid gap-4 rounded-xl bg-white p-4 shadow-sm md:grid-cols-[minmax(0,1.6fr)_repeat(2,minmax(0,0.8fr))_auto] md:items-end">
-      <div className="w-full"><label className="mb-1 block text-sm text-gray-500">{'\uAC80\uC0C9\uC5B4'}</label><input value={query} onChange={(event) => setQuery(event.target.value)} placeholder={'\uC885\uBAA9\uBA85 \uB610\uB294 \uD2F0\uCEE4'} className="w-full rounded-lg border px-3 py-2 text-sm" /></div>
+    <div className=" bg-c-surface  shadow-sm md:grid-cols-[minmax(0,1.6fr)_repeat(2,minmax(0,0.8fr))_auto] md:items-end">
+      <div className="w-full"><label className="mb-1 block text-sm text-c-text-2">{'\uAC80\uC0C9\uC5B4'}</label><input value={query} onChange={(event) => setQuery(event.target.value)} placeholder={'\uC885\uBAA9\uBA85 \uB610\uB294 \uD2F0\uCEE4'} className="w-full rounded-lg border px-3 py-2 text-sm" /></div>
       <SimpleSelect label={'\uC815\uB82C \uAE30\uC900'} value={sortBy} onChange={(value) => setSortBy(value as 'changePercent' | 'volume' | 'currentPrice')} options={[['changePercent', '\uB4F1\uB77D\uB960'], ['volume', '\uAC70\uB798\uB7C9'], ['currentPrice', '\uD604\uC7AC\uAC00']]} />
       <SimpleSelect label={'\uC815\uB82C \uC21C\uC11C'} value={sortOrder} onChange={(value) => setSortOrder(value as 'asc' | 'desc')} options={[['desc', '\uB192\uC740 \uC21C'], ['asc', '\uB0AE\uC740 \uC21C']]} />
-      <div className="flex items-end gap-3 md:justify-self-end"><div className="text-sm text-gray-400">{'\uCD1D'} {filtered.length}{'\uAC74'}</div><SimpleSelect label={'\uD398\uC774\uC9C0 \uD06C\uAE30'} value={String(pageSize)} onChange={(value) => setPageSize(Number(value))} options={PAGE_SIZE_OPTIONS.map((option) => [String(option), String(option)] as [string, string])} /></div>
+      <div className="flex items-end gap-3 md:justify-self-end"><div className="text-sm text-c-text-3">{'\uCD1D'} {filtered.length}{'\uAC74'}</div><SimpleSelect label={'\uD398\uC774\uC9C0 \uD06C\uAE30'} value={String(pageSize)} onChange={(value) => setPageSize(Number(value))} options={PAGE_SIZE_OPTIONS.map((option) => [String(option), String(option)] as [string, string])} /></div>
     </div>
-    <div className="overflow-hidden rounded-xl bg-white shadow-sm">
-      <div className="border-b p-4"><h2 className="text-lg font-semibold">{title}</h2><p className="text-sm text-gray-500">{'\uC885\uBAA9\uC744 \uB204\uB974\uBA74 \uAE30\uBCF8 \uC758\uACAC\uACFC \uD575\uC2EC \uC9C0\uD45C\uB97C \uD31D\uC5C5\uC73C\uB85C \uD655\uC778\uD560 \uC218 \uC788\uC2B5\uB2C8\uB2E4.'}</p></div>
-      {stocks.length === 0 ? <div className="p-8 text-center text-gray-400">{'\uB370\uC774\uD130\uAC00 \uC544\uC9C1 \uC5C6\uC2B5\uB2C8\uB2E4.'}</div> : filtered.length === 0 ? <div className="p-8 text-center text-gray-400">{'\uAC80\uC0C9 \uACB0\uACFC\uAC00 \uC5C6\uC2B5\uB2C8\uB2E4.'}</div> : <>
+    <div className="bg-c-surface ">
+      <div className="border-b p-4"><h2 className="text-lg font-semibold">{title}</h2><p className="text-sm text-c-text-2">{'\uC885\uBAA9\uC744 \uB204\uB974\uBA74 \uAE30\uBCF8 \uC758\uACAC\uACFC \uD575\uC2EC \uC9C0\uD45C\uB97C \uD31D\uC5C5\uC73C\uB85C \uD655\uC778\uD560 \uC218 \uC788\uC2B5\uB2C8\uB2E4.'}</p></div>
+      {stocks.length === 0 ? <div className="p-8 text-center text-c-text-3">{'\uB370\uC774\uD130\uAC00 \uC544\uC9C1 \uC5C6\uC2B5\uB2C8\uB2E4.'}</div> : filtered.length === 0 ? <div className="p-8 text-center text-c-text-3">{'\uAC80\uC0C9 \uACB0\uACFC\uAC00 \uC5C6\uC2B5\uB2C8\uB2E4.'}</div> : <>
         <div className="space-y-3 p-4 md:hidden">
-          {paginated.map((stock) => <article key={stock.ticker} className="rounded-xl border border-gray-100 bg-gray-50 p-4">
+          {paginated.map((stock) => <article key={stock.ticker} className="rounded-xl border border-c-border bg-c-surface-2 p-4">
             <div className="flex items-start justify-between gap-3">
               <button type="button" onClick={() => onOpenInsight({ ticker: stock.ticker, name: stock.name, market, category, currentPrice: stock.currentPrice, changePercent: stock.changePercent, high52w: stock.high52w, low52w: stock.low52w })} className="min-w-0 text-left">
                 <div className="truncate font-semibold text-blue-700">{stock.name}</div>
-                <div className="text-xs text-gray-400">{stock.ticker}</div>
+                <div className="text-xs text-c-text-3">{stock.ticker}</div>
               </button>
               <div className="flex shrink-0 flex-col items-end gap-1">
                 <FavoriteButton active={isSaved(stock.ticker, market)} onClick={() => onToggleWatchlist({ ticker: stock.ticker, name: stock.name, market, category, currentPrice: stock.currentPrice, changePercent: stock.changePercent, high52w: stock.high52w, low52w: stock.low52w })} className="h-7 w-7 text-base" />
@@ -1558,15 +1558,15 @@ function StockList({ stocks, title, market, category, onOpenInsight, isSaved, on
             </div>
             <button type="button" onClick={() => onOpenInsight({ ticker: stock.ticker, name: stock.name, market, category, currentPrice: stock.currentPrice, changePercent: stock.changePercent, high52w: stock.high52w, low52w: stock.low52w })} className="mt-4 block w-full text-left">
               <div className="grid grid-cols-2 gap-3 text-sm">
-                <div className="rounded-lg bg-white p-3"><div className="text-xs text-gray-500">{'\uD604\uC7AC\uAC00'}</div><div className="mt-1 font-medium text-gray-900">{formatPrice(stock.currentPrice, market)}</div></div>
-                <div className="rounded-lg bg-white p-3"><div className="text-xs text-gray-500">{'\uC804\uC77C \uB300\uBE44'}</div><div className={`mt-1 font-medium ${stock.change >= 0 ? 'text-green-600' : 'text-red-600'}`}>{stock.change >= 0 ? '+' : ''}{market === 'korea' ? Math.round(stock.change).toLocaleString() : stock.change.toFixed(2)}</div></div>
-                <div className="rounded-lg bg-white p-3"><div className="text-xs text-gray-500">{'\uAC70\uB798\uB7C9'}</div><div className="mt-1 font-medium text-gray-900">{stock.volume ? formatVolume(stock.volume) : '-'}</div></div>
-                <div className="rounded-lg bg-white p-3"><div className="text-xs text-gray-500">{'52\uC8FC \uBC94\uC704'}</div><div className="mt-1 font-medium text-gray-900">{stock.low52w || stock.high52w ? `${formatPrice(stock.low52w || 0, market)} - ${formatPrice(stock.high52w || 0, market)}` : '-'}</div></div>
+                <div className=" bg-c-surface "><div className="text-xs text-c-text-2">{'\uD604\uC7AC\uAC00'}</div><div className="mt-1 font-medium text-c-text">{formatPrice(stock.currentPrice, market)}</div></div>
+                <div className=" bg-c-surface "><div className="text-xs text-c-text-2">{'\uC804\uC77C \uB300\uBE44'}</div><div className={`mt-1 font-medium ${stock.change >= 0 ? 'text-green-600' : 'text-red-600'}`}>{stock.change >= 0 ? '+' : ''}{market === 'korea' ? Math.round(stock.change).toLocaleString() : stock.change.toFixed(2)}</div></div>
+                <div className=" bg-c-surface "><div className="text-xs text-c-text-2">{'\uAC70\uB798\uB7C9'}</div><div className="mt-1 font-medium text-c-text">{stock.volume ? formatVolume(stock.volume) : '-'}</div></div>
+                <div className=" bg-c-surface "><div className="text-xs text-c-text-2">{'52\uC8FC \uBC94\uC704'}</div><div className="mt-1 font-medium text-c-text">{stock.low52w || stock.high52w ? `${formatPrice(stock.low52w || 0, market)} - ${formatPrice(stock.high52w || 0, market)}` : '-'}</div></div>
               </div>
             </button>
           </article>)}
         </div>
-        <div className="hidden overflow-x-auto md:block"><table className="w-full"><thead className="bg-gray-50 text-xs uppercase text-gray-500"><tr><th className="px-4 py-3 text-left">{'\uC885\uBAA9'}</th><th className="px-4 py-3 text-right">{'\uD604\uC7AC\uAC00'}</th><th className="px-4 py-3 text-right">{'\uC804\uC77C \uB300\uBE44'}</th><th className="px-4 py-3 text-right">{'\uB4F1\uB77D\uB960'}</th><th className="px-4 py-3 text-right">{'\uAC70\uB798\uB7C9'}</th></tr></thead><tbody className="divide-y">{paginated.map((stock) => <tr key={stock.ticker} className="hover:bg-gray-50"><td className="px-4 py-3"><div className="flex items-start justify-between gap-3"><button type="button" onClick={() => onOpenInsight({ ticker: stock.ticker, name: stock.name, market, category, currentPrice: stock.currentPrice, changePercent: stock.changePercent, high52w: stock.high52w, low52w: stock.low52w })} className="text-left"><div className="font-medium text-blue-700 hover:underline">{stock.name}</div><div className="text-xs text-gray-400">{stock.ticker}</div></button><FavoriteButton active={isSaved(stock.ticker, market)} onClick={() => onToggleWatchlist({ ticker: stock.ticker, name: stock.name, market, category, currentPrice: stock.currentPrice, changePercent: stock.changePercent, high52w: stock.high52w, low52w: stock.low52w })} /></div></td><td className="px-4 py-3 text-right font-medium">{formatPrice(stock.currentPrice, market)}</td><td className={`px-4 py-3 text-right ${stock.change >= 0 ? 'text-green-600' : 'text-red-600'}`}>{stock.change >= 0 ? '+' : ''}{market === 'korea' ? Math.round(stock.change).toLocaleString() : stock.change.toFixed(2)}</td><td className={`px-4 py-3 text-right font-medium ${stock.changePercent >= 0 ? 'text-green-600' : 'text-red-600'}`}>{stock.changePercent >= 0 ? '+' : ''}{stock.changePercent.toFixed(2)}%</td><td className="px-4 py-3 text-right text-gray-500">{stock.volume ? formatVolume(stock.volume) : '-'}</td></tr>)}</tbody></table></div>
+        <div className="hidden overflow-x-auto md:block"><table className="w-full"><thead className="bg-c-surface-2 text-xs uppercase text-c-text-2"><tr><th className="px-4 py-3 text-left">{'\uC885\uBAA9'}</th><th className="px-4 py-3 text-right">{'\uD604\uC7AC\uAC00'}</th><th className="px-4 py-3 text-right">{'\uC804\uC77C \uB300\uBE44'}</th><th className="px-4 py-3 text-right">{'\uB4F1\uB77D\uB960'}</th><th className="px-4 py-3 text-right">{'\uAC70\uB798\uB7C9'}</th></tr></thead><tbody className="divide-y">{paginated.map((stock) => <tr key={stock.ticker} className="hover:bg-c-surface-2"><td className="px-4 py-3"><div className="flex items-start justify-between gap-3"><button type="button" onClick={() => onOpenInsight({ ticker: stock.ticker, name: stock.name, market, category, currentPrice: stock.currentPrice, changePercent: stock.changePercent, high52w: stock.high52w, low52w: stock.low52w })} className="text-left"><div className="font-medium text-blue-700 hover:underline">{stock.name}</div><div className="text-xs text-c-text-3">{stock.ticker}</div></button><FavoriteButton active={isSaved(stock.ticker, market)} onClick={() => onToggleWatchlist({ ticker: stock.ticker, name: stock.name, market, category, currentPrice: stock.currentPrice, changePercent: stock.changePercent, high52w: stock.high52w, low52w: stock.low52w })} /></div></td><td className="px-4 py-3 text-right font-medium">{formatPrice(stock.currentPrice, market)}</td><td className={`px-4 py-3 text-right ${stock.change >= 0 ? 'text-green-600' : 'text-red-600'}`}>{stock.change >= 0 ? '+' : ''}{market === 'korea' ? Math.round(stock.change).toLocaleString() : stock.change.toFixed(2)}</td><td className={`px-4 py-3 text-right font-medium ${stock.changePercent >= 0 ? 'text-green-600' : 'text-red-600'}`}>{stock.changePercent >= 0 ? '+' : ''}{stock.changePercent.toFixed(2)}%</td><td className="px-4 py-3 text-right text-c-text-2">{stock.volume ? formatVolume(stock.volume) : '-'}</td></tr>)}</tbody></table></div>
       </>}
     </div>
     {filtered.length > 0 && <PaginationControls totalCount={sorted.length} page={page} pageSize={pageSize} totalPages={totalPages} onPageChange={setPage} />}
@@ -1619,13 +1619,13 @@ function StockInsightModal({ request, onClose, isSaved, onToggleWatchlist }: { r
       onClick={onClose}
     >
       <div
-        className="max-h-[92vh] w-full max-w-2xl overflow-y-auto rounded-t-3xl bg-white shadow-xl sm:max-h-[90vh] sm:rounded-2xl"
+        className="max-h-[92vh] w-full max-w-2xl overflow-y-auto rounded-t-3xl bg-c-surface shadow-xl sm:max-h-[90vh] sm:rounded-2xl"
         onClick={(event) => event.stopPropagation()}
       >
         <div className="flex items-start justify-between gap-4 border-b p-4 sm:p-5">
           <div className="min-w-0">
-            <h2 className="truncate text-lg font-semibold text-gray-900 sm:text-xl">{request.name}</h2>
-            <p className="text-sm text-gray-500">
+            <h2 className="truncate text-lg font-semibold text-c-text sm:text-xl">{request.name}</h2>
+            <p className="text-sm text-c-text-2">
               {request.ticker} {'\u00B7'} {request.market === 'korea' ? '\uAD6D\uB0B4' : '\uD574\uC678'}
             </p>
           </div>
@@ -1649,7 +1649,7 @@ function StockInsightModal({ request, onClose, isSaved, onToggleWatchlist }: { r
             <button
               type="button"
               onClick={onClose}
-              className="shrink-0 rounded-lg px-3 py-1 text-sm text-gray-500 hover:bg-gray-100"
+              className="shrink-0 rounded-lg px-3 py-1 text-sm text-c-text-2 hover:bg-c-surface-2"
             >
               {'\uB2EB\uAE30'}
             </button>
@@ -1672,13 +1672,13 @@ function StockInsightModal({ request, onClose, isSaved, onToggleWatchlist }: { r
         ) : insight ? (
           <div className="space-y-4 p-4 sm:space-y-6 sm:p-6">
             <section className="space-y-3">
-              <div className="rounded-xl bg-blue-50 p-4">
-                <div className="text-sm text-blue-700">{'\uC694\uC57D \uC758\uACAC'}</div>
-                <p className="mt-1 text-sm text-gray-800">{insight.reasonSummary}</p>
+              <div className="rounded-xl bg-c-accent-bg p-4">
+                <div className="text-sm text-c-accent">{'\uC694\uC57D \uC758\uACAC'}</div>
+                <p className="mt-1 text-sm text-c-text">{insight.reasonSummary}</p>
               </div>
-              <div className="rounded-xl bg-gray-50 p-4">
-                <div className="mb-2 text-sm font-medium text-gray-700">{'\uD575\uC2EC \uADFC\uAC70'}</div>
-                <ul className="space-y-2 text-sm text-gray-700">
+              <div className="rounded-xl bg-c-surface-2 p-">
+                <div className="mb-2 text-sm font-medium text-c-text-2">{'\uD575\uC2EC \uADFC\uAC70'}</div>
+                <ul className="space-y-2 text-sm text-c-text-2">
                   {insight.reasonBullets.map((bullet) => (
                     <li key={bullet} className="flex gap-2">
                       <span className="mt-1 h-1.5 w-1.5 rounded-full bg-blue-500" />
@@ -1706,8 +1706,8 @@ function StockInsightModal({ request, onClose, isSaved, onToggleWatchlist }: { r
               />
             </section>
             <section className="rounded-xl border p-4">
-              <div className="mb-3 text-sm font-medium text-gray-700">{'\uCD5C\uC2E0 \uB9AC\uD3EC\uD2B8 \uC815\uBCF4'}</div>
-              <div className="grid gap-3 text-sm text-gray-700 sm:grid-cols-2">
+              <div className="mb-3 text-sm font-medium text-c-text-2">{'\uCD5C\uC2E0 \uB9AC\uD3EC\uD2B8 \uC815\uBCF4'}</div>
+              <div className="grid gap-3 text-sm text-c-text-2 sm:grid-cols-2">
                 <div>
                   {'\uC99D\uAD8C\uC0AC'}: <span className="font-medium">{insight.latestBroker || '\uC5C6\uC74C'}</span>
                 </div>
@@ -1724,29 +1724,29 @@ function StockInsightModal({ request, onClose, isSaved, onToggleWatchlist }: { r
             </section>
             {insight.relatedReports.length > 0 && (
               <section className="rounded-xl border p-4">
-                <div className="mb-3 text-sm font-medium text-gray-700">{'\uAD00\uB828 \uB9AC\uD3EC\uD2B8'}</div>
+                <div className="mb-3 text-sm font-medium text-c-text-2">{'\uAD00\uB828 \uB9AC\uD3EC\uD2B8'}</div>
                 <div className="space-y-3">
                   {insight.relatedReports.map((report) => (
                     <div
                       key={`${report.market}-${report.ticker}-${report.broker}-${report.date}`}
-                      className="rounded-lg bg-gray-50 p-3"
+                      className="rounded-lg bg-c-surface-2 p-"
                     >
                       {report.sourceUrl ? (
                         <a href={report.sourceUrl} target="_blank" rel="noreferrer" className="block">
                           <div className="text-sm font-medium text-blue-700">
                             {report.reportTitle || `${report.broker} \uB9AC\uD3EC\uD2B8`}
                           </div>
-                          <div className="mt-1 text-xs text-gray-500">
+                          <div className="mt-1 text-xs text-c-text-2">
                             {report.date} {'\u00B7'} {report.broker} {'\u00B7'} {report.opinion}
                           </div>
-                          <div className="mt-2 text-xs text-gray-400">{'\uB9AC\uD3EC\uD2B8 \uBCF4\uB7EC\uAC00\uAE30'}</div>
+                          <div className="mt-2 text-xs text-c-text-3">{'\uB9AC\uD3EC\uD2B8 \uBCF4\uB7EC\uAC00\uAE30'}</div>
                         </a>
                       ) : (
                         <>
-                          <div className="text-sm font-medium text-gray-900">
+                          <div className="text-sm font-medium text-c-text">
                             {report.reportTitle || `${report.broker} \uB9AC\uD3EC\uD2B8`}
                           </div>
-                          <div className="mt-1 text-xs text-gray-500">
+                          <div className="mt-1 text-xs text-c-text-2">
                             {report.date} {'\u00B7'} {report.broker} {'\u00B7'} {report.opinion}
                           </div>
                         </>
@@ -1770,21 +1770,21 @@ function StockInsightModal({ request, onClose, isSaved, onToggleWatchlist }: { r
 }
 
 function MetricCard({ label, value, subLabel, accent }: { label: string; value: string; subLabel?: string; accent?: string }) {
-  return <div className="rounded-xl bg-white p-4 shadow-sm ring-1 ring-gray-100"><div className="text-sm text-gray-500">{label}</div><div className={`mt-1 text-lg font-semibold ${accent || 'text-gray-900'}`}>{value}</div>{subLabel ? <div className="mt-1 text-xs text-gray-400">{subLabel}</div> : null}</div>;
+  return <div className=" bg-c-surface  shadow-sm ring-1 ring-gray-100"><div className="text-sm text-c-text-2">{label}</div><div className={`mt-1 text-lg font-semibold ${accent || 'text-c-text'}`}>{value}</div>{subLabel ? <div className="mt-1 text-xs text-c-text-3">{subLabel}</div> : null}</div>;
 }
 
 function InsightSectionCard({ title, section }: { title: string; section: InsightSection }) {
   return <section className="rounded-xl border p-4">
-    <div className="text-sm font-medium text-gray-700">{title}</div>
-    <p className="mt-2 text-sm text-gray-800">{section.summary}</p>
-    {section.bullets.length > 0 && <ul className="mt-3 space-y-2 text-sm text-gray-700">{section.bullets.map((bullet) => <li key={`${title}-${bullet}`} className="flex gap-2"><span className="mt-1 h-1.5 w-1.5 rounded-full bg-blue-500" /><span>{bullet}</span></li>)}</ul>}
+    <div className="text-sm font-medium text-c-text-2">{title}</div>
+    <p className="mt-2 text-sm text-c-text">{section.summary}</p>
+    {section.bullets.length > 0 && <ul className="mt-3 space-y-2 text-sm text-c-text-2">{section.bullets.map((bullet) => <li key={`${title}-${bullet}`} className="flex gap-2"><span className="mt-1 h-1.5 w-1.5 rounded-full bg-blue-500" /><span>{bullet}</span></li>)}</ul>}
   </section>;
 }
 
 function StatCard({ label, value, accent }: { label: string; value: string; accent?: string }) {
-  return <div className="rounded-xl bg-white p-4 shadow-sm"><div className="text-sm text-gray-500">{label}</div><div className={`text-2xl font-bold ${accent || 'text-gray-900'}`}>{value}</div></div>;
+  return <div className=" bg-c-surface  shadow-sm"><div className="text-sm text-c-text-2">{label}</div><div className={`text-2xl font-bold ${accent || 'text-c-text'}`}>{value}</div></div>;
 }
 
 function FavoriteButton({ active, onClick, className = '' }: { active: boolean; onClick: () => void; className?: string }) {
-  return <button type="button" onClick={onClick} aria-pressed={active} aria-label={active ? '관심 종목 해제' : '관심 종목 저장'} className={`inline-flex h-8 w-8 items-center justify-center text-xl leading-none transition ${active ? 'text-amber-500' : 'text-gray-300 hover:text-amber-400'} ${className}`}>{active ? '★' : '☆'}</button>;
+  return <button type="button" onClick={onClick} aria-pressed={active} aria-label={active ? '관심 종목 해제' : '관심 종목 저장'} className={`inline-flex h-8 w-8 items-center justify-center text-xl leading-none transition ${active ? 'text-amber-500' : 'text-c-text-3 hover:text-amber-400'} ${className}`}>{active ? '★' : '☆'}</button>;
 }

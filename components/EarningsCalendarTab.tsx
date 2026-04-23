@@ -88,12 +88,11 @@ export function EarningsCalendarTab() {
   if (loading) return <LoadingState />;
 
   if (error) {
-    return <div className="rounded-lg bg-red-50 p-4 text-red-600">{error}</div>;
+    return <div className="rounded-lg bg-c-negative-bg p-4 text-c-negative">{error}</div>;
   }
 
   if (!data) return null;
 
-  // Group upcoming by date
   const upcomingByDate = new Map<string, EarningsEvent[]>();
   for (const event of data.upcoming) {
     const existing = upcomingByDate.get(event.date) || [];
@@ -106,7 +105,7 @@ export function EarningsCalendarTab() {
   return (
     <div className="space-y-6">
       <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
-        <h2 className="text-xl font-bold text-gray-900">실적 캘린더</h2>
+        <h2 className="text-xl font-bold text-c-text">실적 캘린더</h2>
         <SimpleSelect
           label=""
           value={market}
@@ -135,11 +134,11 @@ export function EarningsCalendarTab() {
       </div>
 
       {/* Upcoming Earnings */}
-      <div className="rounded-xl bg-white p-4 shadow-sm">
-        <h3 className="mb-4 text-sm font-semibold text-gray-700">발표 예정</h3>
+      <div className="rounded-xl border border-c-border bg-c-surface p-4 shadow-sm">
+        <h3 className="mb-4 text-sm font-semibold text-c-text">발표 예정</h3>
 
         {upcomingDates.length === 0 ? (
-          <div className="py-8 text-center text-gray-500">
+          <div className="py-8 text-center text-c-text-2">
             예정된 실적 발표가 없습니다.
           </div>
         ) : (
@@ -147,26 +146,26 @@ export function EarningsCalendarTab() {
             {upcomingDates.map((date) => (
               <div key={date}>
                 <div className="mb-3 flex items-center gap-2">
-                  <span className="rounded-full bg-blue-100 px-3 py-1 text-sm font-medium text-blue-700">
+                  <span className="rounded-full bg-c-accent-bg px-3 py-1 text-sm font-medium text-c-accent">
                     {formatDate(date)}
                   </span>
-                  <span className="text-sm text-gray-500">{getDaysUntil(date)}</span>
+                  <span className="text-sm text-c-text-2">{getDaysUntil(date)}</span>
                 </div>
                 <div className="space-y-2">
                   {upcomingByDate.get(date)?.map((event) => (
                     <div
                       key={`${event.date}-${event.ticker}`}
-                      className="flex items-center justify-between rounded-lg border p-3 hover:bg-gray-50"
+                      className="flex items-center justify-between rounded-lg border border-c-border p-3 hover:bg-c-surface-2"
                     >
                       <div className="flex items-center gap-3">
-                        <div className="flex h-10 w-10 items-center justify-center rounded-full bg-gray-100">
-                          <span className="text-xs font-medium text-gray-600">
+                        <div className="flex h-10 w-10 items-center justify-center rounded-full bg-c-surface-2">
+                          <span className="text-xs font-medium text-c-text-2">
                             {event.market === 'korea' ? '🇰🇷' : '🇺🇸'}
                           </span>
                         </div>
                         <div>
-                          <div className="font-medium text-gray-900">{event.name}</div>
-                          <div className="text-xs text-gray-500">
+                          <div className="font-medium text-c-text">{event.name}</div>
+                          <div className="text-xs text-c-text-2">
                             {event.ticker} | {TIME_LABELS[event.time]} 발표
                           </div>
                         </div>
@@ -174,8 +173,8 @@ export function EarningsCalendarTab() {
                       <div className="text-right">
                         {event.epsEstimate && (
                           <div className="text-sm">
-                            <span className="text-gray-500">EPS 예상: </span>
-                            <span className="font-medium">
+                            <span className="text-c-text-2">EPS 예상: </span>
+                            <span className="font-medium text-c-text">
                               {formatPrice(event.epsEstimate, event.market)}
                             </span>
                           </div>
@@ -192,23 +191,23 @@ export function EarningsCalendarTab() {
 
       {/* Recent Earnings */}
       {data.recent.length > 0 && (
-        <div className="rounded-xl bg-white p-4 shadow-sm">
-          <h3 className="mb-4 text-sm font-semibold text-gray-700">최근 발표 결과</h3>
+        <div className="rounded-xl border border-c-border bg-c-surface p-4 shadow-sm">
+          <h3 className="mb-4 text-sm font-semibold text-c-text">최근 발표 결과</h3>
           <div className="space-y-2">
             {data.recent.map((event) => (
               <div
                 key={`${event.date}-${event.ticker}`}
-                className="flex items-center justify-between rounded-lg border p-3"
+                className="flex items-center justify-between rounded-lg border border-c-border p-3"
               >
                 <div className="flex items-center gap-3">
-                  <div className="flex h-10 w-10 items-center justify-center rounded-full bg-gray-100">
-                    <span className="text-xs font-medium text-gray-600">
+                  <div className="flex h-10 w-10 items-center justify-center rounded-full bg-c-surface-2">
+                    <span className="text-xs font-medium text-c-text-2">
                       {event.market === 'korea' ? '🇰🇷' : '🇺🇸'}
                     </span>
                   </div>
                   <div>
-                    <div className="font-medium text-gray-900">{event.name}</div>
-                    <div className="text-xs text-gray-500">
+                    <div className="font-medium text-c-text">{event.name}</div>
+                    <div className="text-xs text-c-text-2">
                       {event.ticker} | {formatDate(event.date)}
                     </div>
                   </div>
@@ -216,12 +215,12 @@ export function EarningsCalendarTab() {
                 <div className="text-right">
                   {event.epsActual && event.epsEstimate && (
                     <div className="text-sm">
-                      <span className="text-gray-500">EPS: </span>
-                      <span className="font-medium">
+                      <span className="text-c-text-2">EPS: </span>
+                      <span className="font-medium text-c-text">
                         {formatPrice(event.epsActual, event.market)}
                       </span>
-                      <span className="text-gray-400"> vs </span>
-                      <span className="text-gray-500">
+                      <span className="text-c-text-3"> vs </span>
+                      <span className="text-c-text-2">
                         {formatPrice(event.epsEstimate, event.market)}
                       </span>
                     </div>
@@ -229,7 +228,7 @@ export function EarningsCalendarTab() {
                   {event.surprise != null && (
                     <div
                       className={`text-sm font-medium ${
-                        event.surprise >= 0 ? 'text-green-600' : 'text-red-600'
+                        event.surprise >= 0 ? 'text-c-positive' : 'text-c-negative'
                       }`}
                     >
                       {event.surprise >= 0 ? '서프라이즈' : '미스'}{' '}

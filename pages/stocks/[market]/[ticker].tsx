@@ -104,10 +104,10 @@ function saveWatchlist(watchlist: WatchlistItem[]): void {
 }
 
 function getSignalColor(signal?: string) {
-  if (signal === 'up') return 'text-green-600';
-  if (signal === 'down') return 'text-red-600';
-  if (signal === 'mixed') return 'text-amber-600';
-  return 'text-gray-600';
+  if (signal === 'up') return 'text-c-positive';
+  if (signal === 'down') return 'text-c-negative';
+  if (signal === 'mixed') return 'text-c-warning';
+  return 'text-c-text-2';
 }
 
 function getSignalIcon(signal?: string) {
@@ -118,17 +118,17 @@ function getSignalIcon(signal?: string) {
 }
 
 function getStatusBadge(point?: PerformancePoint) {
-  if (!point) return { label: '-', className: 'bg-gray-100 text-gray-500' };
-  if (point.status === 'pending') return { label: '대기', className: 'bg-amber-100 text-amber-700' };
-  if (point.status === 'unavailable') return { label: '제외', className: 'bg-gray-100 text-gray-500' };
+  if (!point) return { label: '-', className: 'bg-c-surface-2 text-gray-500' };
+  if (point.status === 'pending') return { label: '대기', className: 'bg-c-warning-bg text-c-warning' };
+  if (point.status === 'unavailable') return { label: '제외', className: 'bg-c-surface-2 text-gray-500' };
   return point.success
-    ? { label: '성공', className: 'bg-green-100 text-green-700' }
-    : { label: '미달', className: 'bg-red-100 text-red-700' };
+    ? { label: '성공', className: 'bg-c-positive-bg text-c-positive' }
+    : { label: '미달', className: 'bg-c-negative-bg text-c-negative' };
 }
 
 function getPerformanceTone(point?: PerformancePoint) {
-  if (!point || point.status !== 'complete') return 'text-gray-400';
-  return point.success ? 'text-green-600' : 'text-red-600';
+  if (!point || point.status !== 'complete') return 'text-c-text-3';
+  return point.success ? 'text-c-positive' : 'text-c-negative';
 }
 
 export default function StockDetailPage() {
@@ -254,7 +254,7 @@ export default function StockDetailPage() {
 
   if (!marketType || !tickerStr) {
     return (
-      <div className="flex min-h-screen items-center justify-center bg-gray-50">
+      <div className="flex min-h-screen items-center justify-center bg-c-bg">
         <LoadingState />
       </div>
     );
@@ -268,12 +268,12 @@ export default function StockDetailPage() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className="min-h-screen bg-gray-50">
+      <div className="min-h-screen bg-c-bg">
         {/* Header */}
-        <header className="border-b bg-white shadow-sm">
+        <header className="border-b bg-c-surface shadow-sm">
           <div className="mx-auto max-w-5xl px-4 py-4">
             <div className="flex items-center gap-4">
-              <Link href="/" className="text-gray-400 hover:text-gray-600">
+              <Link href="/" className="text-c-text-3 hover:text-c-text-2">
                 ← 돌아가기
               </Link>
             </div>
@@ -284,28 +284,28 @@ export default function StockDetailPage() {
           {loading ? (
             <LoadingState />
           ) : error ? (
-            <div className="rounded-lg bg-red-50 p-4 text-red-600">{error}</div>
+            <div className="rounded-lg bg-c-negative-bg p-4 text-c-negative">{error}</div>
           ) : insight ? (
             <div className="space-y-6">
               {/* Stock Header */}
-              <section className="rounded-xl bg-white p-6 shadow-sm">
+              <section className="rounded-xl bg-c-surface p-6 shadow-sm">
                 <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
                   <div>
                     <div className="flex items-center gap-3">
-                      <h1 className="text-2xl font-bold text-gray-900">{insight.name}</h1>
-                      <span className="rounded bg-gray-100 px-2 py-1 text-sm text-gray-600">
+                      <h1 className="text-2xl font-bold text-c-text">{insight.name}</h1>
+                      <span className="rounded bg-c-surface-2 px-2 py-1 text-sm text-c-text-2">
                         {insight.ticker}
                       </span>
                       <span
                         className={`rounded px-2 py-1 text-sm ${
-                          insight.market === 'korea' ? 'bg-blue-100 text-blue-700' : 'bg-purple-100 text-purple-700'
+                          insight.market === 'korea' ? 'bg-c-accent-bg text-c-accent' : 'bg-c-info-bg text-c-info'
                         }`}
                       >
                         {insight.market === 'korea' ? '국내' : '해외'}
                       </span>
                     </div>
                     {insight.latestCurrentPrice && (
-                      <div className="mt-2 text-xl font-semibold text-gray-900">
+                      <div className="mt-2 text-xl font-semibold text-c-text">
                         {formatPrice(insight.latestCurrentPrice, insight.market)}
                       </div>
                     )}
@@ -315,8 +315,8 @@ export default function StockDetailPage() {
                     onClick={toggleWatchlist}
                     className={`flex items-center gap-2 rounded-lg border px-4 py-2 text-sm font-medium transition ${
                       isSaved
-                        ? 'border-amber-400 bg-amber-50 text-amber-700'
-                        : 'border-gray-300 bg-white text-gray-600 hover:bg-gray-50'
+                        ? 'border-c-warning bg-c-warning-bg text-c-warning'
+                        : 'border-gray-300 bg-c-surface text-c-text-2 hover:bg-c-surface-2'
                     }`}
                   >
                     <span className="text-lg">{isSaved ? '★' : '☆'}</span>
@@ -341,8 +341,8 @@ export default function StockDetailPage() {
                   accent={
                     insight.avgUpside
                       ? insight.avgUpside >= 0
-                        ? 'text-green-600'
-                        : 'text-red-600'
+                        ? 'text-c-positive'
+                        : 'text-c-negative'
                       : undefined
                   }
                 />
@@ -350,13 +350,13 @@ export default function StockDetailPage() {
                 <StatCard
                   label="최신 의견"
                   value={insight.latestOpinion || '-'}
-                  accent="text-blue-600"
+                  accent="text-c-accent"
                 />
               </div>
 
               {/* Upside Chart */}
               {upsideChartData.length > 0 && (
-                <section className="rounded-xl bg-white p-4 shadow-sm sm:p-6">
+                <section className="rounded-xl bg-c-surface p-4 shadow-sm sm:p-6">
                   <h2 className="mb-4 text-lg font-semibold">증권사별 목표 Upside</h2>
                   <div className="h-64">
                     <ResponsiveContainer width="100%" height="100%">
@@ -380,13 +380,13 @@ export default function StockDetailPage() {
 
               {/* Technical Analysis Section */}
               {technicalData && (
-                <section className="rounded-xl bg-white p-4 shadow-sm sm:p-6">
+                <section className="rounded-xl bg-c-surface p-4 shadow-sm sm:p-6">
                   <h2 className="mb-4 text-lg font-semibold">기술적 분석</h2>
 
                   {/* Indicator Summary */}
                   <div className="mb-6 grid grid-cols-3 gap-4">
-                    <div className="rounded-lg bg-gray-50 p-3">
-                      <div className="text-xs text-gray-500">RSI (14)</div>
+                    <div className="rounded-lg bg-c-surface-2 p-3">
+                      <div className="text-xs text-c-text-2">RSI (14)</div>
                       <div className={`mt-1 text-lg font-semibold ${technicalData.analysis.rsi.signal.color}`}>
                         {isNaN(technicalData.analysis.rsi.current)
                           ? '-'
@@ -396,8 +396,8 @@ export default function StockDetailPage() {
                         {technicalData.analysis.rsi.signal.label}
                       </div>
                     </div>
-                    <div className="rounded-lg bg-gray-50 p-3">
-                      <div className="text-xs text-gray-500">MACD</div>
+                    <div className="rounded-lg bg-c-surface-2 p-3">
+                      <div className="text-xs text-c-text-2">MACD</div>
                       <div className={`mt-1 text-lg font-semibold ${technicalData.analysis.macd.signal.color}`}>
                         {isNaN(technicalData.analysis.macd.current.histogram)
                           ? '-'
@@ -407,8 +407,8 @@ export default function StockDetailPage() {
                         {technicalData.analysis.macd.signal.label}
                       </div>
                     </div>
-                    <div className="rounded-lg bg-gray-50 p-3">
-                      <div className="text-xs text-gray-500">이동평균</div>
+                    <div className="rounded-lg bg-c-surface-2 p-3">
+                      <div className="text-xs text-c-text-2">이동평균</div>
                       <div className={`mt-1 text-lg font-semibold ${technicalData.analysis.ma.arrangement.color}`}>
                         {technicalData.analysis.ma.arrangement.label}
                       </div>
@@ -420,7 +420,7 @@ export default function StockDetailPage() {
 
                   {/* Price + MA Chart */}
                   <div className="mb-4">
-                    <h3 className="mb-2 text-sm font-medium text-gray-700">가격 및 이동평균선 (3개월)</h3>
+                    <h3 className="mb-2 text-sm font-medium text-c-text-2">가격 및 이동평균선 (3개월)</h3>
                     <div className="h-64">
                       <ResponsiveContainer width="100%" height="100%">
                         <ComposedChart data={technicalData.priceHistory}>
@@ -481,7 +481,7 @@ export default function StockDetailPage() {
                         MA5
                       </span>
                       <span className="flex items-center gap-1">
-                        <span className="h-0.5 w-4 bg-red-500" />
+                        <span className="h-0.5 w-4 bg-c-negative-bg0" />
                         MA20
                       </span>
                     </div>
@@ -489,7 +489,7 @@ export default function StockDetailPage() {
 
                   {/* RSI Chart */}
                   <div className="mb-4">
-                    <h3 className="mb-2 text-sm font-medium text-gray-700">RSI (14)</h3>
+                    <h3 className="mb-2 text-sm font-medium text-c-text-2">RSI (14)</h3>
                     <div className="h-32">
                       <ResponsiveContainer width="100%" height="100%">
                         <AreaChart
@@ -513,7 +513,7 @@ export default function StockDetailPage() {
                         </AreaChart>
                       </ResponsiveContainer>
                     </div>
-                    <div className="mt-1 flex justify-center gap-4 text-xs text-gray-500">
+                    <div className="mt-1 flex justify-center gap-4 text-xs text-c-text-2">
                       <span>과매수: 70 이상</span>
                       <span>과매도: 30 이하</span>
                     </div>
@@ -522,10 +522,10 @@ export default function StockDetailPage() {
               )}
 
               {technicalLoading && (
-                <div className="rounded-xl bg-white p-6 shadow-sm">
+                <div className="rounded-xl bg-c-surface p-6 shadow-sm">
                   <div className="flex items-center justify-center py-8">
                     <div className="h-8 w-8 animate-spin rounded-full border-2 border-gray-300 border-t-blue-600" />
-                    <span className="ml-3 text-gray-500">기술적 분석 로딩 중...</span>
+                    <span className="ml-3 text-c-text-2">기술적 분석 로딩 중...</span>
                   </div>
                 </div>
               )}
@@ -540,10 +540,10 @@ export default function StockDetailPage() {
 
               {/* Analyst Reports Table */}
               {insight.relatedReports.length > 0 && (
-                <section className="rounded-xl bg-white shadow-sm">
+                <section className="rounded-xl bg-c-surface shadow-sm">
                   <div className="border-b p-4">
                     <h2 className="text-lg font-semibold">애널리스트 리포트</h2>
-                    <p className="text-sm text-gray-500">최근 발행된 리포트 목록입니다.</p>
+                    <p className="text-sm text-c-text-2">최근 발행된 리포트 목록입니다.</p>
                   </div>
 
                   {/* Mobile Cards */}
@@ -551,31 +551,31 @@ export default function StockDetailPage() {
                     {insight.relatedReports.slice(0, 20).map((report, index) => (
                       <article
                         key={`${report.broker}-${report.date}-${index}`}
-                        className="rounded-xl border border-gray-100 bg-gray-50 p-4"
+                        className="rounded-xl border border-c-border bg-c-surface-2 p-4"
                       >
                         <div className="flex items-start justify-between gap-3">
                           <div>
-                            <div className="font-medium text-gray-900">{report.broker}</div>
-                            <div className="text-xs text-gray-500">
+                            <div className="font-medium text-c-text">{report.broker}</div>
+                            <div className="text-xs text-c-text-2">
                               {report.analyst} · {report.date}
                             </div>
                           </div>
-                          <span className="rounded bg-blue-100 px-2 py-1 text-sm font-medium text-blue-700">
+                          <span className="rounded bg-c-accent-bg px-2 py-1 text-sm font-medium text-blue-700">
                             {report.opinion}
                           </span>
                         </div>
                         <div className="mt-3 grid grid-cols-2 gap-3 text-sm">
-                          <div className="rounded-lg bg-white p-3">
-                            <div className="text-xs text-gray-500">목표가</div>
+                          <div className="rounded-lg bg-c-surface p-3">
+                            <div className="text-xs text-c-text-2">목표가</div>
                             <div className="mt-1 font-medium">
                               {formatPrice(report.targetPrice, report.market)}
                             </div>
                           </div>
-                          <div className="rounded-lg bg-white p-3">
-                            <div className="text-xs text-gray-500">Upside</div>
+                          <div className="rounded-lg bg-c-surface p-3">
+                            <div className="text-xs text-c-text-2">Upside</div>
                             <div
                               className={`mt-1 font-medium ${
-                                report.upside >= 0 ? 'text-green-600' : 'text-red-600'
+                                report.upside >= 0 ? 'text-c-positive' : 'text-c-negative'
                               }`}
                             >
                               {formatPct(report.upside)}
@@ -591,8 +591,8 @@ export default function StockDetailPage() {
                             ].map(({ label, point }) => {
                               const badge = getStatusBadge(point);
                               return (
-                                <div key={label} className="flex-1 rounded-lg bg-white p-2 text-center">
-                                  <div className="text-xs text-gray-500">{label}</div>
+                                <div key={label} className="flex-1 rounded-lg bg-c-surface p-2 text-center">
+                                  <div className="text-xs text-c-text-2">{label}</div>
                                   <span className={`rounded px-1.5 py-0.5 text-xs ${badge.className}`}>
                                     {badge.label}
                                   </span>
@@ -608,7 +608,7 @@ export default function StockDetailPage() {
                   {/* Desktop Table */}
                   <div className="hidden overflow-x-auto md:block">
                     <table className="w-full">
-                      <thead className="bg-gray-50 text-xs uppercase text-gray-500">
+                      <thead className="bg-c-surface-2 text-xs uppercase text-c-text-2">
                         <tr>
                           <th className="px-4 py-3 text-left">증권사</th>
                           <th className="px-4 py-3 text-left">애널리스트</th>
@@ -621,7 +621,7 @@ export default function StockDetailPage() {
                           <th className="px-4 py-3 text-center">3M</th>
                         </tr>
                       </thead>
-                      <tbody className="divide-y">
+                      <tbody className="divide-y divide-c-border">
                         {insight.relatedReports.slice(0, 20).map((report, index) => {
                           const w1Badge = getStatusBadge(report.performance?.week1);
                           const m1Badge = getStatusBadge(report.performance?.month1);
@@ -629,20 +629,20 @@ export default function StockDetailPage() {
                           return (
                             <tr
                               key={`${report.broker}-${report.date}-${index}`}
-                              className="hover:bg-gray-50"
+                              className="hover:bg-c-bg"
                             >
                               <td className="px-4 py-3 text-sm font-medium">{report.broker}</td>
-                              <td className="px-4 py-3 text-sm text-gray-600">
+                              <td className="px-4 py-3 text-sm text-c-text-2">
                                 <Link
                                   href={`/analysts/${encodeURIComponent(report.broker)}/${encodeURIComponent(report.analyst)}`}
-                                  className="text-blue-600 hover:underline"
+                                  className="text-c-accent hover:underline"
                                 >
                                   {report.analyst}
                                 </Link>
                               </td>
-                              <td className="px-4 py-3 text-sm text-gray-500">{report.date}</td>
+                              <td className="px-4 py-3 text-sm text-c-text-2">{report.date}</td>
                               <td className="px-4 py-3">
-                                <span className="rounded bg-blue-100 px-2 py-1 text-sm font-medium text-blue-700">
+                                <span className="rounded bg-c-accent-bg px-2 py-1 text-sm font-medium text-blue-700">
                                   {report.opinion}
                                 </span>
                               </td>
@@ -651,7 +651,7 @@ export default function StockDetailPage() {
                               </td>
                               <td
                                 className={`px-4 py-3 text-right text-sm font-medium ${
-                                  report.upside >= 0 ? 'text-green-600' : 'text-red-600'
+                                  report.upside >= 0 ? 'text-c-positive' : 'text-c-negative'
                                 }`}
                               >
                                 {formatPct(report.upside)}
@@ -683,8 +683,8 @@ export default function StockDetailPage() {
           ) : null}
         </main>
 
-        <footer className="mt-8 border-t bg-white">
-          <div className="mx-auto max-w-5xl px-4 py-6 text-center text-sm text-gray-500">
+        <footer className="mt-8 border-t bg-c-surface">
+          <div className="mx-auto max-w-5xl px-4 py-6 text-center text-sm text-c-text-2">
             <p>데이터 출처: 네이버 금융, Yahoo Finance, Stock Analysis</p>
           </div>
         </footer>
@@ -697,17 +697,17 @@ function InsightSectionCard({ title, section }: { title: string; section: Insigh
   if (!section.summary && section.bullets.length === 0) return null;
 
   return (
-    <div className="rounded-xl bg-white p-4 shadow-sm sm:p-6">
+    <div className="rounded-xl bg-c-surface p-4 shadow-sm sm:p-6">
       <div className="mb-3 flex items-center gap-2">
         <span className={`text-lg ${getSignalColor(section.signal)}`}>{getSignalIcon(section.signal)}</span>
         <h3 className="text-lg font-semibold">{title}</h3>
       </div>
-      {section.summary && <p className="mb-3 text-sm text-gray-600">{section.summary}</p>}
+      {section.summary && <p className="mb-3 text-sm text-c-text-2">{section.summary}</p>}
       {section.bullets.length > 0 && (
-        <ul className="space-y-1 text-sm text-gray-600">
+        <ul className="space-y-1 text-sm text-c-text-2">
           {section.bullets.map((bullet, index) => (
             <li key={index} className="flex gap-2">
-              <span className="text-gray-400">•</span>
+              <span className="text-c-text-3">•</span>
               <span>{bullet}</span>
             </li>
           ))}

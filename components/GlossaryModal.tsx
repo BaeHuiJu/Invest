@@ -107,9 +107,9 @@ export function GlossaryModal({ isOpen, onClose }: { isOpen: boolean; onClose: (
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 p-4">
-      <div className="relative max-h-[90vh] w-full max-w-4xl overflow-hidden rounded-xl bg-white shadow-2xl">
+      <div className="relative max-h-[90vh] w-full max-w-4xl overflow-hidden rounded-xl bg-c-surface shadow-2xl">
         {/* Header */}
-        <div className="border-b bg-gradient-to-r from-blue-600 to-blue-700 p-6 text-white">
+        <div className="border-b border-c-border bg-gradient-to-r from-blue-600 to-blue-700 p-6 text-white">
           <div className="flex items-start justify-between gap-4">
             <div>
               <h2 className="text-2xl font-bold">금융 용어 사전</h2>
@@ -175,8 +175,8 @@ export function GlossaryModal({ isOpen, onClose }: { isOpen: boolean; onClose: (
         {/* Content */}
         <div className="max-h-[calc(90vh-280px)] overflow-y-auto p-6">
           {filteredTerms.length === 0 ? (
-            <div className="py-12 text-center text-gray-400">
-              <svg className="mx-auto mb-4 h-16 w-16 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div className="py-12 text-center text-c-text-3">
+              <svg className="mx-auto mb-4 h-16 w-16 text-c-text-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path
                   strokeLinecap="round"
                   strokeLinejoin="round"
@@ -184,21 +184,21 @@ export function GlossaryModal({ isOpen, onClose }: { isOpen: boolean; onClose: (
                   d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
                 />
               </svg>
-              <p className="text-lg font-medium text-gray-500">검색 결과가 없습니다</p>
-              <p className="mt-1 text-sm text-gray-400">다른 검색어를 입력해보세요</p>
+              <p className="text-lg font-medium text-c-text-2">검색 결과가 없습니다</p>
+              <p className="mt-1 text-sm text-c-text-3">다른 검색어를 입력해보세요</p>
             </div>
           ) : (
             <div className="space-y-4">
               {filteredTerms.map((term, index) => (
                 <article
                   key={index}
-                  className="rounded-lg border border-gray-200 bg-gray-50 p-4 transition hover:border-blue-300 hover:bg-blue-50"
+                  className="rounded-lg border border-c-border bg-c-surface-2 p-4 transition hover:border-c-accent hover:bg-c-accent-bg"
                 >
-                  <h3 className="text-lg font-bold text-gray-900">{term.term}</h3>
-                  <p className="mt-2 text-sm leading-relaxed text-gray-700">{term.definition}</p>
+                  <h3 className="text-lg font-bold text-c-text">{term.term}</h3>
+                  <p className="mt-2 text-sm leading-relaxed text-c-text-2">{term.definition}</p>
                   {term.example && (
-                    <div className="mt-3 rounded bg-white p-3 text-sm text-gray-600">
-                      <div className="mb-1 font-medium text-gray-700">💡 예시</div>
+                    <div className="mt-3 rounded bg-c-surface p-3 text-sm text-c-text-2">
+                      <div className="mb-1 font-medium text-c-text">💡 예시</div>
                       {term.example}
                     </div>
                   )}
@@ -209,7 +209,7 @@ export function GlossaryModal({ isOpen, onClose }: { isOpen: boolean; onClose: (
         </div>
 
         {/* Footer */}
-        <div className="border-t bg-gray-50 p-4 text-center text-xs text-gray-500">
+        <div className="border-t border-c-border bg-c-surface-2 p-4 text-center text-xs text-c-text-2">
           총 {glossaryTerms.length}개 용어 | 검색 결과 {filteredTerms.length}개
         </div>
       </div>

@@ -49,7 +49,6 @@ export default function ConsensusChangesTab() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
-  // Fetch top movers
   useEffect(() => {
     setLoading(true);
     setError(null);
@@ -73,7 +72,6 @@ export default function ConsensusChangesTab() {
       });
   }, [period]);
 
-  // Fetch timeline when ticker is selected
   useEffect(() => {
     if (!selectedTicker) {
       setTimeline(null);
@@ -120,15 +118,11 @@ export default function ConsensusChangesTab() {
           selectedTicker === mover.ticker ? 'ring-4 ring-white ring-offset-4' : ''
         }`}
         onClick={() => setSelectedTicker(mover.ticker)}
-        style={{
-          animation: 'slideInUp 0.6s ease-out',
-        }}
+        style={{ animation: 'slideInUp 0.6s ease-out' }}
       >
-        {/* Overlay Pattern */}
         <div className="absolute inset-0 bg-white/5 rounded-2xl backdrop-blur-sm"></div>
 
         <div className="relative z-10">
-          {/* Label */}
           <div className="flex items-center gap-2 mb-3">
             <div className="px-3 py-1 bg-white/20 backdrop-blur-md rounded-full text-xs font-mono font-semibold uppercase tracking-wider">
               {isStrengthening ? '최고 강화' : '최대 약화'}
@@ -138,13 +132,11 @@ export default function ConsensusChangesTab() {
             </div>
           </div>
 
-          {/* Title */}
           <h2 className="text-4xl md:text-5xl font-bold mb-2 leading-tight">{mover.name}</h2>
           <div className="text-white/80 font-mono text-lg mb-6">
             {mover.ticker} {mover.market === 'korea' ? '🇰🇷' : '🇺🇸'}
           </div>
 
-          {/* Metrics Grid */}
           <div className="grid grid-cols-3 gap-6">
             <div className="backdrop-blur-md bg-white/10 rounded-xl p-4">
               <div className="text-white/70 text-sm mb-1">증권사</div>
@@ -177,27 +169,21 @@ export default function ConsensusChangesTab() {
 
   const renderCompactCard = (mover: TopMover, type: 'strengthening' | 'weakening', index: number) => {
     const isStrengthening = type === 'strengthening';
-    const bgGradient = isStrengthening
-      ? 'from-emerald-50 to-teal-50'
-      : 'from-rose-50 to-orange-50';
-    const borderColor = isStrengthening ? 'border-emerald-200' : 'border-rose-200';
-    const accentColor = isStrengthening ? 'text-emerald-700' : 'text-rose-700';
+    const cardBg = isStrengthening ? 'bg-c-positive-bg border-c-positive' : 'bg-c-negative-bg border-c-negative';
 
     return (
       <div
         key={mover.ticker}
-        className={`p-4 border-2 rounded-xl cursor-pointer transition-all duration-300 hover:shadow-lg hover:-translate-y-1 bg-gradient-to-br ${bgGradient} ${borderColor} ${
-          selectedTicker === mover.ticker ? 'ring-2 ring-blue-500 ring-offset-2' : ''
+        className={`p-4 border-2 rounded-xl cursor-pointer transition-all duration-300 hover:shadow-lg hover:-translate-y-1 ${cardBg} ${
+          selectedTicker === mover.ticker ? 'ring-2 ring-c-accent ring-offset-2' : ''
         }`}
         onClick={() => setSelectedTicker(mover.ticker)}
-        style={{
-          animation: `slideInUp 0.4s ease-out ${index * 0.1}s both`,
-        }}
+        style={{ animation: `slideInUp 0.4s ease-out ${index * 0.1}s both` }}
       >
         <div className="flex justify-between items-start mb-3">
           <div>
-            <div className="font-bold text-lg">{mover.name}</div>
-            <div className="text-sm text-gray-600 font-mono">
+            <div className="font-bold text-lg text-c-text">{mover.name}</div>
+            <div className="text-sm text-c-text-2 font-mono">
               {mover.ticker} {mover.market === 'korea' ? '🇰🇷' : '🇺🇸'}
             </div>
           </div>
@@ -205,30 +191,30 @@ export default function ConsensusChangesTab() {
 
         <div className="grid grid-cols-3 gap-2 text-sm">
           <div>
-            <div className="text-gray-500 text-xs">증권사</div>
-            <div className="font-bold font-mono">
+            <div className="text-c-text-3 text-xs">증권사</div>
+            <div className="font-bold font-mono text-c-text">
               {mover.currentBrokerCount}{' '}
-              <span className={mover.brokerCountChange > 0 ? 'text-green-600' : 'text-red-600'}>
+              <span className={mover.brokerCountChange > 0 ? 'text-c-positive' : 'text-c-negative'}>
                 ({formatChange(mover.brokerCountChange)})
               </span>
             </div>
           </div>
 
           <div>
-            <div className="text-gray-500 text-xs">Score</div>
-            <div className="font-bold font-mono">
+            <div className="text-c-text-3 text-xs">Score</div>
+            <div className="font-bold font-mono text-c-text">
               {mover.currentEntryScore}{' '}
-              <span className={mover.entryScoreChange > 0 ? 'text-green-600' : 'text-red-600'}>
+              <span className={mover.entryScoreChange > 0 ? 'text-c-positive' : 'text-c-negative'}>
                 ({formatChange(mover.entryScoreChange)})
               </span>
             </div>
           </div>
 
           <div>
-            <div className="text-gray-500 text-xs">상승여력</div>
-            <div className="font-bold font-mono">
+            <div className="text-c-text-3 text-xs">상승여력</div>
+            <div className="font-bold font-mono text-c-text">
               {mover.currentAvgUpside.toFixed(1)}%{' '}
-              <span className={mover.avgUpsideChange > 0 ? 'text-green-600' : 'text-red-600'}>
+              <span className={mover.avgUpsideChange > 0 ? 'text-c-positive' : 'text-c-negative'}>
                 ({mover.avgUpsideChange > 0 ? '+' : ''}{mover.avgUpsideChange.toFixed(1)}%)
               </span>
             </div>
@@ -242,14 +228,8 @@ export default function ConsensusChangesTab() {
     <div className="space-y-8">
       <style jsx>{`
         @keyframes slideInUp {
-          from {
-            opacity: 0;
-            transform: translateY(20px);
-          }
-          to {
-            opacity: 1;
-            transform: translateY(0);
-          }
+          from { opacity: 0; transform: translateY(20px); }
+          to { opacity: 1; transform: translateY(0); }
         }
       `}</style>
 
@@ -269,7 +249,7 @@ export default function ConsensusChangesTab() {
 
       {/* Error */}
       {error && (
-        <div className="bg-red-50 border-2 border-red-200 text-red-700 px-6 py-4 rounded-xl shadow-lg">
+        <div className="bg-c-negative-bg border-2 border-c-negative text-c-negative px-6 py-4 rounded-xl shadow-lg">
           <div className="flex items-center gap-3">
             <div className="text-2xl">⚠️</div>
             <div>
@@ -283,31 +263,26 @@ export default function ConsensusChangesTab() {
       {/* Loading */}
       {loading && !movers && (
         <div className="text-center py-20">
-          <div className="inline-block animate-spin rounded-full h-12 w-12 border-4 border-purple-600 border-t-transparent"></div>
-          <p className="mt-6 text-gray-600 text-lg font-semibold">데이터를 불러오는 중...</p>
+          <div className="inline-block animate-spin rounded-full h-12 w-12 border-4 border-c-accent border-t-transparent"></div>
+          <p className="mt-6 text-c-text-2 text-lg font-semibold">데이터를 불러오는 중...</p>
         </div>
       )}
 
       {/* Top Movers Grid */}
       {movers && !selectedTicker && (
         <div className="space-y-12">
-          {/* Strengthening Section */}
           {movers.strengthening.length > 0 && (
             <div>
               <div className="flex items-center gap-3 mb-6">
                 <div className="text-3xl">📈</div>
-                <h3 className="text-3xl font-bold text-emerald-700">
-                  컨센서스 강화
-                </h3>
-                <div className="ml-auto px-4 py-2 bg-emerald-100 text-emerald-700 rounded-full text-sm font-bold">
+                <h3 className="text-3xl font-bold text-c-positive">컨센서스 강화</h3>
+                <div className="ml-auto px-4 py-2 bg-c-positive-bg text-c-positive rounded-full text-sm font-bold">
                   {movers.strengthening.length}개 종목
                 </div>
               </div>
 
-              {/* Hero Card */}
               {movers.strengthening[0] && renderHeroCard(movers.strengthening[0], 'strengthening')}
 
-              {/* Compact Grid */}
               {movers.strengthening.length > 1 && (
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 mt-6">
                   {movers.strengthening.slice(1).map((mover, idx) =>
@@ -318,23 +293,18 @@ export default function ConsensusChangesTab() {
             </div>
           )}
 
-          {/* Weakening Section */}
           {movers.weakening.length > 0 && (
             <div>
               <div className="flex items-center gap-3 mb-6">
                 <div className="text-3xl">📉</div>
-                <h3 className="text-3xl font-bold text-rose-700">
-                  컨센서스 약화
-                </h3>
-                <div className="ml-auto px-4 py-2 bg-rose-100 text-rose-700 rounded-full text-sm font-bold">
+                <h3 className="text-3xl font-bold text-c-negative">컨센서스 약화</h3>
+                <div className="ml-auto px-4 py-2 bg-c-negative-bg text-c-negative rounded-full text-sm font-bold">
                   {movers.weakening.length}개 종목
                 </div>
               </div>
 
-              {/* Hero Card */}
               {movers.weakening[0] && renderHeroCard(movers.weakening[0], 'weakening')}
 
-              {/* Compact Grid */}
               {movers.weakening.length > 1 && (
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 mt-6">
                   {movers.weakening.slice(1).map((mover, idx) =>
@@ -349,7 +319,7 @@ export default function ConsensusChangesTab() {
 
       {/* Timeline View */}
       {selectedTicker && timeline && (
-        <div className="bg-white rounded-2xl border-2 border-gray-200 shadow-2xl overflow-hidden">
+        <div className="bg-c-surface rounded-2xl border-2 border-c-border shadow-2xl overflow-hidden">
           {/* Timeline Header */}
           <div className="bg-gradient-to-r from-indigo-600 to-purple-600 p-6 text-white">
             <div className="flex justify-between items-start">
@@ -370,17 +340,17 @@ export default function ConsensusChangesTab() {
           </div>
 
           {timeline.history.length === 0 ? (
-            <div className="text-center py-16 text-gray-500">
+            <div className="text-center py-16 text-c-text-2">
               <div className="text-5xl mb-4">📊</div>
               <div className="text-lg">타임라인 데이터가 없습니다</div>
             </div>
           ) : (
             <div className="p-8 space-y-12">
               {/* Entry Score Chart */}
-              <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl p-6 border border-blue-200">
+              <div className="bg-c-surface-2 rounded-xl p-6 border border-c-border">
                 <div className="flex items-center gap-3 mb-6">
-                  <div className="w-1 h-8 bg-blue-500 rounded-full"></div>
-                  <h4 className="text-2xl font-bold text-blue-900">Entry Score 변화</h4>
+                  <div className="w-1 h-8 bg-c-accent rounded-full"></div>
+                  <h4 className="text-2xl font-bold text-c-text">Entry Score 변화</h4>
                 </div>
                 <ResponsiveContainer width="100%" height={280}>
                   <AreaChart data={timeline.history}>
@@ -392,31 +362,17 @@ export default function ConsensusChangesTab() {
                     </defs>
                     <XAxis dataKey="date" tick={{ fontSize: 12 }} stroke="#94a3b8" />
                     <YAxis domain={[0, 100]} stroke="#94a3b8" />
-                    <Tooltip
-                      contentStyle={{
-                        backgroundColor: 'rgba(255, 255, 255, 0.95)',
-                        borderRadius: '12px',
-                        border: '2px solid #3b82f6',
-                        padding: '12px'
-                      }}
-                    />
-                    <Area
-                      type="monotone"
-                      dataKey="entryScore"
-                      stroke="#3b82f6"
-                      strokeWidth={3}
-                      fill="url(#colorEntryScore)"
-                      name="Entry Score"
-                    />
+                    <Tooltip contentStyle={{ backgroundColor: 'var(--c-surface)', borderRadius: '12px', border: '2px solid #3b82f6', padding: '12px' }} />
+                    <Area type="monotone" dataKey="entryScore" stroke="#3b82f6" strokeWidth={3} fill="url(#colorEntryScore)" name="Entry Score" />
                   </AreaChart>
                 </ResponsiveContainer>
               </div>
 
               {/* Broker Count Chart */}
-              <div className="bg-gradient-to-br from-green-50 to-emerald-50 rounded-xl p-6 border border-green-200">
+              <div className="bg-c-surface-2 rounded-xl p-6 border border-c-border">
                 <div className="flex items-center gap-3 mb-6">
-                  <div className="w-1 h-8 bg-green-500 rounded-full"></div>
-                  <h4 className="text-2xl font-bold text-green-900">증권사 수 변화</h4>
+                  <div className="w-1 h-8 bg-c-positive rounded-full"></div>
+                  <h4 className="text-2xl font-bold text-c-text">증권사 수 변화</h4>
                 </div>
                 <ResponsiveContainer width="100%" height={280}>
                   <AreaChart data={timeline.history}>
@@ -428,31 +384,17 @@ export default function ConsensusChangesTab() {
                     </defs>
                     <XAxis dataKey="date" tick={{ fontSize: 12 }} stroke="#94a3b8" />
                     <YAxis stroke="#94a3b8" />
-                    <Tooltip
-                      contentStyle={{
-                        backgroundColor: 'rgba(255, 255, 255, 0.95)',
-                        borderRadius: '12px',
-                        border: '2px solid #10b981',
-                        padding: '12px'
-                      }}
-                    />
-                    <Area
-                      type="monotone"
-                      dataKey="brokerCount"
-                      stroke="#10b981"
-                      strokeWidth={3}
-                      fill="url(#colorBrokerCount)"
-                      name="증권사 수"
-                    />
+                    <Tooltip contentStyle={{ backgroundColor: 'var(--c-surface)', borderRadius: '12px', border: '2px solid #10b981', padding: '12px' }} />
+                    <Area type="monotone" dataKey="brokerCount" stroke="#10b981" strokeWidth={3} fill="url(#colorBrokerCount)" name="증권사 수" />
                   </AreaChart>
                 </ResponsiveContainer>
               </div>
 
               {/* Upside Chart */}
-              <div className="bg-gradient-to-br from-amber-50 to-orange-50 rounded-xl p-6 border border-amber-200">
+              <div className="bg-c-surface-2 rounded-xl p-6 border border-c-border">
                 <div className="flex items-center gap-3 mb-6">
-                  <div className="w-1 h-8 bg-amber-500 rounded-full"></div>
-                  <h4 className="text-2xl font-bold text-amber-900">평균 상승여력 변화</h4>
+                  <div className="w-1 h-8 bg-c-warning rounded-full"></div>
+                  <h4 className="text-2xl font-bold text-c-text">평균 상승여력 변화</h4>
                 </div>
                 <ResponsiveContainer width="100%" height={280}>
                   <AreaChart data={timeline.history}>
@@ -464,62 +406,26 @@ export default function ConsensusChangesTab() {
                     </defs>
                     <XAxis dataKey="date" tick={{ fontSize: 12 }} stroke="#94a3b8" />
                     <YAxis stroke="#94a3b8" />
-                    <Tooltip
-                      contentStyle={{
-                        backgroundColor: 'rgba(255, 255, 255, 0.95)',
-                        borderRadius: '12px',
-                        border: '2px solid #f59e0b',
-                        padding: '12px'
-                      }}
-                    />
-                    <Area
-                      type="monotone"
-                      dataKey="avgUpside"
-                      stroke="#f59e0b"
-                      strokeWidth={3}
-                      fill="url(#colorUpside)"
-                      name="평균 상승여력 (%)"
-                    />
+                    <Tooltip contentStyle={{ backgroundColor: 'var(--c-surface)', borderRadius: '12px', border: '2px solid #f59e0b', padding: '12px' }} />
+                    <Area type="monotone" dataKey="avgUpside" stroke="#f59e0b" strokeWidth={3} fill="url(#colorUpside)" name="평균 상승여력 (%)" />
                   </AreaChart>
                 </ResponsiveContainer>
               </div>
 
               {/* Price vs Target Chart */}
-              <div className="bg-gradient-to-br from-purple-50 to-pink-50 rounded-xl p-6 border border-purple-200">
+              <div className="bg-c-surface-2 rounded-xl p-6 border border-c-border">
                 <div className="flex items-center gap-3 mb-6">
-                  <div className="w-1 h-8 bg-purple-500 rounded-full"></div>
-                  <h4 className="text-2xl font-bold text-purple-900">가격 대비 목표가</h4>
+                  <div className="w-1 h-8 bg-c-info rounded-full"></div>
+                  <h4 className="text-2xl font-bold text-c-text">가격 대비 목표가</h4>
                 </div>
                 <ResponsiveContainer width="100%" height={280}>
                   <LineChart data={timeline.history}>
                     <XAxis dataKey="date" tick={{ fontSize: 12 }} stroke="#94a3b8" />
                     <YAxis stroke="#94a3b8" />
-                    <Tooltip
-                      contentStyle={{
-                        backgroundColor: 'rgba(255, 255, 255, 0.95)',
-                        borderRadius: '12px',
-                        border: '2px solid #a855f7',
-                        padding: '12px'
-                      }}
-                    />
+                    <Tooltip contentStyle={{ backgroundColor: 'var(--c-surface)', borderRadius: '12px', border: '2px solid #a855f7', padding: '12px' }} />
                     <Legend />
-                    <Line
-                      type="monotone"
-                      dataKey="currentPrice"
-                      stroke="#6366f1"
-                      strokeWidth={3}
-                      name="현재가"
-                      dot={{ r: 5, fill: '#6366f1' }}
-                    />
-                    <Line
-                      type="monotone"
-                      dataKey="avgTargetPrice"
-                      stroke="#ec4899"
-                      strokeWidth={3}
-                      name="평균 목표가"
-                      dot={{ r: 5, fill: '#ec4899' }}
-                      strokeDasharray="8 4"
-                    />
+                    <Line type="monotone" dataKey="currentPrice" stroke="#6366f1" strokeWidth={3} name="현재가" dot={{ r: 5, fill: '#6366f1' }} />
+                    <Line type="monotone" dataKey="avgTargetPrice" stroke="#ec4899" strokeWidth={3} name="평균 목표가" dot={{ r: 5, fill: '#ec4899' }} strokeDasharray="8 4" />
                   </LineChart>
                 </ResponsiveContainer>
               </div>

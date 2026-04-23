@@ -16,11 +16,12 @@ import ConsensusChangesTab from '@/components/ConsensusChangesTab';
 import { AnalystLeaderboardTab } from '@/components/AnalystLeaderboardTab';
 import { ValuationScreenerTab, preWarmScreener } from '@/components/ValuationScreenerTab';
 import { GroqDailyPicksTab } from '@/components/GroqDailyPicksTab';
+import { KoreaEtfTradingTab } from '@/components/KoreaEtfTradingTab';
 import { ThemeSelector } from '@/components/ThemeSelector';
 
 type MarketType = 'korea' | 'us';
 type MarketFilter = 'all' | MarketType;
-type TabType = 'home' | 'watchlist' | 'ai-picks' | 'korea-stock' | 'korea-etf' | 'us-stock' | 'us-etf' | 'analyst' | 'consensus' | 'consensus-changes' | 'scorecard' | 'sector-cycle' | 'backtest' | 'portfolio' | 'earnings' | 'screener' | 'groq-picks';
+type TabType = 'home' | 'watchlist' | 'ai-picks' | 'korea-stock' | 'korea-etf' | 'korea-etf-trading' | 'us-stock' | 'us-etf' | 'analyst' | 'consensus' | 'consensus-changes' | 'scorecard' | 'sector-cycle' | 'backtest' | 'portfolio' | 'earnings' | 'screener' | 'groq-picks';
 type WatchlistCategory = 'stock' | 'etf' | 'analyst';
 type PerformanceStatus = 'complete' | 'pending' | 'unavailable';
 type SectorCyclePhase = 'recovery' | 'expansion' | 'slowdown' | 'contraction';
@@ -405,13 +406,14 @@ export default function Home() {
       </header>
       <nav className="border-b border-c-border bg-c-surface">
         <div className="mx-auto max-w-7xl">
-          <div className="scrollbar-hide flex overflow-x-auto px-2 sm:px-4" style={{ WebkitOverflowScrolling: 'touch' } as React.CSSProperties}>
+          <div className="flex w-full overflow-x-scroll px-2 sm:px-4" style={{ WebkitOverflowScrolling: 'touch' } as React.CSSProperties}>
             {(
               [
                 ['home', '홈'],
                 ['watchlist', '관심'],
                 ['ai-picks', 'AI추천'],
                 ['groq-picks', 'Groq 유망주'],
+                ['korea-etf-trading', '단기ETF'],
                 ['analyst', '애널리스트'],
                 ['consensus', '공통추천'],
                 ['consensus-changes', '컨센서스변화'],
@@ -430,7 +432,7 @@ export default function Home() {
               <button
                 key={id}
                 onClick={() => setActiveTab(id)}
-                className={`flex-shrink-0 whitespace-nowrap px-3 py-3 text-xs font-medium transition-colors sm:px-4 sm:text-sm ${
+                className={`flex-shrink-0 whitespace-nowrap px-3 py-3 text-xs font-medium transition-colors last:mr-6 sm:px-4 sm:text-sm sm:last:mr-10 ${
                   activeTab === id
                     ? 'border-b-2 border-c-accent text-c-accent'
                     : 'text-c-text-2 hover:text-c-text'
@@ -447,6 +449,8 @@ export default function Home() {
           ? <AIPicksTab onOpenInsight={setInsightTarget} isSaved={isSaved} onToggleWatchlist={toggleWatchlist} />
           : activeTab === 'groq-picks'
           ? <GroqDailyPicksTab onOpenInsight={setInsightTarget} />
+          : activeTab === 'korea-etf-trading'
+          ? <KoreaEtfTradingTab />
           : activeTab === 'analyst'
           ? <AnalystTab onOpenInsight={setInsightTarget} isSaved={isSaved} onToggleWatchlist={toggleWatchlist} />
           : activeTab === 'sector-cycle'

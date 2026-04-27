@@ -44,7 +44,12 @@
       "Bash(git stash *)",
       "Bash(gh run *)",
       "Bash(git restore *)",
-      "Bash(npx vercel *)"
+      "Bash(npx vercel *)",
+      "Bash(grep -E \"\\\\.ts$\")",
+      "WebFetch(domain:finance.naver.com)",
+      "Bash(iconv -f euc-kr -t utf-8)",
+      "mcp__playwright__browser_navigate",
+      "mcp__playwright__browser_snapshot"
     ]
   }
 }

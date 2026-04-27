@@ -17,11 +17,12 @@ import { AnalystLeaderboardTab } from '@/components/AnalystLeaderboardTab';
 import { ValuationScreenerTab, preWarmScreener } from '@/components/ValuationScreenerTab';
 import { GroqDailyPicksTab } from '@/components/GroqDailyPicksTab';
 import { KoreaEtfTradingTab } from '@/components/KoreaEtfTradingTab';
+import { IpoCalendarTab } from '@/components/IpoCalendarTab';
 import { ThemeSelector } from '@/components/ThemeSelector';
 
 type MarketType = 'korea' | 'us';
 type MarketFilter = 'all' | MarketType;
-type TabType = 'home' | 'watchlist' | 'ai-picks' | 'korea-stock' | 'korea-etf' | 'korea-etf-trading' | 'us-stock' | 'us-etf' | 'analyst' | 'consensus' | 'consensus-changes' | 'scorecard' | 'sector-cycle' | 'backtest' | 'portfolio' | 'earnings' | 'screener' | 'groq-picks';
+type TabType = 'home' | 'watchlist' | 'ai-picks' | 'korea-stock' | 'korea-etf' | 'korea-etf-trading' | 'us-stock' | 'us-etf' | 'analyst' | 'consensus' | 'consensus-changes' | 'scorecard' | 'sector-cycle' | 'backtest' | 'portfolio' | 'earnings' | 'screener' | 'groq-picks' | 'ipo';
 type WatchlistCategory = 'stock' | 'etf' | 'analyst';
 type PerformanceStatus = 'complete' | 'pending' | 'unavailable';
 type SectorCyclePhase = 'recovery' | 'expansion' | 'slowdown' | 'contraction';
@@ -427,6 +428,7 @@ export default function Home() {
                 ['us-stock', '해외주식'],
                 ['us-etf', '해외ETF'],
                 ['earnings', '실적캘린더'],
+                ['ipo', '공모주'],
               ] as [TabType, string][]
             ).map(([id, label]) => (
               <button
@@ -467,6 +469,8 @@ export default function Home() {
             ? <PortfolioTab onNavigateToAIPicks={() => setActiveTab('ai-picks')} />
           : activeTab === 'earnings'
             ? <EarningsCalendarTab />
+          : activeTab === 'ipo'
+            ? <IpoCalendarTab />
           : activeTab === 'screener'
             ? <ValuationScreenerTab onOpenInsight={setInsightTarget} />
           : loading

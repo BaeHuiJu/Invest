@@ -32,27 +32,40 @@
   - 애니메이션: slideInUp, fadeIn 효과
   - 그라데이션 디자인: 1위 금색, 2위 은색, 3위 동색
 
-### [ ] Groq AI 단기 유망주
+### [x] Groq AI 단기 유망주
 - **우선순위**: ⭐⭐⭐⭐ (최우선)
 - **복잡도**: 중간
 - **설명**: Groq llama-3.3이 애널리스트 데이터를 분석해 단기(1주일 내) 3%+ 상승 고확률 종목 자동 선별
 - **가치**: 기존 규칙 기반 AI 추천 + LLM 해석력 결합, 투자 근거 한국어 설명 제공
+- **완료일**: 2026-04-27
 - **사전 조건**: GROQ_API_KEY 환경변수 (aistudio.groq.com에서 무료 발급)
 - **구현**:
-  - [ ] `npm install groq-sdk` 패키지 설치
-  - [ ] `pages/api/groq-daily-picks.ts` — 후보 25개 → Groq 분석 → 상위 5개 반환 (30분 캐시)
-  - [ ] `components/GroqDailyPicksTab.tsx` — AIPicksTab 패턴, 신뢰도 점수 + 한국어 근거 + 리스크 표시
-  - [ ] `pages/index.tsx` — "Groq 유망주" 탭 추가
-  - [ ] Vercel 환경변수 GROQ_API_KEY 등록
+  - [x] `npm install groq-sdk` 패키지 설치
+  - [x] `pages/api/groq-daily-picks.ts` — 후보 25개 → Groq 분석 → 상위 5개 반환 (30분 캐시)
+  - [x] `components/GroqDailyPicksTab.tsx` — AIPicksTab 패턴, 신뢰도 점수 + 한국어 근거 + 리스크 표시
+  - [x] `pages/index.tsx` — "Groq 유망주" 탭 추가
+  - [x] GROQ_API_KEY .env 등록 (Vercel 배포 시 환경변수 추가 필요)
 - **Groq 프롬프트 핵심 입력**:
-  - entry score, 브로커 수, 상승여력, week1 과거 성공률, 섹터 사이클
+  - entry score, 브로커 수, 상승여력, week1 과거 성공률, 리포트 경과일, 리포트 이후 가격 변동률
 - **응답 구조**:
   - `confidence` (0-100): 3%+ 달성 신뢰도
   - `reasoning`: 한국어 투자 근거 2-3문장
-  - `expectedReturn`: "3-6%" 예상 범위
+  - `expectedReturn`: "3-5%" 예상 범위
+  - `timeframe`: 예상 기간 (예: "3-5일")
   - `keyRisk`: 주요 리스크 1문장
-- **중요 고지**: "3% 보장" 불가 — UI에 면책 문구 필수, 투자 참고용
+- **중요 고지**: "3% 보장" 불가 — UI에 면책 문구 적용됨, 투자 참고용
 - **모델**: `llama-3.3-70b-versatile` (Groq 최신, 무료 티어 포함)
+- **파일**:
+  - `pages/api/groq-daily-picks.ts` - 후보 빌드 + Groq 호출 + 30분 캐시
+  - `components/GroqDailyPicksTab.tsx` - 신뢰도 배지, Groq 분석 표시, 리스크 표시
+  - `pages/index.tsx` - "Groq 유망주" 탭 통합
+- **특징**:
+  - 최근 15일 리포트, 브로커 2개 이상 종목 후보군 (최대 25개)
+  - EntryScore ≥60 필터링으로 좋은 진입점 종목만 선별
+  - 리포트 이후 가격 변동률(priceChangeSinceReport) Groq에 직접 주입
+  - 과거 week1 성공률 및 평균 수익률 Groq 판단 근거 제공
+  - 신뢰도 80+ 초록, 70+ 노랑, 그 외 회색 배지
+  - 30분 서버 캐시 + 25분 클라이언트 캐시
 
 ### [ ] 기술적 지표 오버레이
 - **우선순위**: ⭐⭐ (중간)
@@ -412,14 +425,16 @@
 ## 📊 진행 상황 요약
 
 - **전체 항목**: 25개
-- **완료**: 5개 (20.0%) ✅
+- **완료**: 7개 (28.0%) ✅
   - PWA 변환 ✅
   - 초보자 80%+ 수익 달성 시스템 (Sprint 1-3 완료) ✅
   - 컨센서스 변화 추적 ✅
   - 애널리스트 성과 리더보드 ✅
   - 배당/밸류에이션 스크리너 ✅
+  - 다크모드 자동 전환 ✅
+  - Groq AI 단기 유망주 ✅
 - **진행중**: 0개
-- **미완료**: 20개 (80.0%)
+- **미완료**: 18개 (72.0%)
 
 ---
 
@@ -704,3 +719,33 @@
   - ✅ 메인 대시보드 탭 추가 ("밸류에이션 스크리너")
 
 **최종 업데이트**: 2026-04-22
+
+---
+
+### 2026-04-27: Groq AI 단기 유망주 완료 ✅
+- **목표**: Groq llama-3.3이 실시간 애널리스트 데이터를 분석해 단기 3%+ 유망주 선별
+- **구현 완료 항목**:
+  - ✅ `pages/api/groq-daily-picks.ts` API
+    - 최근 15일 리포트에서 브로커 2개+ 종목 후보군 구성 (EntryScore ≥60, 최대 25개)
+    - Groq llama-3.3-70b-versatile 호출 (temperature 0.3, JSON 모드)
+    - 시스템 프롬프트: 6가지 선별 기준 (entryScore, 가격변동, 신선도, 컨센서스, 성공률, 상승여력)
+    - 응답: confidence, reasoning(한국어), expectedReturn, timeframe, keyRisk
+    - 서버 캐시 30분, inflight 중복 방지
+  - ✅ `components/GroqDailyPicksTab.tsx` UI
+    - 보라색→인디고 그라데이션 헤더 (분석 시각, 시장 기준 표시)
+    - 신뢰도 배지: 80+ 초록, 70+ 노랑, 그 외 회색
+    - 리포트 이후 가격 변동 칩 (ChangeChip)
+    - 메트릭 그리드: 현재가, 목표가, 상승여력, Entry Score
+    - 리스크 하단 오렌지 바
+    - 클라이언트 캐시 25분 (탭 전환 시 재요청 방지)
+  - ✅ `pages/index.tsx` — "Groq 유망주" 탭 통합
+- **테스트 결과**:
+  - API: ✅ 200 OK, 5개 종목 선별 (삼성바이오로직스, CJ대한통운, YG엔터, SM, JFrog)
+  - 응답 시간: ~2.5초 (최초), 이후 캐시로 즉시 응답
+  - 빌드: ✅ 프로덕션 빌드 성공
+  - TypeScript: ✅ 타입 오류 없음
+- **특이사항**:
+  - GROQ_API_KEY는 `.env`에 설정됨 (Vercel 배포 시 환경변수 별도 등록 필요)
+  - response_format json_object 사용 → 배열/객체 양쪽 파싱 처리
+
+**최종 업데이트**: 2026-04-27

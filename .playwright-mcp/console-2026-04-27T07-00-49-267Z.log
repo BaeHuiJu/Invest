@@ -1,0 +1,24 @@
+[    5876ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:3000/:0
+[    6096ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ webpack-internal:///./node_modules/react-dom/cjs/react-dom.development.js:29889
+[    6134ms] Error: Cannot find module 'D:\Invest\.next-dev\server\pages\_document.js'
+Require stack:
+- D:\Invest\node_modules\next\dist\server\require.js
+- D:\Invest\node_modules\next\dist\server\load-components.js
+- D:\Invest\node_modules\next\dist\build\utils.js
+- D:\Invest\node_modules\next\dist\server\dev\hot-middleware.js
+- D:\Invest\node_modules\next\dist\server\dev\hot-reloader-webpack.js
+- D:\Invest\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- D:\Invest\node_modules\next\dist\server\lib\router-server.js
+- D:\Invest\node_modules\next\dist\server\lib\start-server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1145:15)
+    at <unknown> (file://D:\Invest\node_modules\next\dist\server\require-hook.js:55:36)
+    at Module._load (node:internal/modules/cjs/loader:986:27)
+    at Module.require (node:internal/modules/cjs/loader:1233:19)
+    at mod.require (file://D:\Invest\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:179:18)
+    at requirePage (file://D:\Invest\node_modules\next\dist\server\require.js:109:84)
+    at <unknown> (file://D:\Invest\node_modules\next\dist\server\load-components.js:72:65)
+    at async loadComponentsImpl (file://D:\Invest\node_modules\next\dist\server\load-components.js:71:33)
+    at async DevServer.findPageComponentsImpl (file://D:\Invest\node_modules\next\dist\server\next-server.js:710:36)
+[    6129ms] [LOG] [HMR] connected @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/websocket.js:45
+[    6153ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3000/favicon.ico:0

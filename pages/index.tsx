@@ -48,33 +48,52 @@ type InsightRequest = { ticker: string; name: string; market: MarketType; catego
 type WatchlistItem = { ticker: string; name: string; market: MarketType; category: WatchlistCategory; savedAt: string; currentPrice?: number; changePercent?: number; high52w?: number; low52w?: number };
 type ResolvedWatchlistItem = WatchlistItem & { currentPrice?: number; change?: number; changePercent?: number; volume?: number; high52w?: number; low52w?: number };
 
-const ANALYST_CACHE_TTL_MS = process.env.NODE_ENV === 'development' ? 0 : 5 * 60 * 1000;
-const CONSENSUS_CACHE_TTL_MS = process.env.NODE_ENV === 'development' ? 0 : 5 * 60 * 1000;
-const SCORECARD_CACHE_TTL_MS = process.env.NODE_ENV === 'development' ? 0 : 5 * 60 * 1000;
-const SECTOR_CYCLE_CACHE_TTL_MS = process.env.NODE_ENV === 'development' ? 0 : 5 * 60 * 1000;
-const INSIGHT_CACHE_TTL_MS = process.env.NODE_ENV === 'development' ? 0 : 5 * 60 * 1000;
+const CLIENT_CACHE_TTL_MS = process.env.NODE_ENV === 'development' ? 0 : 5 * 60 * 1000;
 const WATCHLIST_STORAGE_KEY = 'globalpick.watchlist';
 const PAGE_SIZE_OPTIONS = [5, 10, 20, 30, 40, 50];
-const analystClientCache = new Map<string, { reports: AnalystReport[]; fetchedAt: number }>();
-const analystClientInflight = new Map<string, Promise<AnalystReport[]>>();
-const consensusClientCache = new Map<string, { items: AnalystConsensusItem[]; fetchedAt: number }>();
-const consensusClientInflight = new Map<string, Promise<AnalystConsensusItem[]>>();
-const scorecardClientCache = new Map<string, { data: AnalystScorecardResponse; fetchedAt: number }>();
-const scorecardClientInflight = new Map<string, Promise<AnalystScorecardResponse>>();
-const sectorCycleClientCache = new Map<string, { data: SectorCycleResponse; fetchedAt: number }>();
-const sectorCycleClientInflight = new Map<string, Promise<SectorCycleResponse>>();
-const insightClientCache = new Map<string, { insight: StockInsight; fetchedAt: number }>();
-const insightClientInflight = new Map<string, Promise<StockInsight>>();
+
+function createClientCache<T>() {
+  const cache = new Map<string, { data: T; fetchedAt: number }>();
+  const inflight = new Map<string, Promise<T>>();
+
+  function get(key: string): T | null {
+    const entry = cache.get(key);
+    if (!entry) return null;
+    if (Date.now() - entry.fetchedAt > CLIENT_CACHE_TTL_MS) {
+      cache.delete(key);
+      return null;
+    }
+    return entry.data;
+  }
+
+  async function fetch(key: string, fetcher: () => Promise<T>): Promise<T> {
+    const cached = get(key);
+    if (cached) return cached;
+    const existing = inflight.get(key);
+    if (existing) return existing;
+    const promise = fetcher().then((data) => {
+      cache.set(key, { data, fetchedAt: Date.now() });
+      return data;
+    }).finally(() => inflight.delete(key));
+    inflight.set(key, promise);
+    return promise;
+  }
+
+  return { get, fetch };
+}
+
+const analystCache = createClientCache<AnalystReport[]>();
+const consensusCache = createClientCache<AnalystConsensusItem[]>();
+const scorecardCache = createClientCache<AnalystScorecardResponse>();
+const sectorCycleCache = createClientCache<SectorCycleResponse>();
+const insightCache = createClientCache<StockInsight>();
 
 const formatPrice = (price: number, market: MarketType) => market === 'korea'
   ? `${Math.round(price || 0).toLocaleString()} KRW`
   : `$${(price || 0).toLocaleString(undefined, { maximumFractionDigits: 2 })}`;
 const formatPct = (value: number) => `${value >= 0 ? '+' : ''}${value.toFixed(1)}%`;
 const formatScore = (value: number) => `${Math.round(value)}점`;
-const analystKey = (days: number, market: MarketFilter) => `${days}:${market}`;
-const consensusKey = (days: number, market: MarketFilter) => `${days}:${market}`;
-const scorecardKey = (days: number, market: MarketFilter) => `${days}:${market}`;
-const sectorCycleKey = (days: number, market: MarketFilter) => `${days}:${market}`;
+const cacheKey = (days: number, market: MarketFilter) => `${days}:${market}`;
 const insightKey = (req: InsightRequest) => `${req.market}:${req.ticker}`;
 const watchlistKey = (item: Pick<WatchlistItem, 'market' | 'ticker'>) => `${item.market}:${item.ticker}`;
 
@@ -108,115 +127,55 @@ function resolveWatchlistItems(watchlist: WatchlistItem[], stocksByKey: Map<stri
 }
 
 function getCachedAnalystReports(days: number, market: MarketFilter) {
-  const cached = analystClientCache.get(analystKey(days, market));
-  if (!cached) return null;
-  if (Date.now() - cached.fetchedAt > ANALYST_CACHE_TTL_MS) {
-    analystClientCache.delete(analystKey(days, market));
-    return null;
-  }
-  return cached.reports;
+  return analystCache.get(cacheKey(days, market));
 }
 
 async function fetchAnalystReports(days: number, market: MarketFilter) {
-  const cached = getCachedAnalystReports(days, market);
-  if (cached) return cached;
-  const key = analystKey(days, market);
-  const inflight = analystClientInflight.get(key);
-  if (inflight) return inflight;
-  const request = fetch(`/api/analyst-reports?days=${days}&market=${market}`).then(async (res) => {
+  return analystCache.fetch(cacheKey(days, market), async () => {
+    const res = await fetch(`/api/analyst-reports?days=${days}&market=${market}`);
     if (!res.ok) throw new Error('Failed to fetch analyst reports');
-    const data = await res.json() as AnalystReport[];
-    analystClientCache.set(key, { reports: data, fetchedAt: Date.now() });
-    return data;
-  }).finally(() => analystClientInflight.delete(key));
-  analystClientInflight.set(key, request);
-  return request;
+    return res.json() as Promise<AnalystReport[]>;
+  });
 }
 
 function getCachedConsensus(days: number, market: MarketFilter) {
-  const cached = consensusClientCache.get(consensusKey(days, market));
-  if (!cached) return null;
-  if (Date.now() - cached.fetchedAt > CONSENSUS_CACHE_TTL_MS) {
-    consensusClientCache.delete(consensusKey(days, market));
-    return null;
-  }
-  return cached.items;
+  return consensusCache.get(cacheKey(days, market));
 }
 
 async function fetchAnalystConsensus(days: number, market: MarketFilter) {
-  const cached = getCachedConsensus(days, market);
-  if (cached) return cached;
-  const key = consensusKey(days, market);
-  const inflight = consensusClientInflight.get(key);
-  if (inflight) return inflight;
-  const request = fetch(`/api/analyst-consensus?days=${days}&market=${market}`).then(async (res) => {
+  return consensusCache.fetch(cacheKey(days, market), async () => {
+    const res = await fetch(`/api/analyst-consensus?days=${days}&market=${market}`);
     if (!res.ok) throw new Error('Failed to fetch analyst consensus');
-    const data = await res.json() as AnalystConsensusItem[];
-    consensusClientCache.set(key, { items: data, fetchedAt: Date.now() });
-    return data;
-  }).finally(() => consensusClientInflight.delete(key));
-  consensusClientInflight.set(key, request);
-  return request;
+    return res.json() as Promise<AnalystConsensusItem[]>;
+  });
 }
 
 function getCachedScorecard(days: number, market: MarketFilter) {
-  const cached = scorecardClientCache.get(scorecardKey(days, market));
-  if (!cached) return null;
-  if (Date.now() - cached.fetchedAt > SCORECARD_CACHE_TTL_MS) {
-    scorecardClientCache.delete(scorecardKey(days, market));
-    return null;
-  }
-  return cached.data;
+  return scorecardCache.get(cacheKey(days, market));
 }
 
 async function fetchAnalystScorecard(days: number, market: MarketFilter) {
-  const cached = getCachedScorecard(days, market);
-  if (cached) return cached;
-  const key = scorecardKey(days, market);
-  const inflight = scorecardClientInflight.get(key);
-  if (inflight) return inflight;
-  const request = fetch(`/api/analyst-scorecard?days=${days}&market=${market}`).then(async (res) => {
+  return scorecardCache.fetch(cacheKey(days, market), async () => {
+    const res = await fetch(`/api/analyst-scorecard?days=${days}&market=${market}`);
     if (!res.ok) throw new Error('Failed to fetch analyst scorecard');
-    const data = await res.json() as AnalystScorecardResponse;
-    scorecardClientCache.set(key, { data, fetchedAt: Date.now() });
-    return data;
-  }).finally(() => scorecardClientInflight.delete(key));
-  scorecardClientInflight.set(key, request);
-  return request;
+    return res.json() as Promise<AnalystScorecardResponse>;
+  });
 }
 
 function getCachedSectorCycle(days: number, market: MarketFilter) {
-  const cached = sectorCycleClientCache.get(sectorCycleKey(days, market));
-  if (!cached) return null;
-  if (Date.now() - cached.fetchedAt > SECTOR_CYCLE_CACHE_TTL_MS) {
-    sectorCycleClientCache.delete(sectorCycleKey(days, market));
-    return null;
-  }
-  return cached.data;
+  return sectorCycleCache.get(cacheKey(days, market));
 }
 
 async function fetchSectorCycle(days: number, market: MarketFilter) {
-  const cached = getCachedSectorCycle(days, market);
-  if (cached) return cached;
-  const key = sectorCycleKey(days, market);
-  const inflight = sectorCycleClientInflight.get(key);
-  if (inflight) return inflight;
-  const request = fetch(`/api/sector-cycle?days=${days}&market=${market}`).then(async (res) => {
+  return sectorCycleCache.fetch(cacheKey(days, market), async () => {
+    const res = await fetch(`/api/sector-cycle?days=${days}&market=${market}`);
     if (!res.ok) throw new Error('Failed to fetch sector cycle');
-    const data = await res.json() as SectorCycleResponse;
-    sectorCycleClientCache.set(key, { data, fetchedAt: Date.now() });
-    return data;
-  }).finally(() => sectorCycleClientInflight.delete(key));
-  sectorCycleClientInflight.set(key, request);
-  return request;
+    return res.json() as Promise<SectorCycleResponse>;
+  });
 }
 
 async function fetchStockInsight(request: InsightRequest) {
   const key = insightKey(request);
-  const cached = insightClientCache.get(key);
-  if (cached && Date.now() - cached.fetchedAt <= INSIGHT_CACHE_TTL_MS) return cached.insight;
-  const inflight = insightClientInflight.get(key);
-  if (inflight) return inflight;
   const params = new URLSearchParams({
     ticker: request.ticker,
     name: request.name,
@@ -226,14 +185,12 @@ async function fetchStockInsight(request: InsightRequest) {
     high52w: String(request.high52w || 0),
     low52w: String(request.low52w || 0),
   });
-  const promise = fetch(`/api/stock-insight?${params}`).then(async (res) => {
+  return insightCache.fetch(key, async () => {
+    const res = await fetch(`/api/stock-insight?${params}`);
     if (!res.ok) throw new Error('Failed to fetch stock insight');
     const data = await res.json() as StockInsightResponse;
-    insightClientCache.set(key, { insight: data.insight, fetchedAt: Date.now() });
     return data.insight;
-  }).finally(() => insightClientInflight.delete(key));
-  insightClientInflight.set(key, promise);
-  return promise;
+  });
 }
 
 export default function Home() {

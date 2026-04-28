@@ -45,17 +45,28 @@ const formatDate = (dateStr: string) => {
   return `${month}월 ${day}일 (${weekday})`;
 };
 
-const getDaysUntil = (dateStr: string) => {
+const MS_PER_DAY = 1000 * 60 * 60 * 24;
+
+function getDaysFromToday(dateStr: string): number {
   const today = new Date();
   today.setHours(0, 0, 0, 0);
   const target = new Date(dateStr);
   target.setHours(0, 0, 0, 0);
-  const diff = Math.ceil((target.getTime() - today.getTime()) / (1000 * 60 * 60 * 24));
+  return Math.ceil((target.getTime() - today.getTime()) / MS_PER_DAY);
+}
+
+const getDaysUntil = (dateStr: string) => {
+  const diff = getDaysFromToday(dateStr);
   if (diff === 0) return '오늘';
   if (diff === 1) return '내일';
   if (diff < 0) return `${Math.abs(diff)}일 전`;
   return `${diff}일 후`;
 };
+
+function isWithinNextDays(dateStr: string, days: number): boolean {
+  const diff = getDaysFromToday(dateStr);
+  return diff >= 0 && diff <= days;
+}
 
 export function EarningsCalendarTab() {
   const [market, setMarket] = useState<'all' | MarketType>('all');
@@ -123,12 +134,7 @@ export function EarningsCalendarTab() {
         <StatCard label="예정된 발표" value={`${data.upcoming.length}건`} />
         <StatCard
           label="이번주 발표"
-          value={`${data.upcoming.filter((e) => {
-            const days = Math.ceil(
-              (new Date(e.date).getTime() - new Date().getTime()) / (1000 * 60 * 60 * 24)
-            );
-            return days >= 0 && days <= 7;
-          }).length}건`}
+          value={`${data.upcoming.filter((e) => isWithinNextDays(e.date, 7)).length}건`}
         />
         <StatCard label="최근 발표" value={`${data.recent.length}건`} />
       </div>

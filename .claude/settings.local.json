@@ -49,7 +49,15 @@
       "WebFetch(domain:finance.naver.com)",
       "Bash(iconv -f euc-kr -t utf-8)",
       "mcp__playwright__browser_navigate",
-      "mcp__playwright__browser_snapshot"
+      "mcp__playwright__browser_snapshot",
+      "Bash(git rebase *)",
+      "Bash(GIT_EDITOR=true git rebase *)",
+      "Bash(GIT_SEQUENCE_EDITOR=true EDITOR=true git rebase *)",
+      "Bash(echo \"EXIT: $?\")",
+      "Bash(GIT_EDITOR=: git rebase *)",
+      "Bash(git cherry-pick *)",
+      "Bash(git update-ref *)",
+      "Bash(rm -rf /d/Invest/.git/rebase-merge)"
     ]
   }
 }

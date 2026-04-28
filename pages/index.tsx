@@ -12,6 +12,8 @@ import { AIPicksTab } from '@/components/AIPicksTab';
 import { EntryScoreTooltip } from '@/components/EntryScoreTooltip';
 import { GlossaryModal } from '@/components/GlossaryModal';
 import { GlobalSearch } from '@/components/GlobalSearch';
+import { LoadingState } from '@/components/LoadingState';
+import { PaginationControls } from '@/components/PaginationControls';
 import ConsensusChangesTab from '@/components/ConsensusChangesTab';
 import { AnalystLeaderboardTab } from '@/components/AnalystLeaderboardTab';
 import { ValuationScreenerTab, preWarmScreener } from '@/components/ValuationScreenerTab';
@@ -19,6 +21,7 @@ import { GroqDailyPicksTab } from '@/components/GroqDailyPicksTab';
 import { KoreaEtfTradingTab } from '@/components/KoreaEtfTradingTab';
 import { IpoCalendarTab } from '@/components/IpoCalendarTab';
 import { ThemeSelector } from '@/components/ThemeSelector';
+import { readWatchlistStorage, saveWatchlistStorage } from '@/lib/watchlist-storage';
 
 type MarketType = 'korea' | 'us';
 type MarketFilter = 'all' | MarketType;
@@ -48,46 +51,76 @@ type InsightRequest = { ticker: string; name: string; market: MarketType; catego
 type WatchlistItem = { ticker: string; name: string; market: MarketType; category: WatchlistCategory; savedAt: string; currentPrice?: number; changePercent?: number; high52w?: number; low52w?: number };
 type ResolvedWatchlistItem = WatchlistItem & { currentPrice?: number; change?: number; changePercent?: number; volume?: number; high52w?: number; low52w?: number };
 
-const ANALYST_CACHE_TTL_MS = process.env.NODE_ENV === 'development' ? 0 : 5 * 60 * 1000;
-const CONSENSUS_CACHE_TTL_MS = process.env.NODE_ENV === 'development' ? 0 : 5 * 60 * 1000;
-const SCORECARD_CACHE_TTL_MS = process.env.NODE_ENV === 'development' ? 0 : 5 * 60 * 1000;
-const SECTOR_CYCLE_CACHE_TTL_MS = process.env.NODE_ENV === 'development' ? 0 : 5 * 60 * 1000;
-const INSIGHT_CACHE_TTL_MS = process.env.NODE_ENV === 'development' ? 0 : 5 * 60 * 1000;
-const WATCHLIST_STORAGE_KEY = 'globalpick.watchlist';
+const CLIENT_CACHE_TTL_MS = process.env.NODE_ENV === 'development' ? 0 : 5 * 60 * 1000;
 const PAGE_SIZE_OPTIONS = [5, 10, 20, 30, 40, 50];
-const analystClientCache = new Map<string, { reports: AnalystReport[]; fetchedAt: number }>();
-const analystClientInflight = new Map<string, Promise<AnalystReport[]>>();
-const consensusClientCache = new Map<string, { items: AnalystConsensusItem[]; fetchedAt: number }>();
-const consensusClientInflight = new Map<string, Promise<AnalystConsensusItem[]>>();
-const scorecardClientCache = new Map<string, { data: AnalystScorecardResponse; fetchedAt: number }>();
-const scorecardClientInflight = new Map<string, Promise<AnalystScorecardResponse>>();
-const sectorCycleClientCache = new Map<string, { data: SectorCycleResponse; fetchedAt: number }>();
-const sectorCycleClientInflight = new Map<string, Promise<SectorCycleResponse>>();
-const insightClientCache = new Map<string, { insight: StockInsight; fetchedAt: number }>();
-const insightClientInflight = new Map<string, Promise<StockInsight>>();
+type IdleWindow = Window & {
+  requestIdleCallback?: (callback: IdleRequestCallback) => number;
+  cancelIdleCallback?: (handle: number) => void;
+};
+
+function createClientCache<T>() {
+  const cache = new Map<string, { data: T; fetchedAt: number }>();
+  const inflight = new Map<string, Promise<T>>();
+
+  function get(key: string): T | null {
+    const entry = cache.get(key);
+    if (!entry) return null;
+    if (Date.now() - entry.fetchedAt > CLIENT_CACHE_TTL_MS) {
+      cache.delete(key);
+      return null;
+    }
+    return entry.data;
+  }
+
+  async function fetch(key: string, fetcher: () => Promise<T>): Promise<T> {
+    const cached = get(key);
+    if (cached) return cached;
+    const existing = inflight.get(key);
+    if (existing) return existing;
+    const promise = fetcher().then((data) => {
+      cache.set(key, { data, fetchedAt: Date.now() });
+      return data;
+    }).finally(() => inflight.delete(key));
+    inflight.set(key, promise);
+    return promise;
+  }
+
+  return { get, fetch };
+}
+
+const analystCache = createClientCache<AnalystReport[]>();
+const consensusCache = createClientCache<AnalystConsensusItem[]>();
+const scorecardCache = createClientCache<AnalystScorecardResponse>();
+const sectorCycleCache = createClientCache<SectorCycleResponse>();
+const insightCache = createClientCache<StockInsight>();
 
 const formatPrice = (price: number, market: MarketType) => market === 'korea'
   ? `${Math.round(price || 0).toLocaleString()} KRW`
   : `$${(price || 0).toLocaleString(undefined, { maximumFractionDigits: 2 })}`;
 const formatPct = (value: number) => `${value >= 0 ? '+' : ''}${value.toFixed(1)}%`;
 const formatScore = (value: number) => `${Math.round(value)}점`;
-const analystKey = (days: number, market: MarketFilter) => `${days}:${market}`;
-const consensusKey = (days: number, market: MarketFilter) => `${days}:${market}`;
-const scorecardKey = (days: number, market: MarketFilter) => `${days}:${market}`;
-const sectorCycleKey = (days: number, market: MarketFilter) => `${days}:${market}`;
+const cacheKey = (days: number, market: MarketFilter) => `${days}:${market}`;
 const insightKey = (req: InsightRequest) => `${req.market}:${req.ticker}`;
 const watchlistKey = (item: Pick<WatchlistItem, 'market' | 'ticker'>) => `${item.market}:${item.ticker}`;
 
-function readWatchlist() {
-  if (typeof window === 'undefined') return [];
-  try {
-    const raw = window.localStorage.getItem(WATCHLIST_STORAGE_KEY);
-    if (!raw) return [];
-    const parsed = JSON.parse(raw);
-    return Array.isArray(parsed) ? parsed as WatchlistItem[] : [];
-  } catch {
-    return [];
+async function fetchJson<T>(url: string, errorMessage: string): Promise<T> {
+  const res = await fetch(url);
+  if (!res.ok) throw new Error(errorMessage);
+  return res.json() as Promise<T>;
+}
+
+function fetchCachedJson<T>(cache: ReturnType<typeof createClientCache<T>>, key: string, url: string, errorMessage: string) {
+  return cache.fetch(key, () => fetchJson<T>(url, errorMessage));
+}
+
+function scheduleIdleTask(task: () => void, timeoutMs: number) {
+  const idleWindow = window as IdleWindow;
+  if (idleWindow.requestIdleCallback) {
+    const id = idleWindow.requestIdleCallback(task);
+    return () => idleWindow.cancelIdleCallback?.(id);
   }
+  const id = window.setTimeout(task, timeoutMs);
+  return () => window.clearTimeout(id);
 }
 
 function resolveWatchlistItems(watchlist: WatchlistItem[], stocksByKey: Map<string, Stock>) {
@@ -108,115 +141,39 @@ function resolveWatchlistItems(watchlist: WatchlistItem[], stocksByKey: Map<stri
 }
 
 function getCachedAnalystReports(days: number, market: MarketFilter) {
-  const cached = analystClientCache.get(analystKey(days, market));
-  if (!cached) return null;
-  if (Date.now() - cached.fetchedAt > ANALYST_CACHE_TTL_MS) {
-    analystClientCache.delete(analystKey(days, market));
-    return null;
-  }
-  return cached.reports;
+  return analystCache.get(cacheKey(days, market));
 }
 
 async function fetchAnalystReports(days: number, market: MarketFilter) {
-  const cached = getCachedAnalystReports(days, market);
-  if (cached) return cached;
-  const key = analystKey(days, market);
-  const inflight = analystClientInflight.get(key);
-  if (inflight) return inflight;
-  const request = fetch(`/api/analyst-reports?days=${days}&market=${market}`).then(async (res) => {
-    if (!res.ok) throw new Error('Failed to fetch analyst reports');
-    const data = await res.json() as AnalystReport[];
-    analystClientCache.set(key, { reports: data, fetchedAt: Date.now() });
-    return data;
-  }).finally(() => analystClientInflight.delete(key));
-  analystClientInflight.set(key, request);
-  return request;
+  return fetchCachedJson(analystCache, cacheKey(days, market), `/api/analyst-reports?days=${days}&market=${market}`, 'Failed to fetch analyst reports');
 }
 
 function getCachedConsensus(days: number, market: MarketFilter) {
-  const cached = consensusClientCache.get(consensusKey(days, market));
-  if (!cached) return null;
-  if (Date.now() - cached.fetchedAt > CONSENSUS_CACHE_TTL_MS) {
-    consensusClientCache.delete(consensusKey(days, market));
-    return null;
-  }
-  return cached.items;
+  return consensusCache.get(cacheKey(days, market));
 }
 
 async function fetchAnalystConsensus(days: number, market: MarketFilter) {
-  const cached = getCachedConsensus(days, market);
-  if (cached) return cached;
-  const key = consensusKey(days, market);
-  const inflight = consensusClientInflight.get(key);
-  if (inflight) return inflight;
-  const request = fetch(`/api/analyst-consensus?days=${days}&market=${market}`).then(async (res) => {
-    if (!res.ok) throw new Error('Failed to fetch analyst consensus');
-    const data = await res.json() as AnalystConsensusItem[];
-    consensusClientCache.set(key, { items: data, fetchedAt: Date.now() });
-    return data;
-  }).finally(() => consensusClientInflight.delete(key));
-  consensusClientInflight.set(key, request);
-  return request;
+  return fetchCachedJson(consensusCache, cacheKey(days, market), `/api/analyst-consensus?days=${days}&market=${market}`, 'Failed to fetch analyst consensus');
 }
 
 function getCachedScorecard(days: number, market: MarketFilter) {
-  const cached = scorecardClientCache.get(scorecardKey(days, market));
-  if (!cached) return null;
-  if (Date.now() - cached.fetchedAt > SCORECARD_CACHE_TTL_MS) {
-    scorecardClientCache.delete(scorecardKey(days, market));
-    return null;
-  }
-  return cached.data;
+  return scorecardCache.get(cacheKey(days, market));
 }
 
 async function fetchAnalystScorecard(days: number, market: MarketFilter) {
-  const cached = getCachedScorecard(days, market);
-  if (cached) return cached;
-  const key = scorecardKey(days, market);
-  const inflight = scorecardClientInflight.get(key);
-  if (inflight) return inflight;
-  const request = fetch(`/api/analyst-scorecard?days=${days}&market=${market}`).then(async (res) => {
-    if (!res.ok) throw new Error('Failed to fetch analyst scorecard');
-    const data = await res.json() as AnalystScorecardResponse;
-    scorecardClientCache.set(key, { data, fetchedAt: Date.now() });
-    return data;
-  }).finally(() => scorecardClientInflight.delete(key));
-  scorecardClientInflight.set(key, request);
-  return request;
+  return fetchCachedJson(scorecardCache, cacheKey(days, market), `/api/analyst-scorecard?days=${days}&market=${market}`, 'Failed to fetch analyst scorecard');
 }
 
 function getCachedSectorCycle(days: number, market: MarketFilter) {
-  const cached = sectorCycleClientCache.get(sectorCycleKey(days, market));
-  if (!cached) return null;
-  if (Date.now() - cached.fetchedAt > SECTOR_CYCLE_CACHE_TTL_MS) {
-    sectorCycleClientCache.delete(sectorCycleKey(days, market));
-    return null;
-  }
-  return cached.data;
+  return sectorCycleCache.get(cacheKey(days, market));
 }
 
 async function fetchSectorCycle(days: number, market: MarketFilter) {
-  const cached = getCachedSectorCycle(days, market);
-  if (cached) return cached;
-  const key = sectorCycleKey(days, market);
-  const inflight = sectorCycleClientInflight.get(key);
-  if (inflight) return inflight;
-  const request = fetch(`/api/sector-cycle?days=${days}&market=${market}`).then(async (res) => {
-    if (!res.ok) throw new Error('Failed to fetch sector cycle');
-    const data = await res.json() as SectorCycleResponse;
-    sectorCycleClientCache.set(key, { data, fetchedAt: Date.now() });
-    return data;
-  }).finally(() => sectorCycleClientInflight.delete(key));
-  sectorCycleClientInflight.set(key, request);
-  return request;
+  return fetchCachedJson(sectorCycleCache, cacheKey(days, market), `/api/sector-cycle?days=${days}&market=${market}`, 'Failed to fetch sector cycle');
 }
 
 async function fetchStockInsight(request: InsightRequest) {
   const key = insightKey(request);
-  const cached = insightClientCache.get(key);
-  if (cached && Date.now() - cached.fetchedAt <= INSIGHT_CACHE_TTL_MS) return cached.insight;
-  const inflight = insightClientInflight.get(key);
-  if (inflight) return inflight;
   const params = new URLSearchParams({
     ticker: request.ticker,
     name: request.name,
@@ -226,14 +183,10 @@ async function fetchStockInsight(request: InsightRequest) {
     high52w: String(request.high52w || 0),
     low52w: String(request.low52w || 0),
   });
-  const promise = fetch(`/api/stock-insight?${params}`).then(async (res) => {
-    if (!res.ok) throw new Error('Failed to fetch stock insight');
-    const data = await res.json() as StockInsightResponse;
-    insightClientCache.set(key, { insight: data.insight, fetchedAt: Date.now() });
+  return insightCache.fetch(key, async () => {
+    const data = await fetchJson<StockInsightResponse>(`/api/stock-insight?${params}`, 'Failed to fetch stock insight');
     return data.insight;
-  }).finally(() => insightClientInflight.delete(key));
-  insightClientInflight.set(key, promise);
-  return promise;
+  });
 }
 
 export default function Home() {
@@ -258,19 +211,18 @@ export default function Home() {
       setLoading(true);
       setError(null);
       try {
-        const [a, b, c, d, e] = await Promise.all([
-          fetch('/api/market-indices'),
-          fetch('/api/korea-stocks?type=stock'),
-          fetch('/api/korea-stocks?type=etf'),
-          fetch('/api/us-stocks?type=stock'),
-          fetch('/api/us-stocks?type=etf'),
+        const [indices, koreaStocksData, koreaEtfsData, usStocksData, usEtfsData] = await Promise.all([
+          fetchJson<MarketIndex[]>('/api/market-indices', 'Failed'),
+          fetchJson<Stock[]>('/api/korea-stocks?type=stock', 'Failed'),
+          fetchJson<Stock[]>('/api/korea-stocks?type=etf', 'Failed'),
+          fetchJson<Stock[]>('/api/us-stocks?type=stock', 'Failed'),
+          fetchJson<Stock[]>('/api/us-stocks?type=etf', 'Failed'),
         ]);
-        if (![a, b, c, d, e].every((res) => res.ok)) throw new Error('Failed');
-        setMarketIndices(await a.json());
-        setKoreaStocks(await b.json());
-        setKoreaETFs(await c.json());
-        setUsStocks(await d.json());
-        setUsETFs(await e.json());
+        setMarketIndices(indices);
+        setKoreaStocks(koreaStocksData);
+        setKoreaETFs(koreaEtfsData);
+        setUsStocks(usStocksData);
+        setUsETFs(usEtfsData);
       } catch (fetchError) {
         console.error(fetchError);
         setError('데이터를 불러오는 중 오류가 발생했습니다.');
@@ -282,34 +234,21 @@ export default function Home() {
   }, []);
 
   useEffect(() => {
-    const warmup = () => { void fetchAnalystReports(30, 'all').catch(console.error); };
-    const idleWindow = window as Window & { requestIdleCallback?: (callback: IdleRequestCallback) => number; cancelIdleCallback?: (handle: number) => void };
-    if (idleWindow.requestIdleCallback) {
-      const id = idleWindow.requestIdleCallback(warmup);
-      return () => idleWindow.cancelIdleCallback?.(id);
-    }
-    const id = window.setTimeout(warmup, 800);
-    return () => window.clearTimeout(id);
+    return scheduleIdleTask(() => {
+      void fetchAnalystReports(30, 'all').catch(console.error);
+    }, 800);
   }, []);
 
   useEffect(() => {
-    const idleWindow = window as Window & { requestIdleCallback?: (callback: IdleRequestCallback) => number; cancelIdleCallback?: (handle: number) => void };
-    const warm = () => preWarmScreener();
-    if (idleWindow.requestIdleCallback) {
-      const id = idleWindow.requestIdleCallback(warm);
-      return () => idleWindow.cancelIdleCallback?.(id);
-    }
-    const id = window.setTimeout(warm, 1500);
-    return () => window.clearTimeout(id);
+    return scheduleIdleTask(preWarmScreener, 1500);
   }, []);
 
   useEffect(() => {
-    setWatchlist(readWatchlist());
+    setWatchlist(readWatchlistStorage<WatchlistItem>());
   }, []);
 
   useEffect(() => {
-    if (typeof window === 'undefined') return;
-    window.localStorage.setItem(WATCHLIST_STORAGE_KEY, JSON.stringify(watchlist));
+    saveWatchlistStorage(watchlist);
   }, [watchlist]);
 
   useEffect(() => {
@@ -499,10 +438,6 @@ export default function Home() {
   </>;
 }
 
-function LoadingState() {
-  return <div className="flex h-64 items-center justify-center"><div className="text-center"><div className="mx-auto h-12 w-12 animate-spin rounded-full border-b-2 border-c-accent" /><p className="mt-4 text-c-text-2">데이터를 불러오는 중입니다.</p></div></div>;
-}
-
 function HomeTab({ marketIndices, koreaStocks, koreaETFs, usStocks, usETFs, watchlistPreview, onOpenInsight, onOpenWatchlist }: { marketIndices: MarketIndex[]; koreaStocks: Stock[]; koreaETFs: Stock[]; usStocks: Stock[]; usETFs: Stock[]; watchlistPreview: ResolvedWatchlistItem[]; onOpenInsight: (request: InsightRequest) => void; onOpenWatchlist: () => void }) {
   return <div className="space-y-6">
     <section className="rounded-xl bg-c-surface p-6 shadow-sm"><h2 className="mb-4 text-lg font-semibold text-c-text">주요 시장 지수</h2><div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-5">{marketIndices.map((index) => <div key={index.ticker} className="rounded-lg bg-c-surface-2 p-4"><div className="text-sm text-c-text-2">{index.name}</div><div className="text-xl font-bold text-c-text">{index.value.toLocaleString()}</div><div className={`text-sm ${index.change >= 0 ? 'text-green-600' : 'text-red-600'}`}>{index.change >= 0 ? '+' : ''}{index.change.toFixed(2)} ({index.changePercent >= 0 ? '+' : ''}{index.changePercent.toFixed(2)}%)</div></div>)}</div></section>
@@ -527,20 +462,6 @@ function HomeTab({ marketIndices, koreaStocks, koreaETFs, usStocks, usETFs, watc
 
 function QuickList({ title, stocks, market }: { title: string; stocks: Stock[]; market: MarketType }) {
   return <section className="rounded-xl bg-c-surface p-6 shadow-sm"><h2 className="mb-4 text-lg font-semibold text-c-text">{title}</h2><div className="space-y-3">{stocks.map((stock) => <div key={stock.ticker} className="flex items-center justify-between rounded-lg bg-c-surface-2 p-3"><div><div className="text-sm font-medium text-c-text">{stock.name}</div><div className="text-xs text-c-text-3">{stock.ticker}</div></div><div className="text-right"><div className="text-sm font-medium text-c-text">{formatPrice(stock.currentPrice, market)}</div><div className={`text-xs ${stock.changePercent >= 0 ? 'text-green-600' : 'text-red-600'}`}>{stock.changePercent >= 0 ? '+' : ''}{stock.changePercent.toFixed(2)}%</div></div></div>)}</div></section>;
-}
-
-function PaginationControls({ totalCount, page, pageSize, totalPages, onPageChange }: { totalCount: number; page: number; pageSize: number; totalPages: number; onPageChange: (page: number) => void }) {
-  if (totalCount === 0) return null;
-  const start = (page - 1) * pageSize + 1;
-  const end = Math.min(page * pageSize, totalCount);
-  return <div className="flex flex-col gap-3 rounded-xl border border-c-border bg-c-surface-2 px-4 py-3 sm:flex-row sm:items-center sm:justify-between">
-    <div className="text-sm text-c-text-2">{'\uCD1D'} {totalCount}{'\uAC74 \uC911'} {start}-{end}{'\uAC74'}</div>
-    <div className="flex flex-wrap items-center gap-2 sm:justify-end">
-      <button onClick={() => onPageChange(Math.max(1, page - 1))} disabled={page === 1} className="rounded border border-c-border bg-c-surface px-3 py-1.5 text-sm text-c-text disabled:opacity-50 hover:bg-c-surface-2">{'\uC774\uC804'}</button>
-      <span className="text-sm text-c-text-2">{page} / {totalPages}</span>
-      <button onClick={() => onPageChange(Math.min(totalPages, page + 1))} disabled={page === totalPages} className="rounded border border-c-border bg-c-surface px-3 py-1.5 text-sm text-c-text disabled:opacity-50 hover:bg-c-surface-2">{'\uB2E4\uC74C'}</button>
-    </div>
-  </div>;
 }
 
 function WatchlistTab({ items, onOpenInsight, onRemove }: { items: ResolvedWatchlistItem[]; onOpenInsight: (request: InsightRequest) => void; onRemove: (ticker: string, market: MarketType) => void }) {

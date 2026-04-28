@@ -7,6 +7,7 @@ import { LoadingState } from '@/components/LoadingState';
 import { StatCard } from '@/components/StatCard';
 import { useToast } from '@/components/Toast';
 import { calculateAllIndicators, type TechnicalAnalysis } from '@/lib/technical-indicators';
+import { readWatchlistStorage, saveWatchlistStorage } from '@/lib/watchlist-storage';
 
 type MarketType = 'korea' | 'us';
 type PerformanceStatus = 'complete' | 'pending' | 'unavailable';
@@ -77,31 +78,12 @@ type WatchlistItem = {
   savedAt: string;
 };
 
-const WATCHLIST_STORAGE_KEY = 'globalpick.watchlist';
-
 const formatPrice = (price: number, market: MarketType) =>
   market === 'korea'
     ? `${Math.round(price || 0).toLocaleString()} KRW`
     : `$${(price || 0).toLocaleString(undefined, { maximumFractionDigits: 2 })}`;
 
 const formatPct = (value: number) => `${value >= 0 ? '+' : ''}${value.toFixed(1)}%`;
-
-function readWatchlist(): WatchlistItem[] {
-  if (typeof window === 'undefined') return [];
-  try {
-    const raw = window.localStorage.getItem(WATCHLIST_STORAGE_KEY);
-    if (!raw) return [];
-    const parsed = JSON.parse(raw);
-    return Array.isArray(parsed) ? (parsed as WatchlistItem[]) : [];
-  } catch {
-    return [];
-  }
-}
-
-function saveWatchlist(watchlist: WatchlistItem[]): void {
-  if (typeof window === 'undefined') return;
-  window.localStorage.setItem(WATCHLIST_STORAGE_KEY, JSON.stringify(watchlist));
-}
 
 function getSignalColor(signal?: string) {
   if (signal === 'up') return 'text-c-positive';
@@ -149,7 +131,7 @@ export default function StockDetailPage() {
   const tickerStr = (ticker as string)?.toUpperCase();
 
   useEffect(() => {
-    setWatchlist(readWatchlist());
+    setWatchlist(readWatchlistStorage<WatchlistItem>());
   }, []);
 
   useEffect(() => {
@@ -240,7 +222,7 @@ export default function StockDetailPage() {
       addToast('success', `${insight.name} 관심 종목에 추가됨`);
     }
     setWatchlist(newWatchlist);
-    saveWatchlist(newWatchlist);
+    saveWatchlistStorage(newWatchlist);
   };
 
   // Build chart data from related reports

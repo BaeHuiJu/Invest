@@ -9,6 +9,7 @@ import {
   type PortfolioAnalysis,
 } from '@/lib/portfolio-analyzer';
 import { SECTOR_COLORS } from '@/lib/sector-mapping';
+import { readWatchlistStorage } from '@/lib/watchlist-storage';
 
 type WatchlistItem = {
   ticker: string;
@@ -16,20 +17,6 @@ type WatchlistItem = {
   market: 'korea' | 'us';
   currentPrice?: number;
 };
-
-const WATCHLIST_STORAGE_KEY = 'globalpick.watchlist';
-
-function readWatchlist(): WatchlistItem[] {
-  if (typeof window === 'undefined') return [];
-  try {
-    const raw = window.localStorage.getItem(WATCHLIST_STORAGE_KEY);
-    if (!raw) return [];
-    const parsed = JSON.parse(raw);
-    return Array.isArray(parsed) ? parsed : [];
-  } catch {
-    return [];
-  }
-}
 
 interface PortfolioTabProps {
   onNavigateToAIPicks?: () => void;
@@ -40,7 +27,7 @@ export function PortfolioTab({ onNavigateToAIPicks }: PortfolioTabProps = {}) {
   const [analysis, setAnalysis] = useState<PortfolioAnalysis | null>(null);
 
   useEffect(() => {
-    const items = readWatchlist();
+    const items = readWatchlistStorage<WatchlistItem>();
     setWatchlist(items);
 
     const portfolioItems: PortfolioItem[] = items.map((item) => ({

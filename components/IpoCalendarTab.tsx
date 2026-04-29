@@ -1,6 +1,8 @@
 import { useEffect, useMemo, useState } from 'react';
-import { LoadingState } from './LoadingState';
-import type { IpoDeal, IpoCalendarResponse, IpoStatus } from '@/pages/api/ipo-calendar';
+
+import { IpoAllocationCalculatorModal } from '@/components/IpoAllocationCalculatorModal';
+import { LoadingState } from '@/components/LoadingState';
+import type { IpoDeal, IpoCalendarResponse, IpoStatus } from '@/lib/ipo-types';
 
 const SWISS_FONT = '"Helvetica Neue", Helvetica, Arial, sans-serif';
 
@@ -73,14 +75,22 @@ function formatPrice(deal: IpoDeal): string {
   return '-';
 }
 
-function getDday(deal: IpoDeal): string | null {
+function getCountdownMeta(deal: IpoDeal): { label: string; value: string } | null {
   const today = new Date();
   today.setHours(0, 0, 0, 0);
 
   let targetIso: string | null = null;
-  if (deal.status === '청약예정') targetIso = deal.subscriptionStart;
-  else if (deal.status === '청약중') targetIso = deal.subscriptionEnd;
-  else if (deal.status === '상장예정') targetIso = deal.listingDate;
+  let label = '';
+  if (deal.status === '청약예정') {
+    targetIso = deal.subscriptionStart;
+    label = '청약 시작까지';
+  } else if (deal.status === '청약중') {
+    targetIso = deal.subscriptionEnd;
+    label = '청약 마감까지';
+  } else if (deal.status === '상장예정') {
+    targetIso = deal.listingDate;
+    label = '상장까지';
+  }
 
   if (!targetIso) return null;
 
@@ -88,9 +98,32 @@ function getDday(deal: IpoDeal): string | null {
   target.setHours(0, 0, 0, 0);
   const diff = Math.ceil((target.getTime() - today.getTime()) / (1000 * 60 * 60 * 24));
 
-  if (diff === 0) return 'D-Day';
-  if (diff > 0) return `D-${diff}`;
+  if (diff === 0) return { label, value: 'D-Day' };
+  if (diff > 0) return { label, value: `D-${diff}` };
   return null;
+}
+
+function CountdownBadge({
+  deal,
+  align = 'right',
+}: {
+  deal: IpoDeal;
+  align?: 'right' | 'left';
+}) {
+  const countdown = getCountdownMeta(deal);
+
+  if (!countdown) return null;
+
+  return (
+    <div
+      className={`inline-flex min-w-[104px] flex-col rounded-[18px] border border-[#D6E4FF] bg-[#F4F8FF] px-3 py-2 ${
+        align === 'right' ? 'items-end text-right' : 'items-start text-left'
+      }`}
+    >
+      <span className="text-[11px] font-medium tracking-[-0.01em] text-[#6B7280]">{countdown.label}</span>
+      <span className="mt-1 text-base font-semibold tracking-[-0.04em] text-[#0050FF]">{countdown.value}</span>
+    </div>
+  );
 }
 
 function buildEventMap(ipos: IpoDeal[]): Map<string, CalEvent[]> {
@@ -136,6 +169,18 @@ function formatUpdatedAt(iso: string): string {
   });
 }
 
+function calcStatusText(deal: IpoDeal): string {
+  if (deal.calculator.status === 'final_ready') return '마감 후 자동';
+  if (deal.calculator.status === 'pre_ready') return '사전 자동';
+  return '보강 필요';
+}
+
+function calcStatusClass(deal: IpoDeal): string {
+  if (deal.calculator.status === 'final_ready') return 'border-[#D1FAE5] bg-[#ECFDF5] text-[#047857]';
+  if (deal.calculator.status === 'pre_ready') return 'border-[#DBEAFE] bg-[#EFF6FF] text-[#1D4ED8]';
+  return 'border-[#FDE68A] bg-[#FFFBEB] text-[#B45309]';
+}
+
 function StatusBadge({ status }: { status: IpoStatus }) {
   return (
     <span
@@ -173,7 +218,15 @@ function SummaryMetric({
   );
 }
 
-function DetailCell({ label, value, tone = 'default' }: { label: string; value: string; tone?: 'default' | 'accent' | 'muted' }) {
+function DetailCell({
+  label,
+  value,
+  tone = 'default',
+}: {
+  label: string;
+  value: string;
+  tone?: 'default' | 'accent' | 'muted';
+}) {
   return (
     <div className="bg-[#F7F7F8] p-3">
       <div className="text-[11px] text-[#9CA3AF]">{label}</div>
@@ -354,9 +407,13 @@ function IpoCalendarGrid({
   );
 }
 
-function IpoCard({ deal }: { deal: IpoDeal }) {
-  const dday = getDday(deal);
-
+function IpoCard({
+  deal,
+  onOpenCalculator,
+}: {
+  deal: IpoDeal;
+  onOpenCalculator: (deal: IpoDeal) => void;
+}) {
   return (
     <article className="border border-[#D9DDE3] bg-white p-4">
       <div className="flex items-start justify-between gap-4">
@@ -370,8 +427,21 @@ function IpoCard({ deal }: { deal: IpoDeal }) {
         </div>
         <div className="flex flex-col items-end gap-2">
           <StatusBadge status={deal.status} />
-          {dday && <span className="text-sm font-semibold text-[#002FA7]">{dday}</span>}
+          <CountdownBadge deal={deal} />
         </div>
+      </div>
+
+      <div className="mt-3 flex items-center justify-between gap-3">
+        <span className={`inline-flex rounded-full border px-3 py-1 text-[11px] font-medium ${calcStatusClass(deal)}`}>
+          {calcStatusText(deal)}
+        </span>
+        <button
+          type="button"
+          onClick={() => onOpenCalculator(deal)}
+          className="rounded-full border border-[#002FA7] px-3 py-1.5 text-xs font-medium text-[#002FA7] transition hover:bg-[#EDF3FF]"
+        >
+          배정 계산기
+        </button>
       </div>
 
       <div className="mt-4 grid grid-cols-2 gap-px bg-[#D9DDE3]">
@@ -389,6 +459,7 @@ export function IpoCalendarTab() {
   const [data, setData] = useState<IpoCalendarResponse | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+  const [selectedDeal, setSelectedDeal] = useState<IpoDeal | null>(null);
   const [calMonth, setCalMonth] = useState<{ year: number; month: number }>(() => {
     const now = new Date();
     return { year: now.getFullYear(), month: now.getMonth() };
@@ -433,131 +504,143 @@ export function IpoCalendarTab() {
   const filtered = filter === 'all' ? ipos : ipos.filter((deal) => deal.status === filter);
 
   return (
-    <div
-      className="space-y-6"
-      style={{ fontFamily: SWISS_FONT, fontVariantNumeric: 'tabular-nums' }}
-    >
-      <div className="grid gap-px border border-[#D9DDE3] bg-[#D9DDE3] lg:grid-cols-[minmax(0,1.1fr)_minmax(0,0.9fr)]">
-        <div className="bg-[#F7F7F8] px-5 py-6 sm:px-6 sm:py-7">
-          <div className="text-[11px] tracking-[0.18em] text-[#6B7280]">업데이트 {formatUpdatedAt(fetchedAt)}</div>
-          <h2 className="mt-3 text-[2rem] font-semibold leading-none tracking-[-0.06em] text-[#111827] sm:text-[2.5rem]">
-            공모주 일정
-          </h2>
-          <p className="mt-4 max-w-xl text-sm leading-6 text-[#6B7280]">
-            청약 시작일, 마감일, 환불일, 상장일을 한 화면에서 보고 상태별로 바로 걸러볼 수 있습니다.
-          </p>
+    <>
+      <div
+        className="space-y-6"
+        style={{ fontFamily: SWISS_FONT, fontVariantNumeric: 'tabular-nums' }}
+      >
+        <div className="grid gap-px border border-[#D9DDE3] bg-[#D9DDE3] lg:grid-cols-[minmax(0,1.1fr)_minmax(0,0.9fr)]">
+          <div className="bg-[#F7F7F8] px-5 py-6 sm:px-6 sm:py-7">
+            <div className="text-[11px] tracking-[0.18em] text-[#6B7280]">업데이트 {formatUpdatedAt(fetchedAt)}</div>
+            <h2 className="mt-3 text-[2rem] font-semibold leading-none tracking-[-0.06em] text-[#111827] sm:text-[2.5rem]">
+              공모주 일정
+            </h2>
+            <p className="mt-4 max-w-xl text-sm leading-6 text-[#6B7280]">
+              청약 시작일, 마감일, 환불일, 상장일을 한 화면에서 보고 상태별로 바로 걸러볼 수 있습니다.
+            </p>
+          </div>
+          <div className="grid gap-px bg-[#D9DDE3] sm:grid-cols-2">
+            <SummaryMetric index="01" label="청약예정" value={`${counts.청약예정}건`} accent />
+            <SummaryMetric index="02" label="청약중" value={`${counts.청약중}건`} accent />
+            <SummaryMetric index="03" label="상장예정" value={`${counts.상장예정}건`} />
+            <SummaryMetric index="04" label="전체" value={`${ipos.length}건`} />
+          </div>
         </div>
-        <div className="grid gap-px bg-[#D9DDE3] sm:grid-cols-2">
-          <SummaryMetric index="01" label="청약예정" value={`${counts.청약예정}건`} accent />
-          <SummaryMetric index="02" label="청약중" value={`${counts.청약중}건`} accent />
-          <SummaryMetric index="03" label="상장예정" value={`${counts.상장예정}건`} />
-          <SummaryMetric index="04" label="전체" value={`${ipos.length}건`} />
+
+        <div className="flex flex-wrap gap-2">
+          {FILTER_OPTIONS.map(([id, label]) => {
+            const isActive = filter === id;
+
+            return (
+              <button
+                key={id}
+                type="button"
+                onClick={() => setFilter(id)}
+                className={`rounded-full border px-4 py-2 text-sm font-medium transition ${
+                  isActive
+                    ? 'border-[#002FA7] bg-[#002FA7] text-white'
+                    : 'border-[#D9DDE3] bg-white text-[#6B7280] hover:border-[#002FA7] hover:text-[#002FA7]'
+                }`}
+              >
+                <span>{label}</span>
+                {id !== 'all' && <span className="ml-1.5 opacity-80">{counts[id as IpoStatus]}</span>}
+              </button>
+            );
+          })}
         </div>
+
+        <IpoCalendarGrid
+          ipos={ipos}
+          calMonth={calMonth}
+          onPrev={() =>
+            setCalMonth(({ year, month }) =>
+              month === 0 ? { year: year - 1, month: 11 } : { year, month: month - 1 },
+            )
+          }
+          onNext={() =>
+            setCalMonth(({ year, month }) =>
+              month === 11 ? { year: year + 1, month: 0 } : { year, month: month + 1 },
+            )
+          }
+          onToday={() => {
+            const now = new Date();
+            setCalMonth({ year: now.getFullYear(), month: now.getMonth() });
+          }}
+        />
+
+        {filtered.length === 0 && (
+          <div className="border border-[#D9DDE3] bg-white px-4 py-12 text-center text-sm text-[#6B7280]">
+            해당 조건의 공모주가 없습니다.
+          </div>
+        )}
+
+        {filtered.length > 0 && (
+          <>
+            <div className="grid gap-3 sm:hidden">
+              {filtered.map((deal) => (
+                <IpoCard key={deal.id} deal={deal} onOpenCalculator={setSelectedDeal} />
+              ))}
+            </div>
+
+            <div className="hidden overflow-x-auto border border-[#D9DDE3] bg-white sm:block">
+              <table className="w-full min-w-[980px] text-sm">
+                <thead>
+                  <tr className="border-b border-[#D9DDE3] bg-[#F7F7F8] text-left text-[11px] tracking-[0.18em] text-[#6B7280]">
+                    <th className="px-4 py-4 font-medium">상태</th>
+                    <th className="px-4 py-4 font-medium">종목명</th>
+                    <th className="px-4 py-4 font-medium">청약기간</th>
+                    <th className="px-4 py-4 font-medium">공모가</th>
+                    <th className="px-4 py-4 font-medium">주간사</th>
+                    <th className="px-4 py-4 font-medium">계산기</th>
+                    <th className="px-4 py-4 text-right font-medium">남은 일정</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {filtered.map((deal) => {
+                    return (
+                      <tr key={deal.id} className="border-b border-[#E5E7EB] last:border-b-0 hover:bg-[#F7F7F8]">
+                        <td className="px-4 py-4">
+                          <StatusBadge status={deal.status} />
+                        </td>
+                        <td className="px-4 py-4">
+                          <div className="font-semibold text-[#111827]">{deal.name}</div>
+                        </td>
+                        <td className="px-4 py-4 text-[#6B7280]">
+                          {formatDateFull(deal.subscriptionStart)} - {formatDate(deal.subscriptionEnd)}
+                        </td>
+                        <td className="px-4 py-4 text-[#111827]">{formatPrice(deal)}</td>
+                        <td className="max-w-[220px] truncate px-4 py-4 text-[#6B7280]">
+                          {deal.underwriter || '-'}
+                        </td>
+                        <td className="px-4 py-4">
+                          <button
+                            type="button"
+                            onClick={() => setSelectedDeal(deal)}
+                            className={`inline-flex rounded-full border px-3 py-1.5 text-xs font-medium ${calcStatusClass(deal)}`}
+                          >
+                            {calcStatusText(deal)}
+                          </button>
+                        </td>
+                        <td className="px-4 py-4 text-right">
+                          {getCountdownMeta(deal) ? (
+                            <CountdownBadge deal={deal} />
+                          ) : deal.competitionRatio ? (
+                            <span className="text-[#111827]">{deal.competitionRatio}</span>
+                          ) : (
+                            <span className="text-[#9CA3AF]">-</span>
+                          )}
+                        </td>
+                      </tr>
+                    );
+                  })}
+                </tbody>
+              </table>
+            </div>
+          </>
+        )}
       </div>
 
-      <div className="flex flex-wrap gap-2">
-        {FILTER_OPTIONS.map(([id, label]) => {
-          const isActive = filter === id;
-
-          return (
-            <button
-              key={id}
-              type="button"
-              onClick={() => setFilter(id)}
-              className={`rounded-full border px-4 py-2 text-sm font-medium transition ${
-                isActive
-                  ? 'border-[#002FA7] bg-[#002FA7] text-white'
-                  : 'border-[#D9DDE3] bg-white text-[#6B7280] hover:border-[#002FA7] hover:text-[#002FA7]'
-              }`}
-            >
-              <span>{label}</span>
-              {id !== 'all' && <span className="ml-1.5 opacity-80">{counts[id as IpoStatus]}</span>}
-            </button>
-          );
-        })}
-      </div>
-
-      <IpoCalendarGrid
-        ipos={ipos}
-        calMonth={calMonth}
-        onPrev={() =>
-          setCalMonth(({ year, month }) =>
-            month === 0 ? { year: year - 1, month: 11 } : { year, month: month - 1 },
-          )
-        }
-        onNext={() =>
-          setCalMonth(({ year, month }) =>
-            month === 11 ? { year: year + 1, month: 0 } : { year, month: month + 1 },
-          )
-        }
-        onToday={() => {
-          const now = new Date();
-          setCalMonth({ year: now.getFullYear(), month: now.getMonth() });
-        }}
-      />
-
-      {filtered.length === 0 && (
-        <div className="border border-[#D9DDE3] bg-white px-4 py-12 text-center text-sm text-[#6B7280]">
-          해당 조건의 공모주가 없습니다.
-        </div>
-      )}
-
-      {filtered.length > 0 && (
-        <>
-          <div className="grid gap-3 sm:hidden">
-            {filtered.map((deal) => (
-              <IpoCard key={deal.id} deal={deal} />
-            ))}
-          </div>
-
-          <div className="hidden overflow-x-auto border border-[#D9DDE3] bg-white sm:block">
-            <table className="w-full min-w-[760px] text-sm">
-              <thead>
-                <tr className="border-b border-[#D9DDE3] bg-[#F7F7F8] text-left text-[11px] tracking-[0.18em] text-[#6B7280]">
-                  <th className="px-4 py-4 font-medium">상태</th>
-                  <th className="px-4 py-4 font-medium">종목명</th>
-                  <th className="px-4 py-4 font-medium">청약기간</th>
-                  <th className="px-4 py-4 font-medium">공모가</th>
-                  <th className="px-4 py-4 font-medium">주간사</th>
-                  <th className="px-4 py-4 text-right font-medium">D-DAY</th>
-                </tr>
-              </thead>
-              <tbody>
-                {filtered.map((deal) => {
-                  const dday = getDday(deal);
-
-                  return (
-                    <tr key={deal.id} className="border-b border-[#E5E7EB] last:border-b-0 hover:bg-[#F7F7F8]">
-                      <td className="px-4 py-4">
-                        <StatusBadge status={deal.status} />
-                      </td>
-                      <td className="px-4 py-4">
-                        <div className="font-semibold text-[#111827]">{deal.name}</div>
-                      </td>
-                      <td className="px-4 py-4 text-[#6B7280]">
-                        {formatDateFull(deal.subscriptionStart)} - {formatDate(deal.subscriptionEnd)}
-                      </td>
-                      <td className="px-4 py-4 text-[#111827]">{formatPrice(deal)}</td>
-                      <td className="max-w-[220px] truncate px-4 py-4 text-[#6B7280]">
-                        {deal.underwriter || '-'}
-                      </td>
-                      <td className="px-4 py-4 text-right">
-                        {dday ? (
-                          <span className="font-semibold text-[#002FA7]">{dday}</span>
-                        ) : deal.competitionRatio ? (
-                          <span className="text-[#111827]">{deal.competitionRatio}</span>
-                        ) : (
-                          <span className="text-[#9CA3AF]">-</span>
-                        )}
-                      </td>
-                    </tr>
-                  );
-                })}
-              </tbody>
-            </table>
-          </div>
-        </>
-      )}
-    </div>
+      <IpoAllocationCalculatorModal deal={selectedDeal} onClose={() => setSelectedDeal(null)} />
+    </>
   );
 }

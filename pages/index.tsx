@@ -1,4 +1,4 @@
-﻿import { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useDarkMode } from '@/lib/useDarkMode';
 import Head from 'next/head';
 import Link from 'next/link';
@@ -21,11 +21,29 @@ import { GroqDailyPicksTab } from '@/components/GroqDailyPicksTab';
 import { KoreaEtfTradingTab } from '@/components/KoreaEtfTradingTab';
 import { IpoCalendarTab } from '@/components/IpoCalendarTab';
 import { ThemeSelector } from '@/components/ThemeSelector';
+import { DashboardCustomizationModal } from '@/components/DashboardCustomizationModal';
 import { readWatchlistStorage, saveWatchlistStorage } from '@/lib/watchlist-storage';
+import {
+  applyDashboardPreset,
+  createDefaultDashboardConfig,
+  DASHBOARD_HOME_SECTION_DEFINITIONS,
+  DASHBOARD_TAB_DEFINITIONS,
+  moveDashboardItem,
+  readDashboardConfigStorage,
+  saveDashboardConfigStorage,
+  setDashboardHomeSectionVisibility,
+  setDashboardTabVisibility,
+  sortDashboardItems,
+  updateDashboardConfig,
+  type DashboardConfig,
+  type DashboardHomeSectionId,
+  type DashboardTabId,
+  type DashboardPresetId,
+} from '@/lib/dashboard-config';
 
 type MarketType = 'korea' | 'us';
 type MarketFilter = 'all' | MarketType;
-type TabType = 'home' | 'watchlist' | 'ai-picks' | 'korea-stock' | 'korea-etf' | 'korea-etf-trading' | 'us-stock' | 'us-etf' | 'analyst' | 'consensus' | 'consensus-changes' | 'scorecard' | 'sector-cycle' | 'backtest' | 'portfolio' | 'earnings' | 'screener' | 'groq-picks' | 'ipo';
+type TabType = DashboardTabId;
 type WatchlistCategory = 'stock' | 'etf' | 'analyst';
 type PerformanceStatus = 'complete' | 'pending' | 'unavailable';
 type SectorCyclePhase = 'recovery' | 'expansion' | 'slowdown' | 'contraction';
@@ -50,6 +68,7 @@ type ScorecardPeriodKey = 'week1' | 'month1' | 'month3';
 type InsightRequest = { ticker: string; name: string; market: MarketType; category: WatchlistCategory; currentPrice?: number; changePercent?: number; high52w?: number; low52w?: number };
 type WatchlistItem = { ticker: string; name: string; market: MarketType; category: WatchlistCategory; savedAt: string; currentPrice?: number; changePercent?: number; high52w?: number; low52w?: number };
 type ResolvedWatchlistItem = WatchlistItem & { currentPrice?: number; change?: number; changePercent?: number; volume?: number; high52w?: number; low52w?: number };
+type HomeSectionRenderItem = { id: DashboardHomeSectionId; className: string; content: JSX.Element };
 
 const CLIENT_CACHE_TTL_MS = process.env.NODE_ENV === 'development' ? 0 : 5 * 60 * 1000;
 const PAGE_SIZE_OPTIONS = [5, 10, 20, 30, 40, 50];
@@ -102,6 +121,8 @@ const formatScore = (value: number) => `${Math.round(value)}점`;
 const cacheKey = (days: number, market: MarketFilter) => `${days}:${market}`;
 const insightKey = (req: InsightRequest) => `${req.market}:${req.ticker}`;
 const watchlistKey = (item: Pick<WatchlistItem, 'market' | 'ticker'>) => `${item.market}:${item.ticker}`;
+const tabDefinitionMap = new Map(DASHBOARD_TAB_DEFINITIONS.map((definition) => [definition.id, definition]));
+const homeSectionDefinitionMap = new Map(DASHBOARD_HOME_SECTION_DEFINITIONS.map((definition) => [definition.id, definition]));
 
 async function fetchJson<T>(url: string, errorMessage: string): Promise<T> {
   const res = await fetch(url);
@@ -203,6 +224,9 @@ export default function Home() {
   const [notificationSettingsOpen, setNotificationSettingsOpen] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
   const [glossaryOpen, setGlossaryOpen] = useState(false);
+  const [dashboardCustomizationOpen, setDashboardCustomizationOpen] = useState(false);
+  const [dashboardConfig, setDashboardConfig] = useState<DashboardConfig>(() => createDefaultDashboardConfig());
+  const [dashboardConfigReady, setDashboardConfigReady] = useState(false);
   const { addToast } = useToast();
   useDarkMode(); // applies theme class to document root
 
@@ -252,6 +276,16 @@ export default function Home() {
   }, [watchlist]);
 
   useEffect(() => {
+    setDashboardConfig(readDashboardConfigStorage());
+    setDashboardConfigReady(true);
+  }, []);
+
+  useEffect(() => {
+    if (!dashboardConfigReady) return;
+    saveDashboardConfigStorage(dashboardConfig);
+  }, [dashboardConfig, dashboardConfigReady]);
+
+  useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
         e.preventDefault();
@@ -291,6 +325,59 @@ export default function Home() {
     if (item) {
       addToast('info', `${item.name} 관심 종목에서 삭제됨`);
     }
+  };
+
+  const visibleTabs = sortDashboardItems(dashboardConfig.tabs)
+    .filter((tab) => tab.visible)
+    .map((tab) => ({
+      id: tab.id,
+      label: tabDefinitionMap.get(tab.id)?.label ?? tab.id,
+    }));
+
+  const activeTabVisible = visibleTabs.some((tab) => tab.id === activeTab);
+
+  useEffect(() => {
+    if (!activeTabVisible) {
+      setActiveTab('home');
+    }
+  }, [activeTab, activeTabVisible]);
+
+  const updateDashboardTabs = (
+    tabs: DashboardConfig['tabs'],
+    appliedPreset: DashboardConfig['appliedPreset'] = 'custom',
+  ) => {
+    setDashboardConfig((current) => updateDashboardConfig(current, { tabs, appliedPreset }));
+  };
+
+  const updateDashboardHomeSections = (
+    homeSections: DashboardConfig['homeSections'],
+    appliedPreset: DashboardConfig['appliedPreset'] = 'custom',
+  ) => {
+    setDashboardConfig((current) => updateDashboardConfig(current, { homeSections, appliedPreset }));
+  };
+
+  const handleMoveTab = (activeId: DashboardTabId, overId: DashboardTabId) => {
+    updateDashboardTabs(moveDashboardItem(dashboardConfig.tabs, activeId, overId));
+  };
+
+  const handleMoveHomeSection = (activeId: DashboardHomeSectionId, overId: DashboardHomeSectionId) => {
+    updateDashboardHomeSections(moveDashboardItem(dashboardConfig.homeSections, activeId, overId));
+  };
+
+  const handleToggleTabVisibility = (id: DashboardTabId, visible: boolean) => {
+    updateDashboardTabs(setDashboardTabVisibility(dashboardConfig.tabs, id, visible));
+  };
+
+  const handleToggleHomeSectionVisibility = (id: DashboardHomeSectionId, visible: boolean) => {
+    updateDashboardHomeSections(setDashboardHomeSectionVisibility(dashboardConfig.homeSections, id, visible));
+  };
+
+  const handleApplyPreset = (presetId: DashboardPresetId) => {
+    setDashboardConfig((current) => applyDashboardPreset(current, presetId));
+  };
+
+  const handleResetDashboardConfig = () => {
+    setDashboardConfig(createDefaultDashboardConfig());
   };
 
   return <>
@@ -339,52 +426,41 @@ export default function Home() {
                 </svg>
                 <span className="hidden sm:inline">용어</span>
               </button>
+              <button
+                type="button"
+                onClick={() => setDashboardCustomizationOpen(true)}
+                className="flex items-center gap-1.5 rounded-lg border border-c-border bg-c-surface px-2.5 py-2 text-sm text-c-text-2 hover:bg-c-surface-2 sm:px-3"
+                aria-label="대시보드 편집"
+              >
+                <svg className="h-4 w-4 sm:h-5 sm:w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6v12m6-6H6" />
+                </svg>
+                <span className="hidden sm:inline">편집</span>
+              </button>
               <ThemeSelector />
             </div>
           </div>
         </div>
       </header>
       <nav className="border-b border-c-border bg-c-surface">
-        <div className="mx-auto max-w-7xl">
-          <div className="flex w-full overflow-x-scroll px-2 sm:px-4" style={{ WebkitOverflowScrolling: 'touch' } as React.CSSProperties}>
-            {(
-              [
-                ['home', '홈'],
-                ['watchlist', '관심'],
-                ['ai-picks', 'AI추천'],
-                ['groq-picks', 'Groq 유망주'],
-                ['korea-etf-trading', '단기ETF'],
-                ['analyst', '애널리스트'],
-                ['consensus', '공통추천'],
-                ['consensus-changes', '컨센서스변화'],
-                ['screener', '밸류스크리너'],
-                ['backtest', '백테스팅'],
-                ['portfolio', '포트폴리오'],
-                ['sector-cycle', '업종사이클'],
-                ['scorecard', '성과분석'],
-                ['korea-stock', '국내주식'],
-                ['korea-etf', '국내ETF'],
-                ['us-stock', '해외주식'],
-                ['us-etf', '해외ETF'],
-                ['earnings', '실적캘린더'],
-                ['ipo', '공모주'],
-              ] as [TabType, string][]
-            ).map(([id, label]) => (
-              <button
-                key={id}
-                onClick={() => setActiveTab(id)}
-                className={`flex-shrink-0 whitespace-nowrap px-3 py-3 text-xs font-medium transition-colors last:mr-6 sm:px-4 sm:text-sm sm:last:mr-10 ${
-                  activeTab === id
-                    ? 'border-b-2 border-c-accent text-c-accent'
-                    : 'text-c-text-2 hover:text-c-text'
-                }`}
-              >
-                {label}
-              </button>
-            ))}
-          </div>
-        </div>
-      </nav>
+  <div className="mx-auto max-w-7xl">
+    <div className="flex w-full overflow-x-scroll px-2 sm:px-4" style={{ WebkitOverflowScrolling: 'touch' } as React.CSSProperties}>
+      {visibleTabs.map(({ id, label }) => (
+        <button
+          key={id}
+          onClick={() => setActiveTab(id)}
+          className={`flex-shrink-0 whitespace-nowrap px-3 py-3 text-xs font-medium transition-colors last:mr-6 sm:px-4 sm:text-sm sm:last:mr-10 ${
+            activeTab === id
+              ? 'border-b-2 border-c-accent text-c-accent'
+              : 'text-c-text-2 hover:text-c-text'
+          }`}
+        >
+          {label}
+        </button>
+      ))}
+    </div>
+  </div>
+</nav>
       <main className="mx-auto max-w-7xl px-3 py-4 sm:px-4 sm:py-6">
         {activeTab === 'ai-picks'
           ? <AIPicksTab onOpenInsight={setInsightTarget} isSaved={isSaved} onToggleWatchlist={toggleWatchlist} />
@@ -417,7 +493,7 @@ export default function Home() {
             : error
               ? <div className="rounded-lg bg-red-50 p-4 text-red-600">{error}</div>
               : <>
-                {activeTab === 'home' && <HomeTab marketIndices={marketIndices} koreaStocks={koreaStocks} koreaETFs={koreaETFs} usStocks={usStocks} usETFs={usETFs} watchlistPreview={watchlistPreview} onOpenInsight={setInsightTarget} onOpenWatchlist={() => setActiveTab('watchlist')} />}
+                {activeTab === 'home' && <HomeTab marketIndices={marketIndices} koreaStocks={koreaStocks} koreaETFs={koreaETFs} usStocks={usStocks} usETFs={usETFs} watchlistPreview={watchlistPreview} dashboardConfig={dashboardConfig} onOpenInsight={setInsightTarget} onOpenWatchlist={() => setActiveTab('watchlist')} onOpenCustomize={() => setDashboardCustomizationOpen(true)} />}
                 {activeTab === 'watchlist' && <WatchlistTab items={resolvedWatchlist} onOpenInsight={setInsightTarget} onRemove={removeWatchlist} />}
                 {activeTab === 'korea-stock' && <StockList stocks={koreaStocks} title="국내 주식" market="korea" category="stock" onOpenInsight={setInsightTarget} isSaved={isSaved} onToggleWatchlist={toggleWatchlist} />}
                 {activeTab === 'korea-etf' && <StockList stocks={koreaETFs} title="국내 ETF" market="korea" category="etf" onOpenInsight={setInsightTarget} isSaved={isSaved} onToggleWatchlist={toggleWatchlist} />}
@@ -435,29 +511,181 @@ export default function Home() {
     <NotificationSettings isOpen={notificationSettingsOpen} onClose={() => setNotificationSettingsOpen(false)} />
     <GlossaryModal isOpen={glossaryOpen} onClose={() => setGlossaryOpen(false)} />
     <GlobalSearch isOpen={searchOpen} onClose={() => setSearchOpen(false)} />
+    <DashboardCustomizationModal
+      isOpen={dashboardCustomizationOpen}
+      config={dashboardConfig}
+      onClose={() => setDashboardCustomizationOpen(false)}
+      onMoveTab={handleMoveTab}
+      onMoveHomeSection={handleMoveHomeSection}
+      onToggleTabVisibility={handleToggleTabVisibility}
+      onToggleHomeSectionVisibility={handleToggleHomeSectionVisibility}
+      onApplyPreset={handleApplyPreset}
+      onReset={handleResetDashboardConfig}
+    />
   </>;
 }
 
-function HomeTab({ marketIndices, koreaStocks, koreaETFs, usStocks, usETFs, watchlistPreview, onOpenInsight, onOpenWatchlist }: { marketIndices: MarketIndex[]; koreaStocks: Stock[]; koreaETFs: Stock[]; usStocks: Stock[]; usETFs: Stock[]; watchlistPreview: ResolvedWatchlistItem[]; onOpenInsight: (request: InsightRequest) => void; onOpenWatchlist: () => void }) {
-  return <div className="space-y-6">
-    <section className="rounded-xl bg-c-surface p-6 shadow-sm"><h2 className="mb-4 text-lg font-semibold text-c-text">주요 시장 지수</h2><div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-5">{marketIndices.map((index) => <div key={index.ticker} className="rounded-lg bg-c-surface-2 p-4"><div className="text-sm text-c-text-2">{index.name}</div><div className="text-xl font-bold text-c-text">{index.value.toLocaleString()}</div><div className={`text-sm ${index.change >= 0 ? 'text-green-600' : 'text-red-600'}`}>{index.change >= 0 ? '+' : ''}{index.change.toFixed(2)} ({index.changePercent >= 0 ? '+' : ''}{index.changePercent.toFixed(2)}%)</div></div>)}</div></section>
-    <section className="rounded-xl bg-c-surface p-6 shadow-sm">
-      <div className="mb-4 flex items-center justify-between gap-4">
-        <div>
-          <h2 className="text-lg font-semibold text-c-text">관심 종목</h2>
-          <p className="text-sm text-c-text-2">저장한 종목 5개를 빠르게 확인할 수 있습니다.</p>
+function HomeTab({
+  marketIndices,
+  koreaStocks,
+  koreaETFs,
+  usStocks,
+  usETFs,
+  watchlistPreview,
+  dashboardConfig,
+  onOpenInsight,
+  onOpenWatchlist,
+  onOpenCustomize,
+}: {
+  marketIndices: MarketIndex[];
+  koreaStocks: Stock[];
+  koreaETFs: Stock[];
+  usStocks: Stock[];
+  usETFs: Stock[];
+  watchlistPreview: ResolvedWatchlistItem[];
+  dashboardConfig: DashboardConfig;
+  onOpenInsight: (request: InsightRequest) => void;
+  onOpenWatchlist: () => void;
+  onOpenCustomize: () => void;
+}) {
+  const sectionsById: Record<DashboardHomeSectionId, HomeSectionRenderItem> = {
+    'market-indices': {
+      id: 'market-indices',
+      className: 'lg:col-span-4',
+      content: (
+        <section className="rounded-xl bg-c-surface p-6 shadow-sm">
+          <h2 className="mb-4 text-lg font-semibold text-c-text">주요 시장 지수</h2>
+          <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-5">
+            {marketIndices.map((index) => (
+              <div key={index.ticker} className="rounded-lg bg-c-surface-2 p-4">
+                <div className="text-sm text-c-text-2">{index.name}</div>
+                <div className="text-xl font-bold text-c-text">{index.value.toLocaleString()}</div>
+                <div className={`text-sm ${index.change >= 0 ? 'text-green-600' : 'text-red-600'}`}>
+                  {index.change >= 0 ? '+' : ''}
+                  {index.change.toFixed(2)} ({index.changePercent >= 0 ? '+' : ''}
+                  {index.changePercent.toFixed(2)}%)
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+      ),
+    },
+    'watchlist-preview': {
+      id: 'watchlist-preview',
+      className: 'lg:col-span-4',
+      content: (
+        <section className="rounded-xl bg-c-surface p-6 shadow-sm">
+          <div className="mb-4 flex items-center justify-between gap-4">
+            <div>
+              <h2 className="text-lg font-semibold text-c-text">관심 종목</h2>
+              <p className="text-sm text-c-text-2">저장한 종목 5개를 빠르게 확인할 수 있습니다.</p>
+            </div>
+            <button type="button" onClick={onOpenWatchlist} className="rounded-lg border border-c-border px-3 py-2 text-sm text-c-text-2 hover:bg-c-surface-2">
+              전체 보기
+            </button>
+          </div>
+          {watchlistPreview.length === 0 ? (
+            <div className="rounded-lg bg-c-surface-2 p-4 text-sm text-c-text-3">아직 저장한 관심 종목이 없습니다.</div>
+          ) : (
+            <div className="grid gap-3 md:grid-cols-2 xl:grid-cols-5">
+              {watchlistPreview.map((item) => (
+                <button
+                  key={`${item.market}-${item.ticker}`}
+                  type="button"
+                  onClick={() => onOpenInsight({
+                    ticker: item.ticker,
+                    name: item.name,
+                    market: item.market,
+                    category: item.category,
+                    currentPrice: item.currentPrice,
+                    changePercent: item.changePercent,
+                    high52w: item.high52w,
+                    low52w: item.low52w,
+                  })}
+                  className="rounded-lg bg-c-surface-2 p-4 text-left hover:bg-c-surface"
+                >
+                  <div className="truncate text-sm font-semibold text-blue-600">{item.name}</div>
+                  <div className="text-xs text-c-text-3">{item.ticker}</div>
+                  <div className="mt-3 text-sm font-medium text-c-text">{formatPrice(item.currentPrice || 0, item.market)}</div>
+                  <div className={`text-xs ${item.changePercent !== undefined && item.changePercent >= 0 ? 'text-green-600' : 'text-red-600'}`}>
+                    {item.changePercent !== undefined ? formatPct(item.changePercent) : '-'}
+                  </div>
+                </button>
+              ))}
+            </div>
+          )}
+        </section>
+      ),
+    },
+    'korea-stocks': {
+      id: 'korea-stocks',
+      className: 'lg:col-span-1',
+      content: <QuickList title="국내 주식 TOP 5" stocks={koreaStocks.slice(0, 5)} market="korea" />,
+    },
+    'korea-etfs': {
+      id: 'korea-etfs',
+      className: 'lg:col-span-1',
+      content: <QuickList title="국내 ETF TOP 5" stocks={koreaETFs.slice(0, 5)} market="korea" />,
+    },
+    'us-stocks': {
+      id: 'us-stocks',
+      className: 'lg:col-span-1',
+      content: <QuickList title="해외 주식 TOP 5" stocks={usStocks.slice(0, 5)} market="us" />,
+    },
+    'us-etfs': {
+      id: 'us-etfs',
+      className: 'lg:col-span-1',
+      content: <QuickList title="해외 ETF TOP 5" stocks={usETFs.slice(0, 5)} market="us" />,
+    },
+  };
+
+  const visibleHomeSections = sortDashboardItems(dashboardConfig.homeSections)
+    .filter((section) => section.visible)
+    .map((section) => sectionsById[section.id])
+    .filter((section): section is HomeSectionRenderItem => Boolean(section));
+
+  return (
+    <div className="space-y-6">
+      <section className="rounded-2xl border border-c-border bg-c-surface p-5 shadow-sm">
+        <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+          <div>
+            <h2 className="text-lg font-bold text-c-text">내 대시보드</h2>
+            <p className="mt-1 text-sm text-c-text-2">탭 순서와 홈 섹션 배치를 원하는 방식으로 바꿀 수 있습니다.</p>
+          </div>
+          <button
+            type="button"
+            onClick={onOpenCustomize}
+            className="rounded-lg border border-c-border bg-c-surface-2 px-4 py-2 text-sm font-medium text-c-text hover:bg-c-surface"
+          >
+            대시보드 편집
+          </button>
         </div>
-        <button type="button" onClick={onOpenWatchlist} className="rounded-lg border border-c-border px-3 py-2 text-sm text-c-text-2 hover:bg-c-surface-2">전체 보기</button>
-      </div>
-      {watchlistPreview.length === 0 ? <div className="rounded-lg bg-c-surface-2 p-4 text-sm text-c-text-3">아직 저장한 관심 종목이 없습니다.</div> : <div className="grid gap-3 md:grid-cols-2 xl:grid-cols-5">{watchlistPreview.map((item) => <button key={`${item.market}-${item.ticker}`} type="button" onClick={() => onOpenInsight({ ticker: item.ticker, name: item.name, market: item.market, category: item.category, currentPrice: item.currentPrice, changePercent: item.changePercent, high52w: item.high52w, low52w: item.low52w })} className="rounded-lg bg-c-surface-2 p-4 text-left hover:bg-c-surface"><div className="truncate text-sm font-semibold text-blue-600">{item.name}</div><div className="text-xs text-c-text-3">{item.ticker}</div><div className="mt-3 text-sm font-medium text-c-text">{formatPrice(item.currentPrice || 0, item.market)}</div><div className={`text-xs ${item.changePercent !== undefined && item.changePercent >= 0 ? 'text-green-600' : 'text-red-600'}`}>{item.changePercent !== undefined ? formatPct(item.changePercent) : '-'}</div></button>)}</div>}
-    </section>
-    <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
-      <QuickList title="국내 주식 TOP 5" stocks={koreaStocks.slice(0, 5)} market="korea" />
-      <QuickList title="국내 ETF TOP 5" stocks={koreaETFs.slice(0, 5)} market="korea" />
-      <QuickList title="해외 주식 TOP 5" stocks={usStocks.slice(0, 5)} market="us" />
-      <QuickList title="해외 ETF TOP 5" stocks={usETFs.slice(0, 5)} market="us" />
+      </section>
+
+      {visibleHomeSections.length === 0 ? (
+        <section className="rounded-2xl border border-dashed border-c-border bg-c-surface p-8 text-center shadow-sm">
+          <h3 className="text-lg font-semibold text-c-text">홈에 표시할 섹션이 없습니다</h3>
+          <p className="mt-2 text-sm text-c-text-2">대시보드 편집에서 홈 섹션을 다시 켜거나 프리셋을 적용할 수 있습니다.</p>
+          <button
+            type="button"
+            onClick={onOpenCustomize}
+            className="mt-4 rounded-lg border border-c-border bg-c-surface-2 px-4 py-2 text-sm font-medium text-c-text hover:bg-c-surface"
+          >
+            홈 섹션 편집
+          </button>
+        </section>
+      ) : (
+        <div className="grid gap-6 lg:grid-cols-4">
+          {visibleHomeSections.map((section) => (
+            <div key={section.id} className={section.className}>
+              {section.content}
+            </div>
+          ))}
+        </div>
+      )}
     </div>
-  </div>;
+  );
 }
 
 function QuickList({ title, stocks, market }: { title: string; stocks: Stock[]; market: MarketType }) {

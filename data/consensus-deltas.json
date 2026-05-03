@@ -127,22 +127,22 @@
         "ticker": "AAPL",
         "name": "Apple Inc.",
         "market": "us",
-        "brokerCount": 3,
-        "avgUpside": 19.8,
+        "brokerCount": 6,
+        "avgUpside": 16,
         "avgTargetPrice": 325,
-        "currentPrice": 271.35,
-        "entryScore": 38,
-        "reportCount": 3
+        "currentPrice": 280.14,
+        "entryScore": 49,
+        "reportCount": 6
       },
       {
         "ticker": "AMZN",
         "name": "Amazon.com, Inc.",
         "market": "us",
         "brokerCount": 16,
-        "avgUpside": 23.4,
-        "avgTargetPrice": 327.1,
-        "currentPrice": 265.06,
-        "entryScore": 55,
+        "avgUpside": 21.7,
+        "avgTargetPrice": 326.4,
+        "currentPrice": 268.26,
+        "entryScore": 54,
         "reportCount": 16
       },
       {
@@ -160,21 +160,21 @@
         "ticker": "XOM",
         "name": "Exxon Mobil Corporation",
         "market": "us",
-        "brokerCount": 7,
-        "avgUpside": 13.6,
-        "avgTargetPrice": 175.3,
-        "currentPrice": 154.33,
-        "entryScore": 47,
-        "reportCount": 7
+        "brokerCount": 8,
+        "avgUpside": 12.9,
+        "avgTargetPrice": 172.5,
+        "currentPrice": 152.75,
+        "entryScore": 46,
+        "reportCount": 8
       },
       {
         "ticker": "PG",
         "name": "The Procter & Gamble Company",
         "market": "us",
         "brokerCount": 4,
-        "avgUpside": 13,
+        "avgUpside": 12.9,
         "avgTargetPrice": 166.3,
-        "currentPrice": 147.09,
+        "currentPrice": 147.26,
         "entryScore": 41,
         "reportCount": 4
       },
@@ -303,12 +303,12 @@
         "ticker": "090460",
         "name": "비에이치",
         "market": "korea",
-        "brokerCount": 4,
-        "avgUpside": 27.5,
-        "avgTargetPrice": 44000,
+        "brokerCount": 3,
+        "avgUpside": 34.3,
+        "avgTargetPrice": 46333.3,
         "currentPrice": 34500,
-        "entryScore": 52,
-        "reportCount": 4
+        "entryScore": 51,
+        "reportCount": 3
       },
       {
         "ticker": "036570",
@@ -325,23 +325,23 @@
         "ticker": "068270",
         "name": "셀트리온",
         "market": "korea",
-        "brokerCount": 5,
-        "avgUpside": 41.6,
-        "avgTargetPrice": 284000,
+        "brokerCount": 4,
+        "avgUpside": 44.6,
+        "avgTargetPrice": 290000,
         "currentPrice": 200500,
-        "entryScore": 70,
-        "reportCount": 5
+        "entryScore": 63,
+        "reportCount": 4
       },
       {
         "ticker": "259960",
         "name": "크래프톤",
         "market": "korea",
-        "brokerCount": 4,
-        "avgUpside": 39.2,
-        "avgTargetPrice": 369000,
+        "brokerCount": 2,
+        "avgUpside": 38.9,
+        "avgTargetPrice": 368000,
         "currentPrice": 265000,
-        "entryScore": 62,
-        "reportCount": 4
+        "entryScore": 48,
+        "reportCount": 2
       },
       {
         "ticker": "278470",
@@ -392,10 +392,10 @@
         "name": "Microsoft Corporation",
         "market": "us",
         "brokerCount": 14,
-        "avgUpside": 37,
+        "avgUpside": 34.8,
         "avgTargetPrice": 558.5,
-        "currentPrice": 407.78,
-        "entryScore": 67,
+        "currentPrice": 414.44,
+        "entryScore": 65,
         "reportCount": 14
       },
       {
@@ -403,9 +403,9 @@
         "name": "Alphabet Inc.",
         "market": "us",
         "brokerCount": 13,
-        "avgUpside": 13.9,
-        "avgTargetPrice": 438.2,
-        "currentPrice": 384.8,
+        "avgUpside": 13.8,
+        "avgTargetPrice": 438.8,
+        "currentPrice": 385.69,
         "entryScore": 47,
         "reportCount": 13
       },
@@ -413,12 +413,12 @@
         "ticker": "META",
         "name": "Meta Platforms, Inc.",
         "market": "us",
-        "brokerCount": 13,
-        "avgUpside": 36,
-        "avgTargetPrice": 832.3,
-        "currentPrice": 611.91,
+        "brokerCount": 14,
+        "avgUpside": 36.1,
+        "avgTargetPrice": 828.6,
+        "currentPrice": 608.75,
         "entryScore": 67,
-        "reportCount": 13
+        "reportCount": 14
       },
       {
         "ticker": "018260",
@@ -568,10 +568,10 @@
         "name": "Tesla, Inc.",
         "market": "us",
         "brokerCount": 7,
-        "avgUpside": 32.6,
+        "avgUpside": 29.5,
         "avgTargetPrice": 506.1,
-        "currentPrice": 381.63,
-        "entryScore": 64,
+        "currentPrice": 390.82,
+        "entryScore": 61,
         "reportCount": 7
       },
       {
@@ -579,10 +579,10 @@
         "name": "Johnson & Johnson",
         "market": "us",
         "brokerCount": 3,
-        "avgUpside": 13.1,
+        "avgUpside": 14.4,
         "avgTargetPrice": 260,
-        "currentPrice": 229.85,
-        "entryScore": 39,
+        "currentPrice": 227.19,
+        "entryScore": 44,
         "reportCount": 3
       },
       {
@@ -590,10 +590,10 @@
         "name": "JFrog Ltd.",
         "market": "us",
         "brokerCount": 4,
-        "avgUpside": 45.3,
+        "avgUpside": 35.3,
         "avgTargetPrice": 67.5,
-        "currentPrice": 46.44,
-        "entryScore": 63,
+        "currentPrice": 49.89,
+        "entryScore": 59,
         "reportCount": 4
       },
       {
@@ -755,10 +755,10 @@
         "name": "Visa Inc.",
         "market": "us",
         "brokerCount": 7,
-        "avgUpside": 19.5,
+        "avgUpside": 20.2,
         "avgTargetPrice": 394.1,
-        "currentPrice": 329.84,
-        "entryScore": 52,
+        "currentPrice": 328.03,
+        "entryScore": 54,
         "reportCount": 7
       },
       {
@@ -1074,10 +1074,10 @@
         "name": "UnitedHealth Group Incorporated",
         "market": "us",
         "brokerCount": 11,
-        "avgUpside": 7.2,
+        "avgUpside": 7.7,
         "avgTargetPrice": 397.2,
-        "currentPrice": 370.48,
-        "entryScore": 41,
+        "currentPrice": 368.78,
+        "entryScore": 42,
         "reportCount": 11
       },
       {
@@ -1128,12 +1128,12 @@
         "ticker": "207940",
         "name": "삼성바이오로직스",
         "market": "korea",
-        "brokerCount": 7,
-        "avgUpside": 41.3,
-        "avgTargetPrice": 2077142.9,
+        "brokerCount": 5,
+        "avgUpside": 40.7,
+        "avgTargetPrice": 2068000,
         "currentPrice": 1470000,
         "entryScore": 70,
-        "reportCount": 7
+        "reportCount": 5
       },
       {
         "ticker": "003550",
@@ -5807,10 +5807,10 @@
           "name": "Walmart Inc.",
           "market": "us",
           "brokerCount": 2,
-          "avgUpside": 5,
+          "avgUpside": 5.2,
           "avgTargetPrice": 138.5,
-          "currentPrice": 131.93,
-          "entryScore": 18,
+          "currentPrice": 131.6,
+          "entryScore": 19,
           "reportCount": 2
         }
       ],
@@ -20145,6 +20145,263 @@
             "currentPrice": {
               "old": 229.85,
               "new": 227.19
+            }
+          }
+        }
+      ]
+    },
+    {
+      "date": "2026-05-03",
+      "added": [],
+      "removed": [
+        "009420"
+      ],
+      "changed": [
+        {
+          "ticker": "030000",
+          "name": "제일기획",
+          "fields": {
+            "brokerCount": {
+              "old": 4,
+              "new": 3
+            },
+            "entryScore": {
+              "old": 54,
+              "new": 47
+            },
+            "reportCount": {
+              "old": 4,
+              "new": 3
+            }
+          }
+        },
+        {
+          "ticker": "000270",
+          "name": "기아",
+          "fields": {
+            "brokerCount": {
+              "old": 10,
+              "new": 9
+            },
+            "avgUpside": {
+              "old": 49.9,
+              "new": 51.9
+            },
+            "avgTargetPrice": {
+              "old": 227500,
+              "new": 230555.6
+            },
+            "reportCount": {
+              "old": 10,
+              "new": 9
+            }
+          }
+        },
+        {
+          "ticker": "005940",
+          "name": "NH투자증권",
+          "fields": {
+            "brokerCount": {
+              "old": 8,
+              "new": 7
+            },
+            "avgUpside": {
+              "old": 25.2,
+              "new": 24.4
+            },
+            "entryScore": {
+              "old": 57,
+              "new": 56
+            },
+            "avgTargetPrice": {
+              "old": 42125,
+              "new": 41857.1
+            },
+            "reportCount": {
+              "old": 8,
+              "new": 7
+            }
+          }
+        },
+        {
+          "ticker": "005380",
+          "name": "현대차",
+          "fields": {
+            "brokerCount": {
+              "old": 11,
+              "new": 10
+            },
+            "avgUpside": {
+              "old": 32.9,
+              "new": 34.3
+            },
+            "entryScore": {
+              "old": 64,
+              "new": 65
+            },
+            "avgTargetPrice": {
+              "old": 705454.5,
+              "new": 713000
+            },
+            "reportCount": {
+              "old": 11,
+              "new": 10
+            }
+          }
+        },
+        {
+          "ticker": "035900",
+          "name": "JYP Ent.",
+          "fields": {
+            "brokerCount": {
+              "old": 4,
+              "new": 3
+            },
+            "avgUpside": {
+              "old": 42.3,
+              "new": 43.1
+            },
+            "entryScore": {
+              "old": 63,
+              "new": 56
+            },
+            "avgTargetPrice": {
+              "old": 89500,
+              "new": 90000
+            },
+            "reportCount": {
+              "old": 4,
+              "new": 3
+            }
+          }
+        },
+        {
+          "ticker": "003230",
+          "name": "삼양식품",
+          "fields": {
+            "brokerCount": {
+              "old": 4,
+              "new": 2
+            },
+            "avgUpside": {
+              "old": 35.7,
+              "new": 43.9
+            },
+            "entryScore": {
+              "old": 59,
+              "new": 49
+            },
+            "avgTargetPrice": {
+              "old": 1820000,
+              "new": 1930000
+            },
+            "reportCount": {
+              "old": 4,
+              "new": 2
+            }
+          }
+        },
+        {
+          "ticker": "035720",
+          "name": "카카오",
+          "fields": {
+            "brokerCount": {
+              "old": 4,
+              "new": 3
+            },
+            "avgUpside": {
+              "old": 58,
+              "new": 50.8
+            },
+            "entryScore": {
+              "old": 63,
+              "new": 56
+            },
+            "avgTargetPrice": {
+              "old": 74750,
+              "new": 71333.3
+            },
+            "reportCount": {
+              "old": 4,
+              "new": 3
+            }
+          }
+        },
+        {
+          "ticker": "035420",
+          "name": "NAVER",
+          "fields": {
+            "brokerCount": {
+              "old": 4,
+              "new": 3
+            },
+            "avgUpside": {
+              "old": 37.4,
+              "new": 35.9
+            },
+            "entryScore": {
+              "old": 61,
+              "new": 52
+            },
+            "avgTargetPrice": {
+              "old": 290000,
+              "new": 286666.7
+            },
+            "reportCount": {
+              "old": 4,
+              "new": 3
+            }
+          }
+        },
+        {
+          "ticker": "145020",
+          "name": "휴젤",
+          "fields": {
+            "brokerCount": {
+              "old": 3,
+              "new": 2
+            },
+            "avgUpside": {
+              "old": 46.5,
+              "new": 48.5
+            },
+            "entryScore": {
+              "old": 56,
+              "new": 49
+            },
+            "avgTargetPrice": {
+              "old": 370000,
+              "new": 375000
+            },
+            "reportCount": {
+              "old": 3,
+              "new": 2
+            }
+          }
+        },
+        {
+          "ticker": "192820",
+          "name": "코스맥스",
+          "fields": {
+            "brokerCount": {
+              "old": 3,
+              "new": 2
+            },
+            "avgUpside": {
+              "old": 10.8,
+              "new": 11.6
+            },
+            "entryScore": {
+              "old": 30,
+              "new": 24
+            },
+            "avgTargetPrice": {
+              "old": 233333.3,
+              "new": 235000
+            },
+            "reportCount": {
+              "old": 3,
+              "new": 2
             }
           }
         }

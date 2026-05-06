@@ -17,7 +17,8 @@ export type DashboardTabId =
   | 'earnings'
   | 'screener'
   | 'groq-picks'
-  | 'ipo';
+  | 'ipo'
+  | 'calendar';
 
 export type DashboardHomeSectionId =
   | 'market-indices'
@@ -89,6 +90,7 @@ export const DASHBOARD_TAB_DEFINITIONS: DashboardTabDefinition[] = [
   { id: 'us-etf', label: '\uD574\uC678ETF', description: '\uD574\uC678 ETF \uBAA9\uB85D' },
   { id: 'earnings', label: '\uC2E4\uC801\uCEA8\uB9B0\uB354', description: '\uC2E4\uC801 \uC77C\uC815' },
   { id: 'ipo', label: '\uACF5\uBAA8\uC8FC', description: '\uACF5\uBAA8\uC8FC \uC77C\uC815' },
+  { id: 'calendar', label: '\uD22C\uC790\uCE98\uB9B0\uB354', description: '\uACF5\uBAA8\uC8FC\u00B7\uC2E4\uC801 \uD1B5\uD569 \uCE98\uB9B0\uB354' },
 ];
 
 export const DASHBOARD_HOME_SECTION_DEFINITIONS: DashboardHomeSectionDefinition[] = [

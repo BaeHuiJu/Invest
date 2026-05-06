@@ -20,6 +20,7 @@ import { ValuationScreenerTab, preWarmScreener } from '@/components/ValuationScr
 import { GroqDailyPicksTab } from '@/components/GroqDailyPicksTab';
 import { KoreaEtfTradingTab } from '@/components/KoreaEtfTradingTab';
 import { IpoCalendarTab } from '@/components/IpoCalendarTab';
+import { InvestmentCalendarTab } from '@/components/InvestmentCalendarTab';
 import { ThemeSelector } from '@/components/ThemeSelector';
 import { DashboardCustomizationModal } from '@/components/DashboardCustomizationModal';
 import { readWatchlistStorage, saveWatchlistStorage } from '@/lib/watchlist-storage';
@@ -443,24 +444,24 @@ export default function Home() {
         </div>
       </header>
       <nav className="border-b border-c-border bg-c-surface">
-  <div className="mx-auto max-w-7xl">
-    <div className="flex w-full overflow-x-scroll px-2 sm:px-4" style={{ WebkitOverflowScrolling: 'touch' } as React.CSSProperties}>
-      {visibleTabs.map(({ id, label }) => (
-        <button
-          key={id}
-          onClick={() => setActiveTab(id)}
-          className={`flex-shrink-0 whitespace-nowrap px-3 py-3 text-xs font-medium transition-colors last:mr-6 sm:px-4 sm:text-sm sm:last:mr-10 ${
-            activeTab === id
-              ? 'border-b-2 border-c-accent text-c-accent'
-              : 'text-c-text-2 hover:text-c-text'
-          }`}
-        >
-          {label}
-        </button>
-      ))}
-    </div>
-  </div>
-</nav>
+        <div className="mx-auto max-w-7xl">
+          <div className="flex w-full overflow-x-scroll px-2 sm:px-4" style={{ WebkitOverflowScrolling: 'touch' } as React.CSSProperties}>
+            {visibleTabs.map(({ id, label }) => (
+              <button
+                key={id}
+                onClick={() => setActiveTab(id)}
+                className={`flex-shrink-0 whitespace-nowrap px-3 py-3 text-xs font-medium transition-colors last:mr-6 sm:px-4 sm:text-sm sm:last:mr-10 ${
+                  activeTab === id
+                    ? 'border-b-2 border-c-accent text-c-accent'
+                    : 'text-c-text-2 hover:text-c-text'
+                }`}
+              >
+                {label}
+              </button>
+            ))}
+          </div>
+        </div>
+      </nav>
       <main className="mx-auto max-w-7xl px-3 py-4 sm:px-4 sm:py-6">
         {activeTab === 'ai-picks'
           ? <AIPicksTab onOpenInsight={setInsightTarget} isSaved={isSaved} onToggleWatchlist={toggleWatchlist} />
@@ -486,6 +487,8 @@ export default function Home() {
             ? <EarningsCalendarTab />
           : activeTab === 'ipo'
             ? <IpoCalendarTab />
+          : activeTab === 'calendar'
+            ? <InvestmentCalendarTab />
           : activeTab === 'screener'
             ? <ValuationScreenerTab onOpenInsight={setInsightTarget} />
           : loading

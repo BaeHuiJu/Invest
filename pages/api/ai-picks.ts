@@ -12,9 +12,9 @@ import { loadAnalystData } from './analyst-reports';
 
 const CACHE_TTL_MS = 60 * 1000; // 60 seconds
 const MIN_ENTRY_SCORE = 70;
-const MIN_BROKER_COUNT = 3;
+const MIN_BROKER_COUNT = 2;
 const MAX_DAYS = 30;
-const TOP_PICKS_LIMIT = 10;
+const TOP_PICKS_LIMIT = 20;
 
 type CacheEntry = {
   data: AIPicksResponse;

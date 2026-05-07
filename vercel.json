@@ -1,5 +1,10 @@
 {
   "framework": "nextjs",
   "buildCommand": "npm run build",
-  "outputDirectory": ".next"
+  "outputDirectory": ".next",
+  "functions": {
+    "pages/api/ipo-calendar.ts": {
+      "maxDuration": 60
+    }
+  }
 }

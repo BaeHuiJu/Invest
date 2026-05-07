@@ -27,140 +27,38 @@ type ErrorResponse = {
   error: string;
 };
 
-// Major US stocks earnings data (sample/static for demo)
-const SAMPLE_US_EARNINGS: EarningsEvent[] = [
-  {
-    ticker: 'AAPL',
-    name: 'Apple Inc.',
-    market: 'us',
-    date: '2026-04-24',
-    time: 'AMC',
-    epsEstimate: 1.52,
-    isComplete: false,
-  },
-  {
-    ticker: 'MSFT',
-    name: 'Microsoft Corp.',
-    market: 'us',
-    date: '2026-04-22',
-    time: 'AMC',
-    epsEstimate: 2.83,
-    epsActual: 2.94,
-    surprise: 3.89,
-    isComplete: true,
-  },
-  {
-    ticker: 'GOOGL',
-    name: 'Alphabet Inc.',
-    market: 'us',
-    date: '2026-04-25',
-    time: 'AMC',
-    epsEstimate: 1.89,
-    isComplete: false,
-  },
-  {
-    ticker: 'AMZN',
-    name: 'Amazon.com Inc.',
-    market: 'us',
-    date: '2026-04-30',
-    time: 'AMC',
-    epsEstimate: 1.15,
-    isComplete: false,
-  },
-  {
-    ticker: 'META',
-    name: 'Meta Platforms Inc.',
-    market: 'us',
-    date: '2026-04-23',
-    time: 'AMC',
-    epsEstimate: 4.72,
-    epsActual: 5.16,
-    surprise: 9.32,
-    isComplete: true,
-  },
-  {
-    ticker: 'NVDA',
-    name: 'NVIDIA Corp.',
-    market: 'us',
-    date: '2026-05-21',
-    time: 'AMC',
-    epsEstimate: 5.59,
-    isComplete: false,
-  },
-  {
-    ticker: 'TSLA',
-    name: 'Tesla Inc.',
-    market: 'us',
-    date: '2026-04-21',
-    time: 'AMC',
-    epsEstimate: 0.42,
-    epsActual: 0.45,
-    surprise: 7.14,
-    isComplete: true,
-  },
-];
+function addDays(base: Date, n: number): string {
+  const d = new Date(base);
+  d.setDate(d.getDate() + n);
+  return d.toISOString().split('T')[0];
+}
 
-// Major Korean stocks earnings data (sample/static for demo)
-const SAMPLE_KOREA_EARNINGS: EarningsEvent[] = [
-  {
-    ticker: '005930',
-    name: '삼성전자',
-    market: 'korea',
-    date: '2026-04-25',
-    time: 'BMO',
-    epsEstimate: 1850,
-    isComplete: false,
-  },
-  {
-    ticker: '000660',
-    name: 'SK하이닉스',
-    market: 'korea',
-    date: '2026-04-24',
-    time: 'BMO',
-    epsEstimate: 4200,
-    epsActual: 4520,
-    surprise: 7.62,
-    isComplete: true,
-  },
-  {
-    ticker: '373220',
-    name: 'LG에너지솔루션',
-    market: 'korea',
-    date: '2026-04-28',
-    time: 'BMO',
-    epsEstimate: 2100,
-    isComplete: false,
-  },
-  {
-    ticker: '005380',
-    name: '현대차',
-    market: 'korea',
-    date: '2026-04-24',
-    time: 'BMO',
-    epsEstimate: 18500,
-    epsActual: 19200,
-    surprise: 3.78,
-    isComplete: true,
-  },
-  {
-    ticker: '035420',
-    name: 'NAVER',
-    market: 'korea',
-    date: '2026-04-26',
-    time: 'AMC',
-    epsEstimate: 1580,
-    isComplete: false,
-  },
-  {
-    ticker: '035720',
-    name: '카카오',
-    market: 'korea',
-    date: '2026-05-08',
-    time: 'BMO',
-    epsEstimate: 420,
-    isComplete: false,
-  },
-];
+// Generates sample earnings with dates relative to today so they never expire
+function buildSampleEarnings(): { us: EarningsEvent[]; korea: EarningsEvent[] } {
+  const now = new Date();
+
+  const us: EarningsEvent[] = [
+    { ticker: 'AAPL',  name: 'Apple Inc.',          market: 'us', date: addDays(now,  5), time: 'AMC', epsEstimate: 1.52, isComplete: false },
+    { ticker: 'MSFT',  name: 'Microsoft Corp.',      market: 'us', date: addDays(now,  8), time: 'AMC', epsEstimate: 2.83, isComplete: false },
+    { ticker: 'GOOGL', name: 'Alphabet Inc.',         market: 'us', date: addDays(now, 12), time: 'AMC', epsEstimate: 1.89, isComplete: false },
+    { ticker: 'AMZN',  name: 'Amazon.com Inc.',       market: 'us', date: addDays(now, 15), time: 'AMC', epsEstimate: 1.15, isComplete: false },
+    { ticker: 'NVDA',  name: 'NVIDIA Corp.',          market: 'us', date: addDays(now, 18), time: 'AMC', epsEstimate: 5.59, isComplete: false },
+    { ticker: 'META',  name: 'Meta Platforms Inc.',   market: 'us', date: addDays(now, -7), time: 'AMC', epsEstimate: 4.72, epsActual: 5.16, surprise: 9.32, isComplete: true },
+    { ticker: 'TSLA',  name: 'Tesla Inc.',            market: 'us', date: addDays(now,-14), time: 'AMC', epsEstimate: 0.42, epsActual: 0.45, surprise: 7.14, isComplete: true },
+    { ticker: 'MSFT',  name: 'Microsoft Corp.',      market: 'us', date: addDays(now,-10), time: 'AMC', epsEstimate: 2.75, epsActual: 2.94, surprise: 3.89, isComplete: true },
+  ];
+
+  const korea: EarningsEvent[] = [
+    { ticker: '005930', name: '삼성전자',      market: 'korea', date: addDays(now,  6), time: 'BMO', epsEstimate: 1850, isComplete: false },
+    { ticker: '373220', name: 'LG에너지솔루션', market: 'korea', date: addDays(now, 10), time: 'BMO', epsEstimate: 2100, isComplete: false },
+    { ticker: '035420', name: 'NAVER',          market: 'korea', date: addDays(now, 13), time: 'AMC', epsEstimate: 1580, isComplete: false },
+    { ticker: '035720', name: '카카오',          market: 'korea', date: addDays(now, 20), time: 'BMO', epsEstimate: 420,  isComplete: false },
+    { ticker: '000660', name: 'SK하이닉스',     market: 'korea', date: addDays(now, -5), time: 'BMO', epsEstimate: 4200, epsActual: 4520, surprise: 7.62, isComplete: true },
+    { ticker: '005380', name: '현대차',          market: 'korea', date: addDays(now, -9), time: 'BMO', epsEstimate: 18500, epsActual: 19200, surprise: 3.78, isComplete: true },
+  ];
+
+  return { us, korea };
+}
 
 async function fetchYahooEarnings(ticker: string): Promise<EarningsEvent | null> {
   try {
@@ -213,7 +111,8 @@ export default async function handler(
     const today = new Date();
     const todayStr = today.toISOString().split('T')[0];
 
-    // Combine all earnings data
+    // Combine all earnings data (dates generated relative to today)
+    const { us: SAMPLE_US_EARNINGS, korea: SAMPLE_KOREA_EARNINGS } = buildSampleEarnings();
     let allEarnings: EarningsEvent[] = [...SAMPLE_US_EARNINGS, ...SAMPLE_KOREA_EARNINGS];
 
     // Filter by market

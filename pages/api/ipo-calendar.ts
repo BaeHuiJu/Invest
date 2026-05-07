@@ -880,6 +880,27 @@ async function mapWithConcurrency<T, R>(
 }
 
 async function enrichDeal(deal: RawIpoDeal, todayStr: string): Promise<IpoDeal> {
+  // Skip expensive detail fetching for deals that closed more than 20 days ago
+  // (they are definitively 상장완료 and don't need calculator data)
+  const cutoffDate = shiftIsoDate(todayStr, -20);
+  if (deal.subscriptionEnd < cutoffDate) {
+    const emptyDetail: Detail38Payload = {
+      listingDate: null,
+      refundDate: null,
+      parsed: createEmptyParsedFields('thirtyeight', splitBrokerNames(deal.underwriter)),
+    };
+    const calculator = buildCalculatorData(deal, emptyDetail, null, todayStr);
+    return {
+      ...deal,
+      underwriter: deal.underwriter,
+      refundDate: null,
+      listingDate: null,
+      detailUrl: detailUrl(deal.id),
+      status: '상장완료',
+      calculator,
+    };
+  }
+
   const [detail38, dartDisclosure] = await Promise.all([fetch38DetailData(deal), fetchDartDisclosure(deal)]);
   const calculator = buildCalculatorData(deal, detail38, dartDisclosure, todayStr);
 

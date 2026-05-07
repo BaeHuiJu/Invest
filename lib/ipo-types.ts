@@ -94,7 +94,7 @@ export interface IpoDeal {
   competitionRatio: string | null;
   status: IpoStatus;
   detailUrl: string;
-  calculator: IpoCalculatorData;
+  calculator: IpoCalculatorData | null;
 }
 
 export interface IpoCalendarResponse {

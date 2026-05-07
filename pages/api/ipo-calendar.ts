@@ -1,4 +1,6 @@
+import { readFile } from 'node:fs/promises';
 import { inflateRawSync } from 'node:zlib';
+import path from 'node:path';
 
 import type { NextApiRequest, NextApiResponse } from 'next';
 
@@ -965,7 +967,29 @@ async function scrapeIpoList(): Promise<IpoDeal[]> {
   return mapWithConcurrency(rows, 4, (deal) => enrichDeal(deal, todayStr));
 }
 
+async function loadFromCacheFile(): Promise<IpoCalendarResponse | null> {
+  try {
+    const cachePath = path.join(process.cwd(), 'data', 'ipo-cache.json');
+    const raw = await readFile(cachePath, 'utf-8');
+    const parsed = JSON.parse(raw) as IpoCalendarResponse;
+    // Recompute status fields based on today's date (cache may be from yesterday)
+    const todayStr = today();
+    const ipos = parsed.ipos.map((deal) => ({
+      ...deal,
+      status: deriveStatus(deal.subscriptionStart, deal.subscriptionEnd, deal.listingDate, todayStr),
+    }));
+    return { ...parsed, ipos };
+  } catch {
+    return null;
+  }
+}
+
 async function buildResponse(): Promise<IpoCalendarResponse> {
+  // 1. Try static cache file (populated by GitHub Actions)
+  const cached = await loadFromCacheFile();
+  if (cached) return cached;
+
+  // 2. Fallback: live scrape (works in local dev where 38.co.kr is accessible)
   try {
     const ipos = await scrapeIpoList();
     return { ipos, fetchedAt: new Date().toISOString(), totalCount: ipos.length };

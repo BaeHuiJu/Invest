@@ -118,6 +118,7 @@ function ManualField({
 }
 
 function buildDefaultBudget(deal: IpoDeal): string {
+  if (!deal.calculator) return '1000000';
   const firstBroker = deal.calculator.brokerOptions[0];
   if (!firstBroker || !deal.calculator.offeringPrice) return '1000000';
 
@@ -145,7 +146,7 @@ export function IpoAllocationCalculatorModal({
   const [proportionalCompetitionRate, setProportionalCompetitionRate] = useState('');
 
   useEffect(() => {
-    if (!deal) return;
+    if (!deal || !deal.calculator) return;
     setSelectedBrokerName(deal.calculator.brokerOptions[0]?.brokerName ?? '');
     setBudget(buildDefaultBudget(deal));
     setRequestedShares('');
@@ -188,7 +189,7 @@ export function IpoAllocationCalculatorModal({
     subscriptionUnit,
   ]);
 
-  if (!deal) return null;
+  if (!deal || !deal.calculator) return null;
 
   const budgetValue = parsePositiveNumber(budget) ?? 0;
   const requestedSharesValue = parsePositiveNumber(requestedShares);

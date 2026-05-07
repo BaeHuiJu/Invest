@@ -170,12 +170,14 @@ function formatUpdatedAt(iso: string): string {
 }
 
 function calcStatusText(deal: IpoDeal): string {
+  if (!deal.calculator) return '-';
   if (deal.calculator.status === 'final_ready') return '마감 후 자동';
   if (deal.calculator.status === 'pre_ready') return '사전 자동';
   return '보강 필요';
 }
 
 function calcStatusClass(deal: IpoDeal): string {
+  if (!deal.calculator) return 'border-[#E5E7EB] bg-[#F9FAFB] text-[#9CA3AF]';
   if (deal.calculator.status === 'final_ready') return 'border-[#D1FAE5] bg-[#ECFDF5] text-[#047857]';
   if (deal.calculator.status === 'pre_ready') return 'border-[#DBEAFE] bg-[#EFF6FF] text-[#1D4ED8]';
   return 'border-[#FDE68A] bg-[#FFFBEB] text-[#B45309]';

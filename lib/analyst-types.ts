@@ -166,6 +166,12 @@ export interface SectorCycleResponse {
 export type RiskLevel = 'low' | 'medium' | 'high';
 export type TimeHorizon = '1-3mo' | '3-12mo';
 
+export interface AiPickExitConditions {
+  targetPriceTakeProfit: number;
+  timeHorizonDays: number;
+  stopLossPct: number;
+}
+
 export interface AIPick {
   ticker: string;
   name: string;
@@ -182,11 +188,15 @@ export interface AIPick {
   avgUpside: number;
   avgTargetPrice: number;
   currentPrice: number;
+  basePrice: number;
+  basePriceDate: string;
+  targetProgressPct: number;
   recommendedPositionSize: number;
   riskLevel: RiskLevel;
   timeHorizon: TimeHorizon;
   thesis: string;
   brokerSuccessRate: number;
+  exitConditions: AiPickExitConditions;
 }
 
 export interface AIPicksResponse {
@@ -202,5 +212,23 @@ export interface AIPicksResponse {
     selectedCount: number;
     avgEntryScore: number;
     avgBrokerCount: number;
+    historicalSuccessRate: number;
+    avgHistoricalReturnPct: number;
+    completedReportCount: number;
   };
+}
+
+export interface TradeRecord {
+  id: string;
+  ticker: string;
+  name: string;
+  market: MarketType;
+  buyPrice: number;
+  buyDate: string;
+  targetPrice: number;
+  entryScore: number;
+  timeHorizon: TimeHorizon;
+  exitConditions: AiPickExitConditions;
+  closedAt?: string;
+  sellPrice?: number;
 }

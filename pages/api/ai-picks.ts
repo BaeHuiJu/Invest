@@ -2,9 +2,9 @@ import type { NextApiRequest, NextApiResponse } from 'next';
 
 import type {
   AIPick,
+  AiPickExitConditions,
   AIPicksResponse,
   AnalystConsensusItem,
-  AnalystScorecardResponse,
   RiskLevel,
   TimeHorizon,
 } from '../../lib/analyst-types';
@@ -175,37 +175,68 @@ async function fetchConsensusData(): Promise<AnalystConsensusItem[]> {
   return items;
 }
 
-async function fetchScorecardData(): Promise<AnalystScorecardResponse | null> {
-  try {
-    // This would normally call the scorecard API, but for simplicity we'll skip it
-    // and use a default broker success rate
-    return null;
-  } catch {
-    return null;
-  }
+interface BrokerSuccessStats {
+  brokerMap: Map<string, number>;
+  overallSuccessRate: number;
+  avgReturnPct: number;
+  completedCount: number;
 }
 
-function getBrokerSuccessRate(
-  brokers: string[],
-  scorecard: AnalystScorecardResponse | null
-): number {
-  if (!scorecard) {
-    return 50; // Default 50% if no scorecard data
+async function computeBrokerSuccessStats(): Promise<BrokerSuccessStats> {
+  const cacheFile = await loadAnalystData();
+
+  const brokerRaw = new Map<string, { success: number; total: number }>();
+  let overallSuccess = 0;
+  let overallTotal = 0;
+  let totalReturnPct = 0;
+
+  for (const report of cacheFile.reports) {
+    const perf = report.performance?.month1;
+    if (!perf || perf.status !== 'complete') continue;
+
+    overallTotal++;
+    totalReturnPct += perf.returnPct;
+    if (perf.success) overallSuccess++;
+
+    const entry = brokerRaw.get(report.broker) ?? { success: 0, total: 0 };
+    entry.total++;
+    if (perf.success) entry.success++;
+    brokerRaw.set(report.broker, entry);
   }
 
-  const brokerGroups = scorecard.summary.byBroker.filter((group) =>
-    brokers.includes(group.label)
-  );
+  const brokerMap = new Map<string, number>();
+  Array.from(brokerRaw.entries()).forEach(([broker, stats]) => {
+    if (stats.total >= 3) {
+      brokerMap.set(broker, Math.round((stats.success / stats.total) * 1000) / 10);
+    }
+  });
 
-  if (brokerGroups.length === 0) {
-    return 50;
-  }
+  return {
+    brokerMap,
+    overallSuccessRate: overallTotal > 0 ? Math.round((overallSuccess / overallTotal) * 1000) / 10 : 50,
+    avgReturnPct: overallTotal > 0 ? Math.round((totalReturnPct / overallTotal) * 10) / 10 : 0,
+    completedCount: overallTotal,
+  };
+}
 
-  const avgSuccessRate =
-    brokerGroups.reduce((sum, group) => sum + group.month1.successRate, 0) /
-    brokerGroups.length;
+function getBrokerSuccessRate(brokers: string[], brokerMap: Map<string, number>): number {
+  const known = brokers.map((b) => brokerMap.get(b)).filter((v): v is number => v !== undefined);
+  if (known.length === 0) return 50;
+  return Math.round((known.reduce((s, v) => s + v, 0) / known.length) * 10) / 10;
+}
 
-  return Math.round(avgSuccessRate * 10) / 10;
+function buildExitConditions(timeHorizon: TimeHorizon, avgTargetPrice: number): AiPickExitConditions {
+  return {
+    targetPriceTakeProfit: avgTargetPrice,
+    timeHorizonDays: timeHorizon === '1-3mo' ? 90 : 270,
+    stopLossPct: -7,
+  };
+}
+
+function computeTargetProgress(currentPrice: number, basePrice: number, avgTargetPrice: number): number {
+  const gap = avgTargetPrice - basePrice;
+  if (gap <= 0 || basePrice <= 0) return 0;
+  return Math.round(((currentPrice - basePrice) / gap) * 100);
 }
 
 export default async function handler(
@@ -226,16 +257,16 @@ export default async function handler(
     const response =
       inflight ||
       (async () => {
-        // Fetch consensus data
-        const consensusItems = await fetchConsensusData();
+        // Fetch consensus data and broker success stats in parallel
+        const [consensusItems, brokerStats] = await Promise.all([
+          fetchConsensusData(),
+          computeBrokerSuccessStats(),
+        ]);
 
         // Filter by AI criteria
         const filteredItems = consensusItems.filter(
           (item) => item.entryScore >= MIN_ENTRY_SCORE && item.brokerCount >= MIN_BROKER_COUNT
         );
-
-        // Fetch scorecard for broker success rates
-        const scorecard = await fetchScorecardData();
 
         // Build AI picks
         const picks: AIPick[] = filteredItems
@@ -244,7 +275,9 @@ export default async function handler(
             const positionSize = calculatePositionSize(riskLevel, item.avgUpside);
             const timeHorizon = estimateTimeHorizon(item.avgUpside);
             const thesis = generateThesis(item.brokerCount, item.entryScore, item.avgUpside);
-            const brokerSuccessRate = getBrokerSuccessRate(item.brokers, scorecard);
+            const brokerSuccessRate = getBrokerSuccessRate(item.brokers, brokerStats.brokerMap);
+            const exitConditions = buildExitConditions(timeHorizon, item.avgTargetPrice);
+            const targetProgressPct = computeTargetProgress(item.currentPrice, item.basePrice, item.avgTargetPrice);
 
             return {
               ticker: item.ticker,
@@ -257,19 +290,19 @@ export default async function handler(
               avgUpside: item.avgUpside,
               avgTargetPrice: item.avgTargetPrice,
               currentPrice: item.currentPrice,
+              basePrice: item.basePrice,
+              basePriceDate: item.basePriceDate,
+              targetProgressPct,
               recommendedPositionSize: positionSize,
               riskLevel,
               timeHorizon,
               thesis,
               brokerSuccessRate,
+              exitConditions,
             };
           })
           .sort((a, b) => {
-            // Primary sort: Entry Score DESC
-            if (b.entryScore !== a.entryScore) {
-              return b.entryScore - a.entryScore;
-            }
-            // Secondary sort: Broker Count DESC
+            if (b.entryScore !== a.entryScore) return b.entryScore - a.entryScore;
             return b.brokerCount - a.brokerCount;
           })
           .slice(0, TOP_PICKS_LIMIT);
@@ -295,6 +328,9 @@ export default async function handler(
                     (picks.reduce((sum, pick) => sum + pick.brokerCount, 0) / picks.length) * 10
                   ) / 10
                 : 0,
+            historicalSuccessRate: brokerStats.overallSuccessRate,
+            avgHistoricalReturnPct: brokerStats.avgReturnPct,
+            completedReportCount: brokerStats.completedCount,
           },
         };
 

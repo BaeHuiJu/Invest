@@ -851,6 +851,18 @@ function AnalystTab({ onOpenInsight, isSaved, onToggleWatchlist }: { onOpenInsig
                 <div className="mt-1 text-[12px] font-medium text-c-text">{formatPrice(report.basePrice, report.market)}</div>
                 <div className="mt-1 text-[11px] text-c-text-3">{report.basePriceDate} {'\uC885\uAC00'}</div>
               </div>
+              {(report.performance?.week1 || report.performance?.month1 || report.performance?.month3) && <div className="mt-2.5 grid grid-cols-3 gap-1.5">
+                {(['week1', 'month1', 'month3'] as const).map((key, i) => {
+                  const pt = report.performance?.[key];
+                  const badge = getStatusBadge(pt);
+                  const label = ['1\uC8FC', '1\uAC1C\uC6D4', '3\uAC1C\uC6D4'][i];
+                  return <div key={key} className="rounded-md bg-c-surface p-2 text-center">
+                    <div className="text-[10px] text-c-text-3">{label}</div>
+                    <div className={`mt-0.5 rounded px-1 py-0.5 text-[10px] font-medium ${badge.className}`}>{badge.label}</div>
+                    {pt && pt.status === 'complete' && <div className={`mt-0.5 text-[11px] font-semibold ${pt.returnPct >= 0 ? 'text-green-600' : 'text-red-600'}`}>{pt.returnPct >= 0 ? '+' : ''}{pt.returnPct.toFixed(1)}%</div>}
+                  </div>;
+                })}
+              </div>}
             </article>)}
           </div>
           <div className="hidden overflow-x-auto md:block">
@@ -865,11 +877,18 @@ function AnalystTab({ onOpenInsight, isSaved, onToggleWatchlist }: { onOpenInsig
                   <th className="px-4 py-3 text-right">{'\uAE30\uC900\uAC00\uACA9'}</th>
                   <th className="px-4 py-3 text-right">{'\uD604\uC7AC\uAC00'}</th>
                   <th className="px-4 py-3 text-right">{'\uC0C1\uC2B9\uC5EC\uB825'}</th>
+                  <th className="px-4 py-3 text-center">{'\uC131\uACFC (1\uC8FC)'}</th>
+                  <th className="px-4 py-3 text-center">{'\uC131\uACFC (1\uAC1C\uC6D4)'}</th>
+                  <th className="px-4 py-3 text-center">{'\uC131\uACFC (3\uAC1C\uC6D4)'}</th>
                   <th className="px-4 py-3">{'\uC758\uACAC'}</th>
                 </tr>
               </thead>
               <tbody className="divide-y">
-                {paginated.map((report, index) => <tr key={`${report.market}-${report.ticker}-${index}`} className="hover:bg-c-surface-2">
+                {paginated.map((report, index) => {
+                  const w1 = report.performance?.week1;
+                  const m1 = report.performance?.month1;
+                  const m3 = report.performance?.month3;
+                  return <tr key={`${report.market}-${report.ticker}-${index}`} className="hover:bg-c-surface-2">
                   <td className="px-4 py-3 text-sm">{report.date}</td>
                   <td className="px-4 py-3">
                     <div className="flex items-start justify-between gap-3">
@@ -886,8 +905,16 @@ function AnalystTab({ onOpenInsight, isSaved, onToggleWatchlist }: { onOpenInsig
                   <td className="px-4 py-3 text-right"><div className="font-medium">{formatPrice(report.basePrice, report.market)}</div><div className="text-xs text-c-text-3">{report.basePriceDate} {'\uC885\uAC00'}</div></td>
                   <td className="px-4 py-3 text-right">{formatPrice(report.currentPrice, report.market)}</td>
                   <td className="px-4 py-3 text-right font-medium text-green-600">{formatPct(report.upside)}</td>
+                  {[w1, m1, m3].map((pt, pi) => {
+                    const badge = getStatusBadge(pt);
+                    return <td key={pi} className="px-4 py-3 text-center">
+                      <span className={`rounded px-1.5 py-0.5 text-[11px] font-medium ${badge.className}`}>{badge.label}</span>
+                      {pt && pt.status === 'complete' && <div className={`mt-0.5 text-xs font-semibold ${pt.returnPct >= 0 ? 'text-green-600' : 'text-red-600'}`}>{pt.returnPct >= 0 ? '+' : ''}{pt.returnPct.toFixed(1)}%</div>}
+                    </td>;
+                  })}
                   <td className="px-4 py-3"><span className="rounded bg-green-100 px-2 py-1 text-xs text-green-700">{report.opinion}</span></td>
-                </tr>)}
+                </tr>;})}
+
               </tbody>
             </table>
           </div>

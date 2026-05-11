@@ -214,9 +214,9 @@
 ### [x] 초보자 80%+ 수익 달성 시스템
 - **우선순위**: ⭐⭐⭐⭐ (최우선)
 - **복잡도**: 중간
-- **설명**: AI가 자동으로 Entry Score 70점 이상, 3개 이상 증권사 추천 종목 선별
+- **설명**: AI가 자동으로 Entry Score 70점 이상, 2개 이상 증권사 추천 종목 선별 (최대 20개)
 - **가치**: 주식 초보자도 사이트 추천만 따라하면 80% 이상 수익 가능
-- **완료일**: 2026-04-17
+- **완료일**: 2026-04-17 / **최종 강화**: 2026-05-07
 - **구현**:
   - [x] AI 추천 탭 (Sprint 1 - 핵심 기능)
     - [x] `/api/ai-picks` API 엔드포인트 (필터링, 리스크 계산, 포지션 사이징)
@@ -247,12 +247,23 @@
     - [x] AI 추천으로 보완하기 버튼 (탭 이동)
     - [x] 리밸런싱 가이드 보기 버튼
     - [x] 시각적 경고 메시지 (오렌지/블루 박스)
+  - [x] 신뢰도 & Exit 시스템 강화 (2026-05-07)
+    - [x] 실제 역대 승률 배너: analyst 캐시 month1 완료 리포트 기반 성공률/평균수익 계산
+    - [x] brokerSuccessRate 실데이터 교체: 하드코딩 50% → 브로커별 실적 기반 계산 (3건 이상 브로커만)
+    - [x] 각 카드에 증권사 승률 표시 (상세 설명 부제목)
+    - [x] 매도 신호 3조건 박스: ① 목표가 달성 즉시 매도 ② 보유기간(1-3/3-12개월) 초과 ③ -7% 손절
+    - [x] 목표가 진행률 프로그레스 바: 기준가→현재가→목표가 시각화
+    - [x] 매수 기록 버튼: localStorage 기반 trade-journal 저장
+    - [x] 내 투자 현황 섹션: P&L%, 목표 진행률, 남은 일수, 목표 달성/손절 경고
+  - [x] 추천 기준 완화 (2026-05-11)
+    - [x] 증권사 수: 3개 → **2개 이상** (더 넓은 종목 풀)
+    - [x] 표시 제한: Top 10 → **Top 20**
 - **필터링 기준**:
   - Entry Score: ≥70점
-  - 증권사 수: ≥3개
+  - 증권사 수: ≥2개 (완화)
   - 리포트 기간: ≤30일
   - 정렬: Entry Score DESC → Broker Count DESC
-  - 제한: Top 10
+  - 제한: Top 20 (확대)
 - **리스크 계산 알고리즘**:
   - Low: Entry Score ≥80 AND 상승여력 ≤30%
   - Medium: Entry Score ≥70 AND 상승여력 ≤50%
@@ -263,13 +274,13 @@
   - 상승여력 >50%: -2%
   - 범위: 5-15%
 - **파일**:
-  - `lib/analyst-types.ts` - AIPick, AIPicksResponse 타입 추가
-  - `pages/api/ai-picks.ts` - AI 추천 API (새로 생성)
-  - `components/AIPicksTab.tsx` - AI 추천 탭 UI (새로 생성)
-  - `components/EntryScoreTooltip.tsx` - Entry Score 툴팁 (새로 생성)
-  - `components/GlossaryModal.tsx` - 금융 용어 사전 모달 (새로 생성)
-  - `pages/index.tsx` - 메인 대시보드 통합 (AI 추천 탭, 툴팁, 용어 사전)
-  - `.claude/plans/graceful-brewing-cray.md` - 전체 구현 계획
+  - `lib/analyst-types.ts` - AIPick, AIPicksResponse, TradeRecord 타입
+  - `pages/api/ai-picks.ts` - AI 추천 API (필터링, 실제 승률 계산, Exit 조건)
+  - `components/AIPicksTab.tsx` - AI 추천 탭 UI (승률 배너, 진행률 바, 매수 기록)
+  - `lib/trade-journal.ts` - 매수 기록 CRUD (localStorage 기반)
+  - `components/EntryScoreTooltip.tsx` - Entry Score 툴팁
+  - `components/GlossaryModal.tsx` - 금융 용어 사전 모달
+  - `pages/index.tsx` - 메인 대시보드 통합
 - **테스트 결과**:
   - **Sprint 1 (AI 추천 탭)**:
     - API 엔드포인트: ✅ 정상 작동 (200 OK)
@@ -908,6 +919,35 @@
   - API: ✅ 200 OK, 30건 수집 (스트라드비젼 외)
   - 빌드: ✅ 프로덕션 빌드 성공
   - TypeScript: ✅ 타입 오류 없음
+
+### 2026-05-07~11: 공모주 Vercel 배포 수정 + AI Picks 강화 ✅
+
+#### 공모주 캘린더 Vercel 수정
+- **원인**: 38.co.kr이 Vercel 미국 서버 IP를 차단 → 서버리스 함수에서 직접 스크래핑 불가
+- **해결**: GitHub Actions 캐시 아키텍처 도입 (analyst-reports-cache 동일 패턴)
+  - ✅ `lib/ipo-scraper.mjs` — 38.co.kr EUC-KR 스크래핑 (로컬/CI 전용)
+  - ✅ `scripts/generate-ipo-cache.mjs` — `data/ipo-cache.json` 생성
+  - ✅ `.github/workflows/refresh-ipo-cache.yml` — 4시간마다 자동 갱신
+  - ✅ `pages/api/ipo-calendar.ts` — 캐시 파일 우선 로드, 실패 시 라이브 폴백
+  - ✅ `vercel.json` — ipo-calendar 함수 maxDuration 60초 설정
+
+#### 실적 캘린더 날짜 만료 수정
+- **원인**: earnings-calendar.ts의 샘플 날짜가 2026-04월로 하드코딩 → 과거 날짜
+- **해결**: `addDays(today, N)` 상대 날짜 함수로 교체, 항상 현재 기준 ±N일 표시
+
+#### AI Picks 신뢰도 & Exit 시스템 강화 (2026-05-07)
+- 실제 역대 승률 배너 (analyst 캐시 month1 완료 리포트 기반)
+- brokerSuccessRate 하드코딩 50% → 브로커별 실적 계산
+- 매도 신호 3조건: ① 목표가 달성 ② 기간 초과 ③ -7% 손절
+- 목표가 진행률 프로그레스 바 (기준가→현재가→목표가)
+- 매수 기록 버튼 + 내 투자 현황 섹션 (lib/trade-journal.ts)
+
+#### AI Picks 추천 기준 완화 (2026-05-11)
+- 증권사 수: 3개 → 2개 이상
+- 표시 제한: Top 10 → Top 20
+- 커밋: `156c9e1`
+
+---
 
 ### 2026-05-06: 캘린더 형식 UI + 대시보드 커스터마이징 완료 ✅
 - **목표 1**: 공모주·실적 통합 캘린더 UI 구현 (주간/월간 뷰, 배정 계산기 연동)

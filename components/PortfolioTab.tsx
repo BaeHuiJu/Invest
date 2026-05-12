@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useCallback } from 'react';
 import { Cell, Pie, PieChart, ResponsiveContainer, Tooltip, Bar, BarChart, XAxis, YAxis } from 'recharts';
 import { StatCard } from './StatCard';
 import {
@@ -10,6 +10,9 @@ import {
 } from '@/lib/portfolio-analyzer';
 import { SECTOR_COLORS } from '@/lib/sector-mapping';
 import { readWatchlistStorage } from '@/lib/watchlist-storage';
+import { getTrades, closeTrade, removeTrade, computePnl } from '@/lib/trade-journal';
+import type { TradeRecord } from '@/lib/analyst-types';
+import type { CurrentPricesResponse } from '@/pages/api/current-prices';
 
 type WatchlistItem = {
   ticker: string;
@@ -22,9 +25,139 @@ interface PortfolioTabProps {
   onNavigateToAIPicks?: () => void;
 }
 
+type TradeWithPnl = TradeRecord & {
+  currentPrice: number;
+  pnlPct: number;
+  targetProgressPct: number;
+  isStopLoss: boolean;
+  isTargetHit: boolean;
+  daysHeld: number;
+  daysLeft: number;
+};
+
+function TradeCard({
+  trade,
+  onClose,
+  onRemove,
+}: {
+  trade: TradeWithPnl;
+  onClose: (id: string) => void;
+  onRemove: (id: string) => void;
+}) {
+  const pnlColor = trade.pnlPct >= 0 ? 'text-green-600' : 'text-red-600';
+  const progressColor =
+    trade.isTargetHit ? 'bg-green-500' :
+    trade.isStopLoss ? 'bg-red-500' :
+    trade.targetProgressPct >= 70 ? 'bg-blue-500' : 'bg-slate-400';
+
+  return (
+    <div className={`rounded-xl border-2 p-4 ${
+      trade.isTargetHit ? 'border-green-300 bg-green-50' :
+      trade.isStopLoss ? 'border-red-300 bg-red-50' :
+      'border-c-border bg-c-surface'
+    }`}>
+      <div className="flex items-start justify-between gap-2">
+        <div className="min-w-0">
+          <div className="flex items-center gap-2">
+            <span className="truncate text-sm font-semibold text-c-text">{trade.name}</span>
+            <span className={`shrink-0 rounded px-1.5 py-0.5 text-[10px] ${trade.market === 'korea' ? 'bg-blue-100 text-blue-700' : 'bg-orange-100 text-orange-700'}`}>
+              {trade.market === 'korea' ? '국내' : '해외'}
+            </span>
+          </div>
+          <div className="mt-0.5 text-[11px] text-c-text-3">
+            {trade.ticker} · 매수 {trade.buyDate} · {trade.daysHeld}일 보유
+          </div>
+        </div>
+        <div className="shrink-0 text-right">
+          <div className={`text-lg font-bold ${pnlColor}`}>
+            {trade.pnlPct >= 0 ? '+' : ''}{trade.pnlPct.toFixed(1)}%
+          </div>
+          <div className="text-[11px] text-c-text-3">
+            {trade.currentPrice > 0 ? trade.currentPrice.toLocaleString() : '가격 로딩중'}
+          </div>
+        </div>
+      </div>
+
+      {/* 목표가 진행률 */}
+      <div className="mt-3">
+        <div className="mb-1 flex justify-between text-[10px] text-c-text-3">
+          <span>매수가 {trade.buyPrice.toLocaleString()}</span>
+          <span>목표 {trade.targetProgressPct}%</span>
+          <span>목표가 {trade.targetPrice.toLocaleString()}</span>
+        </div>
+        <div className="h-2 overflow-hidden rounded-full bg-slate-100">
+          <div
+            className={`h-full rounded-full transition-all ${progressColor}`}
+            style={{ width: `${Math.min(100, Math.max(0, trade.targetProgressPct))}%` }}
+          />
+        </div>
+      </div>
+
+      {/* 경고/알림 */}
+      {trade.isTargetHit && (
+        <div className="mt-2 rounded-lg bg-green-100 px-3 py-1.5 text-xs font-medium text-green-700">
+          목표가 달성! 지금 매도를 고려하세요.
+        </div>
+      )}
+      {trade.isStopLoss && (
+        <div className="mt-2 rounded-lg bg-red-100 px-3 py-1.5 text-xs font-medium text-red-700">
+          손절 기준(-7%) 도달. 손실 확정을 고려하세요.
+        </div>
+      )}
+      {trade.daysLeft === 0 && !trade.isTargetHit && !trade.isStopLoss && (
+        <div className="mt-2 rounded-lg bg-amber-100 px-3 py-1.5 text-xs font-medium text-amber-700">
+          보유 기간 초과. 청산 시점을 점검하세요.
+        </div>
+      )}
+
+      <div className="mt-3 flex items-center justify-between">
+        <span className="text-[11px] text-c-text-3">남은 {trade.daysLeft}일</span>
+        <div className="flex gap-2">
+          <button
+            onClick={() => onClose(trade.id)}
+            className="rounded-lg bg-blue-600 px-2.5 py-1 text-[11px] font-medium text-white hover:bg-blue-700"
+          >
+            매도 완료
+          </button>
+          <button
+            onClick={() => onRemove(trade.id)}
+            className="rounded-lg border border-c-border px-2.5 py-1 text-[11px] text-c-text-3 hover:bg-c-surface-2"
+          >
+            삭제
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
 export function PortfolioTab({ onNavigateToAIPicks }: PortfolioTabProps = {}) {
   const [watchlist, setWatchlist] = useState<WatchlistItem[]>([]);
   const [analysis, setAnalysis] = useState<PortfolioAnalysis | null>(null);
+  const [trades, setTrades] = useState<TradeWithPnl[]>([]);
+  const [pricesLoading, setPricesLoading] = useState(false);
+
+  const loadTrades = useCallback(async () => {
+    const raw = getTrades();
+    if (raw.length === 0) { setTrades([]); return; }
+
+    setPricesLoading(true);
+    try {
+      const tickerParam = raw.map((t) => `${t.ticker}:${t.market}`).join(',');
+      const res = await fetch(`/api/current-prices?tickers=${encodeURIComponent(tickerParam)}`);
+      const data = (await res.json()) as CurrentPricesResponse;
+
+      setTrades(raw.map((t) => {
+        const cp = data.prices[`${t.ticker}:${t.market}`] ?? t.buyPrice;
+        return { ...t, currentPrice: cp, ...computePnl(t, cp) };
+      }));
+    } catch {
+      // fallback: use buyPrice as current
+      setTrades(raw.map((t) => ({ ...t, currentPrice: t.buyPrice, ...computePnl(t, t.buyPrice) })));
+    } finally {
+      setPricesLoading(false);
+    }
+  }, []);
 
   useEffect(() => {
     const items = readWatchlistStorage<WatchlistItem>();
@@ -39,7 +172,9 @@ export function PortfolioTab({ onNavigateToAIPicks }: PortfolioTabProps = {}) {
 
     const result = analyzePortfolio(portfolioItems);
     setAnalysis(result);
-  }, []);
+
+    void loadTrades();
+  }, [loadTrades]);
 
   const diversificationLabel = analysis
     ? getDiversificationLabel(analysis.diversificationScore)
@@ -78,6 +213,79 @@ export function PortfolioTab({ onNavigateToAIPicks }: PortfolioTabProps = {}) {
 
   return (
     <div className="space-y-6">
+      {/* 내 매수 현황 */}
+      <div>
+        <div className="mb-3 flex items-center justify-between">
+          <h2 className="text-xl font-bold text-c-text">내 매수 현황</h2>
+          <button onClick={() => void loadTrades()} className="text-xs text-blue-600 hover:underline">
+            {pricesLoading ? '업데이트 중...' : '새로고침'}
+          </button>
+        </div>
+
+        {trades.length === 0 ? (
+          <div className="rounded-xl border-2 border-dashed border-c-border bg-c-surface p-6 text-center">
+            <div className="text-2xl">📋</div>
+            <div className="mt-2 text-sm font-medium text-c-text-2">매수 기록이 없습니다</div>
+            <div className="mt-1 text-xs text-c-text-3">
+              AI추천 탭에서 종목 카드의 "매수 기록" 버튼을 누르면 여기서 추적할 수 있습니다.
+            </div>
+            {onNavigateToAIPicks && (
+              <button
+                onClick={onNavigateToAIPicks}
+                className="mt-3 rounded-lg bg-blue-600 px-4 py-2 text-xs font-medium text-white hover:bg-blue-700"
+              >
+                AI추천 보러 가기
+              </button>
+            )}
+          </div>
+        ) : (
+          <>
+            {/* 요약 */}
+            <div className="mb-3 grid grid-cols-3 gap-2">
+              <div className="rounded-lg bg-c-surface-2 p-2.5 text-center">
+                <div className="text-[10px] text-c-text-3">보유 종목</div>
+                <div className="text-sm font-bold text-c-text">{trades.length}개</div>
+              </div>
+              <div className="rounded-lg bg-c-surface-2 p-2.5 text-center">
+                <div className="text-[10px] text-c-text-3">평균 수익률</div>
+                <div className={`text-sm font-bold ${
+                  trades.reduce((s, t) => s + t.pnlPct, 0) / trades.length >= 0
+                    ? 'text-green-600' : 'text-red-600'
+                }`}>
+                  {((trades.reduce((s, t) => s + t.pnlPct, 0) / trades.length) >= 0 ? '+' : '')}
+                  {(trades.reduce((s, t) => s + t.pnlPct, 0) / trades.length).toFixed(1)}%
+                </div>
+              </div>
+              <div className="rounded-lg bg-c-surface-2 p-2.5 text-center">
+                <div className="text-[10px] text-c-text-3">신호 발생</div>
+                <div className="text-sm font-bold text-amber-600">
+                  {trades.filter((t) => t.isTargetHit || t.isStopLoss || t.daysLeft === 0).length}건
+                </div>
+              </div>
+            </div>
+
+            <div className="grid gap-3 md:grid-cols-2">
+              {trades.map((t) => (
+                <TradeCard
+                  key={t.id}
+                  trade={t}
+                  onClose={(id) => {
+                    const price = window.prompt(`${t.name} 매도가 입력`);
+                    if (price) { closeTrade(id, Number(price)); void loadTrades(); }
+                  }}
+                  onRemove={(id) => {
+                    if (window.confirm(`${t.name} 기록을 삭제하시겠습니까?`)) {
+                      removeTrade(id); void loadTrades();
+                    }
+                  }}
+                />
+              ))}
+            </div>
+          </>
+        )}
+      </div>
+
+      <hr className="border-c-border" />
       <h2 className="text-xl font-bold text-c-text">포트폴리오 분석</h2>
 
       {/* Summary Stats */}

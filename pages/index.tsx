@@ -22,6 +22,7 @@ import { KoreaEtfTradingTab } from '@/components/KoreaEtfTradingTab';
 import { IpoCalendarTab } from '@/components/IpoCalendarTab';
 import { InvestmentCalendarTab } from '@/components/InvestmentCalendarTab';
 import RiskAnalysisTab from '@/components/RiskAnalysisTab';
+import { BeginnerOnboarding } from '@/components/BeginnerOnboarding';
 import { ThemeSelector } from '@/components/ThemeSelector';
 import { DashboardCustomizationModal } from '@/components/DashboardCustomizationModal';
 import { readWatchlistStorage, saveWatchlistStorage } from '@/lib/watchlist-storage';
@@ -499,7 +500,10 @@ export default function Home() {
             : error
               ? <div className="rounded-lg bg-red-50 p-4 text-red-600">{error}</div>
               : <>
-                {activeTab === 'home' && <HomeTab marketIndices={marketIndices} koreaStocks={koreaStocks} koreaETFs={koreaETFs} usStocks={usStocks} usETFs={usETFs} watchlistPreview={watchlistPreview} dashboardConfig={dashboardConfig} onOpenInsight={setInsightTarget} onOpenWatchlist={() => setActiveTab('watchlist')} onOpenCustomize={() => setDashboardCustomizationOpen(true)} />}
+                {activeTab === 'home' && <HomeTab marketIndices={marketIndices} koreaStocks={koreaStocks} koreaETFs={koreaETFs} usStocks={usStocks} usETFs={usETFs} watchlistPreview={watchlistPreview} dashboardConfig={dashboardConfig} onOpenInsight={setInsightTarget} onOpenWatchlist={() => setActiveTab('watchlist')} onOpenCustomize={() => setDashboardCustomizationOpen(true)} onNavigate={(tab) => {
+  const def = DASHBOARD_TAB_DEFINITIONS.find((d) => d.label === tab);
+  if (def) setActiveTab(def.id);
+}} />}
                 {activeTab === 'watchlist' && <WatchlistTab items={resolvedWatchlist} onOpenInsight={setInsightTarget} onRemove={removeWatchlist} />}
                 {activeTab === 'korea-stock' && <StockList stocks={koreaStocks} title="국내 주식" market="korea" category="stock" onOpenInsight={setInsightTarget} isSaved={isSaved} onToggleWatchlist={toggleWatchlist} />}
                 {activeTab === 'korea-etf' && <StockList stocks={koreaETFs} title="국내 ETF" market="korea" category="etf" onOpenInsight={setInsightTarget} isSaved={isSaved} onToggleWatchlist={toggleWatchlist} />}
@@ -542,6 +546,7 @@ function HomeTab({
   onOpenInsight,
   onOpenWatchlist,
   onOpenCustomize,
+  onNavigate,
 }: {
   marketIndices: MarketIndex[];
   koreaStocks: Stock[];
@@ -553,6 +558,7 @@ function HomeTab({
   onOpenInsight: (request: InsightRequest) => void;
   onOpenWatchlist: () => void;
   onOpenCustomize: () => void;
+  onNavigate: (tab: string) => void;
 }) {
   const sectionsById: Record<DashboardHomeSectionId, HomeSectionRenderItem> = {
     'market-indices': {
@@ -653,6 +659,8 @@ function HomeTab({
 
   return (
     <div className="space-y-6">
+      <BeginnerOnboarding onNavigate={onNavigate} />
+
       <section className="rounded-2xl border border-c-border bg-c-surface p-5 shadow-sm">
         <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
           <div>

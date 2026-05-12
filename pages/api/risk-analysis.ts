@@ -7,7 +7,7 @@ const CACHE_TTL_MS = 10 * 60 * 1000;
 const RISK_FREE_RATE_ANNUAL = 0.03;
 const TRADING_DAYS = 252;
 const MAX_STOCKS = 15;
-const MIN_DATA_POINTS = 20;
+const MIN_DATA_POINTS = 5;
 
 export interface StockRiskMetrics {
   ticker: string;
@@ -164,7 +164,7 @@ function riskLevel(score: number): 'low' | 'medium' | 'high' {
 async function buildRiskAnalysis(): Promise<RiskAnalysisResponse> {
   const cacheFile = await loadAnalystData();
   const cutoff = new Date();
-  cutoff.setDate(cutoff.getDate() - 30);
+  cutoff.setDate(cutoff.getDate() - 60);
 
   // Deduplicate: take the highest-scoring ticker per market
   const byKey = new Map<string, { ticker: string; name: string; market: MarketType; currentPrice: number; entryScore: number }>();
@@ -187,8 +187,8 @@ async function buildRiskAnalysis(): Promise<RiskAnalysisResponse> {
 
   // Fetch benchmark returns
   const [kospiPrices, spPrices] = await Promise.all([
-    fetchClosePrices('%5EKS11', 'us'),
-    fetchClosePrices('%5EGSPC', 'us'),
+    fetchClosePrices('^KS11', 'us'),
+    fetchClosePrices('^GSPC', 'us'),
   ]);
   const kospiReturns = dailyReturns(kospiPrices);
   const spReturns = dailyReturns(spPrices);
@@ -213,7 +213,7 @@ async function buildRiskAnalysis(): Promise<RiskAnalysisResponse> {
       riskLevel: riskLevel(score),
       ...metrics,
     };
-  }).filter((s) => s.dataPoints >= MIN_DATA_POINTS);
+  });
 
   const withBeta = stocks.filter((s) => s.beta !== null);
   const withSharpe = stocks.filter((s) => s.sharpeRatio !== null);

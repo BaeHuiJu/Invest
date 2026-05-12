@@ -21,6 +21,7 @@ import { GroqDailyPicksTab } from '@/components/GroqDailyPicksTab';
 import { KoreaEtfTradingTab } from '@/components/KoreaEtfTradingTab';
 import { IpoCalendarTab } from '@/components/IpoCalendarTab';
 import { InvestmentCalendarTab } from '@/components/InvestmentCalendarTab';
+import RiskAnalysisTab from '@/components/RiskAnalysisTab';
 import { ThemeSelector } from '@/components/ThemeSelector';
 import { DashboardCustomizationModal } from '@/components/DashboardCustomizationModal';
 import { readWatchlistStorage, saveWatchlistStorage } from '@/lib/watchlist-storage';
@@ -489,6 +490,8 @@ export default function Home() {
             ? <IpoCalendarTab />
           : activeTab === 'calendar'
             ? <InvestmentCalendarTab />
+          : activeTab === 'risk-analysis'
+            ? <RiskAnalysisTab />
           : activeTab === 'screener'
             ? <ValuationScreenerTab onOpenInsight={setInsightTarget} />
           : loading

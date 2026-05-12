@@ -801,7 +801,7 @@ function AnalystTab({ onOpenInsight, isSaved, onToggleWatchlist }: { onOpenInsig
         <div className="w-full">
           <label className="mb-1 block text-sm text-c-text-2">{'\uAE30\uAC04'}</label>
           <div className="flex flex-wrap overflow-hidden rounded-lg border">
-            {[3, 7, 15, 30].map((value) => <button key={value} onClick={() => setDays(value)} className={`flex-1 px-3 py-2 text-sm ${days === value ? 'bg-blue-600 text-white' : 'bg-c-surface text-c-text-2 hover:bg-c-surface-2'}`}>{value}{'\uC77C'}</button>)}
+            {[3, 7, 15, 30, 90].map((value) => <button key={value} onClick={() => setDays(value)} className={`flex-1 px-3 py-2 text-sm ${days === value ? 'bg-blue-600 text-white' : 'bg-c-surface text-c-text-2 hover:bg-c-surface-2'}`}>{value}{'\uC77C'}</button>)}
           </div>
         </div>
         <SimpleSelect label={'\uC2DC\uC7A5'} value={market} onChange={(value) => setMarket(value as MarketFilter)} options={[['all', '\uC804\uCCB4'], ['korea', '\uAD6D\uB0B4'], ['us', '\uD574\uC678']]} />
@@ -851,7 +851,7 @@ function AnalystTab({ onOpenInsight, isSaved, onToggleWatchlist }: { onOpenInsig
                 <div className="mt-1 text-[12px] font-medium text-c-text">{formatPrice(report.basePrice, report.market)}</div>
                 <div className="mt-1 text-[11px] text-c-text-3">{report.basePriceDate} {'\uC885\uAC00'}</div>
               </div>
-              {(report.performance?.week1 || report.performance?.month1 || report.performance?.month3) && <div className="mt-2.5 grid grid-cols-3 gap-1.5">
+              {days >= 90 && (report.performance?.week1 || report.performance?.month1 || report.performance?.month3) && <div className="mt-2.5 grid grid-cols-3 gap-1.5">
                 {(['week1', 'month1', 'month3'] as const).map((key, i) => {
                   const pt = report.performance?.[key];
                   const badge = getStatusBadge(pt);
@@ -877,9 +877,7 @@ function AnalystTab({ onOpenInsight, isSaved, onToggleWatchlist }: { onOpenInsig
                   <th className="px-4 py-3 text-right">{'\uAE30\uC900\uAC00\uACA9'}</th>
                   <th className="px-4 py-3 text-right">{'\uD604\uC7AC\uAC00'}</th>
                   <th className="px-4 py-3 text-right">{'\uC0C1\uC2B9\uC5EC\uB825'}</th>
-                  <th className="px-4 py-3 text-center">{'\uC131\uACFC (1\uC8FC)'}</th>
-                  <th className="px-4 py-3 text-center">{'\uC131\uACFC (1\uAC1C\uC6D4)'}</th>
-                  <th className="px-4 py-3 text-center">{'\uC131\uACFC (3\uAC1C\uC6D4)'}</th>
+                  {days >= 90 && <><th className="px-4 py-3 text-center">{'\uC131\uACFC (1\uC8FC)'}</th><th className="px-4 py-3 text-center">{'\uC131\uACFC (1\uAC1C\uC6D4)'}</th><th className="px-4 py-3 text-center">{'\uC131\uACFC (3\uAC1C\uC6D4)'}</th></>}
                   <th className="px-4 py-3">{'\uC758\uACAC'}</th>
                 </tr>
               </thead>
@@ -905,7 +903,7 @@ function AnalystTab({ onOpenInsight, isSaved, onToggleWatchlist }: { onOpenInsig
                   <td className="px-4 py-3 text-right"><div className="font-medium">{formatPrice(report.basePrice, report.market)}</div><div className="text-xs text-c-text-3">{report.basePriceDate} {'\uC885\uAC00'}</div></td>
                   <td className="px-4 py-3 text-right">{formatPrice(report.currentPrice, report.market)}</td>
                   <td className="px-4 py-3 text-right font-medium text-green-600">{formatPct(report.upside)}</td>
-                  {[w1, m1, m3].map((pt, pi) => {
+                  {days >= 90 && [w1, m1, m3].map((pt, pi) => {
                     const badge = getStatusBadge(pt);
                     return <td key={pi} className="px-4 py-3 text-center">
                       <span className={`rounded px-1.5 py-0.5 text-[11px] font-medium ${badge.className}`}>{badge.label}</span>

@@ -4,253 +4,238 @@ import type { MarketType } from '../../lib/analyst-types';
 import { loadAnalystData } from './analyst-reports';
 
 const CACHE_TTL_MS = 10 * 60 * 1000;
-const RISK_FREE_RATE_ANNUAL = 0.03;
-const TRADING_DAYS = 252;
-const MAX_STOCKS = 15;
-const MIN_DATA_POINTS = 5;
+const MAX_STOCKS = 20;
+const CANDIDATE_DAYS = 60;
 
 export interface StockRiskMetrics {
   ticker: string;
   name: string;
   market: MarketType;
-  beta: number | null;
-  volatility: number;
-  sharpeRatio: number | null;
-  var95: number;
-  avgDailyReturn: number;
-  currentPrice: number;
-  dataPoints: number;
+
   riskScore: number;
   riskLevel: 'low' | 'medium' | 'high';
+
+  entryScore: number;
+  avgUpside: number;
+  brokerCount: number;
+  brokers: string[];
+  reportCount: number;
+  latestReportDate: string;
+
+  currentPrice: number;
+  avgTargetPrice: number;
+  basePrice: number;
+
+  successRate: number | null;
+  avgReturnPct: number | null;
+  completedCount: number;
+
+  entryScoreBreakdown: {
+    priceVsBase: number;
+    targetGap: number;
+    reportCount: number;
+    consensusStrength: number;
+  };
 }
 
 export interface RiskAnalysisResponse {
   stocks: StockRiskMetrics[];
   portfolio: {
-    avgBeta: number | null;
-    avgVolatility: number;
-    avgSharpe: number | null;
-    portfolioVar95: number;
-    marketDistribution: { korea: number; us: number };
-    riskLevelDistribution: { low: number; medium: number; high: number };
+    avgRiskScore: number;
+    avgEntryScore: number;
+    avgUpside: number;
+    successRate: number | null;
+    marketDist: { korea: number; us: number };
+    riskDist: { low: number; medium: number; high: number };
   };
   generatedAt: string;
-  dataRange: string;
+  totalCandidates: number;
 }
 
 type CacheEntry = { data: RiskAnalysisResponse; fetchedAt: number };
 const cache = new Map<string, CacheEntry>();
 const inflight = new Map<string, Promise<RiskAnalysisResponse>>();
 
-async function fetchClosePrices(
-  ticker: string,
-  market: MarketType
-): Promise<number[]> {
-  try {
-    if (market === 'korea') {
-      const url = `https://m.stock.naver.com/api/stock/${ticker}/price?pageSize=90&page=1`;
-      const res = await fetch(url, {
-        headers: { 'User-Agent': 'Mozilla/5.0' },
-        signal: AbortSignal.timeout(8000),
-      });
-      if (!res.ok) return [];
-      const json = await res.json();
-      return (json as Array<{ closePrice?: string }>)
-        .map((item) => Number(item.closePrice))
-        .filter((v) => v > 0)
-        .reverse();
-    } else {
-      const url = `https://query1.finance.yahoo.com/v8/finance/chart/${encodeURIComponent(ticker)}?interval=1d&range=3mo`;
-      const res = await fetch(url, {
-        headers: { 'User-Agent': 'Mozilla/5.0' },
-        signal: AbortSignal.timeout(8000),
-      });
-      if (!res.ok) return [];
-      const json = await res.json();
-      const closes = json.chart?.result?.[0]?.indicators?.quote?.[0]?.close ?? [];
-      return (closes as (number | null)[]).filter((v): v is number => v != null);
-    }
-  } catch {
-    return [];
-  }
-}
+function computeRiskScore(
+  entryScore: number,
+  avgUpside: number,
+  brokerCount: number,
+  successRate: number | null
+): number {
+  // Entry risk (0-35): low entry score = harder to find good entry = risky
+  const entryRisk = Math.round(((100 - Math.min(100, entryScore)) / 100) * 35);
 
-function dailyReturns(prices: number[]): number[] {
-  const returns: number[] = [];
-  for (let i = 1; i < prices.length; i++) {
-    if (prices[i - 1] > 0) {
-      returns.push((prices[i] - prices[i - 1]) / prices[i - 1]);
-    }
-  }
-  return returns;
-}
+  // Upside/volatility risk (0-30): higher target upside = more volatile expected
+  const upsideRisk = Math.round(Math.min(1, avgUpside / 80) * 30);
 
-function mean(arr: number[]): number {
-  return arr.length === 0 ? 0 : arr.reduce((s, v) => s + v, 0) / arr.length;
-}
+  // Consensus risk (0-20): fewer brokers = weaker consensus = riskier
+  const consensusRisk = Math.round(Math.max(0, (5 - Math.min(5, brokerCount)) / 4) * 20);
 
-function stdDev(arr: number[]): number {
-  if (arr.length < 2) return 0;
-  const m = mean(arr);
-  const variance = arr.reduce((s, v) => s + (v - m) ** 2, 0) / (arr.length - 1);
-  return Math.sqrt(variance);
-}
+  // Historical risk (0-15): low success rate = historically risky
+  const histRisk =
+    successRate != null
+      ? Math.round((1 - successRate / 100) * 15)
+      : 8; // neutral if no data
 
-function covariance(a: number[], b: number[]): number {
-  const len = Math.min(a.length, b.length);
-  if (len < 2) return 0;
-  const ma = mean(a.slice(0, len));
-  const mb = mean(b.slice(0, len));
-  return (
-    a.slice(0, len).reduce((s, v, i) => s + (v - ma) * (b[i]! - mb), 0) /
-    (len - 1)
-  );
-}
-
-function computeMetrics(
-  prices: number[],
-  benchmarkReturns: number[]
-): Omit<StockRiskMetrics, 'ticker' | 'name' | 'market' | 'currentPrice' | 'riskScore' | 'riskLevel'> {
-  const returns = dailyReturns(prices);
-  const dataPoints = returns.length;
-
-  if (dataPoints < MIN_DATA_POINTS) {
-    return { beta: null, volatility: 0, sharpeRatio: null, var95: 0, avgDailyReturn: 0, dataPoints };
-  }
-
-  const mu = mean(returns);
-  const sigma = stdDev(returns);
-  const volatility = Math.round(sigma * Math.sqrt(TRADING_DAYS) * 1000) / 10;
-
-  const rfDaily = RISK_FREE_RATE_ANNUAL / TRADING_DAYS;
-  const annualReturn = mu * TRADING_DAYS;
-  const sharpeRatio =
-    sigma > 0
-      ? Math.round(((annualReturn - RISK_FREE_RATE_ANNUAL) / (sigma * Math.sqrt(TRADING_DAYS))) * 100) / 100
-      : null;
-
-  const benchLen = Math.min(returns.length, benchmarkReturns.length);
-  const varBench = stdDev(benchmarkReturns.slice(0, benchLen)) ** 2;
-  const beta =
-    varBench > 0 && benchLen >= MIN_DATA_POINTS
-      ? Math.round((covariance(returns, benchmarkReturns) / varBench) * 100) / 100
-      : null;
-
-  const var95 = Math.round((-(mu - 1.645 * sigma) * 100) * 10) / 10;
-
-  return {
-    beta,
-    volatility,
-    sharpeRatio,
-    var95: Math.max(0, var95),
-    avgDailyReturn: Math.round(mu * 10000) / 100,
-    dataPoints,
-  };
-}
-
-function riskScore(volatility: number, beta: number | null, var95: number): number {
-  const volScore = Math.min(40, (volatility / 80) * 40);
-  const betaScore = beta != null ? Math.min(30, (Math.abs(beta) / 2) * 30) : 15;
-  const varScore = Math.min(30, (var95 / 5) * 30);
-  return Math.round(volScore + betaScore + varScore);
+  return Math.min(100, entryRisk + upsideRisk + consensusRisk + histRisk);
 }
 
 function riskLevel(score: number): 'low' | 'medium' | 'high' {
-  if (score < 35) return 'low';
-  if (score < 60) return 'medium';
+  if (score < 40) return 'low';
+  if (score < 65) return 'medium';
   return 'high';
 }
 
 async function buildRiskAnalysis(): Promise<RiskAnalysisResponse> {
   const cacheFile = await loadAnalystData();
   const cutoff = new Date();
-  cutoff.setDate(cutoff.getDate() - 60);
+  cutoff.setDate(cutoff.getDate() - CANDIDATE_DAYS);
 
-  // Deduplicate: take the highest-scoring ticker per market
-  const byKey = new Map<string, { ticker: string; name: string; market: MarketType; currentPrice: number; entryScore: number }>();
-  for (const report of cacheFile.reports) {
-    if (new Date(report.date) < cutoff) continue;
+  const reports = cacheFile.reports.filter((r) => new Date(r.date) >= cutoff);
+
+  // Group by market:ticker (same as consensus logic)
+  const groups = new Map<string, typeof reports>();
+  for (const report of reports) {
     const key = `${report.market}:${report.ticker}`;
-    const existing = byKey.get(key);
-    if (!existing || report.currentPrice > 0) {
-      byKey.set(key, {
-        ticker: report.ticker,
-        name: report.name,
-        market: report.market,
-        currentPrice: report.currentPrice,
-        entryScore: 0,
-      });
-    }
+    const arr = groups.get(key) ?? [];
+    arr.push(report);
+    groups.set(key, arr);
   }
 
-  const candidates = Array.from(byKey.values()).slice(0, MAX_STOCKS);
+  const stocks: StockRiskMetrics[] = [];
 
-  // Fetch benchmark returns
-  const [kospiPrices, spPrices] = await Promise.all([
-    fetchClosePrices('^KS11', 'us'),
-    fetchClosePrices('^GSPC', 'us'),
-  ]);
-  const kospiReturns = dailyReturns(kospiPrices);
-  const spReturns = dailyReturns(spPrices);
+  for (const group of Array.from(groups.values())) {
+    const sorted = [...group].sort(
+      (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
+    );
+    const brokers = Array.from(new Set(sorted.map((r) => r.broker)));
+    const latest = sorted[0]!;
 
-  // Fetch all stock prices in parallel
-  const priceResults = await Promise.all(
-    candidates.map((c) => fetchClosePrices(c.ticker, c.market))
-  );
+    const currentPrice = latest.currentPrice;
+    const avgTargetPrice =
+      sorted.reduce((s, r) => s + r.targetPrice, 0) / sorted.length;
+    const avgUpside =
+      currentPrice > 0
+        ? Math.round(((avgTargetPrice - currentPrice) / currentPrice) * 1000) / 10
+        : 0;
 
-  const stocks: StockRiskMetrics[] = candidates.map((c, i) => {
-    const prices = priceResults[i]!;
-    const benchReturns = c.market === 'korea' ? kospiReturns : spReturns;
-    const metrics = computeMetrics(prices, benchReturns);
-    const currentPrice = prices.length > 0 ? (prices[prices.length - 1] ?? c.currentPrice) : c.currentPrice;
-    const score = riskScore(metrics.volatility, metrics.beta, metrics.var95);
-    return {
-      ticker: c.ticker,
-      name: c.name,
-      market: c.market,
-      currentPrice,
+    // Entry score (reuse same formula as ai-picks)
+    const priceVsBaseRatio =
+      latest.basePrice > 0 ? (latest.basePrice - currentPrice) / latest.basePrice : 0;
+    const targetGapRatio =
+      currentPrice > 0 ? (avgTargetPrice - currentPrice) / currentPrice : 0;
+
+    const scale = (ratio: number, target: number, max: number) =>
+      Math.max(0, Math.min(max, (ratio / target) * max));
+
+    const scoreReportCount = (n: number) => {
+      if (n <= 1) return 0;
+      if (n === 2) return 5;
+      if (n === 3) return 10;
+      if (n === 4) return 13;
+      return 15;
+    };
+    const scoreConsensus = (n: number) => {
+      if (n <= 1) return 0;
+      if (n === 2) return 10;
+      if (n === 3) return 15;
+      if (n === 4) return 18;
+      return 20;
+    };
+
+    const breakdown = {
+      priceVsBase: Math.round(scale(priceVsBaseRatio, 0.15, 30)),
+      targetGap: Math.round(scale(targetGapRatio, 0.4, 35)),
+      reportCount: Math.round(scoreReportCount(sorted.length)),
+      consensusStrength: Math.round(scoreConsensus(brokers.length)),
+    };
+    const entryScore = Math.min(
+      100,
+      breakdown.priceVsBase + breakdown.targetGap + breakdown.reportCount + breakdown.consensusStrength
+    );
+
+    // Performance stats from completed records
+    const completedM1 = sorted
+      .map((r) => r.performance?.month1)
+      .filter((p): p is NonNullable<typeof p> => p?.status === 'complete');
+
+    const completedCount = completedM1.length;
+    const successRate =
+      completedCount > 0
+        ? Math.round((completedM1.filter((p) => p.success).length / completedCount) * 1000) / 10
+        : null;
+    const avgReturnPct =
+      completedCount > 0
+        ? Math.round(
+            (completedM1.reduce((s, p) => s + p.returnPct, 0) / completedCount) * 10
+          ) / 10
+        : null;
+
+    const score = computeRiskScore(entryScore, avgUpside, brokers.length, successRate);
+
+    stocks.push({
+      ticker: latest.ticker,
+      name: latest.name,
+      market: latest.market,
       riskScore: score,
       riskLevel: riskLevel(score),
-      ...metrics,
-    };
-  });
+      entryScore,
+      entryScoreBreakdown: breakdown,
+      avgUpside,
+      brokerCount: brokers.length,
+      brokers,
+      reportCount: sorted.length,
+      latestReportDate: latest.date,
+      currentPrice,
+      avgTargetPrice: Math.round(avgTargetPrice * 10) / 10,
+      basePrice: latest.basePrice,
+      successRate,
+      avgReturnPct,
+      completedCount,
+    });
+  }
 
-  const withBeta = stocks.filter((s) => s.beta !== null);
-  const withSharpe = stocks.filter((s) => s.sharpeRatio !== null);
+  const top = stocks
+    .sort((a, b) => b.riskScore - a.riskScore)
+    .slice(0, MAX_STOCKS);
+
+  const withSuccess = top.filter((s) => s.successRate !== null);
 
   const portfolio = {
-    avgBeta:
-      withBeta.length > 0
-        ? Math.round((withBeta.reduce((s, v) => s + v.beta!, 0) / withBeta.length) * 100) / 100
-        : null,
-    avgVolatility:
-      stocks.length > 0
-        ? Math.round((stocks.reduce((s, v) => s + v.volatility, 0) / stocks.length) * 10) / 10
+    avgRiskScore:
+      top.length > 0
+        ? Math.round(top.reduce((s, v) => s + v.riskScore, 0) / top.length)
         : 0,
-    avgSharpe:
-      withSharpe.length > 0
-        ? Math.round((withSharpe.reduce((s, v) => s + v.sharpeRatio!, 0) / withSharpe.length) * 100) / 100
-        : null,
-    portfolioVar95:
-      stocks.length > 0
-        ? Math.round((stocks.reduce((s, v) => s + v.var95, 0) / stocks.length) * 10) / 10
+    avgEntryScore:
+      top.length > 0
+        ? Math.round(top.reduce((s, v) => s + v.entryScore, 0) / top.length)
         : 0,
-    marketDistribution: {
-      korea: stocks.filter((s) => s.market === 'korea').length,
-      us: stocks.filter((s) => s.market === 'us').length,
+    avgUpside:
+      top.length > 0
+        ? Math.round((top.reduce((s, v) => s + v.avgUpside, 0) / top.length) * 10) / 10
+        : 0,
+    successRate:
+      withSuccess.length > 0
+        ? Math.round(
+            (withSuccess.reduce((s, v) => s + v.successRate!, 0) / withSuccess.length) * 10
+          ) / 10
+        : null,
+    marketDist: {
+      korea: top.filter((s) => s.market === 'korea').length,
+      us: top.filter((s) => s.market === 'us').length,
     },
-    riskLevelDistribution: {
-      low: stocks.filter((s) => s.riskLevel === 'low').length,
-      medium: stocks.filter((s) => s.riskLevel === 'medium').length,
-      high: stocks.filter((s) => s.riskLevel === 'high').length,
+    riskDist: {
+      low: top.filter((s) => s.riskLevel === 'low').length,
+      medium: top.filter((s) => s.riskLevel === 'medium').length,
+      high: top.filter((s) => s.riskLevel === 'high').length,
     },
   };
 
   return {
-    stocks: stocks.sort((a, b) => b.riskScore - a.riskScore),
+    stocks: top,
     portfolio,
     generatedAt: new Date().toISOString(),
-    dataRange: '90일',
+    totalCandidates: stocks.length,
   };
 }
 
@@ -259,19 +244,19 @@ export default async function handler(
   res: NextApiResponse<RiskAnalysisResponse | { error: string }>
 ) {
   try {
-    const cacheKey = 'risk-analysis';
-    const cached = cache.get(cacheKey);
+    const key = 'risk-analysis';
+    const cached = cache.get(key);
     if (cached && Date.now() - cached.fetchedAt < CACHE_TTL_MS) {
       return res.status(200).json(cached.data);
     }
 
-    const existing = inflight.get(cacheKey);
+    const existing = inflight.get(key);
     const promise = existing ?? buildRiskAnalysis();
-    if (!existing) inflight.set(cacheKey, promise);
+    if (!existing) inflight.set(key, promise);
 
     const data = await promise;
-    cache.set(cacheKey, { data, fetchedAt: Date.now() });
-    inflight.delete(cacheKey);
+    cache.set(key, { data, fetchedAt: Date.now() });
+    inflight.delete(key);
 
     return res.status(200).json(data);
   } catch (error) {

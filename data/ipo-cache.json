@@ -17,6 +17,22 @@
       "calculator": null
     },
     {
+      "id": "2291",
+      "name": "져스텍",
+      "subscriptionStart": "2026-06-18",
+      "subscriptionEnd": "2026-06-19",
+      "confirmedPrice": null,
+      "priceBandLow": null,
+      "priceBandHigh": null,
+      "underwriter": "삼성증권",
+      "competitionRatio": "정정신고서 제출 요구",
+      "listingDate": null,
+      "refundDate": "2026-06-23",
+      "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2291&l=&page=1",
+      "status": "청약예정",
+      "calculator": null
+    },
+    {
       "id": "2289",
       "name": "스트라드비젼",
       "subscriptionStart": "2026-06-17",
@@ -29,22 +45,6 @@
       "listingDate": null,
       "refundDate": "2026-06-22",
       "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2289&l=&page=1",
-      "status": "청약예정",
-      "calculator": null
-    },
-    {
-      "id": "2291",
-      "name": "져스텍",
-      "subscriptionStart": "2026-06-11",
-      "subscriptionEnd": "2026-06-12",
-      "confirmedPrice": null,
-      "priceBandLow": null,
-      "priceBandHigh": null,
-      "underwriter": "삼성증권",
-      "competitionRatio": "정정신고서 제출 요구",
-      "listingDate": null,
-      "refundDate": "2026-06-16",
-      "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2291&l=&page=1",
       "status": "청약예정",
       "calculator": null
     },
@@ -481,6 +481,6 @@
       "calculator": null
     }
   ],
-  "fetchedAt": "2026-05-18T02:47:29.565Z",
+  "fetchedAt": "2026-05-18T07:58:02.024Z",
   "totalCount": 30
 }

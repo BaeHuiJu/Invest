@@ -8,8 +8,8 @@
       "confirmedPrice": null,
       "priceBandLow": null,
       "priceBandHigh": null,
-      "underwriter": "",
-      "competitionRatio": "유진투자증권,미래에셋증권",
+      "underwriter": "유진투자증권,미래에셋증권",
+      "competitionRatio": "정정신고서 제출 요구",
       "listingDate": null,
       "refundDate": "2026-06-23",
       "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2294&l=&page=1",
@@ -24,8 +24,8 @@
       "confirmedPrice": null,
       "priceBandLow": null,
       "priceBandHigh": null,
-      "underwriter": "삼성증권",
-      "competitionRatio": "정정신고서 제출 요구",
+      "underwriter": "",
+      "competitionRatio": "삼성증권",
       "listingDate": null,
       "refundDate": "2026-06-23",
       "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2291&l=&page=1",
@@ -141,7 +141,7 @@
       "listingDate": "2026-05-20",
       "refundDate": "2026-05-14",
       "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2285&l=&page=1",
-      "status": "상장예정",
+      "status": "상장완료",
       "calculator": null
     },
     {
@@ -266,10 +266,10 @@
       "priceBandHigh": null,
       "underwriter": "한국투자증권,KB증권",
       "competitionRatio": "2097.68:1",
-      "listingDate": "2026-03-31",
-      "refundDate": "2026-03-24",
+      "listingDate": null,
+      "refundDate": null,
       "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2270&l=&page=1",
-      "status": "상장완료",
+      "status": "상장예정",
       "calculator": null
     },
     {
@@ -282,10 +282,10 @@
       "priceBandHigh": null,
       "underwriter": "신한투자증권",
       "competitionRatio": "1403.74:1",
-      "listingDate": "2026-04-01",
-      "refundDate": "2026-03-24",
+      "listingDate": null,
+      "refundDate": null,
       "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2280&l=&page=1",
-      "status": "상장완료",
+      "status": "상장예정",
       "calculator": null
     },
     {
@@ -481,6 +481,6 @@
       "calculator": null
     }
   ],
-  "fetchedAt": "2026-05-19T21:15:04.216Z",
+  "fetchedAt": "2026-05-20T02:45:05.618Z",
   "totalCount": 30
 }

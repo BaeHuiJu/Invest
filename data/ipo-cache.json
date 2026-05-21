@@ -1,6 +1,22 @@
 {
   "ipos": [
     {
+      "id": "2290",
+      "name": "매드업",
+      "subscriptionStart": "2026-06-23",
+      "subscriptionEnd": "2026-06-24",
+      "confirmedPrice": null,
+      "priceBandLow": null,
+      "priceBandHigh": null,
+      "underwriter": "",
+      "competitionRatio": "미래에셋증권",
+      "listingDate": null,
+      "refundDate": "2026-06-26",
+      "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2290&l=&page=1",
+      "status": "청약예정",
+      "calculator": null
+    },
+    {
       "id": "2294",
       "name": "빅웨이브로보틱스",
       "subscriptionStart": "2026-06-18",
@@ -77,22 +93,6 @@
       "listingDate": null,
       "refundDate": "2026-06-12",
       "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2295&l=&page=1",
-      "status": "청약예정",
-      "calculator": null
-    },
-    {
-      "id": "2290",
-      "name": "매드업",
-      "subscriptionStart": "2026-06-01",
-      "subscriptionEnd": "2026-06-02",
-      "confirmedPrice": null,
-      "priceBandLow": null,
-      "priceBandHigh": null,
-      "underwriter": "",
-      "competitionRatio": "미래에셋증권",
-      "listingDate": null,
-      "refundDate": "2026-06-05",
-      "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2290&l=&page=1",
       "status": "청약예정",
       "calculator": null
     },
@@ -481,6 +481,6 @@
       "calculator": null
     }
   ],
-  "fetchedAt": "2026-05-20T21:48:08.526Z",
+  "fetchedAt": "2026-05-21T02:48:02.433Z",
   "totalCount": 30
 }

@@ -1,6 +1,22 @@
 {
   "ipos": [
     {
+      "id": "2296",
+      "name": "레메디",
+      "subscriptionStart": "2026-07-01",
+      "subscriptionEnd": "2026-07-02",
+      "confirmedPrice": null,
+      "priceBandLow": null,
+      "priceBandHigh": null,
+      "underwriter": "",
+      "competitionRatio": "KB증권",
+      "listingDate": null,
+      "refundDate": "2026-07-06",
+      "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2296&l=&page=1",
+      "status": "청약예정",
+      "calculator": null
+    },
+    {
       "id": "2290",
       "name": "매드업",
       "subscriptionStart": "2026-06-23",
@@ -74,7 +90,7 @@
       "priceBandHigh": null,
       "underwriter": "",
       "competitionRatio": "KB증권",
-      "listingDate": "2026-06-19",
+      "listingDate": null,
       "refundDate": "2026-06-12",
       "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2293&l=&page=1",
       "status": "청약예정",
@@ -463,24 +479,8 @@
       "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2255&l=&page=1",
       "status": "상장예정",
       "calculator": null
-    },
-    {
-      "id": "2248",
-      "name": "리브스메드",
-      "subscriptionStart": "2025-12-15",
-      "subscriptionEnd": "2025-12-16",
-      "confirmedPrice": 55000,
-      "priceBandLow": null,
-      "priceBandHigh": null,
-      "underwriter": "삼성증권,미래에셋증권",
-      "competitionRatio": "390:1",
-      "listingDate": null,
-      "refundDate": null,
-      "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2248&l=&page=1",
-      "status": "상장예정",
-      "calculator": null
     }
   ],
-  "fetchedAt": "2026-05-22T02:48:23.522Z",
+  "fetchedAt": "2026-05-22T07:40:05.521Z",
   "totalCount": 30
 }

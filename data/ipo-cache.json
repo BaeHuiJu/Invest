@@ -17,6 +17,22 @@
       "calculator": null
     },
     {
+      "id": "2295",
+      "name": "메리츠스팩2호",
+      "subscriptionStart": "2026-06-24",
+      "subscriptionEnd": "2026-06-25",
+      "confirmedPrice": null,
+      "priceBandLow": null,
+      "priceBandHigh": null,
+      "underwriter": "",
+      "competitionRatio": "메리츠증권",
+      "listingDate": null,
+      "refundDate": "2026-06-29",
+      "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2295&l=&page=1",
+      "status": "청약예정",
+      "calculator": null
+    },
+    {
       "id": "2290",
       "name": "매드업",
       "subscriptionStart": "2026-06-23",
@@ -93,22 +109,6 @@
       "listingDate": null,
       "refundDate": "2026-06-12",
       "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2293&l=&page=1",
-      "status": "청약예정",
-      "calculator": null
-    },
-    {
-      "id": "2295",
-      "name": "메리츠스팩2호",
-      "subscriptionStart": "2026-06-09",
-      "subscriptionEnd": "2026-06-10",
-      "confirmedPrice": null,
-      "priceBandLow": null,
-      "priceBandHigh": null,
-      "underwriter": "",
-      "competitionRatio": "메리츠증권",
-      "listingDate": null,
-      "refundDate": "2026-06-12",
-      "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2295&l=&page=1",
       "status": "청약예정",
       "calculator": null
     },
@@ -481,6 +481,6 @@
       "calculator": null
     }
   ],
-  "fetchedAt": "2026-05-26T07:40:59.831Z",
+  "fetchedAt": "2026-05-26T14:55:55.446Z",
   "totalCount": 30
 }

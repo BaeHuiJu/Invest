@@ -49,6 +49,22 @@
       "calculator": null
     },
     {
+      "id": "2297",
+      "name": "한국스팩16호",
+      "subscriptionStart": "2026-06-22",
+      "subscriptionEnd": "2026-06-23",
+      "confirmedPrice": null,
+      "priceBandLow": null,
+      "priceBandHigh": null,
+      "underwriter": "",
+      "competitionRatio": "한국투자증권",
+      "listingDate": null,
+      "refundDate": "2026-06-25",
+      "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2297&l=&page=1",
+      "status": "청약예정",
+      "calculator": null
+    },
+    {
       "id": "2294",
       "name": "빅웨이브로보틱스",
       "subscriptionStart": "2026-06-19",
@@ -141,7 +157,7 @@
       "listingDate": "2026-06-05",
       "refundDate": "2026-05-28",
       "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2288&l=&page=1",
-      "status": "청약중",
+      "status": "상장예정",
       "calculator": null
     },
     {
@@ -463,24 +479,8 @@
       "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2266&l=&page=1",
       "status": "상장예정",
       "calculator": null
-    },
-    {
-      "id": "2255",
-      "name": "세미파이브",
-      "subscriptionStart": "2025-12-18",
-      "subscriptionEnd": "2025-12-19",
-      "confirmedPrice": 24000,
-      "priceBandLow": null,
-      "priceBandHigh": null,
-      "underwriter": "삼성증권",
-      "competitionRatio": "967.60:1",
-      "listingDate": null,
-      "refundDate": null,
-      "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2255&l=&page=1",
-      "status": "상장예정",
-      "calculator": null
     }
   ],
-  "fetchedAt": "2026-05-26T21:39:04.190Z",
+  "fetchedAt": "2026-05-27T02:52:03.593Z",
   "totalCount": 30
 }

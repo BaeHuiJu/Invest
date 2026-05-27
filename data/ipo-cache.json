@@ -17,6 +17,22 @@
       "calculator": null
     },
     {
+      "id": "2293",
+      "name": "레몬헬스케어",
+      "subscriptionStart": "2026-06-24",
+      "subscriptionEnd": "2026-06-25",
+      "confirmedPrice": null,
+      "priceBandLow": null,
+      "priceBandHigh": null,
+      "underwriter": "",
+      "competitionRatio": "KB증권",
+      "listingDate": null,
+      "refundDate": "2026-06-29",
+      "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2293&l=&page=1",
+      "status": "청약예정",
+      "calculator": null
+    },
+    {
       "id": "2295",
       "name": "메리츠스팩2호",
       "subscriptionStart": "2026-06-24",
@@ -113,22 +129,6 @@
       "calculator": null
     },
     {
-      "id": "2293",
-      "name": "레몬헬스케어",
-      "subscriptionStart": "2026-06-09",
-      "subscriptionEnd": "2026-06-10",
-      "confirmedPrice": null,
-      "priceBandLow": null,
-      "priceBandHigh": null,
-      "underwriter": "",
-      "competitionRatio": "KB증권",
-      "listingDate": null,
-      "refundDate": "2026-06-12",
-      "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2293&l=&page=1",
-      "status": "청약예정",
-      "calculator": null
-    },
-    {
       "id": "2287",
       "name": "피스피스스튜디오",
       "subscriptionStart": "2026-05-26",
@@ -136,8 +136,8 @@
       "confirmedPrice": 21500,
       "priceBandLow": null,
       "priceBandHigh": null,
-      "underwriter": "",
-      "competitionRatio": "NH투자증권,미래에셋증권",
+      "underwriter": "NH투자증권,미래에셋증권",
+      "competitionRatio": "1191.93:1",
       "listingDate": "2026-06-08",
       "refundDate": "2026-05-29",
       "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2287&l=&page=1",
@@ -481,6 +481,6 @@
       "calculator": null
     }
   ],
-  "fetchedAt": "2026-05-27T02:52:03.593Z",
+  "fetchedAt": "2026-05-27T07:59:00.366Z",
   "totalCount": 30
 }

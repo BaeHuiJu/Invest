@@ -57,7 +57,16 @@
       "Bash(GIT_EDITOR=: git rebase *)",
       "Bash(git cherry-pick *)",
       "Bash(git update-ref *)",
-      "Bash(rm -rf /d/Invest/.git/rebase-merge)"
+      "Bash(rm -rf /d/Invest/.git/rebase-merge)",
+      "Bash(git fetch *)",
+      "Bash(git -C \"D:/Invest\" diff HEAD~1 HEAD -- pages/index.tsx)",
+      "Bash(Get-ChildItem -Path \"D:\\\\Invest\\\\data\" -File)",
+      "Bash(Select-Object Name, Length)",
+      "Bash(Get-ChildItem -Path \"D:\\\\Invest\" -Directory)",
+      "Bash(Select-Object Name)",
+      "Bash(netstat -ano)",
+      "Bash(findstr :3000)",
+      "Bash(npx playwright *)"
     ]
   }
 }

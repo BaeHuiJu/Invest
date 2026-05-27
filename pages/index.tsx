@@ -23,6 +23,8 @@ import { IpoCalendarTab } from '@/components/IpoCalendarTab';
 import { InvestmentCalendarTab } from '@/components/InvestmentCalendarTab';
 import RiskAnalysisTab from '@/components/RiskAnalysisTab';
 import { BeginnerOnboarding } from '@/components/BeginnerOnboarding';
+import { BreakingNewsBanner } from '@/components/BreakingNewsBanner';
+import { MarketNewsSection } from '@/components/MarketNewsSection';
 import { ThemeSelector } from '@/components/ThemeSelector';
 import { DashboardCustomizationModal } from '@/components/DashboardCustomizationModal';
 import { readWatchlistStorage, saveWatchlistStorage } from '@/lib/watchlist-storage';
@@ -214,7 +216,18 @@ async function fetchStockInsight(request: InsightRequest) {
 }
 
 export default function Home() {
-  const [activeTab, setActiveTab] = useState<TabType>('home');
+  const [activeTab, setActiveTabRaw] = useState<TabType>(() => {
+    if (typeof window !== 'undefined') {
+      const saved = sessionStorage.getItem('activeTab') as TabType | null;
+      if (saved) return saved;
+    }
+    return 'home';
+  });
+
+  const setActiveTab = (tab: TabType) => {
+    sessionStorage.setItem('activeTab', tab);
+    setActiveTabRaw(tab);
+  };
   const [marketIndices, setMarketIndices] = useState<MarketIndex[]>([]);
   const [koreaStocks, setKoreaStocks] = useState<Stock[]>([]);
   const [koreaETFs, setKoreaETFs] = useState<Stock[]>([]);
@@ -445,6 +458,7 @@ export default function Home() {
           </div>
         </div>
       </header>
+      <BreakingNewsBanner />
       <nav className="border-b border-c-border bg-c-surface">
         <div className="mx-auto max-w-7xl">
           <div className="flex w-full overflow-x-scroll px-2 sm:px-4" style={{ WebkitOverflowScrolling: 'touch' } as React.CSSProperties}>
@@ -659,6 +673,7 @@ function HomeTab({
 
   return (
     <div className="space-y-6">
+      <MarketNewsSection />
       <BeginnerOnboarding onNavigate={onNavigate} />
 
       <section className="rounded-2xl border border-c-border bg-c-surface p-5 shadow-sm">

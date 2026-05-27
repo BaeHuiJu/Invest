@@ -9,7 +9,8 @@
     "start": "next start",
     "lint": "next lint",
     "generate:analyst-cache": "node scripts/generate-analyst-cache.mjs",
-    "generate:ipo-cache": "node scripts/generate-ipo-cache.mjs"
+    "generate:ipo-cache": "node scripts/generate-ipo-cache.mjs",
+    "generate:news-cache": "node scripts/generate-news-cache.mjs"
   },
   "dependencies": {
     "@dnd-kit/core": "^6.3.1",

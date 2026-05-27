@@ -123,3 +123,17 @@ body {
 .animate-slide-up {
   animation: slide-up 0.2s ease-out;
 }
+
+/* Breaking news ticker */
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  animation: marquee 35s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}

@@ -123,9 +123,9 @@ export default async function handler(
 
     // 3단계: 티커 필터 (relatedTickers 배열에서 검색)
     if (ticker) {
-      filtered = filtered.filter((item: any) => {
+      filtered = filtered.filter((item) => {
         if (!item.relatedTickers || item.relatedTickers.length === 0) return false;
-        return item.relatedTickers.some((t: string) => t.toUpperCase().includes(ticker));
+        return item.relatedTickers.some((t) => t.toUpperCase().includes(ticker));
       });
     }
 

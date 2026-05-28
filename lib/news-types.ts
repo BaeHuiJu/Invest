@@ -14,6 +14,7 @@ export interface MarketNewsItem {
   category: NewsCategory;
   isBreaking: boolean;
   beginnerExplanation: string;
+  relatedTickers?: string[];
 }
 
 export interface MarketNewsCacheFile {

@@ -1,6 +1,45 @@
 {
-  "generatedAt": "2026-05-30T13:08:13.444Z",
+  "generatedAt": "2026-05-30T16:53:54.466Z",
   "domestic": [
+    {
+      "id": "119_0003096179",
+      "title": "중동 종전·경제지표·'엔비디아 모멘텀' 주목...코스피 7500~8600 [주간 증시 전망]",
+      "pressName": "데일리안",
+      "publishedAt": "2026-05-31T00:11:00+09:00",
+      "url": "https://n.news.naver.com/mnews/article/119/0003096179",
+      "source": "domestic",
+      "sentiment": "neutral",
+      "sentimentScore": 0,
+      "category": "all",
+      "isBreaking": true,
+      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
+    },
+    {
+      "id": "009_0005687231",
+      "title": "\"메모리 반도체 천하\"...삼전닉스에 이어 마이크론도 1조 달러 클럽 입성",
+      "pressName": "매일경제",
+      "publishedAt": "2026-05-30T22:47:00+09:00",
+      "url": "https://n.news.naver.com/mnews/article/009/0005687231",
+      "source": "domestic",
+      "sentiment": "neutral",
+      "sentimentScore": 0,
+      "category": "all",
+      "isBreaking": false,
+      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
+    },
+    {
+      "id": "016_0002650146",
+      "title": "'독하디 독한 돈의 전쟁' 역대급 외국인 매도 다 받는 개미...예탁금 130조까지 불었다 [투자360]",
+      "pressName": "헤럴드경제",
+      "publishedAt": "2026-05-30T22:41:00+09:00",
+      "url": "https://n.news.naver.com/mnews/article/016/0002650146",
+      "source": "domestic",
+      "sentiment": "neutral",
+      "sentimentScore": 0,
+      "category": "수급",
+      "isBreaking": false,
+      "beginnerExplanation": "외국 투자자들이 한국 주식을 많이 사고 있어요. 긍정적인 신호에요."
+    },
     {
       "id": "031_0001031961",
       "title": "코스피 급등에 '빚투' 또 사상 최대⋯신용잔고 첫 37조원대",
@@ -11,7 +50,7 @@
       "sentiment": "positive",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "주가가 갑자기 많이 올랐어요. 그 이유가 뭔지 꼭 확인해 보세요."
     },
     {
@@ -24,7 +63,7 @@
       "sentiment": "positive",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "좋은 소식이 나왔어요. 시장이 긍정적으로 반응할 가능성이 있어요."
     },
     {
@@ -37,12 +76,12 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
       "id": "021_0002794559",
-      "title": "'그와 만나면 주가가 오른다'...젠슨황 방한 소식에 들썩",
+      "title": "'다음주에 만나면 주가 오른다'...젠슨황 방한 소식에 들썩",
       "pressName": "문화일보",
       "publishedAt": "2026-05-30T20:39:00+09:00",
       "url": "https://n.news.naver.com/mnews/article/021/0002794559",
@@ -50,7 +89,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
@@ -63,7 +102,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
@@ -76,7 +115,7 @@
       "sentiment": "positive",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "좋은 소식이 나왔어요. 시장이 긍정적으로 반응할 가능성이 있어요."
     },
     {
@@ -182,48 +221,61 @@
       "category": "all",
       "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
-    },
-    {
-      "id": "422_0000869878",
-      "title": "[뉴스초점] 코스피, 또 역대 최고치...반도체·대형주 상승 주도",
-      "pressName": "연합뉴스TV",
-      "publishedAt": "2026-05-30T14:52:00+09:00",
-      "url": "https://n.news.naver.com/mnews/article/422/0000869878",
-      "source": "domestic",
-      "sentiment": "positive",
-      "sentimentScore": 1,
-      "category": "all",
-      "isBreaking": false,
-      "beginnerExplanation": "기업이 예상보다 돈을 많이 벌었어요. 주가에 좋을 수 있어요."
-    },
-    {
-      "id": "014_0005528416",
-      "title": "\"이번엔 누굴 만나나\"...젠슨 황 방한에 LG·현대차·네이버 '들썩'",
-      "pressName": "파이낸셜뉴스",
-      "publishedAt": "2026-05-30T14:20:00+09:00",
-      "url": "https://n.news.naver.com/mnews/article/014/0005528416",
-      "source": "domestic",
-      "sentiment": "neutral",
-      "sentimentScore": 0,
-      "category": "all",
-      "isBreaking": false,
-      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
-    },
-    {
-      "id": "015_0005293128",
-      "title": "구윤철 \"초과세수 상당액 국부펀드에 넣겠다\"",
-      "pressName": "한국경제",
-      "publishedAt": "2026-05-30T14:16:00+09:00",
-      "url": "https://n.news.naver.com/mnews/article/015/0005293128",
-      "source": "domestic",
-      "sentiment": "neutral",
-      "sentimentScore": 0,
-      "category": "all",
-      "isBreaking": false,
-      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     }
   ],
   "overseas": [
+    {
+      "id": "366_0001168275",
+      "title": "한화에어로 \"독일·영국과도 무기 수출 논의\"",
+      "pressName": "조선비즈",
+      "publishedAt": "2026-05-31T00:54:00+09:00",
+      "url": "https://n.news.naver.com/mnews/article/366/0001168275",
+      "source": "overseas",
+      "sentiment": "neutral",
+      "sentimentScore": 0,
+      "category": "all",
+      "isBreaking": true,
+      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
+    },
+    {
+      "id": "001_0016109263",
+      "title": "미국·영국·호주, 오커스 수중드론 공동 개발한다(종합)",
+      "pressName": "연합뉴스",
+      "publishedAt": "2026-05-30T22:54:00+09:00",
+      "url": "https://n.news.naver.com/mnews/article/001/0016109263",
+      "source": "overseas",
+      "sentiment": "neutral",
+      "sentimentScore": 0,
+      "category": "all",
+      "isBreaking": false,
+      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
+    },
+    {
+      "id": "138_0002229404",
+      "title": "통신 3사, AI 기반 新성장 동력 발굴에 사활...AI 서비스 차별화 가속",
+      "pressName": "디지털데일리",
+      "publishedAt": "2026-05-30T22:48:00+09:00",
+      "url": "https://n.news.naver.com/mnews/article/138/0002229404",
+      "source": "overseas",
+      "sentiment": "positive",
+      "sentimentScore": 0,
+      "category": "all",
+      "isBreaking": false,
+      "beginnerExplanation": "좋은 소식이 나왔어요. 시장이 긍정적으로 반응할 가능성이 있어요."
+    },
+    {
+      "id": "009_0005687229",
+      "title": "\"아이돌 이목구비까지 선명\"...샤오미 17T, 콘서트 필수템 노리는 이유",
+      "pressName": "매일경제",
+      "publishedAt": "2026-05-30T22:10:00+09:00",
+      "url": "https://n.news.naver.com/mnews/article/009/0005687229",
+      "source": "overseas",
+      "sentiment": "neutral",
+      "sentimentScore": 0,
+      "category": "all",
+      "isBreaking": false,
+      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
+    },
     {
       "id": "422_0000869947",
       "title": "[탐사보도 뉴스프리즘] 삼성전자 노사 합의에도 후폭풍 계속",
@@ -234,7 +286,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
@@ -247,7 +299,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
@@ -260,7 +312,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
@@ -273,7 +325,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
@@ -418,58 +470,6 @@
       "category": "all",
       "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
-    },
-    {
-      "id": "138_0002229400",
-      "title": "\"손짓하면 돌격\"...AI 스스로 판단하는 '전투 로봇' 시대 본격화 [산업AX파일]",
-      "pressName": "디지털데일리",
-      "publishedAt": "2026-05-30T17:00:00+09:00",
-      "url": "https://n.news.naver.com/mnews/article/138/0002229400",
-      "source": "overseas",
-      "sentiment": "neutral",
-      "sentimentScore": 0,
-      "category": "all",
-      "isBreaking": false,
-      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
-    },
-    {
-      "id": "662_0000096315",
-      "title": "과수화상병 확산...청정지역도 뚫렸다",
-      "pressName": "농민신문",
-      "publishedAt": "2026-05-30T17:00:00+09:00",
-      "url": "https://n.news.naver.com/mnews/article/662/0000096315",
-      "source": "overseas",
-      "sentiment": "neutral",
-      "sentimentScore": 0,
-      "category": "all",
-      "isBreaking": false,
-      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
-    },
-    {
-      "id": "009_0005687196",
-      "title": "\"성과 연동\"... 잘못된 경영 판단 부메랑이 된 게임사",
-      "pressName": "매일경제",
-      "publishedAt": "2026-05-30T16:38:00+09:00",
-      "url": "https://n.news.naver.com/mnews/article/009/0005687196",
-      "source": "overseas",
-      "sentiment": "neutral",
-      "sentimentScore": 0,
-      "category": "all",
-      "isBreaking": false,
-      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
-    },
-    {
-      "id": "417_0001145465",
-      "title": "'성과급 박탈감'에 삼성DX 혼란...AI로 체질 개선 속도",
-      "pressName": "동행미디어 시대",
-      "publishedAt": "2026-05-30T16:37:00+09:00",
-      "url": "https://n.news.naver.com/mnews/article/417/0001145465",
-      "source": "overseas",
-      "sentiment": "positive",
-      "sentimentScore": 0,
-      "category": "all",
-      "isBreaking": false,
-      "beginnerExplanation": "좋은 소식이 나왔어요. 시장이 긍정적으로 반응할 가능성이 있어요."
     }
   ],
   "main": [
@@ -477,7 +477,7 @@
       "id": "277_0005769747",
       "title": "\"들고 있던 사람들 대박 났네...566% 올랐는데 더 간다\" 목표가 올렸지만 경고한 이유[주末머니]",
       "pressName": "네이버금융",
-      "publishedAt": "2026-05-30T13:08:13.443Z",
+      "publishedAt": "2026-05-30T16:53:54.465Z",
       "url": "https://n.news.naver.com/mnews/article/277/0005769747",
       "source": "main",
       "sentiment": "neutral",
@@ -490,7 +490,7 @@
       "id": "138_0002229394",
       "title": "\"삼성전자·하이닉스는 불기둥, 내 계좌는 신저가\"...종목 10개 중 8개 하락 [증시레이더]",
       "pressName": "네이버금융",
-      "publishedAt": "2026-05-30T13:08:13.444Z",
+      "publishedAt": "2026-05-30T16:53:54.465Z",
       "url": "https://n.news.naver.com/mnews/article/138/0002229394",
       "source": "main",
       "sentiment": "negative",
@@ -500,10 +500,23 @@
       "beginnerExplanation": "기업 이익이 줄었어요. 주가 하락 요인이 될 수 있어요."
     },
     {
+      "id": "215_0001253812",
+      "title": "\"호재에도 꿈쩍 않더니 드디어\" 하루 새 26.6% '쑥' ...재평가 불붙었다",
+      "pressName": "네이버금융",
+      "publishedAt": "2026-05-30T16:53:54.465Z",
+      "url": "https://n.news.naver.com/mnews/article/215/0001253812",
+      "source": "main",
+      "sentiment": "neutral",
+      "sentimentScore": 0,
+      "category": "all",
+      "isBreaking": true,
+      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
+    },
+    {
       "id": "011_0004626005",
       "title": "주식 올랐으면 민주당 찍으라는데...상장사 82%는 주가 떨어졌다 [이런국장 저런주식]",
       "pressName": "네이버금융",
-      "publishedAt": "2026-05-30T13:08:13.444Z",
+      "publishedAt": "2026-05-30T16:53:54.465Z",
       "url": "https://n.news.naver.com/mnews/article/011/0004626005",
       "source": "main",
       "sentiment": "neutral",
@@ -513,24 +526,11 @@
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
-      "id": "008_0005364971",
-      "title": "\"삼전닉스만 봤다가 후회\"...'이 종목' 담은 ETF, 한달 최고 수익률 81%",
+      "id": "014_0005528418",
+      "title": "월급 260만원 청년, 아껴도 '빠듯'···의지 때문이 아니었다 [머니설계사무소]",
       "pressName": "네이버금융",
-      "publishedAt": "2026-05-30T13:08:13.444Z",
-      "url": "https://n.news.naver.com/mnews/article/008/0005364971",
-      "source": "main",
-      "sentiment": "positive",
-      "sentimentScore": 0,
-      "category": "all",
-      "isBreaking": true,
-      "beginnerExplanation": "좋은 소식이 나왔어요. 시장이 긍정적으로 반응할 가능성이 있어요."
-    },
-    {
-      "id": "018_0006293690",
-      "title": "'1억&rarr;67억원' 소유 \"10년 전 산 하닉·삼전 덕에 내집 마련\"",
-      "pressName": "네이버금융",
-      "publishedAt": "2026-05-30T13:08:13.444Z",
-      "url": "https://n.news.naver.com/mnews/article/018/0006293690",
+      "publishedAt": "2026-05-30T16:53:54.465Z",
+      "url": "https://n.news.naver.com/mnews/article/014/0005528418",
       "source": "main",
       "sentiment": "neutral",
       "sentimentScore": 0,

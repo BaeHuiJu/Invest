@@ -1,6 +1,32 @@
 {
-  "generatedAt": "2026-06-06T13:13:32.791Z",
+  "generatedAt": "2026-06-06T17:02:40.338Z",
   "domestic": [
+    {
+      "id": "016_0002652888",
+      "title": "'성공의 저주'가 부른 환율 대란...비슷한 처지 대만은 어떻게 피했나 [홍길용의 화식열전](897)",
+      "pressName": "헤럴드경제",
+      "publishedAt": "2026-06-07T00:05:00+09:00",
+      "url": "https://n.news.naver.com/mnews/article/016/0002652888",
+      "source": "domestic",
+      "sentiment": "neutral",
+      "sentimentScore": 0,
+      "category": "환율",
+      "isBreaking": true,
+      "beginnerExplanation": "환율 변동은 수출입 기업 수익에 큰 영향을 줘요."
+    },
+    {
+      "id": "215_0001254510",
+      "title": "싹싹 모아 팔았는데 '휴~'...오른만큼 떨어졌다",
+      "pressName": "한국경제TV",
+      "publishedAt": "2026-06-07T00:00:00+09:00",
+      "url": "https://n.news.naver.com/mnews/article/215/0001254510",
+      "source": "domestic",
+      "sentiment": "neutral",
+      "sentimentScore": 0,
+      "category": "all",
+      "isBreaking": false,
+      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
+    },
     {
       "id": "016_0002652883",
       "title": "\"떨어질 때 사라\" 골드만삭스의 조언...\"S&P500 연내 8000 간다\"",
@@ -11,7 +37,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
@@ -234,35 +260,100 @@
       "category": "all",
       "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
-    },
-    {
-      "id": "011_0004628285",
-      "title": "반도체주 급브레이크...뉴욕서 시총 하루만에 2000조 날아가",
-      "pressName": "서울경제",
-      "publishedAt": "2026-06-06T16:06:00+09:00",
-      "url": "https://n.news.naver.com/mnews/article/011/0004628285",
-      "source": "domestic",
-      "sentiment": "neutral",
-      "sentimentScore": 0,
-      "category": "all",
-      "isBreaking": false,
-      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
-    },
-    {
-      "id": "015_0005295662",
-      "title": "코스피 오를 때 20% 빠진 '이 종목'...\"하반기 희소식 있다\" [종목+]",
-      "pressName": "한국경제",
-      "publishedAt": "2026-06-06T16:03:00+09:00",
-      "url": "https://n.news.naver.com/mnews/article/015/0005295662",
-      "source": "domestic",
-      "sentiment": "neutral",
-      "sentimentScore": 0,
-      "category": "all",
-      "isBreaking": false,
-      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     }
   ],
   "overseas": [
+    {
+      "id": "021_0002795897",
+      "title": "'탈원전' 유럽국가들, 40년만에 '복귀' 전망...\"신뢰할 수 있는 에너지원\"",
+      "pressName": "문화일보",
+      "publishedAt": "2026-06-07T00:30:00+09:00",
+      "url": "https://n.news.naver.com/mnews/article/021/0002795897",
+      "source": "overseas",
+      "sentiment": "neutral",
+      "sentimentScore": 0,
+      "category": "정책",
+      "isBreaking": true,
+      "beginnerExplanation": "정부가 특정 산업을 지원하려고 해요. 해당 기업들에 좋을 수 있어요."
+    },
+    {
+      "id": "009_0005690160",
+      "title": "한수원, '26조' 체코 원전 리스크 털어내...EU 역외보조금 심층조사 미개시",
+      "pressName": "매일경제",
+      "publishedAt": "2026-06-06T22:40:00+09:00",
+      "url": "https://n.news.naver.com/mnews/article/009/0005690160",
+      "source": "overseas",
+      "sentiment": "neutral",
+      "sentimentScore": 0,
+      "category": "all",
+      "isBreaking": false,
+      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
+    },
+    {
+      "id": "001_0016123292",
+      "title": "광안리 M 드론 라이트쇼, '위대한 헌신'",
+      "pressName": "연합뉴스",
+      "publishedAt": "2026-06-06T22:37:00+09:00",
+      "url": "https://n.news.naver.com/mnews/article/001/0016123292",
+      "source": "overseas",
+      "sentiment": "neutral",
+      "sentimentScore": 0,
+      "category": "all",
+      "isBreaking": false,
+      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
+    },
+    {
+      "id": "001_0016123291",
+      "title": "광안리 M 드론 라이트쇼, '위대한 헌신'",
+      "pressName": "연합뉴스",
+      "publishedAt": "2026-06-06T22:36:00+09:00",
+      "url": "https://n.news.naver.com/mnews/article/001/0016123291",
+      "source": "overseas",
+      "sentiment": "neutral",
+      "sentimentScore": 0,
+      "category": "all",
+      "isBreaking": false,
+      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
+    },
+    {
+      "id": "001_0016123290",
+      "title": "광안리 M 드론 라이트쇼, '위대한 헌신'",
+      "pressName": "연합뉴스",
+      "publishedAt": "2026-06-06T22:36:00+09:00",
+      "url": "https://n.news.naver.com/mnews/article/001/0016123290",
+      "source": "overseas",
+      "sentiment": "neutral",
+      "sentimentScore": 0,
+      "category": "all",
+      "isBreaking": false,
+      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
+    },
+    {
+      "id": "001_0016123289",
+      "title": "광안리 M 드론 라이트쇼, '위대한 헌신'",
+      "pressName": "연합뉴스",
+      "publishedAt": "2026-06-06T22:36:00+09:00",
+      "url": "https://n.news.naver.com/mnews/article/001/0016123289",
+      "source": "overseas",
+      "sentiment": "neutral",
+      "sentimentScore": 0,
+      "category": "all",
+      "isBreaking": false,
+      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
+    },
+    {
+      "id": "001_0016123288",
+      "title": "광안리 M 드론 라이트쇼, '위대한 헌신'",
+      "pressName": "연합뉴스",
+      "publishedAt": "2026-06-06T22:36:00+09:00",
+      "url": "https://n.news.naver.com/mnews/article/001/0016123288",
+      "source": "overseas",
+      "sentiment": "neutral",
+      "sentimentScore": 0,
+      "category": "all",
+      "isBreaking": false,
+      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
+    },
     {
       "id": "138_0002230065",
       "title": "세가, 월드컵 앞두고 'SFCC 2026' 띄운다...안정환·김남일 앞세워 韓 시장 재공략",
@@ -273,7 +364,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
@@ -286,7 +377,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
@@ -299,7 +390,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
@@ -312,7 +403,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "정책",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "정부가 특정 산업을 지원하려고 해요. 해당 기업들에 좋을 수 있어요."
     },
     {
@@ -325,7 +416,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
@@ -431,97 +522,6 @@
       "category": "all",
       "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
-    },
-    {
-      "id": "050_0000107015",
-      "title": "한동훈 \"선관위 해체 수준 개혁해야···특검 필요\"",
-      "pressName": "한경비즈니스",
-      "publishedAt": "2026-06-06T18:50:00+09:00",
-      "url": "https://n.news.naver.com/mnews/article/050/0000107015",
-      "source": "overseas",
-      "sentiment": "neutral",
-      "sentimentScore": 0,
-      "category": "all",
-      "isBreaking": false,
-      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
-    },
-    {
-      "id": "001_0016123238",
-      "title": "한수원, 체코 원전 역외보조금 리스크 해소...EU 심층조사 미개시(종합)",
-      "pressName": "연합뉴스",
-      "publishedAt": "2026-06-06T18:48:00+09:00",
-      "url": "https://n.news.naver.com/mnews/article/001/0016123238",
-      "source": "overseas",
-      "sentiment": "neutral",
-      "sentimentScore": 0,
-      "category": "all",
-      "isBreaking": false,
-      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
-    },
-    {
-      "id": "050_0000107014",
-      "title": "용산 '던전'의 추억, 그리고 젠슨 황이라는 신화  [EDITOR's LETTER]",
-      "pressName": "한경비즈니스",
-      "publishedAt": "2026-06-06T18:43:00+09:00",
-      "url": "https://n.news.naver.com/mnews/article/050/0000107014",
-      "source": "overseas",
-      "sentiment": "neutral",
-      "sentimentScore": 0,
-      "category": "all",
-      "isBreaking": false,
-      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
-    },
-    {
-      "id": "003_0013990736",
-      "title": "김정관 \"체코 원전 FSR 종결, 韓 원전 경쟁력 입증한 성과\"",
-      "pressName": "뉴시스",
-      "publishedAt": "2026-06-06T18:28:00+09:00",
-      "url": "https://n.news.naver.com/mnews/article/003/0013990736",
-      "source": "overseas",
-      "sentiment": "neutral",
-      "sentimentScore": 0,
-      "category": "all",
-      "isBreaking": false,
-      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
-    },
-    {
-      "id": "003_0013990734",
-      "title": "젠슨 황 \"서울에 AI 기술센터 세운다\"...8일 현대차·LG '로보틱스 주도' 韓기업 릴레이 회동",
-      "pressName": "뉴시스",
-      "publishedAt": "2026-06-06T18:20:00+09:00",
-      "url": "https://n.news.naver.com/mnews/article/003/0013990734",
-      "source": "overseas",
-      "sentiment": "neutral",
-      "sentimentScore": 0,
-      "category": "all",
-      "isBreaking": false,
-      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
-    },
-    {
-      "id": "421_0008988937",
-      "title": "체코 원전 역외보조금 리스크 해결...산업장관 \"진심으로 환영\"(종합)",
-      "pressName": "뉴스1",
-      "publishedAt": "2026-06-06T18:19:00+09:00",
-      "url": "https://n.news.naver.com/mnews/article/421/0008988937",
-      "source": "overseas",
-      "sentiment": "neutral",
-      "sentimentScore": 0,
-      "category": "all",
-      "isBreaking": false,
-      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
-    },
-    {
-      "id": "050_0000107013",
-      "title": "노동시장 이중구조 해소, 임금 격차를 넘어 미래 성장동력으로 [김홍유의 산업의 窓]",
-      "pressName": "한경비즈니스",
-      "publishedAt": "2026-06-06T18:06:00+09:00",
-      "url": "https://n.news.naver.com/mnews/article/050/0000107013",
-      "source": "overseas",
-      "sentiment": "positive",
-      "sentimentScore": 0,
-      "category": "all",
-      "isBreaking": false,
-      "beginnerExplanation": "좋은 소식이 나왔어요. 시장이 긍정적으로 반응할 가능성이 있어요."
     }
   ],
   "main": [
@@ -529,7 +529,7 @@
       "id": "011_0004628259",
       "title": "\"잘 있어라 개미들아\" 삼전서 '30조' 팔아치운 외인...그 돈 다 어디로 흘러갔나 보니",
       "pressName": "네이버금융",
-      "publishedAt": "2026-06-06T13:13:32.790Z",
+      "publishedAt": "2026-06-06T17:02:40.338Z",
       "url": "https://n.news.naver.com/mnews/article/011/0004628259",
       "source": "main",
       "sentiment": "neutral",
@@ -539,24 +539,11 @@
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
-      "id": "015_0005295671",
-      "title": "'비트코인' 공격 투자 즐기던 40대 의사...'이렇게 바꿨다'",
+      "id": "009_0005690144",
+      "title": "\"나라곳간 걱정 잠시 접어둬\"...반도체 호황에 초과세수 최대 70조",
       "pressName": "네이버금융",
-      "publishedAt": "2026-06-06T13:13:32.790Z",
-      "url": "https://n.news.naver.com/mnews/article/015/0005295671",
-      "source": "main",
-      "sentiment": "neutral",
-      "sentimentScore": 0,
-      "category": "all",
-      "isBreaking": true,
-      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
-    },
-    {
-      "id": "008_0005367946",
-      "title": "'브로드컴 쇼크' 삼전닉스 비명 터질때 환호성 터진 종목들[김근희의 증시 랩업]",
-      "pressName": "네이버금융",
-      "publishedAt": "2026-06-06T13:13:32.790Z",
-      "url": "https://n.news.naver.com/mnews/article/008/0005367946",
+      "publishedAt": "2026-06-06T17:02:40.338Z",
+      "url": "https://n.news.naver.com/mnews/article/009/0005690144",
       "source": "main",
       "sentiment": "neutral",
       "sentimentScore": 0,
@@ -568,7 +555,7 @@
       "id": "119_0003098355",
       "title": "반도체 급락에 개미 폭풍매수했는데...'검은 월요일' 우려↑",
       "pressName": "네이버금융",
-      "publishedAt": "2026-06-06T13:13:32.791Z",
+      "publishedAt": "2026-06-06T17:02:40.338Z",
       "url": "https://n.news.naver.com/mnews/article/119/0003098355",
       "source": "main",
       "sentiment": "negative",
@@ -578,10 +565,36 @@
       "beginnerExplanation": "주가가 갑자기 많이 떨어졌어요. 패닉 판매는 위험해요. 침착함이 중요합니다."
     },
     {
+      "id": "008_0005367946",
+      "title": "'브로드컴 쇼크' 삼전닉스 비명 터질때 환호성 터진 종목들[김근희의 증시 랩업]",
+      "pressName": "네이버금융",
+      "publishedAt": "2026-06-06T17:02:40.338Z",
+      "url": "https://n.news.naver.com/mnews/article/008/0005367946",
+      "source": "main",
+      "sentiment": "neutral",
+      "sentimentScore": 0,
+      "category": "all",
+      "isBreaking": true,
+      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
+    },
+    {
+      "id": "015_0005295671",
+      "title": "'비트코인' 공격 투자 즐기던 40대 의사...'이렇게 바꿨다'",
+      "pressName": "네이버금융",
+      "publishedAt": "2026-06-06T17:02:40.338Z",
+      "url": "https://n.news.naver.com/mnews/article/015/0005295671",
+      "source": "main",
+      "sentiment": "neutral",
+      "sentimentScore": 0,
+      "category": "all",
+      "isBreaking": true,
+      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
+    },
+    {
       "id": "215_0001254490",
       "title": "수익률 -16%에도 '사자'...8,600억 뭉칫돈 몰려간 곳",
       "pressName": "네이버금융",
-      "publishedAt": "2026-06-06T13:13:32.791Z",
+      "publishedAt": "2026-06-06T17:02:40.338Z",
       "url": "https://n.news.naver.com/mnews/article/215/0001254490",
       "source": "main",
       "sentiment": "neutral",

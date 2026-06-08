@@ -1,6 +1,45 @@
 {
-  "generatedAt": "2026-06-08T15:33:55.161Z",
+  "generatedAt": "2026-06-08T18:20:32.511Z",
   "domestic": [
+    {
+      "id": "003_0013994646",
+      "title": "'블랙 먼데이' 급락한 반도체 주가...김대호 박사 \"지표 확인 우선\"",
+      "pressName": "뉴시스",
+      "publishedAt": "2026-06-09T02:02:00+09:00",
+      "url": "https://n.news.naver.com/mnews/article/003/0013994646",
+      "source": "domestic",
+      "sentiment": "negative",
+      "sentimentScore": 0,
+      "category": "all",
+      "isBreaking": true,
+      "beginnerExplanation": "주가가 갑자기 많이 떨어졌어요. 패닉 판매는 위험해요. 침착함이 중요합니다."
+    },
+    {
+      "id": "023_0003980914",
+      "title": "[주식 매매 상위 종목 및 환율] 2026년 6월 8일자",
+      "pressName": "조선일보",
+      "publishedAt": "2026-06-09T00:37:00+09:00",
+      "url": "https://n.news.naver.com/mnews/article/023/0003980914",
+      "source": "domestic",
+      "sentiment": "neutral",
+      "sentimentScore": 0,
+      "category": "환율",
+      "isBreaking": false,
+      "beginnerExplanation": "환율 변동은 수출입 기업 수익에 큰 영향을 줘요."
+    },
+    {
+      "id": "023_0003980901",
+      "title": "[주요경제지표] 2026년 6월 8일자",
+      "pressName": "조선일보",
+      "publishedAt": "2026-06-09T00:32:00+09:00",
+      "url": "https://n.news.naver.com/mnews/article/023/0003980901",
+      "source": "domestic",
+      "sentiment": "neutral",
+      "sentimentScore": 0,
+      "category": "all",
+      "isBreaking": false,
+      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
+    },
     {
       "id": "021_0002796302",
       "title": "뉴욕증시, 반도체주 반등에 상승 출발...나스닥 1.09%↑",
@@ -11,7 +50,7 @@
       "sentiment": "positive",
       "sentimentScore": 1,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "기업이 예상보다 돈을 많이 벌었어요. 주가에 좋을 수 있어요."
     },
     {
@@ -24,7 +63,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
@@ -37,7 +76,7 @@
       "sentiment": "positive",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "기업이 예상보다 돈을 많이 벌었어요. 주가에 좋을 수 있어요."
     },
     {
@@ -50,7 +89,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
@@ -63,7 +102,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "환율",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "환율 변동은 수출입 기업 수익에 큰 영향을 줘요."
     },
     {
@@ -76,21 +115,21 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
       "id": "018_0006301060",
-      "title": "AI가 이끄는 실적 성장...S&P500 목표치 8100으로 상향-씨티",
+      "title": "\"S&P500 8100 전망\" AI 순풍 지속 확신",
       "pressName": "이데일리",
       "publishedAt": "2026-06-08T23:29:00+09:00",
       "url": "https://n.news.naver.com/mnews/article/018/0006301060",
       "source": "domestic",
-      "sentiment": "positive",
+      "sentiment": "neutral",
       "sentimentScore": 0,
-      "category": "실적",
-      "isBreaking": true,
-      "beginnerExplanation": "기업이 예상보다 돈을 많이 벌었어요. 주가에 좋을 수 있어요."
+      "category": "all",
+      "isBreaking": false,
+      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
       "id": "277_0005773518",
@@ -102,7 +141,7 @@
       "sentiment": "positive",
       "sentimentScore": 1,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "기업이 예상보다 돈을 많이 벌었어요. 주가에 좋을 수 있어요."
     },
     {
@@ -115,7 +154,7 @@
       "sentiment": "positive",
       "sentimentScore": 1,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "기업이 예상보다 돈을 많이 벌었어요. 주가에 좋을 수 있어요."
     },
     {
@@ -128,7 +167,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "주가가 갑자기 많이 떨어졌어요. 패닉 판매는 위험해요. 침착함이 중요합니다."
     },
     {
@@ -141,7 +180,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
@@ -154,7 +193,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
@@ -208,48 +247,100 @@
       "category": "all",
       "isBreaking": false,
       "beginnerExplanation": "기업이 예상보다 돈을 많이 벌었어요. 주가에 좋을 수 있어요."
-    },
-    {
-      "id": "119_0003098992",
-      "title": "[데일리안 오늘뉴스 종합] \"다음엔 K-젠슨이라 불러달라\"...젠슨 황이 한국서 남긴 말말말, 9000피 앞두고 '출렁'...빚투 개미, 반대매매 공포 어쩌나, 조희대 대법원장, 노태악 선관위원장 사의 수용 등",
-      "pressName": "데일리안",
-      "publishedAt": "2026-06-08T21:02:00+09:00",
-      "url": "https://n.news.naver.com/mnews/article/119/0003098992",
-      "source": "domestic",
-      "sentiment": "neutral",
-      "sentimentScore": 0,
-      "category": "all",
-      "isBreaking": false,
-      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
-    },
-    {
-      "id": "215_0001254701",
-      "title": "우주까지 가버린 스페이스X IPO [레버리지셰어즈 인포그래픽]",
-      "pressName": "한국경제TV",
-      "publishedAt": "2026-06-08T21:00:00+09:00",
-      "url": "https://n.news.naver.com/mnews/article/215/0001254701",
-      "source": "domestic",
-      "sentiment": "neutral",
-      "sentimentScore": 0,
-      "category": "all",
-      "isBreaking": false,
-      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
-    },
-    {
-      "id": "009_0005691045",
-      "title": "AI 열풍, 금리 움직일까...새 연준의장의 첫 FOMC에 쏠린 눈 [불앤베어 위클리]",
-      "pressName": "매일경제",
-      "publishedAt": "2026-06-08T20:58:00+09:00",
-      "url": "https://n.news.naver.com/mnews/article/009/0005691045",
-      "source": "domestic",
-      "sentiment": "neutral",
-      "sentimentScore": 0,
-      "category": "금리·통화",
-      "isBreaking": false,
-      "beginnerExplanation": "돈 빌리는 비용이 낮아져 주식시장에 좋은 소식이에요."
     }
   ],
   "overseas": [
+    {
+      "id": "005_0001853797",
+      "title": "'스벅논란' 수습 정용진, 이마트·프라퍼티 대표이사 맡는다",
+      "pressName": "국민일보",
+      "publishedAt": "2026-06-09T01:00:00+09:00",
+      "url": "https://n.news.naver.com/mnews/article/005/0001853797",
+      "source": "overseas",
+      "sentiment": "neutral",
+      "sentimentScore": 0,
+      "category": "all",
+      "isBreaking": false,
+      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
+    },
+    {
+      "id": "005_0001853796",
+      "title": "대한전선, 싱가포르 '1400억' 초고압전력망 수주",
+      "pressName": "국민일보",
+      "publishedAt": "2026-06-09T00:57:00+09:00",
+      "url": "https://n.news.naver.com/mnews/article/005/0001853796",
+      "source": "overseas",
+      "sentiment": "neutral",
+      "sentimentScore": 0,
+      "category": "all",
+      "isBreaking": false,
+      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
+    },
+    {
+      "id": "005_0001853795",
+      "title": "LS일렉, 두바이 전력청 공인시험소 등록... \"중동 수주전 승기\"",
+      "pressName": "국민일보",
+      "publishedAt": "2026-06-09T00:57:00+09:00",
+      "url": "https://n.news.naver.com/mnews/article/005/0001853795",
+      "source": "overseas",
+      "sentiment": "neutral",
+      "sentimentScore": 0,
+      "category": "all",
+      "isBreaking": false,
+      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
+    },
+    {
+      "id": "005_0001853794",
+      "title": "\"日 거의 따라잡아, 문제는 기회\"... 정회식 대표의 '자강론'",
+      "pressName": "국민일보",
+      "publishedAt": "2026-06-09T00:56:00+09:00",
+      "url": "https://n.news.naver.com/mnews/article/005/0001853794",
+      "source": "overseas",
+      "sentiment": "neutral",
+      "sentimentScore": 0,
+      "category": "all",
+      "isBreaking": false,
+      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
+    },
+    {
+      "id": "005_0001853789",
+      "title": "레미콘 노조 휴업 돌입... 수도권 1만1000대 운송 중단",
+      "pressName": "국민일보",
+      "publishedAt": "2026-06-09T00:42:00+09:00",
+      "url": "https://n.news.naver.com/mnews/article/005/0001853789",
+      "source": "overseas",
+      "sentiment": "neutral",
+      "sentimentScore": 0,
+      "category": "all",
+      "isBreaking": false,
+      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
+    },
+    {
+      "id": "422_0000872677",
+      "title": "삼성 전영현, 젠슨 황 회동...\"고대역폭메모리 협력\"",
+      "pressName": "연합뉴스TV",
+      "publishedAt": "2026-06-09T00:34:00+09:00",
+      "url": "https://n.news.naver.com/mnews/article/422/0000872677",
+      "source": "overseas",
+      "sentiment": "neutral",
+      "sentimentScore": 0,
+      "category": "all",
+      "isBreaking": false,
+      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
+    },
+    {
+      "id": "023_0003980905",
+      "title": "\"중동 전쟁 이어 환율까지\"... 비용 부담에 휘청",
+      "pressName": "조선일보",
+      "publishedAt": "2026-06-09T00:34:00+09:00",
+      "url": "https://n.news.naver.com/mnews/article/023/0003980905",
+      "source": "overseas",
+      "sentiment": "neutral",
+      "sentimentScore": 0,
+      "category": "환율",
+      "isBreaking": false,
+      "beginnerExplanation": "환율 변동은 수출입 기업 수익에 큰 영향을 줘요."
+    },
     {
       "id": "020_0003725328",
       "title": "정용진 \"책임 경영\"... 이마트-신세계프라퍼티 대표 맡는다",
@@ -260,7 +351,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
@@ -273,8 +364,21 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
+    },
+    {
+      "id": "020_0003725326",
+      "title": "구광모 \"막내인 제가\" 최태원 \"이제 나도 깐부됐다\"... 젠슨 황 \"증시 급락은 더 저렴하게 살 수 있는 기회\"",
+      "pressName": "동아일보",
+      "publishedAt": "2026-06-09T00:31:00+09:00",
+      "url": "https://n.news.naver.com/mnews/article/020/0003725326",
+      "source": "overseas",
+      "sentiment": "negative",
+      "sentimentScore": 0,
+      "category": "all",
+      "isBreaking": false,
+      "beginnerExplanation": "주가가 갑자기 많이 떨어졌어요. 패닉 판매는 위험해요. 침착함이 중요합니다."
     },
     {
       "id": "005_0001853779",
@@ -286,7 +390,7 @@
       "sentiment": "positive",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "좋은 소식이 나왔어요. 시장이 긍정적으로 반응할 가능성이 있어요."
     },
     {
@@ -299,7 +403,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "정책",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
@@ -312,7 +416,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
@@ -325,7 +429,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
@@ -338,7 +442,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
@@ -351,7 +455,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
@@ -364,7 +468,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
@@ -377,120 +481,16 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
-      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
-    },
-    {
-      "id": "215_0001254706",
-      "title": "전영현 삼성전자 부회장 \"젠슨 황과 HBM 장기 협력 논의\"",
-      "pressName": "한국경제TV",
-      "publishedAt": "2026-06-08T22:30:00+09:00",
-      "url": "https://n.news.naver.com/mnews/article/215/0001254706",
-      "source": "overseas",
-      "sentiment": "neutral",
-      "sentimentScore": 0,
-      "category": "all",
-      "isBreaking": false,
-      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
-    },
-    {
-      "id": "417_0001146690",
-      "title": "젠슨 황 \"한국, 피지컬 AI 역량 독보적...협력할 수 있어 영광\"",
-      "pressName": "동행미디어 시대",
-      "publishedAt": "2026-06-08T22:30:00+09:00",
-      "url": "https://n.news.naver.com/mnews/article/417/0001146690",
-      "source": "overseas",
-      "sentiment": "neutral",
-      "sentimentScore": 0,
-      "category": "all",
-      "isBreaking": false,
-      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
-    },
-    {
-      "id": "215_0001254705",
-      "title": "배경훈 \"베라 루빈, 한국 먼저 공급...GTC 코리아도 긍정 검토\"",
-      "pressName": "한국경제TV",
-      "publishedAt": "2026-06-08T22:14:00+09:00",
-      "url": "https://n.news.naver.com/mnews/article/215/0001254705",
-      "source": "overseas",
-      "sentiment": "neutral",
-      "sentimentScore": 0,
-      "category": "all",
-      "isBreaking": false,
-      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
-    },
-    {
-      "id": "658_0000146157",
-      "title": "젠슨 황, \"한국 AI와 미래에 대해 강한 확신\"",
-      "pressName": "국제신문",
-      "publishedAt": "2026-06-08T22:12:00+09:00",
-      "url": "https://n.news.naver.com/mnews/article/658/0000146157",
-      "source": "overseas",
-      "sentiment": "neutral",
-      "sentimentScore": 0,
-      "category": "all",
-      "isBreaking": false,
-      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
-    },
-    {
-      "id": "421_0008992442",
-      "title": "디든·노타·에이로봇 등 총출동...젠슨 황 \"韓스타트업 선물은 '이것'\"",
-      "pressName": "뉴스1",
-      "publishedAt": "2026-06-08T22:11:00+09:00",
-      "url": "https://n.news.naver.com/mnews/article/421/0008992442",
-      "source": "overseas",
-      "sentiment": "neutral",
-      "sentimentScore": 0,
-      "category": "all",
-      "isBreaking": false,
-      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
-    },
-    {
-      "id": "022_0004133883",
-      "title": "\"팝업 성지에서 도시로\"...성수, 유행 넘어 '머무는 상권' 됐다",
-      "pressName": "세계일보",
-      "publishedAt": "2026-06-08T22:09:00+09:00",
-      "url": "https://n.news.naver.com/mnews/article/022/0004133883",
-      "source": "overseas",
-      "sentiment": "neutral",
-      "sentimentScore": 0,
-      "category": "all",
       "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     }
   ],
   "main": [
     {
-      "id": "015_0005296386",
-      "title": "\"15% 떨어져야 했는데 50% 폭등\"...SK하이닉스레버리지에 무슨 일이",
-      "pressName": "네이버금융",
-      "publishedAt": "2026-06-08T15:33:55.144Z",
-      "url": "https://n.news.naver.com/mnews/article/015/0005296386",
-      "source": "main",
-      "sentiment": "neutral",
-      "sentimentScore": 0,
-      "category": "all",
-      "isBreaking": true,
-      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
-    },
-    {
-      "id": "008_0005368734",
-      "title": "국민연금 딜레마...국내 주식 하루에 43조 증발, 팔자니 환율 압박",
-      "pressName": "네이버금융",
-      "publishedAt": "2026-06-08T15:33:55.144Z",
-      "url": "https://n.news.naver.com/mnews/article/008/0005368734",
-      "source": "main",
-      "sentiment": "neutral",
-      "sentimentScore": 0,
-      "category": "환율",
-      "isBreaking": true,
-      "beginnerExplanation": "환율 변동은 수출입 기업 수익에 큰 영향을 줘요."
-    },
-    {
       "id": "009_0005690890",
       "title": "\"코스피 급락 겁나는 일이지만\"...골드만삭스가 전망한 한국 증시",
       "pressName": "네이버금융",
-      "publishedAt": "2026-06-08T15:33:55.144Z",
+      "publishedAt": "2026-06-08T18:20:32.459Z",
       "url": "https://n.news.naver.com/mnews/article/009/0005690890",
       "source": "main",
       "sentiment": "negative",
@@ -500,10 +500,23 @@
       "beginnerExplanation": "주가가 갑자기 많이 떨어졌어요. 패닉 판매는 위험해요. 침착함이 중요합니다."
     },
     {
+      "id": "008_0005368734",
+      "title": "국민연금 딜레마...국내 주식 하루에 43조 증발, 팔자니 환율 압박",
+      "pressName": "네이버금융",
+      "publishedAt": "2026-06-08T18:20:32.459Z",
+      "url": "https://n.news.naver.com/mnews/article/008/0005368734",
+      "source": "main",
+      "sentiment": "neutral",
+      "sentimentScore": 0,
+      "category": "환율",
+      "isBreaking": true,
+      "beginnerExplanation": "환율 변동은 수출입 기업 수익에 큰 영향을 줘요."
+    },
+    {
       "id": "014_0005531641",
       "title": "[속보] 삼성전자·SK하닉 프리장서 10%대 급락...'검은 월요일' 공포 덮친 코스피",
       "pressName": "네이버금융",
-      "publishedAt": "2026-06-08T15:33:55.144Z",
+      "publishedAt": "2026-06-08T18:20:32.459Z",
       "url": "https://n.news.naver.com/mnews/article/014/0005531641",
       "source": "main",
       "sentiment": "negative",
@@ -513,10 +526,23 @@
       "beginnerExplanation": "주가가 갑자기 많이 떨어졌어요. 패닉 판매는 위험해요. 침착함이 중요합니다."
     },
     {
+      "id": "015_0005296386",
+      "title": "\"15% 떨어져야 했는데 50% 폭등\"...SK하이닉스레버리지에 무슨 일이",
+      "pressName": "네이버금융",
+      "publishedAt": "2026-06-08T18:20:32.459Z",
+      "url": "https://n.news.naver.com/mnews/article/015/0005296386",
+      "source": "main",
+      "sentiment": "neutral",
+      "sentimentScore": 0,
+      "category": "all",
+      "isBreaking": true,
+      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
+    },
+    {
       "id": "018_0006300946",
       "title": "'하루 -20% 폭탄' 맞은 개미들...'5000억대 레버리지' 또 태웠다",
       "pressName": "네이버금융",
-      "publishedAt": "2026-06-08T15:33:55.145Z",
+      "publishedAt": "2026-06-08T18:20:32.459Z",
       "url": "https://n.news.naver.com/mnews/article/018/0006300946",
       "source": "main",
       "sentiment": "neutral",
@@ -529,7 +555,7 @@
       "id": "016_0002653644",
       "title": "'증시 폭락' -25%인데 싸게 살 기회? ...초고수들의 순매수 '톱3' 봤더니",
       "pressName": "네이버금융",
-      "publishedAt": "2026-06-08T15:33:55.145Z",
+      "publishedAt": "2026-06-08T18:20:32.459Z",
       "url": "https://n.news.naver.com/mnews/article/016/0002653644",
       "source": "main",
       "sentiment": "neutral",
@@ -539,11 +565,11 @@
       "beginnerExplanation": "외국 투자자들이 한국 주식을 많이 사고 있어요. 긍정적인 신호에요."
     },
     {
-      "id": "215_0001254676",
-      "title": "닉스 8% 빠졌는데 레버리지 50% 폭등...'시장가 매수' 개미 어쩌나",
+      "id": "009_0005690487",
+      "title": "\"한국 반도체 문의가 너무 많이와요\"...캐나다에서도 '삼전닉스' 붐",
       "pressName": "네이버금융",
-      "publishedAt": "2026-06-08T15:33:55.145Z",
-      "url": "https://n.news.naver.com/mnews/article/215/0001254676",
+      "publishedAt": "2026-06-08T18:20:32.459Z",
+      "url": "https://n.news.naver.com/mnews/article/009/0005690487",
       "source": "main",
       "sentiment": "neutral",
       "sentimentScore": 0,

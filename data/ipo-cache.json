@@ -26,7 +26,7 @@
       "priceBandHigh": null,
       "underwriter": "",
       "competitionRatio": "KB증권",
-      "listingDate": null,
+      "listingDate": "2026-07-06",
       "refundDate": "2026-06-29",
       "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2293&l=&page=1",
       "status": "청약예정",
@@ -90,7 +90,7 @@
       "priceBandHigh": null,
       "underwriter": "",
       "competitionRatio": "KB증권",
-      "listingDate": null,
+      "listingDate": "2026-06-30",
       "refundDate": "2026-06-23",
       "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2289&l=&page=1",
       "status": "청약예정",
@@ -117,7 +117,7 @@
       "name": "메리츠스팩2호",
       "subscriptionStart": "2026-06-09",
       "subscriptionEnd": "2026-06-10",
-      "confirmedPrice": null,
+      "confirmedPrice": 2000,
       "priceBandLow": null,
       "priceBandHigh": null,
       "underwriter": "",
@@ -481,6 +481,6 @@
       "calculator": null
     }
   ],
-  "fetchedAt": "2026-06-08T03:26:33.304Z",
+  "fetchedAt": "2026-06-08T08:48:57.735Z",
   "totalCount": 30
 }

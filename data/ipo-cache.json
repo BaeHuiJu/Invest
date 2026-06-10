@@ -42,7 +42,7 @@
       "priceBandHigh": null,
       "underwriter": "",
       "competitionRatio": "미래에셋증권",
-      "listingDate": null,
+      "listingDate": "2026-07-01",
       "refundDate": "2026-06-26",
       "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2290&l=&page=1",
       "status": "청약예정",
@@ -120,8 +120,8 @@
       "confirmedPrice": 2000,
       "priceBandLow": null,
       "priceBandHigh": null,
-      "underwriter": "",
-      "competitionRatio": "메리츠증권",
+      "underwriter": "메리츠증권",
+      "competitionRatio": "1388.66:1",
       "listingDate": "2026-06-19",
       "refundDate": "2026-06-12",
       "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2295&l=&page=1",
@@ -481,6 +481,6 @@
       "calculator": null
     }
   ],
-  "fetchedAt": "2026-06-10T02:51:40.546Z",
+  "fetchedAt": "2026-06-10T08:03:13.125Z",
   "totalCount": 30
 }

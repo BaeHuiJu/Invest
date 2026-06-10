@@ -1,6 +1,22 @@
 {
   "ipos": [
     {
+      "id": "2298",
+      "name": "인제니아테라퓨틱스",
+      "subscriptionStart": "2026-07-23",
+      "subscriptionEnd": "2026-07-24",
+      "confirmedPrice": null,
+      "priceBandLow": null,
+      "priceBandHigh": null,
+      "underwriter": "",
+      "competitionRatio": "삼성증권",
+      "listingDate": null,
+      "refundDate": "2026-07-28",
+      "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2298&l=&page=1",
+      "status": "청약예정",
+      "calculator": null
+    },
+    {
       "id": "2296",
       "name": "레메디",
       "subscriptionStart": "2026-07-01",
@@ -463,24 +479,8 @@
       "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2267&l=&page=1",
       "status": "상장예정",
       "calculator": null
-    },
-    {
-      "id": "2266",
-      "name": "삼성스팩13호",
-      "subscriptionStart": "2026-01-12",
-      "subscriptionEnd": "2026-01-13",
-      "confirmedPrice": 2000,
-      "priceBandLow": null,
-      "priceBandHigh": null,
-      "underwriter": "삼성증권",
-      "competitionRatio": "1870.38:1",
-      "listingDate": null,
-      "refundDate": null,
-      "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2266&l=&page=1",
-      "status": "상장예정",
-      "calculator": null
     }
   ],
-  "fetchedAt": "2026-06-10T08:03:13.125Z",
+  "fetchedAt": "2026-06-10T15:21:25.382Z",
   "totalCount": 30
 }

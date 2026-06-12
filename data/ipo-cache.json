@@ -1,6 +1,22 @@
 {
   "ipos": [
     {
+      "id": "2299",
+      "name": "케이앤에스아이앤씨",
+      "subscriptionStart": "2026-07-27",
+      "subscriptionEnd": "2026-07-28",
+      "confirmedPrice": null,
+      "priceBandLow": null,
+      "priceBandHigh": null,
+      "underwriter": "",
+      "competitionRatio": "IBK투자증권",
+      "listingDate": null,
+      "refundDate": "2026-07-30",
+      "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2299&l=&page=1",
+      "status": "청약예정",
+      "calculator": null
+    },
+    {
       "id": "2298",
       "name": "인제니아테라퓨틱스",
       "subscriptionStart": "2026-07-23",
@@ -463,24 +479,8 @@
       "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2271&l=&page=1",
       "status": "상장예정",
       "calculator": null
-    },
-    {
-      "id": "2267",
-      "name": "덕양에너젠",
-      "subscriptionStart": "2026-01-20",
-      "subscriptionEnd": "2026-01-21",
-      "confirmedPrice": 10000,
-      "priceBandLow": null,
-      "priceBandHigh": null,
-      "underwriter": "NH투자증권,미래에셋증권",
-      "competitionRatio": "1354.4:1",
-      "listingDate": null,
-      "refundDate": null,
-      "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2267&l=&page=1",
-      "status": "상장예정",
-      "calculator": null
     }
   ],
-  "fetchedAt": "2026-06-12T02:58:47.639Z",
+  "fetchedAt": "2026-06-12T08:19:40.247Z",
   "totalCount": 30
 }

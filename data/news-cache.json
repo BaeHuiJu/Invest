@@ -1,6 +1,97 @@
 {
-  "generatedAt": "2026-06-13T10:22:57.875Z",
+  "generatedAt": "2026-06-13T13:43:00.671Z",
   "domestic": [
+    {
+      "id": "215_0001255288",
+      "title": "'그때 팔았어야 했나' 오른만큼 떨어졌다...\"더 담을까 팔까\" 개미 '고심'",
+      "pressName": "한국경제TV",
+      "publishedAt": "2026-06-13T22:07:00+09:00",
+      "url": "https://n.news.naver.com/mnews/article/215/0001255288",
+      "source": "domestic",
+      "sentiment": "neutral",
+      "sentimentScore": 0,
+      "category": "all",
+      "isBreaking": true,
+      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
+    },
+    {
+      "id": "018_0006305353",
+      "title": "중국의 워런 버핏은 왜 지금 팝마트 주식을 살까",
+      "pressName": "이데일리",
+      "publishedAt": "2026-06-13T21:03:00+09:00",
+      "url": "https://n.news.naver.com/mnews/article/018/0006305353",
+      "source": "domestic",
+      "sentiment": "neutral",
+      "sentimentScore": 0,
+      "category": "all",
+      "isBreaking": true,
+      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
+    },
+    {
+      "id": "057_0001953716",
+      "title": "버려진 산이 꽃밭으로...민간정원 360개 더 만든다 \"한번 가볼까\"",
+      "pressName": "MBN",
+      "publishedAt": "2026-06-13T20:19:00+09:00",
+      "url": "https://n.news.naver.com/mnews/article/057/0001953716",
+      "source": "domestic",
+      "sentiment": "neutral",
+      "sentimentScore": 0,
+      "category": "all",
+      "isBreaking": false,
+      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
+    },
+    {
+      "id": "057_0001953715",
+      "title": "대단지 입주에도 '요지부동'...상승폭 커지는 전세·앞자리 숫자 바뀌는 월세",
+      "pressName": "MBN",
+      "publishedAt": "2026-06-13T20:17:00+09:00",
+      "url": "https://n.news.naver.com/mnews/article/057/0001953715",
+      "source": "domestic",
+      "sentiment": "positive",
+      "sentimentScore": 0,
+      "category": "all",
+      "isBreaking": false,
+      "beginnerExplanation": "기업이 예상보다 돈을 많이 벌었어요. 주가에 좋을 수 있어요."
+    },
+    {
+      "id": "057_0001953708",
+      "title": "스페이스X 상장, 19% 급등...최대주주 머스크, '조만장자' 등극",
+      "pressName": "MBN",
+      "publishedAt": "2026-06-13T20:03:00+09:00",
+      "url": "https://n.news.naver.com/mnews/article/057/0001953708",
+      "source": "domestic",
+      "sentiment": "positive",
+      "sentimentScore": 0,
+      "category": "all",
+      "isBreaking": false,
+      "beginnerExplanation": "주가가 갑자기 많이 올랐어요. 그 이유가 뭔지 꼭 확인해 보세요."
+    },
+    {
+      "id": "021_0002797507",
+      "title": "\"내 주식 강제로 팔렸다\"...개미 패닉, 변동성 장세에 반대매매 1조 돌파",
+      "pressName": "문화일보",
+      "publishedAt": "2026-06-13T19:52:00+09:00",
+      "url": "https://n.news.naver.com/mnews/article/021/0002797507",
+      "source": "domestic",
+      "sentiment": "neutral",
+      "sentimentScore": 0,
+      "category": "all",
+      "isBreaking": false,
+      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
+    },
+    {
+      "id": "277_0005775899",
+      "title": "트럼프 입에 모든 게 달렸다...美 기준금리 향방은 [주末머니]",
+      "pressName": "아시아경제",
+      "publishedAt": "2026-06-13T19:21:00+09:00",
+      "url": "https://n.news.naver.com/mnews/article/277/0005775899",
+      "source": "domestic",
+      "sentiment": "neutral",
+      "sentimentScore": 0,
+      "category": "금리·통화",
+      "isBreaking": false,
+      "beginnerExplanation": "돈 빌리는 비용이 낮아져 주식시장에 좋은 소식이에요."
+    },
     {
       "id": "422_0000874428",
       "title": "미래에셋 '스페이스X 공모주' 한주도 못 받아",
@@ -11,12 +102,12 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
       "id": "277_0005775895",
-      "title": "\"변기는 대신 뚫어줄 수 없거든요\"...AI가 끝까지 손 못 댈만한 사업에 베팅하는 큰 손들 [PE는 지금]",
+      "title": "\"이건 AI가 못 할걸요\"...남들 반도체·데이터센터 몰려갈 때 큰 손들이 찾은 '노다지'[PE는 지금]",
       "pressName": "아시아경제",
       "publishedAt": "2026-06-13T18:22:00+09:00",
       "url": "https://n.news.naver.com/mnews/article/277/0005775895",
@@ -24,7 +115,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
@@ -37,7 +128,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
@@ -50,7 +141,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
@@ -63,7 +154,7 @@
       "sentiment": "negative",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "주가가 갑자기 많이 떨어졌어요. 패닉 판매는 위험해요. 침착함이 중요합니다."
     },
     {
@@ -169,112 +260,112 @@
       "category": "all",
       "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
-    },
-    {
-      "id": "277_0005775879",
-      "title": "'스페이스X' 공모주 무산되자 운용사도 타격...장중매매로 확보도",
-      "pressName": "아시아경제",
-      "publishedAt": "2026-06-13T15:30:00+09:00",
-      "url": "https://n.news.naver.com/mnews/article/277/0005775879",
-      "source": "domestic",
-      "sentiment": "neutral",
-      "sentimentScore": 0,
-      "category": "all",
-      "isBreaking": false,
-      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
-    },
-    {
-      "id": "277_0005775877",
-      "title": "환율 1600원 뚫리면 물가 폭탄...한국은행이 한꺼번에 0.5%P 올릴까 [주末머니]",
-      "pressName": "아시아경제",
-      "publishedAt": "2026-06-13T15:15:00+09:00",
-      "url": "https://n.news.naver.com/mnews/article/277/0005775877",
-      "source": "domestic",
-      "sentiment": "neutral",
-      "sentimentScore": 0,
-      "category": "환율",
-      "isBreaking": false,
-      "beginnerExplanation": "환율 변동은 수출입 기업 수익에 큰 영향을 줘요."
-    },
-    {
-      "id": "215_0001255270",
-      "title": "스페이스X '0주'에 개미들 '허탈'...운용사 '낭패'",
-      "pressName": "한국경제TV",
-      "publishedAt": "2026-06-13T15:11:00+09:00",
-      "url": "https://n.news.naver.com/mnews/article/215/0001255270",
-      "source": "domestic",
-      "sentiment": "neutral",
-      "sentimentScore": 0,
-      "category": "all",
-      "isBreaking": false,
-      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
-    },
-    {
-      "id": "003_0014004638",
-      "title": "미래에셋 스페이스X 물량 '0주' 후폭풍...운용사들도 ETF 편입 '직격탄'",
-      "pressName": "뉴시스",
-      "publishedAt": "2026-06-13T15:02:00+09:00",
-      "url": "https://n.news.naver.com/mnews/article/003/0014004638",
-      "source": "domestic",
-      "sentiment": "neutral",
-      "sentimentScore": 0,
-      "category": "all",
-      "isBreaking": false,
-      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
-    },
-    {
-      "id": "648_0000047984",
-      "title": "머스크 우주선 올라탄 곽동신...한미반도체, 스페이스X 지분 500억 샀다",
-      "pressName": "비즈워치",
-      "publishedAt": "2026-06-13T15:00:00+09:00",
-      "url": "https://n.news.naver.com/mnews/article/648/0000047984",
-      "source": "domestic",
-      "sentiment": "neutral",
-      "sentimentScore": 0,
-      "category": "all",
-      "isBreaking": false,
-      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
-    },
-    {
-      "id": "293_0000086225",
-      "title": "현대차證, 재무 안전성 관건은 부동산금융 '회수력'",
-      "pressName": "블로터",
-      "publishedAt": "2026-06-13T15:00:00+09:00",
-      "url": "https://n.news.naver.com/mnews/article/293/0000086225",
-      "source": "domestic",
-      "sentiment": "neutral",
-      "sentimentScore": 0,
-      "category": "all",
-      "isBreaking": false,
-      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
-    },
-    {
-      "id": "417_0001147396",
-      "title": "한투운용, 스페이스X '0주' 사과...600억 몰린 ETF 투자자 혼선",
-      "pressName": "동행미디어 시대",
-      "publishedAt": "2026-06-13T14:56:00+09:00",
-      "url": "https://n.news.naver.com/mnews/article/417/0001147396",
-      "source": "domestic",
-      "sentiment": "neutral",
-      "sentimentScore": 0,
-      "category": "all",
-      "isBreaking": false,
-      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     }
   ],
   "overseas": [
     {
-      "id": "277_0005775899",
-      "title": "트럼프 입에 모든 게 달렸다...美 기준금리 향방은 [주末머니]",
-      "pressName": "아시아경제",
-      "publishedAt": "2026-06-13T19:21:00+09:00",
-      "url": "https://n.news.naver.com/mnews/article/277/0005775899",
+      "id": "011_0004630816",
+      "title": "해외선 주는데 \"한국만 왜 손흥민 컵이 없죠?\"...국내서 빠진 이유 알고 보니",
+      "pressName": "서울경제",
+      "publishedAt": "2026-06-13T22:04:00+09:00",
+      "url": "https://n.news.naver.com/mnews/article/011/0004630816",
       "source": "overseas",
       "sentiment": "neutral",
       "sentimentScore": 0,
-      "category": "금리·통화",
+      "category": "all",
       "isBreaking": true,
-      "beginnerExplanation": "돈 빌리는 비용이 낮아져 주식시장에 좋은 소식이에요."
+      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
+    },
+    {
+      "id": "011_0004630815",
+      "title": "쿠팡, 불확실성 해소됐나...천문학적 과징금에도 주가 급등[똑똑! 스마슈머]",
+      "pressName": "서울경제",
+      "publishedAt": "2026-06-13T22:00:00+09:00",
+      "url": "https://n.news.naver.com/mnews/article/011/0004630815",
+      "source": "overseas",
+      "sentiment": "positive",
+      "sentimentScore": 0,
+      "category": "all",
+      "isBreaking": true,
+      "beginnerExplanation": "주가가 갑자기 많이 올랐어요. 그 이유가 뭔지 꼭 확인해 보세요."
+    },
+    {
+      "id": "009_0005693396",
+      "title": "\"엄정화도 집에서 매일 바른다\"...자외선 넘어 '화잘먹' 경쟁 붙은 선크림",
+      "pressName": "매일경제",
+      "publishedAt": "2026-06-13T21:58:00+09:00",
+      "url": "https://n.news.naver.com/mnews/article/009/0005693396",
+      "source": "overseas",
+      "sentiment": "neutral",
+      "sentimentScore": 0,
+      "category": "all",
+      "isBreaking": true,
+      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
+    },
+    {
+      "id": "293_0000086229",
+      "title": "막판 증시 조정 직격탄...한화솔루션, 유증 1차 발행가 하락",
+      "pressName": "블로터",
+      "publishedAt": "2026-06-13T21:15:00+09:00",
+      "url": "https://n.news.naver.com/mnews/article/293/0000086229",
+      "source": "overseas",
+      "sentiment": "negative",
+      "sentimentScore": 0,
+      "category": "all",
+      "isBreaking": true,
+      "beginnerExplanation": "기업 이익이 줄었어요. 주가 하락 요인이 될 수 있어요."
+    },
+    {
+      "id": "138_0002230788",
+      "title": "류상욱 젠지 감독 \"T1, 반드시 이긴다...공략보다 전략에 집중\"",
+      "pressName": "디지털데일리",
+      "publishedAt": "2026-06-13T20:25:00+09:00",
+      "url": "https://n.news.naver.com/mnews/article/138/0002230788",
+      "source": "overseas",
+      "sentiment": "neutral",
+      "sentimentScore": 0,
+      "category": "all",
+      "isBreaking": false,
+      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
+    },
+    {
+      "id": "662_0000097283",
+      "title": "\"배달음식 원산지 '미표시' 수두룩한데...규제 완화 시기상조\"",
+      "pressName": "농민신문",
+      "publishedAt": "2026-06-13T20:01:00+09:00",
+      "url": "https://n.news.naver.com/mnews/article/662/0000097283",
+      "source": "overseas",
+      "sentiment": "neutral",
+      "sentimentScore": 0,
+      "category": "정책",
+      "isBreaking": false,
+      "beginnerExplanation": "정부 규제가 더 엄해진대요. 해당 기업들에 부담이 될 수 있어요."
+    },
+    {
+      "id": "138_0002230787",
+      "title": "kt 고동빈 감독 \"유리할 때 적극적이지 못했다...마무리 아쉬워\"",
+      "pressName": "디지털데일리",
+      "publishedAt": "2026-06-13T19:44:00+09:00",
+      "url": "https://n.news.naver.com/mnews/article/138/0002230787",
+      "source": "overseas",
+      "sentiment": "neutral",
+      "sentimentScore": 0,
+      "category": "all",
+      "isBreaking": false,
+      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
+    },
+    {
+      "id": "009_0005693377",
+      "title": "\"구두공장 떠난 자리에 로봇 들어왔다\"...'팝업 성지' 성수동의 진화",
+      "pressName": "매일경제",
+      "publishedAt": "2026-06-13T19:37:00+09:00",
+      "url": "https://n.news.naver.com/mnews/article/009/0005693377",
+      "source": "overseas",
+      "sentiment": "neutral",
+      "sentimentScore": 0,
+      "category": "all",
+      "isBreaking": false,
+      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
       "id": "277_0005775897",
@@ -286,7 +377,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
@@ -299,7 +390,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
@@ -312,7 +403,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
@@ -325,7 +416,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
@@ -338,7 +429,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "정책",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
@@ -351,7 +442,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
@@ -364,7 +455,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "실적",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
@@ -377,7 +468,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
@@ -390,7 +481,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
@@ -403,7 +494,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
@@ -416,68 +507,16 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
-      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
-    },
-    {
-      "id": "009_0005693358",
-      "title": "\"기름값 얼마나 한다고, 마음껏 밟아\"...다시 뜨는 경차의 이유있는 자신감 [Car]",
-      "pressName": "매일경제",
-      "publishedAt": "2026-06-13T17:15:00+09:00",
-      "url": "https://n.news.naver.com/mnews/article/009/0005693358",
-      "source": "overseas",
-      "sentiment": "neutral",
-      "sentimentScore": 0,
-      "category": "all",
-      "isBreaking": false,
-      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
-    },
-    {
-      "id": "662_0000097281",
-      "title": "\"ASF발생 양상 맞춰 '긴급행동지침(SOP)' 손질해야\"",
-      "pressName": "농민신문",
-      "publishedAt": "2026-06-13T17:01:00+09:00",
-      "url": "https://n.news.naver.com/mnews/article/662/0000097281",
-      "source": "overseas",
-      "sentiment": "neutral",
-      "sentimentScore": 0,
-      "category": "all",
-      "isBreaking": false,
-      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
-    },
-    {
-      "id": "138_0002230785",
-      "title": "프롬프트만으로 게임 만든다?...AI 단독 개발 시대의 가능성과 한계  [AI, 게임 개발의 새 문법中]",
-      "pressName": "디지털데일리",
-      "publishedAt": "2026-06-13T17:01:00+09:00",
-      "url": "https://n.news.naver.com/mnews/article/138/0002230785",
-      "source": "overseas",
-      "sentiment": "neutral",
-      "sentimentScore": 0,
-      "category": "all",
       "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     }
   ],
   "main": [
     {
-      "id": "008_0005371348",
-      "title": "스페이스X 1주도 못 받은 한국 투자자...\"청약실패 왜?\" 금감원도 나섰다",
-      "pressName": "네이버금융",
-      "publishedAt": "2026-06-13T10:22:57.874Z",
-      "url": "https://n.news.naver.com/mnews/article/008/0005371348",
-      "source": "main",
-      "sentiment": "neutral",
-      "sentimentScore": 0,
-      "category": "all",
-      "isBreaking": true,
-      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
-    },
-    {
       "id": "243_0000099094",
       "title": "삼성전자·삼성전기, 그 다음은?...\"65만 원 간다\" 목표가 50% 급등한 '이 종목'",
       "pressName": "네이버금융",
-      "publishedAt": "2026-06-13T10:22:57.875Z",
+      "publishedAt": "2026-06-13T13:43:00.670Z",
       "url": "https://n.news.naver.com/mnews/article/243/0000099094",
       "source": "main",
       "sentiment": "positive",
@@ -490,7 +529,7 @@
       "id": "015_0005298360",
       "title": "\"금반지 지금 팔아야 하나\"...개미들 2000억 '패닉셀' [투자톡]",
       "pressName": "네이버금융",
-      "publishedAt": "2026-06-13T10:22:57.875Z",
+      "publishedAt": "2026-06-13T13:43:00.671Z",
       "url": "https://n.news.naver.com/mnews/article/015/0005298360",
       "source": "main",
       "sentiment": "neutral",
@@ -500,11 +539,37 @@
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
-      "id": "277_0005775824",
-      "title": "\"드디어 전쟁 끝나나\" '코스피 1만' 바로 직행?...'이것'이 결정한다[주末머니]",
+      "id": "277_0005775847",
+      "title": "\"삼전닉스, 아직 절반도 안 올랐다...내년 물량까지 완판\" [주末머니]",
       "pressName": "네이버금융",
-      "publishedAt": "2026-06-13T10:22:57.875Z",
-      "url": "https://n.news.naver.com/mnews/article/277/0005775824",
+      "publishedAt": "2026-06-13T13:43:00.671Z",
+      "url": "https://n.news.naver.com/mnews/article/277/0005775847",
+      "source": "main",
+      "sentiment": "neutral",
+      "sentimentScore": 0,
+      "category": "all",
+      "isBreaking": true,
+      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
+    },
+    {
+      "id": "008_0005371348",
+      "title": "스페이스X 1주도 못 받은 한국 투자자...\"청약실패 왜?\" 금감원도 나섰다",
+      "pressName": "네이버금융",
+      "publishedAt": "2026-06-13T13:43:00.671Z",
+      "url": "https://n.news.naver.com/mnews/article/008/0005371348",
+      "source": "main",
+      "sentiment": "neutral",
+      "sentimentScore": 0,
+      "category": "all",
+      "isBreaking": true,
+      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
+    },
+    {
+      "id": "009_0005693373",
+      "title": "\"가득이요\" 자신있게 외치세요, 제가 깎아드릴게...주유 할인카드 다시 뜬다 [머니앤리치]",
+      "pressName": "네이버금융",
+      "publishedAt": "2026-06-13T13:43:00.671Z",
+      "url": "https://n.news.naver.com/mnews/article/009/0005693373",
       "source": "main",
       "sentiment": "neutral",
       "sentimentScore": 0,
@@ -516,8 +581,21 @@
       "id": "014_0005534389",
       "title": "\"레버리지 탔다가 순식간에 -680만원\" 월급 300만원 직장인, '내 집' 조급증의 말로 [머니설계사무소]",
       "pressName": "네이버금융",
-      "publishedAt": "2026-06-13T10:22:57.875Z",
+      "publishedAt": "2026-06-13T13:43:00.671Z",
       "url": "https://n.news.naver.com/mnews/article/014/0005534389",
+      "source": "main",
+      "sentiment": "neutral",
+      "sentimentScore": 0,
+      "category": "all",
+      "isBreaking": true,
+      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
+    },
+    {
+      "id": "277_0005775824",
+      "title": "\"드디어 전쟁 끝나나\" '코스피 1만' 바로 직행?...'이것'이 결정한다[주末머니]",
+      "pressName": "네이버금융",
+      "publishedAt": "2026-06-13T13:43:00.671Z",
+      "url": "https://n.news.naver.com/mnews/article/277/0005775824",
       "source": "main",
       "sentiment": "neutral",
       "sentimentScore": 0,

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-13T03:35:45.170Z",
+  "generatedAt": "2026-06-14T04:12:30.687Z",
   "maxDays": 365,
   "reports": [
     {
@@ -219,6 +219,55 @@
         "Citi가 2026-06-12에 Buy 의견과 목표가를 제시했습니다.",
         "현재가 $511.57 대비 목표가는 $575입니다.",
         "2026-06-12 종가 $511.57 대비 괴리는 12.4%입니다."
+      ],
+      "performance": {
+        "week1": {
+          "asOfDate": "2026-06-19",
+          "closePrice": 0,
+          "returnPct": 0,
+          "targetProgressPct": 0,
+          "success": false,
+          "status": "pending"
+        },
+        "month1": {
+          "asOfDate": "2026-07-12",
+          "closePrice": 0,
+          "returnPct": 0,
+          "targetProgressPct": 0,
+          "success": false,
+          "status": "pending"
+        },
+        "month3": {
+          "asOfDate": "2026-09-10",
+          "closePrice": 0,
+          "returnPct": 0,
+          "targetProgressPct": 0,
+          "success": false,
+          "status": "pending"
+        }
+      }
+    },
+    {
+      "date": "2026-06-12",
+      "ticker": "ORCL",
+      "name": "Oracle Corporation",
+      "market": "us",
+      "broker": "Argus Research",
+      "analyst": "Joseph Bonner",
+      "opinion": "Buy",
+      "targetPrice": 225,
+      "currentPrice": 184.13,
+      "basePrice": 184.13,
+      "basePriceDate": "2026-06-12",
+      "upside": 22.2,
+      "sourceUrl": "https://stockanalysis.com/stocks/orcl/ratings/",
+      "sourceText": "Argus Research Buy Reiterates. Price target N/A -> 225.",
+      "reportTitle": "Buy Reiterates",
+      "reasonSummary": "Buy Reiterates. Argus Research가 Buy 의견을 제시했고 현재가 기준 상승여력은 22.2%입니다. 2026-06-12 종가 대비 목표가 괴리는 22.2%입니다.",
+      "reasonBullets": [
+        "Argus Research가 2026-06-12에 Buy 의견과 목표가를 제시했습니다.",
+        "현재가 $184.13 대비 목표가는 $225입니다.",
+        "2026-06-12 종가 $184.13 대비 괴리는 22.2%입니다."
       ],
       "performance": {
         "week1": {
@@ -2081,55 +2130,6 @@
         "Stifel Nicolaus가 2026-06-11에 Buy 의견과 목표가를 제시했습니다.",
         "현재가 $184.13 대비 목표가는 $220입니다.",
         "2026-06-11 종가 $184.1 대비 괴리는 19.5%입니다."
-      ],
-      "performance": {
-        "week1": {
-          "asOfDate": "2026-06-18",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "pending"
-        },
-        "month1": {
-          "asOfDate": "2026-07-11",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "pending"
-        },
-        "month3": {
-          "asOfDate": "2026-09-09",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "pending"
-        }
-      }
-    },
-    {
-      "date": "2026-06-11",
-      "ticker": "ORCL",
-      "name": "Oracle Corporation",
-      "market": "us",
-      "broker": "Wedbush",
-      "analyst": "Daniel Ives",
-      "opinion": "Buy",
-      "targetPrice": 240,
-      "currentPrice": 184.13,
-      "basePrice": 184.1,
-      "basePriceDate": "2026-06-11",
-      "upside": 30.3,
-      "sourceUrl": "https://stockanalysis.com/stocks/orcl/ratings/",
-      "sourceText": "Wedbush Buy Maintains. Price target 275 -> 240.",
-      "reportTitle": "Buy Maintains",
-      "reasonSummary": "Buy Maintains. Wedbush가 Buy 의견을 제시했고 현재가 기준 상승여력은 30.3%입니다. 2026-06-11 종가 대비 목표가 괴리는 30.4%입니다.",
-      "reasonBullets": [
-        "Wedbush가 2026-06-11에 Buy 의견과 목표가를 제시했습니다.",
-        "현재가 $184.13 대비 목표가는 $240입니다.",
-        "2026-06-11 종가 $184.1 대비 괴리는 30.4%입니다."
       ],
       "performance": {
         "week1": {
@@ -25372,7 +25372,7 @@
           "returnPct": 0,
           "targetProgressPct": 0,
           "success": false,
-          "status": "pending"
+          "status": "unavailable"
         },
         "month3": {
           "asOfDate": "2026-08-13",
@@ -25421,7 +25421,7 @@
           "returnPct": 0,
           "targetProgressPct": 0,
           "success": false,
-          "status": "pending"
+          "status": "unavailable"
         },
         "month3": {
           "asOfDate": "2026-08-13",
@@ -25470,7 +25470,7 @@
           "returnPct": 0,
           "targetProgressPct": 0,
           "success": false,
-          "status": "pending"
+          "status": "unavailable"
         },
         "month3": {
           "asOfDate": "2026-08-13",
@@ -25519,7 +25519,7 @@
           "returnPct": 0,
           "targetProgressPct": 0,
           "success": false,
-          "status": "pending"
+          "status": "unavailable"
         },
         "month3": {
           "asOfDate": "2026-08-13",
@@ -25568,7 +25568,7 @@
           "returnPct": 0,
           "targetProgressPct": 0,
           "success": false,
-          "status": "pending"
+          "status": "unavailable"
         },
         "month3": {
           "asOfDate": "2026-08-13",
@@ -25617,7 +25617,7 @@
           "returnPct": 0,
           "targetProgressPct": 0,
           "success": false,
-          "status": "pending"
+          "status": "unavailable"
         },
         "month3": {
           "asOfDate": "2026-08-13",
@@ -25666,7 +25666,7 @@
           "returnPct": 0,
           "targetProgressPct": 0,
           "success": false,
-          "status": "pending"
+          "status": "unavailable"
         },
         "month3": {
           "asOfDate": "2026-08-13",
@@ -25715,7 +25715,7 @@
           "returnPct": 0,
           "targetProgressPct": 0,
           "success": false,
-          "status": "pending"
+          "status": "unavailable"
         },
         "month3": {
           "asOfDate": "2026-08-13",
@@ -25764,7 +25764,7 @@
           "returnPct": 0,
           "targetProgressPct": 0,
           "success": false,
-          "status": "pending"
+          "status": "unavailable"
         },
         "month3": {
           "asOfDate": "2026-08-13",
@@ -25813,7 +25813,7 @@
           "returnPct": 0,
           "targetProgressPct": 0,
           "success": false,
-          "status": "pending"
+          "status": "unavailable"
         },
         "month3": {
           "asOfDate": "2026-08-13",
@@ -25862,7 +25862,7 @@
           "returnPct": 0,
           "targetProgressPct": 0,
           "success": false,
-          "status": "pending"
+          "status": "unavailable"
         },
         "month3": {
           "asOfDate": "2026-08-13",
@@ -25911,7 +25911,7 @@
           "returnPct": 0,
           "targetProgressPct": 0,
           "success": false,
-          "status": "pending"
+          "status": "unavailable"
         },
         "month3": {
           "asOfDate": "2026-08-13",
@@ -25960,7 +25960,7 @@
           "returnPct": 0,
           "targetProgressPct": 0,
           "success": false,
-          "status": "pending"
+          "status": "unavailable"
         },
         "month3": {
           "asOfDate": "2026-08-13",
@@ -26009,7 +26009,7 @@
           "returnPct": 0,
           "targetProgressPct": 0,
           "success": false,
-          "status": "pending"
+          "status": "unavailable"
         },
         "month3": {
           "asOfDate": "2026-08-13",
@@ -26058,7 +26058,7 @@
           "returnPct": 0,
           "targetProgressPct": 0,
           "success": false,
-          "status": "pending"
+          "status": "unavailable"
         },
         "month3": {
           "asOfDate": "2026-08-13",
@@ -26107,7 +26107,7 @@
           "returnPct": 0,
           "targetProgressPct": 0,
           "success": false,
-          "status": "pending"
+          "status": "unavailable"
         },
         "month3": {
           "asOfDate": "2026-08-13",
@@ -26156,7 +26156,7 @@
           "returnPct": 0,
           "targetProgressPct": 0,
           "success": false,
-          "status": "pending"
+          "status": "unavailable"
         },
         "month3": {
           "asOfDate": "2026-08-13",
@@ -26205,7 +26205,7 @@
           "returnPct": 0,
           "targetProgressPct": 0,
           "success": false,
-          "status": "pending"
+          "status": "unavailable"
         },
         "month3": {
           "asOfDate": "2026-08-13",
@@ -26254,7 +26254,7 @@
           "returnPct": 0,
           "targetProgressPct": 0,
           "success": false,
-          "status": "pending"
+          "status": "unavailable"
         },
         "month3": {
           "asOfDate": "2026-08-13",
@@ -26303,7 +26303,7 @@
           "returnPct": 0,
           "targetProgressPct": 0,
           "success": false,
-          "status": "pending"
+          "status": "unavailable"
         },
         "month3": {
           "asOfDate": "2026-08-13",
@@ -26352,7 +26352,7 @@
           "returnPct": 0,
           "targetProgressPct": 0,
           "success": false,
-          "status": "pending"
+          "status": "unavailable"
         },
         "month3": {
           "asOfDate": "2026-08-13",
@@ -26401,7 +26401,7 @@
           "returnPct": 0,
           "targetProgressPct": 0,
           "success": false,
-          "status": "pending"
+          "status": "unavailable"
         },
         "month3": {
           "asOfDate": "2026-08-13",
@@ -26450,7 +26450,7 @@
           "returnPct": 0,
           "targetProgressPct": 0,
           "success": false,
-          "status": "pending"
+          "status": "unavailable"
         },
         "month3": {
           "asOfDate": "2026-08-13",
@@ -26499,7 +26499,7 @@
           "returnPct": 0,
           "targetProgressPct": 0,
           "success": false,
-          "status": "pending"
+          "status": "unavailable"
         },
         "month3": {
           "asOfDate": "2026-08-13",
@@ -26548,7 +26548,7 @@
           "returnPct": 0,
           "targetProgressPct": 0,
           "success": false,
-          "status": "pending"
+          "status": "unavailable"
         },
         "month3": {
           "asOfDate": "2026-08-13",
@@ -26597,7 +26597,7 @@
           "returnPct": 0,
           "targetProgressPct": 0,
           "success": false,
-          "status": "pending"
+          "status": "unavailable"
         },
         "month3": {
           "asOfDate": "2026-08-13",
@@ -26646,7 +26646,7 @@
           "returnPct": 0,
           "targetProgressPct": 0,
           "success": false,
-          "status": "pending"
+          "status": "unavailable"
         },
         "month3": {
           "asOfDate": "2026-08-13",
@@ -26695,7 +26695,7 @@
           "returnPct": 0,
           "targetProgressPct": 0,
           "success": false,
-          "status": "pending"
+          "status": "unavailable"
         },
         "month3": {
           "asOfDate": "2026-08-13",
@@ -26744,7 +26744,7 @@
           "returnPct": 0,
           "targetProgressPct": 0,
           "success": false,
-          "status": "pending"
+          "status": "unavailable"
         },
         "month3": {
           "asOfDate": "2026-08-13",
@@ -26793,7 +26793,7 @@
           "returnPct": 0,
           "targetProgressPct": 0,
           "success": false,
-          "status": "pending"
+          "status": "unavailable"
         },
         "month3": {
           "asOfDate": "2026-08-13",
@@ -26837,12 +26837,12 @@
           "status": "complete"
         },
         "month1": {
-          "asOfDate": "2026-06-14",
-          "closePrice": 0,
-          "returnPct": 0,
+          "asOfDate": "2026-06-12",
+          "closePrice": 238.55,
+          "returnPct": -9.7,
           "targetProgressPct": 0,
           "success": false,
-          "status": "pending"
+          "status": "complete"
         },
         "month3": {
           "asOfDate": "2026-08-13",
@@ -26886,12 +26886,12 @@
           "status": "complete"
         },
         "month1": {
-          "asOfDate": "2026-06-14",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
+          "asOfDate": "2026-06-12",
+          "closePrice": 91.1,
+          "returnPct": 0.2,
+          "targetProgressPct": 0.8,
           "success": false,
-          "status": "pending"
+          "status": "complete"
         },
         "month3": {
           "asOfDate": "2026-08-13",
@@ -26935,12 +26935,12 @@
           "status": "complete"
         },
         "month1": {
-          "asOfDate": "2026-06-14",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
+          "asOfDate": "2026-06-12",
+          "closePrice": 91.1,
+          "returnPct": 0.2,
+          "targetProgressPct": 0.6,
           "success": false,
-          "status": "pending"
+          "status": "complete"
         },
         "month3": {
           "asOfDate": "2026-08-13",
@@ -26984,12 +26984,12 @@
           "status": "complete"
         },
         "month1": {
-          "asOfDate": "2026-06-14",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
+          "asOfDate": "2026-06-12",
+          "closePrice": 91.1,
+          "returnPct": 0.2,
+          "targetProgressPct": 0.5,
           "success": false,
-          "status": "pending"
+          "status": "complete"
         },
         "month3": {
           "asOfDate": "2026-08-13",
@@ -27033,12 +27033,12 @@
           "status": "complete"
         },
         "month1": {
-          "asOfDate": "2026-06-14",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
+          "asOfDate": "2026-06-12",
+          "closePrice": 91.1,
+          "returnPct": 0.2,
+          "targetProgressPct": 1.2,
           "success": false,
-          "status": "pending"
+          "status": "complete"
         },
         "month3": {
           "asOfDate": "2026-08-13",
@@ -27082,12 +27082,12 @@
           "status": "complete"
         },
         "month1": {
-          "asOfDate": "2026-06-14",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
+          "asOfDate": "2026-06-12",
+          "closePrice": 91.1,
+          "returnPct": 0.2,
+          "targetProgressPct": 1.6,
           "success": false,
-          "status": "pending"
+          "status": "complete"
         },
         "month3": {
           "asOfDate": "2026-08-13",
@@ -27131,12 +27131,12 @@
           "status": "complete"
         },
         "month1": {
-          "asOfDate": "2026-06-14",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
+          "asOfDate": "2026-06-12",
+          "closePrice": 91.1,
+          "returnPct": 0.2,
+          "targetProgressPct": 0.6,
           "success": false,
-          "status": "pending"
+          "status": "complete"
         },
         "month3": {
           "asOfDate": "2026-08-13",
@@ -27180,12 +27180,12 @@
           "status": "complete"
         },
         "month1": {
-          "asOfDate": "2026-06-14",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "pending"
+          "asOfDate": "2026-06-12",
+          "closePrice": 227.73,
+          "returnPct": 8.2,
+          "targetProgressPct": 70.5,
+          "success": true,
+          "status": "complete"
         },
         "month3": {
           "asOfDate": "2026-08-13",
@@ -27229,12 +27229,12 @@
           "status": "complete"
         },
         "month1": {
-          "asOfDate": "2026-06-14",
-          "closePrice": 0,
-          "returnPct": 0,
+          "asOfDate": "2026-06-12",
+          "closePrice": 144.27,
+          "returnPct": -3.3,
           "targetProgressPct": 0,
           "success": false,
-          "status": "pending"
+          "status": "complete"
         },
         "month3": {
           "asOfDate": "2026-08-13",
@@ -27278,12 +27278,12 @@
           "status": "complete"
         },
         "month1": {
-          "asOfDate": "2026-06-14",
-          "closePrice": 0,
-          "returnPct": 0,
+          "asOfDate": "2026-06-12",
+          "closePrice": 187.22,
+          "returnPct": -2,
           "targetProgressPct": 0,
           "success": false,
-          "status": "pending"
+          "status": "complete"
         },
         "month3": {
           "asOfDate": "2026-08-13",
@@ -27327,12 +27327,12 @@
           "status": "complete"
         },
         "month1": {
-          "asOfDate": "2026-06-14",
-          "closePrice": 0,
-          "returnPct": 0,
+          "asOfDate": "2026-06-12",
+          "closePrice": 80.34,
+          "returnPct": -7.7,
           "targetProgressPct": 0,
           "success": false,
-          "status": "pending"
+          "status": "complete"
         },
         "month3": {
           "asOfDate": "2026-08-13",
@@ -27376,12 +27376,12 @@
           "status": "complete"
         },
         "month1": {
-          "asOfDate": "2026-06-14",
-          "closePrice": 0,
-          "returnPct": 0,
+          "asOfDate": "2026-06-12",
+          "closePrice": 80.34,
+          "returnPct": -7.7,
           "targetProgressPct": 0,
           "success": false,
-          "status": "pending"
+          "status": "complete"
         },
         "month3": {
           "asOfDate": "2026-08-13",
@@ -27425,12 +27425,12 @@
           "status": "complete"
         },
         "month1": {
-          "asOfDate": "2026-06-14",
-          "closePrice": 0,
-          "returnPct": 0,
+          "asOfDate": "2026-06-12",
+          "closePrice": 80.34,
+          "returnPct": -7.7,
           "targetProgressPct": 0,
           "success": false,
-          "status": "pending"
+          "status": "complete"
         },
         "month3": {
           "asOfDate": "2026-08-13",
@@ -31100,12 +31100,12 @@
           "status": "complete"
         },
         "month1": {
-          "asOfDate": "2026-06-13",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
+          "asOfDate": "2026-06-12",
+          "closePrice": 325.44,
+          "returnPct": 4.1,
+          "targetProgressPct": 22.1,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month3": {
           "asOfDate": "2026-08-12",
@@ -35854,11 +35854,11 @@
         },
         "month1": {
           "asOfDate": "2026-06-11",
-          "closePrice": 0,
-          "returnPct": 0,
+          "closePrice": 241.51,
+          "returnPct": -9.1,
           "targetProgressPct": 0,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month3": {
           "asOfDate": "2026-08-10",
@@ -39725,11 +39725,11 @@
         },
         "month1": {
           "asOfDate": "2026-06-10",
-          "closePrice": 0,
-          "returnPct": 0,
+          "closePrice": 130.21,
+          "returnPct": -4.9,
           "targetProgressPct": 0,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month3": {
           "asOfDate": "2026-08-09",
@@ -44281,12 +44281,12 @@
           "status": "complete"
         },
         "month1": {
-          "asOfDate": "2026-06-05",
-          "closePrice": 112.45,
-          "returnPct": 23.3,
-          "targetProgressPct": 31.8,
+          "asOfDate": "2026-06-07",
+          "closePrice": 0,
+          "returnPct": 0,
+          "targetProgressPct": 0,
           "success": false,
-          "status": "complete"
+          "status": "unavailable"
         },
         "month3": {
           "asOfDate": "2026-08-06",
@@ -44330,12 +44330,12 @@
           "status": "complete"
         },
         "month1": {
-          "asOfDate": "2026-06-05",
-          "closePrice": 112.45,
-          "returnPct": 23.3,
-          "targetProgressPct": 29.6,
+          "asOfDate": "2026-06-07",
+          "closePrice": 0,
+          "returnPct": 0,
+          "targetProgressPct": 0,
           "success": false,
-          "status": "complete"
+          "status": "unavailable"
         },
         "month3": {
           "asOfDate": "2026-08-06",
@@ -44379,12 +44379,12 @@
           "status": "complete"
         },
         "month1": {
-          "asOfDate": "2026-06-05",
-          "closePrice": 132.47,
-          "returnPct": 5.5,
-          "targetProgressPct": 29.5,
+          "asOfDate": "2026-06-07",
+          "closePrice": 0,
+          "returnPct": 0,
+          "targetProgressPct": 0,
           "success": false,
-          "status": "complete"
+          "status": "unavailable"
         },
         "month3": {
           "asOfDate": "2026-08-06",
@@ -44428,12 +44428,12 @@
           "status": "complete"
         },
         "month1": {
-          "asOfDate": "2026-06-05",
-          "closePrice": 132.47,
-          "returnPct": 5.5,
-          "targetProgressPct": 20.1,
+          "asOfDate": "2026-06-07",
+          "closePrice": 0,
+          "returnPct": 0,
+          "targetProgressPct": 0,
           "success": false,
-          "status": "complete"
+          "status": "unavailable"
         },
         "month3": {
           "asOfDate": "2026-08-06",
@@ -44477,12 +44477,12 @@
           "status": "complete"
         },
         "month1": {
-          "asOfDate": "2026-06-05",
-          "closePrice": 132.47,
-          "returnPct": 5.5,
-          "targetProgressPct": 35.6,
+          "asOfDate": "2026-06-07",
+          "closePrice": 0,
+          "returnPct": 0,
+          "targetProgressPct": 0,
           "success": false,
-          "status": "complete"
+          "status": "unavailable"
         },
         "month3": {
           "asOfDate": "2026-08-06",
@@ -44526,12 +44526,12 @@
           "status": "complete"
         },
         "month1": {
-          "asOfDate": "2026-06-05",
-          "closePrice": 279.84,
-          "returnPct": 1.5,
-          "targetProgressPct": 5.5,
+          "asOfDate": "2026-06-07",
+          "closePrice": 0,
+          "returnPct": 0,
+          "targetProgressPct": 0,
           "success": false,
-          "status": "complete"
+          "status": "unavailable"
         },
         "month3": {
           "asOfDate": "2026-08-06",
@@ -44575,12 +44575,12 @@
           "status": "complete"
         },
         "month1": {
-          "asOfDate": "2026-06-05",
-          "closePrice": 279.84,
-          "returnPct": 1.5,
-          "targetProgressPct": 5.5,
+          "asOfDate": "2026-06-07",
+          "closePrice": 0,
+          "returnPct": 0,
+          "targetProgressPct": 0,
           "success": false,
-          "status": "complete"
+          "status": "unavailable"
         },
         "month3": {
           "asOfDate": "2026-08-06",
@@ -44624,12 +44624,12 @@
           "status": "complete"
         },
         "month1": {
-          "asOfDate": "2026-06-05",
-          "closePrice": 279.84,
-          "returnPct": 1.5,
-          "targetProgressPct": 5.5,
+          "asOfDate": "2026-06-07",
+          "closePrice": 0,
+          "returnPct": 0,
+          "targetProgressPct": 0,
           "success": false,
-          "status": "complete"
+          "status": "unavailable"
         },
         "month3": {
           "asOfDate": "2026-08-06",
@@ -44673,12 +44673,12 @@
           "status": "complete"
         },
         "month1": {
-          "asOfDate": "2026-06-05",
-          "closePrice": 279.84,
-          "returnPct": 1.5,
-          "targetProgressPct": 4.9,
+          "asOfDate": "2026-06-07",
+          "closePrice": 0,
+          "returnPct": 0,
+          "targetProgressPct": 0,
           "success": false,
-          "status": "complete"
+          "status": "unavailable"
         },
         "month3": {
           "asOfDate": "2026-08-06",
@@ -44722,12 +44722,12 @@
           "status": "complete"
         },
         "month1": {
-          "asOfDate": "2026-06-05",
-          "closePrice": 149.92,
-          "returnPct": 3.7,
-          "targetProgressPct": 19.5,
+          "asOfDate": "2026-06-07",
+          "closePrice": 0,
+          "returnPct": 0,
+          "targetProgressPct": 0,
           "success": false,
-          "status": "complete"
+          "status": "unavailable"
         },
         "month3": {
           "asOfDate": "2026-08-06",
@@ -46290,12 +46290,12 @@
           "status": "complete"
         },
         "month1": {
-          "asOfDate": "2026-06-06",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
+          "asOfDate": "2026-06-05",
+          "closePrice": 112.45,
+          "returnPct": 20.2,
+          "targetProgressPct": 13.2,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month3": {
           "asOfDate": "2026-08-05",
@@ -46339,12 +46339,12 @@
           "status": "complete"
         },
         "month1": {
-          "asOfDate": "2026-06-06",
-          "closePrice": 0,
-          "returnPct": 0,
+          "asOfDate": "2026-06-05",
+          "closePrice": 135.53,
+          "returnPct": -1.1,
           "targetProgressPct": 0,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month3": {
           "asOfDate": "2026-08-05",
@@ -46437,12 +46437,12 @@
           "status": "complete"
         },
         "month1": {
-          "asOfDate": "2026-06-06",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
+          "asOfDate": "2026-06-05",
+          "closePrice": 349.58,
+          "returnPct": 6.2,
+          "targetProgressPct": 44.6,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month3": {
           "asOfDate": "2026-08-05",
@@ -48251,11 +48251,11 @@
         },
         "month1": {
           "asOfDate": "2026-06-05",
-          "closePrice": 0,
-          "returnPct": 0,
+          "closePrice": 593,
+          "returnPct": -3.2,
           "targetProgressPct": 0,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month3": {
           "asOfDate": "2026-08-04",
@@ -48300,11 +48300,11 @@
         },
         "month1": {
           "asOfDate": "2026-06-05",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "unavailable"
+          "closePrice": 112.45,
+          "returnPct": 26.3,
+          "targetProgressPct": 90.2,
+          "success": true,
+          "status": "complete"
         },
         "month3": {
           "asOfDate": "2026-08-04",
@@ -48349,11 +48349,11 @@
         },
         "month1": {
           "asOfDate": "2026-06-05",
-          "closePrice": 0,
-          "returnPct": 0,
+          "closePrice": 95.29,
+          "returnPct": -10.5,
           "targetProgressPct": 0,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month3": {
           "asOfDate": "2026-08-04",
@@ -55200,6 +55200,305 @@
         }
       ]
     },
+    "us:ORCL": {
+      "ticker": "ORCL",
+      "name": "Oracle Corporation",
+      "market": "us",
+      "latestReportDate": "2026-06-12",
+      "latestBroker": "Argus Research",
+      "latestOpinion": "Buy",
+      "latestTargetPrice": 225,
+      "latestCurrentPrice": 184.13,
+      "latestBasePrice": 184.13,
+      "avgUpside": 29.6,
+      "reportCount": 5,
+      "reasonSummary": "Buy Reiterates. Argus Research가 Buy 의견을 제시했고 현재가 기준 상승여력은 22.2%입니다. 2026-06-12 종가 대비 목표가 괴리는 22.2%입니다.",
+      "reasonBullets": [
+        "Argus Research가 2026-06-12에 Buy 의견과 목표가를 제시했습니다.",
+        "현재가 $184.13 대비 목표가는 $225입니다.",
+        "2026-06-12 종가 $184.13 대비 괴리는 22.2%입니다."
+      ],
+      "investmentLogic": {
+        "summary": "Buy Reiterates",
+        "bullets": [
+          "Buy Reiterates",
+          "Buy Reiterates Argus Research Buy Reiterates.",
+          "Price target N/A -> 225."
+        ]
+      },
+      "estimateRevision": {
+        "summary": "유지 신호입니다. 리포트 원문에서 추정치 관련 표현을 기준으로 판단했습니다.",
+        "bullets": [
+          "Buy Reiterates Argus Research Buy Reiterates.",
+          "Price target N/A -> 225.",
+          "Buy Reiterates."
+        ],
+        "signal": "flat"
+      },
+      "valuation": {
+        "summary": "현재가 $184.13 대비 목표가 $225가 제시돼 밸류에이션 여력을 확인할 수 있습니다.",
+        "bullets": [
+          "Buy Reiterates Argus Research Buy Reiterates.",
+          "Price target N/A -> 225.",
+          "Buy Reiterates."
+        ]
+      },
+      "sectorCycle": {
+        "summary": "Buy Reiterates Argus Research Buy Reiterates.",
+        "bullets": [
+          "Buy Reiterates Argus Research Buy Reiterates.",
+          "Price target N/A -> 225.",
+          "Buy Reiterates."
+        ]
+      },
+      "relatedReports": [
+        {
+          "date": "2026-06-12",
+          "ticker": "ORCL",
+          "name": "Oracle Corporation",
+          "market": "us",
+          "broker": "Argus Research",
+          "analyst": "Joseph Bonner",
+          "opinion": "Buy",
+          "targetPrice": 225,
+          "currentPrice": 184.13,
+          "basePrice": 184.13,
+          "basePriceDate": "2026-06-12",
+          "upside": 22.2,
+          "sourceUrl": "https://stockanalysis.com/stocks/orcl/ratings/",
+          "sourceText": "Argus Research Buy Reiterates. Price target N/A -> 225.",
+          "reportTitle": "Buy Reiterates",
+          "reasonSummary": "Buy Reiterates. Argus Research가 Buy 의견을 제시했고 현재가 기준 상승여력은 22.2%입니다. 2026-06-12 종가 대비 목표가 괴리는 22.2%입니다.",
+          "reasonBullets": [
+            "Argus Research가 2026-06-12에 Buy 의견과 목표가를 제시했습니다.",
+            "현재가 $184.13 대비 목표가는 $225입니다.",
+            "2026-06-12 종가 $184.13 대비 괴리는 22.2%입니다."
+          ],
+          "performance": {
+            "week1": {
+              "asOfDate": "2026-06-19",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            },
+            "month1": {
+              "asOfDate": "2026-07-12",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            },
+            "month3": {
+              "asOfDate": "2026-09-10",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            }
+          }
+        },
+        {
+          "date": "2026-06-11",
+          "ticker": "ORCL",
+          "name": "Oracle Corporation",
+          "market": "us",
+          "broker": "Goldman Sachs",
+          "analyst": "Gabriela Borges",
+          "opinion": "Buy",
+          "targetPrice": 239,
+          "currentPrice": 184.13,
+          "basePrice": 184.1,
+          "basePriceDate": "2026-06-11",
+          "upside": 29.8,
+          "sourceUrl": "https://stockanalysis.com/stocks/orcl/ratings/",
+          "sourceText": "Goldman Sachs Buy Maintains. Price target 228 -> 239.",
+          "reportTitle": "Buy Maintains",
+          "reasonSummary": "Buy Maintains. Goldman Sachs가 Buy 의견을 제시했고 현재가 기준 상승여력은 29.8%입니다. 2026-06-11 종가 대비 목표가 괴리는 29.8%입니다.",
+          "reasonBullets": [
+            "Goldman Sachs가 2026-06-11에 Buy 의견과 목표가를 제시했습니다.",
+            "현재가 $184.13 대비 목표가는 $239입니다.",
+            "2026-06-11 종가 $184.1 대비 괴리는 29.8%입니다."
+          ],
+          "performance": {
+            "week1": {
+              "asOfDate": "2026-06-18",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            },
+            "month1": {
+              "asOfDate": "2026-07-11",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            },
+            "month3": {
+              "asOfDate": "2026-09-09",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            }
+          }
+        },
+        {
+          "date": "2026-06-11",
+          "ticker": "ORCL",
+          "name": "Oracle Corporation",
+          "market": "us",
+          "broker": "Cantor Fitzgerald",
+          "analyst": "Thomas Blakey",
+          "opinion": "Buy",
+          "targetPrice": 284,
+          "currentPrice": 184.13,
+          "basePrice": 184.1,
+          "basePriceDate": "2026-06-11",
+          "upside": 54.2,
+          "sourceUrl": "https://stockanalysis.com/stocks/orcl/ratings/",
+          "sourceText": "Cantor Fitzgerald Buy Maintains. Price target N/A -> 284.",
+          "reportTitle": "Buy Maintains",
+          "reasonSummary": "Buy Maintains. Cantor Fitzgerald가 Buy 의견을 제시했고 현재가 기준 상승여력은 54.2%입니다. 2026-06-11 종가 대비 목표가 괴리는 54.3%입니다.",
+          "reasonBullets": [
+            "Cantor Fitzgerald가 2026-06-11에 Buy 의견과 목표가를 제시했습니다.",
+            "현재가 $184.13 대비 목표가는 $284입니다.",
+            "2026-06-11 종가 $184.1 대비 괴리는 54.3%입니다."
+          ],
+          "performance": {
+            "week1": {
+              "asOfDate": "2026-06-18",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            },
+            "month1": {
+              "asOfDate": "2026-07-11",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            },
+            "month3": {
+              "asOfDate": "2026-09-09",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            }
+          }
+        },
+        {
+          "date": "2026-06-11",
+          "ticker": "ORCL",
+          "name": "Oracle Corporation",
+          "market": "us",
+          "broker": "D.A. Davidson",
+          "analyst": "Gil Luria",
+          "opinion": "Buy",
+          "targetPrice": 225,
+          "currentPrice": 184.13,
+          "basePrice": 184.1,
+          "basePriceDate": "2026-06-11",
+          "upside": 22.2,
+          "sourceUrl": "https://stockanalysis.com/stocks/orcl/ratings/",
+          "sourceText": "D.A. Davidson Buy Reiterates. Price target 200 -> 225.",
+          "reportTitle": "Buy Reiterates",
+          "reasonSummary": "Buy Reiterates. D.A. Davidson가 Buy 의견을 제시했고 현재가 기준 상승여력은 22.2%입니다. 2026-06-11 종가 대비 목표가 괴리는 22.2%입니다.",
+          "reasonBullets": [
+            "D.A. Davidson가 2026-06-11에 Buy 의견과 목표가를 제시했습니다.",
+            "현재가 $184.13 대비 목표가는 $225입니다.",
+            "2026-06-11 종가 $184.1 대비 괴리는 22.2%입니다."
+          ],
+          "performance": {
+            "week1": {
+              "asOfDate": "2026-06-18",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            },
+            "month1": {
+              "asOfDate": "2026-07-11",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            },
+            "month3": {
+              "asOfDate": "2026-09-09",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            }
+          }
+        },
+        {
+          "date": "2026-06-11",
+          "ticker": "ORCL",
+          "name": "Oracle Corporation",
+          "market": "us",
+          "broker": "Stifel Nicolaus",
+          "analyst": "Brad Reback",
+          "opinion": "Buy",
+          "targetPrice": 220,
+          "currentPrice": 184.13,
+          "basePrice": 184.1,
+          "basePriceDate": "2026-06-11",
+          "upside": 19.5,
+          "sourceUrl": "https://stockanalysis.com/stocks/orcl/ratings/",
+          "sourceText": "Stifel Nicolaus Buy Maintains. Price target N/A -> 220.",
+          "reportTitle": "Buy Maintains",
+          "reasonSummary": "Buy Maintains. Stifel Nicolaus가 Buy 의견을 제시했고 현재가 기준 상승여력은 19.5%입니다. 2026-06-11 종가 대비 목표가 괴리는 19.5%입니다.",
+          "reasonBullets": [
+            "Stifel Nicolaus가 2026-06-11에 Buy 의견과 목표가를 제시했습니다.",
+            "현재가 $184.13 대비 목표가는 $220입니다.",
+            "2026-06-11 종가 $184.1 대비 괴리는 19.5%입니다."
+          ],
+          "performance": {
+            "week1": {
+              "asOfDate": "2026-06-18",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            },
+            "month1": {
+              "asOfDate": "2026-07-11",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            },
+            "month3": {
+              "asOfDate": "2026-09-09",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            }
+          }
+        }
+      ]
+    },
     "us:ADBE": {
       "ticker": "ADBE",
       "name": "Adobe Inc.",
@@ -56681,12 +56980,12 @@
               "status": "complete"
             },
             "month1": {
-              "asOfDate": "2026-06-14",
-              "closePrice": 0,
-              "returnPct": 0,
+              "asOfDate": "2026-06-12",
+              "closePrice": 144.27,
+              "returnPct": -3.3,
               "targetProgressPct": 0,
               "success": false,
-              "status": "pending"
+              "status": "complete"
             },
             "month3": {
               "asOfDate": "2026-08-13",
@@ -59568,305 +59867,6 @@
         }
       ]
     },
-    "us:ORCL": {
-      "ticker": "ORCL",
-      "name": "Oracle Corporation",
-      "market": "us",
-      "latestReportDate": "2026-06-11",
-      "latestBroker": "Goldman Sachs",
-      "latestOpinion": "Buy",
-      "latestTargetPrice": 239,
-      "latestCurrentPrice": 184.13,
-      "latestBasePrice": 184.1,
-      "avgUpside": 31.2,
-      "reportCount": 5,
-      "reasonSummary": "Buy Maintains. Goldman Sachs가 Buy 의견을 제시했고 현재가 기준 상승여력은 29.8%입니다. 2026-06-11 종가 대비 목표가 괴리는 29.8%입니다.",
-      "reasonBullets": [
-        "Goldman Sachs가 2026-06-11에 Buy 의견과 목표가를 제시했습니다.",
-        "현재가 $184.13 대비 목표가는 $239입니다.",
-        "2026-06-11 종가 $184.1 대비 괴리는 29.8%입니다."
-      ],
-      "investmentLogic": {
-        "summary": "Buy Maintains",
-        "bullets": [
-          "Buy Maintains",
-          "Buy Maintains Goldman Sachs Buy Maintains.",
-          "Price target 228 -> 239."
-        ]
-      },
-      "estimateRevision": {
-        "summary": "유지 신호입니다. 리포트 원문에서 추정치 관련 표현을 기준으로 판단했습니다.",
-        "bullets": [
-          "Buy Maintains Goldman Sachs Buy Maintains.",
-          "Price target 228 -> 239.",
-          "Buy Maintains."
-        ],
-        "signal": "flat"
-      },
-      "valuation": {
-        "summary": "현재가 $184.13 대비 목표가 $239가 제시돼 밸류에이션 여력을 확인할 수 있습니다.",
-        "bullets": [
-          "Buy Maintains Goldman Sachs Buy Maintains.",
-          "Price target 228 -> 239.",
-          "Buy Maintains."
-        ]
-      },
-      "sectorCycle": {
-        "summary": "Buy Maintains Goldman Sachs Buy Maintains.",
-        "bullets": [
-          "Buy Maintains Goldman Sachs Buy Maintains.",
-          "Price target 228 -> 239.",
-          "Buy Maintains."
-        ]
-      },
-      "relatedReports": [
-        {
-          "date": "2026-06-11",
-          "ticker": "ORCL",
-          "name": "Oracle Corporation",
-          "market": "us",
-          "broker": "Goldman Sachs",
-          "analyst": "Gabriela Borges",
-          "opinion": "Buy",
-          "targetPrice": 239,
-          "currentPrice": 184.13,
-          "basePrice": 184.1,
-          "basePriceDate": "2026-06-11",
-          "upside": 29.8,
-          "sourceUrl": "https://stockanalysis.com/stocks/orcl/ratings/",
-          "sourceText": "Goldman Sachs Buy Maintains. Price target 228 -> 239.",
-          "reportTitle": "Buy Maintains",
-          "reasonSummary": "Buy Maintains. Goldman Sachs가 Buy 의견을 제시했고 현재가 기준 상승여력은 29.8%입니다. 2026-06-11 종가 대비 목표가 괴리는 29.8%입니다.",
-          "reasonBullets": [
-            "Goldman Sachs가 2026-06-11에 Buy 의견과 목표가를 제시했습니다.",
-            "현재가 $184.13 대비 목표가는 $239입니다.",
-            "2026-06-11 종가 $184.1 대비 괴리는 29.8%입니다."
-          ],
-          "performance": {
-            "week1": {
-              "asOfDate": "2026-06-18",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            },
-            "month1": {
-              "asOfDate": "2026-07-11",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            },
-            "month3": {
-              "asOfDate": "2026-09-09",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            }
-          }
-        },
-        {
-          "date": "2026-06-11",
-          "ticker": "ORCL",
-          "name": "Oracle Corporation",
-          "market": "us",
-          "broker": "Cantor Fitzgerald",
-          "analyst": "Thomas Blakey",
-          "opinion": "Buy",
-          "targetPrice": 284,
-          "currentPrice": 184.13,
-          "basePrice": 184.1,
-          "basePriceDate": "2026-06-11",
-          "upside": 54.2,
-          "sourceUrl": "https://stockanalysis.com/stocks/orcl/ratings/",
-          "sourceText": "Cantor Fitzgerald Buy Maintains. Price target N/A -> 284.",
-          "reportTitle": "Buy Maintains",
-          "reasonSummary": "Buy Maintains. Cantor Fitzgerald가 Buy 의견을 제시했고 현재가 기준 상승여력은 54.2%입니다. 2026-06-11 종가 대비 목표가 괴리는 54.3%입니다.",
-          "reasonBullets": [
-            "Cantor Fitzgerald가 2026-06-11에 Buy 의견과 목표가를 제시했습니다.",
-            "현재가 $184.13 대비 목표가는 $284입니다.",
-            "2026-06-11 종가 $184.1 대비 괴리는 54.3%입니다."
-          ],
-          "performance": {
-            "week1": {
-              "asOfDate": "2026-06-18",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            },
-            "month1": {
-              "asOfDate": "2026-07-11",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            },
-            "month3": {
-              "asOfDate": "2026-09-09",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            }
-          }
-        },
-        {
-          "date": "2026-06-11",
-          "ticker": "ORCL",
-          "name": "Oracle Corporation",
-          "market": "us",
-          "broker": "D.A. Davidson",
-          "analyst": "Gil Luria",
-          "opinion": "Buy",
-          "targetPrice": 225,
-          "currentPrice": 184.13,
-          "basePrice": 184.1,
-          "basePriceDate": "2026-06-11",
-          "upside": 22.2,
-          "sourceUrl": "https://stockanalysis.com/stocks/orcl/ratings/",
-          "sourceText": "D.A. Davidson Buy Reiterates. Price target 200 -> 225.",
-          "reportTitle": "Buy Reiterates",
-          "reasonSummary": "Buy Reiterates. D.A. Davidson가 Buy 의견을 제시했고 현재가 기준 상승여력은 22.2%입니다. 2026-06-11 종가 대비 목표가 괴리는 22.2%입니다.",
-          "reasonBullets": [
-            "D.A. Davidson가 2026-06-11에 Buy 의견과 목표가를 제시했습니다.",
-            "현재가 $184.13 대비 목표가는 $225입니다.",
-            "2026-06-11 종가 $184.1 대비 괴리는 22.2%입니다."
-          ],
-          "performance": {
-            "week1": {
-              "asOfDate": "2026-06-18",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            },
-            "month1": {
-              "asOfDate": "2026-07-11",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            },
-            "month3": {
-              "asOfDate": "2026-09-09",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            }
-          }
-        },
-        {
-          "date": "2026-06-11",
-          "ticker": "ORCL",
-          "name": "Oracle Corporation",
-          "market": "us",
-          "broker": "Stifel Nicolaus",
-          "analyst": "Brad Reback",
-          "opinion": "Buy",
-          "targetPrice": 220,
-          "currentPrice": 184.13,
-          "basePrice": 184.1,
-          "basePriceDate": "2026-06-11",
-          "upside": 19.5,
-          "sourceUrl": "https://stockanalysis.com/stocks/orcl/ratings/",
-          "sourceText": "Stifel Nicolaus Buy Maintains. Price target N/A -> 220.",
-          "reportTitle": "Buy Maintains",
-          "reasonSummary": "Buy Maintains. Stifel Nicolaus가 Buy 의견을 제시했고 현재가 기준 상승여력은 19.5%입니다. 2026-06-11 종가 대비 목표가 괴리는 19.5%입니다.",
-          "reasonBullets": [
-            "Stifel Nicolaus가 2026-06-11에 Buy 의견과 목표가를 제시했습니다.",
-            "현재가 $184.13 대비 목표가는 $220입니다.",
-            "2026-06-11 종가 $184.1 대비 괴리는 19.5%입니다."
-          ],
-          "performance": {
-            "week1": {
-              "asOfDate": "2026-06-18",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            },
-            "month1": {
-              "asOfDate": "2026-07-11",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            },
-            "month3": {
-              "asOfDate": "2026-09-09",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            }
-          }
-        },
-        {
-          "date": "2026-06-11",
-          "ticker": "ORCL",
-          "name": "Oracle Corporation",
-          "market": "us",
-          "broker": "Wedbush",
-          "analyst": "Daniel Ives",
-          "opinion": "Buy",
-          "targetPrice": 240,
-          "currentPrice": 184.13,
-          "basePrice": 184.1,
-          "basePriceDate": "2026-06-11",
-          "upside": 30.3,
-          "sourceUrl": "https://stockanalysis.com/stocks/orcl/ratings/",
-          "sourceText": "Wedbush Buy Maintains. Price target 275 -> 240.",
-          "reportTitle": "Buy Maintains",
-          "reasonSummary": "Buy Maintains. Wedbush가 Buy 의견을 제시했고 현재가 기준 상승여력은 30.3%입니다. 2026-06-11 종가 대비 목표가 괴리는 30.4%입니다.",
-          "reasonBullets": [
-            "Wedbush가 2026-06-11에 Buy 의견과 목표가를 제시했습니다.",
-            "현재가 $184.13 대비 목표가는 $240입니다.",
-            "2026-06-11 종가 $184.1 대비 괴리는 30.4%입니다."
-          ],
-          "performance": {
-            "week1": {
-              "asOfDate": "2026-06-18",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            },
-            "month1": {
-              "asOfDate": "2026-07-11",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            },
-            "month3": {
-              "asOfDate": "2026-09-09",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            }
-          }
-        }
-      ]
-    },
     "us:MU": {
       "ticker": "MU",
       "name": "Micron Technology, Inc.",
@@ -61906,7 +61906,7 @@
               "returnPct": 0,
               "targetProgressPct": 0,
               "success": false,
-              "status": "pending"
+              "status": "unavailable"
             },
             "month3": {
               "asOfDate": "2026-08-13",
@@ -63457,12 +63457,12 @@
               "status": "complete"
             },
             "month1": {
-              "asOfDate": "2026-06-05",
-              "closePrice": 112.45,
-              "returnPct": 23.3,
-              "targetProgressPct": 31.8,
+              "asOfDate": "2026-06-07",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
               "success": false,
-              "status": "complete"
+              "status": "unavailable"
             },
             "month3": {
               "asOfDate": "2026-08-06",
@@ -63506,12 +63506,12 @@
               "status": "complete"
             },
             "month1": {
-              "asOfDate": "2026-06-05",
-              "closePrice": 112.45,
-              "returnPct": 23.3,
-              "targetProgressPct": 29.6,
+              "asOfDate": "2026-06-07",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
               "success": false,
-              "status": "complete"
+              "status": "unavailable"
             },
             "month3": {
               "asOfDate": "2026-08-06",
@@ -63555,12 +63555,12 @@
               "status": "complete"
             },
             "month1": {
-              "asOfDate": "2026-06-06",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
+              "asOfDate": "2026-06-05",
+              "closePrice": 112.45,
+              "returnPct": 20.2,
+              "targetProgressPct": 13.2,
               "success": false,
-              "status": "unavailable"
+              "status": "complete"
             },
             "month3": {
               "asOfDate": "2026-08-05",
@@ -64006,12 +64006,12 @@
               "status": "complete"
             },
             "month1": {
-              "asOfDate": "2026-06-05",
-              "closePrice": 132.47,
-              "returnPct": 5.5,
-              "targetProgressPct": 29.5,
+              "asOfDate": "2026-06-07",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
               "success": false,
-              "status": "complete"
+              "status": "unavailable"
             },
             "month3": {
               "asOfDate": "2026-08-06",
@@ -64055,12 +64055,12 @@
               "status": "complete"
             },
             "month1": {
-              "asOfDate": "2026-06-05",
-              "closePrice": 132.47,
-              "returnPct": 5.5,
-              "targetProgressPct": 20.1,
+              "asOfDate": "2026-06-07",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
               "success": false,
-              "status": "complete"
+              "status": "unavailable"
             },
             "month3": {
               "asOfDate": "2026-08-06",
@@ -64104,12 +64104,12 @@
               "status": "complete"
             },
             "month1": {
-              "asOfDate": "2026-06-05",
-              "closePrice": 132.47,
-              "returnPct": 5.5,
-              "targetProgressPct": 35.6,
+              "asOfDate": "2026-06-07",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
               "success": false,
-              "status": "complete"
+              "status": "unavailable"
             },
             "month3": {
               "asOfDate": "2026-08-06",
@@ -64354,12 +64354,12 @@
               "status": "complete"
             },
             "month1": {
-              "asOfDate": "2026-06-13",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
+              "asOfDate": "2026-06-12",
+              "closePrice": 325.44,
+              "returnPct": 4.1,
+              "targetProgressPct": 22.1,
               "success": false,
-              "status": "unavailable"
+              "status": "complete"
             },
             "month3": {
               "asOfDate": "2026-08-12",
@@ -64904,11 +64904,11 @@
             },
             "month1": {
               "asOfDate": "2026-06-05",
-              "closePrice": 0,
-              "returnPct": 0,
+              "closePrice": 95.29,
+              "returnPct": -10.5,
               "targetProgressPct": 0,
               "success": false,
-              "status": "unavailable"
+              "status": "complete"
             },
             "month3": {
               "asOfDate": "2026-08-04",
@@ -65452,12 +65452,12 @@
               "status": "complete"
             },
             "month1": {
-              "asOfDate": "2026-06-14",
-              "closePrice": 0,
-              "returnPct": 0,
+              "asOfDate": "2026-06-12",
+              "closePrice": 80.34,
+              "returnPct": -7.7,
               "targetProgressPct": 0,
               "success": false,
-              "status": "pending"
+              "status": "complete"
             },
             "month3": {
               "asOfDate": "2026-08-13",
@@ -65501,12 +65501,12 @@
               "status": "complete"
             },
             "month1": {
-              "asOfDate": "2026-06-14",
-              "closePrice": 0,
-              "returnPct": 0,
+              "asOfDate": "2026-06-12",
+              "closePrice": 80.34,
+              "returnPct": -7.7,
               "targetProgressPct": 0,
               "success": false,
-              "status": "pending"
+              "status": "complete"
             },
             "month3": {
               "asOfDate": "2026-08-13",
@@ -67451,11 +67451,11 @@
             },
             "month1": {
               "asOfDate": "2026-06-10",
-              "closePrice": 0,
-              "returnPct": 0,
+              "closePrice": 130.21,
+              "returnPct": -4.9,
               "targetProgressPct": 0,
               "success": false,
-              "status": "unavailable"
+              "status": "complete"
             },
             "month3": {
               "asOfDate": "2026-08-09",
@@ -67499,12 +67499,12 @@
               "status": "complete"
             },
             "month1": {
-              "asOfDate": "2026-06-06",
-              "closePrice": 0,
-              "returnPct": 0,
+              "asOfDate": "2026-06-05",
+              "closePrice": 135.53,
+              "returnPct": -1.1,
               "targetProgressPct": 0,
               "success": false,
-              "status": "unavailable"
+              "status": "complete"
             },
             "month3": {
               "asOfDate": "2026-08-05",
@@ -72697,12 +72697,12 @@
               "status": "complete"
             },
             "month1": {
-              "asOfDate": "2026-06-14",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
+              "asOfDate": "2026-06-12",
+              "closePrice": 227.73,
+              "returnPct": 8.2,
+              "targetProgressPct": 70.5,
+              "success": true,
+              "status": "complete"
             },
             "month3": {
               "asOfDate": "2026-08-13",
@@ -72898,12 +72898,12 @@
               "status": "complete"
             },
             "month1": {
-              "asOfDate": "2026-06-06",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
+              "asOfDate": "2026-06-05",
+              "closePrice": 349.58,
+              "returnPct": 6.2,
+              "targetProgressPct": 44.6,
               "success": false,
-              "status": "unavailable"
+              "status": "complete"
             },
             "month3": {
               "asOfDate": "2026-08-05",
@@ -83444,7 +83444,7 @@
               "returnPct": 0,
               "targetProgressPct": 0,
               "success": false,
-              "status": "pending"
+              "status": "unavailable"
             },
             "month3": {
               "asOfDate": "2026-08-13",
@@ -84242,12 +84242,12 @@
               "status": "complete"
             },
             "month1": {
-              "asOfDate": "2026-06-14",
-              "closePrice": 0,
-              "returnPct": 0,
+              "asOfDate": "2026-06-12",
+              "closePrice": 187.22,
+              "returnPct": -2,
               "targetProgressPct": 0,
               "success": false,
-              "status": "pending"
+              "status": "complete"
             },
             "month3": {
               "asOfDate": "2026-08-13",
@@ -87714,7 +87714,7 @@
               "returnPct": 0,
               "targetProgressPct": 0,
               "success": false,
-              "status": "pending"
+              "status": "unavailable"
             },
             "month3": {
               "asOfDate": "2026-08-13",
@@ -88512,12 +88512,12 @@
               "status": "complete"
             },
             "month1": {
-              "asOfDate": "2026-06-05",
-              "closePrice": 149.92,
-              "returnPct": 3.7,
-              "targetProgressPct": 19.5,
+              "asOfDate": "2026-06-07",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
               "success": false,
-              "status": "complete"
+              "status": "unavailable"
             },
             "month3": {
               "asOfDate": "2026-08-06",
@@ -88718,7 +88718,7 @@
               "returnPct": 0,
               "targetProgressPct": 0,
               "success": false,
-              "status": "pending"
+              "status": "unavailable"
             },
             "month3": {
               "asOfDate": "2026-08-13",
@@ -91594,7 +91594,7 @@
               "returnPct": 0,
               "targetProgressPct": 0,
               "success": false,
-              "status": "pending"
+              "status": "unavailable"
             },
             "month3": {
               "asOfDate": "2026-08-13",
@@ -91643,7 +91643,7 @@
               "returnPct": 0,
               "targetProgressPct": 0,
               "success": false,
-              "status": "pending"
+              "status": "unavailable"
             },
             "month3": {
               "asOfDate": "2026-08-13",
@@ -91692,7 +91692,7 @@
               "returnPct": 0,
               "targetProgressPct": 0,
               "success": false,
-              "status": "pending"
+              "status": "unavailable"
             },
             "month3": {
               "asOfDate": "2026-08-13",
@@ -93198,7 +93198,7 @@
               "returnPct": 0,
               "targetProgressPct": 0,
               "success": false,
-              "status": "pending"
+              "status": "unavailable"
             },
             "month3": {
               "asOfDate": "2026-08-13",
@@ -94058,7 +94058,7 @@
               "returnPct": 0,
               "targetProgressPct": 0,
               "success": false,
-              "status": "pending"
+              "status": "unavailable"
             },
             "month3": {
               "asOfDate": "2026-08-13",
@@ -98783,7 +98783,7 @@
               "returnPct": 0,
               "targetProgressPct": 0,
               "success": false,
-              "status": "pending"
+              "status": "unavailable"
             },
             "month3": {
               "asOfDate": "2026-08-13",
@@ -98832,7 +98832,7 @@
               "returnPct": 0,
               "targetProgressPct": 0,
               "success": false,
-              "status": "pending"
+              "status": "unavailable"
             },
             "month3": {
               "asOfDate": "2026-08-13",
@@ -98881,7 +98881,7 @@
               "returnPct": 0,
               "targetProgressPct": 0,
               "success": false,
-              "status": "pending"
+              "status": "unavailable"
             },
             "month3": {
               "asOfDate": "2026-08-13",
@@ -98930,7 +98930,7 @@
               "returnPct": 0,
               "targetProgressPct": 0,
               "success": false,
-              "status": "pending"
+              "status": "unavailable"
             },
             "month3": {
               "asOfDate": "2026-08-13",
@@ -100845,7 +100845,7 @@
               "returnPct": 0,
               "targetProgressPct": 0,
               "success": false,
-              "status": "pending"
+              "status": "unavailable"
             },
             "month3": {
               "asOfDate": "2026-08-13",
@@ -102371,12 +102371,12 @@
               "status": "complete"
             },
             "month1": {
-              "asOfDate": "2026-06-05",
-              "closePrice": 279.84,
-              "returnPct": 1.5,
-              "targetProgressPct": 5.5,
+              "asOfDate": "2026-06-07",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
               "success": false,
-              "status": "complete"
+              "status": "unavailable"
             },
             "month3": {
               "asOfDate": "2026-08-06",
@@ -102420,12 +102420,12 @@
               "status": "complete"
             },
             "month1": {
-              "asOfDate": "2026-06-05",
-              "closePrice": 279.84,
-              "returnPct": 1.5,
-              "targetProgressPct": 5.5,
+              "asOfDate": "2026-06-07",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
               "success": false,
-              "status": "complete"
+              "status": "unavailable"
             },
             "month3": {
               "asOfDate": "2026-08-06",
@@ -102469,12 +102469,12 @@
               "status": "complete"
             },
             "month1": {
-              "asOfDate": "2026-06-05",
-              "closePrice": 279.84,
-              "returnPct": 1.5,
-              "targetProgressPct": 5.5,
+              "asOfDate": "2026-06-07",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
               "success": false,
-              "status": "complete"
+              "status": "unavailable"
             },
             "month3": {
               "asOfDate": "2026-08-06",
@@ -102576,7 +102576,7 @@
               "returnPct": 0,
               "targetProgressPct": 0,
               "success": false,
-              "status": "pending"
+              "status": "unavailable"
             },
             "month3": {
               "asOfDate": "2026-08-13",
@@ -102625,7 +102625,7 @@
               "returnPct": 0,
               "targetProgressPct": 0,
               "success": false,
-              "status": "pending"
+              "status": "unavailable"
             },
             "month3": {
               "asOfDate": "2026-08-13",
@@ -102728,7 +102728,7 @@
               "returnPct": 0,
               "targetProgressPct": 0,
               "success": false,
-              "status": "pending"
+              "status": "unavailable"
             },
             "month3": {
               "asOfDate": "2026-08-13",
@@ -102830,7 +102830,7 @@
               "returnPct": 0,
               "targetProgressPct": 0,
               "success": false,
-              "status": "pending"
+              "status": "unavailable"
             },
             "month3": {
               "asOfDate": "2026-08-13",
@@ -102879,7 +102879,7 @@
               "returnPct": 0,
               "targetProgressPct": 0,
               "success": false,
-              "status": "pending"
+              "status": "unavailable"
             },
             "month3": {
               "asOfDate": "2026-08-13",
@@ -102928,7 +102928,7 @@
               "returnPct": 0,
               "targetProgressPct": 0,
               "success": false,
-              "status": "pending"
+              "status": "unavailable"
             },
             "month3": {
               "asOfDate": "2026-08-13",
@@ -102977,7 +102977,7 @@
               "returnPct": 0,
               "targetProgressPct": 0,
               "success": false,
-              "status": "pending"
+              "status": "unavailable"
             },
             "month3": {
               "asOfDate": "2026-08-13",
@@ -103026,7 +103026,7 @@
               "returnPct": 0,
               "targetProgressPct": 0,
               "success": false,
-              "status": "pending"
+              "status": "unavailable"
             },
             "month3": {
               "asOfDate": "2026-08-13",
@@ -103129,7 +103129,7 @@
               "returnPct": 0,
               "targetProgressPct": 0,
               "success": false,
-              "status": "pending"
+              "status": "unavailable"
             },
             "month3": {
               "asOfDate": "2026-08-13",
@@ -103379,7 +103379,7 @@
               "returnPct": 0,
               "targetProgressPct": 0,
               "success": false,
-              "status": "pending"
+              "status": "unavailable"
             },
             "month3": {
               "asOfDate": "2026-08-13",
@@ -103677,7 +103677,7 @@
               "returnPct": 0,
               "targetProgressPct": 0,
               "success": false,
-              "status": "pending"
+              "status": "unavailable"
             },
             "month3": {
               "asOfDate": "2026-08-13",
@@ -103780,7 +103780,7 @@
               "returnPct": 0,
               "targetProgressPct": 0,
               "success": false,
-              "status": "pending"
+              "status": "unavailable"
             },
             "month3": {
               "asOfDate": "2026-08-13",
@@ -103883,7 +103883,7 @@
               "returnPct": 0,
               "targetProgressPct": 0,
               "success": false,
-              "status": "pending"
+              "status": "unavailable"
             },
             "month3": {
               "asOfDate": "2026-08-13",
@@ -104182,7 +104182,7 @@
               "returnPct": 0,
               "targetProgressPct": 0,
               "success": false,
-              "status": "pending"
+              "status": "unavailable"
             },
             "month3": {
               "asOfDate": "2026-08-13",
@@ -104280,12 +104280,12 @@
               "status": "complete"
             },
             "month1": {
-              "asOfDate": "2026-06-14",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
+              "asOfDate": "2026-06-12",
+              "closePrice": 91.1,
+              "returnPct": 0.2,
+              "targetProgressPct": 0.8,
               "success": false,
-              "status": "pending"
+              "status": "complete"
             },
             "month3": {
               "asOfDate": "2026-08-13",
@@ -104329,12 +104329,12 @@
               "status": "complete"
             },
             "month1": {
-              "asOfDate": "2026-06-14",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
+              "asOfDate": "2026-06-12",
+              "closePrice": 91.1,
+              "returnPct": 0.2,
+              "targetProgressPct": 0.6,
               "success": false,
-              "status": "pending"
+              "status": "complete"
             },
             "month3": {
               "asOfDate": "2026-08-13",
@@ -104378,12 +104378,12 @@
               "status": "complete"
             },
             "month1": {
-              "asOfDate": "2026-06-14",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
+              "asOfDate": "2026-06-12",
+              "closePrice": 91.1,
+              "returnPct": 0.2,
+              "targetProgressPct": 0.5,
               "success": false,
-              "status": "pending"
+              "status": "complete"
             },
             "month3": {
               "asOfDate": "2026-08-13",
@@ -104427,12 +104427,12 @@
               "status": "complete"
             },
             "month1": {
-              "asOfDate": "2026-06-14",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
+              "asOfDate": "2026-06-12",
+              "closePrice": 91.1,
+              "returnPct": 0.2,
+              "targetProgressPct": 1.2,
               "success": false,
-              "status": "pending"
+              "status": "complete"
             },
             "month3": {
               "asOfDate": "2026-08-13",
@@ -104476,12 +104476,12 @@
               "status": "complete"
             },
             "month1": {
-              "asOfDate": "2026-06-14",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
+              "asOfDate": "2026-06-12",
+              "closePrice": 91.1,
+              "returnPct": 0.2,
+              "targetProgressPct": 1.6,
               "success": false,
-              "status": "pending"
+              "status": "complete"
             },
             "month3": {
               "asOfDate": "2026-08-13",

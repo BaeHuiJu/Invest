@@ -33,6 +33,22 @@
       "calculator": null
     },
     {
+      "id": "2301",
+      "name": "에이치엘지노믹스",
+      "subscriptionStart": "2026-07-13",
+      "subscriptionEnd": "2026-07-14",
+      "confirmedPrice": null,
+      "priceBandLow": null,
+      "priceBandHigh": null,
+      "underwriter": "",
+      "competitionRatio": "KB증권,IBK투자증권",
+      "listingDate": null,
+      "refundDate": "2026-07-16",
+      "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2301&l=&page=1",
+      "status": "청약예정",
+      "calculator": null
+    },
+    {
       "id": "2296",
       "name": "레메디",
       "subscriptionStart": "2026-07-01",
@@ -463,24 +479,8 @@
       "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2273&l=&page=1",
       "status": "상장예정",
       "calculator": null
-    },
-    {
-      "id": "2271",
-      "name": "케이뱅크",
-      "subscriptionStart": "2026-02-20",
-      "subscriptionEnd": "2026-02-23",
-      "confirmedPrice": 8300,
-      "priceBandLow": null,
-      "priceBandHigh": null,
-      "underwriter": "NH투자증권,삼성증권,신한투자증권",
-      "competitionRatio": "134.59:1",
-      "listingDate": null,
-      "refundDate": null,
-      "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2271&l=&page=1",
-      "status": "상장예정",
-      "calculator": null
     }
   ],
-  "fetchedAt": "2026-06-16T03:33:33.186Z",
+  "fetchedAt": "2026-06-16T09:21:41.602Z",
   "totalCount": 30
 }

@@ -1,6 +1,32 @@
 {
-  "generatedAt": "2026-06-20T13:44:06.131Z",
+  "generatedAt": "2026-06-20T17:17:41.120Z",
   "domestic": [
+    {
+      "id": "119_0003102980",
+      "title": "이번주 공모주 청약, 매드업·레몬헬스케어 2개사",
+      "pressName": "데일리안",
+      "publishedAt": "2026-06-21T00:11:00+09:00",
+      "url": "https://n.news.naver.com/mnews/article/119/0003102980",
+      "source": "domestic",
+      "sentiment": "neutral",
+      "sentimentScore": 0,
+      "category": "all",
+      "isBreaking": false,
+      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
+    },
+    {
+      "id": "215_0001256057",
+      "title": "'24만&rarr;49만원' 2배 뛰었는데...\"안 예쁜 손가락이 없다\" 평가 나온 삼성물산",
+      "pressName": "한국경제TV",
+      "publishedAt": "2026-06-20T23:21:00+09:00",
+      "url": "https://n.news.naver.com/mnews/article/215/0001256057",
+      "source": "domestic",
+      "sentiment": "neutral",
+      "sentimentScore": 0,
+      "category": "all",
+      "isBreaking": false,
+      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
+    },
     {
       "id": "016_0002659234",
       "title": "일주일 만에 '-25%'...스페이스X 탔다가 우주여행급 폭락 멀미 [투자360]",
@@ -11,7 +37,7 @@
       "sentiment": "negative",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "주가가 갑자기 많이 떨어졌어요. 패닉 판매는 위험해요. 침착함이 중요합니다."
     },
     {
@@ -24,7 +50,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
@@ -234,32 +260,6 @@
       "category": "all",
       "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
-    },
-    {
-      "id": "016_0002659192",
-      "title": "\"삼전닉스 나만 못 샀다\"...전문가가 대신 담으라고 조언하는 '이것'",
-      "pressName": "헤럴드경제",
-      "publishedAt": "2026-06-20T16:15:00+09:00",
-      "url": "https://n.news.naver.com/mnews/article/016/0002659192",
-      "source": "domestic",
-      "sentiment": "neutral",
-      "sentimentScore": 0,
-      "category": "all",
-      "isBreaking": false,
-      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
-    },
-    {
-      "id": "277_0005779073",
-      "title": "[주末머니]2분기 적자 전망되는데 목표주가는 올라간 이 기업",
-      "pressName": "아시아경제",
-      "publishedAt": "2026-06-20T16:14:00+09:00",
-      "url": "https://n.news.naver.com/mnews/article/277/0005779073",
-      "source": "domestic",
-      "sentiment": "neutral",
-      "sentimentScore": 0,
-      "category": "실적",
-      "isBreaking": false,
-      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     }
   ],
   "overseas": [
@@ -273,7 +273,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
@@ -435,10 +435,23 @@
   ],
   "main": [
     {
+      "id": "016_0002659192",
+      "title": "\"삼전닉스 나만 못 샀다\"...전문가가 대신 담으라고 조언하는 '이것'",
+      "pressName": "네이버금융",
+      "publishedAt": "2026-06-20T17:17:41.119Z",
+      "url": "https://n.news.naver.com/mnews/article/016/0002659192",
+      "source": "main",
+      "sentiment": "neutral",
+      "sentimentScore": 0,
+      "category": "all",
+      "isBreaking": true,
+      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
+    },
+    {
       "id": "008_0005374627",
       "title": "\"1억이 1.4억 됐다\" 이번주 44% ↑...삼전닉스 안 부러운 이 종목[김근희의 증시 랩업]",
       "pressName": "네이버금융",
-      "publishedAt": "2026-06-20T13:44:06.130Z",
+      "publishedAt": "2026-06-20T17:17:41.119Z",
       "url": "https://n.news.naver.com/mnews/article/008/0005374627",
       "source": "main",
       "sentiment": "neutral",
@@ -446,32 +459,6 @@
       "category": "all",
       "isBreaking": true,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
-    },
-    {
-      "id": "243_0000099392",
-      "title": "뒤쫓아가는 목표주가... 삼전닉스 제치고 수익률 44% 찍은 '이 종목'",
-      "pressName": "네이버금융",
-      "publishedAt": "2026-06-20T13:44:06.130Z",
-      "url": "https://n.news.naver.com/mnews/article/243/0000099392",
-      "source": "main",
-      "sentiment": "neutral",
-      "sentimentScore": 0,
-      "category": "all",
-      "isBreaking": true,
-      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
-    },
-    {
-      "id": "003_0014017597",
-      "title": "'61만전자·500만닉스' 진짜 가나...증권가 \"조정에도 상승 여력 충분\"",
-      "pressName": "네이버금융",
-      "publishedAt": "2026-06-20T13:44:06.131Z",
-      "url": "https://n.news.naver.com/mnews/article/003/0014017597",
-      "source": "main",
-      "sentiment": "positive",
-      "sentimentScore": 0,
-      "category": "all",
-      "isBreaking": true,
-      "beginnerExplanation": "기업이 예상보다 돈을 많이 벌었어요. 주가에 좋을 수 있어요."
     }
   ]
 }

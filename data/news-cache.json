@@ -1,9 +1,87 @@
 {
-  "generatedAt": "2026-06-20T10:28:08.296Z",
+  "generatedAt": "2026-06-20T13:44:06.131Z",
   "domestic": [
     {
+      "id": "016_0002659234",
+      "title": "일주일 만에 '-25%'...스페이스X 탔다가 우주여행급 폭락 멀미 [투자360]",
+      "pressName": "헤럴드경제",
+      "publishedAt": "2026-06-20T21:40:00+09:00",
+      "url": "https://n.news.naver.com/mnews/article/016/0002659234",
+      "source": "domestic",
+      "sentiment": "negative",
+      "sentimentScore": 0,
+      "category": "all",
+      "isBreaking": true,
+      "beginnerExplanation": "주가가 갑자기 많이 떨어졌어요. 패닉 판매는 위험해요. 침착함이 중요합니다."
+    },
+    {
+      "id": "011_0004633226",
+      "title": "코스피 9000 돌파했는데 \"닷컴버블 후반부와 닮았다\"...증권가 분석은",
+      "pressName": "서울경제",
+      "publishedAt": "2026-06-20T21:08:00+09:00",
+      "url": "https://n.news.naver.com/mnews/article/011/0004633226",
+      "source": "domestic",
+      "sentiment": "neutral",
+      "sentimentScore": 0,
+      "category": "all",
+      "isBreaking": true,
+      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
+    },
+    {
+      "id": "015_0005300936",
+      "title": "불장에 \"삼전닉스 사면 무조건 돈 번다\"...영끌 개미들 '풀베팅' [분석+]",
+      "pressName": "한국경제",
+      "publishedAt": "2026-06-20T20:14:00+09:00",
+      "url": "https://n.news.naver.com/mnews/article/015/0005300936",
+      "source": "domestic",
+      "sentiment": "neutral",
+      "sentimentScore": 0,
+      "category": "all",
+      "isBreaking": false,
+      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
+    },
+    {
+      "id": "057_0001954769",
+      "title": "TV가 관중 함성 키우고 승부 예측까지...AI로 '월드컵 특수' 되살린다",
+      "pressName": "MBN",
+      "publishedAt": "2026-06-20T20:09:00+09:00",
+      "url": "https://n.news.naver.com/mnews/article/057/0001954769",
+      "source": "domestic",
+      "sentiment": "neutral",
+      "sentimentScore": 0,
+      "category": "all",
+      "isBreaking": false,
+      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
+    },
+    {
+      "id": "057_0001954768",
+      "title": "김용범 \"호황에 부동산 꿈틀할 수도\"...부동산 세제 손질 카운트다운",
+      "pressName": "MBN",
+      "publishedAt": "2026-06-20T20:07:00+09:00",
+      "url": "https://n.news.naver.com/mnews/article/057/0001954768",
+      "source": "domestic",
+      "sentiment": "neutral",
+      "sentimentScore": 0,
+      "category": "all",
+      "isBreaking": false,
+      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
+    },
+    {
+      "id": "021_0002799101",
+      "title": "'불장'에 4년 늦춰진 국민연금 고갈시계...2069년 소진 전망",
+      "pressName": "문화일보",
+      "publishedAt": "2026-06-20T19:31:00+09:00",
+      "url": "https://n.news.naver.com/mnews/article/021/0002799101",
+      "source": "domestic",
+      "sentiment": "neutral",
+      "sentimentScore": 0,
+      "category": "all",
+      "isBreaking": false,
+      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
+    },
+    {
       "id": "138_0002231514",
-      "title": "증시 '삼전닉스' 중심 극심한 쏠림 언제까지...정치권도 우려 [증시레이더]",
+      "title": "증시 '삼전닉스' 중심 극심한 쏠림 언제까지...정치권도 예의주시 [증시레이더]",
       "pressName": "디지털데일리",
       "publishedAt": "2026-06-20T19:00:00+09:00",
       "url": "https://n.news.naver.com/mnews/article/138/0002231514",
@@ -11,7 +89,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
@@ -24,7 +102,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "금리·통화",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "돈 빌리는 비용이 낮아져 주식시장에 좋은 소식이에요."
     },
     {
@@ -37,12 +115,12 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
       "id": "277_0005779084",
-      "title": "\"당분간 삼전닉스 더 오른다\" 솔깃한 전망 나왔다...'주도주 쏠림' 이유는[주末머니]",
+      "title": "\"삼전닉스 지금 사도 될까요\"...증시 전문가 \"30년 전에도 주도주 쏠림\"[주末머니]",
       "pressName": "아시아경제",
       "publishedAt": "2026-06-20T17:49:00+09:00",
       "url": "https://n.news.naver.com/mnews/article/277/0005779084",
@@ -50,7 +128,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
@@ -81,7 +159,7 @@
     },
     {
       "id": "277_0005779080",
-      "title": "\"김 과장도 빚 내서 주식한데\"...9천 돌파한 코스피, '100조 빚투' 괜찮을까[주末머니]",
+      "title": "\"과장님도 부장님도 한대요\"...코스피 광풍이 불러온 '100조 빚투' 괜찮을까[주末머니]",
       "pressName": "아시아경제",
       "publishedAt": "2026-06-20T17:12:00+09:00",
       "url": "https://n.news.naver.com/mnews/article/277/0005779080",
@@ -182,87 +260,61 @@
       "category": "실적",
       "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
-    },
-    {
-      "id": "031_0001036422",
-      "title": "일본生, 스페이스X '초기 투자'로 수천억엔 차익",
-      "pressName": "아이뉴스24",
-      "publishedAt": "2026-06-20T16:10:00+09:00",
-      "url": "https://n.news.naver.com/mnews/article/031/0001036422",
-      "source": "domestic",
-      "sentiment": "neutral",
-      "sentimentScore": 0,
-      "category": "all",
-      "isBreaking": false,
-      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
-    },
-    {
-      "id": "277_0005779072",
-      "title": "아파트·원전에 AI 인프라까지...발주 깨어나는 건설株[주末머니]",
-      "pressName": "아시아경제",
-      "publishedAt": "2026-06-20T16:07:00+09:00",
-      "url": "https://n.news.naver.com/mnews/article/277/0005779072",
-      "source": "domestic",
-      "sentiment": "neutral",
-      "sentimentScore": 0,
-      "category": "all",
-      "isBreaking": false,
-      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
-    },
-    {
-      "id": "277_0005779071",
-      "title": "코인으로 '월드컵 우승국 맞추기' 베팅한다고? [주末머니]",
-      "pressName": "아시아경제",
-      "publishedAt": "2026-06-20T15:52:00+09:00",
-      "url": "https://n.news.naver.com/mnews/article/277/0005779071",
-      "source": "domestic",
-      "sentiment": "neutral",
-      "sentimentScore": 0,
-      "category": "all",
-      "isBreaking": false,
-      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
-    },
-    {
-      "id": "277_0005779064",
-      "title": "미국이 기준금리를 내릴 수밖에 없다고? [주末머니]",
-      "pressName": "아시아경제",
-      "publishedAt": "2026-06-20T15:09:00+09:00",
-      "url": "https://n.news.naver.com/mnews/article/277/0005779064",
-      "source": "domestic",
-      "sentiment": "neutral",
-      "sentimentScore": 0,
-      "category": "금리·통화",
-      "isBreaking": false,
-      "beginnerExplanation": "돈 빌리는 비용이 낮아져 주식시장에 좋은 소식이에요."
-    },
-    {
-      "id": "648_0000048192",
-      "title": "LG전자, 가전제품 자원순환 생태계 조성 나선다",
-      "pressName": "비즈워치",
-      "publishedAt": "2026-06-20T15:00:00+09:00",
-      "url": "https://n.news.naver.com/mnews/article/648/0000048192",
-      "source": "domestic",
-      "sentiment": "neutral",
-      "sentimentScore": 0,
-      "category": "all",
-      "isBreaking": false,
-      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
-    },
-    {
-      "id": "422_0000876718",
-      "title": "[뉴스초점] 9,300선 뚫고 반락...혼돈의 '롤러코스피'",
-      "pressName": "연합뉴스TV",
-      "publishedAt": "2026-06-20T14:58:00+09:00",
-      "url": "https://n.news.naver.com/mnews/article/422/0000876718",
-      "source": "domestic",
-      "sentiment": "neutral",
-      "sentimentScore": 0,
-      "category": "all",
-      "isBreaking": false,
-      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     }
   ],
   "overseas": [
+    {
+      "id": "243_0000099404",
+      "title": "로또 1229회 1등 8명...당첨금 각 35억2000만원",
+      "pressName": "이코노미스트",
+      "publishedAt": "2026-06-20T21:32:00+09:00",
+      "url": "https://n.news.naver.com/mnews/article/243/0000099404",
+      "source": "overseas",
+      "sentiment": "neutral",
+      "sentimentScore": 0,
+      "category": "all",
+      "isBreaking": true,
+      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
+    },
+    {
+      "id": "022_0004136924",
+      "title": "테슬라 달리는데... '규제 브레이크' 걸린 K자율주행 [S 스토리-미래 산업 주도권 걸린 자율주행]",
+      "pressName": "세계일보",
+      "publishedAt": "2026-06-20T19:53:00+09:00",
+      "url": "https://n.news.naver.com/mnews/article/022/0004136924",
+      "source": "overseas",
+      "sentiment": "neutral",
+      "sentimentScore": 0,
+      "category": "정책",
+      "isBreaking": false,
+      "beginnerExplanation": "정부 규제가 더 엄해진대요. 해당 기업들에 부담이 될 수 있어요."
+    },
+    {
+      "id": "022_0004136923",
+      "title": "차에서 로봇으로... 산업현장서 각광 받는 자율 시스템 [S 스토리-미래 산업 주도권 걸린 자율주행]",
+      "pressName": "세계일보",
+      "publishedAt": "2026-06-20T19:52:00+09:00",
+      "url": "https://n.news.naver.com/mnews/article/022/0004136923",
+      "source": "overseas",
+      "sentiment": "neutral",
+      "sentimentScore": 0,
+      "category": "all",
+      "isBreaking": false,
+      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
+    },
+    {
+      "id": "029_0003032687",
+      "title": "김용범 반도체 호황 '국민배당제' 언급에...국힘 \"국민 모욕\" 맹비난",
+      "pressName": "디지털타임스",
+      "publishedAt": "2026-06-20T19:37:00+09:00",
+      "url": "https://n.news.naver.com/mnews/article/029/0003032687",
+      "source": "overseas",
+      "sentiment": "neutral",
+      "sentimentScore": 0,
+      "category": "all",
+      "isBreaking": false,
+      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
+    },
     {
       "id": "666_0000111970",
       "title": "\"규제 피해 주택가로\" 편의점 포화 속 틈새 노린 생존 전략",
@@ -273,7 +325,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "정책",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "정부 규제가 더 엄해진대요. 해당 기업들에 부담이 될 수 있어요."
     },
     {
@@ -286,7 +338,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
@@ -299,7 +351,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
@@ -312,7 +364,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
@@ -325,7 +377,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
@@ -338,7 +390,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
@@ -379,58 +431,6 @@
       "category": "all",
       "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
-    },
-    {
-      "id": "050_0000107544",
-      "title": "숫자는 완벽한 '삼전닉스'...그런데 왜 불안한가",
-      "pressName": "한경비즈니스",
-      "publishedAt": "2026-06-20T16:38:00+09:00",
-      "url": "https://n.news.naver.com/mnews/article/050/0000107544",
-      "source": "overseas",
-      "sentiment": "neutral",
-      "sentimentScore": 0,
-      "category": "all",
-      "isBreaking": false,
-      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
-    },
-    {
-      "id": "050_0000107543",
-      "title": "LIG D&A, 중동 찍고 유럽으로 가는 K-방공 [베스트 애널리스트 추천 종목]",
-      "pressName": "한경비즈니스",
-      "publishedAt": "2026-06-20T16:36:00+09:00",
-      "url": "https://n.news.naver.com/mnews/article/050/0000107543",
-      "source": "overseas",
-      "sentiment": "neutral",
-      "sentimentScore": 0,
-      "category": "all",
-      "isBreaking": false,
-      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
-    },
-    {
-      "id": "050_0000107542",
-      "title": "수용재결 보상금 증액, 문턱에서 좌절되지 않으려면[박효정의 똑똑한 감정평가]",
-      "pressName": "한경비즈니스",
-      "publishedAt": "2026-06-20T16:26:00+09:00",
-      "url": "https://n.news.naver.com/mnews/article/050/0000107542",
-      "source": "overseas",
-      "sentiment": "neutral",
-      "sentimentScore": 0,
-      "category": "all",
-      "isBreaking": false,
-      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
-    },
-    {
-      "id": "050_0000107541",
-      "title": "칩 설계 넘어 AI 인프라 제국을 꿈꾸는 엔비디아의 야심 찬 비전[테크트렌드]",
-      "pressName": "한경비즈니스",
-      "publishedAt": "2026-06-20T16:25:00+09:00",
-      "url": "https://n.news.naver.com/mnews/article/050/0000107541",
-      "source": "overseas",
-      "sentiment": "neutral",
-      "sentimentScore": 0,
-      "category": "all",
-      "isBreaking": false,
-      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     }
   ],
   "main": [
@@ -438,7 +438,7 @@
       "id": "008_0005374627",
       "title": "\"1억이 1.4억 됐다\" 이번주 44% ↑...삼전닉스 안 부러운 이 종목[김근희의 증시 랩업]",
       "pressName": "네이버금융",
-      "publishedAt": "2026-06-20T10:28:08.295Z",
+      "publishedAt": "2026-06-20T13:44:06.130Z",
       "url": "https://n.news.naver.com/mnews/article/008/0005374627",
       "source": "main",
       "sentiment": "neutral",
@@ -451,34 +451,8 @@
       "id": "243_0000099392",
       "title": "뒤쫓아가는 목표주가... 삼전닉스 제치고 수익률 44% 찍은 '이 종목'",
       "pressName": "네이버금융",
-      "publishedAt": "2026-06-20T10:28:08.295Z",
+      "publishedAt": "2026-06-20T13:44:06.130Z",
       "url": "https://n.news.naver.com/mnews/article/243/0000099392",
-      "source": "main",
-      "sentiment": "neutral",
-      "sentimentScore": 0,
-      "category": "all",
-      "isBreaking": true,
-      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
-    },
-    {
-      "id": "215_0001256017",
-      "title": "\"강세장 종료 시그널\"이라 했는데...삼성전자 턱밑까지 추격한 하이닉스",
-      "pressName": "네이버금융",
-      "publishedAt": "2026-06-20T10:28:08.295Z",
-      "url": "https://n.news.naver.com/mnews/article/215/0001256017",
-      "source": "main",
-      "sentiment": "positive",
-      "sentimentScore": 0,
-      "category": "all",
-      "isBreaking": true,
-      "beginnerExplanation": "좋은 소식이 나왔어요. 시장이 긍정적으로 반응할 가능성이 있어요."
-    },
-    {
-      "id": "014_0005537405",
-      "title": "\"'280만닉스', '35만전자' 보니 더 원통해... 나만 벼락거지 된거야?\" 기회 놓친 김대리, '이 무기' 있었더라면[인치범의 주식투자 부트캠프]",
-      "pressName": "네이버금융",
-      "publishedAt": "2026-06-20T10:28:08.295Z",
-      "url": "https://n.news.naver.com/mnews/article/014/0005537405",
       "source": "main",
       "sentiment": "neutral",
       "sentimentScore": 0,
@@ -490,7 +464,7 @@
       "id": "003_0014017597",
       "title": "'61만전자·500만닉스' 진짜 가나...증권가 \"조정에도 상승 여력 충분\"",
       "pressName": "네이버금융",
-      "publishedAt": "2026-06-20T10:28:08.295Z",
+      "publishedAt": "2026-06-20T13:44:06.131Z",
       "url": "https://n.news.naver.com/mnews/article/003/0014017597",
       "source": "main",
       "sentiment": "positive",
@@ -498,19 +472,6 @@
       "category": "all",
       "isBreaking": true,
       "beginnerExplanation": "기업이 예상보다 돈을 많이 벌었어요. 주가에 좋을 수 있어요."
-    },
-    {
-      "id": "008_0005374635",
-      "title": "\"연금 계좌에 주식 더\" 개미 11.1조 쇼핑...리스크 낮추고 수익 '쏠쏠'",
-      "pressName": "네이버금융",
-      "publishedAt": "2026-06-20T10:28:08.295Z",
-      "url": "https://n.news.naver.com/mnews/article/008/0005374635",
-      "source": "main",
-      "sentiment": "neutral",
-      "sentimentScore": 0,
-      "category": "all",
-      "isBreaking": true,
-      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     }
   ]
 }

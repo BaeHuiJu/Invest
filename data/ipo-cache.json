@@ -109,7 +109,7 @@
       "listingDate": "2026-06-30",
       "refundDate": "2026-06-25",
       "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2297&l=&page=1",
-      "status": "청약예정",
+      "status": "청약중",
       "calculator": null
     },
     {
@@ -218,10 +218,10 @@
       "priceBandHigh": null,
       "underwriter": "미래에셋증권,현대차증권",
       "competitionRatio": "2807.8:1",
-      "listingDate": null,
-      "refundDate": null,
+      "listingDate": "2026-05-20",
+      "refundDate": "2026-05-14",
       "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2285&l=&page=1",
-      "status": "상장예정",
+      "status": "상장완료",
       "calculator": null
     },
     {
@@ -481,6 +481,6 @@
       "calculator": null
     }
   ],
-  "fetchedAt": "2026-06-21T21:09:37.781Z",
+  "fetchedAt": "2026-06-22T03:37:41.260Z",
   "totalCount": 30
 }

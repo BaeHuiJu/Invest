@@ -69,7 +69,7 @@
       "name": "레몬헬스케어",
       "subscriptionStart": "2026-06-24",
       "subscriptionEnd": "2026-06-25",
-      "confirmedPrice": null,
+      "confirmedPrice": 10000,
       "priceBandLow": null,
       "priceBandHigh": null,
       "underwriter": "",
@@ -104,8 +104,8 @@
       "confirmedPrice": 2000,
       "priceBandLow": null,
       "priceBandHigh": null,
-      "underwriter": "",
-      "competitionRatio": "한국투자증권",
+      "underwriter": "한국투자증권",
+      "competitionRatio": "1274.77:1",
       "listingDate": "2026-06-30",
       "refundDate": "2026-06-25",
       "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2297&l=&page=1",
@@ -481,6 +481,6 @@
       "calculator": null
     }
   ],
-  "fetchedAt": "2026-06-23T02:43:29.066Z",
+  "fetchedAt": "2026-06-23T07:42:57.685Z",
   "totalCount": 30
 }

@@ -1,6 +1,22 @@
 {
   "ipos": [
     {
+      "id": "2302",
+      "name": "딜리셔스",
+      "subscriptionStart": "2026-08-03",
+      "subscriptionEnd": "2026-08-04",
+      "confirmedPrice": null,
+      "priceBandLow": null,
+      "priceBandHigh": null,
+      "underwriter": "",
+      "competitionRatio": "한국투자증권",
+      "listingDate": null,
+      "refundDate": "2026-08-06",
+      "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2302&l=&page=1",
+      "status": "청약예정",
+      "calculator": null
+    },
+    {
       "id": "2299",
       "name": "케이앤에스아이앤씨",
       "subscriptionStart": "2026-07-27",
@@ -93,7 +109,7 @@
       "listingDate": "2026-07-01",
       "refundDate": "2026-06-26",
       "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2290&l=&page=1",
-      "status": "청약중",
+      "status": "상장예정",
       "calculator": null
     },
     {
@@ -463,24 +479,8 @@
       "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2268&l=&page=1",
       "status": "상장예정",
       "calculator": null
-    },
-    {
-      "id": "2273",
-      "name": "에스팀",
-      "subscriptionStart": "2026-02-23",
-      "subscriptionEnd": "2026-02-24",
-      "confirmedPrice": 8500,
-      "priceBandLow": null,
-      "priceBandHigh": null,
-      "underwriter": "한국투자증권",
-      "competitionRatio": "1960.87:1",
-      "listingDate": null,
-      "refundDate": null,
-      "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2273&l=&page=1",
-      "status": "상장예정",
-      "calculator": null
     }
   ],
-  "fetchedAt": "2026-06-24T21:19:23.199Z",
+  "fetchedAt": "2026-06-25T02:44:39.756Z",
   "totalCount": 30
 }

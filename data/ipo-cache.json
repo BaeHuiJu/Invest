@@ -1,6 +1,22 @@
 {
   "ipos": [
     {
+      "id": "2303",
+      "name": "니어스랩",
+      "subscriptionStart": "2026-08-05",
+      "subscriptionEnd": "2026-08-06",
+      "confirmedPrice": null,
+      "priceBandLow": null,
+      "priceBandHigh": null,
+      "underwriter": "",
+      "competitionRatio": null,
+      "listingDate": null,
+      "refundDate": "2026-08-10",
+      "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2303&l=&page=1",
+      "status": "청약예정",
+      "calculator": null
+    },
+    {
       "id": "2302",
       "name": "딜리셔스",
       "subscriptionStart": "2026-08-03",
@@ -69,7 +85,7 @@
       "name": "레메디",
       "subscriptionStart": "2026-07-01",
       "subscriptionEnd": "2026-07-02",
-      "confirmedPrice": null,
+      "confirmedPrice": 20700,
       "priceBandLow": null,
       "priceBandHigh": null,
       "underwriter": "",
@@ -463,24 +479,8 @@
       "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2269&l=&page=1",
       "status": "상장예정",
       "calculator": null
-    },
-    {
-      "id": "2268",
-      "name": "액스비스",
-      "subscriptionStart": "2026-02-23",
-      "subscriptionEnd": "2026-02-24",
-      "confirmedPrice": 11500,
-      "priceBandLow": null,
-      "priceBandHigh": null,
-      "underwriter": "미래에셋증권",
-      "competitionRatio": "2711.06:1",
-      "listingDate": null,
-      "refundDate": null,
-      "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2268&l=&page=1",
-      "status": "상장예정",
-      "calculator": null
     }
   ],
-  "fetchedAt": "2026-06-26T02:48:33.698Z",
+  "fetchedAt": "2026-06-26T07:45:19.204Z",
   "totalCount": 30
 }

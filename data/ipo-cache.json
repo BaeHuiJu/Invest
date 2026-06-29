@@ -1,6 +1,22 @@
 {
   "ipos": [
     {
+      "id": "2304",
+      "name": "해치텍",
+      "subscriptionStart": "2026-08-06",
+      "subscriptionEnd": "2026-08-07",
+      "confirmedPrice": null,
+      "priceBandLow": null,
+      "priceBandHigh": null,
+      "underwriter": "",
+      "competitionRatio": "DB증권",
+      "listingDate": null,
+      "refundDate": "2026-08-11",
+      "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2304&l=&page=1",
+      "status": "청약예정",
+      "calculator": null
+    },
+    {
       "id": "2303",
       "name": "니어스랩",
       "subscriptionStart": "2026-08-05",
@@ -9,7 +25,7 @@
       "priceBandLow": null,
       "priceBandHigh": null,
       "underwriter": "",
-      "competitionRatio": null,
+      "competitionRatio": "삼성증권",
       "listingDate": null,
       "refundDate": "2026-08-10",
       "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2303&l=&page=1",
@@ -189,7 +205,7 @@
       "listingDate": "2026-06-29",
       "refundDate": "2026-06-23",
       "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2291&l=&page=1",
-      "status": "상장예정",
+      "status": "상장완료",
       "calculator": null
     },
     {
@@ -463,24 +479,8 @@
       "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2272&l=&page=1",
       "status": "상장예정",
       "calculator": null
-    },
-    {
-      "id": "2269",
-      "name": "카나프테라퓨틱스",
-      "subscriptionStart": "2026-03-05",
-      "subscriptionEnd": "2026-03-06",
-      "confirmedPrice": 20000,
-      "priceBandLow": null,
-      "priceBandHigh": null,
-      "underwriter": "한국투자증권",
-      "competitionRatio": "1899.29:1",
-      "listingDate": null,
-      "refundDate": null,
-      "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2269&l=&page=1",
-      "status": "상장예정",
-      "calculator": null
     }
   ],
-  "fetchedAt": "2026-06-28T20:56:13.760Z",
+  "fetchedAt": "2026-06-29T02:54:30.030Z",
   "totalCount": 30
 }

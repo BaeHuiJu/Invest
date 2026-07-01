@@ -33,6 +33,22 @@
       "calculator": null
     },
     {
+      "id": "2294",
+      "name": "빅웨이브로보틱스",
+      "subscriptionStart": "2026-08-05",
+      "subscriptionEnd": "2026-08-06",
+      "confirmedPrice": null,
+      "priceBandLow": null,
+      "priceBandHigh": null,
+      "underwriter": "",
+      "competitionRatio": "유진투자증권,미래에셋증권",
+      "listingDate": null,
+      "refundDate": "2026-08-10",
+      "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2294&l=&page=1",
+      "status": "청약예정",
+      "calculator": null
+    },
+    {
       "id": "2303",
       "name": "니어스랩",
       "subscriptionStart": "2026-08-05",
@@ -174,22 +190,6 @@
       "refundDate": "2026-06-25",
       "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2297&l=&page=1",
       "status": "상장완료",
-      "calculator": null
-    },
-    {
-      "id": "2294",
-      "name": "빅웨이브로보틱스",
-      "subscriptionStart": "2026-06-19",
-      "subscriptionEnd": "2026-06-22",
-      "confirmedPrice": null,
-      "priceBandLow": null,
-      "priceBandHigh": null,
-      "underwriter": "유진투자증권,미래에셋증권",
-      "competitionRatio": "정정신고서 제출 요구",
-      "listingDate": null,
-      "refundDate": "2026-06-24",
-      "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2294&l=&page=1",
-      "status": "상장예정",
       "calculator": null
     },
     {
@@ -481,6 +481,6 @@
       "calculator": null
     }
   ],
-  "fetchedAt": "2026-07-01T02:54:10.407Z",
+  "fetchedAt": "2026-07-01T08:06:33.860Z",
   "totalCount": 30
 }

@@ -88,8 +88,8 @@
       "confirmedPrice": null,
       "priceBandLow": null,
       "priceBandHigh": null,
-      "underwriter": "",
-      "competitionRatio": "IBK투자증권",
+      "underwriter": "IBK투자증권",
+      "competitionRatio": "정정신고서 제출 요구",
       "listingDate": null,
       "refundDate": "2026-07-30",
       "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2299&l=&page=1",
@@ -141,7 +141,7 @@
       "listingDate": "2026-07-13",
       "refundDate": "2026-07-06",
       "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2296&l=&page=1",
-      "status": "청약중",
+      "status": "상장예정",
       "calculator": null
     },
     {
@@ -481,6 +481,6 @@
       "calculator": null
     }
   ],
-  "fetchedAt": "2026-07-02T20:58:30.658Z",
+  "fetchedAt": "2026-07-03T02:26:34.089Z",
   "totalCount": 30
 }

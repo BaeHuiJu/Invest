@@ -157,7 +157,7 @@
       "listingDate": "2026-07-06",
       "refundDate": "2026-06-29",
       "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2293&l=&page=1",
-      "status": "상장예정",
+      "status": "상장완료",
       "calculator": null
     },
     {
@@ -298,10 +298,10 @@
       "priceBandHigh": null,
       "underwriter": "NH투자증권",
       "competitionRatio": "3169.86:1",
-      "listingDate": "2026-05-14",
-      "refundDate": "2026-05-08",
+      "listingDate": null,
+      "refundDate": null,
       "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2286&l=&page=1",
-      "status": "상장완료",
+      "status": "상장예정",
       "calculator": null
     },
     {
@@ -481,6 +481,6 @@
       "calculator": null
     }
   ],
-  "fetchedAt": "2026-07-05T20:52:18.183Z",
+  "fetchedAt": "2026-07-06T02:38:32.154Z",
   "totalCount": 30
 }

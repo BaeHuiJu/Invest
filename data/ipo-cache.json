@@ -81,6 +81,22 @@
       "calculator": null
     },
     {
+      "id": "2299",
+      "name": "케이앤에스아이앤씨",
+      "subscriptionStart": "2026-08-04",
+      "subscriptionEnd": "2026-08-05",
+      "confirmedPrice": null,
+      "priceBandLow": null,
+      "priceBandHigh": null,
+      "underwriter": "",
+      "competitionRatio": "IBK투자증권",
+      "listingDate": null,
+      "refundDate": "2026-08-07",
+      "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2299&l=&page=1",
+      "status": "청약예정",
+      "calculator": null
+    },
+    {
       "id": "2302",
       "name": "딜리셔스",
       "subscriptionStart": "2026-08-03",
@@ -93,22 +109,6 @@
       "listingDate": null,
       "refundDate": "2026-08-06",
       "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2302&l=&page=1",
-      "status": "청약예정",
-      "calculator": null
-    },
-    {
-      "id": "2299",
-      "name": "케이앤에스아이앤씨",
-      "subscriptionStart": "2026-07-27",
-      "subscriptionEnd": "2026-07-28",
-      "confirmedPrice": null,
-      "priceBandLow": null,
-      "priceBandHigh": null,
-      "underwriter": "IBK투자증권",
-      "competitionRatio": "정정신고서 제출 요구",
-      "listingDate": null,
-      "refundDate": "2026-07-30",
-      "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2299&l=&page=1",
       "status": "청약예정",
       "calculator": null
     },
@@ -481,6 +481,6 @@
       "calculator": null
     }
   ],
-  "fetchedAt": "2026-07-08T21:00:59.163Z",
+  "fetchedAt": "2026-07-09T02:26:42.713Z",
   "totalCount": 30
 }

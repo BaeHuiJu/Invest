@@ -1,6 +1,58 @@
 {
-  "generatedAt": "2026-07-11T13:00:08.020Z",
+  "generatedAt": "2026-07-11T16:45:18.685Z",
   "domestic": [
+    {
+      "id": "119_0003110424",
+      "title": "이번주 공모주 청약, 에이치엘지노믹스 1개사",
+      "pressName": "데일리안",
+      "publishedAt": "2026-07-12T00:11:00+09:00",
+      "url": "https://n.news.naver.com/mnews/article/119/0003110424",
+      "source": "domestic",
+      "sentiment": "neutral",
+      "sentimentScore": 0,
+      "category": "all",
+      "isBreaking": true,
+      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
+    },
+    {
+      "id": "469_0000941709",
+      "title": "상폐 위기서 '주가 25%' 급등한 모나미... 대표 \"진심으로 고맙다\"",
+      "pressName": "한국일보",
+      "publishedAt": "2026-07-11T23:54:00+09:00",
+      "url": "https://n.news.naver.com/mnews/article/469/0000941709",
+      "source": "domestic",
+      "sentiment": "neutral",
+      "sentimentScore": 0,
+      "category": "all",
+      "isBreaking": true,
+      "beginnerExplanation": "주가가 갑자기 많이 올랐어요. 그 이유가 뭔지 꼭 확인해 보세요."
+    },
+    {
+      "id": "277_0005788612",
+      "title": "중국의 '삼전닉스' CXMT 상장에 올라탈 수혜주는? [주末머니]",
+      "pressName": "아시아경제",
+      "publishedAt": "2026-07-11T23:24:00+09:00",
+      "url": "https://n.news.naver.com/mnews/article/277/0005788612",
+      "source": "domestic",
+      "sentiment": "neutral",
+      "sentimentScore": 0,
+      "category": "all",
+      "isBreaking": false,
+      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
+    },
+    {
+      "id": "009_0005706035",
+      "title": "'파산 기로' 왓챠, 새 주인 찾을까...홈플러스도 운명의 일주일 [M&A복덕방]",
+      "pressName": "매일경제",
+      "publishedAt": "2026-07-11T22:07:00+09:00",
+      "url": "https://n.news.naver.com/mnews/article/009/0005706035",
+      "source": "domestic",
+      "sentiment": "neutral",
+      "sentimentScore": 0,
+      "category": "all",
+      "isBreaking": false,
+      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
+    },
     {
       "id": "016_0002668966",
       "title": "'상폐 위기'서 시총 500억까지 걸린 시간 '단 열흘'...이 기업 누가 살렸나? [종목Pick]",
@@ -11,7 +63,7 @@
       "sentiment": "negative",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "안 좋은 소식이 나왔어요. 시장 하락 요인이 될 수 있으니 주의하세요."
     },
     {
@@ -24,12 +76,12 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
       "id": "138_0002233892",
-      "title": "'단일 레버리지' 악몽 언제까지...금융당국, 결단 내릴 수 있을까 [증시레이더]",
+      "title": "'단일 레버리지' 후폭풍 언제까지...금융당국, 결단 내릴 수 있을까 [증시레이더]",
       "pressName": "디지털데일리",
       "publishedAt": "2026-07-11T19:59:00+09:00",
       "url": "https://n.news.naver.com/mnews/article/138/0002233892",
@@ -81,16 +133,16 @@
     },
     {
       "id": "015_0005308884",
-      "title": "\"지금 담아야 하나\"...돈줄 바뀌자 개미들 눈 돌리는 곳이 [종목+]",
+      "title": "\"돈 되는 냄새 맡았나\"...주가 급등하자 개미 들썩이는 종목 [종목+]",
       "pressName": "한국경제",
       "publishedAt": "2026-07-11T19:39:00+09:00",
       "url": "https://n.news.naver.com/mnews/article/015/0005308884",
       "source": "domestic",
-      "sentiment": "neutral",
+      "sentiment": "positive",
       "sentimentScore": 0,
       "category": "all",
       "isBreaking": false,
-      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
+      "beginnerExplanation": "주가가 갑자기 많이 올랐어요. 그 이유가 뭔지 꼭 확인해 보세요."
     },
     {
       "id": "422_0000884104",
@@ -208,48 +260,22 @@
       "category": "all",
       "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
-    },
-    {
-      "id": "417_0001151273",
-      "title": "'국민 볼펜' 살리기 통했다...'상폐 위기' 모나미 대표 '눈물의 편지'",
-      "pressName": "동행미디어 시대",
-      "publishedAt": "2026-07-11T17:17:00+09:00",
-      "url": "https://n.news.naver.com/mnews/article/417/0001151273",
-      "source": "domestic",
-      "sentiment": "negative",
-      "sentimentScore": 0,
-      "category": "all",
-      "isBreaking": false,
-      "beginnerExplanation": "안 좋은 소식이 나왔어요. 시장 하락 요인이 될 수 있으니 주의하세요."
-    },
-    {
-      "id": "277_0005788582",
-      "title": "폭락에 겁나서 탈출했는데...삼전닉스 개미들 다시 들어가도 될까요[주末머니]",
-      "pressName": "아시아경제",
-      "publishedAt": "2026-07-11T17:01:00+09:00",
-      "url": "https://n.news.naver.com/mnews/article/277/0005788582",
-      "source": "domestic",
-      "sentiment": "negative",
-      "sentimentScore": 0,
-      "category": "all",
-      "isBreaking": false,
-      "beginnerExplanation": "주가가 갑자기 많이 떨어졌어요. 패닉 판매는 위험해요. 침착함이 중요합니다."
-    },
-    {
-      "id": "119_0003110411",
-      "title": "외신 \"SK하이닉스, AI 메모리 시대 연 역사적 데뷔\"...ADR 첫날 13% 급등",
-      "pressName": "데일리안",
-      "publishedAt": "2026-07-11T16:56:00+09:00",
-      "url": "https://n.news.naver.com/mnews/article/119/0003110411",
-      "source": "domestic",
-      "sentiment": "positive",
-      "sentimentScore": 0,
-      "category": "all",
-      "isBreaking": false,
-      "beginnerExplanation": "주가가 갑자기 많이 올랐어요. 그 이유가 뭔지 꼭 확인해 보세요."
     }
   ],
   "overseas": [
+    {
+      "id": "629_0000515257",
+      "title": "지원은 늘리는데 현장은 비어간다...건설업 청년정책 '빈틈'",
+      "pressName": "더팩트",
+      "publishedAt": "2026-07-12T00:01:00+09:00",
+      "url": "https://n.news.naver.com/mnews/article/629/0000515257",
+      "source": "overseas",
+      "sentiment": "neutral",
+      "sentimentScore": 0,
+      "category": "정책",
+      "isBreaking": true,
+      "beginnerExplanation": "정부가 특정 산업을 지원하려고 해요. 해당 기업들에 좋을 수 있어요."
+    },
     {
       "id": "138_0002233894",
       "title": "퓨리오사에이아이-시스원, 'K-NPU 테크웨이브' 14일 개최...국산 NPU 공공 도입 전략 논의",
@@ -260,7 +286,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
@@ -273,7 +299,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
@@ -286,7 +312,7 @@
       "sentiment": "negative",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "안 좋은 소식이 나왔어요. 시장 하락 요인이 될 수 있으니 주의하세요."
     },
     {
@@ -431,40 +457,27 @@
       "category": "all",
       "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
-    },
-    {
-      "id": "050_0000108428",
-      "title": "오픈AI·구글, '美 블랙리스트' 중국 기업에 AI 모델 제공",
-      "pressName": "한경비즈니스",
-      "publishedAt": "2026-07-11T17:33:00+09:00",
-      "url": "https://n.news.naver.com/mnews/article/050/0000108428",
-      "source": "overseas",
-      "sentiment": "neutral",
-      "sentimentScore": 0,
-      "category": "all",
-      "isBreaking": false,
-      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
-    },
-    {
-      "id": "138_0002233890",
-      "title": "팬덤 문화에 e스포츠 열기 더했다...'이터널 리턴' 3주년 축제 북적",
-      "pressName": "디지털데일리",
-      "publishedAt": "2026-07-11T17:27:00+09:00",
-      "url": "https://n.news.naver.com/mnews/article/138/0002233890",
-      "source": "overseas",
-      "sentiment": "neutral",
-      "sentimentScore": 0,
-      "category": "all",
-      "isBreaking": false,
-      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     }
   ],
   "main": [
     {
+      "id": "277_0005788582",
+      "title": "폭락에 겁나서 탈출했는데...삼전닉스 개미들 다시 들어가도 될까요[주末머니]",
+      "pressName": "네이버금융",
+      "publishedAt": "2026-07-11T16:45:18.684Z",
+      "url": "https://n.news.naver.com/mnews/article/277/0005788582",
+      "source": "main",
+      "sentiment": "negative",
+      "sentimentScore": 0,
+      "category": "all",
+      "isBreaking": true,
+      "beginnerExplanation": "주가가 갑자기 많이 떨어졌어요. 패닉 판매는 위험해요. 침착함이 중요합니다."
+    },
+    {
       "id": "014_0005546764",
       "title": "\"월급 합치면 끝인 줄\"...실수령 640만원 예비부부에게 닥친 고민 [머니설계사무소]",
       "pressName": "네이버금융",
-      "publishedAt": "2026-07-11T13:00:08.019Z",
+      "publishedAt": "2026-07-11T16:45:18.684Z",
       "url": "https://n.news.naver.com/mnews/article/014/0005546764",
       "source": "main",
       "sentiment": "neutral",
@@ -474,11 +487,11 @@
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
-      "id": "015_0005308856",
-      "title": "이재용, 억만장자 모임서 포착...\"2028년까지 완판\" TSMC에 반격 [강경주의 테크X]",
+      "id": "014_0005546754",
+      "title": "하루 만에 주가 25% 뛴 이 기업...\"60년 시간 헛되지 않았다\" 자필편지 쓴 대표",
       "pressName": "네이버금융",
-      "publishedAt": "2026-07-11T13:00:08.020Z",
-      "url": "https://n.news.naver.com/mnews/article/015/0005308856",
+      "publishedAt": "2026-07-11T16:45:18.684Z",
+      "url": "https://n.news.naver.com/mnews/article/014/0005546754",
       "source": "main",
       "sentiment": "neutral",
       "sentimentScore": 0,
@@ -490,21 +503,8 @@
       "id": "015_0005308837",
       "title": "대학 자퇴하고 주식 올인 23살 청년...수익률 170% 잭팟 비결",
       "pressName": "네이버금융",
-      "publishedAt": "2026-07-11T13:00:08.020Z",
+      "publishedAt": "2026-07-11T16:45:18.684Z",
       "url": "https://n.news.naver.com/mnews/article/015/0005308837",
-      "source": "main",
-      "sentiment": "neutral",
-      "sentimentScore": 0,
-      "category": "all",
-      "isBreaking": true,
-      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
-    },
-    {
-      "id": "016_0002668871",
-      "title": "\"월요일 16% 오르나\" 들뜬 SK하이닉스 주주들...TSMC와 PER에 답 있다",
-      "pressName": "네이버금융",
-      "publishedAt": "2026-07-11T13:00:08.020Z",
-      "url": "https://n.news.naver.com/mnews/article/016/0002668871",
       "source": "main",
       "sentiment": "neutral",
       "sentimentScore": 0,

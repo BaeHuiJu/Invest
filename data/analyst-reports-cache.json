@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-11T02:54:21.104Z",
+  "generatedAt": "2026-07-12T03:01:59.825Z",
   "maxDays": 365,
   "reports": [
     {
@@ -5794,17 +5794,17 @@
       "opinion": "Buy",
       "targetPrice": 1340,
       "currentPrice": 1036.11,
-      "basePrice": 1019.68,
+      "basePrice": 1036.11,
       "basePriceDate": "2026-07-09",
       "upside": 29.3,
       "sourceUrl": "https://stockanalysis.com/stocks/blk/ratings/",
       "sourceText": "Barclays Buy Maintains. Price target 1290 -> 1340.",
       "reportTitle": "Buy Maintains",
-      "reasonSummary": "Buy Maintains. Barclays가 Buy 의견을 제시했고 현재가 기준 상승여력은 29.3%입니다. 2026-07-09 종가 대비 목표가 괴리는 31.4%입니다.",
+      "reasonSummary": "Buy Maintains. Barclays가 Buy 의견을 제시했고 현재가 기준 상승여력은 29.3%입니다. 2026-07-09 종가 대비 목표가 괴리는 29.3%입니다.",
       "reasonBullets": [
         "Barclays가 2026-07-09에 Buy 의견과 목표가를 제시했습니다.",
         "현재가 $1,036.11 대비 목표가는 $1,340입니다.",
-        "2026-07-09 종가 $1,019.68 대비 괴리는 31.4%입니다."
+        "2026-07-09 종가 $1,036.11 대비 괴리는 29.3%입니다."
       ],
       "performance": {
         "week1": {
@@ -31056,7 +31056,7 @@
           "returnPct": 0,
           "targetProgressPct": 0,
           "success": false,
-          "status": "pending"
+          "status": "unavailable"
         },
         "month3": {
           "asOfDate": "2026-09-10",
@@ -31105,7 +31105,7 @@
           "returnPct": 0,
           "targetProgressPct": 0,
           "success": false,
-          "status": "pending"
+          "status": "unavailable"
         },
         "month3": {
           "asOfDate": "2026-09-10",
@@ -31149,12 +31149,12 @@
           "status": "complete"
         },
         "month1": {
-          "asOfDate": "2026-07-12",
-          "closePrice": 0,
-          "returnPct": 0,
+          "asOfDate": "2026-07-10",
+          "closePrice": 385.1,
+          "returnPct": -1.4,
           "targetProgressPct": 0,
           "success": false,
-          "status": "pending"
+          "status": "complete"
         },
         "month3": {
           "asOfDate": "2026-09-10",
@@ -31198,12 +31198,12 @@
           "status": "complete"
         },
         "month1": {
-          "asOfDate": "2026-07-12",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
+          "asOfDate": "2026-07-10",
+          "closePrice": 210.96,
+          "returnPct": 2.8,
+          "targetProgressPct": 9.6,
           "success": false,
-          "status": "pending"
+          "status": "complete"
         },
         "month3": {
           "asOfDate": "2026-09-10",
@@ -31247,12 +31247,12 @@
           "status": "complete"
         },
         "month1": {
-          "asOfDate": "2026-07-12",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
+          "asOfDate": "2026-07-10",
+          "closePrice": 399.97,
+          "returnPct": 4.7,
+          "targetProgressPct": 17.4,
           "success": false,
-          "status": "pending"
+          "status": "complete"
         },
         "month3": {
           "asOfDate": "2026-09-10",
@@ -31296,12 +31296,12 @@
           "status": "complete"
         },
         "month1": {
-          "asOfDate": "2026-07-12",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
+          "asOfDate": "2026-07-10",
+          "closePrice": 399.97,
+          "returnPct": 4.7,
+          "targetProgressPct": 11.7,
           "success": false,
-          "status": "pending"
+          "status": "complete"
         },
         "month3": {
           "asOfDate": "2026-09-10",
@@ -31345,12 +31345,12 @@
           "status": "complete"
         },
         "month1": {
-          "asOfDate": "2026-07-12",
-          "closePrice": 0,
-          "returnPct": 0,
+          "asOfDate": "2026-07-10",
+          "closePrice": 140.64,
+          "returnPct": -23.6,
           "targetProgressPct": 0,
           "success": false,
-          "status": "pending"
+          "status": "complete"
         },
         "month3": {
           "asOfDate": "2026-09-10",
@@ -31394,12 +31394,12 @@
           "status": "complete"
         },
         "month1": {
-          "asOfDate": "2026-07-12",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "pending"
+          "asOfDate": "2026-07-10",
+          "closePrice": 257.54,
+          "returnPct": 12,
+          "targetProgressPct": 91.8,
+          "success": true,
+          "status": "complete"
         },
         "month3": {
           "asOfDate": "2026-09-10",
@@ -31443,12 +31443,12 @@
           "status": "complete"
         },
         "month1": {
-          "asOfDate": "2026-07-12",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
+          "asOfDate": "2026-07-10",
+          "closePrice": 325.91,
+          "returnPct": 16.6,
+          "targetProgressPct": 61.4,
           "success": false,
-          "status": "pending"
+          "status": "complete"
         },
         "month3": {
           "asOfDate": "2026-09-10",
@@ -31492,12 +31492,12 @@
           "status": "complete"
         },
         "month1": {
-          "asOfDate": "2026-07-12",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
+          "asOfDate": "2026-07-10",
+          "closePrice": 952.41,
+          "returnPct": 4.6,
+          "targetProgressPct": 53.3,
           "success": false,
-          "status": "pending"
+          "status": "complete"
         },
         "month3": {
           "asOfDate": "2026-09-10",
@@ -31541,12 +31541,12 @@
           "status": "complete"
         },
         "month1": {
-          "asOfDate": "2026-07-12",
-          "closePrice": 0,
-          "returnPct": 0,
+          "asOfDate": "2026-07-10",
+          "closePrice": 95.62,
+          "returnPct": -4.4,
           "targetProgressPct": 0,
           "success": false,
-          "status": "pending"
+          "status": "complete"
         },
         "month3": {
           "asOfDate": "2026-09-10",
@@ -49566,11 +49566,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-05-18",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
+          "closePrice": 282.47,
+          "returnPct": 2.9,
+          "targetProgressPct": 25.9,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-06-10",
@@ -49615,11 +49615,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-05-15",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
+          "closePrice": 276.39,
+          "returnPct": 0.2,
+          "targetProgressPct": 0.9,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-06-05",
@@ -49664,11 +49664,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-05-15",
-          "closePrice": 0,
-          "returnPct": 0,
+          "closePrice": 171.18,
+          "returnPct": -2.8,
           "targetProgressPct": 0,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-06-05",
@@ -49713,11 +49713,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-05-13",
-          "closePrice": 0,
-          "returnPct": 0,
+          "closePrice": 105.95,
+          "returnPct": -0.5,
           "targetProgressPct": 0,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-06-05",
@@ -49762,11 +49762,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-05-11",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
+          "closePrice": 1081.32,
+          "returnPct": 2.8,
+          "targetProgressPct": 14.7,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-06-03",
@@ -49811,11 +49811,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-05-06",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
+          "closePrice": 106.44,
+          "returnPct": 0.9,
+          "targetProgressPct": 6.5,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-05-29",
@@ -49860,11 +49860,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-05-06",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
+          "closePrice": 106.44,
+          "returnPct": 0.9,
+          "targetProgressPct": 9.9,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-05-29",
@@ -49909,11 +49909,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-05-01",
-          "closePrice": 0,
-          "returnPct": 0,
+          "closePrice": 512.77,
+          "returnPct": -0.1,
           "targetProgressPct": 0,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-05-22",
@@ -59492,17 +59492,17 @@
           "opinion": "Buy",
           "targetPrice": 1340,
           "currentPrice": 1036.11,
-          "basePrice": 1019.68,
+          "basePrice": 1036.11,
           "basePriceDate": "2026-07-09",
           "upside": 29.3,
           "sourceUrl": "https://stockanalysis.com/stocks/blk/ratings/",
           "sourceText": "Barclays Buy Maintains. Price target 1290 -> 1340.",
           "reportTitle": "Buy Maintains",
-          "reasonSummary": "Buy Maintains. Barclays가 Buy 의견을 제시했고 현재가 기준 상승여력은 29.3%입니다. 2026-07-09 종가 대비 목표가 괴리는 31.4%입니다.",
+          "reasonSummary": "Buy Maintains. Barclays가 Buy 의견을 제시했고 현재가 기준 상승여력은 29.3%입니다. 2026-07-09 종가 대비 목표가 괴리는 29.3%입니다.",
           "reasonBullets": [
             "Barclays가 2026-07-09에 Buy 의견과 목표가를 제시했습니다.",
             "현재가 $1,036.11 대비 목표가는 $1,340입니다.",
-            "2026-07-09 종가 $1,019.68 대비 괴리는 31.4%입니다."
+            "2026-07-09 종가 $1,036.11 대비 괴리는 29.3%입니다."
           ],
           "performance": {
             "week1": {
@@ -78223,7 +78223,7 @@
               "returnPct": 0,
               "targetProgressPct": 0,
               "success": false,
-              "status": "pending"
+              "status": "unavailable"
             },
             "month3": {
               "asOfDate": "2026-09-10",
@@ -79021,12 +79021,12 @@
               "status": "complete"
             },
             "month1": {
-              "asOfDate": "2026-07-12",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
+              "asOfDate": "2026-07-10",
+              "closePrice": 325.91,
+              "returnPct": 16.6,
+              "targetProgressPct": 61.4,
               "success": false,
-              "status": "pending"
+              "status": "complete"
             },
             "month3": {
               "asOfDate": "2026-09-10",
@@ -79771,12 +79771,12 @@
               "status": "complete"
             },
             "month1": {
-              "asOfDate": "2026-07-12",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
+              "asOfDate": "2026-07-10",
+              "closePrice": 952.41,
+              "returnPct": 4.6,
+              "targetProgressPct": 53.3,
               "success": false,
-              "status": "pending"
+              "status": "complete"
             },
             "month3": {
               "asOfDate": "2026-09-10",
@@ -80119,12 +80119,12 @@
               "status": "complete"
             },
             "month1": {
-              "asOfDate": "2026-07-12",
-              "closePrice": 0,
-              "returnPct": 0,
+              "asOfDate": "2026-07-10",
+              "closePrice": 95.62,
+              "returnPct": -4.4,
               "targetProgressPct": 0,
               "success": false,
-              "status": "pending"
+              "status": "complete"
             },
             "month3": {
               "asOfDate": "2026-09-10",
@@ -88551,11 +88551,11 @@
           "performance": {
             "week1": {
               "asOfDate": "2026-05-01",
-              "closePrice": 0,
-              "returnPct": 0,
+              "closePrice": 512.77,
+              "returnPct": -0.1,
               "targetProgressPct": 0,
               "success": false,
-              "status": "unavailable"
+              "status": "complete"
             },
             "month1": {
               "asOfDate": "2026-05-22",
@@ -88801,11 +88801,11 @@
           "performance": {
             "week1": {
               "asOfDate": "2026-05-15",
-              "closePrice": 0,
-              "returnPct": 0,
+              "closePrice": 171.18,
+              "returnPct": -2.8,
               "targetProgressPct": 0,
               "success": false,
-              "status": "unavailable"
+              "status": "complete"
             },
             "month1": {
               "asOfDate": "2026-06-05",
@@ -92444,12 +92444,12 @@
               "status": "complete"
             },
             "month1": {
-              "asOfDate": "2026-07-12",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
+              "asOfDate": "2026-07-10",
+              "closePrice": 399.97,
+              "returnPct": 4.7,
+              "targetProgressPct": 17.4,
               "success": false,
-              "status": "pending"
+              "status": "complete"
             },
             "month3": {
               "asOfDate": "2026-09-10",
@@ -92493,12 +92493,12 @@
               "status": "complete"
             },
             "month1": {
-              "asOfDate": "2026-07-12",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
+              "asOfDate": "2026-07-10",
+              "closePrice": 399.97,
+              "returnPct": 4.7,
+              "targetProgressPct": 11.7,
               "success": false,
-              "status": "pending"
+              "status": "complete"
             },
             "month3": {
               "asOfDate": "2026-09-10",
@@ -92687,11 +92687,11 @@
           "performance": {
             "week1": {
               "asOfDate": "2026-05-18",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
+              "closePrice": 282.47,
+              "returnPct": 2.9,
+              "targetProgressPct": 25.9,
               "success": false,
-              "status": "unavailable"
+              "status": "complete"
             },
             "month1": {
               "asOfDate": "2026-06-10",
@@ -92736,11 +92736,11 @@
           "performance": {
             "week1": {
               "asOfDate": "2026-05-15",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
+              "closePrice": 276.39,
+              "returnPct": 0.2,
+              "targetProgressPct": 0.9,
               "success": false,
-              "status": "unavailable"
+              "status": "complete"
             },
             "month1": {
               "asOfDate": "2026-06-05",
@@ -97241,7 +97241,7 @@
               "returnPct": 0,
               "targetProgressPct": 0,
               "success": false,
-              "status": "pending"
+              "status": "unavailable"
             },
             "month3": {
               "asOfDate": "2026-09-10",
@@ -98495,11 +98495,11 @@
           "performance": {
             "week1": {
               "asOfDate": "2026-05-13",
-              "closePrice": 0,
-              "returnPct": 0,
+              "closePrice": 105.95,
+              "returnPct": -0.5,
               "targetProgressPct": 0,
               "success": false,
-              "status": "unavailable"
+              "status": "complete"
             },
             "month1": {
               "asOfDate": "2026-06-05",
@@ -98544,11 +98544,11 @@
           "performance": {
             "week1": {
               "asOfDate": "2026-05-06",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
+              "closePrice": 106.44,
+              "returnPct": 0.9,
+              "targetProgressPct": 6.5,
               "success": false,
-              "status": "unavailable"
+              "status": "complete"
             },
             "month1": {
               "asOfDate": "2026-05-29",

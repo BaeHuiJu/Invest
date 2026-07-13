@@ -1,6 +1,22 @@
 {
   "ipos": [
     {
+      "id": "2307",
+      "name": "브릴스",
+      "subscriptionStart": "2026-08-25",
+      "subscriptionEnd": "2026-08-26",
+      "confirmedPrice": null,
+      "priceBandLow": null,
+      "priceBandHigh": null,
+      "underwriter": "",
+      "competitionRatio": "IBK투자증권",
+      "listingDate": null,
+      "refundDate": "2026-08-28",
+      "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2307&l=&page=1",
+      "status": "청약예정",
+      "calculator": null
+    },
+    {
       "id": "2306",
       "name": "스카이랩스",
       "subscriptionStart": "2026-08-13",
@@ -463,24 +479,8 @@
       "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2277&l=&page=1",
       "status": "상장예정",
       "calculator": null
-    },
-    {
-      "id": "2274",
-      "name": "메쥬",
-      "subscriptionStart": "2026-03-16",
-      "subscriptionEnd": "2026-03-17",
-      "confirmedPrice": 21600,
-      "priceBandLow": null,
-      "priceBandHigh": null,
-      "underwriter": "신한투자증권",
-      "competitionRatio": "2428.25:1",
-      "listingDate": null,
-      "refundDate": null,
-      "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2274&l=&page=1",
-      "status": "상장예정",
-      "calculator": null
     }
   ],
-  "fetchedAt": "2026-07-13T02:11:17.793Z",
+  "fetchedAt": "2026-07-13T10:54:48.349Z",
   "totalCount": 30
 }

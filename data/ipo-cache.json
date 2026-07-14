@@ -11,7 +11,7 @@
       "underwriter": "",
       "competitionRatio": "IBK투자증권",
       "listingDate": null,
-      "refundDate": null,
+      "refundDate": "2026-08-28",
       "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2307&l=&page=1",
       "status": "청약예정",
       "calculator": null
@@ -27,8 +27,24 @@
       "underwriter": "",
       "competitionRatio": "한국투자증권",
       "listingDate": null,
-      "refundDate": null,
+      "refundDate": "2026-08-19",
       "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2306&l=&page=1",
+      "status": "청약예정",
+      "calculator": null
+    },
+    {
+      "id": "2303",
+      "name": "니어스랩",
+      "subscriptionStart": "2026-08-12",
+      "subscriptionEnd": "2026-08-13",
+      "confirmedPrice": null,
+      "priceBandLow": null,
+      "priceBandHigh": null,
+      "underwriter": "",
+      "competitionRatio": "삼성증권",
+      "listingDate": null,
+      "refundDate": "2026-08-18",
+      "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2303&l=&page=1",
       "status": "청약예정",
       "calculator": null
     },
@@ -81,22 +97,6 @@
       "calculator": null
     },
     {
-      "id": "2303",
-      "name": "니어스랩",
-      "subscriptionStart": "2026-08-05",
-      "subscriptionEnd": "2026-08-06",
-      "confirmedPrice": null,
-      "priceBandLow": null,
-      "priceBandHigh": null,
-      "underwriter": "",
-      "competitionRatio": "삼성증권",
-      "listingDate": null,
-      "refundDate": "2026-08-10",
-      "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2303&l=&page=1",
-      "status": "청약예정",
-      "calculator": null
-    },
-    {
       "id": "2299",
       "name": "케이앤에스아이앤씨",
       "subscriptionStart": "2026-08-04",
@@ -123,7 +123,7 @@
       "underwriter": "",
       "competitionRatio": "한국투자증권",
       "listingDate": null,
-      "refundDate": null,
+      "refundDate": "2026-08-06",
       "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2302&l=&page=1",
       "status": "청약예정",
       "calculator": null
@@ -152,8 +152,8 @@
       "confirmedPrice": 21500,
       "priceBandLow": null,
       "priceBandHigh": null,
-      "underwriter": "",
-      "competitionRatio": "KB증권,IBK투자증권",
+      "underwriter": "KB증권,IBK투자증권",
+      "competitionRatio": "666.78:1",
       "listingDate": "2026-07-24",
       "refundDate": "2026-07-16",
       "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2301&l=&page=1",
@@ -481,6 +481,6 @@
       "calculator": null
     }
   ],
-  "fetchedAt": "2026-07-14T01:57:19.564Z",
+  "fetchedAt": "2026-07-14T09:52:11.234Z",
   "totalCount": 30
 }

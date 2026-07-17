@@ -1,6 +1,58 @@
 {
-  "generatedAt": "2026-07-17T17:03:20.291Z",
+  "generatedAt": "2026-07-17T20:44:18.393Z",
   "domestic": [
+    {
+      "id": "018_0006332260",
+      "title": "[속보]AI 거품론 지속...뉴욕증시 '뚝'·반도체주 '베어마켓' 진입",
+      "pressName": "이데일리",
+      "publishedAt": "2026-07-18T05:16:00+09:00",
+      "url": "https://n.news.naver.com/mnews/article/018/0006332260",
+      "source": "domestic",
+      "sentiment": "neutral",
+      "sentimentScore": 0,
+      "category": "all",
+      "isBreaking": true,
+      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
+    },
+    {
+      "id": "001_0016200933",
+      "title": "뉴욕증시, 반도체 매도세 지속에 하락...나스닥 1.4%↓",
+      "pressName": "연합뉴스",
+      "publishedAt": "2026-07-18T05:09:00+09:00",
+      "url": "https://n.news.naver.com/mnews/article/001/0016200933",
+      "source": "domestic",
+      "sentiment": "negative",
+      "sentimentScore": 0,
+      "category": "수급",
+      "isBreaking": true,
+      "beginnerExplanation": "기업 이익이 줄었어요. 주가 하락 요인이 될 수 있어요."
+    },
+    {
+      "id": "018_0006332257",
+      "title": "미·이란 엿새째 보복 공습...교량·항만까지 타격, 휴전 복귀 '안갯속'",
+      "pressName": "이데일리",
+      "publishedAt": "2026-07-18T04:22:00+09:00",
+      "url": "https://n.news.naver.com/mnews/article/018/0006332257",
+      "source": "domestic",
+      "sentiment": "neutral",
+      "sentimentScore": 0,
+      "category": "all",
+      "isBreaking": true,
+      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
+    },
+    {
+      "id": "001_0016200925",
+      "title": "한 달 만에 주저앉은 스페이스X...시가총액 1천500조원 증발",
+      "pressName": "연합뉴스",
+      "publishedAt": "2026-07-18T03:41:00+09:00",
+      "url": "https://n.news.naver.com/mnews/article/001/0016200925",
+      "source": "domestic",
+      "sentiment": "neutral",
+      "sentimentScore": 0,
+      "category": "all",
+      "isBreaking": false,
+      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
+    },
     {
       "id": "023_0003988247",
       "title": "제헌절 휴일에도 외환 거래",
@@ -11,7 +63,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
@@ -24,7 +76,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
@@ -208,35 +260,87 @@
       "category": "all",
       "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
-    },
-    {
-      "id": "277_0005791302",
-      "title": "급락한 조선주 반등 위해 이것 필요하다는데 [주末머니]",
-      "pressName": "아시아경제",
-      "publishedAt": "2026-07-17T18:00:00+09:00",
-      "url": "https://n.news.naver.com/mnews/article/277/0005791302",
-      "source": "domestic",
-      "sentiment": "neutral",
-      "sentimentScore": 0,
-      "category": "all",
-      "isBreaking": false,
-      "beginnerExplanation": "주가가 갑자기 많이 떨어졌어요. 패닉 판매는 위험해요. 침착함이 중요합니다."
-    },
-    {
-      "id": "009_0005708865",
-      "title": "美기업 5~6곳 韓상장 논의 ... K증시 글로벌화 발판 될듯",
-      "pressName": "매일경제",
-      "publishedAt": "2026-07-17T17:57:00+09:00",
-      "url": "https://n.news.naver.com/mnews/article/009/0005708865",
-      "source": "domestic",
-      "sentiment": "neutral",
-      "sentimentScore": 0,
-      "category": "all",
-      "isBreaking": false,
-      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     }
   ],
   "overseas": [
+    {
+      "id": "008_0005387428",
+      "title": "소음 막고 전기 만들고...방음터널의 1석2조 변신[넷제로케이스스터디]",
+      "pressName": "머니투데이",
+      "publishedAt": "2026-07-18T05:40:00+09:00",
+      "url": "https://n.news.naver.com/mnews/article/008/0005387428",
+      "source": "overseas",
+      "sentiment": "neutral",
+      "sentimentScore": 0,
+      "category": "all",
+      "isBreaking": true,
+      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
+    },
+    {
+      "id": "014_0005549526",
+      "title": "[김종훈의 Aging in Place] 노르딕워킹으로 우리 동네를 재발견하다",
+      "pressName": "파이낸셜뉴스",
+      "publishedAt": "2026-07-18T05:29:00+09:00",
+      "url": "https://n.news.naver.com/mnews/article/014/0005549526",
+      "source": "overseas",
+      "sentiment": "neutral",
+      "sentimentScore": 0,
+      "category": "all",
+      "isBreaking": true,
+      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
+    },
+    {
+      "id": "050_0000108665",
+      "title": "\"내가 해봐서 아는데\"라는 착각과 계급장을 뗄 수 있는 용기[IGM의 경영전략]",
+      "pressName": "한경비즈니스",
+      "publishedAt": "2026-07-18T05:08:00+09:00",
+      "url": "https://n.news.naver.com/mnews/article/050/0000108665",
+      "source": "overseas",
+      "sentiment": "neutral",
+      "sentimentScore": 0,
+      "category": "all",
+      "isBreaking": true,
+      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
+    },
+    {
+      "id": "138_0002234531",
+      "title": "\"랭글러 서울서 타기 괜찮나요?\"...지프 랭글러 사하라, 직접 타보니 [시승로그]",
+      "pressName": "디지털데일리",
+      "publishedAt": "2026-07-18T05:01:00+09:00",
+      "url": "https://n.news.naver.com/mnews/article/138/0002234531",
+      "source": "overseas",
+      "sentiment": "neutral",
+      "sentimentScore": 0,
+      "category": "all",
+      "isBreaking": true,
+      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
+    },
+    {
+      "id": "003_0014073181",
+      "title": "\"여름방학 심심할 틈이 없네\"...'참여형 행사' 가득",
+      "pressName": "뉴시스",
+      "publishedAt": "2026-07-18T05:01:00+09:00",
+      "url": "https://n.news.naver.com/mnews/article/003/0014073181",
+      "source": "overseas",
+      "sentiment": "neutral",
+      "sentimentScore": 0,
+      "category": "all",
+      "isBreaking": true,
+      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
+    },
+    {
+      "id": "469_0000942875",
+      "title": "[단독] 반도체 공장서 버리던 온수로 난방... 내년 화성서 세계 첫 현실화",
+      "pressName": "한국일보",
+      "publishedAt": "2026-07-18T04:30:00+09:00",
+      "url": "https://n.news.naver.com/mnews/article/469/0000942875",
+      "source": "overseas",
+      "sentiment": "neutral",
+      "sentimentScore": 0,
+      "category": "all",
+      "isBreaking": true,
+      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
+    },
     {
       "id": "021_0002805340",
       "title": "[이슈]반도체 성과급 받으면 수입차가 국룰?",
@@ -247,7 +351,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
@@ -260,7 +364,7 @@
       "sentiment": "negative",
       "sentimentScore": 0,
       "category": "실적",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "기업 이익이 줄었어요. 주가 하락 요인이 될 수 있어요."
     },
     {
@@ -273,7 +377,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
@@ -405,45 +509,6 @@
       "category": "all",
       "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
-    },
-    {
-      "id": "119_0003112423",
-      "title": "[데일리안 오늘뉴스 종합] 트럼프 \"중국이 유권자 정보 빼\"...대관령 터널 화재...최태원 회장 하이닉스 주가 전망 등",
-      "pressName": "데일리안",
-      "publishedAt": "2026-07-17T18:01:00+09:00",
-      "url": "https://n.news.naver.com/mnews/article/119/0003112423",
-      "source": "overseas",
-      "sentiment": "neutral",
-      "sentimentScore": 0,
-      "category": "all",
-      "isBreaking": false,
-      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
-    },
-    {
-      "id": "029_0003037465",
-      "title": "프리미엄 침대 대중화... 시몬스, '쿨 썸머' 혜택 및 무이자 할부 확대",
-      "pressName": "디지털타임스",
-      "publishedAt": "2026-07-17T18:00:00+09:00",
-      "url": "https://n.news.naver.com/mnews/article/029/0003037465",
-      "source": "overseas",
-      "sentiment": "neutral",
-      "sentimentScore": 0,
-      "category": "all",
-      "isBreaking": false,
-      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
-    },
-    {
-      "id": "009_0005708852",
-      "title": "\"유리기판 잡아야 유리해\" ... 차세대 기판 경쟁",
-      "pressName": "매일경제",
-      "publishedAt": "2026-07-17T17:53:00+09:00",
-      "url": "https://n.news.naver.com/mnews/article/009/0005708852",
-      "source": "overseas",
-      "sentiment": "neutral",
-      "sentimentScore": 0,
-      "category": "all",
-      "isBreaking": false,
-      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     }
   ],
   "main": [
@@ -451,7 +516,7 @@
       "id": "018_0006332210",
       "title": "\"제헌절이 살렸다\" 공포 속 개미, \"갖고 있으라\" 최태원에 \"믿는다\"",
       "pressName": "네이버금융",
-      "publishedAt": "2026-07-17T17:03:20.291Z",
+      "publishedAt": "2026-07-17T20:44:18.392Z",
       "url": "https://n.news.naver.com/mnews/article/018/0006332210",
       "source": "main",
       "sentiment": "neutral",
@@ -464,7 +529,7 @@
       "id": "005_0001861593",
       "title": "최태원 \"SK하닉 주식 사고팔고 말고 가만히 갖고 있어라\"",
       "pressName": "네이버금융",
-      "publishedAt": "2026-07-17T17:03:20.291Z",
+      "publishedAt": "2026-07-17T20:44:18.392Z",
       "url": "https://n.news.naver.com/mnews/article/005/0001861593",
       "source": "main",
       "sentiment": "neutral",
@@ -477,7 +542,7 @@
       "id": "014_0005549410",
       "title": "\"증시, 도박꾼 키우고 있다\"...워런 버핏의 경고, 한국이 더 따끔한 이유",
       "pressName": "네이버금융",
-      "publishedAt": "2026-07-17T17:03:20.291Z",
+      "publishedAt": "2026-07-17T20:44:18.392Z",
       "url": "https://n.news.naver.com/mnews/article/014/0005549410",
       "source": "main",
       "sentiment": "neutral",
@@ -490,7 +555,7 @@
       "id": "023_0003988123",
       "title": "SK하이닉스 ADR 이틀 새 21% 급락...고개 드는 반도체 '피크아웃' 우려",
       "pressName": "네이버금융",
-      "publishedAt": "2026-07-17T17:03:20.291Z",
+      "publishedAt": "2026-07-17T20:44:18.393Z",
       "url": "https://n.news.naver.com/mnews/article/023/0003988123",
       "source": "main",
       "sentiment": "negative",
@@ -503,7 +568,7 @@
       "id": "025_0003538310",
       "title": "'7조' 빨아들인 삼전닉스 레버리지...보완책에 \"증시 더 폭락\" 왜",
       "pressName": "네이버금융",
-      "publishedAt": "2026-07-17T17:03:20.291Z",
+      "publishedAt": "2026-07-17T20:44:18.393Z",
       "url": "https://n.news.naver.com/mnews/article/025/0003538310",
       "source": "main",
       "sentiment": "negative",

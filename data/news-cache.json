@@ -1,6 +1,32 @@
 {
-  "generatedAt": "2026-07-18T12:56:39.193Z",
+  "generatedAt": "2026-07-18T16:46:43.990Z",
   "domestic": [
+    {
+      "id": "021_0002805421",
+      "title": "반도체주 폭락에 한일개미...\"월요일도 쉬자\" vs \"우리가 뒤집어써\"",
+      "pressName": "문화일보",
+      "publishedAt": "2026-07-18T23:04:00+09:00",
+      "url": "https://n.news.naver.com/mnews/article/021/0002805421",
+      "source": "domestic",
+      "sentiment": "negative",
+      "sentimentScore": 0,
+      "category": "all",
+      "isBreaking": false,
+      "beginnerExplanation": "주가가 갑자기 많이 떨어졌어요. 패닉 판매는 위험해요. 침착함이 중요합니다."
+    },
+    {
+      "id": "009_0005708986",
+      "title": "\"2분기 이익 줄어도 괜찮다?\"...수주 4000억 쌓인 이 종목 한 주새 13%↑[이주의 Bull기둥]",
+      "pressName": "매일경제",
+      "publishedAt": "2026-07-18T21:53:00+09:00",
+      "url": "https://n.news.naver.com/mnews/article/009/0005708986",
+      "source": "domestic",
+      "sentiment": "neutral",
+      "sentimentScore": 0,
+      "category": "실적",
+      "isBreaking": false,
+      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
+    },
     {
       "id": "018_0006332417",
       "title": "'충격' IBM 급락...실적발표날 확인할 세 가지",
@@ -11,7 +37,7 @@
       "sentiment": "negative",
       "sentimentScore": 0,
       "category": "실적",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "기업이 예상보다 돈을 많이 벌었어요. 주가에 좋을 수 있어요."
     },
     {
@@ -24,7 +50,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "수급",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "외국 투자자들이 한국 주식을 많이 사고 있어요. 긍정적인 신호에요."
     },
     {
@@ -37,7 +63,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
@@ -234,35 +260,22 @@
       "category": "all",
       "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
-    },
+    }
+  ],
+  "overseas": [
     {
-      "id": "119_0003112492",
-      "title": "\"나라 구한 제헌절, 월요일도 공휴일로...\" 아우성 대체 왜",
-      "pressName": "데일리안",
-      "publishedAt": "2026-07-18T14:44:00+09:00",
-      "url": "https://n.news.naver.com/mnews/article/119/0003112492",
-      "source": "domestic",
-      "sentiment": "neutral",
-      "sentimentScore": 0,
-      "category": "all",
-      "isBreaking": false,
-      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
-    },
-    {
-      "id": "018_0006332362",
-      "title": "빌딩은 넘쳤는데...서울 오피스 임대료, 또 최고가 찍었다",
-      "pressName": "이데일리",
-      "publishedAt": "2026-07-18T14:05:00+09:00",
-      "url": "https://n.news.naver.com/mnews/article/018/0006332362",
-      "source": "domestic",
+      "id": "009_0005708987",
+      "title": "8천만원車, 한국선 '반값' 3천만원대...'세계 최고' 극찬받은 현대차, 대박 비결 [세상만車]",
+      "pressName": "매일경제",
+      "publishedAt": "2026-07-18T22:05:00+09:00",
+      "url": "https://n.news.naver.com/mnews/article/009/0005708987",
+      "source": "overseas",
       "sentiment": "positive",
       "sentimentScore": 0,
       "category": "all",
       "isBreaking": false,
       "beginnerExplanation": "좋은 소식이 나왔어요. 시장이 긍정적으로 반응할 가능성이 있어요."
-    }
-  ],
-  "overseas": [
+    },
     {
       "id": "016_0002671772",
       "title": "\"펑·펑\" 잇따른 폭발음 속 매연 진동...인천 쿠팡물류센터 13시간째 사투",
@@ -273,7 +286,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
@@ -286,7 +299,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
@@ -299,7 +312,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
@@ -312,7 +325,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
@@ -325,7 +338,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
@@ -338,7 +351,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
@@ -351,7 +364,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "정책",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "정부가 특정 산업을 지원하려고 해요. 해당 기업들에 좋을 수 있어요."
     },
     {
@@ -364,7 +377,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
@@ -377,7 +390,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
@@ -390,7 +403,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "정책",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "정부가 특정 산업을 지원하려고 해요. 해당 기업들에 좋을 수 있어요."
     },
     {
@@ -403,7 +416,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
@@ -509,40 +522,14 @@
       "category": "all",
       "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
-    },
-    {
-      "id": "003_0014073662",
-      "title": "'삼삼밥상' 궁금하세요?...\"레시피 '여기' 있어요\"",
-      "pressName": "뉴시스",
-      "publishedAt": "2026-07-18T18:01:00+09:00",
-      "url": "https://n.news.naver.com/mnews/article/003/0014073662",
-      "source": "overseas",
-      "sentiment": "neutral",
-      "sentimentScore": 0,
-      "category": "all",
-      "isBreaking": false,
-      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     }
   ],
   "main": [
     {
-      "id": "215_0001259093",
-      "title": "'뿔난' 개미들 연휴 끝나면 행동 개시 나선다...\"40조 성과급 승인 받아라\"",
-      "pressName": "네이버금융",
-      "publishedAt": "2026-07-18T12:56:39.192Z",
-      "url": "https://n.news.naver.com/mnews/article/215/0001259093",
-      "source": "main",
-      "sentiment": "neutral",
-      "sentimentScore": 0,
-      "category": "all",
-      "isBreaking": true,
-      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
-    },
-    {
       "id": "014_0005549531",
       "title": "\"제헌절이 코스피 살렸다\"...美반도체 폭락에 \"월요일도 임시공휴일 해 달라\"",
       "pressName": "네이버금융",
-      "publishedAt": "2026-07-18T12:56:39.193Z",
+      "publishedAt": "2026-07-18T16:46:43.988Z",
       "url": "https://n.news.naver.com/mnews/article/014/0005549531",
       "source": "main",
       "sentiment": "negative",
@@ -550,6 +537,32 @@
       "category": "all",
       "isBreaking": true,
       "beginnerExplanation": "주가가 갑자기 많이 떨어졌어요. 패닉 판매는 위험해요. 침착함이 중요합니다."
+    },
+    {
+      "id": "011_0004642682",
+      "title": "코스피 7000선 밀리자 증권사도 돌아서...목표가 하향 리포트, 상향 첫 추월[마켓시그널]",
+      "pressName": "네이버금융",
+      "publishedAt": "2026-07-18T16:46:43.989Z",
+      "url": "https://n.news.naver.com/mnews/article/011/0004642682",
+      "source": "main",
+      "sentiment": "neutral",
+      "sentimentScore": 0,
+      "category": "all",
+      "isBreaking": true,
+      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
+    },
+    {
+      "id": "215_0001259093",
+      "title": "'뿔난' 개미들 연휴 끝나면 행동 개시 나선다...\"40조 성과급 승인 받아라\"",
+      "pressName": "네이버금융",
+      "publishedAt": "2026-07-18T16:46:43.989Z",
+      "url": "https://n.news.naver.com/mnews/article/215/0001259093",
+      "source": "main",
+      "sentiment": "neutral",
+      "sentimentScore": 0,
+      "category": "all",
+      "isBreaking": true,
+      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     }
   ]
 }

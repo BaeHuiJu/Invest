@@ -1,6 +1,22 @@
 {
   "ipos": [
     {
+      "id": "2308",
+      "name": "네오사피엔스",
+      "subscriptionStart": "2026-09-08",
+      "subscriptionEnd": "2026-09-09",
+      "confirmedPrice": null,
+      "priceBandLow": null,
+      "priceBandHigh": null,
+      "underwriter": "",
+      "competitionRatio": "대신증권",
+      "listingDate": null,
+      "refundDate": "2026-09-11",
+      "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2308&l=&page=1",
+      "status": "청약예정",
+      "calculator": null
+    },
+    {
       "id": "2307",
       "name": "브릴스",
       "subscriptionStart": "2026-08-25",
@@ -157,7 +173,7 @@
       "listingDate": "2026-07-24",
       "refundDate": "2026-07-16",
       "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2301&l=&page=1",
-      "status": "상장예정",
+      "status": "상장완료",
       "calculator": null
     },
     {
@@ -463,24 +479,8 @@
       "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2280&l=&page=1",
       "status": "상장예정",
       "calculator": null
-    },
-    {
-      "id": "2277",
-      "name": "NH스팩33호",
-      "subscriptionStart": "2026-03-17",
-      "subscriptionEnd": "2026-03-18",
-      "confirmedPrice": 2000,
-      "priceBandLow": null,
-      "priceBandHigh": null,
-      "underwriter": "NH투자증권",
-      "competitionRatio": "569.27:1",
-      "listingDate": null,
-      "refundDate": null,
-      "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2277&l=&page=1",
-      "status": "상장예정",
-      "calculator": null
     }
   ],
-  "fetchedAt": "2026-07-23T20:56:25.177Z",
+  "fetchedAt": "2026-07-24T02:07:44.940Z",
   "totalCount": 30
 }

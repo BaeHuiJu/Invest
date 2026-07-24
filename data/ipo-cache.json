@@ -1,6 +1,22 @@
 {
   "ipos": [
     {
+      "id": "2309",
+      "name": "덕산넵코어스(구.넵코어스)",
+      "subscriptionStart": "2026-09-16",
+      "subscriptionEnd": "2026-09-17",
+      "confirmedPrice": null,
+      "priceBandLow": null,
+      "priceBandHigh": null,
+      "underwriter": "",
+      "competitionRatio": "대신증권",
+      "listingDate": null,
+      "refundDate": "2026-09-21",
+      "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2309&l=&page=1",
+      "status": "청약예정",
+      "calculator": null
+    },
+    {
       "id": "2308",
       "name": "네오사피엔스",
       "subscriptionStart": "2026-09-08",
@@ -463,24 +479,8 @@
       "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2270&l=&page=1",
       "status": "상장예정",
       "calculator": null
-    },
-    {
-      "id": "2280",
-      "name": "신한스팩17호",
-      "subscriptionStart": "2026-03-19",
-      "subscriptionEnd": "2026-03-20",
-      "confirmedPrice": 2000,
-      "priceBandLow": null,
-      "priceBandHigh": null,
-      "underwriter": "신한투자증권",
-      "competitionRatio": "1403.74:1",
-      "listingDate": null,
-      "refundDate": null,
-      "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2280&l=&page=1",
-      "status": "상장예정",
-      "calculator": null
     }
   ],
-  "fetchedAt": "2026-07-24T06:21:18.920Z",
+  "fetchedAt": "2026-07-24T10:11:40.787Z",
   "totalCount": 30
 }

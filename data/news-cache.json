@@ -1,6 +1,19 @@
 {
-  "generatedAt": "2026-07-25T13:06:02.196Z",
+  "generatedAt": "2026-07-25T16:47:46.083Z",
   "domestic": [
+    {
+      "id": "015_0005313798",
+      "title": "메모리 부족은 시작일 뿐...AI 시대 돈이 향하는 곳은 [빈난새의 빈틈없이월가]",
+      "pressName": "한국경제",
+      "publishedAt": "2026-07-25T22:09:00+09:00",
+      "url": "https://n.news.naver.com/mnews/article/015/0005313798",
+      "source": "domestic",
+      "sentiment": "neutral",
+      "sentimentScore": 0,
+      "category": "all",
+      "isBreaking": false,
+      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
+    },
     {
       "id": "215_0001259965",
       "title": "\"코스피 6700~7600선\"...다음주 반도체 실적이 방향 가른다",
@@ -11,7 +24,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "실적",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "기업이 예상보다 돈을 많이 벌었어요. 주가에 좋을 수 있어요."
     },
     {
@@ -24,7 +37,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
@@ -247,19 +260,6 @@
       "category": "정책",
       "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
-    },
-    {
-      "id": "648_0000049197",
-      "title": "美 조선 공략 나선 삼성중공업...'한미 협력센터' 닻 올렸다",
-      "pressName": "비즈워치",
-      "publishedAt": "2026-07-25T15:00:00+09:00",
-      "url": "https://n.news.naver.com/mnews/article/648/0000049197",
-      "source": "domestic",
-      "sentiment": "neutral",
-      "sentimentScore": 0,
-      "category": "all",
-      "isBreaking": false,
-      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     }
   ],
   "overseas": [
@@ -273,7 +273,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
@@ -286,7 +286,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
@@ -299,7 +299,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
@@ -312,7 +312,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
@@ -325,7 +325,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "정책",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
@@ -338,7 +338,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
@@ -351,7 +351,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
@@ -364,7 +364,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
@@ -377,7 +377,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
@@ -496,19 +496,6 @@
       "category": "all",
       "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
-    },
-    {
-      "id": "016_0002674975",
-      "title": "엔비디아, 서울대·카이스트에 AI 연구기관 설립 추진",
-      "pressName": "헤럴드경제",
-      "publishedAt": "2026-07-25T18:22:00+09:00",
-      "url": "https://n.news.naver.com/mnews/article/016/0002674975",
-      "source": "overseas",
-      "sentiment": "neutral",
-      "sentimentScore": 0,
-      "category": "수급",
-      "isBreaking": false,
-      "beginnerExplanation": "대형 기관 투자자들이 사고 있어요. 좋은 신호예요."
     }
   ],
   "main": [
@@ -516,7 +503,7 @@
       "id": "021_0002806943",
       "title": "李대통령 \"코스피 조정중인데\" 걱정하자... 젠슨 황 \"다시 오를 겁니다\"",
       "pressName": "네이버금융",
-      "publishedAt": "2026-07-25T13:06:02.195Z",
+      "publishedAt": "2026-07-25T16:47:46.082Z",
       "url": "https://n.news.naver.com/mnews/article/021/0002806943",
       "source": "main",
       "sentiment": "neutral",
@@ -526,11 +513,11 @@
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
-      "id": "215_0001259917",
-      "title": "삼성전자 58,000원에 '1,000주' 사놓고...김선태, 국장 투자 후회한 사연",
+      "id": "008_0005390754",
+      "title": "7천피 붕괴 와중에도...\"55% 올랐다\" 블랙데이 살아남은 주식[김근희의 증시 랩업]",
       "pressName": "네이버금융",
-      "publishedAt": "2026-07-25T13:06:02.195Z",
-      "url": "https://n.news.naver.com/mnews/article/215/0001259917",
+      "publishedAt": "2026-07-25T16:47:46.082Z",
+      "url": "https://n.news.naver.com/mnews/article/008/0005390754",
       "source": "main",
       "sentiment": "neutral",
       "sentimentScore": 0,
@@ -542,21 +529,8 @@
       "id": "003_0014087427",
       "title": "\"60만전자·420만닉스 간다\"...증권가 \"지금 매수 기회\"라는 이유",
       "pressName": "네이버금융",
-      "publishedAt": "2026-07-25T13:06:02.195Z",
+      "publishedAt": "2026-07-25T16:47:46.082Z",
       "url": "https://n.news.naver.com/mnews/article/003/0014087427",
-      "source": "main",
-      "sentiment": "neutral",
-      "sentimentScore": 0,
-      "category": "all",
-      "isBreaking": true,
-      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
-    },
-    {
-      "id": "008_0005390754",
-      "title": "7천피 붕괴 와중에도...\"55% 올랐다\" 블랙데이 살아남은 주식[김근희의 증시 랩업]",
-      "pressName": "네이버금융",
-      "publishedAt": "2026-07-25T13:06:02.195Z",
-      "url": "https://n.news.naver.com/mnews/article/008/0005390754",
       "source": "main",
       "sentiment": "neutral",
       "sentimentScore": 0,

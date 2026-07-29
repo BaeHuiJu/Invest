@@ -33,6 +33,22 @@
       "calculator": null
     },
     {
+      "id": "2311",
+      "name": "와이즈플래닛컴퍼니",
+      "subscriptionStart": "2026-09-14",
+      "subscriptionEnd": "2026-09-15",
+      "confirmedPrice": null,
+      "priceBandLow": null,
+      "priceBandHigh": null,
+      "underwriter": "",
+      "competitionRatio": "대신증권",
+      "listingDate": null,
+      "refundDate": "2026-09-17",
+      "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2311&l=&page=1",
+      "status": "청약예정",
+      "calculator": null
+    },
+    {
       "id": "2308",
       "name": "네오사피엔스",
       "subscriptionStart": "2026-09-08",
@@ -45,6 +61,22 @@
       "listingDate": null,
       "refundDate": "2026-09-11",
       "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2308&l=&page=1",
+      "status": "청약예정",
+      "calculator": null
+    },
+    {
+      "id": "2312",
+      "name": "NH스팩34호",
+      "subscriptionStart": "2026-09-01",
+      "subscriptionEnd": "2026-09-02",
+      "confirmedPrice": null,
+      "priceBandLow": null,
+      "priceBandHigh": null,
+      "underwriter": "",
+      "competitionRatio": "NH투자증권",
+      "listingDate": null,
+      "refundDate": "2026-09-04",
+      "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2312&l=&page=1",
       "status": "청약예정",
       "calculator": null
     },
@@ -447,40 +479,8 @@
       "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2282&l=&page=1",
       "status": "상장예정",
       "calculator": null
-    },
-    {
-      "id": "2275",
-      "name": "인벤테라",
-      "subscriptionStart": "2026-03-23",
-      "subscriptionEnd": "2026-03-24",
-      "confirmedPrice": 16600,
-      "priceBandLow": null,
-      "priceBandHigh": null,
-      "underwriter": "NH투자증권,유진투자증권",
-      "competitionRatio": "1913:1",
-      "listingDate": null,
-      "refundDate": null,
-      "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2275&l=&page=1",
-      "status": "상장예정",
-      "calculator": null
-    },
-    {
-      "id": "2279",
-      "name": "교보스팩20호",
-      "subscriptionStart": "2026-03-23",
-      "subscriptionEnd": "2026-03-24",
-      "confirmedPrice": 2000,
-      "priceBandLow": null,
-      "priceBandHigh": null,
-      "underwriter": "교보증권",
-      "competitionRatio": "747:1",
-      "listingDate": null,
-      "refundDate": null,
-      "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2279&l=&page=1",
-      "status": "상장예정",
-      "calculator": null
     }
   ],
-  "fetchedAt": "2026-07-29T06:26:32.689Z",
+  "fetchedAt": "2026-07-29T10:33:39.037Z",
   "totalCount": 30
 }

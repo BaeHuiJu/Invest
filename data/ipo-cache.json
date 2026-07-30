@@ -81,6 +81,22 @@
       "calculator": null
     },
     {
+      "id": "2306",
+      "name": "스카이랩스",
+      "subscriptionStart": "2026-08-26",
+      "subscriptionEnd": "2026-08-27",
+      "confirmedPrice": null,
+      "priceBandLow": null,
+      "priceBandHigh": null,
+      "underwriter": "",
+      "competitionRatio": "한국투자증권",
+      "listingDate": null,
+      "refundDate": "2026-08-31",
+      "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2306&l=&page=1",
+      "status": "청약예정",
+      "calculator": null
+    },
+    {
       "id": "2307",
       "name": "브릴스",
       "subscriptionStart": "2026-08-25",
@@ -109,22 +125,6 @@
       "listingDate": null,
       "refundDate": "2026-08-19",
       "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2294&l=&page=1",
-      "status": "청약예정",
-      "calculator": null
-    },
-    {
-      "id": "2306",
-      "name": "스카이랩스",
-      "subscriptionStart": "2026-08-13",
-      "subscriptionEnd": "2026-08-14",
-      "confirmedPrice": null,
-      "priceBandLow": null,
-      "priceBandHigh": null,
-      "underwriter": "",
-      "competitionRatio": "한국투자증권",
-      "listingDate": null,
-      "refundDate": "2026-08-19",
-      "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2306&l=&page=1",
       "status": "청약예정",
       "calculator": null
     },
@@ -221,7 +221,7 @@
       "listingDate": "2026-08-18",
       "refundDate": "2026-08-04",
       "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2298&l=&page=1",
-      "status": "청약예정",
+      "status": "청약중",
       "calculator": null
     },
     {
@@ -481,6 +481,6 @@
       "calculator": null
     }
   ],
-  "fetchedAt": "2026-07-29T20:47:53.016Z",
+  "fetchedAt": "2026-07-30T01:53:40.428Z",
   "totalCount": 30
 }

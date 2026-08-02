@@ -1,7 +1,105 @@
 {
-  "generatedAt": "2026-08-01T03:00:58.293Z",
+  "generatedAt": "2026-08-02T02:42:56.001Z",
   "maxDays": 365,
   "reports": [
+    {
+      "date": "2026-08-01",
+      "ticker": "AAPL",
+      "name": "Apple Inc.",
+      "market": "us",
+      "broker": "Maxim Group",
+      "analyst": "Tom Forte",
+      "opinion": "Buy",
+      "targetPrice": 380,
+      "currentPrice": 308.91,
+      "basePrice": 308.91,
+      "basePriceDate": "2026-07-31",
+      "upside": 23,
+      "sourceUrl": "https://stockanalysis.com/stocks/aapl/ratings/",
+      "sourceText": "Maxim Group Buy Reiterates. Price target 350 -> 380.",
+      "reportTitle": "Buy Reiterates",
+      "reasonSummary": "Buy Reiterates. Maxim Group가 Buy 의견을 제시했고 현재가 기준 상승여력은 23.0%입니다. 2026-07-31 종가 대비 목표가 괴리는 23%입니다.",
+      "reasonBullets": [
+        "Maxim Group가 2026-08-01에 Buy 의견과 목표가를 제시했습니다.",
+        "현재가 $308.91 대비 목표가는 $380입니다.",
+        "2026-07-31 종가 $308.91 대비 괴리는 23%입니다."
+      ],
+      "performance": {
+        "week1": {
+          "asOfDate": "2026-08-08",
+          "closePrice": 0,
+          "returnPct": 0,
+          "targetProgressPct": 0,
+          "success": false,
+          "status": "pending"
+        },
+        "month1": {
+          "asOfDate": "2026-08-31",
+          "closePrice": 0,
+          "returnPct": 0,
+          "targetProgressPct": 0,
+          "success": false,
+          "status": "pending"
+        },
+        "month3": {
+          "asOfDate": "2026-10-30",
+          "closePrice": 0,
+          "returnPct": 0,
+          "targetProgressPct": 0,
+          "success": false,
+          "status": "pending"
+        }
+      }
+    },
+    {
+      "date": "2026-08-01",
+      "ticker": "AMZN",
+      "name": "Amazon.com, Inc.",
+      "market": "us",
+      "broker": "Maxim Group",
+      "analyst": "Tom Forte",
+      "opinion": "Buy",
+      "targetPrice": 350,
+      "currentPrice": 271.58,
+      "basePrice": 271.58,
+      "basePriceDate": "2026-07-31",
+      "upside": 28.9,
+      "sourceUrl": "https://stockanalysis.com/stocks/amzn/ratings/",
+      "sourceText": "Maxim Group Buy Reiterates. Price target 315 -> 350.",
+      "reportTitle": "Buy Reiterates",
+      "reasonSummary": "Buy Reiterates. Maxim Group가 Buy 의견을 제시했고 현재가 기준 상승여력은 28.9%입니다. 2026-07-31 종가 대비 목표가 괴리는 28.9%입니다.",
+      "reasonBullets": [
+        "Maxim Group가 2026-08-01에 Buy 의견과 목표가를 제시했습니다.",
+        "현재가 $271.58 대비 목표가는 $350입니다.",
+        "2026-07-31 종가 $271.58 대비 괴리는 28.9%입니다."
+      ],
+      "performance": {
+        "week1": {
+          "asOfDate": "2026-08-08",
+          "closePrice": 0,
+          "returnPct": 0,
+          "targetProgressPct": 0,
+          "success": false,
+          "status": "pending"
+        },
+        "month1": {
+          "asOfDate": "2026-08-31",
+          "closePrice": 0,
+          "returnPct": 0,
+          "targetProgressPct": 0,
+          "success": false,
+          "status": "pending"
+        },
+        "month3": {
+          "asOfDate": "2026-10-30",
+          "closePrice": 0,
+          "returnPct": 0,
+          "targetProgressPct": 0,
+          "success": false,
+          "status": "pending"
+        }
+      }
+    },
     {
       "date": "2026-07-31",
       "ticker": "073240",
@@ -6589,55 +6687,6 @@
         "Oppenheimer가 2026-07-31에 Buy 의견과 목표가를 제시했습니다.",
         "현재가 $271.58 대비 목표가는 $320입니다.",
         "2026-07-31 종가 $271.58 대비 괴리는 17.8%입니다."
-      ],
-      "performance": {
-        "week1": {
-          "asOfDate": "2026-08-07",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "pending"
-        },
-        "month1": {
-          "asOfDate": "2026-08-30",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "pending"
-        },
-        "month3": {
-          "asOfDate": "2026-10-29",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "pending"
-        }
-      }
-    },
-    {
-      "date": "2026-07-31",
-      "ticker": "AMZN",
-      "name": "Amazon.com, Inc.",
-      "market": "us",
-      "broker": "RBC Capital",
-      "analyst": "Brad Erickson",
-      "opinion": "Buy",
-      "targetPrice": 330,
-      "currentPrice": 271.58,
-      "basePrice": 271.58,
-      "basePriceDate": "2026-07-31",
-      "upside": 21.5,
-      "sourceUrl": "https://stockanalysis.com/stocks/amzn/ratings/",
-      "sourceText": "RBC Capital Buy Reiterates. Price target 320 -> 330.",
-      "reportTitle": "Buy Reiterates",
-      "reasonSummary": "Buy Reiterates. RBC Capital가 Buy 의견을 제시했고 현재가 기준 상승여력은 21.5%입니다. 2026-07-31 종가 대비 목표가 괴리는 21.5%입니다.",
-      "reasonBullets": [
-        "RBC Capital가 2026-07-31에 Buy 의견과 목표가를 제시했습니다.",
-        "현재가 $271.58 대비 목표가는 $330입니다.",
-        "2026-07-31 종가 $271.58 대비 괴리는 21.5%입니다."
       ],
       "performance": {
         "week1": {
@@ -25947,12 +25996,12 @@
       ],
       "performance": {
         "week1": {
-          "asOfDate": "2026-08-02",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
+          "asOfDate": "2026-07-31",
+          "closePrice": 215.22,
+          "returnPct": 1.1,
+          "targetProgressPct": 6.5,
           "success": false,
-          "status": "pending"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-08-25",
@@ -53449,7 +53498,7 @@
           "returnPct": 0,
           "targetProgressPct": 0,
           "success": false,
-          "status": "pending"
+          "status": "unavailable"
         },
         "month3": {
           "asOfDate": "2026-10-01",
@@ -53498,7 +53547,7 @@
           "returnPct": 0,
           "targetProgressPct": 0,
           "success": false,
-          "status": "pending"
+          "status": "unavailable"
         },
         "month3": {
           "asOfDate": "2026-10-01",
@@ -53547,7 +53596,7 @@
           "returnPct": 0,
           "targetProgressPct": 0,
           "success": false,
-          "status": "pending"
+          "status": "unavailable"
         },
         "month3": {
           "asOfDate": "2026-10-01",
@@ -53596,7 +53645,7 @@
           "returnPct": 0,
           "targetProgressPct": 0,
           "success": false,
-          "status": "pending"
+          "status": "unavailable"
         },
         "month3": {
           "asOfDate": "2026-10-01",
@@ -53645,7 +53694,7 @@
           "returnPct": 0,
           "targetProgressPct": 0,
           "success": false,
-          "status": "pending"
+          "status": "unavailable"
         },
         "month3": {
           "asOfDate": "2026-10-01",
@@ -53694,7 +53743,7 @@
           "returnPct": 0,
           "targetProgressPct": 0,
           "success": false,
-          "status": "pending"
+          "status": "unavailable"
         },
         "month3": {
           "asOfDate": "2026-10-01",
@@ -53743,7 +53792,7 @@
           "returnPct": 0,
           "targetProgressPct": 0,
           "success": false,
-          "status": "pending"
+          "status": "unavailable"
         },
         "month3": {
           "asOfDate": "2026-10-01",
@@ -53792,7 +53841,7 @@
           "returnPct": 0,
           "targetProgressPct": 0,
           "success": false,
-          "status": "pending"
+          "status": "unavailable"
         },
         "month3": {
           "asOfDate": "2026-10-01",
@@ -53841,7 +53890,7 @@
           "returnPct": 0,
           "targetProgressPct": 0,
           "success": false,
-          "status": "pending"
+          "status": "unavailable"
         },
         "month3": {
           "asOfDate": "2026-10-01",
@@ -53890,7 +53939,7 @@
           "returnPct": 0,
           "targetProgressPct": 0,
           "success": false,
-          "status": "pending"
+          "status": "unavailable"
         },
         "month3": {
           "asOfDate": "2026-10-01",
@@ -57971,6 +58020,506 @@
     }
   ],
   "stockInsights": {
+    "us:AAPL": {
+      "ticker": "AAPL",
+      "name": "Apple Inc.",
+      "market": "us",
+      "latestReportDate": "2026-08-01",
+      "latestBroker": "Maxim Group",
+      "latestOpinion": "Buy",
+      "latestTargetPrice": 380,
+      "latestCurrentPrice": 308.91,
+      "latestBasePrice": 308.91,
+      "avgUpside": 17.6,
+      "reportCount": 3,
+      "reasonSummary": "Buy Reiterates. Maxim Group가 Buy 의견을 제시했고 현재가 기준 상승여력은 23.0%입니다. 2026-07-31 종가 대비 목표가 괴리는 23%입니다.",
+      "reasonBullets": [
+        "Maxim Group가 2026-08-01에 Buy 의견과 목표가를 제시했습니다.",
+        "현재가 $308.91 대비 목표가는 $380입니다.",
+        "2026-07-31 종가 $308.91 대비 괴리는 23%입니다."
+      ],
+      "investmentLogic": {
+        "summary": "Buy Reiterates",
+        "bullets": [
+          "Buy Reiterates",
+          "Buy Reiterates Maxim Group Buy Reiterates.",
+          "Price target 350 -> 380."
+        ]
+      },
+      "estimateRevision": {
+        "summary": "유지 신호입니다. 리포트 원문에서 추정치 관련 표현을 기준으로 판단했습니다.",
+        "bullets": [
+          "Buy Reiterates Maxim Group Buy Reiterates.",
+          "Price target 350 -> 380.",
+          "Buy Reiterates."
+        ],
+        "signal": "flat"
+      },
+      "valuation": {
+        "summary": "현재가 $308.91 대비 목표가 $380가 제시돼 밸류에이션 여력을 확인할 수 있습니다.",
+        "bullets": [
+          "Buy Reiterates Maxim Group Buy Reiterates.",
+          "Price target 350 -> 380.",
+          "Buy Reiterates."
+        ]
+      },
+      "sectorCycle": {
+        "summary": "Buy Reiterates Maxim Group Buy Reiterates.",
+        "bullets": [
+          "Buy Reiterates Maxim Group Buy Reiterates.",
+          "Price target 350 -> 380.",
+          "Buy Reiterates."
+        ]
+      },
+      "relatedReports": [
+        {
+          "date": "2026-08-01",
+          "ticker": "AAPL",
+          "name": "Apple Inc.",
+          "market": "us",
+          "broker": "Maxim Group",
+          "analyst": "Tom Forte",
+          "opinion": "Buy",
+          "targetPrice": 380,
+          "currentPrice": 308.91,
+          "basePrice": 308.91,
+          "basePriceDate": "2026-07-31",
+          "upside": 23,
+          "sourceUrl": "https://stockanalysis.com/stocks/aapl/ratings/",
+          "sourceText": "Maxim Group Buy Reiterates. Price target 350 -> 380.",
+          "reportTitle": "Buy Reiterates",
+          "reasonSummary": "Buy Reiterates. Maxim Group가 Buy 의견을 제시했고 현재가 기준 상승여력은 23.0%입니다. 2026-07-31 종가 대비 목표가 괴리는 23%입니다.",
+          "reasonBullets": [
+            "Maxim Group가 2026-08-01에 Buy 의견과 목표가를 제시했습니다.",
+            "현재가 $308.91 대비 목표가는 $380입니다.",
+            "2026-07-31 종가 $308.91 대비 괴리는 23%입니다."
+          ],
+          "performance": {
+            "week1": {
+              "asOfDate": "2026-08-08",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            },
+            "month1": {
+              "asOfDate": "2026-08-31",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            },
+            "month3": {
+              "asOfDate": "2026-10-30",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            }
+          }
+        },
+        {
+          "date": "2026-07-31",
+          "ticker": "AAPL",
+          "name": "Apple Inc.",
+          "market": "us",
+          "broker": "Monness",
+          "analyst": "Brian White",
+          "opinion": "Buy",
+          "targetPrice": 335,
+          "currentPrice": 308.91,
+          "basePrice": 308.91,
+          "basePriceDate": "2026-07-31",
+          "upside": 8.4,
+          "sourceUrl": "https://stockanalysis.com/stocks/aapl/ratings/",
+          "sourceText": "Monness Buy Maintains. Price target N/A -> 335.",
+          "reportTitle": "Buy Maintains",
+          "reasonSummary": "Buy Maintains. Monness가 Buy 의견을 제시했고 현재가 기준 상승여력은 8.4%입니다. 2026-07-31 종가 대비 목표가 괴리는 8.4%입니다.",
+          "reasonBullets": [
+            "Monness가 2026-07-31에 Buy 의견과 목표가를 제시했습니다.",
+            "현재가 $308.91 대비 목표가는 $335입니다.",
+            "2026-07-31 종가 $308.91 대비 괴리는 8.4%입니다."
+          ],
+          "performance": {
+            "week1": {
+              "asOfDate": "2026-08-07",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            },
+            "month1": {
+              "asOfDate": "2026-08-30",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            },
+            "month3": {
+              "asOfDate": "2026-10-29",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            }
+          }
+        },
+        {
+          "date": "2026-07-31",
+          "ticker": "AAPL",
+          "name": "Apple Inc.",
+          "market": "us",
+          "broker": "Argus Research",
+          "analyst": "Jim Kelleher",
+          "opinion": "Buy",
+          "targetPrice": 375,
+          "currentPrice": 308.91,
+          "basePrice": 308.91,
+          "basePriceDate": "2026-07-31",
+          "upside": 21.4,
+          "sourceUrl": "https://stockanalysis.com/stocks/aapl/ratings/",
+          "sourceText": "Argus Research Buy Reiterates. Price target N/A -> 375.",
+          "reportTitle": "Buy Reiterates",
+          "reasonSummary": "Buy Reiterates. Argus Research가 Buy 의견을 제시했고 현재가 기준 상승여력은 21.4%입니다. 2026-07-31 종가 대비 목표가 괴리는 21.4%입니다.",
+          "reasonBullets": [
+            "Argus Research가 2026-07-31에 Buy 의견과 목표가를 제시했습니다.",
+            "현재가 $308.91 대비 목표가는 $375입니다.",
+            "2026-07-31 종가 $308.91 대비 괴리는 21.4%입니다."
+          ],
+          "performance": {
+            "week1": {
+              "asOfDate": "2026-08-07",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            },
+            "month1": {
+              "asOfDate": "2026-08-30",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            },
+            "month3": {
+              "asOfDate": "2026-10-29",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            }
+          }
+        }
+      ]
+    },
+    "us:AMZN": {
+      "ticker": "AMZN",
+      "name": "Amazon.com, Inc.",
+      "market": "us",
+      "latestReportDate": "2026-08-01",
+      "latestBroker": "Maxim Group",
+      "latestOpinion": "Buy",
+      "latestTargetPrice": 350,
+      "latestCurrentPrice": 271.58,
+      "latestBasePrice": 271.58,
+      "avgUpside": 21.8,
+      "reportCount": 6,
+      "reasonSummary": "Buy Reiterates. Maxim Group가 Buy 의견을 제시했고 현재가 기준 상승여력은 28.9%입니다. 2026-07-31 종가 대비 목표가 괴리는 28.9%입니다.",
+      "reasonBullets": [
+        "Maxim Group가 2026-08-01에 Buy 의견과 목표가를 제시했습니다.",
+        "현재가 $271.58 대비 목표가는 $350입니다.",
+        "2026-07-31 종가 $271.58 대비 괴리는 28.9%입니다."
+      ],
+      "investmentLogic": {
+        "summary": "Buy Reiterates",
+        "bullets": [
+          "Buy Reiterates",
+          "Buy Reiterates Maxim Group Buy Reiterates.",
+          "Price target 315 -> 350."
+        ]
+      },
+      "estimateRevision": {
+        "summary": "유지 신호입니다. 리포트 원문에서 추정치 관련 표현을 기준으로 판단했습니다.",
+        "bullets": [
+          "Buy Reiterates Maxim Group Buy Reiterates.",
+          "Price target 315 -> 350.",
+          "Buy Reiterates."
+        ],
+        "signal": "flat"
+      },
+      "valuation": {
+        "summary": "현재가 $271.58 대비 목표가 $350가 제시돼 밸류에이션 여력을 확인할 수 있습니다.",
+        "bullets": [
+          "Buy Reiterates Maxim Group Buy Reiterates.",
+          "Price target 315 -> 350.",
+          "Buy Reiterates."
+        ]
+      },
+      "sectorCycle": {
+        "summary": "Buy Reiterates Maxim Group Buy Reiterates.",
+        "bullets": [
+          "Buy Reiterates Maxim Group Buy Reiterates.",
+          "Price target 315 -> 350.",
+          "Buy Reiterates."
+        ]
+      },
+      "relatedReports": [
+        {
+          "date": "2026-08-01",
+          "ticker": "AMZN",
+          "name": "Amazon.com, Inc.",
+          "market": "us",
+          "broker": "Maxim Group",
+          "analyst": "Tom Forte",
+          "opinion": "Buy",
+          "targetPrice": 350,
+          "currentPrice": 271.58,
+          "basePrice": 271.58,
+          "basePriceDate": "2026-07-31",
+          "upside": 28.9,
+          "sourceUrl": "https://stockanalysis.com/stocks/amzn/ratings/",
+          "sourceText": "Maxim Group Buy Reiterates. Price target 315 -> 350.",
+          "reportTitle": "Buy Reiterates",
+          "reasonSummary": "Buy Reiterates. Maxim Group가 Buy 의견을 제시했고 현재가 기준 상승여력은 28.9%입니다. 2026-07-31 종가 대비 목표가 괴리는 28.9%입니다.",
+          "reasonBullets": [
+            "Maxim Group가 2026-08-01에 Buy 의견과 목표가를 제시했습니다.",
+            "현재가 $271.58 대비 목표가는 $350입니다.",
+            "2026-07-31 종가 $271.58 대비 괴리는 28.9%입니다."
+          ],
+          "performance": {
+            "week1": {
+              "asOfDate": "2026-08-08",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            },
+            "month1": {
+              "asOfDate": "2026-08-31",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            },
+            "month3": {
+              "asOfDate": "2026-10-30",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            }
+          }
+        },
+        {
+          "date": "2026-07-31",
+          "ticker": "AMZN",
+          "name": "Amazon.com, Inc.",
+          "market": "us",
+          "broker": "Monness",
+          "analyst": "Brian White",
+          "opinion": "Buy",
+          "targetPrice": 330,
+          "currentPrice": 271.58,
+          "basePrice": 271.58,
+          "basePriceDate": "2026-07-31",
+          "upside": 21.5,
+          "sourceUrl": "https://stockanalysis.com/stocks/amzn/ratings/",
+          "sourceText": "Monness Buy Maintains. Price target 315 -> 330.",
+          "reportTitle": "Buy Maintains",
+          "reasonSummary": "Buy Maintains. Monness가 Buy 의견을 제시했고 현재가 기준 상승여력은 21.5%입니다. 2026-07-31 종가 대비 목표가 괴리는 21.5%입니다.",
+          "reasonBullets": [
+            "Monness가 2026-07-31에 Buy 의견과 목표가를 제시했습니다.",
+            "현재가 $271.58 대비 목표가는 $330입니다.",
+            "2026-07-31 종가 $271.58 대비 괴리는 21.5%입니다."
+          ],
+          "performance": {
+            "week1": {
+              "asOfDate": "2026-08-07",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            },
+            "month1": {
+              "asOfDate": "2026-08-30",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            },
+            "month3": {
+              "asOfDate": "2026-10-29",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            }
+          }
+        },
+        {
+          "date": "2026-07-31",
+          "ticker": "AMZN",
+          "name": "Amazon.com, Inc.",
+          "market": "us",
+          "broker": "Telsey Advisory",
+          "analyst": "Joe Feldman",
+          "opinion": "Buy",
+          "targetPrice": 335,
+          "currentPrice": 271.58,
+          "basePrice": 271.58,
+          "basePriceDate": "2026-07-31",
+          "upside": 23.4,
+          "sourceUrl": "https://stockanalysis.com/stocks/amzn/ratings/",
+          "sourceText": "Telsey Advisory Buy Reiterates. Price target 315 -> 335.",
+          "reportTitle": "Buy Reiterates",
+          "reasonSummary": "Buy Reiterates. Telsey Advisory가 Buy 의견을 제시했고 현재가 기준 상승여력은 23.4%입니다. 2026-07-31 종가 대비 목표가 괴리는 23.4%입니다.",
+          "reasonBullets": [
+            "Telsey Advisory가 2026-07-31에 Buy 의견과 목표가를 제시했습니다.",
+            "현재가 $271.58 대비 목표가는 $335입니다.",
+            "2026-07-31 종가 $271.58 대비 괴리는 23.4%입니다."
+          ],
+          "performance": {
+            "week1": {
+              "asOfDate": "2026-08-07",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            },
+            "month1": {
+              "asOfDate": "2026-08-30",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            },
+            "month3": {
+              "asOfDate": "2026-10-29",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            }
+          }
+        },
+        {
+          "date": "2026-07-31",
+          "ticker": "AMZN",
+          "name": "Amazon.com, Inc.",
+          "market": "us",
+          "broker": "Argus Research",
+          "analyst": "Unknown Analyst",
+          "opinion": "Buy",
+          "targetPrice": 325,
+          "currentPrice": 271.58,
+          "basePrice": 271.58,
+          "basePriceDate": "2026-07-31",
+          "upside": 19.7,
+          "sourceUrl": "https://stockanalysis.com/stocks/amzn/ratings/",
+          "sourceText": "Argus Research Buy Reiterates. Price target N/A -> 325.",
+          "reportTitle": "Buy Reiterates",
+          "reasonSummary": "Buy Reiterates. Argus Research가 Buy 의견을 제시했고 현재가 기준 상승여력은 19.7%입니다. 2026-07-31 종가 대비 목표가 괴리는 19.7%입니다.",
+          "reasonBullets": [
+            "Argus Research가 2026-07-31에 Buy 의견과 목표가를 제시했습니다.",
+            "현재가 $271.58 대비 목표가는 $325입니다.",
+            "2026-07-31 종가 $271.58 대비 괴리는 19.7%입니다."
+          ],
+          "performance": {
+            "week1": {
+              "asOfDate": "2026-08-07",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            },
+            "month1": {
+              "asOfDate": "2026-08-30",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            },
+            "month3": {
+              "asOfDate": "2026-10-29",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            }
+          }
+        },
+        {
+          "date": "2026-07-31",
+          "ticker": "AMZN",
+          "name": "Amazon.com, Inc.",
+          "market": "us",
+          "broker": "Deutsche Bank ",
+          "analyst": "Benjamin Black CFA",
+          "opinion": "Buy",
+          "targetPrice": 325,
+          "currentPrice": 271.58,
+          "basePrice": 271.58,
+          "basePriceDate": "2026-07-31",
+          "upside": 19.7,
+          "sourceUrl": "https://stockanalysis.com/stocks/amzn/ratings/",
+          "sourceText": "Deutsche Bank  Buy Reiterates. Price target 315 -> 325.",
+          "reportTitle": "Buy Reiterates",
+          "reasonSummary": "Buy Reiterates. Deutsche Bank 가 Buy 의견을 제시했고 현재가 기준 상승여력은 19.7%입니다. 2026-07-31 종가 대비 목표가 괴리는 19.7%입니다.",
+          "reasonBullets": [
+            "Deutsche Bank 가 2026-07-31에 Buy 의견과 목표가를 제시했습니다.",
+            "현재가 $271.58 대비 목표가는 $325입니다.",
+            "2026-07-31 종가 $271.58 대비 괴리는 19.7%입니다."
+          ],
+          "performance": {
+            "week1": {
+              "asOfDate": "2026-08-07",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            },
+            "month1": {
+              "asOfDate": "2026-08-30",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            },
+            "month3": {
+              "asOfDate": "2026-10-29",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            }
+          }
+        }
+      ]
+    },
     "korea:073240": {
       "ticker": "073240",
       "name": "금호타이어",
@@ -68774,158 +69323,6 @@
         }
       ]
     },
-    "us:AAPL": {
-      "ticker": "AAPL",
-      "name": "Apple Inc.",
-      "market": "us",
-      "latestReportDate": "2026-07-31",
-      "latestBroker": "Monness",
-      "latestOpinion": "Buy",
-      "latestTargetPrice": 335,
-      "latestCurrentPrice": 308.91,
-      "latestBasePrice": 308.91,
-      "avgUpside": 14.9,
-      "reportCount": 2,
-      "reasonSummary": "Buy Maintains. Monness가 Buy 의견을 제시했고 현재가 기준 상승여력은 8.4%입니다. 2026-07-31 종가 대비 목표가 괴리는 8.4%입니다.",
-      "reasonBullets": [
-        "Monness가 2026-07-31에 Buy 의견과 목표가를 제시했습니다.",
-        "현재가 $308.91 대비 목표가는 $335입니다.",
-        "2026-07-31 종가 $308.91 대비 괴리는 8.4%입니다."
-      ],
-      "investmentLogic": {
-        "summary": "Buy Maintains",
-        "bullets": [
-          "Buy Maintains",
-          "Buy Maintains Monness Buy Maintains.",
-          "Price target N/A -> 335."
-        ]
-      },
-      "estimateRevision": {
-        "summary": "유지 신호입니다. 리포트 원문에서 추정치 관련 표현을 기준으로 판단했습니다.",
-        "bullets": [
-          "Buy Maintains Monness Buy Maintains.",
-          "Price target N/A -> 335.",
-          "Buy Maintains."
-        ],
-        "signal": "flat"
-      },
-      "valuation": {
-        "summary": "현재가 $308.91 대비 목표가 $335가 제시돼 밸류에이션 여력을 확인할 수 있습니다.",
-        "bullets": [
-          "Buy Maintains Monness Buy Maintains.",
-          "Price target N/A -> 335.",
-          "Buy Maintains."
-        ]
-      },
-      "sectorCycle": {
-        "summary": "Buy Maintains Monness Buy Maintains.",
-        "bullets": [
-          "Buy Maintains Monness Buy Maintains.",
-          "Price target N/A -> 335.",
-          "Buy Maintains."
-        ]
-      },
-      "relatedReports": [
-        {
-          "date": "2026-07-31",
-          "ticker": "AAPL",
-          "name": "Apple Inc.",
-          "market": "us",
-          "broker": "Monness",
-          "analyst": "Brian White",
-          "opinion": "Buy",
-          "targetPrice": 335,
-          "currentPrice": 308.91,
-          "basePrice": 308.91,
-          "basePriceDate": "2026-07-31",
-          "upside": 8.4,
-          "sourceUrl": "https://stockanalysis.com/stocks/aapl/ratings/",
-          "sourceText": "Monness Buy Maintains. Price target N/A -> 335.",
-          "reportTitle": "Buy Maintains",
-          "reasonSummary": "Buy Maintains. Monness가 Buy 의견을 제시했고 현재가 기준 상승여력은 8.4%입니다. 2026-07-31 종가 대비 목표가 괴리는 8.4%입니다.",
-          "reasonBullets": [
-            "Monness가 2026-07-31에 Buy 의견과 목표가를 제시했습니다.",
-            "현재가 $308.91 대비 목표가는 $335입니다.",
-            "2026-07-31 종가 $308.91 대비 괴리는 8.4%입니다."
-          ],
-          "performance": {
-            "week1": {
-              "asOfDate": "2026-08-07",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            },
-            "month1": {
-              "asOfDate": "2026-08-30",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            },
-            "month3": {
-              "asOfDate": "2026-10-29",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            }
-          }
-        },
-        {
-          "date": "2026-07-31",
-          "ticker": "AAPL",
-          "name": "Apple Inc.",
-          "market": "us",
-          "broker": "Argus Research",
-          "analyst": "Jim Kelleher",
-          "opinion": "Buy",
-          "targetPrice": 375,
-          "currentPrice": 308.91,
-          "basePrice": 308.91,
-          "basePriceDate": "2026-07-31",
-          "upside": 21.4,
-          "sourceUrl": "https://stockanalysis.com/stocks/aapl/ratings/",
-          "sourceText": "Argus Research Buy Reiterates. Price target N/A -> 375.",
-          "reportTitle": "Buy Reiterates",
-          "reasonSummary": "Buy Reiterates. Argus Research가 Buy 의견을 제시했고 현재가 기준 상승여력은 21.4%입니다. 2026-07-31 종가 대비 목표가 괴리는 21.4%입니다.",
-          "reasonBullets": [
-            "Argus Research가 2026-07-31에 Buy 의견과 목표가를 제시했습니다.",
-            "현재가 $308.91 대비 목표가는 $375입니다.",
-            "2026-07-31 종가 $308.91 대비 괴리는 21.4%입니다."
-          ],
-          "performance": {
-            "week1": {
-              "asOfDate": "2026-08-07",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            },
-            "month1": {
-              "asOfDate": "2026-08-30",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            },
-            "month3": {
-              "asOfDate": "2026-10-29",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            }
-          }
-        }
-      ]
-    },
     "us:MSFT": {
       "ticker": "MSFT",
       "name": "Microsoft Corporation",
@@ -69215,305 +69612,6 @@
             },
             "month3": {
               "asOfDate": "2026-10-28",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            }
-          }
-        }
-      ]
-    },
-    "us:AMZN": {
-      "ticker": "AMZN",
-      "name": "Amazon.com, Inc.",
-      "market": "us",
-      "latestReportDate": "2026-07-31",
-      "latestBroker": "Monness",
-      "latestOpinion": "Buy",
-      "latestTargetPrice": 330,
-      "latestCurrentPrice": 271.58,
-      "latestBasePrice": 271.58,
-      "avgUpside": 20.6,
-      "reportCount": 6,
-      "reasonSummary": "Buy Maintains. Monness가 Buy 의견을 제시했고 현재가 기준 상승여력은 21.5%입니다. 2026-07-31 종가 대비 목표가 괴리는 21.5%입니다.",
-      "reasonBullets": [
-        "Monness가 2026-07-31에 Buy 의견과 목표가를 제시했습니다.",
-        "현재가 $271.58 대비 목표가는 $330입니다.",
-        "2026-07-31 종가 $271.58 대비 괴리는 21.5%입니다."
-      ],
-      "investmentLogic": {
-        "summary": "Buy Maintains",
-        "bullets": [
-          "Buy Maintains",
-          "Buy Maintains Monness Buy Maintains.",
-          "Price target 315 -> 330."
-        ]
-      },
-      "estimateRevision": {
-        "summary": "유지 신호입니다. 리포트 원문에서 추정치 관련 표현을 기준으로 판단했습니다.",
-        "bullets": [
-          "Buy Maintains Monness Buy Maintains.",
-          "Price target 315 -> 330.",
-          "Buy Maintains."
-        ],
-        "signal": "flat"
-      },
-      "valuation": {
-        "summary": "현재가 $271.58 대비 목표가 $330가 제시돼 밸류에이션 여력을 확인할 수 있습니다.",
-        "bullets": [
-          "Buy Maintains Monness Buy Maintains.",
-          "Price target 315 -> 330.",
-          "Buy Maintains."
-        ]
-      },
-      "sectorCycle": {
-        "summary": "Buy Maintains Monness Buy Maintains.",
-        "bullets": [
-          "Buy Maintains Monness Buy Maintains.",
-          "Price target 315 -> 330.",
-          "Buy Maintains."
-        ]
-      },
-      "relatedReports": [
-        {
-          "date": "2026-07-31",
-          "ticker": "AMZN",
-          "name": "Amazon.com, Inc.",
-          "market": "us",
-          "broker": "Monness",
-          "analyst": "Brian White",
-          "opinion": "Buy",
-          "targetPrice": 330,
-          "currentPrice": 271.58,
-          "basePrice": 271.58,
-          "basePriceDate": "2026-07-31",
-          "upside": 21.5,
-          "sourceUrl": "https://stockanalysis.com/stocks/amzn/ratings/",
-          "sourceText": "Monness Buy Maintains. Price target 315 -> 330.",
-          "reportTitle": "Buy Maintains",
-          "reasonSummary": "Buy Maintains. Monness가 Buy 의견을 제시했고 현재가 기준 상승여력은 21.5%입니다. 2026-07-31 종가 대비 목표가 괴리는 21.5%입니다.",
-          "reasonBullets": [
-            "Monness가 2026-07-31에 Buy 의견과 목표가를 제시했습니다.",
-            "현재가 $271.58 대비 목표가는 $330입니다.",
-            "2026-07-31 종가 $271.58 대비 괴리는 21.5%입니다."
-          ],
-          "performance": {
-            "week1": {
-              "asOfDate": "2026-08-07",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            },
-            "month1": {
-              "asOfDate": "2026-08-30",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            },
-            "month3": {
-              "asOfDate": "2026-10-29",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            }
-          }
-        },
-        {
-          "date": "2026-07-31",
-          "ticker": "AMZN",
-          "name": "Amazon.com, Inc.",
-          "market": "us",
-          "broker": "Telsey Advisory",
-          "analyst": "Joe Feldman",
-          "opinion": "Buy",
-          "targetPrice": 335,
-          "currentPrice": 271.58,
-          "basePrice": 271.58,
-          "basePriceDate": "2026-07-31",
-          "upside": 23.4,
-          "sourceUrl": "https://stockanalysis.com/stocks/amzn/ratings/",
-          "sourceText": "Telsey Advisory Buy Reiterates. Price target 315 -> 335.",
-          "reportTitle": "Buy Reiterates",
-          "reasonSummary": "Buy Reiterates. Telsey Advisory가 Buy 의견을 제시했고 현재가 기준 상승여력은 23.4%입니다. 2026-07-31 종가 대비 목표가 괴리는 23.4%입니다.",
-          "reasonBullets": [
-            "Telsey Advisory가 2026-07-31에 Buy 의견과 목표가를 제시했습니다.",
-            "현재가 $271.58 대비 목표가는 $335입니다.",
-            "2026-07-31 종가 $271.58 대비 괴리는 23.4%입니다."
-          ],
-          "performance": {
-            "week1": {
-              "asOfDate": "2026-08-07",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            },
-            "month1": {
-              "asOfDate": "2026-08-30",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            },
-            "month3": {
-              "asOfDate": "2026-10-29",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            }
-          }
-        },
-        {
-          "date": "2026-07-31",
-          "ticker": "AMZN",
-          "name": "Amazon.com, Inc.",
-          "market": "us",
-          "broker": "Argus Research",
-          "analyst": "Unknown Analyst",
-          "opinion": "Buy",
-          "targetPrice": 325,
-          "currentPrice": 271.58,
-          "basePrice": 271.58,
-          "basePriceDate": "2026-07-31",
-          "upside": 19.7,
-          "sourceUrl": "https://stockanalysis.com/stocks/amzn/ratings/",
-          "sourceText": "Argus Research Buy Reiterates. Price target N/A -> 325.",
-          "reportTitle": "Buy Reiterates",
-          "reasonSummary": "Buy Reiterates. Argus Research가 Buy 의견을 제시했고 현재가 기준 상승여력은 19.7%입니다. 2026-07-31 종가 대비 목표가 괴리는 19.7%입니다.",
-          "reasonBullets": [
-            "Argus Research가 2026-07-31에 Buy 의견과 목표가를 제시했습니다.",
-            "현재가 $271.58 대비 목표가는 $325입니다.",
-            "2026-07-31 종가 $271.58 대비 괴리는 19.7%입니다."
-          ],
-          "performance": {
-            "week1": {
-              "asOfDate": "2026-08-07",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            },
-            "month1": {
-              "asOfDate": "2026-08-30",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            },
-            "month3": {
-              "asOfDate": "2026-10-29",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            }
-          }
-        },
-        {
-          "date": "2026-07-31",
-          "ticker": "AMZN",
-          "name": "Amazon.com, Inc.",
-          "market": "us",
-          "broker": "Deutsche Bank ",
-          "analyst": "Benjamin Black CFA",
-          "opinion": "Buy",
-          "targetPrice": 325,
-          "currentPrice": 271.58,
-          "basePrice": 271.58,
-          "basePriceDate": "2026-07-31",
-          "upside": 19.7,
-          "sourceUrl": "https://stockanalysis.com/stocks/amzn/ratings/",
-          "sourceText": "Deutsche Bank  Buy Reiterates. Price target 315 -> 325.",
-          "reportTitle": "Buy Reiterates",
-          "reasonSummary": "Buy Reiterates. Deutsche Bank 가 Buy 의견을 제시했고 현재가 기준 상승여력은 19.7%입니다. 2026-07-31 종가 대비 목표가 괴리는 19.7%입니다.",
-          "reasonBullets": [
-            "Deutsche Bank 가 2026-07-31에 Buy 의견과 목표가를 제시했습니다.",
-            "현재가 $271.58 대비 목표가는 $325입니다.",
-            "2026-07-31 종가 $271.58 대비 괴리는 19.7%입니다."
-          ],
-          "performance": {
-            "week1": {
-              "asOfDate": "2026-08-07",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            },
-            "month1": {
-              "asOfDate": "2026-08-30",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            },
-            "month3": {
-              "asOfDate": "2026-10-29",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            }
-          }
-        },
-        {
-          "date": "2026-07-31",
-          "ticker": "AMZN",
-          "name": "Amazon.com, Inc.",
-          "market": "us",
-          "broker": "Oppenheimer",
-          "analyst": "Jason Helfstein",
-          "opinion": "Buy",
-          "targetPrice": 320,
-          "currentPrice": 271.58,
-          "basePrice": 271.58,
-          "basePriceDate": "2026-07-31",
-          "upside": 17.8,
-          "sourceUrl": "https://stockanalysis.com/stocks/amzn/ratings/",
-          "sourceText": "Oppenheimer Buy Maintains. Price target N/A -> 320.",
-          "reportTitle": "Buy Maintains",
-          "reasonSummary": "Buy Maintains. Oppenheimer가 Buy 의견을 제시했고 현재가 기준 상승여력은 17.8%입니다. 2026-07-31 종가 대비 목표가 괴리는 17.8%입니다.",
-          "reasonBullets": [
-            "Oppenheimer가 2026-07-31에 Buy 의견과 목표가를 제시했습니다.",
-            "현재가 $271.58 대비 목표가는 $320입니다.",
-            "2026-07-31 종가 $271.58 대비 괴리는 17.8%입니다."
-          ],
-          "performance": {
-            "week1": {
-              "asOfDate": "2026-08-07",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            },
-            "month1": {
-              "asOfDate": "2026-08-30",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            },
-            "month3": {
-              "asOfDate": "2026-10-29",
               "closePrice": 0,
               "returnPct": 0,
               "targetProgressPct": 0,
@@ -79082,12 +79180,12 @@
           ],
           "performance": {
             "week1": {
-              "asOfDate": "2026-08-02",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
+              "asOfDate": "2026-07-31",
+              "closePrice": 215.22,
+              "returnPct": 1.1,
+              "targetProgressPct": 6.5,
               "success": false,
-              "status": "pending"
+              "status": "complete"
             },
             "month1": {
               "asOfDate": "2026-08-25",
@@ -96459,7 +96557,7 @@
               "returnPct": 0,
               "targetProgressPct": 0,
               "success": false,
-              "status": "pending"
+              "status": "unavailable"
             },
             "month3": {
               "asOfDate": "2026-10-01",
@@ -98768,7 +98866,7 @@
               "returnPct": 0,
               "targetProgressPct": 0,
               "success": false,
-              "status": "pending"
+              "status": "unavailable"
             },
             "month3": {
               "asOfDate": "2026-10-01",
@@ -106404,7 +106502,7 @@
               "returnPct": 0,
               "targetProgressPct": 0,
               "success": false,
-              "status": "pending"
+              "status": "unavailable"
             },
             "month3": {
               "asOfDate": "2026-10-01",
@@ -114392,7 +114490,7 @@
               "returnPct": 0,
               "targetProgressPct": 0,
               "success": false,
-              "status": "pending"
+              "status": "unavailable"
             },
             "month3": {
               "asOfDate": "2026-10-01",
@@ -115100,7 +115198,7 @@
               "returnPct": 0,
               "targetProgressPct": 0,
               "success": false,
-              "status": "pending"
+              "status": "unavailable"
             },
             "month3": {
               "asOfDate": "2026-10-01",
@@ -117111,7 +117209,7 @@
               "returnPct": 0,
               "targetProgressPct": 0,
               "success": false,
-              "status": "pending"
+              "status": "unavailable"
             },
             "month3": {
               "asOfDate": "2026-10-01",
@@ -119748,7 +119846,7 @@
               "returnPct": 0,
               "targetProgressPct": 0,
               "success": false,
-              "status": "pending"
+              "status": "unavailable"
             },
             "month3": {
               "asOfDate": "2026-10-01",

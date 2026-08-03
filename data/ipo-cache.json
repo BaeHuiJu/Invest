@@ -1,6 +1,22 @@
 {
   "ipos": [
     {
+      "id": "2294",
+      "name": "빅웨이브로보틱스",
+      "subscriptionStart": "2026-09-16",
+      "subscriptionEnd": "2026-09-17",
+      "confirmedPrice": null,
+      "priceBandLow": null,
+      "priceBandHigh": null,
+      "underwriter": "",
+      "competitionRatio": "유진투자증권,미래에셋증권",
+      "listingDate": null,
+      "refundDate": "2026-09-21",
+      "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2294&l=&page=1",
+      "status": "청약예정",
+      "calculator": null
+    },
+    {
       "id": "2309",
       "name": "덕산넵코어스(구.넵코어스)",
       "subscriptionStart": "2026-09-16",
@@ -113,22 +129,6 @@
       "calculator": null
     },
     {
-      "id": "2294",
-      "name": "빅웨이브로보틱스",
-      "subscriptionStart": "2026-08-13",
-      "subscriptionEnd": "2026-08-14",
-      "confirmedPrice": null,
-      "priceBandLow": null,
-      "priceBandHigh": null,
-      "underwriter": "",
-      "competitionRatio": "유진투자증권,미래에셋증권",
-      "listingDate": null,
-      "refundDate": "2026-08-19",
-      "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2294&l=&page=1",
-      "status": "청약예정",
-      "calculator": null
-    },
-    {
       "id": "2303",
       "name": "니어스랩",
       "subscriptionStart": "2026-08-12",
@@ -181,7 +181,7 @@
       "name": "케이앤에스아이앤씨",
       "subscriptionStart": "2026-08-04",
       "subscriptionEnd": "2026-08-05",
-      "confirmedPrice": null,
+      "confirmedPrice": 11000,
       "priceBandLow": null,
       "priceBandHigh": null,
       "underwriter": "",
@@ -481,6 +481,6 @@
       "calculator": null
     }
   ],
-  "fetchedAt": "2026-08-03T06:54:29.977Z",
+  "fetchedAt": "2026-08-03T11:17:52.701Z",
   "totalCount": 30
 }

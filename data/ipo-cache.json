@@ -65,6 +65,22 @@
       "calculator": null
     },
     {
+      "id": "2307",
+      "name": "브릴스",
+      "subscriptionStart": "2026-09-08",
+      "subscriptionEnd": "2026-09-09",
+      "confirmedPrice": null,
+      "priceBandLow": null,
+      "priceBandHigh": null,
+      "underwriter": "",
+      "competitionRatio": "IBK투자증권",
+      "listingDate": null,
+      "refundDate": "2026-09-11",
+      "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2307&l=&page=1",
+      "status": "청약예정",
+      "calculator": null
+    },
+    {
       "id": "2308",
       "name": "네오사피엔스",
       "subscriptionStart": "2026-09-08",
@@ -109,22 +125,6 @@
       "listingDate": null,
       "refundDate": "2026-08-31",
       "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2306&l=&page=1",
-      "status": "청약예정",
-      "calculator": null
-    },
-    {
-      "id": "2307",
-      "name": "브릴스",
-      "subscriptionStart": "2026-08-25",
-      "subscriptionEnd": "2026-08-26",
-      "confirmedPrice": null,
-      "priceBandLow": null,
-      "priceBandHigh": null,
-      "underwriter": "",
-      "competitionRatio": "IBK투자증권",
-      "listingDate": null,
-      "refundDate": "2026-08-28",
-      "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2307&l=&page=1",
       "status": "청약예정",
       "calculator": null
     },
@@ -200,8 +200,8 @@
       "confirmedPrice": 7000,
       "priceBandLow": null,
       "priceBandHigh": null,
-      "underwriter": "",
-      "competitionRatio": "한국투자증권",
+      "underwriter": "한국투자증권",
+      "competitionRatio": "10.29:1",
       "listingDate": "2026-08-12",
       "refundDate": "2026-08-06",
       "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2302&l=&page=1",
@@ -481,6 +481,6 @@
       "calculator": null
     }
   ],
-  "fetchedAt": "2026-08-04T06:22:23.542Z",
+  "fetchedAt": "2026-08-04T10:31:46.524Z",
   "totalCount": 30
 }

@@ -1,6 +1,58 @@
 {
-  "generatedAt": "2026-08-07T16:43:38.716Z",
+  "generatedAt": "2026-08-07T20:32:12.829Z",
   "domestic": [
+    {
+      "id": "001_0016239876",
+      "title": "美증시, 금리인상 기대론 후퇴에 상승...S&P500 사상최고치 마감",
+      "pressName": "연합뉴스",
+      "publishedAt": "2026-08-08T05:24:00+09:00",
+      "url": "https://n.news.naver.com/mnews/article/001/0016239876",
+      "source": "domestic",
+      "sentiment": "positive",
+      "sentimentScore": 0,
+      "category": "금리·통화",
+      "isBreaking": true,
+      "beginnerExplanation": "돈 빌리는 비용이 올라가면 주식 매력이 떨어질 수 있어요."
+    },
+    {
+      "id": "018_0006347459",
+      "title": "[속보]나스닥 1.3%↑...고용 충격에 금리인상 기대 후퇴",
+      "pressName": "이데일리",
+      "publishedAt": "2026-08-08T05:12:00+09:00",
+      "url": "https://n.news.naver.com/mnews/article/018/0006347459",
+      "source": "domestic",
+      "sentiment": "negative",
+      "sentimentScore": 0,
+      "category": "금리·통화",
+      "isBreaking": true,
+      "beginnerExplanation": "돈 빌리는 비용이 올라가면 주식 매력이 떨어질 수 있어요."
+    },
+    {
+      "id": "003_0014115218",
+      "title": "[속보]뉴욕증시 상승 마감...S&P 0.6% 나스닥 1.3%↑",
+      "pressName": "뉴시스",
+      "publishedAt": "2026-08-08T05:03:00+09:00",
+      "url": "https://n.news.naver.com/mnews/article/003/0014115218",
+      "source": "domestic",
+      "sentiment": "positive",
+      "sentimentScore": 0,
+      "category": "all",
+      "isBreaking": true,
+      "beginnerExplanation": "기업이 예상보다 돈을 많이 벌었어요. 주가에 좋을 수 있어요."
+    },
+    {
+      "id": "003_0014115217",
+      "title": "럭키, 차바이오텍에 딸 '이것' 보관...\"난치병 대비\"",
+      "pressName": "뉴시스",
+      "publishedAt": "2026-08-08T05:01:00+09:00",
+      "url": "https://n.news.naver.com/mnews/article/003/0014115217",
+      "source": "domestic",
+      "sentiment": "neutral",
+      "sentimentScore": 0,
+      "category": "all",
+      "isBreaking": true,
+      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
+    },
     {
       "id": "023_0003991904",
       "title": "[주식 매매 상위 종목 및 환율] 2026년 8월 7일자",
@@ -11,7 +63,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "환율",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "환율 변동은 수출입 기업 수익에 큰 영향을 줘요."
     },
     {
@@ -24,7 +76,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
@@ -37,7 +89,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
@@ -50,7 +102,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
@@ -208,61 +260,35 @@
       "category": "all",
       "isBreaking": false,
       "beginnerExplanation": "돈 빌리는 비용이 올라가면 주식 매력이 떨어질 수 있어요."
-    },
-    {
-      "id": "015_0005318644",
-      "title": "\"중국 진심이었네\"...막대한 자금 쏟아붓더니 '드림팀' 만들었다 [분석+]",
-      "pressName": "한국경제",
-      "publishedAt": "2026-08-07T22:01:00+09:00",
-      "url": "https://n.news.naver.com/mnews/article/015/0005318644",
-      "source": "domestic",
-      "sentiment": "neutral",
-      "sentimentScore": 0,
-      "category": "all",
-      "isBreaking": false,
-      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
-    },
-    {
-      "id": "018_0006347296",
-      "title": "거래소 \"'삼전닉스' 레버리지 ETF 예비심사에 13일 소요\"",
-      "pressName": "이데일리",
-      "publishedAt": "2026-08-07T21:54:00+09:00",
-      "url": "https://n.news.naver.com/mnews/article/018/0006347296",
-      "source": "domestic",
-      "sentiment": "neutral",
-      "sentimentScore": 0,
-      "category": "all",
-      "isBreaking": false,
-      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
-    },
-    {
-      "id": "215_0001261613",
-      "title": "[속보] 美 '고용 쇼크'...7월 예상 밖 2만3천명 감소",
-      "pressName": "한국경제TV",
-      "publishedAt": "2026-08-07T21:41:00+09:00",
-      "url": "https://n.news.naver.com/mnews/article/215/0001261613",
-      "source": "domestic",
-      "sentiment": "neutral",
-      "sentimentScore": 0,
-      "category": "all",
-      "isBreaking": false,
-      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
-    },
-    {
-      "id": "011_0004649718",
-      "title": "거래소 \"삼전닉스 레버리지 ETF 예비심사기간 13일...대표지수형보다 길어\"",
-      "pressName": "서울경제",
-      "publishedAt": "2026-08-07T21:29:00+09:00",
-      "url": "https://n.news.naver.com/mnews/article/011/0004649718",
-      "source": "domestic",
-      "sentiment": "neutral",
-      "sentimentScore": 0,
-      "category": "all",
-      "isBreaking": false,
-      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     }
   ],
   "overseas": [
+    {
+      "id": "022_0004149297",
+      "title": "에어프레미아, 환승객 증가 이유는",
+      "pressName": "세계일보",
+      "publishedAt": "2026-08-08T05:28:00+09:00",
+      "url": "https://n.news.naver.com/mnews/article/022/0004149297",
+      "source": "overseas",
+      "sentiment": "positive",
+      "sentimentScore": 0,
+      "category": "all",
+      "isBreaking": true,
+      "beginnerExplanation": "좋은 소식이 나왔어요. 시장이 긍정적으로 반응할 가능성이 있어요."
+    },
+    {
+      "id": "050_0000109434",
+      "title": "고향은 같아도...수도권 간 청년, 월 120만원 더 번다",
+      "pressName": "한경비즈니스",
+      "publishedAt": "2026-08-08T05:16:00+09:00",
+      "url": "https://n.news.naver.com/mnews/article/050/0000109434",
+      "source": "overseas",
+      "sentiment": "neutral",
+      "sentimentScore": 0,
+      "category": "all",
+      "isBreaking": true,
+      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
+    },
     {
       "id": "020_0003739438",
       "title": "다이먼 \"빚투 과도... 누군가 시장 흔들 위험 커져\"",
@@ -273,7 +299,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
@@ -286,7 +312,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
@@ -299,7 +325,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
@@ -312,7 +338,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
@@ -325,7 +351,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
@@ -338,7 +364,7 @@
       "sentiment": "positive",
       "sentimentScore": 0,
       "category": "실적",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "기업이 예상보다 돈을 많이 벌었어요. 주가에 좋을 수 있어요."
     },
     {
@@ -360,19 +386,6 @@
       "pressName": "연합뉴스TV",
       "publishedAt": "2026-08-07T22:52:00+09:00",
       "url": "https://n.news.naver.com/mnews/article/422/0000893581",
-      "source": "overseas",
-      "sentiment": "neutral",
-      "sentimentScore": 0,
-      "category": "all",
-      "isBreaking": false,
-      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
-    },
-    {
-      "id": "015_0005318649",
-      "title": "현대차·기아 '2026 레드 닷 어워드' 17개 수상",
-      "pressName": "한국경제",
-      "publishedAt": "2026-08-07T22:46:00+09:00",
-      "url": "https://n.news.naver.com/mnews/article/015/0005318649",
       "source": "overseas",
       "sentiment": "neutral",
       "sentimentScore": 0,
@@ -496,19 +509,6 @@
       "category": "all",
       "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
-    },
-    {
-      "id": "422_0000893548",
-      "title": "SK하이닉스 \"주주환원 방안 3분기 중 확정 발표\"",
-      "pressName": "연합뉴스TV",
-      "publishedAt": "2026-08-07T20:03:00+09:00",
-      "url": "https://n.news.naver.com/mnews/article/422/0000893548",
-      "source": "overseas",
-      "sentiment": "neutral",
-      "sentimentScore": 0,
-      "category": "실적",
-      "isBreaking": false,
-      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     }
   ],
   "main": [
@@ -516,7 +516,7 @@
       "id": "021_0002809999",
       "title": "주식으로 20억 수익 인증한 사람입니다...순식간에 싹",
       "pressName": "네이버금융",
-      "publishedAt": "2026-08-07T16:43:38.704Z",
+      "publishedAt": "2026-08-07T20:32:12.828Z",
       "url": "https://n.news.naver.com/mnews/article/021/0002809999",
       "source": "main",
       "sentiment": "neutral",
@@ -529,7 +529,7 @@
       "id": "016_0002681052",
       "title": "'298만&rarr;149만원' 주가 반토막 났지만 \"믿는 건 반도체\"...개미들 폭풍 매수 [투자360]",
       "pressName": "네이버금융",
-      "publishedAt": "2026-08-07T16:43:38.704Z",
+      "publishedAt": "2026-08-07T20:32:12.829Z",
       "url": "https://n.news.naver.com/mnews/article/016/0002681052",
       "source": "main",
       "sentiment": "neutral",
@@ -542,7 +542,7 @@
       "id": "008_0005397107",
       "title": "11주에 SK하닉 '하한가' 직행...프리마켓 상·하한가 주문, 한달간 금지",
       "pressName": "네이버금융",
-      "publishedAt": "2026-08-07T16:43:38.704Z",
+      "publishedAt": "2026-08-07T20:32:12.829Z",
       "url": "https://n.news.naver.com/mnews/article/008/0005397107",
       "source": "main",
       "sentiment": "neutral",
@@ -555,7 +555,7 @@
       "id": "015_0005318621",
       "title": "올해만 '430%' 폭등...\"주도주 바뀐다\" 개미들 몰려간 곳",
       "pressName": "네이버금융",
-      "publishedAt": "2026-08-07T16:43:38.704Z",
+      "publishedAt": "2026-08-07T20:32:12.829Z",
       "url": "https://n.news.naver.com/mnews/article/015/0005318621",
       "source": "main",
       "sentiment": "neutral",
@@ -568,7 +568,7 @@
       "id": "009_0005718175",
       "title": "'메모리 3인방' 희비, 주주환원이 갈랐다",
       "pressName": "네이버금융",
-      "publishedAt": "2026-08-07T16:43:38.704Z",
+      "publishedAt": "2026-08-07T20:32:12.829Z",
       "url": "https://n.news.naver.com/mnews/article/009/0005718175",
       "source": "main",
       "sentiment": "neutral",

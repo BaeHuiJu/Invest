@@ -1,6 +1,19 @@
 {
-  "generatedAt": "2026-08-08T16:22:33.127Z",
+  "generatedAt": "2026-08-08T20:19:23.829Z",
   "domestic": [
+    {
+      "id": "003_0014115828",
+      "title": "\"올바른 가임력 정보\"...한국오가논, 임직원 교육",
+      "pressName": "뉴시스",
+      "publishedAt": "2026-08-09T01:30:00+09:00",
+      "url": "https://n.news.naver.com/mnews/article/003/0014115828",
+      "source": "domestic",
+      "sentiment": "neutral",
+      "sentimentScore": 0,
+      "category": "all",
+      "isBreaking": false,
+      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
+    },
     {
       "id": "021_0002810070",
       "title": "'서학개미, 다시 미장 간다던데'...고용 감소한 美, 주식시장 괜찮을까?",
@@ -11,7 +24,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
@@ -24,7 +37,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
@@ -37,7 +50,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
@@ -50,12 +63,12 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
       "id": "215_0001261663",
-      "title": "5년 묵혀만 뒀는데 18% 수익...돈 몰려든 이유 있었다",
+      "title": "\"일단 피하자\"한건데 깜짝 놀란 수익률...돈 몰려든 이유 있었다",
       "pressName": "한국경제TV",
       "publishedAt": "2026-08-09T00:00:00+09:00",
       "url": "https://n.news.naver.com/mnews/article/215/0001261663",
@@ -63,7 +76,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
@@ -247,22 +260,74 @@
       "category": "all",
       "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
-    },
-    {
-      "id": "014_0005558839",
-      "title": "한국거래소 \"삼전닉스 레버리지 심사기간 단축. 사실 아냐\"",
-      "pressName": "파이낸셜뉴스",
-      "publishedAt": "2026-08-08T15:30:00+09:00",
-      "url": "https://n.news.naver.com/mnews/article/014/0005558839",
-      "source": "domestic",
-      "sentiment": "neutral",
-      "sentimentScore": 0,
-      "category": "all",
-      "isBreaking": false,
-      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     }
   ],
   "overseas": [
+    {
+      "id": "050_0000109463",
+      "title": "AI 산업의 네 번째 변곡점, 해자는 모델에서 인프라로 이동한다",
+      "pressName": "한경비즈니스",
+      "publishedAt": "2026-08-09T05:02:00+09:00",
+      "url": "https://n.news.naver.com/mnews/article/050/0000109463",
+      "source": "overseas",
+      "sentiment": "neutral",
+      "sentimentScore": 0,
+      "category": "all",
+      "isBreaking": true,
+      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
+    },
+    {
+      "id": "025_0003543113",
+      "title": "E-클래스냐 신형 A6냐...막상 타보니 \"우열 가리기 어렵다\"",
+      "pressName": "중앙일보",
+      "publishedAt": "2026-08-09T05:01:00+09:00",
+      "url": "https://n.news.naver.com/mnews/article/025/0003543113",
+      "source": "overseas",
+      "sentiment": "neutral",
+      "sentimentScore": 0,
+      "category": "all",
+      "isBreaking": true,
+      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
+    },
+    {
+      "id": "050_0000109462",
+      "title": "핀셋 규제가 키운 풍선효과...시장 흔드는 '리밸런싱 역설'[전예진의 마켓 인사이트]",
+      "pressName": "한경비즈니스",
+      "publishedAt": "2026-08-09T04:52:00+09:00",
+      "url": "https://n.news.naver.com/mnews/article/050/0000109462",
+      "source": "overseas",
+      "sentiment": "neutral",
+      "sentimentScore": 0,
+      "category": "정책",
+      "isBreaking": true,
+      "beginnerExplanation": "정부 규제가 더 엄해진대요. 해당 기업들에 부담이 될 수 있어요."
+    },
+    {
+      "id": "050_0000109461",
+      "title": "\"버거 왕좌 흔들리나\"...웃는 버거킹, 우는 맥도날드",
+      "pressName": "한경비즈니스",
+      "publishedAt": "2026-08-09T04:16:00+09:00",
+      "url": "https://n.news.naver.com/mnews/article/050/0000109461",
+      "source": "overseas",
+      "sentiment": "neutral",
+      "sentimentScore": 0,
+      "category": "all",
+      "isBreaking": true,
+      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
+    },
+    {
+      "id": "001_0016240375",
+      "title": "불가리아 영공 침범한 드론 폭발...우크라 모델 추정(종합)",
+      "pressName": "연합뉴스",
+      "publishedAt": "2026-08-09T03:40:00+09:00",
+      "url": "https://n.news.naver.com/mnews/article/001/0016240375",
+      "source": "overseas",
+      "sentiment": "neutral",
+      "sentimentScore": 0,
+      "category": "all",
+      "isBreaking": true,
+      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
+    },
     {
       "id": "001_0016240368",
       "title": "불가리아 영공 침범한 드론 폭발...우크라 모델 추정",
@@ -273,7 +338,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
@@ -286,7 +351,7 @@
       "sentiment": "negative",
       "sentimentScore": 0,
       "category": "정책",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "정부 규제가 더 엄해진대요. 해당 기업들에 부담이 될 수 있어요."
     },
     {
@@ -299,7 +364,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
@@ -431,71 +496,6 @@
       "category": "all",
       "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
-    },
-    {
-      "id": "421_0009103639",
-      "title": "\"SK하이닉스, 충칭 공장 지분 매각 포함 다양한 옵션 검토 중\"",
-      "pressName": "뉴스1",
-      "publishedAt": "2026-08-08T18:29:00+09:00",
-      "url": "https://n.news.naver.com/mnews/article/421/0009103639",
-      "source": "overseas",
-      "sentiment": "neutral",
-      "sentimentScore": 0,
-      "category": "all",
-      "isBreaking": false,
-      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
-    },
-    {
-      "id": "293_0000088795",
-      "title": "토요타 라브4 PHEV, 전기모드로 106.9㎞ 달렸다[카미경]",
-      "pressName": "블로터",
-      "publishedAt": "2026-08-08T18:22:00+09:00",
-      "url": "https://n.news.naver.com/mnews/article/293/0000088795",
-      "source": "overseas",
-      "sentiment": "neutral",
-      "sentimentScore": 0,
-      "category": "all",
-      "isBreaking": false,
-      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
-    },
-    {
-      "id": "029_0003041278",
-      "title": "블룸버그 \"SK하닉, 중국 충칭 패키징공장 지분매각 검토\"",
-      "pressName": "디지털타임스",
-      "publishedAt": "2026-08-08T18:10:00+09:00",
-      "url": "https://n.news.naver.com/mnews/article/029/0003041278",
-      "source": "overseas",
-      "sentiment": "neutral",
-      "sentimentScore": 0,
-      "category": "all",
-      "isBreaking": false,
-      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
-    },
-    {
-      "id": "277_0005800497",
-      "title": "\"성사 시 4조 규모...SK하이닉스, 中충칭 패키징공장 지분매각 방안 검토\"",
-      "pressName": "아시아경제",
-      "publishedAt": "2026-08-08T18:09:00+09:00",
-      "url": "https://n.news.naver.com/mnews/article/277/0005800497",
-      "source": "overseas",
-      "sentiment": "neutral",
-      "sentimentScore": 0,
-      "category": "all",
-      "isBreaking": false,
-      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
-    },
-    {
-      "id": "015_0005318729",
-      "title": "삼전닉스 '성과급 공식' 흔들리나...'영업익 N%' 입법 전쟁 [김대영의 노무스쿨]",
-      "pressName": "한국경제",
-      "publishedAt": "2026-08-08T18:01:00+09:00",
-      "url": "https://n.news.naver.com/mnews/article/015/0005318729",
-      "source": "overseas",
-      "sentiment": "neutral",
-      "sentimentScore": 0,
-      "category": "all",
-      "isBreaking": false,
-      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     }
   ],
   "main": [
@@ -503,7 +503,7 @@
       "id": "014_0005558836",
       "title": "\"30대에 집도 샀는데\"...월 690만원 맞벌이, 남는 건 20만원뿐 [머니설계사무소]",
       "pressName": "네이버금융",
-      "publishedAt": "2026-08-08T16:22:33.126Z",
+      "publishedAt": "2026-08-08T20:19:23.828Z",
       "url": "https://n.news.naver.com/mnews/article/014/0005558836",
       "source": "main",
       "sentiment": "neutral",
@@ -516,7 +516,7 @@
       "id": "009_0005718241",
       "title": "\"금값 떨어진 지금이 기회다\"...골드바 쌓기 시작한 한·중 중앙은행 [원자재로 살아남기]",
       "pressName": "네이버금융",
-      "publishedAt": "2026-08-08T16:22:33.126Z",
+      "publishedAt": "2026-08-08T20:19:23.829Z",
       "url": "https://n.news.naver.com/mnews/article/009/0005718241",
       "source": "main",
       "sentiment": "neutral",
@@ -529,7 +529,7 @@
       "id": "009_0005718326",
       "title": "\"'콩'했는데 425만원 중고차값 물어줬어요\"...내달 나이롱 환자 검토제 도입",
       "pressName": "네이버금융",
-      "publishedAt": "2026-08-08T16:22:33.127Z",
+      "publishedAt": "2026-08-08T20:19:23.829Z",
       "url": "https://n.news.naver.com/mnews/article/009/0005718326",
       "source": "main",
       "sentiment": "neutral",

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-08T01:48:10.994Z",
+  "generatedAt": "2026-08-09T01:42:05.643Z",
   "maxDays": 365,
   "reports": [
     {
@@ -4466,22 +4466,22 @@
       "ticker": "PFE",
       "name": "Pfizer Inc.",
       "market": "us",
-      "broker": "Guggenheim",
-      "analyst": "Vamil Divan",
+      "broker": "CMB International Securities",
+      "analyst": "Jill Wu",
       "opinion": "Buy",
-      "targetPrice": 31,
+      "targetPrice": 35.75,
       "currentPrice": 26.76,
       "basePrice": 26.76,
       "basePriceDate": "2026-08-07",
-      "upside": 15.8,
+      "upside": 33.6,
       "sourceUrl": "https://stockanalysis.com/stocks/pfe/ratings/",
-      "sourceText": "Guggenheim Buy Maintains. Price target 35 -> 31.",
+      "sourceText": "CMB International Securities Buy Maintains. Price target 35.46 -> 35.75.",
       "reportTitle": "Buy Maintains",
-      "reasonSummary": "Buy Maintains. Guggenheim가 Buy 의견을 제시했고 현재가 기준 상승여력은 15.8%입니다. 2026-08-07 종가 대비 목표가 괴리는 15.8%입니다.",
+      "reasonSummary": "Buy Maintains. CMB International Securities가 Buy 의견을 제시했고 현재가 기준 상승여력은 33.6%입니다. 2026-08-07 종가 대비 목표가 괴리는 33.6%입니다.",
       "reasonBullets": [
-        "Guggenheim가 2026-08-07에 Buy 의견과 목표가를 제시했습니다.",
-        "현재가 $26.76 대비 목표가는 $31입니다.",
-        "2026-08-07 종가 $26.76 대비 괴리는 15.8%입니다."
+        "CMB International Securities가 2026-08-07에 Buy 의견과 목표가를 제시했습니다.",
+        "현재가 $26.76 대비 목표가는 $35.75입니다.",
+        "2026-08-07 종가 $26.76 대비 괴리는 33.6%입니다."
       ],
       "performance": {
         "week1": {
@@ -4515,22 +4515,22 @@
       "ticker": "PFE",
       "name": "Pfizer Inc.",
       "market": "us",
-      "broker": "CMB International Securities",
-      "analyst": "Jill Wu",
+      "broker": "Guggenheim",
+      "analyst": "Vamil Divan",
       "opinion": "Buy",
-      "targetPrice": 35.75,
+      "targetPrice": 31,
       "currentPrice": 26.76,
       "basePrice": 26.76,
       "basePriceDate": "2026-08-07",
-      "upside": 33.6,
+      "upside": 15.8,
       "sourceUrl": "https://stockanalysis.com/stocks/pfe/ratings/",
-      "sourceText": "CMB International Securities Buy Maintains. Price target 35.46 -> 35.75.",
+      "sourceText": "Guggenheim Buy Maintains. Price target 35 -> 31.",
       "reportTitle": "Buy Maintains",
-      "reasonSummary": "Buy Maintains. CMB International Securities가 Buy 의견을 제시했고 현재가 기준 상승여력은 33.6%입니다. 2026-08-07 종가 대비 목표가 괴리는 33.6%입니다.",
+      "reasonSummary": "Buy Maintains. Guggenheim가 Buy 의견을 제시했고 현재가 기준 상승여력은 15.8%입니다. 2026-08-07 종가 대비 목표가 괴리는 15.8%입니다.",
       "reasonBullets": [
-        "CMB International Securities가 2026-08-07에 Buy 의견과 목표가를 제시했습니다.",
-        "현재가 $26.76 대비 목표가는 $35.75입니다.",
-        "2026-08-07 종가 $26.76 대비 괴리는 33.6%입니다."
+        "Guggenheim가 2026-08-07에 Buy 의견과 목표가를 제시했습니다.",
+        "현재가 $26.76 대비 목표가는 $31입니다.",
+        "2026-08-07 종가 $26.76 대비 괴리는 15.8%입니다."
       ],
       "performance": {
         "week1": {
@@ -12322,55 +12322,6 @@
         "Evercore ISI가 2026-08-05에 Buy 의견과 목표가를 제시했습니다.",
         "현재가 $483.36 대비 목표가는 $579입니다.",
         "2026-08-05 종가 $482.05 대비 괴리는 20.1%입니다."
-      ],
-      "performance": {
-        "week1": {
-          "asOfDate": "2026-08-12",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "pending"
-        },
-        "month1": {
-          "asOfDate": "2026-09-04",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "pending"
-        },
-        "month3": {
-          "asOfDate": "2026-11-03",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "pending"
-        }
-      }
-    },
-    {
-      "date": "2026-08-05",
-      "ticker": "AMD",
-      "name": "Advanced Micro Devices, Inc.",
-      "market": "us",
-      "broker": "Wedbush",
-      "analyst": "Unknown Analyst",
-      "opinion": "Buy",
-      "targetPrice": 600,
-      "currentPrice": 483.36,
-      "basePrice": 482.05,
-      "basePriceDate": "2026-08-05",
-      "upside": 24.1,
-      "sourceUrl": "https://stockanalysis.com/stocks/amd/ratings/",
-      "sourceText": "Wedbush Buy Reiterates. Price target N/A -> 600.",
-      "reportTitle": "Buy Reiterates",
-      "reasonSummary": "Buy Reiterates. Wedbush가 Buy 의견을 제시했고 현재가 기준 상승여력은 24.1%입니다. 2026-08-05 종가 대비 목표가 괴리는 24.5%입니다.",
-      "reasonBullets": [
-        "Wedbush가 2026-08-05에 Buy 의견과 목표가를 제시했습니다.",
-        "현재가 $483.36 대비 목표가는 $600입니다.",
-        "2026-08-05 종가 $482.05 대비 괴리는 24.5%입니다."
       ],
       "performance": {
         "week1": {
@@ -48194,11 +48145,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-07-31",
-          "closePrice": 0,
+          "closePrice": 243.05,
           "returnPct": 0,
           "targetProgressPct": 0,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-08-23",
@@ -48341,11 +48292,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-07-31",
-          "closePrice": 0,
+          "closePrice": 243.05,
           "returnPct": 0,
           "targetProgressPct": 0,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-08-23",
@@ -49223,11 +49174,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-07-30",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
+          "closePrice": 333.66,
+          "returnPct": 5,
+          "targetProgressPct": 12.1,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-08-22",
@@ -49370,11 +49321,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-07-30",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
+          "closePrice": 110.07,
+          "returnPct": 19.7,
+          "targetProgressPct": 37.7,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-08-22",
@@ -49419,11 +49370,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-07-30",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
+          "closePrice": 110.07,
+          "returnPct": 19.7,
+          "targetProgressPct": 30.2,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-08-22",
@@ -49468,11 +49419,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-07-30",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
+          "closePrice": 110.07,
+          "returnPct": 19.7,
+          "targetProgressPct": 54.8,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-08-22",
@@ -49517,11 +49468,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-07-30",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
+          "closePrice": 110.07,
+          "returnPct": 19.7,
+          "targetProgressPct": 47.6,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-08-22",
@@ -49566,11 +49517,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-07-30",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
+          "closePrice": 350.85,
+          "returnPct": 0.3,
+          "targetProgressPct": 3.8,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-08-22",
@@ -49615,11 +49566,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-07-30",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
+          "closePrice": 104.33,
+          "returnPct": 2.7,
+          "targetProgressPct": 6.4,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-08-22",
@@ -49664,11 +49615,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-07-30",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
+          "closePrice": 104.33,
+          "returnPct": 2.7,
+          "targetProgressPct": 22,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-08-22",
@@ -49713,11 +49664,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-07-30",
-          "closePrice": 0,
-          "returnPct": 0,
+          "closePrice": 599.47,
+          "returnPct": -1.7,
           "targetProgressPct": 0,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-08-22",
@@ -49762,11 +49713,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-07-30",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
+          "closePrice": 23.21,
+          "returnPct": 1.1,
+          "targetProgressPct": 6.2,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-08-22",
@@ -49811,11 +49762,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-07-30",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
+          "closePrice": 23.21,
+          "returnPct": 1.1,
+          "targetProgressPct": 12.3,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-08-22",
@@ -49860,11 +49811,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-07-30",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
+          "closePrice": 23.21,
+          "returnPct": 1.1,
+          "targetProgressPct": 3.6,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-08-22",
@@ -49909,11 +49860,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-07-30",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
+          "closePrice": 23.21,
+          "returnPct": 1.1,
+          "targetProgressPct": 6.2,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-08-22",
@@ -49958,11 +49909,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-07-30",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
+          "closePrice": 23.21,
+          "returnPct": 1.1,
+          "targetProgressPct": 2.5,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-08-22",
@@ -50007,11 +49958,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-07-30",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
+          "closePrice": 23.21,
+          "returnPct": 1.1,
+          "targetProgressPct": 5,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-08-22",
@@ -50742,11 +50693,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-07-29",
-          "closePrice": 0,
-          "returnPct": 0,
+          "closePrice": 117.74,
+          "returnPct": -6.4,
           "targetProgressPct": 0,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-08-21",
@@ -50791,11 +50742,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-07-29",
-          "closePrice": 0,
-          "returnPct": 0,
+          "closePrice": 314.15,
+          "returnPct": -6.3,
           "targetProgressPct": 0,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-08-21",
@@ -50840,11 +50791,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-07-29",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
+          "closePrice": 104.47,
+          "returnPct": 3.6,
+          "targetProgressPct": 14.6,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-08-21",
@@ -50889,11 +50840,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-07-29",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
+          "closePrice": 114.22,
+          "returnPct": 4.5,
+          "targetProgressPct": 17.7,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-08-21",
@@ -50938,11 +50889,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-07-29",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
+          "closePrice": 73.63,
+          "returnPct": 7.4,
+          "targetProgressPct": 31,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-08-21",
@@ -50987,11 +50938,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-07-29",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
+          "closePrice": 73.63,
+          "returnPct": 7.4,
+          "targetProgressPct": 23.8,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-08-21",
@@ -58496,7 +58447,7 @@
           "returnPct": 0,
           "targetProgressPct": 0,
           "success": false,
-          "status": "pending"
+          "status": "unavailable"
         },
         "month3": {
           "asOfDate": "2026-10-08",
@@ -58545,7 +58496,7 @@
           "returnPct": 0,
           "targetProgressPct": 0,
           "success": false,
-          "status": "pending"
+          "status": "unavailable"
         },
         "month3": {
           "asOfDate": "2026-10-08",
@@ -58589,12 +58540,12 @@
           "status": "complete"
         },
         "month1": {
-          "asOfDate": "2026-08-09",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
+          "asOfDate": "2026-08-07",
+          "closePrice": 223.96,
+          "returnPct": 6.2,
+          "targetProgressPct": 16.9,
           "success": false,
-          "status": "pending"
+          "status": "complete"
         },
         "month3": {
           "asOfDate": "2026-10-08",
@@ -58638,12 +58589,12 @@
           "status": "complete"
         },
         "month1": {
-          "asOfDate": "2026-08-09",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
+          "asOfDate": "2026-08-07",
+          "closePrice": 147.02,
+          "returnPct": 4.5,
+          "targetProgressPct": 3.5,
           "success": false,
-          "status": "pending"
+          "status": "complete"
         },
         "month3": {
           "asOfDate": "2026-10-08",
@@ -58687,12 +58638,12 @@
           "status": "complete"
         },
         "month1": {
-          "asOfDate": "2026-08-09",
-          "closePrice": 0,
-          "returnPct": 0,
+          "asOfDate": "2026-08-07",
+          "closePrice": 877.57,
+          "returnPct": -10.4,
           "targetProgressPct": 0,
           "success": false,
-          "status": "pending"
+          "status": "complete"
         },
         "month3": {
           "asOfDate": "2026-10-08",
@@ -58736,12 +58687,12 @@
           "status": "complete"
         },
         "month1": {
-          "asOfDate": "2026-08-09",
-          "closePrice": 0,
-          "returnPct": 0,
+          "asOfDate": "2026-08-07",
+          "closePrice": 877.57,
+          "returnPct": -10.4,
           "targetProgressPct": 0,
           "success": false,
-          "status": "pending"
+          "status": "complete"
         },
         "month3": {
           "asOfDate": "2026-10-08",
@@ -58785,12 +58736,12 @@
           "status": "complete"
         },
         "month1": {
-          "asOfDate": "2026-08-09",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
+          "asOfDate": "2026-08-07",
+          "closePrice": 139.02,
+          "returnPct": 1.2,
+          "targetProgressPct": 3.8,
           "success": false,
-          "status": "pending"
+          "status": "complete"
         },
         "month3": {
           "asOfDate": "2026-10-08",
@@ -58834,12 +58785,12 @@
           "status": "complete"
         },
         "month1": {
-          "asOfDate": "2026-08-09",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
+          "asOfDate": "2026-08-07",
+          "closePrice": 139.02,
+          "returnPct": 1.2,
+          "targetProgressPct": 9.3,
           "success": false,
-          "status": "pending"
+          "status": "complete"
         },
         "month3": {
           "asOfDate": "2026-10-08",
@@ -65530,12 +65481,12 @@
               "status": "complete"
             },
             "month1": {
-              "asOfDate": "2026-08-09",
-              "closePrice": 0,
-              "returnPct": 0,
+              "asOfDate": "2026-08-07",
+              "closePrice": 877.57,
+              "returnPct": -10.4,
               "targetProgressPct": 0,
               "success": false,
-              "status": "pending"
+              "status": "complete"
             },
             "month3": {
               "asOfDate": "2026-10-08",
@@ -65579,12 +65530,12 @@
               "status": "complete"
             },
             "month1": {
-              "asOfDate": "2026-08-09",
-              "closePrice": 0,
-              "returnPct": 0,
+              "asOfDate": "2026-08-07",
+              "closePrice": 877.57,
+              "returnPct": -10.4,
               "targetProgressPct": 0,
               "success": false,
-              "status": "pending"
+              "status": "complete"
             },
             "month3": {
               "asOfDate": "2026-10-08",
@@ -66799,49 +66750,49 @@
       "name": "Pfizer Inc.",
       "market": "us",
       "latestReportDate": "2026-08-07",
-      "latestBroker": "Guggenheim",
+      "latestBroker": "CMB International Securities",
       "latestOpinion": "Buy",
-      "latestTargetPrice": 31,
+      "latestTargetPrice": 35.75,
       "latestCurrentPrice": 26.76,
       "latestBasePrice": 26.76,
       "avgUpside": 20.5,
       "reportCount": 3,
-      "reasonSummary": "Buy Maintains. Guggenheim가 Buy 의견을 제시했고 현재가 기준 상승여력은 15.8%입니다. 2026-08-07 종가 대비 목표가 괴리는 15.8%입니다.",
+      "reasonSummary": "Buy Maintains. CMB International Securities가 Buy 의견을 제시했고 현재가 기준 상승여력은 33.6%입니다. 2026-08-07 종가 대비 목표가 괴리는 33.6%입니다.",
       "reasonBullets": [
-        "Guggenheim가 2026-08-07에 Buy 의견과 목표가를 제시했습니다.",
-        "현재가 $26.76 대비 목표가는 $31입니다.",
-        "2026-08-07 종가 $26.76 대비 괴리는 15.8%입니다."
+        "CMB International Securities가 2026-08-07에 Buy 의견과 목표가를 제시했습니다.",
+        "현재가 $26.76 대비 목표가는 $35.75입니다.",
+        "2026-08-07 종가 $26.76 대비 괴리는 33.6%입니다."
       ],
       "investmentLogic": {
         "summary": "Buy Maintains",
         "bullets": [
           "Buy Maintains",
-          "Buy Maintains Guggenheim Buy Maintains.",
-          "Price target 35 -> 31."
+          "Buy Maintains CMB International Securities Buy Maintains.",
+          "Price target 35.46 -> 35.75."
         ]
       },
       "estimateRevision": {
         "summary": "유지 신호입니다. 리포트 원문에서 추정치 관련 표현을 기준으로 판단했습니다.",
         "bullets": [
-          "Buy Maintains Guggenheim Buy Maintains.",
-          "Price target 35 -> 31.",
+          "Buy Maintains CMB International Securities Buy Maintains.",
+          "Price target 35.46 -> 35.75.",
           "Buy Maintains."
         ],
         "signal": "flat"
       },
       "valuation": {
-        "summary": "현재가 $26.76 대비 목표가 $31가 제시돼 밸류에이션 여력을 확인할 수 있습니다.",
+        "summary": "현재가 $26.76 대비 목표가 $35.75가 제시돼 밸류에이션 여력을 확인할 수 있습니다.",
         "bullets": [
-          "Buy Maintains Guggenheim Buy Maintains.",
-          "Price target 35 -> 31.",
+          "Buy Maintains CMB International Securities Buy Maintains.",
+          "Price target 35.46 -> 35.75.",
           "Buy Maintains."
         ]
       },
       "sectorCycle": {
-        "summary": "Buy Maintains Guggenheim Buy Maintains.",
+        "summary": "Buy Maintains CMB International Securities Buy Maintains.",
         "bullets": [
-          "Buy Maintains Guggenheim Buy Maintains.",
-          "Price target 35 -> 31.",
+          "Buy Maintains CMB International Securities Buy Maintains.",
+          "Price target 35.46 -> 35.75.",
           "Buy Maintains."
         ]
       },
@@ -66851,22 +66802,22 @@
           "ticker": "PFE",
           "name": "Pfizer Inc.",
           "market": "us",
-          "broker": "Guggenheim",
-          "analyst": "Vamil Divan",
+          "broker": "CMB International Securities",
+          "analyst": "Jill Wu",
           "opinion": "Buy",
-          "targetPrice": 31,
+          "targetPrice": 35.75,
           "currentPrice": 26.76,
           "basePrice": 26.76,
           "basePriceDate": "2026-08-07",
-          "upside": 15.8,
+          "upside": 33.6,
           "sourceUrl": "https://stockanalysis.com/stocks/pfe/ratings/",
-          "sourceText": "Guggenheim Buy Maintains. Price target 35 -> 31.",
+          "sourceText": "CMB International Securities Buy Maintains. Price target 35.46 -> 35.75.",
           "reportTitle": "Buy Maintains",
-          "reasonSummary": "Buy Maintains. Guggenheim가 Buy 의견을 제시했고 현재가 기준 상승여력은 15.8%입니다. 2026-08-07 종가 대비 목표가 괴리는 15.8%입니다.",
+          "reasonSummary": "Buy Maintains. CMB International Securities가 Buy 의견을 제시했고 현재가 기준 상승여력은 33.6%입니다. 2026-08-07 종가 대비 목표가 괴리는 33.6%입니다.",
           "reasonBullets": [
-            "Guggenheim가 2026-08-07에 Buy 의견과 목표가를 제시했습니다.",
-            "현재가 $26.76 대비 목표가는 $31입니다.",
-            "2026-08-07 종가 $26.76 대비 괴리는 15.8%입니다."
+            "CMB International Securities가 2026-08-07에 Buy 의견과 목표가를 제시했습니다.",
+            "현재가 $26.76 대비 목표가는 $35.75입니다.",
+            "2026-08-07 종가 $26.76 대비 괴리는 33.6%입니다."
           ],
           "performance": {
             "week1": {
@@ -66900,22 +66851,22 @@
           "ticker": "PFE",
           "name": "Pfizer Inc.",
           "market": "us",
-          "broker": "CMB International Securities",
-          "analyst": "Jill Wu",
+          "broker": "Guggenheim",
+          "analyst": "Vamil Divan",
           "opinion": "Buy",
-          "targetPrice": 35.75,
+          "targetPrice": 31,
           "currentPrice": 26.76,
           "basePrice": 26.76,
           "basePriceDate": "2026-08-07",
-          "upside": 33.6,
+          "upside": 15.8,
           "sourceUrl": "https://stockanalysis.com/stocks/pfe/ratings/",
-          "sourceText": "CMB International Securities Buy Maintains. Price target 35.46 -> 35.75.",
+          "sourceText": "Guggenheim Buy Maintains. Price target 35 -> 31.",
           "reportTitle": "Buy Maintains",
-          "reasonSummary": "Buy Maintains. CMB International Securities가 Buy 의견을 제시했고 현재가 기준 상승여력은 33.6%입니다. 2026-08-07 종가 대비 목표가 괴리는 33.6%입니다.",
+          "reasonSummary": "Buy Maintains. Guggenheim가 Buy 의견을 제시했고 현재가 기준 상승여력은 15.8%입니다. 2026-08-07 종가 대비 목표가 괴리는 15.8%입니다.",
           "reasonBullets": [
-            "CMB International Securities가 2026-08-07에 Buy 의견과 목표가를 제시했습니다.",
-            "현재가 $26.76 대비 목표가는 $35.75입니다.",
-            "2026-08-07 종가 $26.76 대비 괴리는 33.6%입니다."
+            "Guggenheim가 2026-08-07에 Buy 의견과 목표가를 제시했습니다.",
+            "현재가 $26.76 대비 목표가는 $31입니다.",
+            "2026-08-07 종가 $26.76 대비 괴리는 15.8%입니다."
           ],
           "performance": {
             "week1": {
@@ -75917,8 +75868,8 @@
       "latestTargetPrice": 570,
       "latestCurrentPrice": 483.36,
       "latestBasePrice": 489.28,
-      "avgUpside": 28.5,
-      "reportCount": 7,
+      "avgUpside": 29.3,
+      "reportCount": 6,
       "reasonSummary": "Buy Maintains. DBS가 Buy 의견을 제시했고 현재가 기준 상승여력은 17.9%입니다. 2026-08-06 종가 대비 목표가 괴리는 16.5%입니다.",
       "reasonBullets": [
         "DBS가 2026-08-06에 Buy 의견과 목표가를 제시했습니다.",
@@ -76430,11 +76381,11 @@
           "performance": {
             "week1": {
               "asOfDate": "2026-07-29",
-              "closePrice": 0,
-              "returnPct": 0,
+              "closePrice": 117.74,
+              "returnPct": -6.4,
               "targetProgressPct": 0,
               "success": false,
-              "status": "unavailable"
+              "status": "complete"
             },
             "month1": {
               "asOfDate": "2026-08-21",
@@ -76486,12 +76437,12 @@
               "status": "complete"
             },
             "month1": {
-              "asOfDate": "2026-08-09",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
+              "asOfDate": "2026-08-07",
+              "closePrice": 147.02,
+              "returnPct": 4.5,
+              "targetProgressPct": 3.5,
               "success": false,
-              "status": "pending"
+              "status": "complete"
             },
             "month3": {
               "asOfDate": "2026-10-08",
@@ -77327,11 +77278,11 @@
           "performance": {
             "week1": {
               "asOfDate": "2026-07-30",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
+              "closePrice": 104.33,
+              "returnPct": 2.7,
+              "targetProgressPct": 6.4,
               "success": false,
-              "status": "unavailable"
+              "status": "complete"
             },
             "month1": {
               "asOfDate": "2026-08-22",
@@ -77376,11 +77327,11 @@
           "performance": {
             "week1": {
               "asOfDate": "2026-07-30",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
+              "closePrice": 104.33,
+              "returnPct": 2.7,
+              "targetProgressPct": 22,
               "success": false,
-              "status": "unavailable"
+              "status": "complete"
             },
             "month1": {
               "asOfDate": "2026-08-22",
@@ -83632,11 +83583,11 @@
           "performance": {
             "week1": {
               "asOfDate": "2026-07-29",
-              "closePrice": 0,
-              "returnPct": 0,
+              "closePrice": 314.15,
+              "returnPct": -6.3,
               "targetProgressPct": 0,
               "success": false,
-              "status": "unavailable"
+              "status": "complete"
             },
             "month1": {
               "asOfDate": "2026-08-21",
@@ -92642,11 +92593,11 @@
           "performance": {
             "week1": {
               "asOfDate": "2026-07-30",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
+              "closePrice": 333.66,
+              "returnPct": 5,
+              "targetProgressPct": 12.1,
               "success": false,
-              "status": "unavailable"
+              "status": "complete"
             },
             "month1": {
               "asOfDate": "2026-08-22",
@@ -92948,12 +92899,12 @@
               "status": "complete"
             },
             "month1": {
-              "asOfDate": "2026-08-09",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
+              "asOfDate": "2026-08-07",
+              "closePrice": 223.96,
+              "returnPct": 6.2,
+              "targetProgressPct": 16.9,
               "success": false,
-              "status": "pending"
+              "status": "complete"
             },
             "month3": {
               "asOfDate": "2026-10-08",
@@ -93745,11 +93696,11 @@
           "performance": {
             "week1": {
               "asOfDate": "2026-07-30",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
+              "closePrice": 350.85,
+              "returnPct": 0.3,
+              "targetProgressPct": 3.8,
               "success": false,
-              "status": "unavailable"
+              "status": "complete"
             },
             "month1": {
               "asOfDate": "2026-08-22",
@@ -108350,11 +108301,11 @@
           "performance": {
             "week1": {
               "asOfDate": "2026-07-31",
-              "closePrice": 0,
+              "closePrice": 243.05,
               "returnPct": 0,
               "targetProgressPct": 0,
               "success": false,
-              "status": "unavailable"
+              "status": "complete"
             },
             "month1": {
               "asOfDate": "2026-08-23",
@@ -108497,11 +108448,11 @@
           "performance": {
             "week1": {
               "asOfDate": "2026-07-31",
-              "closePrice": 0,
+              "closePrice": 243.05,
               "returnPct": 0,
               "targetProgressPct": 0,
               "success": false,
-              "status": "unavailable"
+              "status": "complete"
             },
             "month1": {
               "asOfDate": "2026-08-23",
@@ -114521,11 +114472,11 @@
           "performance": {
             "week1": {
               "asOfDate": "2026-07-30",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
+              "closePrice": 110.07,
+              "returnPct": 19.7,
+              "targetProgressPct": 37.7,
               "success": false,
-              "status": "unavailable"
+              "status": "complete"
             },
             "month1": {
               "asOfDate": "2026-08-22",
@@ -114570,11 +114521,11 @@
           "performance": {
             "week1": {
               "asOfDate": "2026-07-30",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
+              "closePrice": 110.07,
+              "returnPct": 19.7,
+              "targetProgressPct": 30.2,
               "success": false,
-              "status": "unavailable"
+              "status": "complete"
             },
             "month1": {
               "asOfDate": "2026-08-22",
@@ -114722,11 +114673,11 @@
           "performance": {
             "week1": {
               "asOfDate": "2026-07-29",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
+              "closePrice": 73.63,
+              "returnPct": 7.4,
+              "targetProgressPct": 31,
               "success": false,
-              "status": "unavailable"
+              "status": "complete"
             },
             "month1": {
               "asOfDate": "2026-08-21",
@@ -114771,11 +114722,11 @@
           "performance": {
             "week1": {
               "asOfDate": "2026-07-29",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
+              "closePrice": 73.63,
+              "returnPct": 7.4,
+              "targetProgressPct": 23.8,
               "success": false,
-              "status": "unavailable"
+              "status": "complete"
             },
             "month1": {
               "asOfDate": "2026-08-21",
@@ -118597,11 +118548,11 @@
           "performance": {
             "week1": {
               "asOfDate": "2026-07-30",
-              "closePrice": 0,
-              "returnPct": 0,
+              "closePrice": 599.47,
+              "returnPct": -1.7,
               "targetProgressPct": 0,
               "success": false,
-              "status": "unavailable"
+              "status": "complete"
             },
             "month1": {
               "asOfDate": "2026-08-22",
@@ -118896,11 +118847,11 @@
           "performance": {
             "week1": {
               "asOfDate": "2026-07-30",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
+              "closePrice": 23.21,
+              "returnPct": 1.1,
+              "targetProgressPct": 6.2,
               "success": false,
-              "status": "unavailable"
+              "status": "complete"
             },
             "month1": {
               "asOfDate": "2026-08-22",
@@ -118945,11 +118896,11 @@
           "performance": {
             "week1": {
               "asOfDate": "2026-07-30",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
+              "closePrice": 23.21,
+              "returnPct": 1.1,
+              "targetProgressPct": 12.3,
               "success": false,
-              "status": "unavailable"
+              "status": "complete"
             },
             "month1": {
               "asOfDate": "2026-08-22",
@@ -118994,11 +118945,11 @@
           "performance": {
             "week1": {
               "asOfDate": "2026-07-30",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
+              "closePrice": 23.21,
+              "returnPct": 1.1,
+              "targetProgressPct": 3.6,
               "success": false,
-              "status": "unavailable"
+              "status": "complete"
             },
             "month1": {
               "asOfDate": "2026-08-22",
@@ -119043,11 +118994,11 @@
           "performance": {
             "week1": {
               "asOfDate": "2026-07-30",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
+              "closePrice": 23.21,
+              "returnPct": 1.1,
+              "targetProgressPct": 6.2,
               "success": false,
-              "status": "unavailable"
+              "status": "complete"
             },
             "month1": {
               "asOfDate": "2026-08-22",
@@ -119092,11 +119043,11 @@
           "performance": {
             "week1": {
               "asOfDate": "2026-07-30",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
+              "closePrice": 23.21,
+              "returnPct": 1.1,
+              "targetProgressPct": 2.5,
               "success": false,
-              "status": "unavailable"
+              "status": "complete"
             },
             "month1": {
               "asOfDate": "2026-08-22",
@@ -121377,7 +121328,7 @@
               "returnPct": 0,
               "targetProgressPct": 0,
               "success": false,
-              "status": "pending"
+              "status": "unavailable"
             },
             "month3": {
               "asOfDate": "2026-10-08",
@@ -125770,12 +125721,12 @@
               "status": "complete"
             },
             "month1": {
-              "asOfDate": "2026-08-09",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
+              "asOfDate": "2026-08-07",
+              "closePrice": 139.02,
+              "returnPct": 1.2,
+              "targetProgressPct": 3.8,
               "success": false,
-              "status": "pending"
+              "status": "complete"
             },
             "month3": {
               "asOfDate": "2026-10-08",
@@ -125819,12 +125770,12 @@
               "status": "complete"
             },
             "month1": {
-              "asOfDate": "2026-08-09",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
+              "asOfDate": "2026-08-07",
+              "closePrice": 139.02,
+              "returnPct": 1.2,
+              "targetProgressPct": 9.3,
               "success": false,
-              "status": "pending"
+              "status": "complete"
             },
             "month3": {
               "asOfDate": "2026-10-08",

@@ -65,6 +65,22 @@
       "calculator": null
     },
     {
+      "id": "2308",
+      "name": "네오사피엔스",
+      "subscriptionStart": "2026-09-10",
+      "subscriptionEnd": "2026-09-11",
+      "confirmedPrice": null,
+      "priceBandLow": null,
+      "priceBandHigh": null,
+      "underwriter": "",
+      "competitionRatio": "대신증권",
+      "listingDate": null,
+      "refundDate": "2026-09-15",
+      "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2308&l=&page=1",
+      "status": "청약예정",
+      "calculator": null
+    },
+    {
       "id": "2313",
       "name": "KB스팩34호",
       "subscriptionStart": "2026-09-10",
@@ -93,22 +109,6 @@
       "listingDate": null,
       "refundDate": "2026-09-11",
       "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2307&l=&page=1",
-      "status": "청약예정",
-      "calculator": null
-    },
-    {
-      "id": "2308",
-      "name": "네오사피엔스",
-      "subscriptionStart": "2026-09-08",
-      "subscriptionEnd": "2026-09-09",
-      "confirmedPrice": null,
-      "priceBandLow": null,
-      "priceBandHigh": null,
-      "underwriter": "",
-      "competitionRatio": "대신증권",
-      "listingDate": null,
-      "refundDate": "2026-09-11",
-      "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2308&l=&page=1",
       "status": "청약예정",
       "calculator": null
     },
@@ -481,6 +481,6 @@
       "calculator": null
     }
   ],
-  "fetchedAt": "2026-08-14T05:27:37.264Z",
+  "fetchedAt": "2026-08-14T09:02:24.461Z",
   "totalCount": 30
 }

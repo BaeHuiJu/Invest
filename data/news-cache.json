@@ -1,6 +1,45 @@
 {
-  "generatedAt": "2026-08-15T12:20:43.999Z",
+  "generatedAt": "2026-08-15T16:14:16.655Z",
   "domestic": [
+    {
+      "id": "029_0003042528",
+      "title": "\"60만전자 보인다\"...삼성전자, 저점 뚫고 '강세 국면' 진입하나",
+      "pressName": "디지털타임스",
+      "publishedAt": "2026-08-16T01:00:00+09:00",
+      "url": "https://n.news.naver.com/mnews/article/029/0003042528",
+      "source": "domestic",
+      "sentiment": "positive",
+      "sentimentScore": 0,
+      "category": "all",
+      "isBreaking": true,
+      "beginnerExplanation": "좋은 소식이 나왔어요. 시장이 긍정적으로 반응할 가능성이 있어요."
+    },
+    {
+      "id": "016_0002684401",
+      "title": "'SK하이닉스 주주들 난리난다' 하루만에 10% 급락...'솔리다임' 상장 무섭네 [투자360]",
+      "pressName": "헤럴드경제",
+      "publishedAt": "2026-08-15T21:41:00+09:00",
+      "url": "https://n.news.naver.com/mnews/article/016/0002684401",
+      "source": "domestic",
+      "sentiment": "negative",
+      "sentimentScore": 0,
+      "category": "all",
+      "isBreaking": false,
+      "beginnerExplanation": "주가가 갑자기 많이 떨어졌어요. 패닉 판매는 위험해요. 침착함이 중요합니다."
+    },
+    {
+      "id": "015_0005321261",
+      "title": "줄줄이 마이너스인데...\"거꾸로 넣었더니\" 나홀로 웃은 정체 [투자톡]",
+      "pressName": "한국경제",
+      "publishedAt": "2026-08-15T21:15:00+09:00",
+      "url": "https://n.news.naver.com/mnews/article/015/0005321261",
+      "source": "domestic",
+      "sentiment": "neutral",
+      "sentimentScore": 0,
+      "category": "all",
+      "isBreaking": false,
+      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
+    },
     {
       "id": "016_0002684393",
       "title": "\"이런 기업 주식은 더 사줘야\" 독립운동가 '명예 여권' 만든 기업...광복절 주가도 '빙그레' [종목Pick]",
@@ -11,7 +50,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
@@ -24,7 +63,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "정책",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "수입품에 세금을 붙이려고 해요. 물가와 기업 비용에 영향을 줄 수 있어요."
     },
     {
@@ -37,7 +76,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
@@ -50,7 +89,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
@@ -63,7 +102,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
@@ -76,7 +115,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
@@ -221,48 +260,139 @@
       "category": "수급",
       "isBreaking": false,
       "beginnerExplanation": "외국 투자자들이 한국 주식을 많이 사고 있어요. 긍정적인 신호에요."
-    },
-    {
-      "id": "277_0005803532",
-      "title": "백악관도 대규모 투자한다는 '이것'...ETF로 투자해볼까 [주末머니]",
-      "pressName": "아시아경제",
-      "publishedAt": "2026-08-15T15:50:00+09:00",
-      "url": "https://n.news.naver.com/mnews/article/277/0005803532",
-      "source": "domestic",
-      "sentiment": "neutral",
-      "sentimentScore": 0,
-      "category": "all",
-      "isBreaking": false,
-      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
-    },
-    {
-      "id": "215_0001262492",
-      "title": "버핏 떠난 버크셔, '팔자' 끝냈다...'원픽' 종목 뭐길래",
-      "pressName": "한국경제TV",
-      "publishedAt": "2026-08-15T15:20:00+09:00",
-      "url": "https://n.news.naver.com/mnews/article/215/0001262492",
-      "source": "domestic",
-      "sentiment": "neutral",
-      "sentimentScore": 0,
-      "category": "수급",
-      "isBreaking": false,
-      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
-    },
-    {
-      "id": "011_0004652091",
-      "title": "박진영은 \"무조건 산다\" 했는데...트와이스·스키즈 변수에 JYP 목표가 '뚝'",
-      "pressName": "서울경제",
-      "publishedAt": "2026-08-15T15:05:00+09:00",
-      "url": "https://n.news.naver.com/mnews/article/011/0004652091",
-      "source": "domestic",
-      "sentiment": "neutral",
-      "sentimentScore": 0,
-      "category": "all",
-      "isBreaking": false,
-      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     }
   ],
   "overseas": [
+    {
+      "id": "629_0000524872",
+      "title": "지분 늘리고 빌 게이츠 만나고...HD현대, '정기선 리더십' 본격화",
+      "pressName": "더팩트",
+      "publishedAt": "2026-08-16T00:01:00+09:00",
+      "url": "https://n.news.naver.com/mnews/article/629/0000524872",
+      "source": "overseas",
+      "sentiment": "neutral",
+      "sentimentScore": 0,
+      "category": "all",
+      "isBreaking": true,
+      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
+    },
+    {
+      "id": "016_0002684404",
+      "title": "한국의료관광진흥협회-야놀자리서치, 의료·웰니스 관광 활성화 MOU",
+      "pressName": "헤럴드경제",
+      "publishedAt": "2026-08-15T23:30:00+09:00",
+      "url": "https://n.news.naver.com/mnews/article/016/0002684404",
+      "source": "overseas",
+      "sentiment": "neutral",
+      "sentimentScore": 0,
+      "category": "all",
+      "isBreaking": true,
+      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
+    },
+    {
+      "id": "030_0003457710",
+      "title": "시민단체 \"석포제련소 카드뮴 최대 95.2% 기여 추정...오염퇴적물 정화조치 미뤄\"",
+      "pressName": "전자신문",
+      "publishedAt": "2026-08-15T21:48:00+09:00",
+      "url": "https://n.news.naver.com/mnews/article/030/0003457710",
+      "source": "overseas",
+      "sentiment": "neutral",
+      "sentimentScore": 0,
+      "category": "all",
+      "isBreaking": false,
+      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
+    },
+    {
+      "id": "001_0016253404",
+      "title": "광복절, 광안리 하늘에 태극의 빛",
+      "pressName": "연합뉴스",
+      "publishedAt": "2026-08-15T21:22:00+09:00",
+      "url": "https://n.news.naver.com/mnews/article/001/0016253404",
+      "source": "overseas",
+      "sentiment": "neutral",
+      "sentimentScore": 0,
+      "category": "all",
+      "isBreaking": false,
+      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
+    },
+    {
+      "id": "001_0016253403",
+      "title": "광안리 밤하늘에 뜬 광복의 역사",
+      "pressName": "연합뉴스",
+      "publishedAt": "2026-08-15T21:22:00+09:00",
+      "url": "https://n.news.naver.com/mnews/article/001/0016253403",
+      "source": "overseas",
+      "sentiment": "neutral",
+      "sentimentScore": 0,
+      "category": "all",
+      "isBreaking": false,
+      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
+    },
+    {
+      "id": "001_0016253402",
+      "title": "광안리 하늘에 그려진 광복의 순간",
+      "pressName": "연합뉴스",
+      "publishedAt": "2026-08-15T21:21:00+09:00",
+      "url": "https://n.news.naver.com/mnews/article/001/0016253402",
+      "source": "overseas",
+      "sentiment": "neutral",
+      "sentimentScore": 0,
+      "category": "all",
+      "isBreaking": false,
+      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
+    },
+    {
+      "id": "001_0016253401",
+      "title": "광안리 하늘에 그려진 광복의 순간",
+      "pressName": "연합뉴스",
+      "publishedAt": "2026-08-15T21:21:00+09:00",
+      "url": "https://n.news.naver.com/mnews/article/001/0016253401",
+      "source": "overseas",
+      "sentiment": "neutral",
+      "sentimentScore": 0,
+      "category": "all",
+      "isBreaking": false,
+      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
+    },
+    {
+      "id": "001_0016253400",
+      "title": "광안리 하늘에 그려진 광복의 순간",
+      "pressName": "연합뉴스",
+      "publishedAt": "2026-08-15T21:21:00+09:00",
+      "url": "https://n.news.naver.com/mnews/article/001/0016253400",
+      "source": "overseas",
+      "sentiment": "neutral",
+      "sentimentScore": 0,
+      "category": "all",
+      "isBreaking": false,
+      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
+    },
+    {
+      "id": "001_0016253399",
+      "title": "광복절 밤, 광안리 밝힌 희망의 빛",
+      "pressName": "연합뉴스",
+      "publishedAt": "2026-08-15T21:20:00+09:00",
+      "url": "https://n.news.naver.com/mnews/article/001/0016253399",
+      "source": "overseas",
+      "sentiment": "neutral",
+      "sentimentScore": 0,
+      "category": "all",
+      "isBreaking": false,
+      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
+    },
+    {
+      "id": "001_0016253398",
+      "title": "광복절 밤, 광안리 밝힌 희망의 빛",
+      "pressName": "연합뉴스",
+      "publishedAt": "2026-08-15T21:20:00+09:00",
+      "url": "https://n.news.naver.com/mnews/article/001/0016253398",
+      "source": "overseas",
+      "sentiment": "neutral",
+      "sentimentScore": 0,
+      "category": "all",
+      "isBreaking": false,
+      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
+    },
     {
       "id": "001_0016253397",
       "title": "광안리 밤 밝힌 비치발리볼 축하쇼",
@@ -273,7 +403,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
@@ -286,7 +416,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
@@ -299,7 +429,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
@@ -312,7 +442,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
@@ -325,7 +455,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
@@ -338,7 +468,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
@@ -353,144 +483,27 @@
       "category": "all",
       "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
-    },
-    {
-      "id": "629_0000524856",
-      "title": "최태원·노소영 재산분할, 다시 대법으로...반도체 기여 논란 '재점화'",
-      "pressName": "더팩트",
-      "publishedAt": "2026-08-15T18:21:00+09:00",
-      "url": "https://n.news.naver.com/mnews/article/629/0000524856",
-      "source": "overseas",
-      "sentiment": "neutral",
-      "sentimentScore": 0,
-      "category": "all",
-      "isBreaking": false,
-      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
-    },
-    {
-      "id": "119_0003122159",
-      "title": "[데일리안 오늘뉴스 종합] 최태원 '9440억 재산분할' 재상고, 李, 3대 '평화 공존' 청사진 제시, 서강대 개인정보 유출, 日총리 '반성' 언급 없어 등",
-      "pressName": "데일리안",
-      "publishedAt": "2026-08-15T18:04:00+09:00",
-      "url": "https://n.news.naver.com/mnews/article/119/0003122159",
-      "source": "overseas",
-      "sentiment": "neutral",
-      "sentimentScore": 0,
-      "category": "all",
-      "isBreaking": false,
-      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
-    },
-    {
-      "id": "648_0000049869",
-      "title": "시민단체 \"석포제련소 정화조치 미흡\"...정부대응 비판",
-      "pressName": "비즈워치",
-      "publishedAt": "2026-08-15T17:52:00+09:00",
-      "url": "https://n.news.naver.com/mnews/article/648/0000049869",
-      "source": "overseas",
-      "sentiment": "neutral",
-      "sentimentScore": 0,
-      "category": "정책",
-      "isBreaking": false,
-      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
-    },
-    {
-      "id": "008_0005400602",
-      "title": "권영찬TV, 한부모가정·저소득층 임플란트 나눔 지원",
-      "pressName": "머니투데이",
-      "publishedAt": "2026-08-15T17:03:00+09:00",
-      "url": "https://n.news.naver.com/mnews/article/008/0005400602",
-      "source": "overseas",
-      "sentiment": "neutral",
-      "sentimentScore": 0,
-      "category": "정책",
-      "isBreaking": false,
-      "beginnerExplanation": "정부가 특정 산업을 지원하려고 해요. 해당 기업들에 좋을 수 있어요."
-    },
-    {
-      "id": "421_0009115819",
-      "title": "석포제련소, 카드뮴 오염 기여 최대 95.2%...4년째 정화 미흡",
-      "pressName": "뉴스1",
-      "publishedAt": "2026-08-15T16:59:00+09:00",
-      "url": "https://n.news.naver.com/mnews/article/421/0009115819",
-      "source": "overseas",
-      "sentiment": "neutral",
-      "sentimentScore": 0,
-      "category": "all",
-      "isBreaking": false,
-      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
-    },
-    {
-      "id": "031_0001050051",
-      "title": "최태원·노소영 다시 대법원으로...'9440억' 언제 결론날까",
-      "pressName": "아이뉴스24",
-      "publishedAt": "2026-08-15T16:47:00+09:00",
-      "url": "https://n.news.naver.com/mnews/article/031/0001050051",
-      "source": "overseas",
-      "sentiment": "neutral",
-      "sentimentScore": 0,
-      "category": "all",
-      "isBreaking": false,
-      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
-    },
-    {
-      "id": "001_0016253269",
-      "title": "국힘, 통상본부장 전격 직권면직에 \"비상식적...교체이유 밝혀야\"",
-      "pressName": "연합뉴스",
-      "publishedAt": "2026-08-15T16:24:00+09:00",
-      "url": "https://n.news.naver.com/mnews/article/001/0016253269",
-      "source": "overseas",
-      "sentiment": "neutral",
-      "sentimentScore": 0,
-      "category": "all",
-      "isBreaking": false,
-      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
-    },
-    {
-      "id": "015_0005321243",
-      "title": "\"아이폰만 쓰는 줄 알았는데\"...젠슨 황이 꺼낸 '이 폰' 뭐길래 [갤럭시 중간결산(下)]",
-      "pressName": "한국경제",
-      "publishedAt": "2026-08-15T16:15:00+09:00",
-      "url": "https://n.news.naver.com/mnews/article/015/0005321243",
-      "source": "overseas",
-      "sentiment": "neutral",
-      "sentimentScore": 0,
-      "category": "all",
-      "isBreaking": false,
-      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
-    },
-    {
-      "id": "050_0000109699",
-      "title": "리센느 원이도 '야호~'...'아재폰'의 대반전",
-      "pressName": "한경비즈니스",
-      "publishedAt": "2026-08-15T16:12:00+09:00",
-      "url": "https://n.news.naver.com/mnews/article/050/0000109699",
-      "source": "overseas",
-      "sentiment": "neutral",
-      "sentimentScore": 0,
-      "category": "all",
-      "isBreaking": false,
-      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
-    },
-    {
-      "id": "468_0001260003",
-      "title": "'위아래' 대박에도 수익은 2/100...진짜 못 벌었다던 혜린, 타코집서 월 4000만원 반전",
-      "pressName": "스포츠서울",
-      "publishedAt": "2026-08-15T16:01:00+09:00",
-      "url": "https://n.news.naver.com/mnews/article/468/0001260003",
-      "source": "overseas",
-      "sentiment": "neutral",
-      "sentimentScore": 0,
-      "category": "all",
-      "isBreaking": false,
-      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     }
   ],
   "main": [
     {
+      "id": "009_0005721517",
+      "title": "\"매달 20만원 그냥 나가는데\"...아파트 관리비 할인카드 따져보니",
+      "pressName": "네이버금융",
+      "publishedAt": "2026-08-15T16:14:16.654Z",
+      "url": "https://n.news.naver.com/mnews/article/009/0005721517",
+      "source": "main",
+      "sentiment": "neutral",
+      "sentimentScore": 0,
+      "category": "all",
+      "isBreaking": true,
+      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
+    },
+    {
       "id": "014_0005562002",
       "title": "\"장중 26% 폭등\"...5만원&rarr;1만4000원 급락했던 백종원 회사, 갑자기 무슨 일 [주주클럽]",
       "pressName": "네이버금융",
-      "publishedAt": "2026-08-15T12:20:43.983Z",
+      "publishedAt": "2026-08-15T16:14:16.655Z",
       "url": "https://n.news.naver.com/mnews/article/014/0005562002",
       "source": "main",
       "sentiment": "negative",
@@ -500,24 +513,11 @@
       "beginnerExplanation": "주가가 갑자기 많이 떨어졌어요. 패닉 판매는 위험해요. 침착함이 중요합니다."
     },
     {
-      "id": "011_0004652075",
-      "title": "백종원 드디어 일냈다...폭락하던 더본, 13% 급등 왜? [줍줍리포트]",
+      "id": "277_0005803511",
+      "title": "2경 굴리는 '큰손' 韓주식 쓸어담아...개미들은 아직 모르는 '한 수'?[주末머니]",
       "pressName": "네이버금융",
-      "publishedAt": "2026-08-15T12:20:43.984Z",
-      "url": "https://n.news.naver.com/mnews/article/011/0004652075",
-      "source": "main",
-      "sentiment": "neutral",
-      "sentimentScore": 0,
-      "category": "all",
-      "isBreaking": true,
-      "beginnerExplanation": "주가가 갑자기 많이 올랐어요. 그 이유가 뭔지 꼭 확인해 보세요."
-    },
-    {
-      "id": "011_0004652090",
-      "title": "\"빚 안 갚아도 된다?\"...한국식 '빚 탕감'에 해외는 갸우뚱",
-      "pressName": "네이버금융",
-      "publishedAt": "2026-08-15T12:20:43.984Z",
-      "url": "https://n.news.naver.com/mnews/article/011/0004652090",
+      "publishedAt": "2026-08-15T16:14:16.655Z",
+      "url": "https://n.news.naver.com/mnews/article/277/0005803511",
       "source": "main",
       "sentiment": "neutral",
       "sentimentScore": 0,
@@ -529,7 +529,7 @@
       "id": "016_0002684289",
       "title": "\"360만원 입금하면 13만원 얹어 드려요\" 이틀 만에 1만명 몰려, 이런 적 처음 [머니뭐니]",
       "pressName": "네이버금융",
-      "publishedAt": "2026-08-15T12:20:43.984Z",
+      "publishedAt": "2026-08-15T16:14:16.655Z",
       "url": "https://n.news.naver.com/mnews/article/016/0002684289",
       "source": "main",
       "sentiment": "neutral",
@@ -539,24 +539,11 @@
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
-      "id": "277_0005803511",
-      "title": "2경 굴리는 '큰손' 韓주식 쓸어담아...개미들은 아직 모르는 '한 수'?[주末머니]",
+      "id": "011_0004652090",
+      "title": "\"빚 안 갚아도 된다?\"...한국식 '빚 탕감'에 해외는 갸우뚱",
       "pressName": "네이버금융",
-      "publishedAt": "2026-08-15T12:20:43.984Z",
-      "url": "https://n.news.naver.com/mnews/article/277/0005803511",
-      "source": "main",
-      "sentiment": "neutral",
-      "sentimentScore": 0,
-      "category": "all",
-      "isBreaking": true,
-      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
-    },
-    {
-      "id": "009_0005721507",
-      "title": "\"자동차 보험료가 30% 올랐네요\"...할증 높이는 주요 원인 보니",
-      "pressName": "네이버금융",
-      "publishedAt": "2026-08-15T12:20:43.984Z",
-      "url": "https://n.news.naver.com/mnews/article/009/0005721507",
+      "publishedAt": "2026-08-15T16:14:16.655Z",
+      "url": "https://n.news.naver.com/mnews/article/011/0004652090",
       "source": "main",
       "sentiment": "neutral",
       "sentimentScore": 0,

@@ -1,6 +1,19 @@
 {
-  "generatedAt": "2026-08-15T16:14:16.655Z",
+  "generatedAt": "2026-08-15T20:13:34.075Z",
   "domestic": [
+    {
+      "id": "003_0014129877",
+      "title": "클래리티 법안 불발 버틴 비트코인...\"하반기 우상향 기대\"",
+      "pressName": "뉴시스",
+      "publishedAt": "2026-08-16T01:59:00+09:00",
+      "url": "https://n.news.naver.com/mnews/article/003/0014129877",
+      "source": "domestic",
+      "sentiment": "neutral",
+      "sentimentScore": 0,
+      "category": "정책",
+      "isBreaking": false,
+      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
+    },
     {
       "id": "029_0003042528",
       "title": "\"60만전자 보인다\"...삼성전자, 저점 뚫고 '강세 국면' 진입하나",
@@ -11,7 +24,7 @@
       "sentiment": "positive",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "좋은 소식이 나왔어요. 시장이 긍정적으로 반응할 가능성이 있어요."
     },
     {
@@ -247,22 +260,35 @@
       "category": "all",
       "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
-    },
-    {
-      "id": "011_0004652097",
-      "title": "SOXL 1위&rarr;24위...서학개미, '레버리지 쏠림' 풀고 아마존 1.9억弗 순매수[인베스팅 인사이트]",
-      "pressName": "서울경제",
-      "publishedAt": "2026-08-15T16:02:00+09:00",
-      "url": "https://n.news.naver.com/mnews/article/011/0004652097",
-      "source": "domestic",
-      "sentiment": "positive",
-      "sentimentScore": 0,
-      "category": "수급",
-      "isBreaking": false,
-      "beginnerExplanation": "외국 투자자들이 한국 주식을 많이 사고 있어요. 긍정적인 신호에요."
     }
   ],
   "overseas": [
+    {
+      "id": "018_0006352486",
+      "title": "한국으로 몰려오는 글로벌 거물들...그들이 탐내는 것은",
+      "pressName": "이데일리",
+      "publishedAt": "2026-08-16T05:02:00+09:00",
+      "url": "https://n.news.naver.com/mnews/article/018/0006352486",
+      "source": "overseas",
+      "sentiment": "neutral",
+      "sentimentScore": 0,
+      "category": "all",
+      "isBreaking": true,
+      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
+    },
+    {
+      "id": "003_0014129892",
+      "title": "\"카메라보다 잘 남는다\"...LG이노텍·삼성전기, AI 기판 가동률 90% 안팎",
+      "pressName": "뉴시스",
+      "publishedAt": "2026-08-16T05:00:00+09:00",
+      "url": "https://n.news.naver.com/mnews/article/003/0014129892",
+      "source": "overseas",
+      "sentiment": "neutral",
+      "sentimentScore": 0,
+      "category": "all",
+      "isBreaking": true,
+      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
+    },
     {
       "id": "629_0000524872",
       "title": "지분 늘리고 빌 게이츠 만나고...HD현대, '정기선 리더십' 본격화",
@@ -273,7 +299,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
@@ -286,7 +312,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
@@ -470,19 +496,6 @@
       "category": "all",
       "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
-    },
-    {
-      "id": "215_0001262507",
-      "title": "베이조스, EPL 리버풀 지분 샀다...페북 공동창업자도 참여",
-      "pressName": "한국경제TV",
-      "publishedAt": "2026-08-15T19:15:00+09:00",
-      "url": "https://n.news.naver.com/mnews/article/215/0001262507",
-      "source": "overseas",
-      "sentiment": "neutral",
-      "sentimentScore": 0,
-      "category": "all",
-      "isBreaking": false,
-      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     }
   ],
   "main": [
@@ -490,7 +503,7 @@
       "id": "009_0005721517",
       "title": "\"매달 20만원 그냥 나가는데\"...아파트 관리비 할인카드 따져보니",
       "pressName": "네이버금융",
-      "publishedAt": "2026-08-15T16:14:16.654Z",
+      "publishedAt": "2026-08-15T20:13:34.074Z",
       "url": "https://n.news.naver.com/mnews/article/009/0005721517",
       "source": "main",
       "sentiment": "neutral",
@@ -503,7 +516,7 @@
       "id": "014_0005562002",
       "title": "\"장중 26% 폭등\"...5만원&rarr;1만4000원 급락했던 백종원 회사, 갑자기 무슨 일 [주주클럽]",
       "pressName": "네이버금융",
-      "publishedAt": "2026-08-15T16:14:16.655Z",
+      "publishedAt": "2026-08-15T20:13:34.075Z",
       "url": "https://n.news.naver.com/mnews/article/014/0005562002",
       "source": "main",
       "sentiment": "negative",
@@ -513,37 +526,24 @@
       "beginnerExplanation": "주가가 갑자기 많이 떨어졌어요. 패닉 판매는 위험해요. 침착함이 중요합니다."
     },
     {
-      "id": "277_0005803511",
-      "title": "2경 굴리는 '큰손' 韓주식 쓸어담아...개미들은 아직 모르는 '한 수'?[주末머니]",
-      "pressName": "네이버금융",
-      "publishedAt": "2026-08-15T16:14:16.655Z",
-      "url": "https://n.news.naver.com/mnews/article/277/0005803511",
-      "source": "main",
-      "sentiment": "neutral",
-      "sentimentScore": 0,
-      "category": "all",
-      "isBreaking": true,
-      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
-    },
-    {
-      "id": "016_0002684289",
-      "title": "\"360만원 입금하면 13만원 얹어 드려요\" 이틀 만에 1만명 몰려, 이런 적 처음 [머니뭐니]",
-      "pressName": "네이버금융",
-      "publishedAt": "2026-08-15T16:14:16.655Z",
-      "url": "https://n.news.naver.com/mnews/article/016/0002684289",
-      "source": "main",
-      "sentiment": "neutral",
-      "sentimentScore": 0,
-      "category": "all",
-      "isBreaking": true,
-      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
-    },
-    {
       "id": "011_0004652090",
       "title": "\"빚 안 갚아도 된다?\"...한국식 '빚 탕감'에 해외는 갸우뚱",
       "pressName": "네이버금융",
-      "publishedAt": "2026-08-15T16:14:16.655Z",
+      "publishedAt": "2026-08-15T20:13:34.075Z",
       "url": "https://n.news.naver.com/mnews/article/011/0004652090",
+      "source": "main",
+      "sentiment": "neutral",
+      "sentimentScore": 0,
+      "category": "all",
+      "isBreaking": true,
+      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
+    },
+    {
+      "id": "277_0005803511",
+      "title": "2경 굴리는 '큰손' 韓주식 쓸어담아...개미들은 아직 모르는 '한 수'?[주末머니]",
+      "pressName": "네이버금융",
+      "publishedAt": "2026-08-15T20:13:34.075Z",
+      "url": "https://n.news.naver.com/mnews/article/277/0005803511",
       "source": "main",
       "sentiment": "neutral",
       "sentimentScore": 0,

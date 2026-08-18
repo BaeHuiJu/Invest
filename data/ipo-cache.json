@@ -97,6 +97,22 @@
       "calculator": null
     },
     {
+      "id": "2314",
+      "name": "한국스팩17호",
+      "subscriptionStart": "2026-09-10",
+      "subscriptionEnd": "2026-09-11",
+      "confirmedPrice": null,
+      "priceBandLow": null,
+      "priceBandHigh": null,
+      "underwriter": "",
+      "competitionRatio": "한국투자증권",
+      "listingDate": null,
+      "refundDate": "2026-09-15",
+      "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2314&l=&page=1",
+      "status": "청약예정",
+      "calculator": null
+    },
+    {
       "id": "2307",
       "name": "브릴스",
       "subscriptionStart": "2026-09-08",
@@ -463,24 +479,8 @@
       "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2281&l=&page=1",
       "status": "상장예정",
       "calculator": null
-    },
-    {
-      "id": "2284",
-      "name": "신한스팩18호",
-      "subscriptionStart": "2026-04-20",
-      "subscriptionEnd": "2026-04-21",
-      "confirmedPrice": 2000,
-      "priceBandLow": null,
-      "priceBandHigh": null,
-      "underwriter": "신한투자증권",
-      "competitionRatio": "1601.36:1",
-      "listingDate": null,
-      "refundDate": null,
-      "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2284&l=&page=1",
-      "status": "상장예정",
-      "calculator": null
     }
   ],
-  "fetchedAt": "2026-08-18T00:53:25.626Z",
+  "fetchedAt": "2026-08-18T04:29:23.338Z",
   "totalCount": 30
 }

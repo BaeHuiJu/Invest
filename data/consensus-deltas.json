@@ -7,9 +7,9 @@
         "name": "클래시스",
         "market": "korea",
         "brokerCount": 6,
-        "avgUpside": 64,
+        "avgUpside": 68.3,
         "avgTargetPrice": 61500,
-        "currentPrice": 37500,
+        "currentPrice": 36550,
         "entryScore": 70,
         "reportCount": 6
       },
@@ -18,9 +18,9 @@
         "name": "한온시스템",
         "market": "korea",
         "brokerCount": 5,
-        "avgUpside": 41.6,
+        "avgUpside": 44.5,
         "avgTargetPrice": 5410,
-        "currentPrice": 3820,
+        "currentPrice": 3745,
         "entryScore": 70,
         "reportCount": 5
       },
@@ -40,9 +40,9 @@
         "name": "키움증권",
         "market": "korea",
         "brokerCount": 6,
-        "avgUpside": 46.7,
+        "avgUpside": 47.9,
         "avgTargetPrice": 440833.3,
-        "currentPrice": 300500,
+        "currentPrice": 298000,
         "entryScore": 70,
         "reportCount": 6
       },
@@ -51,9 +51,9 @@
         "name": "SK바이오팜",
         "market": "korea",
         "brokerCount": 4,
-        "avgUpside": 63.2,
+        "avgUpside": 64.5,
         "avgTargetPrice": 142500,
-        "currentPrice": 87300,
+        "currentPrice": 86600,
         "entryScore": 63,
         "reportCount": 4
       },
@@ -73,9 +73,9 @@
         "name": "F&F",
         "market": "korea",
         "brokerCount": 2,
-        "avgUpside": 49.3,
+        "avgUpside": 55,
         "avgTargetPrice": 100000,
-        "currentPrice": 67000,
+        "currentPrice": 64500,
         "entryScore": 49,
         "reportCount": 2
       },
@@ -95,9 +95,9 @@
         "name": "에스엠",
         "market": "korea",
         "brokerCount": 7,
-        "avgUpside": 55.5,
+        "avgUpside": 57.4,
         "avgTargetPrice": 114142.9,
-        "currentPrice": 73400,
+        "currentPrice": 72500,
         "entryScore": 70,
         "reportCount": 7
       },
@@ -106,9 +106,9 @@
         "name": "포스코인터내셔널",
         "market": "korea",
         "brokerCount": 6,
-        "avgUpside": 77.9,
+        "avgUpside": 78.6,
         "avgTargetPrice": 94833.3,
-        "currentPrice": 53300,
+        "currentPrice": 53100,
         "entryScore": 70,
         "reportCount": 6
       },
@@ -117,10 +117,10 @@
         "name": "LG유플러스",
         "market": "korea",
         "brokerCount": 9,
-        "avgUpside": 32.4,
+        "avgUpside": 33.6,
         "avgTargetPrice": 19944.4,
-        "currentPrice": 15060,
-        "entryScore": 63,
+        "currentPrice": 14930,
+        "entryScore": 64,
         "reportCount": 9
       },
       {
@@ -128,10 +128,10 @@
         "name": "JPMorgan Chase & Co.",
         "market": "us",
         "brokerCount": 5,
-        "avgUpside": 8.5,
+        "avgUpside": 9.1,
         "avgTargetPrice": 393.8,
-        "currentPrice": 362.84,
-        "entryScore": 42,
+        "currentPrice": 360.96,
+        "entryScore": 44,
         "reportCount": 5
       },
       {
@@ -150,10 +150,10 @@
         "name": "LG전자",
         "market": "korea",
         "brokerCount": 4,
-        "avgUpside": 18.6,
+        "avgUpside": 17,
         "avgTargetPrice": 255000,
-        "currentPrice": 215000,
-        "entryScore": 44,
+        "currentPrice": 218000,
+        "entryScore": 43,
         "reportCount": 4
       },
       {
@@ -161,10 +161,10 @@
         "name": "롯데웰푸드",
         "market": "korea",
         "brokerCount": 7,
-        "avgUpside": 34.8,
+        "avgUpside": 39.5,
         "avgTargetPrice": 174285.7,
-        "currentPrice": 129300,
-        "entryScore": 65,
+        "currentPrice": 124900,
+        "entryScore": 70,
         "reportCount": 7
       },
       {
@@ -172,9 +172,9 @@
         "name": "CJ ENM",
         "market": "korea",
         "brokerCount": 5,
-        "avgUpside": 48.8,
+        "avgUpside": 53.8,
         "avgTargetPrice": 51200,
-        "currentPrice": 34400,
+        "currentPrice": 33300,
         "entryScore": 70,
         "reportCount": 5
       },
@@ -205,9 +205,9 @@
         "name": "롯데렌탈",
         "market": "korea",
         "brokerCount": 2,
-        "avgUpside": 11.1,
+        "avgUpside": 11.5,
         "avgTargetPrice": 50000,
-        "currentPrice": 45000,
+        "currentPrice": 44850,
         "entryScore": 24,
         "reportCount": 2
       },
@@ -226,22 +226,22 @@
         "ticker": "MSFT",
         "name": "Microsoft Corporation",
         "market": "us",
-        "brokerCount": 8,
-        "avgUpside": 22.2,
-        "avgTargetPrice": 605.6,
-        "currentPrice": 495.4,
-        "entryScore": 55,
-        "reportCount": 8
+        "brokerCount": 7,
+        "avgUpside": 25.1,
+        "avgTargetPrice": 600.7,
+        "currentPrice": 480.35,
+        "entryScore": 57,
+        "reportCount": 7
       },
       {
         "ticker": "AMZN",
         "name": "Amazon.com, Inc.",
         "market": "us",
         "brokerCount": 8,
-        "avgUpside": 27,
-        "avgTargetPrice": 333.5,
-        "currentPrice": 262.65,
-        "entryScore": 62,
+        "avgUpside": 28.1,
+        "avgTargetPrice": 334.8,
+        "currentPrice": 261.31,
+        "entryScore": 60,
         "reportCount": 8
       },
       {
@@ -249,10 +249,10 @@
         "name": "Meta Platforms, Inc.",
         "market": "us",
         "brokerCount": 7,
-        "avgUpside": 25.2,
+        "avgUpside": 29.8,
         "avgTargetPrice": 738.6,
-        "currentPrice": 589.85,
-        "entryScore": 57,
+        "currentPrice": 568.97,
+        "entryScore": 68,
         "reportCount": 7
       },
       {
@@ -271,32 +271,32 @@
         "name": "Datadog, Inc.",
         "market": "us",
         "brokerCount": 7,
-        "avgUpside": 17.2,
-        "avgTargetPrice": 299.4,
-        "currentPrice": 255.46,
-        "entryScore": 50,
+        "avgUpside": 21,
+        "avgTargetPrice": 299.1,
+        "currentPrice": 247.32,
+        "entryScore": 53,
         "reportCount": 7
       },
       {
         "ticker": "PANW",
         "name": "Palo Alto Networks, Inc.",
         "market": "us",
-        "brokerCount": 5,
-        "avgUpside": 7.9,
-        "avgTargetPrice": 414.8,
-        "currentPrice": 384.27,
-        "entryScore": 42,
-        "reportCount": 5
+        "brokerCount": 6,
+        "avgUpside": 12.2,
+        "avgTargetPrice": 421.5,
+        "currentPrice": 375.76,
+        "entryScore": 46,
+        "reportCount": 6
       },
       {
         "ticker": "SCHW",
         "name": "The Charles Schwab Corporation",
         "market": "us",
         "brokerCount": 5,
-        "avgUpside": 16.8,
-        "avgTargetPrice": 129.8,
-        "currentPrice": 111.09,
-        "entryScore": 50,
+        "avgUpside": 19.4,
+        "avgTargetPrice": 132,
+        "currentPrice": 110.58,
+        "entryScore": 52,
         "reportCount": 5
       },
       {
@@ -304,10 +304,10 @@
         "name": "AbbVie Inc.",
         "market": "us",
         "brokerCount": 7,
-        "avgUpside": 14.5,
-        "avgTargetPrice": 285.6,
-        "currentPrice": 249.46,
-        "entryScore": 49,
+        "avgUpside": 14.3,
+        "avgTargetPrice": 286.1,
+        "currentPrice": 250.33,
+        "entryScore": 48,
         "reportCount": 7
       },
       {
@@ -315,9 +315,9 @@
         "name": "Merck & Co., Inc.",
         "market": "us",
         "brokerCount": 6,
-        "avgUpside": 7.8,
+        "avgUpside": 7.7,
         "avgTargetPrice": 146.5,
-        "currentPrice": 135.84,
+        "currentPrice": 135.97,
         "entryScore": 42,
         "reportCount": 6
       },
@@ -326,9 +326,9 @@
         "name": "Walmart Inc.",
         "market": "us",
         "brokerCount": 7,
-        "avgUpside": 22.7,
-        "avgTargetPrice": 141.4,
-        "currentPrice": 115.27,
+        "avgUpside": 22.8,
+        "avgTargetPrice": 140.4,
+        "currentPrice": 114.33,
         "entryScore": 55,
         "reportCount": 7
       },
@@ -337,10 +337,10 @@
         "name": "The Procter & Gamble Company",
         "market": "us",
         "brokerCount": 2,
-        "avgUpside": 13.5,
+        "avgUpside": 14.6,
         "avgTargetPrice": 164,
-        "currentPrice": 144.55,
-        "entryScore": 26,
+        "currentPrice": 143.12,
+        "entryScore": 28,
         "reportCount": 2
       },
       {
@@ -358,22 +358,22 @@
         "ticker": "NFLX",
         "name": "Netflix, Inc.",
         "market": "us",
-        "brokerCount": 5,
-        "avgUpside": 31.5,
-        "avgTargetPrice": 102.8,
-        "currentPrice": 78.16,
-        "entryScore": 63,
-        "reportCount": 5
+        "brokerCount": 4,
+        "avgUpside": 32.9,
+        "avgTargetPrice": 101,
+        "currentPrice": 76.02,
+        "entryScore": 62,
+        "reportCount": 4
       },
       {
         "ticker": "T",
         "name": "AT&T Inc.",
         "market": "us",
         "brokerCount": 6,
-        "avgUpside": 13.8,
+        "avgUpside": 14.8,
         "avgTargetPrice": 28.3,
-        "currentPrice": 24.89,
-        "entryScore": 47,
+        "currentPrice": 24.68,
+        "entryScore": 48,
         "reportCount": 6
       },
       {
@@ -392,10 +392,10 @@
         "name": "세아베스틸지주",
         "market": "korea",
         "brokerCount": 3,
-        "avgUpside": 27.4,
+        "avgUpside": 26.7,
         "avgTargetPrice": 57333.3,
-        "currentPrice": 45000,
-        "entryScore": 45,
+        "currentPrice": 45250,
+        "entryScore": 44,
         "reportCount": 3
       },
       {
@@ -436,9 +436,9 @@
         "name": "KT&G",
         "market": "korea",
         "brokerCount": 6,
-        "avgUpside": 40.2,
+        "avgUpside": 40.4,
         "avgTargetPrice": 246666.7,
-        "currentPrice": 176000,
+        "currentPrice": 175700,
         "entryScore": 70,
         "reportCount": 6
       },
@@ -491,9 +491,9 @@
         "name": "와이지엔터테인먼트",
         "market": "korea",
         "brokerCount": 6,
-        "avgUpside": 49.8,
+        "avgUpside": 53,
         "avgTargetPrice": 61500,
-        "currentPrice": 41050,
+        "currentPrice": 40200,
         "entryScore": 70,
         "reportCount": 6
       },
@@ -512,12 +512,12 @@
         "ticker": "294870",
         "name": "IPARK현대산업개발",
         "market": "korea",
-        "brokerCount": 7,
-        "avgUpside": 38.3,
-        "avgTargetPrice": 30571.4,
-        "currentPrice": 22100,
-        "entryScore": 69,
-        "reportCount": 7
+        "brokerCount": 5,
+        "avgUpside": 33.6,
+        "avgTargetPrice": 30200,
+        "currentPrice": 22600,
+        "entryScore": 64,
+        "reportCount": 5
       },
       {
         "ticker": "007070",
@@ -579,9 +579,9 @@
         "name": "대덕전자",
         "market": "korea",
         "brokerCount": 5,
-        "avgUpside": 67.9,
+        "avgUpside": 61.6,
         "avgTargetPrice": 200000,
-        "currentPrice": 119100,
+        "currentPrice": 123800,
         "entryScore": 70,
         "reportCount": 5
       },
@@ -590,10 +590,10 @@
         "name": "KT",
         "market": "korea",
         "brokerCount": 9,
-        "avgUpside": 37.7,
+        "avgUpside": 36,
         "avgTargetPrice": 73555.6,
-        "currentPrice": 53400,
-        "entryScore": 68,
+        "currentPrice": 54100,
+        "entryScore": 66,
         "reportCount": 9
       },
       {
@@ -601,10 +601,10 @@
         "name": "한국항공우주",
         "market": "korea",
         "brokerCount": 5,
-        "avgUpside": 16.3,
+        "avgUpside": 18.1,
         "avgTargetPrice": 170200,
-        "currentPrice": 146400,
-        "entryScore": 49,
+        "currentPrice": 144100,
+        "entryScore": 51,
         "reportCount": 5
       },
       {
@@ -634,9 +634,9 @@
         "name": "Alphabet Inc.",
         "market": "us",
         "brokerCount": 6,
-        "avgUpside": 23.8,
+        "avgUpside": 24.5,
         "avgTargetPrice": 428.3,
-        "currentPrice": 345.9,
+        "currentPrice": 344,
         "entryScore": 56,
         "reportCount": 6
       },
@@ -645,32 +645,32 @@
         "name": "Advanced Micro Devices, Inc.",
         "market": "us",
         "brokerCount": 5,
-        "avgUpside": 23.6,
+        "avgUpside": 25.7,
         "avgTargetPrice": 636,
-        "currentPrice": 514.39,
-        "entryScore": 56,
+        "currentPrice": 506,
+        "entryScore": 57,
         "reportCount": 5
       },
       {
         "ticker": "NOW",
         "name": "ServiceNow, Inc.",
         "market": "us",
-        "brokerCount": 7,
-        "avgUpside": 21.8,
-        "avgTargetPrice": 151,
-        "currentPrice": 124,
-        "entryScore": 56,
-        "reportCount": 7
+        "brokerCount": 8,
+        "avgUpside": 26.6,
+        "avgTargetPrice": 149,
+        "currentPrice": 117.7,
+        "entryScore": 58,
+        "reportCount": 8
       },
       {
         "ticker": "KO",
         "name": "The Coca-Cola Company",
         "market": "us",
         "brokerCount": 7,
-        "avgUpside": 12.9,
+        "avgUpside": 13.8,
         "avgTargetPrice": 99,
-        "currentPrice": 87.71,
-        "entryScore": 48,
+        "currentPrice": 86.98,
+        "entryScore": 50,
         "reportCount": 7
       },
       {
@@ -678,10 +678,10 @@
         "name": "ExxonMobil Holdings Corporation",
         "market": "us",
         "brokerCount": 5,
-        "avgUpside": 8.2,
-        "avgTargetPrice": 173.2,
-        "currentPrice": 160.1,
-        "entryScore": 42,
+        "avgUpside": 6.7,
+        "avgTargetPrice": 172.2,
+        "currentPrice": 161.46,
+        "entryScore": 41,
         "reportCount": 5
       },
       {
@@ -689,10 +689,10 @@
         "name": "Caterpillar Inc.",
         "market": "us",
         "brokerCount": 3,
-        "avgUpside": 29,
+        "avgUpside": 25.3,
         "avgTargetPrice": 1104.7,
-        "currentPrice": 856.57,
-        "entryScore": 49,
+        "currentPrice": 881.65,
+        "entryScore": 43,
         "reportCount": 3
       },
       {
@@ -711,9 +711,9 @@
         "name": "현대건설",
         "market": "korea",
         "brokerCount": 8,
-        "avgUpside": 42.9,
+        "avgUpside": 45.2,
         "avgTargetPrice": 165500,
-        "currentPrice": 115800,
+        "currentPrice": 114000,
         "entryScore": 70,
         "reportCount": 8
       },
@@ -722,9 +722,9 @@
         "name": "삼성전기",
         "market": "korea",
         "brokerCount": 11,
-        "avgUpside": 53.2,
+        "avgUpside": 53,
         "avgTargetPrice": 2386363.6,
-        "currentPrice": 1558000,
+        "currentPrice": 1560000,
         "entryScore": 70,
         "reportCount": 11
       },
@@ -744,9 +744,9 @@
         "name": "대우건설",
         "market": "korea",
         "brokerCount": 8,
-        "avgUpside": 29.4,
+        "avgUpside": 29.5,
         "avgTargetPrice": 23312.5,
-        "currentPrice": 18010,
+        "currentPrice": 18000,
         "entryScore": 61,
         "reportCount": 8
       },
@@ -766,10 +766,10 @@
         "name": "SK텔레콤",
         "market": "korea",
         "brokerCount": 8,
-        "avgUpside": 17.8,
+        "avgUpside": 15.3,
         "avgTargetPrice": 118375,
-        "currentPrice": 100500,
-        "entryScore": 51,
+        "currentPrice": 102700,
+        "entryScore": 48,
         "reportCount": 8
       },
       {
@@ -777,10 +777,10 @@
         "name": "아모레퍼시픽",
         "market": "korea",
         "brokerCount": 6,
-        "avgUpside": 35.5,
+        "avgUpside": 38.8,
         "avgTargetPrice": 183833.3,
-        "currentPrice": 135700,
-        "entryScore": 66,
+        "currentPrice": 132400,
+        "entryScore": 69,
         "reportCount": 6
       },
       {
@@ -788,9 +788,9 @@
         "name": "하이브",
         "market": "korea",
         "brokerCount": 8,
-        "avgUpside": 87.4,
+        "avgUpside": 89.9,
         "avgTargetPrice": 336250,
-        "currentPrice": 179400,
+        "currentPrice": 177100,
         "entryScore": 70,
         "reportCount": 8
       },
@@ -799,10 +799,10 @@
         "name": "한화시스템",
         "market": "korea",
         "brokerCount": 6,
-        "avgUpside": 36.6,
+        "avgUpside": 31.7,
         "avgTargetPrice": 109666.7,
-        "currentPrice": 80300,
-        "entryScore": 67,
+        "currentPrice": 83300,
+        "entryScore": 63,
         "reportCount": 6
       },
       {
@@ -810,10 +810,10 @@
         "name": "한화에어로스페이스",
         "market": "korea",
         "brokerCount": 8,
-        "avgUpside": 39.2,
+        "avgUpside": 39.6,
         "avgTargetPrice": 1615000,
-        "currentPrice": 1160000,
-        "entryScore": 69,
+        "currentPrice": 1157000,
+        "entryScore": 70,
         "reportCount": 8
       },
       {
@@ -843,10 +843,10 @@
         "name": "Cloudflare, Inc.",
         "market": "us",
         "brokerCount": 6,
-        "avgUpside": 16,
+        "avgUpside": 19.3,
         "avgTargetPrice": 366.3,
-        "currentPrice": 315.78,
-        "entryScore": 49,
+        "currentPrice": 307.01,
+        "entryScore": 55,
         "reportCount": 6
       },
       {
@@ -865,10 +865,10 @@
         "name": "ConocoPhillips",
         "market": "us",
         "brokerCount": 6,
-        "avgUpside": 16.3,
-        "avgTargetPrice": 147.5,
-        "currentPrice": 126.78,
-        "entryScore": 50,
+        "avgUpside": 16,
+        "avgTargetPrice": 148,
+        "currentPrice": 127.56,
+        "entryScore": 49,
         "reportCount": 6
       },
       {
@@ -876,10 +876,10 @@
         "name": "Visa Inc.",
         "market": "us",
         "brokerCount": 7,
-        "avgUpside": 17.5,
+        "avgUpside": 19.3,
         "avgTargetPrice": 428,
-        "currentPrice": 364.15,
-        "entryScore": 50,
+        "currentPrice": 358.84,
+        "entryScore": 52,
         "reportCount": 7
       },
       {
@@ -887,10 +887,10 @@
         "name": "Bank of America Corporation",
         "market": "us",
         "brokerCount": 3,
-        "avgUpside": 8.5,
+        "avgUpside": 9.6,
         "avgTargetPrice": 70,
-        "currentPrice": 64.49,
-        "entryScore": 28,
+        "currentPrice": 63.89,
+        "entryScore": 29,
         "reportCount": 3
       },
       {
@@ -898,9 +898,9 @@
         "name": "Morgan Stanley",
         "market": "us",
         "brokerCount": 3,
-        "avgUpside": 18.4,
+        "avgUpside": 17.9,
         "avgTargetPrice": 257.3,
-        "currentPrice": 217.36,
+        "currentPrice": 218.21,
         "entryScore": 37,
         "reportCount": 3
       },
@@ -909,10 +909,10 @@
         "name": "BlackRock, Inc.",
         "market": "us",
         "brokerCount": 3,
-        "avgUpside": 10.7,
+        "avgUpside": 13.3,
         "avgTargetPrice": 1299.7,
-        "currentPrice": 1173.73,
-        "entryScore": 30,
+        "currentPrice": 1147.11,
+        "entryScore": 35,
         "reportCount": 3
       },
       {
@@ -920,10 +920,10 @@
         "name": "Blackstone Inc.",
         "market": "us",
         "brokerCount": 3,
-        "avgUpside": 9.5,
+        "avgUpside": 12.2,
         "avgTargetPrice": 157.7,
-        "currentPrice": 143.93,
-        "entryScore": 29,
+        "currentPrice": 140.57,
+        "entryScore": 32,
         "reportCount": 3
       },
       {
@@ -931,10 +931,10 @@
         "name": "UnitedHealth Group Incorporated",
         "market": "us",
         "brokerCount": 3,
-        "avgUpside": 26.2,
+        "avgUpside": 28.2,
         "avgTargetPrice": 507,
-        "currentPrice": 401.73,
-        "entryScore": 46,
+        "currentPrice": 395.62,
+        "entryScore": 51,
         "reportCount": 3
       },
       {
@@ -942,10 +942,10 @@
         "name": "Johnson & Johnson",
         "market": "us",
         "brokerCount": 7,
-        "avgUpside": 12.4,
+        "avgUpside": 11.5,
         "avgTargetPrice": 292.6,
-        "currentPrice": 260.35,
-        "entryScore": 47,
+        "currentPrice": 262.37,
+        "entryScore": 45,
         "reportCount": 7
       },
       {
@@ -953,10 +953,10 @@
         "name": "McDonald's Corporation",
         "market": "us",
         "brokerCount": 3,
-        "avgUpside": 17.9,
+        "avgUpside": 21.1,
         "avgTargetPrice": 321.7,
-        "currentPrice": 272.83,
-        "entryScore": 38,
+        "currentPrice": 265.53,
+        "entryScore": 46,
         "reportCount": 3
       },
       {
@@ -964,10 +964,10 @@
         "name": "Chevron Corporation",
         "market": "us",
         "brokerCount": 5,
-        "avgUpside": 8.6,
+        "avgUpside": 7.2,
         "avgTargetPrice": 217.2,
-        "currentPrice": 200,
-        "entryScore": 43,
+        "currentPrice": 202.7,
+        "entryScore": 41,
         "reportCount": 5
       },
       {
@@ -997,9 +997,9 @@
         "name": "산일전기",
         "market": "korea",
         "brokerCount": 6,
-        "avgUpside": 56.2,
+        "avgUpside": 53.8,
         "avgTargetPrice": 285000,
-        "currentPrice": 182500,
+        "currentPrice": 185300,
         "entryScore": 70,
         "reportCount": 6
       },
@@ -1008,9 +1008,9 @@
         "name": "대한전선",
         "market": "korea",
         "brokerCount": 2,
-        "avgUpside": 81.1,
+        "avgUpside": 79.6,
         "avgTargetPrice": 54250,
-        "currentPrice": 29950,
+        "currentPrice": 30200,
         "entryScore": 49,
         "reportCount": 2
       },
@@ -1019,10 +1019,10 @@
         "name": "HD현대일렉트릭",
         "market": "korea",
         "brokerCount": 8,
-        "avgUpside": 41,
+        "avgUpside": 39.4,
         "avgTargetPrice": 1131875,
-        "currentPrice": 803000,
-        "entryScore": 70,
+        "currentPrice": 812000,
+        "entryScore": 69,
         "reportCount": 8
       },
       {
@@ -1041,9 +1041,9 @@
         "name": "효성중공업",
         "market": "korea",
         "brokerCount": 8,
-        "avgUpside": 44.3,
+        "avgUpside": 41.8,
         "avgTargetPrice": 4262500,
-        "currentPrice": 2954000,
+        "currentPrice": 3005000,
         "entryScore": 70,
         "reportCount": 8
       },
@@ -1052,10 +1052,10 @@
         "name": "파마리서치",
         "market": "korea",
         "brokerCount": 6,
-        "avgUpside": 32.3,
+        "avgUpside": 34.2,
         "avgTargetPrice": 526666.7,
-        "currentPrice": 398000,
-        "entryScore": 63,
+        "currentPrice": 392500,
+        "entryScore": 65,
         "reportCount": 6
       },
       {
@@ -1063,9 +1063,9 @@
         "name": "SK이노베이션",
         "market": "korea",
         "brokerCount": 4,
-        "avgUpside": 45.9,
+        "avgUpside": 41.7,
         "avgTargetPrice": 187750,
-        "currentPrice": 128700,
+        "currentPrice": 132500,
         "entryScore": 63,
         "reportCount": 4
       },
@@ -1106,21 +1106,21 @@
         "ticker": "064350",
         "name": "현대로템",
         "market": "korea",
-        "brokerCount": 5,
-        "avgUpside": 74.4,
-        "avgTargetPrice": 256200,
-        "currentPrice": 146900,
-        "entryScore": 70,
-        "reportCount": 5
+        "brokerCount": 4,
+        "avgUpside": 68,
+        "avgTargetPrice": 250250,
+        "currentPrice": 149000,
+        "entryScore": 63,
+        "reportCount": 4
       },
       {
         "ticker": "128940",
         "name": "한미약품",
         "market": "korea",
         "brokerCount": 5,
-        "avgUpside": 53.6,
+        "avgUpside": 55.2,
         "avgTargetPrice": 612000,
-        "currentPrice": 398500,
+        "currentPrice": 394250,
         "entryScore": 70,
         "reportCount": 5
       },
@@ -1139,22 +1139,22 @@
         "ticker": "AAPL",
         "name": "Apple Inc.",
         "market": "us",
-        "brokerCount": 2,
-        "avgUpside": 21.8,
-        "avgTargetPrice": 372.5,
-        "currentPrice": 305.93,
-        "entryScore": 37,
-        "reportCount": 2
+        "brokerCount": 3,
+        "avgUpside": 24.9,
+        "avgTargetPrice": 381.7,
+        "currentPrice": 305.59,
+        "entryScore": 43,
+        "reportCount": 3
       },
       {
         "ticker": "PLTR",
         "name": "Palantir Technologies Inc.",
         "market": "us",
         "brokerCount": 6,
-        "avgUpside": 25,
+        "avgUpside": 26.1,
         "avgTargetPrice": 217.5,
-        "currentPrice": 174.04,
-        "entryScore": 58,
+        "currentPrice": 172.55,
+        "entryScore": 61,
         "reportCount": 6
       },
       {
@@ -1162,10 +1162,10 @@
         "name": "The Goldman Sachs Group, Inc.",
         "market": "us",
         "brokerCount": 3,
-        "avgUpside": 20.1,
+        "avgUpside": 18.7,
         "avgTargetPrice": 1248,
-        "currentPrice": 1039.42,
-        "entryScore": 40,
+        "currentPrice": 1051.31,
+        "entryScore": 37,
         "reportCount": 3
       },
       {
@@ -1173,10 +1173,10 @@
         "name": "American Express Company",
         "market": "us",
         "brokerCount": 3,
-        "avgUpside": 22.1,
+        "avgUpside": 24.4,
         "avgTargetPrice": 418.3,
-        "currentPrice": 342.48,
-        "entryScore": 41,
+        "currentPrice": 336.21,
+        "entryScore": 47,
         "reportCount": 3
       },
       {
@@ -1184,10 +1184,10 @@
         "name": "Gilead Sciences, Inc.",
         "market": "us",
         "brokerCount": 6,
-        "avgUpside": 18.2,
+        "avgUpside": 17.7,
         "avgTargetPrice": 163.5,
-        "currentPrice": 138.36,
-        "entryScore": 51,
+        "currentPrice": 138.92,
+        "entryScore": 50,
         "reportCount": 6
       },
       {
@@ -1195,10 +1195,10 @@
         "name": "Starbucks Corporation",
         "market": "us",
         "brokerCount": 3,
-        "avgUpside": 7.4,
+        "avgUpside": 7.2,
         "avgTargetPrice": 115.7,
-        "currentPrice": 107.69,
-        "entryScore": 28,
+        "currentPrice": 107.92,
+        "entryScore": 27,
         "reportCount": 3
       },
       {
@@ -1206,10 +1206,10 @@
         "name": "SLB N.V.",
         "market": "us",
         "brokerCount": 8,
-        "avgUpside": 15.1,
-        "avgTargetPrice": 61.9,
-        "currentPrice": 53.77,
-        "entryScore": 48,
+        "avgUpside": 15.8,
+        "avgTargetPrice": 62.4,
+        "currentPrice": 53.86,
+        "entryScore": 49,
         "reportCount": 8
       },
       {
@@ -1217,10 +1217,10 @@
         "name": "현대위아",
         "market": "korea",
         "brokerCount": 7,
-        "avgUpside": 31.7,
+        "avgUpside": 35.7,
         "avgTargetPrice": 89285.7,
-        "currentPrice": 67800,
-        "entryScore": 63,
+        "currentPrice": 65800,
+        "entryScore": 66,
         "reportCount": 7
       },
       {
@@ -1228,9 +1228,9 @@
         "name": "DL이앤씨",
         "market": "korea",
         "brokerCount": 8,
-        "avgUpside": 38.6,
+        "avgUpside": 38.7,
         "avgTargetPrice": 102250,
-        "currentPrice": 73800,
+        "currentPrice": 73700,
         "entryScore": 69,
         "reportCount": 8
       },
@@ -1239,10 +1239,10 @@
         "name": "HL만도",
         "market": "korea",
         "brokerCount": 7,
-        "avgUpside": 27.1,
+        "avgUpside": 31.5,
         "avgTargetPrice": 72571.4,
-        "currentPrice": 57100,
-        "entryScore": 59,
+        "currentPrice": 55200,
+        "entryScore": 63,
         "reportCount": 7
       },
       {
@@ -1261,10 +1261,10 @@
         "name": "팬오션",
         "market": "korea",
         "brokerCount": 6,
-        "avgUpside": 41,
+        "avgUpside": 36.6,
         "avgTargetPrice": 8166.7,
-        "currentPrice": 5790,
-        "entryScore": 70,
+        "currentPrice": 5980,
+        "entryScore": 67,
         "reportCount": 6
       },
       {
@@ -1272,10 +1272,10 @@
         "name": "GS건설",
         "market": "korea",
         "brokerCount": 8,
-        "avgUpside": 18.8,
+        "avgUpside": 19.1,
         "avgTargetPrice": 42000,
-        "currentPrice": 35350,
-        "entryScore": 51,
+        "currentPrice": 35250,
+        "entryScore": 52,
         "reportCount": 8
       },
       {
@@ -1283,9 +1283,9 @@
         "name": "에스티팜",
         "market": "korea",
         "brokerCount": 5,
-        "avgUpside": 71.1,
+        "avgUpside": 74.8,
         "avgTargetPrice": 182000,
-        "currentPrice": 106400,
+        "currentPrice": 104100,
         "entryScore": 70,
         "reportCount": 5
       },
@@ -1316,9 +1316,9 @@
         "name": "HD현대중공업",
         "market": "korea",
         "brokerCount": 5,
-        "avgUpside": 75.8,
+        "avgUpside": 78.6,
         "avgTargetPrice": 896400,
-        "currentPrice": 510000,
+        "currentPrice": 502000,
         "entryScore": 70,
         "reportCount": 5
       },
@@ -1326,21 +1326,21 @@
         "ticker": "010140",
         "name": "삼성중공업",
         "market": "korea",
-        "brokerCount": 5,
-        "avgUpside": 71.3,
-        "avgTargetPrice": 38200,
-        "currentPrice": 22300,
-        "entryScore": 70,
-        "reportCount": 5
+        "brokerCount": 3,
+        "avgUpside": 73.1,
+        "avgTargetPrice": 38000,
+        "currentPrice": 21950,
+        "entryScore": 56,
+        "reportCount": 3
       },
       {
         "ticker": "042660",
         "name": "한화오션",
         "market": "korea",
         "brokerCount": 9,
-        "avgUpside": 52.7,
+        "avgUpside": 55.2,
         "avgTargetPrice": 146333.3,
-        "currentPrice": 95800,
+        "currentPrice": 94300,
         "entryScore": 70,
         "reportCount": 9
       },
@@ -1360,10 +1360,10 @@
         "name": "Applied Materials, Inc.",
         "market": "us",
         "brokerCount": 7,
-        "avgUpside": 31.8,
-        "avgTargetPrice": 668.6,
-        "currentPrice": 507.18,
-        "entryScore": 63,
+        "avgUpside": 25.6,
+        "avgTargetPrice": 672.1,
+        "currentPrice": 535.31,
+        "entryScore": 57,
         "reportCount": 7
       },
       {
@@ -1371,10 +1371,10 @@
         "name": "Citigroup Inc.",
         "market": "us",
         "brokerCount": 3,
-        "avgUpside": 11.7,
+        "avgUpside": 12.4,
         "avgTargetPrice": 155.7,
-        "currentPrice": 139.33,
-        "entryScore": 31,
+        "currentPrice": 138.51,
+        "entryScore": 32,
         "reportCount": 3
       },
       {
@@ -1382,9 +1382,9 @@
         "name": "Eli Lilly and Company",
         "market": "us",
         "brokerCount": 5,
-        "avgUpside": 17.6,
+        "avgUpside": 17.3,
         "avgTargetPrice": 1387.6,
-        "currentPrice": 1180.16,
+        "currentPrice": 1183.16,
         "entryScore": 50,
         "reportCount": 5
       },
@@ -1393,10 +1393,10 @@
         "name": "The Boeing Company",
         "market": "us",
         "brokerCount": 6,
-        "avgUpside": 20.6,
+        "avgUpside": 23.7,
         "avgTargetPrice": 279.5,
-        "currentPrice": 231.67,
-        "entryScore": 53,
+        "currentPrice": 225.95,
+        "entryScore": 61,
         "reportCount": 6
       },
       {
@@ -1415,9 +1415,9 @@
         "name": "현대제철",
         "market": "korea",
         "brokerCount": 7,
-        "avgUpside": 50.3,
+        "avgUpside": 51.6,
         "avgTargetPrice": 44942.9,
-        "currentPrice": 29900,
+        "currentPrice": 29650,
         "entryScore": 70,
         "reportCount": 7
       },
@@ -1426,9 +1426,9 @@
         "name": "카카오",
         "market": "korea",
         "brokerCount": 8,
-        "avgUpside": 42.8,
+        "avgUpside": 46.7,
         "avgTargetPrice": 57125,
-        "currentPrice": 40000,
+        "currentPrice": 38950,
         "entryScore": 70,
         "reportCount": 8
       },
@@ -1437,33 +1437,33 @@
         "name": "넷마블",
         "market": "korea",
         "brokerCount": 8,
-        "avgUpside": 36.8,
+        "avgUpside": 39.1,
         "avgTargetPrice": 53500,
-        "currentPrice": 39100,
-        "entryScore": 67,
+        "currentPrice": 38450,
+        "entryScore": 69,
         "reportCount": 8
       },
       {
         "ticker": "012330",
         "name": "현대모비스",
         "market": "korea",
-        "brokerCount": 11,
-        "avgUpside": 36.9,
-        "avgTargetPrice": 749090.9,
-        "currentPrice": 547000,
-        "entryScore": 67,
-        "reportCount": 11
+        "brokerCount": 9,
+        "avgUpside": 41.1,
+        "avgTargetPrice": 767777.8,
+        "currentPrice": 544000,
+        "entryScore": 70,
+        "reportCount": 9
       },
       {
         "ticker": "030000",
         "name": "제일기획",
         "market": "korea",
-        "brokerCount": 3,
-        "avgUpside": 37,
-        "avgTargetPrice": 26000,
-        "currentPrice": 18980,
-        "entryScore": 53,
-        "reportCount": 3
+        "brokerCount": 2,
+        "avgUpside": 40,
+        "avgTargetPrice": 26500,
+        "currentPrice": 18930,
+        "entryScore": 49,
+        "reportCount": 2
       },
       {
         "ticker": "161890",
@@ -1481,10 +1481,10 @@
         "name": "에이피알",
         "market": "korea",
         "brokerCount": 7,
-        "avgUpside": 38.7,
+        "avgUpside": 37.8,
         "avgTargetPrice": 541428.6,
-        "currentPrice": 390500,
-        "entryScore": 69,
+        "currentPrice": 393000,
+        "entryScore": 68,
         "reportCount": 7
       },
       {
@@ -1503,9 +1503,9 @@
         "name": "SK하이닉스",
         "market": "korea",
         "brokerCount": 12,
-        "avgUpside": 101.4,
+        "avgUpside": 87.3,
         "avgTargetPrice": 3312500,
-        "currentPrice": 1645000,
+        "currentPrice": 1769000,
         "entryScore": 70,
         "reportCount": 12
       },
@@ -1524,12 +1524,12 @@
         "ticker": "010950",
         "name": "S-Oil",
         "market": "korea",
-        "brokerCount": 5,
-        "avgUpside": 17.6,
-        "avgTargetPrice": 173600,
-        "currentPrice": 147600,
-        "entryScore": 50,
-        "reportCount": 5
+        "brokerCount": 3,
+        "avgUpside": 24.3,
+        "avgTargetPrice": 190000,
+        "currentPrice": 152900,
+        "entryScore": 42,
+        "reportCount": 3
       },
       {
         "ticker": "462870",
@@ -1546,22 +1546,22 @@
         "ticker": "000270",
         "name": "기아",
         "market": "korea",
-        "brokerCount": 12,
-        "avgUpside": 59.4,
-        "avgTargetPrice": 225833.3,
-        "currentPrice": 141700,
+        "brokerCount": 10,
+        "avgUpside": 63.6,
+        "avgTargetPrice": 230500,
+        "currentPrice": 140900,
         "entryScore": 70,
-        "reportCount": 12
+        "reportCount": 10
       },
       {
         "ticker": "NVDA",
         "name": "NVIDIA Corporation",
         "market": "us",
         "brokerCount": 8,
-        "avgUpside": 33.7,
+        "avgUpside": 33.8,
         "avgTargetPrice": 301,
-        "currentPrice": 225.16,
-        "entryScore": 64,
+        "currentPrice": 225.01,
+        "entryScore": 65,
         "reportCount": 8
       },
       {
@@ -1569,9 +1569,9 @@
         "name": "Broadcom Inc.",
         "market": "us",
         "brokerCount": 4,
-        "avgUpside": 35.6,
+        "avgUpside": 35.8,
         "avgTargetPrice": 533,
-        "currentPrice": 392.99,
+        "currentPrice": 392.43,
         "entryScore": 59,
         "reportCount": 4
       },
@@ -1580,32 +1580,32 @@
         "name": "Salesforce, Inc.",
         "market": "us",
         "brokerCount": 5,
-        "avgUpside": 21,
+        "avgUpside": 24.3,
         "avgTargetPrice": 237.4,
-        "currentPrice": 196.21,
-        "entryScore": 53,
+        "currentPrice": 190.97,
+        "entryScore": 61,
         "reportCount": 5
       },
       {
         "ticker": "MU",
         "name": "Micron Technology, Inc.",
         "market": "us",
-        "brokerCount": 3,
-        "avgUpside": 31.2,
-        "avgTargetPrice": 1275,
-        "currentPrice": 971.66,
-        "entryScore": 48,
-        "reportCount": 3
+        "brokerCount": 5,
+        "avgUpside": 38.4,
+        "avgTargetPrice": 1400,
+        "currentPrice": 1011.75,
+        "entryScore": 69,
+        "reportCount": 5
       },
       {
         "ticker": "DIS",
         "name": "The Walt Disney Company",
         "market": "us",
         "brokerCount": 7,
-        "avgUpside": 23,
+        "avgUpside": 27,
         "avgTargetPrice": 131.4,
-        "currentPrice": 106.85,
-        "entryScore": 55,
+        "currentPrice": 103.5,
+        "entryScore": 59,
         "reportCount": 7
       },
       {
@@ -1613,9 +1613,9 @@
         "name": "HK이노엔",
         "market": "korea",
         "brokerCount": 3,
-        "avgUpside": 40.9,
+        "avgUpside": 41.7,
         "avgTargetPrice": 58666.7,
-        "currentPrice": 41650,
+        "currentPrice": 41400,
         "entryScore": 56,
         "reportCount": 3
       },
@@ -1645,12 +1645,12 @@
         "ticker": "086790",
         "name": "하나금융지주",
         "market": "korea",
-        "brokerCount": 9,
-        "avgUpside": 24.5,
-        "avgTargetPrice": 165555.6,
-        "currentPrice": 133000,
-        "entryScore": 56,
-        "reportCount": 9
+        "brokerCount": 7,
+        "avgUpside": 26.6,
+        "avgTargetPrice": 166000,
+        "currentPrice": 131100,
+        "entryScore": 58,
+        "reportCount": 7
       },
       {
         "ticker": "055550",
@@ -1679,9 +1679,9 @@
         "name": "POSCO홀딩스",
         "market": "korea",
         "brokerCount": 5,
-        "avgUpside": 61.7,
+        "avgUpside": 62.2,
         "avgTargetPrice": 540000,
-        "currentPrice": 334000,
+        "currentPrice": 333000,
         "entryScore": 70,
         "reportCount": 5
       },
@@ -1723,10 +1723,10 @@
         "name": "QUALCOMM Incorporated",
         "market": "us",
         "brokerCount": 4,
-        "avgUpside": 58.3,
+        "avgUpside": 61.9,
         "avgTargetPrice": 262.5,
-        "currentPrice": 165.79,
-        "entryScore": 65,
+        "currentPrice": 162.18,
+        "entryScore": 70,
         "reportCount": 4
       },
       {
@@ -1734,9 +1734,9 @@
         "name": "Pfizer Inc.",
         "market": "us",
         "brokerCount": 3,
-        "avgUpside": 20.4,
+        "avgUpside": 20,
         "avgTargetPrice": 32.3,
-        "currentPrice": 26.79,
+        "currentPrice": 26.87,
         "entryScore": 39,
         "reportCount": 3
       },
@@ -1745,10 +1745,10 @@
         "name": "Amgen Inc.",
         "market": "us",
         "brokerCount": 2,
-        "avgUpside": 7.2,
+        "avgUpside": 6.1,
         "avgTargetPrice": 445,
-        "currentPrice": 415.21,
-        "entryScore": 20,
+        "currentPrice": 419.38,
+        "entryScore": 19,
         "reportCount": 2
       },
       {
@@ -1756,9 +1756,9 @@
         "name": "호텔신라",
         "market": "korea",
         "brokerCount": 4,
-        "avgUpside": 56.9,
+        "avgUpside": 59.6,
         "avgTargetPrice": 71250,
-        "currentPrice": 45400,
+        "currentPrice": 44650,
         "entryScore": 63,
         "reportCount": 4
       },
@@ -1767,9 +1767,9 @@
         "name": "BGF리테일",
         "market": "korea",
         "brokerCount": 8,
-        "avgUpside": 31.5,
+        "avgUpside": 32.1,
         "avgTargetPrice": 190875,
-        "currentPrice": 145200,
+        "currentPrice": 144500,
         "entryScore": 63,
         "reportCount": 8
       },
@@ -1789,9 +1789,9 @@
         "name": "NC",
         "market": "korea",
         "brokerCount": 7,
-        "avgUpside": 48.1,
+        "avgUpside": 55.6,
         "avgTargetPrice": 366428.6,
-        "currentPrice": 247500,
+        "currentPrice": 235500,
         "entryScore": 70,
         "reportCount": 7
       },
@@ -1811,9 +1811,9 @@
         "name": "HD건설기계",
         "market": "korea",
         "brokerCount": 2,
-        "avgUpside": 42.1,
+        "avgUpside": 45,
         "avgTargetPrice": 197000,
-        "currentPrice": 138600,
+        "currentPrice": 135900,
         "entryScore": 49,
         "reportCount": 2
       },
@@ -1822,9 +1822,9 @@
         "name": "NAVER",
         "market": "korea",
         "brokerCount": 10,
-        "avgUpside": 40.8,
+        "avgUpside": 42.7,
         "avgTargetPrice": 321000,
-        "currentPrice": 228000,
+        "currentPrice": 225000,
         "entryScore": 70,
         "reportCount": 10
       },
@@ -1833,10 +1833,10 @@
         "name": "Oracle Corporation",
         "market": "us",
         "brokerCount": 5,
-        "avgUpside": 81.4,
+        "avgUpside": 86.2,
         "avgTargetPrice": 273,
-        "currentPrice": 150.52,
-        "entryScore": 77,
+        "currentPrice": 146.65,
+        "entryScore": 70,
         "reportCount": 5
       },
       {
@@ -1855,10 +1855,10 @@
         "name": "Honeywell International Inc.",
         "market": "us",
         "brokerCount": 4,
-        "avgUpside": 16.9,
+        "avgUpside": 19.2,
         "avgTargetPrice": 273.5,
-        "currentPrice": 233.96,
-        "entryScore": 43,
+        "currentPrice": 229.45,
+        "entryScore": 49,
         "reportCount": 4
       },
       {
@@ -1866,9 +1866,9 @@
         "name": "LG이노텍",
         "market": "korea",
         "brokerCount": 11,
-        "avgUpside": 68.3,
+        "avgUpside": 61.9,
         "avgTargetPrice": 1100909.1,
-        "currentPrice": 654000,
+        "currentPrice": 680000,
         "entryScore": 70,
         "reportCount": 11
       },
@@ -1877,9 +1877,9 @@
         "name": "한섬",
         "market": "korea",
         "brokerCount": 3,
-        "avgUpside": 69.2,
+        "avgUpside": 72.8,
         "avgTargetPrice": 27666.7,
-        "currentPrice": 16350,
+        "currentPrice": 16010,
         "entryScore": 56,
         "reportCount": 3
       },
@@ -1888,9 +1888,9 @@
         "name": "크래프톤",
         "market": "korea",
         "brokerCount": 6,
-        "avgUpside": 57.6,
+        "avgUpside": 63.4,
         "avgTargetPrice": 375000,
-        "currentPrice": 238000,
+        "currentPrice": 229500,
         "entryScore": 70,
         "reportCount": 6
       },
@@ -1910,10 +1910,10 @@
         "name": "Costco Wholesale Corporation",
         "market": "us",
         "brokerCount": 5,
-        "avgUpside": 18.8,
+        "avgUpside": 19.7,
         "avgTargetPrice": 1141.6,
-        "currentPrice": 961.1,
-        "entryScore": 51,
+        "currentPrice": 953.5,
+        "entryScore": 52,
         "reportCount": 5
       },
       {
@@ -1943,10 +1943,10 @@
         "name": "삼성에스디에스",
         "market": "korea",
         "brokerCount": 3,
-        "avgUpside": 20.5,
+        "avgUpside": 21.5,
         "avgTargetPrice": 293333.3,
-        "currentPrice": 243500,
-        "entryScore": 39,
+        "currentPrice": 241500,
+        "entryScore": 40,
         "reportCount": 3
       },
       {
@@ -1954,9 +1954,9 @@
         "name": "삼성전자",
         "market": "korea",
         "brokerCount": 11,
-        "avgUpside": 76.2,
+        "avgUpside": 70.9,
         "avgTargetPrice": 483636.4,
-        "currentPrice": 274500,
+        "currentPrice": 283000,
         "entryScore": 70,
         "reportCount": 11
       },
@@ -1965,9 +1965,9 @@
         "name": "LG에너지솔루션",
         "market": "korea",
         "brokerCount": 9,
-        "avgUpside": 41.9,
+        "avgUpside": 44.5,
         "avgTargetPrice": 524444.4,
-        "currentPrice": 369500,
+        "currentPrice": 363000,
         "entryScore": 70,
         "reportCount": 9
       },
@@ -1987,9 +1987,9 @@
         "name": "GS피앤엘",
         "market": "korea",
         "brokerCount": 3,
-        "avgUpside": 72.6,
+        "avgUpside": 74.9,
         "avgTargetPrice": 73000,
-        "currentPrice": 42300,
+        "currentPrice": 41750,
         "entryScore": 56,
         "reportCount": 3
       },
@@ -2042,9 +2042,9 @@
         "name": "두산",
         "market": "korea",
         "brokerCount": 6,
-        "avgUpside": 70.3,
+        "avgUpside": 66.2,
         "avgTargetPrice": 2173333.3,
-        "currentPrice": 1276000,
+        "currentPrice": 1308000,
         "entryScore": 70,
         "reportCount": 6
       },
@@ -2081,9 +2081,9 @@
           "name": "CJ대한통운",
           "market": "korea",
           "brokerCount": 5,
-          "avgUpside": 52.8,
+          "avgUpside": 56.7,
           "avgTargetPrice": 118000,
-          "currentPrice": 77200,
+          "currentPrice": 75300,
           "entryScore": 70,
           "reportCount": 5
         },
@@ -2136,9 +2136,9 @@
           "name": "RTX Corporation",
           "market": "us",
           "brokerCount": 5,
-          "avgUpside": 8.8,
+          "avgUpside": 9.5,
           "avgTargetPrice": 242.6,
-          "currentPrice": 222.97,
+          "currentPrice": 221.64,
           "entryScore": 43,
           "reportCount": 5
         }
@@ -5453,10 +5453,10 @@
           "name": "Intel Corporation",
           "market": "us",
           "brokerCount": 2,
-          "avgUpside": 34.1,
+          "avgUpside": 32.9,
           "avgTargetPrice": 137.5,
-          "currentPrice": 102.5,
-          "entryScore": 44,
+          "currentPrice": 103.49,
+          "entryScore": 43,
           "reportCount": 2
         },
         {
@@ -8914,9 +8914,9 @@
           "name": "두산퓨얼셀",
           "market": "korea",
           "brokerCount": 2,
-          "avgUpside": 54.6,
+          "avgUpside": 56.2,
           "avgTargetPrice": 58500,
-          "currentPrice": 37850,
+          "currentPrice": 37450,
           "entryScore": 49,
           "reportCount": 2
         },
@@ -8925,9 +8925,9 @@
           "name": "HD현대에너지솔루션",
           "market": "korea",
           "brokerCount": 2,
-          "avgUpside": 117,
+          "avgUpside": 107,
           "avgTargetPrice": 267500,
-          "currentPrice": 123300,
+          "currentPrice": 129200,
           "entryScore": 49,
           "reportCount": 2
         },
@@ -8935,21 +8935,21 @@
           "ticker": "316140",
           "name": "우리금융지주",
           "market": "korea",
-          "brokerCount": 9,
-          "avgUpside": 28.3,
-          "avgTargetPrice": 43222.2,
-          "currentPrice": 33700,
+          "brokerCount": 7,
+          "avgUpside": 28.5,
+          "avgTargetPrice": 42714.3,
+          "currentPrice": 33250,
           "entryScore": 60,
-          "reportCount": 9
+          "reportCount": 7
         },
         {
           "ticker": "336370",
           "name": "솔루스첨단소재",
           "market": "korea",
           "brokerCount": 2,
-          "avgUpside": 86.8,
+          "avgUpside": 93.1,
           "avgTargetPrice": 15000,
-          "currentPrice": 8030,
+          "currentPrice": 7770,
           "entryScore": 49,
           "reportCount": 2
         }
@@ -11082,9 +11082,9 @@
           "name": "두산에너빌리티",
           "market": "korea",
           "brokerCount": 9,
-          "avgUpside": 55.9,
+          "avgUpside": 56.5,
           "avgTargetPrice": 128777.8,
-          "currentPrice": 82600,
+          "currentPrice": 82300,
           "entryScore": 70,
           "reportCount": 9
         },
@@ -11093,9 +11093,9 @@
           "name": "iM금융지주",
           "market": "korea",
           "brokerCount": 8,
-          "avgUpside": 40.2,
+          "avgUpside": 42.9,
           "avgTargetPrice": 24500,
-          "currentPrice": 17470,
+          "currentPrice": 17140,
           "entryScore": 70,
           "reportCount": 8
         },
@@ -11104,10 +11104,10 @@
           "name": "셀트리온",
           "market": "korea",
           "brokerCount": 7,
-          "avgUpside": 39.1,
+          "avgUpside": 41,
           "avgTargetPrice": 279689,
-          "currentPrice": 201000,
-          "entryScore": 69,
+          "currentPrice": 198400,
+          "entryScore": 70,
           "reportCount": 7
         },
         {
@@ -11137,10 +11137,10 @@
           "name": "Verizon Communications Inc.",
           "market": "us",
           "brokerCount": 3,
-          "avgUpside": 5.5,
+          "avgUpside": 6.5,
           "avgTargetPrice": 51.2,
-          "currentPrice": 48.48,
-          "entryScore": 26,
+          "currentPrice": 48.06,
+          "entryScore": 27,
           "reportCount": 3
         }
       ],
@@ -14506,9 +14506,9 @@
           "name": "BNK금융지주",
           "market": "korea",
           "brokerCount": 8,
-          "avgUpside": 54.1,
+          "avgUpside": 56.3,
           "avgTargetPrice": 23312.5,
-          "currentPrice": 15130,
+          "currentPrice": 14920,
           "entryScore": 70,
           "reportCount": 8
         },
@@ -14517,10 +14517,10 @@
           "name": "고영",
           "market": "korea",
           "brokerCount": 4,
-          "avgUpside": 31.8,
+          "avgUpside": 31,
           "avgTargetPrice": 42625,
-          "currentPrice": 32350,
-          "entryScore": 56,
+          "currentPrice": 32550,
+          "entryScore": 55,
           "reportCount": 4
         },
         {
@@ -14528,22 +14528,22 @@
           "name": "ISC",
           "market": "korea",
           "brokerCount": 4,
-          "avgUpside": 33.3,
+          "avgUpside": 26.9,
           "avgTargetPrice": 215000,
-          "currentPrice": 161300,
-          "entryScore": 57,
+          "currentPrice": 169400,
+          "entryScore": 52,
           "reportCount": 4
         },
         {
           "ticker": "TSLA",
           "name": "Tesla, Inc.",
           "market": "us",
-          "brokerCount": 3,
-          "avgUpside": 38.4,
-          "avgTargetPrice": 473.7,
-          "currentPrice": 342.27,
-          "entryScore": 55,
-          "reportCount": 3
+          "brokerCount": 2,
+          "avgUpside": 43.1,
+          "avgTargetPrice": 485.5,
+          "currentPrice": 339.3,
+          "entryScore": 49,
+          "reportCount": 2
         }
       ],
       "removed": [],
@@ -18194,10 +18194,10 @@
           "name": "한화솔루션",
           "market": "korea",
           "brokerCount": 7,
-          "avgUpside": 37.6,
+          "avgUpside": 35.9,
           "avgTargetPrice": 48714.3,
-          "currentPrice": 35400,
-          "entryScore": 68,
+          "currentPrice": 35850,
+          "entryScore": 66,
           "reportCount": 7
         },
         {
@@ -18205,9 +18205,9 @@
           "name": "해성디에스",
           "market": "korea",
           "brokerCount": 5,
-          "avgUpside": 39.2,
+          "avgUpside": 39,
           "avgTargetPrice": 82000,
-          "currentPrice": 58900,
+          "currentPrice": 59000,
           "entryScore": 69,
           "reportCount": 5
         },
@@ -18216,9 +18216,9 @@
           "name": "대웅제약",
           "market": "korea",
           "brokerCount": 5,
-          "avgUpside": 54.1,
+          "avgUpside": 60.1,
           "avgTargetPrice": 192000,
-          "currentPrice": 124600,
+          "currentPrice": 119900,
           "entryScore": 70,
           "reportCount": 5
         },
@@ -18227,9 +18227,9 @@
           "name": "현대오토에버",
           "market": "korea",
           "brokerCount": 3,
-          "avgUpside": 26,
+          "avgUpside": 26.1,
           "avgTargetPrice": 616666.7,
-          "currentPrice": 489500,
+          "currentPrice": 489000,
           "entryScore": 44,
           "reportCount": 3
         },
@@ -18238,9 +18238,9 @@
           "name": "넥센타이어",
           "market": "korea",
           "brokerCount": 4,
-          "avgUpside": 52.3,
+          "avgUpside": 57,
           "avgTargetPrice": 10250,
-          "currentPrice": 6730,
+          "currentPrice": 6530,
           "entryScore": 63,
           "reportCount": 4
         },
@@ -18249,10 +18249,10 @@
           "name": "삼성물산",
           "market": "korea",
           "brokerCount": 6,
-          "avgUpside": 22.9,
+          "avgUpside": 18.4,
           "avgTargetPrice": 453333.3,
-          "currentPrice": 369000,
-          "entryScore": 55,
+          "currentPrice": 383000,
+          "entryScore": 51,
           "reportCount": 6
         },
         {
@@ -18260,10 +18260,10 @@
           "name": "LG생활건강",
           "market": "korea",
           "brokerCount": 3,
-          "avgUpside": 8.9,
+          "avgUpside": 11.3,
           "avgTargetPrice": 335000,
-          "currentPrice": 307500,
-          "entryScore": 29,
+          "currentPrice": 301000,
+          "entryScore": 31,
           "reportCount": 3
         },
         {
@@ -18293,10 +18293,10 @@
           "name": "금호석유화학",
           "market": "korea",
           "brokerCount": 6,
-          "avgUpside": 35.5,
+          "avgUpside": 37.7,
           "avgTargetPrice": 177000,
-          "currentPrice": 130600,
-          "entryScore": 66,
+          "currentPrice": 128500,
+          "entryScore": 68,
           "reportCount": 6
         }
       ],
@@ -21854,9 +21854,9 @@
           "name": "삼성SDI",
           "market": "korea",
           "brokerCount": 8,
-          "avgUpside": 42.4,
+          "avgUpside": 44.9,
           "avgTargetPrice": 734625,
-          "currentPrice": 516000,
+          "currentPrice": 507000,
           "entryScore": 70,
           "reportCount": 8
         },
@@ -21865,9 +21865,9 @@
           "name": "포스코퓨처엠",
           "market": "korea",
           "brokerCount": 5,
-          "avgUpside": 42.8,
+          "avgUpside": 43,
           "avgTargetPrice": 243400,
-          "currentPrice": 170500,
+          "currentPrice": 170200,
           "entryScore": 70,
           "reportCount": 5
         },
@@ -21876,9 +21876,9 @@
           "name": "유한양행",
           "market": "korea",
           "brokerCount": 4,
-          "avgUpside": 55.3,
+          "avgUpside": 58.3,
           "avgTargetPrice": 130000,
-          "currentPrice": 83700,
+          "currentPrice": 82100,
           "entryScore": 63,
           "reportCount": 4
         },
@@ -21898,10 +21898,10 @@
           "name": "Target Corporation",
           "market": "us",
           "brokerCount": 3,
-          "avgUpside": 10.7,
-          "avgTargetPrice": 171,
-          "currentPrice": 154.48,
-          "entryScore": 30,
+          "avgUpside": 14.1,
+          "avgTargetPrice": 172.3,
+          "currentPrice": 151.01,
+          "entryScore": 33,
           "reportCount": 3
         }
       ],
@@ -25599,10 +25599,10 @@
           "name": "금호타이어",
           "market": "korea",
           "brokerCount": 3,
-          "avgUpside": 14.7,
+          "avgUpside": 16.5,
           "avgTargetPrice": 9333.3,
-          "currentPrice": 8140,
-          "entryScore": 34,
+          "currentPrice": 8010,
+          "entryScore": 35,
           "reportCount": 3
         }
       ],
@@ -29354,10 +29354,10 @@
           "name": "LG씨엔에스",
           "market": "korea",
           "brokerCount": 4,
-          "avgUpside": 22.7,
+          "avgUpside": 24.7,
           "avgTargetPrice": 98000,
-          "currentPrice": 79900,
-          "entryScore": 48,
+          "currentPrice": 78600,
+          "entryScore": 50,
           "reportCount": 4
         },
         {
@@ -29365,9 +29365,9 @@
           "name": "효성티앤씨",
           "market": "korea",
           "brokerCount": 3,
-          "avgUpside": 73.5,
+          "avgUpside": 75.1,
           "avgTargetPrice": 573333.3,
-          "currentPrice": 330500,
+          "currentPrice": 327500,
           "entryScore": 56,
           "reportCount": 3
         },
@@ -29376,9 +29376,9 @@
           "name": "에코프로비엠",
           "market": "korea",
           "brokerCount": 5,
-          "avgUpside": 77.2,
+          "avgUpside": 79.7,
           "avgTargetPrice": 206800,
-          "currentPrice": 116700,
+          "currentPrice": 115100,
           "entryScore": 70,
           "reportCount": 5
         },
@@ -29387,9 +29387,9 @@
           "name": "LX하우시스",
           "market": "korea",
           "brokerCount": 2,
-          "avgUpside": 37.6,
+          "avgUpside": 38,
           "avgTargetPrice": 47000,
-          "currentPrice": 34150,
+          "currentPrice": 34050,
           "entryScore": 47,
           "reportCount": 2
         },
@@ -31717,9 +31717,9 @@
           "name": "칩스앤미디어",
           "market": "korea",
           "brokerCount": 2,
-          "avgUpside": 90.2,
+          "avgUpside": 90.7,
           "avgTargetPrice": 21400,
-          "currentPrice": 11250,
+          "currentPrice": 11220,
           "entryScore": 49,
           "reportCount": 2
         },
@@ -31728,9 +31728,9 @@
           "name": "LX인터내셔널",
           "market": "korea",
           "brokerCount": 4,
-          "avgUpside": 57.4,
+          "avgUpside": 57,
           "avgTargetPrice": 59500,
-          "currentPrice": 37800,
+          "currentPrice": 37900,
           "entryScore": 63,
           "reportCount": 4
         },
@@ -31739,9 +31739,9 @@
           "name": "HS효성첨단소재",
           "market": "korea",
           "brokerCount": 2,
-          "avgUpside": 49.1,
+          "avgUpside": 50.8,
           "avgTargetPrice": 265000,
-          "currentPrice": 177700,
+          "currentPrice": 175700,
           "entryScore": 49,
           "reportCount": 2
         }
@@ -35368,9 +35368,9 @@
           "name": "디어유",
           "market": "korea",
           "brokerCount": 4,
-          "avgUpside": 57.8,
+          "avgUpside": 61.7,
           "avgTargetPrice": 31250,
-          "currentPrice": 19800,
+          "currentPrice": 19330,
           "entryScore": 63,
           "reportCount": 4
         },
@@ -35379,9 +35379,9 @@
           "name": "비에이치",
           "market": "korea",
           "brokerCount": 5,
-          "avgUpside": 67.4,
+          "avgUpside": 60.7,
           "avgTargetPrice": 30800,
-          "currentPrice": 18400,
+          "currentPrice": 19170,
           "entryScore": 70,
           "reportCount": 5
         },
@@ -35390,9 +35390,9 @@
           "name": "삼성증권",
           "market": "korea",
           "brokerCount": 5,
-          "avgUpside": 60.9,
+          "avgUpside": 62.1,
           "avgTargetPrice": 149600,
-          "currentPrice": 93000,
+          "currentPrice": 92300,
           "entryScore": 70,
           "reportCount": 5
         },
@@ -35401,10 +35401,10 @@
           "name": "강원랜드",
           "market": "korea",
           "brokerCount": 3,
-          "avgUpside": 30.2,
+          "avgUpside": 31.1,
           "avgTargetPrice": 19000,
-          "currentPrice": 14590,
-          "entryScore": 47,
+          "currentPrice": 14490,
+          "entryScore": 48,
           "reportCount": 3
         },
         {
@@ -35412,9 +35412,9 @@
           "name": "코나아이",
           "market": "korea",
           "brokerCount": 2,
-          "avgUpside": 58.9,
+          "avgUpside": 61,
           "avgTargetPrice": 63500,
-          "currentPrice": 39950,
+          "currentPrice": 39450,
           "entryScore": 49,
           "reportCount": 2
         }
@@ -39220,9 +39220,9 @@
           "name": "현대백화점",
           "market": "korea",
           "brokerCount": 8,
-          "avgUpside": 82,
+          "avgUpside": 82.2,
           "avgTargetPrice": 186000,
-          "currentPrice": 102200,
+          "currentPrice": 102100,
           "entryScore": 70,
           "reportCount": 8
         },
@@ -39230,21 +39230,21 @@
           "ticker": "229640",
           "name": "LS에코에너지",
           "market": "korea",
-          "brokerCount": 4,
-          "avgUpside": 55.3,
-          "avgTargetPrice": 75000,
-          "currentPrice": 48300,
-          "entryScore": 63,
-          "reportCount": 4
+          "brokerCount": 5,
+          "avgUpside": 44.1,
+          "avgTargetPrice": 71400,
+          "currentPrice": 49550,
+          "entryScore": 70,
+          "reportCount": 5
         },
         {
           "ticker": "196170",
           "name": "알테오젠",
           "market": "korea",
           "brokerCount": 3,
-          "avgUpside": 56.1,
+          "avgUpside": 57.6,
           "avgTargetPrice": 490000,
-          "currentPrice": 314000,
+          "currentPrice": 311000,
           "entryScore": 56,
           "reportCount": 3
         },
@@ -39264,9 +39264,9 @@
           "name": "심텍",
           "market": "korea",
           "brokerCount": 5,
-          "avgUpside": 64.7,
+          "avgUpside": 63.6,
           "avgTargetPrice": 179000,
-          "currentPrice": 108700,
+          "currentPrice": 109400,
           "entryScore": 70,
           "reportCount": 5
         },
@@ -39275,9 +39275,9 @@
           "name": "카카오뱅크",
           "market": "korea",
           "brokerCount": 3,
-          "avgUpside": 44.1,
+          "avgUpside": 45.5,
           "avgTargetPrice": 32000,
-          "currentPrice": 22200,
+          "currentPrice": 22000,
           "entryScore": 56,
           "reportCount": 3
         },
@@ -39286,9 +39286,9 @@
           "name": "서부T&D",
           "market": "korea",
           "brokerCount": 2,
-          "avgUpside": 72.9,
+          "avgUpside": 61.9,
           "avgTargetPrice": 17500,
-          "currentPrice": 10120,
+          "currentPrice": 10810,
           "entryScore": 49,
           "reportCount": 2
         },
@@ -39297,9 +39297,9 @@
           "name": "한화비전",
           "market": "korea",
           "brokerCount": 2,
-          "avgUpside": 68.9,
+          "avgUpside": 63.6,
           "avgTargetPrice": 90000,
-          "currentPrice": 53300,
+          "currentPrice": 55000,
           "entryScore": 49,
           "reportCount": 2
         },
@@ -39308,10 +39308,10 @@
           "name": "CJ",
           "market": "korea",
           "brokerCount": 2,
-          "avgUpside": 36.1,
+          "avgUpside": 43.2,
           "avgTargetPrice": 188000,
-          "currentPrice": 138100,
-          "entryScore": 46,
+          "currentPrice": 131300,
+          "entryScore": 49,
           "reportCount": 2
         },
         {
@@ -39319,9 +39319,9 @@
           "name": "HD현대",
           "market": "korea",
           "brokerCount": 2,
-          "avgUpside": 44.4,
+          "avgUpside": 43.2,
           "avgTargetPrice": 340000,
-          "currentPrice": 235500,
+          "currentPrice": 237500,
           "entryScore": 49,
           "reportCount": 2
         }
@@ -43052,9 +43052,9 @@
           "name": "LIG디펜스앤에어로스페이스",
           "market": "korea",
           "brokerCount": 8,
-          "avgUpside": 43.4,
+          "avgUpside": 42.5,
           "avgTargetPrice": 1168750,
-          "currentPrice": 815000,
+          "currentPrice": 820000,
           "entryScore": 70,
           "reportCount": 8
         },
@@ -43063,9 +43063,9 @@
           "name": "한국금융지주",
           "market": "korea",
           "brokerCount": 7,
-          "avgUpside": 55.5,
+          "avgUpside": 57,
           "avgTargetPrice": 317142.9,
-          "currentPrice": 204000,
+          "currentPrice": 202000,
           "entryScore": 70,
           "reportCount": 7
         },
@@ -43074,9 +43074,9 @@
           "name": "스튜디오드래곤",
           "market": "korea",
           "brokerCount": 4,
-          "avgUpside": 56.8,
+          "avgUpside": 60.5,
           "avgTargetPrice": 37000,
-          "currentPrice": 23600,
+          "currentPrice": 23050,
           "entryScore": 63,
           "reportCount": 4
         },
@@ -43085,9 +43085,9 @@
           "name": "휴젤",
           "market": "korea",
           "brokerCount": 6,
-          "avgUpside": 51,
+          "avgUpside": 56.2,
           "avgTargetPrice": 386666.7,
-          "currentPrice": 256000,
+          "currentPrice": 247500,
           "entryScore": 70,
           "reportCount": 6
         },
@@ -43096,10 +43096,10 @@
           "name": "엘앤에프",
           "market": "korea",
           "brokerCount": 4,
-          "avgUpside": 25.3,
+          "avgUpside": 21.8,
           "avgTargetPrice": 137500,
-          "currentPrice": 109700,
-          "entryScore": 50,
+          "currentPrice": 112900,
+          "entryScore": 47,
           "reportCount": 4
         },
         {
@@ -43107,10 +43107,10 @@
           "name": "고려아연",
           "market": "korea",
           "brokerCount": 3,
-          "avgUpside": 34.4,
+          "avgUpside": 32.3,
           "avgTargetPrice": 1607666.7,
-          "currentPrice": 1196000,
-          "entryScore": 51,
+          "currentPrice": 1215000,
+          "entryScore": 49,
           "reportCount": 3
         },
         {
@@ -43118,10 +43118,10 @@
           "name": "현대코퍼레이션",
           "market": "korea",
           "brokerCount": 2,
-          "avgUpside": 36.4,
+          "avgUpside": 38.6,
           "avgTargetPrice": 37500,
-          "currentPrice": 27500,
-          "entryScore": 46,
+          "currentPrice": 27050,
+          "entryScore": 48,
           "reportCount": 2
         },
         {
@@ -43129,9 +43129,9 @@
           "name": "롯데에너지머티리얼즈",
           "market": "korea",
           "brokerCount": 4,
-          "avgUpside": 79.2,
+          "avgUpside": 81.6,
           "avgTargetPrice": 61750,
-          "currentPrice": 34450,
+          "currentPrice": 34000,
           "entryScore": 63,
           "reportCount": 4
         },
@@ -43140,9 +43140,9 @@
           "name": "롯데칠성",
           "market": "korea",
           "brokerCount": 3,
-          "avgUpside": 40.9,
+          "avgUpside": 44.3,
           "avgTargetPrice": 143333.3,
-          "currentPrice": 101700,
+          "currentPrice": 99300,
           "entryScore": 56,
           "reportCount": 3
         },
@@ -43162,9 +43162,9 @@
           "name": "SK가스",
           "market": "korea",
           "brokerCount": 2,
-          "avgUpside": 42.4,
+          "avgUpside": 43.3,
           "avgTargetPrice": 347500,
-          "currentPrice": 244000,
+          "currentPrice": 242500,
           "entryScore": 49,
           "reportCount": 2
         }
@@ -50785,10 +50785,10 @@
           "name": "에스원",
           "market": "korea",
           "brokerCount": 2,
-          "avgUpside": 19.7,
+          "avgUpside": 20.2,
           "avgTargetPrice": 93000,
-          "currentPrice": 77700,
-          "entryScore": 31,
+          "currentPrice": 77400,
+          "entryScore": 32,
           "reportCount": 2
         },
         {
@@ -50796,9 +50796,9 @@
           "name": "롯데케미칼",
           "market": "korea",
           "brokerCount": 4,
-          "avgUpside": 92.3,
+          "avgUpside": 93,
           "avgTargetPrice": 110000,
-          "currentPrice": 57200,
+          "currentPrice": 57000,
           "entryScore": 63,
           "reportCount": 4
         },
@@ -50807,9 +50807,9 @@
           "name": "헥토파이낸셜",
           "market": "korea",
           "brokerCount": 2,
-          "avgUpside": 52.7,
+          "avgUpside": 54.6,
           "avgTargetPrice": 32000,
-          "currentPrice": 20950,
+          "currentPrice": 20700,
           "entryScore": 49,
           "reportCount": 2
         },
@@ -50818,9 +50818,9 @@
           "name": "씨에스윈드",
           "market": "korea",
           "brokerCount": 6,
-          "avgUpside": 66.5,
+          "avgUpside": 67.9,
           "avgTargetPrice": 78000,
-          "currentPrice": 46850,
+          "currentPrice": 46450,
           "entryScore": 70,
           "reportCount": 6
         },
@@ -50840,9 +50840,9 @@
           "name": "롯데쇼핑",
           "market": "korea",
           "brokerCount": 6,
-          "avgUpside": 77.4,
+          "avgUpside": 76.3,
           "avgTargetPrice": 182500,
-          "currentPrice": 102900,
+          "currentPrice": 103500,
           "entryScore": 70,
           "reportCount": 6
         },
@@ -50851,10 +50851,10 @@
           "name": "GS리테일",
           "market": "korea",
           "brokerCount": 8,
-          "avgUpside": 25.9,
+          "avgUpside": 28.7,
           "avgTargetPrice": 34875,
-          "currentPrice": 27700,
-          "entryScore": 58,
+          "currentPrice": 27100,
+          "entryScore": 60,
           "reportCount": 8
         },
         {
@@ -50862,9 +50862,9 @@
           "name": "코웨이",
           "market": "korea",
           "brokerCount": 2,
-          "avgUpside": 40,
+          "avgUpside": 43.4,
           "avgTargetPrice": 137500,
-          "currentPrice": 98200,
+          "currentPrice": 95900,
           "entryScore": 49,
           "reportCount": 2
         },
@@ -53576,10 +53576,10 @@
           "name": "오리온",
           "market": "korea",
           "brokerCount": 3,
-          "avgUpside": 31.8,
+          "avgUpside": 37.8,
           "avgTargetPrice": 176666.7,
-          "currentPrice": 134000,
-          "entryScore": 49,
+          "currentPrice": 128200,
+          "entryScore": 54,
           "reportCount": 3
         },
         {
@@ -53587,9 +53587,9 @@
           "name": "한전KPS",
           "market": "korea",
           "brokerCount": 4,
-          "avgUpside": 41.3,
+          "avgUpside": 43,
           "avgTargetPrice": 65500,
-          "currentPrice": 46350,
+          "currentPrice": 45800,
           "entryScore": 63,
           "reportCount": 4
         },
@@ -53598,9 +53598,9 @@
           "name": "지역난방공사",
           "market": "korea",
           "brokerCount": 3,
-          "avgUpside": 72.3,
+          "avgUpside": 76.7,
           "avgTargetPrice": 131666.7,
-          "currentPrice": 76400,
+          "currentPrice": 74500,
           "entryScore": 56,
           "reportCount": 3
         },
@@ -53609,9 +53609,9 @@
           "name": "한국가스공사",
           "market": "korea",
           "brokerCount": 4,
-          "avgUpside": 40.7,
+          "avgUpside": 41.5,
           "avgTargetPrice": 51500,
-          "currentPrice": 36600,
+          "currentPrice": 36400,
           "entryScore": 63,
           "reportCount": 4
         },
@@ -53620,9 +53620,9 @@
           "name": "헥토이노베이션",
           "market": "korea",
           "brokerCount": 2,
-          "avgUpside": 49,
+          "avgUpside": 51.3,
           "avgTargetPrice": 22000,
-          "currentPrice": 14770,
+          "currentPrice": 14540,
           "entryScore": 49,
           "reportCount": 2
         },
@@ -53631,9 +53631,9 @@
           "name": "한컴",
           "market": "korea",
           "brokerCount": 2,
-          "avgUpside": 82.9,
+          "avgUpside": 86.8,
           "avgTargetPrice": 34000,
-          "currentPrice": 18590,
+          "currentPrice": 18200,
           "entryScore": 49,
           "reportCount": 2
         },
@@ -53642,9 +53642,9 @@
           "name": "파라다이스",
           "market": "korea",
           "brokerCount": 3,
-          "avgUpside": 102.2,
+          "avgUpside": 104.3,
           "avgTargetPrice": 20000,
-          "currentPrice": 9890,
+          "currentPrice": 9790,
           "entryScore": 56,
           "reportCount": 3
         },
@@ -53653,9 +53653,9 @@
           "name": "코오롱인더",
           "market": "korea",
           "brokerCount": 2,
-          "avgUpside": 89.9,
+          "avgUpside": 79.2,
           "avgTargetPrice": 105000,
-          "currentPrice": 55300,
+          "currentPrice": 58600,
           "entryScore": 49,
           "reportCount": 2
         },
@@ -53664,9 +53664,9 @@
           "name": "한전기술",
           "market": "korea",
           "brokerCount": 3,
-          "avgUpside": 91.4,
+          "avgUpside": 93.3,
           "avgTargetPrice": 193333.3,
-          "currentPrice": 101000,
+          "currentPrice": 100000,
           "entryScore": 56,
           "reportCount": 3
         },
@@ -53685,23 +53685,23 @@
           "ticker": "SNOW",
           "name": "Snowflake Inc.",
           "market": "us",
-          "brokerCount": 6,
-          "avgUpside": 16.6,
-          "avgTargetPrice": 383.7,
-          "currentPrice": 328.92,
-          "entryScore": 50,
-          "reportCount": 6
+          "brokerCount": 7,
+          "avgUpside": 18.4,
+          "avgTargetPrice": 391,
+          "currentPrice": 330.11,
+          "entryScore": 51,
+          "reportCount": 7
         },
         {
           "ticker": "HD",
           "name": "The Home Depot, Inc.",
           "market": "us",
-          "brokerCount": 4,
+          "brokerCount": 3,
           "avgUpside": 17.2,
-          "avgTargetPrice": 397,
-          "currentPrice": 338.86,
-          "entryScore": 45,
-          "reportCount": 4
+          "avgTargetPrice": 396,
+          "currentPrice": 337.88,
+          "entryScore": 38,
+          "reportCount": 3
         }
       ],
       "removed": [
@@ -57805,10 +57805,10 @@
           "name": "한국타이어앤테크놀로지",
           "market": "korea",
           "brokerCount": 5,
-          "avgUpside": 20.7,
+          "avgUpside": 24.3,
           "avgTargetPrice": 86400,
-          "currentPrice": 71600,
-          "entryScore": 53,
+          "currentPrice": 69500,
+          "entryScore": 56,
           "reportCount": 5
         },
         {
@@ -57816,9 +57816,9 @@
           "name": "신세계",
           "market": "korea",
           "brokerCount": 8,
-          "avgUpside": 72,
+          "avgUpside": 68,
           "avgTargetPrice": 734375,
-          "currentPrice": 427000,
+          "currentPrice": 437000,
           "entryScore": 70,
           "reportCount": 8
         },
@@ -57827,10 +57827,10 @@
           "name": "코스맥스",
           "market": "korea",
           "brokerCount": 7,
-          "avgUpside": 15.9,
+          "avgUpside": 23.1,
           "avgTargetPrice": 286857.1,
-          "currentPrice": 247500,
-          "entryScore": 49,
+          "currentPrice": 233000,
+          "entryScore": 55,
           "reportCount": 7
         },
         {
@@ -57838,9 +57838,9 @@
           "name": "CJ제일제당",
           "market": "korea",
           "brokerCount": 5,
-          "avgUpside": 52.1,
+          "avgUpside": 50.7,
           "avgTargetPrice": 282000,
-          "currentPrice": 185400,
+          "currentPrice": 187150,
           "entryScore": 70,
           "reportCount": 5
         },
@@ -57849,9 +57849,9 @@
           "name": "GKL",
           "market": "korea",
           "brokerCount": 2,
-          "avgUpside": 38.3,
+          "avgUpside": 39.3,
           "avgTargetPrice": 13000,
-          "currentPrice": 9400,
+          "currentPrice": 9330,
           "entryScore": 48,
           "reportCount": 2
         },
@@ -57860,9 +57860,9 @@
           "name": "일진전기",
           "market": "korea",
           "brokerCount": 2,
-          "avgUpside": 60.8,
+          "avgUpside": 60.4,
           "avgTargetPrice": 119500,
-          "currentPrice": 74300,
+          "currentPrice": 74500,
           "entryScore": 49,
           "reportCount": 2
         },
@@ -57871,9 +57871,9 @@
           "name": "바텍",
           "market": "korea",
           "brokerCount": 2,
-          "avgUpside": 63.1,
+          "avgUpside": 65.5,
           "avgTargetPrice": 34000,
-          "currentPrice": 20850,
+          "currentPrice": 20550,
           "entryScore": 49,
           "reportCount": 2
         },
@@ -57881,22 +57881,22 @@
           "ticker": "462870",
           "name": "시프트업",
           "market": "korea",
-          "brokerCount": 2,
-          "avgUpside": 35.6,
-          "avgTargetPrice": 43000,
-          "currentPrice": 31700,
-          "entryScore": 45,
-          "reportCount": 2
+          "brokerCount": 3,
+          "avgUpside": 60,
+          "avgTargetPrice": 50333.3,
+          "currentPrice": 31450,
+          "entryScore": 56,
+          "reportCount": 3
         },
         {
           "ticker": "214320",
           "name": "이노션",
           "market": "korea",
           "brokerCount": 2,
-          "avgUpside": 31.9,
+          "avgUpside": 34.5,
           "avgTargetPrice": 25500,
-          "currentPrice": 19330,
-          "entryScore": 42,
+          "currentPrice": 18960,
+          "entryScore": 44,
           "reportCount": 2
         }
       ],
@@ -61736,9 +61736,9 @@
           "name": "JYP Ent.",
           "market": "korea",
           "brokerCount": 7,
-          "avgUpside": 52.8,
+          "avgUpside": 56.4,
           "avgTargetPrice": 62714.3,
-          "currentPrice": 41050,
+          "currentPrice": 40100,
           "entryScore": 70,
           "reportCount": 7
         },
@@ -61747,10 +61747,10 @@
           "name": "한화손해보험",
           "market": "korea",
           "brokerCount": 5,
-          "avgUpside": 25.3,
+          "avgUpside": 22.9,
           "avgTargetPrice": 8760,
-          "currentPrice": 6990,
-          "entryScore": 57,
+          "currentPrice": 7130,
+          "entryScore": 55,
           "reportCount": 5
         },
         {
@@ -61758,10 +61758,10 @@
           "name": "한화생명",
           "market": "korea",
           "brokerCount": 4,
-          "avgUpside": 16.3,
+          "avgUpside": 19.7,
           "avgTargetPrice": 6550,
-          "currentPrice": 5630,
-          "entryScore": 42,
+          "currentPrice": 5470,
+          "entryScore": 45,
           "reportCount": 4
         },
         {
@@ -61769,9 +61769,9 @@
           "name": "한국전력",
           "market": "korea",
           "brokerCount": 5,
-          "avgUpside": 49.8,
+          "avgUpside": 51.4,
           "avgTargetPrice": 49800,
-          "currentPrice": 33250,
+          "currentPrice": 32900,
           "entryScore": 70,
           "reportCount": 5
         },
@@ -61780,9 +61780,9 @@
           "name": "미래에셋증권",
           "market": "korea",
           "brokerCount": 6,
-          "avgUpside": 66.9,
+          "avgUpside": 68,
           "avgTargetPrice": 62833.3,
-          "currentPrice": 37650,
+          "currentPrice": 37400,
           "entryScore": 70,
           "reportCount": 6
         },
@@ -61791,10 +61791,10 @@
           "name": "한국콜마",
           "market": "korea",
           "brokerCount": 8,
-          "avgUpside": 21.9,
+          "avgUpside": 30.3,
           "avgTargetPrice": 166625,
-          "currentPrice": 136700,
-          "entryScore": 54,
+          "currentPrice": 127900,
+          "entryScore": 61,
           "reportCount": 8
         },
         {
@@ -61802,9 +61802,9 @@
           "name": "SK오션플랜트",
           "market": "korea",
           "brokerCount": 5,
-          "avgUpside": 55.1,
+          "avgUpside": 58.3,
           "avgTargetPrice": 22400,
-          "currentPrice": 14440,
+          "currentPrice": 14150,
           "entryScore": 70,
           "reportCount": 5
         },
@@ -61813,9 +61813,9 @@
           "name": "더블유게임즈",
           "market": "korea",
           "brokerCount": 5,
-          "avgUpside": 40.3,
+          "avgUpside": 44.5,
           "avgTargetPrice": 86400,
-          "currentPrice": 61600,
+          "currentPrice": 59800,
           "entryScore": 70,
           "reportCount": 5
         },
@@ -61824,9 +61824,9 @@
           "name": "덕산네오룩스",
           "market": "korea",
           "brokerCount": 3,
-          "avgUpside": 76.4,
+          "avgUpside": 77.4,
           "avgTargetPrice": 61833.3,
-          "currentPrice": 35050,
+          "currentPrice": 34850,
           "entryScore": 56,
           "reportCount": 3
         },
@@ -61835,10 +61835,10 @@
           "name": "메리츠금융지주",
           "market": "korea",
           "brokerCount": 4,
-          "avgUpside": 32.8,
+          "avgUpside": 32,
           "avgTargetPrice": 155000,
-          "currentPrice": 116700,
-          "entryScore": 57,
+          "currentPrice": 117400,
+          "entryScore": 56,
           "reportCount": 4
         },
         {
@@ -61846,9 +61846,9 @@
           "name": "원익QnC",
           "market": "korea",
           "brokerCount": 2,
-          "avgUpside": 45.8,
+          "avgUpside": 45.1,
           "avgTargetPrice": 42500,
-          "currentPrice": 29150,
+          "currentPrice": 29300,
           "entryScore": 49,
           "reportCount": 2
         }
@@ -65755,10 +65755,10 @@
           "name": "삼성화재",
           "market": "korea",
           "brokerCount": 6,
-          "avgUpside": 29.9,
+          "avgUpside": 27.3,
           "avgTargetPrice": 799166.7,
-          "currentPrice": 615000,
-          "entryScore": 61,
+          "currentPrice": 628000,
+          "entryScore": 59,
           "reportCount": 6
         },
         {
@@ -65766,10 +65766,10 @@
           "name": "달바글로벌",
           "market": "korea",
           "brokerCount": 4,
-          "avgUpside": 34.6,
+          "avgUpside": 37.3,
           "avgTargetPrice": 307500,
-          "currentPrice": 228500,
-          "entryScore": 58,
+          "currentPrice": 224000,
+          "entryScore": 61,
           "reportCount": 4
         },
         {
@@ -65777,10 +65777,10 @@
           "name": "삼성생명",
           "market": "korea",
           "brokerCount": 6,
-          "avgUpside": 36.8,
+          "avgUpside": 30.9,
           "avgTargetPrice": 411666.7,
-          "currentPrice": 301000,
-          "entryScore": 67,
+          "currentPrice": 314500,
+          "entryScore": 62,
           "reportCount": 6
         },
         {
@@ -65788,10 +65788,10 @@
           "name": "DB손해보험",
           "market": "korea",
           "brokerCount": 4,
-          "avgUpside": 28.5,
+          "avgUpside": 25.8,
           "avgTargetPrice": 227250,
-          "currentPrice": 176800,
-          "entryScore": 53,
+          "currentPrice": 180600,
+          "entryScore": 51,
           "reportCount": 4
         },
         {
@@ -65799,10 +65799,10 @@
           "name": "이마트",
           "market": "korea",
           "brokerCount": 5,
-          "avgUpside": 30,
+          "avgUpside": 32.9,
           "avgTargetPrice": 102600,
-          "currentPrice": 78900,
-          "entryScore": 61,
+          "currentPrice": 77200,
+          "entryScore": 64,
           "reportCount": 5
         },
         {
@@ -65810,10 +65810,10 @@
           "name": "네오위즈",
           "market": "korea",
           "brokerCount": 2,
-          "avgUpside": 25.7,
+          "avgUpside": 29.4,
           "avgTargetPrice": 24000,
-          "currentPrice": 19100,
-          "entryScore": 36,
+          "currentPrice": 18540,
+          "entryScore": 40,
           "reportCount": 2
         }
       ],
@@ -69851,10 +69851,10 @@
           "name": "실리콘투",
           "market": "korea",
           "brokerCount": 3,
-          "avgUpside": 37.7,
+          "avgUpside": 38.7,
           "avgTargetPrice": 59000,
-          "currentPrice": 42850,
-          "entryScore": 54,
+          "currentPrice": 42550,
+          "entryScore": 55,
           "reportCount": 3
         },
         {
@@ -69862,10 +69862,10 @@
           "name": "LG",
           "market": "korea",
           "brokerCount": 4,
-          "avgUpside": 14.6,
+          "avgUpside": 18,
           "avgTargetPrice": 137500,
-          "currentPrice": 120000,
-          "entryScore": 41,
+          "currentPrice": 116500,
+          "entryScore": 44,
           "reportCount": 4
         },
         {
@@ -69873,9 +69873,9 @@
           "name": "롯데관광개발",
           "market": "korea",
           "brokerCount": 3,
-          "avgUpside": 79.3,
+          "avgUpside": 88.4,
           "avgTargetPrice": 24666.7,
-          "currentPrice": 13760,
+          "currentPrice": 13090,
           "entryScore": 56,
           "reportCount": 3
         },
@@ -69884,10 +69884,10 @@
           "name": "코스메카코리아",
           "market": "korea",
           "brokerCount": 2,
-          "avgUpside": 10.1,
+          "avgUpside": 14.4,
           "avgTargetPrice": 140000,
-          "currentPrice": 127200,
-          "entryScore": 23,
+          "currentPrice": 122400,
+          "entryScore": 27,
           "reportCount": 2
         }
       ],
@@ -78138,6 +78138,4179 @@
             "currentPrice": {
               "old": 24.89,
               "new": 24.68
+            }
+          }
+        }
+      ]
+    },
+    {
+      "date": "2026-08-19",
+      "added": [
+        {
+          "ticker": "083650",
+          "name": "비에이치아이",
+          "market": "korea",
+          "brokerCount": 2,
+          "avgUpside": 86.4,
+          "avgTargetPrice": 110000,
+          "currentPrice": 59000,
+          "entryScore": 49,
+          "reportCount": 2
+        },
+        {
+          "ticker": "006260",
+          "name": "LS",
+          "market": "korea",
+          "brokerCount": 4,
+          "avgUpside": 59.8,
+          "avgTargetPrice": 523500,
+          "currentPrice": 327500,
+          "entryScore": 63,
+          "reportCount": 4
+        },
+        {
+          "ticker": "034730",
+          "name": "SK",
+          "market": "korea",
+          "brokerCount": 2,
+          "avgUpside": 44,
+          "avgTargetPrice": 785000,
+          "currentPrice": 545000,
+          "entryScore": 49,
+          "reportCount": 2
+        },
+        {
+          "ticker": "081660",
+          "name": "미스토홀딩스",
+          "market": "korea",
+          "brokerCount": 2,
+          "avgUpside": 62.4,
+          "avgTargetPrice": 69000,
+          "currentPrice": 42500,
+          "entryScore": 49,
+          "reportCount": 2
+        },
+        {
+          "ticker": "064960",
+          "name": "SNT모티브",
+          "market": "korea",
+          "brokerCount": 2,
+          "avgUpside": 49.8,
+          "avgTargetPrice": 41500,
+          "currentPrice": 27700,
+          "entryScore": 49,
+          "reportCount": 2
+        },
+        {
+          "ticker": "007340",
+          "name": "DN오토모티브",
+          "market": "korea",
+          "brokerCount": 2,
+          "avgUpside": 18.6,
+          "avgTargetPrice": 69500,
+          "currentPrice": 58600,
+          "entryScore": 30,
+          "reportCount": 2
+        },
+        {
+          "ticker": "001740",
+          "name": "SK네트웍스",
+          "market": "korea",
+          "brokerCount": 2,
+          "avgUpside": 35.6,
+          "avgTargetPrice": 9750,
+          "currentPrice": 7190,
+          "entryScore": 45,
+          "reportCount": 2
+        },
+        {
+          "ticker": "356860",
+          "name": "티엘비",
+          "market": "korea",
+          "brokerCount": 2,
+          "avgUpside": 104.3,
+          "avgTargetPrice": 71500,
+          "currentPrice": 35000,
+          "entryScore": 49,
+          "reportCount": 2
+        },
+        {
+          "ticker": "095570",
+          "name": "AJ네트웍스",
+          "market": "korea",
+          "brokerCount": 2,
+          "avgUpside": 51.3,
+          "avgTargetPrice": 6750,
+          "currentPrice": 4460,
+          "entryScore": 49,
+          "reportCount": 2
+        }
+      ],
+      "removed": [
+        "294870",
+        "064350",
+        "010140",
+        "030000",
+        "086790",
+        "336260",
+        "322000",
+        "336370",
+        "TSLA"
+      ],
+      "changed": [
+        {
+          "ticker": "000100",
+          "name": "유한양행",
+          "fields": {
+            "brokerCount": {
+              "old": 4,
+              "new": 5
+            },
+            "avgUpside": {
+              "old": 58.3,
+              "new": 65
+            },
+            "entryScore": {
+              "old": 63,
+              "new": 70
+            },
+            "avgTargetPrice": {
+              "old": 130000,
+              "new": 132000
+            },
+            "currentPrice": {
+              "old": 82100,
+              "new": 80000
+            },
+            "reportCount": {
+              "old": 4,
+              "new": 5
+            }
+          }
+        },
+        {
+          "ticker": "001040",
+          "name": "CJ",
+          "fields": {
+            "brokerCount": {
+              "old": 2,
+              "new": 5
+            },
+            "avgUpside": {
+              "old": 43.2,
+              "new": 82.8
+            },
+            "entryScore": {
+              "old": 49,
+              "new": 70
+            },
+            "avgTargetPrice": {
+              "old": 188000,
+              "new": 221200
+            },
+            "currentPrice": {
+              "old": 131300,
+              "new": 121000
+            },
+            "reportCount": {
+              "old": 2,
+              "new": 5
+            }
+          }
+        },
+        {
+          "ticker": "036460",
+          "name": "한국가스공사",
+          "fields": {
+            "brokerCount": {
+              "old": 4,
+              "new": 5
+            },
+            "avgUpside": {
+              "old": 41.5,
+              "new": 46.3
+            },
+            "entryScore": {
+              "old": 63,
+              "new": 70
+            },
+            "avgTargetPrice": {
+              "old": 51500,
+              "new": 52000
+            },
+            "currentPrice": {
+              "old": 36400,
+              "new": 35550
+            },
+            "reportCount": {
+              "old": 4,
+              "new": 5
+            }
+          }
+        },
+        {
+          "ticker": "003230",
+          "name": "삼양식품",
+          "fields": {
+            "brokerCount": {
+              "old": 2,
+              "new": 5
+            },
+            "avgUpside": {
+              "old": 35.4,
+              "new": 40
+            },
+            "entryScore": {
+              "old": 45,
+              "new": 70
+            },
+            "avgTargetPrice": {
+              "old": 1800000,
+              "new": 1852000
+            },
+            "currentPrice": {
+              "old": 1329000,
+              "new": 1323000
+            },
+            "reportCount": {
+              "old": 2,
+              "new": 5
+            }
+          }
+        },
+        {
+          "ticker": "307950",
+          "name": "현대오토에버",
+          "fields": {
+            "brokerCount": {
+              "old": 3,
+              "new": 4
+            },
+            "avgUpside": {
+              "old": 26.1,
+              "new": 34.4
+            },
+            "entryScore": {
+              "old": 44,
+              "new": 58
+            },
+            "avgTargetPrice": {
+              "old": 616666.7,
+              "new": 605000
+            },
+            "currentPrice": {
+              "old": 489000,
+              "new": 450000
+            },
+            "reportCount": {
+              "old": 3,
+              "new": 4
+            }
+          }
+        },
+        {
+          "ticker": "004370",
+          "name": "농심",
+          "fields": {
+            "brokerCount": {
+              "old": 2,
+              "new": 5
+            },
+            "avgUpside": {
+              "old": 33.5,
+              "new": 34.8
+            },
+            "entryScore": {
+              "old": 43,
+              "new": 65
+            },
+            "avgTargetPrice": {
+              "old": 590000,
+              "new": 568000
+            },
+            "currentPrice": {
+              "old": 442000,
+              "new": 421500
+            },
+            "reportCount": {
+              "old": 2,
+              "new": 5
+            }
+          }
+        },
+        {
+          "ticker": "001450",
+          "name": "현대해상",
+          "fields": {
+            "brokerCount": {
+              "old": 2,
+              "new": 4
+            },
+            "avgUpside": {
+              "old": 21.6,
+              "new": 16.5
+            },
+            "entryScore": {
+              "old": 33,
+              "new": 42
+            },
+            "avgTargetPrice": {
+              "old": 60500,
+              "new": 58250
+            },
+            "currentPrice": {
+              "old": 49750,
+              "new": 50000
+            },
+            "reportCount": {
+              "old": 2,
+              "new": 4
+            }
+          }
+        },
+        {
+          "ticker": "066570",
+          "name": "LG전자",
+          "fields": {
+            "brokerCount": {
+              "old": 4,
+              "new": 5
+            },
+            "avgUpside": {
+              "old": 17,
+              "new": 32.2
+            },
+            "entryScore": {
+              "old": 43,
+              "new": 63
+            },
+            "avgTargetPrice": {
+              "old": 255000,
+              "new": 274000
+            },
+            "currentPrice": {
+              "old": 218000,
+              "new": 207250
+            },
+            "reportCount": {
+              "old": 4,
+              "new": 5
+            }
+          }
+        },
+        {
+          "ticker": "006730",
+          "name": "서부T&D",
+          "fields": {
+            "brokerCount": {
+              "old": 2,
+              "new": 3
+            },
+            "avgUpside": {
+              "old": 61.9,
+              "new": 72.7
+            },
+            "entryScore": {
+              "old": 49,
+              "new": 56
+            },
+            "avgTargetPrice": {
+              "old": 17500,
+              "new": 17666.7
+            },
+            "currentPrice": {
+              "old": 10810,
+              "new": 10230
+            },
+            "reportCount": {
+              "old": 2,
+              "new": 3
+            }
+          }
+        },
+        {
+          "ticker": "214150",
+          "name": "클래시스",
+          "fields": {
+            "brokerCount": {
+              "old": 6,
+              "new": 7
+            },
+            "avgUpside": {
+              "old": 68.3,
+              "new": 82.8
+            },
+            "avgTargetPrice": {
+              "old": 61500,
+              "new": 59857.1
+            },
+            "currentPrice": {
+              "old": 36550,
+              "new": 32750
+            },
+            "reportCount": {
+              "old": 6,
+              "new": 7
+            }
+          }
+        },
+        {
+          "ticker": "257720",
+          "name": "실리콘투",
+          "fields": {
+            "brokerCount": {
+              "old": 3,
+              "new": 4
+            },
+            "avgUpside": {
+              "old": 38.7,
+              "new": 20.7
+            },
+            "entryScore": {
+              "old": 55,
+              "new": 46
+            },
+            "avgTargetPrice": {
+              "old": 59000,
+              "new": 58250
+            },
+            "currentPrice": {
+              "old": 42550,
+              "new": 48250
+            },
+            "reportCount": {
+              "old": 3,
+              "new": 4
+            }
+          }
+        },
+        {
+          "ticker": "120110",
+          "name": "코오롱인더",
+          "fields": {
+            "brokerCount": {
+              "old": 2,
+              "new": 3
+            },
+            "avgUpside": {
+              "old": 79.2,
+              "new": 86.1
+            },
+            "entryScore": {
+              "old": 49,
+              "new": 56
+            },
+            "avgTargetPrice": {
+              "old": 105000,
+              "new": 102000
+            },
+            "currentPrice": {
+              "old": 58600,
+              "new": 54800
+            },
+            "reportCount": {
+              "old": 2,
+              "new": 3
+            }
+          }
+        },
+        {
+          "ticker": "214450",
+          "name": "파마리서치",
+          "fields": {
+            "brokerCount": {
+              "old": 6,
+              "new": 7
+            },
+            "avgUpside": {
+              "old": 34.2,
+              "new": 36.7
+            },
+            "entryScore": {
+              "old": 65,
+              "new": 67
+            },
+            "avgTargetPrice": {
+              "old": 526666.7,
+              "new": 537142.9
+            },
+            "currentPrice": {
+              "old": 392500,
+              "new": 393000
+            },
+            "reportCount": {
+              "old": 6,
+              "new": 7
+            }
+          }
+        },
+        {
+          "ticker": "039030",
+          "name": "이오테크닉스",
+          "fields": {
+            "avgUpside": {
+              "old": 23.1,
+              "new": 25.7
+            },
+            "entryScore": {
+              "old": 34,
+              "new": 37
+            },
+            "currentPrice": {
+              "old": 432500,
+              "new": 423500
+            }
+          }
+        },
+        {
+          "ticker": "189300",
+          "name": "인텔리안테크",
+          "fields": {
+            "avgUpside": {
+              "old": 104.5,
+              "new": 116.2
+            },
+            "currentPrice": {
+              "old": 73600,
+              "new": 69600
+            }
+          }
+        },
+        {
+          "ticker": "009240",
+          "name": "한샘",
+          "fields": {
+            "avgUpside": {
+              "old": 26.4,
+              "new": 32.2
+            },
+            "entryScore": {
+              "old": 37,
+              "new": 42
+            },
+            "currentPrice": {
+              "old": 40750,
+              "new": 38950
+            }
+          }
+        },
+        {
+          "ticker": "229640",
+          "name": "LS에코에너지",
+          "fields": {
+            "avgUpside": {
+              "old": 44.1,
+              "new": 50
+            },
+            "currentPrice": {
+              "old": 49550,
+              "new": 47600
+            }
+          }
+        },
+        {
+          "ticker": "462870",
+          "name": "시프트업",
+          "fields": {
+            "avgUpside": {
+              "old": 60,
+              "new": 61.3
+            },
+            "currentPrice": {
+              "old": 31450,
+              "new": 31200
+            }
+          }
+        },
+        {
+          "ticker": "NVDA",
+          "name": "NVIDIA Corporation",
+          "fields": {
+            "avgUpside": {
+              "old": 33.8,
+              "new": 37
+            },
+            "entryScore": {
+              "old": 65,
+              "new": 67
+            },
+            "currentPrice": {
+              "old": 225.01,
+              "new": 219.74
+            }
+          }
+        },
+        {
+          "ticker": "AVGO",
+          "name": "Broadcom Inc.",
+          "fields": {
+            "brokerCount": {
+              "old": 4,
+              "new": 5
+            },
+            "avgUpside": {
+              "old": 35.8,
+              "new": 40.9
+            },
+            "entryScore": {
+              "old": 59,
+              "new": 70
+            },
+            "avgTargetPrice": {
+              "old": 533,
+              "new": 535.4
+            },
+            "currentPrice": {
+              "old": 392.43,
+              "new": 380
+            },
+            "reportCount": {
+              "old": 4,
+              "new": 5
+            }
+          }
+        },
+        {
+          "ticker": "AMAT",
+          "name": "Applied Materials, Inc.",
+          "fields": {
+            "avgUpside": {
+              "old": 25.6,
+              "new": 24.4
+            },
+            "entryScore": {
+              "old": 57,
+              "new": 56
+            },
+            "avgTargetPrice": {
+              "old": 672.1,
+              "new": 640
+            },
+            "currentPrice": {
+              "old": 535.31,
+              "new": 514.33
+            }
+          }
+        },
+        {
+          "ticker": "SNOW",
+          "name": "Snowflake Inc.",
+          "fields": {
+            "brokerCount": {
+              "old": 7,
+              "new": 8
+            },
+            "avgUpside": {
+              "old": 18.4,
+              "new": 18.3
+            },
+            "avgTargetPrice": {
+              "old": 391,
+              "new": 385
+            },
+            "currentPrice": {
+              "old": 330.11,
+              "new": 325.33
+            },
+            "reportCount": {
+              "old": 7,
+              "new": 8
+            }
+          }
+        },
+        {
+          "ticker": "AXP",
+          "name": "American Express Company",
+          "fields": {
+            "avgUpside": {
+              "old": 24.4,
+              "new": 20.1
+            },
+            "entryScore": {
+              "old": 47,
+              "new": 39
+            },
+            "avgTargetPrice": {
+              "old": 418.3,
+              "new": 406.7
+            },
+            "currentPrice": {
+              "old": 336.21,
+              "new": 338.52
+            }
+          }
+        },
+        {
+          "ticker": "AMGN",
+          "name": "Amgen Inc.",
+          "fields": {
+            "avgUpside": {
+              "old": 6.1,
+              "new": 5.8
+            },
+            "avgTargetPrice": {
+              "old": 445,
+              "new": 450
+            },
+            "currentPrice": {
+              "old": 419.38,
+              "new": 425.28
+            }
+          }
+        },
+        {
+          "ticker": "SBUX",
+          "name": "Starbucks Corporation",
+          "fields": {
+            "avgUpside": {
+              "old": 7.2,
+              "new": 9.1
+            },
+            "entryScore": {
+              "old": 27,
+              "new": 29
+            },
+            "currentPrice": {
+              "old": 107.92,
+              "new": 106.01
+            }
+          }
+        },
+        {
+          "ticker": "HD",
+          "name": "The Home Depot, Inc.",
+          "fields": {
+            "brokerCount": {
+              "old": 3,
+              "new": 5
+            },
+            "avgUpside": {
+              "old": 17.2,
+              "new": 16.3
+            },
+            "entryScore": {
+              "old": 38,
+              "new": 49
+            },
+            "avgTargetPrice": {
+              "old": 396,
+              "new": 392.6
+            },
+            "currentPrice": {
+              "old": 337.88,
+              "new": 337.49
+            },
+            "reportCount": {
+              "old": 3,
+              "new": 5
+            }
+          }
+        },
+        {
+          "ticker": "XOM",
+          "name": "ExxonMobil Holdings Corporation",
+          "fields": {
+            "avgUpside": {
+              "old": 6.7,
+              "new": 4.7
+            },
+            "entryScore": {
+              "old": 41,
+              "new": 39
+            },
+            "avgTargetPrice": {
+              "old": 172.2,
+              "new": 173.4
+            },
+            "currentPrice": {
+              "old": 161.46,
+              "new": 165.56
+            }
+          }
+        },
+        {
+          "ticker": "CAT",
+          "name": "Caterpillar Inc.",
+          "fields": {
+            "avgUpside": {
+              "old": 25.3,
+              "new": 33.6
+            },
+            "entryScore": {
+              "old": 43,
+              "new": 50
+            },
+            "avgTargetPrice": {
+              "old": 1104.7,
+              "new": 1123
+            },
+            "currentPrice": {
+              "old": 881.65,
+              "new": 840.87
+            }
+          }
+        },
+        {
+          "ticker": "HON",
+          "name": "Honeywell International Inc.",
+          "fields": {
+            "avgUpside": {
+              "old": 19.2,
+              "new": 19.6
+            },
+            "entryScore": {
+              "old": 49,
+              "new": 45
+            },
+            "avgTargetPrice": {
+              "old": 273.5,
+              "new": 272.3
+            },
+            "currentPrice": {
+              "old": 229.45,
+              "new": 227.71
+            }
+          }
+        },
+        {
+          "ticker": "AAPL",
+          "name": "Apple Inc.",
+          "fields": {
+            "avgUpside": {
+              "old": 24.9,
+              "new": 23.1
+            },
+            "entryScore": {
+              "old": 43,
+              "new": 41
+            },
+            "currentPrice": {
+              "old": 305.59,
+              "new": 310.03
+            }
+          }
+        },
+        {
+          "ticker": "MSFT",
+          "name": "Microsoft Corporation",
+          "fields": {
+            "avgUpside": {
+              "old": 25.1,
+              "new": 24.7
+            },
+            "currentPrice": {
+              "old": 480.35,
+              "new": 481.63
+            }
+          }
+        },
+        {
+          "ticker": "AMZN",
+          "name": "Amazon.com, Inc.",
+          "fields": {
+            "brokerCount": {
+              "old": 8,
+              "new": 7
+            },
+            "avgUpside": {
+              "old": 28.1,
+              "new": 29.8
+            },
+            "entryScore": {
+              "old": 60,
+              "new": 62
+            },
+            "avgTargetPrice": {
+              "old": 334.8,
+              "new": 336.9
+            },
+            "currentPrice": {
+              "old": 261.31,
+              "new": 259.45
+            },
+            "reportCount": {
+              "old": 8,
+              "new": 7
+            }
+          }
+        },
+        {
+          "ticker": "ORCL",
+          "name": "Oracle Corporation",
+          "fields": {
+            "avgUpside": {
+              "old": 86.2,
+              "new": 91.2
+            },
+            "entryScore": {
+              "old": 70,
+              "new": 75
+            },
+            "currentPrice": {
+              "old": 146.65,
+              "new": 142.79
+            }
+          }
+        },
+        {
+          "ticker": "NOW",
+          "name": "ServiceNow, Inc.",
+          "fields": {
+            "avgUpside": {
+              "old": 26.6,
+              "new": 24.7
+            },
+            "entryScore": {
+              "old": 58,
+              "new": 57
+            },
+            "currentPrice": {
+              "old": 117.7,
+              "new": 119.49
+            }
+          }
+        },
+        {
+          "ticker": "DDOG",
+          "name": "Datadog, Inc.",
+          "fields": {
+            "avgUpside": {
+              "old": 21,
+              "new": 21.6
+            },
+            "entryScore": {
+              "old": 53,
+              "new": 55
+            },
+            "currentPrice": {
+              "old": 247.32,
+              "new": 246
+            }
+          }
+        },
+        {
+          "ticker": "PANW",
+          "name": "Palo Alto Networks, Inc.",
+          "fields": {
+            "avgUpside": {
+              "old": 12.2,
+              "new": 12.7
+            },
+            "entryScore": {
+              "old": 46,
+              "new": 47
+            },
+            "currentPrice": {
+              "old": 375.76,
+              "new": 374.14
+            }
+          }
+        },
+        {
+          "ticker": "SCHW",
+          "name": "The Charles Schwab Corporation",
+          "fields": {
+            "avgUpside": {
+              "old": 19.4,
+              "new": 18.2
+            },
+            "entryScore": {
+              "old": 52,
+              "new": 51
+            },
+            "currentPrice": {
+              "old": 110.58,
+              "new": 111.68
+            }
+          }
+        },
+        {
+          "ticker": "LLY",
+          "name": "Eli Lilly and Company",
+          "fields": {
+            "avgUpside": {
+              "old": 17.3,
+              "new": 13.2
+            },
+            "entryScore": {
+              "old": 50,
+              "new": 47
+            },
+            "currentPrice": {
+              "old": 1183.16,
+              "new": 1225.73
+            }
+          }
+        },
+        {
+          "ticker": "ABBV",
+          "name": "AbbVie Inc.",
+          "fields": {
+            "avgUpside": {
+              "old": 14.3,
+              "new": 10.5
+            },
+            "entryScore": {
+              "old": 48,
+              "new": 44
+            },
+            "currentPrice": {
+              "old": 250.33,
+              "new": 258.92
+            }
+          }
+        },
+        {
+          "ticker": "MRK",
+          "name": "Merck & Co., Inc.",
+          "fields": {
+            "avgUpside": {
+              "old": 7.7,
+              "new": 8.4
+            },
+            "entryScore": {
+              "old": 42,
+              "new": 43
+            },
+            "currentPrice": {
+              "old": 135.97,
+              "new": 135.17
+            }
+          }
+        },
+        {
+          "ticker": "WMT",
+          "name": "Walmart Inc.",
+          "fields": {
+            "avgUpside": {
+              "old": 22.8,
+              "new": 21.9
+            },
+            "entryScore": {
+              "old": 55,
+              "new": 54
+            },
+            "currentPrice": {
+              "old": 114.33,
+              "new": 115.2
+            }
+          }
+        },
+        {
+          "ticker": "TGT",
+          "name": "Target Corporation",
+          "fields": {
+            "avgUpside": {
+              "old": 14.1,
+              "new": 13
+            },
+            "entryScore": {
+              "old": 33,
+              "new": 32
+            },
+            "currentPrice": {
+              "old": 151.01,
+              "new": 152.48
+            }
+          }
+        },
+        {
+          "ticker": "COP",
+          "name": "ConocoPhillips",
+          "fields": {
+            "avgUpside": {
+              "old": 16,
+              "new": 14.1
+            },
+            "entryScore": {
+              "old": 49,
+              "new": 47
+            },
+            "currentPrice": {
+              "old": 127.56,
+              "new": 129.72
+            }
+          }
+        },
+        {
+          "ticker": "SLB",
+          "name": "SLB N.V.",
+          "fields": {
+            "avgUpside": {
+              "old": 15.8,
+              "new": 17.2
+            },
+            "entryScore": {
+              "old": 49,
+              "new": 52
+            },
+            "currentPrice": {
+              "old": 53.86,
+              "new": 53.21
+            }
+          }
+        },
+        {
+          "ticker": "005830",
+          "name": "DB손해보험",
+          "fields": {
+            "avgUpside": {
+              "old": 25.8,
+              "new": 21.5
+            },
+            "entryScore": {
+              "old": 51,
+              "new": 47
+            },
+            "currentPrice": {
+              "old": 180600,
+              "new": 187000
+            }
+          }
+        },
+        {
+          "ticker": "139480",
+          "name": "이마트",
+          "fields": {
+            "avgUpside": {
+              "old": 32.9,
+              "new": 38.8
+            },
+            "entryScore": {
+              "old": 64,
+              "new": 69
+            },
+            "currentPrice": {
+              "old": 77200,
+              "new": 73900
+            }
+          }
+        },
+        {
+          "ticker": "000810",
+          "name": "삼성화재",
+          "fields": {
+            "avgUpside": {
+              "old": 27.3,
+              "new": 30.2
+            },
+            "entryScore": {
+              "old": 59,
+              "new": 61
+            },
+            "currentPrice": {
+              "old": 628000,
+              "new": 614000
+            }
+          }
+        },
+        {
+          "ticker": "032830",
+          "name": "삼성생명",
+          "fields": {
+            "avgUpside": {
+              "old": 30.9,
+              "new": 44.2
+            },
+            "entryScore": {
+              "old": 62,
+              "new": 70
+            },
+            "currentPrice": {
+              "old": 314500,
+              "new": 285500
+            }
+          }
+        },
+        {
+          "ticker": "483650",
+          "name": "달바글로벌",
+          "fields": {
+            "avgUpside": {
+              "old": 37.3,
+              "new": 40.7
+            },
+            "entryScore": {
+              "old": 61,
+              "new": 63
+            },
+            "currentPrice": {
+              "old": 224000,
+              "new": 218500
+            }
+          }
+        },
+        {
+          "ticker": "003550",
+          "name": "LG",
+          "fields": {
+            "avgUpside": {
+              "old": 18,
+              "new": 25.2
+            },
+            "entryScore": {
+              "old": 44,
+              "new": 50
+            },
+            "currentPrice": {
+              "old": 116500,
+              "new": 109800
+            }
+          }
+        },
+        {
+          "ticker": "032350",
+          "name": "롯데관광개발",
+          "fields": {
+            "avgUpside": {
+              "old": 88.4,
+              "new": 84.6
+            },
+            "currentPrice": {
+              "old": 13090,
+              "new": 13360
+            }
+          }
+        },
+        {
+          "ticker": "196170",
+          "name": "알테오젠",
+          "fields": {
+            "avgUpside": {
+              "old": 57.6,
+              "new": 62
+            },
+            "currentPrice": {
+              "old": 311000,
+              "new": 302500
+            }
+          }
+        },
+        {
+          "ticker": "000660",
+          "name": "SK하이닉스",
+          "fields": {
+            "avgUpside": {
+              "old": 87.3,
+              "new": 117.8
+            },
+            "currentPrice": {
+              "old": 1769000,
+              "new": 1521000
+            }
+          }
+        },
+        {
+          "ticker": "005930",
+          "name": "삼성전자",
+          "fields": {
+            "avgUpside": {
+              "old": 70.9,
+              "new": 93.5
+            },
+            "currentPrice": {
+              "old": 283000,
+              "new": 250000
+            }
+          }
+        },
+        {
+          "ticker": "035900",
+          "name": "JYP Ent.",
+          "fields": {
+            "avgUpside": {
+              "old": 56.4,
+              "new": 59.4
+            },
+            "currentPrice": {
+              "old": 40100,
+              "new": 39350
+            }
+          }
+        },
+        {
+          "ticker": "071050",
+          "name": "한국금융지주",
+          "fields": {
+            "avgUpside": {
+              "old": 57,
+              "new": 72
+            },
+            "currentPrice": {
+              "old": 202000,
+              "new": 184400
+            }
+          }
+        },
+        {
+          "ticker": "002350",
+          "name": "넥센타이어",
+          "fields": {
+            "avgUpside": {
+              "old": 57,
+              "new": 59.9
+            },
+            "currentPrice": {
+              "old": 6530,
+              "new": 6410
+            }
+          }
+        },
+        {
+          "ticker": "095660",
+          "name": "네오위즈",
+          "fields": {
+            "avgUpside": {
+              "old": 29.4,
+              "new": 33.4
+            },
+            "entryScore": {
+              "old": 40,
+              "new": 43
+            },
+            "currentPrice": {
+              "old": 18540,
+              "new": 17990
+            }
+          }
+        },
+        {
+          "ticker": "035420",
+          "name": "NAVER",
+          "fields": {
+            "avgUpside": {
+              "old": 42.7,
+              "new": 56.2
+            },
+            "currentPrice": {
+              "old": 225000,
+              "new": 205500
+            }
+          }
+        },
+        {
+          "ticker": "138040",
+          "name": "메리츠금융지주",
+          "fields": {
+            "avgUpside": {
+              "old": 32,
+              "new": 35.6
+            },
+            "entryScore": {
+              "old": 56,
+              "new": 59
+            },
+            "currentPrice": {
+              "old": 117400,
+              "new": 114300
+            }
+          }
+        },
+        {
+          "ticker": "006400",
+          "name": "삼성SDI",
+          "fields": {
+            "avgUpside": {
+              "old": 44.9,
+              "new": 49.2
+            },
+            "currentPrice": {
+              "old": 507000,
+              "new": 492250
+            }
+          }
+        },
+        {
+          "ticker": "CRM",
+          "name": "Salesforce, Inc.",
+          "fields": {
+            "brokerCount": {
+              "old": 5,
+              "new": 4
+            },
+            "avgUpside": {
+              "old": 24.3,
+              "new": 19.4
+            },
+            "entryScore": {
+              "old": 61,
+              "new": 45
+            },
+            "avgTargetPrice": {
+              "old": 237.4,
+              "new": 234.3
+            },
+            "currentPrice": {
+              "old": 190.97,
+              "new": 196.14
+            },
+            "reportCount": {
+              "old": 5,
+              "new": 4
+            }
+          }
+        },
+        {
+          "ticker": "MU",
+          "name": "Micron Technology, Inc.",
+          "fields": {
+            "avgUpside": {
+              "old": 38.4,
+              "new": 48.8
+            },
+            "entryScore": {
+              "old": 69,
+              "new": 76
+            },
+            "currentPrice": {
+              "old": 1011.75,
+              "new": 940.76
+            }
+          }
+        },
+        {
+          "ticker": "JPM",
+          "name": "JPMorgan Chase & Co.",
+          "fields": {
+            "brokerCount": {
+              "old": 5,
+              "new": 4
+            },
+            "entryScore": {
+              "old": 44,
+              "new": 36
+            },
+            "avgTargetPrice": {
+              "old": 393.8,
+              "new": 396.3
+            },
+            "currentPrice": {
+              "old": 360.96,
+              "new": 363.25
+            },
+            "reportCount": {
+              "old": 5,
+              "new": 4
+            }
+          }
+        },
+        {
+          "ticker": "V",
+          "name": "Visa Inc.",
+          "fields": {
+            "avgUpside": {
+              "old": 19.3,
+              "new": 17.1
+            },
+            "entryScore": {
+              "old": 52,
+              "new": 50
+            },
+            "avgTargetPrice": {
+              "old": 428,
+              "new": 426.6
+            },
+            "currentPrice": {
+              "old": 358.84,
+              "new": 364.25
+            }
+          }
+        },
+        {
+          "ticker": "NFLX",
+          "name": "Netflix, Inc.",
+          "fields": {
+            "avgUpside": {
+              "old": 32.9,
+              "new": 29.9
+            },
+            "entryScore": {
+              "old": 62,
+              "new": 55
+            },
+            "currentPrice": {
+              "old": 76.02,
+              "new": 77.77
+            }
+          }
+        },
+        {
+          "ticker": "100090",
+          "name": "SK오션플랜트",
+          "fields": {
+            "avgUpside": {
+              "old": 58.3,
+              "new": 65.6
+            },
+            "currentPrice": {
+              "old": 14150,
+              "new": 13530
+            }
+          }
+        },
+        {
+          "ticker": "000370",
+          "name": "한화손해보험",
+          "fields": {
+            "avgUpside": {
+              "old": 22.9,
+              "new": 19
+            },
+            "entryScore": {
+              "old": 55,
+              "new": 52
+            },
+            "currentPrice": {
+              "old": 7130,
+              "new": 7360
+            }
+          }
+        },
+        {
+          "ticker": "088350",
+          "name": "한화생명",
+          "fields": {
+            "avgUpside": {
+              "old": 19.7,
+              "new": 19.1
+            },
+            "currentPrice": {
+              "old": 5470,
+              "new": 5500
+            }
+          }
+        },
+        {
+          "ticker": "015760",
+          "name": "한국전력",
+          "fields": {
+            "avgUpside": {
+              "old": 51.4,
+              "new": 60.4
+            },
+            "currentPrice": {
+              "old": 32900,
+              "new": 31050
+            }
+          }
+        },
+        {
+          "ticker": "006800",
+          "name": "미래에셋증권",
+          "fields": {
+            "avgUpside": {
+              "old": 68,
+              "new": 82.4
+            },
+            "currentPrice": {
+              "old": 37400,
+              "new": 34450
+            }
+          }
+        },
+        {
+          "ticker": "161890",
+          "name": "한국콜마",
+          "fields": {
+            "avgUpside": {
+              "old": 30.3,
+              "new": 27.8
+            },
+            "entryScore": {
+              "old": 61,
+              "new": 59
+            },
+            "currentPrice": {
+              "old": 127900,
+              "new": 130400
+            }
+          }
+        },
+        {
+          "ticker": "192080",
+          "name": "더블유게임즈",
+          "fields": {
+            "avgUpside": {
+              "old": 44.5,
+              "new": 51
+            },
+            "currentPrice": {
+              "old": 59800,
+              "new": 57200
+            }
+          }
+        },
+        {
+          "ticker": "128940",
+          "name": "한미약품",
+          "fields": {
+            "avgUpside": {
+              "old": 55.2,
+              "new": 59.6
+            },
+            "currentPrice": {
+              "old": 394250,
+              "new": 383500
+            }
+          }
+        },
+        {
+          "ticker": "030200",
+          "name": "KT",
+          "fields": {
+            "avgUpside": {
+              "old": 36,
+              "new": 40.1
+            },
+            "entryScore": {
+              "old": 66,
+              "new": 70
+            },
+            "currentPrice": {
+              "old": 54100,
+              "new": 52500
+            }
+          }
+        },
+        {
+          "ticker": "095340",
+          "name": "ISC",
+          "fields": {
+            "avgUpside": {
+              "old": 26.9,
+              "new": 24
+            },
+            "entryScore": {
+              "old": 52,
+              "new": 49
+            },
+            "currentPrice": {
+              "old": 169400,
+              "new": 173400
+            }
+          }
+        },
+        {
+          "ticker": "213420",
+          "name": "덕산네오룩스",
+          "fields": {
+            "avgUpside": {
+              "old": 77.4,
+              "new": 84.9
+            },
+            "currentPrice": {
+              "old": 34850,
+              "new": 33450
+            }
+          }
+        },
+        {
+          "ticker": "006360",
+          "name": "GS건설",
+          "fields": {
+            "brokerCount": {
+              "old": 8,
+              "new": 10
+            },
+            "avgUpside": {
+              "old": 19.1,
+              "new": 24.2
+            },
+            "entryScore": {
+              "old": 52,
+              "new": 56
+            },
+            "avgTargetPrice": {
+              "old": 42000,
+              "new": 40500
+            },
+            "currentPrice": {
+              "old": 35250,
+              "new": 32600
+            },
+            "reportCount": {
+              "old": 8,
+              "new": 10
+            }
+          }
+        },
+        {
+          "ticker": "074600",
+          "name": "원익QnC",
+          "fields": {
+            "avgUpside": {
+              "old": 45.1,
+              "new": 52.9
+            },
+            "currentPrice": {
+              "old": 29300,
+              "new": 27800
+            }
+          }
+        },
+        {
+          "ticker": "AMD",
+          "name": "Advanced Micro Devices, Inc.",
+          "fields": {
+            "avgUpside": {
+              "old": 25.7,
+              "new": 31.3
+            },
+            "entryScore": {
+              "old": 57,
+              "new": 62
+            },
+            "currentPrice": {
+              "old": 506,
+              "new": 484.39
+            }
+          }
+        },
+        {
+          "ticker": "GS",
+          "name": "The Goldman Sachs Group, Inc.",
+          "fields": {
+            "avgUpside": {
+              "old": 18.7,
+              "new": 19.9
+            },
+            "entryScore": {
+              "old": 37,
+              "new": 38
+            },
+            "currentPrice": {
+              "old": 1051.31,
+              "new": 1040.47
+            }
+          }
+        },
+        {
+          "ticker": "JNJ",
+          "name": "Johnson & Johnson",
+          "fields": {
+            "avgUpside": {
+              "old": 11.5,
+              "new": 7.9
+            },
+            "entryScore": {
+              "old": 45,
+              "new": 42
+            },
+            "currentPrice": {
+              "old": 262.37,
+              "new": 271.11
+            }
+          }
+        },
+        {
+          "ticker": "004170",
+          "name": "신세계",
+          "fields": {
+            "avgUpside": {
+              "old": 68,
+              "new": 81.8
+            },
+            "currentPrice": {
+              "old": 437000,
+              "new": 404000
+            }
+          }
+        },
+        {
+          "ticker": "161390",
+          "name": "한국타이어앤테크놀로지",
+          "fields": {
+            "avgUpside": {
+              "old": 24.3,
+              "new": 29.1
+            },
+            "entryScore": {
+              "old": 56,
+              "new": 61
+            },
+            "currentPrice": {
+              "old": 69500,
+              "new": 66900
+            }
+          }
+        },
+        {
+          "ticker": "192820",
+          "name": "코스맥스",
+          "fields": {
+            "avgUpside": {
+              "old": 23.1,
+              "new": 20
+            },
+            "entryScore": {
+              "old": 55,
+              "new": 53
+            },
+            "currentPrice": {
+              "old": 233000,
+              "new": 239000
+            }
+          }
+        },
+        {
+          "ticker": "018880",
+          "name": "한온시스템",
+          "fields": {
+            "avgUpside": {
+              "old": 44.5,
+              "new": 54.1
+            },
+            "currentPrice": {
+              "old": 3745,
+              "new": 3510
+            }
+          }
+        },
+        {
+          "ticker": "036570",
+          "name": "NC",
+          "fields": {
+            "avgUpside": {
+              "old": 55.6,
+              "new": 67.3
+            },
+            "currentPrice": {
+              "old": 235500,
+              "new": 219000
+            }
+          }
+        },
+        {
+          "ticker": "097950",
+          "name": "CJ제일제당",
+          "fields": {
+            "avgUpside": {
+              "old": 50.7,
+              "new": 56.1
+            },
+            "currentPrice": {
+              "old": 187150,
+              "new": 180700
+            }
+          }
+        },
+        {
+          "ticker": "114090",
+          "name": "GKL",
+          "fields": {
+            "avgUpside": {
+              "old": 39.3,
+              "new": 41
+            },
+            "entryScore": {
+              "old": 48,
+              "new": 49
+            },
+            "currentPrice": {
+              "old": 9330,
+              "new": 9220
+            }
+          }
+        },
+        {
+          "ticker": "000120",
+          "name": "CJ대한통운",
+          "fields": {
+            "avgUpside": {
+              "old": 56.7,
+              "new": 60.8
+            },
+            "currentPrice": {
+              "old": 75300,
+              "new": 73400
+            }
+          }
+        },
+        {
+          "ticker": "103590",
+          "name": "일진전기",
+          "fields": {
+            "avgUpside": {
+              "old": 60.4,
+              "new": 66.4
+            },
+            "currentPrice": {
+              "old": 74500,
+              "new": 71800
+            }
+          }
+        },
+        {
+          "ticker": "043150",
+          "name": "바텍",
+          "fields": {
+            "avgUpside": {
+              "old": 65.5,
+              "new": 73.2
+            },
+            "currentPrice": {
+              "old": 20550,
+              "new": 19630
+            }
+          }
+        },
+        {
+          "ticker": "069960",
+          "name": "현대백화점",
+          "fields": {
+            "avgUpside": {
+              "old": 82.2,
+              "new": 95.2
+            },
+            "currentPrice": {
+              "old": 102100,
+              "new": 95300
+            }
+          }
+        },
+        {
+          "ticker": "103140",
+          "name": "풍산",
+          "fields": {
+            "avgUpside": {
+              "old": 32.7,
+              "new": 39.2
+            },
+            "entryScore": {
+              "old": 64,
+              "new": 69
+            },
+            "currentPrice": {
+              "old": 82000,
+              "new": 78200
+            }
+          }
+        },
+        {
+          "ticker": "214320",
+          "name": "이노션",
+          "fields": {
+            "avgUpside": {
+              "old": 34.5,
+              "new": 36
+            },
+            "entryScore": {
+              "old": 44,
+              "new": 45
+            },
+            "currentPrice": {
+              "old": 18960,
+              "new": 18750
+            }
+          }
+        },
+        {
+          "ticker": "041510",
+          "name": "에스엠",
+          "fields": {
+            "avgUpside": {
+              "old": 57.4,
+              "new": 59.6
+            },
+            "currentPrice": {
+              "old": 72500,
+              "new": 71500
+            }
+          }
+        },
+        {
+          "ticker": "376300",
+          "name": "디어유",
+          "fields": {
+            "avgUpside": {
+              "old": 61.7,
+              "new": 69.2
+            },
+            "currentPrice": {
+              "old": 19330,
+              "new": 18470
+            }
+          }
+        },
+        {
+          "ticker": "017670",
+          "name": "SK텔레콤",
+          "fields": {
+            "avgUpside": {
+              "old": 15.3,
+              "new": 21.8
+            },
+            "entryScore": {
+              "old": 48,
+              "new": 54
+            },
+            "currentPrice": {
+              "old": 102700,
+              "new": 97200
+            }
+          }
+        },
+        {
+          "ticker": "032640",
+          "name": "LG유플러스",
+          "fields": {
+            "avgUpside": {
+              "old": 33.6,
+              "new": 36.9
+            },
+            "entryScore": {
+              "old": 64,
+              "new": 67
+            },
+            "currentPrice": {
+              "old": 14930,
+              "new": 14570
+            }
+          }
+        },
+        {
+          "ticker": "007070",
+          "name": "GS리테일",
+          "fields": {
+            "avgUpside": {
+              "old": 28.7,
+              "new": 30.4
+            },
+            "entryScore": {
+              "old": 60,
+              "new": 62
+            },
+            "currentPrice": {
+              "old": 27100,
+              "new": 26750
+            }
+          }
+        },
+        {
+          "ticker": "035760",
+          "name": "CJ ENM",
+          "fields": {
+            "avgUpside": {
+              "old": 53.8,
+              "new": 63.1
+            },
+            "currentPrice": {
+              "old": 33300,
+              "new": 31400
+            }
+          }
+        },
+        {
+          "ticker": "282330",
+          "name": "BGF리테일",
+          "fields": {
+            "avgUpside": {
+              "old": 32.1,
+              "new": 35
+            },
+            "entryScore": {
+              "old": 63,
+              "new": 66
+            },
+            "currentPrice": {
+              "old": 144500,
+              "new": 141400
+            }
+          }
+        },
+        {
+          "ticker": "INTC",
+          "name": "Intel Corporation",
+          "fields": {
+            "avgUpside": {
+              "old": 32.9,
+              "new": 42.2
+            },
+            "entryScore": {
+              "old": 43,
+              "new": 57
+            },
+            "currentPrice": {
+              "old": 103.49,
+              "new": 96.69
+            }
+          }
+        },
+        {
+          "ticker": "NET",
+          "name": "Cloudflare, Inc.",
+          "fields": {
+            "avgUpside": {
+              "old": 19.3,
+              "new": 21.6
+            },
+            "entryScore": {
+              "old": 55,
+              "new": 60
+            },
+            "currentPrice": {
+              "old": 307.01,
+              "new": 301.36
+            }
+          }
+        },
+        {
+          "ticker": "BLK",
+          "name": "BlackRock, Inc.",
+          "fields": {
+            "avgUpside": {
+              "old": 13.3,
+              "new": 12.6
+            },
+            "entryScore": {
+              "old": 35,
+              "new": 33
+            },
+            "currentPrice": {
+              "old": 1147.11,
+              "new": 1154.35
+            }
+          }
+        },
+        {
+          "ticker": "UNH",
+          "name": "UnitedHealth Group Incorporated",
+          "fields": {
+            "avgUpside": {
+              "old": 28.2,
+              "new": 28.7
+            },
+            "entryScore": {
+              "old": 51,
+              "new": 52
+            },
+            "currentPrice": {
+              "old": 395.62,
+              "new": 393.93
+            }
+          }
+        },
+        {
+          "ticker": "BA",
+          "name": "The Boeing Company",
+          "fields": {
+            "avgUpside": {
+              "old": 23.7,
+              "new": 25.3
+            },
+            "entryScore": {
+              "old": 61,
+              "new": 64
+            },
+            "currentPrice": {
+              "old": 225.95,
+              "new": 223.06
+            }
+          }
+        },
+        {
+          "ticker": "241710",
+          "name": "코스메카코리아",
+          "fields": {
+            "avgUpside": {
+              "old": 14.4,
+              "new": 12.4
+            },
+            "entryScore": {
+              "old": 27,
+              "new": 25
+            },
+            "currentPrice": {
+              "old": 122400,
+              "new": 124600
+            }
+          }
+        },
+        {
+          "ticker": "010130",
+          "name": "고려아연",
+          "fields": {
+            "avgUpside": {
+              "old": 32.3,
+              "new": 40
+            },
+            "entryScore": {
+              "old": 49,
+              "new": 56
+            },
+            "currentPrice": {
+              "old": 1215000,
+              "new": 1148000
+            }
+          }
+        },
+        {
+          "ticker": "271560",
+          "name": "오리온",
+          "fields": {
+            "avgUpside": {
+              "old": 37.8,
+              "new": 43.4
+            },
+            "entryScore": {
+              "old": 54,
+              "new": 56
+            },
+            "currentPrice": {
+              "old": 128200,
+              "new": 123200
+            }
+          }
+        },
+        {
+          "ticker": "009150",
+          "name": "삼성전기",
+          "fields": {
+            "avgUpside": {
+              "old": 53,
+              "new": 72.3
+            },
+            "currentPrice": {
+              "old": 1560000,
+              "new": 1385000
+            }
+          }
+        },
+        {
+          "ticker": "051600",
+          "name": "한전KPS",
+          "fields": {
+            "avgUpside": {
+              "old": 43,
+              "new": 45.7
+            },
+            "currentPrice": {
+              "old": 45800,
+              "new": 44950
+            }
+          }
+        },
+        {
+          "ticker": "071320",
+          "name": "지역난방공사",
+          "fields": {
+            "avgUpside": {
+              "old": 76.7,
+              "new": 82.9
+            },
+            "currentPrice": {
+              "old": 74500,
+              "new": 72000
+            }
+          }
+        },
+        {
+          "ticker": "326030",
+          "name": "SK바이오팜",
+          "fields": {
+            "avgUpside": {
+              "old": 64.5,
+              "new": 68.4
+            },
+            "currentPrice": {
+              "old": 86600,
+              "new": 84600
+            }
+          }
+        },
+        {
+          "ticker": "195870",
+          "name": "해성디에스",
+          "fields": {
+            "avgUpside": {
+              "old": 39,
+              "new": 43.9
+            },
+            "entryScore": {
+              "old": 69,
+              "new": 70
+            },
+            "currentPrice": {
+              "old": 59000,
+              "new": 57000
+            }
+          }
+        },
+        {
+          "ticker": "353200",
+          "name": "대덕전자",
+          "fields": {
+            "avgUpside": {
+              "old": 61.6,
+              "new": 67.2
+            },
+            "currentPrice": {
+              "old": 123800,
+              "new": 119600
+            }
+          }
+        },
+        {
+          "ticker": "089860",
+          "name": "롯데렌탈",
+          "fields": {
+            "avgUpside": {
+              "old": 11.5,
+              "new": 10.1
+            },
+            "entryScore": {
+              "old": 24,
+              "new": 23
+            },
+            "currentPrice": {
+              "old": 44850,
+              "new": 45400
+            }
+          }
+        },
+        {
+          "ticker": "222800",
+          "name": "심텍",
+          "fields": {
+            "avgUpside": {
+              "old": 63.6,
+              "new": 57.2
+            },
+            "currentPrice": {
+              "old": 109400,
+              "new": 113900
+            }
+          }
+        },
+        {
+          "ticker": "090460",
+          "name": "비에이치",
+          "fields": {
+            "avgUpside": {
+              "old": 60.7,
+              "new": 75.5
+            },
+            "currentPrice": {
+              "old": 19170,
+              "new": 17550
+            }
+          }
+        },
+        {
+          "ticker": "214180",
+          "name": "헥토이노베이션",
+          "fields": {
+            "avgUpside": {
+              "old": 51.3,
+              "new": 55.5
+            },
+            "currentPrice": {
+              "old": 14540,
+              "new": 14150
+            }
+          }
+        },
+        {
+          "ticker": "062040",
+          "name": "산일전기",
+          "fields": {
+            "avgUpside": {
+              "old": 53.8,
+              "new": 59.1
+            },
+            "currentPrice": {
+              "old": 185300,
+              "new": 179100
+            }
+          }
+        },
+        {
+          "ticker": "030520",
+          "name": "한컴",
+          "fields": {
+            "avgUpside": {
+              "old": 86.8,
+              "new": 96.5
+            },
+            "currentPrice": {
+              "old": 18200,
+              "new": 17300
+            }
+          }
+        },
+        {
+          "ticker": "251270",
+          "name": "넷마블",
+          "fields": {
+            "avgUpside": {
+              "old": 39.1,
+              "new": 43
+            },
+            "entryScore": {
+              "old": 69,
+              "new": 70
+            },
+            "currentPrice": {
+              "old": 38450,
+              "new": 37400
+            }
+          }
+        },
+        {
+          "ticker": "PLTR",
+          "name": "Palantir Technologies Inc.",
+          "fields": {
+            "avgUpside": {
+              "old": 26.1,
+              "new": 26.8
+            },
+            "entryScore": {
+              "old": 61,
+              "new": 62
+            },
+            "currentPrice": {
+              "old": 172.55,
+              "new": 171.54
+            }
+          }
+        },
+        {
+          "ticker": "DIS",
+          "name": "The Walt Disney Company",
+          "fields": {
+            "avgUpside": {
+              "old": 27,
+              "new": 26.4
+            },
+            "entryScore": {
+              "old": 59,
+              "new": 58
+            },
+            "currentPrice": {
+              "old": 103.5,
+              "new": 103.95
+            }
+          }
+        },
+        {
+          "ticker": "112610",
+          "name": "씨에스윈드",
+          "fields": {
+            "avgUpside": {
+              "old": 67.9,
+              "new": 70.5
+            },
+            "currentPrice": {
+              "old": 46450,
+              "new": 45750
+            }
+          }
+        },
+        {
+          "ticker": "023530",
+          "name": "롯데쇼핑",
+          "fields": {
+            "avgUpside": {
+              "old": 76.3,
+              "new": 85.7
+            },
+            "currentPrice": {
+              "old": 103500,
+              "new": 98300
+            }
+          }
+        },
+        {
+          "ticker": "122870",
+          "name": "와이지엔터테인먼트",
+          "fields": {
+            "avgUpside": {
+              "old": 53,
+              "new": 59.1
+            },
+            "currentPrice": {
+              "old": 40200,
+              "new": 38650
+            }
+          }
+        },
+        {
+          "ticker": "145020",
+          "name": "휴젤",
+          "fields": {
+            "avgUpside": {
+              "old": 56.2,
+              "new": 60.8
+            },
+            "currentPrice": {
+              "old": 247500,
+              "new": 240500
+            }
+          }
+        },
+        {
+          "ticker": "280360",
+          "name": "롯데웰푸드",
+          "fields": {
+            "avgUpside": {
+              "old": 39.5,
+              "new": 41.9
+            },
+            "currentPrice": {
+              "old": 124900,
+              "new": 122800
+            }
+          }
+        },
+        {
+          "ticker": "012450",
+          "name": "한화에어로스페이스",
+          "fields": {
+            "avgUpside": {
+              "old": 39.6,
+              "new": 33.7
+            },
+            "entryScore": {
+              "old": 70,
+              "new": 64
+            },
+            "currentPrice": {
+              "old": 1157000,
+              "new": 1208000
+            }
+          }
+        },
+        {
+          "ticker": "034230",
+          "name": "파라다이스",
+          "fields": {
+            "avgUpside": {
+              "old": 104.3,
+              "new": 111
+            },
+            "currentPrice": {
+              "old": 9790,
+              "new": 9480
+            }
+          }
+        },
+        {
+          "ticker": "021240",
+          "name": "코웨이",
+          "fields": {
+            "avgUpside": {
+              "old": 43.4,
+              "new": 47.2
+            },
+            "currentPrice": {
+              "old": 95900,
+              "new": 93400
+            }
+          }
+        },
+        {
+          "ticker": "011780",
+          "name": "금호석유화학",
+          "fields": {
+            "avgUpside": {
+              "old": 37.7,
+              "new": 44.3
+            },
+            "entryScore": {
+              "old": 68,
+              "new": 70
+            },
+            "currentPrice": {
+              "old": 128500,
+              "new": 122700
+            }
+          }
+        },
+        {
+          "ticker": "052690",
+          "name": "한전기술",
+          "fields": {
+            "avgUpside": {
+              "old": 93.3,
+              "new": 107.4
+            },
+            "currentPrice": {
+              "old": 100000,
+              "new": 93200
+            }
+          }
+        },
+        {
+          "ticker": "247540",
+          "name": "에코프로비엠",
+          "fields": {
+            "avgUpside": {
+              "old": 79.7,
+              "new": 87.8
+            },
+            "currentPrice": {
+              "old": 115100,
+              "new": 110100
+            }
+          }
+        },
+        {
+          "ticker": "003670",
+          "name": "포스코퓨처엠",
+          "fields": {
+            "avgUpside": {
+              "old": 43,
+              "new": 51.7
+            },
+            "currentPrice": {
+              "old": 170200,
+              "new": 160400
+            }
+          }
+        },
+        {
+          "ticker": "011170",
+          "name": "롯데케미칼",
+          "fields": {
+            "avgUpside": {
+              "old": 93,
+              "new": 103
+            },
+            "currentPrice": {
+              "old": 57000,
+              "new": 54200
+            }
+          }
+        },
+        {
+          "ticker": "079550",
+          "name": "LIG디펜스앤에어로스페이스",
+          "fields": {
+            "avgUpside": {
+              "old": 42.5,
+              "new": 48.9
+            },
+            "currentPrice": {
+              "old": 820000,
+              "new": 785000
+            }
+          }
+        },
+        {
+          "ticker": "018260",
+          "name": "삼성에스디에스",
+          "fields": {
+            "brokerCount": {
+              "old": 3,
+              "new": 4
+            },
+            "avgUpside": {
+              "old": 21.5,
+              "new": 22.8
+            },
+            "entryScore": {
+              "old": 40,
+              "new": 48
+            },
+            "avgTargetPrice": {
+              "old": 293333.3,
+              "new": 280000
+            },
+            "currentPrice": {
+              "old": 241500,
+              "new": 228000
+            },
+            "reportCount": {
+              "old": 3,
+              "new": 4
+            }
+          }
+        },
+        {
+          "ticker": "035720",
+          "name": "카카오",
+          "fields": {
+            "avgUpside": {
+              "old": 46.7,
+              "new": 54.4
+            },
+            "currentPrice": {
+              "old": 38950,
+              "new": 37000
+            }
+          }
+        },
+        {
+          "ticker": "064400",
+          "name": "LG씨엔에스",
+          "fields": {
+            "avgUpside": {
+              "old": 24.7,
+              "new": 34.8
+            },
+            "entryScore": {
+              "old": 50,
+              "new": 58
+            },
+            "currentPrice": {
+              "old": 78600,
+              "new": 72700
+            }
+          }
+        },
+        {
+          "ticker": "298040",
+          "name": "효성중공업",
+          "fields": {
+            "avgUpside": {
+              "old": 41.8,
+              "new": 44.9
+            },
+            "currentPrice": {
+              "old": 3005000,
+              "new": 2941000
+            }
+          }
+        },
+        {
+          "ticker": "012750",
+          "name": "에스원",
+          "fields": {
+            "avgUpside": {
+              "old": 20.2,
+              "new": 22
+            },
+            "entryScore": {
+              "old": 32,
+              "new": 33
+            },
+            "currentPrice": {
+              "old": 77400,
+              "new": 76200
+            }
+          }
+        },
+        {
+          "ticker": "234340",
+          "name": "헥토파이낸셜",
+          "fields": {
+            "avgUpside": {
+              "old": 54.6,
+              "new": 66.5
+            },
+            "currentPrice": {
+              "old": 20700,
+              "new": 19220
+            }
+          }
+        },
+        {
+          "ticker": "C",
+          "name": "Citigroup Inc.",
+          "fields": {
+            "avgUpside": {
+              "old": 12.4,
+              "new": 13.1
+            },
+            "currentPrice": {
+              "old": 138.51,
+              "new": 137.65
+            }
+          }
+        },
+        {
+          "ticker": "020150",
+          "name": "롯데에너지머티리얼즈",
+          "fields": {
+            "avgUpside": {
+              "old": 81.6,
+              "new": 89.4
+            },
+            "currentPrice": {
+              "old": 34000,
+              "new": 32600
+            }
+          }
+        },
+        {
+          "ticker": "033780",
+          "name": "KT&G",
+          "fields": {
+            "avgUpside": {
+              "old": 40.4,
+              "new": 42
+            },
+            "currentPrice": {
+              "old": 175700,
+              "new": 173700
+            }
+          }
+        },
+        {
+          "ticker": "253450",
+          "name": "스튜디오드래곤",
+          "fields": {
+            "avgUpside": {
+              "old": 60.5,
+              "new": 72.1
+            },
+            "currentPrice": {
+              "old": 23050,
+              "new": 21500
+            }
+          }
+        },
+        {
+          "ticker": "028670",
+          "name": "팬오션",
+          "fields": {
+            "avgUpside": {
+              "old": 36.6,
+              "new": 33.2
+            },
+            "entryScore": {
+              "old": 67,
+              "new": 64
+            },
+            "currentPrice": {
+              "old": 5980,
+              "new": 6130
+            }
+          }
+        },
+        {
+          "ticker": "066970",
+          "name": "엘앤에프",
+          "fields": {
+            "avgUpside": {
+              "old": 21.8,
+              "new": 28.3
+            },
+            "entryScore": {
+              "old": 47,
+              "new": 53
+            },
+            "currentPrice": {
+              "old": 112900,
+              "new": 107200
+            }
+          }
+        },
+        {
+          "ticker": "011760",
+          "name": "현대코퍼레이션",
+          "fields": {
+            "avgUpside": {
+              "old": 38.6,
+              "new": 40.2
+            },
+            "entryScore": {
+              "old": 48,
+              "new": 49
+            },
+            "currentPrice": {
+              "old": 27050,
+              "new": 26750
+            }
+          }
+        },
+        {
+          "ticker": "QCOM",
+          "name": "QUALCOMM Incorporated",
+          "fields": {
+            "avgUpside": {
+              "old": 61.9,
+              "new": 63.9
+            },
+            "entryScore": {
+              "old": 70,
+              "new": 72
+            },
+            "currentPrice": {
+              "old": 162.18,
+              "new": 160.19
+            }
+          }
+        },
+        {
+          "ticker": "PFE",
+          "name": "Pfizer Inc.",
+          "fields": {
+            "avgUpside": {
+              "old": 20,
+              "new": 18.3
+            },
+            "entryScore": {
+              "old": 39,
+              "new": 37
+            },
+            "currentPrice": {
+              "old": 26.87,
+              "new": 27.25
+            }
+          }
+        },
+        {
+          "ticker": "GILD",
+          "name": "Gilead Sciences, Inc.",
+          "fields": {
+            "avgUpside": {
+              "old": 17.7,
+              "new": 14
+            },
+            "entryScore": {
+              "old": 50,
+              "new": 47
+            },
+            "currentPrice": {
+              "old": 138.92,
+              "new": 143.44
+            }
+          }
+        },
+        {
+          "ticker": "005300",
+          "name": "롯데칠성",
+          "fields": {
+            "avgUpside": {
+              "old": 44.3,
+              "new": 47.9
+            },
+            "currentPrice": {
+              "old": 99300,
+              "new": 96900
+            }
+          }
+        },
+        {
+          "ticker": "278470",
+          "name": "에이피알",
+          "fields": {
+            "avgUpside": {
+              "old": 37.8,
+              "new": 39.2
+            },
+            "entryScore": {
+              "old": 68,
+              "new": 69
+            },
+            "currentPrice": {
+              "old": 393000,
+              "new": 389000
+            }
+          }
+        },
+        {
+          "ticker": "323410",
+          "name": "카카오뱅크",
+          "fields": {
+            "avgUpside": {
+              "old": 45.5,
+              "new": 49.7
+            },
+            "currentPrice": {
+              "old": 22000,
+              "new": 21375
+            }
+          }
+        },
+        {
+          "ticker": "018670",
+          "name": "SK가스",
+          "fields": {
+            "avgUpside": {
+              "old": 43.3,
+              "new": 44.5
+            },
+            "currentPrice": {
+              "old": 242500,
+              "new": 240500
+            }
+          }
+        },
+        {
+          "ticker": "000880",
+          "name": "한화",
+          "fields": {
+            "brokerCount": {
+              "old": 4,
+              "new": 3
+            },
+            "avgUpside": {
+              "old": 72.1,
+              "new": 74.6
+            },
+            "entryScore": {
+              "old": 63,
+              "new": 56
+            },
+            "avgTargetPrice": {
+              "old": 144250,
+              "new": 146333.3
+            },
+            "reportCount": {
+              "old": 4,
+              "new": 3
+            }
+          }
+        },
+        {
+          "ticker": "035250",
+          "name": "강원랜드",
+          "fields": {
+            "avgUpside": {
+              "old": 31.1,
+              "new": 33
+            },
+            "entryScore": {
+              "old": 48,
+              "new": 50
+            },
+            "currentPrice": {
+              "old": 14490,
+              "new": 14290
+            }
+          }
+        },
+        {
+          "ticker": "499790",
+          "name": "GS피앤엘",
+          "fields": {
+            "avgUpside": {
+              "old": 74.9,
+              "new": 77.8
+            },
+            "currentPrice": {
+              "old": 41750,
+              "new": 41050
+            }
+          }
+        },
+        {
+          "ticker": "047040",
+          "name": "대우건설",
+          "fields": {
+            "avgUpside": {
+              "old": 29.5,
+              "new": 37.9
+            },
+            "entryScore": {
+              "old": 61,
+              "new": 68
+            },
+            "currentPrice": {
+              "old": 18000,
+              "new": 16910
+            }
+          }
+        },
+        {
+          "ticker": "004020",
+          "name": "현대제철",
+          "fields": {
+            "avgUpside": {
+              "old": 51.6,
+              "new": 59.7
+            },
+            "currentPrice": {
+              "old": 29650,
+              "new": 28150
+            }
+          }
+        },
+        {
+          "ticker": "489790",
+          "name": "한화비전",
+          "fields": {
+            "avgUpside": {
+              "old": 63.6,
+              "new": 66.7
+            },
+            "currentPrice": {
+              "old": 55000,
+              "new": 54000
+            }
+          }
+        },
+        {
+          "ticker": "267250",
+          "name": "HD현대",
+          "fields": {
+            "avgUpside": {
+              "old": 43.2,
+              "new": 46.9
+            },
+            "currentPrice": {
+              "old": 237500,
+              "new": 231500
+            }
+          }
+        },
+        {
+          "ticker": "MS",
+          "name": "Morgan Stanley",
+          "fields": {
+            "avgUpside": {
+              "old": 17.9,
+              "new": 18.3
+            },
+            "currentPrice": {
+              "old": 218.21,
+              "new": 217.55
+            }
+          }
+        },
+        {
+          "ticker": "BX",
+          "name": "Blackstone Inc.",
+          "fields": {
+            "avgUpside": {
+              "old": 12.2,
+              "new": 12.1
+            },
+            "currentPrice": {
+              "old": 140.57,
+              "new": 140.59
+            }
+          }
+        },
+        {
+          "ticker": "COST",
+          "name": "Costco Wholesale Corporation",
+          "fields": {
+            "avgUpside": {
+              "old": 19.7,
+              "new": 18.7
+            },
+            "entryScore": {
+              "old": 52,
+              "new": 51
+            },
+            "currentPrice": {
+              "old": 953.5,
+              "new": 961.35
+            }
+          }
+        },
+        {
+          "ticker": "016360",
+          "name": "삼성증권",
+          "fields": {
+            "avgUpside": {
+              "old": 62.1,
+              "new": 72.9
+            },
+            "currentPrice": {
+              "old": 92300,
+              "new": 86500
+            }
+          }
+        },
+        {
+          "ticker": "373220",
+          "name": "LG에너지솔루션",
+          "fields": {
+            "avgUpside": {
+              "old": 44.5,
+              "new": 47.9
+            },
+            "currentPrice": {
+              "old": 363000,
+              "new": 354500
+            }
+          }
+        },
+        {
+          "ticker": "020000",
+          "name": "한섬",
+          "fields": {
+            "avgUpside": {
+              "old": 72.8,
+              "new": 80.7
+            },
+            "currentPrice": {
+              "old": 16010,
+              "new": 15310
+            }
+          }
+        },
+        {
+          "ticker": "052400",
+          "name": "코나아이",
+          "fields": {
+            "avgUpside": {
+              "old": 61,
+              "new": 68.9
+            },
+            "currentPrice": {
+              "old": 39450,
+              "new": 37600
+            }
+          }
+        },
+        {
+          "ticker": "MCD",
+          "name": "McDonald's Corporation",
+          "fields": {
+            "avgUpside": {
+              "old": 21.1,
+              "new": 20.5
+            },
+            "entryScore": {
+              "old": 46,
+              "new": 44
+            },
+            "currentPrice": {
+              "old": 265.53,
+              "new": 266.99
+            }
+          }
+        },
+        {
+          "ticker": "CVX",
+          "name": "Chevron Corporation",
+          "fields": {
+            "avgUpside": {
+              "old": 7.2,
+              "new": 5.6
+            },
+            "entryScore": {
+              "old": 41,
+              "new": 40
+            },
+            "currentPrice": {
+              "old": 202.7,
+              "new": 205.74
+            }
+          }
+        },
+        {
+          "ticker": "VZ",
+          "name": "Verizon Communications Inc.",
+          "fields": {
+            "avgUpside": {
+              "old": 6.5,
+              "new": 5.4
+            },
+            "entryScore": {
+              "old": 27,
+              "new": 26
+            },
+            "currentPrice": {
+              "old": 48.06,
+              "new": 48.54
+            }
+          }
+        },
+        {
+          "ticker": "094360",
+          "name": "칩스앤미디어",
+          "fields": {
+            "avgUpside": {
+              "old": 90.7,
+              "new": 103.4
+            },
+            "currentPrice": {
+              "old": 11220,
+              "new": 10520
+            }
+          }
+        },
+        {
+          "ticker": "001120",
+          "name": "LX인터내셔널",
+          "fields": {
+            "avgUpside": {
+              "old": 57,
+              "new": 56
+            },
+            "currentPrice": {
+              "old": 37900,
+              "new": 38150
+            }
+          }
+        },
+        {
+          "ticker": "010950",
+          "name": "S-Oil",
+          "fields": {
+            "avgUpside": {
+              "old": 24.3,
+              "new": 21.4
+            },
+            "entryScore": {
+              "old": 42,
+              "new": 40
+            },
+            "currentPrice": {
+              "old": 152900,
+              "new": 156500
+            }
+          }
+        },
+        {
+          "ticker": "298050",
+          "name": "HS효성첨단소재",
+          "fields": {
+            "avgUpside": {
+              "old": 50.8,
+              "new": 60.5
+            },
+            "currentPrice": {
+              "old": 175700,
+              "new": 165100
+            }
+          }
+        },
+        {
+          "ticker": "008770",
+          "name": "호텔신라",
+          "fields": {
+            "avgUpside": {
+              "old": 59.6,
+              "new": 65.5
+            },
+            "currentPrice": {
+              "old": 44650,
+              "new": 43050
+            }
+          }
+        },
+        {
+          "ticker": "383220",
+          "name": "F&F",
+          "fields": {
+            "avgUpside": {
+              "old": 55,
+              "new": 59.7
+            },
+            "currentPrice": {
+              "old": 64500,
+              "new": 62600
+            }
+          }
+        },
+        {
+          "ticker": "000720",
+          "name": "현대건설",
+          "fields": {
+            "avgUpside": {
+              "old": 45.2,
+              "new": 54.7
+            },
+            "currentPrice": {
+              "old": 114000,
+              "new": 107000
+            }
+          }
+        },
+        {
+          "ticker": "204320",
+          "name": "HL만도",
+          "fields": {
+            "avgUpside": {
+              "old": 31.5,
+              "new": 36.7
+            },
+            "entryScore": {
+              "old": 63,
+              "new": 67
+            },
+            "currentPrice": {
+              "old": 55200,
+              "new": 53100
+            }
+          }
+        },
+        {
+          "ticker": "298020",
+          "name": "효성티앤씨",
+          "fields": {
+            "avgUpside": {
+              "old": 75.1,
+              "new": 74
+            },
+            "currentPrice": {
+              "old": 327500,
+              "new": 329500
+            }
+          }
+        },
+        {
+          "ticker": "108670",
+          "name": "LX하우시스",
+          "fields": {
+            "avgUpside": {
+              "old": 38,
+              "new": 41.8
+            },
+            "entryScore": {
+              "old": 47,
+              "new": 49
+            },
+            "currentPrice": {
+              "old": 34050,
+              "new": 33150
+            }
+          }
+        },
+        {
+          "ticker": "090430",
+          "name": "아모레퍼시픽",
+          "fields": {
+            "avgUpside": {
+              "old": 38.8,
+              "new": 39.1
+            },
+            "currentPrice": {
+              "old": 132400,
+              "new": 132200
+            }
+          }
+        },
+        {
+          "ticker": "051910",
+          "name": "LG화학",
+          "fields": {
+            "avgUpside": {
+              "old": 46.2,
+              "new": 53.6
+            },
+            "currentPrice": {
+              "old": 280500,
+              "new": 267000
+            }
+          }
+        },
+        {
+          "ticker": "000150",
+          "name": "두산",
+          "fields": {
+            "avgUpside": {
+              "old": 66.2,
+              "new": 81
+            },
+            "currentPrice": {
+              "old": 1308000,
+              "new": 1201000
+            }
+          }
+        },
+        {
+          "ticker": "011070",
+          "name": "LG이노텍",
+          "fields": {
+            "avgUpside": {
+              "old": 61.9,
+              "new": 76.7
+            },
+            "currentPrice": {
+              "old": 680000,
+              "new": 623000
+            }
+          }
+        },
+        {
+          "ticker": "068270",
+          "name": "셀트리온",
+          "fields": {
+            "avgUpside": {
+              "old": 41,
+              "new": 43.7
+            },
+            "currentPrice": {
+              "old": 198400,
+              "new": 194700
+            }
+          }
+        },
+        {
+          "ticker": "005490",
+          "name": "POSCO홀딩스",
+          "fields": {
+            "avgUpside": {
+              "old": 62.2,
+              "new": 69.8
+            },
+            "currentPrice": {
+              "old": 333000,
+              "new": 318000
+            }
+          }
+        },
+        {
+          "ticker": "001430",
+          "name": "세아베스틸지주",
+          "fields": {
+            "avgUpside": {
+              "old": 26.7,
+              "new": 33.8
+            },
+            "entryScore": {
+              "old": 44,
+              "new": 51
+            },
+            "currentPrice": {
+              "old": 45250,
+              "new": 42850
+            }
+          }
+        },
+        {
+          "ticker": "098460",
+          "name": "고영",
+          "fields": {
+            "avgUpside": {
+              "old": 31,
+              "new": 38.8
+            },
+            "entryScore": {
+              "old": 55,
+              "new": 62
+            },
+            "currentPrice": {
+              "old": 32550,
+              "new": 30700
+            }
+          }
+        },
+        {
+          "ticker": "GOOGL",
+          "name": "Alphabet Inc.",
+          "fields": {
+            "brokerCount": {
+              "old": 6,
+              "new": 5
+            },
+            "avgUpside": {
+              "old": 24.5,
+              "new": 24.3
+            },
+            "entryScore": {
+              "old": 56,
+              "new": 72
+            },
+            "avgTargetPrice": {
+              "old": 428.3,
+              "new": 428
+            },
+            "currentPrice": {
+              "old": 344,
+              "new": 344.2
+            },
+            "reportCount": {
+              "old": 6,
+              "new": 5
+            }
+          }
+        },
+        {
+          "ticker": "META",
+          "name": "Meta Platforms, Inc.",
+          "fields": {
+            "brokerCount": {
+              "old": 7,
+              "new": 6
+            },
+            "avgUpside": {
+              "old": 29.8,
+              "new": 38.6
+            },
+            "entryScore": {
+              "old": 68,
+              "new": 85
+            },
+            "avgTargetPrice": {
+              "old": 738.6,
+              "new": 753.3
+            },
+            "currentPrice": {
+              "old": 568.97,
+              "new": 543.67
+            },
+            "reportCount": {
+              "old": 7,
+              "new": 6
+            }
+          }
+        },
+        {
+          "ticker": "BAC",
+          "name": "Bank of America Corporation",
+          "fields": {
+            "avgUpside": {
+              "old": 9.6,
+              "new": 9
+            },
+            "currentPrice": {
+              "old": 63.89,
+              "new": 64.23
+            }
+          }
+        },
+        {
+          "ticker": "073240",
+          "name": "금호타이어",
+          "fields": {
+            "avgUpside": {
+              "old": 16.5,
+              "new": 21.7
+            },
+            "entryScore": {
+              "old": 35,
+              "new": 40
+            },
+            "currentPrice": {
+              "old": 8010,
+              "new": 7670
+            }
+          }
+        },
+        {
+          "ticker": "039490",
+          "name": "키움증권",
+          "fields": {
+            "avgUpside": {
+              "old": 47.9,
+              "new": 61.8
+            },
+            "currentPrice": {
+              "old": 298000,
+              "new": 272500
+            }
+          }
+        },
+        {
+          "ticker": "139130",
+          "name": "iM금융지주",
+          "fields": {
+            "avgUpside": {
+              "old": 42.9,
+              "new": 41.9
+            },
+            "currentPrice": {
+              "old": 17140,
+              "new": 17260
+            }
+          }
+        },
+        {
+          "ticker": "138930",
+          "name": "BNK금융지주",
+          "fields": {
+            "avgUpside": {
+              "old": 56.3,
+              "new": 58.8
+            },
+            "currentPrice": {
+              "old": 14920,
+              "new": 14680
+            }
+          }
+        },
+        {
+          "ticker": "024110",
+          "name": "기업은행",
+          "fields": {
+            "avgUpside": {
+              "old": 32.8,
+              "new": 33.8
+            },
+            "entryScore": {
+              "old": 64,
+              "new": 65
+            },
+            "currentPrice": {
+              "old": 20400,
+              "new": 20250
+            }
+          }
+        },
+        {
+          "ticker": "375500",
+          "name": "DL이앤씨",
+          "fields": {
+            "brokerCount": {
+              "old": 8,
+              "new": 9
+            },
+            "avgUpside": {
+              "old": 38.7,
+              "new": 41.2
+            },
+            "entryScore": {
+              "old": 69,
+              "new": 70
+            },
+            "avgTargetPrice": {
+              "old": 102250,
+              "new": 99000
+            },
+            "currentPrice": {
+              "old": 73700,
+              "new": 70100
+            },
+            "reportCount": {
+              "old": 8,
+              "new": 9
+            }
+          }
+        },
+        {
+          "ticker": "047810",
+          "name": "한국항공우주",
+          "fields": {
+            "brokerCount": {
+              "old": 5,
+              "new": 6
+            },
+            "avgUpside": {
+              "old": 18.1,
+              "new": 19.9
+            },
+            "entryScore": {
+              "old": 51,
+              "new": 52
+            },
+            "avgTargetPrice": {
+              "old": 170200,
+              "new": 165166.7
+            },
+            "currentPrice": {
+              "old": 144100,
+              "new": 137800
+            },
+            "reportCount": {
+              "old": 5,
+              "new": 6
+            }
+          }
+        },
+        {
+          "ticker": "047050",
+          "name": "포스코인터내셔널",
+          "fields": {
+            "avgUpside": {
+              "old": 78.6,
+              "new": 85.2
+            },
+            "currentPrice": {
+              "old": 53100,
+              "new": 51200
+            }
+          }
+        },
+        {
+          "ticker": "001440",
+          "name": "대한전선",
+          "fields": {
+            "avgUpside": {
+              "old": 79.6,
+              "new": 89
+            },
+            "currentPrice": {
+              "old": 30200,
+              "new": 28700
+            }
+          }
+        },
+        {
+          "ticker": "096770",
+          "name": "SK이노베이션",
+          "fields": {
+            "avgUpside": {
+              "old": 41.7,
+              "new": 43.8
+            },
+            "currentPrice": {
+              "old": 132500,
+              "new": 130600
+            }
+          }
+        },
+        {
+          "ticker": "028260",
+          "name": "삼성물산",
+          "fields": {
+            "avgUpside": {
+              "old": 18.4,
+              "new": 30.5
+            },
+            "entryScore": {
+              "old": 51,
+              "new": 62
+            },
+            "currentPrice": {
+              "old": 383000,
+              "new": 347500
+            }
+          }
+        },
+        {
+          "ticker": "069620",
+          "name": "대웅제약",
+          "fields": {
+            "avgUpside": {
+              "old": 60.1,
+              "new": 63.3
+            },
+            "currentPrice": {
+              "old": 119900,
+              "new": 117600
+            }
+          }
+        },
+        {
+          "ticker": "195940",
+          "name": "HK이노엔",
+          "fields": {
+            "avgUpside": {
+              "old": 41.7,
+              "new": 44
+            },
+            "currentPrice": {
+              "old": 41400,
+              "new": 40750
+            }
+          }
+        },
+        {
+          "ticker": "009830",
+          "name": "한화솔루션",
+          "fields": {
+            "avgUpside": {
+              "old": 35.9,
+              "new": 38.6
+            },
+            "entryScore": {
+              "old": 66,
+              "new": 69
+            },
+            "currentPrice": {
+              "old": 35850,
+              "new": 35150
+            }
+          }
+        },
+        {
+          "ticker": "329180",
+          "name": "HD현대중공업",
+          "fields": {
+            "avgUpside": {
+              "old": 78.6,
+              "new": 86.2
+            },
+            "currentPrice": {
+              "old": 502000,
+              "new": 481500
+            }
+          }
+        },
+        {
+          "ticker": "259960",
+          "name": "크래프톤",
+          "fields": {
+            "avgUpside": {
+              "old": 63.4,
+              "new": 69.3
+            },
+            "currentPrice": {
+              "old": 229500,
+              "new": 221500
+            }
+          }
+        },
+        {
+          "ticker": "034020",
+          "name": "두산에너빌리티",
+          "fields": {
+            "avgUpside": {
+              "old": 56.5,
+              "new": 70.6
+            },
+            "currentPrice": {
+              "old": 82300,
+              "new": 75500
+            }
+          }
+        },
+        {
+          "ticker": "267270",
+          "name": "HD건설기계",
+          "fields": {
+            "avgUpside": {
+              "old": 45,
+              "new": 53.9
+            },
+            "currentPrice": {
+              "old": 135900,
+              "new": 128000
+            }
+          }
+        },
+        {
+          "ticker": "PG",
+          "name": "The Procter & Gamble Company",
+          "fields": {
+            "avgUpside": {
+              "old": 14.6,
+              "new": 14.3
+            },
+            "currentPrice": {
+              "old": 143.12,
+              "new": 143.45
+            }
+          }
+        },
+        {
+          "ticker": "KO",
+          "name": "The Coca-Cola Company",
+          "fields": {
+            "avgUpside": {
+              "old": 13.8,
+              "new": 11.5
+            },
+            "entryScore": {
+              "old": 50,
+              "new": 45
+            },
+            "currentPrice": {
+              "old": 86.98,
+              "new": 88.82
+            }
+          }
+        },
+        {
+          "ticker": "RTX",
+          "name": "RTX Corporation",
+          "fields": {
+            "avgUpside": {
+              "old": 9.5,
+              "new": 7.6
+            },
+            "entryScore": {
+              "old": 43,
+              "new": 42
+            },
+            "currentPrice": {
+              "old": 221.64,
+              "new": 225.49
+            }
+          }
+        },
+        {
+          "ticker": "352820",
+          "name": "하이브",
+          "fields": {
+            "avgUpside": {
+              "old": 89.9,
+              "new": 98.3
+            },
+            "currentPrice": {
+              "old": 177100,
+              "new": 169600
+            }
+          }
+        },
+        {
+          "ticker": "272210",
+          "name": "한화시스템",
+          "fields": {
+            "avgUpside": {
+              "old": 31.7,
+              "new": 40.6
+            },
+            "entryScore": {
+              "old": 63,
+              "new": 70
+            },
+            "currentPrice": {
+              "old": 83300,
+              "new": 78000
+            }
+          }
+        },
+        {
+          "ticker": "011210",
+          "name": "현대위아",
+          "fields": {
+            "brokerCount": {
+              "old": 7,
+              "new": 2
+            },
+            "avgUpside": {
+              "old": 35.7,
+              "new": 44.9
+            },
+            "entryScore": {
+              "old": 66,
+              "new": 49
+            },
+            "avgTargetPrice": {
+              "old": 89285.7,
+              "new": 90000
+            },
+            "currentPrice": {
+              "old": 65800,
+              "new": 62100
+            },
+            "reportCount": {
+              "old": 7,
+              "new": 2
+            }
+          }
+        },
+        {
+          "ticker": "267260",
+          "name": "HD현대일렉트릭",
+          "fields": {
+            "avgUpside": {
+              "old": 39.4,
+              "new": 49.5
+            },
+            "entryScore": {
+              "old": 69,
+              "new": 70
+            },
+            "currentPrice": {
+              "old": 812000,
+              "new": 757000
+            }
+          }
+        },
+        {
+          "ticker": "237690",
+          "name": "에스티팜",
+          "fields": {
+            "avgUpside": {
+              "old": 74.8,
+              "new": 82.2
+            },
+            "currentPrice": {
+              "old": 104100,
+              "new": 99900
+            }
+          }
+        },
+        {
+          "ticker": "042660",
+          "name": "한화오션",
+          "fields": {
+            "avgUpside": {
+              "old": 55.2,
+              "new": 64.1
+            },
+            "currentPrice": {
+              "old": 94300,
+              "new": 89200
+            }
+          }
+        },
+        {
+          "ticker": "316140",
+          "name": "우리금융지주",
+          "fields": {
+            "brokerCount": {
+              "old": 7,
+              "new": 2
+            },
+            "avgUpside": {
+              "old": 28.5,
+              "new": 28
+            },
+            "entryScore": {
+              "old": 60,
+              "new": 38
+            },
+            "avgTargetPrice": {
+              "old": 42714.3,
+              "new": 43000
+            },
+            "currentPrice": {
+              "old": 33250,
+              "new": 33600
+            },
+            "reportCount": {
+              "old": 7,
+              "new": 2
+            }
+          }
+        },
+        {
+          "ticker": "000270",
+          "name": "기아",
+          "fields": {
+            "brokerCount": {
+              "old": 10,
+              "new": 2
+            },
+            "avgUpside": {
+              "old": 63.6,
+              "new": 84.3
+            },
+            "entryScore": {
+              "old": 70,
+              "new": 49
+            },
+            "avgTargetPrice": {
+              "old": 230500,
+              "new": 245000
+            },
+            "currentPrice": {
+              "old": 140900,
+              "new": 132900
+            },
+            "reportCount": {
+              "old": 10,
+              "new": 2
+            }
+          }
+        },
+        {
+          "ticker": "012330",
+          "name": "현대모비스",
+          "fields": {
+            "brokerCount": {
+              "old": 9,
+              "new": 2
+            },
+            "avgUpside": {
+              "old": 41.1,
+              "new": 59.4
+            },
+            "entryScore": {
+              "old": 70,
+              "new": 49
+            },
+            "avgTargetPrice": {
+              "old": 767777.8,
+              "new": 805000
+            },
+            "currentPrice": {
+              "old": 544000,
+              "new": 505000
+            },
+            "reportCount": {
+              "old": 9,
+              "new": 2
+            }
+          }
+        },
+        {
+          "ticker": "T",
+          "name": "AT&T Inc.",
+          "fields": {
+            "avgUpside": {
+              "old": 14.8,
+              "new": 13.8
+            },
+            "entryScore": {
+              "old": 48,
+              "new": 47
+            },
+            "currentPrice": {
+              "old": 24.68,
+              "new": 24.9
             }
           }
         }

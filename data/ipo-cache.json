@@ -1,18 +1,18 @@
 {
   "ipos": [
     {
-      "id": "2294",
-      "name": "빅웨이브로보틱스",
-      "subscriptionStart": "2026-09-16",
-      "subscriptionEnd": "2026-09-17",
+      "id": "2315",
+      "name": "멜콘(구.에스앤에프솔루션)",
+      "subscriptionStart": "2026-10-01",
+      "subscriptionEnd": "2026-10-02",
       "confirmedPrice": null,
       "priceBandLow": null,
       "priceBandHigh": null,
       "underwriter": "",
-      "competitionRatio": "유진투자증권,미래에셋증권",
+      "competitionRatio": "대신증권",
       "listingDate": null,
-      "refundDate": "2026-09-21",
-      "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2294&l=&page=1",
+      "refundDate": "2026-10-07",
+      "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2315&l=&page=1",
       "status": "청약예정",
       "calculator": null
     },
@@ -45,6 +45,22 @@
       "listingDate": null,
       "refundDate": "2026-09-21",
       "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2310&l=&page=1",
+      "status": "청약예정",
+      "calculator": null
+    },
+    {
+      "id": "2294",
+      "name": "빅웨이브로보틱스",
+      "subscriptionStart": "2026-09-15",
+      "subscriptionEnd": "2026-09-16",
+      "confirmedPrice": null,
+      "priceBandLow": null,
+      "priceBandHigh": null,
+      "underwriter": "",
+      "competitionRatio": "유진투자증권,미래에셋증권",
+      "listingDate": null,
+      "refundDate": "2026-09-18",
+      "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2294&l=&page=1",
       "status": "청약예정",
       "calculator": null
     },
@@ -463,24 +479,8 @@
       "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2278&l=&page=1",
       "status": "상장예정",
       "calculator": null
-    },
-    {
-      "id": "2281",
-      "name": "채비(구.대영채비)",
-      "subscriptionStart": "2026-04-20",
-      "subscriptionEnd": "2026-04-21",
-      "confirmedPrice": 12300,
-      "priceBandLow": null,
-      "priceBandHigh": null,
-      "underwriter": "KB증권,삼성증권,대신증권,하나증권",
-      "competitionRatio": "302:1",
-      "listingDate": null,
-      "refundDate": null,
-      "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2281&l=&page=1",
-      "status": "상장예정",
-      "calculator": null
     }
   ],
-  "fetchedAt": "2026-08-21T04:32:08.036Z",
+  "fetchedAt": "2026-08-21T08:33:04.188Z",
   "totalCount": 30
 }

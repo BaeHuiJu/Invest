@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-22T01:27:39.196Z",
+  "generatedAt": "2026-08-23T01:25:35.369Z",
   "maxDays": 365,
   "reports": [
     {
@@ -3600,6 +3600,55 @@
         "Guggenheim가 2026-08-20에 Buy 의견과 목표가를 제시했습니다.",
         "현재가 $165.44 대비 목표가는 $175입니다.",
         "2026-08-20 종가 $158.25 대비 괴리는 10.6%입니다."
+      ],
+      "performance": {
+        "week1": {
+          "asOfDate": "2026-08-27",
+          "closePrice": 0,
+          "returnPct": 0,
+          "targetProgressPct": 0,
+          "success": false,
+          "status": "pending"
+        },
+        "month1": {
+          "asOfDate": "2026-09-19",
+          "closePrice": 0,
+          "returnPct": 0,
+          "targetProgressPct": 0,
+          "success": false,
+          "status": "pending"
+        },
+        "month3": {
+          "asOfDate": "2026-11-18",
+          "closePrice": 0,
+          "returnPct": 0,
+          "targetProgressPct": 0,
+          "success": false,
+          "status": "pending"
+        }
+      }
+    },
+    {
+      "date": "2026-08-20",
+      "ticker": "COP",
+      "name": "ConocoPhillips",
+      "market": "us",
+      "broker": "RBC Capital",
+      "analyst": "Scott Hanold",
+      "opinion": "Buy",
+      "targetPrice": 152,
+      "currentPrice": 134.87,
+      "basePrice": 134.89,
+      "basePriceDate": "2026-08-20",
+      "upside": 12.7,
+      "sourceUrl": "https://stockanalysis.com/stocks/cop/ratings/",
+      "sourceText": "RBC Capital Buy Maintains. Price target N/A -> 152.",
+      "reportTitle": "Buy Maintains",
+      "reasonSummary": "Buy Maintains. RBC Capital가 Buy 의견을 제시했고 현재가 기준 상승여력은 12.7%입니다. 2026-08-20 종가 대비 목표가 괴리는 12.7%입니다.",
+      "reasonBullets": [
+        "RBC Capital가 2026-08-20에 Buy 의견과 목표가를 제시했습니다.",
+        "현재가 $134.87 대비 목표가는 $152입니다.",
+        "2026-08-20 종가 $134.89 대비 괴리는 12.7%입니다."
       ],
       "performance": {
         "week1": {
@@ -23671,55 +23720,6 @@
     },
     {
       "date": "2026-08-11",
-      "ticker": "COP",
-      "name": "ConocoPhillips",
-      "market": "us",
-      "broker": "Goldman Sachs",
-      "analyst": "Neil Mehta",
-      "opinion": "Buy",
-      "targetPrice": 146,
-      "currentPrice": 134.87,
-      "basePrice": 125.92,
-      "basePriceDate": "2026-08-11",
-      "upside": 8.3,
-      "sourceUrl": "https://stockanalysis.com/stocks/cop/ratings/",
-      "sourceText": "Goldman Sachs Buy Maintains. Price target 140 -> 146.",
-      "reportTitle": "Buy Maintains",
-      "reasonSummary": "Buy Maintains. Goldman Sachs가 Buy 의견을 제시했고 현재가 기준 상승여력은 8.3%입니다. 2026-08-11 종가 대비 목표가 괴리는 15.9%입니다.",
-      "reasonBullets": [
-        "Goldman Sachs가 2026-08-11에 Buy 의견과 목표가를 제시했습니다.",
-        "현재가 $134.87 대비 목표가는 $146입니다.",
-        "2026-08-11 종가 $125.92 대비 괴리는 15.9%입니다."
-      ],
-      "performance": {
-        "week1": {
-          "asOfDate": "2026-08-18",
-          "closePrice": 129.72,
-          "returnPct": 3,
-          "targetProgressPct": 18.9,
-          "success": false,
-          "status": "complete"
-        },
-        "month1": {
-          "asOfDate": "2026-09-10",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "pending"
-        },
-        "month3": {
-          "asOfDate": "2026-11-09",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "pending"
-        }
-      }
-    },
-    {
-      "date": "2026-08-11",
       "ticker": "BA",
       "name": "The Boeing Company",
       "market": "us",
@@ -41579,11 +41579,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-08-11",
-          "closePrice": 0,
-          "returnPct": 0,
+          "closePrice": 304.91,
+          "returnPct": -1.4,
           "targetProgressPct": 0,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-09-03",
@@ -41677,11 +41677,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-08-11",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
+          "closePrice": 174.94,
+          "returnPct": 7.5,
+          "targetProgressPct": 23.5,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-09-03",
@@ -41726,11 +41726,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-08-11",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
+          "closePrice": 174.94,
+          "returnPct": 7.5,
+          "targetProgressPct": 13.3,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-09-03",
@@ -41971,11 +41971,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-08-11",
-          "closePrice": 0,
-          "returnPct": 0,
+          "closePrice": 362.82,
+          "returnPct": -1.8,
           "targetProgressPct": 0,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-09-03",
@@ -42020,11 +42020,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-08-11",
-          "closePrice": 0,
-          "returnPct": 0,
+          "closePrice": 135.77,
+          "returnPct": -0.8,
           "targetProgressPct": 0,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-09-03",
@@ -42069,11 +42069,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-08-11",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
+          "closePrice": 259.8,
+          "returnPct": 1.9,
+          "targetProgressPct": 18,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-09-03",
@@ -42118,11 +42118,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-08-11",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
+          "closePrice": 259.8,
+          "returnPct": 1.9,
+          "targetProgressPct": 12.5,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-09-03",
@@ -42167,11 +42167,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-08-11",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
+          "closePrice": 259.8,
+          "returnPct": 1.9,
+          "targetProgressPct": 9.7,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-09-03",
@@ -42216,11 +42216,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-08-11",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
+          "closePrice": 250.09,
+          "returnPct": 2.6,
+          "targetProgressPct": 14.2,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-09-03",
@@ -42265,11 +42265,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-08-11",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
+          "closePrice": 196.66,
+          "returnPct": 3.3,
+          "targetProgressPct": 19.8,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-09-03",
@@ -42314,11 +42314,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-08-11",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
+          "closePrice": 196.66,
+          "returnPct": 3.3,
+          "targetProgressPct": 18.1,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-09-03",
@@ -42363,11 +42363,11 @@
       "performance": {
         "week1": {
           "asOfDate": "2026-08-11",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
+          "closePrice": 196.66,
+          "returnPct": 3.3,
+          "targetProgressPct": 37.7,
           "success": false,
-          "status": "unavailable"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-09-03",
@@ -61529,12 +61529,12 @@
           "status": "complete"
         },
         "month1": {
-          "asOfDate": "2026-08-23",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
+          "asOfDate": "2026-08-21",
+          "closePrice": 128.48,
+          "returnPct": 30.1,
+          "targetProgressPct": 48.5,
           "success": false,
-          "status": "pending"
+          "status": "complete"
         },
         "month3": {
           "asOfDate": "2026-10-22",
@@ -61578,12 +61578,12 @@
           "status": "complete"
         },
         "month1": {
-          "asOfDate": "2026-08-23",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
+          "asOfDate": "2026-08-21",
+          "closePrice": 143.38,
+          "returnPct": 10.3,
+          "targetProgressPct": 34.3,
           "success": false,
-          "status": "pending"
+          "status": "complete"
         },
         "month3": {
           "asOfDate": "2026-10-22",
@@ -61627,12 +61627,12 @@
           "status": "complete"
         },
         "month1": {
-          "asOfDate": "2026-08-23",
-          "closePrice": 0,
-          "returnPct": 0,
+          "asOfDate": "2026-08-21",
+          "closePrice": 215.9,
+          "returnPct": -11.2,
           "targetProgressPct": 0,
           "success": false,
-          "status": "pending"
+          "status": "complete"
         },
         "month3": {
           "asOfDate": "2026-10-22",
@@ -61676,12 +61676,12 @@
           "status": "complete"
         },
         "month1": {
-          "asOfDate": "2026-08-23",
-          "closePrice": 0,
-          "returnPct": 0,
+          "asOfDate": "2026-08-21",
+          "closePrice": 215.9,
+          "returnPct": -11.2,
           "targetProgressPct": 0,
           "success": false,
-          "status": "pending"
+          "status": "complete"
         },
         "month3": {
           "asOfDate": "2026-10-22",
@@ -70990,11 +70990,11 @@
           "performance": {
             "week1": {
               "asOfDate": "2026-08-11",
-              "closePrice": 0,
-              "returnPct": 0,
+              "closePrice": 304.91,
+              "returnPct": -1.4,
               "targetProgressPct": 0,
               "success": false,
-              "status": "unavailable"
+              "status": "complete"
             },
             "month1": {
               "asOfDate": "2026-09-03",
@@ -73153,6 +73153,305 @@
             },
             "month3": {
               "asOfDate": "2026-11-18",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            }
+          }
+        }
+      ]
+    },
+    "us:COP": {
+      "ticker": "COP",
+      "name": "ConocoPhillips",
+      "market": "us",
+      "latestReportDate": "2026-08-20",
+      "latestBroker": "RBC Capital",
+      "latestOpinion": "Buy",
+      "latestTargetPrice": 152,
+      "latestCurrentPrice": 134.87,
+      "latestBasePrice": 134.89,
+      "avgUpside": 12.9,
+      "reportCount": 7,
+      "reasonSummary": "Buy Maintains. RBC Capital가 Buy 의견을 제시했고 현재가 기준 상승여력은 12.7%입니다. 2026-08-20 종가 대비 목표가 괴리는 12.7%입니다.",
+      "reasonBullets": [
+        "RBC Capital가 2026-08-20에 Buy 의견과 목표가를 제시했습니다.",
+        "현재가 $134.87 대비 목표가는 $152입니다.",
+        "2026-08-20 종가 $134.89 대비 괴리는 12.7%입니다."
+      ],
+      "investmentLogic": {
+        "summary": "Buy Maintains",
+        "bullets": [
+          "Buy Maintains",
+          "Buy Maintains RBC Capital Buy Maintains.",
+          "Price target N/A -> 152."
+        ]
+      },
+      "estimateRevision": {
+        "summary": "유지 신호입니다. 리포트 원문에서 추정치 관련 표현을 기준으로 판단했습니다.",
+        "bullets": [
+          "Buy Maintains RBC Capital Buy Maintains.",
+          "Price target N/A -> 152.",
+          "Buy Maintains."
+        ],
+        "signal": "flat"
+      },
+      "valuation": {
+        "summary": "현재가 $134.87 대비 목표가 $152가 제시돼 밸류에이션 여력을 확인할 수 있습니다.",
+        "bullets": [
+          "Buy Maintains RBC Capital Buy Maintains.",
+          "Price target N/A -> 152.",
+          "Buy Maintains."
+        ]
+      },
+      "sectorCycle": {
+        "summary": "Buy Maintains RBC Capital Buy Maintains.",
+        "bullets": [
+          "Buy Maintains RBC Capital Buy Maintains.",
+          "Price target N/A -> 152.",
+          "Buy Maintains."
+        ]
+      },
+      "relatedReports": [
+        {
+          "date": "2026-08-20",
+          "ticker": "COP",
+          "name": "ConocoPhillips",
+          "market": "us",
+          "broker": "RBC Capital",
+          "analyst": "Scott Hanold",
+          "opinion": "Buy",
+          "targetPrice": 152,
+          "currentPrice": 134.87,
+          "basePrice": 134.89,
+          "basePriceDate": "2026-08-20",
+          "upside": 12.7,
+          "sourceUrl": "https://stockanalysis.com/stocks/cop/ratings/",
+          "sourceText": "RBC Capital Buy Maintains. Price target N/A -> 152.",
+          "reportTitle": "Buy Maintains",
+          "reasonSummary": "Buy Maintains. RBC Capital가 Buy 의견을 제시했고 현재가 기준 상승여력은 12.7%입니다. 2026-08-20 종가 대비 목표가 괴리는 12.7%입니다.",
+          "reasonBullets": [
+            "RBC Capital가 2026-08-20에 Buy 의견과 목표가를 제시했습니다.",
+            "현재가 $134.87 대비 목표가는 $152입니다.",
+            "2026-08-20 종가 $134.89 대비 괴리는 12.7%입니다."
+          ],
+          "performance": {
+            "week1": {
+              "asOfDate": "2026-08-27",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            },
+            "month1": {
+              "asOfDate": "2026-09-19",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            },
+            "month3": {
+              "asOfDate": "2026-11-18",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            }
+          }
+        },
+        {
+          "date": "2026-08-19",
+          "ticker": "COP",
+          "name": "ConocoPhillips",
+          "market": "us",
+          "broker": "Morgan Stanley",
+          "analyst": "Devin McDermott",
+          "opinion": "Buy",
+          "targetPrice": 151,
+          "currentPrice": 134.87,
+          "basePrice": 130.58,
+          "basePriceDate": "2026-08-19",
+          "upside": 12,
+          "sourceUrl": "https://stockanalysis.com/stocks/cop/ratings/",
+          "sourceText": "Morgan Stanley Buy Reiterates. Price target 147 -> 151.",
+          "reportTitle": "Buy Reiterates",
+          "reasonSummary": "Buy Reiterates. Morgan Stanley가 Buy 의견을 제시했고 현재가 기준 상승여력은 12.0%입니다. 2026-08-19 종가 대비 목표가 괴리는 15.6%입니다.",
+          "reasonBullets": [
+            "Morgan Stanley가 2026-08-19에 Buy 의견과 목표가를 제시했습니다.",
+            "현재가 $134.87 대비 목표가는 $151입니다.",
+            "2026-08-19 종가 $130.58 대비 괴리는 15.6%입니다."
+          ],
+          "performance": {
+            "week1": {
+              "asOfDate": "2026-08-26",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            },
+            "month1": {
+              "asOfDate": "2026-09-18",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            },
+            "month3": {
+              "asOfDate": "2026-11-17",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            }
+          }
+        },
+        {
+          "date": "2026-08-19",
+          "ticker": "COP",
+          "name": "ConocoPhillips",
+          "market": "us",
+          "broker": "Argus Research",
+          "analyst": "Bill Selesky",
+          "opinion": "Buy",
+          "targetPrice": 153,
+          "currentPrice": 134.87,
+          "basePrice": 130.58,
+          "basePriceDate": "2026-08-19",
+          "upside": 13.4,
+          "sourceUrl": "https://stockanalysis.com/stocks/cop/ratings/",
+          "sourceText": "Argus Research Buy Reiterates. Price target 136 -> 153.",
+          "reportTitle": "Buy Reiterates",
+          "reasonSummary": "Buy Reiterates. Argus Research가 Buy 의견을 제시했고 현재가 기준 상승여력은 13.4%입니다. 2026-08-19 종가 대비 목표가 괴리는 17.2%입니다.",
+          "reasonBullets": [
+            "Argus Research가 2026-08-19에 Buy 의견과 목표가를 제시했습니다.",
+            "현재가 $134.87 대비 목표가는 $153입니다.",
+            "2026-08-19 종가 $130.58 대비 괴리는 17.2%입니다."
+          ],
+          "performance": {
+            "week1": {
+              "asOfDate": "2026-08-26",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            },
+            "month1": {
+              "asOfDate": "2026-09-18",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            },
+            "month3": {
+              "asOfDate": "2026-11-17",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            }
+          }
+        },
+        {
+          "date": "2026-08-17",
+          "ticker": "COP",
+          "name": "ConocoPhillips",
+          "market": "us",
+          "broker": "Barclays",
+          "analyst": "Betty Jiang",
+          "opinion": "Buy",
+          "targetPrice": 150,
+          "currentPrice": 134.87,
+          "basePrice": 127.56,
+          "basePriceDate": "2026-08-17",
+          "upside": 11.2,
+          "sourceUrl": "https://stockanalysis.com/stocks/cop/ratings/",
+          "sourceText": "Barclays Buy Maintains. Price target 155 -> 150.",
+          "reportTitle": "Buy Maintains",
+          "reasonSummary": "Buy Maintains. Barclays가 Buy 의견을 제시했고 현재가 기준 상승여력은 11.2%입니다. 2026-08-17 종가 대비 목표가 괴리는 17.6%입니다.",
+          "reasonBullets": [
+            "Barclays가 2026-08-17에 Buy 의견과 목표가를 제시했습니다.",
+            "현재가 $134.87 대비 목표가는 $150입니다.",
+            "2026-08-17 종가 $127.56 대비 괴리는 17.6%입니다."
+          ],
+          "performance": {
+            "week1": {
+              "asOfDate": "2026-08-24",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            },
+            "month1": {
+              "asOfDate": "2026-09-16",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            },
+            "month3": {
+              "asOfDate": "2026-11-15",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            }
+          }
+        },
+        {
+          "date": "2026-08-12",
+          "ticker": "COP",
+          "name": "ConocoPhillips",
+          "market": "us",
+          "broker": "DBS",
+          "analyst": "Pei Hwa Ho",
+          "opinion": "Buy",
+          "targetPrice": 146,
+          "currentPrice": 134.87,
+          "basePrice": 127.3,
+          "basePriceDate": "2026-08-12",
+          "upside": 8.3,
+          "sourceUrl": "https://stockanalysis.com/stocks/cop/ratings/",
+          "sourceText": "DBS Buy Maintains. Price target N/A -> 146.",
+          "reportTitle": "Buy Maintains",
+          "reasonSummary": "Buy Maintains. DBS가 Buy 의견을 제시했고 현재가 기준 상승여력은 8.3%입니다. 2026-08-12 종가 대비 목표가 괴리는 14.7%입니다.",
+          "reasonBullets": [
+            "DBS가 2026-08-12에 Buy 의견과 목표가를 제시했습니다.",
+            "현재가 $134.87 대비 목표가는 $146입니다.",
+            "2026-08-12 종가 $127.3 대비 괴리는 14.7%입니다."
+          ],
+          "performance": {
+            "week1": {
+              "asOfDate": "2026-08-19",
+              "closePrice": 130.58,
+              "returnPct": 2.6,
+              "targetProgressPct": 17.5,
+              "success": false,
+              "status": "complete"
+            },
+            "month1": {
+              "asOfDate": "2026-09-11",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            },
+            "month3": {
+              "asOfDate": "2026-11-10",
               "closePrice": 0,
               "returnPct": 0,
               "targetProgressPct": 0,
@@ -78560,11 +78859,11 @@
           "performance": {
             "week1": {
               "asOfDate": "2026-08-11",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
+              "closePrice": 196.66,
+              "returnPct": 3.3,
+              "targetProgressPct": 19.8,
               "success": false,
-              "status": "unavailable"
+              "status": "complete"
             },
             "month1": {
               "asOfDate": "2026-09-03",
@@ -78609,11 +78908,11 @@
           "performance": {
             "week1": {
               "asOfDate": "2026-08-11",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
+              "closePrice": 196.66,
+              "returnPct": 3.3,
+              "targetProgressPct": 18.1,
               "success": false,
-              "status": "unavailable"
+              "status": "complete"
             },
             "month1": {
               "asOfDate": "2026-09-03",
@@ -78658,11 +78957,11 @@
           "performance": {
             "week1": {
               "asOfDate": "2026-08-11",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
+              "closePrice": 196.66,
+              "returnPct": 3.3,
+              "targetProgressPct": 37.7,
               "success": false,
-              "status": "unavailable"
+              "status": "complete"
             },
             "month1": {
               "asOfDate": "2026-09-03",
@@ -78674,305 +78973,6 @@
             },
             "month3": {
               "asOfDate": "2026-11-02",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            }
-          }
-        }
-      ]
-    },
-    "us:COP": {
-      "ticker": "COP",
-      "name": "ConocoPhillips",
-      "market": "us",
-      "latestReportDate": "2026-08-19",
-      "latestBroker": "Morgan Stanley",
-      "latestOpinion": "Buy",
-      "latestTargetPrice": 151,
-      "latestCurrentPrice": 134.87,
-      "latestBasePrice": 130.58,
-      "avgUpside": 12.3,
-      "reportCount": 7,
-      "reasonSummary": "Buy Reiterates. Morgan Stanley가 Buy 의견을 제시했고 현재가 기준 상승여력은 12.0%입니다. 2026-08-19 종가 대비 목표가 괴리는 15.6%입니다.",
-      "reasonBullets": [
-        "Morgan Stanley가 2026-08-19에 Buy 의견과 목표가를 제시했습니다.",
-        "현재가 $134.87 대비 목표가는 $151입니다.",
-        "2026-08-19 종가 $130.58 대비 괴리는 15.6%입니다."
-      ],
-      "investmentLogic": {
-        "summary": "Buy Reiterates",
-        "bullets": [
-          "Buy Reiterates",
-          "Buy Reiterates Morgan Stanley Buy Reiterates.",
-          "Price target 147 -> 151."
-        ]
-      },
-      "estimateRevision": {
-        "summary": "유지 신호입니다. 리포트 원문에서 추정치 관련 표현을 기준으로 판단했습니다.",
-        "bullets": [
-          "Buy Reiterates Morgan Stanley Buy Reiterates.",
-          "Price target 147 -> 151.",
-          "Buy Reiterates."
-        ],
-        "signal": "flat"
-      },
-      "valuation": {
-        "summary": "현재가 $134.87 대비 목표가 $151가 제시돼 밸류에이션 여력을 확인할 수 있습니다.",
-        "bullets": [
-          "Buy Reiterates Morgan Stanley Buy Reiterates.",
-          "Price target 147 -> 151.",
-          "Buy Reiterates."
-        ]
-      },
-      "sectorCycle": {
-        "summary": "Buy Reiterates Morgan Stanley Buy Reiterates.",
-        "bullets": [
-          "Buy Reiterates Morgan Stanley Buy Reiterates.",
-          "Price target 147 -> 151.",
-          "Buy Reiterates."
-        ]
-      },
-      "relatedReports": [
-        {
-          "date": "2026-08-19",
-          "ticker": "COP",
-          "name": "ConocoPhillips",
-          "market": "us",
-          "broker": "Morgan Stanley",
-          "analyst": "Devin McDermott",
-          "opinion": "Buy",
-          "targetPrice": 151,
-          "currentPrice": 134.87,
-          "basePrice": 130.58,
-          "basePriceDate": "2026-08-19",
-          "upside": 12,
-          "sourceUrl": "https://stockanalysis.com/stocks/cop/ratings/",
-          "sourceText": "Morgan Stanley Buy Reiterates. Price target 147 -> 151.",
-          "reportTitle": "Buy Reiterates",
-          "reasonSummary": "Buy Reiterates. Morgan Stanley가 Buy 의견을 제시했고 현재가 기준 상승여력은 12.0%입니다. 2026-08-19 종가 대비 목표가 괴리는 15.6%입니다.",
-          "reasonBullets": [
-            "Morgan Stanley가 2026-08-19에 Buy 의견과 목표가를 제시했습니다.",
-            "현재가 $134.87 대비 목표가는 $151입니다.",
-            "2026-08-19 종가 $130.58 대비 괴리는 15.6%입니다."
-          ],
-          "performance": {
-            "week1": {
-              "asOfDate": "2026-08-26",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            },
-            "month1": {
-              "asOfDate": "2026-09-18",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            },
-            "month3": {
-              "asOfDate": "2026-11-17",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            }
-          }
-        },
-        {
-          "date": "2026-08-19",
-          "ticker": "COP",
-          "name": "ConocoPhillips",
-          "market": "us",
-          "broker": "Argus Research",
-          "analyst": "Bill Selesky",
-          "opinion": "Buy",
-          "targetPrice": 153,
-          "currentPrice": 134.87,
-          "basePrice": 130.58,
-          "basePriceDate": "2026-08-19",
-          "upside": 13.4,
-          "sourceUrl": "https://stockanalysis.com/stocks/cop/ratings/",
-          "sourceText": "Argus Research Buy Reiterates. Price target 136 -> 153.",
-          "reportTitle": "Buy Reiterates",
-          "reasonSummary": "Buy Reiterates. Argus Research가 Buy 의견을 제시했고 현재가 기준 상승여력은 13.4%입니다. 2026-08-19 종가 대비 목표가 괴리는 17.2%입니다.",
-          "reasonBullets": [
-            "Argus Research가 2026-08-19에 Buy 의견과 목표가를 제시했습니다.",
-            "현재가 $134.87 대비 목표가는 $153입니다.",
-            "2026-08-19 종가 $130.58 대비 괴리는 17.2%입니다."
-          ],
-          "performance": {
-            "week1": {
-              "asOfDate": "2026-08-26",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            },
-            "month1": {
-              "asOfDate": "2026-09-18",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            },
-            "month3": {
-              "asOfDate": "2026-11-17",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            }
-          }
-        },
-        {
-          "date": "2026-08-17",
-          "ticker": "COP",
-          "name": "ConocoPhillips",
-          "market": "us",
-          "broker": "Barclays",
-          "analyst": "Betty Jiang",
-          "opinion": "Buy",
-          "targetPrice": 150,
-          "currentPrice": 134.87,
-          "basePrice": 127.56,
-          "basePriceDate": "2026-08-17",
-          "upside": 11.2,
-          "sourceUrl": "https://stockanalysis.com/stocks/cop/ratings/",
-          "sourceText": "Barclays Buy Maintains. Price target 155 -> 150.",
-          "reportTitle": "Buy Maintains",
-          "reasonSummary": "Buy Maintains. Barclays가 Buy 의견을 제시했고 현재가 기준 상승여력은 11.2%입니다. 2026-08-17 종가 대비 목표가 괴리는 17.6%입니다.",
-          "reasonBullets": [
-            "Barclays가 2026-08-17에 Buy 의견과 목표가를 제시했습니다.",
-            "현재가 $134.87 대비 목표가는 $150입니다.",
-            "2026-08-17 종가 $127.56 대비 괴리는 17.6%입니다."
-          ],
-          "performance": {
-            "week1": {
-              "asOfDate": "2026-08-24",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            },
-            "month1": {
-              "asOfDate": "2026-09-16",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            },
-            "month3": {
-              "asOfDate": "2026-11-15",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            }
-          }
-        },
-        {
-          "date": "2026-08-12",
-          "ticker": "COP",
-          "name": "ConocoPhillips",
-          "market": "us",
-          "broker": "DBS",
-          "analyst": "Pei Hwa Ho",
-          "opinion": "Buy",
-          "targetPrice": 146,
-          "currentPrice": 134.87,
-          "basePrice": 127.3,
-          "basePriceDate": "2026-08-12",
-          "upside": 8.3,
-          "sourceUrl": "https://stockanalysis.com/stocks/cop/ratings/",
-          "sourceText": "DBS Buy Maintains. Price target N/A -> 146.",
-          "reportTitle": "Buy Maintains",
-          "reasonSummary": "Buy Maintains. DBS가 Buy 의견을 제시했고 현재가 기준 상승여력은 8.3%입니다. 2026-08-12 종가 대비 목표가 괴리는 14.7%입니다.",
-          "reasonBullets": [
-            "DBS가 2026-08-12에 Buy 의견과 목표가를 제시했습니다.",
-            "현재가 $134.87 대비 목표가는 $146입니다.",
-            "2026-08-12 종가 $127.3 대비 괴리는 14.7%입니다."
-          ],
-          "performance": {
-            "week1": {
-              "asOfDate": "2026-08-19",
-              "closePrice": 130.58,
-              "returnPct": 2.6,
-              "targetProgressPct": 17.5,
-              "success": false,
-              "status": "complete"
-            },
-            "month1": {
-              "asOfDate": "2026-09-11",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            },
-            "month3": {
-              "asOfDate": "2026-11-10",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            }
-          }
-        },
-        {
-          "date": "2026-08-12",
-          "ticker": "COP",
-          "name": "ConocoPhillips",
-          "market": "us",
-          "broker": "UBS",
-          "analyst": "Josh Silverstein",
-          "opinion": "Buy",
-          "targetPrice": 153,
-          "currentPrice": 134.87,
-          "basePrice": 127.3,
-          "basePriceDate": "2026-08-12",
-          "upside": 13.4,
-          "sourceUrl": "https://stockanalysis.com/stocks/cop/ratings/",
-          "sourceText": "UBS Buy Reiterates. Price target 143 -> 153.",
-          "reportTitle": "Buy Reiterates",
-          "reasonSummary": "Buy Reiterates. UBS가 Buy 의견을 제시했고 현재가 기준 상승여력은 13.4%입니다. 2026-08-12 종가 대비 목표가 괴리는 20.2%입니다.",
-          "reasonBullets": [
-            "UBS가 2026-08-12에 Buy 의견과 목표가를 제시했습니다.",
-            "현재가 $134.87 대비 목표가는 $153입니다.",
-            "2026-08-12 종가 $127.3 대비 괴리는 20.2%입니다."
-          ],
-          "performance": {
-            "week1": {
-              "asOfDate": "2026-08-19",
-              "closePrice": 130.58,
-              "returnPct": 2.6,
-              "targetProgressPct": 12.8,
-              "success": false,
-              "status": "complete"
-            },
-            "month1": {
-              "asOfDate": "2026-09-11",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            },
-            "month3": {
-              "asOfDate": "2026-11-10",
               "closePrice": 0,
               "returnPct": 0,
               "targetProgressPct": 0,
@@ -86670,12 +86670,12 @@
               "status": "complete"
             },
             "month1": {
-              "asOfDate": "2026-08-23",
-              "closePrice": 0,
-              "returnPct": 0,
+              "asOfDate": "2026-08-21",
+              "closePrice": 215.9,
+              "returnPct": -11.2,
               "targetProgressPct": 0,
               "success": false,
-              "status": "pending"
+              "status": "complete"
             },
             "month3": {
               "asOfDate": "2026-10-22",
@@ -86719,12 +86719,12 @@
               "status": "complete"
             },
             "month1": {
-              "asOfDate": "2026-08-23",
-              "closePrice": 0,
-              "returnPct": 0,
+              "asOfDate": "2026-08-21",
+              "closePrice": 215.9,
+              "returnPct": -11.2,
               "targetProgressPct": 0,
               "success": false,
-              "status": "pending"
+              "status": "complete"
             },
             "month3": {
               "asOfDate": "2026-10-22",
@@ -92721,11 +92721,11 @@
           "performance": {
             "week1": {
               "asOfDate": "2026-08-11",
-              "closePrice": 0,
-              "returnPct": 0,
+              "closePrice": 362.82,
+              "returnPct": -1.8,
               "targetProgressPct": 0,
               "success": false,
-              "status": "unavailable"
+              "status": "complete"
             },
             "month1": {
               "asOfDate": "2026-09-03",
@@ -96664,11 +96664,11 @@
           "performance": {
             "week1": {
               "asOfDate": "2026-08-11",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
+              "closePrice": 259.8,
+              "returnPct": 1.9,
+              "targetProgressPct": 18,
               "success": false,
-              "status": "unavailable"
+              "status": "complete"
             },
             "month1": {
               "asOfDate": "2026-09-03",
@@ -96713,11 +96713,11 @@
           "performance": {
             "week1": {
               "asOfDate": "2026-08-11",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
+              "closePrice": 259.8,
+              "returnPct": 1.9,
+              "targetProgressPct": 12.5,
               "success": false,
-              "status": "unavailable"
+              "status": "complete"
             },
             "month1": {
               "asOfDate": "2026-09-03",
@@ -96762,11 +96762,11 @@
           "performance": {
             "week1": {
               "asOfDate": "2026-08-11",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
+              "closePrice": 259.8,
+              "returnPct": 1.9,
+              "targetProgressPct": 9.7,
               "success": false,
-              "status": "unavailable"
+              "status": "complete"
             },
             "month1": {
               "asOfDate": "2026-09-03",
@@ -108378,11 +108378,11 @@
           "performance": {
             "week1": {
               "asOfDate": "2026-08-11",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
+              "closePrice": 174.94,
+              "returnPct": 7.5,
+              "targetProgressPct": 23.5,
               "success": false,
-              "status": "unavailable"
+              "status": "complete"
             },
             "month1": {
               "asOfDate": "2026-09-03",
@@ -108427,11 +108427,11 @@
           "performance": {
             "week1": {
               "asOfDate": "2026-08-11",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
+              "closePrice": 174.94,
+              "returnPct": 7.5,
+              "targetProgressPct": 13.3,
               "success": false,
-              "status": "unavailable"
+              "status": "complete"
             },
             "month1": {
               "asOfDate": "2026-09-03",
@@ -114635,11 +114635,11 @@
           "performance": {
             "week1": {
               "asOfDate": "2026-08-11",
-              "closePrice": 0,
-              "returnPct": 0,
+              "closePrice": 135.77,
+              "returnPct": -0.8,
               "targetProgressPct": 0,
               "success": false,
-              "status": "unavailable"
+              "status": "complete"
             },
             "month1": {
               "asOfDate": "2026-09-03",
@@ -120717,12 +120717,12 @@
               "status": "complete"
             },
             "month1": {
-              "asOfDate": "2026-08-23",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
+              "asOfDate": "2026-08-21",
+              "closePrice": 143.38,
+              "returnPct": 10.3,
+              "targetProgressPct": 34.3,
               "success": false,
-              "status": "pending"
+              "status": "complete"
             },
             "month3": {
               "asOfDate": "2026-10-22",

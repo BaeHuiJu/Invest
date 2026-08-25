@@ -1,6 +1,22 @@
 {
   "ipos": [
     {
+      "id": "2318",
+      "name": "래블업",
+      "subscriptionStart": "2026-10-12",
+      "subscriptionEnd": "2026-10-13",
+      "confirmedPrice": null,
+      "priceBandLow": null,
+      "priceBandHigh": null,
+      "underwriter": "",
+      "competitionRatio": "NH투자증권",
+      "listingDate": null,
+      "refundDate": "2026-10-15",
+      "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2318&l=&page=1",
+      "status": "청약예정",
+      "calculator": null
+    },
+    {
       "id": "2315",
       "name": "멜콘(구.에스앤에프솔루션)",
       "subscriptionStart": "2026-10-01",
@@ -29,6 +45,22 @@
       "listingDate": null,
       "refundDate": "2026-09-23",
       "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2316&l=&page=1",
+      "status": "청약예정",
+      "calculator": null
+    },
+    {
+      "id": "2307",
+      "name": "브릴스",
+      "subscriptionStart": "2026-09-17",
+      "subscriptionEnd": "2026-09-18",
+      "confirmedPrice": null,
+      "priceBandLow": null,
+      "priceBandHigh": null,
+      "underwriter": "",
+      "competitionRatio": "IBK투자증권",
+      "listingDate": null,
+      "refundDate": "2026-09-21",
+      "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2307&l=&page=1",
       "status": "청약예정",
       "calculator": null
     },
@@ -145,22 +177,6 @@
       "calculator": null
     },
     {
-      "id": "2307",
-      "name": "브릴스",
-      "subscriptionStart": "2026-09-08",
-      "subscriptionEnd": "2026-09-09",
-      "confirmedPrice": null,
-      "priceBandLow": null,
-      "priceBandHigh": null,
-      "underwriter": "",
-      "competitionRatio": "IBK투자증권",
-      "listingDate": null,
-      "refundDate": "2026-09-11",
-      "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2307&l=&page=1",
-      "status": "청약예정",
-      "calculator": null
-    },
-    {
       "id": "2312",
       "name": "NH스팩34호",
       "subscriptionStart": "2026-09-01",
@@ -170,7 +186,7 @@
       "priceBandHigh": null,
       "underwriter": "",
       "competitionRatio": "NH투자증권",
-      "listingDate": null,
+      "listingDate": "2026-09-11",
       "refundDate": "2026-09-04",
       "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2312&l=&page=1",
       "status": "청약예정",
@@ -181,12 +197,12 @@
       "name": "스카이랩스",
       "subscriptionStart": "2026-08-26",
       "subscriptionEnd": "2026-08-27",
-      "confirmedPrice": null,
+      "confirmedPrice": 10000,
       "priceBandLow": null,
       "priceBandHigh": null,
       "underwriter": "",
       "competitionRatio": "한국투자증권",
-      "listingDate": null,
+      "listingDate": "2026-09-04",
       "refundDate": "2026-08-31",
       "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2306&l=&page=1",
       "status": "청약예정",
@@ -463,24 +479,8 @@
       "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2285&l=&page=1",
       "status": "상장예정",
       "calculator": null
-    },
-    {
-      "id": "2286",
-      "name": "폴레드",
-      "subscriptionStart": "2026-05-04",
-      "subscriptionEnd": "2026-05-06",
-      "confirmedPrice": 5000,
-      "priceBandLow": null,
-      "priceBandHigh": null,
-      "underwriter": "NH투자증권",
-      "competitionRatio": "3169.86:1",
-      "listingDate": null,
-      "refundDate": null,
-      "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2286&l=&page=1",
-      "status": "상장예정",
-      "calculator": null
     }
   ],
-  "fetchedAt": "2026-08-25T04:33:03.306Z",
+  "fetchedAt": "2026-08-25T08:34:53.417Z",
   "totalCount": 30
 }

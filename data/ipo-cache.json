@@ -1,6 +1,22 @@
 {
   "ipos": [
     {
+      "id": "2319",
+      "name": "SK증권스팩14호",
+      "subscriptionStart": "2026-10-15",
+      "subscriptionEnd": "2026-10-16",
+      "confirmedPrice": null,
+      "priceBandLow": null,
+      "priceBandHigh": null,
+      "underwriter": "",
+      "competitionRatio": "SK증권",
+      "listingDate": null,
+      "refundDate": "2026-10-20",
+      "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2319&l=&page=1",
+      "status": "청약예정",
+      "calculator": null
+    },
+    {
       "id": "2318",
       "name": "래블업",
       "subscriptionStart": "2026-10-12",
@@ -463,24 +479,8 @@
       "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2288&l=&page=1",
       "status": "상장예정",
       "calculator": null
-    },
-    {
-      "id": "2285",
-      "name": "마키나락스",
-      "subscriptionStart": "2026-05-11",
-      "subscriptionEnd": "2026-05-12",
-      "confirmedPrice": 15000,
-      "priceBandLow": null,
-      "priceBandHigh": null,
-      "underwriter": "미래에셋증권,현대차증권",
-      "competitionRatio": "2807.8:1",
-      "listingDate": null,
-      "refundDate": null,
-      "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2285&l=&page=1",
-      "status": "상장예정",
-      "calculator": null
     }
   ],
-  "fetchedAt": "2026-08-26T04:34:01.818Z",
+  "fetchedAt": "2026-08-26T08:35:57.667Z",
   "totalCount": 30
 }

@@ -33,6 +33,22 @@
       "calculator": null
     },
     {
+      "id": "2320",
+      "name": "진코스텍",
+      "subscriptionStart": "2026-10-02",
+      "subscriptionEnd": "2026-10-06",
+      "confirmedPrice": null,
+      "priceBandLow": null,
+      "priceBandHigh": null,
+      "underwriter": "",
+      "competitionRatio": "하나증권",
+      "listingDate": null,
+      "refundDate": "2026-10-08",
+      "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2320&l=&page=1",
+      "status": "청약예정",
+      "calculator": null
+    },
+    {
       "id": "2315",
       "name": "멜콘(구.에스앤에프솔루션)",
       "subscriptionStart": "2026-10-01",
@@ -221,7 +237,7 @@
       "listingDate": "2026-09-04",
       "refundDate": "2026-08-31",
       "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2306&l=&page=1",
-      "status": "청약중",
+      "status": "상장예정",
       "calculator": null
     },
     {
@@ -463,24 +479,8 @@
       "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2287&l=&page=1",
       "status": "상장예정",
       "calculator": null
-    },
-    {
-      "id": "2288",
-      "name": "대신밸런스스팩20호",
-      "subscriptionStart": "2026-05-22",
-      "subscriptionEnd": "2026-05-26",
-      "confirmedPrice": 2000,
-      "priceBandLow": null,
-      "priceBandHigh": null,
-      "underwriter": "대신증권",
-      "competitionRatio": "1468.88:1",
-      "listingDate": null,
-      "refundDate": null,
-      "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2288&l=&page=1",
-      "status": "상장예정",
-      "calculator": null
     }
   ],
-  "fetchedAt": "2026-08-27T18:44:16.102Z",
+  "fetchedAt": "2026-08-28T03:58:43.164Z",
   "totalCount": 30
 }

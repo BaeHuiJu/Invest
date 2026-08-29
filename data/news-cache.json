@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-29T15:59:12.393Z",
+  "generatedAt": "2026-08-29T19:16:36.481Z",
   "domestic": [
     {
       "id": "119_0003126890",
@@ -11,7 +11,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
@@ -529,7 +529,7 @@
       "id": "215_0001264103",
       "title": "비트코인 살아나나 했더니...워시 한마디에 다시 '뚝'",
       "pressName": "네이버금융",
-      "publishedAt": "2026-08-29T15:59:12.392Z",
+      "publishedAt": "2026-08-29T19:16:36.480Z",
       "url": "https://n.news.naver.com/mnews/article/215/0001264103",
       "source": "main",
       "sentiment": "neutral",
@@ -542,7 +542,7 @@
       "id": "015_0005326192",
       "title": "코스피 급락 정확히 맞췄다...그가 꼽은 '삼전닉스 넘을 종목'",
       "pressName": "네이버금융",
-      "publishedAt": "2026-08-29T15:59:12.392Z",
+      "publishedAt": "2026-08-29T19:16:36.481Z",
       "url": "https://n.news.naver.com/mnews/article/015/0005326192",
       "source": "main",
       "sentiment": "negative",
@@ -552,10 +552,23 @@
       "beginnerExplanation": "주가가 갑자기 많이 떨어졌어요. 패닉 판매는 위험해요. 침착함이 중요합니다."
     },
     {
+      "id": "018_0006360000",
+      "title": "엔비디아 마진 깎은 메모리값...삼전닉스 몰래 웃는다[종목e슈]",
+      "pressName": "네이버금융",
+      "publishedAt": "2026-08-29T19:16:36.481Z",
+      "url": "https://n.news.naver.com/mnews/article/018/0006360000",
+      "source": "main",
+      "sentiment": "neutral",
+      "sentimentScore": 0,
+      "category": "all",
+      "isBreaking": true,
+      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
+    },
+    {
       "id": "014_0005567988",
       "title": "\"삼성전자 주가 끝난 거 아냐?\"...증권가가 아직도 \"사자\" 주장하는 이유",
       "pressName": "네이버금융",
-      "publishedAt": "2026-08-29T15:59:12.392Z",
+      "publishedAt": "2026-08-29T19:16:36.481Z",
       "url": "https://n.news.naver.com/mnews/article/014/0005567988",
       "source": "main",
       "sentiment": "neutral",
@@ -568,7 +581,7 @@
       "id": "009_0005727444",
       "title": "\"월요일 삼전 주가 어떡해\" CXMT 깜짝 어닝서프라이즈",
       "pressName": "네이버금융",
-      "publishedAt": "2026-08-29T15:59:12.392Z",
+      "publishedAt": "2026-08-29T19:16:36.481Z",
       "url": "https://n.news.naver.com/mnews/article/009/0005727444",
       "source": "main",
       "sentiment": "positive",
@@ -578,23 +591,10 @@
       "beginnerExplanation": "좋은 소식이 나왔어요. 시장이 긍정적으로 반응할 가능성이 있어요."
     },
     {
-      "id": "018_0006360000",
-      "title": "엔비디아 마진 깎은 메모리값...삼전닉스 몰래 웃는다[종목e슈]",
-      "pressName": "네이버금융",
-      "publishedAt": "2026-08-29T15:59:12.392Z",
-      "url": "https://n.news.naver.com/mnews/article/018/0006360000",
-      "source": "main",
-      "sentiment": "neutral",
-      "sentimentScore": 0,
-      "category": "all",
-      "isBreaking": true,
-      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
-    },
-    {
       "id": "277_0005808976",
       "title": "\"코스피 60% 뛸 때 나만 마이너스\"...코스닥 반등하려면 이 신호 나와야[주末머니]",
       "pressName": "네이버금융",
-      "publishedAt": "2026-08-29T15:59:12.392Z",
+      "publishedAt": "2026-08-29T19:16:36.481Z",
       "url": "https://n.news.naver.com/mnews/article/277/0005808976",
       "source": "main",
       "sentiment": "positive",

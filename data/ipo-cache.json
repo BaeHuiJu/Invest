@@ -33,6 +33,22 @@
       "calculator": null
     },
     {
+      "id": "2321",
+      "name": "엠비디",
+      "subscriptionStart": "2026-10-06",
+      "subscriptionEnd": "2026-10-07",
+      "confirmedPrice": null,
+      "priceBandLow": null,
+      "priceBandHigh": null,
+      "underwriter": "",
+      "competitionRatio": "하나증권",
+      "listingDate": null,
+      "refundDate": "2026-10-12",
+      "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2321&l=&page=1",
+      "status": "청약예정",
+      "calculator": null
+    },
+    {
       "id": "2320",
       "name": "진코스텍",
       "subscriptionStart": "2026-10-02",
@@ -463,24 +479,8 @@
       "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2295&l=&page=1",
       "status": "상장예정",
       "calculator": null
-    },
-    {
-      "id": "2287",
-      "name": "피스피스스튜디오",
-      "subscriptionStart": "2026-05-26",
-      "subscriptionEnd": "2026-05-27",
-      "confirmedPrice": 21500,
-      "priceBandLow": null,
-      "priceBandHigh": null,
-      "underwriter": "NH투자증권,미래에셋증권",
-      "competitionRatio": "1194.94:1",
-      "listingDate": null,
-      "refundDate": null,
-      "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2287&l=&page=1",
-      "status": "상장예정",
-      "calculator": null
     }
   ],
-  "fetchedAt": "2026-08-30T22:18:30.986Z",
+  "fetchedAt": "2026-08-31T02:59:18.020Z",
   "totalCount": 30
 }

@@ -1,6 +1,32 @@
 {
-  "generatedAt": "2026-09-01T15:49:56.782Z",
+  "generatedAt": "2026-09-01T19:03:53.622Z",
   "domestic": [
+    {
+      "id": "277_0005810515",
+      "title": "美 재무장관 \"호르무즈 해협 2년 내 쓸모없어질 것\"",
+      "pressName": "아시아경제",
+      "publishedAt": "2026-09-02T02:52:00+09:00",
+      "url": "https://n.news.naver.com/mnews/article/277/0005810515",
+      "source": "domestic",
+      "sentiment": "neutral",
+      "sentimentScore": 0,
+      "category": "all",
+      "isBreaking": true,
+      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
+    },
+    {
+      "id": "277_0005810514",
+      "title": "美 7월 구인 727만건 증가...채용은 감소",
+      "pressName": "아시아경제",
+      "publishedAt": "2026-09-02T02:27:00+09:00",
+      "url": "https://n.news.naver.com/mnews/article/277/0005810514",
+      "source": "domestic",
+      "sentiment": "positive",
+      "sentimentScore": 0,
+      "category": "all",
+      "isBreaking": true,
+      "beginnerExplanation": "좋은 소식이 나왔어요. 시장이 긍정적으로 반응할 가능성이 있어요."
+    },
     {
       "id": "023_0003996145",
       "title": "[주식 매매 상위 종목 및 환율] 2026년 8월 31일자",
@@ -11,7 +37,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "환율",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "환율 변동은 수출입 기업 수익에 큰 영향을 줘요."
     },
     {
@@ -24,7 +50,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "정책",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
@@ -37,7 +63,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
@@ -50,7 +76,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "수급",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "대형 기관 투자자들이 사고 있어요. 좋은 신호예요."
     },
     {
@@ -63,7 +89,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
@@ -76,7 +102,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
@@ -89,7 +115,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
@@ -102,7 +128,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
@@ -115,7 +141,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
@@ -128,7 +154,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "금리·통화",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "돈 빌리는 비용이 올라가면 주식 매력이 떨어질 수 있어요."
     },
     {
@@ -141,7 +167,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "금리·통화",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "주가가 갑자기 많이 올랐어요. 그 이유가 뭔지 꼭 확인해 보세요."
     },
     {
@@ -154,7 +180,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
@@ -167,7 +193,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "기업이 예상보다 돈을 많이 벌었어요. 주가에 좋을 수 있어요."
     },
     {
@@ -212,6 +238,58 @@
   ],
   "overseas": [
     {
+      "id": "008_0005408084",
+      "title": "\"맨홀이 탐지됐습니다\"... 통신망 위험물 찾는 '매눈'",
+      "pressName": "머니투데이",
+      "publishedAt": "2026-09-02T04:00:00+09:00",
+      "url": "https://n.news.naver.com/mnews/article/008/0005408084",
+      "source": "overseas",
+      "sentiment": "neutral",
+      "sentimentScore": 0,
+      "category": "all",
+      "isBreaking": true,
+      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
+    },
+    {
+      "id": "008_0005408079",
+      "title": "美 '탈중국 기조'에 웃는 K배터리... ESS 점유율 5%P ↑",
+      "pressName": "머니투데이",
+      "publishedAt": "2026-09-02T03:50:00+09:00",
+      "url": "https://n.news.naver.com/mnews/article/008/0005408079",
+      "source": "overseas",
+      "sentiment": "neutral",
+      "sentimentScore": 0,
+      "category": "all",
+      "isBreaking": true,
+      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
+    },
+    {
+      "id": "008_0005408077",
+      "title": "완성5車 내수 후진... 친환경차만 '질주'",
+      "pressName": "머니투데이",
+      "publishedAt": "2026-09-02T03:40:00+09:00",
+      "url": "https://n.news.naver.com/mnews/article/008/0005408077",
+      "source": "overseas",
+      "sentiment": "neutral",
+      "sentimentScore": 0,
+      "category": "all",
+      "isBreaking": true,
+      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
+    },
+    {
+      "id": "005_0001870363",
+      "title": "'운영의 귀재' 팀 쿡 가고... 애플, '하드웨어 장인' 터너스 시대 개막",
+      "pressName": "국민일보",
+      "publishedAt": "2026-09-02T01:23:00+09:00",
+      "url": "https://n.news.naver.com/mnews/article/005/0001870363",
+      "source": "overseas",
+      "sentiment": "neutral",
+      "sentimentScore": 0,
+      "category": "all",
+      "isBreaking": false,
+      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
+    },
+    {
       "id": "023_0003996137",
       "title": "최태원 회장 \"日 전역 살펴보고 있다\" 반도체 공장 발언이 아쉬운 까닭은",
       "pressName": "조선일보",
@@ -221,7 +299,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
@@ -234,7 +312,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
@@ -247,7 +325,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
@@ -260,7 +338,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
@@ -273,7 +351,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
@@ -286,7 +364,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
@@ -299,7 +377,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
@@ -366,58 +444,84 @@
       "category": "all",
       "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
-    },
-    {
-      "id": "032_0003467874",
-      "title": "예산도 '메가'...내년 821조 푼다",
-      "pressName": "경향신문",
-      "publishedAt": "2026-09-01T21:44:00+09:00",
-      "url": "https://n.news.naver.com/mnews/article/032/0003467874",
-      "source": "overseas",
-      "sentiment": "neutral",
-      "sentimentScore": 0,
-      "category": "all",
-      "isBreaking": false,
-      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
-    },
-    {
-      "id": "032_0003467873",
-      "title": "호황에 쌓아 불황에 푼다...162조원 '재정 저수지' 신설",
-      "pressName": "경향신문",
-      "publishedAt": "2026-09-01T21:42:00+09:00",
-      "url": "https://n.news.naver.com/mnews/article/032/0003467873",
-      "source": "overseas",
-      "sentiment": "neutral",
-      "sentimentScore": 0,
-      "category": "all",
-      "isBreaking": false,
-      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
-    },
-    {
-      "id": "032_0003467869",
-      "title": "반도체 세수 급증에...역대 최대 지출에도 나라살림 좋아진다",
-      "pressName": "경향신문",
-      "publishedAt": "2026-09-01T21:37:00+09:00",
-      "url": "https://n.news.naver.com/mnews/article/032/0003467869",
-      "source": "overseas",
-      "sentiment": "neutral",
-      "sentimentScore": 0,
-      "category": "all",
-      "isBreaking": false,
-      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     }
   ],
   "main": [
     {
+      "id": "015_0005327437",
+      "title": "살 빼는 사람 늘자 '대박' 터졌다...주가 87% 뛴 '뜻밖의 종목' [종목+]",
+      "pressName": "네이버금융",
+      "publishedAt": "2026-09-01T19:03:53.621Z",
+      "url": "https://n.news.naver.com/mnews/article/015/0005327437",
+      "source": "main",
+      "sentiment": "neutral",
+      "sentimentScore": 0,
+      "category": "all",
+      "isBreaking": true,
+      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
+    },
+    {
+      "id": "057_0001966726",
+      "title": "아이 낳으면 1천만 원...공무원 첫 월급 300만 원 넘는다",
+      "pressName": "네이버금융",
+      "publishedAt": "2026-09-01T19:03:53.621Z",
+      "url": "https://n.news.naver.com/mnews/article/057/0001966726",
+      "source": "main",
+      "sentiment": "neutral",
+      "sentimentScore": 0,
+      "category": "all",
+      "isBreaking": true,
+      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
+    },
+    {
       "id": "629_0000529508",
       "title": "\"690억 넣었는데 650억 묶였다\"...영풍·MBK, 최윤범 투자 정조준",
       "pressName": "네이버금융",
-      "publishedAt": "2026-09-01T15:49:56.782Z",
+      "publishedAt": "2026-09-01T19:03:53.621Z",
       "url": "https://n.news.naver.com/mnews/article/629/0000529508",
       "source": "main",
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "all",
+      "isBreaking": true,
+      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
+    },
+    {
+      "id": "016_0002691413",
+      "title": "'코스피보다 더 낫다' 8월에만 2조원 폭풍매수...코스닥에 몰려가는 개미들 [투자360]",
+      "pressName": "네이버금융",
+      "publishedAt": "2026-09-01T19:03:53.622Z",
+      "url": "https://n.news.naver.com/mnews/article/016/0002691413",
+      "source": "main",
+      "sentiment": "neutral",
+      "sentimentScore": 0,
+      "category": "all",
+      "isBreaking": true,
+      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
+    },
+    {
+      "id": "215_0001264500",
+      "title": "\"목표가 33%↑\" AI 서버가 밀어준다더니...\"호황에 판가로 답한다\" 파격 전망",
+      "pressName": "네이버금융",
+      "publishedAt": "2026-09-01T19:03:53.622Z",
+      "url": "https://n.news.naver.com/mnews/article/215/0001264500",
+      "source": "main",
+      "sentiment": "neutral",
+      "sentimentScore": 0,
+      "category": "all",
+      "isBreaking": true,
+      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
+    },
+    {
+      "id": "015_0005327426",
+      "title": "'지금 비트코인 사자' 뭉칫돈 몰리는 이유가...'무서운 경고'",
+      "pressName": "네이버금융",
+      "publishedAt": "2026-09-01T19:03:53.622Z",
+      "url": "https://n.news.naver.com/mnews/article/015/0005327426",
+      "source": "main",
+      "sentiment": "neutral",
+      "sentimentScore": 0,
+      "category": "수급",
       "isBreaking": true,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     }

@@ -1,6 +1,84 @@
 {
-  "generatedAt": "2026-09-03T15:32:55.169Z",
+  "generatedAt": "2026-09-03T18:59:58.024Z",
   "domestic": [
+    {
+      "id": "008_0005409276",
+      "title": "태광타워 매각 없이... 하나오피스리츠 '유동성' 확보",
+      "pressName": "머니투데이",
+      "publishedAt": "2026-09-04T03:01:00+09:00",
+      "url": "https://n.news.naver.com/mnews/article/008/0005409276",
+      "source": "domestic",
+      "sentiment": "neutral",
+      "sentimentScore": 0,
+      "category": "all",
+      "isBreaking": true,
+      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
+    },
+    {
+      "id": "422_0000902604",
+      "title": "엔 캐리 청산 공포?...코스피 장중 '널뛰기'",
+      "pressName": "연합뉴스TV",
+      "publishedAt": "2026-09-04T00:42:00+09:00",
+      "url": "https://n.news.naver.com/mnews/article/422/0000902604",
+      "source": "domestic",
+      "sentiment": "neutral",
+      "sentimentScore": 0,
+      "category": "all",
+      "isBreaking": false,
+      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
+    },
+    {
+      "id": "023_0003996577",
+      "title": "반대로 움직이던 주식·채권값 함께 하락",
+      "pressName": "조선일보",
+      "publishedAt": "2026-09-04T00:36:00+09:00",
+      "url": "https://n.news.naver.com/mnews/article/023/0003996577",
+      "source": "domestic",
+      "sentiment": "negative",
+      "sentimentScore": 0,
+      "category": "all",
+      "isBreaking": false,
+      "beginnerExplanation": "기업 이익이 줄었어요. 주가 하락 요인이 될 수 있어요."
+    },
+    {
+      "id": "023_0003996576",
+      "title": "인터넷은행 '사장님 대출', 1년 새 2조8000억원 늘어",
+      "pressName": "조선일보",
+      "publishedAt": "2026-09-04T00:36:00+09:00",
+      "url": "https://n.news.naver.com/mnews/article/023/0003996576",
+      "source": "domestic",
+      "sentiment": "neutral",
+      "sentimentScore": 0,
+      "category": "all",
+      "isBreaking": false,
+      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
+    },
+    {
+      "id": "023_0003996575",
+      "title": "[주식 매매 상위 종목 및 환율] 2026년 9월 3일자",
+      "pressName": "조선일보",
+      "publishedAt": "2026-09-04T00:36:00+09:00",
+      "url": "https://n.news.naver.com/mnews/article/023/0003996575",
+      "source": "domestic",
+      "sentiment": "neutral",
+      "sentimentScore": 0,
+      "category": "환율",
+      "isBreaking": false,
+      "beginnerExplanation": "환율 변동은 수출입 기업 수익에 큰 영향을 줘요."
+    },
+    {
+      "id": "023_0003996561",
+      "title": "[주요경제지표] 2026년 9월 3일자",
+      "pressName": "조선일보",
+      "publishedAt": "2026-09-04T00:33:00+09:00",
+      "url": "https://n.news.naver.com/mnews/article/023/0003996561",
+      "source": "domestic",
+      "sentiment": "neutral",
+      "sentimentScore": 0,
+      "category": "all",
+      "isBreaking": false,
+      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
+    },
     {
       "id": "005_0001870847",
       "title": "조정장에 빛난 K뷰티... 탈중국·호실적으로 순환매 주도",
@@ -11,7 +89,7 @@
       "sentiment": "positive",
       "sentimentScore": 0,
       "category": "실적",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "기업이 예상보다 돈을 많이 벌었어요. 주가에 좋을 수 있어요."
     },
     {
@@ -24,7 +102,7 @@
       "sentiment": "negative",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "기업이 손해를 봤어요. 주가 하락 원인이 될 수 있어요."
     },
     {
@@ -37,7 +115,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
@@ -50,7 +128,7 @@
       "sentiment": "positive",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "좋은 소식이 나왔어요. 시장이 긍정적으로 반응할 가능성이 있어요."
     },
     {
@@ -63,7 +141,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "금리·통화",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "돈 빌리는 비용이 낮아져 주식시장에 좋은 소식이에요."
     },
     {
@@ -76,7 +154,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "실적",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
@@ -89,7 +167,7 @@
       "sentiment": "positive",
       "sentimentScore": 0,
       "category": "금리·통화",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "돈 빌리는 비용이 낮아져 주식시장에 좋은 소식이에요."
     },
     {
@@ -102,7 +180,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "금리·통화",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "돈 빌리는 비용이 낮아져 주식시장에 좋은 소식이에요."
     },
     {
@@ -115,7 +193,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
@@ -169,53 +247,42 @@
       "category": "all",
       "isBreaking": false,
       "beginnerExplanation": "좋은 소식이 나왔어요. 시장이 긍정적으로 반응할 가능성이 있어요."
-    },
+    }
+  ],
+  "overseas": [
     {
-      "id": "215_0001264796",
-      "title": "오후 2시에 무슨 일이? 243포인트 '출렁'...'공포의 30분' 일제히 흔들렸다",
-      "pressName": "한국경제TV",
-      "publishedAt": "2026-09-03T21:08:00+09:00",
-      "url": "https://n.news.naver.com/mnews/article/215/0001264796",
-      "source": "domestic",
+      "id": "008_0005409286",
+      "title": "한화오션, 대만 양밍해운서 컨선 6척 수주... 1.5조원 잭팟",
+      "pressName": "머니투데이",
+      "publishedAt": "2026-09-04T03:54:00+09:00",
+      "url": "https://n.news.naver.com/mnews/article/008/0005409286",
+      "source": "overseas",
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": false,
+      "isBreaking": true,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
-      "id": "003_0014168395",
-      "title": "\"6만달러에 팔고 8만달러에 다시 샀다\"...비트코인 최대 보유사의 '이상한 거래'",
-      "pressName": "뉴시스",
-      "publishedAt": "2026-09-03T21:00:00+09:00",
-      "url": "https://n.news.naver.com/mnews/article/003/0014168395",
-      "source": "domestic",
+      "id": "008_0005409283",
+      "title": "SK이노 울산CLX, 제조AI 미래 제시",
+      "pressName": "머니투데이",
+      "publishedAt": "2026-09-04T03:20:00+09:00",
+      "url": "https://n.news.naver.com/mnews/article/008/0005409283",
+      "source": "overseas",
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": false,
+      "isBreaking": true,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
-      "id": "016_0002692639",
-      "title": "\"일본이 기회의 땅\" 투자사 '러브콜' 늘어...국내 기업도 가세",
-      "pressName": "헤럴드경제",
-      "publishedAt": "2026-09-03T20:41:00+09:00",
-      "url": "https://n.news.naver.com/mnews/article/016/0002692639",
-      "source": "domestic",
-      "sentiment": "neutral",
-      "sentimentScore": 0,
-      "category": "all",
-      "isBreaking": false,
-      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
-    },
-    {
-      "id": "003_0014168386",
-      "title": "[올댓차이나] 대만 증시, 반등 개장 후 차익매물에 속락 마감...0.67%↓",
-      "pressName": "뉴시스",
-      "publishedAt": "2026-09-03T20:37:00+09:00",
-      "url": "https://n.news.naver.com/mnews/article/003/0014168386",
-      "source": "domestic",
+      "id": "005_0001870872",
+      "title": "인천공항 ACI '고객경험' 인증 5년 연속 '최고 등급'... 세계 최초",
+      "pressName": "국민일보",
+      "publishedAt": "2026-09-04T01:14:00+09:00",
+      "url": "https://n.news.naver.com/mnews/article/005/0001870872",
+      "source": "overseas",
       "sentiment": "positive",
       "sentimentScore": 0,
       "category": "all",
@@ -223,12 +290,12 @@
       "beginnerExplanation": "좋은 소식이 나왔어요. 시장이 긍정적으로 반응할 가능성이 있어요."
     },
     {
-      "id": "015_0005328551",
-      "title": "'삼전닉스' 줄줄이 내리더니 \"그래도 사라\"...개미들 '속앓이'",
-      "pressName": "한국경제",
-      "publishedAt": "2026-09-03T20:31:00+09:00",
-      "url": "https://n.news.naver.com/mnews/article/015/0005328551",
-      "source": "domestic",
+      "id": "005_0001870870",
+      "title": "'프리즈' 감동을 별마당에서... 신세계, 특별전시·공연 개최",
+      "pressName": "국민일보",
+      "publishedAt": "2026-09-04T01:11:00+09:00",
+      "url": "https://n.news.naver.com/mnews/article/005/0001870870",
+      "source": "overseas",
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "all",
@@ -236,20 +303,83 @@
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
-      "id": "018_0006363368",
-      "title": "\"그게 책임투자인가\"...거수기 운용사에 내민 국민연금 '경고장'",
-      "pressName": "이데일리",
-      "publishedAt": "2026-09-03T20:30:00+09:00",
-      "url": "https://n.news.naver.com/mnews/article/018/0006363368",
-      "source": "domestic",
+      "id": "005_0001870866",
+      "title": "\"청년일자리 민관 보조 맞춰야 해결\"",
+      "pressName": "국민일보",
+      "publishedAt": "2026-09-04T01:05:00+09:00",
+      "url": "https://n.news.naver.com/mnews/article/005/0001870866",
+      "source": "overseas",
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "all",
       "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
-    }
-  ],
-  "overseas": [
+    },
+    {
+      "id": "469_0000952032",
+      "title": "'분산 추론' 승부수 띄운 엔비디아... 여러 PC에 에이전트 추론 나눈다",
+      "pressName": "한국일보",
+      "publishedAt": "2026-09-04T01:00:00+09:00",
+      "url": "https://n.news.naver.com/mnews/article/469/0000952032",
+      "source": "overseas",
+      "sentiment": "neutral",
+      "sentimentScore": 0,
+      "category": "all",
+      "isBreaking": false,
+      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
+    },
+    {
+      "id": "003_0014168469",
+      "title": "\"RTX 스파크 탑재 제품 10월 출시\"...엔비디아, 유럽 최대 가전 전시회 출격[IFA 2026]",
+      "pressName": "뉴시스",
+      "publishedAt": "2026-09-04T01:00:00+09:00",
+      "url": "https://n.news.naver.com/mnews/article/003/0014168469",
+      "source": "overseas",
+      "sentiment": "neutral",
+      "sentimentScore": 0,
+      "category": "all",
+      "isBreaking": false,
+      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
+    },
+    {
+      "id": "023_0003996570",
+      "title": "현대모비스 유럽 신공장 가동... '전기차 심장' 年 28만대분 생산",
+      "pressName": "조선일보",
+      "publishedAt": "2026-09-04T00:34:00+09:00",
+      "url": "https://n.news.naver.com/mnews/article/023/0003996570",
+      "source": "overseas",
+      "sentiment": "neutral",
+      "sentimentScore": 0,
+      "category": "all",
+      "isBreaking": false,
+      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
+    },
+    {
+      "id": "023_0003996569",
+      "title": "8월 수입차 판매  '톱10' 모델 절반이 중국산",
+      "pressName": "조선일보",
+      "publishedAt": "2026-09-04T00:34:00+09:00",
+      "url": "https://n.news.naver.com/mnews/article/023/0003996569",
+      "source": "overseas",
+      "sentiment": "neutral",
+      "sentimentScore": 0,
+      "category": "all",
+      "isBreaking": false,
+      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
+    },
+    {
+      "id": "023_0003996567",
+      "title": "\"군함 시장 잡아라\"... 국경 넘는 조선 동맹",
+      "pressName": "조선일보",
+      "publishedAt": "2026-09-04T00:34:00+09:00",
+      "url": "https://n.news.naver.com/mnews/article/023/0003996567",
+      "source": "overseas",
+      "sentiment": "neutral",
+      "sentimentScore": 0,
+      "category": "all",
+      "isBreaking": false,
+      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
+    },
     {
       "id": "020_0003745614",
       "title": "\"SOVAC, 사회적 가치 생태계 구심점이자 협력-교류의 장\"",
@@ -260,7 +390,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
@@ -273,7 +403,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
@@ -286,7 +416,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
@@ -299,7 +429,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
@@ -312,7 +442,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
@@ -325,7 +455,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
@@ -338,7 +468,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
@@ -351,7 +481,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
@@ -364,159 +494,29 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
-      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
-    },
-    {
-      "id": "011_0004658443",
-      "title": "고려아연 온산제련소, 재난·재해 선제대응 지원한다",
-      "pressName": "서울경제",
-      "publishedAt": "2026-09-03T23:41:00+09:00",
-      "url": "https://n.news.naver.com/mnews/article/011/0004658443",
-      "source": "overseas",
-      "sentiment": "neutral",
-      "sentimentScore": 0,
-      "category": "정책",
-      "isBreaking": true,
-      "beginnerExplanation": "정부가 특정 산업을 지원하려고 해요. 해당 기업들에 좋을 수 있어요."
-    },
-    {
-      "id": "011_0004658442",
-      "title": "현대차그룹, 세계 3대 'IDEA 디자인 어워드'서 16개 부문 수상",
-      "pressName": "서울경제",
-      "publishedAt": "2026-09-03T23:40:00+09:00",
-      "url": "https://n.news.naver.com/mnews/article/011/0004658442",
-      "source": "overseas",
-      "sentiment": "neutral",
-      "sentimentScore": 0,
-      "category": "all",
-      "isBreaking": true,
-      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
-    },
-    {
-      "id": "011_0004658441",
-      "title": "한화M&S, '육아동행지원금' 수혜 가정 500곳 돌파",
-      "pressName": "서울경제",
-      "publishedAt": "2026-09-03T23:40:00+09:00",
-      "url": "https://n.news.naver.com/mnews/article/011/0004658441",
-      "source": "overseas",
-      "sentiment": "neutral",
-      "sentimentScore": 0,
-      "category": "정책",
-      "isBreaking": true,
-      "beginnerExplanation": "정부가 특정 산업을 지원하려고 해요. 해당 기업들에 좋을 수 있어요."
-    },
-    {
-      "id": "422_0000902591",
-      "title": "한전, 삼성·하이닉스에 25조원 전기요금 선납 제안",
-      "pressName": "연합뉴스TV",
-      "publishedAt": "2026-09-03T23:12:00+09:00",
-      "url": "https://n.news.naver.com/mnews/article/422/0000902591",
-      "source": "overseas",
-      "sentiment": "neutral",
-      "sentimentScore": 0,
-      "category": "all",
-      "isBreaking": true,
-      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
-    },
-    {
-      "id": "009_0005730231",
-      "title": "\"우리 회사에선 이렇게 일해\"...KT만의 'AI 동료' 봤더니",
-      "pressName": "매일경제",
-      "publishedAt": "2026-09-03T22:55:00+09:00",
-      "url": "https://n.news.naver.com/mnews/article/009/0005730231",
-      "source": "overseas",
-      "sentiment": "neutral",
-      "sentimentScore": 0,
-      "category": "all",
-      "isBreaking": true,
-      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
-    },
-    {
-      "id": "422_0000902577",
-      "title": "티빙 계정 모두 털렸다...휴대전화·이메일은 암호화키도 뚫려",
-      "pressName": "연합뉴스TV",
-      "publishedAt": "2026-09-03T21:55:00+09:00",
-      "url": "https://n.news.naver.com/mnews/article/422/0000902577",
-      "source": "overseas",
-      "sentiment": "neutral",
-      "sentimentScore": 0,
-      "category": "all",
-      "isBreaking": false,
-      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
-    },
-    {
-      "id": "032_0003468418",
-      "title": "공장 짓거나 관세 물어라...미, 삼성·SK 겨냥 반도체 투자 압박",
-      "pressName": "경향신문",
-      "publishedAt": "2026-09-03T21:30:00+09:00",
-      "url": "https://n.news.naver.com/mnews/article/032/0003468418",
-      "source": "overseas",
-      "sentiment": "neutral",
-      "sentimentScore": 0,
-      "category": "정책",
-      "isBreaking": false,
-      "beginnerExplanation": "수입품에 세금을 붙이려고 해요. 물가와 기업 비용에 영향을 줄 수 있어요."
-    },
-    {
-      "id": "032_0003468424",
-      "title": "'민영화로 경쟁' 무산...재생에너지 전환 '규모의 경제' 기대",
-      "pressName": "경향신문",
-      "publishedAt": "2026-09-03T21:27:00+09:00",
-      "url": "https://n.news.naver.com/mnews/article/032/0003468424",
-      "source": "overseas",
-      "sentiment": "neutral",
-      "sentimentScore": 0,
-      "category": "all",
-      "isBreaking": false,
-      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
-    },
-    {
-      "id": "015_0005328555",
-      "title": "\"회의만 하다 하루 다 간다\"...3300명 구조조정 발표한 회사",
-      "pressName": "한국경제",
-      "publishedAt": "2026-09-03T21:01:00+09:00",
-      "url": "https://n.news.naver.com/mnews/article/015/0005328555",
-      "source": "overseas",
-      "sentiment": "neutral",
-      "sentimentScore": 0,
-      "category": "all",
-      "isBreaking": false,
-      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
-    },
-    {
-      "id": "662_0000103458",
-      "title": "\"중형급의 기동성에 대형급의 작업성능\"...국내 브랜드 유일 80마력대 트랙터",
-      "pressName": "농민신문",
-      "publishedAt": "2026-09-03T21:00:00+09:00",
-      "url": "https://n.news.naver.com/mnews/article/662/0000103458",
-      "source": "overseas",
-      "sentiment": "neutral",
-      "sentimentScore": 0,
-      "category": "all",
-      "isBreaking": false,
-      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
-    },
-    {
-      "id": "417_0001157310",
-      "title": "8K 60프레임으로 촬영 완성도↑, 오즈모 360 II 써보니",
-      "pressName": "동행미디어 시대",
-      "publishedAt": "2026-09-03T21:00:00+09:00",
-      "url": "https://n.news.naver.com/mnews/article/417/0001157310",
-      "source": "overseas",
-      "sentiment": "neutral",
-      "sentimentScore": 0,
-      "category": "all",
       "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     }
   ],
   "main": [
     {
+      "id": "009_0005729812",
+      "title": "\"혼자 산 지 13년, 결혼 생각은 없습니다\"...평균자산 4.3억, 4050 '비혼족'",
+      "pressName": "네이버금융",
+      "publishedAt": "2026-09-03T18:59:58.023Z",
+      "url": "https://n.news.naver.com/mnews/article/009/0005729812",
+      "source": "main",
+      "sentiment": "neutral",
+      "sentimentScore": 0,
+      "category": "all",
+      "isBreaking": true,
+      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
+    },
+    {
       "id": "011_0004658093",
       "title": "\"개미들, 100주 사놓고 핸드폰만 쳐다봐\"...존리 \"부자 되고 싶다면\" 조언 들어보니",
       "pressName": "네이버금융",
-      "publishedAt": "2026-09-03T15:32:55.166Z",
+      "publishedAt": "2026-09-03T18:59:58.024Z",
       "url": "https://n.news.naver.com/mnews/article/011/0004658093",
       "source": "main",
       "sentiment": "neutral",
@@ -526,11 +526,11 @@
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
-      "id": "009_0005729812",
-      "title": "\"혼자 산 지 13년, 결혼 생각은 없습니다\"...평균자산 4.3억, 4050 '비혼족'",
+      "id": "215_0001264796",
+      "title": "오후 2시에 무슨 일이? 243포인트 '출렁'...'공포의 30분' 일제히 흔들렸다",
       "pressName": "네이버금융",
-      "publishedAt": "2026-09-03T15:32:55.166Z",
-      "url": "https://n.news.naver.com/mnews/article/009/0005729812",
+      "publishedAt": "2026-09-03T18:59:58.024Z",
+      "url": "https://n.news.naver.com/mnews/article/215/0001264796",
       "source": "main",
       "sentiment": "neutral",
       "sentimentScore": 0,
@@ -542,7 +542,7 @@
       "id": "374_0000530910",
       "title": "'1억 넣으면 이자만 385만원'...정기예금 1000조원 넘었다",
       "pressName": "네이버금융",
-      "publishedAt": "2026-09-03T15:32:55.166Z",
+      "publishedAt": "2026-09-03T18:59:58.024Z",
       "url": "https://n.news.naver.com/mnews/article/374/0000530910",
       "source": "main",
       "sentiment": "neutral",
@@ -550,19 +550,6 @@
       "category": "all",
       "isBreaking": true,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
-    },
-    {
-      "id": "009_0005729719",
-      "title": "\"월126만원 냈는데 이제 206만원 내라고?\"...5년 전 '영끌족'에 날아든 고금리 청구서",
-      "pressName": "네이버금융",
-      "publishedAt": "2026-09-03T15:32:55.166Z",
-      "url": "https://n.news.naver.com/mnews/article/009/0005729719",
-      "source": "main",
-      "sentiment": "neutral",
-      "sentimentScore": 0,
-      "category": "금리·통화",
-      "isBreaking": true,
-      "beginnerExplanation": "돈 빌리는 비용이 낮아져 주식시장에 좋은 소식이에요."
     }
   ]
 }

@@ -1,6 +1,22 @@
 {
   "ipos": [
     {
+      "id": "2322",
+      "name": "티앤이코리아",
+      "subscriptionStart": "2026-10-20",
+      "subscriptionEnd": "2026-10-21",
+      "confirmedPrice": null,
+      "priceBandLow": null,
+      "priceBandHigh": null,
+      "underwriter": "",
+      "competitionRatio": "신한투자증권",
+      "listingDate": null,
+      "refundDate": "2026-10-23",
+      "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2322&l=&page=1",
+      "status": "청약예정",
+      "calculator": null
+    },
+    {
       "id": "2319",
       "name": "SK증권스팩14호",
       "subscriptionStart": "2026-10-15",
@@ -463,24 +479,8 @@
       "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2291&l=&page=1",
       "status": "상장예정",
       "calculator": null
-    },
-    {
-      "id": "2295",
-      "name": "메리츠스팩2호",
-      "subscriptionStart": "2026-06-09",
-      "subscriptionEnd": "2026-06-10",
-      "confirmedPrice": 2000,
-      "priceBandLow": null,
-      "priceBandHigh": null,
-      "underwriter": "메리츠증권",
-      "competitionRatio": "1388.66:1",
-      "listingDate": null,
-      "refundDate": null,
-      "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2295&l=&page=1",
-      "status": "상장예정",
-      "calculator": null
     }
   ],
-  "fetchedAt": "2026-09-03T02:33:56.429Z",
+  "fetchedAt": "2026-09-03T08:28:21.277Z",
   "totalCount": 30
 }

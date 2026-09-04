@@ -17,6 +17,22 @@
       "calculator": null
     },
     {
+      "id": "2323",
+      "name": "크리에이츠",
+      "subscriptionStart": "2026-10-20",
+      "subscriptionEnd": "2026-10-21",
+      "confirmedPrice": null,
+      "priceBandLow": null,
+      "priceBandHigh": null,
+      "underwriter": "",
+      "competitionRatio": "삼성증권",
+      "listingDate": null,
+      "refundDate": "2026-10-23",
+      "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2323&l=&page=1",
+      "status": "청약예정",
+      "calculator": null
+    },
+    {
       "id": "2319",
       "name": "SK증권스팩14호",
       "subscriptionStart": "2026-10-15",
@@ -463,24 +479,8 @@
       "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2289&l=&page=1",
       "status": "상장예정",
       "calculator": null
-    },
-    {
-      "id": "2291",
-      "name": "져스텍",
-      "subscriptionStart": "2026-06-18",
-      "subscriptionEnd": "2026-06-19",
-      "confirmedPrice": 12500,
-      "priceBandLow": null,
-      "priceBandHigh": null,
-      "underwriter": "삼성증권",
-      "competitionRatio": "2,783.89:1",
-      "listingDate": null,
-      "refundDate": null,
-      "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2291&l=&page=1",
-      "status": "상장예정",
-      "calculator": null
     }
   ],
-  "fetchedAt": "2026-09-04T02:35:49.936Z",
+  "fetchedAt": "2026-09-04T08:25:13.564Z",
   "totalCount": 30
 }

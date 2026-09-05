@@ -1,6 +1,32 @@
 {
-  "generatedAt": "2026-09-05T14:18:59.211Z",
+  "generatedAt": "2026-09-05T17:49:48.883Z",
   "domestic": [
+    {
+      "id": "029_0003046270",
+      "title": "삼전닉스 자사주 매입 벌써 30% 돌파...불안해지는 코스피 수급 방패 [박진우의 개미수다]",
+      "pressName": "디지털타임스",
+      "publishedAt": "2026-09-06T00:05:00+09:00",
+      "url": "https://n.news.naver.com/mnews/article/029/0003046270",
+      "source": "domestic",
+      "sentiment": "neutral",
+      "sentimentScore": 0,
+      "category": "수급",
+      "isBreaking": false,
+      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
+    },
+    {
+      "id": "029_0003046269",
+      "title": "삼전·SK하닉 이번주 반등 주목...美 CPI·선옵 만기 변수[증시전망대]",
+      "pressName": "디지털타임스",
+      "publishedAt": "2026-09-06T00:01:00+09:00",
+      "url": "https://n.news.naver.com/mnews/article/029/0003046269",
+      "source": "domestic",
+      "sentiment": "positive",
+      "sentimentScore": 0,
+      "category": "all",
+      "isBreaking": false,
+      "beginnerExplanation": "좋은 소식이 나왔어요. 시장이 긍정적으로 반응할 가능성이 있어요."
+    },
     {
       "id": "009_0005730861",
       "title": "\"9개 자문사 중 8곳이 고려아연 손 들었다\"...MBK, 임시주총 판 뒤집을까 [M&A복덕방]",
@@ -11,7 +37,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
@@ -24,7 +50,7 @@
       "sentiment": "positive",
       "sentimentScore": 0,
       "category": "수급",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "외국 투자자들이 한국 주식을 많이 사고 있어요. 긍정적인 신호에요."
     },
     {
@@ -37,7 +63,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "금리·통화",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "돈 빌리는 비용이 낮아져 주식시장에 좋은 소식이에요."
     },
     {
@@ -50,7 +76,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
@@ -234,14 +260,29 @@
       "category": "all",
       "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
+    }
+  ],
+  "overseas": [
+    {
+      "id": "003_0014171526",
+      "title": "\"美 석사 연봉 1억일 때 배관공은 2억\"...AI 인프라 열풍이 바꾼 직업 지형도",
+      "pressName": "뉴시스",
+      "publishedAt": "2026-09-06T02:00:00+09:00",
+      "url": "https://n.news.naver.com/mnews/article/003/0014171526",
+      "source": "overseas",
+      "sentiment": "neutral",
+      "sentimentScore": 0,
+      "category": "all",
+      "isBreaking": true,
+      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
-      "id": "008_0005409816",
-      "title": "\"둘이서 국민연금 월 120만원?\"...연 배당금 '1억' 만드는 투자 전략",
-      "pressName": "머니투데이",
-      "publishedAt": "2026-09-05T17:00:00+09:00",
-      "url": "https://n.news.naver.com/mnews/article/008/0005409816",
-      "source": "domestic",
+      "id": "421_0009152895",
+      "title": "원지안, 원텍 'Wave Seoul 2026' 행사 참석...눈부신 비주얼",
+      "pressName": "뉴스1",
+      "publishedAt": "2026-09-06T00:02:00+09:00",
+      "url": "https://n.news.naver.com/mnews/article/421/0009152895",
+      "source": "overseas",
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "all",
@@ -249,20 +290,109 @@
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
-      "id": "277_0005812317",
-      "title": "로봇에 정부 자금 쏟아진다...수혜 기업은? [주末머니]",
-      "pressName": "아시아경제",
-      "publishedAt": "2026-09-05T16:10:00+09:00",
-      "url": "https://n.news.naver.com/mnews/article/277/0005812317",
-      "source": "domestic",
+      "id": "421_0009152894",
+      "title": "원지안, 원텍 'Wave Seoul 2026' 무대 위에서도 빛나는 미모",
+      "pressName": "뉴스1",
+      "publishedAt": "2026-09-06T00:01:00+09:00",
+      "url": "https://n.news.naver.com/mnews/article/421/0009152894",
+      "source": "overseas",
       "sentiment": "neutral",
       "sentimentScore": 0,
-      "category": "정책",
+      "category": "all",
       "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
-    }
-  ],
-  "overseas": [
+    },
+    {
+      "id": "421_0009152893",
+      "title": "원지안, 등장만으로 시선 집중...원텍 'WAVE Seoul 2026' 참석",
+      "pressName": "뉴스1",
+      "publishedAt": "2026-09-06T00:00:00+09:00",
+      "url": "https://n.news.naver.com/mnews/article/421/0009152893",
+      "source": "overseas",
+      "sentiment": "neutral",
+      "sentimentScore": 0,
+      "category": "all",
+      "isBreaking": false,
+      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
+    },
+    {
+      "id": "421_0009152890",
+      "title": "원지안, 원텍 앰버서더...행사장 빛낸 미소",
+      "pressName": "뉴스1",
+      "publishedAt": "2026-09-05T23:59:00+09:00",
+      "url": "https://n.news.naver.com/mnews/article/421/0009152890",
+      "source": "overseas",
+      "sentiment": "neutral",
+      "sentimentScore": 0,
+      "category": "all",
+      "isBreaking": false,
+      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
+    },
+    {
+      "id": "421_0009152889",
+      "title": "원텍 'WAVE Seoul 2026' 무대 오른 배우 원지안",
+      "pressName": "뉴스1",
+      "publishedAt": "2026-09-05T23:59:00+09:00",
+      "url": "https://n.news.naver.com/mnews/article/421/0009152889",
+      "source": "overseas",
+      "sentiment": "neutral",
+      "sentimentScore": 0,
+      "category": "all",
+      "isBreaking": false,
+      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
+    },
+    {
+      "id": "421_0009152888",
+      "title": "원텍 앰버서더 원지안, 웨이브 서울 2026",
+      "pressName": "뉴스1",
+      "publishedAt": "2026-09-05T23:58:00+09:00",
+      "url": "https://n.news.naver.com/mnews/article/421/0009152888",
+      "source": "overseas",
+      "sentiment": "neutral",
+      "sentimentScore": 0,
+      "category": "all",
+      "isBreaking": false,
+      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
+    },
+    {
+      "id": "421_0009152887",
+      "title": "원지안, 원텍 'WAVE Seoul 2026' 빛낸 독보적 분위기",
+      "pressName": "뉴스1",
+      "publishedAt": "2026-09-05T23:57:00+09:00",
+      "url": "https://n.news.naver.com/mnews/article/421/0009152887",
+      "source": "overseas",
+      "sentiment": "negative",
+      "sentimentScore": 0,
+      "category": "all",
+      "isBreaking": false,
+      "beginnerExplanation": "안 좋은 소식이 나왔어요. 시장 하락 요인이 될 수 있으니 주의하세요."
+    },
+    {
+      "id": "003_0014171489",
+      "title": "저가 공세 끝났다...'기술' 장착하고 K-가전 추격하는 중국[IFA 2026]",
+      "pressName": "뉴시스",
+      "publishedAt": "2026-09-05T23:50:00+09:00",
+      "url": "https://n.news.naver.com/mnews/article/003/0014171489",
+      "source": "overseas",
+      "sentiment": "neutral",
+      "sentimentScore": 0,
+      "category": "all",
+      "isBreaking": false,
+      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
+    },
+    {
+      "id": "658_0000154615",
+      "title": "현대제철, 美 루이지애나 전기로 제철소 첫발...2029년 양산 목표",
+      "pressName": "국제신문",
+      "publishedAt": "2026-09-05T23:46:00+09:00",
+      "url": "https://n.news.naver.com/mnews/article/658/0000154615",
+      "source": "overseas",
+      "sentiment": "neutral",
+      "sentimentScore": 0,
+      "category": "all",
+      "isBreaking": false,
+      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
+    },
     {
       "id": "001_0016291974",
       "title": "[그래픽] 연간 수출액 추이",
@@ -273,7 +403,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
@@ -286,7 +416,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
@@ -299,7 +429,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
@@ -312,7 +442,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
@@ -325,7 +455,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
@@ -338,7 +468,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
@@ -351,7 +481,7 @@
       "sentiment": "neutral",
       "sentimentScore": 0,
       "category": "all",
-      "isBreaking": true,
+      "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
@@ -379,149 +509,6 @@
       "category": "all",
       "isBreaking": false,
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
-    },
-    {
-      "id": "009_0005730844",
-      "title": "가성비로 무장한 갤S26FE...위축된 저가폰 시장 살릴까",
-      "pressName": "매일경제",
-      "publishedAt": "2026-09-05T20:12:00+09:00",
-      "url": "https://n.news.naver.com/mnews/article/009/0005730844",
-      "source": "overseas",
-      "sentiment": "neutral",
-      "sentimentScore": 0,
-      "category": "all",
-      "isBreaking": false,
-      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
-    },
-    {
-      "id": "658_0000154609",
-      "title": "한화, 서울불꽃축제에 130억 투입...안전관리에 45억",
-      "pressName": "국제신문",
-      "publishedAt": "2026-09-05T20:08:00+09:00",
-      "url": "https://n.news.naver.com/mnews/article/658/0000154609",
-      "source": "overseas",
-      "sentiment": "neutral",
-      "sentimentScore": 0,
-      "category": "all",
-      "isBreaking": false,
-      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
-    },
-    {
-      "id": "011_0004658884",
-      "title": "130억 들이는 여의도 불꽃축제...'함께, 멀리' 밤하늘에 새긴다",
-      "pressName": "서울경제",
-      "publishedAt": "2026-09-05T20:01:00+09:00",
-      "url": "https://n.news.naver.com/mnews/article/011/0004658884",
-      "source": "overseas",
-      "sentiment": "neutral",
-      "sentimentScore": 0,
-      "category": "all",
-      "isBreaking": false,
-      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
-    },
-    {
-      "id": "003_0014171320",
-      "title": "\"100만명 위해 130억원 투입\"...한화가 26년째 불꽃 쏘아 올리는 이유",
-      "pressName": "뉴시스",
-      "publishedAt": "2026-09-05T19:59:00+09:00",
-      "url": "https://n.news.naver.com/mnews/article/003/0014171320",
-      "source": "overseas",
-      "sentiment": "neutral",
-      "sentimentScore": 0,
-      "category": "all",
-      "isBreaking": false,
-      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
-    },
-    {
-      "id": "015_0005329023",
-      "title": "\"하룻밤 불꽃에 130억\"...한화가 20년 넘게 축제 여는 이유",
-      "pressName": "한국경제",
-      "publishedAt": "2026-09-05T19:44:00+09:00",
-      "url": "https://n.news.naver.com/mnews/article/015/0005329023",
-      "source": "overseas",
-      "sentiment": "neutral",
-      "sentimentScore": 0,
-      "category": "all",
-      "isBreaking": false,
-      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
-    },
-    {
-      "id": "138_0002240336",
-      "title": "[뉴겜] 22년 에린이 눈부시게...넥슨 '마비노기 이터니티'의 첫걸음",
-      "pressName": "디지털데일리",
-      "publishedAt": "2026-09-05T19:40:00+09:00",
-      "url": "https://n.news.naver.com/mnews/article/138/0002240336",
-      "source": "overseas",
-      "sentiment": "neutral",
-      "sentimentScore": 0,
-      "category": "all",
-      "isBreaking": false,
-      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
-    },
-    {
-      "id": "001_0016291861",
-      "title": "'함께, 멀리' 밤하늘에 새겼다...한화, 불꽃축제에 130억 투입",
-      "pressName": "연합뉴스",
-      "publishedAt": "2026-09-05T19:30:00+09:00",
-      "url": "https://n.news.naver.com/mnews/article/001/0016291861",
-      "source": "overseas",
-      "sentiment": "neutral",
-      "sentimentScore": 0,
-      "category": "all",
-      "isBreaking": false,
-      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
-    },
-    {
-      "id": "468_0001264216",
-      "title": "방산수출, 이제는 정부가 시장을 만들고 기업이 세계와 경쟁해야 한다 [이상배 칼럼]",
-      "pressName": "스포츠서울",
-      "publishedAt": "2026-09-05T19:30:00+09:00",
-      "url": "https://n.news.naver.com/mnews/article/468/0001264216",
-      "source": "overseas",
-      "sentiment": "neutral",
-      "sentimentScore": 0,
-      "category": "정책",
-      "isBreaking": false,
-      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
-    },
-    {
-      "id": "016_0002693226",
-      "title": "삼성전자 '빠진' 초대형 전시장...중국 기업이 채웠다 [IFA 2026]",
-      "pressName": "헤럴드경제",
-      "publishedAt": "2026-09-05T19:23:00+09:00",
-      "url": "https://n.news.naver.com/mnews/article/016/0002693226",
-      "source": "overseas",
-      "sentiment": "neutral",
-      "sentimentScore": 0,
-      "category": "all",
-      "isBreaking": false,
-      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
-    },
-    {
-      "id": "421_0009152783",
-      "title": "\"100억 받고 30억 더\"...불꽃에 진심 김승연 회장, 26년 이어온 약속",
-      "pressName": "뉴스1",
-      "publishedAt": "2026-09-05T19:22:00+09:00",
-      "url": "https://n.news.naver.com/mnews/article/421/0009152783",
-      "source": "overseas",
-      "sentiment": "neutral",
-      "sentimentScore": 0,
-      "category": "all",
-      "isBreaking": false,
-      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
-    },
-    {
-      "id": "014_0005571409",
-      "title": "로봇이 옷 개고 수영장 벽 '척척'...일상 파고든 신기술 [IFA 2026]",
-      "pressName": "파이낸셜뉴스",
-      "publishedAt": "2026-09-05T19:22:00+09:00",
-      "url": "https://n.news.naver.com/mnews/article/014/0005571409",
-      "source": "overseas",
-      "sentiment": "neutral",
-      "sentimentScore": 0,
-      "category": "all",
-      "isBreaking": false,
-      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     }
   ],
   "main": [
@@ -529,7 +516,7 @@
       "id": "277_0005812288",
       "title": "20,000,000,000,000,000원 넘어선 재산...'돈벼락' 맞은 슈퍼리치, 돈 몰린 곳 따로 있었다",
       "pressName": "네이버금융",
-      "publishedAt": "2026-09-05T14:18:59.209Z",
+      "publishedAt": "2026-09-05T17:49:48.882Z",
       "url": "https://n.news.naver.com/mnews/article/277/0005812288",
       "source": "main",
       "sentiment": "neutral",
@@ -539,11 +526,11 @@
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
-      "id": "014_0005571387",
-      "title": "\"딸 결혼에 5000만원쯤이야\"··· 퇴직금 깨려던 아빠가 '멈칫' [머니설계사무소]",
+      "id": "008_0005409816",
+      "title": "\"둘이서 국민연금 월 120만원?\"...연 배당금 '1억' 만드는 투자 전략",
       "pressName": "네이버금융",
-      "publishedAt": "2026-09-05T14:18:59.210Z",
-      "url": "https://n.news.naver.com/mnews/article/014/0005571387",
+      "publishedAt": "2026-09-05T17:49:48.882Z",
+      "url": "https://n.news.naver.com/mnews/article/008/0005409816",
       "source": "main",
       "sentiment": "neutral",
       "sentimentScore": 0,
@@ -555,7 +542,7 @@
       "id": "011_0004658886",
       "title": "\"주식 몰빵했다간 큰일\"...금리 3.5% 시대, 내 돈 지키는 '6대 4' 황금비율은 [머니 트레이스]",
       "pressName": "네이버금융",
-      "publishedAt": "2026-09-05T14:18:59.210Z",
+      "publishedAt": "2026-09-05T17:49:48.882Z",
       "url": "https://n.news.naver.com/mnews/article/011/0004658886",
       "source": "main",
       "sentiment": "neutral",
@@ -565,11 +552,11 @@
       "beginnerExplanation": "돈 빌리는 비용이 낮아져 주식시장에 좋은 소식이에요."
     },
     {
-      "id": "215_0001264944",
-      "title": "\"2024년 악몽 재연되나\" 번지는 공포...개미들이 떨고 있다",
+      "id": "014_0005571387",
+      "title": "\"딸 결혼에 5000만원쯤이야\"··· 퇴직금 깨려던 아빠가 '멈칫' [머니설계사무소]",
       "pressName": "네이버금융",
-      "publishedAt": "2026-09-05T14:18:59.210Z",
-      "url": "https://n.news.naver.com/mnews/article/215/0001264944",
+      "publishedAt": "2026-09-05T17:49:48.882Z",
+      "url": "https://n.news.naver.com/mnews/article/014/0005571387",
       "source": "main",
       "sentiment": "neutral",
       "sentimentScore": 0,
@@ -578,11 +565,37 @@
       "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
     },
     {
-      "id": "215_0001264964",
-      "title": "\"다음주 코스피 6200~7300선 전망\"...美물가·동시만기 '변수'",
+      "id": "016_0002693198",
+      "title": "주식보다 '金'이 좋다는 오마이걸 미미...중앙은행 이어 1.8조 금통장까지 '골드 러시' [머니뭐니]",
       "pressName": "네이버금융",
-      "publishedAt": "2026-09-05T14:18:59.210Z",
-      "url": "https://n.news.naver.com/mnews/article/215/0001264964",
+      "publishedAt": "2026-09-05T17:49:48.882Z",
+      "url": "https://n.news.naver.com/mnews/article/016/0002693198",
+      "source": "main",
+      "sentiment": "neutral",
+      "sentimentScore": 0,
+      "category": "all",
+      "isBreaking": true,
+      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
+    },
+    {
+      "id": "277_0005812306",
+      "title": "\"주식 '와르르' 무너져도 너만 믿었다\"...꾸준히 우상향한 ETF의 정체[주末머니][주末머니]",
+      "pressName": "네이버금융",
+      "publishedAt": "2026-09-05T17:49:48.883Z",
+      "url": "https://n.news.naver.com/mnews/article/277/0005812306",
+      "source": "main",
+      "sentiment": "neutral",
+      "sentimentScore": 0,
+      "category": "all",
+      "isBreaking": true,
+      "beginnerExplanation": "시장 뉴스가 나왔어요. 추가 정보를 찾아보고 판단하세요."
+    },
+    {
+      "id": "215_0001264944",
+      "title": "\"2024년 악몽 재연되나\" 번지는 공포...개미들이 떨고 있다",
+      "pressName": "네이버금융",
+      "publishedAt": "2026-09-05T17:49:48.883Z",
+      "url": "https://n.news.naver.com/mnews/article/215/0001264944",
       "source": "main",
       "sentiment": "neutral",
       "sentimentScore": 0,

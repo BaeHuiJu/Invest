@@ -65,6 +65,22 @@
       "calculator": null
     },
     {
+      "id": "2324",
+      "name": "엠에스바이오",
+      "subscriptionStart": "2026-10-12",
+      "subscriptionEnd": "2026-10-13",
+      "confirmedPrice": null,
+      "priceBandLow": null,
+      "priceBandHigh": null,
+      "underwriter": "",
+      "competitionRatio": "KB증권",
+      "listingDate": null,
+      "refundDate": "2026-10-15",
+      "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2324&l=&page=1",
+      "status": "청약예정",
+      "calculator": null
+    },
+    {
       "id": "2316",
       "name": "엘리스그룹",
       "subscriptionStart": "2026-10-07",
@@ -463,24 +479,8 @@
       "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2297&l=&page=1",
       "status": "상장예정",
       "calculator": null
-    },
-    {
-      "id": "2289",
-      "name": "스트라드비젼",
-      "subscriptionStart": "2026-06-18",
-      "subscriptionEnd": "2026-06-19",
-      "confirmedPrice": 12000,
-      "priceBandLow": null,
-      "priceBandHigh": null,
-      "underwriter": "KB증권",
-      "competitionRatio": "45.83:1",
-      "listingDate": null,
-      "refundDate": null,
-      "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2289&l=&page=1",
-      "status": "상장예정",
-      "calculator": null
     }
   ],
-  "fetchedAt": "2026-09-07T22:27:08.934Z",
+  "fetchedAt": "2026-09-08T02:37:03.524Z",
   "totalCount": 30
 }

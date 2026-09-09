@@ -1,6 +1,22 @@
 {
   "ipos": [
     {
+      "id": "2325",
+      "name": "바로팜",
+      "subscriptionStart": "2026-11-02",
+      "subscriptionEnd": "2026-11-03",
+      "confirmedPrice": null,
+      "priceBandLow": null,
+      "priceBandHigh": null,
+      "underwriter": "",
+      "competitionRatio": "미래에셋증권",
+      "listingDate": null,
+      "refundDate": "2026-11-05",
+      "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2325&l=&page=1",
+      "status": "청약예정",
+      "calculator": null
+    },
+    {
       "id": "2322",
       "name": "티앤이코리아",
       "subscriptionStart": "2026-10-20",
@@ -56,8 +72,8 @@
       "confirmedPrice": null,
       "priceBandLow": null,
       "priceBandHigh": null,
-      "underwriter": "",
-      "competitionRatio": "NH투자증권",
+      "underwriter": "NH투자증권",
+      "competitionRatio": "정정신고서 제출 요구",
       "listingDate": null,
       "refundDate": "2026-10-15",
       "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2318&l=&page=1",
@@ -463,24 +479,8 @@
       "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2290&l=&page=1",
       "status": "상장예정",
       "calculator": null
-    },
-    {
-      "id": "2297",
-      "name": "한국스팩16호",
-      "subscriptionStart": "2026-06-22",
-      "subscriptionEnd": "2026-06-23",
-      "confirmedPrice": 2000,
-      "priceBandLow": null,
-      "priceBandHigh": null,
-      "underwriter": "한국투자증권",
-      "competitionRatio": "1274.77:1",
-      "listingDate": null,
-      "refundDate": null,
-      "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2297&l=&page=1",
-      "status": "상장예정",
-      "calculator": null
     }
   ],
-  "fetchedAt": "2026-09-08T22:17:27.826Z",
+  "fetchedAt": "2026-09-09T02:37:38.561Z",
   "totalCount": 30
 }

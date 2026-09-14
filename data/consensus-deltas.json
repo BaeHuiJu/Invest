@@ -171,12 +171,12 @@
         "ticker": "NFLX",
         "name": "Netflix, Inc.",
         "market": "us",
-        "brokerCount": 4,
-        "avgUpside": 34,
-        "avgTargetPrice": 103.8,
+        "brokerCount": 3,
+        "avgUpside": 20.6,
+        "avgTargetPrice": 93.3,
         "currentPrice": 77.4,
-        "entryScore": 60,
-        "reportCount": 4
+        "entryScore": 41,
+        "reportCount": 3
       },
       {
         "ticker": "139480",
@@ -1040,12 +1040,12 @@
         "ticker": "V",
         "name": "Visa Inc.",
         "market": "us",
-        "brokerCount": 4,
-        "avgUpside": 19,
-        "avgTargetPrice": 440.8,
+        "brokerCount": 3,
+        "avgUpside": 21.7,
+        "avgTargetPrice": 451,
         "currentPrice": 370.45,
-        "entryScore": 49,
-        "reportCount": 4
+        "entryScore": 44,
+        "reportCount": 3
       },
       {
         "ticker": "100090",
@@ -44905,12 +44905,12 @@
           "ticker": "JPM",
           "name": "JPMorgan Chase & Co.",
           "market": "us",
-          "brokerCount": 3,
-          "avgUpside": 18.1,
-          "avgTargetPrice": 420.7,
+          "brokerCount": 2,
+          "avgUpside": 22.4,
+          "avgTargetPrice": 436,
           "currentPrice": 356.23,
-          "entryScore": 37,
-          "reportCount": 3
+          "entryScore": 34,
+          "reportCount": 2
         },
         {
           "ticker": "C",
@@ -48318,12 +48318,12 @@
           "ticker": "ADBE",
           "name": "Adobe Inc.",
           "market": "us",
-          "brokerCount": 3,
-          "avgUpside": 22.9,
-          "avgTargetPrice": 310,
+          "brokerCount": 4,
+          "avgUpside": 20.9,
+          "avgTargetPrice": 305,
           "currentPrice": 252.23,
-          "entryScore": 41,
-          "reportCount": 3
+          "entryScore": 46,
+          "reportCount": 4
         }
       ],
       "removed": [

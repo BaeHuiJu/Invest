@@ -49,6 +49,22 @@
       "calculator": null
     },
     {
+      "id": "2327",
+      "name": "다비오",
+      "subscriptionStart": "2026-10-19",
+      "subscriptionEnd": "2026-10-20",
+      "confirmedPrice": null,
+      "priceBandLow": null,
+      "priceBandHigh": null,
+      "underwriter": "",
+      "competitionRatio": "대신증권",
+      "listingDate": null,
+      "refundDate": "2026-10-22",
+      "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2327&l=&page=1",
+      "status": "청약예정",
+      "calculator": null
+    },
+    {
       "id": "2319",
       "name": "SK증권스팩14호",
       "subscriptionStart": "2026-10-15",
@@ -205,7 +221,7 @@
       "listingDate": "2026-09-30",
       "refundDate": "2026-09-21",
       "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2309&l=&page=1",
-      "status": "청약예정",
+      "status": "청약중",
       "calculator": null
     },
     {
@@ -221,7 +237,7 @@
       "listingDate": "2026-09-29",
       "refundDate": "2026-09-21",
       "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2310&l=&page=1",
-      "status": "청약예정",
+      "status": "청약중",
       "calculator": null
     },
     {
@@ -253,7 +269,7 @@
       "listingDate": "2026-09-23",
       "refundDate": "2026-09-17",
       "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2311&l=&page=1",
-      "status": "청약중",
+      "status": "상장예정",
       "calculator": null
     },
     {
@@ -463,24 +479,8 @@
       "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2296&l=&page=1",
       "status": "상장예정",
       "calculator": null
-    },
-    {
-      "id": "2293",
-      "name": "레몬헬스케어",
-      "subscriptionStart": "2026-06-24",
-      "subscriptionEnd": "2026-06-25",
-      "confirmedPrice": 10000,
-      "priceBandLow": null,
-      "priceBandHigh": null,
-      "underwriter": "KB증권",
-      "competitionRatio": "1510.57:1",
-      "listingDate": null,
-      "refundDate": null,
-      "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2293&l=&page=1",
-      "status": "상장예정",
-      "calculator": null
     }
   ],
-  "fetchedAt": "2026-09-15T22:38:32.601Z",
+  "fetchedAt": "2026-09-16T02:54:07.755Z",
   "totalCount": 30
 }

@@ -17,6 +17,22 @@
       "calculator": null
     },
     {
+      "id": "2328",
+      "name": "인텔리빅스",
+      "subscriptionStart": "2026-10-21",
+      "subscriptionEnd": "2026-10-22",
+      "confirmedPrice": null,
+      "priceBandLow": null,
+      "priceBandHigh": null,
+      "underwriter": "",
+      "competitionRatio": "미래에셋증권",
+      "listingDate": null,
+      "refundDate": "2026-10-26",
+      "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2328&l=&page=1",
+      "status": "청약예정",
+      "calculator": null
+    },
+    {
       "id": "2322",
       "name": "티앤이코리아",
       "subscriptionStart": "2026-10-20",
@@ -205,7 +221,7 @@
       "listingDate": "2026-10-01",
       "refundDate": "2026-09-22",
       "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2307&l=&page=1",
-      "status": "청약예정",
+      "status": "청약중",
       "calculator": null
     },
     {
@@ -248,12 +264,12 @@
       "confirmedPrice": 18000,
       "priceBandLow": null,
       "priceBandHigh": null,
-      "underwriter": "",
-      "competitionRatio": "유진투자증권,미래에셋증권",
+      "underwriter": "유진투자증권,미래에셋증권",
+      "competitionRatio": "1375.34:1",
       "listingDate": "2026-09-29",
       "refundDate": "2026-09-18",
       "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2294&l=&page=1",
-      "status": "청약중",
+      "status": "상장예정",
       "calculator": null
     },
     {
@@ -463,24 +479,8 @@
       "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2301&l=&page=1",
       "status": "상장예정",
       "calculator": null
-    },
-    {
-      "id": "2296",
-      "name": "레메디",
-      "subscriptionStart": "2026-07-01",
-      "subscriptionEnd": "2026-07-02",
-      "confirmedPrice": 20700,
-      "priceBandLow": null,
-      "priceBandHigh": null,
-      "underwriter": "KB증권",
-      "competitionRatio": "1706.71:1",
-      "listingDate": null,
-      "refundDate": null,
-      "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2296&l=&page=1",
-      "status": "상장예정",
-      "calculator": null
     }
   ],
-  "fetchedAt": "2026-09-16T22:34:27.653Z",
+  "fetchedAt": "2026-09-17T02:57:59.321Z",
   "totalCount": 30
 }

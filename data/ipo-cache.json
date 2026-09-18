@@ -17,6 +17,22 @@
       "calculator": null
     },
     {
+      "id": "2321",
+      "name": "엠비디",
+      "subscriptionStart": "2026-10-28",
+      "subscriptionEnd": "2026-10-29",
+      "confirmedPrice": null,
+      "priceBandLow": null,
+      "priceBandHigh": null,
+      "underwriter": "",
+      "competitionRatio": "하나증권",
+      "listingDate": null,
+      "refundDate": "2026-11-02",
+      "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2321&l=&page=1",
+      "status": "청약예정",
+      "calculator": null
+    },
+    {
       "id": "2329",
       "name": "아이엠스팩1호",
       "subscriptionStart": "2026-10-26",
@@ -193,22 +209,6 @@
       "calculator": null
     },
     {
-      "id": "2321",
-      "name": "엠비디",
-      "subscriptionStart": "2026-10-06",
-      "subscriptionEnd": "2026-10-07",
-      "confirmedPrice": null,
-      "priceBandLow": null,
-      "priceBandHigh": null,
-      "underwriter": "",
-      "competitionRatio": "하나증권",
-      "listingDate": null,
-      "refundDate": "2026-10-12",
-      "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2321&l=&page=1",
-      "status": "청약예정",
-      "calculator": null
-    },
-    {
       "id": "2320",
       "name": "진코스텍",
       "subscriptionStart": "2026-10-02",
@@ -248,8 +248,8 @@
       "confirmedPrice": 19500,
       "priceBandLow": null,
       "priceBandHigh": null,
-      "underwriter": "",
-      "competitionRatio": "IBK투자증권",
+      "underwriter": "IBK투자증권",
+      "competitionRatio": "1676.26:1",
       "listingDate": "2026-10-01",
       "refundDate": "2026-09-22",
       "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2307&l=&page=1",
@@ -481,6 +481,6 @@
       "calculator": null
     }
   ],
-  "fetchedAt": "2026-09-18T02:44:54.484Z",
+  "fetchedAt": "2026-09-18T08:40:27.244Z",
   "totalCount": 30
 }

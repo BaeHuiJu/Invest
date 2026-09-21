@@ -127,12 +127,12 @@
         "ticker": "GILD",
         "name": "Gilead Sciences, Inc.",
         "market": "us",
-        "brokerCount": 6,
-        "avgUpside": 13.4,
-        "avgTargetPrice": 170.2,
+        "brokerCount": 5,
+        "avgUpside": 14,
+        "avgTargetPrice": 171.2,
         "currentPrice": 150.11,
         "entryScore": 47,
-        "reportCount": 6
+        "reportCount": 5
       },
       {
         "ticker": "WMT",
@@ -149,12 +149,12 @@
         "ticker": "HD",
         "name": "The Home Depot, Inc.",
         "market": "us",
-        "brokerCount": 4,
-        "avgUpside": 33.1,
-        "avgTargetPrice": 399.3,
+        "brokerCount": 3,
+        "avgUpside": 33,
+        "avgTargetPrice": 399,
         "currentPrice": 299.98,
-        "entryScore": 59,
-        "reportCount": 4
+        "entryScore": 52,
+        "reportCount": 3
       },
       {
         "ticker": "DE",
@@ -171,12 +171,12 @@
         "ticker": "NFLX",
         "name": "Netflix, Inc.",
         "market": "us",
-        "brokerCount": 5,
-        "avgUpside": 35.1,
-        "avgTargetPrice": 97,
+        "brokerCount": 4,
+        "avgUpside": 39.3,
+        "avgTargetPrice": 100,
         "currentPrice": 71.79,
-        "entryScore": 82,
-        "reportCount": 5
+        "entryScore": 78,
+        "reportCount": 4
       },
       {
         "ticker": "139480",
@@ -54181,6 +54181,14 @@
           }
         }
       ]
+    },
+    {
+      "date": "2026-09-21",
+      "added": [],
+      "removed": [
+        "DIS"
+      ],
+      "changed": []
     }
   ]
 }

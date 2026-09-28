@@ -81,6 +81,22 @@
       "calculator": null
     },
     {
+      "id": "2335",
+      "name": "래블업",
+      "subscriptionStart": "2026-10-22",
+      "subscriptionEnd": "2026-10-23",
+      "confirmedPrice": null,
+      "priceBandLow": null,
+      "priceBandHigh": null,
+      "underwriter": "",
+      "competitionRatio": "NH투자증권",
+      "listingDate": null,
+      "refundDate": "2026-10-27",
+      "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2335&l=&page=1",
+      "status": "청약예정",
+      "calculator": null
+    },
+    {
       "id": "2332",
       "name": "이에스티",
       "subscriptionStart": "2026-10-22",
@@ -463,24 +479,8 @@
       "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2303&l=&page=1",
       "status": "상장완료",
       "calculator": null
-    },
-    {
-      "id": "2304",
-      "name": "해치텍",
-      "subscriptionStart": "2026-08-12",
-      "subscriptionEnd": "2026-08-13",
-      "confirmedPrice": 23000,
-      "priceBandLow": null,
-      "priceBandHigh": null,
-      "underwriter": "DB증권",
-      "competitionRatio": "25.73:1",
-      "listingDate": "2026-08-25",
-      "refundDate": "2026-08-18",
-      "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2304&l=&page=1",
-      "status": "상장완료",
-      "calculator": null
     }
   ],
-  "fetchedAt": "2026-09-27T22:45:20.598Z",
+  "fetchedAt": "2026-09-28T03:06:36.889Z",
   "totalCount": 30
 }

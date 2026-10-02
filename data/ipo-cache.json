@@ -1,6 +1,22 @@
 {
   "ipos": [
     {
+      "id": "2340",
+      "name": "케이엠에프",
+      "subscriptionStart": "2026-11-24",
+      "subscriptionEnd": "2026-11-25",
+      "confirmedPrice": null,
+      "priceBandLow": null,
+      "priceBandHigh": null,
+      "underwriter": "",
+      "competitionRatio": "IBK투자증권",
+      "listingDate": null,
+      "refundDate": "2026-11-27",
+      "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2340&l=&page=1",
+      "status": "청약예정",
+      "calculator": null
+    },
+    {
       "id": "2334",
       "name": "하나에어로다이내믹스",
       "subscriptionStart": "2026-11-10",
@@ -344,8 +360,8 @@
       "confirmedPrice": 12300,
       "priceBandLow": null,
       "priceBandHigh": null,
-      "underwriter": "",
-      "competitionRatio": "대신증권",
+      "underwriter": "대신증권",
+      "competitionRatio": "1741.48:1",
       "listingDate": "2026-10-15",
       "refundDate": "2026-10-07",
       "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2315&l=&page=1",
@@ -463,24 +479,8 @@
       "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2313&l=&page=1",
       "status": "상장완료",
       "calculator": null
-    },
-    {
-      "id": "2314",
-      "name": "한국스팩17호",
-      "subscriptionStart": "2026-09-10",
-      "subscriptionEnd": "2026-09-11",
-      "confirmedPrice": 2000,
-      "priceBandLow": null,
-      "priceBandHigh": null,
-      "underwriter": "한국투자증권",
-      "competitionRatio": "494.62:1",
-      "listingDate": "2026-09-22",
-      "refundDate": "2026-09-15",
-      "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2314&l=&page=1",
-      "status": "상장완료",
-      "calculator": null
     }
   ],
-  "fetchedAt": "2026-10-02T03:38:32.540Z",
+  "fetchedAt": "2026-10-02T10:14:47.278Z",
   "totalCount": 30
 }

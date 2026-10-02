@@ -65,6 +65,22 @@
       "calculator": null
     },
     {
+      "id": "2339",
+      "name": "동원파츠",
+      "subscriptionStart": "2026-11-02",
+      "subscriptionEnd": "2026-11-03",
+      "confirmedPrice": null,
+      "priceBandLow": null,
+      "priceBandHigh": null,
+      "underwriter": "",
+      "competitionRatio": "삼성증권",
+      "listingDate": null,
+      "refundDate": "2026-11-05",
+      "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2339&l=&page=1",
+      "status": "청약예정",
+      "calculator": null
+    },
+    {
       "id": "2321",
       "name": "엠비디",
       "subscriptionStart": "2026-10-28",
@@ -241,22 +257,6 @@
       "calculator": null
     },
     {
-      "id": "2337",
-      "name": "유캐스트",
-      "subscriptionStart": "2026-10-19",
-      "subscriptionEnd": "2026-10-20",
-      "confirmedPrice": null,
-      "priceBandLow": null,
-      "priceBandHigh": null,
-      "underwriter": "",
-      "competitionRatio": "유진투자증권,신영증권",
-      "listingDate": null,
-      "refundDate": "2026-10-22",
-      "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2337&l=&page=1",
-      "status": "청약예정",
-      "calculator": null
-    },
-    {
       "id": "2319",
       "name": "SK증권스팩14호",
       "subscriptionStart": "2026-10-15",
@@ -333,7 +333,7 @@
       "listingDate": "2026-10-15",
       "refundDate": "2026-10-08",
       "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2320&l=&page=1",
-      "status": "청약예정",
+      "status": "청약중",
       "calculator": null
     },
     {
@@ -481,6 +481,6 @@
       "calculator": null
     }
   ],
-  "fetchedAt": "2026-10-01T23:38:08.274Z",
+  "fetchedAt": "2026-10-02T03:38:32.540Z",
   "totalCount": 30
 }

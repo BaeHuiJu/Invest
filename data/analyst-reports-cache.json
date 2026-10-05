@@ -1,7 +1,103 @@
 {
-  "generatedAt": "2026-10-04T03:56:43.400Z",
+  "generatedAt": "2026-10-05T03:41:00.662Z",
   "maxDays": 365,
   "reports": [
+    {
+      "date": "2026-10-03",
+      "ticker": "055550",
+      "name": "신한지주",
+      "market": "korea",
+      "broker": "한국투자증권",
+      "analyst": "",
+      "opinion": "매수",
+      "targetPrice": 120726,
+      "currentPrice": 105900,
+      "basePrice": 105900,
+      "basePriceDate": "2026-10-03",
+      "upside": 14,
+      "sourceUrl": "",
+      "reportTitle": "신한지주 실적 개선 기대",
+      "reasonSummary": "신한지주 실적 개선 기대. 한국투자증권가 매수 의견을 제시했고 현재가 기준 상승여력은 14.0%입니다. 2026-10-03 종가 대비 목표가 괴리는 14%입니다.",
+      "reasonBullets": [
+        "한국투자증권가 2026-10-03에 매수 의견과 목표가를 제시했습니다.",
+        "현재가 105,900원 대비 목표가는 120,726원입니다.",
+        "2026-10-03 종가 105,900원 대비 괴리는 14%입니다."
+      ],
+      "performance": {
+        "week1": {
+          "asOfDate": "2026-10-10",
+          "closePrice": 0,
+          "returnPct": 0,
+          "targetProgressPct": 0,
+          "success": false,
+          "status": "pending"
+        },
+        "month1": {
+          "asOfDate": "2026-11-02",
+          "closePrice": 0,
+          "returnPct": 0,
+          "targetProgressPct": 0,
+          "success": false,
+          "status": "pending"
+        },
+        "month3": {
+          "asOfDate": "2027-01-01",
+          "closePrice": 0,
+          "returnPct": 0,
+          "targetProgressPct": 0,
+          "success": false,
+          "status": "pending"
+        }
+      }
+    },
+    {
+      "date": "2026-10-03",
+      "ticker": "028260",
+      "name": "삼성물산",
+      "market": "korea",
+      "broker": "하나증권",
+      "analyst": "",
+      "opinion": "매수",
+      "targetPrice": 402520,
+      "currentPrice": 347000,
+      "basePrice": 347000,
+      "basePriceDate": "2026-10-03",
+      "upside": 16,
+      "sourceUrl": "",
+      "reportTitle": "삼성물산 실적 개선 기대",
+      "reasonSummary": "삼성물산 실적 개선 기대. 하나증권가 매수 의견을 제시했고 현재가 기준 상승여력은 16.0%입니다. 2026-10-03 종가 대비 목표가 괴리는 16%입니다.",
+      "reasonBullets": [
+        "하나증권가 2026-10-03에 매수 의견과 목표가를 제시했습니다.",
+        "현재가 347,000원 대비 목표가는 402,520원입니다.",
+        "2026-10-03 종가 347,000원 대비 괴리는 16%입니다."
+      ],
+      "performance": {
+        "week1": {
+          "asOfDate": "2026-10-10",
+          "closePrice": 0,
+          "returnPct": 0,
+          "targetProgressPct": 0,
+          "success": false,
+          "status": "pending"
+        },
+        "month1": {
+          "asOfDate": "2026-11-02",
+          "closePrice": 0,
+          "returnPct": 0,
+          "targetProgressPct": 0,
+          "success": false,
+          "status": "pending"
+        },
+        "month3": {
+          "asOfDate": "2027-01-01",
+          "closePrice": 0,
+          "returnPct": 0,
+          "targetProgressPct": 0,
+          "success": false,
+          "status": "pending"
+        }
+      }
+    },
     {
       "date": "2026-10-03",
       "ticker": "NKE",
@@ -53,72 +149,24 @@
     },
     {
       "date": "2026-10-02",
-      "ticker": "005930",
-      "name": "삼성전자",
+      "ticker": "051910",
+      "name": "LG화학",
       "market": "korea",
-      "broker": "하나증권",
+      "broker": "KB증권",
       "analyst": "",
-      "opinion": "적극매수",
-      "targetPrice": 345000,
-      "currentPrice": 276000,
-      "basePrice": 276000,
+      "opinion": "Buy",
+      "targetPrice": 327500,
+      "currentPrice": 262000,
+      "basePrice": 262000,
       "basePriceDate": "2026-10-02",
       "upside": 25,
       "sourceUrl": "",
-      "reportTitle": "삼성전자 실적 개선 기대",
-      "reasonSummary": "삼성전자 실적 개선 기대. 하나증권가 적극매수 의견을 제시했고 현재가 기준 상승여력은 25.0%입니다. 2026-10-02 종가 대비 목표가 괴리는 25%입니다.",
+      "reportTitle": "LG화학 실적 개선 기대",
+      "reasonSummary": "LG화학 실적 개선 기대. KB증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 25.0%입니다. 2026-10-02 종가 대비 목표가 괴리는 25%입니다.",
       "reasonBullets": [
-        "하나증권가 2026-10-02에 적극매수 의견과 목표가를 제시했습니다.",
-        "현재가 276,000원 대비 목표가는 345,000원입니다.",
-        "2026-10-02 종가 276,000원 대비 괴리는 25%입니다."
-      ],
-      "performance": {
-        "week1": {
-          "asOfDate": "2026-10-09",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "pending"
-        },
-        "month1": {
-          "asOfDate": "2026-11-01",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "pending"
-        },
-        "month3": {
-          "asOfDate": "2026-12-31",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "pending"
-        }
-      }
-    },
-    {
-      "date": "2026-10-02",
-      "ticker": "373220",
-      "name": "LG에너지솔루션",
-      "market": "korea",
-      "broker": "미래에셋증권",
-      "analyst": "",
-      "opinion": "Trading Buy",
-      "targetPrice": 442800,
-      "currentPrice": 369000,
-      "basePrice": 369000,
-      "basePriceDate": "2026-10-02",
-      "upside": 20,
-      "sourceUrl": "",
-      "reportTitle": "LG에너지솔루션 실적 개선 기대",
-      "reasonSummary": "LG에너지솔루션 실적 개선 기대. 미래에셋증권가 Trading Buy 의견을 제시했고 현재가 기준 상승여력은 20.0%입니다. 2026-10-02 종가 대비 목표가 괴리는 20%입니다.",
-      "reasonBullets": [
-        "미래에셋증권가 2026-10-02에 Trading Buy 의견과 목표가를 제시했습니다.",
-        "현재가 369,000원 대비 목표가는 442,800원입니다.",
-        "2026-10-02 종가 369,000원 대비 괴리는 20%입니다."
+        "KB증권가 2026-10-02에 Buy 의견과 목표가를 제시했습니다.",
+        "현재가 262,000원 대비 목표가는 327,500원입니다.",
+        "2026-10-02 종가 262,000원 대비 괴리는 25%입니다."
       ],
       "performance": {
         "week1": {
@@ -1119,54 +1167,6 @@
         },
         "month3": {
           "asOfDate": "2026-12-31",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "pending"
-        }
-      }
-    },
-    {
-      "date": "2026-10-01",
-      "ticker": "066570",
-      "name": "LG전자",
-      "market": "korea",
-      "broker": "신한투자증권",
-      "analyst": "",
-      "opinion": "매수",
-      "targetPrice": 265065,
-      "currentPrice": 215500,
-      "basePrice": 215500,
-      "basePriceDate": "2026-10-01",
-      "upside": 23,
-      "sourceUrl": "",
-      "reportTitle": "LG전자 실적 개선 기대",
-      "reasonSummary": "LG전자 실적 개선 기대. 신한투자증권가 매수 의견을 제시했고 현재가 기준 상승여력은 23.0%입니다. 2026-10-01 종가 대비 목표가 괴리는 23%입니다.",
-      "reasonBullets": [
-        "신한투자증권가 2026-10-01에 매수 의견과 목표가를 제시했습니다.",
-        "현재가 215,500원 대비 목표가는 265,065원입니다.",
-        "2026-10-01 종가 215,500원 대비 괴리는 23%입니다."
-      ],
-      "performance": {
-        "week1": {
-          "asOfDate": "2026-10-08",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "pending"
-        },
-        "month1": {
-          "asOfDate": "2026-10-31",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "pending"
-        },
-        "month3": {
-          "asOfDate": "2026-12-30",
           "closePrice": 0,
           "returnPct": 0,
           "targetProgressPct": 0,
@@ -2892,24 +2892,24 @@
     },
     {
       "date": "2026-09-30",
-      "ticker": "005380",
-      "name": "현대차",
+      "ticker": "096770",
+      "name": "SK이노베이션",
       "market": "korea",
-      "broker": "NH투자증권",
+      "broker": "한국투자증권",
       "analyst": "",
-      "opinion": "매수",
-      "targetPrice": 423340,
-      "currentPrice": 347000,
-      "basePrice": 347000,
+      "opinion": "Buy",
+      "targetPrice": 180047,
+      "currentPrice": 151300,
+      "basePrice": 151300,
       "basePriceDate": "2026-09-30",
-      "upside": 22,
+      "upside": 19,
       "sourceUrl": "",
-      "reportTitle": "현대차 실적 개선 기대",
-      "reasonSummary": "현대차 실적 개선 기대. NH투자증권가 매수 의견을 제시했고 현재가 기준 상승여력은 22.0%입니다. 2026-09-30 종가 대비 목표가 괴리는 22%입니다.",
+      "reportTitle": "SK이노베이션 실적 개선 기대",
+      "reasonSummary": "SK이노베이션 실적 개선 기대. 한국투자증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 19.0%입니다. 2026-09-30 종가 대비 목표가 괴리는 19%입니다.",
       "reasonBullets": [
-        "NH투자증권가 2026-09-30에 매수 의견과 목표가를 제시했습니다.",
-        "현재가 347,000원 대비 목표가는 423,340원입니다.",
-        "2026-09-30 종가 347,000원 대비 괴리는 22%입니다."
+        "한국투자증권가 2026-09-30에 Buy 의견과 목표가를 제시했습니다.",
+        "현재가 151,300원 대비 목표가는 180,047원입니다.",
+        "2026-09-30 종가 151,300원 대비 괴리는 19%입니다."
       ],
       "performance": {
         "week1": {
@@ -3763,54 +3763,6 @@
         },
         "month3": {
           "asOfDate": "2026-12-29",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "pending"
-        }
-      }
-    },
-    {
-      "date": "2026-09-29",
-      "ticker": "012330",
-      "name": "현대모비스",
-      "market": "korea",
-      "broker": "NH투자증권",
-      "analyst": "",
-      "opinion": "Trading Buy",
-      "targetPrice": 462600,
-      "currentPrice": 385500,
-      "basePrice": 385500,
-      "basePriceDate": "2026-09-29",
-      "upside": 20,
-      "sourceUrl": "",
-      "reportTitle": "현대모비스 실적 개선 기대",
-      "reasonSummary": "현대모비스 실적 개선 기대. NH투자증권가 Trading Buy 의견을 제시했고 현재가 기준 상승여력은 20.0%입니다. 2026-09-29 종가 대비 목표가 괴리는 20%입니다.",
-      "reasonBullets": [
-        "NH투자증권가 2026-09-29에 Trading Buy 의견과 목표가를 제시했습니다.",
-        "현재가 385,500원 대비 목표가는 462,600원입니다.",
-        "2026-09-29 종가 385,500원 대비 괴리는 20%입니다."
-      ],
-      "performance": {
-        "week1": {
-          "asOfDate": "2026-10-06",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "pending"
-        },
-        "month1": {
-          "asOfDate": "2026-10-29",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "pending"
-        },
-        "month3": {
-          "asOfDate": "2026-12-28",
           "closePrice": 0,
           "returnPct": 0,
           "targetProgressPct": 0,
@@ -5193,6 +5145,54 @@
     },
     {
       "date": "2026-09-28",
+      "ticker": "005490",
+      "name": "POSCO홀딩스",
+      "market": "korea",
+      "broker": "삼성증권",
+      "analyst": "",
+      "opinion": "적극매수",
+      "targetPrice": 358225,
+      "currentPrice": 311500,
+      "basePrice": 311500,
+      "basePriceDate": "2026-09-28",
+      "upside": 15,
+      "sourceUrl": "",
+      "reportTitle": "POSCO홀딩스 실적 개선 기대",
+      "reasonSummary": "POSCO홀딩스 실적 개선 기대. 삼성증권가 적극매수 의견을 제시했고 현재가 기준 상승여력은 15.0%입니다. 2026-09-28 종가 대비 목표가 괴리는 15%입니다.",
+      "reasonBullets": [
+        "삼성증권가 2026-09-28에 적극매수 의견과 목표가를 제시했습니다.",
+        "현재가 311,500원 대비 목표가는 358,225원입니다.",
+        "2026-09-28 종가 311,500원 대비 괴리는 15%입니다."
+      ],
+      "performance": {
+        "week1": {
+          "asOfDate": "2026-10-05",
+          "closePrice": 0,
+          "returnPct": 0,
+          "targetProgressPct": 0,
+          "success": false,
+          "status": "unavailable"
+        },
+        "month1": {
+          "asOfDate": "2026-10-28",
+          "closePrice": 0,
+          "returnPct": 0,
+          "targetProgressPct": 0,
+          "success": false,
+          "status": "pending"
+        },
+        "month3": {
+          "asOfDate": "2026-12-27",
+          "closePrice": 0,
+          "returnPct": 0,
+          "targetProgressPct": 0,
+          "success": false,
+          "status": "pending"
+        }
+      }
+    },
+    {
+      "date": "2026-09-28",
       "ticker": "AAPL",
       "name": "Apple Inc.",
       "market": "us",
@@ -5215,12 +5215,12 @@
       ],
       "performance": {
         "week1": {
-          "asOfDate": "2026-10-05",
-          "closePrice": 0,
-          "returnPct": 0,
+          "asOfDate": "2026-10-02",
+          "closePrice": 333.69,
+          "returnPct": -1.4,
           "targetProgressPct": 0,
           "success": false,
-          "status": "pending"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-10-28",
@@ -5264,12 +5264,12 @@
       ],
       "performance": {
         "week1": {
-          "asOfDate": "2026-10-05",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
+          "asOfDate": "2026-10-02",
+          "closePrice": 517.53,
+          "returnPct": 1.6,
+          "targetProgressPct": 12.6,
           "success": false,
-          "status": "pending"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-10-28",
@@ -5313,12 +5313,12 @@
       ],
       "performance": {
         "week1": {
-          "asOfDate": "2026-10-05",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
+          "asOfDate": "2026-10-02",
+          "closePrice": 251.52,
+          "returnPct": 2.2,
+          "targetProgressPct": 7.3,
           "success": false,
-          "status": "pending"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-10-28",
@@ -5362,12 +5362,12 @@
       ],
       "performance": {
         "week1": {
-          "asOfDate": "2026-10-05",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
+          "asOfDate": "2026-10-02",
+          "closePrice": 233.95,
+          "returnPct": 2.2,
+          "targetProgressPct": 3.2,
           "success": false,
-          "status": "pending"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-10-28",
@@ -5411,12 +5411,12 @@
       ],
       "performance": {
         "week1": {
-          "asOfDate": "2026-10-05",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
+          "asOfDate": "2026-10-02",
+          "closePrice": 341.04,
+          "returnPct": 3.9,
+          "targetProgressPct": 13.6,
           "success": false,
-          "status": "pending"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-10-28",
@@ -5460,12 +5460,12 @@
       ],
       "performance": {
         "week1": {
-          "asOfDate": "2026-10-05",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
+          "asOfDate": "2026-10-02",
+          "closePrice": 403.24,
+          "returnPct": 2.8,
+          "targetProgressPct": 33.9,
           "success": false,
-          "status": "pending"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-10-28",
@@ -5509,12 +5509,12 @@
       ],
       "performance": {
         "week1": {
-          "asOfDate": "2026-10-05",
-          "closePrice": 0,
-          "returnPct": 0,
+          "asOfDate": "2026-10-02",
+          "closePrice": 360.66,
+          "returnPct": -1.9,
           "targetProgressPct": 0,
           "success": false,
-          "status": "pending"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-10-28",
@@ -5558,12 +5558,12 @@
       ],
       "performance": {
         "week1": {
-          "asOfDate": "2026-10-05",
-          "closePrice": 0,
-          "returnPct": 0,
+          "asOfDate": "2026-10-02",
+          "closePrice": 360.66,
+          "returnPct": -1.9,
           "targetProgressPct": 0,
           "success": false,
-          "status": "pending"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-10-28",
@@ -5607,12 +5607,12 @@
       ],
       "performance": {
         "week1": {
-          "asOfDate": "2026-10-05",
-          "closePrice": 0,
-          "returnPct": 0,
+          "asOfDate": "2026-10-02",
+          "closePrice": 53.75,
+          "returnPct": -3.1,
           "targetProgressPct": 0,
           "success": false,
-          "status": "pending"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-10-28",
@@ -5656,12 +5656,12 @@
       ],
       "performance": {
         "week1": {
-          "asOfDate": "2026-10-05",
-          "closePrice": 0,
-          "returnPct": 0,
+          "asOfDate": "2026-10-02",
+          "closePrice": 53.75,
+          "returnPct": -3.1,
           "targetProgressPct": 0,
           "success": false,
-          "status": "pending"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-10-28",
@@ -5705,12 +5705,12 @@
       ],
       "performance": {
         "week1": {
-          "asOfDate": "2026-10-05",
-          "closePrice": 0,
-          "returnPct": 0,
+          "asOfDate": "2026-10-02",
+          "closePrice": 128.5,
+          "returnPct": -2.1,
           "targetProgressPct": 0,
           "success": false,
-          "status": "pending"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-10-28",
@@ -5754,12 +5754,12 @@
       ],
       "performance": {
         "week1": {
-          "asOfDate": "2026-10-05",
-          "closePrice": 0,
-          "returnPct": 0,
+          "asOfDate": "2026-10-02",
+          "closePrice": 302.78,
+          "returnPct": -1.2,
           "targetProgressPct": 0,
           "success": false,
-          "status": "pending"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-10-28",
@@ -5803,12 +5803,12 @@
       ],
       "performance": {
         "week1": {
-          "asOfDate": "2026-10-05",
-          "closePrice": 0,
-          "returnPct": 0,
+          "asOfDate": "2026-10-02",
+          "closePrice": 1142.85,
+          "returnPct": -3.5,
           "targetProgressPct": 0,
           "success": false,
-          "status": "pending"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-10-28",
@@ -5852,12 +5852,12 @@
       ],
       "performance": {
         "week1": {
-          "asOfDate": "2026-10-05",
-          "closePrice": 0,
-          "returnPct": 0,
+          "asOfDate": "2026-10-02",
+          "closePrice": 1142.85,
+          "returnPct": -3.5,
           "targetProgressPct": 0,
           "success": false,
-          "status": "pending"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-10-28",
@@ -5901,12 +5901,12 @@
       ],
       "performance": {
         "week1": {
-          "asOfDate": "2026-10-05",
-          "closePrice": 0,
-          "returnPct": 0,
+          "asOfDate": "2026-10-02",
+          "closePrice": 256.03,
+          "returnPct": -5.9,
           "targetProgressPct": 0,
           "success": false,
-          "status": "pending"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-10-28",
@@ -5950,12 +5950,12 @@
       ],
       "performance": {
         "week1": {
-          "asOfDate": "2026-10-05",
-          "closePrice": 0,
-          "returnPct": 0,
+          "asOfDate": "2026-10-02",
+          "closePrice": 262.82,
+          "returnPct": -1.3,
           "targetProgressPct": 0,
           "success": false,
-          "status": "pending"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-10-28",
@@ -5999,12 +5999,12 @@
       ],
       "performance": {
         "week1": {
-          "asOfDate": "2026-10-05",
-          "closePrice": 0,
-          "returnPct": 0,
+          "asOfDate": "2026-10-02",
+          "closePrice": 403.04,
+          "returnPct": -3.6,
           "targetProgressPct": 0,
           "success": false,
-          "status": "pending"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-10-28",
@@ -6048,12 +6048,12 @@
       ],
       "performance": {
         "week1": {
-          "asOfDate": "2026-10-05",
-          "closePrice": 0,
-          "returnPct": 0,
+          "asOfDate": "2026-10-02",
+          "closePrice": 85.65,
+          "returnPct": -1.8,
           "targetProgressPct": 0,
           "success": false,
-          "status": "pending"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-10-28",
@@ -6097,12 +6097,12 @@
       ],
       "performance": {
         "week1": {
-          "asOfDate": "2026-10-05",
-          "closePrice": 0,
-          "returnPct": 0,
+          "asOfDate": "2026-10-02",
+          "closePrice": 920.65,
+          "returnPct": -0.2,
           "targetProgressPct": 0,
           "success": false,
-          "status": "pending"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-10-28",
@@ -6146,12 +6146,12 @@
       ],
       "performance": {
         "week1": {
-          "asOfDate": "2026-10-05",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
+          "asOfDate": "2026-10-02",
+          "closePrice": 164.01,
+          "returnPct": 0.9,
+          "targetProgressPct": 8.5,
           "success": false,
-          "status": "pending"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-10-28",
@@ -6195,12 +6195,12 @@
       ],
       "performance": {
         "week1": {
-          "asOfDate": "2026-10-05",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
+          "asOfDate": "2026-10-02",
+          "closePrice": 845.42,
+          "returnPct": 3.1,
+          "targetProgressPct": 15.1,
           "success": false,
-          "status": "pending"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-10-28",
@@ -6244,12 +6244,12 @@
       ],
       "performance": {
         "week1": {
-          "asOfDate": "2026-10-05",
-          "closePrice": 0,
-          "returnPct": 0,
+          "asOfDate": "2026-10-02",
+          "closePrice": 67.06,
+          "returnPct": -3.1,
           "targetProgressPct": 0,
           "success": false,
-          "status": "pending"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-10-28",
@@ -6293,12 +6293,12 @@
       ],
       "performance": {
         "week1": {
-          "asOfDate": "2026-10-05",
-          "closePrice": 0,
-          "returnPct": 0,
+          "asOfDate": "2026-10-02",
+          "closePrice": 102.19,
+          "returnPct": -3.2,
           "targetProgressPct": 0,
           "success": false,
-          "status": "pending"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-10-28",
@@ -6342,12 +6342,12 @@
       ],
       "performance": {
         "week1": {
-          "asOfDate": "2026-10-05",
-          "closePrice": 0,
-          "returnPct": 0,
+          "asOfDate": "2026-10-02",
+          "closePrice": 24.3,
+          "returnPct": -2.4,
           "targetProgressPct": 0,
           "success": false,
-          "status": "pending"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-10-28",
@@ -6391,12 +6391,12 @@
       ],
       "performance": {
         "week1": {
-          "asOfDate": "2026-10-05",
-          "closePrice": 0,
-          "returnPct": 0,
+          "asOfDate": "2026-10-02",
+          "closePrice": 45.92,
+          "returnPct": -1.6,
           "targetProgressPct": 0,
           "success": false,
-          "status": "pending"
+          "status": "complete"
         },
         "month1": {
           "asOfDate": "2026-10-28",
@@ -6418,72 +6418,24 @@
     },
     {
       "date": "2026-09-27",
-      "ticker": "055550",
-      "name": "신한지주",
+      "ticker": "012330",
+      "name": "현대모비스",
       "market": "korea",
-      "broker": "신한투자증권",
+      "broker": "미래에셋증권",
       "analyst": "",
       "opinion": "Buy",
-      "targetPrice": 120726,
-      "currentPrice": 105900,
-      "basePrice": 105900,
+      "targetPrice": 462600,
+      "currentPrice": 385500,
+      "basePrice": 385500,
       "basePriceDate": "2026-09-27",
-      "upside": 14,
+      "upside": 20,
       "sourceUrl": "",
-      "reportTitle": "신한지주 실적 개선 기대",
-      "reasonSummary": "신한지주 실적 개선 기대. 신한투자증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 14.0%입니다. 2026-09-27 종가 대비 목표가 괴리는 14%입니다.",
+      "reportTitle": "현대모비스 실적 개선 기대",
+      "reasonSummary": "현대모비스 실적 개선 기대. 미래에셋증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 20.0%입니다. 2026-09-27 종가 대비 목표가 괴리는 20%입니다.",
       "reasonBullets": [
-        "신한투자증권가 2026-09-27에 Buy 의견과 목표가를 제시했습니다.",
-        "현재가 105,900원 대비 목표가는 120,726원입니다.",
-        "2026-09-27 종가 105,900원 대비 괴리는 14%입니다."
-      ],
-      "performance": {
-        "week1": {
-          "asOfDate": "2026-10-04",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "unavailable"
-        },
-        "month1": {
-          "asOfDate": "2026-10-27",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "pending"
-        },
-        "month3": {
-          "asOfDate": "2026-12-26",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "pending"
-        }
-      }
-    },
-    {
-      "date": "2026-09-27",
-      "ticker": "096770",
-      "name": "SK이노베이션",
-      "market": "korea",
-      "broker": "하나증권",
-      "analyst": "",
-      "opinion": "적극매수",
-      "targetPrice": 180047,
-      "currentPrice": 151300,
-      "basePrice": 151300,
-      "basePriceDate": "2026-09-27",
-      "upside": 19,
-      "sourceUrl": "",
-      "reportTitle": "SK이노베이션 실적 개선 기대",
-      "reasonSummary": "SK이노베이션 실적 개선 기대. 하나증권가 적극매수 의견을 제시했고 현재가 기준 상승여력은 19.0%입니다. 2026-09-27 종가 대비 목표가 괴리는 19%입니다.",
-      "reasonBullets": [
-        "하나증권가 2026-09-27에 적극매수 의견과 목표가를 제시했습니다.",
-        "현재가 151,300원 대비 목표가는 180,047원입니다.",
-        "2026-09-27 종가 151,300원 대비 괴리는 19%입니다."
+        "미래에셋증권가 2026-09-27에 Buy 의견과 목표가를 제시했습니다.",
+        "현재가 385,500원 대비 목표가는 462,600원입니다.",
+        "2026-09-27 종가 385,500원 대비 괴리는 20%입니다."
       ],
       "performance": {
         "week1": {
@@ -6563,6 +6515,54 @@
     },
     {
       "date": "2026-09-26",
+      "ticker": "066570",
+      "name": "LG전자",
+      "market": "korea",
+      "broker": "신한투자증권",
+      "analyst": "",
+      "opinion": "매수",
+      "targetPrice": 265065,
+      "currentPrice": 215500,
+      "basePrice": 215500,
+      "basePriceDate": "2026-09-26",
+      "upside": 23,
+      "sourceUrl": "",
+      "reportTitle": "LG전자 실적 개선 기대",
+      "reasonSummary": "LG전자 실적 개선 기대. 신한투자증권가 매수 의견을 제시했고 현재가 기준 상승여력은 23.0%입니다. 2026-09-26 종가 대비 목표가 괴리는 23%입니다.",
+      "reasonBullets": [
+        "신한투자증권가 2026-09-26에 매수 의견과 목표가를 제시했습니다.",
+        "현재가 215,500원 대비 목표가는 265,065원입니다.",
+        "2026-09-26 종가 215,500원 대비 괴리는 23%입니다."
+      ],
+      "performance": {
+        "week1": {
+          "asOfDate": "2026-10-03",
+          "closePrice": 0,
+          "returnPct": 0,
+          "targetProgressPct": 0,
+          "success": false,
+          "status": "unavailable"
+        },
+        "month1": {
+          "asOfDate": "2026-10-26",
+          "closePrice": 0,
+          "returnPct": 0,
+          "targetProgressPct": 0,
+          "success": false,
+          "status": "pending"
+        },
+        "month3": {
+          "asOfDate": "2026-12-25",
+          "closePrice": 0,
+          "returnPct": 0,
+          "targetProgressPct": 0,
+          "success": false,
+          "status": "pending"
+        }
+      }
+    },
+    {
+      "date": "2026-09-26",
       "ticker": "C",
       "name": "Citigroup Inc.",
       "market": "us",
@@ -6612,24 +6612,24 @@
     },
     {
       "date": "2026-09-25",
-      "ticker": "035720",
-      "name": "카카오",
+      "ticker": "032830",
+      "name": "삼성생명",
       "market": "korea",
       "broker": "삼성증권",
       "analyst": "",
-      "opinion": "적극매수",
-      "targetPrice": 46760,
-      "currentPrice": 33400,
-      "basePrice": 33400,
+      "opinion": "Buy",
+      "targetPrice": 322560,
+      "currentPrice": 288000,
+      "basePrice": 288000,
       "basePriceDate": "2026-09-25",
-      "upside": 40,
+      "upside": 12,
       "sourceUrl": "",
-      "reportTitle": "카카오 실적 개선 기대",
-      "reasonSummary": "카카오 실적 개선 기대. 삼성증권가 적극매수 의견을 제시했고 현재가 기준 상승여력은 40.0%입니다. 2026-09-25 종가 대비 목표가 괴리는 40%입니다.",
+      "reportTitle": "삼성생명 실적 개선 기대",
+      "reasonSummary": "삼성생명 실적 개선 기대. 삼성증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 12.0%입니다. 2026-09-25 종가 대비 목표가 괴리는 12%입니다.",
       "reasonBullets": [
-        "삼성증권가 2026-09-25에 적극매수 의견과 목표가를 제시했습니다.",
-        "현재가 33,400원 대비 목표가는 46,760원입니다.",
-        "2026-09-25 종가 33,400원 대비 괴리는 40%입니다."
+        "삼성증권가 2026-09-25에 Buy 의견과 목표가를 제시했습니다.",
+        "현재가 288,000원 대비 목표가는 322,560원입니다.",
+        "2026-09-25 종가 288,000원 대비 괴리는 12%입니다."
       ],
       "performance": {
         "week1": {
@@ -6660,24 +6660,24 @@
     },
     {
       "date": "2026-09-25",
-      "ticker": "028260",
-      "name": "삼성물산",
+      "ticker": "003550",
+      "name": "LG",
       "market": "korea",
-      "broker": "키움증권",
+      "broker": "NH투자증권",
       "analyst": "",
       "opinion": "적극매수",
-      "targetPrice": 402520,
-      "currentPrice": 347000,
-      "basePrice": 347000,
+      "targetPrice": 125882,
+      "currentPrice": 111400,
+      "basePrice": 111400,
       "basePriceDate": "2026-09-25",
-      "upside": 16,
+      "upside": 13,
       "sourceUrl": "",
-      "reportTitle": "삼성물산 실적 개선 기대",
-      "reasonSummary": "삼성물산 실적 개선 기대. 키움증권가 적극매수 의견을 제시했고 현재가 기준 상승여력은 16.0%입니다. 2026-09-25 종가 대비 목표가 괴리는 16%입니다.",
+      "reportTitle": "LG 실적 개선 기대",
+      "reasonSummary": "LG 실적 개선 기대. NH투자증권가 적극매수 의견을 제시했고 현재가 기준 상승여력은 13.0%입니다. 2026-09-25 종가 대비 목표가 괴리는 13%입니다.",
       "reasonBullets": [
-        "키움증권가 2026-09-25에 적극매수 의견과 목표가를 제시했습니다.",
-        "현재가 347,000원 대비 목표가는 402,520원입니다.",
-        "2026-09-25 종가 347,000원 대비 괴리는 16%입니다."
+        "NH투자증권가 2026-09-25에 적극매수 의견과 목표가를 제시했습니다.",
+        "현재가 111,400원 대비 목표가는 125,882원입니다.",
+        "2026-09-25 종가 111,400원 대비 괴리는 13%입니다."
       ],
       "performance": {
         "week1": {
@@ -7541,54 +7541,6 @@
     },
     {
       "date": "2026-09-24",
-      "ticker": "003550",
-      "name": "LG",
-      "market": "korea",
-      "broker": "KB증권",
-      "analyst": "",
-      "opinion": "매수",
-      "targetPrice": 125882,
-      "currentPrice": 111400,
-      "basePrice": 111400,
-      "basePriceDate": "2026-09-24",
-      "upside": 13,
-      "sourceUrl": "",
-      "reportTitle": "LG 실적 개선 기대",
-      "reasonSummary": "LG 실적 개선 기대. KB증권가 매수 의견을 제시했고 현재가 기준 상승여력은 13.0%입니다. 2026-09-24 종가 대비 목표가 괴리는 13%입니다.",
-      "reasonBullets": [
-        "KB증권가 2026-09-24에 매수 의견과 목표가를 제시했습니다.",
-        "현재가 111,400원 대비 목표가는 125,882원입니다.",
-        "2026-09-24 종가 111,400원 대비 괴리는 13%입니다."
-      ],
-      "performance": {
-        "week1": {
-          "asOfDate": "2026-10-01",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "unavailable"
-        },
-        "month1": {
-          "asOfDate": "2026-10-24",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "pending"
-        },
-        "month3": {
-          "asOfDate": "2026-12-23",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "pending"
-        }
-      }
-    },
-    {
-      "date": "2026-09-24",
       "ticker": "MRK",
       "name": "Merck & Co., Inc.",
       "market": "us",
@@ -7883,24 +7835,72 @@
     },
     {
       "date": "2026-09-23",
-      "ticker": "034730",
-      "name": "SK",
+      "ticker": "035420",
+      "name": "NAVER",
       "market": "korea",
-      "broker": "하나증권",
+      "broker": "삼성증권",
       "analyst": "",
       "opinion": "매수",
-      "targetPrice": 676260,
-      "currentPrice": 578000,
-      "basePrice": 578000,
+      "targetPrice": 259470,
+      "currentPrice": 192200,
+      "basePrice": 192200,
       "basePriceDate": "2026-09-23",
-      "upside": 17,
+      "upside": 35,
       "sourceUrl": "",
-      "reportTitle": "SK 실적 개선 기대",
-      "reasonSummary": "SK 실적 개선 기대. 하나증권가 매수 의견을 제시했고 현재가 기준 상승여력은 17.0%입니다. 2026-09-23 종가 대비 목표가 괴리는 17%입니다.",
+      "reportTitle": "NAVER 실적 개선 기대",
+      "reasonSummary": "NAVER 실적 개선 기대. 삼성증권가 매수 의견을 제시했고 현재가 기준 상승여력은 35.0%입니다. 2026-09-23 종가 대비 목표가 괴리는 35%입니다.",
       "reasonBullets": [
-        "하나증권가 2026-09-23에 매수 의견과 목표가를 제시했습니다.",
-        "현재가 578,000원 대비 목표가는 676,260원입니다.",
-        "2026-09-23 종가 578,000원 대비 괴리는 17%입니다."
+        "삼성증권가 2026-09-23에 매수 의견과 목표가를 제시했습니다.",
+        "현재가 192,200원 대비 목표가는 259,470원입니다.",
+        "2026-09-23 종가 192,200원 대비 괴리는 35%입니다."
+      ],
+      "performance": {
+        "week1": {
+          "asOfDate": "2026-09-30",
+          "closePrice": 0,
+          "returnPct": 0,
+          "targetProgressPct": 0,
+          "success": false,
+          "status": "unavailable"
+        },
+        "month1": {
+          "asOfDate": "2026-10-23",
+          "closePrice": 0,
+          "returnPct": 0,
+          "targetProgressPct": 0,
+          "success": false,
+          "status": "pending"
+        },
+        "month3": {
+          "asOfDate": "2026-12-22",
+          "closePrice": 0,
+          "returnPct": 0,
+          "targetProgressPct": 0,
+          "success": false,
+          "status": "pending"
+        }
+      }
+    },
+    {
+      "date": "2026-09-23",
+      "ticker": "000270",
+      "name": "기아",
+      "market": "korea",
+      "broker": "신한투자증권",
+      "analyst": "",
+      "opinion": "매수",
+      "targetPrice": 133576,
+      "currentPrice": 113200,
+      "basePrice": 113200,
+      "basePriceDate": "2026-09-23",
+      "upside": 18,
+      "sourceUrl": "",
+      "reportTitle": "기아 실적 개선 기대",
+      "reasonSummary": "기아 실적 개선 기대. 신한투자증권가 매수 의견을 제시했고 현재가 기준 상승여력은 18.0%입니다. 2026-09-23 종가 대비 목표가 괴리는 18%입니다.",
+      "reasonBullets": [
+        "신한투자증권가 2026-09-23에 매수 의견과 목표가를 제시했습니다.",
+        "현재가 113,200원 대비 목표가는 133,576원입니다.",
+        "2026-09-23 종가 113,200원 대비 괴리는 18%입니다."
       ],
       "performance": {
         "week1": {
@@ -8362,54 +8362,6 @@
         },
         "month3": {
           "asOfDate": "2026-12-22",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "pending"
-        }
-      }
-    },
-    {
-      "date": "2026-09-22",
-      "ticker": "032830",
-      "name": "삼성생명",
-      "market": "korea",
-      "broker": "미래에셋증권",
-      "analyst": "",
-      "opinion": "매수",
-      "targetPrice": 322560,
-      "currentPrice": 288000,
-      "basePrice": 288000,
-      "basePriceDate": "2026-09-22",
-      "upside": 12,
-      "sourceUrl": "",
-      "reportTitle": "삼성생명 실적 개선 기대",
-      "reasonSummary": "삼성생명 실적 개선 기대. 미래에셋증권가 매수 의견을 제시했고 현재가 기준 상승여력은 12.0%입니다. 2026-09-22 종가 대비 목표가 괴리는 12%입니다.",
-      "reasonBullets": [
-        "미래에셋증권가 2026-09-22에 매수 의견과 목표가를 제시했습니다.",
-        "현재가 288,000원 대비 목표가는 322,560원입니다.",
-        "2026-09-22 종가 288,000원 대비 괴리는 12%입니다."
-      ],
-      "performance": {
-        "week1": {
-          "asOfDate": "2026-09-29",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "unavailable"
-        },
-        "month1": {
-          "asOfDate": "2026-10-22",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "pending"
-        },
-        "month3": {
-          "asOfDate": "2026-12-21",
           "closePrice": 0,
           "returnPct": 0,
           "targetProgressPct": 0,
@@ -9498,54 +9450,6 @@
     },
     {
       "date": "2026-09-18",
-      "ticker": "051910",
-      "name": "LG화학",
-      "market": "korea",
-      "broker": "한국투자증권",
-      "analyst": "",
-      "opinion": "적극매수",
-      "targetPrice": 327500,
-      "currentPrice": 262000,
-      "basePrice": 262000,
-      "basePriceDate": "2026-09-18",
-      "upside": 25,
-      "sourceUrl": "",
-      "reportTitle": "LG화학 실적 개선 기대",
-      "reasonSummary": "LG화학 실적 개선 기대. 한국투자증권가 적극매수 의견을 제시했고 현재가 기준 상승여력은 25.0%입니다. 2026-09-18 종가 대비 목표가 괴리는 25%입니다.",
-      "reasonBullets": [
-        "한국투자증권가 2026-09-18에 적극매수 의견과 목표가를 제시했습니다.",
-        "현재가 262,000원 대비 목표가는 327,500원입니다.",
-        "2026-09-18 종가 262,000원 대비 괴리는 25%입니다."
-      ],
-      "performance": {
-        "week1": {
-          "asOfDate": "2026-09-25",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "unavailable"
-        },
-        "month1": {
-          "asOfDate": "2026-10-18",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "pending"
-        },
-        "month3": {
-          "asOfDate": "2026-12-17",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "pending"
-        }
-      }
-    },
-    {
-      "date": "2026-09-18",
       "ticker": "CRM",
       "name": "Salesforce, Inc.",
       "market": "us",
@@ -10036,72 +9940,24 @@
     },
     {
       "date": "2026-09-16",
-      "ticker": "006400",
-      "name": "삼성SDI",
+      "ticker": "005930",
+      "name": "삼성전자",
       "market": "korea",
-      "broker": "KB증권",
+      "broker": "신한투자증권",
       "analyst": "",
-      "opinion": "Buy",
-      "targetPrice": 677120,
-      "currentPrice": 529000,
-      "basePrice": 529000,
+      "opinion": "매수",
+      "targetPrice": 345000,
+      "currentPrice": 276000,
+      "basePrice": 276000,
       "basePriceDate": "2026-09-16",
-      "upside": 28,
+      "upside": 25,
       "sourceUrl": "",
-      "reportTitle": "삼성SDI 실적 개선 기대",
-      "reasonSummary": "삼성SDI 실적 개선 기대. KB증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 28.0%입니다. 2026-09-16 종가 대비 목표가 괴리는 28%입니다.",
+      "reportTitle": "삼성전자 실적 개선 기대",
+      "reasonSummary": "삼성전자 실적 개선 기대. 신한투자증권가 매수 의견을 제시했고 현재가 기준 상승여력은 25.0%입니다. 2026-09-16 종가 대비 목표가 괴리는 25%입니다.",
       "reasonBullets": [
-        "KB증권가 2026-09-16에 Buy 의견과 목표가를 제시했습니다.",
-        "현재가 529,000원 대비 목표가는 677,120원입니다.",
-        "2026-09-16 종가 529,000원 대비 괴리는 28%입니다."
-      ],
-      "performance": {
-        "week1": {
-          "asOfDate": "2026-09-23",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "unavailable"
-        },
-        "month1": {
-          "asOfDate": "2026-10-16",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "pending"
-        },
-        "month3": {
-          "asOfDate": "2026-12-15",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "pending"
-        }
-      }
-    },
-    {
-      "date": "2026-09-16",
-      "ticker": "035420",
-      "name": "NAVER",
-      "market": "korea",
-      "broker": "키움증권",
-      "analyst": "",
-      "opinion": "Trading Buy",
-      "targetPrice": 259470,
-      "currentPrice": 192200,
-      "basePrice": 192200,
-      "basePriceDate": "2026-09-16",
-      "upside": 35,
-      "sourceUrl": "",
-      "reportTitle": "NAVER 실적 개선 기대",
-      "reasonSummary": "NAVER 실적 개선 기대. 키움증권가 Trading Buy 의견을 제시했고 현재가 기준 상승여력은 35.0%입니다. 2026-09-16 종가 대비 목표가 괴리는 35%입니다.",
-      "reasonBullets": [
-        "키움증권가 2026-09-16에 Trading Buy 의견과 목표가를 제시했습니다.",
-        "현재가 192,200원 대비 목표가는 259,470원입니다.",
-        "2026-09-16 종가 192,200원 대비 괴리는 35%입니다."
+        "신한투자증권가 2026-09-16에 매수 의견과 목표가를 제시했습니다.",
+        "현재가 276,000원 대비 목표가는 345,000원입니다.",
+        "2026-09-16 종가 276,000원 대비 괴리는 25%입니다."
       ],
       "performance": {
         "week1": {
@@ -11161,24 +11017,24 @@
     },
     {
       "date": "2026-09-14",
-      "ticker": "000270",
-      "name": "기아",
+      "ticker": "034730",
+      "name": "SK",
       "market": "korea",
-      "broker": "미래에셋증권",
+      "broker": "삼성증권",
       "analyst": "",
-      "opinion": "적극매수",
-      "targetPrice": 133576,
-      "currentPrice": 113200,
-      "basePrice": 113200,
+      "opinion": "Trading Buy",
+      "targetPrice": 676260,
+      "currentPrice": 578000,
+      "basePrice": 578000,
       "basePriceDate": "2026-09-14",
-      "upside": 18,
+      "upside": 17,
       "sourceUrl": "",
-      "reportTitle": "기아 실적 개선 기대",
-      "reasonSummary": "기아 실적 개선 기대. 미래에셋증권가 적극매수 의견을 제시했고 현재가 기준 상승여력은 18.0%입니다. 2026-09-14 종가 대비 목표가 괴리는 18%입니다.",
+      "reportTitle": "SK 실적 개선 기대",
+      "reasonSummary": "SK 실적 개선 기대. 삼성증권가 Trading Buy 의견을 제시했고 현재가 기준 상승여력은 17.0%입니다. 2026-09-14 종가 대비 목표가 괴리는 17%입니다.",
       "reasonBullets": [
-        "미래에셋증권가 2026-09-14에 적극매수 의견과 목표가를 제시했습니다.",
-        "현재가 113,200원 대비 목표가는 133,576원입니다.",
-        "2026-09-14 종가 113,200원 대비 괴리는 18%입니다."
+        "삼성증권가 2026-09-14에 Trading Buy 의견과 목표가를 제시했습니다.",
+        "현재가 578,000원 대비 목표가는 676,260원입니다.",
+        "2026-09-14 종가 578,000원 대비 괴리는 17%입니다."
       ],
       "performance": {
         "week1": {
@@ -11503,6 +11359,54 @@
     },
     {
       "date": "2026-09-13",
+      "ticker": "000660",
+      "name": "SK하이닉스",
+      "market": "korea",
+      "broker": "하나증권",
+      "analyst": "",
+      "opinion": "적극매수",
+      "targetPrice": 2394600,
+      "currentPrice": 1842000,
+      "basePrice": 1842000,
+      "basePriceDate": "2026-09-13",
+      "upside": 30,
+      "sourceUrl": "",
+      "reportTitle": "SK하이닉스 실적 개선 기대",
+      "reasonSummary": "SK하이닉스 실적 개선 기대. 하나증권가 적극매수 의견을 제시했고 현재가 기준 상승여력은 30.0%입니다. 2026-09-13 종가 대비 목표가 괴리는 30%입니다.",
+      "reasonBullets": [
+        "하나증권가 2026-09-13에 적극매수 의견과 목표가를 제시했습니다.",
+        "현재가 1,842,000원 대비 목표가는 2,394,600원입니다.",
+        "2026-09-13 종가 1,842,000원 대비 괴리는 30%입니다."
+      ],
+      "performance": {
+        "week1": {
+          "asOfDate": "2026-09-20",
+          "closePrice": 0,
+          "returnPct": 0,
+          "targetProgressPct": 0,
+          "success": false,
+          "status": "unavailable"
+        },
+        "month1": {
+          "asOfDate": "2026-10-13",
+          "closePrice": 0,
+          "returnPct": 0,
+          "targetProgressPct": 0,
+          "success": false,
+          "status": "pending"
+        },
+        "month3": {
+          "asOfDate": "2026-12-12",
+          "closePrice": 0,
+          "returnPct": 0,
+          "targetProgressPct": 0,
+          "success": false,
+          "status": "pending"
+        }
+      }
+    },
+    {
+      "date": "2026-09-13",
       "ticker": "NFLX",
       "name": "Netflix, Inc.",
       "market": "us",
@@ -11591,6 +11495,102 @@
         },
         "month3": {
           "asOfDate": "2026-12-11",
+          "closePrice": 0,
+          "returnPct": 0,
+          "targetProgressPct": 0,
+          "success": false,
+          "status": "pending"
+        }
+      }
+    },
+    {
+      "date": "2026-09-11",
+      "ticker": "005380",
+      "name": "현대차",
+      "market": "korea",
+      "broker": "키움증권",
+      "analyst": "",
+      "opinion": "적극매수",
+      "targetPrice": 423340,
+      "currentPrice": 347000,
+      "basePrice": 347000,
+      "basePriceDate": "2026-09-11",
+      "upside": 22,
+      "sourceUrl": "",
+      "reportTitle": "현대차 실적 개선 기대",
+      "reasonSummary": "현대차 실적 개선 기대. 키움증권가 적극매수 의견을 제시했고 현재가 기준 상승여력은 22.0%입니다. 2026-09-11 종가 대비 목표가 괴리는 22%입니다.",
+      "reasonBullets": [
+        "키움증권가 2026-09-11에 적극매수 의견과 목표가를 제시했습니다.",
+        "현재가 347,000원 대비 목표가는 423,340원입니다.",
+        "2026-09-11 종가 347,000원 대비 괴리는 22%입니다."
+      ],
+      "performance": {
+        "week1": {
+          "asOfDate": "2026-09-18",
+          "closePrice": 0,
+          "returnPct": 0,
+          "targetProgressPct": 0,
+          "success": false,
+          "status": "unavailable"
+        },
+        "month1": {
+          "asOfDate": "2026-10-11",
+          "closePrice": 0,
+          "returnPct": 0,
+          "targetProgressPct": 0,
+          "success": false,
+          "status": "pending"
+        },
+        "month3": {
+          "asOfDate": "2026-12-10",
+          "closePrice": 0,
+          "returnPct": 0,
+          "targetProgressPct": 0,
+          "success": false,
+          "status": "pending"
+        }
+      }
+    },
+    {
+      "date": "2026-09-11",
+      "ticker": "003670",
+      "name": "포스코퓨처엠",
+      "market": "korea",
+      "broker": "신한투자증권",
+      "analyst": "",
+      "opinion": "Buy",
+      "targetPrice": 231632,
+      "currentPrice": 186800,
+      "basePrice": 186800,
+      "basePriceDate": "2026-09-11",
+      "upside": 24,
+      "sourceUrl": "",
+      "reportTitle": "포스코퓨처엠 실적 개선 기대",
+      "reasonSummary": "포스코퓨처엠 실적 개선 기대. 신한투자증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 24.0%입니다. 2026-09-11 종가 대비 목표가 괴리는 24%입니다.",
+      "reasonBullets": [
+        "신한투자증권가 2026-09-11에 Buy 의견과 목표가를 제시했습니다.",
+        "현재가 186,800원 대비 목표가는 231,632원입니다.",
+        "2026-09-11 종가 186,800원 대비 괴리는 24%입니다."
+      ],
+      "performance": {
+        "week1": {
+          "asOfDate": "2026-09-18",
+          "closePrice": 0,
+          "returnPct": 0,
+          "targetProgressPct": 0,
+          "success": false,
+          "status": "unavailable"
+        },
+        "month1": {
+          "asOfDate": "2026-10-11",
+          "closePrice": 0,
+          "returnPct": 0,
+          "targetProgressPct": 0,
+          "success": false,
+          "status": "pending"
+        },
+        "month3": {
+          "asOfDate": "2026-12-10",
           "closePrice": 0,
           "returnPct": 0,
           "targetProgressPct": 0,
@@ -11846,72 +11846,24 @@
     },
     {
       "date": "2026-09-10",
-      "ticker": "000660",
-      "name": "SK하이닉스",
+      "ticker": "373220",
+      "name": "LG에너지솔루션",
       "market": "korea",
       "broker": "미래에셋증권",
       "analyst": "",
       "opinion": "Buy",
-      "targetPrice": 2394600,
-      "currentPrice": 1842000,
-      "basePrice": 1842000,
+      "targetPrice": 442800,
+      "currentPrice": 369000,
+      "basePrice": 369000,
       "basePriceDate": "2026-09-10",
-      "upside": 30,
+      "upside": 20,
       "sourceUrl": "",
-      "reportTitle": "SK하이닉스 실적 개선 기대",
-      "reasonSummary": "SK하이닉스 실적 개선 기대. 미래에셋증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 30.0%입니다. 2026-09-10 종가 대비 목표가 괴리는 30%입니다.",
+      "reportTitle": "LG에너지솔루션 실적 개선 기대",
+      "reasonSummary": "LG에너지솔루션 실적 개선 기대. 미래에셋증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 20.0%입니다. 2026-09-10 종가 대비 목표가 괴리는 20%입니다.",
       "reasonBullets": [
         "미래에셋증권가 2026-09-10에 Buy 의견과 목표가를 제시했습니다.",
-        "현재가 1,842,000원 대비 목표가는 2,394,600원입니다.",
-        "2026-09-10 종가 1,842,000원 대비 괴리는 30%입니다."
-      ],
-      "performance": {
-        "week1": {
-          "asOfDate": "2026-09-17",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "unavailable"
-        },
-        "month1": {
-          "asOfDate": "2026-10-10",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "pending"
-        },
-        "month3": {
-          "asOfDate": "2026-12-09",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "pending"
-        }
-      }
-    },
-    {
-      "date": "2026-09-10",
-      "ticker": "003670",
-      "name": "포스코퓨처엠",
-      "market": "korea",
-      "broker": "하나증권",
-      "analyst": "",
-      "opinion": "Buy",
-      "targetPrice": 231632,
-      "currentPrice": 186800,
-      "basePrice": 186800,
-      "basePriceDate": "2026-09-10",
-      "upside": 24,
-      "sourceUrl": "",
-      "reportTitle": "포스코퓨처엠 실적 개선 기대",
-      "reasonSummary": "포스코퓨처엠 실적 개선 기대. 하나증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 24.0%입니다. 2026-09-10 종가 대비 목표가 괴리는 24%입니다.",
-      "reasonBullets": [
-        "하나증권가 2026-09-10에 Buy 의견과 목표가를 제시했습니다.",
-        "현재가 186,800원 대비 목표가는 231,632원입니다.",
-        "2026-09-10 종가 186,800원 대비 괴리는 24%입니다."
+        "현재가 369,000원 대비 목표가는 442,800원입니다.",
+        "2026-09-10 종가 369,000원 대비 괴리는 20%입니다."
       ],
       "performance": {
         "week1": {
@@ -12187,24 +12139,72 @@
     },
     {
       "date": "2026-09-09",
-      "ticker": "005490",
-      "name": "POSCO홀딩스",
+      "ticker": "006400",
+      "name": "삼성SDI",
       "market": "korea",
       "broker": "KB증권",
       "analyst": "",
-      "opinion": "적극매수",
-      "targetPrice": 358225,
-      "currentPrice": 311500,
-      "basePrice": 311500,
+      "opinion": "매수",
+      "targetPrice": 677120,
+      "currentPrice": 529000,
+      "basePrice": 529000,
       "basePriceDate": "2026-09-09",
-      "upside": 15,
+      "upside": 28,
       "sourceUrl": "",
-      "reportTitle": "POSCO홀딩스 실적 개선 기대",
-      "reasonSummary": "POSCO홀딩스 실적 개선 기대. KB증권가 적극매수 의견을 제시했고 현재가 기준 상승여력은 15.0%입니다. 2026-09-09 종가 대비 목표가 괴리는 15%입니다.",
+      "reportTitle": "삼성SDI 실적 개선 기대",
+      "reasonSummary": "삼성SDI 실적 개선 기대. KB증권가 매수 의견을 제시했고 현재가 기준 상승여력은 28.0%입니다. 2026-09-09 종가 대비 목표가 괴리는 28%입니다.",
       "reasonBullets": [
-        "KB증권가 2026-09-09에 적극매수 의견과 목표가를 제시했습니다.",
-        "현재가 311,500원 대비 목표가는 358,225원입니다.",
-        "2026-09-09 종가 311,500원 대비 괴리는 15%입니다."
+        "KB증권가 2026-09-09에 매수 의견과 목표가를 제시했습니다.",
+        "현재가 529,000원 대비 목표가는 677,120원입니다.",
+        "2026-09-09 종가 529,000원 대비 괴리는 28%입니다."
+      ],
+      "performance": {
+        "week1": {
+          "asOfDate": "2026-09-16",
+          "closePrice": 0,
+          "returnPct": 0,
+          "targetProgressPct": 0,
+          "success": false,
+          "status": "unavailable"
+        },
+        "month1": {
+          "asOfDate": "2026-10-09",
+          "closePrice": 0,
+          "returnPct": 0,
+          "targetProgressPct": 0,
+          "success": false,
+          "status": "pending"
+        },
+        "month3": {
+          "asOfDate": "2026-12-08",
+          "closePrice": 0,
+          "returnPct": 0,
+          "targetProgressPct": 0,
+          "success": false,
+          "status": "pending"
+        }
+      }
+    },
+    {
+      "date": "2026-09-09",
+      "ticker": "035720",
+      "name": "카카오",
+      "market": "korea",
+      "broker": "삼성증권",
+      "analyst": "",
+      "opinion": "적극매수",
+      "targetPrice": 46760,
+      "currentPrice": 33400,
+      "basePrice": 33400,
+      "basePriceDate": "2026-09-09",
+      "upside": 40,
+      "sourceUrl": "",
+      "reportTitle": "카카오 실적 개선 기대",
+      "reasonSummary": "카카오 실적 개선 기대. 삼성증권가 적극매수 의견을 제시했고 현재가 기준 상승여력은 40.0%입니다. 2026-09-09 종가 대비 목표가 괴리는 40%입니다.",
+      "reasonBullets": [
+        "삼성증권가 2026-09-09에 적극매수 의견과 목표가를 제시했습니다.",
+        "현재가 33,400원 대비 목표가는 46,760원입니다.",
+        "2026-09-09 종가 33,400원 대비 괴리는 40%입니다."
       ],
       "performance": {
         "week1": {
@@ -12480,6 +12480,54 @@
     },
     {
       "date": "2026-09-08",
+      "ticker": "015760",
+      "name": "한국전력",
+      "market": "korea",
+      "broker": "한국투자증권",
+      "analyst": "",
+      "opinion": "적극매수",
+      "targetPrice": 33411,
+      "currentPrice": 30100,
+      "basePrice": 30100,
+      "basePriceDate": "2026-09-08",
+      "upside": 11,
+      "sourceUrl": "",
+      "reportTitle": "한국전력 실적 개선 기대",
+      "reasonSummary": "한국전력 실적 개선 기대. 한국투자증권가 적극매수 의견을 제시했고 현재가 기준 상승여력은 11.0%입니다. 2026-09-08 종가 대비 목표가 괴리는 11%입니다.",
+      "reasonBullets": [
+        "한국투자증권가 2026-09-08에 적극매수 의견과 목표가를 제시했습니다.",
+        "현재가 30,100원 대비 목표가는 33,411원입니다.",
+        "2026-09-08 종가 30,100원 대비 괴리는 11%입니다."
+      ],
+      "performance": {
+        "week1": {
+          "asOfDate": "2026-09-15",
+          "closePrice": 0,
+          "returnPct": 0,
+          "targetProgressPct": 0,
+          "success": false,
+          "status": "unavailable"
+        },
+        "month1": {
+          "asOfDate": "2026-10-08",
+          "closePrice": 0,
+          "returnPct": 0,
+          "targetProgressPct": 0,
+          "success": false,
+          "status": "pending"
+        },
+        "month3": {
+          "asOfDate": "2026-12-07",
+          "closePrice": 0,
+          "returnPct": 0,
+          "targetProgressPct": 0,
+          "success": false,
+          "status": "pending"
+        }
+      }
+    },
+    {
+      "date": "2026-09-08",
       "ticker": "INTC",
       "name": "Intel Corporation",
       "market": "us",
@@ -12666,54 +12714,6 @@
         },
         "month3": {
           "asOfDate": "2026-12-06",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "pending"
-        }
-      }
-    },
-    {
-      "date": "2026-09-06",
-      "ticker": "015760",
-      "name": "한국전력",
-      "market": "korea",
-      "broker": "NH투자증권",
-      "analyst": "",
-      "opinion": "Buy",
-      "targetPrice": 33411,
-      "currentPrice": 30100,
-      "basePrice": 30100,
-      "basePriceDate": "2026-09-06",
-      "upside": 11,
-      "sourceUrl": "",
-      "reportTitle": "한국전력 실적 개선 기대",
-      "reasonSummary": "한국전력 실적 개선 기대. NH투자증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 11.0%입니다. 2026-09-06 종가 대비 목표가 괴리는 11%입니다.",
-      "reasonBullets": [
-        "NH투자증권가 2026-09-06에 Buy 의견과 목표가를 제시했습니다.",
-        "현재가 30,100원 대비 목표가는 33,411원입니다.",
-        "2026-09-06 종가 30,100원 대비 괴리는 11%입니다."
-      ],
-      "performance": {
-        "week1": {
-          "asOfDate": "2026-09-13",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "unavailable"
-        },
-        "month1": {
-          "asOfDate": "2026-10-06",
-          "closePrice": 0,
-          "returnPct": 0,
-          "targetProgressPct": 0,
-          "success": false,
-          "status": "pending"
-        },
-        "month3": {
-          "asOfDate": "2026-12-05",
           "closePrice": 0,
           "returnPct": 0,
           "targetProgressPct": 0,
@@ -16105,6 +16105,210 @@
     }
   ],
   "stockInsights": {
+    "korea:055550": {
+      "ticker": "055550",
+      "name": "신한지주",
+      "market": "korea",
+      "latestReportDate": "2026-10-03",
+      "latestBroker": "한국투자증권",
+      "latestOpinion": "매수",
+      "latestTargetPrice": 120726,
+      "latestCurrentPrice": 105900,
+      "latestBasePrice": 105900,
+      "avgUpside": 14,
+      "reportCount": 1,
+      "reasonSummary": "신한지주 실적 개선 기대. 한국투자증권가 매수 의견을 제시했고 현재가 기준 상승여력은 14.0%입니다. 2026-10-03 종가 대비 목표가 괴리는 14%입니다.",
+      "reasonBullets": [
+        "한국투자증권가 2026-10-03에 매수 의견과 목표가를 제시했습니다.",
+        "현재가 105,900원 대비 목표가는 120,726원입니다.",
+        "2026-10-03 종가 105,900원 대비 괴리는 14%입니다."
+      ],
+      "investmentLogic": {
+        "summary": "신한지주 실적 개선 기대",
+        "bullets": [
+          "신한지주 실적 개선 기대",
+          "신한지주 실적 개선 기대  신한지주 실적 개선 기대.",
+          "한국투자증권가 매수 의견을 제시했고 현재가 기준 상승여력은 14.0%입니다."
+        ]
+      },
+      "estimateRevision": {
+        "summary": "상향 신호입니다. 리포트 원문에서 추정치 관련 표현을 기준으로 판단했습니다.",
+        "bullets": [
+          "신한지주 실적 개선 기대  신한지주 실적 개선 기대.",
+          "한국투자증권가 매수 의견을 제시했고 현재가 기준 상승여력은 14.0%입니다.",
+          "2026-10-03 종가 대비 목표가 괴리는 14%입니다."
+        ],
+        "signal": "up"
+      },
+      "valuation": {
+        "summary": "현재가 105,900원 대비 목표가 120,726원가 제시돼 밸류에이션 여력을 확인할 수 있습니다.",
+        "bullets": [
+          "신한지주 실적 개선 기대  신한지주 실적 개선 기대.",
+          "한국투자증권가 매수 의견을 제시했고 현재가 기준 상승여력은 14.0%입니다.",
+          "2026-10-03 종가 대비 목표가 괴리는 14%입니다."
+        ]
+      },
+      "sectorCycle": {
+        "summary": "신한지주 실적 개선 기대  신한지주 실적 개선 기대.",
+        "bullets": [
+          "신한지주 실적 개선 기대  신한지주 실적 개선 기대.",
+          "한국투자증권가 매수 의견을 제시했고 현재가 기준 상승여력은 14.0%입니다.",
+          "2026-10-03 종가 대비 목표가 괴리는 14%입니다."
+        ]
+      },
+      "relatedReports": [
+        {
+          "date": "2026-10-03",
+          "ticker": "055550",
+          "name": "신한지주",
+          "market": "korea",
+          "broker": "한국투자증권",
+          "analyst": "",
+          "opinion": "매수",
+          "targetPrice": 120726,
+          "currentPrice": 105900,
+          "basePrice": 105900,
+          "basePriceDate": "2026-10-03",
+          "upside": 14,
+          "sourceUrl": "",
+          "reportTitle": "신한지주 실적 개선 기대",
+          "reasonSummary": "신한지주 실적 개선 기대. 한국투자증권가 매수 의견을 제시했고 현재가 기준 상승여력은 14.0%입니다. 2026-10-03 종가 대비 목표가 괴리는 14%입니다.",
+          "reasonBullets": [
+            "한국투자증권가 2026-10-03에 매수 의견과 목표가를 제시했습니다.",
+            "현재가 105,900원 대비 목표가는 120,726원입니다.",
+            "2026-10-03 종가 105,900원 대비 괴리는 14%입니다."
+          ],
+          "performance": {
+            "week1": {
+              "asOfDate": "2026-10-10",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            },
+            "month1": {
+              "asOfDate": "2026-11-02",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            },
+            "month3": {
+              "asOfDate": "2027-01-01",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            }
+          }
+        }
+      ]
+    },
+    "korea:028260": {
+      "ticker": "028260",
+      "name": "삼성물산",
+      "market": "korea",
+      "latestReportDate": "2026-10-03",
+      "latestBroker": "하나증권",
+      "latestOpinion": "매수",
+      "latestTargetPrice": 402520,
+      "latestCurrentPrice": 347000,
+      "latestBasePrice": 347000,
+      "avgUpside": 16,
+      "reportCount": 1,
+      "reasonSummary": "삼성물산 실적 개선 기대. 하나증권가 매수 의견을 제시했고 현재가 기준 상승여력은 16.0%입니다. 2026-10-03 종가 대비 목표가 괴리는 16%입니다.",
+      "reasonBullets": [
+        "하나증권가 2026-10-03에 매수 의견과 목표가를 제시했습니다.",
+        "현재가 347,000원 대비 목표가는 402,520원입니다.",
+        "2026-10-03 종가 347,000원 대비 괴리는 16%입니다."
+      ],
+      "investmentLogic": {
+        "summary": "삼성물산 실적 개선 기대",
+        "bullets": [
+          "삼성물산 실적 개선 기대",
+          "삼성물산 실적 개선 기대  삼성물산 실적 개선 기대.",
+          "하나증권가 매수 의견을 제시했고 현재가 기준 상승여력은 16.0%입니다."
+        ]
+      },
+      "estimateRevision": {
+        "summary": "상향 신호입니다. 리포트 원문에서 추정치 관련 표현을 기준으로 판단했습니다.",
+        "bullets": [
+          "삼성물산 실적 개선 기대  삼성물산 실적 개선 기대.",
+          "하나증권가 매수 의견을 제시했고 현재가 기준 상승여력은 16.0%입니다.",
+          "2026-10-03 종가 대비 목표가 괴리는 16%입니다."
+        ],
+        "signal": "up"
+      },
+      "valuation": {
+        "summary": "현재가 347,000원 대비 목표가 402,520원가 제시돼 밸류에이션 여력을 확인할 수 있습니다.",
+        "bullets": [
+          "삼성물산 실적 개선 기대  삼성물산 실적 개선 기대.",
+          "하나증권가 매수 의견을 제시했고 현재가 기준 상승여력은 16.0%입니다.",
+          "2026-10-03 종가 대비 목표가 괴리는 16%입니다."
+        ]
+      },
+      "sectorCycle": {
+        "summary": "삼성물산 실적 개선 기대  삼성물산 실적 개선 기대.",
+        "bullets": [
+          "삼성물산 실적 개선 기대  삼성물산 실적 개선 기대.",
+          "하나증권가 매수 의견을 제시했고 현재가 기준 상승여력은 16.0%입니다.",
+          "2026-10-03 종가 대비 목표가 괴리는 16%입니다."
+        ]
+      },
+      "relatedReports": [
+        {
+          "date": "2026-10-03",
+          "ticker": "028260",
+          "name": "삼성물산",
+          "market": "korea",
+          "broker": "하나증권",
+          "analyst": "",
+          "opinion": "매수",
+          "targetPrice": 402520,
+          "currentPrice": 347000,
+          "basePrice": 347000,
+          "basePriceDate": "2026-10-03",
+          "upside": 16,
+          "sourceUrl": "",
+          "reportTitle": "삼성물산 실적 개선 기대",
+          "reasonSummary": "삼성물산 실적 개선 기대. 하나증권가 매수 의견을 제시했고 현재가 기준 상승여력은 16.0%입니다. 2026-10-03 종가 대비 목표가 괴리는 16%입니다.",
+          "reasonBullets": [
+            "하나증권가 2026-10-03에 매수 의견과 목표가를 제시했습니다.",
+            "현재가 347,000원 대비 목표가는 402,520원입니다.",
+            "2026-10-03 종가 347,000원 대비 괴리는 16%입니다."
+          ],
+          "performance": {
+            "week1": {
+              "asOfDate": "2026-10-10",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            },
+            "month1": {
+              "asOfDate": "2026-11-02",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            },
+            "month3": {
+              "asOfDate": "2027-01-01",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            }
+          }
+        }
+      ]
+    },
     "us:NKE": {
       "ticker": "NKE",
       "name": "NIKE, Inc.",
@@ -16306,180 +16510,78 @@
         }
       ]
     },
-    "korea:005930": {
-      "ticker": "005930",
-      "name": "삼성전자",
+    "korea:051910": {
+      "ticker": "051910",
+      "name": "LG화학",
       "market": "korea",
       "latestReportDate": "2026-10-02",
-      "latestBroker": "하나증권",
-      "latestOpinion": "적극매수",
-      "latestTargetPrice": 345000,
-      "latestCurrentPrice": 276000,
-      "latestBasePrice": 276000,
+      "latestBroker": "KB증권",
+      "latestOpinion": "Buy",
+      "latestTargetPrice": 327500,
+      "latestCurrentPrice": 262000,
+      "latestBasePrice": 262000,
       "avgUpside": 25,
       "reportCount": 1,
-      "reasonSummary": "삼성전자 실적 개선 기대. 하나증권가 적극매수 의견을 제시했고 현재가 기준 상승여력은 25.0%입니다. 2026-10-02 종가 대비 목표가 괴리는 25%입니다.",
+      "reasonSummary": "LG화학 실적 개선 기대. KB증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 25.0%입니다. 2026-10-02 종가 대비 목표가 괴리는 25%입니다.",
       "reasonBullets": [
-        "하나증권가 2026-10-02에 적극매수 의견과 목표가를 제시했습니다.",
-        "현재가 276,000원 대비 목표가는 345,000원입니다.",
-        "2026-10-02 종가 276,000원 대비 괴리는 25%입니다."
+        "KB증권가 2026-10-02에 Buy 의견과 목표가를 제시했습니다.",
+        "현재가 262,000원 대비 목표가는 327,500원입니다.",
+        "2026-10-02 종가 262,000원 대비 괴리는 25%입니다."
       ],
       "investmentLogic": {
-        "summary": "삼성전자 실적 개선 기대",
+        "summary": "LG화학 실적 개선 기대",
         "bullets": [
-          "삼성전자 실적 개선 기대",
-          "삼성전자 실적 개선 기대  삼성전자 실적 개선 기대.",
-          "하나증권가 적극매수 의견을 제시했고 현재가 기준 상승여력은 25.0%입니다."
+          "LG화학 실적 개선 기대",
+          "LG화학 실적 개선 기대  LG화학 실적 개선 기대.",
+          "KB증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 25.0%입니다."
         ]
       },
       "estimateRevision": {
         "summary": "상향 신호입니다. 리포트 원문에서 추정치 관련 표현을 기준으로 판단했습니다.",
         "bullets": [
-          "삼성전자 실적 개선 기대  삼성전자 실적 개선 기대.",
-          "하나증권가 적극매수 의견을 제시했고 현재가 기준 상승여력은 25.0%입니다.",
+          "LG화학 실적 개선 기대  LG화학 실적 개선 기대.",
+          "KB증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 25.0%입니다.",
           "2026-10-02 종가 대비 목표가 괴리는 25%입니다."
         ],
         "signal": "up"
       },
       "valuation": {
-        "summary": "현재가 276,000원 대비 목표가 345,000원가 제시돼 밸류에이션 여력을 확인할 수 있습니다.",
+        "summary": "현재가 262,000원 대비 목표가 327,500원가 제시돼 밸류에이션 여력을 확인할 수 있습니다.",
         "bullets": [
-          "삼성전자 실적 개선 기대  삼성전자 실적 개선 기대.",
-          "하나증권가 적극매수 의견을 제시했고 현재가 기준 상승여력은 25.0%입니다.",
+          "LG화학 실적 개선 기대  LG화학 실적 개선 기대.",
+          "KB증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 25.0%입니다.",
           "2026-10-02 종가 대비 목표가 괴리는 25%입니다."
         ]
       },
       "sectorCycle": {
-        "summary": "삼성전자 실적 개선 기대  삼성전자 실적 개선 기대.",
+        "summary": "LG화학 실적 개선 기대  LG화학 실적 개선 기대.",
         "bullets": [
-          "삼성전자 실적 개선 기대  삼성전자 실적 개선 기대.",
-          "하나증권가 적극매수 의견을 제시했고 현재가 기준 상승여력은 25.0%입니다.",
+          "LG화학 실적 개선 기대  LG화학 실적 개선 기대.",
+          "KB증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 25.0%입니다.",
           "2026-10-02 종가 대비 목표가 괴리는 25%입니다."
         ]
       },
       "relatedReports": [
         {
           "date": "2026-10-02",
-          "ticker": "005930",
-          "name": "삼성전자",
+          "ticker": "051910",
+          "name": "LG화학",
           "market": "korea",
-          "broker": "하나증권",
+          "broker": "KB증권",
           "analyst": "",
-          "opinion": "적극매수",
-          "targetPrice": 345000,
-          "currentPrice": 276000,
-          "basePrice": 276000,
+          "opinion": "Buy",
+          "targetPrice": 327500,
+          "currentPrice": 262000,
+          "basePrice": 262000,
           "basePriceDate": "2026-10-02",
           "upside": 25,
           "sourceUrl": "",
-          "reportTitle": "삼성전자 실적 개선 기대",
-          "reasonSummary": "삼성전자 실적 개선 기대. 하나증권가 적극매수 의견을 제시했고 현재가 기준 상승여력은 25.0%입니다. 2026-10-02 종가 대비 목표가 괴리는 25%입니다.",
+          "reportTitle": "LG화학 실적 개선 기대",
+          "reasonSummary": "LG화학 실적 개선 기대. KB증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 25.0%입니다. 2026-10-02 종가 대비 목표가 괴리는 25%입니다.",
           "reasonBullets": [
-            "하나증권가 2026-10-02에 적극매수 의견과 목표가를 제시했습니다.",
-            "현재가 276,000원 대비 목표가는 345,000원입니다.",
-            "2026-10-02 종가 276,000원 대비 괴리는 25%입니다."
-          ],
-          "performance": {
-            "week1": {
-              "asOfDate": "2026-10-09",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            },
-            "month1": {
-              "asOfDate": "2026-11-01",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            },
-            "month3": {
-              "asOfDate": "2026-12-31",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            }
-          }
-        }
-      ]
-    },
-    "korea:373220": {
-      "ticker": "373220",
-      "name": "LG에너지솔루션",
-      "market": "korea",
-      "latestReportDate": "2026-10-02",
-      "latestBroker": "미래에셋증권",
-      "latestOpinion": "Trading Buy",
-      "latestTargetPrice": 442800,
-      "latestCurrentPrice": 369000,
-      "latestBasePrice": 369000,
-      "avgUpside": 20,
-      "reportCount": 1,
-      "reasonSummary": "LG에너지솔루션 실적 개선 기대. 미래에셋증권가 Trading Buy 의견을 제시했고 현재가 기준 상승여력은 20.0%입니다. 2026-10-02 종가 대비 목표가 괴리는 20%입니다.",
-      "reasonBullets": [
-        "미래에셋증권가 2026-10-02에 Trading Buy 의견과 목표가를 제시했습니다.",
-        "현재가 369,000원 대비 목표가는 442,800원입니다.",
-        "2026-10-02 종가 369,000원 대비 괴리는 20%입니다."
-      ],
-      "investmentLogic": {
-        "summary": "LG에너지솔루션 실적 개선 기대",
-        "bullets": [
-          "LG에너지솔루션 실적 개선 기대",
-          "LG에너지솔루션 실적 개선 기대  LG에너지솔루션 실적 개선 기대.",
-          "미래에셋증권가 Trading Buy 의견을 제시했고 현재가 기준 상승여력은 20.0%입니다."
-        ]
-      },
-      "estimateRevision": {
-        "summary": "상향 신호입니다. 리포트 원문에서 추정치 관련 표현을 기준으로 판단했습니다.",
-        "bullets": [
-          "LG에너지솔루션 실적 개선 기대  LG에너지솔루션 실적 개선 기대.",
-          "미래에셋증권가 Trading Buy 의견을 제시했고 현재가 기준 상승여력은 20.0%입니다.",
-          "2026-10-02 종가 대비 목표가 괴리는 20%입니다."
-        ],
-        "signal": "up"
-      },
-      "valuation": {
-        "summary": "현재가 369,000원 대비 목표가 442,800원가 제시돼 밸류에이션 여력을 확인할 수 있습니다.",
-        "bullets": [
-          "LG에너지솔루션 실적 개선 기대  LG에너지솔루션 실적 개선 기대.",
-          "미래에셋증권가 Trading Buy 의견을 제시했고 현재가 기준 상승여력은 20.0%입니다.",
-          "2026-10-02 종가 대비 목표가 괴리는 20%입니다."
-        ]
-      },
-      "sectorCycle": {
-        "summary": "LG에너지솔루션 실적 개선 기대  LG에너지솔루션 실적 개선 기대.",
-        "bullets": [
-          "LG에너지솔루션 실적 개선 기대  LG에너지솔루션 실적 개선 기대.",
-          "미래에셋증권가 Trading Buy 의견을 제시했고 현재가 기준 상승여력은 20.0%입니다.",
-          "2026-10-02 종가 대비 목표가 괴리는 20%입니다."
-        ]
-      },
-      "relatedReports": [
-        {
-          "date": "2026-10-02",
-          "ticker": "373220",
-          "name": "LG에너지솔루션",
-          "market": "korea",
-          "broker": "미래에셋증권",
-          "analyst": "",
-          "opinion": "Trading Buy",
-          "targetPrice": 442800,
-          "currentPrice": 369000,
-          "basePrice": 369000,
-          "basePriceDate": "2026-10-02",
-          "upside": 20,
-          "sourceUrl": "",
-          "reportTitle": "LG에너지솔루션 실적 개선 기대",
-          "reasonSummary": "LG에너지솔루션 실적 개선 기대. 미래에셋증권가 Trading Buy 의견을 제시했고 현재가 기준 상승여력은 20.0%입니다. 2026-10-02 종가 대비 목표가 괴리는 20%입니다.",
-          "reasonBullets": [
-            "미래에셋증권가 2026-10-02에 Trading Buy 의견과 목표가를 제시했습니다.",
-            "현재가 369,000원 대비 목표가는 442,800원입니다.",
-            "2026-10-02 종가 369,000원 대비 괴리는 20%입니다."
+            "KB증권가 2026-10-02에 Buy 의견과 목표가를 제시했습니다.",
+            "현재가 262,000원 대비 목표가는 327,500원입니다.",
+            "2026-10-02 종가 262,000원 대비 괴리는 25%입니다."
           ],
           "performance": {
             "week1": {
@@ -16684,12 +16786,12 @@
           ],
           "performance": {
             "week1": {
-              "asOfDate": "2026-10-05",
-              "closePrice": 0,
-              "returnPct": 0,
+              "asOfDate": "2026-10-02",
+              "closePrice": 333.69,
+              "returnPct": -1.4,
               "targetProgressPct": 0,
               "success": false,
-              "status": "pending"
+              "status": "complete"
             },
             "month1": {
               "asOfDate": "2026-10-28",
@@ -17032,12 +17134,12 @@
           ],
           "performance": {
             "week1": {
-              "asOfDate": "2026-10-05",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
+              "asOfDate": "2026-10-02",
+              "closePrice": 233.95,
+              "returnPct": 2.2,
+              "targetProgressPct": 3.2,
               "success": false,
-              "status": "pending"
+              "status": "complete"
             },
             "month1": {
               "asOfDate": "2026-10-28",
@@ -18532,12 +18634,12 @@
           ],
           "performance": {
             "week1": {
-              "asOfDate": "2026-10-05",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
+              "asOfDate": "2026-10-02",
+              "closePrice": 341.04,
+              "returnPct": 3.9,
+              "targetProgressPct": 13.6,
               "success": false,
-              "status": "pending"
+              "status": "complete"
             },
             "month1": {
               "asOfDate": "2026-10-28",
@@ -19130,12 +19232,12 @@
           ],
           "performance": {
             "week1": {
-              "asOfDate": "2026-10-05",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
+              "asOfDate": "2026-10-02",
+              "closePrice": 403.24,
+              "returnPct": 2.8,
+              "targetProgressPct": 33.9,
               "success": false,
-              "status": "pending"
+              "status": "complete"
             },
             "month1": {
               "asOfDate": "2026-10-28",
@@ -19527,12 +19629,12 @@
           ],
           "performance": {
             "week1": {
-              "asOfDate": "2026-10-05",
-              "closePrice": 0,
-              "returnPct": 0,
+              "asOfDate": "2026-10-02",
+              "closePrice": 53.75,
+              "returnPct": -3.1,
               "targetProgressPct": 0,
               "success": false,
-              "status": "pending"
+              "status": "complete"
             },
             "month1": {
               "asOfDate": "2026-10-28",
@@ -19777,12 +19879,12 @@
           ],
           "performance": {
             "week1": {
-              "asOfDate": "2026-10-05",
-              "closePrice": 0,
-              "returnPct": 0,
+              "asOfDate": "2026-10-02",
+              "closePrice": 128.5,
+              "returnPct": -2.1,
               "targetProgressPct": 0,
               "success": false,
-              "status": "pending"
+              "status": "complete"
             },
             "month1": {
               "asOfDate": "2026-10-28",
@@ -19978,12 +20080,12 @@
           ],
           "performance": {
             "week1": {
-              "asOfDate": "2026-10-05",
-              "closePrice": 0,
-              "returnPct": 0,
+              "asOfDate": "2026-10-02",
+              "closePrice": 256.03,
+              "returnPct": -5.9,
               "targetProgressPct": 0,
               "success": false,
-              "status": "pending"
+              "status": "complete"
             },
             "month1": {
               "asOfDate": "2026-10-28",
@@ -20831,12 +20933,12 @@
           ],
           "performance": {
             "week1": {
-              "asOfDate": "2026-10-05",
-              "closePrice": 0,
-              "returnPct": 0,
+              "asOfDate": "2026-10-02",
+              "closePrice": 45.92,
+              "returnPct": -1.6,
               "targetProgressPct": 0,
               "success": false,
-              "status": "pending"
+              "status": "complete"
             },
             "month1": {
               "asOfDate": "2026-10-28",
@@ -20897,108 +20999,6 @@
             },
             "month3": {
               "asOfDate": "2026-12-21",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            }
-          }
-        }
-      ]
-    },
-    "korea:066570": {
-      "ticker": "066570",
-      "name": "LG전자",
-      "market": "korea",
-      "latestReportDate": "2026-10-01",
-      "latestBroker": "신한투자증권",
-      "latestOpinion": "매수",
-      "latestTargetPrice": 265065,
-      "latestCurrentPrice": 215500,
-      "latestBasePrice": 215500,
-      "avgUpside": 23,
-      "reportCount": 1,
-      "reasonSummary": "LG전자 실적 개선 기대. 신한투자증권가 매수 의견을 제시했고 현재가 기준 상승여력은 23.0%입니다. 2026-10-01 종가 대비 목표가 괴리는 23%입니다.",
-      "reasonBullets": [
-        "신한투자증권가 2026-10-01에 매수 의견과 목표가를 제시했습니다.",
-        "현재가 215,500원 대비 목표가는 265,065원입니다.",
-        "2026-10-01 종가 215,500원 대비 괴리는 23%입니다."
-      ],
-      "investmentLogic": {
-        "summary": "LG전자 실적 개선 기대",
-        "bullets": [
-          "LG전자 실적 개선 기대",
-          "LG전자 실적 개선 기대  LG전자 실적 개선 기대.",
-          "신한투자증권가 매수 의견을 제시했고 현재가 기준 상승여력은 23.0%입니다."
-        ]
-      },
-      "estimateRevision": {
-        "summary": "상향 신호입니다. 리포트 원문에서 추정치 관련 표현을 기준으로 판단했습니다.",
-        "bullets": [
-          "LG전자 실적 개선 기대  LG전자 실적 개선 기대.",
-          "신한투자증권가 매수 의견을 제시했고 현재가 기준 상승여력은 23.0%입니다.",
-          "2026-10-01 종가 대비 목표가 괴리는 23%입니다."
-        ],
-        "signal": "up"
-      },
-      "valuation": {
-        "summary": "현재가 215,500원 대비 목표가 265,065원가 제시돼 밸류에이션 여력을 확인할 수 있습니다.",
-        "bullets": [
-          "LG전자 실적 개선 기대  LG전자 실적 개선 기대.",
-          "신한투자증권가 매수 의견을 제시했고 현재가 기준 상승여력은 23.0%입니다.",
-          "2026-10-01 종가 대비 목표가 괴리는 23%입니다."
-        ]
-      },
-      "sectorCycle": {
-        "summary": "LG전자 실적 개선 기대  LG전자 실적 개선 기대.",
-        "bullets": [
-          "LG전자 실적 개선 기대  LG전자 실적 개선 기대.",
-          "신한투자증권가 매수 의견을 제시했고 현재가 기준 상승여력은 23.0%입니다.",
-          "2026-10-01 종가 대비 목표가 괴리는 23%입니다."
-        ]
-      },
-      "relatedReports": [
-        {
-          "date": "2026-10-01",
-          "ticker": "066570",
-          "name": "LG전자",
-          "market": "korea",
-          "broker": "신한투자증권",
-          "analyst": "",
-          "opinion": "매수",
-          "targetPrice": 265065,
-          "currentPrice": 215500,
-          "basePrice": 215500,
-          "basePriceDate": "2026-10-01",
-          "upside": 23,
-          "sourceUrl": "",
-          "reportTitle": "LG전자 실적 개선 기대",
-          "reasonSummary": "LG전자 실적 개선 기대. 신한투자증권가 매수 의견을 제시했고 현재가 기준 상승여력은 23.0%입니다. 2026-10-01 종가 대비 목표가 괴리는 23%입니다.",
-          "reasonBullets": [
-            "신한투자증권가 2026-10-01에 매수 의견과 목표가를 제시했습니다.",
-            "현재가 215,500원 대비 목표가는 265,065원입니다.",
-            "2026-10-01 종가 215,500원 대비 괴리는 23%입니다."
-          ],
-          "performance": {
-            "week1": {
-              "asOfDate": "2026-10-08",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            },
-            "month1": {
-              "asOfDate": "2026-10-31",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            },
-            "month3": {
-              "asOfDate": "2026-12-30",
               "closePrice": 0,
               "returnPct": 0,
               "targetProgressPct": 0,
@@ -21232,12 +21232,12 @@
           ],
           "performance": {
             "week1": {
-              "asOfDate": "2026-10-05",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
+              "asOfDate": "2026-10-02",
+              "closePrice": 517.53,
+              "returnPct": 1.6,
+              "targetProgressPct": 12.6,
               "success": false,
-              "status": "pending"
+              "status": "complete"
             },
             "month1": {
               "asOfDate": "2026-10-28",
@@ -23080,12 +23080,12 @@
           ],
           "performance": {
             "week1": {
-              "asOfDate": "2026-10-05",
-              "closePrice": 0,
-              "returnPct": 0,
+              "asOfDate": "2026-10-02",
+              "closePrice": 1142.85,
+              "returnPct": -3.5,
               "targetProgressPct": 0,
               "success": false,
-              "status": "pending"
+              "status": "complete"
             },
             "month1": {
               "asOfDate": "2026-10-28",
@@ -23129,12 +23129,12 @@
           ],
           "performance": {
             "week1": {
-              "asOfDate": "2026-10-05",
-              "closePrice": 0,
-              "returnPct": 0,
+              "asOfDate": "2026-10-02",
+              "closePrice": 1142.85,
+              "returnPct": -3.5,
               "targetProgressPct": 0,
               "success": false,
-              "status": "pending"
+              "status": "complete"
             },
             "month1": {
               "asOfDate": "2026-10-28",
@@ -24526,12 +24526,12 @@
           ],
           "performance": {
             "week1": {
-              "asOfDate": "2026-10-05",
-              "closePrice": 0,
-              "returnPct": 0,
+              "asOfDate": "2026-10-02",
+              "closePrice": 67.06,
+              "returnPct": -3.1,
               "targetProgressPct": 0,
               "success": false,
-              "status": "pending"
+              "status": "complete"
             },
             "month1": {
               "asOfDate": "2026-10-28",
@@ -24651,78 +24651,78 @@
         }
       ]
     },
-    "korea:005380": {
-      "ticker": "005380",
-      "name": "현대차",
+    "korea:096770": {
+      "ticker": "096770",
+      "name": "SK이노베이션",
       "market": "korea",
       "latestReportDate": "2026-09-30",
-      "latestBroker": "NH투자증권",
-      "latestOpinion": "매수",
-      "latestTargetPrice": 423340,
-      "latestCurrentPrice": 347000,
-      "latestBasePrice": 347000,
-      "avgUpside": 22,
+      "latestBroker": "한국투자증권",
+      "latestOpinion": "Buy",
+      "latestTargetPrice": 180047,
+      "latestCurrentPrice": 151300,
+      "latestBasePrice": 151300,
+      "avgUpside": 19,
       "reportCount": 1,
-      "reasonSummary": "현대차 실적 개선 기대. NH투자증권가 매수 의견을 제시했고 현재가 기준 상승여력은 22.0%입니다. 2026-09-30 종가 대비 목표가 괴리는 22%입니다.",
+      "reasonSummary": "SK이노베이션 실적 개선 기대. 한국투자증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 19.0%입니다. 2026-09-30 종가 대비 목표가 괴리는 19%입니다.",
       "reasonBullets": [
-        "NH투자증권가 2026-09-30에 매수 의견과 목표가를 제시했습니다.",
-        "현재가 347,000원 대비 목표가는 423,340원입니다.",
-        "2026-09-30 종가 347,000원 대비 괴리는 22%입니다."
+        "한국투자증권가 2026-09-30에 Buy 의견과 목표가를 제시했습니다.",
+        "현재가 151,300원 대비 목표가는 180,047원입니다.",
+        "2026-09-30 종가 151,300원 대비 괴리는 19%입니다."
       ],
       "investmentLogic": {
-        "summary": "현대차 실적 개선 기대",
+        "summary": "SK이노베이션 실적 개선 기대",
         "bullets": [
-          "현대차 실적 개선 기대",
-          "현대차 실적 개선 기대  현대차 실적 개선 기대.",
-          "NH투자증권가 매수 의견을 제시했고 현재가 기준 상승여력은 22.0%입니다."
+          "SK이노베이션 실적 개선 기대",
+          "SK이노베이션 실적 개선 기대  SK이노베이션 실적 개선 기대.",
+          "한국투자증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 19.0%입니다."
         ]
       },
       "estimateRevision": {
         "summary": "상향 신호입니다. 리포트 원문에서 추정치 관련 표현을 기준으로 판단했습니다.",
         "bullets": [
-          "현대차 실적 개선 기대  현대차 실적 개선 기대.",
-          "NH투자증권가 매수 의견을 제시했고 현재가 기준 상승여력은 22.0%입니다.",
-          "2026-09-30 종가 대비 목표가 괴리는 22%입니다."
+          "SK이노베이션 실적 개선 기대  SK이노베이션 실적 개선 기대.",
+          "한국투자증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 19.0%입니다.",
+          "2026-09-30 종가 대비 목표가 괴리는 19%입니다."
         ],
         "signal": "up"
       },
       "valuation": {
-        "summary": "현재가 347,000원 대비 목표가 423,340원가 제시돼 밸류에이션 여력을 확인할 수 있습니다.",
+        "summary": "현재가 151,300원 대비 목표가 180,047원가 제시돼 밸류에이션 여력을 확인할 수 있습니다.",
         "bullets": [
-          "현대차 실적 개선 기대  현대차 실적 개선 기대.",
-          "NH투자증권가 매수 의견을 제시했고 현재가 기준 상승여력은 22.0%입니다.",
-          "2026-09-30 종가 대비 목표가 괴리는 22%입니다."
+          "SK이노베이션 실적 개선 기대  SK이노베이션 실적 개선 기대.",
+          "한국투자증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 19.0%입니다.",
+          "2026-09-30 종가 대비 목표가 괴리는 19%입니다."
         ]
       },
       "sectorCycle": {
-        "summary": "현대차 실적 개선 기대  현대차 실적 개선 기대.",
+        "summary": "SK이노베이션 실적 개선 기대  SK이노베이션 실적 개선 기대.",
         "bullets": [
-          "현대차 실적 개선 기대  현대차 실적 개선 기대.",
-          "NH투자증권가 매수 의견을 제시했고 현재가 기준 상승여력은 22.0%입니다.",
-          "2026-09-30 종가 대비 목표가 괴리는 22%입니다."
+          "SK이노베이션 실적 개선 기대  SK이노베이션 실적 개선 기대.",
+          "한국투자증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 19.0%입니다.",
+          "2026-09-30 종가 대비 목표가 괴리는 19%입니다."
         ]
       },
       "relatedReports": [
         {
           "date": "2026-09-30",
-          "ticker": "005380",
-          "name": "현대차",
+          "ticker": "096770",
+          "name": "SK이노베이션",
           "market": "korea",
-          "broker": "NH투자증권",
+          "broker": "한국투자증권",
           "analyst": "",
-          "opinion": "매수",
-          "targetPrice": 423340,
-          "currentPrice": 347000,
-          "basePrice": 347000,
+          "opinion": "Buy",
+          "targetPrice": 180047,
+          "currentPrice": 151300,
+          "basePrice": 151300,
           "basePriceDate": "2026-09-30",
-          "upside": 22,
+          "upside": 19,
           "sourceUrl": "",
-          "reportTitle": "현대차 실적 개선 기대",
-          "reasonSummary": "현대차 실적 개선 기대. NH투자증권가 매수 의견을 제시했고 현재가 기준 상승여력은 22.0%입니다. 2026-09-30 종가 대비 목표가 괴리는 22%입니다.",
+          "reportTitle": "SK이노베이션 실적 개선 기대",
+          "reasonSummary": "SK이노베이션 실적 개선 기대. 한국투자증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 19.0%입니다. 2026-09-30 종가 대비 목표가 괴리는 19%입니다.",
           "reasonBullets": [
-            "NH투자증권가 2026-09-30에 매수 의견과 목표가를 제시했습니다.",
-            "현재가 347,000원 대비 목표가는 423,340원입니다.",
-            "2026-09-30 종가 347,000원 대비 괴리는 22%입니다."
+            "한국투자증권가 2026-09-30에 Buy 의견과 목표가를 제시했습니다.",
+            "현재가 151,300원 대비 목표가는 180,047원입니다.",
+            "2026-09-30 종가 151,300원 대비 괴리는 19%입니다."
           ],
           "performance": {
             "week1": {
@@ -24927,12 +24927,12 @@
           ],
           "performance": {
             "week1": {
-              "asOfDate": "2026-10-05",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
+              "asOfDate": "2026-10-02",
+              "closePrice": 251.52,
+              "returnPct": 2.2,
+              "targetProgressPct": 7.3,
               "success": false,
-              "status": "pending"
+              "status": "complete"
             },
             "month1": {
               "asOfDate": "2026-10-28",
@@ -25476,12 +25476,12 @@
           ],
           "performance": {
             "week1": {
-              "asOfDate": "2026-10-05",
-              "closePrice": 0,
-              "returnPct": 0,
+              "asOfDate": "2026-10-02",
+              "closePrice": 302.78,
+              "returnPct": -1.2,
               "targetProgressPct": 0,
               "success": false,
-              "status": "pending"
+              "status": "complete"
             },
             "month1": {
               "asOfDate": "2026-10-28",
@@ -25726,12 +25726,12 @@
           ],
           "performance": {
             "week1": {
-              "asOfDate": "2026-10-05",
-              "closePrice": 0,
-              "returnPct": 0,
+              "asOfDate": "2026-10-02",
+              "closePrice": 85.65,
+              "returnPct": -1.8,
               "targetProgressPct": 0,
               "success": false,
-              "status": "pending"
+              "status": "complete"
             },
             "month1": {
               "asOfDate": "2026-10-28",
@@ -26025,12 +26025,12 @@
           ],
           "performance": {
             "week1": {
-              "asOfDate": "2026-10-05",
-              "closePrice": 0,
-              "returnPct": 0,
+              "asOfDate": "2026-10-02",
+              "closePrice": 920.65,
+              "returnPct": -0.2,
               "targetProgressPct": 0,
               "success": false,
-              "status": "pending"
+              "status": "complete"
             },
             "month1": {
               "asOfDate": "2026-10-28",
@@ -26775,12 +26775,12 @@
           ],
           "performance": {
             "week1": {
-              "asOfDate": "2026-10-05",
-              "closePrice": 0,
-              "returnPct": 0,
+              "asOfDate": "2026-10-02",
+              "closePrice": 102.19,
+              "returnPct": -3.2,
               "targetProgressPct": 0,
               "success": false,
-              "status": "pending"
+              "status": "complete"
             },
             "month1": {
               "asOfDate": "2026-10-28",
@@ -26890,108 +26890,6 @@
             },
             "month3": {
               "asOfDate": "2026-12-15",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            }
-          }
-        }
-      ]
-    },
-    "korea:012330": {
-      "ticker": "012330",
-      "name": "현대모비스",
-      "market": "korea",
-      "latestReportDate": "2026-09-29",
-      "latestBroker": "NH투자증권",
-      "latestOpinion": "Trading Buy",
-      "latestTargetPrice": 462600,
-      "latestCurrentPrice": 385500,
-      "latestBasePrice": 385500,
-      "avgUpside": 20,
-      "reportCount": 1,
-      "reasonSummary": "현대모비스 실적 개선 기대. NH투자증권가 Trading Buy 의견을 제시했고 현재가 기준 상승여력은 20.0%입니다. 2026-09-29 종가 대비 목표가 괴리는 20%입니다.",
-      "reasonBullets": [
-        "NH투자증권가 2026-09-29에 Trading Buy 의견과 목표가를 제시했습니다.",
-        "현재가 385,500원 대비 목표가는 462,600원입니다.",
-        "2026-09-29 종가 385,500원 대비 괴리는 20%입니다."
-      ],
-      "investmentLogic": {
-        "summary": "현대모비스 실적 개선 기대",
-        "bullets": [
-          "현대모비스 실적 개선 기대",
-          "현대모비스 실적 개선 기대  현대모비스 실적 개선 기대.",
-          "NH투자증권가 Trading Buy 의견을 제시했고 현재가 기준 상승여력은 20.0%입니다."
-        ]
-      },
-      "estimateRevision": {
-        "summary": "상향 신호입니다. 리포트 원문에서 추정치 관련 표현을 기준으로 판단했습니다.",
-        "bullets": [
-          "현대모비스 실적 개선 기대  현대모비스 실적 개선 기대.",
-          "NH투자증권가 Trading Buy 의견을 제시했고 현재가 기준 상승여력은 20.0%입니다.",
-          "2026-09-29 종가 대비 목표가 괴리는 20%입니다."
-        ],
-        "signal": "up"
-      },
-      "valuation": {
-        "summary": "현재가 385,500원 대비 목표가 462,600원가 제시돼 밸류에이션 여력을 확인할 수 있습니다.",
-        "bullets": [
-          "현대모비스 실적 개선 기대  현대모비스 실적 개선 기대.",
-          "NH투자증권가 Trading Buy 의견을 제시했고 현재가 기준 상승여력은 20.0%입니다.",
-          "2026-09-29 종가 대비 목표가 괴리는 20%입니다."
-        ]
-      },
-      "sectorCycle": {
-        "summary": "현대모비스 실적 개선 기대  현대모비스 실적 개선 기대.",
-        "bullets": [
-          "현대모비스 실적 개선 기대  현대모비스 실적 개선 기대.",
-          "NH투자증권가 Trading Buy 의견을 제시했고 현재가 기준 상승여력은 20.0%입니다.",
-          "2026-09-29 종가 대비 목표가 괴리는 20%입니다."
-        ]
-      },
-      "relatedReports": [
-        {
-          "date": "2026-09-29",
-          "ticker": "012330",
-          "name": "현대모비스",
-          "market": "korea",
-          "broker": "NH투자증권",
-          "analyst": "",
-          "opinion": "Trading Buy",
-          "targetPrice": 462600,
-          "currentPrice": 385500,
-          "basePrice": 385500,
-          "basePriceDate": "2026-09-29",
-          "upside": 20,
-          "sourceUrl": "",
-          "reportTitle": "현대모비스 실적 개선 기대",
-          "reasonSummary": "현대모비스 실적 개선 기대. NH투자증권가 Trading Buy 의견을 제시했고 현재가 기준 상승여력은 20.0%입니다. 2026-09-29 종가 대비 목표가 괴리는 20%입니다.",
-          "reasonBullets": [
-            "NH투자증권가 2026-09-29에 Trading Buy 의견과 목표가를 제시했습니다.",
-            "현재가 385,500원 대비 목표가는 462,600원입니다.",
-            "2026-09-29 종가 385,500원 대비 괴리는 20%입니다."
-          ],
-          "performance": {
-            "week1": {
-              "asOfDate": "2026-10-06",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            },
-            "month1": {
-              "asOfDate": "2026-10-29",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            },
-            "month3": {
-              "asOfDate": "2026-12-28",
               "closePrice": 0,
               "returnPct": 0,
               "targetProgressPct": 0,
@@ -27752,6 +27650,108 @@
         }
       ]
     },
+    "korea:005490": {
+      "ticker": "005490",
+      "name": "POSCO홀딩스",
+      "market": "korea",
+      "latestReportDate": "2026-09-28",
+      "latestBroker": "삼성증권",
+      "latestOpinion": "적극매수",
+      "latestTargetPrice": 358225,
+      "latestCurrentPrice": 311500,
+      "latestBasePrice": 311500,
+      "avgUpside": 15,
+      "reportCount": 1,
+      "reasonSummary": "POSCO홀딩스 실적 개선 기대. 삼성증권가 적극매수 의견을 제시했고 현재가 기준 상승여력은 15.0%입니다. 2026-09-28 종가 대비 목표가 괴리는 15%입니다.",
+      "reasonBullets": [
+        "삼성증권가 2026-09-28에 적극매수 의견과 목표가를 제시했습니다.",
+        "현재가 311,500원 대비 목표가는 358,225원입니다.",
+        "2026-09-28 종가 311,500원 대비 괴리는 15%입니다."
+      ],
+      "investmentLogic": {
+        "summary": "POSCO홀딩스 실적 개선 기대",
+        "bullets": [
+          "POSCO홀딩스 실적 개선 기대",
+          "POSCO홀딩스 실적 개선 기대  POSCO홀딩스 실적 개선 기대.",
+          "삼성증권가 적극매수 의견을 제시했고 현재가 기준 상승여력은 15.0%입니다."
+        ]
+      },
+      "estimateRevision": {
+        "summary": "상향 신호입니다. 리포트 원문에서 추정치 관련 표현을 기준으로 판단했습니다.",
+        "bullets": [
+          "POSCO홀딩스 실적 개선 기대  POSCO홀딩스 실적 개선 기대.",
+          "삼성증권가 적극매수 의견을 제시했고 현재가 기준 상승여력은 15.0%입니다.",
+          "2026-09-28 종가 대비 목표가 괴리는 15%입니다."
+        ],
+        "signal": "up"
+      },
+      "valuation": {
+        "summary": "현재가 311,500원 대비 목표가 358,225원가 제시돼 밸류에이션 여력을 확인할 수 있습니다.",
+        "bullets": [
+          "POSCO홀딩스 실적 개선 기대  POSCO홀딩스 실적 개선 기대.",
+          "삼성증권가 적극매수 의견을 제시했고 현재가 기준 상승여력은 15.0%입니다.",
+          "2026-09-28 종가 대비 목표가 괴리는 15%입니다."
+        ]
+      },
+      "sectorCycle": {
+        "summary": "POSCO홀딩스 실적 개선 기대  POSCO홀딩스 실적 개선 기대.",
+        "bullets": [
+          "POSCO홀딩스 실적 개선 기대  POSCO홀딩스 실적 개선 기대.",
+          "삼성증권가 적극매수 의견을 제시했고 현재가 기준 상승여력은 15.0%입니다.",
+          "2026-09-28 종가 대비 목표가 괴리는 15%입니다."
+        ]
+      },
+      "relatedReports": [
+        {
+          "date": "2026-09-28",
+          "ticker": "005490",
+          "name": "POSCO홀딩스",
+          "market": "korea",
+          "broker": "삼성증권",
+          "analyst": "",
+          "opinion": "적극매수",
+          "targetPrice": 358225,
+          "currentPrice": 311500,
+          "basePrice": 311500,
+          "basePriceDate": "2026-09-28",
+          "upside": 15,
+          "sourceUrl": "",
+          "reportTitle": "POSCO홀딩스 실적 개선 기대",
+          "reasonSummary": "POSCO홀딩스 실적 개선 기대. 삼성증권가 적극매수 의견을 제시했고 현재가 기준 상승여력은 15.0%입니다. 2026-09-28 종가 대비 목표가 괴리는 15%입니다.",
+          "reasonBullets": [
+            "삼성증권가 2026-09-28에 적극매수 의견과 목표가를 제시했습니다.",
+            "현재가 311,500원 대비 목표가는 358,225원입니다.",
+            "2026-09-28 종가 311,500원 대비 괴리는 15%입니다."
+          ],
+          "performance": {
+            "week1": {
+              "asOfDate": "2026-10-05",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "unavailable"
+            },
+            "month1": {
+              "asOfDate": "2026-10-28",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            },
+            "month3": {
+              "asOfDate": "2026-12-27",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            }
+          }
+        }
+      ]
+    },
     "us:V": {
       "ticker": "V",
       "name": "Visa Inc.",
@@ -27828,12 +27828,12 @@
           ],
           "performance": {
             "week1": {
-              "asOfDate": "2026-10-05",
-              "closePrice": 0,
-              "returnPct": 0,
+              "asOfDate": "2026-10-02",
+              "closePrice": 360.66,
+              "returnPct": -1.9,
               "targetProgressPct": 0,
               "success": false,
-              "status": "pending"
+              "status": "complete"
             },
             "month1": {
               "asOfDate": "2026-10-28",
@@ -27877,12 +27877,12 @@
           ],
           "performance": {
             "week1": {
-              "asOfDate": "2026-10-05",
-              "closePrice": 0,
-              "returnPct": 0,
+              "asOfDate": "2026-10-02",
+              "closePrice": 360.66,
+              "returnPct": -1.9,
               "targetProgressPct": 0,
               "success": false,
-              "status": "pending"
+              "status": "complete"
             },
             "month1": {
               "asOfDate": "2026-10-28",
@@ -28127,12 +28127,12 @@
           ],
           "performance": {
             "week1": {
-              "asOfDate": "2026-10-05",
-              "closePrice": 0,
-              "returnPct": 0,
+              "asOfDate": "2026-10-02",
+              "closePrice": 403.04,
+              "returnPct": -3.6,
               "targetProgressPct": 0,
               "success": false,
-              "status": "pending"
+              "status": "complete"
             },
             "month1": {
               "asOfDate": "2026-10-28",
@@ -28328,12 +28328,12 @@
           ],
           "performance": {
             "week1": {
-              "asOfDate": "2026-10-05",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
+              "asOfDate": "2026-10-02",
+              "closePrice": 164.01,
+              "returnPct": 0.9,
+              "targetProgressPct": 8.5,
               "success": false,
-              "status": "pending"
+              "status": "complete"
             },
             "month1": {
               "asOfDate": "2026-10-28",
@@ -28578,12 +28578,12 @@
           ],
           "performance": {
             "week1": {
-              "asOfDate": "2026-10-05",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
+              "asOfDate": "2026-10-02",
+              "closePrice": 845.42,
+              "returnPct": 3.1,
+              "targetProgressPct": 15.1,
               "success": false,
-              "status": "pending"
+              "status": "complete"
             },
             "month1": {
               "asOfDate": "2026-10-28",
@@ -28877,12 +28877,12 @@
           ],
           "performance": {
             "week1": {
-              "asOfDate": "2026-10-05",
-              "closePrice": 0,
-              "returnPct": 0,
+              "asOfDate": "2026-10-02",
+              "closePrice": 24.3,
+              "returnPct": -2.4,
               "targetProgressPct": 0,
               "success": false,
-              "status": "pending"
+              "status": "complete"
             },
             "month1": {
               "asOfDate": "2026-10-28",
@@ -29100,82 +29100,184 @@
         }
       ]
     },
-    "korea:055550": {
-      "ticker": "055550",
-      "name": "신한지주",
+    "korea:012330": {
+      "ticker": "012330",
+      "name": "현대모비스",
       "market": "korea",
       "latestReportDate": "2026-09-27",
-      "latestBroker": "신한투자증권",
+      "latestBroker": "미래에셋증권",
       "latestOpinion": "Buy",
-      "latestTargetPrice": 120726,
-      "latestCurrentPrice": 105900,
-      "latestBasePrice": 105900,
-      "avgUpside": 14,
+      "latestTargetPrice": 462600,
+      "latestCurrentPrice": 385500,
+      "latestBasePrice": 385500,
+      "avgUpside": 20,
       "reportCount": 1,
-      "reasonSummary": "신한지주 실적 개선 기대. 신한투자증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 14.0%입니다. 2026-09-27 종가 대비 목표가 괴리는 14%입니다.",
+      "reasonSummary": "현대모비스 실적 개선 기대. 미래에셋증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 20.0%입니다. 2026-09-27 종가 대비 목표가 괴리는 20%입니다.",
       "reasonBullets": [
-        "신한투자증권가 2026-09-27에 Buy 의견과 목표가를 제시했습니다.",
-        "현재가 105,900원 대비 목표가는 120,726원입니다.",
-        "2026-09-27 종가 105,900원 대비 괴리는 14%입니다."
+        "미래에셋증권가 2026-09-27에 Buy 의견과 목표가를 제시했습니다.",
+        "현재가 385,500원 대비 목표가는 462,600원입니다.",
+        "2026-09-27 종가 385,500원 대비 괴리는 20%입니다."
       ],
       "investmentLogic": {
-        "summary": "신한지주 실적 개선 기대",
+        "summary": "현대모비스 실적 개선 기대",
         "bullets": [
-          "신한지주 실적 개선 기대",
-          "신한지주 실적 개선 기대  신한지주 실적 개선 기대.",
-          "신한투자증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 14.0%입니다."
+          "현대모비스 실적 개선 기대",
+          "현대모비스 실적 개선 기대  현대모비스 실적 개선 기대.",
+          "미래에셋증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 20.0%입니다."
         ]
       },
       "estimateRevision": {
         "summary": "상향 신호입니다. 리포트 원문에서 추정치 관련 표현을 기준으로 판단했습니다.",
         "bullets": [
-          "신한지주 실적 개선 기대  신한지주 실적 개선 기대.",
-          "신한투자증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 14.0%입니다.",
-          "2026-09-27 종가 대비 목표가 괴리는 14%입니다."
+          "현대모비스 실적 개선 기대  현대모비스 실적 개선 기대.",
+          "미래에셋증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 20.0%입니다.",
+          "2026-09-27 종가 대비 목표가 괴리는 20%입니다."
         ],
         "signal": "up"
       },
       "valuation": {
-        "summary": "현재가 105,900원 대비 목표가 120,726원가 제시돼 밸류에이션 여력을 확인할 수 있습니다.",
+        "summary": "현재가 385,500원 대비 목표가 462,600원가 제시돼 밸류에이션 여력을 확인할 수 있습니다.",
         "bullets": [
-          "신한지주 실적 개선 기대  신한지주 실적 개선 기대.",
-          "신한투자증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 14.0%입니다.",
-          "2026-09-27 종가 대비 목표가 괴리는 14%입니다."
+          "현대모비스 실적 개선 기대  현대모비스 실적 개선 기대.",
+          "미래에셋증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 20.0%입니다.",
+          "2026-09-27 종가 대비 목표가 괴리는 20%입니다."
         ]
       },
       "sectorCycle": {
-        "summary": "신한지주 실적 개선 기대  신한지주 실적 개선 기대.",
+        "summary": "현대모비스 실적 개선 기대  현대모비스 실적 개선 기대.",
         "bullets": [
-          "신한지주 실적 개선 기대  신한지주 실적 개선 기대.",
-          "신한투자증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 14.0%입니다.",
-          "2026-09-27 종가 대비 목표가 괴리는 14%입니다."
+          "현대모비스 실적 개선 기대  현대모비스 실적 개선 기대.",
+          "미래에셋증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 20.0%입니다.",
+          "2026-09-27 종가 대비 목표가 괴리는 20%입니다."
         ]
       },
       "relatedReports": [
         {
           "date": "2026-09-27",
-          "ticker": "055550",
-          "name": "신한지주",
+          "ticker": "012330",
+          "name": "현대모비스",
+          "market": "korea",
+          "broker": "미래에셋증권",
+          "analyst": "",
+          "opinion": "Buy",
+          "targetPrice": 462600,
+          "currentPrice": 385500,
+          "basePrice": 385500,
+          "basePriceDate": "2026-09-27",
+          "upside": 20,
+          "sourceUrl": "",
+          "reportTitle": "현대모비스 실적 개선 기대",
+          "reasonSummary": "현대모비스 실적 개선 기대. 미래에셋증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 20.0%입니다. 2026-09-27 종가 대비 목표가 괴리는 20%입니다.",
+          "reasonBullets": [
+            "미래에셋증권가 2026-09-27에 Buy 의견과 목표가를 제시했습니다.",
+            "현재가 385,500원 대비 목표가는 462,600원입니다.",
+            "2026-09-27 종가 385,500원 대비 괴리는 20%입니다."
+          ],
+          "performance": {
+            "week1": {
+              "asOfDate": "2026-10-04",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "unavailable"
+            },
+            "month1": {
+              "asOfDate": "2026-10-27",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            },
+            "month3": {
+              "asOfDate": "2026-12-26",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            }
+          }
+        }
+      ]
+    },
+    "korea:066570": {
+      "ticker": "066570",
+      "name": "LG전자",
+      "market": "korea",
+      "latestReportDate": "2026-09-26",
+      "latestBroker": "신한투자증권",
+      "latestOpinion": "매수",
+      "latestTargetPrice": 265065,
+      "latestCurrentPrice": 215500,
+      "latestBasePrice": 215500,
+      "avgUpside": 23,
+      "reportCount": 1,
+      "reasonSummary": "LG전자 실적 개선 기대. 신한투자증권가 매수 의견을 제시했고 현재가 기준 상승여력은 23.0%입니다. 2026-09-26 종가 대비 목표가 괴리는 23%입니다.",
+      "reasonBullets": [
+        "신한투자증권가 2026-09-26에 매수 의견과 목표가를 제시했습니다.",
+        "현재가 215,500원 대비 목표가는 265,065원입니다.",
+        "2026-09-26 종가 215,500원 대비 괴리는 23%입니다."
+      ],
+      "investmentLogic": {
+        "summary": "LG전자 실적 개선 기대",
+        "bullets": [
+          "LG전자 실적 개선 기대",
+          "LG전자 실적 개선 기대  LG전자 실적 개선 기대.",
+          "신한투자증권가 매수 의견을 제시했고 현재가 기준 상승여력은 23.0%입니다."
+        ]
+      },
+      "estimateRevision": {
+        "summary": "상향 신호입니다. 리포트 원문에서 추정치 관련 표현을 기준으로 판단했습니다.",
+        "bullets": [
+          "LG전자 실적 개선 기대  LG전자 실적 개선 기대.",
+          "신한투자증권가 매수 의견을 제시했고 현재가 기준 상승여력은 23.0%입니다.",
+          "2026-09-26 종가 대비 목표가 괴리는 23%입니다."
+        ],
+        "signal": "up"
+      },
+      "valuation": {
+        "summary": "현재가 215,500원 대비 목표가 265,065원가 제시돼 밸류에이션 여력을 확인할 수 있습니다.",
+        "bullets": [
+          "LG전자 실적 개선 기대  LG전자 실적 개선 기대.",
+          "신한투자증권가 매수 의견을 제시했고 현재가 기준 상승여력은 23.0%입니다.",
+          "2026-09-26 종가 대비 목표가 괴리는 23%입니다."
+        ]
+      },
+      "sectorCycle": {
+        "summary": "LG전자 실적 개선 기대  LG전자 실적 개선 기대.",
+        "bullets": [
+          "LG전자 실적 개선 기대  LG전자 실적 개선 기대.",
+          "신한투자증권가 매수 의견을 제시했고 현재가 기준 상승여력은 23.0%입니다.",
+          "2026-09-26 종가 대비 목표가 괴리는 23%입니다."
+        ]
+      },
+      "relatedReports": [
+        {
+          "date": "2026-09-26",
+          "ticker": "066570",
+          "name": "LG전자",
           "market": "korea",
           "broker": "신한투자증권",
           "analyst": "",
-          "opinion": "Buy",
-          "targetPrice": 120726,
-          "currentPrice": 105900,
-          "basePrice": 105900,
-          "basePriceDate": "2026-09-27",
-          "upside": 14,
+          "opinion": "매수",
+          "targetPrice": 265065,
+          "currentPrice": 215500,
+          "basePrice": 215500,
+          "basePriceDate": "2026-09-26",
+          "upside": 23,
           "sourceUrl": "",
-          "reportTitle": "신한지주 실적 개선 기대",
-          "reasonSummary": "신한지주 실적 개선 기대. 신한투자증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 14.0%입니다. 2026-09-27 종가 대비 목표가 괴리는 14%입니다.",
+          "reportTitle": "LG전자 실적 개선 기대",
+          "reasonSummary": "LG전자 실적 개선 기대. 신한투자증권가 매수 의견을 제시했고 현재가 기준 상승여력은 23.0%입니다. 2026-09-26 종가 대비 목표가 괴리는 23%입니다.",
           "reasonBullets": [
-            "신한투자증권가 2026-09-27에 Buy 의견과 목표가를 제시했습니다.",
-            "현재가 105,900원 대비 목표가는 120,726원입니다.",
-            "2026-09-27 종가 105,900원 대비 괴리는 14%입니다."
+            "신한투자증권가 2026-09-26에 매수 의견과 목표가를 제시했습니다.",
+            "현재가 215,500원 대비 목표가는 265,065원입니다.",
+            "2026-09-26 종가 215,500원 대비 괴리는 23%입니다."
           ],
           "performance": {
             "week1": {
-              "asOfDate": "2026-10-04",
+              "asOfDate": "2026-10-03",
               "closePrice": 0,
               "returnPct": 0,
               "targetProgressPct": 0,
@@ -29183,7 +29285,7 @@
               "status": "unavailable"
             },
             "month1": {
-              "asOfDate": "2026-10-27",
+              "asOfDate": "2026-10-26",
               "closePrice": 0,
               "returnPct": 0,
               "targetProgressPct": 0,
@@ -29191,7 +29293,7 @@
               "status": "pending"
             },
             "month3": {
-              "asOfDate": "2026-12-26",
+              "asOfDate": "2026-12-25",
               "closePrice": 0,
               "returnPct": 0,
               "targetProgressPct": 0,
@@ -29202,180 +29304,78 @@
         }
       ]
     },
-    "korea:096770": {
-      "ticker": "096770",
-      "name": "SK이노베이션",
-      "market": "korea",
-      "latestReportDate": "2026-09-27",
-      "latestBroker": "하나증권",
-      "latestOpinion": "적극매수",
-      "latestTargetPrice": 180047,
-      "latestCurrentPrice": 151300,
-      "latestBasePrice": 151300,
-      "avgUpside": 19,
-      "reportCount": 1,
-      "reasonSummary": "SK이노베이션 실적 개선 기대. 하나증권가 적극매수 의견을 제시했고 현재가 기준 상승여력은 19.0%입니다. 2026-09-27 종가 대비 목표가 괴리는 19%입니다.",
-      "reasonBullets": [
-        "하나증권가 2026-09-27에 적극매수 의견과 목표가를 제시했습니다.",
-        "현재가 151,300원 대비 목표가는 180,047원입니다.",
-        "2026-09-27 종가 151,300원 대비 괴리는 19%입니다."
-      ],
-      "investmentLogic": {
-        "summary": "SK이노베이션 실적 개선 기대",
-        "bullets": [
-          "SK이노베이션 실적 개선 기대",
-          "SK이노베이션 실적 개선 기대  SK이노베이션 실적 개선 기대.",
-          "하나증권가 적극매수 의견을 제시했고 현재가 기준 상승여력은 19.0%입니다."
-        ]
-      },
-      "estimateRevision": {
-        "summary": "상향 신호입니다. 리포트 원문에서 추정치 관련 표현을 기준으로 판단했습니다.",
-        "bullets": [
-          "SK이노베이션 실적 개선 기대  SK이노베이션 실적 개선 기대.",
-          "하나증권가 적극매수 의견을 제시했고 현재가 기준 상승여력은 19.0%입니다.",
-          "2026-09-27 종가 대비 목표가 괴리는 19%입니다."
-        ],
-        "signal": "up"
-      },
-      "valuation": {
-        "summary": "현재가 151,300원 대비 목표가 180,047원가 제시돼 밸류에이션 여력을 확인할 수 있습니다.",
-        "bullets": [
-          "SK이노베이션 실적 개선 기대  SK이노베이션 실적 개선 기대.",
-          "하나증권가 적극매수 의견을 제시했고 현재가 기준 상승여력은 19.0%입니다.",
-          "2026-09-27 종가 대비 목표가 괴리는 19%입니다."
-        ]
-      },
-      "sectorCycle": {
-        "summary": "SK이노베이션 실적 개선 기대  SK이노베이션 실적 개선 기대.",
-        "bullets": [
-          "SK이노베이션 실적 개선 기대  SK이노베이션 실적 개선 기대.",
-          "하나증권가 적극매수 의견을 제시했고 현재가 기준 상승여력은 19.0%입니다.",
-          "2026-09-27 종가 대비 목표가 괴리는 19%입니다."
-        ]
-      },
-      "relatedReports": [
-        {
-          "date": "2026-09-27",
-          "ticker": "096770",
-          "name": "SK이노베이션",
-          "market": "korea",
-          "broker": "하나증권",
-          "analyst": "",
-          "opinion": "적극매수",
-          "targetPrice": 180047,
-          "currentPrice": 151300,
-          "basePrice": 151300,
-          "basePriceDate": "2026-09-27",
-          "upside": 19,
-          "sourceUrl": "",
-          "reportTitle": "SK이노베이션 실적 개선 기대",
-          "reasonSummary": "SK이노베이션 실적 개선 기대. 하나증권가 적극매수 의견을 제시했고 현재가 기준 상승여력은 19.0%입니다. 2026-09-27 종가 대비 목표가 괴리는 19%입니다.",
-          "reasonBullets": [
-            "하나증권가 2026-09-27에 적극매수 의견과 목표가를 제시했습니다.",
-            "현재가 151,300원 대비 목표가는 180,047원입니다.",
-            "2026-09-27 종가 151,300원 대비 괴리는 19%입니다."
-          ],
-          "performance": {
-            "week1": {
-              "asOfDate": "2026-10-04",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "unavailable"
-            },
-            "month1": {
-              "asOfDate": "2026-10-27",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            },
-            "month3": {
-              "asOfDate": "2026-12-26",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            }
-          }
-        }
-      ]
-    },
-    "korea:035720": {
-      "ticker": "035720",
-      "name": "카카오",
+    "korea:032830": {
+      "ticker": "032830",
+      "name": "삼성생명",
       "market": "korea",
       "latestReportDate": "2026-09-25",
       "latestBroker": "삼성증권",
-      "latestOpinion": "적극매수",
-      "latestTargetPrice": 46760,
-      "latestCurrentPrice": 33400,
-      "latestBasePrice": 33400,
-      "avgUpside": 40,
+      "latestOpinion": "Buy",
+      "latestTargetPrice": 322560,
+      "latestCurrentPrice": 288000,
+      "latestBasePrice": 288000,
+      "avgUpside": 12,
       "reportCount": 1,
-      "reasonSummary": "카카오 실적 개선 기대. 삼성증권가 적극매수 의견을 제시했고 현재가 기준 상승여력은 40.0%입니다. 2026-09-25 종가 대비 목표가 괴리는 40%입니다.",
+      "reasonSummary": "삼성생명 실적 개선 기대. 삼성증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 12.0%입니다. 2026-09-25 종가 대비 목표가 괴리는 12%입니다.",
       "reasonBullets": [
-        "삼성증권가 2026-09-25에 적극매수 의견과 목표가를 제시했습니다.",
-        "현재가 33,400원 대비 목표가는 46,760원입니다.",
-        "2026-09-25 종가 33,400원 대비 괴리는 40%입니다."
+        "삼성증권가 2026-09-25에 Buy 의견과 목표가를 제시했습니다.",
+        "현재가 288,000원 대비 목표가는 322,560원입니다.",
+        "2026-09-25 종가 288,000원 대비 괴리는 12%입니다."
       ],
       "investmentLogic": {
-        "summary": "카카오 실적 개선 기대",
+        "summary": "삼성생명 실적 개선 기대",
         "bullets": [
-          "카카오 실적 개선 기대",
-          "카카오 실적 개선 기대  카카오 실적 개선 기대.",
-          "삼성증권가 적극매수 의견을 제시했고 현재가 기준 상승여력은 40.0%입니다."
+          "삼성생명 실적 개선 기대",
+          "삼성생명 실적 개선 기대  삼성생명 실적 개선 기대.",
+          "삼성증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 12.0%입니다."
         ]
       },
       "estimateRevision": {
         "summary": "상향 신호입니다. 리포트 원문에서 추정치 관련 표현을 기준으로 판단했습니다.",
         "bullets": [
-          "카카오 실적 개선 기대  카카오 실적 개선 기대.",
-          "삼성증권가 적극매수 의견을 제시했고 현재가 기준 상승여력은 40.0%입니다.",
-          "2026-09-25 종가 대비 목표가 괴리는 40%입니다."
+          "삼성생명 실적 개선 기대  삼성생명 실적 개선 기대.",
+          "삼성증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 12.0%입니다.",
+          "2026-09-25 종가 대비 목표가 괴리는 12%입니다."
         ],
         "signal": "up"
       },
       "valuation": {
-        "summary": "현재가 33,400원 대비 목표가 46,760원가 제시돼 밸류에이션 여력을 확인할 수 있습니다.",
+        "summary": "현재가 288,000원 대비 목표가 322,560원가 제시돼 밸류에이션 여력을 확인할 수 있습니다.",
         "bullets": [
-          "카카오 실적 개선 기대  카카오 실적 개선 기대.",
-          "삼성증권가 적극매수 의견을 제시했고 현재가 기준 상승여력은 40.0%입니다.",
-          "2026-09-25 종가 대비 목표가 괴리는 40%입니다."
+          "삼성생명 실적 개선 기대  삼성생명 실적 개선 기대.",
+          "삼성증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 12.0%입니다.",
+          "2026-09-25 종가 대비 목표가 괴리는 12%입니다."
         ]
       },
       "sectorCycle": {
-        "summary": "카카오 실적 개선 기대  카카오 실적 개선 기대.",
+        "summary": "삼성생명 실적 개선 기대  삼성생명 실적 개선 기대.",
         "bullets": [
-          "카카오 실적 개선 기대  카카오 실적 개선 기대.",
-          "삼성증권가 적극매수 의견을 제시했고 현재가 기준 상승여력은 40.0%입니다.",
-          "2026-09-25 종가 대비 목표가 괴리는 40%입니다."
+          "삼성생명 실적 개선 기대  삼성생명 실적 개선 기대.",
+          "삼성증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 12.0%입니다.",
+          "2026-09-25 종가 대비 목표가 괴리는 12%입니다."
         ]
       },
       "relatedReports": [
         {
           "date": "2026-09-25",
-          "ticker": "035720",
-          "name": "카카오",
+          "ticker": "032830",
+          "name": "삼성생명",
           "market": "korea",
           "broker": "삼성증권",
           "analyst": "",
-          "opinion": "적극매수",
-          "targetPrice": 46760,
-          "currentPrice": 33400,
-          "basePrice": 33400,
+          "opinion": "Buy",
+          "targetPrice": 322560,
+          "currentPrice": 288000,
+          "basePrice": 288000,
           "basePriceDate": "2026-09-25",
-          "upside": 40,
+          "upside": 12,
           "sourceUrl": "",
-          "reportTitle": "카카오 실적 개선 기대",
-          "reasonSummary": "카카오 실적 개선 기대. 삼성증권가 적극매수 의견을 제시했고 현재가 기준 상승여력은 40.0%입니다. 2026-09-25 종가 대비 목표가 괴리는 40%입니다.",
+          "reportTitle": "삼성생명 실적 개선 기대",
+          "reasonSummary": "삼성생명 실적 개선 기대. 삼성증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 12.0%입니다. 2026-09-25 종가 대비 목표가 괴리는 12%입니다.",
           "reasonBullets": [
-            "삼성증권가 2026-09-25에 적극매수 의견과 목표가를 제시했습니다.",
-            "현재가 33,400원 대비 목표가는 46,760원입니다.",
-            "2026-09-25 종가 33,400원 대비 괴리는 40%입니다."
+            "삼성증권가 2026-09-25에 Buy 의견과 목표가를 제시했습니다.",
+            "현재가 288,000원 대비 목표가는 322,560원입니다.",
+            "2026-09-25 종가 288,000원 대비 괴리는 12%입니다."
           ],
           "performance": {
             "week1": {
@@ -29406,78 +29406,78 @@
         }
       ]
     },
-    "korea:028260": {
-      "ticker": "028260",
-      "name": "삼성물산",
+    "korea:003550": {
+      "ticker": "003550",
+      "name": "LG",
       "market": "korea",
       "latestReportDate": "2026-09-25",
-      "latestBroker": "키움증권",
+      "latestBroker": "NH투자증권",
       "latestOpinion": "적극매수",
-      "latestTargetPrice": 402520,
-      "latestCurrentPrice": 347000,
-      "latestBasePrice": 347000,
-      "avgUpside": 16,
+      "latestTargetPrice": 125882,
+      "latestCurrentPrice": 111400,
+      "latestBasePrice": 111400,
+      "avgUpside": 13,
       "reportCount": 1,
-      "reasonSummary": "삼성물산 실적 개선 기대. 키움증권가 적극매수 의견을 제시했고 현재가 기준 상승여력은 16.0%입니다. 2026-09-25 종가 대비 목표가 괴리는 16%입니다.",
+      "reasonSummary": "LG 실적 개선 기대. NH투자증권가 적극매수 의견을 제시했고 현재가 기준 상승여력은 13.0%입니다. 2026-09-25 종가 대비 목표가 괴리는 13%입니다.",
       "reasonBullets": [
-        "키움증권가 2026-09-25에 적극매수 의견과 목표가를 제시했습니다.",
-        "현재가 347,000원 대비 목표가는 402,520원입니다.",
-        "2026-09-25 종가 347,000원 대비 괴리는 16%입니다."
+        "NH투자증권가 2026-09-25에 적극매수 의견과 목표가를 제시했습니다.",
+        "현재가 111,400원 대비 목표가는 125,882원입니다.",
+        "2026-09-25 종가 111,400원 대비 괴리는 13%입니다."
       ],
       "investmentLogic": {
-        "summary": "삼성물산 실적 개선 기대",
+        "summary": "LG 실적 개선 기대",
         "bullets": [
-          "삼성물산 실적 개선 기대",
-          "삼성물산 실적 개선 기대  삼성물산 실적 개선 기대.",
-          "키움증권가 적극매수 의견을 제시했고 현재가 기준 상승여력은 16.0%입니다."
+          "LG 실적 개선 기대",
+          "LG 실적 개선 기대  LG 실적 개선 기대.",
+          "NH투자증권가 적극매수 의견을 제시했고 현재가 기준 상승여력은 13.0%입니다."
         ]
       },
       "estimateRevision": {
         "summary": "상향 신호입니다. 리포트 원문에서 추정치 관련 표현을 기준으로 판단했습니다.",
         "bullets": [
-          "삼성물산 실적 개선 기대  삼성물산 실적 개선 기대.",
-          "키움증권가 적극매수 의견을 제시했고 현재가 기준 상승여력은 16.0%입니다.",
-          "2026-09-25 종가 대비 목표가 괴리는 16%입니다."
+          "LG 실적 개선 기대  LG 실적 개선 기대.",
+          "NH투자증권가 적극매수 의견을 제시했고 현재가 기준 상승여력은 13.0%입니다.",
+          "2026-09-25 종가 대비 목표가 괴리는 13%입니다."
         ],
         "signal": "up"
       },
       "valuation": {
-        "summary": "현재가 347,000원 대비 목표가 402,520원가 제시돼 밸류에이션 여력을 확인할 수 있습니다.",
+        "summary": "현재가 111,400원 대비 목표가 125,882원가 제시돼 밸류에이션 여력을 확인할 수 있습니다.",
         "bullets": [
-          "삼성물산 실적 개선 기대  삼성물산 실적 개선 기대.",
-          "키움증권가 적극매수 의견을 제시했고 현재가 기준 상승여력은 16.0%입니다.",
-          "2026-09-25 종가 대비 목표가 괴리는 16%입니다."
+          "LG 실적 개선 기대  LG 실적 개선 기대.",
+          "NH투자증권가 적극매수 의견을 제시했고 현재가 기준 상승여력은 13.0%입니다.",
+          "2026-09-25 종가 대비 목표가 괴리는 13%입니다."
         ]
       },
       "sectorCycle": {
-        "summary": "삼성물산 실적 개선 기대  삼성물산 실적 개선 기대.",
+        "summary": "LG 실적 개선 기대  LG 실적 개선 기대.",
         "bullets": [
-          "삼성물산 실적 개선 기대  삼성물산 실적 개선 기대.",
-          "키움증권가 적극매수 의견을 제시했고 현재가 기준 상승여력은 16.0%입니다.",
-          "2026-09-25 종가 대비 목표가 괴리는 16%입니다."
+          "LG 실적 개선 기대  LG 실적 개선 기대.",
+          "NH투자증권가 적극매수 의견을 제시했고 현재가 기준 상승여력은 13.0%입니다.",
+          "2026-09-25 종가 대비 목표가 괴리는 13%입니다."
         ]
       },
       "relatedReports": [
         {
           "date": "2026-09-25",
-          "ticker": "028260",
-          "name": "삼성물산",
+          "ticker": "003550",
+          "name": "LG",
           "market": "korea",
-          "broker": "키움증권",
+          "broker": "NH투자증권",
           "analyst": "",
           "opinion": "적극매수",
-          "targetPrice": 402520,
-          "currentPrice": 347000,
-          "basePrice": 347000,
+          "targetPrice": 125882,
+          "currentPrice": 111400,
+          "basePrice": 111400,
           "basePriceDate": "2026-09-25",
-          "upside": 16,
+          "upside": 13,
           "sourceUrl": "",
-          "reportTitle": "삼성물산 실적 개선 기대",
-          "reasonSummary": "삼성물산 실적 개선 기대. 키움증권가 적극매수 의견을 제시했고 현재가 기준 상승여력은 16.0%입니다. 2026-09-25 종가 대비 목표가 괴리는 16%입니다.",
+          "reportTitle": "LG 실적 개선 기대",
+          "reasonSummary": "LG 실적 개선 기대. NH투자증권가 적극매수 의견을 제시했고 현재가 기준 상승여력은 13.0%입니다. 2026-09-25 종가 대비 목표가 괴리는 13%입니다.",
           "reasonBullets": [
-            "키움증권가 2026-09-25에 적극매수 의견과 목표가를 제시했습니다.",
-            "현재가 347,000원 대비 목표가는 402,520원입니다.",
-            "2026-09-25 종가 347,000원 대비 괴리는 16%입니다."
+            "NH투자증권가 2026-09-25에 적극매수 의견과 목표가를 제시했습니다.",
+            "현재가 111,400원 대비 목표가는 125,882원입니다.",
+            "2026-09-25 종가 111,400원 대비 괴리는 13%입니다."
           ],
           "performance": {
             "week1": {
@@ -30557,82 +30557,82 @@
         }
       ]
     },
-    "korea:003550": {
-      "ticker": "003550",
-      "name": "LG",
+    "korea:035420": {
+      "ticker": "035420",
+      "name": "NAVER",
       "market": "korea",
-      "latestReportDate": "2026-09-24",
-      "latestBroker": "KB증권",
+      "latestReportDate": "2026-09-23",
+      "latestBroker": "삼성증권",
       "latestOpinion": "매수",
-      "latestTargetPrice": 125882,
-      "latestCurrentPrice": 111400,
-      "latestBasePrice": 111400,
-      "avgUpside": 13,
+      "latestTargetPrice": 259470,
+      "latestCurrentPrice": 192200,
+      "latestBasePrice": 192200,
+      "avgUpside": 35,
       "reportCount": 1,
-      "reasonSummary": "LG 실적 개선 기대. KB증권가 매수 의견을 제시했고 현재가 기준 상승여력은 13.0%입니다. 2026-09-24 종가 대비 목표가 괴리는 13%입니다.",
+      "reasonSummary": "NAVER 실적 개선 기대. 삼성증권가 매수 의견을 제시했고 현재가 기준 상승여력은 35.0%입니다. 2026-09-23 종가 대비 목표가 괴리는 35%입니다.",
       "reasonBullets": [
-        "KB증권가 2026-09-24에 매수 의견과 목표가를 제시했습니다.",
-        "현재가 111,400원 대비 목표가는 125,882원입니다.",
-        "2026-09-24 종가 111,400원 대비 괴리는 13%입니다."
+        "삼성증권가 2026-09-23에 매수 의견과 목표가를 제시했습니다.",
+        "현재가 192,200원 대비 목표가는 259,470원입니다.",
+        "2026-09-23 종가 192,200원 대비 괴리는 35%입니다."
       ],
       "investmentLogic": {
-        "summary": "LG 실적 개선 기대",
+        "summary": "NAVER 실적 개선 기대",
         "bullets": [
-          "LG 실적 개선 기대",
-          "LG 실적 개선 기대  LG 실적 개선 기대.",
-          "KB증권가 매수 의견을 제시했고 현재가 기준 상승여력은 13.0%입니다."
+          "NAVER 실적 개선 기대",
+          "NAVER 실적 개선 기대  NAVER 실적 개선 기대.",
+          "삼성증권가 매수 의견을 제시했고 현재가 기준 상승여력은 35.0%입니다."
         ]
       },
       "estimateRevision": {
         "summary": "상향 신호입니다. 리포트 원문에서 추정치 관련 표현을 기준으로 판단했습니다.",
         "bullets": [
-          "LG 실적 개선 기대  LG 실적 개선 기대.",
-          "KB증권가 매수 의견을 제시했고 현재가 기준 상승여력은 13.0%입니다.",
-          "2026-09-24 종가 대비 목표가 괴리는 13%입니다."
+          "NAVER 실적 개선 기대  NAVER 실적 개선 기대.",
+          "삼성증권가 매수 의견을 제시했고 현재가 기준 상승여력은 35.0%입니다.",
+          "2026-09-23 종가 대비 목표가 괴리는 35%입니다."
         ],
         "signal": "up"
       },
       "valuation": {
-        "summary": "현재가 111,400원 대비 목표가 125,882원가 제시돼 밸류에이션 여력을 확인할 수 있습니다.",
+        "summary": "현재가 192,200원 대비 목표가 259,470원가 제시돼 밸류에이션 여력을 확인할 수 있습니다.",
         "bullets": [
-          "LG 실적 개선 기대  LG 실적 개선 기대.",
-          "KB증권가 매수 의견을 제시했고 현재가 기준 상승여력은 13.0%입니다.",
-          "2026-09-24 종가 대비 목표가 괴리는 13%입니다."
+          "NAVER 실적 개선 기대  NAVER 실적 개선 기대.",
+          "삼성증권가 매수 의견을 제시했고 현재가 기준 상승여력은 35.0%입니다.",
+          "2026-09-23 종가 대비 목표가 괴리는 35%입니다."
         ]
       },
       "sectorCycle": {
-        "summary": "LG 실적 개선 기대  LG 실적 개선 기대.",
+        "summary": "NAVER 실적 개선 기대  NAVER 실적 개선 기대.",
         "bullets": [
-          "LG 실적 개선 기대  LG 실적 개선 기대.",
-          "KB증권가 매수 의견을 제시했고 현재가 기준 상승여력은 13.0%입니다.",
-          "2026-09-24 종가 대비 목표가 괴리는 13%입니다."
+          "NAVER 실적 개선 기대  NAVER 실적 개선 기대.",
+          "삼성증권가 매수 의견을 제시했고 현재가 기준 상승여력은 35.0%입니다.",
+          "2026-09-23 종가 대비 목표가 괴리는 35%입니다."
         ]
       },
       "relatedReports": [
         {
-          "date": "2026-09-24",
-          "ticker": "003550",
-          "name": "LG",
+          "date": "2026-09-23",
+          "ticker": "035420",
+          "name": "NAVER",
           "market": "korea",
-          "broker": "KB증권",
+          "broker": "삼성증권",
           "analyst": "",
           "opinion": "매수",
-          "targetPrice": 125882,
-          "currentPrice": 111400,
-          "basePrice": 111400,
-          "basePriceDate": "2026-09-24",
-          "upside": 13,
+          "targetPrice": 259470,
+          "currentPrice": 192200,
+          "basePrice": 192200,
+          "basePriceDate": "2026-09-23",
+          "upside": 35,
           "sourceUrl": "",
-          "reportTitle": "LG 실적 개선 기대",
-          "reasonSummary": "LG 실적 개선 기대. KB증권가 매수 의견을 제시했고 현재가 기준 상승여력은 13.0%입니다. 2026-09-24 종가 대비 목표가 괴리는 13%입니다.",
+          "reportTitle": "NAVER 실적 개선 기대",
+          "reasonSummary": "NAVER 실적 개선 기대. 삼성증권가 매수 의견을 제시했고 현재가 기준 상승여력은 35.0%입니다. 2026-09-23 종가 대비 목표가 괴리는 35%입니다.",
           "reasonBullets": [
-            "KB증권가 2026-09-24에 매수 의견과 목표가를 제시했습니다.",
-            "현재가 111,400원 대비 목표가는 125,882원입니다.",
-            "2026-09-24 종가 111,400원 대비 괴리는 13%입니다."
+            "삼성증권가 2026-09-23에 매수 의견과 목표가를 제시했습니다.",
+            "현재가 192,200원 대비 목표가는 259,470원입니다.",
+            "2026-09-23 종가 192,200원 대비 괴리는 35%입니다."
           ],
           "performance": {
             "week1": {
-              "asOfDate": "2026-10-01",
+              "asOfDate": "2026-09-30",
               "closePrice": 0,
               "returnPct": 0,
               "targetProgressPct": 0,
@@ -30640,7 +30640,7 @@
               "status": "unavailable"
             },
             "month1": {
-              "asOfDate": "2026-10-24",
+              "asOfDate": "2026-10-23",
               "closePrice": 0,
               "returnPct": 0,
               "targetProgressPct": 0,
@@ -30648,7 +30648,7 @@
               "status": "pending"
             },
             "month3": {
-              "asOfDate": "2026-12-23",
+              "asOfDate": "2026-12-22",
               "closePrice": 0,
               "returnPct": 0,
               "targetProgressPct": 0,
@@ -30659,78 +30659,78 @@
         }
       ]
     },
-    "korea:034730": {
-      "ticker": "034730",
-      "name": "SK",
+    "korea:000270": {
+      "ticker": "000270",
+      "name": "기아",
       "market": "korea",
       "latestReportDate": "2026-09-23",
-      "latestBroker": "하나증권",
+      "latestBroker": "신한투자증권",
       "latestOpinion": "매수",
-      "latestTargetPrice": 676260,
-      "latestCurrentPrice": 578000,
-      "latestBasePrice": 578000,
-      "avgUpside": 17,
+      "latestTargetPrice": 133576,
+      "latestCurrentPrice": 113200,
+      "latestBasePrice": 113200,
+      "avgUpside": 18,
       "reportCount": 1,
-      "reasonSummary": "SK 실적 개선 기대. 하나증권가 매수 의견을 제시했고 현재가 기준 상승여력은 17.0%입니다. 2026-09-23 종가 대비 목표가 괴리는 17%입니다.",
+      "reasonSummary": "기아 실적 개선 기대. 신한투자증권가 매수 의견을 제시했고 현재가 기준 상승여력은 18.0%입니다. 2026-09-23 종가 대비 목표가 괴리는 18%입니다.",
       "reasonBullets": [
-        "하나증권가 2026-09-23에 매수 의견과 목표가를 제시했습니다.",
-        "현재가 578,000원 대비 목표가는 676,260원입니다.",
-        "2026-09-23 종가 578,000원 대비 괴리는 17%입니다."
+        "신한투자증권가 2026-09-23에 매수 의견과 목표가를 제시했습니다.",
+        "현재가 113,200원 대비 목표가는 133,576원입니다.",
+        "2026-09-23 종가 113,200원 대비 괴리는 18%입니다."
       ],
       "investmentLogic": {
-        "summary": "SK 실적 개선 기대",
+        "summary": "기아 실적 개선 기대",
         "bullets": [
-          "SK 실적 개선 기대",
-          "SK 실적 개선 기대  SK 실적 개선 기대.",
-          "하나증권가 매수 의견을 제시했고 현재가 기준 상승여력은 17.0%입니다."
+          "기아 실적 개선 기대",
+          "기아 실적 개선 기대  기아 실적 개선 기대.",
+          "신한투자증권가 매수 의견을 제시했고 현재가 기준 상승여력은 18.0%입니다."
         ]
       },
       "estimateRevision": {
         "summary": "상향 신호입니다. 리포트 원문에서 추정치 관련 표현을 기준으로 판단했습니다.",
         "bullets": [
-          "SK 실적 개선 기대  SK 실적 개선 기대.",
-          "하나증권가 매수 의견을 제시했고 현재가 기준 상승여력은 17.0%입니다.",
-          "2026-09-23 종가 대비 목표가 괴리는 17%입니다."
+          "기아 실적 개선 기대  기아 실적 개선 기대.",
+          "신한투자증권가 매수 의견을 제시했고 현재가 기준 상승여력은 18.0%입니다.",
+          "2026-09-23 종가 대비 목표가 괴리는 18%입니다."
         ],
         "signal": "up"
       },
       "valuation": {
-        "summary": "현재가 578,000원 대비 목표가 676,260원가 제시돼 밸류에이션 여력을 확인할 수 있습니다.",
+        "summary": "현재가 113,200원 대비 목표가 133,576원가 제시돼 밸류에이션 여력을 확인할 수 있습니다.",
         "bullets": [
-          "SK 실적 개선 기대  SK 실적 개선 기대.",
-          "하나증권가 매수 의견을 제시했고 현재가 기준 상승여력은 17.0%입니다.",
-          "2026-09-23 종가 대비 목표가 괴리는 17%입니다."
+          "기아 실적 개선 기대  기아 실적 개선 기대.",
+          "신한투자증권가 매수 의견을 제시했고 현재가 기준 상승여력은 18.0%입니다.",
+          "2026-09-23 종가 대비 목표가 괴리는 18%입니다."
         ]
       },
       "sectorCycle": {
-        "summary": "SK 실적 개선 기대  SK 실적 개선 기대.",
+        "summary": "기아 실적 개선 기대  기아 실적 개선 기대.",
         "bullets": [
-          "SK 실적 개선 기대  SK 실적 개선 기대.",
-          "하나증권가 매수 의견을 제시했고 현재가 기준 상승여력은 17.0%입니다.",
-          "2026-09-23 종가 대비 목표가 괴리는 17%입니다."
+          "기아 실적 개선 기대  기아 실적 개선 기대.",
+          "신한투자증권가 매수 의견을 제시했고 현재가 기준 상승여력은 18.0%입니다.",
+          "2026-09-23 종가 대비 목표가 괴리는 18%입니다."
         ]
       },
       "relatedReports": [
         {
           "date": "2026-09-23",
-          "ticker": "034730",
-          "name": "SK",
+          "ticker": "000270",
+          "name": "기아",
           "market": "korea",
-          "broker": "하나증권",
+          "broker": "신한투자증권",
           "analyst": "",
           "opinion": "매수",
-          "targetPrice": 676260,
-          "currentPrice": 578000,
-          "basePrice": 578000,
+          "targetPrice": 133576,
+          "currentPrice": 113200,
+          "basePrice": 113200,
           "basePriceDate": "2026-09-23",
-          "upside": 17,
+          "upside": 18,
           "sourceUrl": "",
-          "reportTitle": "SK 실적 개선 기대",
-          "reasonSummary": "SK 실적 개선 기대. 하나증권가 매수 의견을 제시했고 현재가 기준 상승여력은 17.0%입니다. 2026-09-23 종가 대비 목표가 괴리는 17%입니다.",
+          "reportTitle": "기아 실적 개선 기대",
+          "reasonSummary": "기아 실적 개선 기대. 신한투자증권가 매수 의견을 제시했고 현재가 기준 상승여력은 18.0%입니다. 2026-09-23 종가 대비 목표가 괴리는 18%입니다.",
           "reasonBullets": [
-            "하나증권가 2026-09-23에 매수 의견과 목표가를 제시했습니다.",
-            "현재가 578,000원 대비 목표가는 676,260원입니다.",
-            "2026-09-23 종가 578,000원 대비 괴리는 17%입니다."
+            "신한투자증권가 2026-09-23에 매수 의견과 목표가를 제시했습니다.",
+            "현재가 113,200원 대비 목표가는 133,576원입니다.",
+            "2026-09-23 종가 113,200원 대비 괴리는 18%입니다."
           ],
           "performance": {
             "week1": {
@@ -31300,108 +31300,6 @@
             },
             "month3": {
               "asOfDate": "2026-10-28",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            }
-          }
-        }
-      ]
-    },
-    "korea:032830": {
-      "ticker": "032830",
-      "name": "삼성생명",
-      "market": "korea",
-      "latestReportDate": "2026-09-22",
-      "latestBroker": "미래에셋증권",
-      "latestOpinion": "매수",
-      "latestTargetPrice": 322560,
-      "latestCurrentPrice": 288000,
-      "latestBasePrice": 288000,
-      "avgUpside": 12,
-      "reportCount": 1,
-      "reasonSummary": "삼성생명 실적 개선 기대. 미래에셋증권가 매수 의견을 제시했고 현재가 기준 상승여력은 12.0%입니다. 2026-09-22 종가 대비 목표가 괴리는 12%입니다.",
-      "reasonBullets": [
-        "미래에셋증권가 2026-09-22에 매수 의견과 목표가를 제시했습니다.",
-        "현재가 288,000원 대비 목표가는 322,560원입니다.",
-        "2026-09-22 종가 288,000원 대비 괴리는 12%입니다."
-      ],
-      "investmentLogic": {
-        "summary": "삼성생명 실적 개선 기대",
-        "bullets": [
-          "삼성생명 실적 개선 기대",
-          "삼성생명 실적 개선 기대  삼성생명 실적 개선 기대.",
-          "미래에셋증권가 매수 의견을 제시했고 현재가 기준 상승여력은 12.0%입니다."
-        ]
-      },
-      "estimateRevision": {
-        "summary": "상향 신호입니다. 리포트 원문에서 추정치 관련 표현을 기준으로 판단했습니다.",
-        "bullets": [
-          "삼성생명 실적 개선 기대  삼성생명 실적 개선 기대.",
-          "미래에셋증권가 매수 의견을 제시했고 현재가 기준 상승여력은 12.0%입니다.",
-          "2026-09-22 종가 대비 목표가 괴리는 12%입니다."
-        ],
-        "signal": "up"
-      },
-      "valuation": {
-        "summary": "현재가 288,000원 대비 목표가 322,560원가 제시돼 밸류에이션 여력을 확인할 수 있습니다.",
-        "bullets": [
-          "삼성생명 실적 개선 기대  삼성생명 실적 개선 기대.",
-          "미래에셋증권가 매수 의견을 제시했고 현재가 기준 상승여력은 12.0%입니다.",
-          "2026-09-22 종가 대비 목표가 괴리는 12%입니다."
-        ]
-      },
-      "sectorCycle": {
-        "summary": "삼성생명 실적 개선 기대  삼성생명 실적 개선 기대.",
-        "bullets": [
-          "삼성생명 실적 개선 기대  삼성생명 실적 개선 기대.",
-          "미래에셋증권가 매수 의견을 제시했고 현재가 기준 상승여력은 12.0%입니다.",
-          "2026-09-22 종가 대비 목표가 괴리는 12%입니다."
-        ]
-      },
-      "relatedReports": [
-        {
-          "date": "2026-09-22",
-          "ticker": "032830",
-          "name": "삼성생명",
-          "market": "korea",
-          "broker": "미래에셋증권",
-          "analyst": "",
-          "opinion": "매수",
-          "targetPrice": 322560,
-          "currentPrice": 288000,
-          "basePrice": 288000,
-          "basePriceDate": "2026-09-22",
-          "upside": 12,
-          "sourceUrl": "",
-          "reportTitle": "삼성생명 실적 개선 기대",
-          "reasonSummary": "삼성생명 실적 개선 기대. 미래에셋증권가 매수 의견을 제시했고 현재가 기준 상승여력은 12.0%입니다. 2026-09-22 종가 대비 목표가 괴리는 12%입니다.",
-          "reasonBullets": [
-            "미래에셋증권가 2026-09-22에 매수 의견과 목표가를 제시했습니다.",
-            "현재가 288,000원 대비 목표가는 322,560원입니다.",
-            "2026-09-22 종가 288,000원 대비 괴리는 12%입니다."
-          ],
-          "performance": {
-            "week1": {
-              "asOfDate": "2026-09-29",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "unavailable"
-            },
-            "month1": {
-              "asOfDate": "2026-10-22",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            },
-            "month3": {
-              "asOfDate": "2026-12-21",
               "closePrice": 0,
               "returnPct": 0,
               "targetProgressPct": 0,
@@ -32010,282 +31908,78 @@
         }
       ]
     },
-    "korea:051910": {
-      "ticker": "051910",
-      "name": "LG화학",
+    "korea:005930": {
+      "ticker": "005930",
+      "name": "삼성전자",
       "market": "korea",
-      "latestReportDate": "2026-09-18",
-      "latestBroker": "한국투자증권",
-      "latestOpinion": "적극매수",
-      "latestTargetPrice": 327500,
-      "latestCurrentPrice": 262000,
-      "latestBasePrice": 262000,
+      "latestReportDate": "2026-09-16",
+      "latestBroker": "신한투자증권",
+      "latestOpinion": "매수",
+      "latestTargetPrice": 345000,
+      "latestCurrentPrice": 276000,
+      "latestBasePrice": 276000,
       "avgUpside": 25,
       "reportCount": 1,
-      "reasonSummary": "LG화학 실적 개선 기대. 한국투자증권가 적극매수 의견을 제시했고 현재가 기준 상승여력은 25.0%입니다. 2026-09-18 종가 대비 목표가 괴리는 25%입니다.",
+      "reasonSummary": "삼성전자 실적 개선 기대. 신한투자증권가 매수 의견을 제시했고 현재가 기준 상승여력은 25.0%입니다. 2026-09-16 종가 대비 목표가 괴리는 25%입니다.",
       "reasonBullets": [
-        "한국투자증권가 2026-09-18에 적극매수 의견과 목표가를 제시했습니다.",
-        "현재가 262,000원 대비 목표가는 327,500원입니다.",
-        "2026-09-18 종가 262,000원 대비 괴리는 25%입니다."
+        "신한투자증권가 2026-09-16에 매수 의견과 목표가를 제시했습니다.",
+        "현재가 276,000원 대비 목표가는 345,000원입니다.",
+        "2026-09-16 종가 276,000원 대비 괴리는 25%입니다."
       ],
       "investmentLogic": {
-        "summary": "LG화학 실적 개선 기대",
+        "summary": "삼성전자 실적 개선 기대",
         "bullets": [
-          "LG화학 실적 개선 기대",
-          "LG화학 실적 개선 기대  LG화학 실적 개선 기대.",
-          "한국투자증권가 적극매수 의견을 제시했고 현재가 기준 상승여력은 25.0%입니다."
+          "삼성전자 실적 개선 기대",
+          "삼성전자 실적 개선 기대  삼성전자 실적 개선 기대.",
+          "신한투자증권가 매수 의견을 제시했고 현재가 기준 상승여력은 25.0%입니다."
         ]
       },
       "estimateRevision": {
         "summary": "상향 신호입니다. 리포트 원문에서 추정치 관련 표현을 기준으로 판단했습니다.",
         "bullets": [
-          "LG화학 실적 개선 기대  LG화학 실적 개선 기대.",
-          "한국투자증권가 적극매수 의견을 제시했고 현재가 기준 상승여력은 25.0%입니다.",
-          "2026-09-18 종가 대비 목표가 괴리는 25%입니다."
+          "삼성전자 실적 개선 기대  삼성전자 실적 개선 기대.",
+          "신한투자증권가 매수 의견을 제시했고 현재가 기준 상승여력은 25.0%입니다.",
+          "2026-09-16 종가 대비 목표가 괴리는 25%입니다."
         ],
         "signal": "up"
       },
       "valuation": {
-        "summary": "현재가 262,000원 대비 목표가 327,500원가 제시돼 밸류에이션 여력을 확인할 수 있습니다.",
+        "summary": "현재가 276,000원 대비 목표가 345,000원가 제시돼 밸류에이션 여력을 확인할 수 있습니다.",
         "bullets": [
-          "LG화학 실적 개선 기대  LG화학 실적 개선 기대.",
-          "한국투자증권가 적극매수 의견을 제시했고 현재가 기준 상승여력은 25.0%입니다.",
-          "2026-09-18 종가 대비 목표가 괴리는 25%입니다."
+          "삼성전자 실적 개선 기대  삼성전자 실적 개선 기대.",
+          "신한투자증권가 매수 의견을 제시했고 현재가 기준 상승여력은 25.0%입니다.",
+          "2026-09-16 종가 대비 목표가 괴리는 25%입니다."
         ]
       },
       "sectorCycle": {
-        "summary": "LG화학 실적 개선 기대  LG화학 실적 개선 기대.",
+        "summary": "삼성전자 실적 개선 기대  삼성전자 실적 개선 기대.",
         "bullets": [
-          "LG화학 실적 개선 기대  LG화학 실적 개선 기대.",
-          "한국투자증권가 적극매수 의견을 제시했고 현재가 기준 상승여력은 25.0%입니다.",
-          "2026-09-18 종가 대비 목표가 괴리는 25%입니다."
+          "삼성전자 실적 개선 기대  삼성전자 실적 개선 기대.",
+          "신한투자증권가 매수 의견을 제시했고 현재가 기준 상승여력은 25.0%입니다.",
+          "2026-09-16 종가 대비 목표가 괴리는 25%입니다."
         ]
       },
       "relatedReports": [
         {
-          "date": "2026-09-18",
-          "ticker": "051910",
-          "name": "LG화학",
+          "date": "2026-09-16",
+          "ticker": "005930",
+          "name": "삼성전자",
           "market": "korea",
-          "broker": "한국투자증권",
+          "broker": "신한투자증권",
           "analyst": "",
-          "opinion": "적극매수",
-          "targetPrice": 327500,
-          "currentPrice": 262000,
-          "basePrice": 262000,
-          "basePriceDate": "2026-09-18",
+          "opinion": "매수",
+          "targetPrice": 345000,
+          "currentPrice": 276000,
+          "basePrice": 276000,
+          "basePriceDate": "2026-09-16",
           "upside": 25,
           "sourceUrl": "",
-          "reportTitle": "LG화학 실적 개선 기대",
-          "reasonSummary": "LG화학 실적 개선 기대. 한국투자증권가 적극매수 의견을 제시했고 현재가 기준 상승여력은 25.0%입니다. 2026-09-18 종가 대비 목표가 괴리는 25%입니다.",
+          "reportTitle": "삼성전자 실적 개선 기대",
+          "reasonSummary": "삼성전자 실적 개선 기대. 신한투자증권가 매수 의견을 제시했고 현재가 기준 상승여력은 25.0%입니다. 2026-09-16 종가 대비 목표가 괴리는 25%입니다.",
           "reasonBullets": [
-            "한국투자증권가 2026-09-18에 적극매수 의견과 목표가를 제시했습니다.",
-            "현재가 262,000원 대비 목표가는 327,500원입니다.",
-            "2026-09-18 종가 262,000원 대비 괴리는 25%입니다."
-          ],
-          "performance": {
-            "week1": {
-              "asOfDate": "2026-09-25",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "unavailable"
-            },
-            "month1": {
-              "asOfDate": "2026-10-18",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            },
-            "month3": {
-              "asOfDate": "2026-12-17",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            }
-          }
-        }
-      ]
-    },
-    "korea:006400": {
-      "ticker": "006400",
-      "name": "삼성SDI",
-      "market": "korea",
-      "latestReportDate": "2026-09-16",
-      "latestBroker": "KB증권",
-      "latestOpinion": "Buy",
-      "latestTargetPrice": 677120,
-      "latestCurrentPrice": 529000,
-      "latestBasePrice": 529000,
-      "avgUpside": 28,
-      "reportCount": 1,
-      "reasonSummary": "삼성SDI 실적 개선 기대. KB증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 28.0%입니다. 2026-09-16 종가 대비 목표가 괴리는 28%입니다.",
-      "reasonBullets": [
-        "KB증권가 2026-09-16에 Buy 의견과 목표가를 제시했습니다.",
-        "현재가 529,000원 대비 목표가는 677,120원입니다.",
-        "2026-09-16 종가 529,000원 대비 괴리는 28%입니다."
-      ],
-      "investmentLogic": {
-        "summary": "삼성SDI 실적 개선 기대",
-        "bullets": [
-          "삼성SDI 실적 개선 기대",
-          "삼성SDI 실적 개선 기대  삼성SDI 실적 개선 기대.",
-          "KB증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 28.0%입니다."
-        ]
-      },
-      "estimateRevision": {
-        "summary": "상향 신호입니다. 리포트 원문에서 추정치 관련 표현을 기준으로 판단했습니다.",
-        "bullets": [
-          "삼성SDI 실적 개선 기대  삼성SDI 실적 개선 기대.",
-          "KB증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 28.0%입니다.",
-          "2026-09-16 종가 대비 목표가 괴리는 28%입니다."
-        ],
-        "signal": "up"
-      },
-      "valuation": {
-        "summary": "현재가 529,000원 대비 목표가 677,120원가 제시돼 밸류에이션 여력을 확인할 수 있습니다.",
-        "bullets": [
-          "삼성SDI 실적 개선 기대  삼성SDI 실적 개선 기대.",
-          "KB증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 28.0%입니다.",
-          "2026-09-16 종가 대비 목표가 괴리는 28%입니다."
-        ]
-      },
-      "sectorCycle": {
-        "summary": "삼성SDI 실적 개선 기대  삼성SDI 실적 개선 기대.",
-        "bullets": [
-          "삼성SDI 실적 개선 기대  삼성SDI 실적 개선 기대.",
-          "KB증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 28.0%입니다.",
-          "2026-09-16 종가 대비 목표가 괴리는 28%입니다."
-        ]
-      },
-      "relatedReports": [
-        {
-          "date": "2026-09-16",
-          "ticker": "006400",
-          "name": "삼성SDI",
-          "market": "korea",
-          "broker": "KB증권",
-          "analyst": "",
-          "opinion": "Buy",
-          "targetPrice": 677120,
-          "currentPrice": 529000,
-          "basePrice": 529000,
-          "basePriceDate": "2026-09-16",
-          "upside": 28,
-          "sourceUrl": "",
-          "reportTitle": "삼성SDI 실적 개선 기대",
-          "reasonSummary": "삼성SDI 실적 개선 기대. KB증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 28.0%입니다. 2026-09-16 종가 대비 목표가 괴리는 28%입니다.",
-          "reasonBullets": [
-            "KB증권가 2026-09-16에 Buy 의견과 목표가를 제시했습니다.",
-            "현재가 529,000원 대비 목표가는 677,120원입니다.",
-            "2026-09-16 종가 529,000원 대비 괴리는 28%입니다."
-          ],
-          "performance": {
-            "week1": {
-              "asOfDate": "2026-09-23",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "unavailable"
-            },
-            "month1": {
-              "asOfDate": "2026-10-16",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            },
-            "month3": {
-              "asOfDate": "2026-12-15",
-              "closePrice": 0,
-              "returnPct": 0,
-              "targetProgressPct": 0,
-              "success": false,
-              "status": "pending"
-            }
-          }
-        }
-      ]
-    },
-    "korea:035420": {
-      "ticker": "035420",
-      "name": "NAVER",
-      "market": "korea",
-      "latestReportDate": "2026-09-16",
-      "latestBroker": "키움증권",
-      "latestOpinion": "Trading Buy",
-      "latestTargetPrice": 259470,
-      "latestCurrentPrice": 192200,
-      "latestBasePrice": 192200,
-      "avgUpside": 35,
-      "reportCount": 1,
-      "reasonSummary": "NAVER 실적 개선 기대. 키움증권가 Trading Buy 의견을 제시했고 현재가 기준 상승여력은 35.0%입니다. 2026-09-16 종가 대비 목표가 괴리는 35%입니다.",
-      "reasonBullets": [
-        "키움증권가 2026-09-16에 Trading Buy 의견과 목표가를 제시했습니다.",
-        "현재가 192,200원 대비 목표가는 259,470원입니다.",
-        "2026-09-16 종가 192,200원 대비 괴리는 35%입니다."
-      ],
-      "investmentLogic": {
-        "summary": "NAVER 실적 개선 기대",
-        "bullets": [
-          "NAVER 실적 개선 기대",
-          "NAVER 실적 개선 기대  NAVER 실적 개선 기대.",
-          "키움증권가 Trading Buy 의견을 제시했고 현재가 기준 상승여력은 35.0%입니다."
-        ]
-      },
-      "estimateRevision": {
-        "summary": "상향 신호입니다. 리포트 원문에서 추정치 관련 표현을 기준으로 판단했습니다.",
-        "bullets": [
-          "NAVER 실적 개선 기대  NAVER 실적 개선 기대.",
-          "키움증권가 Trading Buy 의견을 제시했고 현재가 기준 상승여력은 35.0%입니다.",
-          "2026-09-16 종가 대비 목표가 괴리는 35%입니다."
-        ],
-        "signal": "up"
-      },
-      "valuation": {
-        "summary": "현재가 192,200원 대비 목표가 259,470원가 제시돼 밸류에이션 여력을 확인할 수 있습니다.",
-        "bullets": [
-          "NAVER 실적 개선 기대  NAVER 실적 개선 기대.",
-          "키움증권가 Trading Buy 의견을 제시했고 현재가 기준 상승여력은 35.0%입니다.",
-          "2026-09-16 종가 대비 목표가 괴리는 35%입니다."
-        ]
-      },
-      "sectorCycle": {
-        "summary": "NAVER 실적 개선 기대  NAVER 실적 개선 기대.",
-        "bullets": [
-          "NAVER 실적 개선 기대  NAVER 실적 개선 기대.",
-          "키움증권가 Trading Buy 의견을 제시했고 현재가 기준 상승여력은 35.0%입니다.",
-          "2026-09-16 종가 대비 목표가 괴리는 35%입니다."
-        ]
-      },
-      "relatedReports": [
-        {
-          "date": "2026-09-16",
-          "ticker": "035420",
-          "name": "NAVER",
-          "market": "korea",
-          "broker": "키움증권",
-          "analyst": "",
-          "opinion": "Trading Buy",
-          "targetPrice": 259470,
-          "currentPrice": 192200,
-          "basePrice": 192200,
-          "basePriceDate": "2026-09-16",
-          "upside": 35,
-          "sourceUrl": "",
-          "reportTitle": "NAVER 실적 개선 기대",
-          "reasonSummary": "NAVER 실적 개선 기대. 키움증권가 Trading Buy 의견을 제시했고 현재가 기준 상승여력은 35.0%입니다. 2026-09-16 종가 대비 목표가 괴리는 35%입니다.",
-          "reasonBullets": [
-            "키움증권가 2026-09-16에 Trading Buy 의견과 목표가를 제시했습니다.",
-            "현재가 192,200원 대비 목표가는 259,470원입니다.",
-            "2026-09-16 종가 192,200원 대비 괴리는 35%입니다."
+            "신한투자증권가 2026-09-16에 매수 의견과 목표가를 제시했습니다.",
+            "현재가 276,000원 대비 목표가는 345,000원입니다.",
+            "2026-09-16 종가 276,000원 대비 괴리는 25%입니다."
           ],
           "performance": {
             "week1": {
@@ -33522,78 +33216,78 @@
         }
       ]
     },
-    "korea:000270": {
-      "ticker": "000270",
-      "name": "기아",
+    "korea:034730": {
+      "ticker": "034730",
+      "name": "SK",
       "market": "korea",
       "latestReportDate": "2026-09-14",
-      "latestBroker": "미래에셋증권",
-      "latestOpinion": "적극매수",
-      "latestTargetPrice": 133576,
-      "latestCurrentPrice": 113200,
-      "latestBasePrice": 113200,
-      "avgUpside": 18,
+      "latestBroker": "삼성증권",
+      "latestOpinion": "Trading Buy",
+      "latestTargetPrice": 676260,
+      "latestCurrentPrice": 578000,
+      "latestBasePrice": 578000,
+      "avgUpside": 17,
       "reportCount": 1,
-      "reasonSummary": "기아 실적 개선 기대. 미래에셋증권가 적극매수 의견을 제시했고 현재가 기준 상승여력은 18.0%입니다. 2026-09-14 종가 대비 목표가 괴리는 18%입니다.",
+      "reasonSummary": "SK 실적 개선 기대. 삼성증권가 Trading Buy 의견을 제시했고 현재가 기준 상승여력은 17.0%입니다. 2026-09-14 종가 대비 목표가 괴리는 17%입니다.",
       "reasonBullets": [
-        "미래에셋증권가 2026-09-14에 적극매수 의견과 목표가를 제시했습니다.",
-        "현재가 113,200원 대비 목표가는 133,576원입니다.",
-        "2026-09-14 종가 113,200원 대비 괴리는 18%입니다."
+        "삼성증권가 2026-09-14에 Trading Buy 의견과 목표가를 제시했습니다.",
+        "현재가 578,000원 대비 목표가는 676,260원입니다.",
+        "2026-09-14 종가 578,000원 대비 괴리는 17%입니다."
       ],
       "investmentLogic": {
-        "summary": "기아 실적 개선 기대",
+        "summary": "SK 실적 개선 기대",
         "bullets": [
-          "기아 실적 개선 기대",
-          "기아 실적 개선 기대  기아 실적 개선 기대.",
-          "미래에셋증권가 적극매수 의견을 제시했고 현재가 기준 상승여력은 18.0%입니다."
+          "SK 실적 개선 기대",
+          "SK 실적 개선 기대  SK 실적 개선 기대.",
+          "삼성증권가 Trading Buy 의견을 제시했고 현재가 기준 상승여력은 17.0%입니다."
         ]
       },
       "estimateRevision": {
         "summary": "상향 신호입니다. 리포트 원문에서 추정치 관련 표현을 기준으로 판단했습니다.",
         "bullets": [
-          "기아 실적 개선 기대  기아 실적 개선 기대.",
-          "미래에셋증권가 적극매수 의견을 제시했고 현재가 기준 상승여력은 18.0%입니다.",
-          "2026-09-14 종가 대비 목표가 괴리는 18%입니다."
+          "SK 실적 개선 기대  SK 실적 개선 기대.",
+          "삼성증권가 Trading Buy 의견을 제시했고 현재가 기준 상승여력은 17.0%입니다.",
+          "2026-09-14 종가 대비 목표가 괴리는 17%입니다."
         ],
         "signal": "up"
       },
       "valuation": {
-        "summary": "현재가 113,200원 대비 목표가 133,576원가 제시돼 밸류에이션 여력을 확인할 수 있습니다.",
+        "summary": "현재가 578,000원 대비 목표가 676,260원가 제시돼 밸류에이션 여력을 확인할 수 있습니다.",
         "bullets": [
-          "기아 실적 개선 기대  기아 실적 개선 기대.",
-          "미래에셋증권가 적극매수 의견을 제시했고 현재가 기준 상승여력은 18.0%입니다.",
-          "2026-09-14 종가 대비 목표가 괴리는 18%입니다."
+          "SK 실적 개선 기대  SK 실적 개선 기대.",
+          "삼성증권가 Trading Buy 의견을 제시했고 현재가 기준 상승여력은 17.0%입니다.",
+          "2026-09-14 종가 대비 목표가 괴리는 17%입니다."
         ]
       },
       "sectorCycle": {
-        "summary": "기아 실적 개선 기대  기아 실적 개선 기대.",
+        "summary": "SK 실적 개선 기대  SK 실적 개선 기대.",
         "bullets": [
-          "기아 실적 개선 기대  기아 실적 개선 기대.",
-          "미래에셋증권가 적극매수 의견을 제시했고 현재가 기준 상승여력은 18.0%입니다.",
-          "2026-09-14 종가 대비 목표가 괴리는 18%입니다."
+          "SK 실적 개선 기대  SK 실적 개선 기대.",
+          "삼성증권가 Trading Buy 의견을 제시했고 현재가 기준 상승여력은 17.0%입니다.",
+          "2026-09-14 종가 대비 목표가 괴리는 17%입니다."
         ]
       },
       "relatedReports": [
         {
           "date": "2026-09-14",
-          "ticker": "000270",
-          "name": "기아",
+          "ticker": "034730",
+          "name": "SK",
           "market": "korea",
-          "broker": "미래에셋증권",
+          "broker": "삼성증권",
           "analyst": "",
-          "opinion": "적극매수",
-          "targetPrice": 133576,
-          "currentPrice": 113200,
-          "basePrice": 113200,
+          "opinion": "Trading Buy",
+          "targetPrice": 676260,
+          "currentPrice": 578000,
+          "basePrice": 578000,
           "basePriceDate": "2026-09-14",
-          "upside": 18,
+          "upside": 17,
           "sourceUrl": "",
-          "reportTitle": "기아 실적 개선 기대",
-          "reasonSummary": "기아 실적 개선 기대. 미래에셋증권가 적극매수 의견을 제시했고 현재가 기준 상승여력은 18.0%입니다. 2026-09-14 종가 대비 목표가 괴리는 18%입니다.",
+          "reportTitle": "SK 실적 개선 기대",
+          "reasonSummary": "SK 실적 개선 기대. 삼성증권가 Trading Buy 의견을 제시했고 현재가 기준 상승여력은 17.0%입니다. 2026-09-14 종가 대비 목표가 괴리는 17%입니다.",
           "reasonBullets": [
-            "미래에셋증권가 2026-09-14에 적극매수 의견과 목표가를 제시했습니다.",
-            "현재가 113,200원 대비 목표가는 133,576원입니다.",
-            "2026-09-14 종가 113,200원 대비 괴리는 18%입니다."
+            "삼성증권가 2026-09-14에 Trading Buy 의견과 목표가를 제시했습니다.",
+            "현재가 578,000원 대비 목표가는 676,260원입니다.",
+            "2026-09-14 종가 578,000원 대비 괴리는 17%입니다."
           ],
           "performance": {
             "week1": {
@@ -33628,34 +33322,34 @@
       "ticker": "000660",
       "name": "SK하이닉스",
       "market": "korea",
-      "latestReportDate": "2026-09-10",
-      "latestBroker": "미래에셋증권",
-      "latestOpinion": "Buy",
+      "latestReportDate": "2026-09-13",
+      "latestBroker": "하나증권",
+      "latestOpinion": "적극매수",
       "latestTargetPrice": 2394600,
       "latestCurrentPrice": 1842000,
       "latestBasePrice": 1842000,
       "avgUpside": 30,
       "reportCount": 1,
-      "reasonSummary": "SK하이닉스 실적 개선 기대. 미래에셋증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 30.0%입니다. 2026-09-10 종가 대비 목표가 괴리는 30%입니다.",
+      "reasonSummary": "SK하이닉스 실적 개선 기대. 하나증권가 적극매수 의견을 제시했고 현재가 기준 상승여력은 30.0%입니다. 2026-09-13 종가 대비 목표가 괴리는 30%입니다.",
       "reasonBullets": [
-        "미래에셋증권가 2026-09-10에 Buy 의견과 목표가를 제시했습니다.",
+        "하나증권가 2026-09-13에 적극매수 의견과 목표가를 제시했습니다.",
         "현재가 1,842,000원 대비 목표가는 2,394,600원입니다.",
-        "2026-09-10 종가 1,842,000원 대비 괴리는 30%입니다."
+        "2026-09-13 종가 1,842,000원 대비 괴리는 30%입니다."
       ],
       "investmentLogic": {
         "summary": "SK하이닉스 실적 개선 기대",
         "bullets": [
           "SK하이닉스 실적 개선 기대",
           "SK하이닉스 실적 개선 기대  SK하이닉스 실적 개선 기대.",
-          "미래에셋증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 30.0%입니다."
+          "하나증권가 적극매수 의견을 제시했고 현재가 기준 상승여력은 30.0%입니다."
         ]
       },
       "estimateRevision": {
         "summary": "상향 신호입니다. 리포트 원문에서 추정치 관련 표현을 기준으로 판단했습니다.",
         "bullets": [
           "SK하이닉스 실적 개선 기대  SK하이닉스 실적 개선 기대.",
-          "미래에셋증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 30.0%입니다.",
-          "2026-09-10 종가 대비 목표가 괴리는 30%입니다."
+          "하나증권가 적극매수 의견을 제시했고 현재가 기준 상승여력은 30.0%입니다.",
+          "2026-09-13 종가 대비 목표가 괴리는 30%입니다."
         ],
         "signal": "up"
       },
@@ -33663,43 +33357,43 @@
         "summary": "현재가 1,842,000원 대비 목표가 2,394,600원가 제시돼 밸류에이션 여력을 확인할 수 있습니다.",
         "bullets": [
           "SK하이닉스 실적 개선 기대  SK하이닉스 실적 개선 기대.",
-          "미래에셋증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 30.0%입니다.",
-          "2026-09-10 종가 대비 목표가 괴리는 30%입니다."
+          "하나증권가 적극매수 의견을 제시했고 현재가 기준 상승여력은 30.0%입니다.",
+          "2026-09-13 종가 대비 목표가 괴리는 30%입니다."
         ]
       },
       "sectorCycle": {
         "summary": "SK하이닉스 실적 개선 기대  SK하이닉스 실적 개선 기대.",
         "bullets": [
           "SK하이닉스 실적 개선 기대  SK하이닉스 실적 개선 기대.",
-          "미래에셋증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 30.0%입니다.",
-          "2026-09-10 종가 대비 목표가 괴리는 30%입니다."
+          "하나증권가 적극매수 의견을 제시했고 현재가 기준 상승여력은 30.0%입니다.",
+          "2026-09-13 종가 대비 목표가 괴리는 30%입니다."
         ]
       },
       "relatedReports": [
         {
-          "date": "2026-09-10",
+          "date": "2026-09-13",
           "ticker": "000660",
           "name": "SK하이닉스",
           "market": "korea",
-          "broker": "미래에셋증권",
+          "broker": "하나증권",
           "analyst": "",
-          "opinion": "Buy",
+          "opinion": "적극매수",
           "targetPrice": 2394600,
           "currentPrice": 1842000,
           "basePrice": 1842000,
-          "basePriceDate": "2026-09-10",
+          "basePriceDate": "2026-09-13",
           "upside": 30,
           "sourceUrl": "",
           "reportTitle": "SK하이닉스 실적 개선 기대",
-          "reasonSummary": "SK하이닉스 실적 개선 기대. 미래에셋증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 30.0%입니다. 2026-09-10 종가 대비 목표가 괴리는 30%입니다.",
+          "reasonSummary": "SK하이닉스 실적 개선 기대. 하나증권가 적극매수 의견을 제시했고 현재가 기준 상승여력은 30.0%입니다. 2026-09-13 종가 대비 목표가 괴리는 30%입니다.",
           "reasonBullets": [
-            "미래에셋증권가 2026-09-10에 Buy 의견과 목표가를 제시했습니다.",
+            "하나증권가 2026-09-13에 적극매수 의견과 목표가를 제시했습니다.",
             "현재가 1,842,000원 대비 목표가는 2,394,600원입니다.",
-            "2026-09-10 종가 1,842,000원 대비 괴리는 30%입니다."
+            "2026-09-13 종가 1,842,000원 대비 괴리는 30%입니다."
           ],
           "performance": {
             "week1": {
-              "asOfDate": "2026-09-17",
+              "asOfDate": "2026-09-20",
               "closePrice": 0,
               "returnPct": 0,
               "targetProgressPct": 0,
@@ -33707,7 +33401,7 @@
               "status": "unavailable"
             },
             "month1": {
-              "asOfDate": "2026-10-10",
+              "asOfDate": "2026-10-13",
               "closePrice": 0,
               "returnPct": 0,
               "targetProgressPct": 0,
@@ -33715,7 +33409,109 @@
               "status": "pending"
             },
             "month3": {
-              "asOfDate": "2026-12-09",
+              "asOfDate": "2026-12-12",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            }
+          }
+        }
+      ]
+    },
+    "korea:005380": {
+      "ticker": "005380",
+      "name": "현대차",
+      "market": "korea",
+      "latestReportDate": "2026-09-11",
+      "latestBroker": "키움증권",
+      "latestOpinion": "적극매수",
+      "latestTargetPrice": 423340,
+      "latestCurrentPrice": 347000,
+      "latestBasePrice": 347000,
+      "avgUpside": 22,
+      "reportCount": 1,
+      "reasonSummary": "현대차 실적 개선 기대. 키움증권가 적극매수 의견을 제시했고 현재가 기준 상승여력은 22.0%입니다. 2026-09-11 종가 대비 목표가 괴리는 22%입니다.",
+      "reasonBullets": [
+        "키움증권가 2026-09-11에 적극매수 의견과 목표가를 제시했습니다.",
+        "현재가 347,000원 대비 목표가는 423,340원입니다.",
+        "2026-09-11 종가 347,000원 대비 괴리는 22%입니다."
+      ],
+      "investmentLogic": {
+        "summary": "현대차 실적 개선 기대",
+        "bullets": [
+          "현대차 실적 개선 기대",
+          "현대차 실적 개선 기대  현대차 실적 개선 기대.",
+          "키움증권가 적극매수 의견을 제시했고 현재가 기준 상승여력은 22.0%입니다."
+        ]
+      },
+      "estimateRevision": {
+        "summary": "상향 신호입니다. 리포트 원문에서 추정치 관련 표현을 기준으로 판단했습니다.",
+        "bullets": [
+          "현대차 실적 개선 기대  현대차 실적 개선 기대.",
+          "키움증권가 적극매수 의견을 제시했고 현재가 기준 상승여력은 22.0%입니다.",
+          "2026-09-11 종가 대비 목표가 괴리는 22%입니다."
+        ],
+        "signal": "up"
+      },
+      "valuation": {
+        "summary": "현재가 347,000원 대비 목표가 423,340원가 제시돼 밸류에이션 여력을 확인할 수 있습니다.",
+        "bullets": [
+          "현대차 실적 개선 기대  현대차 실적 개선 기대.",
+          "키움증권가 적극매수 의견을 제시했고 현재가 기준 상승여력은 22.0%입니다.",
+          "2026-09-11 종가 대비 목표가 괴리는 22%입니다."
+        ]
+      },
+      "sectorCycle": {
+        "summary": "현대차 실적 개선 기대  현대차 실적 개선 기대.",
+        "bullets": [
+          "현대차 실적 개선 기대  현대차 실적 개선 기대.",
+          "키움증권가 적극매수 의견을 제시했고 현재가 기준 상승여력은 22.0%입니다.",
+          "2026-09-11 종가 대비 목표가 괴리는 22%입니다."
+        ]
+      },
+      "relatedReports": [
+        {
+          "date": "2026-09-11",
+          "ticker": "005380",
+          "name": "현대차",
+          "market": "korea",
+          "broker": "키움증권",
+          "analyst": "",
+          "opinion": "적극매수",
+          "targetPrice": 423340,
+          "currentPrice": 347000,
+          "basePrice": 347000,
+          "basePriceDate": "2026-09-11",
+          "upside": 22,
+          "sourceUrl": "",
+          "reportTitle": "현대차 실적 개선 기대",
+          "reasonSummary": "현대차 실적 개선 기대. 키움증권가 적극매수 의견을 제시했고 현재가 기준 상승여력은 22.0%입니다. 2026-09-11 종가 대비 목표가 괴리는 22%입니다.",
+          "reasonBullets": [
+            "키움증권가 2026-09-11에 적극매수 의견과 목표가를 제시했습니다.",
+            "현재가 347,000원 대비 목표가는 423,340원입니다.",
+            "2026-09-11 종가 347,000원 대비 괴리는 22%입니다."
+          ],
+          "performance": {
+            "week1": {
+              "asOfDate": "2026-09-18",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "unavailable"
+            },
+            "month1": {
+              "asOfDate": "2026-10-11",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            },
+            "month3": {
+              "asOfDate": "2026-12-10",
               "closePrice": 0,
               "returnPct": 0,
               "targetProgressPct": 0,
@@ -33730,34 +33526,34 @@
       "ticker": "003670",
       "name": "포스코퓨처엠",
       "market": "korea",
-      "latestReportDate": "2026-09-10",
-      "latestBroker": "하나증권",
+      "latestReportDate": "2026-09-11",
+      "latestBroker": "신한투자증권",
       "latestOpinion": "Buy",
       "latestTargetPrice": 231632,
       "latestCurrentPrice": 186800,
       "latestBasePrice": 186800,
       "avgUpside": 24,
       "reportCount": 1,
-      "reasonSummary": "포스코퓨처엠 실적 개선 기대. 하나증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 24.0%입니다. 2026-09-10 종가 대비 목표가 괴리는 24%입니다.",
+      "reasonSummary": "포스코퓨처엠 실적 개선 기대. 신한투자증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 24.0%입니다. 2026-09-11 종가 대비 목표가 괴리는 24%입니다.",
       "reasonBullets": [
-        "하나증권가 2026-09-10에 Buy 의견과 목표가를 제시했습니다.",
+        "신한투자증권가 2026-09-11에 Buy 의견과 목표가를 제시했습니다.",
         "현재가 186,800원 대비 목표가는 231,632원입니다.",
-        "2026-09-10 종가 186,800원 대비 괴리는 24%입니다."
+        "2026-09-11 종가 186,800원 대비 괴리는 24%입니다."
       ],
       "investmentLogic": {
         "summary": "포스코퓨처엠 실적 개선 기대",
         "bullets": [
           "포스코퓨처엠 실적 개선 기대",
           "포스코퓨처엠 실적 개선 기대  포스코퓨처엠 실적 개선 기대.",
-          "하나증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 24.0%입니다."
+          "신한투자증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 24.0%입니다."
         ]
       },
       "estimateRevision": {
         "summary": "상향 신호입니다. 리포트 원문에서 추정치 관련 표현을 기준으로 판단했습니다.",
         "bullets": [
           "포스코퓨처엠 실적 개선 기대  포스코퓨처엠 실적 개선 기대.",
-          "하나증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 24.0%입니다.",
-          "2026-09-10 종가 대비 목표가 괴리는 24%입니다."
+          "신한투자증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 24.0%입니다.",
+          "2026-09-11 종가 대비 목표가 괴리는 24%입니다."
         ],
         "signal": "up"
       },
@@ -33765,39 +33561,141 @@
         "summary": "현재가 186,800원 대비 목표가 231,632원가 제시돼 밸류에이션 여력을 확인할 수 있습니다.",
         "bullets": [
           "포스코퓨처엠 실적 개선 기대  포스코퓨처엠 실적 개선 기대.",
-          "하나증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 24.0%입니다.",
-          "2026-09-10 종가 대비 목표가 괴리는 24%입니다."
+          "신한투자증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 24.0%입니다.",
+          "2026-09-11 종가 대비 목표가 괴리는 24%입니다."
         ]
       },
       "sectorCycle": {
         "summary": "포스코퓨처엠 실적 개선 기대  포스코퓨처엠 실적 개선 기대.",
         "bullets": [
           "포스코퓨처엠 실적 개선 기대  포스코퓨처엠 실적 개선 기대.",
-          "하나증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 24.0%입니다.",
-          "2026-09-10 종가 대비 목표가 괴리는 24%입니다."
+          "신한투자증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 24.0%입니다.",
+          "2026-09-11 종가 대비 목표가 괴리는 24%입니다."
         ]
       },
       "relatedReports": [
         {
-          "date": "2026-09-10",
+          "date": "2026-09-11",
           "ticker": "003670",
           "name": "포스코퓨처엠",
           "market": "korea",
-          "broker": "하나증권",
+          "broker": "신한투자증권",
           "analyst": "",
           "opinion": "Buy",
           "targetPrice": 231632,
           "currentPrice": 186800,
           "basePrice": 186800,
-          "basePriceDate": "2026-09-10",
+          "basePriceDate": "2026-09-11",
           "upside": 24,
           "sourceUrl": "",
           "reportTitle": "포스코퓨처엠 실적 개선 기대",
-          "reasonSummary": "포스코퓨처엠 실적 개선 기대. 하나증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 24.0%입니다. 2026-09-10 종가 대비 목표가 괴리는 24%입니다.",
+          "reasonSummary": "포스코퓨처엠 실적 개선 기대. 신한투자증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 24.0%입니다. 2026-09-11 종가 대비 목표가 괴리는 24%입니다.",
           "reasonBullets": [
-            "하나증권가 2026-09-10에 Buy 의견과 목표가를 제시했습니다.",
+            "신한투자증권가 2026-09-11에 Buy 의견과 목표가를 제시했습니다.",
             "현재가 186,800원 대비 목표가는 231,632원입니다.",
-            "2026-09-10 종가 186,800원 대비 괴리는 24%입니다."
+            "2026-09-11 종가 186,800원 대비 괴리는 24%입니다."
+          ],
+          "performance": {
+            "week1": {
+              "asOfDate": "2026-09-18",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "unavailable"
+            },
+            "month1": {
+              "asOfDate": "2026-10-11",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            },
+            "month3": {
+              "asOfDate": "2026-12-10",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            }
+          }
+        }
+      ]
+    },
+    "korea:373220": {
+      "ticker": "373220",
+      "name": "LG에너지솔루션",
+      "market": "korea",
+      "latestReportDate": "2026-09-10",
+      "latestBroker": "미래에셋증권",
+      "latestOpinion": "Buy",
+      "latestTargetPrice": 442800,
+      "latestCurrentPrice": 369000,
+      "latestBasePrice": 369000,
+      "avgUpside": 20,
+      "reportCount": 1,
+      "reasonSummary": "LG에너지솔루션 실적 개선 기대. 미래에셋증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 20.0%입니다. 2026-09-10 종가 대비 목표가 괴리는 20%입니다.",
+      "reasonBullets": [
+        "미래에셋증권가 2026-09-10에 Buy 의견과 목표가를 제시했습니다.",
+        "현재가 369,000원 대비 목표가는 442,800원입니다.",
+        "2026-09-10 종가 369,000원 대비 괴리는 20%입니다."
+      ],
+      "investmentLogic": {
+        "summary": "LG에너지솔루션 실적 개선 기대",
+        "bullets": [
+          "LG에너지솔루션 실적 개선 기대",
+          "LG에너지솔루션 실적 개선 기대  LG에너지솔루션 실적 개선 기대.",
+          "미래에셋증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 20.0%입니다."
+        ]
+      },
+      "estimateRevision": {
+        "summary": "상향 신호입니다. 리포트 원문에서 추정치 관련 표현을 기준으로 판단했습니다.",
+        "bullets": [
+          "LG에너지솔루션 실적 개선 기대  LG에너지솔루션 실적 개선 기대.",
+          "미래에셋증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 20.0%입니다.",
+          "2026-09-10 종가 대비 목표가 괴리는 20%입니다."
+        ],
+        "signal": "up"
+      },
+      "valuation": {
+        "summary": "현재가 369,000원 대비 목표가 442,800원가 제시돼 밸류에이션 여력을 확인할 수 있습니다.",
+        "bullets": [
+          "LG에너지솔루션 실적 개선 기대  LG에너지솔루션 실적 개선 기대.",
+          "미래에셋증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 20.0%입니다.",
+          "2026-09-10 종가 대비 목표가 괴리는 20%입니다."
+        ]
+      },
+      "sectorCycle": {
+        "summary": "LG에너지솔루션 실적 개선 기대  LG에너지솔루션 실적 개선 기대.",
+        "bullets": [
+          "LG에너지솔루션 실적 개선 기대  LG에너지솔루션 실적 개선 기대.",
+          "미래에셋증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 20.0%입니다.",
+          "2026-09-10 종가 대비 목표가 괴리는 20%입니다."
+        ]
+      },
+      "relatedReports": [
+        {
+          "date": "2026-09-10",
+          "ticker": "373220",
+          "name": "LG에너지솔루션",
+          "market": "korea",
+          "broker": "미래에셋증권",
+          "analyst": "",
+          "opinion": "Buy",
+          "targetPrice": 442800,
+          "currentPrice": 369000,
+          "basePrice": 369000,
+          "basePriceDate": "2026-09-10",
+          "upside": 20,
+          "sourceUrl": "",
+          "reportTitle": "LG에너지솔루션 실적 개선 기대",
+          "reasonSummary": "LG에너지솔루션 실적 개선 기대. 미래에셋증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 20.0%입니다. 2026-09-10 종가 대비 목표가 괴리는 20%입니다.",
+          "reasonBullets": [
+            "미래에셋증권가 2026-09-10에 Buy 의견과 목표가를 제시했습니다.",
+            "현재가 369,000원 대비 목표가는 442,800원입니다.",
+            "2026-09-10 종가 369,000원 대비 괴리는 20%입니다."
           ],
           "performance": {
             "week1": {
@@ -33828,78 +33726,180 @@
         }
       ]
     },
-    "korea:005490": {
-      "ticker": "005490",
-      "name": "POSCO홀딩스",
+    "korea:006400": {
+      "ticker": "006400",
+      "name": "삼성SDI",
       "market": "korea",
       "latestReportDate": "2026-09-09",
       "latestBroker": "KB증권",
-      "latestOpinion": "적극매수",
-      "latestTargetPrice": 358225,
-      "latestCurrentPrice": 311500,
-      "latestBasePrice": 311500,
-      "avgUpside": 15,
+      "latestOpinion": "매수",
+      "latestTargetPrice": 677120,
+      "latestCurrentPrice": 529000,
+      "latestBasePrice": 529000,
+      "avgUpside": 28,
       "reportCount": 1,
-      "reasonSummary": "POSCO홀딩스 실적 개선 기대. KB증권가 적극매수 의견을 제시했고 현재가 기준 상승여력은 15.0%입니다. 2026-09-09 종가 대비 목표가 괴리는 15%입니다.",
+      "reasonSummary": "삼성SDI 실적 개선 기대. KB증권가 매수 의견을 제시했고 현재가 기준 상승여력은 28.0%입니다. 2026-09-09 종가 대비 목표가 괴리는 28%입니다.",
       "reasonBullets": [
-        "KB증권가 2026-09-09에 적극매수 의견과 목표가를 제시했습니다.",
-        "현재가 311,500원 대비 목표가는 358,225원입니다.",
-        "2026-09-09 종가 311,500원 대비 괴리는 15%입니다."
+        "KB증권가 2026-09-09에 매수 의견과 목표가를 제시했습니다.",
+        "현재가 529,000원 대비 목표가는 677,120원입니다.",
+        "2026-09-09 종가 529,000원 대비 괴리는 28%입니다."
       ],
       "investmentLogic": {
-        "summary": "POSCO홀딩스 실적 개선 기대",
+        "summary": "삼성SDI 실적 개선 기대",
         "bullets": [
-          "POSCO홀딩스 실적 개선 기대",
-          "POSCO홀딩스 실적 개선 기대  POSCO홀딩스 실적 개선 기대.",
-          "KB증권가 적극매수 의견을 제시했고 현재가 기준 상승여력은 15.0%입니다."
+          "삼성SDI 실적 개선 기대",
+          "삼성SDI 실적 개선 기대  삼성SDI 실적 개선 기대.",
+          "KB증권가 매수 의견을 제시했고 현재가 기준 상승여력은 28.0%입니다."
         ]
       },
       "estimateRevision": {
         "summary": "상향 신호입니다. 리포트 원문에서 추정치 관련 표현을 기준으로 판단했습니다.",
         "bullets": [
-          "POSCO홀딩스 실적 개선 기대  POSCO홀딩스 실적 개선 기대.",
-          "KB증권가 적극매수 의견을 제시했고 현재가 기준 상승여력은 15.0%입니다.",
-          "2026-09-09 종가 대비 목표가 괴리는 15%입니다."
+          "삼성SDI 실적 개선 기대  삼성SDI 실적 개선 기대.",
+          "KB증권가 매수 의견을 제시했고 현재가 기준 상승여력은 28.0%입니다.",
+          "2026-09-09 종가 대비 목표가 괴리는 28%입니다."
         ],
         "signal": "up"
       },
       "valuation": {
-        "summary": "현재가 311,500원 대비 목표가 358,225원가 제시돼 밸류에이션 여력을 확인할 수 있습니다.",
+        "summary": "현재가 529,000원 대비 목표가 677,120원가 제시돼 밸류에이션 여력을 확인할 수 있습니다.",
         "bullets": [
-          "POSCO홀딩스 실적 개선 기대  POSCO홀딩스 실적 개선 기대.",
-          "KB증권가 적극매수 의견을 제시했고 현재가 기준 상승여력은 15.0%입니다.",
-          "2026-09-09 종가 대비 목표가 괴리는 15%입니다."
+          "삼성SDI 실적 개선 기대  삼성SDI 실적 개선 기대.",
+          "KB증권가 매수 의견을 제시했고 현재가 기준 상승여력은 28.0%입니다.",
+          "2026-09-09 종가 대비 목표가 괴리는 28%입니다."
         ]
       },
       "sectorCycle": {
-        "summary": "POSCO홀딩스 실적 개선 기대  POSCO홀딩스 실적 개선 기대.",
+        "summary": "삼성SDI 실적 개선 기대  삼성SDI 실적 개선 기대.",
         "bullets": [
-          "POSCO홀딩스 실적 개선 기대  POSCO홀딩스 실적 개선 기대.",
-          "KB증권가 적극매수 의견을 제시했고 현재가 기준 상승여력은 15.0%입니다.",
-          "2026-09-09 종가 대비 목표가 괴리는 15%입니다."
+          "삼성SDI 실적 개선 기대  삼성SDI 실적 개선 기대.",
+          "KB증권가 매수 의견을 제시했고 현재가 기준 상승여력은 28.0%입니다.",
+          "2026-09-09 종가 대비 목표가 괴리는 28%입니다."
         ]
       },
       "relatedReports": [
         {
           "date": "2026-09-09",
-          "ticker": "005490",
-          "name": "POSCO홀딩스",
+          "ticker": "006400",
+          "name": "삼성SDI",
           "market": "korea",
           "broker": "KB증권",
           "analyst": "",
-          "opinion": "적극매수",
-          "targetPrice": 358225,
-          "currentPrice": 311500,
-          "basePrice": 311500,
+          "opinion": "매수",
+          "targetPrice": 677120,
+          "currentPrice": 529000,
+          "basePrice": 529000,
           "basePriceDate": "2026-09-09",
-          "upside": 15,
+          "upside": 28,
           "sourceUrl": "",
-          "reportTitle": "POSCO홀딩스 실적 개선 기대",
-          "reasonSummary": "POSCO홀딩스 실적 개선 기대. KB증권가 적극매수 의견을 제시했고 현재가 기준 상승여력은 15.0%입니다. 2026-09-09 종가 대비 목표가 괴리는 15%입니다.",
+          "reportTitle": "삼성SDI 실적 개선 기대",
+          "reasonSummary": "삼성SDI 실적 개선 기대. KB증권가 매수 의견을 제시했고 현재가 기준 상승여력은 28.0%입니다. 2026-09-09 종가 대비 목표가 괴리는 28%입니다.",
           "reasonBullets": [
-            "KB증권가 2026-09-09에 적극매수 의견과 목표가를 제시했습니다.",
-            "현재가 311,500원 대비 목표가는 358,225원입니다.",
-            "2026-09-09 종가 311,500원 대비 괴리는 15%입니다."
+            "KB증권가 2026-09-09에 매수 의견과 목표가를 제시했습니다.",
+            "현재가 529,000원 대비 목표가는 677,120원입니다.",
+            "2026-09-09 종가 529,000원 대비 괴리는 28%입니다."
+          ],
+          "performance": {
+            "week1": {
+              "asOfDate": "2026-09-16",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "unavailable"
+            },
+            "month1": {
+              "asOfDate": "2026-10-09",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            },
+            "month3": {
+              "asOfDate": "2026-12-08",
+              "closePrice": 0,
+              "returnPct": 0,
+              "targetProgressPct": 0,
+              "success": false,
+              "status": "pending"
+            }
+          }
+        }
+      ]
+    },
+    "korea:035720": {
+      "ticker": "035720",
+      "name": "카카오",
+      "market": "korea",
+      "latestReportDate": "2026-09-09",
+      "latestBroker": "삼성증권",
+      "latestOpinion": "적극매수",
+      "latestTargetPrice": 46760,
+      "latestCurrentPrice": 33400,
+      "latestBasePrice": 33400,
+      "avgUpside": 40,
+      "reportCount": 1,
+      "reasonSummary": "카카오 실적 개선 기대. 삼성증권가 적극매수 의견을 제시했고 현재가 기준 상승여력은 40.0%입니다. 2026-09-09 종가 대비 목표가 괴리는 40%입니다.",
+      "reasonBullets": [
+        "삼성증권가 2026-09-09에 적극매수 의견과 목표가를 제시했습니다.",
+        "현재가 33,400원 대비 목표가는 46,760원입니다.",
+        "2026-09-09 종가 33,400원 대비 괴리는 40%입니다."
+      ],
+      "investmentLogic": {
+        "summary": "카카오 실적 개선 기대",
+        "bullets": [
+          "카카오 실적 개선 기대",
+          "카카오 실적 개선 기대  카카오 실적 개선 기대.",
+          "삼성증권가 적극매수 의견을 제시했고 현재가 기준 상승여력은 40.0%입니다."
+        ]
+      },
+      "estimateRevision": {
+        "summary": "상향 신호입니다. 리포트 원문에서 추정치 관련 표현을 기준으로 판단했습니다.",
+        "bullets": [
+          "카카오 실적 개선 기대  카카오 실적 개선 기대.",
+          "삼성증권가 적극매수 의견을 제시했고 현재가 기준 상승여력은 40.0%입니다.",
+          "2026-09-09 종가 대비 목표가 괴리는 40%입니다."
+        ],
+        "signal": "up"
+      },
+      "valuation": {
+        "summary": "현재가 33,400원 대비 목표가 46,760원가 제시돼 밸류에이션 여력을 확인할 수 있습니다.",
+        "bullets": [
+          "카카오 실적 개선 기대  카카오 실적 개선 기대.",
+          "삼성증권가 적극매수 의견을 제시했고 현재가 기준 상승여력은 40.0%입니다.",
+          "2026-09-09 종가 대비 목표가 괴리는 40%입니다."
+        ]
+      },
+      "sectorCycle": {
+        "summary": "카카오 실적 개선 기대  카카오 실적 개선 기대.",
+        "bullets": [
+          "카카오 실적 개선 기대  카카오 실적 개선 기대.",
+          "삼성증권가 적극매수 의견을 제시했고 현재가 기준 상승여력은 40.0%입니다.",
+          "2026-09-09 종가 대비 목표가 괴리는 40%입니다."
+        ]
+      },
+      "relatedReports": [
+        {
+          "date": "2026-09-09",
+          "ticker": "035720",
+          "name": "카카오",
+          "market": "korea",
+          "broker": "삼성증권",
+          "analyst": "",
+          "opinion": "적극매수",
+          "targetPrice": 46760,
+          "currentPrice": 33400,
+          "basePrice": 33400,
+          "basePriceDate": "2026-09-09",
+          "upside": 40,
+          "sourceUrl": "",
+          "reportTitle": "카카오 실적 개선 기대",
+          "reasonSummary": "카카오 실적 개선 기대. 삼성증권가 적극매수 의견을 제시했고 현재가 기준 상승여력은 40.0%입니다. 2026-09-09 종가 대비 목표가 괴리는 40%입니다.",
+          "reasonBullets": [
+            "삼성증권가 2026-09-09에 적극매수 의견과 목표가를 제시했습니다.",
+            "현재가 33,400원 대비 목표가는 46,760원입니다.",
+            "2026-09-09 종가 33,400원 대비 괴리는 40%입니다."
           ],
           "performance": {
             "week1": {
@@ -33934,34 +33934,34 @@
       "ticker": "015760",
       "name": "한국전력",
       "market": "korea",
-      "latestReportDate": "2026-09-06",
-      "latestBroker": "NH투자증권",
-      "latestOpinion": "Buy",
+      "latestReportDate": "2026-09-08",
+      "latestBroker": "한국투자증권",
+      "latestOpinion": "적극매수",
       "latestTargetPrice": 33411,
       "latestCurrentPrice": 30100,
       "latestBasePrice": 30100,
       "avgUpside": 11,
       "reportCount": 1,
-      "reasonSummary": "한국전력 실적 개선 기대. NH투자증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 11.0%입니다. 2026-09-06 종가 대비 목표가 괴리는 11%입니다.",
+      "reasonSummary": "한국전력 실적 개선 기대. 한국투자증권가 적극매수 의견을 제시했고 현재가 기준 상승여력은 11.0%입니다. 2026-09-08 종가 대비 목표가 괴리는 11%입니다.",
       "reasonBullets": [
-        "NH투자증권가 2026-09-06에 Buy 의견과 목표가를 제시했습니다.",
+        "한국투자증권가 2026-09-08에 적극매수 의견과 목표가를 제시했습니다.",
         "현재가 30,100원 대비 목표가는 33,411원입니다.",
-        "2026-09-06 종가 30,100원 대비 괴리는 11%입니다."
+        "2026-09-08 종가 30,100원 대비 괴리는 11%입니다."
       ],
       "investmentLogic": {
         "summary": "한국전력 실적 개선 기대",
         "bullets": [
           "한국전력 실적 개선 기대",
           "한국전력 실적 개선 기대  한국전력 실적 개선 기대.",
-          "NH투자증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 11.0%입니다."
+          "한국투자증권가 적극매수 의견을 제시했고 현재가 기준 상승여력은 11.0%입니다."
         ]
       },
       "estimateRevision": {
         "summary": "상향 신호입니다. 리포트 원문에서 추정치 관련 표현을 기준으로 판단했습니다.",
         "bullets": [
           "한국전력 실적 개선 기대  한국전력 실적 개선 기대.",
-          "NH투자증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 11.0%입니다.",
-          "2026-09-06 종가 대비 목표가 괴리는 11%입니다."
+          "한국투자증권가 적극매수 의견을 제시했고 현재가 기준 상승여력은 11.0%입니다.",
+          "2026-09-08 종가 대비 목표가 괴리는 11%입니다."
         ],
         "signal": "up"
       },
@@ -33969,43 +33969,43 @@
         "summary": "현재가 30,100원 대비 목표가 33,411원가 제시돼 밸류에이션 여력을 확인할 수 있습니다.",
         "bullets": [
           "한국전력 실적 개선 기대  한국전력 실적 개선 기대.",
-          "NH투자증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 11.0%입니다.",
-          "2026-09-06 종가 대비 목표가 괴리는 11%입니다."
+          "한국투자증권가 적극매수 의견을 제시했고 현재가 기준 상승여력은 11.0%입니다.",
+          "2026-09-08 종가 대비 목표가 괴리는 11%입니다."
         ]
       },
       "sectorCycle": {
         "summary": "한국전력 실적 개선 기대  한국전력 실적 개선 기대.",
         "bullets": [
           "한국전력 실적 개선 기대  한국전력 실적 개선 기대.",
-          "NH투자증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 11.0%입니다.",
-          "2026-09-06 종가 대비 목표가 괴리는 11%입니다."
+          "한국투자증권가 적극매수 의견을 제시했고 현재가 기준 상승여력은 11.0%입니다.",
+          "2026-09-08 종가 대비 목표가 괴리는 11%입니다."
         ]
       },
       "relatedReports": [
         {
-          "date": "2026-09-06",
+          "date": "2026-09-08",
           "ticker": "015760",
           "name": "한국전력",
           "market": "korea",
-          "broker": "NH투자증권",
+          "broker": "한국투자증권",
           "analyst": "",
-          "opinion": "Buy",
+          "opinion": "적극매수",
           "targetPrice": 33411,
           "currentPrice": 30100,
           "basePrice": 30100,
-          "basePriceDate": "2026-09-06",
+          "basePriceDate": "2026-09-08",
           "upside": 11,
           "sourceUrl": "",
           "reportTitle": "한국전력 실적 개선 기대",
-          "reasonSummary": "한국전력 실적 개선 기대. NH투자증권가 Buy 의견을 제시했고 현재가 기준 상승여력은 11.0%입니다. 2026-09-06 종가 대비 목표가 괴리는 11%입니다.",
+          "reasonSummary": "한국전력 실적 개선 기대. 한국투자증권가 적극매수 의견을 제시했고 현재가 기준 상승여력은 11.0%입니다. 2026-09-08 종가 대비 목표가 괴리는 11%입니다.",
           "reasonBullets": [
-            "NH투자증권가 2026-09-06에 Buy 의견과 목표가를 제시했습니다.",
+            "한국투자증권가 2026-09-08에 적극매수 의견과 목표가를 제시했습니다.",
             "현재가 30,100원 대비 목표가는 33,411원입니다.",
-            "2026-09-06 종가 30,100원 대비 괴리는 11%입니다."
+            "2026-09-08 종가 30,100원 대비 괴리는 11%입니다."
           ],
           "performance": {
             "week1": {
-              "asOfDate": "2026-09-13",
+              "asOfDate": "2026-09-15",
               "closePrice": 0,
               "returnPct": 0,
               "targetProgressPct": 0,
@@ -34013,7 +34013,7 @@
               "status": "unavailable"
             },
             "month1": {
-              "asOfDate": "2026-10-06",
+              "asOfDate": "2026-10-08",
               "closePrice": 0,
               "returnPct": 0,
               "targetProgressPct": 0,
@@ -34021,7 +34021,7 @@
               "status": "pending"
             },
             "month3": {
-              "asOfDate": "2026-12-05",
+              "asOfDate": "2026-12-07",
               "closePrice": 0,
               "returnPct": 0,
               "targetProgressPct": 0,

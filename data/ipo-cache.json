@@ -257,22 +257,6 @@
       "calculator": null
     },
     {
-      "id": "2327",
-      "name": "다비오",
-      "subscriptionStart": "2026-10-19",
-      "subscriptionEnd": "2026-10-20",
-      "confirmedPrice": null,
-      "priceBandLow": null,
-      "priceBandHigh": null,
-      "underwriter": "",
-      "competitionRatio": "대신증권",
-      "listingDate": null,
-      "refundDate": "2026-10-22",
-      "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2327&l=&page=1",
-      "status": "청약예정",
-      "calculator": null
-    },
-    {
       "id": "2319",
       "name": "SK증권스팩14호",
       "subscriptionStart": "2026-10-15",
@@ -325,15 +309,15 @@
       "name": "엘리스그룹",
       "subscriptionStart": "2026-10-07",
       "subscriptionEnd": "2026-10-08",
-      "confirmedPrice": null,
+      "confirmedPrice": 90500,
       "priceBandLow": null,
       "priceBandHigh": null,
       "underwriter": "",
       "competitionRatio": "미래에셋증권,삼성증권",
-      "listingDate": null,
+      "listingDate": "2026-10-20",
       "refundDate": "2026-10-13",
       "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2316&l=&page=1",
-      "status": "청약예정",
+      "status": "청약중",
       "calculator": null
     },
     {
@@ -349,7 +333,7 @@
       "listingDate": "2026-10-15",
       "refundDate": "2026-10-08",
       "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2320&l=&page=1",
-      "status": "청약중",
+      "status": "상장예정",
       "calculator": null
     },
     {
@@ -479,8 +463,24 @@
       "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2313&l=&page=1",
       "status": "상장완료",
       "calculator": null
+    },
+    {
+      "id": "2314",
+      "name": "한국스팩17호",
+      "subscriptionStart": "2026-09-10",
+      "subscriptionEnd": "2026-09-11",
+      "confirmedPrice": 2000,
+      "priceBandLow": null,
+      "priceBandHigh": null,
+      "underwriter": "한국투자증권",
+      "competitionRatio": "494.62:1",
+      "listingDate": "2026-09-22",
+      "refundDate": "2026-09-15",
+      "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2314&l=&page=1",
+      "status": "상장완료",
+      "calculator": null
     }
   ],
-  "fetchedAt": "2026-10-06T20:43:57.221Z",
+  "fetchedAt": "2026-10-07T03:49:17.630Z",
   "totalCount": 30
 }

@@ -49,6 +49,22 @@
       "calculator": null
     },
     {
+      "id": "2341",
+      "name": "제논",
+      "subscriptionStart": "2026-11-04",
+      "subscriptionEnd": "2026-11-05",
+      "confirmedPrice": null,
+      "priceBandLow": null,
+      "priceBandHigh": null,
+      "underwriter": "",
+      "competitionRatio": "삼성증권",
+      "listingDate": null,
+      "refundDate": "2026-11-09",
+      "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2341&l=&page=1",
+      "status": "청약예정",
+      "calculator": null
+    },
+    {
       "id": "2336",
       "name": "넥스아이",
       "subscriptionStart": "2026-11-03",
@@ -463,24 +479,8 @@
       "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2313&l=&page=1",
       "status": "상장완료",
       "calculator": null
-    },
-    {
-      "id": "2314",
-      "name": "한국스팩17호",
-      "subscriptionStart": "2026-09-10",
-      "subscriptionEnd": "2026-09-11",
-      "confirmedPrice": 2000,
-      "priceBandLow": null,
-      "priceBandHigh": null,
-      "underwriter": "한국투자증권",
-      "competitionRatio": "494.62:1",
-      "listingDate": "2026-09-22",
-      "refundDate": "2026-09-15",
-      "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2314&l=&page=1",
-      "status": "상장완료",
-      "calculator": null
     }
   ],
-  "fetchedAt": "2026-10-07T23:58:47.087Z",
+  "fetchedAt": "2026-10-08T05:12:59.677Z",
   "totalCount": 30
 }

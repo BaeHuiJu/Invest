@@ -7,31 +7,31 @@
         "name": "Apple Inc.",
         "market": "us",
         "brokerCount": 5,
-        "avgUpside": 8.5,
-        "avgTargetPrice": 362,
-        "currentPrice": 333.63,
-        "entryScore": 42,
+        "avgUpside": 8.7,
+        "avgTargetPrice": 366,
+        "currentPrice": 336.67,
+        "entryScore": 43,
         "reportCount": 5
       },
       {
         "ticker": "META",
         "name": "Meta Platforms, Inc.",
         "market": "us",
-        "brokerCount": 4,
-        "avgUpside": 17,
-        "avgTargetPrice": 864.5,
-        "currentPrice": 738.88,
-        "entryScore": 43,
-        "reportCount": 4
+        "brokerCount": 5,
+        "avgUpside": 20.8,
+        "avgTargetPrice": 871.6,
+        "currentPrice": 721.31,
+        "entryScore": 53,
+        "reportCount": 5
       },
       {
         "ticker": "MU",
         "name": "Micron Technology, Inc.",
         "market": "us",
         "brokerCount": 8,
-        "avgUpside": 73.8,
-        "avgTargetPrice": 1817.5,
-        "currentPrice": 1045.56,
+        "avgUpside": 76.2,
+        "avgTargetPrice": 1917.5,
+        "currentPrice": 1088,
         "entryScore": 70,
         "reportCount": 8
       },
@@ -39,21 +39,21 @@
         "ticker": "PLTR",
         "name": "Palantir Technologies Inc.",
         "market": "us",
-        "brokerCount": 5,
-        "avgUpside": 19.5,
-        "avgTargetPrice": 229.6,
-        "currentPrice": 192.07,
-        "entryScore": 52,
-        "reportCount": 5
+        "brokerCount": 6,
+        "avgUpside": 20,
+        "avgTargetPrice": 233,
+        "currentPrice": 194.12,
+        "entryScore": 53,
+        "reportCount": 6
       },
       {
         "ticker": "V",
         "name": "Visa Inc.",
         "market": "us",
         "brokerCount": 4,
-        "avgUpside": 19.9,
+        "avgUpside": 19.5,
         "avgTargetPrice": 444.5,
-        "currentPrice": 370.64,
+        "currentPrice": 372.1,
         "entryScore": 45,
         "reportCount": 4
       },
@@ -62,9 +62,9 @@
         "name": "American Express Company",
         "market": "us",
         "brokerCount": 2,
-        "avgUpside": 34.6,
+        "avgUpside": 34.8,
         "avgTargetPrice": 410,
-        "currentPrice": 304.55,
+        "currentPrice": 304.25,
         "entryScore": 44,
         "reportCount": 2
       },
@@ -85,8 +85,8 @@
         "market": "us",
         "brokerCount": 6,
         "avgUpside": 9.9,
-        "avgTargetPrice": 293.2,
-        "currentPrice": 266.69,
+        "avgTargetPrice": 298.2,
+        "currentPrice": 271.36,
         "entryScore": 44,
         "reportCount": 6
       },
@@ -95,9 +95,9 @@
         "name": "Merck & Co., Inc.",
         "market": "us",
         "brokerCount": 6,
-        "avgUpside": 19.3,
-        "avgTargetPrice": 169.3,
-        "currentPrice": 141.94,
+        "avgUpside": 19.9,
+        "avgTargetPrice": 171.2,
+        "currentPrice": 142.79,
         "entryScore": 52,
         "reportCount": 6
       },
@@ -105,21 +105,21 @@
         "ticker": "AMGN",
         "name": "Amgen Inc.",
         "market": "us",
-        "brokerCount": 3,
-        "avgUpside": 16.5,
-        "avgTargetPrice": 469,
-        "currentPrice": 402.6,
-        "entryScore": 35,
-        "reportCount": 3
+        "brokerCount": 2,
+        "avgUpside": 15.8,
+        "avgTargetPrice": 478.5,
+        "currentPrice": 413.08,
+        "entryScore": 28,
+        "reportCount": 2
       },
       {
         "ticker": "NKE",
         "name": "NIKE, Inc.",
         "market": "us",
         "brokerCount": 4,
-        "avgUpside": 40.9,
+        "avgUpside": 41.9,
         "avgTargetPrice": 48.8,
-        "currentPrice": 34.61,
+        "currentPrice": 34.36,
         "entryScore": 63,
         "reportCount": 4
       },
@@ -128,10 +128,10 @@
         "name": "Costco Wholesale Corporation",
         "market": "us",
         "brokerCount": 6,
-        "avgUpside": 20.2,
-        "avgTargetPrice": 1124.8,
-        "currentPrice": 935.68,
-        "entryScore": 53,
+        "avgUpside": 16.2,
+        "avgTargetPrice": 1094.7,
+        "currentPrice": 942.25,
+        "entryScore": 49,
         "reportCount": 6
       },
       {
@@ -139,9 +139,9 @@
         "name": "ExxonMobil Holdings Corporation",
         "market": "us",
         "brokerCount": 3,
-        "avgUpside": 9.8,
+        "avgUpside": 10.1,
         "avgTargetPrice": 180.7,
-        "currentPrice": 164.48,
+        "currentPrice": 164.05,
         "entryScore": 30,
         "reportCount": 3
       },
@@ -150,10 +150,10 @@
         "name": "Microsoft Corporation",
         "market": "us",
         "brokerCount": 6,
-        "avgUpside": 20.1,
-        "avgTargetPrice": 635.8,
-        "currentPrice": 529.3,
-        "entryScore": 53,
+        "avgUpside": 21.3,
+        "avgTargetPrice": 642.5,
+        "currentPrice": 529.76,
+        "entryScore": 54,
         "reportCount": 6
       },
       {
@@ -161,10 +161,10 @@
         "name": "Advanced Micro Devices, Inc.",
         "market": "us",
         "brokerCount": 7,
-        "avgUpside": 10.2,
+        "avgUpside": 10.8,
         "avgTargetPrice": 715.7,
-        "currentPrice": 649.42,
-        "entryScore": 44,
+        "currentPrice": 645.86,
+        "entryScore": 45,
         "reportCount": 7
       },
       {
@@ -182,22 +182,22 @@
         "ticker": "LLY",
         "name": "Eli Lilly and Company",
         "market": "us",
-        "brokerCount": 6,
-        "avgUpside": 21.3,
-        "avgTargetPrice": 1403.5,
-        "currentPrice": 1157.49,
-        "entryScore": 54,
-        "reportCount": 6
+        "brokerCount": 7,
+        "avgUpside": 18.4,
+        "avgTargetPrice": 1407.3,
+        "currentPrice": 1188.72,
+        "entryScore": 51,
+        "reportCount": 7
       },
       {
         "ticker": "JNJ",
         "name": "Johnson & Johnson",
         "market": "us",
         "brokerCount": 6,
-        "avgUpside": 17.7,
-        "avgTargetPrice": 300,
-        "currentPrice": 254.78,
-        "entryScore": 51,
+        "avgUpside": 13.6,
+        "avgTargetPrice": 293.5,
+        "currentPrice": 258.45,
+        "entryScore": 47,
         "reportCount": 6
       },
       {
@@ -205,10 +205,10 @@
         "name": "The Coca-Cola Company",
         "market": "us",
         "brokerCount": 7,
-        "avgUpside": 12.2,
+        "avgUpside": 12.7,
         "avgTargetPrice": 96.7,
-        "currentPrice": 86.17,
-        "entryScore": 47,
+        "currentPrice": 85.82,
+        "entryScore": 48,
         "reportCount": 7
       },
       {
@@ -216,54 +216,54 @@
         "name": "The Boeing Company",
         "market": "us",
         "brokerCount": 6,
-        "avgUpside": 45.8,
+        "avgUpside": 46.9,
         "avgTargetPrice": 276.7,
-        "currentPrice": 189.82,
-        "entryScore": 73,
+        "currentPrice": 188.32,
+        "entryScore": 70,
         "reportCount": 6
       },
       {
         "ticker": "NFLX",
         "name": "Netflix, Inc.",
         "market": "us",
-        "brokerCount": 5,
-        "avgUpside": 33.9,
-        "avgTargetPrice": 92,
-        "currentPrice": 68.69,
-        "entryScore": 65,
-        "reportCount": 5
+        "brokerCount": 4,
+        "avgUpside": 27.3,
+        "avgTargetPrice": 88.8,
+        "currentPrice": 69.7,
+        "entryScore": 52,
+        "reportCount": 4
       },
       {
         "ticker": "VZ",
         "name": "Verizon Communications Inc.",
         "market": "us",
         "brokerCount": 3,
-        "avgUpside": 13.5,
+        "avgUpside": 14,
         "avgTargetPrice": 52.2,
-        "currentPrice": 45.98,
-        "entryScore": 33,
+        "currentPrice": 45.77,
+        "entryScore": 34,
         "reportCount": 3
       },
       {
         "ticker": "AMZN",
         "name": "Amazon.com, Inc.",
         "market": "us",
-        "brokerCount": 7,
-        "avgUpside": 34.1,
-        "avgTargetPrice": 343.7,
-        "currentPrice": 256.29,
-        "entryScore": 65,
-        "reportCount": 7
+        "brokerCount": 8,
+        "avgUpside": 32.2,
+        "avgTargetPrice": 343.5,
+        "currentPrice": 259.92,
+        "entryScore": 63,
+        "reportCount": 8
       },
       {
         "ticker": "NVDA",
         "name": "NVIDIA Corporation",
         "market": "us",
         "brokerCount": 7,
-        "avgUpside": 37.3,
-        "avgTargetPrice": 328.6,
-        "currentPrice": 239.24,
-        "entryScore": 68,
+        "avgUpside": 36.9,
+        "avgTargetPrice": 325,
+        "currentPrice": 237.47,
+        "entryScore": 67,
         "reportCount": 7
       },
       {
@@ -271,9 +271,9 @@
         "name": "Broadcom Inc.",
         "market": "us",
         "brokerCount": 4,
-        "avgUpside": 35.4,
+        "avgUpside": 35.1,
         "avgTargetPrice": 508.8,
-        "currentPrice": 375.81,
+        "currentPrice": 376.51,
         "entryScore": 59,
         "reportCount": 4
       },
@@ -281,33 +281,33 @@
         "ticker": "NOW",
         "name": "ServiceNow, Inc.",
         "market": "us",
-        "brokerCount": 6,
-        "avgUpside": 26.5,
-        "avgTargetPrice": 174.5,
-        "currentPrice": 137.97,
-        "entryScore": 58,
-        "reportCount": 6
+        "brokerCount": 7,
+        "avgUpside": 25.1,
+        "avgTargetPrice": 172.4,
+        "currentPrice": 137.87,
+        "entryScore": 57,
+        "reportCount": 7
       },
       {
         "ticker": "PANW",
         "name": "Palo Alto Networks, Inc.",
         "market": "us",
-        "brokerCount": 2,
-        "avgUpside": 3,
-        "avgTargetPrice": 432.5,
-        "currentPrice": 419.91,
-        "entryScore": 17,
-        "reportCount": 2
+        "brokerCount": 4,
+        "avgUpside": 9.4,
+        "avgTargetPrice": 443.8,
+        "currentPrice": 405.57,
+        "entryScore": 36,
+        "reportCount": 4
       },
       {
         "ticker": "MS",
         "name": "Morgan Stanley",
         "market": "us",
         "brokerCount": 5,
-        "avgUpside": 24.4,
+        "avgUpside": 25.2,
         "avgTargetPrice": 237.6,
-        "currentPrice": 191.02,
-        "entryScore": 56,
+        "currentPrice": 189.71,
+        "entryScore": 58,
         "reportCount": 5
       },
       {
@@ -315,10 +315,10 @@
         "name": "McDonald's Corporation",
         "market": "us",
         "brokerCount": 3,
-        "avgUpside": 14.7,
+        "avgUpside": 15.5,
         "avgTargetPrice": 266.7,
-        "currentPrice": 232.45,
-        "entryScore": 34,
+        "currentPrice": 230.88,
+        "entryScore": 36,
         "reportCount": 3
       },
       {
@@ -326,10 +326,10 @@
         "name": "The Home Depot, Inc.",
         "market": "us",
         "brokerCount": 4,
-        "avgUpside": 39,
+        "avgUpside": 39.4,
         "avgTargetPrice": 398.5,
-        "currentPrice": 286.69,
-        "entryScore": 62,
+        "currentPrice": 285.77,
+        "entryScore": 64,
         "reportCount": 4
       },
       {
@@ -337,54 +337,54 @@
         "name": "AT&T Inc.",
         "market": "us",
         "brokerCount": 5,
-        "avgUpside": 20.3,
-        "avgTargetPrice": 29.4,
-        "currentPrice": 24.43,
-        "entryScore": 57,
+        "avgUpside": 29.1,
+        "avgTargetPrice": 31.6,
+        "currentPrice": 24.47,
+        "entryScore": 60,
         "reportCount": 5
       },
       {
         "ticker": "CRM",
         "name": "Salesforce, Inc.",
         "market": "us",
-        "brokerCount": 5,
-        "avgUpside": 25.5,
-        "avgTargetPrice": 282.4,
-        "currentPrice": 224.99,
-        "entryScore": 65,
-        "reportCount": 5
+        "brokerCount": 7,
+        "avgUpside": 25.8,
+        "avgTargetPrice": 282.6,
+        "currentPrice": 224.56,
+        "entryScore": 58,
+        "reportCount": 7
       },
       {
         "ticker": "ORCL",
         "name": "Oracle Corporation",
         "market": "us",
-        "brokerCount": 4,
-        "avgUpside": 77.9,
-        "avgTargetPrice": 257.5,
-        "currentPrice": 144.77,
-        "entryScore": 63,
-        "reportCount": 4
+        "brokerCount": 3,
+        "avgUpside": 86.9,
+        "avgTargetPrice": 268.3,
+        "currentPrice": 143.56,
+        "entryScore": 56,
+        "reportCount": 3
       },
       {
         "ticker": "SNOW",
         "name": "Snowflake Inc.",
         "market": "us",
-        "brokerCount": 4,
-        "avgUpside": 29.7,
-        "avgTargetPrice": 435.8,
-        "currentPrice": 335.95,
-        "entryScore": 57,
-        "reportCount": 4
+        "brokerCount": 5,
+        "avgUpside": 28.8,
+        "avgTargetPrice": 428.6,
+        "currentPrice": 332.85,
+        "entryScore": 60,
+        "reportCount": 5
       },
       {
         "ticker": "BAC",
         "name": "Bank of America Corporation",
         "market": "us",
         "brokerCount": 7,
-        "avgUpside": 18.6,
+        "avgUpside": 19.8,
         "avgTargetPrice": 64.1,
-        "currentPrice": 54.09,
-        "entryScore": 51,
+        "currentPrice": 53.52,
+        "entryScore": 54,
         "reportCount": 7
       },
       {
@@ -392,10 +392,10 @@
         "name": "Citigroup Inc.",
         "market": "us",
         "brokerCount": 4,
-        "avgUpside": 21,
+        "avgUpside": 22.1,
         "avgTargetPrice": 155.5,
-        "currentPrice": 128.52,
-        "entryScore": 46,
+        "currentPrice": 127.32,
+        "entryScore": 49,
         "reportCount": 4
       },
       {
@@ -403,10 +403,10 @@
         "name": "Walmart Inc.",
         "market": "us",
         "brokerCount": 6,
-        "avgUpside": 21.3,
+        "avgUpside": 20.2,
         "avgTargetPrice": 130,
-        "currentPrice": 107.2,
-        "entryScore": 54,
+        "currentPrice": 108.16,
+        "entryScore": 53,
         "reportCount": 6
       },
       {
@@ -414,10 +414,10 @@
         "name": "Alphabet Inc.",
         "market": "us",
         "brokerCount": 8,
-        "avgUpside": 23.7,
-        "avgTargetPrice": 430.3,
-        "currentPrice": 347.68,
-        "entryScore": 56,
+        "avgUpside": 20.4,
+        "avgTargetPrice": 422.1,
+        "currentPrice": 350.5,
+        "entryScore": 53,
         "reportCount": 8
       },
       {
@@ -425,10 +425,10 @@
         "name": "JPMorgan Chase & Co.",
         "market": "us",
         "brokerCount": 4,
-        "avgUpside": 15.7,
+        "avgUpside": 16.3,
         "avgTargetPrice": 383.3,
-        "currentPrice": 331.28,
-        "entryScore": 43,
+        "currentPrice": 329.58,
+        "entryScore": 44,
         "reportCount": 4
       },
       {
@@ -436,32 +436,32 @@
         "name": "Chevron Corporation",
         "market": "us",
         "brokerCount": 3,
-        "avgUpside": 15.6,
+        "avgUpside": 17,
         "avgTargetPrice": 240,
-        "currentPrice": 207.58,
-        "entryScore": 35,
+        "currentPrice": 205.15,
+        "entryScore": 36,
         "reportCount": 3
       },
       {
         "ticker": "DIS",
         "name": "The Walt Disney Company",
         "market": "us",
-        "brokerCount": 6,
-        "avgUpside": 24,
-        "avgTargetPrice": 129,
-        "currentPrice": 104.03,
-        "entryScore": 56,
-        "reportCount": 6
+        "brokerCount": 8,
+        "avgUpside": 21,
+        "avgTargetPrice": 126.8,
+        "currentPrice": 104.75,
+        "entryScore": 53,
+        "reportCount": 8
       },
       {
         "ticker": "QCOM",
         "name": "QUALCOMM Incorporated",
         "market": "us",
         "brokerCount": 2,
-        "avgUpside": 39.5,
+        "avgUpside": 42.6,
         "avgTargetPrice": 252.5,
-        "currentPrice": 181.03,
-        "entryScore": 56,
+        "currentPrice": 177.12,
+        "entryScore": 60,
         "reportCount": 2
       },
       {
@@ -469,10 +469,10 @@
         "name": "Adobe Inc.",
         "market": "us",
         "brokerCount": 2,
-        "avgUpside": 39.2,
+        "avgUpside": 42.4,
         "avgTargetPrice": 331.5,
-        "currentPrice": 238.12,
-        "entryScore": 63,
+        "currentPrice": 232.77,
+        "entryScore": 68,
         "reportCount": 2
       },
       {
@@ -480,9 +480,9 @@
         "name": "UnitedHealth Group Incorporated",
         "market": "us",
         "brokerCount": 6,
-        "avgUpside": 30.2,
+        "avgUpside": 30.3,
         "avgTargetPrice": 489.8,
-        "currentPrice": 376.32,
+        "currentPrice": 375.98,
         "entryScore": 62,
         "reportCount": 6
       },
@@ -490,22 +490,22 @@
         "ticker": "COP",
         "name": "ConocoPhillips",
         "market": "us",
-        "brokerCount": 4,
-        "avgUpside": 23.3,
-        "avgTargetPrice": 159.5,
-        "currentPrice": 129.35,
-        "entryScore": 48,
-        "reportCount": 4
+        "brokerCount": 5,
+        "avgUpside": 18,
+        "avgTargetPrice": 153.2,
+        "currentPrice": 129.84,
+        "entryScore": 51,
+        "reportCount": 5
       },
       {
         "ticker": "SLB",
         "name": "SLB N.V.",
         "market": "us",
         "brokerCount": 4,
-        "avgUpside": 29.5,
+        "avgUpside": 35,
         "avgTargetPrice": 64.8,
-        "currentPrice": 50,
-        "entryScore": 54,
+        "currentPrice": 47.96,
+        "entryScore": 62,
         "reportCount": 4
       },
       {
@@ -513,22 +513,22 @@
         "name": "Caterpillar Inc.",
         "market": "us",
         "brokerCount": 5,
-        "avgUpside": 19.3,
+        "avgUpside": 26.5,
         "avgTargetPrice": 1029.8,
-        "currentPrice": 863.44,
-        "entryScore": 52,
+        "currentPrice": 813.83,
+        "entryScore": 66,
         "reportCount": 5
       },
       {
         "ticker": "GILD",
         "name": "Gilead Sciences, Inc.",
         "market": "us",
-        "brokerCount": 2,
-        "avgUpside": 21.3,
-        "avgTargetPrice": 175,
-        "currentPrice": 144.23,
-        "entryScore": 42,
-        "reportCount": 2
+        "brokerCount": 5,
+        "avgUpside": 14.5,
+        "avgTargetPrice": 168.2,
+        "currentPrice": 146.85,
+        "entryScore": 48,
+        "reportCount": 5
       },
       {
         "ticker": "DE",
@@ -1423,32 +1423,32 @@
           "name": "The Goldman Sachs Group, Inc.",
           "market": "us",
           "brokerCount": 4,
-          "avgUpside": 24.6,
-          "avgTargetPrice": 1117.5,
-          "currentPrice": 897.18,
-          "entryScore": 49,
+          "avgUpside": 22.4,
+          "avgTargetPrice": 1086.3,
+          "currentPrice": 887.21,
+          "entryScore": 48,
           "reportCount": 4
         },
         {
           "ticker": "BLK",
           "name": "BlackRock, Inc.",
           "market": "us",
-          "brokerCount": 5,
-          "avgUpside": 25,
-          "avgTargetPrice": 1349.2,
-          "currentPrice": 1079.42,
+          "brokerCount": 8,
+          "avgUpside": 25.4,
+          "avgTargetPrice": 1341.6,
+          "currentPrice": 1069.63,
           "entryScore": 57,
-          "reportCount": 5
+          "reportCount": 8
         },
         {
           "ticker": "TGT",
           "name": "Target Corporation",
           "market": "us",
           "brokerCount": 5,
-          "avgUpside": 17.3,
+          "avgUpside": 19.9,
           "avgTargetPrice": 181,
-          "currentPrice": 154.33,
-          "entryScore": 50,
+          "currentPrice": 150.92,
+          "entryScore": 55,
           "reportCount": 5
         }
       ],
@@ -2492,34 +2492,34 @@
           "ticker": "TSLA",
           "name": "Tesla, Inc.",
           "market": "us",
-          "brokerCount": 3,
-          "avgUpside": 20.4,
-          "avgTargetPrice": 458.3,
-          "currentPrice": 380.68,
-          "entryScore": 39,
-          "reportCount": 3
+          "brokerCount": 4,
+          "avgUpside": 24.1,
+          "avgTargetPrice": 468.8,
+          "currentPrice": 377.81,
+          "entryScore": 49,
+          "reportCount": 4
         },
         {
           "ticker": "INTC",
           "name": "Intel Corporation",
           "market": "us",
-          "brokerCount": 3,
-          "avgUpside": 21.5,
-          "avgTargetPrice": 136.7,
-          "currentPrice": 112.5,
-          "entryScore": 57,
-          "reportCount": 3
+          "brokerCount": 2,
+          "avgUpside": 28.2,
+          "avgTargetPrice": 145,
+          "currentPrice": 113.12,
+          "entryScore": 55,
+          "reportCount": 2
         },
         {
           "ticker": "LMT",
           "name": "Lockheed Martin Corporation",
           "market": "us",
-          "brokerCount": 3,
-          "avgUpside": 24.3,
-          "avgTargetPrice": 634.3,
-          "currentPrice": 510.12,
-          "entryScore": 42,
-          "reportCount": 3
+          "brokerCount": 4,
+          "avgUpside": 30.4,
+          "avgTargetPrice": 650.8,
+          "currentPrice": 499.22,
+          "entryScore": 55,
+          "reportCount": 4
         }
       ],
       "removed": [],
@@ -6888,10 +6888,10 @@
           "name": "Pfizer Inc.",
           "market": "us",
           "brokerCount": 2,
-          "avgUpside": 23.6,
+          "avgUpside": 21.4,
           "avgTargetPrice": 34,
-          "currentPrice": 27.5,
-          "entryScore": 35,
+          "currentPrice": 28,
+          "entryScore": 33,
           "reportCount": 2
         }
       ],
@@ -8030,10 +8030,10 @@
           "name": "Blackstone Inc.",
           "market": "us",
           "brokerCount": 2,
-          "avgUpside": 15.6,
+          "avgUpside": 17.1,
           "avgTargetPrice": 131,
-          "currentPrice": 113.36,
-          "entryScore": 28,
+          "currentPrice": 111.83,
+          "entryScore": 29,
           "reportCount": 2
         },
         {
@@ -8041,10 +8041,10 @@
           "name": "The Procter & Gamble Company",
           "market": "us",
           "brokerCount": 3,
-          "avgUpside": 13.9,
+          "avgUpside": 14.3,
           "avgTargetPrice": 169,
-          "currentPrice": 148.41,
-          "entryScore": 33,
+          "currentPrice": 147.82,
+          "entryScore": 35,
           "reportCount": 3
         },
         {
@@ -8052,10 +8052,10 @@
           "name": "PepsiCo, Inc.",
           "market": "us",
           "brokerCount": 2,
-          "avgUpside": 29.3,
+          "avgUpside": 31.3,
           "avgTargetPrice": 162.5,
-          "currentPrice": 125.71,
-          "entryScore": 40,
+          "currentPrice": 123.73,
+          "entryScore": 44,
           "reportCount": 2
         }
       ],
@@ -9174,12 +9174,12 @@
           "ticker": "SCHW",
           "name": "The Charles Schwab Corporation",
           "market": "us",
-          "brokerCount": 2,
-          "avgUpside": 18.8,
-          "avgTargetPrice": 115,
-          "currentPrice": 96.8,
-          "entryScore": 30,
-          "reportCount": 2
+          "brokerCount": 3,
+          "avgUpside": 17.2,
+          "avgTargetPrice": 112,
+          "currentPrice": 95.58,
+          "entryScore": 36,
+          "reportCount": 3
         }
       ],
       "removed": [],
@@ -11625,6 +11625,1323 @@
             "currentPrice": {
               "old": 238.12,
               "new": 232.77
+            }
+          }
+        }
+      ]
+    },
+    {
+      "date": "2026-10-09",
+      "added": [],
+      "removed": [
+        "QCOM"
+      ],
+      "changed": [
+        {
+          "ticker": "AAPL",
+          "name": "Apple Inc.",
+          "fields": {
+            "brokerCount": {
+              "old": 5,
+              "new": 4
+            },
+            "avgUpside": {
+              "old": 8.7,
+              "new": 9.4
+            },
+            "entryScore": {
+              "old": 43,
+              "new": 36
+            },
+            "avgTargetPrice": {
+              "old": 366,
+              "new": 372.5
+            },
+            "currentPrice": {
+              "old": 336.67,
+              "new": 340.42
+            },
+            "reportCount": {
+              "old": 5,
+              "new": 4
+            }
+          }
+        },
+        {
+          "ticker": "MSFT",
+          "name": "Microsoft Corporation",
+          "fields": {
+            "avgUpside": {
+              "old": 21.3,
+              "new": 19.9
+            },
+            "entryScore": {
+              "old": 54,
+              "new": 52
+            },
+            "avgTargetPrice": {
+              "old": 642.5,
+              "new": 626.7
+            },
+            "currentPrice": {
+              "old": 529.76,
+              "new": 522.61
+            }
+          }
+        },
+        {
+          "ticker": "META",
+          "name": "Meta Platforms, Inc.",
+          "fields": {
+            "brokerCount": {
+              "old": 5,
+              "new": 6
+            },
+            "avgUpside": {
+              "old": 20.8,
+              "new": 20.6
+            },
+            "avgTargetPrice": {
+              "old": 871.6,
+              "new": 869.2
+            },
+            "currentPrice": {
+              "old": 721.31,
+              "new": 720.89
+            },
+            "reportCount": {
+              "old": 5,
+              "new": 6
+            }
+          }
+        },
+        {
+          "ticker": "TSLA",
+          "name": "Tesla, Inc.",
+          "fields": {
+            "brokerCount": {
+              "old": 4,
+              "new": 3
+            },
+            "avgUpside": {
+              "old": 24.1,
+              "new": 30.7
+            },
+            "entryScore": {
+              "old": 49,
+              "new": 48
+            },
+            "avgTargetPrice": {
+              "old": 468.8,
+              "new": 490
+            },
+            "currentPrice": {
+              "old": 377.81,
+              "new": 375
+            },
+            "reportCount": {
+              "old": 4,
+              "new": 3
+            }
+          }
+        },
+        {
+          "ticker": "MU",
+          "name": "Micron Technology, Inc.",
+          "fields": {
+            "avgUpside": {
+              "old": 76.2,
+              "new": 83.3
+            },
+            "avgTargetPrice": {
+              "old": 1917.5,
+              "new": 1898.8
+            },
+            "currentPrice": {
+              "old": 1088,
+              "new": 1035.84
+            }
+          }
+        },
+        {
+          "ticker": "PLTR",
+          "name": "Palantir Technologies Inc.",
+          "fields": {
+            "avgUpside": {
+              "old": 20,
+              "new": 18.5
+            },
+            "entryScore": {
+              "old": 53,
+              "new": 51
+            },
+            "avgTargetPrice": {
+              "old": 233,
+              "new": 235.5
+            },
+            "currentPrice": {
+              "old": 194.12,
+              "new": 198.78
+            }
+          }
+        },
+        {
+          "ticker": "V",
+          "name": "Visa Inc.",
+          "fields": {
+            "brokerCount": {
+              "old": 4,
+              "new": 6
+            },
+            "avgUpside": {
+              "old": 19.5,
+              "new": 16.5
+            },
+            "entryScore": {
+              "old": 45,
+              "new": 49
+            },
+            "avgTargetPrice": {
+              "old": 444.5,
+              "new": 436.8
+            },
+            "currentPrice": {
+              "old": 372.1,
+              "new": 375.1
+            },
+            "reportCount": {
+              "old": 4,
+              "new": 6
+            }
+          }
+        },
+        {
+          "ticker": "C",
+          "name": "Citigroup Inc.",
+          "fields": {
+            "brokerCount": {
+              "old": 4,
+              "new": 5
+            },
+            "avgUpside": {
+              "old": 22.1,
+              "new": 21.2
+            },
+            "entryScore": {
+              "old": 49,
+              "new": 54
+            },
+            "avgTargetPrice": {
+              "old": 155.5,
+              "new": 155.2
+            },
+            "currentPrice": {
+              "old": 127.32,
+              "new": 128.08
+            },
+            "reportCount": {
+              "old": 4,
+              "new": 5
+            }
+          }
+        },
+        {
+          "ticker": "AXP",
+          "name": "American Express Company",
+          "fields": {
+            "avgUpside": {
+              "old": 34.8,
+              "new": 29
+            },
+            "entryScore": {
+              "old": 44,
+              "new": 39
+            },
+            "avgTargetPrice": {
+              "old": 410,
+              "new": 397.5
+            },
+            "currentPrice": {
+              "old": 304.25,
+              "new": 308.1
+            }
+          }
+        },
+        {
+          "ticker": "BLK",
+          "name": "BlackRock, Inc.",
+          "fields": {
+            "avgUpside": {
+              "old": 25.4,
+              "new": 25.8
+            },
+            "entryScore": {
+              "old": 57,
+              "new": 58
+            },
+            "avgTargetPrice": {
+              "old": 1341.6,
+              "new": 1339.8
+            },
+            "currentPrice": {
+              "old": 1069.63,
+              "new": 1065.35
+            }
+          }
+        },
+        {
+          "ticker": "LLY",
+          "name": "Eli Lilly and Company",
+          "fields": {
+            "avgUpside": {
+              "old": 18.4,
+              "new": 19.6
+            },
+            "entryScore": {
+              "old": 51,
+              "new": 52
+            },
+            "avgTargetPrice": {
+              "old": 1407.3,
+              "new": 1398.7
+            },
+            "currentPrice": {
+              "old": 1188.72,
+              "new": 1169.6
+            }
+          }
+        },
+        {
+          "ticker": "ABBV",
+          "name": "AbbVie Inc.",
+          "fields": {
+            "brokerCount": {
+              "old": 6,
+              "new": 7
+            },
+            "avgUpside": {
+              "old": 9.9,
+              "new": 10.8
+            },
+            "avgTargetPrice": {
+              "old": 298.2,
+              "new": 301.9
+            },
+            "currentPrice": {
+              "old": 271.36,
+              "new": 272.42
+            },
+            "reportCount": {
+              "old": 6,
+              "new": 7
+            }
+          }
+        },
+        {
+          "ticker": "MRK",
+          "name": "Merck & Co., Inc.",
+          "fields": {
+            "brokerCount": {
+              "old": 6,
+              "new": 5
+            },
+            "avgUpside": {
+              "old": 19.9,
+              "new": 19.7
+            },
+            "avgTargetPrice": {
+              "old": 171.2,
+              "new": 170.4
+            },
+            "currentPrice": {
+              "old": 142.79,
+              "new": 142.38
+            },
+            "reportCount": {
+              "old": 6,
+              "new": 5
+            }
+          }
+        },
+        {
+          "ticker": "PFE",
+          "name": "Pfizer Inc.",
+          "fields": {
+            "avgUpside": {
+              "old": 21.4,
+              "new": 24
+            },
+            "entryScore": {
+              "old": 33,
+              "new": 35
+            },
+            "avgTargetPrice": {
+              "old": 34,
+              "new": 34.5
+            },
+            "currentPrice": {
+              "old": 28,
+              "new": 27.82
+            }
+          }
+        },
+        {
+          "ticker": "AMGN",
+          "name": "Amgen Inc.",
+          "fields": {
+            "brokerCount": {
+              "old": 2,
+              "new": 3
+            },
+            "avgUpside": {
+              "old": 15.8,
+              "new": 13.5
+            },
+            "entryScore": {
+              "old": 28,
+              "new": 33
+            },
+            "avgTargetPrice": {
+              "old": 478.5,
+              "new": 462.3
+            },
+            "currentPrice": {
+              "old": 413.08,
+              "new": 407.44
+            },
+            "reportCount": {
+              "old": 2,
+              "new": 3
+            }
+          }
+        },
+        {
+          "ticker": "GILD",
+          "name": "Gilead Sciences, Inc.",
+          "fields": {
+            "brokerCount": {
+              "old": 5,
+              "new": 6
+            },
+            "avgUpside": {
+              "old": 14.5,
+              "new": 15.3
+            },
+            "avgTargetPrice": {
+              "old": 168.2,
+              "new": 169.7
+            },
+            "currentPrice": {
+              "old": 146.85,
+              "new": 147.1
+            },
+            "reportCount": {
+              "old": 5,
+              "new": 6
+            }
+          }
+        },
+        {
+          "ticker": "PEP",
+          "name": "PepsiCo, Inc.",
+          "fields": {
+            "avgUpside": {
+              "old": 31.3,
+              "new": 20.8
+            },
+            "entryScore": {
+              "old": 44,
+              "new": 32
+            },
+            "avgTargetPrice": {
+              "old": 162.5,
+              "new": 155
+            },
+            "currentPrice": {
+              "old": 123.73,
+              "new": 128.34
+            }
+          }
+        },
+        {
+          "ticker": "COST",
+          "name": "Costco Wholesale Corporation",
+          "fields": {
+            "avgUpside": {
+              "old": 16.2,
+              "new": 24.8
+            },
+            "entryScore": {
+              "old": 49,
+              "new": 57
+            },
+            "avgTargetPrice": {
+              "old": 1094.7,
+              "new": 1183
+            },
+            "currentPrice": {
+              "old": 942.25,
+              "new": 947.92
+            }
+          }
+        },
+        {
+          "ticker": "CVX",
+          "name": "Chevron Corporation",
+          "fields": {
+            "brokerCount": {
+              "old": 3,
+              "new": 5
+            },
+            "avgUpside": {
+              "old": 17,
+              "new": 13.3
+            },
+            "entryScore": {
+              "old": 36,
+              "new": 47
+            },
+            "avgTargetPrice": {
+              "old": 240,
+              "new": 239.6
+            },
+            "currentPrice": {
+              "old": 205.15,
+              "new": 211.55
+            },
+            "reportCount": {
+              "old": 3,
+              "new": 5
+            }
+          }
+        },
+        {
+          "ticker": "CAT",
+          "name": "Caterpillar Inc.",
+          "fields": {
+            "avgUpside": {
+              "old": 26.5,
+              "new": 32.4
+            },
+            "entryScore": {
+              "old": 66,
+              "new": 63
+            },
+            "avgTargetPrice": {
+              "old": 1029.8,
+              "new": 1053.8
+            },
+            "currentPrice": {
+              "old": 813.83,
+              "new": 796.18
+            }
+          }
+        },
+        {
+          "ticker": "BA",
+          "name": "The Boeing Company",
+          "fields": {
+            "brokerCount": {
+              "old": 6,
+              "new": 7
+            },
+            "avgUpside": {
+              "old": 46.9,
+              "new": 51
+            },
+            "avgTargetPrice": {
+              "old": 276.7,
+              "new": 283.6
+            },
+            "currentPrice": {
+              "old": 188.32,
+              "new": 187.75
+            },
+            "reportCount": {
+              "old": 6,
+              "new": 7
+            }
+          }
+        },
+        {
+          "ticker": "LMT",
+          "name": "Lockheed Martin Corporation",
+          "fields": {
+            "brokerCount": {
+              "old": 4,
+              "new": 5
+            },
+            "avgUpside": {
+              "old": 30.4,
+              "new": 29.7
+            },
+            "entryScore": {
+              "old": 55,
+              "new": 61
+            },
+            "avgTargetPrice": {
+              "old": 650.8,
+              "new": 658.8
+            },
+            "currentPrice": {
+              "old": 499.22,
+              "new": 507.89
+            },
+            "reportCount": {
+              "old": 4,
+              "new": 5
+            }
+          }
+        },
+        {
+          "ticker": "RTX",
+          "name": "RTX Corporation",
+          "fields": {
+            "brokerCount": {
+              "old": 3,
+              "new": 4
+            },
+            "avgUpside": {
+              "old": 35.9,
+              "new": 29.9
+            },
+            "entryScore": {
+              "old": 52,
+              "new": 54
+            },
+            "avgTargetPrice": {
+              "old": 245,
+              "new": 239.5
+            },
+            "currentPrice": {
+              "old": 180.26,
+              "new": 184.32
+            },
+            "reportCount": {
+              "old": 3,
+              "new": 4
+            }
+          }
+        },
+        {
+          "ticker": "NFLX",
+          "name": "Netflix, Inc.",
+          "fields": {
+            "avgUpside": {
+              "old": 27.3,
+              "new": 24
+            },
+            "entryScore": {
+              "old": 52,
+              "new": 49
+            },
+            "currentPrice": {
+              "old": 69.7,
+              "new": 71.57
+            }
+          }
+        },
+        {
+          "ticker": "GOOGL",
+          "name": "Alphabet Inc.",
+          "fields": {
+            "avgUpside": {
+              "old": 20.4,
+              "new": 21.2
+            },
+            "entryScore": {
+              "old": 53,
+              "new": 55
+            },
+            "currentPrice": {
+              "old": 350.5,
+              "new": 348.29
+            }
+          }
+        },
+        {
+          "ticker": "AMZN",
+          "name": "Amazon.com, Inc.",
+          "fields": {
+            "avgUpside": {
+              "old": 32.2,
+              "new": 35.2
+            },
+            "entryScore": {
+              "old": 63,
+              "new": 71
+            },
+            "currentPrice": {
+              "old": 259.92,
+              "new": 254.06
+            }
+          }
+        },
+        {
+          "ticker": "NVDA",
+          "name": "NVIDIA Corporation",
+          "fields": {
+            "avgUpside": {
+              "old": 36.9,
+              "new": 41
+            },
+            "entryScore": {
+              "old": 67,
+              "new": 76
+            },
+            "currentPrice": {
+              "old": 237.47,
+              "new": 230.48
+            }
+          }
+        },
+        {
+          "ticker": "CRM",
+          "name": "Salesforce, Inc.",
+          "fields": {
+            "avgUpside": {
+              "old": 25.8,
+              "new": 24
+            },
+            "entryScore": {
+              "old": 58,
+              "new": 56
+            },
+            "currentPrice": {
+              "old": 224.56,
+              "new": 227.8
+            }
+          }
+        },
+        {
+          "ticker": "NOW",
+          "name": "ServiceNow, Inc.",
+          "fields": {
+            "brokerCount": {
+              "old": 7,
+              "new": 6
+            },
+            "avgUpside": {
+              "old": 25.1,
+              "new": 14.4
+            },
+            "entryScore": {
+              "old": 57,
+              "new": 48
+            },
+            "avgTargetPrice": {
+              "old": 172.4,
+              "new": 159.8
+            },
+            "currentPrice": {
+              "old": 137.87,
+              "new": 139.75
+            },
+            "reportCount": {
+              "old": 7,
+              "new": 6
+            }
+          }
+        },
+        {
+          "ticker": "SNOW",
+          "name": "Snowflake Inc.",
+          "fields": {
+            "avgUpside": {
+              "old": 28.8,
+              "new": 24.8
+            },
+            "entryScore": {
+              "old": 60,
+              "new": 57
+            },
+            "currentPrice": {
+              "old": 332.85,
+              "new": 343.4
+            }
+          }
+        },
+        {
+          "ticker": "DDOG",
+          "name": "Datadog, Inc.",
+          "fields": {
+            "avgUpside": {
+              "old": 14.9,
+              "new": 13.8
+            },
+            "entryScore": {
+              "old": 34,
+              "new": 33
+            },
+            "currentPrice": {
+              "old": 271.34,
+              "new": 273.8
+            }
+          }
+        },
+        {
+          "ticker": "PANW",
+          "name": "Palo Alto Networks, Inc.",
+          "fields": {
+            "brokerCount": {
+              "old": 4,
+              "new": 5
+            },
+            "avgUpside": {
+              "old": 9.4,
+              "new": 9.2
+            },
+            "entryScore": {
+              "old": 36,
+              "new": 46
+            },
+            "avgTargetPrice": {
+              "old": 443.8,
+              "new": 435
+            },
+            "currentPrice": {
+              "old": 405.57,
+              "new": 398.5
+            },
+            "reportCount": {
+              "old": 4,
+              "new": 5
+            }
+          }
+        },
+        {
+          "ticker": "GS",
+          "name": "The Goldman Sachs Group, Inc.",
+          "fields": {
+            "avgUpside": {
+              "old": 22.4,
+              "new": 23.1
+            },
+            "entryScore": {
+              "old": 48,
+              "new": 49
+            },
+            "currentPrice": {
+              "old": 887.21,
+              "new": 882.59
+            }
+          }
+        },
+        {
+          "ticker": "SCHW",
+          "name": "The Charles Schwab Corporation",
+          "fields": {
+            "avgUpside": {
+              "old": 17.2,
+              "new": 15.6
+            },
+            "entryScore": {
+              "old": 36,
+              "new": 35
+            },
+            "currentPrice": {
+              "old": 95.58,
+              "new": 96.87
+            }
+          }
+        },
+        {
+          "ticker": "JNJ",
+          "name": "Johnson & Johnson",
+          "fields": {
+            "brokerCount": {
+              "old": 6,
+              "new": 5
+            },
+            "avgUpside": {
+              "old": 13.6,
+              "new": 13.5
+            },
+            "entryScore": {
+              "old": 47,
+              "new": 49
+            },
+            "avgTargetPrice": {
+              "old": 293.5,
+              "new": 291.2
+            },
+            "currentPrice": {
+              "old": 258.45,
+              "new": 256.48
+            },
+            "reportCount": {
+              "old": 6,
+              "new": 5
+            }
+          }
+        },
+        {
+          "ticker": "COP",
+          "name": "ConocoPhillips",
+          "fields": {
+            "avgUpside": {
+              "old": 18,
+              "new": 14.2
+            },
+            "entryScore": {
+              "old": 51,
+              "new": 47
+            },
+            "currentPrice": {
+              "old": 129.84,
+              "new": 134.19
+            }
+          }
+        },
+        {
+          "ticker": "DIS",
+          "name": "The Walt Disney Company",
+          "fields": {
+            "avgUpside": {
+              "old": 21,
+              "new": 18.4
+            },
+            "entryScore": {
+              "old": 53,
+              "new": 51
+            },
+            "currentPrice": {
+              "old": 104.75,
+              "new": 107.02
+            }
+          }
+        },
+        {
+          "ticker": "T",
+          "name": "AT&T Inc.",
+          "fields": {
+            "avgUpside": {
+              "old": 29.1,
+              "new": 27.1
+            },
+            "entryScore": {
+              "old": 60,
+              "new": 59
+            },
+            "currentPrice": {
+              "old": 24.47,
+              "new": 24.87
+            }
+          }
+        },
+        {
+          "ticker": "AMD",
+          "name": "Advanced Micro Devices, Inc.",
+          "fields": {
+            "avgUpside": {
+              "old": 10.8,
+              "new": 15.3
+            },
+            "entryScore": {
+              "old": 45,
+              "new": 57
+            },
+            "currentPrice": {
+              "old": 645.86,
+              "new": 620.68
+            }
+          }
+        },
+        {
+          "ticker": "JPM",
+          "name": "JPMorgan Chase & Co.",
+          "fields": {
+            "brokerCount": {
+              "old": 4,
+              "new": 5
+            },
+            "avgUpside": {
+              "old": 16.3,
+              "new": 17.9
+            },
+            "entryScore": {
+              "old": 44,
+              "new": 51
+            },
+            "avgTargetPrice": {
+              "old": 383.3,
+              "new": 390.6
+            },
+            "currentPrice": {
+              "old": 329.58,
+              "new": 331.42
+            },
+            "reportCount": {
+              "old": 4,
+              "new": 5
+            }
+          }
+        },
+        {
+          "ticker": "BAC",
+          "name": "Bank of America Corporation",
+          "fields": {
+            "brokerCount": {
+              "old": 7,
+              "new": 6
+            },
+            "avgUpside": {
+              "old": 19.8,
+              "new": 21.6
+            },
+            "entryScore": {
+              "old": 54,
+              "new": 56
+            },
+            "avgTargetPrice": {
+              "old": 64.1,
+              "new": 65.2
+            },
+            "currentPrice": {
+              "old": 53.52,
+              "new": 53.61
+            },
+            "reportCount": {
+              "old": 7,
+              "new": 6
+            }
+          }
+        },
+        {
+          "ticker": "MS",
+          "name": "Morgan Stanley",
+          "fields": {
+            "avgUpside": {
+              "old": 25.2,
+              "new": 26.8
+            },
+            "entryScore": {
+              "old": 58,
+              "new": 62
+            },
+            "currentPrice": {
+              "old": 189.71,
+              "new": 187.44
+            }
+          }
+        },
+        {
+          "ticker": "PG",
+          "name": "The Procter & Gamble Company",
+          "fields": {
+            "avgUpside": {
+              "old": 14.3,
+              "new": 12.2
+            },
+            "entryScore": {
+              "old": 35,
+              "new": 32
+            },
+            "currentPrice": {
+              "old": 147.82,
+              "new": 150.59
+            }
+          }
+        },
+        {
+          "ticker": "MCD",
+          "name": "McDonald's Corporation",
+          "fields": {
+            "avgUpside": {
+              "old": 15.5,
+              "new": 12.6
+            },
+            "entryScore": {
+              "old": 36,
+              "new": 32
+            },
+            "currentPrice": {
+              "old": 230.88,
+              "new": 236.9
+            }
+          }
+        },
+        {
+          "ticker": "HD",
+          "name": "The Home Depot, Inc.",
+          "fields": {
+            "avgUpside": {
+              "old": 39.4,
+              "new": 34.9
+            },
+            "entryScore": {
+              "old": 64,
+              "new": 59
+            },
+            "currentPrice": {
+              "old": 285.77,
+              "new": 295.47
+            }
+          }
+        },
+        {
+          "ticker": "BX",
+          "name": "Blackstone Inc.",
+          "fields": {
+            "brokerCount": {
+              "old": 2,
+              "new": 3
+            },
+            "avgUpside": {
+              "old": 17.1,
+              "new": 27.5
+            },
+            "entryScore": {
+              "old": 29,
+              "new": 45
+            },
+            "avgTargetPrice": {
+              "old": 131,
+              "new": 143.7
+            },
+            "currentPrice": {
+              "old": 111.83,
+              "new": 112.68
+            },
+            "reportCount": {
+              "old": 2,
+              "new": 3
+            }
+          }
+        },
+        {
+          "ticker": "UNH",
+          "name": "UnitedHealth Group Incorporated",
+          "fields": {
+            "avgUpside": {
+              "old": 30.3,
+              "new": 32
+            },
+            "entryScore": {
+              "old": 62,
+              "new": 67
+            },
+            "currentPrice": {
+              "old": 375.98,
+              "new": 370.95
+            }
+          }
+        },
+        {
+          "ticker": "WMT",
+          "name": "Walmart Inc.",
+          "fields": {
+            "avgUpside": {
+              "old": 20.2,
+              "new": 17.6
+            },
+            "entryScore": {
+              "old": 53,
+              "new": 50
+            },
+            "currentPrice": {
+              "old": 108.16,
+              "new": 110.56
+            }
+          }
+        },
+        {
+          "ticker": "KO",
+          "name": "The Coca-Cola Company",
+          "fields": {
+            "avgUpside": {
+              "old": 12.7,
+              "new": 10.2
+            },
+            "entryScore": {
+              "old": 48,
+              "new": 44
+            },
+            "currentPrice": {
+              "old": 85.82,
+              "new": 87.77
+            }
+          }
+        },
+        {
+          "ticker": "NKE",
+          "name": "NIKE, Inc.",
+          "fields": {
+            "avgUpside": {
+              "old": 41.9,
+              "new": 40.3
+            },
+            "currentPrice": {
+              "old": 34.36,
+              "new": 34.74
+            }
+          }
+        },
+        {
+          "ticker": "TGT",
+          "name": "Target Corporation",
+          "fields": {
+            "avgUpside": {
+              "old": 19.9,
+              "new": 17
+            },
+            "entryScore": {
+              "old": 55,
+              "new": 50
+            },
+            "currentPrice": {
+              "old": 150.92,
+              "new": 154.76
+            }
+          }
+        },
+        {
+          "ticker": "XOM",
+          "name": "ExxonMobil Holdings Corporation",
+          "fields": {
+            "avgUpside": {
+              "old": 10.1,
+              "new": 7.2
+            },
+            "entryScore": {
+              "old": 30,
+              "new": 27
+            },
+            "currentPrice": {
+              "old": 164.05,
+              "new": 168.5
+            }
+          }
+        },
+        {
+          "ticker": "AVGO",
+          "name": "Broadcom Inc.",
+          "fields": {
+            "brokerCount": {
+              "old": 4,
+              "new": 3
+            },
+            "avgUpside": {
+              "old": 35.1,
+              "new": 45.8
+            },
+            "entryScore": {
+              "old": 59,
+              "new": 56
+            },
+            "avgTargetPrice": {
+              "old": 508.8,
+              "new": 525
+            },
+            "currentPrice": {
+              "old": 376.51,
+              "new": 360.14
+            },
+            "reportCount": {
+              "old": 4,
+              "new": 3
+            }
+          }
+        },
+        {
+          "ticker": "SLB",
+          "name": "SLB N.V.",
+          "fields": {
+            "avgUpside": {
+              "old": 35,
+              "new": 32.2
+            },
+            "entryScore": {
+              "old": 62,
+              "new": 56
+            },
+            "currentPrice": {
+              "old": 47.96,
+              "new": 48.98
+            }
+          }
+        },
+        {
+          "ticker": "VZ",
+          "name": "Verizon Communications Inc.",
+          "fields": {
+            "brokerCount": {
+              "old": 3,
+              "new": 2
+            },
+            "avgUpside": {
+              "old": 14,
+              "new": 14.9
+            },
+            "entryScore": {
+              "old": 34,
+              "new": 27
+            },
+            "avgTargetPrice": {
+              "old": 52.2,
+              "new": 53.3
+            },
+            "currentPrice": {
+              "old": 45.77,
+              "new": 46.35
+            },
+            "reportCount": {
+              "old": 3,
+              "new": 2
+            }
+          }
+        },
+        {
+          "ticker": "INTC",
+          "name": "Intel Corporation",
+          "fields": {
+            "avgUpside": {
+              "old": 28.2,
+              "new": 35.4
+            },
+            "entryScore": {
+              "old": 55,
+              "new": 71
+            },
+            "currentPrice": {
+              "old": 113.12,
+              "new": 107.08
+            }
+          }
+        },
+        {
+          "ticker": "ORCL",
+          "name": "Oracle Corporation",
+          "fields": {
+            "avgUpside": {
+              "old": 86.9,
+              "new": 97.8
+            },
+            "entryScore": {
+              "old": 56,
+              "new": 58
+            },
+            "currentPrice": {
+              "old": 143.56,
+              "new": 135.69
+            }
+          }
+        },
+        {
+          "ticker": "ADBE",
+          "name": "Adobe Inc.",
+          "fields": {
+            "avgUpside": {
+              "old": 42.4,
+              "new": 37.5
+            },
+            "entryScore": {
+              "old": 68,
+              "new": 60
+            },
+            "currentPrice": {
+              "old": 232.77,
+              "new": 241.05
             }
           }
         }

@@ -65,6 +65,22 @@
       "calculator": null
     },
     {
+      "id": "2342",
+      "name": "영광와이케이엠씨",
+      "subscriptionStart": "2026-11-04",
+      "subscriptionEnd": "2026-11-05",
+      "confirmedPrice": null,
+      "priceBandLow": null,
+      "priceBandHigh": null,
+      "underwriter": "",
+      "competitionRatio": "대신증권",
+      "listingDate": null,
+      "refundDate": "2026-11-09",
+      "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2342&l=&page=1",
+      "status": "청약예정",
+      "calculator": null
+    },
+    {
       "id": "2336",
       "name": "넥스아이",
       "subscriptionStart": "2026-11-03",
@@ -317,7 +333,7 @@
       "listingDate": "2026-10-22",
       "refundDate": "2026-10-15",
       "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2324&l=&page=1",
-      "status": "청약예정",
+      "status": "청약중",
       "calculator": null
     },
     {
@@ -328,8 +344,8 @@
       "confirmedPrice": 90500,
       "priceBandLow": null,
       "priceBandHigh": null,
-      "underwriter": "",
-      "competitionRatio": "미래에셋증권,삼성증권",
+      "underwriter": "미래에셋증권,삼성증권",
+      "competitionRatio": "408:1",
       "listingDate": "2026-10-20",
       "refundDate": "2026-10-13",
       "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2316&l=&page=1",
@@ -463,24 +479,8 @@
       "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2308&l=&page=1",
       "status": "상장완료",
       "calculator": null
-    },
-    {
-      "id": "2313",
-      "name": "KB스팩34호",
-      "subscriptionStart": "2026-09-10",
-      "subscriptionEnd": "2026-09-11",
-      "confirmedPrice": 2000,
-      "priceBandLow": null,
-      "priceBandHigh": null,
-      "underwriter": "KB증권",
-      "competitionRatio": "397.33:1",
-      "listingDate": "2026-09-22",
-      "refundDate": "2026-09-15",
-      "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2313&l=&page=1",
-      "status": "상장완료",
-      "calculator": null
     }
   ],
-  "fetchedAt": "2026-10-11T23:22:58.671Z",
+  "fetchedAt": "2026-10-12T03:51:27.602Z",
   "totalCount": 30
 }

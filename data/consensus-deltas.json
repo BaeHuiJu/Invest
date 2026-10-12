@@ -281,12 +281,12 @@
         "ticker": "NOW",
         "name": "ServiceNow, Inc.",
         "market": "us",
-        "brokerCount": 5,
-        "avgUpside": 16.3,
-        "avgTargetPrice": 163.8,
+        "brokerCount": 4,
+        "avgUpside": 17.8,
+        "avgTargetPrice": 166,
         "currentPrice": 140.86,
-        "entryScore": 49,
-        "reportCount": 5
+        "entryScore": 44,
+        "reportCount": 4
       },
       {
         "ticker": "PANW",
@@ -8051,12 +8051,12 @@
           "ticker": "PEP",
           "name": "PepsiCo, Inc.",
           "market": "us",
-          "brokerCount": 2,
-          "avgUpside": 13.1,
-          "avgTargetPrice": 142.5,
+          "brokerCount": 3,
+          "avgUpside": 14.3,
+          "avgTargetPrice": 144,
           "currentPrice": 125.97,
-          "entryScore": 25,
-          "reportCount": 2
+          "entryScore": 34,
+          "reportCount": 3
         }
       ],
       "removed": [],

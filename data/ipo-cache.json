@@ -17,6 +17,22 @@
       "calculator": null
     },
     {
+      "id": "2345",
+      "name": "아델",
+      "subscriptionStart": "2026-11-23",
+      "subscriptionEnd": "2026-11-24",
+      "confirmedPrice": null,
+      "priceBandLow": null,
+      "priceBandHigh": null,
+      "underwriter": "",
+      "competitionRatio": "삼성증권,미래에셋증권",
+      "listingDate": null,
+      "refundDate": "2026-11-26",
+      "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2345&l=&page=1",
+      "status": "청약예정",
+      "calculator": null
+    },
+    {
       "id": "2343",
       "name": "엔키화이트햇",
       "subscriptionStart": "2026-11-12",
@@ -61,6 +77,22 @@
       "listingDate": null,
       "refundDate": "2026-11-13",
       "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2344&l=&page=1",
+      "status": "청약예정",
+      "calculator": null
+    },
+    {
+      "id": "2331",
+      "name": "에이엘로봇",
+      "subscriptionStart": "2026-11-06",
+      "subscriptionEnd": "2026-11-09",
+      "confirmedPrice": null,
+      "priceBandLow": null,
+      "priceBandHigh": null,
+      "underwriter": "",
+      "competitionRatio": "대신증권",
+      "listingDate": null,
+      "refundDate": "2026-11-11",
+      "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2331&l=&page=1",
       "status": "청약예정",
       "calculator": null
     },
@@ -189,22 +221,6 @@
       "listingDate": null,
       "refundDate": "2026-10-29",
       "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2329&l=&page=1",
-      "status": "청약예정",
-      "calculator": null
-    },
-    {
-      "id": "2331",
-      "name": "에이엘로봇",
-      "subscriptionStart": "2026-10-26",
-      "subscriptionEnd": "2026-10-27",
-      "confirmedPrice": null,
-      "priceBandLow": null,
-      "priceBandHigh": null,
-      "underwriter": "",
-      "competitionRatio": "대신증권",
-      "listingDate": null,
-      "refundDate": "2026-10-29",
-      "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2331&l=&page=1",
       "status": "청약예정",
       "calculator": null
     },
@@ -349,7 +365,7 @@
       "listingDate": "2026-10-23",
       "refundDate": "2026-10-16",
       "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2326&l=&page=1",
-      "status": "청약예정",
+      "status": "청약중",
       "calculator": null
     },
     {
@@ -463,24 +479,8 @@
       "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2310&l=&page=1",
       "status": "상장완료",
       "calculator": null
-    },
-    {
-      "id": "2294",
-      "name": "빅웨이브로보틱스",
-      "subscriptionStart": "2026-09-15",
-      "subscriptionEnd": "2026-09-16",
-      "confirmedPrice": 18000,
-      "priceBandLow": null,
-      "priceBandHigh": null,
-      "underwriter": "유진투자증권,미래에셋증권",
-      "competitionRatio": "1375.34:1",
-      "listingDate": "2026-09-29",
-      "refundDate": "2026-09-18",
-      "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2294&l=&page=1",
-      "status": "상장완료",
-      "calculator": null
     }
   ],
-  "fetchedAt": "2026-10-12T20:45:58.800Z",
+  "fetchedAt": "2026-10-13T05:02:00.383Z",
   "totalCount": 30
 }

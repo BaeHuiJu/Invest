@@ -33,6 +33,22 @@
       "calculator": null
     },
     {
+      "id": "2321",
+      "name": "엠비디",
+      "subscriptionStart": "2026-11-12",
+      "subscriptionEnd": "2026-11-13",
+      "confirmedPrice": null,
+      "priceBandLow": null,
+      "priceBandHigh": null,
+      "underwriter": "",
+      "competitionRatio": "하나증권",
+      "listingDate": null,
+      "refundDate": "2026-11-17",
+      "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2321&l=&page=1",
+      "status": "청약예정",
+      "calculator": null
+    },
+    {
       "id": "2343",
       "name": "엔키화이트햇",
       "subscriptionStart": "2026-11-12",
@@ -189,22 +205,6 @@
       "listingDate": null,
       "refundDate": "2026-11-05",
       "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2339&l=&page=1",
-      "status": "청약예정",
-      "calculator": null
-    },
-    {
-      "id": "2321",
-      "name": "엠비디",
-      "subscriptionStart": "2026-10-28",
-      "subscriptionEnd": "2026-10-29",
-      "confirmedPrice": null,
-      "priceBandLow": null,
-      "priceBandHigh": null,
-      "underwriter": "",
-      "competitionRatio": "하나증권",
-      "listingDate": null,
-      "refundDate": "2026-11-02",
-      "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2321&l=&page=1",
       "status": "청약예정",
       "calculator": null
     },
@@ -481,6 +481,6 @@
       "calculator": null
     }
   ],
-  "fetchedAt": "2026-10-15T02:48:14.714Z",
+  "fetchedAt": "2026-10-15T08:45:42.432Z",
   "totalCount": 30
 }

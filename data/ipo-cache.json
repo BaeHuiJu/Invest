@@ -349,7 +349,7 @@
       "listingDate": "2026-10-27",
       "refundDate": "2026-10-20",
       "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2319&l=&page=1",
-      "status": "청약예정",
+      "status": "청약중",
       "calculator": null
     },
     {
@@ -361,11 +361,11 @@
       "priceBandLow": null,
       "priceBandHigh": null,
       "underwriter": "대신증권,유진증권",
-      "competitionRatio": "987:1",
+      "competitionRatio": "986.99:1",
       "listingDate": "2026-10-23",
       "refundDate": "2026-10-16",
       "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2326&l=&page=1",
-      "status": "청약중",
+      "status": "상장예정",
       "calculator": null
     },
     {
@@ -413,7 +413,7 @@
       "listingDate": "2026-10-15",
       "refundDate": "2026-10-08",
       "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2320&l=&page=1",
-      "status": "상장예정",
+      "status": "상장완료",
       "calculator": null
     },
     {
@@ -429,7 +429,7 @@
       "listingDate": "2026-10-15",
       "refundDate": "2026-10-07",
       "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2315&l=&page=1",
-      "status": "상장예정",
+      "status": "상장완료",
       "calculator": null
     },
     {
@@ -481,6 +481,6 @@
       "calculator": null
     }
   ],
-  "fetchedAt": "2026-10-14T22:55:56.345Z",
+  "fetchedAt": "2026-10-15T02:48:14.714Z",
   "totalCount": 30
 }

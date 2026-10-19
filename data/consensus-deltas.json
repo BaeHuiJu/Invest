@@ -149,12 +149,12 @@
         "ticker": "MSFT",
         "name": "Microsoft Corporation",
         "market": "us",
-        "brokerCount": 7,
-        "avgUpside": 19.2,
-        "avgTargetPrice": 630.7,
+        "brokerCount": 8,
+        "avgUpside": 19.4,
+        "avgTargetPrice": 631.9,
         "currentPrice": 529.05,
         "entryScore": 52,
-        "reportCount": 7
+        "reportCount": 8
       },
       {
         "ticker": "AMD",
@@ -358,23 +358,23 @@
         "ticker": "ORCL",
         "name": "Oracle Corporation",
         "market": "us",
-        "brokerCount": 3,
-        "avgUpside": 109.3,
-        "avgTargetPrice": 268.3,
+        "brokerCount": 2,
+        "avgUpside": 104.7,
+        "avgTargetPrice": 262.5,
         "currentPrice": 128.23,
-        "entryScore": 69,
-        "reportCount": 3
+        "entryScore": 62,
+        "reportCount": 2
       },
       {
         "ticker": "SNOW",
         "name": "Snowflake Inc.",
         "market": "us",
-        "brokerCount": 6,
-        "avgUpside": 44.2,
-        "avgTargetPrice": 442.5,
+        "brokerCount": 5,
+        "avgUpside": 42.4,
+        "avgTargetPrice": 437,
         "currentPrice": 306.84,
         "entryScore": 70,
-        "reportCount": 6
+        "reportCount": 5
       },
       {
         "ticker": "BAC",
@@ -6887,12 +6887,12 @@
           "ticker": "PFE",
           "name": "Pfizer Inc.",
           "market": "us",
-          "brokerCount": 3,
-          "avgUpside": 19.5,
-          "avgTargetPrice": 35.3,
+          "brokerCount": 2,
+          "avgUpside": 11.6,
+          "avgTargetPrice": 33,
           "currentPrice": 29.58,
-          "entryScore": 38,
-          "reportCount": 3
+          "entryScore": 24,
+          "reportCount": 2
         }
       ],
       "removed": [],

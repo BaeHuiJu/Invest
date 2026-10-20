@@ -1,6 +1,22 @@
 {
   "ipos": [
     {
+      "id": "2348",
+      "name": "씨아이에스케미칼",
+      "subscriptionStart": "2026-12-10",
+      "subscriptionEnd": "2026-12-11",
+      "confirmedPrice": null,
+      "priceBandLow": null,
+      "priceBandHigh": null,
+      "underwriter": "",
+      "competitionRatio": "KB증권",
+      "listingDate": null,
+      "refundDate": "2026-12-15",
+      "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2348&l=&page=1",
+      "status": "청약예정",
+      "calculator": null
+    },
+    {
       "id": "2340",
       "name": "케이엠에프",
       "subscriptionStart": "2026-11-24",
@@ -33,6 +49,22 @@
       "calculator": null
     },
     {
+      "id": "2349",
+      "name": "에스에프씨",
+      "subscriptionStart": "2026-11-18",
+      "subscriptionEnd": "2026-11-19",
+      "confirmedPrice": null,
+      "priceBandLow": null,
+      "priceBandHigh": null,
+      "underwriter": "",
+      "competitionRatio": "미래에셋증권,한국투자증권,삼성증권",
+      "listingDate": null,
+      "refundDate": "2026-11-23",
+      "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2349&l=&page=1",
+      "status": "청약예정",
+      "calculator": null
+    },
+    {
       "id": "2321",
       "name": "엠비디",
       "subscriptionStart": "2026-11-12",
@@ -43,7 +75,7 @@
       "underwriter": "",
       "competitionRatio": "하나증권",
       "listingDate": null,
-      "refundDate": "2026-11-17",
+      "refundDate": null,
       "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2321&l=&page=1",
       "status": "청약예정",
       "calculator": null
@@ -330,10 +362,10 @@
       "priceBandHigh": null,
       "underwriter": "",
       "competitionRatio": "신한투자증권",
-      "listingDate": null,
+      "listingDate": "2026-10-29",
       "refundDate": "2026-10-23",
       "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2322&l=&page=1",
-      "status": "청약예정",
+      "status": "청약중",
       "calculator": null
     },
     {
@@ -349,7 +381,7 @@
       "listingDate": null,
       "refundDate": "2026-10-23",
       "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2323&l=&page=1",
-      "status": "청약예정",
+      "status": "청약중",
       "calculator": null
     },
     {
@@ -362,10 +394,10 @@
       "priceBandHigh": null,
       "underwriter": "",
       "competitionRatio": "한화투자증권",
-      "listingDate": null,
+      "listingDate": "2026-10-30",
       "refundDate": "2026-10-23",
       "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2330&l=&page=1",
-      "status": "청약예정",
+      "status": "청약중",
       "calculator": null
     },
     {
@@ -429,7 +461,7 @@
       "listingDate": "2026-10-20",
       "refundDate": "2026-10-13",
       "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2316&l=&page=1",
-      "status": "상장예정",
+      "status": "상장완료",
       "calculator": null
     },
     {
@@ -447,40 +479,8 @@
       "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2320&l=&page=1",
       "status": "상장완료",
       "calculator": null
-    },
-    {
-      "id": "2315",
-      "name": "멜콘(구.에스앤에프솔루션)",
-      "subscriptionStart": "2026-10-01",
-      "subscriptionEnd": "2026-10-02",
-      "confirmedPrice": 12300,
-      "priceBandLow": null,
-      "priceBandHigh": null,
-      "underwriter": "대신증권",
-      "competitionRatio": "1741.48:1",
-      "listingDate": "2026-10-15",
-      "refundDate": "2026-10-07",
-      "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2315&l=&page=1",
-      "status": "상장완료",
-      "calculator": null
-    },
-    {
-      "id": "2307",
-      "name": "브릴스",
-      "subscriptionStart": "2026-09-17",
-      "subscriptionEnd": "2026-09-18",
-      "confirmedPrice": 19500,
-      "priceBandLow": null,
-      "priceBandHigh": null,
-      "underwriter": "IBK투자증권",
-      "competitionRatio": "1676.26:1",
-      "listingDate": "2026-10-01",
-      "refundDate": "2026-09-22",
-      "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2307&l=&page=1",
-      "status": "상장완료",
-      "calculator": null
     }
   ],
-  "fetchedAt": "2026-10-19T23:15:31.981Z",
+  "fetchedAt": "2026-10-20T03:01:49.528Z",
   "totalCount": 30
 }

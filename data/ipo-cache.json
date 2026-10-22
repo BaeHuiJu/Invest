@@ -97,6 +97,22 @@
       "calculator": null
     },
     {
+      "id": "2352",
+      "name": "유캐스트",
+      "subscriptionStart": "2026-11-18",
+      "subscriptionEnd": "2026-11-19",
+      "confirmedPrice": null,
+      "priceBandLow": null,
+      "priceBandHigh": null,
+      "underwriter": "",
+      "competitionRatio": "유진투자증권,신영증권",
+      "listingDate": null,
+      "refundDate": "2026-11-23",
+      "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2352&l=&page=1",
+      "status": "청약예정",
+      "calculator": null
+    },
+    {
       "id": "2321",
       "name": "엠비디",
       "subscriptionStart": "2026-11-12",
@@ -309,12 +325,12 @@
       "name": "아이엠스팩1호",
       "subscriptionStart": "2026-10-26",
       "subscriptionEnd": "2026-10-27",
-      "confirmedPrice": null,
+      "confirmedPrice": 2000,
       "priceBandLow": null,
       "priceBandHigh": null,
       "underwriter": "",
       "competitionRatio": "아이엠증권",
-      "listingDate": null,
+      "listingDate": "2026-11-04",
       "refundDate": "2026-10-29",
       "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2329&l=&page=1",
       "status": "청약예정",
@@ -330,10 +346,10 @@
       "priceBandHigh": null,
       "underwriter": "",
       "competitionRatio": "NH투자증권",
-      "listingDate": null,
+      "listingDate": "2026-11-03",
       "refundDate": "2026-10-27",
       "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2335&l=&page=1",
-      "status": "청약예정",
+      "status": "청약중",
       "calculator": null
     },
     {
@@ -349,7 +365,7 @@
       "listingDate": "2026-11-04",
       "refundDate": "2026-10-27",
       "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2332&l=&page=1",
-      "status": "청약예정",
+      "status": "청약중",
       "calculator": null
     },
     {
@@ -365,7 +381,7 @@
       "listingDate": "2026-11-02",
       "refundDate": "2026-10-27",
       "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2333&l=&page=1",
-      "status": "청약예정",
+      "status": "청약중",
       "calculator": null
     },
     {
@@ -397,7 +413,7 @@
       "listingDate": "2026-10-29",
       "refundDate": "2026-10-23",
       "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2322&l=&page=1",
-      "status": "청약중",
+      "status": "상장예정",
       "calculator": null
     },
     {
@@ -413,7 +429,7 @@
       "listingDate": "2026-10-30",
       "refundDate": "2026-10-23",
       "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2323&l=&page=1",
-      "status": "청약중",
+      "status": "상장예정",
       "calculator": null
     },
     {
@@ -429,7 +445,7 @@
       "listingDate": "2026-10-30",
       "refundDate": "2026-10-23",
       "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2330&l=&page=1",
-      "status": "청약중",
+      "status": "상장예정",
       "calculator": null
     },
     {
@@ -463,24 +479,8 @@
       "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2326&l=&page=1",
       "status": "상장예정",
       "calculator": null
-    },
-    {
-      "id": "2324",
-      "name": "엠에스바이오",
-      "subscriptionStart": "2026-10-12",
-      "subscriptionEnd": "2026-10-13",
-      "confirmedPrice": 7800,
-      "priceBandLow": null,
-      "priceBandHigh": null,
-      "underwriter": "KB증권",
-      "competitionRatio": "1538.51:1",
-      "listingDate": "2026-10-22",
-      "refundDate": "2026-10-15",
-      "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2324&l=&page=1",
-      "status": "상장예정",
-      "calculator": null
     }
   ],
-  "fetchedAt": "2026-10-21T22:58:41.868Z",
+  "fetchedAt": "2026-10-22T09:05:29.018Z",
   "totalCount": 30
 }

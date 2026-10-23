@@ -17,6 +17,22 @@
       "calculator": null
     },
     {
+      "id": "2353",
+      "name": "인터엑스",
+      "subscriptionStart": "2026-12-09",
+      "subscriptionEnd": "2026-12-10",
+      "confirmedPrice": null,
+      "priceBandLow": null,
+      "priceBandHigh": null,
+      "underwriter": "",
+      "competitionRatio": "한국투자증권,BNK투자증권",
+      "listingDate": null,
+      "refundDate": "2026-12-14",
+      "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2353&l=&page=1",
+      "status": "청약예정",
+      "calculator": null
+    },
+    {
       "id": "2351",
       "name": "이노보테라퓨틱스",
       "subscriptionStart": "2026-12-07",
@@ -397,7 +413,7 @@
       "listingDate": "2026-10-30",
       "refundDate": "2026-10-26",
       "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2328&l=&page=1",
-      "status": "청약중",
+      "status": "상장예정",
       "calculator": null
     },
     {
@@ -463,24 +479,8 @@
       "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2319&l=&page=1",
       "status": "상장예정",
       "calculator": null
-    },
-    {
-      "id": "2326",
-      "name": "디티에스(구.동양티에스)",
-      "subscriptionStart": "2026-10-13",
-      "subscriptionEnd": "2026-10-14",
-      "confirmedPrice": 18500,
-      "priceBandLow": null,
-      "priceBandHigh": null,
-      "underwriter": "대신증권,유진증권",
-      "competitionRatio": "986.99:1",
-      "listingDate": "2026-10-23",
-      "refundDate": "2026-10-16",
-      "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2326&l=&page=1",
-      "status": "상장예정",
-      "calculator": null
     }
   ],
-  "fetchedAt": "2026-10-22T22:54:58.421Z",
+  "fetchedAt": "2026-10-23T02:58:43.159Z",
   "totalCount": 30
 }

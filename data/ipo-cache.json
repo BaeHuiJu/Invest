@@ -65,6 +65,22 @@
       "calculator": null
     },
     {
+      "id": "2341",
+      "name": "제논",
+      "subscriptionStart": "2026-11-24",
+      "subscriptionEnd": "2026-11-25",
+      "confirmedPrice": null,
+      "priceBandLow": null,
+      "priceBandHigh": null,
+      "underwriter": "",
+      "competitionRatio": "삼성증권",
+      "listingDate": null,
+      "refundDate": "2026-11-27",
+      "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2341&l=&page=1",
+      "status": "청약예정",
+      "calculator": null
+    },
+    {
       "id": "2340",
       "name": "케이엠에프",
       "subscriptionStart": "2026-11-24",
@@ -257,22 +273,6 @@
       "calculator": null
     },
     {
-      "id": "2341",
-      "name": "제논",
-      "subscriptionStart": "2026-11-04",
-      "subscriptionEnd": "2026-11-05",
-      "confirmedPrice": null,
-      "priceBandLow": null,
-      "priceBandHigh": null,
-      "underwriter": "",
-      "competitionRatio": "삼성증권",
-      "listingDate": null,
-      "refundDate": "2026-11-09",
-      "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2341&l=&page=1",
-      "status": "청약예정",
-      "calculator": null
-    },
-    {
       "id": "2342",
       "name": "영광와이케이엠씨",
       "subscriptionStart": "2026-11-04",
@@ -349,7 +349,7 @@
       "listingDate": "2026-11-04",
       "refundDate": "2026-10-29",
       "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2329&l=&page=1",
-      "status": "청약예정",
+      "status": "청약중",
       "calculator": null
     },
     {
@@ -481,6 +481,6 @@
       "calculator": null
     }
   ],
-  "fetchedAt": "2026-10-25T22:14:04.824Z",
+  "fetchedAt": "2026-10-26T02:46:09.696Z",
   "totalCount": 30
 }

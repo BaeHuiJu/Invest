@@ -358,12 +358,12 @@
         "ticker": "ORCL",
         "name": "Oracle Corporation",
         "market": "us",
-        "brokerCount": 6,
-        "avgUpside": 92.2,
-        "avgTargetPrice": 242.5,
+        "brokerCount": 4,
+        "avgUpside": 84.3,
+        "avgTargetPrice": 232.5,
         "currentPrice": 126.16,
-        "entryScore": 70,
-        "reportCount": 6
+        "entryScore": 63,
+        "reportCount": 4
       },
       {
         "ticker": "SNOW",
@@ -26902,6 +26902,39 @@
             },
             "reportCount": {
               "old": 6,
+              "new": 4
+            }
+          }
+        }
+      ]
+    },
+    {
+      "date": "2026-10-26",
+      "added": [],
+      "removed": [],
+      "changed": [
+        {
+          "ticker": "LMT",
+          "name": "Lockheed Martin Corporation",
+          "fields": {
+            "brokerCount": {
+              "old": 3,
+              "new": 4
+            },
+            "avgUpside": {
+              "old": 15.7,
+              "new": 21.4
+            },
+            "entryScore": {
+              "old": 35,
+              "new": 47
+            },
+            "avgTargetPrice": {
+              "old": 699.3,
+              "new": 733.3
+            },
+            "reportCount": {
+              "old": 3,
               "new": 4
             }
           }

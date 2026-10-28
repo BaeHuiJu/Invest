@@ -1,6 +1,22 @@
 {
   "ipos": [
     {
+      "id": "2355",
+      "name": "KTE",
+      "subscriptionStart": "2026-12-14",
+      "subscriptionEnd": "2026-12-15",
+      "confirmedPrice": null,
+      "priceBandLow": null,
+      "priceBandHigh": null,
+      "underwriter": "",
+      "competitionRatio": "NH투자증권",
+      "listingDate": null,
+      "refundDate": "2026-12-17",
+      "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2355&l=&page=1",
+      "status": "청약예정",
+      "calculator": null
+    },
+    {
       "id": "2348",
       "name": "씨아이에스케미칼",
       "subscriptionStart": "2026-12-10",
@@ -463,24 +479,8 @@
       "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2323&l=&page=1",
       "status": "상장예정",
       "calculator": null
-    },
-    {
-      "id": "2330",
-      "name": "한화플러스스팩6호",
-      "subscriptionStart": "2026-10-20",
-      "subscriptionEnd": "2026-10-21",
-      "confirmedPrice": 2000,
-      "priceBandLow": null,
-      "priceBandHigh": null,
-      "underwriter": "한화투자증권",
-      "competitionRatio": "185.75:1",
-      "listingDate": "2026-10-30",
-      "refundDate": "2026-10-23",
-      "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2330&l=&page=1",
-      "status": "상장예정",
-      "calculator": null
     }
   ],
-  "fetchedAt": "2026-10-28T03:36:13.106Z",
+  "fetchedAt": "2026-10-28T10:16:00.800Z",
   "totalCount": 30
 }

@@ -50,12 +50,12 @@
         "ticker": "AVGO",
         "name": "Broadcom Inc.",
         "market": "us",
-        "brokerCount": 6,
-        "avgUpside": 59.5,
-        "avgTargetPrice": 520,
+        "brokerCount": 5,
+        "avgUpside": 62.5,
+        "avgTargetPrice": 530,
         "currentPrice": 326.08,
         "entryScore": 85,
-        "reportCount": 6
+        "reportCount": 5
       },
       {
         "ticker": "ORCL",
@@ -194,8 +194,8 @@
         "name": "Amazon.com, Inc.",
         "market": "us",
         "brokerCount": 7,
-        "avgUpside": 40.6,
-        "avgTargetPrice": 337.9,
+        "avgUpside": 42.9,
+        "avgTargetPrice": 343.6,
         "currentPrice": 240.35,
         "entryScore": 70,
         "reportCount": 7
@@ -600,12 +600,12 @@
         "ticker": "SNOW",
         "name": "Snowflake Inc.",
         "market": "us",
-        "brokerCount": 6,
-        "avgUpside": 44.6,
-        "avgTargetPrice": 442.5,
+        "brokerCount": 5,
+        "avgUpside": 44.1,
+        "avgTargetPrice": 441,
         "currentPrice": 306.08,
         "entryScore": 82,
-        "reportCount": 6
+        "reportCount": 5
       },
       {
         "ticker": "C",
@@ -633,12 +633,12 @@
         "ticker": "PANW",
         "name": "Palo Alto Networks, Inc.",
         "market": "us",
-        "brokerCount": 4,
-        "avgUpside": 30.2,
-        "avgTargetPrice": 476.3,
+        "brokerCount": 3,
+        "avgUpside": 33.5,
+        "avgTargetPrice": 488.3,
         "currentPrice": 365.87,
-        "entryScore": 56,
-        "reportCount": 4
+        "entryScore": 52,
+        "reportCount": 3
       },
       {
         "ticker": "JPM",
@@ -4521,6 +4521,23 @@
             "reportCount": {
               "old": 4,
               "new": 3
+            }
+          }
+        }
+      ]
+    },
+    {
+      "date": "2026-11-02",
+      "added": [],
+      "removed": [],
+      "changed": [
+        {
+          "ticker": "PLTR",
+          "name": "Palantir Technologies Inc.",
+          "fields": {
+            "entryScore": {
+              "old": 78,
+              "new": 65
             }
           }
         }

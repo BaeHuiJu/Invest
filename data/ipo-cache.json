@@ -113,6 +113,22 @@
       "calculator": null
     },
     {
+      "id": "2358",
+      "name": "다비오",
+      "subscriptionStart": "2026-12-01",
+      "subscriptionEnd": "2026-12-02",
+      "confirmedPrice": null,
+      "priceBandLow": null,
+      "priceBandHigh": null,
+      "underwriter": "",
+      "competitionRatio": "대신증권",
+      "listingDate": null,
+      "refundDate": "2026-12-04",
+      "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2358&l=&page=1",
+      "status": "청약예정",
+      "calculator": null
+    },
+    {
       "id": "2350",
       "name": "에이엔에이치스트럭쳐",
       "subscriptionStart": "2026-11-27",
@@ -299,7 +315,7 @@
       "underwriter": "",
       "competitionRatio": "대신증권",
       "listingDate": null,
-      "refundDate": "2026-11-13",
+      "refundDate": null,
       "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2344&l=&page=1",
       "status": "청약예정",
       "calculator": null
@@ -381,7 +397,7 @@
       "listingDate": "2026-11-11",
       "refundDate": "2026-11-05",
       "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2325&l=&page=1",
-      "status": "청약예정",
+      "status": "청약중",
       "calculator": null
     },
     {
@@ -397,7 +413,7 @@
       "listingDate": "2026-11-10",
       "refundDate": "2026-11-05",
       "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2339&l=&page=1",
-      "status": "청약예정",
+      "status": "청약중",
       "calculator": null
     },
     {
@@ -461,26 +477,10 @@
       "listingDate": "2026-11-02",
       "refundDate": "2026-10-27",
       "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2333&l=&page=1",
-      "status": "상장예정",
-      "calculator": null
-    },
-    {
-      "id": "2328",
-      "name": "인텔리빅스",
-      "subscriptionStart": "2026-10-21",
-      "subscriptionEnd": "2026-10-22",
-      "confirmedPrice": 9000,
-      "priceBandLow": null,
-      "priceBandHigh": null,
-      "underwriter": "미래에셋증권",
-      "competitionRatio": "1410.87:1",
-      "listingDate": "2026-10-30",
-      "refundDate": "2026-10-26",
-      "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2328&l=&page=1",
       "status": "상장완료",
       "calculator": null
     }
   ],
-  "fetchedAt": "2026-11-01T23:17:54.914Z",
+  "fetchedAt": "2026-11-02T03:55:38.434Z",
   "totalCount": 30
 }

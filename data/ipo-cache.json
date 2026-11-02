@@ -305,22 +305,6 @@
       "calculator": null
     },
     {
-      "id": "2344",
-      "name": "다비오",
-      "subscriptionStart": "2026-11-10",
-      "subscriptionEnd": "2026-11-11",
-      "confirmedPrice": null,
-      "priceBandLow": null,
-      "priceBandHigh": null,
-      "underwriter": "",
-      "competitionRatio": "대신증권",
-      "listingDate": null,
-      "refundDate": null,
-      "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2344&l=&page=1",
-      "status": "청약예정",
-      "calculator": null
-    },
-    {
       "id": "2331",
       "name": "에이엘로봇",
       "subscriptionStart": "2026-11-06",
@@ -479,8 +463,24 @@
       "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2333&l=&page=1",
       "status": "상장완료",
       "calculator": null
+    },
+    {
+      "id": "2328",
+      "name": "인텔리빅스",
+      "subscriptionStart": "2026-10-21",
+      "subscriptionEnd": "2026-10-22",
+      "confirmedPrice": 9000,
+      "priceBandLow": null,
+      "priceBandHigh": null,
+      "underwriter": "미래에셋증권",
+      "competitionRatio": "1410.87:1",
+      "listingDate": "2026-10-30",
+      "refundDate": "2026-10-26",
+      "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2328&l=&page=1",
+      "status": "상장완료",
+      "calculator": null
     }
   ],
-  "fetchedAt": "2026-11-02T03:55:38.434Z",
+  "fetchedAt": "2026-11-02T11:56:46.620Z",
   "totalCount": 30
 }

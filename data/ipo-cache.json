@@ -1,6 +1,22 @@
 {
   "ipos": [
     {
+      "id": "2341",
+      "name": "제논",
+      "subscriptionStart": "2026-12-14",
+      "subscriptionEnd": "2026-12-15",
+      "confirmedPrice": null,
+      "priceBandLow": null,
+      "priceBandHigh": null,
+      "underwriter": "",
+      "competitionRatio": "삼성증권",
+      "listingDate": null,
+      "refundDate": "2026-12-17",
+      "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2341&l=&page=1",
+      "status": "청약예정",
+      "calculator": null
+    },
+    {
       "id": "2360",
       "name": "태석광학",
       "subscriptionStart": "2026-12-14",
@@ -177,22 +193,6 @@
       "calculator": null
     },
     {
-      "id": "2341",
-      "name": "제논",
-      "subscriptionStart": "2026-11-24",
-      "subscriptionEnd": "2026-11-25",
-      "confirmedPrice": null,
-      "priceBandLow": null,
-      "priceBandHigh": null,
-      "underwriter": "",
-      "competitionRatio": "삼성증권",
-      "listingDate": null,
-      "refundDate": "2026-11-27",
-      "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2341&l=&page=1",
-      "status": "청약예정",
-      "calculator": null
-    },
-    {
       "id": "2340",
       "name": "케이엠에프",
       "subscriptionStart": "2026-11-24",
@@ -280,8 +280,8 @@
       "confirmedPrice": 7000,
       "priceBandLow": null,
       "priceBandHigh": null,
-      "underwriter": "",
-      "competitionRatio": "하나증권",
+      "underwriter": "하나증권",
+      "competitionRatio": "172:1",
       "listingDate": "2026-11-24",
       "refundDate": "2026-11-17",
       "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2321&l=&page=1",
@@ -481,6 +481,6 @@
       "calculator": null
     }
   ],
-  "fetchedAt": "2026-11-13T04:39:25.101Z",
+  "fetchedAt": "2026-11-13T15:51:42.947Z",
   "totalCount": 30
 }

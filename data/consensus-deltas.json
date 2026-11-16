@@ -105,12 +105,12 @@
         "ticker": "UNH",
         "name": "UnitedHealth Group Incorporated",
         "market": "us",
-        "brokerCount": 7,
-        "avgUpside": 23.4,
-        "avgTargetPrice": 502.9,
+        "brokerCount": 6,
+        "avgUpside": 22.5,
+        "avgTargetPrice": 499.3,
         "currentPrice": 407.46,
         "entryScore": 55,
-        "reportCount": 7
+        "reportCount": 6
       },
       {
         "ticker": "LLY",
@@ -446,12 +446,12 @@
         "ticker": "MS",
         "name": "Morgan Stanley",
         "market": "us",
-        "brokerCount": 5,
-        "avgUpside": 19.8,
-        "avgTargetPrice": 228.4,
+        "brokerCount": 4,
+        "avgUpside": 20.9,
+        "avgTargetPrice": 230.5,
         "currentPrice": 190.65,
-        "entryScore": 52,
-        "reportCount": 5
+        "entryScore": 46,
+        "reportCount": 4
       },
       {
         "ticker": "PG",
@@ -567,12 +567,12 @@
         "ticker": "BLK",
         "name": "BlackRock, Inc.",
         "market": "us",
-        "brokerCount": 4,
-        "avgUpside": 16.2,
-        "avgTargetPrice": 1421.5,
+        "brokerCount": 3,
+        "avgUpside": 13.3,
+        "avgTargetPrice": 1385,
         "currentPrice": 1222.91,
-        "entryScore": 42,
-        "reportCount": 4
+        "entryScore": 33,
+        "reportCount": 3
       },
       {
         "ticker": "COP",
@@ -589,45 +589,45 @@
         "ticker": "BAC",
         "name": "Bank of America Corporation",
         "market": "us",
-        "brokerCount": 6,
-        "avgUpside": 24.6,
-        "avgTargetPrice": 63.6,
+        "brokerCount": 5,
+        "avgUpside": 24.1,
+        "avgTargetPrice": 63.3,
         "currentPrice": 51.02,
-        "entryScore": 57,
-        "reportCount": 6
+        "entryScore": 56,
+        "reportCount": 5
       },
       {
         "ticker": "SNOW",
         "name": "Snowflake Inc.",
         "market": "us",
-        "brokerCount": 5,
-        "avgUpside": 52.2,
-        "avgTargetPrice": 443,
+        "brokerCount": 4,
+        "avgUpside": 53.8,
+        "avgTargetPrice": 447.5,
         "currentPrice": 291,
-        "entryScore": 75,
-        "reportCount": 5
+        "entryScore": 68,
+        "reportCount": 4
       },
       {
         "ticker": "C",
         "name": "Citigroup Inc.",
         "market": "us",
-        "brokerCount": 4,
-        "avgUpside": 25.1,
-        "avgTargetPrice": 155.1,
+        "brokerCount": 3,
+        "avgUpside": 23.8,
+        "avgTargetPrice": 153.5,
         "currentPrice": 124.01,
-        "entryScore": 50,
-        "reportCount": 4
+        "entryScore": 42,
+        "reportCount": 3
       },
       {
         "ticker": "DIS",
         "name": "The Walt Disney Company",
         "market": "us",
-        "brokerCount": 4,
-        "avgUpside": 15.6,
-        "avgTargetPrice": 137.5,
+        "brokerCount": 3,
+        "avgUpside": 14.9,
+        "avgTargetPrice": 136.7,
         "currentPrice": 118.97,
-        "entryScore": 42,
-        "reportCount": 4
+        "entryScore": 34,
+        "reportCount": 3
       },
       {
         "ticker": "PANW",
@@ -16624,6 +16624,57 @@
             "reportCount": {
               "old": 4,
               "new": 3
+            }
+          }
+        }
+      ]
+    },
+    {
+      "date": "2026-11-16",
+      "added": [],
+      "removed": [],
+      "changed": [
+        {
+          "ticker": "CVX",
+          "name": "Chevron Corporation",
+          "fields": {
+            "avgUpside": {
+              "old": 13.7,
+              "new": 16.9
+            },
+            "entryScore": {
+              "old": 40,
+              "new": 43
+            },
+            "avgTargetPrice": {
+              "old": 250,
+              "new": 257
+            }
+          }
+        },
+        {
+          "ticker": "NVDA",
+          "name": "NVIDIA Corporation",
+          "fields": {
+            "brokerCount": {
+              "old": 3,
+              "new": 4
+            },
+            "avgUpside": {
+              "old": 46.4,
+              "new": 40.5
+            },
+            "entryScore": {
+              "old": 56,
+              "new": 63
+            },
+            "avgTargetPrice": {
+              "old": 238.3,
+              "new": 228.8
+            },
+            "reportCount": {
+              "old": 3,
+              "new": 4
             }
           }
         }

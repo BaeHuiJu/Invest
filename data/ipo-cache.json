@@ -1,6 +1,22 @@
 {
   "ipos": [
     {
+      "id": "2361",
+      "name": "이나인페이",
+      "subscriptionStart": "2026-12-16",
+      "subscriptionEnd": "2026-12-17",
+      "confirmedPrice": null,
+      "priceBandLow": null,
+      "priceBandHigh": null,
+      "underwriter": "",
+      "competitionRatio": "한국투자증권",
+      "listingDate": null,
+      "refundDate": "2026-12-21",
+      "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2361&l=&page=1",
+      "status": "청약예정",
+      "calculator": null
+    },
+    {
       "id": "2341",
       "name": "제논",
       "subscriptionStart": "2026-12-14",
@@ -241,27 +257,11 @@
       "calculator": null
     },
     {
-      "id": "2349",
-      "name": "에스에프씨",
-      "subscriptionStart": "2026-11-18",
-      "subscriptionEnd": "2026-11-19",
-      "confirmedPrice": null,
-      "priceBandLow": null,
-      "priceBandHigh": null,
-      "underwriter": "",
-      "competitionRatio": "미래에셋증권,한국투자증권,삼성증권",
-      "listingDate": "2026-11-27",
-      "refundDate": "2026-11-23",
-      "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2349&l=&page=1",
-      "status": "청약예정",
-      "calculator": null
-    },
-    {
       "id": "2352",
       "name": "유캐스트",
       "subscriptionStart": "2026-11-18",
       "subscriptionEnd": "2026-11-19",
-      "confirmedPrice": null,
+      "confirmedPrice": 19000,
       "priceBandLow": null,
       "priceBandHigh": null,
       "underwriter": "",
@@ -481,6 +481,6 @@
       "calculator": null
     }
   ],
-  "fetchedAt": "2026-11-17T02:43:54.112Z",
+  "fetchedAt": "2026-11-17T12:42:00.404Z",
   "totalCount": 30
 }

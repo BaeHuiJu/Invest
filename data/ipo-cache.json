@@ -51,15 +51,15 @@
     {
       "id": "2356",
       "name": "데스틴파워",
-      "subscriptionStart": "2026-12-14",
-      "subscriptionEnd": "2026-12-15",
+      "subscriptionStart": "2026-12-11",
+      "subscriptionEnd": "2026-12-14",
       "confirmedPrice": null,
       "priceBandLow": null,
       "priceBandHigh": null,
       "underwriter": "",
       "competitionRatio": "한국투자증권",
       "listingDate": null,
-      "refundDate": "2026-12-17",
+      "refundDate": "2026-12-16",
       "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2356&l=&page=1",
       "status": "청약예정",
       "calculator": null
@@ -91,7 +91,7 @@
       "underwriter": "",
       "competitionRatio": "한국투자증권,BNK투자증권",
       "listingDate": null,
-      "refundDate": null,
+      "refundDate": "2026-12-14",
       "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2353&l=&page=1",
       "status": "청약예정",
       "calculator": null
@@ -333,7 +333,7 @@
       "listingDate": "2026-11-17",
       "refundDate": "2026-11-10",
       "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2338&l=&page=1",
-      "status": "상장예정",
+      "status": "상장완료",
       "calculator": null
     },
     {
@@ -481,6 +481,6 @@
       "calculator": null
     }
   ],
-  "fetchedAt": "2026-11-16T17:47:39.321Z",
+  "fetchedAt": "2026-11-17T02:43:54.112Z",
   "totalCount": 30
 }

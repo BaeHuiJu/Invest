@@ -1,6 +1,22 @@
 {
   "ipos": [
     {
+      "id": "2363",
+      "name": "피지티",
+      "subscriptionStart": "2026-12-17",
+      "subscriptionEnd": "2026-12-18",
+      "confirmedPrice": null,
+      "priceBandLow": null,
+      "priceBandHigh": null,
+      "underwriter": "",
+      "competitionRatio": "한국투자증권,유안타증권",
+      "listingDate": null,
+      "refundDate": "2026-12-22",
+      "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2363&l=&page=1",
+      "status": "청약예정",
+      "calculator": null
+    },
+    {
       "id": "2361",
       "name": "이나인페이",
       "subscriptionStart": "2026-12-16",
@@ -463,24 +479,8 @@
       "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2333&l=&page=1",
       "status": "상장완료",
       "calculator": null
-    },
-    {
-      "id": "2328",
-      "name": "인텔리빅스",
-      "subscriptionStart": "2026-10-21",
-      "subscriptionEnd": "2026-10-22",
-      "confirmedPrice": 9000,
-      "priceBandLow": null,
-      "priceBandHigh": null,
-      "underwriter": "미래에셋증권",
-      "competitionRatio": "1410.87:1",
-      "listingDate": "2026-10-30",
-      "refundDate": "2026-10-26",
-      "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2328&l=&page=1",
-      "status": "상장완료",
-      "calculator": null
     }
   ],
-  "fetchedAt": "2026-11-20T05:20:57.614Z",
+  "fetchedAt": "2026-11-20T16:36:25.682Z",
   "totalCount": 30
 }

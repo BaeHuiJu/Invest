@@ -257,22 +257,6 @@
       "calculator": null
     },
     {
-      "id": "2345",
-      "name": "아델",
-      "subscriptionStart": "2026-11-23",
-      "subscriptionEnd": "2026-11-24",
-      "confirmedPrice": null,
-      "priceBandLow": null,
-      "priceBandHigh": null,
-      "underwriter": "",
-      "competitionRatio": "삼성증권,미래에셋증권",
-      "listingDate": "2026-12-02",
-      "refundDate": "2026-11-26",
-      "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2345&l=&page=1",
-      "status": "청약예정",
-      "calculator": null
-    },
-    {
       "id": "2352",
       "name": "유캐스트",
       "subscriptionStart": "2026-11-18",
@@ -285,7 +269,7 @@
       "listingDate": "2026-11-30",
       "refundDate": "2026-11-23",
       "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2352&l=&page=1",
-      "status": "청약중",
+      "status": "상장예정",
       "calculator": null
     },
     {
@@ -317,7 +301,7 @@
       "listingDate": "2026-11-20",
       "refundDate": "2026-11-13",
       "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2334&l=&page=1",
-      "status": "상장예정",
+      "status": "상장완료",
       "calculator": null
     },
     {
@@ -479,8 +463,24 @@
       "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2333&l=&page=1",
       "status": "상장완료",
       "calculator": null
+    },
+    {
+      "id": "2328",
+      "name": "인텔리빅스",
+      "subscriptionStart": "2026-10-21",
+      "subscriptionEnd": "2026-10-22",
+      "confirmedPrice": 9000,
+      "priceBandLow": null,
+      "priceBandHigh": null,
+      "underwriter": "미래에셋증권",
+      "competitionRatio": "1410.87:1",
+      "listingDate": "2026-10-30",
+      "refundDate": "2026-10-26",
+      "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2328&l=&page=1",
+      "status": "상장완료",
+      "calculator": null
     }
   ],
-  "fetchedAt": "2026-11-19T22:52:10.985Z",
+  "fetchedAt": "2026-11-20T05:20:57.614Z",
   "totalCount": 30
 }

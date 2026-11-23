@@ -237,12 +237,12 @@
         "ticker": "MU",
         "name": "Micron Technology, Inc.",
         "market": "us",
-        "brokerCount": 4,
-        "avgUpside": 131.3,
-        "avgTargetPrice": 1375,
+        "brokerCount": 3,
+        "avgUpside": 129.9,
+        "avgTargetPrice": 1366.7,
         "currentPrice": 594.51,
-        "entryScore": 93,
-        "reportCount": 4
+        "entryScore": 86,
+        "reportCount": 3
       },
       {
         "ticker": "AMAT",
@@ -292,12 +292,12 @@
         "ticker": "BX",
         "name": "Blackstone Inc.",
         "market": "us",
-        "brokerCount": 5,
-        "avgUpside": 35.6,
-        "avgTargetPrice": 150.2,
+        "brokerCount": 3,
+        "avgUpside": 33.6,
+        "avgTargetPrice": 148,
         "currentPrice": 110.8,
-        "entryScore": 75,
-        "reportCount": 5
+        "entryScore": 59,
+        "reportCount": 3
       },
       {
         "ticker": "JNJ",
@@ -435,23 +435,23 @@
         "ticker": "GS",
         "name": "The Goldman Sachs Group, Inc.",
         "market": "us",
-        "brokerCount": 3,
-        "avgUpside": 43.1,
-        "avgTargetPrice": 1131.7,
+        "brokerCount": 2,
+        "avgUpside": 45.1,
+        "avgTargetPrice": 1147.5,
         "currentPrice": 790.69,
-        "entryScore": 73,
-        "reportCount": 3
+        "entryScore": 66,
+        "reportCount": 2
       },
       {
         "ticker": "MS",
         "name": "Morgan Stanley",
         "market": "us",
-        "brokerCount": 3,
-        "avgUpside": 43.3,
-        "avgTargetPrice": 237.3,
+        "brokerCount": 2,
+        "avgUpside": 51.5,
+        "avgTargetPrice": 251,
         "currentPrice": 165.67,
-        "entryScore": 73,
-        "reportCount": 3
+        "entryScore": 66,
+        "reportCount": 2
       },
       {
         "ticker": "PG",
@@ -22691,6 +22691,57 @@
             "reportCount": {
               "old": 3,
               "new": 2
+            }
+          }
+        }
+      ]
+    },
+    {
+      "date": "2026-11-23",
+      "added": [],
+      "removed": [],
+      "changed": [
+        {
+          "ticker": "NVDA",
+          "name": "NVIDIA Corporation",
+          "fields": {
+            "brokerCount": {
+              "old": 5,
+              "new": 6
+            },
+            "avgUpside": {
+              "old": 120.3,
+              "new": 113.5
+            },
+            "entryScore": {
+              "old": 98,
+              "new": 70
+            },
+            "avgTargetPrice": {
+              "old": 276.6,
+              "new": 268
+            },
+            "reportCount": {
+              "old": 5,
+              "new": 6
+            }
+          }
+        },
+        {
+          "ticker": "DIS",
+          "name": "The Walt Disney Company",
+          "fields": {
+            "avgUpside": {
+              "old": 15.7,
+              "new": 15.2
+            },
+            "entryScore": {
+              "old": 53,
+              "new": 48
+            },
+            "avgTargetPrice": {
+              "old": 136.5,
+              "new": 135.9
             }
           }
         }

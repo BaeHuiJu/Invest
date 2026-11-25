@@ -264,8 +264,8 @@
       "confirmedPrice": 2000,
       "priceBandLow": null,
       "priceBandHigh": null,
-      "underwriter": "",
-      "competitionRatio": "신영증권",
+      "underwriter": "신영증권",
+      "competitionRatio": "253:1",
       "listingDate": "2026-12-03",
       "refundDate": "2026-11-27",
       "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2357&l=&page=1",
@@ -280,8 +280,8 @@
       "confirmedPrice": 19000,
       "priceBandLow": null,
       "priceBandHigh": null,
-      "underwriter": "",
-      "competitionRatio": "유진투자증권,신영증권",
+      "underwriter": "유진투자증권,신영증권",
+      "competitionRatio": "0.49:1",
       "listingDate": "2026-11-30",
       "refundDate": "2026-11-23",
       "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2352&l=&page=1",
@@ -481,6 +481,6 @@
       "calculator": null
     }
   ],
-  "fetchedAt": "2026-11-25T03:17:22.038Z",
+  "fetchedAt": "2026-11-25T13:47:59.668Z",
   "totalCount": 30
 }

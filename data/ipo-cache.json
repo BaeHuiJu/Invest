@@ -1,6 +1,22 @@
 {
   "ipos": [
     {
+      "id": "2364",
+      "name": "범한메카텍(구.두산메카텍)",
+      "subscriptionStart": "2026-12-17",
+      "subscriptionEnd": "2026-12-18",
+      "confirmedPrice": null,
+      "priceBandLow": null,
+      "priceBandHigh": null,
+      "underwriter": "",
+      "competitionRatio": "NH투자증권,유진투자증권,BNK투자증권",
+      "listingDate": null,
+      "refundDate": "2026-12-22",
+      "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2364&l=&page=1",
+      "status": "청약예정",
+      "calculator": null
+    },
+    {
       "id": "2363",
       "name": "피지티",
       "subscriptionStart": "2026-12-17",
@@ -463,24 +479,8 @@
       "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2333&l=&page=1",
       "status": "상장완료",
       "calculator": null
-    },
-    {
-      "id": "2328",
-      "name": "인텔리빅스",
-      "subscriptionStart": "2026-10-21",
-      "subscriptionEnd": "2026-10-22",
-      "confirmedPrice": 9000,
-      "priceBandLow": null,
-      "priceBandHigh": null,
-      "underwriter": "미래에셋증권",
-      "competitionRatio": "1410.87:1",
-      "listingDate": "2026-10-30",
-      "refundDate": "2026-10-26",
-      "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2328&l=&page=1",
-      "status": "상장완료",
-      "calculator": null
     }
   ],
-  "fetchedAt": "2026-11-24T19:16:11.207Z",
+  "fetchedAt": "2026-11-25T03:17:22.038Z",
   "totalCount": 30
 }

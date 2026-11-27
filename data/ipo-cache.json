@@ -1,6 +1,22 @@
 {
   "ipos": [
     {
+      "id": "2348",
+      "name": "씨아이에스케미칼",
+      "subscriptionStart": "2027-01-21",
+      "subscriptionEnd": "2027-01-22",
+      "confirmedPrice": null,
+      "priceBandLow": null,
+      "priceBandHigh": null,
+      "underwriter": "",
+      "competitionRatio": "KB증권",
+      "listingDate": null,
+      "refundDate": "2027-01-26",
+      "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2348&l=&page=1",
+      "status": "청약예정",
+      "calculator": null
+    },
+    {
       "id": "2364",
       "name": "범한메카텍(구.두산메카텍)",
       "subscriptionStart": "2026-12-17",
@@ -125,22 +141,6 @@
       "listingDate": null,
       "refundDate": "2026-12-16",
       "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2356&l=&page=1",
-      "status": "청약예정",
-      "calculator": null
-    },
-    {
-      "id": "2348",
-      "name": "씨아이에스케미칼",
-      "subscriptionStart": "2026-12-10",
-      "subscriptionEnd": "2026-12-11",
-      "confirmedPrice": null,
-      "priceBandLow": null,
-      "priceBandHigh": null,
-      "underwriter": "",
-      "competitionRatio": "KB증권",
-      "listingDate": null,
-      "refundDate": "2026-12-15",
-      "detailUrl": "https://www.38.co.kr/html/fund/?o=v&no=2348&l=&page=1",
       "status": "청약예정",
       "calculator": null
     },
@@ -481,6 +481,6 @@
       "calculator": null
     }
   ],
-  "fetchedAt": "2026-11-27T02:35:34.045Z",
+  "fetchedAt": "2026-11-27T13:24:35.029Z",
   "totalCount": 30
 }
